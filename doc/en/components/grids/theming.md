@@ -11,7 +11,7 @@ namespace: Infragistics.Controls
 With the {Platform} Theming engine, the {ProductName} Grid can be easily customized to match your brand identity.
 In addition to predefined themes and palettes, you can further customize the look and feel of your data grid by using a set of CSS custom properties.
 
-### Available theming properties
+## Available Theming Properties
 | Property name                            | Type                     | Description                                                                                  |
 |------------------------------------------|--------------------------|----------------------------------------------------------------------------------------------|
 | --grid-elevation                         | number between 0-24      | The elevation level, to be used for the grid                                                 |
@@ -97,7 +97,7 @@ In addition to predefined themes and palettes, you can further customize the loo
 | --row-drag-color                         | color                    | The color of the drag handle.                                                                |
 | --drop-area-border-radius                | number between 0 and 1   | The border radius used for drop-area. Can be a fraction between 0 and 1, pixels, or percent. |
 
-### How to use
+## How to use
 As mentioned above Using the CSS vars from the table allow us to style our grid. Let's say that we want to change the grid to use a Dark Theme, by changing the following header background and text colors etc., we can do that like so in a file optionally called dark-theme.css.
 
 import "./dark-theme.css";

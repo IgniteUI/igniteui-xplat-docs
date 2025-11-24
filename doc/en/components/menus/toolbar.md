@@ -238,20 +238,20 @@ Trend Actions
 - `AnalyzeHeader`: A sub section header.
   - `LinesMenu`: A sub menu containing various tools for showing different dashed horizontal lines on the chart.
   - `LinesHeader`: A sub menu section header for the following three tools:
-    - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
-    - `MinValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the minimum value of the series.
-    - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
+   - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
+   - `MinValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the minimum value of the series.
+   - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
   - `TrendsMenu`: A sub menu containing tools for applying various trendlines to the `XamDataChart` plot area.
   - `TrendsHeader`: A sub menu section header for the following three tools:
-    - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
-    - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
-    - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
+   - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
+   - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
+   - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
 - `HelpersHeader`: A sub section header.
   - `SeriesAvg`: A `ToolActionCheckbox` that adds or removes a `ValueLayer` to the chart's series collection using the `ValueLayerValueMode` of type `Average`.
   - `ValueLabelsMenu`: A sub menu containing various tools for showing different annotations on the `XamDataChart`'s plot area.
   - `ValueLabelsHeader`: A sub menu section header for the following tools:
-    - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
-    - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
+   - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
+   - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
 - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
 - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 

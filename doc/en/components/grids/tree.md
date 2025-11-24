@@ -192,7 +192,7 @@ In order to render a tree you do not necessarily need a data set - individual it
 ### Item Interactions
 
 `TreeItem` could be expanded or collapsed:
-- by clicking on the item expand indicator *(default behavior)*.
+- by clicking on the item expand indicator (default behavior).
 - by clicking on the item if the `Tree` `ToggleNodeOnClick` property is set to `true`.
 
 ```html

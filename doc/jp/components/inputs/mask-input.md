@@ -166,7 +166,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbMaskInputModule));
 
 ### 値モード
 
-IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `ValueMode` プロパティを公開します。デフォルトでは、`ValueMode` は *raw* に設定されています。以下の例をご覧ください:
+IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `ValueMode` プロパティを公開します。デフォルトでは、`ValueMode` は `raw` に設定されています。以下の例をご覧ください:
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} マスク入力値モードの例"`
 

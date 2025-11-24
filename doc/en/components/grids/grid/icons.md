@@ -181,7 +181,7 @@ The following lists all internal icons. Alias is the name of the icon by which i
 
 Here's a breakdown of all icons as used by component:
 
-#### Grid
+## Grid
 | Icon                 | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
 | **add**              | Used in excel-filter menu to add filter entry.                                 |
@@ -219,7 +219,7 @@ Here's a breakdown of all icons as used by component:
 | **unfold_more**      | Used by the hierarchical grid to expand all rows.                              |
 | **view_column**      | Used by the pivot data selector.                                               |
 
-#### Paginator
+## Paginator
 | Icon           | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | **first_page** | Used by the button used for navigating to the first page.    |
@@ -227,7 +227,7 @@ Here's a breakdown of all icons as used by component:
 | **prev**       | Used by the button used for navigating to the previous page. |
 | **next**       | Used by the button used for navigating to the next page.     |
 
-#### Action Strip
+## Action Strip
 
 | Icon          | Description              |
 | ------------- | ------------------------ |

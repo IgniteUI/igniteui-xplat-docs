@@ -442,16 +442,16 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 グループ UI は、以下のキーボード インタラクションをサポートします。
 
 - グループ行 (行または展開/縮小セルにフォーカス)
-   - <kbd>ALT</kbd> + <kbd>右矢印</kbd> - グループを展開します。
-   - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
-   - <kbd>SPACE</kbd> - <kbd>rowSelection</kbd> プロパティが multiple に設定されている場合、グループ内のすべての行を選択します。
+  - <kbd>ALT</kbd> + <kbd>右矢印</kbd> - グループを展開します。
+  - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
+  - <kbd>SPACE</kbd> - <kbd>rowSelection</kbd> プロパティが multiple に設定されている場合、グループ内のすべての行を選択します。
 
 - グループ領域の `Chip` コンポーネントのグループ化 (チップにフォーカス)
-   - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
-   - <kbd>SHIFT</kbd> + <kbd>右矢印</kbd> - フォーカスしたチップの右へ移動し、可能な場合はグループ順序を変更します。
-   - <kbd>SPACE</kbd> - ソートの方向を変更します。
-   - <kbd>DELETE</kbd> - フィールドのグループ解除。
-   - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
+  - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
+  - <kbd>SHIFT</kbd> + <kbd>右矢印</kbd> - フォーカスしたチップの右へ移動し、可能な場合はグループ順序を変更します。
+  - <kbd>SPACE</kbd> - ソートの方向を変更します。
+  - <kbd>DELETE</kbd> - フィールドのグループ解除。
+  - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
 
 <!-- WebComponents, Angular, React -->
 

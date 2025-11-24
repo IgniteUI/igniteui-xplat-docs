@@ -62,8 +62,8 @@ Ability for axis annotations to automatically detect collisions and truncate to 
         <igc-column field="field" merge="true"></igc-column>
         ```
         The merging can be configured on the grid level to apply either:
-      - `onSort` - only when the column is sorted.
-      - `always` - always, regardless of data operations.
+     - `onSort` - only when the column is sorted.
+     - `always` - always, regardless of data operations.
 
         ```html
         <igc-grid cellMergeMode="always">
@@ -97,11 +97,11 @@ Ability for axis annotations to automatically detect collisions and truncate to 
         If property `pinningPosition` is not set on a column, the column will default to the position specified on the grid's `pinning` options for `columns`.
 
   - **Sorting improvements**
-      - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-      - Refactored sorting algorithms from recursive to iterative.
+     - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
+     - Refactored sorting algorithms from recursive to iterative.
   - **Groupby improvements**
-      - Refactored grouping algorithm from recursive to iterative.
-      - Optimized grouping operations.
+     - Refactored grouping algorithm from recursive to iterative.
+     - Optimized grouping operations.
 
 
 
@@ -682,16 +682,16 @@ _Breaking Changes_:
 
 - `DataGrid`:
   - New Features Added:
-    - [Filter Row](grids/data-grid/column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-    - [Cell Merging](grids/data-grid/cell-merging.md)
+   - [Filter Row](grids/data-grid/column-filtering.md)
+   - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+   - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+   - [Cell Merging](grids/data-grid/cell-merging.md)
   - New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+   - Added `SelectionChanged` event. Used to detect changes on selection interactions
        e.g. Multiple row selection.
   - Breaking Changes:
-    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+   - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+   - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 
 > [!Note]
@@ -709,18 +709,18 @@ This release introduces a few improvements and simplifications to visual design 
 - Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
 - Added final value annotation by default in `FinancialChart`
 - Added new properties in Category Chart and Financial Chart:
-   - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
-   - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
-   - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
-   - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
-   - `MarkerThickness` that allows changing thickness of markers
+  - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
+  - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
+  - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
+  - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
+  - `MarkerThickness` that allows changing thickness of markers
 - Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
-   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
-   - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
+  - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
+  - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
+  - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
 - Added new properties in Series in Data Chart and Geographic Map:
-   - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
+  - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
+  - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
 - Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
 - Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
 - Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value

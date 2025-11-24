@@ -27,8 +27,8 @@ _language: ja
         <igc-column field="field" merge="true"></igc-column>
         ```
         グリッド レベルで以下のいずれかの設定が可能です:
-      - `onSort` - 列がソートされたときのみ結合。
-      - `always` - データ操作に関わらず常に結合。
+     - `onSort` - 列がソートされたときのみ結合。
+     - `always` - データ操作に関わらず常に結合。
 
         ```html
         <igc-grid cellMergeMode="always">
@@ -62,11 +62,11 @@ _language: ja
         列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
 
   - **ソートの改善**
-      - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
-      - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+     - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+     - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
   - **グループ化の改善**
-      - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
-      - グループ化処理を最適化しました。
+     - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+     - グループ化処理を最適化しました。
 
 ### バグ修正
 | バグ修正 | コントロール | 説明 |
@@ -637,15 +637,15 @@ _重大な変更_:
 
 - `DataGrid`:
   - 新規機能:
-    - [フィルター行](grids/data-grid/column-filtering.md)
-    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
-    - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
-    - [セルの結合](grids/data-grid/cell-merging.md)
+   - [フィルター行](grids/data-grid/column-filtering.md)
+   - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+   - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+   - [セルの結合](grids/data-grid/cell-merging.md)
   - 新規 API:
-    - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
+   - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
   - 重大な変更:
-    - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
-    - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
+   - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+   - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
@@ -662,18 +662,18 @@ _重大な変更_:
 - `FinancialChart` と `CategoryChart` にデフォルトの十字線の注釈を追加しました。
 - `FinancialChart` にデフォルトで最終値の注釈を追加しました
 - カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
-   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ。
-   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ。
-   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ。
-   - シリーズ塗りつぶしの不透明度を変更できる `AreaFillOpacity` (エリア チャートなど)
-   - マーカーの厚さを変更できる `MarkerThickness`
+  - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ。
+  - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ。
+  - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ。
+  - シリーズ塗りつぶしの不透明度を変更できる `AreaFillOpacity` (エリア チャートなど)
+  - マーカーの厚さを変更できる `MarkerThickness`
 - カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
-   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができる `MarkerAutomaticBehavior`
-   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
-   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+  - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができる `MarkerAutomaticBehavior`
+  - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+  - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 - データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
-   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
-   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+  - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
+  - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 - カテゴリ チャートとシリーズで、デフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 - 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 - チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。

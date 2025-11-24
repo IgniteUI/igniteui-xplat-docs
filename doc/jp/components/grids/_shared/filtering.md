@@ -185,11 +185,11 @@ _language: ja
 -  `Filter` - 単一の列または複数の列をフィルターします。
 
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
-   - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
-   - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
+  - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
 
 ```typescript
 // Single column filtering

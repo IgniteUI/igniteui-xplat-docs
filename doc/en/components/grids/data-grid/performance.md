@@ -36,7 +36,7 @@ This sample demonstrates this performance by binding thousands of financial reco
 <!-- TODO fix build flagging list items -->
 <!-- - [Binding Virtual Data](remote-data.md) -->
 <!-- end: Angular, React, WebComponents -->
-- [Column Types ](column-types.md)
+- [Column Types](column-types.md)
 - [Row Grouping](row-grouping.md)
 
 

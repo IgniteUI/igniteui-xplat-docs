@@ -38,7 +38,7 @@ The main difference is that only one item can be selected at any time. For examp
 
 Here's how to select/deselect an item programmatically in a single selection combo.
 
-#### Selecting items:
+#### Selecting items
 
 <!-- WebComponents -->
 ```ts
@@ -66,7 +66,7 @@ comboRef.current.select('BG01');
 
 To deselect an item without making a new selection, call the `Deselect` method.
 
-#### Deselecting items:
+#### Deselecting items
 
 <!-- WebComponents -->
 ```ts

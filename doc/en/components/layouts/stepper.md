@@ -212,7 +212,7 @@ When the {Platform} stepper is horizontally orientated you have the opportunity 
 
 **Vertical Stepper Orientation**
 
-You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to *vertical*.
+You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to **vertical**.
 
 The sample below demonstrates how stepper orientation and titles position could be changed runtime.
 

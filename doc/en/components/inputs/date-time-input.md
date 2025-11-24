@@ -95,13 +95,13 @@ The `DateTimeInput` also accepts [ISO 8601](https://tc39.es/ecma262/#sec-date-ti
 
 The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
 
-##### Date-only
+#### Date-only
 If a date-only string is bound to the `Value` property of the component, it needs to be in the format `YYYY-MM-DD`. The `InputFormat` is still used when typing values in the input and it does not have to be in the same format. Additionally, when binding a date-only string, the directive will prevent time shifts by coercing the time to be `T00:00:00`.
 
-##### Time-only
+#### Time-only
 Time-only strings are normally not defined in the `ECMA` specification, however to allow the directive to be integrated in scenarios which require time-only solutions, it supports the 24 hour format - `HH:mm:ss`. The 12 hour format is not supported.
 
-##### Full ISO string
+#### Full ISO string
 If a full `ISO` string is bound, the directive will parse it only if all elements required by [Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) are provided.
 
 All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete date-only, time-only, or full `ISO` strings will be parsed as `InvalidDate`.

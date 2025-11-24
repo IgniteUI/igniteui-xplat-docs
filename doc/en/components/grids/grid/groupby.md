@@ -441,16 +441,16 @@ Integration between Group By and Summaries is described in the [Summaries](summa
 The grouping UI supports the following keyboard interactions:
 
 - For group rows (focus should be on the row or the expand/collapse cell)
-   - <kbd>ALT</kbd> + <kbd>RIGHT</kbd> - Expands the group
-   - <kbd>ALT</kbd> + <kbd>LEFT</kbd> - Collapses the group
-   - <kbd>SPACE</kbd> - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
+  - <kbd>ALT</kbd> + <kbd>RIGHT</kbd> - Expands the group
+  - <kbd>ALT</kbd> + <kbd>LEFT</kbd> - Collapses the group
+  - <kbd>SPACE</kbd> - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
 
 - For group `Chip` components in the group by area (focus should be on the chip)
-   - <kbd>SHIFT</kbd> + <kbd>LEFT</kbd> - moves the focused chip left, changing the grouping order, if possible
-   - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
-   - <kbd>SPACE</kbd> - changes the sorting direction
-   - <kbd>DELETE</kbd> - ungroups the field
-   - The separate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
+  - <kbd>SHIFT</kbd> + <kbd>LEFT</kbd> - moves the focused chip left, changing the grouping order, if possible
+  - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
+  - <kbd>SPACE</kbd> - changes the sorting direction
+  - <kbd>DELETE</kbd> - ungroups the field
+  - The separate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
 
 <!-- WebComponents, Angular, React -->
 
@@ -700,7 +700,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  > [!Note]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {

@@ -184,11 +184,11 @@ You can filter any column or a combination of columns through the `{ComponentNam
 -  `Filter` - filter a single column or a combination of columns.
 
 There are five filtering operand classes exposed:
-   - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
-   - `BooleanFilteringOperand` defines all default filtering conditions for *boolean* type.
-   - `NumberFilteringOperand` defines all default filtering conditions for *numeric* type.
-   - `StringFilteringOperand` defines all default filtering conditions for *string* type.
-   - `DateFilteringOperand` defines all default filtering conditions for *date* type.
+  - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
+  - `BooleanFilteringOperand` defines all default filtering conditions for *boolean* type.
+  - `NumberFilteringOperand` defines all default filtering conditions for *numeric* type.
+  - `StringFilteringOperand` defines all default filtering conditions for *string* type.
+  - `DateFilteringOperand` defines all default filtering conditions for *date* type.
 
 ```typescript
 // Single column filtering

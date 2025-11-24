@@ -144,7 +144,7 @@ Developers can customize the prompt symbol used for unfilled parts of the mask. 
 <IgbMaskInput @ref="MaskInputRef" Mask="(####) 00-00-00 Ext. 9999" Prompt="-"></IgbMaskInput>
 ```
 
-By default, the `prompt` character is *underscore*.
+By default, the `prompt` character is **underscore**.
 
 ### Placeholder
 
@@ -164,7 +164,7 @@ Developers can also take advantage of the `Placeholder` property, which serves t
 
 ### Value Modes
 
-The `MaskInput` exposes a `ValueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `ValueMode` is set to *raw*. Try it for yourself in the example below:
+The `MaskInput` exposes a `ValueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `ValueMode` is set to `raw`. Try it for yourself in the example below:
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} Mask Input Value Modes Example"`
 

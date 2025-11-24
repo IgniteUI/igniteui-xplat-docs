@@ -35,12 +35,12 @@ This is activated by setting `--use-accessibility` property to **true** explicit
 
 <div class="divider--half"></div>
 
-##Section 508 Compliance
+## Section 508 Compliance
 <a href="https://www.section508.gov/" target="_blank">Section 508</a> of the Rehabilitation Act was amended in 1998 by Congress to require all Federal agencies to make their electronic and information technology accessible to people with disabilities. Since then, Section 508 compliance has not only been a requirement in government agencies, but it's also important when providing software solutions and designing Web pages.
 
 Section 1194.22 of the Section 508 law specifically targets Web-based intranet and internet information and systems, and contains a set of 16 rules to follow. In order to enable you to keep your Web applications and Web sites compatible with these rules with minimal effort on your part, Infragistics has taken steps to ensure that the Ignite UI for Angular controls and components are compliant with the relevant accessibility rules.
 
-##WAI-ARIA Support
+## WAI-ARIA Support
 In 2014 the W3C finalized their <a href="https://www.w3.org/TR/wai-aria/" target="_blank">WAI-ARIA specification</a> which defined how to design Web content and Web applications to be more accessible to users with disabilities.
 
 This section shows the accessibility (ARIA) support of the framework as well as how easily manageable the directionality of the components is.

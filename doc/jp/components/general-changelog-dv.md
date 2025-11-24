@@ -383,18 +383,18 @@ _重大な変更_
 - `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 - デフォルトで `FinancialChart` に最終値の注釈を追加しました。
 - カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
-   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
-   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
-   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
-   - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
-   - マーカーの厚さの変更を可能にする `MarkerThickness`
+  - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
+  - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
+  - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
+  - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
+  - マーカーの厚さの変更を可能にする `MarkerThickness`
 - カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
-   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
-   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
-   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+  - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
+  - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+  - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 - データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
-   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
-   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+  - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
+  - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 - カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 - 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 - チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
