@@ -140,9 +140,9 @@ Let's see the markup below:
 ```
 
 To summarize, every child column has three states:
--	Can be always visible, no matter the expanded state of its parent.
--	Can be visible, when its parent is collapsed.
--	Can be hidden, when its parent is collapsed.
+- Can be always visible, no matter the expanded state of its parent.
+- Can be visible, when its parent is collapsed.
+- Can be hidden, when its parent is collapsed.
 
 The initial state of the column group which is specified as collapsible is `Expanded` set to **true**, but you can easily change this behavior by setting it to **false**.
 

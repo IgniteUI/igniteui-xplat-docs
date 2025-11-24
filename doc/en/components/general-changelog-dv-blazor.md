@@ -638,10 +638,10 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 ### General
 
 - `Input`, `MaskInput`, `DateTimeInput`, `Rating`
-	- `Readonly` has been renamed to `ReadOnly`
+  - `Readonly` has been renamed to `ReadOnly`
 - `Input`
-	- `Maxlength` has been renamed to `MaxLength`
-	- `Minlength` has been renamed to `MinLength`
+  - `Maxlength` has been renamed to `MaxLength`
+  - `Minlength` has been renamed to `MinLength`
 
 ### Deprecations
 

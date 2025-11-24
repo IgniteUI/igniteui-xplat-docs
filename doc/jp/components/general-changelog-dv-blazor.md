@@ -612,10 +612,10 @@ _重大な変更_:
 ### 一般
 
 - `Input`、`MaskInput`、`DateTimeInput`、`Rating`
-	- `Readonly` は `ReadOnly` に名前が変更されました。
+  - `Readonly` は `ReadOnly` に名前が変更されました。
 - `Input`
-	- `Maxlength` は `MaxLength` に名前が変更されました。
-	- `Minlength` は `MinLength` に名前が変更されました。
+  - `Maxlength` は `MaxLength` に名前が変更されました。
+  - `Minlength` は `MinLength` に名前が変更されました。
 
 ### 非推奨
 

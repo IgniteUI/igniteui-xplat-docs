@@ -638,7 +638,7 @@ public onColumnInit(column: IgxColumnComponent) {
 ```
 
 <!-- Blazor, React, WebComponents -->
-2. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+3. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 <!-- end: Blazor, React, WebComponents -->
 
 ```typescript

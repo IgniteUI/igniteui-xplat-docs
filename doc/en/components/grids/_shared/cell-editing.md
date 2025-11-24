@@ -39,7 +39,7 @@ You can enter edit mode for specific cell, when an editable cell is focused in o
 
 You can exit edit mode **without committing** the changes in one of the following ways:
 - on key press <kbd>Escape</kbd>;
-- when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
+- when you perform **sorting**, **filtering**, **searching** and **hiding** operations;
 
 You can exit edit mode and **commit** the changes in one of the following ways:
 - on key press <kbd>ENTER</kbd>;

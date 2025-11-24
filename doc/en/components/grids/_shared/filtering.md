@@ -181,7 +181,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 
 You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
--  `Filter` - filter a single column or a combination of columns.
+- `Filter` - filter a single column or a combination of columns.
 
 There are five filtering operand classes exposed:
   - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.

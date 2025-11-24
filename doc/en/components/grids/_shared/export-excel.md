@@ -79,7 +79,7 @@ If all went well, you should see the {ComponentTitle} component and a button und
 
 ## Export All Data
 
-There are some cases when you might be using remote operations like *Paging* and the Grid won't have access to all of its data. In these cases, we recommend using the [Excel Export Service](../exporter-excel.md) and pass the whole data collection, if available. Example:
+There are some cases when you might be using remote operations like **paging** and the Grid won't have access to all of its data. In these cases, we recommend using the [Excel Export Service](../exporter-excel.md) and pass the whole data collection, if available. Example:
 
 ```ts
 public exportButtonHandler() {

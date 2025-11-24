@@ -209,7 +209,7 @@ In this mode a parent's selection state entirely depends on the selection state 
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-- Row selection will trigger `RowSelectionChanging` event. This event gives you information about the *new selection*, *old selection*, the rows that have been *added* and *removed* from the old selection. Also the event is *cancellable*, so this allows you to prevent selection.
+- Row selection will trigger `RowSelectionChanging` event. This event gives you information about the **new selection**, **old selection**, the rows that have been **added** and **removed** from the old selection. Also the event is **cancellable**, so this allows you to prevent selection.
 - When row selection is enabled row selectors are displayed, but if you don't want to show them, you can set `HideRowSelectors` to **true**.
 - When you switch between row selection modes at runtime, this will clear the previous row selection state.
 
