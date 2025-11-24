@@ -817,6 +817,7 @@ $black-color: #292826;
 
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
+
 And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
@@ -1046,6 +1047,7 @@ Then set the related CSS properties to this class:
     --ig-list-item-background: #ffcd0f;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`

@@ -397,6 +397,7 @@ $dark-grid-column-moving-theme: grid-theme(
     --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`

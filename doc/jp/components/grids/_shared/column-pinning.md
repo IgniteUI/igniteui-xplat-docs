@@ -854,6 +854,7 @@ $custom-theme: grid-theme(
     }
 }
 ```
+
 ### デモ
 
 <!-- NOTE this sample is differed -->

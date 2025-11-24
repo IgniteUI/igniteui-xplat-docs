@@ -7,6 +7,8 @@ namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
@@ -211,7 +213,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-25-1-SEP}**
 
-#### Enhancements
+### Enhancements
 - Added enhancement DatePicker should update calendar view on typing, as Date Range Picker [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)
 
 ### Bug Fixes
@@ -248,7 +250,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo elevation styles|
 |[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date range picker|Return focus to main input on keyboard interactions|
 |[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Placeholder and label alignment in Material theme|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update *relative* positions styles and animation|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update **relative** positions styles and animation|
 |[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|Invalid state theming issues|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material theme interaction issues|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Resizing behavior with suffix part|
@@ -270,16 +272,16 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### Breaking Changes
 
 #### File Input
-  - `onChange` & `onCancel` events detail now returns the underlying component `files` property.
+- `onChange` & `onCancel` events detail now returns the underlying component `files` property.
 
 #### Tooltip
-  - Tooltip events will no longer return its `anchor` target in its `detail` property
+- Tooltip events will no longer return its `anchor` target in its `detail` property
 
 ### Behavioral Changes
 
 #### Tooltip
-  - **Behavioral change**: Tooltip default `placement` is 'bottom' now.
-  - **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
+- **Behavioral change**: Tooltip default `placement` is 'bottom' now.
+- **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
 
 ### Enhancements
 - Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
@@ -288,11 +290,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|[1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710)|Calendar and Date Picker|Incorrect date rollover for in certain scenarios
-|[1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)|Combo|Case insensitive icon styles in themes
-|[1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)|Input|Replace border in fluent theme with a box-shadow
-|[1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)|Input|Focused state background color in Indigo theme
-|[1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)|Text Area|Label height and component height override
+|[1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710)|Calendar and Date Picker|Incorrect date rollover for in certain scenarios|
+|[1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)|Combo|Case insensitive icon styles in themes|
+|[1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)|Input|Replace border in fluent theme with a box-shadow|
+|[1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)|Input|Focused state background color in Indigo theme|
+|[1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)|Text Area|Label height and component height override|
 
 ## **{PackageVerChanges-25-1-JUL1}**
 

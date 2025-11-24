@@ -247,6 +247,7 @@ public countryChanging(event: IComboSelectionChangeEventArgs) {
     }
 }
 ```
+
 And lastly, adding the `LinearProgress`, which is required while loading the list of data.
 The `id` is necessary to set the value of `id` attribute.
 

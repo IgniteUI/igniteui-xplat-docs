@@ -453,7 +453,7 @@ const restoreGridState = () => {
 
 `GridState` will not persist columns templates, column formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. Let's show how to do this for templated columns:
 
-1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
+1 - Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
 
 <!-- ComponentStart: Grid -->
 
@@ -626,7 +626,7 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-2. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+2 - Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 
 ```typescript
 @ViewChild('activeTemplate', { static: true }) public activeTemplate: TemplateRef<any>;
@@ -638,7 +638,7 @@ public onColumnInit(column: IgxColumnComponent) {
 ```
 
 <!-- Blazor, React, WebComponents -->
-3. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+3 - In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 <!-- end: Blazor, React, WebComponents -->
 
 ```typescript

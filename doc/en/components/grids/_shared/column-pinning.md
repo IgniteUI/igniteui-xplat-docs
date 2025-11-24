@@ -742,7 +742,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## Pinning Limitations
 
--  Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
+- Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -755,6 +755,7 @@ In the below steps, we are going through the steps of customizing the grid's Pin
 
 ### Importing Global Theme
 To begin the customization of the Pinning feature, you need to import the `index` file, where all styling functions and mixins are located.
+
 ```scss
 @use "igniteui-angular/theming" as *;
 
@@ -807,6 +808,7 @@ The `$custom-theme` contains the same properties as the one in the previous sect
 ### Defining Custom Schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
@@ -815,7 +817,9 @@ $custom-grid-schema: extend($_light-grid,(
     cell-active-border-color: color: ("secondary", 500)
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     igx-grid: $custom-grid-schema
@@ -850,6 +854,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
     }
 }
 ```
+
 ### Demo
 
 <!-- NOTE this sample is differed -->

@@ -841,6 +841,7 @@ $custom-theme: grid-theme(
     --header-text-color: #FFF;
 }
 ```
+
 ### サンプル
 `sample="/{HierarchicalGridSample}/hierarchical-grid-styling", height="700", alt="{Platform} Hierarchical Grid スタイル設定の例"`
 

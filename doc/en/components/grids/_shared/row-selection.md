@@ -614,6 +614,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 ```
 
 The `RowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
+
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
@@ -642,6 +643,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     );
 }
 ```
+
 In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `Checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
 <!-- ComponentStart: HierarchicalGrid -->

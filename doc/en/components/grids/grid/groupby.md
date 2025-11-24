@@ -632,6 +632,7 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
+
 After a custom palette has been generated, the `color` function can be used to obtain different varieties of the primary and the secondary colors.
 
 ```scss
@@ -654,9 +655,12 @@ $custom-chips-theme: chip-theme(
     $hover-text-color:contrast-color($custom-palette, "primary", 600)
 );
 ```
+
 ### Defining Custom Schemas
+
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     group-row-background: (-color:('secondary', 100)),
@@ -670,7 +674,9 @@ $custom-grid-schema: extend($_light-grid,(
     expand-icon-hover-color: (-color:('primary', 400))
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     -grid: $custom-grid-schema

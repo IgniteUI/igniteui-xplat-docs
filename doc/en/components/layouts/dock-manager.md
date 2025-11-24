@@ -479,25 +479,25 @@ When you start dragging a floating pane, different docking indicators will appea
 
 In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="" />
 
 #### Pane Docking
 
 Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="" />
 
 #### Document Host Docking
 
 If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="" />
 
 #### Splitter Docking
 
 While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt=""/>
 
 ### Update Layout
 

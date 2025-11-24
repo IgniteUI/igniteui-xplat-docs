@@ -1047,6 +1047,7 @@ $custom-drop-down: drop-down-theme(
     --ig-list-item-background: #ffcd0f;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`

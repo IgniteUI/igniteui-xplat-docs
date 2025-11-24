@@ -421,7 +421,7 @@ public columnValuesStrategy = (column: IgxColumnComponent,
 BLAZOR CODE SNIPPET HERE
 ```
 
-#### Unique Column Values Strategy Demo
+### Unique Column Values Strategy Demo
 
 `sample="/{ComponentSample}/excel-style-filtering-load-on-demand", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Unique Column Values Strategy Example"`
 
@@ -795,6 +795,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+
 ```ts
   constructor() {
       this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -819,6 +820,7 @@ First we need to bind to the relevant events so when we change pages and the amo
       this._bind();
   }
 ```
+
 We also need to set the method for loading data and update the UI accordingly:
 
 ```ts
@@ -873,6 +875,7 @@ First we should load some data to the grid. It is best to do after the grid has 
         }
     }
 ```
+
 After that we just need to bind the paging events to our custom methods, and remote paging is set:
 
 ```razor
@@ -911,6 +914,7 @@ After that we just need to bind the paging events to our custom methods, and rem
     }
 }
 ```
+
 For further reference please check the full demo bellow:
 
 ### Grid Remote Paging Demo
@@ -1023,6 +1027,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+
 ```ts
     constructor() {
         this.hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
@@ -1061,6 +1066,7 @@ First we need to bind to the relevant events so when we change pages and the amo
         this._bind();
     }
 ```
+
 We also need to set the method for loading data and update the UI accordingly:
 
 ```ts
@@ -1093,6 +1099,7 @@ We also need to set the method for loading data and update the UI accordingly:
 ```
 
 And finally we need to handle the behaviour behind the actual hierarchy levels of the Hierarchical Gird
+
 ```ts
     public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, parentKey: string) {
         const context = event.detail;
@@ -1144,6 +1151,7 @@ First we should load some data to the grid. It is best to do after the grid has 
         }
     }
 ```
+
 After that we just need to bind the paging events to our custom methods, and remote paging is set:
 
 ```razor
@@ -1182,6 +1190,7 @@ After that we just need to bind the paging events to our custom methods, and rem
     }
 }
 ```
+
 For further reference please check the full demo bellow:
 
 ### Grid Remote Paging Demo
@@ -1221,6 +1230,7 @@ For further reference please check the full demo bellow:
           </IgrRowIsland>
         </IgrHierarchicalGrid>
 ```
+
 then set up the state:
 
 ```tsx

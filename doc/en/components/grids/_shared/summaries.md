@@ -1383,6 +1383,7 @@ $custom-theme: grid-summary-theme(
     $pinned-border-color: #e41c77
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss

@@ -734,6 +734,7 @@ $custom-theme: grid-theme(
     $sortable-header-icon-hover-color: black
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss
@@ -850,6 +851,7 @@ Then set the related CSS properties to this class:
     --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`

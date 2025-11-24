@@ -56,6 +56,7 @@ ModuleManager.register(
     IgcExcelModule
 );
 ```
+
 ## The Excel Library Contains 5 Modules
 
 - **IgxExcelCoreModule** – This contains the object model and much of the excel infrastructure

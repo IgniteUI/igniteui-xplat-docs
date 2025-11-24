@@ -304,25 +304,25 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 このタイプのドッキングでは、ペインをドラッグしているときに、ドックマネージャーの四隅付近に 4 つの矢印ドッキングインジケーターが表示されます。ペインをドロップすると、Dock Manager の `RootPane` の直接の子要素になります。視覚的には、新しくドッキングされたペインはそれぞれの端にスナップされ、ドック マネージャーの幅または高さの最大半分を占め、他のすべてのコンテンツは残りの半分に移動します。
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="" />
 
 #### ペイン ドッキング
 
 フローティング ペインをコンテンツ ペインまたはタブ グループ ペインの上にドラッグすると、ドッキング インジケーターがペインの中央に表示されます。ペインをドロップすると、ターゲット ペインの任意の側にスナップされるか、ターゲット ペインとグループ化されてタブ付きレイアウトが作成されます。初期レイアウトとドッキング位置の組み合わせにより、ドッキング操作により、ドラッグされたペインとターゲットペインの両方の新しい親となる分割されたペインまたはタブ グループ ペインが動的に作成されることがあります。
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="" />
 
 #### ドキュメント ホスト ドッキング
 
 ドラッグしたペインがドキュメント ホストの上にある場合は、ターゲット ペインまたはドキュメント ホスト全体に対するドッキングを可能にする追加のドッキング インジケーターが表示されます。
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="" />
 
 #### スプリッター ドッキング
 
 フローティング ペインをドラッグしているときに、マウス カーソルがスプリッターに近づくと、その上にドッキング インジケーターが表示されます。ドラッグしたペインがドッキングされている場合、そのペインは対象のスプリッターを持つ分割ペインの子要素になります。スプリッター ドッキングは、Dock Manager の `allowSplitterDock` プロパティを **false** に設定することで無効にできます。
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="" />
 
 ### レイアウトの編集
 

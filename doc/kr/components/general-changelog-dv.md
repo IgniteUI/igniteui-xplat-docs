@@ -277,6 +277,7 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
+
 ## **{Platform} {PackageVerRenamedGrid}**
 ### Data Grid
 

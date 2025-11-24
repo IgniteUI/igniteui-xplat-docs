@@ -13,7 +13,7 @@ mentionedTypes: ["XamBulletGraph"]
 <!-- end: WebComponents -->
 
 <!-- React -->
-# {ProductName} Packages Overview
+## {ProductName} Packages Overview
 
 {ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
 
@@ -40,7 +40,7 @@ mentionedTypes: ["XamBulletGraph"]
 
 <!-- React -->
 
-# Getting Started With {ProductName}
+## Getting Started With {ProductName}
 
 ## Install IgniteUI CLI
 
@@ -102,7 +102,7 @@ Then follow the prompts to choose a name for the project, whether to use Typescr
 <!-- end: React -->
 
 <!-- WebComponents -->
-# Getting Started With {ProductName}
+## Getting Started With {ProductName}
 
 This section provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
 
@@ -183,21 +183,25 @@ After the components are imported you can use them in your html:
 ### Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
+
 ```cmd
 mkdir wc-html
 ```
 
 2 - Change the command line path to the newly created directory
+
 ```cmd
 cd wc-html
 ```
 
 3 - Initialize **npm** in the directory
+
 ```cmd
 npm init -y
 ```
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
+
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -206,6 +210,7 @@ npm install webpack webpack-cli --save-dev
 > Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
 5 - Open the project in **VS Code**
+
 ```cmd
 code .
 ```
@@ -225,7 +230,7 @@ code .
 
 7 - Create a new folder named **src**, and within that folder create a new file named **index.js**. Your project structure should look like this:
 
-<img src="../images/wc-project.jpg"/>
+<img src="../images/wc-project.jpg" alt="" />
 
 8 - Update the **package.json** file to include a build script using **webpack**
 
@@ -257,6 +262,7 @@ npm install @webcomponents/custom-elements
 ```
 
 3 - Import the web component polyfills into **index.js**
+
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
@@ -444,11 +450,11 @@ After executing this command, your project will be built and served locally on y
 <!-- end: Angular, React -->
 
 <!-- Blazor -->
-# Getting Started With {ProductName}
+## Getting Started With {ProductName}
 
 This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
 
-## Create a New Blazor Server Project
+### Create a New Blazor Server Project
 The steps below describe how to create a new Blazor Server project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
@@ -463,7 +469,7 @@ Specify additional project options, and click **Create**
 
 <img src="../images/general/new-blazor-project-info-server.jpg" />
 
-## Install Ignite UI for Blazor
+### Install Ignite UI for Blazor
 
 Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
 
@@ -471,9 +477,9 @@ In Visual Studio, open the NuGet package manager by selecting **Tools** → **Nu
 
 For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
-## Register Ignite UI for Blazor
+### Register Ignite UI for Blazor
 
-### .NET 6 and Later Applications
+#### .NET 6 and Later Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
@@ -510,7 +516,7 @@ var app = builder.Build();
 <script src="_framework/blazor.server.js"></script>
 ```
 
-### .NET 5 Applications
+#### .NET 5 Applications
 
 1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:
 
@@ -543,7 +549,7 @@ public void ConfigureServices(IServiceCollection services)
 <script src="_framework/blazor.server.js"></script>
 ```
 
-## Add Ignite UI for Blazor Component
+### Add Ignite UI for Blazor Component
 
 Add an Ignite UI for Blazor component to your razor page:
 

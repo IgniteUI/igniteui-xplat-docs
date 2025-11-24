@@ -397,6 +397,7 @@ Then set the related CSS properties to this class:
     --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`

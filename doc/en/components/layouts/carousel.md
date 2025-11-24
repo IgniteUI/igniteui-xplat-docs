@@ -256,10 +256,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </igc-carousel-indicator>
 
     <igc-carousel-slide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="" />
     </igc-carousel-slide>
     <igc-carousel-slide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="" />
     </igc-carousel-slide>
 </igc-carousel>
 ```
@@ -301,10 +301,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```

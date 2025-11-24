@@ -226,7 +226,7 @@ code .
 
 7 - **src** という名前の新しいフォルダーを作成し、そのフォルダー内に **index.js** という名前の新しいファイルを作成します。プロジェクト構造は以下のようになります。
 
-<img src="../images/wc-project.jpg"/>
+<img src="../images/wc-project.jpg" alt="" />
 
 8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 

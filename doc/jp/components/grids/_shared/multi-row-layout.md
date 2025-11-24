@@ -372,6 +372,7 @@ $my-custom-schema: extend($light-schema, (
     --ig-grid-header-text-color: #fff;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`

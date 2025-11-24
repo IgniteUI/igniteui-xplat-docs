@@ -198,6 +198,7 @@ For each step the user has the ability to configure indicator, title and subtitl
     </IgrStep>
 </IgrStepper>
 ```
+
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### Orientation in {Platform} Stepper

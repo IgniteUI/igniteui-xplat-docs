@@ -851,6 +851,7 @@ $custom-theme: grid-theme(
     --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} 列のソート スタイル"`

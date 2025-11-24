@@ -61,6 +61,7 @@ ModuleManager.register(
     IgcExcelModule
 );
 ```
+
 ## Modules Implementation
 
 The Excel Library contains 5 modules that you can use to limit bundle size of your app:

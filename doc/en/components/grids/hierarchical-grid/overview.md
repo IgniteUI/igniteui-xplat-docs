@@ -201,6 +201,7 @@ public class SingersData : List<SingersDataItem>
     }
 }
 ```
+
 Each **{RowIslandSelector}** should specify the key of the property that holds the children data.
 
 ```html
@@ -244,6 +245,7 @@ Each **{RowIslandSelector}** should specify the key of the property that holds t
     </IgbRowIsland>
 </IgbHierarchicalGrid>
 ```
+
 > [!NOTE]
 > Note that instead of `data` the user configures only the `childDataKey` that the {HierarchicalGridSelector} needs to read to set the data automatically.
 
@@ -730,7 +732,9 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
+
 After a custom palette has been generated, the `igx-color` function can be used to obtain different varieties of the primary and the secondary colors.
+
 ```scss
 $custom-theme: grid-theme(
     $cell-active-border-color: (igx-color($custom-palette, "secondary", 500)),
@@ -749,6 +753,7 @@ $custom-theme: grid-theme(
 ### Defining custom schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we will use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     cell-active-border-color: (igx-color:('secondary', 500)),
@@ -763,7 +768,9 @@ $custom-grid-schema: extend($_light-grid,(
     row-highlight: (igx-color:('secondary', 500))
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     igx-grid: $custom-grid-schema
@@ -840,6 +847,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
     --header-text-color: #FFF;
 }
 ```
+
 ### Demo
 `sample="/{HierarchicalGridSample}/hierarchical-grid-styling", height="700", alt="{Platform} Hierarchical Grid styling example"`
 

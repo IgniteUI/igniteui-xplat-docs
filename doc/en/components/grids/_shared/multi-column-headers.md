@@ -717,6 +717,7 @@ $custom-theme: igx-grid-theme(
     $header-border-color: rgba(0, 0, 0, 0.08)
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss
@@ -847,6 +848,7 @@ Then set the related CSS properties to this class:
     --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`

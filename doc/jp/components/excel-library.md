@@ -63,6 +63,7 @@ ModuleManager.register(
     IgcExcelModule
 );
 ```
+
 ## モジュールの実装
 
 Excel ライブラリには、アプリのバンドル サイズを制限するために使用できる 5 つのモジュールが含まれています。

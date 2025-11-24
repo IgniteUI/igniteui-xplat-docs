@@ -21,7 +21,7 @@ The {ProductName} Row Dragging feature in {Platform} {ComponentTitle} is easily 
 
 ## Configuration
 
-In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
+In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and **moving the cursor** while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
 <!-- Angular -->
 ```html
@@ -105,6 +105,7 @@ Then, in our template, we define a drop-area using the directive's selector:
 <!-- ComponentStart: Grid -->
 
 In this case, our drop-area will be a whole second grid where we'll drop the rows.
+
 ```html
 <igx-grid #targetGrid igxDrop [data]="data2" [autoGenerate]="false" [emptyGridTemplate]="dragHereTemplate"
     (enter)="onEnterAllowed($event)" (leave)="onLeaveAllowed($event)" (dropped)="onDropAllowed($event)" [primaryKey]="'ID'">
@@ -185,6 +186,7 @@ export class {ComponentName}RowDragComponent {
     }
 }
 ```
+
 The **changeGhostIcon** **private** method just changes the icon inside of the drag ghost. The logic in the method finds the element that contains the icon (using the **igx-grid__drag-indicator** class that is applied to the drag-indicator container), changing the element's inner text to the passed one.
 The icons themselves are from the [**material** font set](https://material.io/tools/icons/) and are defined in a separate **enum**:
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
@@ -204,7 +206,7 @@ enum DragIcon {
 ```
 <!-- ComponentEnd: Grid -->
 
-Next, we have to define what should happen when the user actually *drops* the row inside of the drop-area.
+Next, we have to define what should happen when the user actually drops the row inside of the drop-area.
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 ```typescript
 export class {ComponentName}RowDragComponent {

@@ -613,6 +613,7 @@ $custom-drop-down: drop-down-theme(
     --ig-grid-filtering-background-or: #d83434;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`

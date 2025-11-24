@@ -85,6 +85,7 @@ defineComponents(IgcDividerComponent);
 ```razor
 <IgbDivider></IgbDivider>
 ```
+
 ## 使用方法
 ### 垂直デバイダー
 

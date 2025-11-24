@@ -38,7 +38,7 @@ The `RowEditable` property enables you to specify the following options:
 - **false** - the row editing in the corresponding grid will be disabled. This is the default value.
 - **true** - the row editing in the corresponding grid will be enabled.
 
-In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
+In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the **primary key**.
 
 <!--
 [Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**.
@@ -49,7 +49,7 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
 
 ### Editing Templates
 
- If you want to use a data type specific *edit templates*, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
+ If you want to use a data type specific edit templates, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
 
 - For `string` data type, default template is using `Input`.
 - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.

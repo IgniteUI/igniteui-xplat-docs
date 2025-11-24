@@ -79,7 +79,7 @@ public static async Task Main(string[] args)
 }
 ```
 
-2. Continue with step 2 in the [.NET 6 and Later Applications](general-getting-started-blazor-client.md#net-6-and-later-applications) section
+2 - Continue with step 2 in the [.NET 6 and Later Applications](general-getting-started-blazor-client.md#net-6-and-later-applications) section
 
 ## Add Ignite UI for Blazor Component
 

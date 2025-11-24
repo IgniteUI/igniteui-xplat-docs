@@ -35,6 +35,7 @@ _language: kr
       default-column-min-width=200>
     </igc-data-grid>
 ```
+
 ## 각 열 너비의 설정
 
 ```tsx

@@ -8,13 +8,13 @@ mentionedTypes: []
 
 This topic provides step-by-step instructions for creating .NET MAUI Blazor applications with Ignite UI for Blazor using Visual Studio 2022.
 
-### What is Blazor Hybrid?
+## What is Blazor Hybrid?
 
 Blazor hybrid is something between Blazor Server and Blazor Web Assembly. It simplifies the development, the code, and the processes as it brings together the capabilities of desktop and mobile native client frameworks. This technology lets you apply your C# and .NET skills when creating native client applications.
 
 But in order to be able to use it for your apps, you need .NET MAUI.
 
-### What is .NET MAUI?
+## What is .NET MAUI?
 
 .NET MAUI (.NET Multi-platform App UI) is an open-source, cross-platform framework for building native desktop and mobile apps from a single shared code-base. With it, you can more easily develop Blazor applications that run on different devices and operating systems, including Android, iOS, macOS, and Windows using C# and XAML.
 

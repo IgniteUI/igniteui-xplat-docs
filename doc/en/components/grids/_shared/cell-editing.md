@@ -648,7 +648,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 Please check the full sample for further reference:
 
-##### {Platform} Grid Excel Style Editing Sample
+#### {Platform} Grid Excel Style Editing Sample
 
 <!-- React -->
 `sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
@@ -1108,6 +1108,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
+
 If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
 
 <!-- ComponentEnd: Grid -->
@@ -1354,6 +1355,7 @@ In order to use the [Ignite UI Theming Library](../themes/styles.md), we must fi
 // IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
+
 Now we can make use of all of the functions exposed by the {ProductName} theme engine.
 
 ### Defining a Palette

@@ -8,6 +8,8 @@ namespace: Infragistics.Controls
 
 # {ProductName} Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
@@ -219,7 +221,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-25-1-AUG}**
 
-#### Enhancements
+### Enhancements
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
   [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
 - Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid
@@ -236,7 +238,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo elevation styles|
 |[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date range picker|Return focus to main input on keyboard interactions|
 |[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Placeholder and label alignment in Material theme|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update *relative* positions styles and animation|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update **relative** positions styles and animation|
 |[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|Invalid state theming issues|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material theme interaction issues|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Resizing behavior with suffix part|
@@ -258,16 +260,17 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### Breaking Changes
 
 #### File Input
-  - `igcChange` & `igcCancel` events detail now returns the underlying component `files` property.
+- `igcChange` & `igcCancel` events detail now returns the underlying component `files` property.
 
 #### Tooltip
-  - Tooltip events will no longer return its `anchor` target in its `detail` property
+- Tooltip events will no longer return its `anchor` target in its `detail` property
 
 ### Behavioral Changes
 
 #### Tooltip
-  - **Behavioral change**: Tooltip default `placement` is 'bottom' now.
-  - **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
+
+- **Behavioral change**: Tooltip default `placement` is 'bottom' now.
+- **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
 
 ### Enhancements
 - Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
@@ -682,16 +685,15 @@ _Breaking Changes_:
 
 - `DataGrid`:
   - New Features Added:
-   - [Filter Row](grids/data-grid/column-filtering.md)
-   - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-   - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-   - [Cell Merging](grids/data-grid/cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
   - New API:
-   - Added `SelectionChanged` event. Used to detect changes on selection interactions
-       e.g. Multiple row selection.
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions, e.g. Multiple row selection.
   - Breaking Changes:
-   - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-   - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 
 > [!Note]
@@ -1216,7 +1218,7 @@ igc-avatar {
 - `IconButton` - border radius with ripple.
 - `IconButton` - fixed wrong color in Fluent theme.
 - `Input` - various styling fixes.
-- `TreeItem` - assign closest *igc-tree-item* ancestor as a parent.
+- `TreeItem` - assign closest **igc-tree-item** ancestor as a parent.
 - `Tabs` - internal **hidden** styles and custom display property.
 
 ### **{PackageCommonVerChanges-4.3.0}**

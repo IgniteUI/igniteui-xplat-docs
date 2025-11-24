@@ -848,6 +848,7 @@ import 'core-js/es7/array';
     --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`

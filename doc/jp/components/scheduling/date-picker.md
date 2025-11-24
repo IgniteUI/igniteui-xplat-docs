@@ -307,6 +307,7 @@ DatePicker は `dialog` モードもサポートしています。
     </IgbIcon>
 </IgbDatePicker>
 ```
+
 ### フォーム
 `DatePicker` はフォーム要素で使用できます。コンポーネントの `Min` プロパティと `Max` プロパティはフォーム検証機能として機能します。
 

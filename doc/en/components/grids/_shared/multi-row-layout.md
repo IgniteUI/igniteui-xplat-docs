@@ -371,6 +371,7 @@ Then set the related CSS properties to this class:
     --ig-grid-header-text-color: #fff;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/multi-row-layout-style", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`

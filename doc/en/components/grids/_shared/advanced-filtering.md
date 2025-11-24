@@ -426,6 +426,7 @@ $yellow-color: #FFCD0F;
 $black-color: #292826;
 $dark-palette: palette($primary: $yellow-color, $secondary: $black-color);
 ```
+
 And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
@@ -612,6 +613,7 @@ Then set the related CSS properties to this class:
     --ig-grid-filtering-background-or: #d83434;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`

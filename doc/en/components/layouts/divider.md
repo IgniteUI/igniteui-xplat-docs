@@ -84,6 +84,7 @@ The `Divider` is capable of displaying images, initials, or any other content, i
 ```razor
 <IgbDivider></IgbDivider>
 ```
+
 ## Usage
 ### Vertical Divider
 

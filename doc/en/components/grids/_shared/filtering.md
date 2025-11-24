@@ -109,7 +109,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 
 ## Interaction
 
-In order to open the filter row for a particular column, the 'Filter' chip below its header should be clicked. To add conditions you should choose filter operand using the dropdown on the left of the input and enter value. For *number* and *date* columns 'Equals' is selected by default, for *string* - 'Contains' and for *boolean* - 'All'. Pressing 'Enter' confirms the condition and you are now able to add another one. There is a dropdown, between 'condition' chips, which determines the logical operator between them, 'AND' is selected by default. To remove a condition you can click the 'X' button of the chip, and to edit it you should select the chip and the input will be populated with the chip's data. While filter row is opened you can click on any filterable column's header in order to select it and to be able to add filter conditions for it.
+In order to open the filter row for a particular column, the 'Filter' chip below its header should be clicked. To add conditions you should choose filter operand using the dropdown on the left of the input and enter value. For **number** and **date** columns 'Equals' is selected by default, for **string** - 'Contains' and for **boolean** - 'All'. Pressing 'Enter' confirms the condition and you are now able to add another one. There is a dropdown, between 'condition' chips, which determines the logical operator between them, 'AND' is selected by default. To remove a condition you can click the 'X' button of the chip, and to edit it you should select the chip and the input will be populated with the chip's data. While filter row is opened you can click on any filterable column's header in order to select it and to be able to add filter conditions for it.
 
 While some filtering conditions have been applied to a column, and the filter row is closed, you can either remove the conditions by clicking the chip's close button, or you can open the filter row by selecting any of the chips. When there is not enough space to show all the conditions, a filter icon is shown with a badge that indicates how many more conditions there are. It can also be clicked in order to open the filter row.
 
@@ -175,7 +175,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 ```
 
 > [!Note]
-> If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
+> If values of type **string** are used by a column of data type **date**, the `{ComponentName}` won't parse them to **date** objects and using filtering conditions won't be possible. If you want to use **string** objects, additional logic should be implemented on the application level, in order to parse the values to **date** objects.
 
 <!-- Angular, WebComponents -->
 
@@ -184,11 +184,12 @@ You can filter any column or a combination of columns through the `{ComponentNam
 - `Filter` - filter a single column or a combination of columns.
 
 There are five filtering operand classes exposed:
-  - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
-  - `BooleanFilteringOperand` defines all default filtering conditions for *boolean* type.
-  - `NumberFilteringOperand` defines all default filtering conditions for *numeric* type.
-  - `StringFilteringOperand` defines all default filtering conditions for *string* type.
-  - `DateFilteringOperand` defines all default filtering conditions for *date* type.
+
+- `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
+- `BooleanFilteringOperand` defines all default filtering conditions for **boolean** type.
+- `NumberFilteringOperand` defines all default filtering conditions for **numeric** type.
+- `StringFilteringOperand` defines all default filtering conditions for **string** type.
+- `DateFilteringOperand` defines all default filtering conditions for **date** type.
 
 ```typescript
 // Single column filtering

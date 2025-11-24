@@ -231,7 +231,9 @@ export type ChatTemplateRenderer<T> = (ctx: T) => unknown;
 ```
 
 The ctx parameter provides different contextual data depending on what is being rendered.
+
 #### Renderer Contexts
+
 | Context Type                | Provided Data                                                                                                          |
 | --------------------------- | -----------------------------------------------------------------------------------------------------------------------|
 | `ChatRenderContext`       | `instance` (the chat component instance).                                                |
@@ -240,6 +242,7 @@ The ctx parameter provides different contextual data depending on what is being 
 | `ChatAttachmentRenderContext` | Inherits `ChatMessageRenderContext` and adds `attachment` (the `ChatMessageAttachment` being rendered).                      |
 
 #### Available Renderers
+
 The following parts of the Chat can be customized:
 - Message-level: message, messageHeader, messageContent, messageAttachments, messageActions
 - Attachment-level: attachment, attachmentHeader, attachmentContent
@@ -374,6 +377,7 @@ The Chat component includes built-in support for Markdown content through the `c
 ```cmd
 npm install marked marked-shiki shiki dompurify
 ```
+
 By default, messages are rendered as plain text. If you want to enable Markdown support, you can override the messageContent renderer and use the Markdown renderer as shown below:
 <!-- WebComponents -->
 ```ts
@@ -418,8 +422,11 @@ const markdownRenderer = await createMarkdownRenderer({
   languages: ['javascript', 'python']
 });
 ```
+
 This will enable highlighted code blocks for JavaScript, Python, and Go, styled with the GitHub dark theme.
+
 #### Configuration Options
+
 | Option          | Description                                                                     |
 | --------------- | ------------------------------------------------------------------------------- |
 | `noHighlighter` | If `true`, disables syntax highlighting entirely.                               |

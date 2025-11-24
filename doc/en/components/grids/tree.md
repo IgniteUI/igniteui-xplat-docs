@@ -207,6 +207,7 @@ In order to render a tree you do not necessarily need a data set - individual it
     </igc-tree-item>
 </igc-tree>
 ```
+
 By default, multiple items could be expanded at the same time. In order to change this behavior and allow expanding only single branch at a time, the `SingleBranchExpand` property could be enabled. This way when an item is expanded, all of the others already expanded branches in the same level will be collapsed.
 
 ```html

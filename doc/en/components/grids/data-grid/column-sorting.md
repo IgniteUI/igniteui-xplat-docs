@@ -71,6 +71,7 @@ import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
 ```
 
 ## Sorting through API
+
 ```ts
 import { IgrColumnSortDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';

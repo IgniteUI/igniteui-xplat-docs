@@ -32,7 +32,7 @@ Currently, the `{ComponentName}` introduces the following tab stops:
 
 ## Header Navigation
 
-A full *keyboard navigation* support in the `{ComponentName}` header is now introduced. Column headers can be easily traversed with the arrow keys. Additionally, there are a number of key combinations that trigger actions on the columns like **filtering**, **sorting**, **grouping** and etc.
+A full **keyboard navigation** support in the `{ComponentName}` header is now introduced. Column headers can be easily traversed with the arrow keys. Additionally, there are a number of key combinations that trigger actions on the columns like **filtering**, **sorting**, **grouping** and etc.
 When the `{ComponentName}` header container is focused, the following key combinations are available:
 
 ### Key Combinations
@@ -317,7 +317,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 - Double click or press <kbd>F2</kbd> key on a cell in a numeric column, change the value to **7** and press <kbd>TAB</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>ENTER</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
-#### Demo
+### Demo
 
 
 `sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`

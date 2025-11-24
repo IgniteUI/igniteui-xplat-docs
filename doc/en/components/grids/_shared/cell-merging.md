@@ -66,6 +66,7 @@ const cellMergeMode: GridCellMergeMode = 'always';
     private GridCellMergeMode CellMergeMode = GridCellMergeMode.Always;
 }
 ```
+
 ### Column Merge Toggle
 At the column level, merging can be enabled or disabled with the `merge` property.
 
@@ -121,6 +122,7 @@ const cellMergeMode: GridCellMergeMode = 'onSort';
     private GridCellMergeMode CellMergeMode = GridCellMergeMode.OnSort;
 }
 ```
+
 Here, the grid is set to merge only when columns are sorted, and both Category and Product columns are configured for merging.
 
 <!-- WebComponents, React -->
@@ -292,6 +294,7 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 
 <!-- ComponentStart: Grid -->
 ## Limitations
+
 |Known Limitations| Description|
 | --- | --- |
 | Cell merging is not supported in combination with Multi-row Layout. | Both span complex layouts that don't make sense when combined. A warning will be thrown if such invalid configuration is detected. |

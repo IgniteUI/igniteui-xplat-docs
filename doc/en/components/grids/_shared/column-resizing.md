@@ -651,6 +651,7 @@ $custom-grid-theme: grid-theme(
     $resize-line-color: #0288D1
 );
 ```
+
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
 
@@ -722,6 +723,7 @@ $custom-grid-theme: grid-theme(
     $schema: $custom-light-grid-schema
 );
 ```
+
 Don't forget to include the theme in the same way as it was demonstrated above.
 
 ### Demo

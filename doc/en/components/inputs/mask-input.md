@@ -22,6 +22,7 @@ First, you need to install the {ProductName} by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 Before using the `MaskInput`, you need to register it as follows:
 <!-- end: WebComponents -->
 
