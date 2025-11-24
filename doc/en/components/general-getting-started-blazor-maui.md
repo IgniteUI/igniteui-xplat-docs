@@ -32,11 +32,11 @@ The steps below describe how to create a new .NET MAUI Blazor project. If you wa
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **.NET MAUI Blazor App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-maui.jpg" />
+<img src="../images/general/new-blazor-project-maui.jpg" alt="" />
 
 Provide a project name and location, and click **Create**
 
-<img src="../images/general/new-blazor-project-configure-maui.jpg" />
+<img src="../images/general/new-blazor-project-configure-maui.jpg" alt="" />
 
 ## Install Ignite UI for Blazor
 
@@ -116,7 +116,7 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the .NET MAUI Blazor app for Windows.
 
-<img src="../images/general/getting-started-blazor-card-windows.jpg" />
+<img src="../images/general/getting-started-blazor-card-windows.jpg" alt="" />
 
 > [!Note]
 > For more information about building cross-platform applications with .NET MAUI, visit the [Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-android).

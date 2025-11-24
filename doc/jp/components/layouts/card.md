@@ -259,7 +259,7 @@ defineComponents(IgcCardComponent );
     <div class="card-horizontal">
         <div>
             <IgbCardHeader>
-                <img slot="thumbnail" src="ROZES-Under-the-Grave.jpg" />
+                <img slot="thumbnail" src="ROZES-Under-the-Grave.jpg" alt="" />
                 <h5 slot="title">Rozes</h5>
                 <h5 slot="subtitle">Under the Grave (2016)</h5>
             </IgbCardHeader>
@@ -381,7 +381,7 @@ defineComponents(IgcCardComponent );
             </IgbCardActions>
         </div>
         <IgbCardMedia class="card-media">
-            <img src="here_media.jpg" />
+            <img src="here_media.jpg" alt="" />
         </IgbCardMedia>
     </div>
 </IgbCard>

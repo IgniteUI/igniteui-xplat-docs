@@ -325,14 +325,14 @@ npm run build
 
 3 - プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
 
-<!-- <img src="../images/wc-live-server.jpg" /> -->
+<!-- <img src="../images/wc-live-server.jpg" alt="" /> -->
 
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
 4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動します。最終結果には、インタラクティブなワールドマップが表示されます。
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} 概要の例"`
 
@@ -438,7 +438,7 @@ npm run-script start
 
 コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。最終結果には、インタラクティブなワールドマップが表示されます。
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} 概要の例"`
 
@@ -454,15 +454,15 @@ npm run-script start
 
 Visual Studio 2022 を起動し、開始ページで [新しいプロジェクトの作成] をクリックし、**Blazor Server App** テンプレートを選択して、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-server.jpg" />
+<img src="../images/general/new-blazor-project-server.jpg" alt="" />
 
 プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configure-server.jpg" />
+<img src="../images/general/new-blazor-project-configure-server.jpg" alt="" />
 
 追加のプロジェクト オプションを指定し、**[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-info-server.jpg" />
+<img src="../images/general/new-blazor-project-info-server.jpg" alt="" />
 
 ## Ignite UI for Blazor のインストール
 
@@ -570,6 +570,6 @@ Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 Blazor アプリケーションをビルドして実行します。
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="" />
 
 <!-- end: Blazor -->

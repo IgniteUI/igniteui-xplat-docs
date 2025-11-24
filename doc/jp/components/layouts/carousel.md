@@ -104,13 +104,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 ```razor
 <IgbCarousel>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/slider-image-chart.png" />
+        <img src="assets/images/carousel/slider-image-chart.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" alt="" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -674,19 +674,19 @@ const images = [
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/WonderfulCoast.png" />
+        <img src="assets/images/carousel/WonderfulCoast.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/CulturalDip.png" />
+        <img src="assets/images/carousel/CulturalDip.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/GoldenBeaches.png" />
+        <img src="assets/images/carousel/GoldenBeaches.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/IslandOfHistory.png" />
+        <img src="assets/images/carousel/IslandOfHistory.png" alt="" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/AmazingBridge.png" />
+        <img src="assets/images/carousel/AmazingBridge.png" alt="" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```

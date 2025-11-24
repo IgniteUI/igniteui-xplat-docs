@@ -68,7 +68,7 @@ Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as r
 
 <div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
+      <img src="../images/general/nodejs.svg" alt="nodejs"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -76,7 +76,7 @@ Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as r
       </a>
     </div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
+      <img src="../images/general/vs-code.svg" alt="vs-code"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -330,14 +330,14 @@ npm run build
 
 3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
-<!-- <img src="../images/wc-live-server.jpg" /> -->
+<!-- <img src="../images/wc-live-server.jpg" alt="" /> -->
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 4 - Navigate to the **index.html** using a web browser on your local server. The final result should show interactive map of the world:
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
 
@@ -443,7 +443,7 @@ npm run-script start
 
 After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show interactive map of the world:
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
 
@@ -459,15 +459,15 @@ The steps below describe how to create a new Blazor Server project. If you want 
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-server.jpg" />
+<img src="../images/general/new-blazor-project-server.jpg" alt="new-blazor-project-server" />
 
 Provide a project name and location, and click **Next**
 
-<img src="../images/general/new-blazor-project-configure-server.jpg" />
+<img src="../images/general/new-blazor-project-configure-server.jpg" alt="new-blazor-configure-server" />
 
 Specify additional project options, and click **Create**
 
-<img src="../images/general/new-blazor-project-info-server.jpg" />
+<img src="../images/general/new-blazor-project-info-server.jpg" alt="new-blazor-info-server" />
 
 ### Install Ignite UI for Blazor
 
@@ -575,6 +575,6 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />
 
 <!-- end: Blazor -->

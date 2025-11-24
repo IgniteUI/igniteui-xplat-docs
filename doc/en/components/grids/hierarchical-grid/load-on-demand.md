@@ -68,7 +68,7 @@ As you can see `buildUrl()` will be the method that will generate our url based 
 
 Next we will define how we should build our URL for the GET request. This is where we will be able to get the data for our main grid but also for any child grid inside it. We will use the `Customers` data from  this [topic](https://data-northwind.indigo.design/swagger/index.html) for our root level and use `Orders` and `Details` for the lower levels. The model will differ per application but we will use the following one:
 
-<img class="responsive-img" src="../../../images/hgrid-database.jpg" />
+<img class="responsive-img" src="../../../images/hgrid-database.jpg" alt="hgrid-database" />
 
 What we first need is the `key` of our table to determine from where to get the data for the desired grid, the primary key of the parent row and its unique ID.
 

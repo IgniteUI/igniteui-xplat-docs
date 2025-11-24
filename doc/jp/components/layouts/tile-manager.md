@@ -380,7 +380,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 - `maximize` ボタンを使用すると、タイルのコンテンツがタイル マネージャーの幅全体に拡大され、コンテンツの表示範囲が広がります。
 - `fullscreen` ボタンを使用すると、タイルがユーザーのブラウザでフルスクリーン モードで開きます。
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="" />
 
 2 つのボタンのうち 1 つだけを表示する場合は、`DisableMaximize` または `DisableFullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
 

@@ -177,7 +177,7 @@ Of course, you can rewrite the entire application from Blazor WebAssembly to Bla
 
 The assembly file (.dll) provided by the Infragistics Blazor Excel library is approximately 5 MB in size. If the content size increases at the first launch, it may lead to a slowdown in the content loading time and the initial speed time until the Blazor WebAssembly application starts operating.
 
-<img src="../images/general/lazy-loading-of-assembly.png" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="" />
 
 That’s why we suggest using the "delayed loading of assembly" technique (in .NET 5 or following versions). You will be able to improve the Blazor WebAssembly application launch performance by waiting for the application assembly to load until it is needed. This is called "lazy loading".
 
@@ -232,7 +232,7 @@ In this sample application, the assembly file of the Infragistics Blazor Excel l
 
 Now, if you try running this sample application as it is, you can see that the assembly file of the Infragistics Blazor Excel library is not loaded as expected when the page is displayed for the first time. Also, the content size is reduced by about 5MB.
 
-<img src="../images/general/lazy-loading-of-assembly.png" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="" />
 
 However, when clicking the download button, we get a "System.IO.FileNotFoundException: Could not load file or assembly" exception.
 

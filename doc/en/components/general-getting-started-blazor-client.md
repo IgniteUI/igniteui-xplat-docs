@@ -13,15 +13,15 @@ The steps below describe how to create a new Blazor WebAssembly project. If you 
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor WebAssembly App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-client.jpg" />
+<img src="../images/general/new-blazor-project-client.jpg" alt="" />
 
 Provide a project name and location, and click **Next**
 
-<img src="../images/general/new-blazor-project-configure-client.jpg" />
+<img src="../images/general/new-blazor-project-configure-client.jpg" alt="" />
 
 Specify additional project options, and click **Create**
 
-<img src="../images/general/new-blazor-project-info-client.jpg" />
+<img src="../images/general/new-blazor-project-info-client.jpg" alt="" />
 
 ## Install Ignite UI for Blazor
 
@@ -107,4 +107,4 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="" />

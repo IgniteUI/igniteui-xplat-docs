@@ -117,7 +117,7 @@ The `Column` component exposes four `Input` properties to determine the location
 
 The result of the above configuration can be seen on the screenshot below:
 
-<img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
+<img src="../../../images/multi-row-layout-1.png" alt="multi-row-layout" style="width: 100%"/>
 
 > [!Note]
 > `RowStart` and `ColStart` properties must be set for each `Column` into a `ColumnLayout`. The `ColumnLayout` component is not verifying if the layout is correct and not throwing errors or warnings about that. The developers must make sure that the declaration of their layout is correct and complete, otherwise they may end up in broken layout with misalignments, overlaps and browser inconsistencies.
