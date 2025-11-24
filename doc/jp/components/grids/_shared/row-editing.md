@@ -745,38 +745,38 @@ $button-theme: button-theme(
 
 - グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
 
-* 行の選択
-* 行の展開/縮小
-* 行の編集
-* 行のピン固定
+- 行の選択
+- 行の展開/縮小
+- 行の編集
+- 行のピン固定
 
 ## API リファレンス
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `EndEdit`
-* `Field`
-* `Editable`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `EndEdit`
+- `Field`
+- `Editable`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
+- [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} トランザクション](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 編集](editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
@@ -785,5 +785,5 @@ $button-theme: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

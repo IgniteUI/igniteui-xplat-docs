@@ -181,7 +181,7 @@ _language: ja
 
 列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
 
-*   `Filter` - 単一の列または複数の列をフィルターします。
+-   `Filter` - 単一の列または複数の列をフィルターします。
 
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
    - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
@@ -268,7 +268,7 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
-* `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
+- `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
 
 ```typescript
 // Filter all cells for a value which contains `myproduct`
@@ -281,7 +281,7 @@ this.grid.filteringLogic = FilteringLogic.Or;
 this.grid.filterGlobal('myproduct', IgcStringFilteringOperand.instance().condition('contains'), false);
 ```
 
-* `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
+- `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
 
 <!-- Angular -->
 ```typescript
@@ -989,41 +989,41 @@ $custom-input-group: input-group-theme(
 <!-- ComponentStart: Grid, TreeGrid -->
 
 ### 6.1.0 Volume 0 の重大な変更
-* `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
-* `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
-* `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
+- `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
+- `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
+- `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
   * `Name` - フィルターする列の名前。
   * `Value` - フィルタリングに使用する値。
   * `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
   * `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
-* `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
-* フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
-* `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
-* カスタム フィルターは、`FilteringOperation` 型の処理で `FilteringOperand` の `Operations` プロパティを生成して {ComponentTitle} の列で使用できます。
+- `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
+- フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
+- `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
+- カスタム フィルターは、`FilteringOperation` 型の処理で `FilteringOperand` の `Operations` プロパティを生成して {ComponentTitle} の列で使用できます。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName}  **GitHub (英語)**]({GithubLink})
 

@@ -52,23 +52,23 @@ Change the selection to see summaries of the currently selected range.
 
 ## API References
 
-* `GridComponent`
-* `Cell`
+- `GridComponent`
+- `Cell`
 
 ## Additional Resources
 <div class="divider--half"></div>
 
-* [Grid overview](../data-grid.md)
-* [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
-* [Row Selection](row-selection.md)
-* [Cell Selection](cell-selection.md)
-* [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
-* [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
-* [Summaries](summaries.md)
-* [Paging](paging.md)
+- [Grid overview](../data-grid.md)
+- [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
+- [Row Selection](row-selection.md)
+- [Cell Selection](cell-selection.md)
+- [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
+- [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
+- [Summaries](summaries.md)
+- [Paging](paging.md)
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

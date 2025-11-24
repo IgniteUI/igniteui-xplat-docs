@@ -474,11 +474,11 @@ constructor() {
 
 ```tsx
 /**
-* Decimal representation options, specified by a string in the following format:
-* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
-* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
-* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
-* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+- Decimal representation options, specified by a string in the following format:
+- `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+- `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+- `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+- `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
 const formatOptions : IgrColumnPipeArgs = {
     digitsInfo: "2.2-3"
@@ -618,15 +618,15 @@ public init(column: IgxColumnComponent) {
 
 ## API References
 
-* `Cell`
-* `Column`
-* `PipeArgs`
-* `{ComponentName}`
-* `Locale`
-* `DataType`
+- `Cell`
+- `Column`
+- `PipeArgs`
+- `{ComponentName}`
+- `Locale`
+- `DataType`
 
 ## Additional Resources
 
-* For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
-* [Editing](editing.md)
-* [Summaries](summaries.md)
+- For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
+- [Editing](editing.md)
+- [Summaries](summaries.md)

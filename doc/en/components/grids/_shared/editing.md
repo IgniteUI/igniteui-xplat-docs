@@ -172,27 +172,27 @@ function onSorting(args: IgrSortingEventArgs) {
 
 ## API References
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `DatePicker`
-* `Checkbox`
-* `Overlay`
+- `DatePicker`
+- `Checkbox`
+- `Overlay`
 <!-- end: Angular -->
 
 ## Additional Resources
 
 <!-- Angular, WebComponents, React -->
 
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [Searching](search.md) -->
@@ -203,16 +203,16 @@ function onSorting(args: IgrSortingEventArgs) {
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 
 <!-- ComponentEnd: Grid -->
 

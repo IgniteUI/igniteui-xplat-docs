@@ -640,31 +640,31 @@ public cellStyles = {
 
 ## API References
 
-* `BaseTransactionService`
-* `{ComponentName}`
-* `Column`
+- `BaseTransactionService`
+- `{ComponentName}`
+- `Column`
 
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Transactions](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Transactions](batch-editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
@@ -673,5 +673,5 @@ public cellStyles = {
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

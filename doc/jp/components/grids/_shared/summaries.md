@@ -1471,30 +1471,30 @@ $custom-theme: grid-summary-theme(
 
 ## API リファレンス
 
-* `SummaryOperand`
-* `NumberSummaryOperand`
-* `DateSummaryOperand`
-* `ColumnGroup`
-* `Column`
+- `SummaryOperand`
+- `NumberSummaryOperand`
+- `DateSummaryOperand`
+- `ColumnGroup`
+- `Column`
 
 ## その他のリソース
 
 <!-- Angular -->
 
 
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 <!-- ComponentStart: Grid -->
 
-* [選択に基づいた集計](selection-based-aggregates.md)
+- [選択に基づいた集計](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
 
@@ -1503,20 +1503,20 @@ $custom-theme: grid-summary-theme(
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

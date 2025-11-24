@@ -22,8 +22,8 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 ## 前提条件
 
-* .NET SDK 7 以降
-* Visual Studio 2022 17.4 以降および次のワークロード:
+- .NET SDK 7 以降
+- Visual Studio 2022 17.4 以降および次のワークロード:
     - .NET によるモバイル開発
     - ASP.NET と Web 開発
 

@@ -416,42 +416,42 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ## API リファレンス
 
 <!-- ComponentStart: Grid -->
-* `Transactions`
-* `TransactionService`
+- `Transactions`
+- `TransactionService`
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-* `HierarchicalTransactionService`
-* `RowEditable`
+- `HierarchicalTransactionService`
+- `RowEditable`
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* `HierarchicalTransactionServiceFactory`
+- `HierarchicalTransactionServiceFactory`
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+- [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
 
 <!-- end: Blazor -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

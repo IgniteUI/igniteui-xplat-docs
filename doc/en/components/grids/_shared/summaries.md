@@ -1469,30 +1469,30 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 
-* `SummaryOperand`
-* `NumberSummaryOperand`
-* `DateSummaryOperand`
-* `ColumnGroup`
-* `Column`
+- `SummaryOperand`
+- `NumberSummaryOperand`
+- `DateSummaryOperand`
+- `ColumnGroup`
+- `Column`
 
 ## Additional Resources
 
 <!-- Angular -->
 
 
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 <!-- ComponentStart: Grid -->
 
-* [Selection-based Aggregates](selection-based-aggregates.md)
+- [Selection-based Aggregates](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
 
@@ -1501,20 +1501,20 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

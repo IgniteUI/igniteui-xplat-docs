@@ -733,7 +733,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## Pinning Limitations
 
-*   Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
+-   Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -890,22 +890,22 @@ Then set the related CSS properties to this class:
 <!-- end: WebComponents, Blazor -->
 
 ## API References
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## Additional Resources
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

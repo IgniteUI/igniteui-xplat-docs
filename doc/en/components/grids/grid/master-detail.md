@@ -144,6 +144,6 @@ Additional API methods for controlling the expansion states are also exposed:
 
 ## API References
 
-* `Grid`
-* `Column`
-* `HierarchicalGridRow`
+- `Grid`
+- `Column`
+- `HierarchicalGridRow`

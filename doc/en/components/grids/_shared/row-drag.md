@@ -1468,13 +1468,13 @@ Currently, there are no known limitations for the `RowDraggable`.
 
 ## API References
 
-* `RowDraggable`
-* `RowDragStart`
-* `RowDragEnd`
-* `{ComponentName}`
+- `RowDraggable`
+- `RowDragStart`
+- `RowDragEnd`
+- `{ComponentName}`
 
 ## Additional Resources
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -11,14 +11,14 @@ In this quick how-to article, we will explain how to use the marker display cust
 
 Contents of this article:
 
-* [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
-* [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
-* [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
-* [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
-* [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
-* [Conclusion – why Blazor is such a great framework](#in-conclusion)
+- [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
+- [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
+- [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
+- [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
+- [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
+- [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
+- [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
+- [Conclusion – why Blazor is such a great framework](#in-conclusion)
 
 Let’s get started with the customization of the marker display in Blazor Charts and Graphs.
 
@@ -30,8 +30,8 @@ Keep in mind that prior knowledge about drawing on JavaScript and HTML Canvas is
 
 First, the type of sample data to be bound is the following record type. In addition to having properties such as XValue and YValue as the values ​​for the X-axis and Y-axis in the [Blazor Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview), which are generally used in [Blazor Scatter chart type](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart), we will also add:
 
-* a "Double" type Volume property
-* a "Color" property
+- a "Double" type Volume property
+- a "Color" property
 
 The Volume property value of the Blazor Chart will be used as the size of the marker and the Color property value as the fill color of the marker.
 

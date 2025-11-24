@@ -268,11 +268,11 @@ const nextConfig = {
 
 ## その他のリソース
 
-* [Ignite UI for React](../components/general-getting-started.md)
-* [Grid の概要](../components/grids/data-grid.md)
-* [Next.js ドキュメント](https://nextjs.org/docs)
+- [Ignite UI for React](../components/general-getting-started.md)
+- [Grid の概要](../components/grids/data-grid.md)
+- [Next.js ドキュメント](https://nextjs.org/docs)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

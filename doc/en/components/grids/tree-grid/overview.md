@@ -442,14 +442,14 @@ Then set the related CSS properties for that class:
 
 ## API References
 
-* `TreeGrid`
-* `Column`
-* `GridToolbar`
-* `TreeGridRecord`
+- `TreeGrid`
+- `Column`
+- `GridToolbar`
+- `TreeGridRecord`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

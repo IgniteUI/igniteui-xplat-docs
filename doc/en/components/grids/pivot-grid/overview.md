@@ -703,11 +703,11 @@ When overriding the `PivotKeys` in Blazor, currently you will need to define all
 
 ## API References
 
-* `PivotConfiguration`
-* `PivotGrid`
-* `PivotDataSelector`
-* `PivotDateDimension`
-* `Column`
+- `PivotConfiguration`
+- `PivotGrid`
+- `PivotDataSelector`
+- `PivotDateDimension`
+- `Column`
 
 <!-- ## Additional Resources -->
 
@@ -719,7 +719,7 @@ When overriding the `PivotKeys` in Blazor, currently you will need to define all
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 
 

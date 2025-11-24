@@ -17,11 +17,11 @@ _language: ja
 
 現在、`{ComponentName}` には以下のタブ位置が導入されています。
 
-* **グループ化またはツールバーの領域** (有効な場合)
-* **{ComponentTitle} ヘッダー**
-* **{ComponentTitle} 本体**
-* **列の集計** (有効な場合)
-* **{ComponentTitle} ページネーター** (有効な場合)
+- **グループ化またはツールバーの領域** (有効な場合)
+- **{ComponentTitle} ヘッダー**
+- **{ComponentTitle} 本体**
+- **列の集計** (有効な場合)
+- **{ComponentTitle} ページネーター** (有効な場合)
 
 > [!Note]
 > この変更のため、<kbd>TAB</kbd> と <kbd>SHIFT</kbd> + <kbd>TAB</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
@@ -333,25 +333,25 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 
 ## API リファレンス
 
-* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+- [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+- [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

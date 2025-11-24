@@ -706,11 +706,11 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 ## API リファレンス
 
-* `PivotConfiguration`
-* `PivotGrid`
-* `PivotDataSelector`
-* `PivotDateDimension`
-* `Column`
+- `PivotConfiguration`
+- `PivotGrid`
+- `PivotDataSelector`
+- `PivotDateDimension`
+- `Column`
 
 <!-- ## その他のリソース -->
 
@@ -721,7 +721,7 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 
 

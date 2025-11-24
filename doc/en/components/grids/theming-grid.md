@@ -25,38 +25,38 @@ In addition to predefined themes and palettes, you can further customize the loo
 
 <!-- Angular -->
 
-* [Grid Sizing](grid/sizing.md)
-* [Virtualization and Performance](grid/virtualization.md)
-* [Paging](grid/paging.md)
-* [Filtering](grid/filtering.md)
-* [Sorting](grid/sorting.md)
-* [Summaries](grid/summaries.md)
-* [Column Moving](grid/column-moving.md)
-* [Column Pinning](grid/column-pinning.md)
-* [Column Resizing](grid/column-resizing.md)
-* [Selection](grid/selection.md)
-* [Column Data Types](grid/column-types.md#default-template)
+- [Grid Sizing](grid/sizing.md)
+- [Virtualization and Performance](grid/virtualization.md)
+- [Paging](grid/paging.md)
+- [Filtering](grid/filtering.md)
+- [Sorting](grid/sorting.md)
+- [Summaries](grid/summaries.md)
+- [Column Moving](grid/column-moving.md)
+- [Column Pinning](grid/column-pinning.md)
+- [Column Resizing](grid/column-resizing.md)
+- [Selection](grid/selection.md)
+- [Column Data Types](grid/column-types.md#default-template)
 <!-- * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md) -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-* [Grid Sizing](grid/sizing.md)
-* [Virtualization and Performance](grid/virtualization.md)
-* [Paging](grid/paging.md)
-* [Filtering](grid/filtering.md)
-* [Sorting](grid/sorting.md)
-* [Summaries](grid/summaries.md)
-* [Column Moving](grid/column-moving.md)
-* [Column Pinning](grid/column-pinning.md)
-* [Column Resizing](grid/column-resizing.md)
-* [Selection](grid/selection.md)
-* [Column Data Types](grid/column-types.md#default-template)
+- [Grid Sizing](grid/sizing.md)
+- [Virtualization and Performance](grid/virtualization.md)
+- [Paging](grid/paging.md)
+- [Filtering](grid/filtering.md)
+- [Sorting](grid/sorting.md)
+- [Summaries](grid/summaries.md)
+- [Column Moving](grid/column-moving.md)
+- [Column Pinning](grid/column-pinning.md)
+- [Column Resizing](grid/column-resizing.md)
+- [Selection](grid/selection.md)
+- [Column Data Types](grid/column-types.md#default-template)
 
 <!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

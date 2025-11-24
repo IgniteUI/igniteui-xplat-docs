@@ -852,27 +852,27 @@ $custom-theme: grid-theme(
 
 ## API リファレンス
 
-* `HierarchicalGrid`
-* `RowIsland`
-* `Grid`
-* `Column`
-* `Cell`
+- `HierarchicalGrid`
+- `RowIsland`
+- `Grid`
+- `Column`
+- `Cell`
 
 <!-- TODO: uncomment when all of the topics are ready -->
 <!-- ## その他のリソース
 
-* [グリッドのサイズ設定](sizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md) -->
+- [グリッドのサイズ設定](sizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

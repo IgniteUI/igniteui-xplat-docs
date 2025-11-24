@@ -851,27 +851,27 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 
 ## API References
 
-* `HierarchicalGrid`
-* `RowIsland`
-* `Grid`
-* `Column`
-* `Cell`
+- `HierarchicalGrid`
+- `RowIsland`
+- `Grid`
+- `Column`
+- `Cell`
 
 <!-- TODO: uncomment when all of the topics are ready -->
 <!-- ## Additional Resources
 
-* [Grid Sizing](sizing.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md) -->
+- [Grid Sizing](sizing.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md) -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

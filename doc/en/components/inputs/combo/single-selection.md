@@ -114,9 +114,9 @@ All other features will behave the same as in a non-single selection ComboBox co
 
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

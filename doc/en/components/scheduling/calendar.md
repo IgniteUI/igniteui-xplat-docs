@@ -219,12 +219,12 @@ If everything went well, we should now have a Calendar with customized display, 
 In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
 
 These are the available options for the `Type` property:
-*  `After` - disables the dates after the first date in the `DateRange`
-*  `Before` - disables the dates before the first date in the `DateRange`
-*  `Between` - disables the dates between the first and the second date in the `DateRange`
-*  `Specific` - disables the dates specified in the `DateRange` array
-*  `Weekdays` - disables all weekdays
-*  `Weekends` - disables all weekends
+-  `After` - disables the dates after the first date in the `DateRange`
+-  `Before` - disables the dates before the first date in the `DateRange`
+-  `Between` - disables the dates between the first and the second date in the `DateRange`
+-  `Specific` - disables the dates specified in the `DateRange` array
+-  `Weekdays` - disables all weekdays
+-  `Weekends` - disables all weekends
 
 Let's create a sample that is disabling the dates between the 3rd and the 8th of the current month:
 
@@ -487,5 +487,5 @@ The following sample demonstrates the above CSS configuration:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

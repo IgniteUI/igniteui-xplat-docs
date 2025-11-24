@@ -236,11 +236,11 @@ Here's a breakdown of all icons as used by component:
 | **more_vert** | Used by the popup menu.  |
 
 ## API References
-* `Grid`
+- `Grid`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

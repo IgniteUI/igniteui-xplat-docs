@@ -314,10 +314,10 @@ In addition to its configurable properties, the `Tooltip` also exposes three met
 
 The `Tooltip` is built with accessibility in mind and includes the following ARIA attributes:
 
-* `role` - When the tooltip is in its default behavior, `role="tooltip"` is applied. If the `Sticky` property is enabled, the role changes to `status`.
-* `inert` - Dynamically toggled based on visibility. When the tooltip is hidden, it becomes inert.
-* `aria-atomic` - Set to true, ensuring that the entire tooltip content is announced when it changes.
-* `aria-live` - Set to polite, indicating to screen readers that updates should be announced only when the user is idle.
+- `role` - When the tooltip is in its default behavior, `role="tooltip"` is applied. If the `Sticky` property is enabled, the role changes to `status`.
+- `inert` - Dynamically toggled based on visibility. When the tooltip is hidden, it becomes inert.
+- `aria-atomic` - Set to true, ensuring that the entire tooltip content is announced when it changes.
+- `aria-live` - Set to polite, indicating to screen readers that updates should be announced only when the user is idle.
 
 ## Styling
 
@@ -359,5 +359,5 @@ igc-tooltip::part(bottom) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

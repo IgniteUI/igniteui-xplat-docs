@@ -1683,30 +1683,30 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+- Row Selection
+- Row Expand/collapse
+- Row Editing
+- Row Pinning
 
 ## API References
 
-* `Paginator`
-* `{ComponentName}`
+- `Paginator`
+- `{ComponentName}`
 
 ## Additional Resources
 <!-- ComponentStart: Grid -->
-* [Paging](paging.md)
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Paging](paging.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

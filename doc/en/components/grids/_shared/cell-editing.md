@@ -544,7 +544,7 @@ useEffect(() => {
 
 <!-- end: React -->
 
-* Constant edit mode
+- Constant edit mode
 
 <!-- Angular, WebComponents -->
 
@@ -591,7 +591,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> navigation
+- <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> navigation
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -1422,29 +1422,29 @@ In addition to the steps above, we can also style the controls that are used for
 
 ## API References
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `InputDirective`
+- `InputDirective`
 <!-- end:Angular -->
 
-* `DatePicker`
+- `DatePicker`
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
 
 
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
@@ -1454,15 +1454,15 @@ In addition to the steps above, we can also style the controls that are used for
 <!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

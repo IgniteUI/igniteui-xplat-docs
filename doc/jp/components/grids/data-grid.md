@@ -1991,28 +1991,28 @@ platformBrowserDynamic()
 
 ## API リファレンス
 
-* `Grid`
-* `Column`
-* `Cell`
-* `CellTemplateContext`
-* `GridRow`
-* `GridToolbar`
-* `Paginator`
+- `Grid`
+- `Column`
+- `Cell`
+- `CellTemplateContext`
+- `GridRow`
+- `GridToolbar`
+- `Paginator`
 
 <!-- Angular -->
 
 ## テーマの依存関係
 
-* **Icon Theme**
-* **InputGroup Theme**
-* **Chip Theme**
-* **Ripple Theme**
-* **Button Theme**
-* **Overlay Theme**
-* **DropDown Theme**
-* **Calendar Theme**
-* **SnackBar Theme**
-* **Badge Theme**
+- **Icon Theme**
+- **InputGroup Theme**
+- **Chip Theme**
+- **Ripple Theme**
+- **Button Theme**
+- **Overlay Theme**
+- **DropDown Theme**
+- **Calendar Theme**
+- **SnackBar Theme**
+- **Badge Theme**
 
 ## チュートリアル ビデオ
 
@@ -2026,38 +2026,38 @@ platformBrowserDynamic()
 
 <!-- Angular -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 <!-- * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md) -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 
 <!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

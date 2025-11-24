@@ -225,18 +225,18 @@ In the sample below you can try out the different column properties and how they
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
 ## Additional Resources
 
-* [Data Binding](binding.md)
-* [Sorting](sorting.md)
-* [Filtering](filtering.md)
-* [Theming & Styling](theming.md)
+- [Data Binding](binding.md)
+- [Sorting](sorting.md)
+- [Filtering](filtering.md)
+- [Theming & Styling](theming.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})

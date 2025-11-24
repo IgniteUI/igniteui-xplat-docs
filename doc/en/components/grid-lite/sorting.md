@@ -440,16 +440,16 @@ The following example mocks remote sorting operation, reflecting the REST endpoi
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
 ## Additional Resources
 
-* [Column Configuration](column-configuration.md)
-* [Filtering](filtering.md)
+- [Column Configuration](column-configuration.md)
+- [Filtering](filtering.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})

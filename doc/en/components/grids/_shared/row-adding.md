@@ -666,22 +666,22 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 
 ## API References
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `RowEditCancel`
-* `EndEdit`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `RowEditCancel`
+- `EndEdit`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## Additional Resources
 
 
-* [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Editing](editing.md)
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

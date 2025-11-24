@@ -645,8 +645,8 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 
 ## Additional Resources
 
-* `Tile`
-* `TileManager`
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- `Tile`
+- `TileManager`
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

@@ -744,38 +744,38 @@ Then set the related CSS properties for that class:
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+- Row Selection
+- Row Expand/collapse
+- Row Editing
+- Row Pinning
 
 ## API References
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `EndEdit`
-* `Field`
-* `Editable`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `EndEdit`
+- `Field`
+- `Editable`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Transactions](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Editing](editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
@@ -784,5 +784,5 @@ Then set the related CSS properties for that class:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

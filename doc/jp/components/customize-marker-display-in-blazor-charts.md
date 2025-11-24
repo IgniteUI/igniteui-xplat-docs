@@ -43,8 +43,8 @@ public record SampleDataType (
 
 [Blazor チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview)の[散布図](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart)で一般的に使われるであろう、X 軸・Y 軸用の値として XValue、YValue といったプロパティを持つことに加えて、
 
-* double 型の Volume プロパティと、
-* System.Drawing.Color 型の Color プロパティを設けておきます。
+- double 型の Volume プロパティと、
+- System.Drawing.Color 型の Color プロパティを設けておきます。
 
 この Volume プロパティ値をマーカーの大きさとして、Color プロパティ値をマーカーの塗りつぶし色として、マーカーの表示に用いることとします。
 

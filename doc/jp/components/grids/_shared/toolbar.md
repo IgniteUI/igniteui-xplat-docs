@@ -1438,22 +1438,22 @@ $dark-input-group-theme: input-group-theme(
 
 以下は、Grid Toolbar サービスのその他の API です。
 
-* `GridToolbarAdvancedFiltering`
-* `GridToolbar`
-* `GridToolbarExporter`
-* `GridToolbarHiding`
-* `GridToolbarPinning`
-* `GridToolbarTitle`
+- `GridToolbarAdvancedFiltering`
+- `GridToolbar`
+- `GridToolbarExporter`
+- `GridToolbarHiding`
+- `GridToolbarPinning`
+- `GridToolbarTitle`
 
 `{ComponentName}` イベント:
 
-* `ToolbarExporting`
+- `ToolbarExporting`
 
 <!-- Angular -->
 
 スタイル:
 
-* `{ComponentName}` スタイル
+- `{ComponentName}` スタイル
 
 <!-- end: Angular -->
 
@@ -1461,5 +1461,5 @@ $dark-input-group-theme: input-group-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

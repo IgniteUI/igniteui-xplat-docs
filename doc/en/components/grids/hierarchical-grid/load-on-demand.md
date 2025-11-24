@@ -875,14 +875,14 @@ igRegisterScript("OnGridCreated", (args) => {
 
 ## API References
 
-* `HierarchicalGrid`
-* `RowIsland`
+- `HierarchicalGrid`
+- `RowIsland`
 
 ## Additional Resources
 
-* [Hierarchical Grid Component](overview.md)
+- [Hierarchical Grid Component](overview.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

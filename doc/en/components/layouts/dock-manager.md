@@ -118,10 +118,10 @@ To load the content of the panes, the Dock Manager uses [slots](https://develope
 ```
 
 The Dock Manager defines several pane types:
-* `ContentPane`
-* `SplitPane`
-* `TabGroupPane`
-* `DocumentHost`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`
+- `DocumentHost`
 
 Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane.
 
@@ -130,13 +130,13 @@ Each type of pane has a `Size` property. Depending on the parent orientation the
  <!-- end: WebComponents -->
 
 The end-user can perform the following actions to customize the layout at runtime:
-* Pin/unpin a pane
-* Resize a pane
-* Close a pane
-* Drag a pane to make it float
-* Move a floating pane
-* Dock a floating pane
-* Maximize a pane
+- Pin/unpin a pane
+- Resize a pane
+- Close a pane
+- Drag a pane to make it float
+- Move a floating pane
+- Dock a floating pane
+- Maximize a pane
 
 All of these are reflected in the `Layout` property of the Dock Manager.
 

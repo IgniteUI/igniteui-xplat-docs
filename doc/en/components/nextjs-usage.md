@@ -267,11 +267,11 @@ const nextConfig = {
 
 ## Additional Resources
 
-* [Ignite UI for React](../components/general-getting-started.md)
-* [Grid Overview](../components/grids/data-grid.md)
-* [Next.js Documentation](https://nextjs.org/docs)
+- [Ignite UI for React](../components/general-getting-started.md)
+- [Grid Overview](../components/grids/data-grid.md)
+- [Next.js Documentation](https://nextjs.org/docs)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

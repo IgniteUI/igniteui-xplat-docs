@@ -641,31 +641,31 @@ public cellStyles = {
 
 ## API リファレンス
 
-* `BaseTransactionService`
-* `{ComponentName}`
-* `Column`
+- `BaseTransactionService`
+- `{ComponentName}`
+- `Column`
 
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+- [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} トランザクション](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} トランザクション](batch-editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
@@ -674,5 +674,5 @@ public cellStyles = {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

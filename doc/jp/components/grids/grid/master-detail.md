@@ -144,6 +144,6 @@ const masterDetailTemplate = (args: IgrGridMasterDetailContext) => {
 
 ## API リファレンス
 
-* `Grid`
-* `Column`
-* `HierarchicalGridRow`
+- `Grid`
+- `Column`
+- `HierarchicalGridRow`

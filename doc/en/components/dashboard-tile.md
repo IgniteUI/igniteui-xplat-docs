@@ -113,12 +113,12 @@ builder.Services.AddIgniteUIBlazor(
 
 Depending on what you bind the Dashboard Tile's `DataSource` property to will determine which visualization you see by default, as the control will evaluate the data you bind and then choose a visualization from the {ProductName} toolset to show. The data visualization controls that are included to be shown in the Dashboard Tile are the following:
 
-* [{IgPrefix}CategoryChart](charts/chart-overview.md)
-* [{IgPrefix}DataChart](charts/chart-overview.md)
-* [{IgPrefix}DataPieChart](charts/types/data-pie-chart.md)
-* [{IgPrefix}GeographicMap](geo-map.md)
-* [{IgPrefix}Linear Gauge](linear-gauge.md)
-* [{IgPrefix}RadialGauge](radial-gauge.md)
+- [{IgPrefix}CategoryChart](charts/chart-overview.md)
+- [{IgPrefix}DataChart](charts/chart-overview.md)
+- [{IgPrefix}DataPieChart](charts/types/data-pie-chart.md)
+- [{IgPrefix}GeographicMap](geo-map.md)
+- [{IgPrefix}Linear Gauge](linear-gauge.md)
+- [{IgPrefix}RadialGauge](radial-gauge.md)
 
 The data visualization that is chosen by default is mainly dependent on the schema and the count of the `DataSource` that you have bound. For example, if you bind a single numeric value, you will get a `XamRadialGauge`, but if you bind a collection of value-label pairs that are easy to distinguish from each other, you will likely get a `XamDataPieChart`. If you bind an `DataSource` that has more value paths, you will receive a `XamDataChart` with multiple column series or line series, depending mainly on the count of the collection bound. You can also bind to a `ShapeDataSource` or data the appears to contain geographic points to receive a `XamGeographicMap`.
 
@@ -160,5 +160,5 @@ This demo demonstrates dashboard tile integration with the {Platform} Geographic
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

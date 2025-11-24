@@ -1101,57 +1101,57 @@ In this article we learned how to use the built-in column hiding UI in the `{Com
 
 Additional components and/or directives with relative APIs that were used:
 
-* `ColumnActionsComponent`
+- `ColumnActionsComponent`
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents, React -->
 In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar. The column hiding UI has a few more APIs to explore, which are listed below.
 
-* `ColumnActionsComponent`
+- `ColumnActionsComponent`
 
 Additional components with relative APIs that were used:
 
 <!-- end: Blazor, WebComponents, React -->
 
 `Column` properties:
-* `DisableHiding`
+- `DisableHiding`
 
 `GridToolbar` properties:
-* `showProgress`
+- `showProgress`
 
 <!-- Angular -->
 `GridToolbar` directives:
-* `TitleDirective`
-* `ActionsDirective`
+- `TitleDirective`
+- `ActionsDirective`
 <!-- end: Angular -->
 
 `GridToolbar` methods:
-* `GridToolbarHiding`
-* `GridToolbarActions`
-* `GridToolbarTitle`
+- `GridToolbarHiding`
+- `GridToolbarActions`
+- `GridToolbarTitle`
 
 `{ComponentName}` events:
-* `ColumnVisibilityChanged`
+- `ColumnVisibilityChanged`
 
 <!-- Angular -->
 Styles:
-* `{ComponentName}`
-* `Radio`
+- `{ComponentName}`
+- `Radio`
 <!-- end: Angular -->
 
 ## Additional Resources
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

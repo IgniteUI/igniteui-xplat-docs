@@ -545,7 +545,7 @@ useEffect(() => {
 
 <!-- end: React -->
 
-* 常時編集モード
+- 常時編集モード
 
 <!-- Angular, WebComponents -->
 
@@ -592,7 +592,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> ナビゲーション
+- <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> ナビゲーション
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -1423,29 +1423,29 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `InputDirective`
+- `InputDirective`
 <!-- end:Angular -->
 
-* `DatePicker`
+- `DatePicker`
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+- [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
 
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1455,15 +1455,15 @@ $custom-grid-theme: grid-theme(
 <!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

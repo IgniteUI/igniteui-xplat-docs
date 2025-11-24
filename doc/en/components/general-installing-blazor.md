@@ -10,9 +10,9 @@ mentionedTypes: []
 Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
 
 There are three ways to install Ignite UI for Blazor using NuGet:
-* [Using Visual Studio](#using-visual-studio)
-* [Using the .NET CLI](#using-the-net-cli)
-* [Using the Package Manager](#using-the-package-manager)
+- [Using Visual Studio](#using-visual-studio)
+- [Using the .NET CLI](#using-the-net-cli)
+- [Using the Package Manager](#using-the-package-manager)
 
 Licensed users should use the official licensed Ignite UI for Blazor NuGet packages provided on the [Infragistics Private NuGet Feed](./general-nuget-feed.md).
 

@@ -1135,31 +1135,31 @@ const editDone = (event: IgrGridEditEventArgs) => {
 
 ## API References
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Editing](editing.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Column Hiding](column-hiding.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+- [Virtualization and Performance](virtualization.md)
+- [Editing](editing.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Column Hiding](column-hiding.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 <!-- * [Toolbar](toolbar.md) -->
-* [Multi-column Headers](multi-column-headers.md)
-* [Size](size.md)
+- [Multi-column Headers](multi-column-headers.md)
+- [Size](size.md)
 <!-- ComponentEnd: Grid -->
 
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -443,14 +443,14 @@ const data = [
 
 ## API リファレンス
 
-* `TreeGrid`
-* `Column`
-* `GridToolbar`
-* `TreeGridRecord`
+- `TreeGrid`
+- `Column`
+- `GridToolbar`
+- `TreeGridRecord`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

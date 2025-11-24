@@ -856,24 +856,24 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `{ComponentName}`
-* `ColumnGroup`
+- `{ComponentName}`
+- `ColumnGroup`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Grid Overview](../data-grid.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Group by](groupby.md)
+- [Grid Overview](../data-grid.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Group by](groupby.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

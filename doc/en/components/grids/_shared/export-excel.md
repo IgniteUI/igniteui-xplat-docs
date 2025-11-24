@@ -256,13 +256,13 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 
 ## API References
 
-* `ExcelExporterService`
-* `ExcelExporterOptions` 
-* `{ComponentName}`
+- `ExcelExporterService`
+- `ExcelExporterOptions` 
+- `{ComponentName}`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

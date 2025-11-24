@@ -180,7 +180,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 
 You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
-*   `Filter` - filter a single column or a combination of columns.
+-   `Filter` - filter a single column or a combination of columns.
 
 There are five filtering operand classes exposed:
    - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
@@ -267,7 +267,7 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
-* `FilterGlobal` - clears all existing filters and applies the new filtering condition to all {ComponentTitle}'s columns.
+- `FilterGlobal` - clears all existing filters and applies the new filtering condition to all {ComponentTitle}'s columns.
 
 ```typescript
 // Filter all cells for a value which contains `myproduct`
@@ -280,7 +280,7 @@ this.grid.filteringLogic = FilteringLogic.Or;
 this.grid.filterGlobal('myproduct', IgcStringFilteringOperand.instance().condition('contains'), false);
 ```
 
-* `ClearFilter` - removes any applied filtering from the target column. If called with no arguments it will clear the filtering of all columns.
+- `ClearFilter` - removes any applied filtering from the target column. If called with no arguments it will clear the filtering of all columns.
 
 <!-- Angular -->
 ```typescript
@@ -989,41 +989,41 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- ComponentStart: Grid, TreeGrid -->
 
 ### Breaking Changes in 6.1.0
-* `{ComponentName}` `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
-* `filter_multiple` method is removed. Use `Filter` method and `FilteringExpressionsTree` property instead.
-* The `Filter` method has new signature. It now accepts the following parameters:
+- `{ComponentName}` `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
+- `filter_multiple` method is removed. Use `Filter` method and `FilteringExpressionsTree` property instead.
+- The `Filter` method has new signature. It now accepts the following parameters:
   * `Name` - the name of the column to be filtered.
   * `Value` - the value to be used for filtering.
   * `ConditionOrExpressionTree` (optional) - this parameter accepts object of type `FilteringOperation` or `FilteringExpressionsTree`. If only simple filtering is needed, a filtering operation could be passed as an argument. In case of advanced filtering, an expressions tree containing complex filtering logic could be passed as an argument.
   * `IgnoreCase` (optional) - whether the filtering is case sensitive or not.
-* `FilteringDone` event now have only one parameter of type `FilteringExpressionsTree` which contains the filtering state of the filtered column.
-* filtering operands: `FilteringExpression` condition property is no longer a direct reference to a filtering condition method, instead it's a reference to an `FilteringOperation`.
-* `ColumnComponent` now exposes a `Filters` property, which takes an `FilteringOperand` class reference.
-* Custom filters can be provided to the {ComponentTitle} columns by populating the `Operations` property of the `FilteringOperand` with operations of `FilteringOperation` type.
+- `FilteringDone` event now have only one parameter of type `FilteringExpressionsTree` which contains the filtering state of the filtered column.
+- filtering operands: `FilteringExpression` condition property is no longer a direct reference to a filtering condition method, instead it's a reference to an `FilteringOperation`.
+- `ColumnComponent` now exposes a `Filters` property, which takes an `FilteringOperand` class reference.
+- Custom filters can be provided to the {ComponentTitle} columns by populating the `Operations` property of the `FilteringOperand` with operations of `FilteringOperation` type.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
 ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName}  **GitHub**]({GithubLink})
 

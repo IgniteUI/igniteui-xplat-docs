@@ -1136,31 +1136,31 @@ const editDone = (event: IgrGridEditEventArgs) => {
 
 ## API リファレンス
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [編集](editing.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [列の非表示](column-hiding.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [編集](editing.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [列の非表示](column-hiding.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- * [Toolbar](toolbar.md) -->
-* [複数列ヘッダー](multi-column-headers.md)
-* [サイズ](size.md)
+- [複数列ヘッダー](multi-column-headers.md)
+- [サイズ](size.md)
 <!-- ComponentEnd: Grid -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

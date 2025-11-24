@@ -15,16 +15,16 @@ When you use the Infragistics Blazor Excel library on your [Blazor WebAssembly a
 This article will guide you through the easiest ways to implement Blazor Excel library and will demonstrate how it all works by creating a sample application.
 
 Topics to be covered:
-* What is Blazor?
-* Creating a Blazor WebAssembly sample app
-* Implementation steps and project structure overview
+- What is Blazor?
+- Creating a Blazor WebAssembly sample app
+- Implementation steps and project structure overview
     - Adding NuGet package
     - Adding a reference to a JavaScript file
     - Workbook.InProcessRuntime - setting static property
     - Reading and writing Excel files using the Workbook class
-* What to do if the process takes too long
-* How does "lazy loading of assembly" improve the initial app speed
-* Summary
+- What to do if the process takes too long
+- How does "lazy loading of assembly" improve the initial app speed
+- Summary
 
 ## Blazor in a Nutshell: Understanding WebAssembly and Blazor Server
 
@@ -153,9 +153,9 @@ As you can see, the entire processing of the Excel file is performed on the Web 
 
 Processing an Excel file may take a considerable amount of time depending on:
 
-* the content
-* the scale of the data you want to handle
-* the number of cells and so on
+- the content
+- the scale of the data you want to handle
+- the number of cells and so on
 
 In terms of Blazor WebAssembly applications where .NET code is processed in an interpreted manner, the processing performance is significantly degraded. Here are some useful ways to help you improve the processing speed in such cases.
 
@@ -273,7 +273,7 @@ Using the Infragistics Blazor Excel library on your Blazor WebAssembly applicati
 
 This article also included several options for improving the processing speed by:
 
-* Pausing the automatic calculation of formulas.
-* Using Ahead-Of-Time (AOT) compilation.
-* Running on the server side.
-* Specifying “lazy loading of assembly."
+- Pausing the automatic calculation of formulas.
+- Using Ahead-Of-Time (AOT) compilation.
+- Running on the server side.
+- Specifying “lazy loading of assembly."

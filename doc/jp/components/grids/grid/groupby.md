@@ -732,26 +732,26 @@ $custom-theme: grid-theme(
 
 ## API リファレン
 
-* `Grid`
-* `GroupByRecord`
-* `ISortingExpression`
-* `Column`
-* `IGroupByExpandState`
-* `Chip`
+- `Grid`
+- `GroupByRecord`
+- `ISortingExpression`
+- `Column`
+- `IGroupByExpandState`
+- `Chip`
 
 ## その他のリソース
 
-* [Grid の概要](../data-grid.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [集計](summaries.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [Grid の概要](../data-grid.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [集計](summaries.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

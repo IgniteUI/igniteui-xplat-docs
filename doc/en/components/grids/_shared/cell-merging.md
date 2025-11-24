@@ -288,21 +288,21 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 <!-- ComponentEnd: Grid -->
 
 ## API References
-* `{ComponentName}`
+- `{ComponentName}`
 
 ## Additional Resources
-* [Filtering](filtering.md)
-* [Excel Style Filtering](excel-style-filtering.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Filtering](filtering.md)
+- [Excel Style Filtering](excel-style-filtering.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

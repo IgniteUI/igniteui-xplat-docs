@@ -321,16 +321,16 @@ igc-list-item::part(end) {
 
 In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
-* `List`
-* `ListHeader`
-* `ListItem`
+- `List`
+- `ListHeader`
+- `ListItem`
 
 Additional components that were used:
 
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
+- `Avatar`
+- `Button`
+- `RadioGroup`
+- `Radio`
 
 <!-- end: WebComponents -->
 
@@ -339,6 +339,6 @@ Additional components that were used:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

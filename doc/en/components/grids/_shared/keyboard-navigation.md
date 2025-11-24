@@ -16,11 +16,11 @@ The tabulations of the `{ComponentName}` has been reduced so that the navigation
 
 Currently, the `{ComponentName}` introduces the following tab stops:
 
-* **GroupBy or Toolbar area** (if enabled).
-* **{ComponentTitle} header**.
-* **{ComponentTitle} body**.
-* **Column summaries** (if enabled).
-* **{ComponentTitle} paginator** (if enabled).
+- **GroupBy or Toolbar area** (if enabled).
+- **{ComponentTitle} header**.
+- **{ComponentTitle} body**.
+- **Column summaries** (if enabled).
+- **{ComponentTitle} paginator** (if enabled).
 
 > [!Note]
 > Due to this change, navigating between the cells with <kbd>TAB</kbd> and <kbd>SHIFT</kbd> + <kbd>TAB</kbd> is no longer supported in the `{ComponentName}`.
@@ -333,25 +333,25 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## API References
 
-* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+- [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+- [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

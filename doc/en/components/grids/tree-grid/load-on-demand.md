@@ -118,11 +118,11 @@ If you want to provide your own custom loading indicator, you may create an ng-t
 
 ## API References
 
-* `TreeGrid`
+- `TreeGrid`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -415,42 +415,42 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 ## API References
 
 <!-- ComponentStart: Grid -->
-* `Transactions`
-* `TransactionService`
+- `Transactions`
+- `TransactionService`
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-* `HierarchicalTransactionService`
-* `RowEditable`
+- `HierarchicalTransactionService`
+- `RowEditable`
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* `HierarchicalTransactionServiceFactory`
+- `HierarchicalTransactionServiceFactory`
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
 
 <!-- end: Blazor -->
 
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName}  **GitHub**]({GithubLink})

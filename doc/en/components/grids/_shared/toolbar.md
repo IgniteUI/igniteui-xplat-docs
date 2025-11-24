@@ -1440,21 +1440,21 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarAdvancedFiltering`
-* `GridToolbar`
-* `GridToolbarExporter`
-* `GridToolbarHiding`
-* `GridToolbarPinning`
-* `GridToolbarTitle`
+- `GridToolbarAdvancedFiltering`
+- `GridToolbar`
+- `GridToolbarExporter`
+- `GridToolbarHiding`
+- `GridToolbarPinning`
+- `GridToolbarTitle`
 
 `{ComponentName}` Events:
-* `ToolbarExporting`
+- `ToolbarExporting`
 
 <!-- Angular -->
 
 Styles:
 
-* `{ComponentName}` Styles
+- `{ComponentName}` Styles
 
 <!-- end: Angular -->
 
@@ -1462,5 +1462,5 @@ Styles:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

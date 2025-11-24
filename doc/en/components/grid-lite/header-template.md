@@ -50,17 +50,17 @@ import { html } from 'lit';
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
 ## Additional Resources
 
-* [Column Configuration](column-configuration.md)
-* [Cell Template](cell-template.md)
-* [Theming & Styling](theming.md)
+- [Column Configuration](column-configuration.md)
+- [Cell Template](cell-template.md)
+- [Theming & Styling](theming.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})

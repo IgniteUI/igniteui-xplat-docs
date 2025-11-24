@@ -738,7 +738,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## ピン固定の制限
 
-*   列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
+-   列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -895,22 +895,22 @@ Then set the related CSS properties to this class:
 <!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

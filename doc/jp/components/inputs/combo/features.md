@@ -357,10 +357,10 @@ required プロパティを設定することで、コンボボックスを必�
 <!-- WebComponents -->
 ## API リファレンス
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

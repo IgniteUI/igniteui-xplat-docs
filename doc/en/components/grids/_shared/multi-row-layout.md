@@ -21,10 +21,10 @@ The Multi-row Layout in the {ProductName} extends the rendering capabilities of 
 The declaration of Multi-row Layout is achieved through `ColumnLayout` component. Each `ColumnLayout` component should be considered as a block, containing one or multiple `Column` components. Some of the grid features work on block level (those are listed in the "Feature Integration" section below). For example the virtualization will use the block to determine the virtual chunks, so for better performance split the columns into more `ColumnLayout` blocks if the layout allows it. There should be no columns outside of those blocks and no usage of `ColumnGroup` when configuring a multi-row layout. Multi-row Layout is implemented on top of the [grid layout](https://www.w3.org/TR/css-grid-1/) specification and should conform to its requirements.
 
 The `Column` component exposes four `Input` properties to determine the location and span of each cell:
-* `ColStart` - column index from which the field is starting. This property is **mandatory**.
-* `RowStart` - row index from which the field is starting. This property is **mandatory**.
-* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to **colStart + 1**.
-* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to **rowStart + 1**.
+- `ColStart` - column index from which the field is starting. This property is **mandatory**.
+- `RowStart` - row index from which the field is starting. This property is **mandatory**.
+- `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to **colStart + 1**.
+- `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to **rowStart + 1**.
 
 
 ```html
@@ -143,15 +143,15 @@ The following features are currently **not** supported:
 
 ### Horizontal Navigation
 
-* <kbd>←</kbd> or <kbd>→</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>←</kbd> and <kbd>→</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
-* <kbd>CTRL</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) or <kbd>CTRL</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
+- <kbd>←</kbd> or <kbd>→</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>←</kbd> and <kbd>→</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
+- <kbd>CTRL</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) or <kbd>CTRL</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
 
 
 ### Vertical Navigation
 
-* <kbd>↑</kbd> or <kbd>↓</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
-* <kbd>CTRL</kbd> + <kbd>↑</kbd> or <kbd>CTRL</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
-* <kbd>CTRL</kbd> + <kbd>HOME</kbd> or <kbd>CTRL</kbd> + <kbd>END</kbd> - Navigate to the first row and focus first cell or navigate to the last row and focus the last cell.
+- <kbd>↑</kbd> or <kbd>↓</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> or <kbd>CTRL</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd> or <kbd>CTRL</kbd> + <kbd>END</kbd> - Navigate to the first row and focus first cell or navigate to the last row and focus the last cell.
 
 
 > [!Note]
@@ -182,14 +182,14 @@ The demo below adds additional navigation down/up via the <kbd>ENTER</kbd> and <
 
 Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
 
-* Set number of rows for the whole configuration. All layouts must have the same amount of rows.
-* Add/Remove column layouts by clicking the **Add Layout** chip or reordering them by dragging a layout chip left/right.
-* Set specific settings for each layout as number of columns and how wide they will be. The setting refer to the currently selected layout.
-* Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
-* Set columns in the preview by dragging a column chip in the place your will want it to be.
-* Add/Remove new columns by using the **Add Column** chip.
+- Set number of rows for the whole configuration. All layouts must have the same amount of rows.
+- Add/Remove column layouts by clicking the **Add Layout** chip or reordering them by dragging a layout chip left/right.
+- Set specific settings for each layout as number of columns and how wide they will be. The setting refer to the currently selected layout.
+- Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
+- Set columns in the preview by dragging a column chip in the place your will want it to be.
+- Add/Remove new columns by using the **Add Column** chip.
 
-* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [NgForOf](https://angular.io/api/common/NgForOf) for example.
+- Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [NgForOf](https://angular.io/api/common/NgForOf) for example.
 
 <!-- end: Angular -->
 
@@ -380,21 +380,21 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `{ComponentName}`
-* `ColumnLayout`
-* `Column`
+- `{ComponentName}`
+- `ColumnLayout`
+- `Column`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -667,22 +667,22 @@ igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
 
 ## API リファレンス
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `RowEditCancel`
-* `EndEdit`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `RowEditCancel`
+- `EndEdit`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## その他のリソース
 
 
-* [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 編集](editing.md)
 <!-- * [{ComponentTitle} トランザクション](batch-editing.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

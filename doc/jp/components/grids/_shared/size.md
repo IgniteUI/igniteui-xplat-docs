@@ -909,24 +909,24 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 <!-- ComponentStart: Grid -->
 ## その他のリソース
-* [仮想化とパフォーマンス](virtualization.md)
-* [編集](editing.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [編集](editing.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

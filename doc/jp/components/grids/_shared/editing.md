@@ -173,27 +173,27 @@ function onSorting(args: IgrSortingEventArgs) {
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `DatePicker`
-* `Checkbox`
-* `Overlay`
+- `DatePicker`
+- `Checkbox`
+- `Overlay`
 <!-- end: Angular -->
 
 ## その他のリソース
 
 <!-- Angular, WebComponents, React -->
 
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [検索](search.md) -->
@@ -204,16 +204,16 @@ function onSorting(args: IgrSortingEventArgs) {
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 
 <!-- ComponentEnd: Grid -->
 
