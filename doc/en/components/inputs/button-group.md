@@ -144,7 +144,7 @@ Use the `Alignment` property to set the orientation of the buttons in the button
 `sample="/inputs/button-group/alignment", height="220", alt="{Platform} Button Group Alignment Example"`
 
 ### Selection
-In order to configure the {ProductName} `ButtonGroup` selection, you could use its `Selection` property. This property accepts the following three modes: 
+In order to configure the {ProductName} `ButtonGroup` selection, you could use its `Selection` property. This property accepts the following three modes:
 - **single** - default selection mode of the button group. A single button can be selected/deselected by the user.
 - **single-required** - mimics a radio group behavior. Only one button can be selected and once initial selection is made, deselection is not possible through user interaction.
 - **multiple** - multiple buttons in the group can be selected and deselected.
@@ -219,7 +219,7 @@ The `--ig-size` CSS custom property can be used to control the size of the butto
 
 ## Styling
 
-The `ButtonGroup` component exposes `group` CSS part that allows us to style the button group container. 
+The `ButtonGroup` component exposes `group` CSS part that allows us to style the button group container.
 Also, the `ToggleButton`s provide `toggle` CSS part that could be used to style the button element.
 
 ```css

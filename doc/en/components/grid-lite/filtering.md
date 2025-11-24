@@ -220,7 +220,7 @@ grid.ClearFilter();
 <!-- Blazor -->
 The `FilterExpressions` property is very similar in behavior to the `Filter()` method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
-For example: 
+For example:
 ```razor
 private IgbGridLiteFilterExpression[] filterState = new[]
 {
@@ -359,7 +359,7 @@ public class DataPipelineParams
 ```razor
 grid.DataPipelineConfiguration = new DataPipelineConfiguration
 {
-    Filter = async (params) => 
+    Filter = async (params) =>
     {
         // Custom filter logic
         return await Task.FromResult(params.Data);

@@ -308,18 +308,18 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### {PackageCharts}
 
 - Added <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) layers:
-  - Data Annotation Band Layer   
-  - Data Annotation Line Layer   
-  - Data Annotation Rect Layer   
-  - Data Annotation Slice Layer  
-  - Data Annotation Strip Layer  
+  - Data Annotation Band Layer  
+  - Data Annotation Line Layer  
+  - Data Annotation Rect Layer  
+  - Data Annotation Slice Layer 
+  - Data Annotation Strip Layer 
 
 
-- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure.
 
-- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. 
+- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within.
 
-- <label>PREVIEW</label> The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. 
+- <label>PREVIEW</label> The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text.
 
 - <label>NEW</label> [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
@@ -355,16 +355,16 @@ _Breaking Changes_
 
 ### {PackageGrids}
 
-- **All Grids** 
+- **All Grids**
   - Allow applying initial filtering through `FilteringExpressionsTree` property
 
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-| 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced| 
-| 25602 | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error| 
-| 30319 | `IgcDataGrid` | Records are sorted despite no value changed| 
+| 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced|
+| 25602 | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+| 30319 | `IgcDataGrid` | Records are sorted despite no value changed|
 | 32598 | `IgcDataGrid` | Multi-selection is not working correctly
 | 36374 | `IgcInput` | A previous value was bound when a form was submitted on any touch device|
 
@@ -384,17 +384,17 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-| 30286 | `IgcDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble| 
-| 32906 | `IgcDataChart` | `IgcDataChart` is showing two xAxis on the top| 
-| 33605 | `IgcDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend| 
-| 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap| 
-| 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed| 
-| 34053 | `IgcRadialGauge` | The position of the scale label is shifted| 
-| 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images| 
-| 26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file| 
-| 34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file| 
-| 35495 | Excel Library | Pictures in cells are lost when a template file is loaded| 
-| 36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function| 
+| 30286 | `IgcDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+| 32906 | `IgcDataChart` | `IgcDataChart` is showing two xAxis on the top|
+| 33605 | `IgcDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
+| 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap|
+| 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
+| 34053 | `IgcRadialGauge` | The position of the scale label is shifted|
+| 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images|
+| 26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+| 34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+| 35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
+| 36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
 | 36379 | Excel Library |Colors with any alpha channel in an excel workbook fail to load|
 
 ## **{PackageVerChanges-24-2-JAN}**
@@ -403,7 +403,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 ### {PackageGrids}
 
-- **All Grids** 
+- **All Grids**
   - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
 
 ## **{PackageVerChanges-24-2-DEC}**
@@ -419,12 +419,12 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 ## **{PackageVerChanges-24-1-SEP}**
 
 ### {PackageCharts}
- 
+
 - New [Data Pie Chart](charts/types/data-pie-chart.md) - The `DataPieChart` is a new component that renders a pie chart. This component works similarly to the `CategoryChart`, in that it will automatically detect the properties on your underlying data model while allowing selection, highlighting, animation and legend support via the ItemLegend component.
 
 - New [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to plot slices similar to a pie chart, a type of data visualization where data points are represented as segments within a circular graph.
 
-- `Toolbar` 
+- `Toolbar`
 
     - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
@@ -439,7 +439,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 ### {PackageGrids}
 
-- **All Grids** 
+- **All Grids**
   - Added new `RowClick` event.
 - `PivotGrid`
   - Added `sortable` property for a `PivotDimension`.
@@ -451,7 +451,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 _Breaking Changes_:
-- **All Grids** 
+- **All Grids**
   - `RowIsland`
   - Removed `displayDensity` deprecated property.
   - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
@@ -482,12 +482,12 @@ _Breaking Changes_:
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
 - [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
-    
+   
 - [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to represent progress or subset of a collection. The appearance is shown as a fill-in of its backcolor up to a specific value either by a member on your data item or by supplying a new `HighlightedItemsSource`. Can be toggled via `HighlightedValuesDisplayMode` and styled via `FillBrushes`.
 
 - `Toolbar` - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice.
@@ -509,18 +509,18 @@ _Breaking Changes_:
 
 - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
 
-- `XamRadialChart` 
+- `XamRadialChart`
   - New Label Mode
         The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### {PackageGauges}
 
 - `XamRadialGauge`
-  - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
+  - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position. 
   - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
-  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
-- `XamLinearGauge`
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
+- `XamLinearGauge`
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamBulletGraph`
   - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
 
@@ -544,7 +544,7 @@ _Breaking Changes_:
 
 - <label>PREVIEW</label> [Toolbar](menus/toolbar.md)
   - Save tool action has been added to save the chart to an image via the clipboard.
-  - Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
+  - Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully.
   - Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
 
 

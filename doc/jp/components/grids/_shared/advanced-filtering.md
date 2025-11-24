@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName} 
+title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName}
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 _license: commercial

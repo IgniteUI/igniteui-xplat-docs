@@ -73,14 +73,14 @@ Then you should define the column template with the combo:
 
         return (
         <>
-            <IgrCombo 
-                data={countries} 
-                ref={getComboRef(comboId)} 
-                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }} 
-                placeholder="Choose Country..." 
-                valueKey="Country" 
-                displayKey="Country" 
-                singleSelect={true} 
+            <IgrCombo
+                data={countries}
+                ref={getComboRef(comboId)}
+                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }}
+                placeholder="Choose Country..."
+                valueKey="Country"
+                displayKey="Country"
+                singleSelect={true}
                 name={comboId}>
             </IgrCombo>
         </>
@@ -174,7 +174,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
         const cityCombo = getComboRef(`city_${rowId}`).current;
         const regions = regions;
         const newValue = event.detail.newValue[0];
-        
+       
         if (newValue === undefined) {
             regionCombo.deselect(regionCombo.value);
             regionCombo.disabled = true;

@@ -111,11 +111,11 @@ switchDisable.addEventListener("igcChange", () => {
 ```
 
 ```razor
-<IgbCombo 
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+<IgbCombo
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name"
     DisableFiltering="@DisableFiltering"
     CaseSensitiveIcon="@CaseSensitiveIcon"

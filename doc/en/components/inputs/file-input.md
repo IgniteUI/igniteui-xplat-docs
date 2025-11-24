@@ -64,8 +64,8 @@ The `FileInput` component offers a variety of properties that allow you to confi
 - `Placeholder` - Provides placeholder text displayed when no file is selected.
 
 ```html
-<igc-file-input 
-  label="Files Input" 
+<igc-file-input
+  label="Files Input"
   accept=".jpg, .png, .gif"
   placeholder="Files missing"
   required
@@ -73,9 +73,9 @@ The `FileInput` component offers a variety of properties that allow you to confi
 </igc-file-input>
 ```
 
-### Methods 
+### Methods
 
-In addition to its configurable properties, there are four useful methods inherited from the `Input` component that you can use in the `FileInput` component: 
+In addition to its configurable properties, there are four useful methods inherited from the `Input` component that you can use in the `FileInput` component:
 
 - `Focus` - Sets the focus on the file input element.
 - `Blur` - Removes the focus from the file input element.
@@ -86,7 +86,7 @@ In addition to its configurable properties, there are four useful methods inheri
 
 The `FileInput` component also exposes several slots that can be used to customize its appearance and behavior.
 
-- `prefix` & `suffix` - Allow you to insert content before or after the main input area. 
+- `prefix` & `suffix` - Allow you to insert content before or after the main input area.
 - `helper-text` - Displays a hint or instructional message below the input. Useful for providing additional guidance, such as formatting tips or field requirements.
 - `file-selector-text` - Allow you to customizes the text displayed on the file selection button.
 - `file-missing-text` - Sets the text shown in the input field when no file has been selected.

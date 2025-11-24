@@ -136,7 +136,7 @@ export declare class IgrGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+    comparer: (prevRecord: any, record: any, field: string) => boolean;   
 }
 ```
 <!-- end: React -->
@@ -152,7 +152,7 @@ export declare class IgcGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+    comparer: (prevRecord: any, record: any, field: string) => boolean;   
 }
 ```
 <!-- end: WebComponents -->
@@ -268,7 +268,7 @@ constructor() {
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- end: WebComponents, React -->
-## Feature Integration 
+## Feature Integration
 Due to the specific behavior of merged cells it has to be noted how exactly it ties together with some of the other features of the grid:
 <!-- ComponentStart: Grid -->
 - **Expand/Collapse**: if a feature (such as master-detail, grouping, etc.) generates a non-data row, then the cell merging is interrupted and the group will be split.

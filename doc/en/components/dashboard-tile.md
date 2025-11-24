@@ -8,7 +8,7 @@ mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "
 
 # {Platform} Dashboard Tile <label>PREVIEW</label>
 
-The {Platform} Dashboard Tile is a automatic data visualization component which determines via analysis of a DataSource collection/array or single data point what would be the most appropriate visualization to display. It then also provides a further suite of tools in its embedded `Toolbar` that let you alter the visualization that is presented in a variety of ways. 
+The {Platform} Dashboard Tile is a automatic data visualization component which determines via analysis of a DataSource collection/array or single data point what would be the most appropriate visualization to display. It then also provides a further suite of tools in its embedded `Toolbar` that let you alter the visualization that is presented in a variety of ways.
 
 A wide variety of visualizations may be selected for display depending on the shape of the provided data including, but not limited to: Category Charts, Radial and Polar Charts, Scatter Charts, Geographic Maps, Radial and Linear Gauges, Financial Charts and Stacked Charts.
 

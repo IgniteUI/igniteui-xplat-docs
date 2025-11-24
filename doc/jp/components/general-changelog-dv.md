@@ -122,7 +122,7 @@ _重大な変更_
   - データ注釈スライス レイヤー
   - データ注釈ストリップ レイヤー
 
-- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。 
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。
 
 - <label>PREVIEW</label> チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
 
@@ -228,7 +228,7 @@ _重大な変更_
 - [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
 
 - [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
-複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
+複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。
 
 - [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-リーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration` プロパティを使用して制御できます。
 
@@ -250,7 +250,7 @@ _重大な変更_
 - [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
 
 - [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
-複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
+複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。
 
 - [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-リーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration` プロパティを使用して制御できます。
 
@@ -269,14 +269,14 @@ _重大な変更_
 
 - `InitialFilter` プロパティによる新しいデータ フィルタリング。フィルター式を適用して、チャート データをレコードのサブセットにフィルターします。大規模なデータのドリルダウンに使用できます。
 
-- `XamRadialChart` 
+- `XamRadialChart`
     - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 
 ### {PackageGauges}
 
 - `XamRadialGauge`
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。 
+    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
     - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
     - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamLinearGauge`

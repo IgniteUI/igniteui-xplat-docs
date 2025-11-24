@@ -8,7 +8,7 @@ mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 
 # {Platform} Tabs Overview
 
-The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more. 
+The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more.
 
 The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected its corresponding content is displayed.
 ## {Platform} Tabs Example

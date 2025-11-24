@@ -48,7 +48,7 @@ constructor() {
 The LoadChildrenOnDemand callback provides two parameters:
 
 - parentID - the ID of the parent row that is being expanded.
-- done - callback that should be called with the children when they are retrieved from the server. 
+- done - callback that should be called with the children when they are retrieved from the server.
 
 ```typescript
 public loadChildren = (parentID: any, done: (children: any[]) => void) => {
@@ -58,7 +58,7 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
 
 <!-- end: WebComponents -->
 
-After the user clicks the expand icon, it is replaced by a loading indicator. When the done callback is called, the loading indicator disappears and the children are loaded. The Tree Grid adds the children to the underlying data source and populates the necessary keys automatically. 
+After the user clicks the expand icon, it is replaced by a loading indicator. When the done callback is called, the loading indicator disappears and the children are loaded. The Tree Grid adds the children to the underlying data source and populates the necessary keys automatically.
 
 ### Expanding Indicator Visibility
 

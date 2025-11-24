@@ -109,7 +109,7 @@ Steps can be declared using one of the following approaches.
 
 ```tsx
 <IgrStepper>
-    {this.StepsData.map(item => 
+    {this.StepsData.map(item =>
         <IgrStep key={item.title} disabled={item.disabled}>
             <p slot="title">{item.title}</p>
         </IgrStep>

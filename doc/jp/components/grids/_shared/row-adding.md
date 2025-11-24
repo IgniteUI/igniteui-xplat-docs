@@ -290,7 +290,7 @@ export class AppModule {}
     <IgbActionStrip>
         <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
     </IgbActionStrip>
-    
+   
     <IgbRowIsland AutoGenerate="false" Key="Albums" PrimaryKey="USBillboard200" RowEditable="true">
         <IgbColumn Field="Album" Header="Album" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="LaunchDate" Header="Launch Date" DataType="GridColumnDataType.Date"></IgbColumn>
@@ -363,7 +363,7 @@ export class AppModule {}
            <IgrActionStrip>
                 <IgrGridEditingActions addRow={true}>
                 </IgrGridEditingActions>
-            </IgrActionStrip>                  
+            </IgrActionStrip>                 
        <IgrColumn field="Tour" header="Tour" dataType="string" resizable={true}>
        </IgrColumn>
        <IgrColumn field="StartedOn" header="Started on" dataType="string" resizable={true}>
@@ -568,7 +568,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         </>
     );
 }
-```            
+```           
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
@@ -611,7 +611,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
 
 行編集オーバーレイのボタンをカスタマイズするには、`RowEditActions` テンプレートを使用します。
 
-<!-- 
+<!--
 REQUIRES FIX!
 ```ts
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {

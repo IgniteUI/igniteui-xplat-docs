@@ -11,10 +11,10 @@ _canonicalLink: {CanonicalLinkToGridFiltering}
 
 # {Platform} {ComponentTitle} Filtering
 
-The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentName}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
+The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentName}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three:
 
 - Quick filtering
-- [Excel Style Filtering](excel-style-filtering.md) 
+- [Excel Style Filtering](excel-style-filtering.md)
 - [Advanced Filtering](advanced-filtering.md)
 
 ## {Platform} {ComponentTitle} Filtering Example
@@ -331,14 +331,14 @@ public ngAfterViewInit() {
 ```typescript
 constructor() {
     const gridFilteringExpressionsTree: IgcFilteringExpressionsTree = { operator: FilteringLogic.And };
-    const productFilteringExpressionsTree: IgcFilteringExpression = { 
+    const productFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "ProductName",
         conditionName: "contains",
         ignoreCase: true,
         searchVal: "Chai"
     };
 
-    const quantityFilteringExpressionsTree: IgcFilteringExpression = { 
+    const quantityFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "QuantityPerUnit",
         conditionName: "contains",
         ignoreCase: true,

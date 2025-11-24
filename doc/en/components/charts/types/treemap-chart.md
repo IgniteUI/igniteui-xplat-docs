@@ -101,7 +101,7 @@ In the following example, the treemap demonstrates the ability of node highlight
 
 `sample="/charts/tree-map/highlighting", height="600", alt="{Platform} Treemap Highlighting"`
 
-## {Platform} Treemap Percent based highlighting 
+## {Platform} Treemap Percent based highlighting
 
 - `HighlightedItemsSource`: Specifies the datasource to read highlighted values from. If null, then highlighted values are read from the ItemsSource property.
 - `HighlightedValueMemberPath`: Specifies the name of the property in the datasource where the highlighted values are read.

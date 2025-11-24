@@ -7,7 +7,7 @@ mentionedTypes: ["Carousel"]
 ---
 
 # {Platform} Carousel Overview
-The {ProductName} Carousel is a responsive, lightweight component that provides the most flexible way to create slideshow-like web experience for users who navigate back and forth through a collection of images with text slides, links, and other html elements. 
+The {ProductName} Carousel is a responsive, lightweight component that provides the most flexible way to create slideshow-like web experience for users who navigate back and forth through a collection of images with text slides, links, and other html elements.
 
 The {Platform} Carousel component allows you to use animations, slide transitions, and customization so you can easily tweak the interface and build {Platform} custom carousel.
 
@@ -504,7 +504,7 @@ The carousel [animations](carousel.md#animations) are fully supported on touch d
 The `Carousel` can be easily configured to change the slides automatically, without any user interaction. This way you can create your own slideshow by only setting a transition interval to the `Interval` property, which determines the amount of time in milliseconds between slides transition.
 
 >[!NOTE]
->Hovering the mouse over any carousel content or moving keyboard focus to any of the carousel content pauses automatic transitioning. Automatic transitioning resumes when the mouse moves away from the carousel or when keyboard focus moves out of the carousel content. 
+>Hovering the mouse over any carousel content or moving keyboard focus to any of the carousel content pauses automatic transitioning. Automatic transitioning resumes when the mouse moves away from the carousel or when keyboard focus moves out of the carousel content.
 This can be prevented by setting `DisablePauseOnInteraction` property to **true**.
 
 ```html
@@ -567,7 +567,7 @@ Our carousel will look like this in the template:
         <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
         <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
     </igc-carousel-indicator>
-        
+       
     <igc-carousel-slide>
         <img src="assets/images/carousel/WonderfulCoast.png"/>
     </igc-carousel-slide>

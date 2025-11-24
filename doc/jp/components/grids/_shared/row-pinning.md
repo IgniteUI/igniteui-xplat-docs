@@ -237,7 +237,7 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-const pinning: IgrPinningConfig = { rows : RowPinningPosition.Bottom }; 
+const pinning: IgrPinningConfig = { rows : RowPinningPosition.Bottom };
 
 <{ComponentSelector} ref={gridRef} autoGenerate={true} pinning={pinning}>
 </{ComponentSelector}>

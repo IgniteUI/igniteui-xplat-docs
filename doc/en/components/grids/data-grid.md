@@ -626,7 +626,7 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.cell.value} 
+            <input name="price" type="number" value={ctx.cell.value}
                 onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
@@ -941,7 +941,7 @@ const POJO = [{
 <!-- Angular, WebComponents, React -->
 ## Grid Data Binding
 
-Our {Platform} Data Grid provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more.  
+Our {Platform} Data Grid provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more. 
 
 Before going any further with the {Platform} Data Grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
 
@@ -1114,9 +1114,9 @@ and in the template of the component:
 <!-- end: Angular, WebComponents, React -->
 ## Complex Data Binding
 
-Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} Data Grid, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record. 
+Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} Data Grid, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record.
 
-Take a look at the following data model: 
+Take a look at the following data model:
 
 ```typescript
 interface AminoAcid {
@@ -1251,7 +1251,7 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getName(ctx.cell.id.rowIndex)}
                     ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1282,7 +1282,7 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
             <div>
             <div>
                 { ctx.cell.value }
-                    {getName(ctx.cell.id.rowIndex)} 
+                    {getName(ctx.cell.id.rowIndex)}
                     {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>

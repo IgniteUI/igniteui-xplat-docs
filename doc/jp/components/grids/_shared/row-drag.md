@@ -578,7 +578,7 @@ igRegisterScript("WebHierarchicalGridReorderRowHandler", (args) => {
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }, false);
- 
+
 function getCurrentRowIndex(rowList, cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -587,7 +587,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }   
     return -1;
 }
 ```
@@ -675,7 +675,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }   
     return -1;
 }
 ```
@@ -739,7 +739,7 @@ public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }
-    
+   
 public getCurrentRowIndex(rowList: any[], cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -765,7 +765,7 @@ const webGridReorderRowHandler = (args: IgrRowDragEndEventArgs): void => {
     gridRef.current.deleteRow(args.detail.dragData.key);
     gridRef.current.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }
-    
+   
 const getCurrentRowIndex = (rowList: any[], cursorPosition) => {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -1095,17 +1095,17 @@ export class HGridRowReorderComponent {
 ```tsx
 const webHierarchicalGridReorderRowHandler = (args: IgrRowDragEndEventArgs): void => {
         const ghostElement = args.detail.dragDirective.ghostElement;
-        const dragElementPos = ghostElement.getBoundingClientRect();        
+        const dragElementPos = ghostElement.getBoundingClientRect();       
     hierarchicalGridRef.current.collapseAll();
-        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));        
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));       
     const currRowIndex = getCurrentRowIndex(rows,
-        { x: dragElementPos.x, y: dragElementPos.y });        
+        { x: dragElementPos.x, y: dragElementPos.y });       
         if (currRowIndex === -1) { return; }
         // remove the row that was dragged and place it onto its new location
     hierarchicalGridRef.current.deleteRow(args.detail.dragData.key);
     hierarchicalGridRef.current.data.splice(currRowIndex, 0, args.detail.dragData.data);
     }
- 
+
 const getCurrentRowIndex = (rowList: any[], cursorPosition: any) => {
         for (const row of rowList) {
             const rowRect = row.getBoundingClientRect();
@@ -1165,7 +1165,7 @@ igRegisterScript("WebGridReorderRowHandler", (args) => {
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }, false);
- 
+
 function getCurrentRowIndex(rowList, cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -1174,7 +1174,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }   
     return -1;
 }
 ```

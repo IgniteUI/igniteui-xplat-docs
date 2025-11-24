@@ -137,11 +137,11 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor` 
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 `XamDataLegend` には、値が更新されているマウス操作中であっても、対応する行を描画するときに発生するいくつかのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:

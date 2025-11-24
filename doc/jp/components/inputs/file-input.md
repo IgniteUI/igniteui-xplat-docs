@@ -65,8 +65,8 @@ defineComponents(IgcFileInputComponent);
 - `Placeholder` - ファイルが選択されていない場合に表示されるプレースホルダー テキストを提供します。
 
 ```html
-<igc-file-input 
-  label="Files Input" 
+<igc-file-input
+  label="Files Input"
   accept=".jpg, .png, .gif"
   placeholder="Files missing"
   required
@@ -74,7 +74,7 @@ defineComponents(IgcFileInputComponent);
 </igc-file-input>
 ```
 
-### メソッド 
+### メソッド
 
 構成可能なプロパティに加えて、`Input` コンポーネントから継承された `FileInput` コンポーネントで使用できる 4 つの便利なメソッドがあります。
 
@@ -87,7 +87,7 @@ defineComponents(IgcFileInputComponent);
 
 `FileInput` コンポーネントは、外観と動作をカスタマイズするために使用できるいくつかのスロットも公開します。
 
-- `prefix` と `suffix` - メイン入力エリアの前後にコンテンツを挿入できます。 
+- `prefix` と `suffix` - メイン入力エリアの前後にコンテンツを挿入できます。
 - `helper-text` - 入力の下にヒントまたは説明メッセージを表示します。書式設定のヒントやフィールドの要件など、追加のガイダンスを提供するのに役立ちます。
 - `file-selector-text` - ファイル選択ボタンに表示されるテキストをカスタマイズできます。
 - `file-missing-text` - ファイルが選択されていない場合に入力フィールドに表示されるテキストを設定します。

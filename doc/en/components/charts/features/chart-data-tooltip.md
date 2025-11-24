@@ -75,7 +75,7 @@ The following example demonstrates a data tooltip with the added columns of Open
 
 ## {Platform} Data Tooltip Grouping for Data Chart
 
-`DataLegendGroup` can be set, on all types of series, to a string that will categorize a group of series in Data Legend. Each group will have its own summary row displayed before another group of series is displayed: 
+`DataLegendGroup` can be set, on all types of series, to a string that will categorize a group of series in Data Legend. Each group will have its own summary row displayed before another group of series is displayed:
 By default, DataLegend will hide names of groups, but you can display group names by setting the `GroupRowVisible` property to true. `GroupingMode` should be set to "Grouped" and `LabelDisplayMode` should be set to "Visible" on the Data Tooltip Layer.
 
 `sample="/charts/data-chart/data-tooltip-grouping", height="450", alt="{Platform} Data Tooltip Grouping"`
@@ -122,7 +122,7 @@ The following example demonstrates usage of the styling properties mentioned abo
 
 `sample="/charts/financial-chart/data-tooltip-styling-props", height="450", alt="{Platform} Financial Chart Data Tooltip Styling Example"`
 
-Several properties are exposed including grouping portions of the tooltip. 
+Several properties are exposed including grouping portions of the tooltip.
 
 - `GroupTextMargin`
 - `GroupTextColor`
@@ -132,11 +132,11 @@ Several properties are exposed including grouping portions of the tooltip.
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor` 
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 

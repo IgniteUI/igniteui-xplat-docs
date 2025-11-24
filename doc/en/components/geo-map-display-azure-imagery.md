@@ -78,7 +78,7 @@ map.backgroundContent = tileSource;
 </IgbGeographicMap>
 
 @code {
-    
+   
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
 
@@ -100,14 +100,14 @@ map.backgroundContent = tileSource;
 
 When working with the `GeographicTileSeries`, you can combine **overlays** (traffic, weather, labels) on top of a **base map style** such as eg. **Satellite**, **Road**, or **DarkGrey**. Using **TerraOverlay** with eg. **Satellite** to visualize terrain.
 
-- **Base Styles**: Satellite, Road, Terra, and DarkGrey provide the core background tiles.  
-- **Overlay Styles**: Traffic and Weather imagery (e.g., `TrafficRelativeOverlay`, `WeatherRadarOverlay`) are designed to be layered on top of a base style by assigning them to a tile series.  
-- **Hybrid Styles**: Variants like `HybridRoadOverlay` and `HybridDarkGreyOverlay` already combine a base style with overlays (labels, roads, etc.), so you don’t need to manage multiple layers manually.  
+- **Base Styles**: Satellite, Road, Terra, and DarkGrey provide the core background tiles. 
+- **Overlay Styles**: Traffic and Weather imagery (e.g., `TrafficRelativeOverlay`, `WeatherRadarOverlay`) are designed to be layered on top of a base style by assigning them to a tile series. 
+- **Hybrid Styles**: Variants like `HybridRoadOverlay` and `HybridDarkGreyOverlay` already combine a base style with overlays (labels, roads, etc.), so you don’t need to manage multiple layers manually. 
 
-This design allows you to build richer maps, for example:  
-- Displaying **Satellite imagery** with a **TrafficOverlay** to highlight congestion on real-world images.  
-- Using **Terra** with **WeatherRadarOverlay** to visualize terrain with precipitation.  
-- Applying **DarkGrey** with **LabelsRoadOverlay** for a dashboard-friendly, contrast-heavy view.  
+This design allows you to build richer maps, for example: 
+- Displaying **Satellite imagery** with a **TrafficOverlay** to highlight congestion on real-world images. 
+- Using **Terra** with **WeatherRadarOverlay** to visualize terrain with precipitation. 
+- Applying **DarkGrey** with **LabelsRoadOverlay** for a dashboard-friendly, contrast-heavy view. 
 
 <img src="../images/general/Azure_Traffic_Tile_Series_With_Background.png" alt="Azure Traffic Tile Series With Background" />
 
@@ -149,11 +149,11 @@ export class AppComponent implements AfterViewInit {
 ```ts
 // App.tsx
 import React, { useEffect, useRef } from 'react';
-import { 
-  IgrGeographicMap, 
-  IgrGeographicTileSeries, 
-  IgrAzureMapsImagery, 
-  AzureMapsImageryStyle 
+import {
+  IgrGeographicMap,
+  IgrGeographicTileSeries,
+  IgrAzureMapsImagery,
+  AzureMapsImageryStyle
 } from 'igniteui-react-maps';
 
 export default function App() {
@@ -208,12 +208,12 @@ export default function App() {
 
 ```ts
 // index.ts
-import { 
-  IgcGeographicMapComponent, 
-  IgcGeographicTileSeriesComponent, 
-  IgcAzureMapsImagery, 
-  AzureMapsImageryStyle, 
-  IgcGeographicMapModule 
+import {
+  IgcGeographicMapComponent,
+  IgcGeographicTileSeriesComponent,
+  IgcAzureMapsImagery,
+  AzureMapsImageryStyle,
+  IgcGeographicMapModule
 } from 'igniteui-webcomponents-maps';
 import { ModuleManager } from 'igniteui-webcomponents-core';
 
@@ -250,7 +250,7 @@ window.addEventListener("load", () => {
 </IgbGeographicMap>
 
 @code {
-    
+   
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
     private IgbGeographicTileSeries ImagerySeries;
@@ -258,7 +258,7 @@ window.addEventListener("load", () => {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
-        
+       
         //Update TileSeries
         var imagery = new IgbAzureMapsImagery
         {

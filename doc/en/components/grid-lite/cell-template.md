@@ -43,7 +43,7 @@ const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency
 <!-- End: React, WebComponents -->
 
 You can combine values different fields from the data source as well.
-<!-- TODO: 
+<!-- TODO:
 Refer to the API documentation for `GridLiteCellContext` for more information. -->
 
 <!-- React, WebComponents -->

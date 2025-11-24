@@ -136,7 +136,7 @@ The `Divider` can be set in on both sides. To `inset` the divider, set the `Midd
 ```html
 // Both side
 <igc-divider middle="true" class="withInset"></igc-divider>
-// Left side only 
+// Left side only
 <igc-divider></igc-divider>
 ```
 
@@ -144,14 +144,14 @@ The `Divider` can be set in on both sides. To `inset` the divider, set the `Midd
 ```tsx
 // Both side
 <IgrDivider middle="true" className="withInset"></IgrDivider>
-// Left side only 
+// Left side only
 <IgrDivider  className="withInset"></IgrDivider>
 ```
 
 ```razor
 // Both side
 <IgbDivider Middle="True" class="withInset"</igrDivider>
-// Left side only 
+// Left side only
 <IgbDivider class="withInset"</igrDivider>
 ```
 

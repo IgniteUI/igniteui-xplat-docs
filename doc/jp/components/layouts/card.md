@@ -491,7 +491,7 @@ defineComponents(IgcCardComponent );
 
 ## スタイル設定
 
-カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (`CardHeader`、`CardContent`、`CardMedia`、および `CardActions` のサブコンポーネント) をスタイル設定することによって行われます。 
+カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (`CardHeader`、`CardContent`、`CardMedia`、および `CardActions` のサブコンポーネント) をスタイル設定することによって行われます。
 
 ```css
 igc-card {
@@ -499,7 +499,7 @@ igc-card {
 }
 
 igc-card-content,
-igc-card-header::part(title) { 
+igc-card-header::part(title) {
   color: var(--ig-primary-500-contrast);
 }
 

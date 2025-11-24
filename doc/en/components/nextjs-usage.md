@@ -167,7 +167,7 @@ export default function DynamicButtonComponent() {
       return IgrButton;
     }
   );
-  
+ 
   return (
       <IgButton variant="contained">
         <span key="title">Click me</span>

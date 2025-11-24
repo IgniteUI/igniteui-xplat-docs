@@ -626,7 +626,7 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.cell.value} 
+            <input name="price" type="number" value={ctx.cell.value}
                 onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
@@ -1249,7 +1249,7 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getName(ctx.cell.id.rowIndex)}
                     ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1280,7 +1280,7 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
             <div>
             <div>
                 { ctx.cell.value }
-                    {getName(ctx.cell.id.rowIndex)} 
+                    {getName(ctx.cell.id.rowIndex)}
                     {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>

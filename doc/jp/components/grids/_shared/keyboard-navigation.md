@@ -223,7 +223,7 @@ const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
 
   if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
       // 1. USER INPUT VALIDATION ON TAB
-      
+     
   }
   if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
       // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS

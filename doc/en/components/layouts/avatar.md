@@ -176,7 +176,7 @@ The avatar supports three shapes - `circle`, `rounded`, and `square`. The defaul
 
 ### Size
 
-Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size: 
+Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size:
 
 ```css
 igc-avatar {

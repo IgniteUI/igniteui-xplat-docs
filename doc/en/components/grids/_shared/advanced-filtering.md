@@ -12,7 +12,7 @@ _canonicalLink: {CanonicalLinkToGridAdvancedFiltering}
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`. 
+The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 

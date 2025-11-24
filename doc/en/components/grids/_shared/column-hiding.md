@@ -403,7 +403,7 @@ By using the `Title` property, we will set the title that is displayed inside th
         <IgrGridToolbarActions>
             <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
-    </IgrGridToolbar>    
+    </IgrGridToolbar>   
 </IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->

@@ -52,7 +52,7 @@ The grid supports inferring the column configuration based on the provided data 
 <IgbGridLite AutoGenerate=true Data="@products"/>
 @code {
     private List<ProductInfo> products;
-    
+   
     protected override void OnInitialized()
     {
         products = new List<ProductInfo>

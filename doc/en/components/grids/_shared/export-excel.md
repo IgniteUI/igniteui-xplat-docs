@@ -257,7 +257,7 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 ## API References
 
 - `ExcelExporterService`
-- `ExcelExporterOptions` 
+- `ExcelExporterOptions`
 - `{ComponentName}`
 
 ## Additional Resources

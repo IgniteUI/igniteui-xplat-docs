@@ -132,11 +132,11 @@ _language: ja
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor` 
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 

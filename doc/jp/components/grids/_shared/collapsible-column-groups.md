@@ -182,7 +182,7 @@ npm install igniteui-react-grids
         string icon = context.Column.Expanded ? "remove" : "add";
         return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
     };
-    
+   
     protected override void OnAfterRender(bool firstRender)
     {
         this.infoColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;

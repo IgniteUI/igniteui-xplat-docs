@@ -257,11 +257,11 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-    
+   
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-    
+   
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };

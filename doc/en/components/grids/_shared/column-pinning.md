@@ -388,7 +388,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
     <IgbColumn Field="ID" Hidden="true"></IgbColumn>
 
-    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px"
     HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
 
     <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
@@ -419,7 +419,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 <IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
     <IgrColumn field="ID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    <IgrColumn field="CompanyName" header="Company" width="300px"
     headerTemplate={toggleColumnPin}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
@@ -436,7 +436,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+ 
   const col = ctx.column;
 
   return(
@@ -538,19 +538,19 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
     <IgbColumn Field="Title" DataType="String" Pinned="true"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
-        
+       
     <IgbColumn Field="Phone" DataType="String"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
-            
+           
     <IgbColumn Field="Age" DataType="Number"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
-            
+           
     <IgbColumn Field="HireDate" DataType="Date"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
-            
+           
     <IgbColumn Field="OnPTO" DataType="Boolean"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
-</IgbTreeGrid> 
+</IgbTreeGrid>
 
 
 // In JavaScript
@@ -591,7 +591,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+ 
   const col = ctx.column;
 
   return(
@@ -687,7 +687,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} autoGenerate={false} data={HierarchicalCustomersData} ref={grid}>
     <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="Company" header="Company Name" width="300px" 
+    <IgrColumn field="Company" header="Company Name" width="300px"
     headerTemplate={toggleColumnPin} pinned={true}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Contact Name" width="200px"
@@ -704,7 +704,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+ 
   const col = ctx.column;
 
   return(

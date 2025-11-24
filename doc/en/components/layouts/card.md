@@ -490,7 +490,7 @@ You can also add more content in-between by simply omitting the slot property an
 
 ## Styling
 
-Since the card is a container that wraps different elements, styling is done by styling its building blocks - the `CardHeader`, `CardContent`, `CardMedia` and `CardActions` sub-components. 
+Since the card is a container that wraps different elements, styling is done by styling its building blocks - the `CardHeader`, `CardContent`, `CardMedia` and `CardActions` sub-components.
 
 ```css
 igc-card {
@@ -498,7 +498,7 @@ igc-card {
 }
 
 igc-card-content,
-igc-card-header::part(title) { 
+igc-card-header::part(title) {
   color: var(--ig-primary-500-contrast);
 }
 

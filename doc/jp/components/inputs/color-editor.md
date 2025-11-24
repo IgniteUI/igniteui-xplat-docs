@@ -126,7 +126,7 @@ Color Editor コンポーネントは、次のイベントを発生させます:
 ```ts
 @ViewChild("colorEditor", { static: true } )
 private colorEditor: IgxColorEditorComponent
-public ngAfterViewInit(): void 
+public ngAfterViewInit(): void
 {	
     this.colorEditor.valueChanged.subscribe(this.onValueChanged);
 }

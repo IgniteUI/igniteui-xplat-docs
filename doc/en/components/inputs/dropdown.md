@@ -8,11 +8,11 @@ mentionedTypes: ["Dropdown", "DropdownItem", "DropdownHeader", "DropdownGroup"]
 
 # {Platform} Dropdown List Component - Overview
 
-Feature-rich, the {Platform} Dropdown list offers out-of-the-box filtering, accessibility, preselected values, flexible data binding, grouping, UI customization, and more. What this component practically does is to effectively and easily replace HTML select tags, enabling users to quickly choose a non-editable value from a predefined set of several options. 
+Feature-rich, the {Platform} Dropdown list offers out-of-the-box filtering, accessibility, preselected values, flexible data binding, grouping, UI customization, and more. What this component practically does is to effectively and easily replace HTML select tags, enabling users to quickly choose a non-editable value from a predefined set of several options.
 
-The Ignite UI for {Platform} Dropdown component displays an toggle list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a {Platform} dropdown menu or you can simply use it to deliver more useful visual information by grouping data. Also, with grouping you can use both flat and hierarchical data. 
+The Ignite UI for {Platform} Dropdown component displays an toggle list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a {Platform} dropdown menu or you can simply use it to deliver more useful visual information by grouping data. Also, with grouping you can use both flat and hierarchical data.
 
-With our component, you get all the functions and customization options you need for your project – styling customizations, {Platform} Dropdown placement options, templates and ability to change what and how is displayed in the header, footer, body, list, etc. 
+With our component, you get all the functions and customization options you need for your project – styling customizations, {Platform} Dropdown placement options, templates and ability to change what and how is displayed in the header, footer, body, list, etc.
 
 ## {Platform} Dropdown Example
 

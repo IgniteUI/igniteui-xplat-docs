@@ -118,8 +118,8 @@ _language: ja
     <IgrColumn field="OrderDate" header="Order Date" sortable={false}  dataType="date">
     </IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" sortable={true} dataType="boolean">
-    </IgrColumn>      
-</IgrGrid>  
+    </IgrColumn>     
+</IgrGrid> 
 ```
 
 以下のサンプルの **Product Name** と **Discontinued** 列で 4 つすべての機能が有効です。**Quantity Per Unit** で 4 機能すべてが無効、**Unit Price** でソートのみが有効、**Order Date** でピン固定と非表示のみ有効です。すべてが `Selectable` です。
@@ -229,7 +229,7 @@ _language: ja
     <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable={true} sortable={false} dataType="number"></IgrColumn>
     <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable={true} dataType="number"></IgrColumn>
     {/* ... */}
-</IgrHierarchicalGrid>  
+</IgrHierarchicalGrid> 
 ```
 
 ```razor
@@ -273,7 +273,7 @@ Excel スタイル フィルター メニューをさらにカスタマイズす
 
 ```razor
 <{ComponentSelector}
-    Data="Data"    
+    Data="Data"   
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
     ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
@@ -304,17 +304,17 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 ```tsx
 const webGridFilterAltIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
   return (
-    <img 
-      height="15px" 
-      width="15px" 
-      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
-      title="Continued" 
-      alt="Continued" 
+    <img
+      height="15px"
+      width="15px"
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg"
+      title="Continued"
+      alt="Continued"
     />
   );
 }
 
-<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter" 
+<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter"
     excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
 </{ComponentSelector}>
 ```

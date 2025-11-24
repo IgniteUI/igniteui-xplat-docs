@@ -62,7 +62,7 @@ Try it for yourself in the sample below:
 
 ## Auto-hide Pane Headers
 
-With the `showPaneHeaders` property of the DockManager, developers now have the flexibility to control the visibility of pane headers within the `layout`. By default, `showPaneHeaders` is set to `always` ensuring that pane headers are always visible. When set to `onHoverOnly`, all pane headers will be hidden until you hover your mouse over the top edge of a content pane. The corresponding pane header will appear and it will smoothly hide once your mouse moves away. Take a look at the example below: 
+With the `showPaneHeaders` property of the DockManager, developers now have the flexibility to control the visibility of pane headers within the `layout`. By default, `showPaneHeaders` is set to `always` ensuring that pane headers are always visible. When set to `onHoverOnly`, all pane headers will be hidden until you hover your mouse over the top edge of a content pane. The corresponding pane header will appear and it will smoothly hide once your mouse moves away. Take a look at the example below:
 
 `sample="/layouts/dock-manager/hide-pane-headers", height="600", alt="{Platform} Auto-hide pane headers in Dock Manager Example"`
 
@@ -90,7 +90,7 @@ this.dockManager.allowInnerDock = false;
 
 `sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager Toggle Inner Dock Example"`
 
-## Control Pane Dragging 
+## Control Pane Dragging
 
 With the `containedInBoundaries` property, developers can control whether the sides of floating panes are always contained within the DockManager. When set to **true**, pane dragging will stop once any of the sides attempt to move beyond the DockManager boundaries.
 

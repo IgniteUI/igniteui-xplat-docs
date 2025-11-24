@@ -175,7 +175,7 @@ In our case, we want the combo to display the `name` of each city and use the `i
 
 The ComboBox component exposes a `Value` getter and setter in addition to an attribute, which is also called value. You can use the value attribute to set the selected items on component initialization.
 
-If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`. 
+If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`.
 
 Example:
 

@@ -8,7 +8,7 @@ _language: ja
 ---
 
 # {Platform} Carousel (カルーセル) の概要
-{ProductName} カルーセルは、レスポンシブで軽量なコンポーネントであり、テキスト スライド、リンク、およびその他の html 要素を含む画像のコレクションを前後に移動するユーザーに、スライドショーのような Web エクスペリエンスを作成する最も柔軟な方法を提供します。 
+{ProductName} カルーセルは、レスポンシブで軽量なコンポーネントであり、テキスト スライド、リンク、およびその他の html 要素を含む画像のコレクションを前後に移動するユーザーに、スライドショーのような Web エクスペリエンスを作成する最も柔軟な方法を提供します。
 
 {Platform} カルーセル コンポーネントを使用すると、アニメーション、スライド トランジション、およびカスタマイズを使用できるため、インターフェイスを簡単に微調整して {Platform} カスタム カルーセルを構築できます。
 
@@ -568,7 +568,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
         <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
         <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
     </igc-carousel-indicator>
-        
+       
     <igc-carousel-slide>
         <img src="assets/images/carousel/WonderfulCoast.png"/>
     </igc-carousel-slide>

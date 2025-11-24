@@ -332,14 +332,14 @@ public ngAfterViewInit() {
 ```typescript
 constructor() {
     const gridFilteringExpressionsTree: IgcFilteringExpressionsTree = { operator: FilteringLogic.And };
-    const productFilteringExpressionsTree: IgcFilteringExpression = { 
+    const productFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "ProductName",
         conditionName: "contains",
         ignoreCase: true,
         searchVal: "Chai"
     };
 
-    const quantityFilteringExpressionsTree: IgcFilteringExpression = { 
+    const quantityFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "QuantityPerUnit",
         conditionName: "contains",
         ignoreCase: true,

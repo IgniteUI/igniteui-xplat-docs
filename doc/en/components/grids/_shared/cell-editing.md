@@ -507,7 +507,7 @@ public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
 ```
 <!-- end: React -->
 
-Working sample of the above can be found here for further reference: 
+Working sample of the above can be found here for further reference:
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
@@ -577,7 +577,7 @@ function handleKeyDown(event: KeyBoardEvent) {
     const grid = event.currentTarget as IgrGrid;
     const activeElem = grid.selectedCells[0];
 
-    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ")
         || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
         if (activeElem && !activeElem.editMode) {
             activeElem.editMode = true;
@@ -1086,7 +1086,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
         }
         if (args.detail.newValue > rowData.UnitsInStock) {
             args.detail.cancel = true;
-            alert("You cannot order more than the units in stock!");  
+            alert("You cannot order more than the units in stock!"); 
         }
     }
 }

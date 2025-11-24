@@ -256,11 +256,11 @@ The current aggregation function can be changed at runtime using the value chip'
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-    
+   
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-    
+   
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };
@@ -619,7 +619,7 @@ This feature allows developers to quickly create a pivot view without manually s
 
 ### Pivot Value Calculation Keys
 
-The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.  
+The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations. 
 A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
 ```json
 [
@@ -635,7 +635,7 @@ A more detailed view of how they are used can be seen bellow in example data, wh
 ];
 ```
 
-All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys. 
+All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys.
 - **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
 - **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
 - **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.

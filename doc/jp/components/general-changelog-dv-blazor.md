@@ -188,7 +188,7 @@ _重大な変更_
   - データ注釈スライス レイヤー
   - データ注釈ストリップ レイヤー
 
-- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。 
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。
 
 - <label>PREVIEW</label> チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
 
@@ -338,7 +338,7 @@ _重大な変更_
 
 ### {PackageGrids}
 
-- **すべてのグリッド**  
+- **すべてのグリッド** 
   - `FilteringExpressionsTree` プロパティを使用して初期フィルタリングの適用が可能になりました。
 
 ### バグ修正
@@ -355,7 +355,7 @@ _重大な変更_
 
 ### {PackageGrids}
 
-- **すべてのグリッド** 
+- **すべてのグリッド**
   - グリッドの列に新しい `DisabledSummaries` が追加され、開発者が一部の集計をスキップできるようにしました。
   - 内部グリッド アクション ボタンをカプセル化しました。
 
@@ -406,7 +406,7 @@ _重大な変更_
 
 ### {PackageGrids}
 
-- **すべてのグリッド** 
+- **すべてのグリッド**
   - 複数の重複したブラウザー タブでコンポーネントが開かれた場合に発生する重大なメモリ リークを修正しました。
 
 ## **{PackageVerChanges-24-2-DEC}**
@@ -433,7 +433,7 @@ _重大な変更_
 ## **{PackageVerChanges-24-1-SEP}**
 
 ### {PackageCharts} (チャート)
- 
+
 - 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
 
 - 新しい [比例カテゴリ角度軸](charts/types/radial-chart.md) - スライスをプロットするための、`XamDataChart` のラジアル円シリーズの新しい軸。円チャートに似ており、データ ポイントが円グラフ内のセグメントとして表されます。
@@ -549,7 +549,7 @@ _重大な変更_:
 - [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
 
 - [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
-複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。  
+複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
 
 - [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
 
@@ -599,13 +599,13 @@ _重大な変更_:
     - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
 - `Rating`
     - `allowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作の変更** - 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
-- `Select`、`Dropdown` 
+- `Select`、`Dropdown`
     - `selectedItem`、`items`、および `groups` ゲッターが公開されました。
 - `XamRadialGauge`
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。 
+    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
     - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
     - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
-- `XamRadialChart` 
+- `XamRadialChart`
     - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 

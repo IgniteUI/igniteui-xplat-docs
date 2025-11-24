@@ -8,7 +8,7 @@ mentionedTypes: ["Tooltip", "PopoverPlacement"]
 
 # {Platform} Tooltip
 
-The {ProductName} Tooltip component provides a way to display a tooltip for a specific element. A tooltip is a popup that displays information related to an element, usually when the element receives keyboard focus or when the mouse hovers over it. 
+The {ProductName} Tooltip component provides a way to display a tooltip for a specific element. A tooltip is a popup that displays information related to an element, usually when the element receives keyboard focus or when the mouse hovers over it.
 
 ## {ProductName} Tooltip Example
 
@@ -126,7 +126,7 @@ To attach a tooltip to the desired element, use the `Anchor` property of the `To
 ```
 
 <!-- WebComponents, React -->
-You can also specify the target by passing the element instance directly: 
+You can also specify the target by passing the element instance directly:
 <!-- end: WebComponents, React -->
 
 ```html

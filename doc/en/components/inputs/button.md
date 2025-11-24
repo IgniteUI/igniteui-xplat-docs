@@ -218,7 +218,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-}); 
+});
 ```
 
 ```tsx

@@ -16,13 +16,13 @@ _language: ja
 
 - 行の選択
 - セルの選択
-- 列の選択 
+- 列の選択
 
 `RowSelection` プロパティを使用すると、以下を指定できます。
 
 - None (なし)
-- Single (単一)  
-- Multiple Select (複数選択) 
+- Single (単一) 
+- Multiple Select (複数選択)
 
 ## {Platform} {ComponentTitle} 選択の例
 
@@ -263,7 +263,7 @@ public copySelectedCells(event) {
         this.copyData(selectedData);
         const selectedDataArea = document.getElementById('selectedArea');
         selectedDataArea.innerText = JSON.stringify(selectedData);
-        
+       
         this.toggleContextMenu();
     }
 

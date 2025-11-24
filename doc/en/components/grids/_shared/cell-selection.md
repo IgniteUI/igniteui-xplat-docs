@@ -125,7 +125,7 @@ gridRef.current.selectRange(range)
     private {ComponentSelector} grid;
 
     private async void SetSelection()
-    {        
+    {       
         IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
         selectionRange.ColumnStart = 1;
         selectionRange.ColumnEnd = 1;

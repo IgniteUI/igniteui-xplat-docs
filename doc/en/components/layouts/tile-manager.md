@@ -12,7 +12,7 @@ The {ProductName} Tile Manager component enables the display of content in indiv
 
 ## {Platform} Tile Manager Example
 
-The following {ProductName} Tile Manager Example shows the component in action. 
+The following {ProductName} Tile Manager Example shows the component in action.
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager Example"`
 
@@ -20,7 +20,7 @@ The following {ProductName} Tile Manager Example shows the component in action.
 
 ## Usage
 
-The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
+The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience.
 
 The Tile Manager offers two components that we can use:
 - `Tile` - This component represents an individual tile displayed within the Tile Manager.
@@ -558,7 +558,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 
 ## Styling
 
-You can also customize the appearance of the two components - `TileManager` and `Tile`. 
+You can also customize the appearance of the two components - `TileManager` and `Tile`.
 The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
 The `Tile` exposes several CSS properties we can use:
 
@@ -592,7 +592,7 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-side),
 igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }

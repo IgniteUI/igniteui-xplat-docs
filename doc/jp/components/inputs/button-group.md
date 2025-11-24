@@ -145,7 +145,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 `sample="/inputs/button-group/alignment", height="220", alt="{Platform} Button Group の配置例"`
 
 ### 選択
-{ProductName} `ButtonGroup` の選択を構成するには、その `Selection` プロパティを使用できます。このプロパティは、次の 3 つのモードを受け入れます: 
+{ProductName} `ButtonGroup` の選択を構成するには、その `Selection` プロパティを使用できます。このプロパティは、次の 3 つのモードを受け入れます:
 - **single** - ボタン グループのデフォルトの選択モードです。ユーザーは単一のボタンを選択/選択解除できます。
 - **single-required** - ラジオ グループの動作を模倣します。選択できるボタンは 1 つだけであり、最初に選択すると、ユーザーの操作を通じて選択を解除することはできません。
 - **multiple** - グループ内の複数のボタンを選択または選択解除できます。
@@ -220,7 +220,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 
 ## スタイル設定
 
-`ButtonGroup` コンポーネントは、ボタン グループ コンテナーのスタイルを設定できる `group` CSS パーツを公開します。 
+`ButtonGroup` コンポーネントは、ボタン グループ コンテナーのスタイルを設定できる `group` CSS パーツを公開します。
 また、`ToggleButton` は、ボタン要素のスタイルを設定するために使用できる `toggle` CSS パーツを提供します。
 
 ```css

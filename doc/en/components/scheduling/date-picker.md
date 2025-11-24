@@ -7,16 +7,16 @@ mentionedTypes: ["DatePicker"]
 ---
 
 # {Platform} Date Picker Component Overview
-The {ProductName} Date Picker is a feature rich component used for entering a date through manual text input or choosing date values from a calendar dialog that pops up. Lightweight and simple to use, the Date Picker lets users navigate to a desired date with several view options – month, year, and decade. It also supports common validation properties such as minimum and maximum date constraints and required fields. 
+The {ProductName} Date Picker is a feature rich component used for entering a date through manual text input or choosing date values from a calendar dialog that pops up. Lightweight and simple to use, the Date Picker lets users navigate to a desired date with several view options – month, year, and decade. It also supports common validation properties such as minimum and maximum date constraints and required fields.
 
-The {ProductName} Date Picker Component lets users pick a single date through a month-view calendar dropdown or editable input field. The {Platform} Date Picker also supports a dialog mode for selection from the calendar only, locale-aware and customizable date formatting and validation integration. 
+The {ProductName} Date Picker Component lets users pick a single date through a month-view calendar dropdown or editable input field. The {Platform} Date Picker also supports a dialog mode for selection from the calendar only, locale-aware and customizable date formatting and validation integration.
 
 > [!NOTE]
 > The `DatePicker` is a brand new component from {ProductName} version <!-- WebComponents -->5.0.0<!-- end: WebComponents --><!-- React -->18.7.0<!-- end: React -->. The old `DatePicker` prior to this version has been renamed to `XDatePicker` and its respective documentation page can be found under "Deprecated Components"
 
 ## {Platform} Date Picker Example
 
-Below you can see a sample that demonstrates how the Date Picker works when users are enabled to pick a date through a manual text input and click on the calendar icon on the left to navigate to it. See how to render it. 
+Below you can see a sample that demonstrates how the Date Picker works when users are enabled to pick a date through a manual text input and click on the calendar icon on the left to navigate to it. See how to render it.
 
 `sample="/scheduling/date-picker/overview", height="500", alt="{Platform} Date Picker Input Overview Example"`
 
@@ -144,22 +144,22 @@ With prefix and suffix slots we can add different content before and after the m
 ```
 ```tsx
 <IgrDatePicker>
-    <IgrIcon 
-        slot="suffix" 
-        name="arrow_upward" 
-        collection="material" 
-        class="small" 
+    <IgrIcon
+        slot="suffix"
+        name="arrow_upward"
+        collection="material"
+        class="small"
         onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
 ```razor
 <IgbDatePicker @ref="DatePicker">
-    <IgbIcon 
-        Slot="suffix" 
-        IconName="arrow_upward" 
-        Collection="bootstrap" 
-        Class="small" 
+    <IgbIcon
+        Slot="suffix"
+        IconName="arrow_upward"
+        Collection="bootstrap"
+        Class="small"
         @onclick="() => DatePicker.StepUp(DatePart.Month)">
     </IgbIcon>
 </IgbDatePicker>
@@ -197,8 +197,8 @@ The picker's action buttons can be templated using the `actions` slot:
 ```
 ```tsx
 <IgrDatePicker>
-    <IgrButton 
-        slot='actions' 
+    <IgrButton
+        slot='actions'
         onClick={() => datePickerRef.current.showWeekNumbers = true}>
         <span>Show Week Numbers</span>
     </IgrButton>
@@ -265,29 +265,29 @@ The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come fro
 ```
 ```tsx
 <IgrDatePicker>
-    <IgrIcon 
-        slot="prefix" 
-        name="arrow_upward" 
-        collection="material" 
+    <IgrIcon
+        slot="prefix"
+        name="arrow_upward"
+        collection="material"
         onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
     </IgrIcon>
-    <IgrIcon 
-        slot="suffix" 
-        name="arrow_downward" 
-        collection="material" 
+    <IgrIcon
+        slot="suffix"
+        name="arrow_downward"
+        collection="material"
         onClick={() => datePickerRef.current.stepDown(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
 ```razor
 <IgbDatePicker @ref="DatePicker">
-    <IgbIcon 
+    <IgbIcon
         Slot="prefix"
         IconName="arrow_upward"
-        Collection="material"               
+        Collection="material"              
         @onclick="() => DatePicker.StepUp(DatePart.Month)">
     </IgbIcon>
-    <IgbIcon 
+    <IgbIcon
         Slot="suffix"
         IconName="arrow_downward"
         Collection="material"
@@ -315,7 +315,7 @@ The `DatePicker` can modify some of the calendar's settings via the properties t
 
 ## Internationalization
 
-The localization of the `DatePicker` can be controlled through its `Locale` input. 
+The localization of the `DatePicker` can be controlled through its `Locale` input.
 
 Here is how a `DatePicker` with Japanese locale definition would look like:
 ```html

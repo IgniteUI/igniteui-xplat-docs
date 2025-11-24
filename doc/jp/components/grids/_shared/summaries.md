@@ -689,7 +689,7 @@ export class GridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="grid"
         @ref="grid"
@@ -748,7 +748,7 @@ export class HierarchicalGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="hierarchicalGrid"
         @ref="hierarchicalGrid"
@@ -805,7 +805,7 @@ export class TreeGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="treeGrid"
         @ref="treeGrid"
@@ -1093,20 +1093,20 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- Blazor -->
 ```razor
 <!-- Disable default summaries -->
-<IgbColumn 
-    Field="UnitPrice" 
-    Header="Unit Price" 
+<IgbColumn
+    Field="UnitPrice"
+    Header="Unit Price"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
+    HasSummary="true"
     DisabledSummaries="['count', 'sum', 'average']" />
 
 <!-- Disable custom summaries -->
-<IgbColumn 
-    Field="UnitsInStock" 
-    Header="Units In Stock" 
+<IgbColumn
+    Field="UnitsInStock"
+    Header="Units In Stock"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
-    Summaries="discontinuedSummary" 
+    HasSummary="true"
+    Summaries="discontinuedSummary"
     DisabledSummaries="['discontinued', 'totalDiscontinued']" />
 ```
 <!-- end: Blazor -->
@@ -1197,7 +1197,7 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
     }
     return result;
   }
-  
+ 
 <IgrColumn hasSummary={true} summaryFormatter={summaryFormatter}></IgrColumn>
 ```
 

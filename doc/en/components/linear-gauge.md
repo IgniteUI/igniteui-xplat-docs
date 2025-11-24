@@ -262,11 +262,11 @@ The linear gauge can be modified to show a second needle. This will make the mai
 ```html
 <igx-linear-gauge
     #linearGauge
-    height="80px" 
+    height="80px"
     width="400px"
     value=70
-    minimumValue=0 
-    maximumValue=100 
+    minimumValue=0
+    maximumValue=100
     interval=10
     labelInterval=10
     labelExtent=0.025
@@ -284,8 +284,8 @@ The linear gauge can be modified to show a second needle. This will make the mai
     height="80px"
     width="100%"
     value={75}
-    minimumValue={0} 
-    maximumValue={100} 
+    minimumValue={0}
+    maximumValue={100}
     interval={10}
     labelInterval={10}
     labelExtent={0.025}
@@ -293,7 +293,7 @@ The linear gauge can be modified to show a second needle. This will make the mai
     labelsPostInitial={0}
     needleBrush='blue'
     highlightValueDisplayMode="Overlay"
-    highlightValue={25} 
+    highlightValue={25}
     isHighlightNeedleDraggingEnabled={true}
     />
 ```
@@ -303,8 +303,8 @@ The linear gauge can be modified to show a second needle. This will make the mai
     id="gauge"
     height="80px"
     width="100%"
-    minimum-value="0" 
-    maximum-value="100" 
+    minimum-value="0"
+    maximum-value="100"
     value="75"
     interval="10"
     label-interval="10"
@@ -313,15 +313,15 @@ The linear gauge can be modified to show a second needle. This will make the mai
     labels-post-initial="0"
     needle-brush="blue"
     highlight-value-display-mode="Overlay"
-    highlight-value=25 
+    highlight-value=25
     is-highlight-needle-dragging-enabled=true>
 </igc-linear-gauge>
 ```
 
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
-    MinimumValue="0" 
-    MaximumValue="100" 
+    MinimumValue="0"
+    MaximumValue="100"
     Value="75"
     Interval="10"
     LabelInterval="10"

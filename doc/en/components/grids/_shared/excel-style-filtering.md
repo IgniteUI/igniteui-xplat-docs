@@ -117,8 +117,8 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
     <IgrColumn field="OrderDate" header="Order Date" sortable={false}  dataType="date">
     </IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" sortable={true} dataType="boolean">
-    </IgrColumn>      
-</IgrGrid>  
+    </IgrColumn>     
+</IgrGrid> 
 ```
 
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
@@ -228,7 +228,7 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
     <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable={true} sortable={false} dataType="number"></IgrColumn>
     <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable={true} dataType="number"></IgrColumn>
     {/* ... */}
-</IgrHierarchicalGrid>  
+</IgrHierarchicalGrid> 
 ```
 
 ```razor
@@ -272,7 +272,7 @@ The following code demonstrates how to customize the Excel style filter menu usi
 
 ```razor
 <{ComponentSelector}
-    Data="Data"    
+    Data="Data"   
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
     ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
@@ -303,17 +303,17 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 ```tsx
 const webGridFilterAltIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
   return (
-    <img 
-      height="15px" 
-      width="15px" 
-      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
-      title="Continued" 
-      alt="Continued" 
+    <img
+      height="15px"
+      width="15px"
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg"
+      title="Continued"
+      alt="Continued"
     />
   );
 }
 
-<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter" 
+<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter"
     excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
 </{ComponentSelector}>
 ```

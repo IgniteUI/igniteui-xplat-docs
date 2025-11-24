@@ -1,6 +1,6 @@
 ---
 title: {Platform} Grid theming | Real-Time {Platform} Tables | The Lightweight {Platform} Web Components table | Infragistics
-_description: The {ProductName} Dark Theming 
+_description: The {ProductName} Dark Theming
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} dark theme {ProductName}
 _license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]

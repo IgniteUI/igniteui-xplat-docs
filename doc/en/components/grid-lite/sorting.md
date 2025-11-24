@@ -421,7 +421,7 @@ public class DataPipelineParams
 ```razor
 grid.DataPipelineConfiguration = new DataPipelineParams
 {
-    Sort = async (params) => 
+    Sort = async (params) =>
     {
         // Custom sort logic
         return await Task.FromResult(params.Data);

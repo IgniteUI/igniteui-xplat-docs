@@ -80,7 +80,7 @@ map.backgroundContent = tileSource;
 </IgbGeographicMap>
 
 @code {
-    
+   
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
 
@@ -152,11 +152,11 @@ export class AppComponent implements AfterViewInit {
 ```ts
 // App.tsx
 import React, { useEffect, useRef } from 'react';
-import { 
-  IgrGeographicMap, 
-  IgrGeographicTileSeries, 
-  IgrAzureMapsImagery, 
-  AzureMapsImageryStyle 
+import {
+  IgrGeographicMap,
+  IgrGeographicTileSeries,
+  IgrAzureMapsImagery,
+  AzureMapsImageryStyle
 } from 'igniteui-react-maps';
 
 export default function App() {
@@ -211,12 +211,12 @@ export default function App() {
 
 ```ts
 // index.ts
-import { 
-  IgcGeographicMapComponent, 
-  IgcGeographicTileSeriesComponent, 
-  IgcAzureMapsImagery, 
-  AzureMapsImageryStyle, 
-  IgcGeographicMapModule 
+import {
+  IgcGeographicMapComponent,
+  IgcGeographicTileSeriesComponent,
+  IgcAzureMapsImagery,
+  AzureMapsImageryStyle,
+  IgcGeographicMapModule
 } from 'igniteui-webcomponents-maps';
 import { ModuleManager } from 'igniteui-webcomponents-core';
 
@@ -253,7 +253,7 @@ window.addEventListener("load", () => {
 </IgbGeographicMap>
 
 @code {
-    
+   
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
     private IgbGeographicTileSeries ImagerySeries;
@@ -261,7 +261,7 @@ window.addEventListener("load", () => {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
-        
+       
         //Update TileSeries
         var imagery = new IgbAzureMapsImagery
         {

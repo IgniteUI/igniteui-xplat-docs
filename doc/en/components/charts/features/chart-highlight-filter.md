@@ -41,7 +41,7 @@ The following example demonstrates the usage of the data highlighting overlay fe
 
 ## Using Highlight Filter in CategoryChart
 
-The `CategoryChart` highlight filter happens on the chart by setting the `InitialHighlightFilter` property. Since the `CategoryChart` takes all of the properties on your underlying data item into account by default, you will need to define the `InitialGroups` on the chart as well so that the data can be grouped and aggregated in a way that you can have a subset of the data to filter on. You can set the `InitialGroups` to a value path in your underlying data item to group by a path that has duplicate values. 
+The `CategoryChart` highlight filter happens on the chart by setting the `InitialHighlightFilter` property. Since the `CategoryChart` takes all of the properties on your underlying data item into account by default, you will need to define the `InitialGroups` on the chart as well so that the data can be grouped and aggregated in a way that you can have a subset of the data to filter on. You can set the `InitialGroups` to a value path in your underlying data item to group by a path that has duplicate values.
 
 <!-- Unsure of this part. Need to review -->
 <!-- ????? The `InitialHighlightFilter` is done using OData filter query syntax. The syntax for this is an abbreviation of the filter operator. For example, if you wanted to have an InitialHighlightFilter of "Month not equals January" it would be represented as "Month ne 'January'"-->
@@ -69,13 +69,13 @@ You can find more information about related chart features in these topics:
 The following is a list of API members mentioned in the above sections:
 
 
-| `CategoryChart` Properties                    | `XamDataChart` Properties | 
+| `CategoryChart` Properties                    | `XamDataChart` Properties |
 | ----------------------------------------------|---------------------------|
 | `CategoryChart.HighlightedItemsSource`        | `Series.HighlightedItemsSource`  |
-| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  | 
-| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     | 
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
-| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   | 
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
+| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  |
+| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     |
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
+| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   |
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
 | `CategoryChart.InitialHighlightFilter`        |  |
 | `CategoryChart.InitialGroups`                 |  |

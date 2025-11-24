@@ -148,7 +148,7 @@ return (
 <IgrDateRangePicker useTwoInputs nonEditable/>
 ```
 
-### ポップアップ モード 
+### ポップアップ モード
 
 デフォルトでは、`DateRangePicker` をクリックすると、カレンダーのポップアップが `dropdown` モードで表示されます。`Mode` プロパティを `dialog` に設定することで、カレンダーを `dialog` モードで開くこともできます。
 
@@ -167,7 +167,7 @@ return (
 
 使用可能なキーボード ナビゲーション オプションは、コンポーネントがシングル インプット モードか 2 インプット モードかによって異なります。
 
-**2 インプット モード:** 
+**2 インプット モード:**
 
 |キー|説明|
 |----|-----------|
@@ -303,7 +303,7 @@ return (
 <IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
 ```
 
-### カスタムおよび定義済みの日付範囲 
+### カスタムおよび定義済みの日付範囲
 
 `CustomRanges` プロパティを使用して、範囲選択を高速化するために、カレンダー ポップアップにカスタム日付範囲チップを追加することもできます。たとえば、現在の日付を終了日とし、今後 7 日間の範囲をすぐに選択できるカスタム日付範囲チップを作成できます。さらに、`UsePredefinedRanges` プロパティを設定すると、カスタム チップに加えて定義済みの範囲チップも表示されます。
 
@@ -313,7 +313,7 @@ const today = new Date();
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7 
+  today.getDate() + 7
 );
 const nextWeek: CustomDateRange[] = [
   {
@@ -415,7 +415,7 @@ return (
 |名前|タイプ|説明|
 |--|--|--|
 | `Disabled` | boolean | コンポーネントを無効にします。 |
-| `NonEditable` | boolean |	入力フィールドでの入力を無効にします。 |
+| `NonEditable` | boolean | 入力フィールドでの入力を無効にします。 |
 | `Placeholder` | string | シングル インプット モード時のプレースホルダー テキスト。 |
 | `PlaceholderStart` | string | 開始日入力 (2 インプット モード) のプレースホルダー テキスト。 |
 | `PlaceholderEnd` | string | 終了日入力 (2 インプット モード) のプレースホルダー テキスト。 |
@@ -425,7 +425,7 @@ return (
 
 ### スロット
 
-`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。 
+`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。
 
 シングル インプット モードでは、`prefix` および `suffix` スロットを使って、入力フィールドの前後にカスタム コンテンツを挿入できます。
 

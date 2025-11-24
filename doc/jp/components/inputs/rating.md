@@ -125,18 +125,18 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
         <IgrIcon name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-        <IgrIcon  name='heart' collection="material"></IgrIcon>                           
+        <IgrIcon  name='heart' collection="material"></IgrIcon>                          
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-      	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+      	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
-    </IgrRatingSymbol>                        
-</IgrRating> 
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
+    </IgrRatingSymbol>                       
+</IgrRating>
 ```
 <!-- end: React -->
 
@@ -175,26 +175,26 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <!-- React -->
 ```tsx
 <IgrRating single={true}>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>                          
       <div>😣</div>	
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>                          
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>                          
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>                          
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>                          
       <div>😣</div>
       <div slot="empty">😣</div>
-    </IgrRatingSymbol>                         
+    </IgrRatingSymbol>                        
 </IgrRating>
 ```
 <!-- end: React -->
@@ -229,8 +229,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```tsx
 <IgrRatingSymbol>
     <div><IgrIcon name='bandage' collection="material"></IgrIcon></div>
-    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div> 
-</IgrRatingSymbol> 
+    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div>
+</IgrRatingSymbol>
 ```
 <!-- end: React -->
 

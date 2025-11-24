@@ -318,7 +318,7 @@ const options = {
           <button onClick={() => alert('Voice input!')}>🎤</button>
         </>
       );
-    } 
+    }
   }
 };
 ```

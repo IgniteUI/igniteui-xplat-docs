@@ -91,7 +91,7 @@ this.dockManager.allowInnerDock = false;
 
 `sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager 内側ドッキングの切り替えの例"`
 
-## ペイン ドラッグの制御 
+## ペイン ドラッグの制御
 
 `containedInBoundaries` プロパティを使用すると、開発者はフローティング ペインの側面を常に DockManager 内に含めるかどうかを制御できます。**true** に設定すると、いずれかの側が DockManager の境界を越えて移動しようとすると、ペインのドラッグが停止します。
 

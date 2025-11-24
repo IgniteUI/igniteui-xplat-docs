@@ -381,7 +381,7 @@ We will easily set the data of the root grid after getting its data from the ser
 
 Setting the data for any child that has been expanded is a bit different. When a row is expanded for the first time, a new child `HierarchicalGrid` is rendered for it and we need to get the reference for the newly created grid to set its data. That is why each `RowIsland` component provides the `GridCreated` event that is fired when a new child grid is created for that specific row island. We can use that to get the reference we need for the new grid, request its data from the service, and apply it.
 
-We can use one method for all row islands since we built our service so that it needs only information if it is the root level, the key of the row island, the primary key of the parent row, and its unique identifier. All this information can be accessed either directly from the event arguments, or from the row island responsible for triggering the event. 
+We can use one method for all row islands since we built our service so that it needs only information if it is the root level, the key of the row island, the primary key of the parent row, and its unique identifier. All this information can be accessed either directly from the event arguments, or from the row island responsible for triggering the event.
 
 <!-- Angular, WebComponents, React -->
 Let's name the method that we will use `gridCreated`.
@@ -392,7 +392,7 @@ Let's name the method that we will use `OnGridCreated`.
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-Since the `GridCreated` event provides the `parentID` property, a reference to the row island as `owner` and the new child `grid` property, it will be passed as the first argument. We are only missing information about the parent row's `primaryKey`, but we can easily pass that as a second argument, depending on which row island we bind. 
+Since the `GridCreated` event provides the `parentID` property, a reference to the row island as `owner` and the new child `grid` property, it will be passed as the first argument. We are only missing information about the parent row's `primaryKey`, but we can easily pass that as a second argument, depending on which row island we bind.
 <!-- end: Angular, WebComponents -->
 
 <!-- React -->
@@ -697,7 +697,7 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-With this, the setup of our application is almost done. This last step aims to improve the user experience by informing the user that the data is still loading so he doesn't have to look at an empty grid in the meantime. That's why the `HierarchicalGrid` supports a loading indicator that can be displayed while the grid is empty. If new data is received, the loading indicator will hide and the data will be rendered. 
+With this, the setup of our application is almost done. This last step aims to improve the user experience by informing the user that the data is still loading so he doesn't have to look at an empty grid in the meantime. That's why the `HierarchicalGrid` supports a loading indicator that can be displayed while the grid is empty. If new data is received, the loading indicator will hide and the data will be rendered.
 
 ### Setup of loading indication
 
@@ -806,7 +806,7 @@ const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
 useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
-    
+   
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
         hierarchicalGrid.current.isLoading = false;
@@ -825,9 +825,9 @@ function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
         parentKey: _parentKey,
         rootLevel: false,
     };
-    
+   
     context.grid.isLoading = true;
-    
+   
     getData(dataState).then((data: any[]) => {
         context.grid.isLoading = false;
         context.grid.data = data;
