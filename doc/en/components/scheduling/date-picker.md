@@ -68,7 +68,7 @@ You will also need to link an additional CSS file to apply the styling to the `D
 ```
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Using the {Platform} Date Picker Component
 

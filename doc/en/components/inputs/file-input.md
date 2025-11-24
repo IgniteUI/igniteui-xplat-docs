@@ -45,7 +45,7 @@ Now you can start with a basic configuration of the {Platform} `FileInput`.
 <igc-file-input label="File Input" required=true></igc-file-input>
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Configuration
 

@@ -42,7 +42,7 @@ import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcNavbarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 

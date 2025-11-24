@@ -76,7 +76,7 @@ import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCardComponent );
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 Then, to represent the demo card template, we can add the following code:
 

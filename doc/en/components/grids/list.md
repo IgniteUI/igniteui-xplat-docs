@@ -73,7 +73,7 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 defineComponents(IgcListComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ### Add List Items
 

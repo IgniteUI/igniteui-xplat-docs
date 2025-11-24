@@ -52,7 +52,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 <!-- end: React -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 Before using the {Platform} `Dialog`, you need to register it as follows:

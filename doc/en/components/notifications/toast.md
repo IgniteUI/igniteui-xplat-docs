@@ -65,7 +65,7 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 

@@ -74,7 +74,7 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 defineComponents(IgcNavDrawerComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Adding Navigation Drawer Items
 

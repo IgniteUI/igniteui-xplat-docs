@@ -69,7 +69,7 @@ import { defineComponents, IgcDividerComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDividerComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The `Divider` is capable of displaying images, initials, or any other content, including icons. Declaring an `Divider` is as simple as:
 

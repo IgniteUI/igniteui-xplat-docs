@@ -67,7 +67,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The `Avatar` is capable of displaying images, initials, or any other content, including icons. Declaring an `Avatar` is as simple as:
 

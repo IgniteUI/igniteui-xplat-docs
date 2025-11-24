@@ -34,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcChipComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 

@@ -125,7 +125,7 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
 ```
 <!-- end: React -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Layout
 
