@@ -228,8 +228,8 @@ igc-chip::part(suffix) {
 
 ## API References
 
- - `Chip`
- - [`Styling & Themes`](../themes/overview.md)
+- `Chip`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

@@ -182,5 +182,5 @@ ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
 
 ## API リファレンス
 
- - `Spreadsheet`
- - `Workbook`
+- `Spreadsheet`
+- `Workbook`

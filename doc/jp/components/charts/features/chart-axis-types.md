@@ -35,9 +35,9 @@ _language: ja
 
 `CategoryYAxis` は、上記の `CategoryXAxis` と非常によく似た働きをしますが、水平ではなく垂直に配置されます。また、この軸では、データをプロットするために `DataSource` と `Label` を提供する必要があります。`CategoryYAxis` は通常 `NumericXAxis`  と組み合わせて次のタイプのシリーズをプロットするために使用されます。
 
- - `BarSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  次の例は、`CategoryYAxis` タイプの使用法を示しています:
 
@@ -49,18 +49,18 @@ _language: ja
 
 `NumericXAxis` は、次のタイプのシリーズと互換性があります:
 
- - `BarSeries`
- - `BubbleSeries`
- - `HighDensityScatterSeries`
- - `ScatterSeries`
- - `ScatterLineSeries`
- - `ScatterSplineSeries`
- - `ScatterAreaSeries`
- - `ScatterContourSeries`
- - `ScatterPolylineSeries`
- - `ScatterPolygonSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `BubbleSeries`
+- `HighDensityScatterSeries`
+- `ScatterSeries`
+- `ScatterLineSeries`
+- `ScatterSplineSeries`
+- `ScatterAreaSeries`
+- `ScatterContourSeries`
+- `ScatterPolylineSeries`
+- `ScatterPolygonSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  次の例は、`NumericXAxis` の使用法を示しています:
 

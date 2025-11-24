@@ -184,20 +184,20 @@ The following sample demonstrates how to style the track fill and thumb parts:
 
 ## API References
 
- - `HidePrimaryLabels`
- - `HideSecondaryLabels`
- - `HideTooltip`
- - `PrimaryTicks`
- - `RangeSlider`
- - `SecondaryTicks`
- - `SliderLabel`
- - `Slider`
- - `SliderTickLabelRotation`
- - `TickOrientation`
- - `UpperBound`
- - `ValueFormatOptions`
- - `ValueFormat`
- - [`Styling & Themes`](../themes/overview.md)
+- `HidePrimaryLabels`
+- `HideSecondaryLabels`
+- `HideTooltip`
+- `PrimaryTicks`
+- `RangeSlider`
+- `SecondaryTicks`
+- `SliderLabel`
+- `Slider`
+- `SliderTickLabelRotation`
+- `TickOrientation`
+- `UpperBound`
+- `ValueFormatOptions`
+- `ValueFormat`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

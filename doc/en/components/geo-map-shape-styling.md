@@ -404,5 +404,5 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
 
 ## API References
 
- - `GeographicShapeSeries`
- - `XamGeographicMap`
+- `GeographicShapeSeries`
+- `XamGeographicMap`

@@ -216,7 +216,7 @@ igc-avatar::part(base) {
 
 ## API リファレンス
 
- - `Avatar`
+- `Avatar`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース

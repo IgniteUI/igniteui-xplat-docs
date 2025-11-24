@@ -236,12 +236,12 @@ igc-toast {
 
 ## API リファレンス
 
- - `Calendar`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Toast`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Calendar`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Toast`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

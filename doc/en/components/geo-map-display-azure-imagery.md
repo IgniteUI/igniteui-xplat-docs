@@ -288,6 +288,6 @@ The following table summarizes properties of the `AzureMapsImagery` class:
 
 ## API References
 
- - `AzureMapsImageryStyle`
- - `AzureMapsImagery`
- - `XamGeographicMap`
+- `AzureMapsImageryStyle`
+- `AzureMapsImagery`
+- `XamGeographicMap`

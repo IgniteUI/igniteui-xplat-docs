@@ -463,14 +463,14 @@ In this article we covered a lot of ground with the `List` component. First, we 
 
 ## API References
 
- - `Avatar`
- - `Button`
- - `RadioGroup`
- - `Radio`
- - `ListHeader`
- - `ListItem`
- - `List`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- `Button`
+- `RadioGroup`
+- `Radio`
+- `ListHeader`
+- `ListItem`
+- `List`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

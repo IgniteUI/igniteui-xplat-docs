@@ -199,10 +199,10 @@ igc-linear-progress::part(label){
 
 ## API リファレンス
 
- - `Button`
- - `Calendar`
- - `LinearProgress`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `LinearProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

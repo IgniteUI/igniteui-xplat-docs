@@ -172,7 +172,7 @@ public onValueChanged(calendar: IgrColorEditor, e: IgrColorEditorPanelSelectedVa
 
 ## API リファレンス
 
- - `ColorEditor`
+- `ColorEditor`
 
 ## その他のリソース
 

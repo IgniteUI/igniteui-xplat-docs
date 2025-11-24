@@ -531,11 +531,11 @@ Let's create a fully automated carousel with looping enabled. We will configure 
 
 
 To achieve this goal, we have to do the following configurations to the carousel:
- - enable the `DisablePauseOnInteraction` property
- - enable the `HideNavigation` property
- - enable the `Vertical` property
- - add transition `Interval`
- - add custom `CarouselIndicator` for each slide
+- enable the `DisablePauseOnInteraction` property
+- enable the `HideNavigation` property
+- enable the `Vertical` property
+- add transition `Interval`
+- add custom `CarouselIndicator` for each slide
 
 Our carousel will look like this in the template:
 

@@ -469,15 +469,15 @@ igc-nav-drawer-header-item {
 
 ## API References
 
- - `Button`
- - `Icon`
- - `NavDrawerHeaderItem`
- - `NavDrawerItem`
- - `NavDrawer`
- - `Navbar`
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Icon`
+- `NavDrawerHeaderItem`
+- `NavDrawerItem`
+- `NavDrawer`
+- `Navbar`
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

@@ -402,15 +402,15 @@ createPolylineSeries(flight: any)
 
 ## API リファレンス
 
- - `ColorMemberPath`
- - `GeographicContourLineSeries`
- - `GeographicHighDensityScatterSeries`
- - `GeographicPolylineSeries`
- - `GeographicProportionalSymbolSeries`
- - `GeographicScatterAreaSeries`
- - `GeographicSymbolSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `RadiusMemberPath`
- - `ValueMemberPath`
+- `ColorMemberPath`
+- `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicPolylineSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicScatterAreaSeries`
+- `GeographicSymbolSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `RadiusMemberPath`
+- `ValueMemberPath`

@@ -108,9 +108,9 @@ _language: ja
 
 ## API リファレンス
 
- - `XamGeographicMap`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `ItemsSource`
- - `ShapeMemberPath`
- - `ShapefileConverter`
+- `XamGeographicMap`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `ItemsSource`
+- `ShapeMemberPath`
+- `ShapefileConverter`

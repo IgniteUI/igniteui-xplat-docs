@@ -579,12 +579,12 @@ igc-date-range-picker::part(clear-icon-end) {
 
 ## API References
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - `DateTimeInput`
- - `Dialog`
- - [`Styling & Themes`](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- `DateTimeInput`
+- `Dialog`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

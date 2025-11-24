@@ -226,11 +226,11 @@ igc-circular-progress::part(track) {
 
 ## API References
 
- - `Button`
- - `Calendar`
- - `CircularGradient`
- - `CircularProgress`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `CircularGradient`
+- `CircularProgress`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

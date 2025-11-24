@@ -195,14 +195,14 @@ Keyboard navigation in the {Platform} Accordion provides a rich variety of keybo
 The Accordion navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
- - <kbd>↓</kbd> - moves the focus to the panel below
- - <kbd>↑</kbd> - moves the focus to the panel above
- - <kbd>ALT</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
- - <kbd>ALT</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - closes all enabled panels
- - <kbd>HOME</kbd> - navigates to the FIRST enabled panel in the accordion
- - <kbd>END</kbd> - navigates to the LAST enabled panel in the accordion
+- <kbd>↓</kbd> - moves the focus to the panel below
+- <kbd>↑</kbd> - moves the focus to the panel above
+- <kbd>ALT</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
+- <kbd>ALT</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - closes all enabled panels
+- <kbd>HOME</kbd> - navigates to the FIRST enabled panel in the accordion
+- <kbd>END</kbd> - navigates to the LAST enabled panel in the accordion
 
 <div class="divider"></div>
 

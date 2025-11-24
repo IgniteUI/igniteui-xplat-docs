@@ -49,4 +49,4 @@ CSS パーツと CSS 変数について学び、ドキュメントに記載さ�
 
 ## API リファレンス
 
- - `ConfigureTheme`
+- `ConfigureTheme`

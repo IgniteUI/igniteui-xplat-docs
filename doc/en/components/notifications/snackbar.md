@@ -148,12 +148,12 @@ igc-snackbar::part(base) {
 
 ## API References
 
- - `ActionText`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Snackbar`
- - [`Styling & Themes`](../themes/overview.md)
+- `ActionText`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Snackbar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

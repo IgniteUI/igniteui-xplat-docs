@@ -58,9 +58,9 @@ _language: ja
 ```
 
 各オプションを `{ComponentName}` に反映する方法を紹介します。サイズ オプション間で切り替える際に各 `{ComponentName}` 要素の高さとそのパディングが変更されます。カスタムの列 `Width` を適用する場合、左右のパディングより大きくする必要があることに注意してください。
- - **large** - これはデフォルトの `{ComponentName}` サイズです。サイズが最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
- - **medium** - 中サイズで、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
- - **small** - 強度が最も高く、行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
+- **large** - これはデフォルトの `{ComponentName}` サイズです。サイズが最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
+- **medium** - 中サイズで、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
+- **small** - 強度が最も高く、行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
 
 > [!Note]
 > 現在サイズは**オーバーライドできません**。
@@ -867,8 +867,8 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `--ig-size` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - `RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
- - `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
+- `RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
+- `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
 

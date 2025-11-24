@@ -107,9 +107,9 @@ The following topics provide additional information related to this topic.
 
 ## API References
 
- - `XamGeographicMap`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `ItemsSource`
- - `ShapeMemberPath`
- - `ShapefileConverter`
+- `XamGeographicMap`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `ItemsSource`
+- `ShapeMemberPath`
+- `ShapefileConverter`

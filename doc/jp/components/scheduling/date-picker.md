@@ -369,10 +369,10 @@ igc-date-picker::part(year-inner selected) {
 
 ## API リファレンス
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

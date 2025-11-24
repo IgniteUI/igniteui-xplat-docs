@@ -524,15 +524,15 @@ igc-icon-button::part(base) {
 
 ## API リファレンス
 
- - `Avatar`
- - `Button`
- - `CardActions`
- - `CardContent`
- - `CardHeader`
- - `CardMedia`
- - `Card`
- - `IconButton`
- - `Icon`
+- `Avatar`
+- `Button`
+- `CardActions`
+- `CardContent`
+- `CardHeader`
+- `CardMedia`
+- `Card`
+- `IconButton`
+- `Icon`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース

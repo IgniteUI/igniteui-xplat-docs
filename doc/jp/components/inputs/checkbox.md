@@ -283,10 +283,10 @@ igc-checkbox::part(control checked)::after {
 
 ## API リファレンス
 
- - `Checkbox`
- - `Checked`
- - `Disabled`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Checkbox`
+- `Checked`
+- `Disabled`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

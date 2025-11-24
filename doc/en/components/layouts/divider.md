@@ -204,7 +204,7 @@ The `--color` css variable sets the color of the divider.
 
 ## API References
 
- - `Divider`
+- `Divider`
 
 ## Additional Resources
 

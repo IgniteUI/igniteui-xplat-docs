@@ -310,11 +310,11 @@ igc-date-time-input::part(suffix) {
 
 ## API References
 
- - `Input`
- - `MaskInput`
- - `Icon`
- - `DateTimeInput`
- - [`Styling & Themes`](../themes/overview.md)
+- `Input`
+- `MaskInput`
+- `Icon`
+- `DateTimeInput`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

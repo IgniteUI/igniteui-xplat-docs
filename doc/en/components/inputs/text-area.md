@@ -141,10 +141,10 @@ igc-textarea::part(suffix) {
 
 ## API References
 
- - `Icon`
- - `Textarea`
- - `Toast`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Textarea`
+- `Toast`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

@@ -65,4 +65,4 @@ configureTheme("material");
 
 ## API リファレンス
 
- - `ConfigureTheme`
+- `ConfigureTheme`

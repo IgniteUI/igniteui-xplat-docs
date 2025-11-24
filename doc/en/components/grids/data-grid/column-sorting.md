@@ -130,7 +130,7 @@ grid1.sortDescriptions.add(colSortDesc);
 
 ## API References
 
- - `HeaderClickAction`
- - `SortByMultipleColumnsTriState`
- - `SortByMultipleColumns`
- - `SortByOneColumnOnlyTriState`
+- `HeaderClickAction`
+- `SortByMultipleColumnsTriState`
+- `SortByMultipleColumns`
+- `SortByOneColumnOnlyTriState`

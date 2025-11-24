@@ -99,6 +99,6 @@ The following table summarized properties of the `BingMapsMapImagery` class:
 
 ## API References
 
- - `BingMapsImageryStyle`
- - `BingMapsMapImagery`
- - `XamGeographicMap`
+- `BingMapsImageryStyle`
+- `BingMapsMapImagery`
+- `XamGeographicMap`

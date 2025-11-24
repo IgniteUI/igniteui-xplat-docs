@@ -111,9 +111,9 @@ igc-ripple {
 
 ## API References
 
- - `Button`
- - `Ripple`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Ripple`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

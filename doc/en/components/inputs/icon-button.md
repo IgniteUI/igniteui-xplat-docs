@@ -195,11 +195,11 @@ igc-icon-button::part(icon) {
 
 ## API References
 
- - `ButtonBase`
- - `Button`
- - `IconButton`
- - `Icon`
- - [`Styling & Themes`](../themes/overview.md)
+- `ButtonBase`
+- `Button`
+- `IconButton`
+- `Icon`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

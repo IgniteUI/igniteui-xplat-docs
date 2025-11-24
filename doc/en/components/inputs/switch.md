@@ -262,9 +262,9 @@ igc-switch::part(control checked) {
 
 ## API References
 
- - `LabelPosition`
- - `Switch`
- - [`Styling & Themes`](../themes/overview.md)
+- `LabelPosition`
+- `Switch`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

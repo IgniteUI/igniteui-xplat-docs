@@ -523,16 +523,16 @@ In this article we covered a lot of ground with the card component. We created a
 
 ## API References
 
- - `Avatar`
- - `Button`
- - `CardActions`
- - `CardContent`
- - `CardHeader`
- - `CardMedia`
- - `Card`
- - `IconButton`
- - `Icon`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- `Button`
+- `CardActions`
+- `CardContent`
+- `CardHeader`
+- `CardMedia`
+- `Card`
+- `IconButton`
+- `Icon`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

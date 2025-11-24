@@ -205,7 +205,7 @@ defineComponents(IgcDividerComponent);
 
 ## API リファレンス
 
- - `Divider`
+- `Divider`
 
 ## その他のリソース
 

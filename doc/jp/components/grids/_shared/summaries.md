@@ -26,20 +26,20 @@ _language: ja
 
 
 `string` および `boolean` `DataType`の場合、以下の関数が利用できます:
- - Count
+- Count
 
 `number`、`currency`、および `percent` データ型の場合、以下の関数を使用できます。
 
- - Count
- - Min
- - Max
- - Average
- - Sum
+- Count
+- Min
+- Max
+- Average
+- Sum
 
 `date` データ型の場合、以下の関数が利用できます:
- - Count
- - Earliest
- - Latest
+- Count
+- Earliest
+- Latest
 
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
 
@@ -1213,14 +1213,14 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
 
 以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - ルート レベルのみ集計が計算されます。
- - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
- - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+- `RootLevelOnly` - ルート レベルのみ集計が計算されます。
+- `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+- `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
 以下は使用できる `SummaryPosition` プロパティの値です。
 
- - `Top` - 集計行はグループ列の子の前に表示されます。
- - `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
+- `Top` - 集計行はグループ列の子の前に表示されます。
+- `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
@@ -1244,14 +1244,14 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
 
 以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
- - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
- - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+- `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
+- `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+- `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
 以下は使用できる `SummaryPosition` プロパティの値です。
 
- - `Top` - 集計行は子行のリストの前に表示されます。
- - `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
+- `Top` - 集計行は子行のリストの前に表示されます。
+- `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
 

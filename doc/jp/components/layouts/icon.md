@@ -269,9 +269,9 @@ igc-icon {
 
 ## API リファレンス
 
- - `Icon`
- - `RegisterIcon`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `RegisterIcon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

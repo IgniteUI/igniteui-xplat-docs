@@ -214,7 +214,7 @@ architect => build => options から serve の options で `vendorSourceMap` オ
 
 ## API リファレンス
 
- - `Load`
- - `WorkbookInProcessRuntime`
- - `Worksheet`
- - `Workbook`
+- `Load`
+- `WorkbookInProcessRuntime`
+- `Worksheet`
+- `Workbook`

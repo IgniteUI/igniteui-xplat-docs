@@ -65,4 +65,4 @@ This only tells components to switch their internal styles to the desired theme,
 
 ## API References
 
- - `ConfigureTheme`
+- `ConfigureTheme`

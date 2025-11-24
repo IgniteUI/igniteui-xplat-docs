@@ -630,7 +630,7 @@ _Breaking Changes_:
 
 ### {PackageCharts}
 
- - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
+- New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
 
 - `XamRadialChart` 
     - New Label Mode

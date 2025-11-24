@@ -236,7 +236,7 @@ builder.Services.AddIgniteUIBlazor(
 トレンド操作
 
 - `AnalyzeMenu`: チャートのさまざまなオプションを構成するためのいくつかのオプションを含む `ToolActionIconMenu`。
- - `AnalyzeHeader`: サブ セクションのヘッダー。
+- `AnalyzeHeader`: サブ セクションのヘッダー。
   - `LinesMenu`: チャート上で水平破線を表示するためのさまざまなツールが含まれるサブ メニュー。
     - `LinesHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
       - `MaxValue`: シリーズの最大値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
@@ -247,19 +247,19 @@ builder.Services.AddIgniteUIBlazor(
       - **Exponential**: チャート内の各シリーズの `TrendLineType` を **ExponentialFit** に設定する `ToolActionRadio`。
       - **Linear**: チャート内の各シリーズの `TrendLineType` を **LinearFit** に設定する `ToolActionRadio`。
       - **Logarithmic**: チャート内の各シリーズの `TrendLineType` を **LogarithmicFit** に設定する `ToolActionRadio`。
- - `HelpersHeader`: サブ セクションのヘッダー。
+- `HelpersHeader`: サブ セクションのヘッダー。
   - `SeriesAvg`: `Average` タイプの `ValueLayerValueMode` を使用して、チャートのシリーズ コレクションに `ValueLayer` を追加または削除する `ToolActionCheckbox`。
   - `ValueLabelsMenu`: `XamDataChart` のプロット領域に注釈を表示するためのさまざまなツールを含むサブ メニュー。
     - `ValueLabelsHeader`: 次のツールのサブ メニュー セクション ヘッダー:
       - `ShowValueLabels`: `CalloutLayer` を使用してデータ ポイント値を切り替える `ToolActionCheckbox`。
       - `ShowLastValueLabel`: `FinalValueLayer` を使用して最終値軸の注釈を切り替える `ToolActionCheckbox`。
- - `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
- - `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
+- `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
+- `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
 
 画像に保存アクション
 
 - `CopyAsImage`: チャートをクリップボードにコピーするオプションを公開する `ToolActionLabel`。
- - `CopyHeader`: サブ セクションのヘッダー。
+- `CopyHeader`: サブ セクションのヘッダー。
 
 ### SVG アイコン
 
@@ -486,8 +486,8 @@ Name="toolbar"
 
 ## API リファレンス
 
- - `Toolbar`
- - `XamDataChart`
+- `Toolbar`
+- `XamDataChart`
 
 ## その他のリソース
 

@@ -150,13 +150,13 @@ This demo demonstrates dashboard tile integration with the {Platform} Geographic
 
 ## API References
 
- - `Toolbar`
- - `CategoryChart`
- - `XamDataChart`
- - `DataPieChart`
- - `XamGeographicMap`
- - `XamLinearGauge`
- - `XamRadialGauge`
+- `Toolbar`
+- `CategoryChart`
+- `XamDataChart`
+- `DataPieChart`
+- `XamGeographicMap`
+- `XamLinearGauge`
+- `XamRadialGauge`
 
 ## Additional Resources
 

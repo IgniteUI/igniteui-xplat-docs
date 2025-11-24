@@ -60,5 +60,5 @@ public paste(): void {
 
 ## API References
 
- - `SpreadsheetAction`
- - `Spreadsheet`
+- `SpreadsheetAction`
+- `Spreadsheet`

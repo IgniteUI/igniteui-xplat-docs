@@ -155,5 +155,5 @@ Try it for yourself in the sample below:
 
 ## API References
 
- - `DockManager`
- - `ContentPane`
+- `DockManager`
+- `ContentPane`

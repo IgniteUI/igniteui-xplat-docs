@@ -109,9 +109,9 @@ grid1.dataSource = data;
 
 ## API References
 
- - `ColumnResizingAnimationMode`
- - `ColumnResizingMode`
- - `ColumnResizingSeparatorBackground`
- - `ColumnResizingSeparatorWidth`
- - `Deferred`
- - `Interpolate`
+- `ColumnResizingAnimationMode`
+- `ColumnResizingMode`
+- `ColumnResizingSeparatorBackground`
+- `ColumnResizingSeparatorWidth`
+- `Deferred`
+- `Interpolate`

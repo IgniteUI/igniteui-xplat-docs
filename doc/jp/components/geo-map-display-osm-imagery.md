@@ -85,5 +85,5 @@ this.geoMap.backgroundContent = mapImagery;
 
 ## API リファレンス
 
- - `BackgroundContent`
- - `OpenStreetMapImagery`
+- `BackgroundContent`
+- `OpenStreetMapImagery`

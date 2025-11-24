@@ -356,7 +356,7 @@ igc-tooltip::part(bottom) {
 - `Badge`
 - `List`
 - `CategoryChart`
- - [スタイル設定およびテーマ](../themes/overview.md)
+- [スタイル設定およびテーマ](../themes/overview.md)
 
 ## その他のリソース
 

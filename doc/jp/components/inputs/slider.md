@@ -184,20 +184,20 @@ builder.Services.AddIgniteUIBlazor(
 
 ## API リファレンス
 
- - `HidePrimaryLabels`
- - `HideSecondaryLabels`
- - `HideTooltip`
- - `PrimaryTicks`
- - `RangeSlider`
- - `SecondaryTicks`
- - `SliderLabel`
- - `Slider`
- - `SliderTickLabelRotation`
- - `TickOrientation`
- - `UpperBound`
- - `ValueFormatOptions`
- - `ValueFormat`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `HidePrimaryLabels`
+- `HideSecondaryLabels`
+- `HideTooltip`
+- `PrimaryTicks`
+- `RangeSlider`
+- `SecondaryTicks`
+- `SliderLabel`
+- `Slider`
+- `SliderTickLabelRotation`
+- `TickOrientation`
+- `UpperBound`
+- `ValueFormatOptions`
+- `ValueFormat`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

@@ -1888,10 +1888,10 @@ Keyboard navigation of the `Grid` provides a rich variety of keyboard interactio
 
 Check out these resources for more information:
 
- - [Grid Keyboard Navigation](grid/keyboard-navigation.md)
- - [TreeGrid Keyboard Navigation](tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid Keyboard Navigation](hierarchical-grid/keyboard-navigation.md)
- - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+- [Grid Keyboard Navigation](grid/keyboard-navigation.md)
+- [TreeGrid Keyboard Navigation](tree-grid/keyboard-navigation.md)
+- [Hierarchical Grid Keyboard Navigation](hierarchical-grid/keyboard-navigation.md)
+- [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
  <!-- end: Angular -->
 

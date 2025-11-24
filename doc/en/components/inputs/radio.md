@@ -348,9 +348,9 @@ igc-radio::part(label) {
 
 ## API References
 
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

@@ -353,13 +353,13 @@ igc-button::part(base) {
 
 ## API References
 
- - `Button`
- - `DisplayType`
- - `Download`
- - `Href`
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `DisplayType`
+- `Download`
+- `Href`
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

@@ -532,11 +532,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 
 これを実現するには、カルーセルを以下のように構成する必要があります。
- - `DisablePauseOnInteraction` プロパティを有効にします。
- - `HideNavigation` プロパティを有効にします。
- - `Vertical` プロパティを有効にします。
- - トランジション `Interval` を追加します。
- - 各スライドにカスタム `CarouselIndicator` を追加します。
+- `DisablePauseOnInteraction` プロパティを有効にします。
+- `HideNavigation` プロパティを有効にします。
+- `Vertical` プロパティを有効にします。
+- トランジション `Interval` を追加します。
+- 各スライドにカスタム `CarouselIndicator` を追加します。
 
 カルーセル テンプレートは以下のようになります。
 

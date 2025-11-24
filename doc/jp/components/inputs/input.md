@@ -166,10 +166,10 @@ igc-input::part(suffix) {
 
 ## API リファレンス
 
- - `Icon`
- - `Input`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `Input`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

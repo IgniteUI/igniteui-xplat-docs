@@ -137,4 +137,4 @@ this.spreadsheet.workbook.worksheets(0).rows(7).cells(0).value = "Check Out Date
 
 ## API リファレンス
 
- - `Spreadsheet`
+- `Spreadsheet`

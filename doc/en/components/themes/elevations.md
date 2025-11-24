@@ -84,4 +84,4 @@ The `--ig-elevation-factor` can also be set to a decimal value or a value bigger
 
 ## API References
 
- - `Elevations`
+- `Elevations`

@@ -156,5 +156,5 @@ const splitPaneFixedSize: IgcSplitPane = {
 
 ## API リファレンス
 
- - `DockManager`
- - `ContentPane`
+- `DockManager`
+- `ContentPane`

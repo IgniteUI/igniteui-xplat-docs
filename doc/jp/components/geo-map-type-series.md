@@ -29,4 +29,4 @@ _language: ja
 
 ## API リファレンス
 
- - `XamGeographicMap`
+- `XamGeographicMap`

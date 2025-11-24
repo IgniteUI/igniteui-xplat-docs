@@ -301,6 +301,6 @@ class CustomDomestic extends SummaryCalculator
 
 ## API リファレンス
 
- - `Grid`
- - `GroupSummaryDisplayMode`
- - `SummaryScope`
+- `Grid`
+- `GroupSummaryDisplayMode`
+- `SummaryScope`

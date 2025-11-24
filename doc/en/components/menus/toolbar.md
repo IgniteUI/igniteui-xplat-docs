@@ -235,7 +235,7 @@ Zooming Actions
 Trend Actions
 
 - `AnalyzeMenu`: A `ToolActionIconMenu` that contains several options for configuring different options of the chart.
- - `AnalyzeHeader`: A sub section header.
+- `AnalyzeHeader`: A sub section header.
   - `LinesMenu`: A sub menu containing various tools for showing different dashed horizontal lines on the chart.
     - `LinesHeader`: A sub menu section header for the following three tools:
       - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
@@ -246,19 +246,19 @@ Trend Actions
       - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
       - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
       - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
- - `HelpersHeader`: A sub section header.
+- `HelpersHeader`: A sub section header.
   - `SeriesAvg`: A `ToolActionCheckbox` that adds or removes a `ValueLayer` to the chart's series collection using the `ValueLayerValueMode` of type `Average`.
   - `ValueLabelsMenu`: A sub menu containing various tools for showing different annotations on the `XamDataChart`'s plot area.
     - `ValueLabelsHeader`: A sub menu section header for the following tools:
       - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
       - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
- - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
- - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
+- `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
+- `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 
 Save to Image Action
 
 - `CopyAsImage`: A `ToolActionLabel` that exposes an option to copy the chart to the clipboard.
- - `CopyHeader`: A sub section header.
+- `CopyHeader`: A sub section header.
 
 ### SVG Icons
 
@@ -484,8 +484,8 @@ The icon component can be styled by using it's `BaseTheme` property directly to 
 
 ## API References
 
- - `Toolbar`
- - `XamDataChart`
+- `Toolbar`
+- `XamDataChart`
 
 ## Additional Resources
 

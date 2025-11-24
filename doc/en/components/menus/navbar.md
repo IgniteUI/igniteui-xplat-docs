@@ -162,9 +162,9 @@ If all went well, you should see the following in your browser:
 
 ## API References
 
- - `Icon`
- - `Navbar`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Navbar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

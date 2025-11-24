@@ -215,8 +215,8 @@ igc-avatar::part(base) {
 
 ## API References
 
- - `Avatar`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

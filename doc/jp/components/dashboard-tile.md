@@ -151,13 +151,13 @@ builder.Services.AddIgniteUIBlazor(
 
 ## API リファレンス
 
- - `Toolbar`
- - `CategoryChart`
- - `XamDataChart`
- - `DataPieChart`
- - `XamGeographicMap`
- - `XamLinearGauge`
- - `XamRadialGauge`
+- `Toolbar`
+- `CategoryChart`
+- `XamDataChart`
+- `DataPieChart`
+- `XamGeographicMap`
+- `XamLinearGauge`
+- `XamRadialGauge`
 
 ## その他のリソース
 

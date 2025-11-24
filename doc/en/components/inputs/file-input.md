@@ -156,11 +156,11 @@ igc-file-input::part(label) {
 
 ## API References
 
- - `FileInput`
- - `Icon`
- - `Input`
- - `Button`
- - [`Styling & Themes`](../themes/overview.md)
+- `FileInput`
+- `Icon`
+- `Input`
+- `Button`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

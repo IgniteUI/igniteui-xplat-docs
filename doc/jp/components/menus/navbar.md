@@ -163,9 +163,9 @@ igc-navbar::part(middle) {
 
 ## API リファレンス
 
- - `Icon`
- - `Navbar`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `Navbar`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

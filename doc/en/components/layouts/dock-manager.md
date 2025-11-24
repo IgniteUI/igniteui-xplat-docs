@@ -776,22 +776,22 @@ The shortcuts are as follows:
 - <kbd>SHIFT</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> Focuses next tab in document host
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> Focuses previous tab in document host
- - <kbd>ALT</kbd> + <kbd>F6</kbd> Focuses next content pane
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> Focuses previous content pane
+- <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> Focuses next tab in document host
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> Focuses previous tab in document host
+- <kbd>ALT</kbd> + <kbd>F6</kbd> Focuses next content pane
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
 Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  Starts from the first document forward
- - <kbd>ALT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>F8</kbd> Starts from the first pane forward
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last document backwards
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
+- <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  Starts from the first document forward
+- <kbd>ALT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>F8</kbd> Starts from the first pane forward
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last document backwards
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
 
 ### Other
- - <kbd>ALT</kbd> + <kbd>F3</kbd> Closes the active pane
+- <kbd>ALT</kbd> + <kbd>F3</kbd> Closes the active pane
 
 Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
@@ -917,9 +917,9 @@ The Dock Manager exposes `ResourceStrings` property which allows you to modify t
 
 ## API References
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
- - `SplitPane`
- - `TabGroupPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`

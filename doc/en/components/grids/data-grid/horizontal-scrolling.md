@@ -103,4 +103,4 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 
 ## API References
 
- - `Grid`
+- `Grid`

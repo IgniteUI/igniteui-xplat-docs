@@ -65,6 +65,6 @@ Ignite UI {Platform} グリッドを使用すると、開発者はページン�
 
 ## API リファレンス
 
- - `Grid`
- - `IsPagerVisible`
- - `PageSize`
+- `Grid`
+- `IsPagerVisible`
+- `PageSize`

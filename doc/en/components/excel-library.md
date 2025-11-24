@@ -213,7 +213,7 @@ Modify `angular.json` by setting the `vendorSourceMap` option under architect =>
 
 ## API References
 
- - `Load`
- - `WorkbookInProcessRuntime`
- - `Worksheet`
- - `Workbook`
+- `Load`
+- `WorkbookInProcessRuntime`
+- `Worksheet`
+- `Workbook`

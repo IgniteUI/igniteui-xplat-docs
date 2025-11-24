@@ -160,8 +160,8 @@ igc-badge::part(base) {
 
 ## API References
 
- - `Badge`
- - [`Styling & Themes`](../themes/overview.md)
+- `Badge`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

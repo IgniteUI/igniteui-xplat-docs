@@ -47,4 +47,4 @@ sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A1
 
 ## API References
 
- - `Workbook`
+- `Workbook`

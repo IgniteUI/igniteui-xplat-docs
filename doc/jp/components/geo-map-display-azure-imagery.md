@@ -291,6 +291,6 @@ window.addEventListener("load", () => {
 
 ## API リファレンス
 
- - `AzureMapsImageryStyle`
- - `AzureMapsImagery`
- - `XamGeographicMap`
+- `AzureMapsImageryStyle`
+- `AzureMapsImagery`
+- `XamGeographicMap`

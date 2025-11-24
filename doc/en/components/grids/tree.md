@@ -282,25 +282,25 @@ The `Tree` navigation is compliant with W3C accessibility standards and convenie
 
 **Key Combinations**
 
- - <kbd>↓</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
- - <kbd>↑</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
- - <kbd>←</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
- - <kbd>→</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
- - <kbd>HOME</kbd> - navigates to the FIRST item.
- - <kbd>END</kbd> - navigates to the LAST visible item.
- - <kbd>TAB</kbd> - navigates to the next focusable element on the page, outside of the tree.
- - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - navigates to the previous focusable element on the page, outside of the tree.
- - <kbd>SPACE</kbd> - toggles selection of the current item. Marks the node as active.
- - <kbd>SHIFT</kbd> + <kbd>SPACE</kbd> - toggles selection of all items between the active one and the one pressed Space while holding <kbd>SHIFT</kbd> if selection is enabled.
- - <kbd>ENTER</kbd> - activates the focused item. If the item has link in it, opens the link.
- - <kbd>*</kbd> - expands the item and all sibling items on the same level.
+- <kbd>↓</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
+- <kbd>↑</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
+- <kbd>←</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
+- <kbd>→</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
+- <kbd>HOME</kbd> - navigates to the FIRST item.
+- <kbd>END</kbd> - navigates to the LAST visible item.
+- <kbd>TAB</kbd> - navigates to the next focusable element on the page, outside of the tree.
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - navigates to the previous focusable element on the page, outside of the tree.
+- <kbd>SPACE</kbd> - toggles selection of the current item. Marks the node as active.
+- <kbd>SHIFT</kbd> + <kbd>SPACE</kbd> - toggles selection of all items between the active one and the one pressed Space while holding <kbd>SHIFT</kbd> if selection is enabled.
+- <kbd>ENTER</kbd> - activates the focused item. If the item has link in it, opens the link.
+- <kbd>*</kbd> - expands the item and all sibling items on the same level.
 
 When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse and keyboard interactions are available:
 
- - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
- - <kbd>SHIFT</kbd> + <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding <kbd>SHIFT</kbd> if selection is enabled
+- <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
+- <kbd>SHIFT</kbd> + <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding <kbd>SHIFT</kbd> if selection is enabled
 
 <!-- WebComponents -->
 

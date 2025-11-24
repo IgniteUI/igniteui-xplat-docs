@@ -170,7 +170,7 @@ public onValueChanged(calendar: IgrColorEditor, e: IgrColorEditorPanelSelectedVa
 
 ## API References
 
- - `ColorEditor`
+- `ColorEditor`
 
 ## Additional Resources
 

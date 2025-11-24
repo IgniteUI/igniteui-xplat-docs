@@ -27,4 +27,4 @@ The {ProductName} Data Table / Data Grid supports [template columns](column-type
 
 ## API References
 
- - `Grid`
+- `Grid`

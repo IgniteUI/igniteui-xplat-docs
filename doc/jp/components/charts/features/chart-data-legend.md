@@ -162,30 +162,30 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 ## API リファレンス
 
- - `ExcludedColumns`
- - `ExcludedSeries`
- - `HeaderFormatDate`
- - `HeaderFormatTime`
- - `HeaderText`
- - `IncludedColumns`
- - `IncludedSeries`
- - `LabelDisplayMode`
- - `LabelTextColor`
- - `StyleHeaderRow`:
- - `StyleSeriesColumn`:
- - `StyleSeriesRow`
- - `StyleSeriesRow`:
- - `StyleSummaryColumn`:
- - `StyleSummaryRow`:
- - `SummaryTitleText`
- - `SummaryType`
- - `TitleTextColor`
- - `UnitText`
- - `UnitsTextColor`
- - `ValueFormatAbbreviation`
- - `ValueFormatCulture`
- - `ValueFormatMaxFractions`
- - `ValueFormatMaxFractions`
- - `ValueFormatMinFractions`
- - `ValueFormatMode`
- - `ValueTextColor`
+- `ExcludedColumns`
+- `ExcludedSeries`
+- `HeaderFormatDate`
+- `HeaderFormatTime`
+- `HeaderText`
+- `IncludedColumns`
+- `IncludedSeries`
+- `LabelDisplayMode`
+- `LabelTextColor`
+- `StyleHeaderRow`:
+- `StyleSeriesColumn`:
+- `StyleSeriesRow`
+- `StyleSeriesRow`:
+- `StyleSummaryColumn`:
+- `StyleSummaryRow`:
+- `SummaryTitleText`
+- `SummaryType`
+- `TitleTextColor`
+- `UnitText`
+- `UnitsTextColor`
+- `ValueFormatAbbreviation`
+- `ValueFormatCulture`
+- `ValueFormatMaxFractions`
+- `ValueFormatMaxFractions`
+- `ValueFormatMinFractions`
+- `ValueFormatMode`
+- `ValueTextColor`

@@ -142,24 +142,24 @@ _language: ja
 
 ## API リファレンス
 
- - `DataToolTipExcludedColumns`
- - `DataToolTipGroupedPositionModeX`
- - `DataToolTipGroupedPositionModeY`
- - `DataToolTipGroupingMode`
- - `DataToolTipHeaderText`
- - `DataToolTipIncludedColumns`
- - `DataToolTipLabelTextColor`
- - `DataToolTipLayer`
- - `DataToolTipSummaryTitleText`
- - `DataToolTipSummaryType`
- - `DataToolTipTitleTextColor`
- - `DataToolTipUnitsTextColor`
- - `DataToolTipUnitsText`
- - `DataToolTipValueFormatAbbreviation`
- - `DataToolTipValueFormatCulture`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMinFractions`
- - `DataToolTipValueFormatMode`
- - `DataToolTipValueTextColor`
- - `MemberAsLegendLabel`
+- `DataToolTipExcludedColumns`
+- `DataToolTipGroupedPositionModeX`
+- `DataToolTipGroupedPositionModeY`
+- `DataToolTipGroupingMode`
+- `DataToolTipHeaderText`
+- `DataToolTipIncludedColumns`
+- `DataToolTipLabelTextColor`
+- `DataToolTipLayer`
+- `DataToolTipSummaryTitleText`
+- `DataToolTipSummaryType`
+- `DataToolTipTitleTextColor`
+- `DataToolTipUnitsTextColor`
+- `DataToolTipUnitsText`
+- `DataToolTipValueFormatAbbreviation`
+- `DataToolTipValueFormatCulture`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMinFractions`
+- `DataToolTipValueFormatMode`
+- `DataToolTipValueTextColor`
+- `MemberAsLegendLabel`

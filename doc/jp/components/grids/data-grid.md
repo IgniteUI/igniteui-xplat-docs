@@ -1886,10 +1886,10 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 詳細については、これらのリソースを参照してください。
 
- - [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
- - [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
- - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+- [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
+- [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
+- [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
+- [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
  <!-- end: Angular -->
 

@@ -200,8 +200,8 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 
 ## API リファレンス
 
- - `AddChart`
- - `ChartAdapter`
- - `SpreadsheetChartAdapter`
- - `Spreadsheet`
- - `Workbook`
+- `AddChart`
+- `ChartAdapter`
+- `SpreadsheetChartAdapter`
+- `Spreadsheet`
+- `Workbook`

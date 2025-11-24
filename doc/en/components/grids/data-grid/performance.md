@@ -42,4 +42,4 @@ This sample demonstrates this performance by binding thousands of financial reco
 
 ## API References
 
- - `Grid`
+- `Grid`

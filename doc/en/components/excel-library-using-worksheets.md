@@ -312,18 +312,18 @@ format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Re
 
 ## API References
 
- - `CellFormat`
- - `ColorScaleConditionalFormat`
- - `ConditionalFormats`
- - `DataBarConditionalFormat`
- - `DisplayOptions`
- - `FilterSettings`
- - `ShowGridlines`
- - `ShowRowAndColumnHeaders`
- - `SortSettings`
- - `Workbook`
- - `WorksheetCell`
- - `WorksheetColumn`
- - `WorksheetFilterSettings`
- - `WorksheetSortSettings`
- - `Worksheet`
+- `CellFormat`
+- `ColorScaleConditionalFormat`
+- `ConditionalFormats`
+- `DataBarConditionalFormat`
+- `DisplayOptions`
+- `FilterSettings`
+- `ShowGridlines`
+- `ShowRowAndColumnHeaders`
+- `SortSettings`
+- `Workbook`
+- `WorksheetCell`
+- `WorksheetColumn`
+- `WorksheetFilterSettings`
+- `WorksheetSortSettings`
+- `Worksheet`

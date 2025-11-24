@@ -552,22 +552,22 @@ igc-dockmanager::part(pane-header-maximize-button) {
 - <kbd>SHIFT</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
- - <kbd>ALT</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
+- <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
+- <kbd>ALT</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
 ### ペイン ナビゲーター
 
 次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
 
- - <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
- - <kbd>ALT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
+- <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
+- <kbd>ALT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
 
 ### その他
- - <kbd>ALT</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
+- <kbd>ALT</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
@@ -675,9 +675,9 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 ## API リファレンス
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
- - `SplitPane`
- - `TabGroupPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`

@@ -148,9 +148,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 **キーの組み合わせ**
 
- - <kbd>ALT</kbd> + <kbd>↓</kbd> - フォーカスされたパネルを展開します。
- - <kbd>ALT</kbd> + <kbd>↑</kbd> - フォーカスされたパネルを縮小します。
- - <kbd>SPACE</kbd> / <kbd>ENTER</kbd> - フォーカスされたパネルの展開状態を切り替えます。
+- <kbd>ALT</kbd> + <kbd>↓</kbd> - フォーカスされたパネルを展開します。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> - フォーカスされたパネルを縮小します。
+- <kbd>SPACE</kbd> / <kbd>ENTER</kbd> - フォーカスされたパネルの展開状態を切り替えます。
 
 
 ## スタイル設定
@@ -200,8 +200,8 @@ igc-expansion-panel::part(subtitle) {
 
 ## API リファレンス
 
- - `ExpansionPanel`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `ExpansionPanel`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
