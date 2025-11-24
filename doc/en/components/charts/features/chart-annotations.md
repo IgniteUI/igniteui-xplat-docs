@@ -77,6 +77,7 @@ The following example demonstrates how to style the final value layer annotation
     dataSource={this.state.data}
     finalValueAnnotationsVisible={true} />
 ```
+
 ```html
 <igc-category-chart
      id="chart"

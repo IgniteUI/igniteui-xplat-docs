@@ -200,6 +200,7 @@ Also, if you need to change the default expand/collapse indicator, we provide te
     </igc-column-group>
 </igc-column-group>
 ```
+
 ```ts
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;

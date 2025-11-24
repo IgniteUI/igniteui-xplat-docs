@@ -56,6 +56,7 @@ _language: ja
     </igc-paginator>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -82,6 +83,7 @@ constructor() {
     <igx-column [field]="ID"></igx-column>
 </igx-tree-grid>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
@@ -108,6 +110,7 @@ constructor() {
     <igx-column [field]="Debut" [width]="200px"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
         height="600px" width="800px" >
@@ -335,6 +338,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     </igx-column>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -350,6 +354,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -482,6 +487,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-tree-grid>
 </div>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -497,6 +503,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -637,6 +644,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hGrid" class="hierarchicalGrid" auto-generate="false"
     height="500px" width="100%">
@@ -656,6 +664,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;

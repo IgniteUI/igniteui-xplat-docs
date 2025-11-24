@@ -7,6 +7,7 @@ mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 ---
 
 # {Platform} Calendar Overview
+
 The {ProductName} Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
 
 

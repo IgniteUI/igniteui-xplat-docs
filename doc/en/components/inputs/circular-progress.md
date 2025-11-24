@@ -8,6 +8,7 @@ namespace: Infragistics.Controls
 ---
 
 # {Platform} Circular Progress Overview
+
 The {ProductName} Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
 
 ## {Platform} Circular Progress Example

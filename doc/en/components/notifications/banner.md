@@ -253,6 +253,7 @@ To cancel the closing event, call the [`preventDefault`](https://developer.mozil
     ...
 </igc-banner>
 ```
+
 ```ts
 const banner = document.getElementById('banner') as IgcBannerComponent;
 
@@ -282,6 +283,7 @@ banner.addEventListener('igcClosing', (event) => {
     }
 }
 ```
+
 ```razor
 //In JavaScript:
 function handleClosing() {

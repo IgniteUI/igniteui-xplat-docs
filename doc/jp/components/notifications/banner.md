@@ -254,6 +254,7 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
     ...
 </igc-banner>
 ```
+
 ```ts
 const banner = document.getElementById('banner') as IgcBannerComponent;
 
@@ -283,6 +284,7 @@ banner.addEventListener('igcClosing', (event) => {
     }
 }
 ```
+
 ```razor
 //In JavaScript:
 function handleClosing() {

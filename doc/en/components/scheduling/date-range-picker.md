@@ -7,6 +7,7 @@ mentionedTypes: ["DateRangePicker"]
 ---
 
 # {Platform} Date Range Picker Overview
+
 The {ProductName} Date Range Picker is a lightweight component that includes a text input and a calendar pop-up, allowing users to easily select start and end dates.  It is highly customizable to fit various application requirements, offering features such as date range restrictions, configurable date formats, and more.
 
 ## Date Range Picker Example
@@ -104,7 +105,7 @@ const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
 useEffect (() => {
-  dateRangeRef.current.value = { start: startDate, end: endDate }	
+  dateRangeRef.current.value = { start: startDate, end: endDate }
 }, [])
 
 return (

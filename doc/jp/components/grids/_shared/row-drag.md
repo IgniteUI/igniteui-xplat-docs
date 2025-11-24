@@ -116,6 +116,7 @@ ModuleManager.register(
 <igc-grid id="targetGrid" auto-generate="false" primary-key="ID">
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;

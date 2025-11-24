@@ -7,6 +7,7 @@ mentionedTypes: ["Carousel"]
 ---
 
 # {Platform} Carousel Overview
+
 The {ProductName} Carousel is a responsive, lightweight component that provides the most flexible way to create slideshow-like web experience for users who navigate back and forth through a collection of images with text slides, links, and other html elements.
 
 The {Platform} Carousel component allows you to use animations, slide transitions, and customization so you can easily tweak the interface and build {Platform} custom carousel.

@@ -36,6 +36,7 @@ _language: ja
     initialSummaries="Sum(sales) as Sales"
     groupSorts="Sales Desc"/>
 ```
+
 ```html
 <igc-category-chart
      id="chart"

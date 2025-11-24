@@ -219,6 +219,7 @@ If everything went well, we should now have a Calendar with customized display, 
 In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
 
 These are the available options for the `Type` property:
+
 -  `After` - disables the dates after the first date in the `DateRange`
 -  `Before` - disables the dates before the first date in the `DateRange`
 -  `Between` - disables the dates between the first and the second date in the `DateRange`
@@ -360,6 +361,7 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 ## Keyboard navigation
 
 If you traverse the page using the <kbd>TAB</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `Calendar` introduces the following tab stops:
+
 - Month selection button
 - Year selection button
 - Previous button
@@ -367,6 +369,7 @@ If you traverse the page using the <kbd>TAB</kbd> key you should keep in mind th
 - Active date element
 
 When a **day/month/year** in the `Calendar` component is focused, use:
+
 - <kbd>PAGE UP</kbd> key to move to the previous month/year/years page.
 - <kbd>PAGE DOWN</kbd> key to move to the next month/year/years page.
 - <kbd>HOME</kbd> key to focus the first day of the current month/first month in view/first year in view.
@@ -374,23 +377,29 @@ When a **day/month/year** in the `Calendar` component is focused, use:
 - <kbd>Arrow</kbd> keys to navigate through the days/months/years. Navigating before the first item and after the last item will switch the view to the next/previous month/year/years page.
 
 When a **day** inside the `days` view is focused, use:
+
 - <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> keys to move to the previous year.
 - <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> keys to move to the next year.
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to select the currently focused day.
 
 When a **month** inside the `months` view is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to change the `ActiveDate` to the currently focused month and switch to `days` view.
 
 When an **year** inside the `years` view is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to change the `ActiveDate` to the currently focused year and switch to `months` view.
 
 When the **previous** or the **next** buttons (in the subheader) are focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to the previous/next month/year/years page.
 
 When the **month** button (in the subheader) is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to `months` view.
 
 When the **year** button (in the subheader) is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to `years` view.
 
 ## Styling

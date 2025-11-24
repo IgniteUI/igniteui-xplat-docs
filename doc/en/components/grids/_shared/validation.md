@@ -541,12 +541,14 @@ The first thing we need to do is import the `themes/index` file - this gives us 
 
 ### Include the styles
 In order to change the error color you can use the css variable `--ig-error-500`:
+
 ```scss
 --ig-error-500: 34, 80%, 63%;
 ```
 
 ### Custom Templates
 Changing the default error template allows setting custom classes and styles:
+
 ```html
 <ng-template igxCellValidationError let-cell='cell' let-defaultErr='defaultErrorTemplate'>
     <div class="validator-container">
@@ -572,6 +574,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <{ComponentInstance} [rowStyles]="rowStyles">
     <igx-column field="ReorderLevel" header="ReorderLever" required [cellClasses]="cellStyles">
@@ -597,6 +600,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <igx-hierarchical-grid [rowStyles]="rowStyles">
     <igx-column field="Artist" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
@@ -624,6 +628,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <igx-tree-grid [rowStyles]="rowStyles">
         <igx-column *ngFor="let c of columns" [field]="c.field" [dataType]="c.dataType" [header]="c.label" [required]="c.required" [cellClasses]="cellStyles">

@@ -135,6 +135,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 Or to link it:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -700,6 +701,7 @@ column.bodyTemplate = this.smallView;
     <!-- Column declarations -->
 </igc-grid>
 ```
+
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some condition.
@@ -790,6 +792,7 @@ public initColumns(column: IgxGridColumn) {
     }
 }
 ```
+
 ```typescript
 public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {

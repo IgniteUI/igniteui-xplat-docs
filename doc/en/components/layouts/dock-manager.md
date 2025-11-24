@@ -204,6 +204,7 @@ const contentPane = {
     isPinned: false
 }
 ```
+
 ```tsx
 const contentPane = {
     type: IgrDockManagerPaneType.contentPane,

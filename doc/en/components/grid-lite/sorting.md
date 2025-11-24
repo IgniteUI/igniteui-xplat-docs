@@ -176,6 +176,7 @@ type SortExpression<T> = {
   comparer?: SortComparer<T, T[keyof T]>;
 };
 ```
+
 ```razor
 public class IgbGridLiteSortExpression
 {

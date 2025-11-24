@@ -72,6 +72,7 @@ Single row selection can now be easily set up, the only thing you need to do, is
         allow-filtering="true">
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -79,6 +80,7 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
+
 ```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
@@ -334,6 +336,7 @@ auto-generate="true">
 
 <button id='deselect'>DeSelect</button>
 ```
+
 ```ts
 constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);

@@ -203,10 +203,12 @@ public updateCell() {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="class" field="class" header="Class" editable="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var class = this.class = document.getElementById('class') as IgcColumnComponent;
@@ -732,6 +734,7 @@ public addRow() {
     this.hierarchicalGrid.addRow(record);
 }
 ```
+
 ```razor
 @code {
     //Assuming we have a `GetNewRecord` method returning the new row data.

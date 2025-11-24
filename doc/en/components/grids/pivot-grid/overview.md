@@ -621,6 +621,7 @@ This feature allows developers to quickly create a pivot view without manually s
 
 The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations. 
 A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
+
 ```json
 [
     {
@@ -644,6 +645,7 @@ All of these are stored in the **pivotKeys** property which is part of the `Pivo
 - **rowDimensionSeparator** - Separator used when generating the unique row field values. It's used when creating the **records** and **level** field.
 
 The default values are:
+
 ```typescript
 {
     aggregations: 'aggregations',

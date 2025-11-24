@@ -82,6 +82,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -158,6 +159,7 @@ export const singers = [{
     }]
 }];
 ```
+
 ```razor
 public class SingersData : List<SingersDataItem>
 {

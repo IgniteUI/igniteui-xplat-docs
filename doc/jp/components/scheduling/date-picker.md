@@ -113,6 +113,7 @@ const date = new Date();
 
 <IgrDatePicker value={date}/>
 ```
+
 ```Razor
 <IgbDatePicker @ref="DatePicker" Value="@SelectedDate">
 </IgbDatePicker>
@@ -143,6 +144,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-icon slot="suffix" name="arrow_upward" collection="material" class="small" onclick="DatePicker.stepUp()"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
     <IgrIcon
@@ -154,6 +156,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     </IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker @ref="DatePicker">
     <IgbIcon
@@ -176,12 +179,14 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-icon slot="clear" name="delete" collection="material" class="small"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
     <IgrIcon slot="calendar" name="calendar" collection="material" class="small"></IgrIcon>
     <IgrIcon slot="clear" name="delete" collection="material" class="small"></IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker>
     <IgbIcon Slot="calendar" IconName="calendar" Collection="material" Class="small"></IgbIcon>
@@ -196,6 +201,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-button slot="actions" onclick="DatePicker.showWeekNumbers = true">Show Week Numbers</igc-button>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
     <IgrButton
@@ -205,6 +211,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     </IgrButton>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker>
     <IgbButton Slot="actions" @onclick="() => DatePicker.ShowWeekNumbers = true">Show Week Numbers</IgbButton>
@@ -236,9 +243,11 @@ DatePicker は `dialog` モードもサポートしています。
 <igc-date-picker id="DatePicker" mode="dialog">
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker mode="dialog"></IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker Mode="PickerMode.Dialog"></IgbDatePicker>
 ```
@@ -264,6 +273,7 @@ DatePicker は `dialog` モードもサポートしています。
     <igc-icon slot="suffix" name="arrow_downward" collection="material" onclick="DatePicker.stepDown()"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
     <IgrIcon
@@ -280,6 +290,7 @@ DatePicker は `dialog` モードもサポートしています。
     </IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker @ref="DatePicker">
     <IgbIcon
@@ -323,9 +334,11 @@ DatePicker は `dialog` モードもサポートしています。
 <igc-date-picker locale="ja-JP">
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker locale="ja-JP"></IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker Locale="ja-JP"></IgbDatePicker>
 ```

@@ -46,6 +46,7 @@ The grid exposes a `cellMergeMode` property that accepts values from the `GridCe
     ...
 </{ComponentSelector}>
 ```
+
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'always';
 ```
@@ -72,10 +73,12 @@ At the column level, merging can be enabled or disabled with the `merge` propert
 <IgrColumn field="OrderID" merge={true}></IgrColumn>
 <IgrColumn field="ShipperName" merge={false}></IgrColumn>
 ```
+
 ```html
 <igc-column field="OrderID" merge="true"></igc-column>
 <igc-column field="ShipperName" merge="false"></igc-column>
 ```
+
 ```razor
 <IgbColumn Field="OrderID" Merge="true"></IgbColumn>
 <IgbColumn Field="ShipperName" Merge="false"></IgbColumn>
@@ -94,9 +97,11 @@ In the above example:
     <IgrColumn field="Salesperson" header="Salesperson"></IgrColumn>
 </{ComponentSelector}>
 ```
+
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'onSort';
 ```
+
 ```html
 <{ComponentSelector} cell-merge-mode="onSort" auto-generate="false">
     <igc-column field="OrderID" header="Order ID" merge="true"></igc-column>
@@ -104,6 +109,7 @@ const cellMergeMode: GridCellMergeMode = 'onSort';
     <igc-column field="Salesperson" header="Salesperson"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```razor
 <{ComponentSelector} Data="Data" CellMergeMode="CellMergeMode" AutoGenerate="false">
     <IgbColumn Field="OrderID" Header="Order ID" Merge="true"></IgbColumn>
@@ -240,6 +246,7 @@ Once defined, assign the strategy to the grid through the `mergeStrategy` proper
   <IgrColumn field="ProjectName" merge={true}></IgrColumn>
 </{ComponentSelector}>
 ```
+
 ```ts
 const customStrategy = new MyCustomStrategy() as IgrGridMergeStrategy;
 ```

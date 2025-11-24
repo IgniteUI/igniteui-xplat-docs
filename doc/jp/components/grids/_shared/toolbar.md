@@ -263,6 +263,7 @@ _language: ja
     </igx-grid-toolbar>
 </igx-grid>
 ```
+
 ```html
 <igc-grid auto-generate="true">
     <igc-grid-toolbar>
@@ -959,6 +960,7 @@ export class AppModule { ... }
 ```html
 <{ComponentSelector} id="toolbarExporter"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
@@ -1047,6 +1049,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 ```html
 <{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -1102,6 +1105,7 @@ igRegisterScript("ConfigureExport", (evt) => {
 ```html
 <{ComponentSelector} id="hierarchicalGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;

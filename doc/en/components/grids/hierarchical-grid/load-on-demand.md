@@ -455,6 +455,7 @@ The template file, with these changes added, would look like this:
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     const ordersRowIsland = document.getElementById("ordersRowIsland");

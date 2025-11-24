@@ -49,6 +49,7 @@ _language: ja
     <igc-grid-toolbar></igc-grid-toolbar>
 <igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid = document.getElementById("grid") as IgcGridComponent;
@@ -75,6 +76,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
@@ -95,6 +97,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;

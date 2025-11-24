@@ -37,6 +37,7 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
     defaultColumnMinWidth={300}
     dataSource={this.data}/>
 ```
+
 ```html
  <igc-data-grid id="grid"
       height="100%"

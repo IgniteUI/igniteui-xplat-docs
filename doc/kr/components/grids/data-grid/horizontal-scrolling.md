@@ -27,6 +27,7 @@ _language: kr
     defaultColumnMinWidth={300}
     dataSource={this.data}/>
 ```
+
 ```html
  <igc-data-grid id="grid"
       height="100%"
@@ -52,6 +53,7 @@ _language: kr
         <IgrTextColumn field="Sales" headerText="Sales" width="300"/>
     </IgrDataGrid>
 ```
+
 ```html
 <igc-data-grid id="grid"
      width="100%"

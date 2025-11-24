@@ -54,6 +54,7 @@ const options: IgcChatOptions = {
   headerText: 'Support Chat',
 };
 ```
+
 ```html
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
@@ -184,6 +185,7 @@ const options: IgcChatOptions = {
   suggestionsPosition: "below-input"
 };
 ```
+
 ```html
 <igc-chat
   .options=${options}>

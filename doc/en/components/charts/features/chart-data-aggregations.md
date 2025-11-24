@@ -35,6 +35,7 @@ Note, the abbreviated functions found within the dropdowns for `InitialSummaries
     initialSummaries="Sum(sales) as Sales"
     groupSorts="Sales Desc"/>
 ```
+
 ```html
 <igc-category-chart
      id="chart"

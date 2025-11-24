@@ -285,6 +285,7 @@ IgrRadialGaugeModule.register();
     maximumValue=80 interval=10>
 </igx-radial-gauge>
 ```
+
 ```tsx
 <IgrRadialGauge
     scaleStartAngle={135}

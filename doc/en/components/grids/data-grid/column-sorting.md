@@ -15,6 +15,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Grid Sorting Overview
+
 The {ProductName} Data Table / Data Grid supports ascending and descending column sorting with a Single Column, Multi-Column and Tri-State Column Sorting configuration.
 
 ## {Platform} Grid Sorting Example

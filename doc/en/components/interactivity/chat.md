@@ -54,6 +54,7 @@ const options: IgcChatOptions = {
   headerText: 'Support Chat',
 };
 ```
+
 ```html
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
@@ -177,6 +178,7 @@ const options: IgcChatOptions = {
   suggestionsPosition: "below-input"
 };
 ```
+
 ```html
 <igc-chat
   .options=${options}>
@@ -223,6 +225,7 @@ The `Chat` component addresses this need with a renderer system. A renderer is s
 
 #### ChatTemplateRenderer
 Every renderer follows the same function signature:
+
 ```ts
 export type ChatTemplateRenderer<T> = (ctx: T) => unknown;
 ```
@@ -367,6 +370,7 @@ The Chat component includes built-in support for Markdown content through the `c
 
 > [!Note]
 > To use the Markdown renderer, you need to install the following peer dependencies in your project:
+
 ```cmd
 npm install marked marked-shiki shiki dompurify
 ```
@@ -407,6 +411,7 @@ In this example:
 #### Syntax Highlighting
 
 The Markdown renderer also supports syntax highlighting for code blocks using [Shiki](https://shiki.matsu.io/). By default, it includes highlighting for JavaScript, TypeScript, HTML, and CSS with the github-light theme. You can customize this behavior through MarkdownRendererOptions:
+
 ```ts
 const markdownRenderer = await createMarkdownRenderer({
   theme: { light: 'min-light' },

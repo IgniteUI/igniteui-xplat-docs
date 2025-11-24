@@ -235,6 +235,7 @@ The other way to enable/disable summaries for a specific column or a list of col
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -331,6 +332,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -427,6 +429,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -671,6 +674,7 @@ And now let's add our custom summary to the column `UnitsInStock`. We will achie
     </igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -730,6 +734,7 @@ And now let's add our custom summary to the column `GrammyAwards`. We will achie
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number" has-summary="true" id="grammyAwards"> </igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -787,6 +792,7 @@ And now let's add our custom summary to the column `Title`. We will achieve that
     <igc-column field="Title" data-type="string" has-summary="true" id="column1"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -960,6 +966,7 @@ class PtoSummary {
 <igc-column id="column" has-summary="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
@@ -1166,6 +1173,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```html
 <igc-column id="column"></igx-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;

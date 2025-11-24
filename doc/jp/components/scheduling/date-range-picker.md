@@ -232,6 +232,7 @@ return (
 
 `Locale` プロパティでは、使用するロケール識別子を指定でき、地域の慣習に基づいて日付の表示形式が決定されます。
 たとえば、日付を日本形式で表示したい場合、locale プロパティを次のように設定します:
+
 ```html
 <igc-date-range-picker locale="ja-JP">
 </igc-date-range-picker>

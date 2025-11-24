@@ -8,6 +8,7 @@ namespace: Infragistics.Controls
 ---
 
 # {Platform} Expansion Panel Overview
+
 The {ProductName} Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
 
 ## {Platform} Expansion Panel Example

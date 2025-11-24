@@ -507,6 +507,7 @@ The tick marks serve as a visual division of the scale into intervals in order t
     minor-tick-stroke-thickness="1">
   </igc-bullet-graph>
 ```
+
 ```razor
 <IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"

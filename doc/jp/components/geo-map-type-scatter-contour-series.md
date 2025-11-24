@@ -77,6 +77,7 @@ public render() {
     );
 }
 ```
+
 ```ts
 public onMapReferenced(map: IgrGeographicMap) {
     this.geoMap = map;

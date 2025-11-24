@@ -456,6 +456,7 @@ function buildUrl(dataState) {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     const ordersRowIsland = document.getElementById("ordersRowIsland");

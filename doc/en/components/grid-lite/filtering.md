@@ -221,6 +221,7 @@ grid.ClearFilter();
 The `FilterExpressions` property is very similar in behavior to the `Filter()` method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
 For example:
+
 ```razor
 private IgbGridLiteFilterExpression[] filterState = new[]
 {

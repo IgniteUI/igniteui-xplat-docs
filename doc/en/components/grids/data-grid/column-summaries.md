@@ -255,6 +255,7 @@ class CustomDomestic extends SummaryCalculator
     }
 }
 ```
+
 ```ts
 import { IgcProvideCalculatorEventArgs } from 'igniteui-webcomponents-core';
 

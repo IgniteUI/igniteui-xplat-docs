@@ -201,6 +201,7 @@ npm install igniteui-react-grids
     </igc-column-group>
 </igc-column-group>
 ```
+
 ```ts
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;

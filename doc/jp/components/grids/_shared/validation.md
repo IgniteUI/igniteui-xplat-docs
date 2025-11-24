@@ -573,6 +573,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <{ComponentInstance} [rowStyles]="rowStyles">
     <igx-column field="ReorderLevel" header="ReorderLever" required [cellClasses]="cellStyles">
@@ -598,6 +599,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <igx-hierarchical-grid [rowStyles]="rowStyles">
     <igx-column field="Artist" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
@@ -625,6 +627,7 @@ public cellStyles = {
     }
 }
 ```
+
 ```html
 <igx-tree-grid [rowStyles]="rowStyles">
         <igx-column *ngFor="let c of columns" [field]="c.field" [dataType]="c.dataType" [header]="c.label" [required]="c.required" [cellClasses]="cellStyles">

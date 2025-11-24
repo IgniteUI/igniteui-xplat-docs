@@ -7,6 +7,7 @@ mentionedTypes: ["LinearProgress"]
 ---
 
 # {Platform} Linear Progress Overview
+
 The {ProductName} Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
 
 ## {Platform} Linear Progress Example

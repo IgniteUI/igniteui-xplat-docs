@@ -82,6 +82,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```

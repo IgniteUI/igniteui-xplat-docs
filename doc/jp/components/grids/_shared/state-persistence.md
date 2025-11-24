@@ -545,6 +545,7 @@ function activeTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     </igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;

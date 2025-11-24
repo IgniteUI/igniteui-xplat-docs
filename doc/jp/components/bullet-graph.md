@@ -508,6 +508,7 @@ MaximumValue="55" TargetValue="43">
     minor-tick-stroke-thickness="1">
   </igc-bullet-graph>
 ```
+
 ```razor
 <IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"

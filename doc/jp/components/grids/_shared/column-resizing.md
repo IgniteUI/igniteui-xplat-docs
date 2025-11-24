@@ -392,6 +392,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -440,6 +441,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="10%" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -486,6 +488,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="5%" max-width="15%"></igc-column>

@@ -42,6 +42,7 @@ npm install igniteui-react
 ```
 
 次に、以下のように、`MaskInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
 ```tsx
 import { IgrMaskInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';

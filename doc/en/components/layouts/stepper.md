@@ -7,6 +7,7 @@ mentionedTypes: ["Stepper"]
 ---
 
 # {Platform} Stepper Overview
+
 The {Platform} Stepper Component provides a wizard-like workflow and is used for showing progress through numbered steps. It enables developers to divide a lengthy content into a sequence of logical steps, helping end-users more easily navigate the entire process. The {Platform} Stepper is displayed as a vertical or a horizontal line. The {Platform} Stepper has multiple features like step validation, styling, orientation and keyboard navigation.
 
 ## {Platform} Stepper Example

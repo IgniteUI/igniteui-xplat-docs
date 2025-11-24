@@ -403,7 +403,9 @@ By default the {Platform} Toolbar is shown horizontally, but it also has the abi
 ```tsx
 <IgrToolbar orientation="Vertical" />
 ```
+
 The following example demonstrates the vertical orientation of the {Platform} Toolbar.
+
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Vertical Orientation"`
 
 ### Color Editor

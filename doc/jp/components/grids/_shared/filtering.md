@@ -159,6 +159,7 @@ _language: ja
     <igx-column field="Photo" [filterable]="false"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
     <igc-column field="Artist" filterable="true"></igc-column>
@@ -275,6 +276,7 @@ this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 this.@@igObjectRef.filteringLogic = FilteringLogic.Or;
 this.@@igObjectRef.filterGlobal('myproduct', IgxStringFilteringOperand.instance().condition('contains'), false);
 ```
+
 ```typescript
 // Filter all cells for a value which contains `myproduct`
 this.grid.filteringLogic = FilteringLogic.Or;
@@ -624,6 +626,7 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
     <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var productName = document.getElementById('ProductName') as IgcColumnComponent;
@@ -659,6 +662,7 @@ constructor() {
     <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var artist = document.getElementById('Artist') as IgcColumnComponent;

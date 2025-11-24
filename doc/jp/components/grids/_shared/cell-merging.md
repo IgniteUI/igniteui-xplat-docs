@@ -48,6 +48,7 @@ Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セ�
     ...
 </{ComponentSelector}>
 ```
+
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'always';
 ```

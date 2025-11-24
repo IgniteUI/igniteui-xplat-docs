@@ -203,6 +203,7 @@ constructor() {
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 }
 ```
+
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {

@@ -202,6 +202,7 @@ constructor() {
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 }
 ```
+
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -292,6 +293,7 @@ Instead of hardcoding the color values like we just did, we can achieve greater 
 
 
 **igx-palette** generates a color palette based on the primary and secondary colors that are passed:
+
 ```scss
 $yellow-color: #F4D45C;
 $black-color: #575757;

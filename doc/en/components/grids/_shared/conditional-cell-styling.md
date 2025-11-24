@@ -195,6 +195,7 @@ igRegisterScript("WebGridRowStylesHandler", () => {
         auto-generate="false" allow-filtering="true">
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -285,6 +286,7 @@ const rowStyles = {
         width="100%" height="550px">
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -371,6 +373,7 @@ igRegisterScript("WebGridChildRowStylesHandler", () => {
         </igc-row-island>>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
@@ -415,6 +418,7 @@ You can conditionally style the `{ComponentName}` cells by setting the `Column` 
 ```html
 <igc-column id="beatsPerMin" field="BeatsPerMinute" data-type="Number"></igc-column>
 ```
+
 ```ts
 constructor() {
     var beatsPerMin = this.beatsPerMin = document.getElementById('beatsPerMin') as IgcColumnComponent;
@@ -436,6 +440,7 @@ constructor() {
 ```html
 <igc-column id="grammyNominations" field="GrammyNominations" data-type="Number"></igc-column>
 ```
+
 ```ts
 constructor() {
     var grammyNominations = document.getElementById('grammyNominations') as IgcColumnComponent;
@@ -470,6 +475,7 @@ constructor() {
 ```html
 <igc-column id="unitPrice" field="UnitPrice" header="Unit Price" data-type="currency"></igc-column>
 ```
+
 ```ts
 constructor() {
     var unitPrice = this.UnitPrice = document.getElementById('unitPrice') as IgcColumnComponent;
@@ -589,6 +595,7 @@ igRegisterScript("GrammyNominationsCellClassesHandler", () => {
     };
 }, true);
 ```
+
 ```css
 .upFont {
     color: green !important;
@@ -873,10 +880,12 @@ public webTreeGridCellStylesHandler = {
     }
 }
 ```
+
 ```html
 <igc-column id="col1">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var col1 = document.getElementById('col1') as IgcColumnComponent;
@@ -899,6 +908,7 @@ igRegisterScript("WebTreeGridCellStylesHandler", () => {
     };
 }, true);
 ```
+
 ```razor
 <IgbColumn CellStylesScript="WebTreeGridCellStylesHandler">
 </IgbColumn>
@@ -916,6 +926,7 @@ const webTreeGridCellStyles = {
     }
 }
 ```
+
 ```tsx
 <IgrColumn cellStyles={webTreeGridCellStyles}></IgrColumn>
 ```

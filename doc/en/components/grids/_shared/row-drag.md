@@ -115,6 +115,7 @@ In this case, our drop-area will be a whole second grid where we'll drop the row
 <igc-grid id="targetGrid" auto-generate="false" primary-key="ID">
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;

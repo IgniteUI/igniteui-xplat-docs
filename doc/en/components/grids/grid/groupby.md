@@ -685,6 +685,7 @@ $custom-theme: grid-theme(
 ### Applying the Custom Theme
 
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
+
 ```scss
 @include grid($custom-theme);
 @include chip($custom-chips-theme);

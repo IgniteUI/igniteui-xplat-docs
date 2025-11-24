@@ -23,6 +23,7 @@ The following sample demonstrates how setting multiple properties on the same `X
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
+
 When installing the gauge component, the core package must also be installed.
 
 ```cmd
@@ -284,6 +285,7 @@ The scale is visual element that highlights full range of values in the gauge wh
     maximumValue=80 interval=10>
 </igx-radial-gauge>
 ```
+
 ```tsx
 <IgrRadialGauge
     scaleStartAngle={135}
@@ -337,6 +339,7 @@ The scale is visual element that highlights full range of values in the gauge wh
 
 
 ## Labels and Titles
+
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
 
 Each of these labels for the needle have various styling attributes you can apply to change the font, angle, brush and distance from the center of the gauge such as `TitleExtent`, `TitleAngle`, `SubtitleFontSize`, `HighlightLabelBrush`.
@@ -434,6 +437,7 @@ The radial gauge's labels and titles can change it's scaling. To enable this, fi
 `sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} radial gauge optical scaling"`
 
 ## Tick Marks
+
 Tick marks are thin lines radiating from the center of the radial gauge. There are two types of tick marks: major and minor. Major tick marks are displayed at the `Interval` between the `MinimumValue` and `MaximumValue` properties. Use the `MinorTickCount` property to specify the number of minor tick marks displayed between each major tick mark. You can control the length of tick marks by setting a fraction (between 0 and 1) to `TickStartExtent`, `TickEndExtent`, `MinorTickStartExtent`, and `MinorTickEndExtent` properties.
 
 ```html
@@ -509,6 +513,7 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
 
 
 ## Ranges
+
 A range highlights a set of continuous values bound by a specified `MinimumValue` and `MaximumValue` properties. You can add multiple ranges to the radial gauge by specifying their starting and ending values. Each range has a few customization properties such as `Brush` and `Outline`. Alternatively, you can set `RangeBrushes` and `RangeOutlines` properties to a list of colors for the ranges.
 
 ```html
@@ -756,6 +761,7 @@ The radial gauge can be modified to show a second needle. This will make the mai
 `sample="/gauges/radial-gauge/highlight-needle", height="320", alt="{Platform} radial gauge highlight needle"`
 
 ## Summary
+
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.
 
 ```html

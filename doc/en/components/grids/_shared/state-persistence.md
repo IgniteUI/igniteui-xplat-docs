@@ -544,6 +544,7 @@ function activeTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     </igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
@@ -973,6 +974,7 @@ state.applyState(state, ['filtering', 'rowIslands']);
 
 <!-- Blazor -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
+
 ```razor
 gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering", "rowIslands" });
 ```

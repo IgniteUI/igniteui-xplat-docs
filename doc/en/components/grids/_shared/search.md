@@ -108,6 +108,7 @@ Let's start by creating our grid and binding it to our data. We will also add so
     <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>       
 </igc-tree-grid>
 ```
+
 ```ts
 private treeGrid: IgcTreeGridComponent;
 
@@ -293,6 +294,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -390,6 +392,7 @@ In order to freely search and navigate among our search results, let's create a 
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -414,6 +417,7 @@ public nextSearch() {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -567,6 +571,7 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -1052,6 +1057,7 @@ Let's begin by creating the search navigation buttons on the right of the input 
     </div>
 </igc-suffix>
 ```
+
 ```typescript
 public showResults() {
     if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {

@@ -556,6 +556,7 @@ ModuleManager.register(
     font="11px Verdana">
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -681,6 +682,7 @@ ModuleManager.register(
     scale-end-extent=0.95>
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"

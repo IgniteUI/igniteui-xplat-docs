@@ -23,6 +23,7 @@ The following {ProductName} Tile Manager Example shows the component in action.
 The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience.
 
 The Tile Manager offers two components that we can use:
+
 - `Tile` - This component represents an individual tile displayed within the Tile Manager.
 - `TileManager` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
 

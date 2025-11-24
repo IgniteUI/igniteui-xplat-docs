@@ -820,6 +820,7 @@ First we need to bind to the relevant events so when we change pages and the amo
   }
 ```
 We also need to set the method for loading data and update the UI accordingly:
+
 ```ts
   private loadData(pageIndex?: number, pageSize?: number): void {
     this.grid.isLoading = true;
@@ -944,6 +945,7 @@ For further reference please check the full demo bellow:
 ```
 
 then set up the state:
+
 ```tsx
   const grid = useRef<IgrGrid>(null);
   const paginator = useRef<IgrPaginator>(null);
@@ -958,6 +960,7 @@ then set up the state:
 ```
 
 and finally set up the method for loading the data:
+
 ```tsx
   function loadGridData(pageIndex?: number, pageSize?: number) {
     // Set loading state
@@ -1059,6 +1062,7 @@ First we need to bind to the relevant events so when we change pages and the amo
     }
 ```
 We also need to set the method for loading data and update the UI accordingly:
+
 ```ts
   private updateUI(): void {
         if (this.hierarchicalGrid && this.data) { // Check if grid and data are available
@@ -1218,6 +1222,7 @@ For further reference please check the full demo bellow:
         </IgrHierarchicalGrid>
 ```
 then set up the state:
+
 ```tsx
   const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
   const paginator = useRef<IgrPaginator>(null);
@@ -1233,6 +1238,7 @@ then set up the state:
 ```
 
 next set up the method for loading the data:
+
 ```tsx
   function loadGridData(pageIndex?: number, pageSize?: number) {
     // Set loading state

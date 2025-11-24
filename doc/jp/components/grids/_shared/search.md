@@ -109,6 +109,7 @@ _language: ja
     <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>       
 </igc-tree-grid>
 ```
+
 ```ts
 private treeGrid: IgcTreeGridComponent;
 
@@ -294,6 +295,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -391,6 +393,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -415,6 +418,7 @@ public nextSearch() {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -568,6 +572,7 @@ const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -1053,6 +1058,7 @@ public clearSearch() {
     </div>
 </igc-suffix>
 ```
+
 ```typescript
 public showResults() {
     if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {
