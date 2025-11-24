@@ -67,7 +67,7 @@ In this example, we'll handle dragging a row from one grid to another, removing 
 
 ### Drop Areas
 
-Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-*dropping*.
+Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-dropping.
 We can define where we want our rows to be dropped using the [Drop` directive](../drag-drop.md).
 
 First we need to import the `DragDropModule` in our app module:
@@ -163,7 +163,7 @@ export class {ComponentName}RowDragComponent {
 
 Once we've defined our drop-area in the template, we have to declare our handlers for the `IgxDrop`'s <kbd>ENTER</kbd>, `Leave` and `Dropped` events in our component's **.ts** file.
 
-First, let's take a look at our <kbd>ENTER</kbd> and `Leave` handlers. In those methods, we just want to change the icon of the drag's *ghost* so we can indicate to the user that they are above an area that allows them to drop the row:
+First, let's take a look at our <kbd>ENTER</kbd> and `Leave` handlers. In those methods, we just want to change the icon of the drag's **ghost** so we can indicate to the user that they are above an area that allows them to drop the row:
 
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -707,19 +707,19 @@ Once `RowDraggable` is enabled and a drop zone has been defined, you need to imp
 
 <!-- ComponentStart: Grid -->
 
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
+- Was the row dropped inside of the grid?
+- If so, on which **other** row was the dragged row dropped?
+- Once you've found the **target** row, swap the records' places in the `Data` array
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-  - Is the row expanded? If so, collapse it.
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
-  - Was the row initially selected? If so, mark it as selected.
+- Is the row expanded? If so, collapse it.
+- Was the row dropped inside of the grid?
+- If so, on which **other** row was the dragged row dropped?
+- Once you've found the **target** row, swap the records' places in the `Data` array
+- Was the row initially selected? If so, mark it as selected.
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 

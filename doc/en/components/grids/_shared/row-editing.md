@@ -585,8 +585,8 @@ Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter t
 
 The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
 
-  - [igx-banner](banner.md) in order to render its contents
-  - [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
+- [igx-banner](banner.md) in order to render its contents
+- [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
 
 In the below example, we will make use of those two components' styling options, ([button styling](button.md#styling) & [banner-styling](../banner.md#styling)), to customize the experience of our `{ComponentName}`'s Row Editing.
 
@@ -638,7 +638,7 @@ Since the Row Editing overlay makes use of a lot of other components' themes, st
 
 > [!Note]
 >If the component is using an [Emulated](themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
->We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+>We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements outside of our component:
 
 ```scss
 // custom.component.scss

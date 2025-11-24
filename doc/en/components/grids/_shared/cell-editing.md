@@ -1399,7 +1399,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  > [!Note]
- >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+ >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements outside of our component:
 
 ```scss
 :host {
