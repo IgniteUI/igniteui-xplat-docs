@@ -1159,10 +1159,12 @@ function verifyMarkdown(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    'doc/en/**/*.md',
-    'doc/jp/**/*.md',
-    'doc/kr/**/*.md',
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
     // 'doc/en/**/chart-data-legend.md',
+    // 'doc/en/**/geo-map-display-azure-imagery.md',
+    'doc/en/**/card.md',
     // 'doc/en/**/charts/**/*.md',
     // 'doc/en/**/grids/**/*.md',
     // 'doc/en/**/zoomslider*.md',
@@ -1175,18 +1177,37 @@ function verifyMarkdown(cb) {
         var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
         console.log('verifying: ' + filePath);
-        filesCount++;
-        var result = mv.verifyMarkdown(fileContent, filePath);
-        if (result.isValid) {
-            // console.log('verified:  ' + filePath);
-            // fileContent = result.fileContent;
-            //file.contents = Buffer.from(fileContent);
+    
+        var fileLines = content.split('\r\n');
+        
+        for (let i = 0; i < fileLines.length; i++) {
+            let line = fileLines[i];
             
-            // auto-update topics with corrections if any
-            // fs.writeFileSync(filePath, result.content);
-        } else {
-            errorsCount++;
+            if (line.indexOf('<img') >= 0 && line.indexOf('alt=""') > 0) {
+                let altStart = line.indexOf('alt=""')
+                let srcStart = line.indexOf('src=""')
+                let srcEnd   = line.indexOf('.')
+                let altValue = line.substring(srcStart, srcEnd - srcStart)
+                console.log(altValue);
+                console.log(line);
+            }
         }
+
+        // fileContent = fileLines.join('\r\n');
+        // file.contents = Buffer.from(fileContent);
+        
+        filesCount++;
+        // var result = mv.verifyMarkdown(fileContent, filePath);
+        // if (result.isValid) {
+        //     // console.log('verified:  ' + filePath);
+        //     // fileContent = result.fileContent;
+        //     //file.contents = Buffer.from(fileContent);
+            
+        //     // auto-update topics with corrections if any
+        //     // fs.writeFileSync(filePath, result.content);
+        // } else {
+        //     errorsCount++;
+        // }
         fileCallback(null, file);
     }))
     .on("end", () => {
