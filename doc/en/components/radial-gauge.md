@@ -34,6 +34,7 @@ npm install --save {PackageGauges}
 
 <!-- Blazor -->
 Please refer to these topics on adding the IgniteUI.Blazor package.
+
 - [Getting Started](general-getting-started.md)
 - [Adding Nuget Package](general-nuget-feed.md)
 

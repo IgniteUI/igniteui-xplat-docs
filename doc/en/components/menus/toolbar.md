@@ -353,11 +353,6 @@ public toolbarCustomIconOnViewInit(): void {
       }));
     }
 
-}
-```
-
-@code {
-
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         var toolbar = this.toolbar;
@@ -376,7 +371,6 @@ public toolbarCustomIconOnViewInit(): void {
             this.toolbar.RegisterIconFromDataURLAsync("CustomCollection", "CustomIcon", "https://www.svgrepo.com/show/678/calculator.svg");
       }));
     }
-
 }
 ```
 

@@ -130,7 +130,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ## コンポーネントのカスタマイズ
 `ExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[Input](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
 
-`ExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
+`ExpansionPanel` を使用すると、公開された *title*、*subTitle*、および **indicator** スロット全体でヘッダーを簡単にカスタマイズできます。
 
 展開インジケーターの位置の構成は、展開パネルの `IndicatorPosition` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
 

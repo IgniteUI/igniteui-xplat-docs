@@ -430,13 +430,13 @@ const handleRowSelectionChange = (args: IgrRowSelectionEventArgs) => {
 
 ### Select All Rows
 
-Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with *false* parameter, `SelectAllRows(false)` will always select all data in the grid, even if filtering is applied.
+Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with **false** parameter, `SelectAllRows(false)` will always select all data in the grid, even if filtering is applied.
 
 > **Note** Keep in mind that `SelectAllRows` will not select the rows that are deleted.
 
 ### Deselect All Rows
 
-`{ComponentName}` provides a `DeselectAllRows` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with *false* parameter, `DeselectAllRows(false)` will always clear all row selection state even if filtering is applied.
+`{ComponentName}` provides a `DeselectAllRows` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with **false** parameter, `DeselectAllRows(false)` will always clear all row selection state even if filtering is applied.
 
 ### How to get Selected Rows
 

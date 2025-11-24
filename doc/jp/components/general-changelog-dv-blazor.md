@@ -111,7 +111,7 @@ _重大な変更_
 
 #### IgbDataGrid
 
--  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
+- DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
 
 #### IgbLinearGauge
 

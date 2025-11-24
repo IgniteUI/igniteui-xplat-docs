@@ -22,7 +22,7 @@ The title and subtitle feature of the chart control allows you to add informatio
 When adding a title or subtitle to the chart control, the content of the chart automatically resizes allowing for the title and subtitle information.
 
 | Property Name         | Property Type   |     Description  |
-| ----------------------|------------------|------------  |
+| ----------------------|------------------|------------|
 | `ChartTitle`          | string |  Title’s text content.  |
 | `TitleTextColor`      | string |  Title’s text. color  |
 | `TitleAlignment`      | HorizontalAlignment |  Title’s horizontal alignment.  |

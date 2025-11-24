@@ -168,7 +168,7 @@ _重大な変更_
 
 #### IgcDataGrid
 
--  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
+- DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
 
 #### IgcLinearGauge
 
@@ -1595,7 +1595,7 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.10.0}**
 
 #### 新機能
--  `ShowHeaderIconOnHover` プロパティを追加しました。
+- `ShowHeaderIconOnHover` プロパティを追加しました。
 
 #### 修正
 - アクティブなペインはフロート/ドック上で保持されません。

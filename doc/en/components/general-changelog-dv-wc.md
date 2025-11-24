@@ -211,7 +211,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 #### IgcDataGrid
 
--  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
+- Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
 
 #### IgcLinearGauge
 
@@ -1639,7 +1639,7 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.10.0}**
 
 #### New features
--  Add `ShowHeaderIconOnHover` property.
+- Add `ShowHeaderIconOnHover` property.
 
 #### Fixed
 - Active pane is not retained on float/dock.

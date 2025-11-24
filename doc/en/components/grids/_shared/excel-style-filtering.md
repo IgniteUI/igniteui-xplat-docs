@@ -562,7 +562,7 @@ The list items inside the Excel Style Filtering dialog represent the unique valu
 
 <!-- Angular -->
 
- ## Formatted Values Filtering Strategy
+## Formatted Values Filtering Strategy
 
 By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values.
 

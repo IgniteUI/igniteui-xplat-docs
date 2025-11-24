@@ -1326,13 +1326,13 @@ useEffect(() => {
 このトピックでは、`{ComponentName}` にカスタム検索バーを実装し、更に検索結果を移動する際の機能を追加しました。アイコン、チップ、入力などその他の {ProductName} も使用しています。以下は検索 API です。
 
 `{ComponentName}` メソッド:
--   `FindNext`
--   `FindPrev`
--   `ClearSearch`
--   `RefreshSearch`
+-  `FindNext`
+-  `FindPrev`
+-  `ClearSearch`
+-  `RefreshSearch`
 
 `Column` プロパティ:
--   `Searchable`
+-  `Searchable`
 
 その他のコンポーネント (またはそのいずれか) で使用した API:
 

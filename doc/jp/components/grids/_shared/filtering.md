@@ -182,7 +182,7 @@ _language: ja
 
 列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
 
--   `Filter` - 単一の列または複数の列をフィルターします。
+-  `Filter` - 単一の列または複数の列をフィルターします。
 
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
    - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。

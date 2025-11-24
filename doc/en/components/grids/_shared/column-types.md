@@ -238,7 +238,7 @@ The available Summary operands will be **Count**, **Earliest** (date/time) and *
 
 ### Boolean
 
-The default template is using material icons for visualization of boolean values - 'clear' icon for *false* values and 'check' icon for *true* values. As for the editing template, it is using `Checkbox` component.
+The default template is using material icons for visualization of boolean values - 'clear' icon for **false** values and 'check' icon for **true** values. As for the editing template, it is using `Checkbox` component.
 
 ```html
 <igx-column [dataType]="'boolean'">
@@ -383,7 +383,7 @@ const formatOptions : IgrColumnPipeArgs = {
 ```
 
 | Parameter                 | Description                                                |
-|---------------------------| -------------------------                                  |
+|---------------------------| -------------------------|
 | digitsInfo                | Represents Decimal representation of currency value        |
 | display*                  | Displays the value by narrow or wide symbol                |
 <!-- Angular -->

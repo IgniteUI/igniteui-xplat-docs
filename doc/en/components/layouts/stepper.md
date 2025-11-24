@@ -205,7 +205,7 @@ You can customize the stepper orientation through the exposed `Orientation` prop
 **Horizontal Stepper Orientation**
 
 *horizontal* is the default value for the `Stepper` orientation property.
-When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
+When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is **false**. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
@@ -223,15 +223,15 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 ### Step States
 {Platform} `Stepper` supports five steps states and each of them apply different styles by default:
-- **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
-- **disabled** - Determines whether the step is intractable. By default, the disabled attribute of a step is set to *false*.
-- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its default value is *false*.
-- **optional** - By default, the optional attribute of a step is set to *false*. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
-- **complete** - By default, the complete attribute of a step returns *false*. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
+- **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to **true**, the initial active step would be the first non-disabled step.
+- **disabled** - Determines whether the step is intractable. By default, the disabled attribute of a step is set to **false**.
+- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its default value is **false**.
+- **optional** - By default, the optional attribute of a step is set to **false**. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
+- **complete** - By default, the complete attribute of a step returns **false**. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
 
 ### Linear {Platform} Stepper
 
-The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
+The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to **false** and the user is enabled to select any non-disabled step in the `Stepper`.
 
 
 ```html
@@ -267,7 +267,7 @@ The {Platform} `Stepper` gives you the opportunity to set its steps flow using t
 </IgrStepper>
 ```
 
-When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one.
+When the linear property is set to **true**, the stepper will require the current non-optional step to be valid before proceeding to the next one.
 
 If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one.
 
@@ -294,7 +294,7 @@ This could be achieved through the `StepType` property of the `Stepper`. It take
 - Indicator
 - Title
 
-**Full**
+**full**
 
 If titles and subtitles are defined, with this setup both indicators and titles would be rendered.
 
@@ -306,16 +306,16 @@ The user can configure the title position using the `TitlePosition` property. It
 - bottom
 - top
 
-When the {Platform} `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed *below* the indicators.
+When the {Platform} `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed **below** the indicators.
 
-When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed *after* the indicators.
+When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed **after** the indicators.
 
 > [!Note]
-> **titlePosition** property is applicable **only** when the stepper stepType property is set to *full*.
+> **titlePosition** property is applicable **only** when the stepper stepType property is set to **full**.
 
-**Indicator**
+**indicator**
 
-If you want to display only indicators for the steps, set the stepType option to *indicator*.
+If you want to display only indicators for the steps, set the stepType option to **indicator**.
 
 The step indicator supports any content, however with the restriction that its size would be always **24 pixels**. Having this in mind, we recommend using `Icon` or `Avatar` as step indicators.
 

@@ -17,11 +17,13 @@ mentionedTypes: []
 </style>
 
 # Accessibility Compliance
+
 As the leading global provider of UI and UX tools for developers, our {Platform} team at Infragistics is committed to providing components and tools that make it easier for you to create the best possible user experience. Our goal is to enable you to focus on crafting the best applications and the best user experience for all users.
 
 Here you can find specific information regarding the accessibility support and compliance for our {Platform} grids, charts, and UI components and controls within Ignite UI for {Platform}.
 
 ## Section 508 Compliance
+
 [Section 508](http://www.section508.gov/) of the Rehabilitation Act was amended in 1998 by Congress to require all Federal agencies to make their electronic and information technology accessible to people with disabilities. Since then, Section 508 compliance has not only been a requirement in government agencies, but it's also important when providing software solutions and designing Web pages.
 
 Section 1194.22 of the Section 508 law specifically targets Web-based intranet and internet information and systems, and contains a set of 16 rules to follow. In order to enable you to keep your Web applications and Web sites compatible with these rules with minimal effort on your part, Infragistics has taken steps to ensure that the Ignite UI for {Platform} controls and components are compliant with the relevant accessibility rules.
@@ -85,7 +87,7 @@ The matrix below provides a high-level outline of the accessibility support prov
 > [!WARNING]
 > The table above is relevant only to the _Default theme_ of Ignite UI for {Platform} theming library. The checklist compliance might be different when it comes to custom themes, typography and any visual changes related to animations and colors.
 
- ### Compliance Information
+### Compliance Information
 
 - **a** - A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).
 - **b** - Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.

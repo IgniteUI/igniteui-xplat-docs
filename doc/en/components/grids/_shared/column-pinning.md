@@ -742,7 +742,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## Pinning Limitations
 
--   Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
+-  Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->

@@ -220,12 +220,12 @@ In some cases you would want to have disabled dates in the Calendar which can't 
 
 These are the available options for the `Type` property:
 
--  `After` - disables the dates after the first date in the `DateRange`
--  `Before` - disables the dates before the first date in the `DateRange`
--  `Between` - disables the dates between the first and the second date in the `DateRange`
--  `Specific` - disables the dates specified in the `DateRange` array
--  `Weekdays` - disables all weekdays
--  `Weekends` - disables all weekends
+- `After` - disables the dates after the first date in the `DateRange`
+- `Before` - disables the dates before the first date in the `DateRange`
+- `Between` - disables the dates between the first and the second date in the `DateRange`
+- `Specific` - disables the dates specified in the `DateRange` array
+- `Weekdays` - disables all weekdays
+- `Weekends` - disables all weekends
 
 Let's create a sample that is disabling the dates between the 3rd and the 8th of the current month:
 

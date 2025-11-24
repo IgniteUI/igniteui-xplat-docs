@@ -117,7 +117,7 @@ The following example demonstrates usage of the `CategoryAngleAxis` type:
 
  `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
 
- ### Proportional Category Angle Axis
+### Proportional Category Angle Axis
 
 The `ProportionalCategoryAngleAxis` treats its data as a sequence of category data items. The labels on this axis are placed along the edge of a circle according to their position in that sequence. This type of axis can display almost any type of data including strings and numbers.
 

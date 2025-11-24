@@ -148,7 +148,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 #### IgbDataGrid
 
--  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
+- Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
 
 #### IgbLinearGauge
 

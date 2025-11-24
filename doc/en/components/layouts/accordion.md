@@ -152,8 +152,8 @@ private accordion: IgcAccordionComponent;
 private panels: IgcExpansionPanelComponent[];
 
 constructor() {
-	this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
-	this.panels = this.accordion.panels;
+    this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
+    this.panels = this.accordion.panels;
 }
 ```
 
@@ -164,7 +164,7 @@ As demonstrated above, the `SingleExpand`property gives you the ability to set w
 By using the `HideAll` and `ShowAll` methods you can respectively collapse and expand all `ExpansionPanel`s of the `Accordion` programmatically.
 
 > [!Note]
-> If `SingleExpand` property is set to *true* calling `ShowAll` method would expand only the focused panel.
+> If `SingleExpand` property is set to **true** calling `ShowAll` method would expand only the focused panel.
 
 ### {Platform} Accordion Customization Example
 

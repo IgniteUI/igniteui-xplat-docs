@@ -114,21 +114,21 @@ If you are using a Web Assembly (WASM) Blazor project, there are a couple of ext
 ## Supported Versions of Microsoft Excel
 The following is a list of the supported versions of Excel.**
 
--  Microsoft Excel 97
+- Microsoft Excel 97
 
--  Microsoft Excel 2000
+- Microsoft Excel 2000
 
--  Microsoft Excel 2002
+- Microsoft Excel 2002
 
--  Microsoft Excel 2003
+- Microsoft Excel 2003
 
--  Microsoft Excel 2007
+- Microsoft Excel 2007
 
--  Microsoft Excel 2010
+- Microsoft Excel 2010
 
--  Microsoft Excel 2013
+- Microsoft Excel 2013
 
--  Microsoft Excel 2016
+- Microsoft Excel 2016
 
 ```md
 > [!Note]

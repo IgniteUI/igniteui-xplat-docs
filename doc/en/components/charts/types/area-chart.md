@@ -195,7 +195,7 @@ You can find more information about related chart types in these topics:
 The following table lists API members mentioned in above sections:
 
 | Chart Type               | Control Name    | API Members  |
-| -------------------------|-----------------|-----------------------  |
+| -------------------------|-----------------|-----------------------|
 | Area                     | `CategoryChart` | `CategoryChart.ChartType` = `Area`  |
 | Step Area                | `CategoryChart` | `CategoryChart.ChartType` = `StepArea`  |
 | Range Area               | `XamDataChart`  | `RangeAreaSeries`  |
