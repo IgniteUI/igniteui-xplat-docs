@@ -299,7 +299,7 @@ If you are considering any other {Platform} Charts on the market, here are a few
 
 All types of chart types mentioned in this topic are implemented in these API components:
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
- - `Treemap`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `Treemap`

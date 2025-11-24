@@ -25,20 +25,20 @@ The {ProductName} Summaries feature in {Platform} {ComponentTitle} functions on 
 
 
 For `string` and `boolean` `DataType`, the following function is available:
- - Count
+- Count
 
 For `number`, `currency` and `percent` data types, the following functions are available:
 
- - Count
- - Min
- - Max
- - Average
- - Sum
+- Count
+- Min
+- Max
+- Average
+- Sum
 
 For `date` data type, the following functions are available:
- - Count
- - Earliest
- - Latest
+- Count
+- Earliest
+- Latest
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
@@ -1211,14 +1211,14 @@ When you have grouped by columns, the `{ComponentName}` allows you to change the
 
 The available values of the `SummaryCalculationMode` property are:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+- `RootLevelOnly` - Summaries are calculated only for the root level.
+- `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+- `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
 
- - `Top` - The summary row appears before the group by row children.
- - `Bottom` - The summary row appears after the group by row children. This is the default value.
+- `Top` - The summary row appears before the group by row children.
+- `Bottom` - The summary row appears after the group by row children. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
 
@@ -1242,14 +1242,14 @@ The `{ComponentName}` supports separate summaries for the root nodes and for eac
 
 The available values of the `SummaryCalculationMode` property are:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level nodes.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+- `RootLevelOnly` - Summaries are calculated only for the root level nodes.
+- `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+- `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
 
- - `Top` - The summary row appears before the list of child rows.
- - `Bottom` - The summary row appears after the list of child rows. This is the default value.
+- `Top` - The summary row appears before the list of child rows.
+- `Bottom` - The summary row appears after the list of child rows. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 

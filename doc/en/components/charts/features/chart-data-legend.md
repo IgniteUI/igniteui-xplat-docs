@@ -162,30 +162,30 @@ Some of the events exposes a `DataLegendStylingRowEventArgs` parameter as its ar
 
 ## API References
 
- - `ExcludedColumns`
- - `ExcludedSeries`
- - `HeaderFormatDate`
- - `HeaderFormatTime`
- - `HeaderText`
- - `IncludedColumns`
- - `IncludedSeries`
- - `LabelDisplayMode`
- - `LabelTextColor`
- - `StyleHeaderRow`:
- - `StyleSeriesColumn`:
- - `StyleSeriesRow`
- - `StyleSeriesRow`:
- - `StyleSummaryColumn`:
- - `StyleSummaryRow`:
- - `SummaryTitleText`
- - `SummaryType`
- - `TitleTextColor`
- - `UnitText`
- - `UnitsTextColor`
- - `ValueFormatAbbreviation`
- - `ValueFormatCulture`
- - `ValueFormatMaxFractions`
- - `ValueFormatMaxFractions`
- - `ValueFormatMinFractions`
- - `ValueFormatMode`
- - `ValueTextColor`
+- `ExcludedColumns`
+- `ExcludedSeries`
+- `HeaderFormatDate`
+- `HeaderFormatTime`
+- `HeaderText`
+- `IncludedColumns`
+- `IncludedSeries`
+- `LabelDisplayMode`
+- `LabelTextColor`
+- `StyleHeaderRow`:
+- `StyleSeriesColumn`:
+- `StyleSeriesRow`
+- `StyleSeriesRow`:
+- `StyleSummaryColumn`:
+- `StyleSummaryRow`:
+- `SummaryTitleText`
+- `SummaryType`
+- `TitleTextColor`
+- `UnitText`
+- `UnitsTextColor`
+- `ValueFormatAbbreviation`
+- `ValueFormatCulture`
+- `ValueFormatMaxFractions`
+- `ValueFormatMaxFractions`
+- `ValueFormatMinFractions`
+- `ValueFormatMode`
+- `ValueTextColor`

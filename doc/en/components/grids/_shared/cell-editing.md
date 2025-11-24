@@ -32,21 +32,21 @@ In addition, you can define your own custom templates for update-data actions an
 ### Editing through UI
 
 You can enter edit mode for specific cell, when an editable cell is focused in one of the following ways:
- - on double click;
- - on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
- - on key press <kbd>ENTER</kbd>;
- - on key press <kbd>F2</kbd>;
+- on double click;
+- on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
+- on key press <kbd>ENTER</kbd>;
+- on key press <kbd>F2</kbd>;
 
 You can exit edit mode **without committing** the changes in one of the following ways:
- - on key press <kbd>Escape</kbd>;
- - when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
+- on key press <kbd>Escape</kbd>;
+- when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
 
 You can exit edit mode and **commit** the changes in one of the following ways:
- - on key press <kbd>ENTER</kbd>;
- - on key press <kbd>F2</kbd>;
- - on key press <kbd>TAB</kbd>;
- - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
- - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
+- on key press <kbd>ENTER</kbd>;
+- on key press <kbd>F2</kbd>;
+- on key press <kbd>TAB</kbd>;
+- on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
+- operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
 > [!Note]
 > The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.

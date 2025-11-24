@@ -34,9 +34,9 @@ The `CategoryXAxis` requires you to provide a `DataSource` and a `Label` in orde
 
 The `CategoryYAxis` works very similarly to the `CategoryXAxis` described above, but it is placed vertically rather than horizontally. Also, this axis requires you to provide a `DataSource` and a `Label` in order to plot data with it. The `CategoryYAxis` is generally used with the `NumericXAxis` to plot the following type of series:
 
- - `BarSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  The following example demonstrates usage of the `CategoryYAxis` type:
 
@@ -48,18 +48,18 @@ The `NumericXAxis` treats its data as continuously varying numerical data items.
 
 The `NumericXAxis` is compatible with the following type of series:
 
- - `BarSeries`
- - `BubbleSeries`
- - `HighDensityScatterSeries`
- - `ScatterSeries`
- - `ScatterLineSeries`
- - `ScatterSplineSeries`
- - `ScatterAreaSeries`
- - `ScatterContourSeries`
- - `ScatterPolylineSeries`
- - `ScatterPolygonSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `BubbleSeries`
+- `HighDensityScatterSeries`
+- `ScatterSeries`
+- `ScatterLineSeries`
+- `ScatterSplineSeries`
+- `ScatterAreaSeries`
+- `ScatterContourSeries`
+- `ScatterPolylineSeries`
+- `ScatterPolygonSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  The following example demonstrates usage of the `NumericXAxis`:
 

@@ -244,7 +244,7 @@ groupRow.expanded = false;
 }
 ```
 
-Groups can be created expanded (***default***) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
+Groups can be created expanded (**default**) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
 
 ### Select/Deselect All Rows in a Group API
 

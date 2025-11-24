@@ -117,5 +117,6 @@ You can find more information about charts in [Chart Features](charts/chart-feat
 ## API References
 
 The following is a list of API members mentioned in the above sections:
+
 - `ZoomSlider`
 - `XamDataChart`

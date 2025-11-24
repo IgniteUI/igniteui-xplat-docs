@@ -10,7 +10,7 @@ _license: MIT
 # Column Configuration
 <!-- React, WebComponents -->
 
-The columns are defined with the **`columns`** property which has the type **`ColumnConfiguration<T>[]`**. **`key`** is the only required property for the **`ColumnConfiguration<T>`** as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
+The columns are defined with the `columns` property which has the type `ColumnConfiguration<T>[]`. `key` is the only required property for the `ColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
 
 ```typescript
 const accountColumn: ColumnConfiguration<T> = {
@@ -25,7 +25,7 @@ const accountColumn: ColumnConfiguration<T> = {
 
 <!-- Blazor -->
 
-The columns are defined with the **`Columns`** property which has the type **`List<IgbColumnConfiguration<T>>`**. **`Key`** is the only required property for the **`IgbColumnConfiguration<T>`** as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
+The columns are defined with the `Columns` property which has the type `List<IgbColumnConfiguration<T>>`. `Key` is the only required property for the `IgbColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
 
 ```razor
 columns = new List<IgbColumnConfiguration<ProductInfo>>
@@ -46,7 +46,7 @@ columns = new List<IgbColumnConfiguration<ProductInfo>>
 
 ## Configuration Based on the Data Source
 
-The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate **`Key`** and **`Type`** props based on records in the data.
+The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `Key` and `Type` props based on records in the data.
 
 ```razor
 <IgbGridLite AutoGenerate=true Data="@products"/>
@@ -76,11 +76,11 @@ The grid supports inferring the column configuration based on the provided data 
 <!-- React, WebComponents -->
 
 >[!NOTE]
->As a rule of thumb, the **`column`** prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
+>As a rule of thumb, the `column` prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
 
 ## Configuration based on the data source
 
-The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate **`key`** and **`type`** props based on records in the data.
+The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `key` and `type` props based on records in the data.
 
 ```typescript
 const data: Record[] = [
@@ -137,7 +137,7 @@ in the grid width.
 To change the width of column, use the **width** property of the **ColumnConfiguration** object.
 
 <!-- React, WebComponents -->
-To change the width of column, use the **`width`** property of the **`ColumnConfiguration`** object.
+To change the width of column, use the `width` property of the `ColumnConfiguration` object.
 
 ```typescript
 {
@@ -149,7 +149,7 @@ To change the width of column, use the **`width`** property of the **`ColumnConf
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-To change the width of column, use the **`Width`** property of the **`IgbColumnConfiguration`** object.
+To change the width of column, use the `Width` property of the `IgbColumnConfiguration` object.
 
 
 
@@ -166,7 +166,7 @@ The property accepts <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS
 
 ### Hiding columns
 <!-- React, WebComponents -->
-Columns can be hidden/shown by setting the **hidden** property to of the **`ColumnConfiguration`** object.
+Columns can be hidden/shown by setting the **hidden** property to of the `ColumnConfiguration` object.
 
 ```typescript
 {
@@ -178,7 +178,7 @@ Columns can be hidden/shown by setting the **hidden** property to of the **`Colu
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-Columns can be hidden/shown by setting the **Hidden** property to of the **`IgbColumnConfiguration`** object.
+Columns can be hidden/shown by setting the **Hidden** property to of the `IgbColumnConfiguration` object.
 
 ```razor
 {
@@ -192,7 +192,7 @@ Columns can be hidden/shown by setting the **Hidden** property to of the **`IgbC
 ### Column resize
 
 <!-- React, WebComponents -->
-Each column of the {GridLiteTitle} can be configured to be resizable by setting the **`resizable`** property in the column definition.
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `resizable` property in the column definition.
 
 ```typescript
 {
@@ -203,7 +203,7 @@ Each column of the {GridLiteTitle} can be configured to be resizable by setting 
 
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-Each column of the {GridLiteTitle} can be configured to be resizable by setting the **`Resizable`** property in the column definition.
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `Resizable` property in the column definition.
 
 ```razor
 {

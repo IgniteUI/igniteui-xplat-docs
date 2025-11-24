@@ -9,10 +9,10 @@ _license: MIT
 
 # Sort operations
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the **`sort`** property of the column configuration object.
+The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `sort` property of the column configuration object.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the **`Sort`** property of the column configuration object.
+The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `Sort` property of the column configuration object.
 <!-- end: Blazor -->
 
 ```typescript
@@ -31,10 +31,10 @@ new IgbColumnConfiguration
 ```
 
 <!-- React, WebComponents -->
-The **`sort`** property can be either a simple boolean or a **`ColumnSortConfiguration`** object which exposes additional configuration options:
+The `sort` property can be either a simple boolean or a `ColumnSortConfiguration` object which exposes additional configuration options:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The **`Sort`** property can be either a simple boolean or a **`IgbColumnSortConfiguration`** object which exposes additional configuration options:
+The `Sort` property can be either a simple boolean or a `IgbColumnSortConfiguration` object which exposes additional configuration options:
 <!-- end: Blazor -->
 
 ```typescript
@@ -82,11 +82,11 @@ new IgbColumnConfiguration
 
 ## Single and multi-sorting
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the **`sortConfiguration`** property of the grid.
+The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the `sortConfiguration` property of the grid.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the **`SortConfiguration`** property of the grid.
+The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the `SortConfiguration` property of the grid.
 <!-- end: Blazor -->
 
 ```typescript
@@ -103,12 +103,12 @@ grid.SortConfiguration = new IgbGridLiteSortConfiguration { Multiple = false, Tr
 
 ### Tri-state sorting
 <!-- React, WebComponents -->
-Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured **`triState`**
-value for the grid **`sortConfiguration`** property, end-users will cycle through the following states,
+Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured `triState`
+value for the grid `sortConfiguration` property, end-users will cycle through the following states,
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured **`TriState`**
-value for the grid **`SortConfiguration`** property, end-users will cycle through the following states,
+Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured `TriState`
+value for the grid `SortConfiguration` property, end-users will cycle through the following states,
 <!-- end: Blazor -->
 
 
@@ -125,10 +125,10 @@ value for the grid **`SortConfiguration`** property, end-users will cycle throug
     ```
 
 <!-- React, WebComponents -->
-where **`none`** is the initial state of the data, that is to say with no sorting applied by the grid.
+where `none` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-where **`None`** is the initial state of the data, that is to say with no sorting applied by the grid.
+where `None` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: Blazor -->
 
 ### Sorting Indicators
@@ -136,10 +136,10 @@ where **`None`** is the initial state of the data, that is to say with no sortin
 When multi-column sort is enabled, the column headers will display a sorting indicator, which is a number representing the order in which the sorting operations were applied.
 
 <!-- React, WebComponents -->
-The following sample shows the grid **`sortConfiguration`** combinations and how they reflect in the grid.
+The following sample shows the grid `sortConfiguration` combinations and how they reflect in the grid.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The following sample shows the grid **`SortConfiguration`** combinations and how they reflect in the grid.
+The following sample shows the grid `SortConfiguration` combinations and how they reflect in the grid.
 <!-- end: Blazor -->
 
 `sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
@@ -147,10 +147,10 @@ The following sample shows the grid **`SortConfiguration`** combinations and how
 ## Sort Model
 
 <!-- React, WebComponents -->
-The building block for sort operations in the {GridLiteTitle} is the **`SortExpression`** which has the following properties:
+The building block for sort operations in the {GridLiteTitle} is the `SortExpression` which has the following properties:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The building block for sort operations in the {GridLiteTitle} is the **`SortExpression`** which has the following properties:
+The building block for sort operations in the {GridLiteTitle} is the `SortExpression` which has the following properties:
 <!-- end: Blazor -->
 
 
@@ -214,15 +214,15 @@ an end-user interacts with the component. See below for additional information.
 ## Sort API
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the **`GridLite.sort()`**/**`GridLite.clearSort()`** methods or through the **`GridLite.sortExpressions`** property.
+The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `GridLite.sort()`/`GridLite.clearSort()` methods or through the `GridLite.sortExpressions` property.
 
-The **`sort()`** method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
+The `sort()` method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the **`GridLite.Sort()`**/**`GridLite.ClearSort()`** methods or through the **`GridLite.SortExpressions`** property.
+The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `GridLite.Sort()`/`GridLite.ClearSort()` methods or through the `GridLite.SortExpressions` property.
 
-The **`Sort()`** method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
+The `Sort()` method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 <!-- end: Blazor -->
 
 ```typescript
@@ -249,11 +249,11 @@ await grid.Sort(new IgbGridLiteSortExpression[]
 ```
 
 <!-- React, WebComponents -->
-The **`clearSort()`** method, as the name implies, clears the sort state of a single column or the whole grid component, depending
+The `clearSort()` method, as the name implies, clears the sort state of a single column or the whole grid component, depending
 on the passed arguments.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The **`ClearSort()`** method, as the name implies, clears the sort state of a single column or the whole grid component, depending
+The `ClearSort()` method, as the name implies, clears the sort state of a single column or the whole grid component, depending
 on the passed arguments.
 <!-- end: Blazor -->
 
@@ -276,12 +276,12 @@ await grid.ClearSort();
 ### Initial Sorting State
 
 <!-- React, WebComponents -->
-The **`sortExpressions`** property is very similar in behavior to the **`sort()`** method call. It exposes a declarative way to control
+The `sortExpressions` property is very similar in behavior to the `sort()` method call. It exposes a declarative way to control
 sort state in the grid, but the most useful property is the ability to set initial sort state when the {GridLiteTitle} is first rendered.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The **`SortExpressions`** property is very similar in behavior to the **`Sort()`** method call. It exposes a declarative way to control
+The `SortExpressions` property is very similar in behavior to the `Sort()` method call. It exposes a declarative way to control
 sort state in the grid, but the most useful property is the ability to set initial sort state when the {GridLiteTitle} is first rendered.
 <!-- end: Blazor -->
 
@@ -333,9 +333,9 @@ SaveUserSortState(state);
 ## Events
 
 <!-- React, WebComponents -->
-When a sorting operation is performed through the UI, the component emits a custom **`sorting`** event. The **`detail`** property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will stop the current sort operation.
+When a sorting operation is performed through the UI, the component emits a custom `sorting` event. The `detail` property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will stop the current sort operation.
 
-After the grid applies the new sorting state, a **`sorted`** event is emitted. It contains the expression which was used in the last sort operation and it is not cancellable.
+After the grid applies the new sorting state, a `sorted` event is emitted. It contains the expression which was used in the last sort operation and it is not cancellable.
 
 ```typescript
 grid.addEventListener('sorting', (event: CustomEvent<SortExpression<T>>) => { ... });
@@ -344,9 +344,9 @@ grid.addEventListener('sorted', (event: CustomEvent<SortExpression<T>>) => { ...
 <!-- End: React, WebComponents -->
 
 <!-- Blazor -->
-When a sorting operation is performed through the UI, the component raises **`Sorting`** and **`Sorted`** events. The **`Sorting`** event is cancellable and if cancelled will stop the current sort operation.
+When a sorting operation is performed through the UI, the component raises `Sorting` and `Sorted` events. The `Sorting` event is cancellable and if cancelled will stop the current sort operation.
 
-After the grid applies the new sorting state, a **`Sorted`** event is raised. It contains the expression which was used in the last sort operation and it is not cancellable.
+After the grid applies the new sorting state, a `Sorted` event is raised. It contains the expression which was used in the last sort operation and it is not cancellable.
 
 ```razor
 <IgbGridLite Sorting="OnSorting" Sorted="OnSorted" />
@@ -374,7 +374,7 @@ In the following sample, when you try to sort the **Name** and **Rating** column
 In cases where sorting must be done remotely or you want to save the current state/data to a server somewhere, the {GridLiteTitle} exposes a hook where you can implement and customize this behavior.
 
 <!-- React, WebComponents -->
-Using the **`dataPipelineConfiguration`** property, you can provide a custom hook which will be called each time a sort operation is about to run. The callback is passed a **`DataPipelineParams`** object.
+Using the `dataPipelineConfiguration` property, you can provide a custom hook which will be called each time a sort operation is about to run. The callback is passed a `DataPipelineParams` object.
 
 ```typescript
 export type DataPipelineParams<T extends object> = {
@@ -399,7 +399,7 @@ grid.dataPipelineConfiguration = { sort: (params: DataPipelineParams<T>) => T[] 
 <!-- End: React, WebComponents -->
 
 <!-- Blazor -->
-Using the **`DataPipelineConfiguration`** property, you can provide a custom hook which will be called each time a sort operation is about to run. The callback is passed a **`DataPipelineParams`** object.
+Using the `DataPipelineConfiguration` property, you can provide a custom hook which will be called each time a sort operation is about to run. The callback is passed a `DataPipelineParams` object.
 
 ```razor
 public class DataPipelineParams

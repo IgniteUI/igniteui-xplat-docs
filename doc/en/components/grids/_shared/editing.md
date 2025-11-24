@@ -51,16 +51,16 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
 
  If you want to use a data type specific *edit templates*, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
 
- - For `string` data type, default template is using `Input`.
- - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
- - For `date` data type, default template is using `DatePicker`
- - For `dateTime` data type, default template is using `DateTimeEditor`. This editor will give you a mask directions for the input elements part of the DateTime object.
- - For `time` -  data type, default template is using `TimePicker`.
- - For `boolean` data type, default template is using `Checkbox`.
- - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
- - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
+- For `string` data type, default template is using `Input`.
+- For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
+- For `date` data type, default template is using `DatePicker`
+- For `dateTime` data type, default template is using `DateTimeEditor`. This editor will give you a mask directions for the input elements part of the DateTime object.
+- For `time` -  data type, default template is using `TimePicker`.
+- For `boolean` data type, default template is using `Checkbox`.
+- For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
+- For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
  <!-- ComponentStart: Grid -->
- - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
+- For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
  <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
@@ -83,12 +83,12 @@ The grid exposes a wide array of events that provide greater control over the ed
  | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `GridEditDoneEventArgs` | **false**   |
  | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `GridEditDoneEventArgs` | **false**   |
 
-### Event Cancelation
+### Event Cancellation
 
- - `RowEditEnter` - Neither `Row` nor `Cell` will enter edit mode.
- - `CellEditEnter` - Prevents entering cell edit. If `RowEditable` is enabled, row edit will be triggered, although cell edit will remain forbidden.
- - `CellEdit` - Allowed `Cell` and/or `Row` edit, hitting **Done** button or **Enter** won't commit the value or row transaction. Cell editing and Row editing won't be closed until **Cancel** button is clicked.
- - `RowEdit` - Committing cell is possible, but not the whole row. The row will stay in edit mode and the row transaction will be considered open. Hitting **Done** does not commit or close the row. **Cancel** button closes the editing process and the transaction without committing the changes.
+- `RowEditEnter` - Neither `Row` nor `Cell` will enter edit mode.
+- `CellEditEnter` - Prevents entering cell edit. If `RowEditable` is enabled, row edit will be triggered, although cell edit will remain forbidden.
+- `CellEdit` - Allowed `Cell` and/or `Row` edit, hitting **Done** button or **Enter** won't commit the value or row transaction. Cell editing and Row editing won't be closed until **Cancel** button is clicked.
+- `RowEdit` - Committing cell is possible, but not the whole row. The row will stay in edit mode and the row transaction will be considered open. Hitting **Done** does not commit or close the row. **Cancel** button closes the editing process and the transaction without committing the changes.
 
 The following sample demonstrates the editing execution sequence in action:
 

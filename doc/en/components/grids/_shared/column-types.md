@@ -36,8 +36,8 @@ This column `DataType` is not changing the appearance or format of the cell valu
 
 If the `DataType` is set to *number*, the cell value will be formatted based on application or grid's `Locale` settings, as well as when `PipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
 
- - Number of digits after the decimal point
- - Decimal separator with `,` or `.`
+- Number of digits after the decimal point
+- Decimal separator with `,` or `.`
 
 <!-- Angular -->
 
@@ -92,8 +92,9 @@ const formatOptions : IgrColumnPipeArgs = {
 ### DateTime, Date and Time
 
 The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom date format or timezone:
- - **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
- - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
+
+- **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
+- **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
 <!-- Angular -->
 

@@ -56,11 +56,11 @@ grid.columns = [...];
 }
 ```
 <!-- React, WebComponents -->
-If the grid has **`autoGenerate`** enabled, it will "_infer_" the new column configuration only if the old one is reset.
+If the grid has `autoGenerate` enabled, it will "_infer_" the new column configuration only if the old one is reset.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-If the grid has **`AutoGenerate`** enabled, it will "_infer_" the new column configuration only if the old one is reset.
+If the grid has `AutoGenerate` enabled, it will "_infer_" the new column configuration only if the old one is reset.
 <!-- end: Blazor -->
 
 ```typescript
@@ -87,13 +87,13 @@ grid.data = [];
 <!-- React, WebComponents -->
 >[!NOTE]
 >The sort/filter states of the {GridLiteTitle} are kept when changing the data source in this manner.
-Usually you will want to reset them by calling either **`clearSort()`** and/or **`clearFilter()`**.
+Usually you will want to reset them by calling either `clearSort()` and/or `clearFilter()`.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 >[!NOTE]
 >The sort/filter states of the {GridLiteTitle} are kept when changing the data source in this manner.
-Usually you will want to reset them by calling either **`ClearSort()`** and/or **`ClearFilter()`**.
+Usually you will want to reset them by calling either `ClearSort()` and/or `ClearFilter()`.
 <!-- end: Blazor -->
 
 In the sample below, the grid has column auto-generation enabled. When you click on the switch data button,

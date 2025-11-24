@@ -37,25 +37,25 @@ When the `{ComponentName}` header container is focused, the following key combin
 
 ### Key Combinations
 
- - <kbd>↑</kbd> navigates one cell up in the headers (no looping). Available only when Multi-row Layout (MRL) or Multi-column Headers (MCH) are defined.
- - <kbd>↓</kbd> navigates one cell down in the headers (no wrapping). Available only when Multi-row Layout (MRL) or Multi-column Headers (MCH) are defined.
- - <kbd>←</kbd> navigates one cell left (no looping).
- - <kbd>→</kbd> navigates one cell right (no wrapping between lines).
- - <kbd>CTRL</kbd> + <kbd>←</kbd> navigates to the leftmost cell in the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
- - <kbd>HOME</kbd> navigates to the leftmost cell in  the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
- - <kbd>CTRL</kbd> + <kbd>→</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
- - <kbd>END</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
- - <kbd>ALT</kbd> + <kbd>L</kbd> opens Advanced Filtering dialog if Advanced Filtering is enabled.
- - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> opens the Excel Style Filter dialog or the default (row) filter if the column is filterable.
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared.
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared.
- - <kbd>SPACE</kbd> selects the column. If the column is already selected, selection is cleared.
+- <kbd>↑</kbd> navigates one cell up in the headers (no looping). Available only when Multi-row Layout (MRL) or Multi-column Headers (MCH) are defined.
+- <kbd>↓</kbd> navigates one cell down in the headers (no wrapping). Available only when Multi-row Layout (MRL) or Multi-column Headers (MCH) are defined.
+- <kbd>←</kbd> navigates one cell left (no looping).
+- <kbd>→</kbd> navigates one cell right (no wrapping between lines).
+- <kbd>CTRL</kbd> + <kbd>←</kbd> navigates to the leftmost cell in the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
+- <kbd>HOME</kbd> navigates to the leftmost cell in  the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
+- <kbd>CTRL</kbd> + <kbd>→</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
+- <kbd>END</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
+- <kbd>ALT</kbd> + <kbd>L</kbd> opens Advanced Filtering dialog if Advanced Filtering is enabled.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> opens the Excel Style Filter dialog or the default (row) filter if the column is filterable.
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared.
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared.
+- <kbd>SPACE</kbd> selects the column. If the column is already selected, selection is cleared.
  <!-- ComponentStart: Grid -->
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd> groups the column, if the column is marked as groupable.
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd> groups the column, if the column is marked as groupable.
  <!-- ComponentEnd: Grid -->
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd> ungroups the column, if the column is marked as groupable.
- - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> collapses the column group header, if the header is not already collapsed.
- - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> expands the column group header, if the header is not already expanded.
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd> ungroups the column, if the column is marked as groupable.
+- <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> collapses the column group header, if the header is not already collapsed.
+- <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> expands the column group header, if the header is not already expanded.
 
 ## Body navigation
 
@@ -77,25 +77,25 @@ When the `{ComponentName}` body is focused, the following key combinations are a
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
- - <kbd>←</kbd> navigates one cell left (no wrapping between lines).
- - <kbd>→</kbd> - navigates one cell right (no wrapping between lines).
- - <kbd>CTRL</kbd> + <kbd>←</kbd> navigates to the leftmost cell in the row.
- - <kbd>CTRL</kbd> + <kbd>→</kbd> navigates to the rightmost cell in the row.
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> navigates to the first cell in the column.
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> navigates to the last cell in the column.
- - <kbd>HOME</kbd> navigates to the leftmost cell in the row.
- - <kbd>END</kbd> navigates to the rightmost cell in the row.
- - <kbd>CTRL</kbd> + <kbd>HOME</kbd> navigates to the top leftmost data cell in the grid.
- - <kbd>CTRL</kbd> + <kbd>END</kbd> navigates to the bottom rightmost data cell in the grid.
- - <kbd>PAGE UP</kbd> scrolls one page (view port) up.
- - <kbd>PAGE DOWN</kbd> scrolls one page (view port) down.
- - <kbd>ENTER</kbd> enters edit mode.
- - <kbd>F2</kbd> enters edit mode.
- - <kbd>ESC</kbd> exits edit mode.
- - <kbd>TAB</kbd> available only if there is a cell in edit mode; moves the focus to the next editable cell in the row; after reaching the last cell in the row, moves te focus to the first editable cell in the next row. When [Row Editing](row-editing.md) is enabled, moves the focus from the right-most editable cell to the **CANCEL** and **DONE** buttons, and from **DONE** button to the left-most editable cell in the row.
- - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - available only if there is a cell in edit mode; moves the focus to the previous editable cell in the row; after reaching the first cell in the row, moves the focus to the last editable cell in the previous row. When [Row Editing](row-editing.md) is enabled, moves the focus from the right-most editable cell to **CANCEL** and **DONE** buttons, and from **DONE** button to the right-most editable cell in the row.
- - <kbd>SPACE</kbd> - selects the row, if [Row Selection](row-selection.md) is enabled.
- - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> -
+- <kbd>←</kbd> navigates one cell left (no wrapping between lines).
+- <kbd>→</kbd> - navigates one cell right (no wrapping between lines).
+- <kbd>CTRL</kbd> + <kbd>←</kbd> navigates to the leftmost cell in the row.
+- <kbd>CTRL</kbd> + <kbd>→</kbd> navigates to the rightmost cell in the row.
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> navigates to the first cell in the column.
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> navigates to the last cell in the column.
+- <kbd>HOME</kbd> navigates to the leftmost cell in the row.
+- <kbd>END</kbd> navigates to the rightmost cell in the row.
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd> navigates to the top leftmost data cell in the grid.
+- <kbd>CTRL</kbd> + <kbd>END</kbd> navigates to the bottom rightmost data cell in the grid.
+- <kbd>PAGE UP</kbd> scrolls one page (view port) up.
+- <kbd>PAGE DOWN</kbd> scrolls one page (view port) down.
+- <kbd>ENTER</kbd> enters edit mode.
+- <kbd>F2</kbd> enters edit mode.
+- <kbd>ESC</kbd> exits edit mode.
+- <kbd>TAB</kbd> available only if there is a cell in edit mode; moves the focus to the next editable cell in the row; after reaching the last cell in the row, moves te focus to the first editable cell in the next row. When [Row Editing](row-editing.md) is enabled, moves the focus from the right-most editable cell to the **CANCEL** and **DONE** buttons, and from **DONE** button to the left-most editable cell in the row.
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - available only if there is a cell in edit mode; moves the focus to the previous editable cell in the row; after reaching the first cell in the row, moves the focus to the last editable cell in the previous row. When [Row Editing](row-editing.md) is enabled, moves the focus from the right-most editable cell to **CANCEL** and **DONE** buttons, and from **DONE** button to the right-most editable cell in the row.
+- <kbd>SPACE</kbd> - selects the row, if [Row Selection](row-selection.md) is enabled.
+- <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> -
  <!-- ComponentStart: Grid -->
   over Group Row - collapses the group.
  <!-- ComponentEnd: Grid -->
@@ -105,7 +105,7 @@ When the `{ComponentName}` body is focused, the following key combinations are a
  <!-- ComponentStart: TreeGrid -->
   collapses the current node.
  <!-- ComponentEnd: TreeGrid -->
- - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
+- <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
   over Group Row - expands the group.
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->
@@ -115,9 +115,9 @@ When the `{ComponentName}` body is focused, the following key combinations are a
   expands the current node.
  <!-- ComponentEnd: TreeGrid -->
  <!-- ComponentStart: Grid -->
- - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> - over Master Detail Row - collapses the details view.
- - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> - over Master Detail Row - expands the details view.
- - <kbd>SPACE</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
+- <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> - over Master Detail Row - collapses the details view.
+- <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> - over Master Detail Row - expands the details view.
+- <kbd>SPACE</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
  <!-- ComponentEnd: Grid -->
 
 

@@ -28,15 +28,18 @@ The Ignite UI for {Platform} {ComponentTitle} provides a Cell Merging feature th
 <!-- ComponentStart: TreeGrid -->
 `sample="/{ComponentSample}/cell-merge", height="755", alt="{Platform} {ComponentTitle} Cell Merging Example"`
 <!-- ComponentEnd: TreeGrid -->
+
 ## Enabling and Using Cell Merging
+
 Cell merging in the grid is controlled at two levels:
- - Grid-level merge mode – determines when merging is applied.
- - Column-level merge toggle – determines which columns can merge cells.
+- Grid-level merge mode – determines when merging is applied.
+- Column-level merge toggle – determines which columns can merge cells.
 
 ### Grid Merge Mode
+
 The grid exposes a `cellMergeMode` property that accepts values from the `GridCellMergeMode` enum:
- - `always` - Merges any adjacent cells that meet the merging condition, regardless of sort state.
- - `onSort` - Merges adjacent cells only when the column is sorted **(default value)**.
+- `always` - Merges any adjacent cells that meet the merging condition, regardless of sort state.
+- `onSort` - Merges adjacent cells only when the column is sorted **(default value)**.
 
 ```tsx
 <{ComponentSelector} data={data} cellMergeMode={cellMergeMode} >
@@ -79,8 +82,8 @@ At the column level, merging can be enabled or disabled with the `merge` propert
 ```
 
 In the above example:
- - The **OrderID** column will merge adjacent duplicate values.
- - The **ShipperName** column will render normally without merging.
+- The **OrderID** column will merge adjacent duplicate values.
+- The **ShipperName** column will render normally without merging.
 
 ### Combined Example
 

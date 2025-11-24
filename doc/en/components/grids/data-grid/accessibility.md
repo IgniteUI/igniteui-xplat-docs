@@ -124,5 +124,5 @@ The following demonstrates how to implement cell accessibility in the  {Platform
 
 ## API References
 
- - `Grid`
- - `UseAccessibility`
+- `Grid`
+- `UseAccessibility`

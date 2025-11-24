@@ -144,24 +144,24 @@ Several properties are exposed including grouping portions of the tooltip.
 
 ## API References
 
- - `DataToolTipExcludedColumns`
- - `DataToolTipGroupedPositionModeX`
- - `DataToolTipGroupedPositionModeY`
- - `DataToolTipGroupingMode`
- - `DataToolTipHeaderText`
- - `DataToolTipIncludedColumns`
- - `DataToolTipLabelTextColor`
- - `DataToolTipLayer`
- - `DataToolTipSummaryTitleText`
- - `DataToolTipSummaryType`
- - `DataToolTipTitleTextColor`
- - `DataToolTipUnitsTextColor`
- - `DataToolTipUnitsText`
- - `DataToolTipValueFormatAbbreviation`
- - `DataToolTipValueFormatCulture`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMinFractions`
- - `DataToolTipValueFormatMode`
- - `DataToolTipValueTextColor`
- - `MemberAsLegendLabel`
+- `DataToolTipExcludedColumns`
+- `DataToolTipGroupedPositionModeX`
+- `DataToolTipGroupedPositionModeY`
+- `DataToolTipGroupingMode`
+- `DataToolTipHeaderText`
+- `DataToolTipIncludedColumns`
+- `DataToolTipLabelTextColor`
+- `DataToolTipLayer`
+- `DataToolTipSummaryTitleText`
+- `DataToolTipSummaryType`
+- `DataToolTipTitleTextColor`
+- `DataToolTipUnitsTextColor`
+- `DataToolTipUnitsText`
+- `DataToolTipValueFormatAbbreviation`
+- `DataToolTipValueFormatCulture`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMinFractions`
+- `DataToolTipValueFormatMode`
+- `DataToolTipValueTextColor`
+- `MemberAsLegendLabel`

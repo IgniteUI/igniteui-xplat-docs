@@ -15,7 +15,7 @@ Let's dive in and explore how {Platform} DockManager empowers you to create exce
 
 ## Proximity Dock
 
-In this mode the joystick indicators are hidden and docking can be accomplished by dragging a pane close to the border of another pane. While dragging a pane, when the mouse cursor reaches the area corresponding to the dock position, a dock preview is shown. On mouse up the dragged pane is docked in the previewed location. To enable proximity docking, simply set the `proximityDock` property to ***true***.
+In this mode the joystick indicators are hidden and docking can be accomplished by dragging a pane close to the border of another pane. While dragging a pane, when the mouse cursor reaches the area corresponding to the dock position, a dock preview is shown. On mouse up the dragged pane is docked in the previewed location. To enable proximity docking, simply set the `proximityDock` property to **true**.
 
 ```ts
 this.dockManager.proximityDock = true;
