@@ -868,8 +868,8 @@ function buildStats(cb) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
                 link = link.trim();
-                link = link.replace('"', '');
-                link = link.replace('`', '');
+                link = link.split('"').join("");
+                link = link.split('`').join("");
                 link = link.replace('{environment:dvDemosBaseUrl}', '');
                 link = link.replace('{environment:demosBaseUrl}', '');
                 link = link.replace(config.samplesBrowsers.development, '');
@@ -1398,7 +1398,7 @@ function getSampleSections(fileLines, filePath) {
                     sample.path = sample.path.substring(0, altLocation)
                 }
 
-                sample.path = sample.path.replace('>', "");
+                sample.path = sample.path.split('>').join("");
                 sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
                 sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
                 sample.path = sample.path.replace('Sample}-', "Sample}/");
@@ -1592,9 +1592,8 @@ function logSampleLinks(cb, platform, server) {
             if (line.indexOf("sample=") >= 0) {
                 var parts = line.split(',');
                 var link = parts[0].replace('sample="', '');
-                link = link.replace('"', '');
-                link = link.replace('`', '');
-                link = link.replace('`', '');
+                link = link.split('"').join('');
+                link = link.split('`').join(''); 
                 link = link.replace('{PivotGridSample}', 'grids/tree-grid');
                 link = link.replace('{TreeGridSample}', 'grids/tree-grid');
                 link = link.replace('{GridSample}', 'grids/grid');
@@ -1716,8 +1715,8 @@ function extractSampleLinks(cb, platform, server, outputType) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
                 link = link.trim();
-                link = link.replace('"', '');
-                link = link.replace('`', '');
+                link = link.split('"').join('');
+                link = link.split('`').join('');
                 link = link.replace('/blazor-client', '');
                 link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
                 link = link.replace(docsInfo.samplesHost, docsInfo.samplesHost + docsInfo.samplesBrowser);
