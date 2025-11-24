@@ -17,7 +17,7 @@ _language: ja
 
 ### {PackageMaps} (地理マップ)
 
-**重大な変更**
+_重大な変更_
 
 - `AzureMapsMapImagery` は `AzureMapsImagery` に名前が変更されました。
 - `AzureMapsImagery` は `AzureMapsImageryStyle.Satellite` に名前が変更されました。
@@ -56,7 +56,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-**重大な変更**
+_重大な変更_
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -419,7 +419,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 - <label>PREVIEW</label>[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用できるようになり、さらに [Toolbar](menus/toolbar.md) コンポーネントの <label>PREVIEW</label> ToolAction に統合され、実行時に視覚化を更新できるようになりました。
 
-**重大な変更**
+_重大な変更_
 
 - バージョン 2024.2 のリリースでは、[Microsoft .NET ライフサイクル](https://dotnet.microsoft.com/ja-jp/platform/support/policy/dotnet-core)に従い、.NET 3.1、.NET 5、.NET 7 はサポートされなくなりました。
 
@@ -464,7 +464,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 - `RadioGroup`
   - `Name` および `Value` プロパティを追加しました。`Value` は双方向バインディングもサポートします。
 
-**重大な変更**:
+_重大な変更_:
 
 - 古い **IgbDatePicker** の名前を **IgbXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
@@ -510,7 +510,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-**重大な変更**:
+_重大な変更_:
 - **すべてのグリッド**
   - `RowIsland`
   - `DisplayDensity` の非推奨のプロパティが削除されました。

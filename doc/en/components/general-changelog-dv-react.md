@@ -147,7 +147,7 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
-**Breaking Changes**
+_Breaking Changes_
 
 - A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
 
@@ -339,7 +339,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids}
 
-**Breaking Changes**
+_Breaking Changes_
 
 - The `IgrDataGrid` & `IgrMultiColumnComboBox` are now part of the igniteui-react-data-grids package.
 
@@ -533,7 +533,7 @@ DashboardTile <label>PREVIEW</label>
 - `RadioGroup`
   - Added `Name` and `Value` properties.
 
-**BREAKING CHANGES**:
+_Breaking Changes_:
 
 - Renamed old **IgrDatePicker** to **IgrXDatePicker**.
 - Removed `Form` component. Use native form instead.
@@ -575,7 +575,7 @@ DashboardTile <label>PREVIEW</label>
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
   - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
-**BREAKING CHANGES**:
+_Breaking Changes_:
 
 - **All Grids** 
   - `RowIsland`

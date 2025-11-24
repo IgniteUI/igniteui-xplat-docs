@@ -110,7 +110,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-**重大な変更**
+_重大な変更_
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -302,7 +302,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 ### {PackageGrids}
 
-**重大な変更**
+_重大な変更_
 
 - `IgrDataGrid` と `IgrMultiColumnComboBox` は、igniteui-react-data-grids パッケージの一部になりました。
 
@@ -497,7 +497,7 @@ DashboardTile <label>PREVIEW</label>
 - `RadioGroup`
   - `Name` および `Value` プロパティを追加しました。
 
-**重大な変更**:
+_重大な変更_:
 
 - 古い **IgrDatePicker** の名前を **IgrXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
@@ -539,7 +539,7 @@ DashboardTile <label>PREVIEW</label>
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-**重大な変更**:
+_重大な変更_:
 
 - **すべてのグリッド**
   - `RowIsland`

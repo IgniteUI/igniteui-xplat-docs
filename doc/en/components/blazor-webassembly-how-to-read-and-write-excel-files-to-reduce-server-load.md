@@ -38,7 +38,7 @@ Blazor Server, on the other hand, runs the client logic on the server, using a s
 
 To demonstrate how it all works, we will create a Blazor WebAssembly application that will obtain data from the [Japan Meteorological Agency in an XML format](https://www-data-go-jp.translate.goog/data/dataset/mlit_20170902_0034/resource/de72cea0-a658-4c64-987c-38effeca3eb8?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp). For the purpose of this article, we included a bar chart in the downloaded Excel file, containing the number of daily earthquakes that occurred in the course of 7 days.
 
-<img src="../images/general/blazor-excel.png" />
+<img src="../images/general/blazor-excel.png" alt="blazor-excel.png"/>
 
 The source code of this sample application is published on [this GitHub repository](https://github-com.translate.goog/igjp-sample/IgbExcelDemo?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp).
 

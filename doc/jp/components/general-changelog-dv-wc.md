@@ -111,7 +111,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-**重大な変更**
+_重大な変更_
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -286,7 +286,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 ### {PackageGrids}
 
-**重大な変更**
+_重大な変更_
 
 - `IgcDataGrid` と `IgcMultiColumnComboBox` は、igniteui-webcomponents-data-grids パッケージの一部になりました。
 
@@ -407,7 +407,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-**重大な変更**:
+_重大な変更_:
 - **すべてのグリッド**
   - `RowIsland`
   - `displayDensity` の非推奨のプロパティが削除されました。
@@ -925,7 +925,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 - `RadioGroup`
   - `name` および `value` プロパティを追加しました。
 
-**重大な変更**:
+_重大な変更_:
 
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
 - 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
@@ -1391,7 +1391,7 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-3.0.0}**
 
 #### 変更
-- **重大な変更**: すべてのドロップダウン関連クラスの名前が `IgcDropDown*` から `IgcDropdown*` に変更されました。
+- _重大な変更_: すべてのドロップダウン関連クラスの名前が `IgcDropDown*` から `IgcDropdown*` に変更されました。
 
 ### **{PackageCommonVerChanges-2.2.0}**
 
