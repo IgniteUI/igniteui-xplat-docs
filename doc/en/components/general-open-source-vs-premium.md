@@ -12,7 +12,7 @@ _keywords: {ProductName}, getting started, angular components
 
 There are over 50 UI components available under the MIT license, including Grid Lite(link Grid Lite), Accordion, Avatar, Badge, Banner, Button, Calendar, Carousel, Checkbox, Chip, Combo, Date Picker, Drop Down, Input, List, Snackbar, and more. You can find the full list in the [Comparison Table for All Components](#comparison-table-for-all-components).
 
-All Open-Source components are marked in the header of their topics with: ![alt text](../../en/images/open-source-text.png)
+All Open-Source components are marked in the header of their topics with: ![alt text](../images/open-source-text.png)
 
 They are ideal for lightweight applications that need essential functionality without the overhead of enterprise features. You can use them freely in production, customize, fork, and contribute via GitHub. No license is required. 
 
@@ -27,10 +27,12 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 - [Charting library](../components/charts/chart-overview.md)
 - [Maps library](../components/geo-map.md) 
 - [Excel Library](../components/excel-library.md) 
+<!-- React, WebComponents -->
 - [Spreadsheet](../components/spreadsheet-overview.md) 
+<!-- end: React, WebComponents -->
 - Gauges - [Bullet Graph](../components/bullet-graph.md), [Linear Gauge](../components/linear-gauge.md) and [Radial Gauge](../components/radial-gauge.md)
 
-All Premium components are marked in the header of their topics with: ![alt text](../../en/images/premium-text.png)
+All Premium components are marked in the header of their topics with: ![alt text](../images/premium-text.png)
 
 All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls. 
 
