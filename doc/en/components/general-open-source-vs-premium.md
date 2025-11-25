@@ -26,8 +26,6 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 - Spreadsheet
 - Gauges
 - Toolbar
-- Multi Column ComboBox
-- Date Picker
 
 All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls.
 
