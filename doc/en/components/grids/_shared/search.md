@@ -76,11 +76,11 @@ Let's start by creating our grid and binding it to our data. We will also add so
 
 ```tsx
 <{ComponentSelector} ref={gridRef} className="gridSize" autoGenerate={false} allowFiltering={true} data={data}>
-    <IgrColumn field="IndustrySector" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="IndustryGroup" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="SectorType" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="KRD" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="MarketNotion" dataType="number" sortable={true}></IgrColumn>  
+    <IgrColumn field="IndustrySector" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="IndustryGroup" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="SectorType" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="KRD" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="MarketNotion" dataType="number" sortable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid -->
@@ -101,13 +101,14 @@ Let's start by creating our grid and binding it to our data. We will also add so
 <!-- WebComponents -->
 ```html
 <igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="100%" width="100%">
-    <igc-column field="Name" data-type="string" sortable="true"></igc-column>        
-    <igc-column field="ID" data-type="number" sortable="true"></igc-column>        
-    <igc-column field="Title" data-type="string" sortable="true"></igc-column>        
-    <igc-column field="Age" data-type="number" sortable="true"></igc-column>        
-    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>        
+    <igc-column field="Name" data-type="string" sortable="true"></igc-column>
+    <igc-column field="ID" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 private treeGrid: IgcTreeGridComponent;
 
@@ -120,11 +121,11 @@ constructor() {
 
 ```tsx
 <IgrTreeGrid ref={gridRef} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" allowFiltering={true} height="100%" width="100%">
-    <IgrColumn field="Name" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="ID" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>  
+    <IgrColumn field="Name" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 
@@ -154,10 +155,10 @@ public exactMatch: boolean = false;
 <!-- WebComponents -->
 
 ```typescript
-    private grid: IgcGridComponent;    
+    private grid: IgcGridComponent;
 
     private searchBox: IgcInputComponent;
-    
+
     private searchIcon: IgcIconComponent;
     private clearIcon: IgcIconComponent;
     private nextIconButton: IgcIconButtonComponent;
@@ -186,7 +187,7 @@ const [searchText, setSearchText] = useState('');
 <!-- ComponentStart: TreeGrid -->
 <!-- WebComponents -->
 ```ts
-private treeGrid: IgcTreeGridComponent;    
+private treeGrid: IgcTreeGridComponent;
 
 private searchBox: IgcInputComponent;
 
@@ -293,6 +294,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -390,6 +392,7 @@ In order to freely search and navigate among our search results, let's create a 
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -414,6 +417,7 @@ public nextSearch() {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -510,7 +514,7 @@ constructor() {
      });
 }
 
-public onSearchKeydown(evt: KeyboardEvent) {  
+public onSearchKeydown(evt: KeyboardEvent) {
         if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
             evt.preventDefault();
             this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
@@ -567,6 +571,7 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -577,7 +582,7 @@ constructor() {
     });
 }
 
-public onSearchKeydown(evt: KeyboardEvent) {  
+public onSearchKeydown(evt: KeyboardEvent) {
     if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
         evt.preventDefault();
         this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
@@ -840,7 +845,7 @@ builder.Services.AddIgniteUIBlazor(
     const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
     const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
     const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-    
+
     protected override void OnAfterRender(bool firstRender)
     {
         if (this.searchIconRef != null && firstRender)
@@ -1052,6 +1057,7 @@ Let's begin by creating the search navigation buttons on the right of the input 
     </div>
 </igc-suffix>
 ```
+
 ```typescript
 public showResults() {
     if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {
@@ -1319,47 +1325,47 @@ useEffect(() => {
 In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional {ProductName} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
--   `FindNext`
--   `FindPrev`
--   `ClearSearch`
--   `RefreshSearch`
+- `FindNext`
+- `FindPrev`
+- `ClearSearch`
+- `RefreshSearch`
 
 `Column` properties:
--   `Searchable`
+- `Searchable`
 
 Additional components with relative APIs that were used:
 
 <!-- Angular -->
 
-* `InputGroup`
-* `RippleDirective`
-* `ButtonDirective`
+- `InputGroup`
+- `RippleDirective`
+- `ButtonDirective`
 
 <!-- end: Angular -->
 
-* `Icon`
-* `Chip`
+- `Icon`
+- `Chip`
 
 <!-- Blazor -->
 
-* `Input`
-* `IconButton`
+- `Input`
+- `IconButton`
 
 <!-- end: Blazor -->
 
 ## Additional Resources
 
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

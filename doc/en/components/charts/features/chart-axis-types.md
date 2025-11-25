@@ -24,7 +24,7 @@ The `CategoryXAxis` requires you to provide a `DataSource` and a `Label` in orde
 
 | Category Series  | Stacked Series | Financial Series |
 |------------------|----------------|--------------------|
-| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> <br> <br> <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> <br> <br> <br> |
+| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> - `PointSeries`  <br> - `SplineSeries` <br>  - `SplineAreaSeries` <br> - `StepLineSeries` <br> - `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` | - `StackedAreaSeries` <br> - `StackedColumnSeries` <br> - `StackedLineSeries` <br> - `StackedSplineSeries` <br> - `Stacked100AreaSeries` <br> - `Stacked100ColumnSeries` <br> - `Stacked100LineSeries` <br> - `Stacked100SplineSeries` <br> <br> <br> <br> | - `FinancialPriceSeries` <br> - `BollingerBandsOverlay` <br> - `ForceIndexIndicator` <br> - `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> - `TypicalPriceIndicator` <br> <br> <br> <br> |
 
  The following example demonstrates usage of the `CategoryXAxis` type:
 
@@ -34,9 +34,9 @@ The `CategoryXAxis` requires you to provide a `DataSource` and a `Label` in orde
 
 The `CategoryYAxis` works very similarly to the `CategoryXAxis` described above, but it is placed vertically rather than horizontally. Also, this axis requires you to provide a `DataSource` and a `Label` in order to plot data with it. The `CategoryYAxis` is generally used with the `NumericXAxis` to plot the following type of series:
 
- - `BarSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  The following example demonstrates usage of the `CategoryYAxis` type:
 
@@ -48,18 +48,18 @@ The `NumericXAxis` treats its data as continuously varying numerical data items.
 
 The `NumericXAxis` is compatible with the following type of series:
 
- - `BarSeries`
- - `BubbleSeries`
- - `HighDensityScatterSeries`
- - `ScatterSeries`
- - `ScatterLineSeries`
- - `ScatterSplineSeries`
- - `ScatterAreaSeries`
- - `ScatterContourSeries`
- - `ScatterPolylineSeries`
- - `ScatterPolygonSeries`
- - `StackedBarSeries`
- - `Stacked100BarSeries`
+- `BarSeries`
+- `BubbleSeries`
+- `HighDensityScatterSeries`
+- `ScatterSeries`
+- `ScatterLineSeries`
+- `ScatterSplineSeries`
+- `ScatterAreaSeries`
+- `ScatterContourSeries`
+- `ScatterPolylineSeries`
+- `ScatterPolygonSeries`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
 
  The following example demonstrates usage of the `NumericXAxis`:
 
@@ -73,7 +73,7 @@ The `NumericYAxis` is compatible with the following type of series:
 
 | Category Series  | Stacked Series | Financial Series | Scatter Series |
 |------------------|----------------|------------------|----------------|
-| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> | - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> -  `ScatterSeries` <br>  - `ScatterLineSeries` <br> -  `ScatterSplineSeries` <br> -  `ScatterAreaSeries` <br> -  `ScatterContourSeries` <br> -  `ScatterPolylineSeries`  <br> -  `ScatterPolygonSeries`  <br> |
+| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> - `PointSeries`  <br> - `SplineSeries` <br>  - `SplineAreaSeries` <br> - `StepLineSeries` <br> - `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | - `StackedAreaSeries` <br> - `StackedColumnSeries` <br> - `StackedLineSeries` <br> - `StackedSplineSeries` <br> - `Stacked100AreaSeries` <br> - `Stacked100ColumnSeries` <br> - `Stacked100LineSeries` <br> - `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> - `BollingerBandsOverlay` <br> - `ForceIndexIndicator` <br> - `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> - `TypicalPriceIndicator` <br> | - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> - `ScatterSeries` <br>  - `ScatterLineSeries` <br> - `ScatterSplineSeries` <br> - `ScatterAreaSeries` <br> - `ScatterContourSeries` <br> - `ScatterPolylineSeries`  <br> - `ScatterPolygonSeries`  <br> |
 
  The following example demonstrates usage of the `NumericYAxis`:
 
@@ -89,7 +89,7 @@ The `TimeXAxis` is the X-Axis type in the `FinancialChart` component.
 
 The `TimeXAxis` has the option to exclude intervals of data by using `Breaks`. As a result, the labels and plotted data will not appear at the excluded interval. For example, working/non-working days, holidays, and/or weekends. An instance of `TimeAxisBreak` can be added to the `Breaks` collection of the axis and configured by using a unique `Start`, `End` and `Interval`.
 
-#### Formating in Time X Axis
+#### Formatting in Time X Axis
 
 The `TimeXAxis` has the `LabelFormats` property, which represents a collection of `TimeAxisLabelFormat` objects. Each `TimeAxisLabelFormat` added to the collection is responsible for assigning a unique `Format` and `Range`. This can be especially useful for drilling down data from years to milliseconds and adjusting the labels depending on the range of time shown by the chart.
 
@@ -117,7 +117,7 @@ The following example demonstrates usage of the `CategoryAngleAxis` type:
 
  `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
 
- ### Proportional Category Angle Axis
+### Proportional Category Angle Axis
 
 The `ProportionalCategoryAngleAxis` treats its data as a sequence of category data items. The labels on this axis are placed along the edge of a circle according to their position in that sequence. This type of axis can display almost any type of data including strings and numbers.
 

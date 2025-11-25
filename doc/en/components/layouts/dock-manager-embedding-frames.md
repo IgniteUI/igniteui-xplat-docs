@@ -62,4 +62,4 @@ this.dockManager.layout = {
 
 ## API References
 
- - `DockManager`
+- `DockManager`

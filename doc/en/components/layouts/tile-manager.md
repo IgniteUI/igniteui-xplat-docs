@@ -12,7 +12,7 @@ The {ProductName} Tile Manager component enables the display of content in indiv
 
 ## {Platform} Tile Manager Example
 
-The following {ProductName} Tile Manager Example shows the component in action. 
+The following {ProductName} Tile Manager Example shows the component in action.
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager Example"`
 
@@ -20,9 +20,10 @@ The following {ProductName} Tile Manager Example shows the component in action.
 
 ## Usage
 
-The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
+The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience.
 
 The Tile Manager offers two components that we can use:
+
 - `Tile` - This component represents an individual tile displayed within the Tile Manager.
 - `TileManager` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
 
@@ -125,7 +126,7 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
 ```
 <!-- end: React -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Layout
 
@@ -364,9 +365,9 @@ The Tile component also exposes several slots which you can use:
 | `title` | Content for the tile header. |
 | `fullscreen-action` | Overwrite the default fullscreen action content. |
 | `maximize-action` | Overwrite the default maximize action content. |
-| `actions` | 	Custom content rendered after the default actions. |
+| `actions` | Custom content rendered after the default actions. |
 | `side-adorner` | Overwrite the default horizontal resize adorner. |
-| `corner-adorner` | 	Overwrite the default diagonal resize adorner. |
+| `corner-adorner` | Overwrite the default diagonal resize adorner. |
 | `bottom-adorner` | Overwrite the default vertical resize adorner. |
 
 
@@ -377,7 +378,7 @@ By default, the header section includes two action buttons:
 - The `maximize` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
 - The `fullscreen` button enables the tile to open in fullscreen mode in the user's browser.
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="tile-manager-actions"/>
 
 If you want to display just one of the two buttons, you can set either `DisableMaximize` or `DisableFullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 
@@ -558,7 +559,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 
 ## Styling
 
-You can also customize the appearance of the two components - `TileManager` and `Tile`. 
+You can also customize the appearance of the two components - `TileManager` and `Tile`.
 The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
 The `Tile` exposes several CSS properties we can use:
 
@@ -592,7 +593,7 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-side),
 igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
@@ -645,8 +646,8 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 
 ## Additional Resources
 
-* `Tile`
-* `TileManager`
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- `Tile`
+- `TileManager`
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

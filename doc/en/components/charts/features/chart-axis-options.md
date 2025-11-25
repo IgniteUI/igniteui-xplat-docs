@@ -17,8 +17,6 @@ The axis titles feature of the {Platform} charts, allows you to add contextual i
 
 `sample="/charts/category-chart/axis-titles", height="450", alt="{Platform} Axis Titles Example"`
 
-
-
 <div class="divider--half"></div>
 
 
@@ -44,7 +42,7 @@ After setting the `AutoMarginAndAngleUpdateMode`, you can set the `ShouldAutoExp
 
 Custom label formats such as `NumberFormatSpecifier` and `DateTimeFormatSpecifier` can be added to each axis via the `XAxisLabelFormatSpecifier` and `YAxisLabelFormatSpecifier` collections. Commonly used for applying Intl.NumberFormat and Intl.DateTimeFormat language sensitive number, date and time formatting. In order for a custom format to be applied to the labels, the `YAxisLabelFormat` or `XAxisLabelFormat` need to be set to data item's property name on the `CategoryChart`, eg. `{Date}`. For the `FinancialChart` the number is the context because it uses a numeric axis, therefore this needs to be set to `{0}`.
 
-The following example formats the yAxis with a `NumberFormatSpecifier` to reprerent $USD prices for top box office movies in the United States.
+The following example formats the yAxis with a `NumberFormatSpecifier` to represent $USD prices for top box office movies in the United States.
 
 `sample="/charts/category-chart/format-specifiers", height="450", alt="{Platform} Format Specifiers for Axis Labels"`
 

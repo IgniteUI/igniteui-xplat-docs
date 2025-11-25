@@ -7,6 +7,7 @@ mentionedTypes: ["Stepper"]
 ---
 
 # {Platform} Stepper Overview
+
 The {Platform} Stepper Component provides a wizard-like workflow and is used for showing progress through numbered steps. It enables developers to divide a lengthy content into a sequence of logical steps, helping end-users more easily navigate the entire process. The {Platform} Stepper is displayed as a vertical or a horizontal line. The {Platform} Stepper has multiple features like step validation, styling, orientation and keyboard navigation.
 
 ## {Platform} Stepper Example
@@ -35,7 +36,7 @@ import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
 defineComponents(IgcStepperComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -109,7 +110,7 @@ Steps can be declared using one of the following approaches.
 
 ```tsx
 <IgrStepper>
-    {this.StepsData.map(item => 
+    {this.StepsData.map(item =>
         <IgrStep key={item.title} disabled={item.disabled}>
             <p slot="title">{item.title}</p>
         </IgrStep>
@@ -151,6 +152,7 @@ Steps can be declared using one of the following approaches.
     </IgrStep>
 </IgrStepper>
 ```
+
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
 > [!Note]
@@ -196,21 +198,22 @@ For each step the user has the ability to configure indicator, title and subtitl
     </IgrStep>
 </IgrStepper>
 ```
-<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
+
+<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png" alt="stepper-step"/>
 
 ### Orientation in {Platform} Stepper
-You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
+You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** **(default value)** or **vertical**.
 
 **Horizontal Stepper Orientation**
 
-*horizontal* is the default value for the `Stepper` orientation property.
-When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
+**horizontal**is the default value for the `Stepper` orientation property.
+When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is **false**. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
-<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
+<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png" alt="stepper-contentTop" />
 
 **Vertical Stepper Orientation**
 
-You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to *vertical*.
+You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to **vertical**.
 
 The sample below demonstrates how stepper orientation and titles position could be changed runtime.
 
@@ -221,16 +224,18 @@ The sample below demonstrates how stepper orientation and titles position could 
 <div class="divider--half"></div>
 
 ### Step States
+
 {Platform} `Stepper` supports five steps states and each of them apply different styles by default:
-- **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
-- **disabled** - Determines whether the step is intractable. By default, the disabled attribute of a step is set to *false*.
-- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its default value is *false*.
-- **optional** - By default, the optional attribute of a step is set to *false*. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
-- **complete** - By default, the complete attribute of a step returns *false*. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
+
+- **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to **true**, the initial active step would be the first non-disabled step.
+- **disabled** - Determines whether the step is intractable. By default, the disabled attribute of a step is set to **false**.
+- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its default value is **false**.
+- **optional** - By default, the optional attribute of a step is set to **false**. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
+- **complete** - By default, the complete attribute of a step returns **false**. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
 
 ### Linear {Platform} Stepper
 
-The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
+The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to **false** and the user is enabled to select any non-disabled step in the `Stepper`.
 
 
 ```html
@@ -266,7 +271,7 @@ The {Platform} `Stepper` gives you the opportunity to set its steps flow using t
 </IgrStepper>
 ```
 
-When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one.
+When the linear property is set to **true**, the stepper will require the current non-optional step to be valid before proceeding to the next one.
 
 If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one.
 
@@ -289,38 +294,38 @@ If the current non-optional step is not valid you cannot go forward to the next 
 The {ProductName} Stepper gives you the ability to configure different options for titles, indicators and more.
 
 This could be achieved through the `StepType` property of the `Stepper`. It takes the following values:
-- Full *(default value)*
+- Full **(default value)**
 - Indicator
 - Title
 
-**Full**
+**full**
 
 If titles and subtitles are defined, with this setup both indicators and titles would be rendered.
 
 The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
 The user can configure the title position using the `TitlePosition` property. It takes the following values:
-- undefined *(default value)*
+- undefined **(default value)**
 - end
 - start
 - bottom
 - top
 
-When the {Platform} `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed *below* the indicators.
+When the {Platform} `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed **below** the indicators.
 
-When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed *after* the indicators.
+When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed **after** the indicators.
 
 > [!Note]
-> **titlePosition** property is applicable **only** when the stepper stepType property is set to *full*.
+> **titlePosition** property is applicable **only** when the stepper stepType property is set to **full**.
 
-**Indicator**
+**indicator**
 
-If you want to display only indicators for the steps, set the stepType option to *indicator*.
+If you want to display only indicators for the steps, set the stepType option to **indicator**.
 
 The step indicator supports any content, however with the restriction that its size would be always **24 pixels**. Having this in mind, we recommend using `Icon` or `Avatar` as step indicators.
 
 **Title**
 
-If you want to display only titles for the steps, set the stepType option to *title*.
+If you want to display only titles for the steps, set the stepType option to **title**.
 
 In this way if subtitles are defined, they will also be rendered below the step title.
 
@@ -356,15 +361,15 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 
 **Key Combinations**
 
- - <kbd>TAB</kbd> - moves the focus to the next tabbable element
- - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - moves the focus to the previous tabbable element
- - <kbd>↓</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
- - <kbd>↑</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
- - <kbd>←</kbd> - moves the focus to the header of the previous accessible step in both orientations
- - <kbd>→</kbd> - moves the focus to the header of the next accessible step in both orientations
- - <kbd>HOME</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
- - <kbd>END</kbd> - moves the focus to the header of the LAST enabled step in the stepper
- - <kbd>ENTER</kbd> or <kbd>SPACE</kbd> - activates the currently focused step
+- <kbd>TAB</kbd> - moves the focus to the next tabbable element
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - moves the focus to the previous tabbable element
+- <kbd>↓</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
+- <kbd>↑</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
+- <kbd>←</kbd> - moves the focus to the header of the previous accessible step in both orientations
+- <kbd>→</kbd> - moves the focus to the header of the next accessible step in both orientations
+- <kbd>HOME</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
+- <kbd>END</kbd> - moves the focus to the header of the LAST enabled step in the stepper
+- <kbd>ENTER</kbd> or <kbd>SPACE</kbd> - activates the currently focused step
 
 ## Styling {Platform} Stepper
 
@@ -428,5 +433,5 @@ igc-step::part(indicator) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

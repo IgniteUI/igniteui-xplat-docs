@@ -8,10 +8,9 @@ _license: MIT
 ---
 
 # Column Configuration
-
-The columns are defined with the **`columns`** property which has the type **`ColumnConfiguration<T>[]`**. **`key`** is the only required property for the **`ColumnConfiguration<T>`** as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
-
 <!-- React, WebComponents -->
+
+The columns are defined with the `columns` property which has the type `ColumnConfiguration<T>[]`. `key` is the only required property for the `ColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
 
 ```typescript
 const accountColumn: ColumnConfiguration<T> = {
@@ -22,16 +21,66 @@ const accountColumn: ColumnConfiguration<T> = {
 };
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+
+The columns are defined with the `Columns` property which has the type `List<IgbColumnConfiguration<T>>`. `Key` is the only required property for the `IgbColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
+
+```razor
+columns = new List<IgbColumnConfiguration<ProductInfo>>
+{
+    new IgbColumnConfiguration<ProductInfo>
+    {
+        Key = "Name",
+        HeaderText = "Product Name",
+        Type = DataType.String
+    },
+    /* Additional configuration follows */
+    ...
+};
+```
 
 >[!NOTE]
->As a rule of thumb, the **column** prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
+>As a rule of thumb, the **Column** prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
 
 ## Configuration Based on the Data Source
 
-The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate **`key`** and **`type`** props based on records in the data.
+The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `Key` and `Type` props based on records in the data.
+
+```razor
+<IgbGridLite AutoGenerate=true Data="@products"/>
+@code {
+    private List<ProductInfo> products;
+
+    protected override void OnInitialized()
+    {
+        products = new List<ProductInfo>
+        {
+            new ProductInfo { Id = "1", Name = "example", Price = 10 },
+            ...
+        };
+    }
+
+    public class ProductInfo
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+    }
+}
+```
+
+<!-- end: Blazor -->
 
 <!-- React, WebComponents -->
+
+>[!NOTE]
+>As a rule of thumb, the `column` prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
+
+## Configuration based on the data source
+
+The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `key` and `type` props based on records in the data.
 
 ```typescript
 const data: Record[] = [
@@ -40,11 +89,11 @@ const data: Record[] = [
 ];
 ```
 
-```xml
+```html
 <igc-grid-lite auto-generate .data=${data}></igc-grid-lite>
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
 
 The previous snippet will result in the following column configuration for the grid:
 
@@ -58,7 +107,17 @@ The previous snippet will result in the following column configuration for the g
 ];
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
+<!-- Blazor -->
+```razor
+new List<IgbColumnConfiguration<ProductInfo>>
+{
+    new IgbColumnConfiguration<ProductInfo> { Key = "Id", Type = DataType.String },
+    new IgbColumnConfiguration<ProductInfo> { Key = "Name", Type = DataType.String },
+    new IgbColumnConfiguration<ProductInfo> { Key = "Price", Type = DataType.Number },
+}
+```
+<!-- end: Blazor -->
 
 Useful for a quick render of some data without any additional customizations.
 
@@ -71,13 +130,14 @@ The column configuration object exposes several more properties:
 
 ### Column Width
 
-By default, the columns have a width of `minmax(136px, 1fr)` which translates to a minimum width of 136px and maximum of
+By default, the columns have a width of **minmax(136px, 1fr)** which translates to a minimum width of 136px and maximum of
 1 part of the available space in the {GridLiteTitle}. This way the columns are fluid and responsive accommodating for changes
 in the grid width.
 
-To change the width of column, use the **`width`** property of the **`ColumnConfiguration`** object.
+To change the width of column, use the **width** property of the **ColumnConfiguration** object.
 
 <!-- React, WebComponents -->
+To change the width of column, use the `width` property of the `ColumnConfiguration` object.
 
 ```typescript
 {
@@ -86,15 +146,27 @@ To change the width of column, use the **`width`** property of the **`ColumnConf
 }
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+To change the width of column, use the `Width` property of the `IgbColumnConfiguration` object.
+
+
+
+```razor
+{
+  ...
+  Width = "250px"
+}
+```
+
+<!-- end: Blazor -->
 
 The property accepts <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#numbers_lengths_and_percentages" target="_blank">valid CSS length units</a>.
 
-### Hiding Columns
-
-Columns can be hidden/shown by setting the **hidden** property to of the column configuration object.
-
+### Hiding columns
 <!-- React, WebComponents -->
+Columns can be hidden/shown by setting the **hidden** property to of the `ColumnConfiguration` object.
 
 ```typescript
 {
@@ -103,13 +175,24 @@ Columns can be hidden/shown by setting the **hidden** property to of the column 
 }
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
 
-### Column Resize
+<!-- Blazor -->
+Columns can be hidden/shown by setting the **Hidden** property to of the `IgbColumnConfiguration` object.
 
-Each column of the {GridLiteTitle} can be configured to be resizable by setting the **`resizable`** property in the column definition.
+```razor
+{
+  ...,
+  Hidden = true
+}
+```
+
+<!-- end: Blazor -->
+
+### Column resize
 
 <!-- React, WebComponents -->
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `resizable` property in the column definition.
 
 ```typescript
 {
@@ -118,7 +201,18 @@ Each column of the {GridLiteTitle} can be configured to be resizable by setting 
 }
 ```
 
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
+<!-- Blazor -->
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `Resizable` property in the column definition.
+
+```razor
+{
+  ...
+  Resizable = true
+}
+```
+
+<!-- end: Blazor -->
 
 If a column is set to be resizable, you can drag the right size of the column header to either increase/decrease  the column width. Double-clicking on the resize area will trigger auto-sizing of the column where it will try set its width according to the largest content of its cells/header.
 
@@ -131,18 +225,18 @@ In the sample below you can try out the different column properties and how they
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
 ## Additional Resources
 
-* [Data Binding](binding.md)
-* [Sorting](sorting.md)
-* [Filtering](filtering.md)
-* [Theming & Styling](theming.md)
+- [Data Binding](binding.md)
+- [Sorting](sorting.md)
+- [Filtering](filtering.md)
+- [Theming & Styling](theming.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

@@ -8,16 +8,16 @@ _language: ja
 ---
 
 # {Platform} Date Picker (日付ピッカー) コンポーネントの概要
-{ProductName} Date Picker は、手動でテキストを入力して日付を入力するか、ポップアップするカレンダー ダイアログから日付値を選択するために使用される機能豊富なコンポーネントです。軽量で使いやすい Date Picker を使用すると、ユーザーは、月、年、10 年の複数の表示オプションを使用して目的の日付に移動できます。また、最小および最大の日付制約や必須フィールドなどの一般的な検証プロパティもサポートしています。 
+{ProductName} Date Picker は、手動でテキストを入力して日付を入力するか、ポップアップするカレンダー ダイアログから日付値を選択するために使用される機能豊富なコンポーネントです。軽量で使いやすい Date Picker を使用すると、ユーザーは、月、年、10 年の複数の表示オプションを使用して目的の日付に移動できます。また、最小および最大の日付制約や必須フィールドなどの一般的な検証プロパティもサポートしています。
 
-{ProductName} Date Picker コンポーネントを使用すると、ユーザーは月表示のカレンダード ロップダウンまたは編集可能な入力フィールドから単一の日付を選択できます。{Platform} Date Picker は、カレンダーからのみ選択するための dialog モード、ロケール対応でカスタマイズ可能な日付の書式設定と検証の統合もサポートしています。 
+{ProductName} Date Picker コンポーネントを使用すると、ユーザーは月表示のカレンダード ロップダウンまたは編集可能な入力フィールドから単一の日付を選択できます。{Platform} Date Picker は、カレンダーからのみ選択するための dialog モード、ロケール対応でカスタマイズ可能な日付の書式設定と検証の統合もサポートしています。
 
 > [!NOTE]
 > `DatePicker` コンポーネントは、{ProductName} のバージョン <!-- WebComponents -->5.0.0<!-- end: WebComponents --><!-- React -->18.7.0<!-- end: React --> 以降の新しいコンポーネントです。このバージョンより前の古い `DatePicker` は `XDatePicker` に名前が変更され、それぞれのドキュメント ページは「非推奨のコンポーネント」の下にあります。
 
 ## {Platform} Date Picker の例
 
-以下は、ユーザーが手動のテキスト入力で日付を選択し、左側のカレンダー アイコンをクリックしてナビゲートできるようになったときに、Date Picker がどのように機能するかを示すサンプルです。描画する方法は以下のとおりです。 
+以下は、ユーザーが手動のテキスト入力で日付を選択し、左側のカレンダー アイコンをクリックしてナビゲートできるようになったときに、Date Picker がどのように機能するかを示すサンプルです。描画する方法は以下のとおりです。
 
 `sample="/scheduling/date-picker/overview", height="500", alt="{Platform} Date Picker 入力の概要例"`
 
@@ -113,6 +113,7 @@ const date = new Date();
 
 <IgrDatePicker value={date}/>
 ```
+
 ```Razor
 <IgbDatePicker @ref="DatePicker" Value="@SelectedDate">
 </IgbDatePicker>
@@ -143,24 +144,26 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-icon slot="suffix" name="arrow_upward" collection="material" class="small" onclick="DatePicker.stepUp()"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
-    <IgrIcon 
-        slot="suffix" 
-        name="arrow_upward" 
-        collection="material" 
-        class="small" 
+    <IgrIcon
+        slot="suffix"
+        name="arrow_upward"
+        collection="material"
+        class="small"
         onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker @ref="DatePicker">
-    <IgbIcon 
-        Slot="suffix" 
-        IconName="arrow_upward" 
-        Collection="bootstrap" 
-        Class="small" 
+    <IgbIcon
+        Slot="suffix"
+        IconName="arrow_upward"
+        Collection="bootstrap"
+        Class="small"
         @onclick="() => DatePicker.StepUp(DatePart.Month)">
     </IgbIcon>
 </IgbDatePicker>
@@ -176,12 +179,14 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-icon slot="clear" name="delete" collection="material" class="small"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
     <IgrIcon slot="calendar" name="calendar" collection="material" class="small"></IgrIcon>
     <IgrIcon slot="clear" name="delete" collection="material" class="small"></IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker>
     <IgbIcon Slot="calendar" IconName="calendar" Collection="material" Class="small"></IgbIcon>
@@ -196,15 +201,17 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
     <igc-button slot="actions" onclick="DatePicker.showWeekNumbers = true">Show Week Numbers</igc-button>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
-    <IgrButton 
-        slot='actions' 
+    <IgrButton
+        slot='actions'
         onClick={() => datePickerRef.current.showWeekNumbers = true}>
         <span>Show Week Numbers</span>
     </IgrButton>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker>
     <IgbButton Slot="actions" @onclick="() => DatePicker.ShowWeekNumbers = true">Show Week Numbers</IgbButton>
@@ -236,9 +243,11 @@ DatePicker は `dialog` モードもサポートしています。
 <igc-date-picker id="DatePicker" mode="dialog">
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker mode="dialog"></IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker Mode="PickerMode.Dialog"></IgbDatePicker>
 ```
@@ -264,31 +273,33 @@ DatePicker は `dialog` モードもサポートしています。
     <igc-icon slot="suffix" name="arrow_downward" collection="material" onclick="DatePicker.stepDown()"></igc-icon>
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker>
-    <IgrIcon 
-        slot="prefix" 
-        name="arrow_upward" 
-        collection="material" 
+    <IgrIcon
+        slot="prefix"
+        name="arrow_upward"
+        collection="material"
         onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
     </IgrIcon>
-    <IgrIcon 
-        slot="suffix" 
-        name="arrow_downward" 
-        collection="material" 
+    <IgrIcon
+        slot="suffix"
+        name="arrow_downward"
+        collection="material"
         onClick={() => datePickerRef.current.stepDown(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker @ref="DatePicker">
-    <IgbIcon 
+    <IgbIcon
         Slot="prefix"
         IconName="arrow_upward"
-        Collection="material"               
+        Collection="material"
         @onclick="() => DatePicker.StepUp(DatePart.Month)">
     </IgbIcon>
-    <IgbIcon 
+    <IgbIcon
         Slot="suffix"
         IconName="arrow_downward"
         Collection="material"
@@ -296,6 +307,7 @@ DatePicker は `dialog` モードもサポートしています。
     </IgbIcon>
 </IgbDatePicker>
 ```
+
 ### フォーム
 `DatePicker` はフォーム要素で使用できます。コンポーネントの `Min` プロパティと `Max` プロパティはフォーム検証機能として機能します。
 
@@ -316,16 +328,18 @@ DatePicker は `dialog` モードもサポートしています。
 
 ## インターナショナリゼーション
 
-`DatePicker` のローカライズは、`Locale` 入力で制御できます。 
+`DatePicker` のローカライズは、`Locale` 入力で制御できます。
 
 以下は日本ロケール定義を持つ `DatePicker` です。
 ```html
 <igc-date-picker locale="ja-JP">
 </igc-date-picker>
 ```
+
 ```tsx
 <IgrDatePicker locale="ja-JP"></IgrDatePicker>
 ```
+
 ```razor
 <IgbDatePicker Locale="ja-JP"></IgbDatePicker>
 ```
@@ -369,13 +383,13 @@ igc-date-picker::part(year-inner selected) {
 
 ## API リファレンス
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

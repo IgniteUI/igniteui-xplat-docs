@@ -65,7 +65,7 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
     imports: [
         // ...
         IgxGeographicMapModule,
-		IgxDataChartInteractivityModule
+        IgxDataChartInteractivityModule
         // ...
     ]
 })

@@ -141,8 +141,8 @@ worksheet.Columns[0].CellFormat.Locked = ExcelDefaultableBoolean.False;
 
 以下は、フィルターをワークシートに追加するためのメソッド一覧と概要です。
 
-| メソッド			|説明     																	|
-| ------------- 	|:-------------:																	|
+| メソッド | 説明    |
+| -------------|:-------------:|
 |`ApplyAverageFilter`|データ範囲全体の平均を下回るデータであるか上回るデータであるかという条件に基づいてデータを絞り込むことのできるフィルターです。|
 |`ApplyDatePeriodFilter`|月または四半期の日付をフィルターできるフィルターを表します。|
 |`ApplyFillFilter`|背景の塗りつぶしに基づいてセルを絞り込むフィルターを表します。このフィルターには CellFill を 1 つ指定します。この塗りつぶしのセルがデータ範囲に表示されることになります。他のセルはすべて非表示になります。|
@@ -313,18 +313,18 @@ format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Re
 
 ## API リファレンス
 
- - `CellFormat`
- - `ColorScaleConditionalFormat`
- - `ConditionalFormats`
- - `DataBarConditionalFormat`
- - `DisplayOptions`
- - `FilterSettings`
- - `ShowGridlines`
- - `ShowRowAndColumnHeaders`
- - `SortSettings`
- - `Workbook`
- - `WorksheetCell`
- - `WorksheetColumn`
- - `WorksheetFilterSettings`
- - `WorksheetSortSettings`
- - `Worksheet`
+- `CellFormat`
+- `ColorScaleConditionalFormat`
+- `ConditionalFormats`
+- `DataBarConditionalFormat`
+- `DisplayOptions`
+- `FilterSettings`
+- `ShowGridlines`
+- `ShowRowAndColumnHeaders`
+- `SortSettings`
+- `Workbook`
+- `WorksheetCell`
+- `WorksheetColumn`
+- `WorksheetFilterSettings`
+- `WorksheetSortSettings`
+- `Worksheet`

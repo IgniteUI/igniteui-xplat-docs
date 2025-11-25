@@ -15,7 +15,7 @@ Trendlines are off by default, but you can enable them by setting the `TrendLine
 
 The trendlines also have the ability to have a dash array applied to them once enabled. This is done by setting the `TrendLineDashArray` property to an array of numbers. The numeric array describes the length of the dashes of the trendline.
 
-# {Platform} Chart Trendlines Example
+## {Platform} Chart Trendlines Example
 
 The following sample depicts a `FinancialChart` showing the stock trend of Microsoft between 2013 and 2017 with a **QuinticFit** trendline initially applied. There is a drop-down that will allow you to change the type of trendline that is applied, and all possible trendline types are listed within that drop-down.
 
@@ -24,7 +24,7 @@ The following sample depicts a `FinancialChart` showing the stock trend of Micro
 
 <div class="divider--half"></div>
 
-# {Platform} Chart Trendlines Dash Array Example
+## {Platform} Chart Trendlines Dash Array Example
 
 The following sample depicts a `XamDataChart` showing a `FinancialPriceSeries` with a **QuarticFit** dashed trendline applied via the `TrendLineDashArray` property:
 
@@ -33,17 +33,17 @@ The following sample depicts a `XamDataChart` showing a `FinancialPriceSeries` w
 
 <div class="divider--half"></div>
 
-# {Platform} Chart Trendline Layer
+## {Platform} Chart Trendline Layer
 
 The `TrendLineLayer` is a series type that is designed to display a single trendline type for a target series. The difference between this and the existing trendline features on the existing series types is that since the `TrendLineLayer` is a series type, you can add more than one of them to the `Series` collection of the chart to have multiple trendlines attached to the same series. You can also have the trendline appear in the legend, which was not possible previously.
 
-### Trendline Layer Usage
+## Trendline Layer Usage
 
-The `TrendLineLayer` must be provided with a `TargetSeries` and a `TrendLineType` in order to work properly. The different trendline types that are avilable are the same as the trendlines that are available on the series.
+The `TrendLineLayer` must be provided with a `TargetSeries` and a `TrendLineType` in order to work properly. The different trendline types that are available are the same as the trendlines that are available on the series.
 
 If you would like to show the `TrendLineLayer` in the Legend, you can do so by setting the `UseLegend` property to `true`.
 
-### Styling the Trendline Layer
+## Styling the Trendline Layer
 
 By default, the `TrendLineLayer` renders with the same color as its `TargetSeries` in a dashed line. This can be configured by using the various styling properties on the `TrendLineLayer`.
 

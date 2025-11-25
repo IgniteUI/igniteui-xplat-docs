@@ -83,16 +83,16 @@ Here is an example showcasing the custom theming from above.
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 -->
 
 ## Additional Resources
 
-* [Column Configuration](column-configuration.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
+- [Column Configuration](column-configuration.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

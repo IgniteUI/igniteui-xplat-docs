@@ -79,6 +79,7 @@ _language: ja
     dataSource={this.state.data}
     finalValueAnnotationsVisible={true} />
 ```
+
 ```html
 <igc-category-chart
      id="chart"

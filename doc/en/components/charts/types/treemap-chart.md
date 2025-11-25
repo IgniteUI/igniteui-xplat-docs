@@ -101,15 +101,15 @@ In the following example, the treemap demonstrates the ability of node highlight
 
 `sample="/charts/tree-map/highlighting", height="600", alt="{Platform} Treemap Highlighting"`
 
-## {Platform} Treemap Percent based highlighting 
+## {Platform} Treemap Percent based highlighting
 
 - `HighlightedItemsSource`: Specifies the datasource to read highlighted values from. If null, then highlighted values are read from the ItemsSource property.
 - `HighlightedValueMemberPath`: Specifies the name of the property in the datasource where the highlighted values are read.
 - `HighlightedValueOpacity`: Controls the opacity of the normal value behind the highlighted value.
 - `HighlightedValuesDisplayMode`: Enables or disables highlighted values.
-    - Auto: The treemap decides what mode to use.
-    - Overlay: The treemap displays highlighted values over top the normal value with a slight opacity applied to the normal value.
-    - Hidden: The treemap does not show highlighted values.
+  - Auto: The treemap decides what mode to use.
+  - Overlay: The treemap displays highlighted values over top the normal value with a slight opacity applied to the normal value.
+  - Hidden: The treemap does not show highlighted values.
 
 `sample="/charts/tree-map/highlighting-percent-based", height="600", alt="{Platform} Treemap Percent based Highlighting"`
 

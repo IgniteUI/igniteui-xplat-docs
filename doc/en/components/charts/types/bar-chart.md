@@ -48,7 +48,7 @@ These use cases are commonly used for the following scenarios:
 - Stock Charts.
 - Any String Value Comparing a Numeric Value or Time-Series Value.
 
-### Bar Chart Best Practices:
+### Bar Chart Best Practices
 
 - Start you numeric Axis at 0.
 - Use a single color for the bars.
@@ -61,7 +61,7 @@ These use cases are commonly used for the following scenarios:
 - You have too much data so the Y-Axis can't fit in the space or is not legible.
 - You need a detailed Time-Series analysis  - consider a [Line Chart](line-chart.md) with a Time-Series for this type of data.
 
-### Bar Chart Data Structure:
+### Bar Chart Data Structure
 
 - The data source must be an array or a list of data items.
 - The data source must contain at least one data item.
@@ -85,8 +85,6 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
 The Bar Chart is able to render multiple bars per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular movie franchises. You can create this type of chart in the `XamDataChart` control by binding your data to multiple `BarSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} Bar Chart with Multiple Sources"`
-
-
 
 <div class="divider--half"></div>
 

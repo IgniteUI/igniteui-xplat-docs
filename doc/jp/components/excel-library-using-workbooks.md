@@ -124,7 +124,7 @@ var protect = workbook.Protection;
 
 ## API リファレンス
 
- - `DocumentProperties`
- - `WorkbookProtection`
- - `Workbook`
- - `Workbook`
+- `DocumentProperties`
+- `WorkbookProtection`
+- `Workbook`
+- `Workbook`

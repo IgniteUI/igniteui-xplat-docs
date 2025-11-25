@@ -68,13 +68,11 @@ Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline C
 
 `sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="{Platform} Area Chart with Multiple Sources"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Area Chart Styling
 
-Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly. 
+Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly.
 
 `sample="/charts/category-chart/area-chart-styling", height="600", alt="{Platform} Area Chart Styling"`
 
@@ -96,7 +94,6 @@ The {Platform} Step Area Chart belongs to a group of category charts and it is r
 
 <div class="divider--half"></div>
 
-## Advanced Types of Area Charts
 
 The following sections explain more advanced types of {Platform} Area Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
@@ -198,7 +195,7 @@ You can find more information about related chart types in these topics:
 The following table lists API members mentioned in above sections:
 
 | Chart Type               | Control Name    | API Members  |
-| -------------------------|-----------------|-----------------------  |
+| -------------------------|-----------------|-----------------------|
 | Area                     | `CategoryChart` | `CategoryChart.ChartType` = `Area`  |
 | Step Area                | `CategoryChart` | `CategoryChart.ChartType` = `StepArea`  |
 | Range Area               | `XamDataChart`  | `RangeAreaSeries`  |
@@ -207,5 +204,5 @@ The following table lists API members mentioned in above sections:
 | Polar Spline Area        | `XamDataChart`  | `PolarSplineAreaSeries`  |
 | Stacked Area             | `XamDataChart`  | `StackedAreaSeries`  |
 | Stacked Spline Area      | `XamDataChart`  | `StackedSplineAreaSeries`  |
-| Stacked 100% Area        | `XamDataChart`  | `Stacked100AreaSeries`
+| Stacked 100% Area        | `XamDataChart`  | `Stacked100AreaSeries`  |
 | Stacked 100% Spline Area | `XamDataChart`  | `Stacked100SplineAreaSeries`  |

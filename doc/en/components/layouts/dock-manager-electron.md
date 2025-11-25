@@ -152,7 +152,7 @@ For the full source code please clone the [repository](https://github.com/Ignite
 
 ## API References
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`

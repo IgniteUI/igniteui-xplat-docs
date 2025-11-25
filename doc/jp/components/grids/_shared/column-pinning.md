@@ -56,6 +56,7 @@ _language: ja
     </igc-paginator>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -82,6 +83,7 @@ constructor() {
     <igx-column [field]="ID"></igx-column>
 </igx-tree-grid>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
@@ -108,6 +110,7 @@ constructor() {
     <igx-column [field]="Debut" [width]="200px"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
         height="600px" width="800px" >
@@ -335,6 +338,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     </igx-column>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -350,6 +354,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -393,7 +398,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
     <IgbColumn Field="ID" Hidden="true"></IgbColumn>
 
-    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px"
     HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
 
     <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
@@ -424,7 +429,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 <IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
     <IgrColumn field="ID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    <IgrColumn field="CompanyName" header="Company" width="300px"
     headerTemplate={toggleColumnPin}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
@@ -441,7 +446,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -482,6 +487,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-tree-grid>
 </div>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -497,6 +503,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -543,19 +550,19 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
     <IgbColumn Field="Title" DataType="String" Pinned="true"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
-        
+
     <IgbColumn Field="Phone" DataType="String"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
-            
+
     <IgbColumn Field="Age" DataType="Number"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
-            
+
     <IgbColumn Field="HireDate" DataType="Date"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
-            
+
     <IgbColumn Field="OnPTO" DataType="Boolean"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
-</IgbTreeGrid> 
+</IgbTreeGrid>
 
 
 // In JavaScript
@@ -596,7 +603,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -637,6 +644,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hGrid" class="hierarchicalGrid" auto-generate="false"
     height="500px" width="100%">
@@ -656,6 +664,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
@@ -692,7 +701,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} autoGenerate={false} data={HierarchicalCustomersData} ref={grid}>
     <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="Company" header="Company Name" width="300px" 
+    <IgrColumn field="Company" header="Company Name" width="300px"
     headerTemplate={toggleColumnPin} pinned={true}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Contact Name" width="200px"
@@ -709,7 +718,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -738,7 +747,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## ピン固定の制限
 
-*   列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
+-  列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -845,6 +854,7 @@ $custom-theme: grid-theme(
     }
 }
 ```
+
 ### デモ
 
 <!-- NOTE this sample is differed -->
@@ -895,22 +905,22 @@ Then set the related CSS properties to this class:
 <!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

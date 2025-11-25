@@ -36,7 +36,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcCheckboxComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -282,13 +282,13 @@ igc-checkbox::part(control checked)::after {
 
 ## API References
 
- - `Checkbox`
- - `Checked`
- - `Disabled`
- - [`Styling & Themes`](../themes/overview.md)
+- `Checkbox`
+- `Checked`
+- `Disabled`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

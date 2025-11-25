@@ -171,11 +171,11 @@ igc-radio::part(control checked) {
 
 ## API Reference
 
-* `Radio`
-* `RadioGroup`
+- `Radio`
+- `RadioGroup`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

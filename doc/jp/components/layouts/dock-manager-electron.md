@@ -153,7 +153,7 @@ mainWindow = new BrowserWindow({
 
 ## API リファレンス
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`

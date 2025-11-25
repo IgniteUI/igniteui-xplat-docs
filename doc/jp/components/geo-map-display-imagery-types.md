@@ -51,6 +51,6 @@ _language: ja
 
 ## API リファレンス
 
- - `BackgroundContent`
- - `GeographicMapImagery`
- - `OpenStreetMapImagery`
+- `BackgroundContent`
+- `GeographicMapImagery`
+- `OpenStreetMapImagery`

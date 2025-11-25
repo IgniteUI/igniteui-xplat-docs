@@ -17,11 +17,11 @@ _language: ja
 
 現在、`{ComponentName}` には以下のタブ位置が導入されています。
 
-* **グループ化またはツールバーの領域** (有効な場合)
-* **{ComponentTitle} ヘッダー**
-* **{ComponentTitle} 本体**
-* **列の集計** (有効な場合)
-* **{ComponentTitle} ページネーター** (有効な場合)
+- **グループ化またはツールバーの領域** (有効な場合)
+- **{ComponentTitle} ヘッダー**
+- **{ComponentTitle} 本体**
+- **列の集計** (有効な場合)
+- **{ComponentTitle} ページネーター** (有効な場合)
 
 > [!Note]
 > この変更のため、<kbd>TAB</kbd> と <kbd>SHIFT</kbd> + <kbd>TAB</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
@@ -38,25 +38,25 @@ _language: ja
 
 ### キーの組み合わせ
 
- - <kbd>↑</kbd> - ヘッダーで 1 つ上のセルへ移動 (ループなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
- - <kbd>↓</kbd> - ヘッダーの 1 つ下のセルに移動 (ラッピングなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
- - <kbd>←</kbd> - 1 つ左のセルへ移動 (ループなし)
- - <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
- - <kbd>CTRL</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
- - <kbd>HOME</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
- - <kbd>CTRL</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
- - <kbd>END</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
- - <kbd>ALT</kbd> + <kbd>L</kbd> - 詳細フィルタリングが有効な場合、詳細フィルタリング ダイアログを開きます。
- - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> - 列がフィルター可能な場合、Excel スタイル フィルターまたはデフォルト (行) フィルターを開きます。
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> - アクティブな列ヘッダーを昇順にソートします。列が昇順で既にソートされている場合、ソート状態を削除します。
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> - アクティブな列ヘッダーを降順にソートします。列が降順で既にソートされている場合、ソート状態を削除します。
- - <kbd>SPACE</kbd> - 列を選択します。列がすでに選択されている場合、選択を解除します。
+- <kbd>↑</kbd> - ヘッダーで 1 つ上のセルへ移動 (ループなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
+- <kbd>↓</kbd> - ヘッダーの 1 つ下のセルに移動 (ラッピングなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
+- <kbd>←</kbd> - 1 つ左のセルへ移動 (ループなし)
+- <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
+- <kbd>CTRL</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
+- <kbd>HOME</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
+- <kbd>CTRL</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
+- <kbd>END</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
+- <kbd>ALT</kbd> + <kbd>L</kbd> - 詳細フィルタリングが有効な場合、詳細フィルタリング ダイアログを開きます。
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> - 列がフィルター可能な場合、Excel スタイル フィルターまたはデフォルト (行) フィルターを開きます。
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> - アクティブな列ヘッダーを昇順にソートします。列が昇順で既にソートされている場合、ソート状態を削除します。
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> - アクティブな列ヘッダーを降順にソートします。列が降順で既にソートされている場合、ソート状態を削除します。
+- <kbd>SPACE</kbd> - 列を選択します。列がすでに選択されている場合、選択を解除します。
  <!-- ComponentStart: Grid -->
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
  <!-- ComponentEnd: Grid -->
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
- - <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
- - <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
+- <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
+- <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
 
 ## 本体ナビゲーション
 
@@ -78,25 +78,25 @@ _language: ja
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
- - <kbd>←</kbd> - 1 つ左のセルへ移動 (行間のラッピングなし)
- - <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
- - <kbd>CTRL</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動
- - <kbd>CTRL</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> - 列の最初のセルへ移動
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> - 列の最後のセルへ移動
- - <kbd>HOME</kbd> - 行の左端のセルへ移動
- - <kbd>END</kbd> - 行の右端のセルへ移動
- - <kbd>CTRL</kbd> + <kbd>HOME</kbd> - グリッドの最も左上のデータ セルへ移動
- - <kbd>CTRL</kbd> + <kbd>END</kbd> - グリッドの最も右下のデータ セルへ移動
- - <kbd>PAGE UP</kbd> - 1 ページ (ビューポート) 上へスクロール
- - <kbd>PAGE DOWN</kbd> - 1 ページ (ビューポート) 下へスクロール
- - <kbd>ENTER</kbd> - 編集モードに入る
- - <kbd>F2</kbd> - 編集モードに入る
- - <kbd>ESC</kbd> - 編集モードを終了する
- - <kbd>TAB</kbd> - 編集モードのセルがある場合のみ使用できます。行の次の編集可能なセルにフォーカスを移動します。行の最後のセルに達した場合、フォーカスを次の行の最初の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番左の編集可能なセルへ移動します。
- - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - 編集モードのセルがある場合のみ使用できます。行の一つ前の編集可能なセルにフォーカスを移動します。行の最初のセルに達した場合、フォーカスを前の行の最後の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番右の編集可能なセルへ移動します。
- - <kbd>SPACE</kbd> - [行の選択](row-selection.md)が有効な場合、行を選択します。
- - <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> -
+- <kbd>←</kbd> - 1 つ左のセルへ移動 (行間のラッピングなし)
+- <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
+- <kbd>CTRL</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動
+- <kbd>CTRL</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> - 列の最初のセルへ移動
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> - 列の最後のセルへ移動
+- <kbd>HOME</kbd> - 行の左端のセルへ移動
+- <kbd>END</kbd> - 行の右端のセルへ移動
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd> - グリッドの最も左上のデータ セルへ移動
+- <kbd>CTRL</kbd> + <kbd>END</kbd> - グリッドの最も右下のデータ セルへ移動
+- <kbd>PAGE UP</kbd> - 1 ページ (ビューポート) 上へスクロール
+- <kbd>PAGE DOWN</kbd> - 1 ページ (ビューポート) 下へスクロール
+- <kbd>ENTER</kbd> - 編集モードに入る
+- <kbd>F2</kbd> - 編集モードに入る
+- <kbd>ESC</kbd> - 編集モードを終了する
+- <kbd>TAB</kbd> - 編集モードのセルがある場合のみ使用できます。行の次の編集可能なセルにフォーカスを移動します。行の最後のセルに達した場合、フォーカスを次の行の最初の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番左の編集可能なセルへ移動します。
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - 編集モードのセルがある場合のみ使用できます。行の一つ前の編集可能なセルにフォーカスを移動します。行の最初のセルに達した場合、フォーカスを前の行の最後の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番右の編集可能なセルへ移動します。
+- <kbd>SPACE</kbd> - [行の選択](row-selection.md)が有効な場合、行を選択します。
+- <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> -
  <!-- ComponentStart: Grid -->
   グループ行はグループを縮小します。
  <!-- ComponentEnd: Grid -->
@@ -106,7 +106,7 @@ _language: ja
  <!-- ComponentStart: TreeGrid -->
   現在のノードを縮小します。
  <!-- ComponentEnd: TreeGrid -->
- - <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
+- <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - <!-- ComponentStart: Grid -->
   グループ行はグループを展開します。
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->
@@ -116,9 +116,9 @@ _language: ja
   現在のノードを展開します。
  <!-- ComponentEnd: TreeGrid -->
  <!-- ComponentStart: Grid -->
- - <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> - マスター/詳細行で詳細ビューを縮小します。
- - <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - マスター/詳細行で詳細ビューを展開します。
- - <kbd>SPACE</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
+- <kbd>ALT</kbd> + <kbd>←</kbd> または <kbd>ALT</kbd> + <kbd>↑</kbd> - マスター/詳細行で詳細ビューを縮小します。
+- <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - マスター/詳細行で詳細ビューを展開します。
+- <kbd>SPACE</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
  <!-- ComponentEnd: Grid -->
 
 
@@ -206,9 +206,9 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 ```ts
 constructor() {
         const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
-		grid.data = this.data
-		grid.addEventListener("gridKeydown", this.customKeydown);
-	}
+        grid.data = this.data
+        grid.addEventListener("gridKeydown", this.customKeydown);
+    }
 ```
 <!-- end: WebComponents -->
 
@@ -223,7 +223,7 @@ const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
 
   if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
       // 1. USER INPUT VALIDATION ON TAB
-      
+
   }
   if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
       // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
@@ -333,25 +333,25 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 
 ## API リファレンス
 
-* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+- [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+- [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

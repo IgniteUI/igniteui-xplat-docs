@@ -25,13 +25,13 @@ _language: ja
 
 {Platform} `XamGeographicMap` には 7 種類のシリーズがあり、データ バインディング用の `ItemsSource` プロパティがあります。
 
- - `GeographicHighDensityScatterSeries`
- - `GeographicSymbolSeries`
- - `GeographicProportionalSymbolSeries`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `GeographicScatterAreaSeries`
- - `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicScatterAreaSeries`
+- `GeographicContourLineSeries`
 
 さらに、シリーズの各種類には、データ項目をマッピングし、その外観をスタイル設定するための特定のプロパティがあります。
 

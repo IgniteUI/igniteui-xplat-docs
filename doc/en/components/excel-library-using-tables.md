@@ -161,13 +161,13 @@ table.SortSettings.SortConditions.Add(table.Columns[0], new Infragistics.Documen
 
 ## API References
 
- - `DeleteColumns`
- - `DeleteDataRows`
- - `FillFilter`
- - `InsertColumns`
- - `InsertDataRows`
- - `SortConditions`
- - `SortSettings`
- - `Tables`
- - `WorksheetTableStyle`
- - `WorksheetTable`
+- `DeleteColumns`
+- `DeleteDataRows`
+- `FillFilter`
+- `InsertColumns`
+- `InsertDataRows`
+- `SortConditions`
+- `SortSettings`
+- `Tables`
+- `WorksheetTableStyle`
+- `WorksheetTable`

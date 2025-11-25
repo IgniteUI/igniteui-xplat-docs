@@ -21,7 +21,7 @@ _language: ja
 
 <!-- `sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"` -->
 
-<img src="../images/general/BingMapsImagery.png" />
+<img src="../images/general/BingMapsImagery.png" alt="Angular Bing Maps Imagery" />
 
 <div class="divider--half"></div>
 
@@ -100,6 +100,6 @@ geoMap.backgroundContent = tileSource;
 
 ## API リファレンス
 
- - `BingMapsImageryStyle`
- - `BingMapsMapImagery`
- - `XamGeographicMap`
+- `BingMapsImageryStyle`
+- `BingMapsMapImagery`
+- `XamGeographicMap`

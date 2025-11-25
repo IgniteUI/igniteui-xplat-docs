@@ -56,10 +56,11 @@ As you can see in the demo above, the `{ComponentName}` provides three size opti
 <{ComponentSelector} className="gridSize"></{ComponentSelector}>
 ```
 
-And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different size options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
- - **large** - this is the default `{ComponentName}` size with the lowest intense and row height equal to `50px`. Left and Right paddings are `24px`; Minimal column `Width` is `80px`;
- - **medium** - this is the middle intense size with `40px` row height. Left and Right paddings are `16px`; Minimal column `Width` is `64px`;
- - **small** - this is the size with highest intense and `32px` row height. Left and Right paddings are `12px`; Minimal column `Width` is `56px`;
+And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different size options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding:
+
+- **large** - this is the default `{ComponentName}` size with the lowest intense and row height equal to `50px`. Left and Right paddings are `24px`; Minimal column `Width` is `80px`;
+- **medium** - this is the middle intense size with `40px` row height. Left and Right paddings are `16px`; Minimal column `Width` is `64px`;
+- **small** - this is the size with highest intense and `32px` row height. Left and Right paddings are `12px`; Minimal column `Width` is `56px`;
 
 > [!Note]
 > Please keep in mind that currently you **can not** override any of the sizes.
@@ -496,7 +497,7 @@ Now we can add the markup.
 ```
 
 ```razor
-<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="grid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="grid" Data="EmployeesFlatDetails" PrimaryKey="ID"
  ForeignKey="ParentID" AllowFiltering="true">
     <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true" Width="200">
     </IgbColumn>
@@ -653,7 +654,7 @@ Now we can add the markup.
     <IgbColumn Field="Country" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Phone" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Fax" DataType="GridColumnDataType.String"></IgbColumn>
-    
+
     <IgbRowIsland ChildDataKey="Orders" AutoGenerate="false">
         <IgbColumn Field="OrderID" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -667,7 +668,7 @@ Now we can add the markup.
         <IgbColumn Field="ShipCity" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipPostalCode" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipCountry" DataType="GridColumnDataType.String"></IgbColumn>
-        
+
         <IgbRowIsland ChildDataKey="OrderDetails" AutoGenerate="false">
             <IgbColumn Field="ProductID" DataType="GridColumnDataType.Number"></IgbColumn>
             <IgbColumn Field="UnitPrice" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -744,7 +745,7 @@ Now we can add the markup.
         <IgrColumn field="ShipCity" dataType="string"></IgrColumn>
         <IgrColumn field="ShipPostalCode" dataType="string"></IgrColumn>
         <IgrColumn field="ShipCountry" dataType="string"></IgrColumn>
-        
+
         <IgrRowIsland childDataKey="OrderDetails" autoGenerate={false}>
             <IgrColumn field="ProductID" dataType="number"></IgrColumn>
             <IgrColumn field="UnitPrice" dataType="number"></IgrColumn>
@@ -812,7 +813,7 @@ public webGridSetGridSize(sender: any, args: IgcPropertyEditorPropertyDescriptio
 <!-- Blazor -->
 ```razor
 @code {
-    *** In JavaScript ***
+    // In JavaScript
     igRegisterScript("WebGridSetGridSize", (sender, evtArgs) => {
         var newVal = evtArgs.newValue.toLowerCase();
         var grid = document.getElementById("grid");
@@ -866,8 +867,9 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 Another option that `{ComponentName}` provides for you, in order to be able to change the height of the rows in the `{ComponentName}`, is the property `RowHeight`. So let's see in action how this property affects the `{ComponentName}` layout along with the `--ig-size`.
 
 Please keep in mind the following:
- - `--ig-size` CSS variable will have no impact on row height **if there is `RowHeight` specified**.
- - `--ig-size` will **affect all of the rest elements in the {ComponentTitle}**, as it has been described above.
+
+- `--ig-size` CSS variable will have no impact on row height **if there is `RowHeight` specified**.
+- `--ig-size` will **affect all of the rest elements in the {ComponentTitle}**, as it has been described above.
 
 We can now extend our sample and add `RowHeight` property to the `{ComponentName}`:
 
@@ -908,24 +910,25 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 <!-- ComponentStart: Grid -->
 ## Additional Resources
-* [Virtualization and Performance](virtualization.md)
-* [Editing](editing.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+
+- [Virtualization and Performance](virtualization.md)
+- [Editing](editing.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

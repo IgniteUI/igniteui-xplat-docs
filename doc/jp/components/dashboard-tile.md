@@ -114,12 +114,12 @@ builder.Services.AddIgniteUIBlazor(
 
 コントロールはバインドしたデータを評価し、{ProductName} ツールセットから表示する視覚エフェクトを選択するため、Dashboard Tile の `DataSource` プロパティを何にバインドするかによって、デフォルトで表示される視覚エフェクトが決まります。Dashboard Tile に表示されるデータ視覚化コントロールは次のとおりです。
 
-* [{IgPrefix}CategoryChart](charts/chart-overview.md)
-* [{IgPrefix}DataChart](charts/chart-overview.md)
-* [{IgPrefix}DataPieChart](charts/types/data-pie-chart.md)
-* [{IgPrefix}GeographicMap](geo-map.md)
-* [{IgPrefix}LinearGauge](linear-gauge.md)
-* [{IgPrefix}RadialGauge](radial-gauge.md)
+- [{IgPrefix}CategoryChart](charts/chart-overview.md)
+- [{IgPrefix}DataChart](charts/chart-overview.md)
+- [{IgPrefix}DataPieChart](charts/types/data-pie-chart.md)
+- [{IgPrefix}GeographicMap](geo-map.md)
+- [{IgPrefix}LinearGauge](linear-gauge.md)
+- [{IgPrefix}RadialGauge](radial-gauge.md)
 
 デフォルトで選択されるデータ視覚化は、主にスキーマとバインドした `DataSource` の数によって決まります。たとえば、単一の数値をバインドすると `XamRadialGauge` が取得されますが、互いに区別しやすい値とラベルのペアのコレクションをバインドすると `XamDataPieChart` が取得されます。より多くの値パスを持つ `DataSource` をバインドすると、バインドされたコレクションの数に応じて、複数の列シリーズまたは線シリーズを持つ `DataChart` を受け取ります。また、`XamGeographicMap` を取得するために、`ShapeDataSource` または地理的ポイントを含むデータにバインドすることもできます。
 
@@ -131,7 +131,7 @@ builder.Services.AddIgniteUIBlazor(
 
 視覚化または視覚化のプロパティも、コントロールの上部にある `Toolbar` を使用して構成できます。この `Toolbar` には、現在の視覚化の既定のツールに加えて、以下で強調表示されている 4 つの Dashboard Tile 固有のツールが含まれています。
 
-<img src="../images/dashboard-tile-toolbar.png" />
+<img src="../images/dashboard-tile-toolbar.png" alt="Dashboard Tile Toolbar"/>
 
 左から右へ:
 
@@ -151,15 +151,15 @@ builder.Services.AddIgniteUIBlazor(
 
 ## API リファレンス
 
- - `Toolbar`
- - `CategoryChart`
- - `XamDataChart`
- - `DataPieChart`
- - `XamGeographicMap`
- - `XamLinearGauge`
- - `XamRadialGauge`
+- `Toolbar`
+- `CategoryChart`
+- `XamDataChart`
+- `DataPieChart`
+- `XamGeographicMap`
+- `XamLinearGauge`
+- `XamRadialGauge`
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

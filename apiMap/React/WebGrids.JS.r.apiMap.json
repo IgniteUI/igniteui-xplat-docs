@@ -136,6 +136,16 @@
     "names":[{"platform": "React","fileName": "igr-boolean-filtering-operand.ts","mappedName": "IgrBooleanFilteringOperand"}]
   },
   {
+    "originalName": "ByLevelTreeGridMergeStrategy",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "DefaultMergeStrategy",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-by-level-tree-grid-merge-strategy.ts","mappedName": "IgrByLevelTreeGridMergeStrategy"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "comparer"}], "originalName": "Comparer"} ]
+  },
+  {
     "originalName": "CancelableBrowserEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -257,12 +267,14 @@
       {"names":[{"platform": "React", "mappedType": "(arg: IgrCellTemplateContext) => any","mappedName": "inlineEditorTemplate"}], "originalName": "InlineEditorTemplate"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "maxWidth"}], "originalName": "MaxWidth"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "merge"}], "originalName": "Merge"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "minWidth"}], "originalName": "MinWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "move"}], "originalName": "Move"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "parentColumn"}], "originalName": "ParentColumn"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "pin"}], "originalName": "Pin"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "pinned"}], "originalName": "Pinned"},
+      {"names":[{"platform": "React", "mappedType": "ColumnPinningPosition","mappedName": "pinningPosition"}], "originalName": "PinningPosition"},
       {"names":[{"platform": "React", "mappedType": "IgrColumnPipeArgs","mappedName": "pipeArgs"}], "originalName": "PipeArgs"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "resizable"}], "originalName": "Resizable"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rowEnd"}], "originalName": "RowEnd"},
@@ -577,6 +589,27 @@
     "originalBaseTypeName": "BaseDateTimeFilteringOperand",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-date-time-filtering-operand.ts","mappedName": "IgrDateTimeFilteringOperand"}]
+  },
+  {
+    "originalName": "DefaultMergeStrategy",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-default-merge-strategy.ts","mappedName": "IgrDefaultMergeStrategy"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "comparer"}], "originalName": "Comparer"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "instance"}], "originalName": "Instance"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "merge"}], "originalName": "Merge"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "DefaultTreeGridMergeStrategy",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "DefaultMergeStrategy",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-default-tree-grid-merge-strategy.ts","mappedName": "IgrDefaultTreeGridMergeStrategy"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "comparer"}], "originalName": "Comparer"} ]
   },
   {
     "originalName": "DimensionsChange",
@@ -907,6 +940,7 @@
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "autoGenerateExclude"}], "originalName": "AutoGenerateExclude"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "batchEditing"}], "originalName": "BatchEditing"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "beginAddRowById"}], "originalName": "BeginAddRowById"},
+      {"names":[{"platform": "React", "mappedType": "GridCellMergeMode","mappedName": "cellMergeMode"}], "originalName": "CellMergeMode"},
       {"names":[{"platform": "React", "mappedType": "GridSelectionMode","mappedName": "cellSelection"}], "originalName": "CellSelection"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearCellSelection"}], "originalName": "ClearCellSelection"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearFilter"}], "originalName": "ClearFilter"},
@@ -922,7 +956,6 @@
       {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "columns"}], "originalName": "Columns"},
       {"names":[{"platform": "React", "mappedType": "IgrDataCloneStrategy","mappedName": "dataCloneStrategy"}], "originalName": "DataCloneStrategy"},
       {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "dataView"}], "originalName": "DataView"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "defaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "defaultRowHeight"}], "originalName": "DefaultRowHeight"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deleteRow"}], "originalName": "DeleteRow"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deselectAllColumns"}], "originalName": "DeselectAllColumns"},
@@ -955,7 +988,8 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedEndWidth"}], "originalName": "GetPinnedEndWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedStartWidth"}], "originalName": "GetPinnedStartWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
@@ -973,6 +1007,7 @@
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
+      {"names":[{"platform": "React", "mappedType": "IgrGridMergeStrategy","mappedName": "mergeStrategy"}], "originalName": "MergeStrategy"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
@@ -983,6 +1018,8 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "pinColumn"}], "originalName": "PinColumn"},
       {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "pinnedColumns"}], "originalName": "PinnedColumns"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pinnedColumnsCount"}], "originalName": "PinnedColumnsCount"},
+      {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "pinnedEndColumns"}], "originalName": "PinnedEndColumns"},
+      {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "pinnedStartColumns"}], "originalName": "PinnedStartColumns"},
       {"names":[{"platform": "React", "mappedType": "IgrPinningConfig","mappedName": "pinning"}], "originalName": "Pinning"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "recalculateAutoSizes"}], "originalName": "RecalculateAutoSizes"},
@@ -1264,6 +1301,15 @@
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridMergeStrategy",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-merge-strategy.ts","mappedName": "IgrGridMergeStrategy"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "comparer"}], "originalName": "Comparer"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "merge"}], "originalName": "Merge"} ]
   },
   {
     "originalName": "GridPaginatorTemplateContext",
@@ -2388,6 +2434,7 @@
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "autoGenerateExclude"}], "originalName": "AutoGenerateExclude"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "batchEditing"}], "originalName": "BatchEditing"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "beginAddRowById"}], "originalName": "BeginAddRowById"},
+      {"names":[{"platform": "React", "mappedType": "GridCellMergeMode","mappedName": "cellMergeMode"}], "originalName": "CellMergeMode"},
       {"names":[{"platform": "React", "mappedType": "GridSelectionMode","mappedName": "cellSelection"}], "originalName": "CellSelection"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "childDataKey"}], "originalName": "ChildDataKey"},
       {"names":[{"platform": "React", "mappedType": "IgrRowIslandCollection","mappedName": "childLayoutList"}], "originalName": "ChildLayoutList"},
@@ -2404,7 +2451,6 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "columnWidth"}], "originalName": "ColumnWidth"},
       {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "columns"}], "originalName": "Columns"},
       {"names":[{"platform": "React", "mappedType": "IgrDataCloneStrategy","mappedName": "dataCloneStrategy"}], "originalName": "DataCloneStrategy"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "defaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "defaultRowHeight"}], "originalName": "DefaultRowHeight"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deleteRow"}], "originalName": "DeleteRow"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deselectAllColumns"}], "originalName": "DeselectAllColumns"},
@@ -2436,7 +2482,8 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedEndWidth"}], "originalName": "GetPinnedEndWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedStartWidth"}], "originalName": "GetPinnedStartWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
@@ -2453,6 +2500,7 @@
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
+      {"names":[{"platform": "React", "mappedType": "IgrGridMergeStrategy","mappedName": "mergeStrategy"}], "originalName": "MergeStrategy"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
@@ -2461,6 +2509,8 @@
       {"names":[{"platform": "React", "mappedType": "IgrPaginatorCollection","mappedName": "paginationComponents"}], "originalName": "PaginationComponents"},
       {"names":[{"platform": "React", "mappedType": "GridPagingMode","mappedName": "pagingMode"}], "originalName": "PagingMode"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "pinColumn"}], "originalName": "PinColumn"},
+      {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "pinnedEndColumns"}], "originalName": "PinnedEndColumns"},
+      {"names":[{"platform": "React", "mappedType": "IgrColumn[]","mappedName": "pinnedStartColumns"}], "originalName": "PinnedStartColumns"},
       {"names":[{"platform": "React", "mappedType": "IgrPinningConfig","mappedName": "pinning"}], "originalName": "Pinning"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "recalculateAutoSizes"}], "originalName": "RecalculateAutoSizes"},

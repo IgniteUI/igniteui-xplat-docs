@@ -314,8 +314,8 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 ## API リファレンス
 
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `ItemsSource`
- - `ShapeMemberPath`
- - `ShapefileConverter`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `ItemsSource`
+- `ShapeMemberPath`
+- `ShapefileConverter`

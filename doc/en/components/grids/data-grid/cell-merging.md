@@ -45,7 +45,7 @@ Cell merging can be evaluated based on whether the data is formatted or not usin
 
 ## API References
 
- - `FormattedText`
- - `MergedCellEvaluationCriteria`
- - `MergedCellMode`
- - `OnlyWhenSorted`
+- `FormattedText`
+- `MergedCellEvaluationCriteria`
+- `MergedCellMode`
+- `OnlyWhenSorted`

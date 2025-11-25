@@ -16,13 +16,13 @@ _language: ja
 
 - 行の選択
 - セルの選択
-- 列の選択 
+- 列の選択
 
 `RowSelection` プロパティを使用すると、以下を指定できます。
 
 - None (なし)
-- Single (単一)  
-- Multiple Select (複数選択) 
+- Single (単一)
+- Multiple Select (複数選択)
 
 ## {Platform} {ComponentTitle} 選択の例
 
@@ -52,7 +52,7 @@ _language: ja
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-- `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
+- `MultipleCascade` - これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -263,7 +263,7 @@ public copySelectedCells(event) {
         this.copyData(selectedData);
         const selectedDataArea = document.getElementById('selectedArea');
         selectedDataArea.innerText = JSON.stringify(selectedData);
-        
+
         this.toggleContextMenu();
     }
 

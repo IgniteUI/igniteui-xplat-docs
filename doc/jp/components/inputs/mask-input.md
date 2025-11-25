@@ -42,6 +42,7 @@ npm install igniteui-react
 ```
 
 次に、以下のように、`MaskInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
 ```tsx
 import { IgrMaskInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
@@ -165,7 +166,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbMaskInputModule));
 
 ### 値モード
 
-IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `ValueMode` プロパティを公開します。デフォルトでは、`ValueMode` は *raw* に設定されています。以下の例をご覧ください:
+IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `ValueMode` プロパティを公開します。デフォルトでは、`ValueMode` は `raw` に設定されています。以下の例をご覧ください:
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} マスク入力値モードの例"`
 
@@ -214,5 +215,5 @@ igc-mask-input::part(input)::placeholder {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

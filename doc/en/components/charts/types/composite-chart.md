@@ -21,6 +21,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
@@ -28,6 +29,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 - [Stacked Chart](stacked-chart.md)
 
 ## API References
+
 - `CategoryXAxis`
 - `ColumnSeries`
 - `LineSeries`

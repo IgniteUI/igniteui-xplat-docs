@@ -17,7 +17,7 @@ Apart from the methods for customizing the various parts of the component's them
 What parts a component exposes can be found out in the API documentation for each component. If you are the exploratory type and want to have a more hands-on approach to coding, you can always find that out by using the 'inspector' interface of your browser of choice.
 For example, if you wanted to find what parts the avatar exposes, simply right-click on the component in your browser and click 'Inspect' (in Chrome). This will open up the web inspector and reveal the custom element markup in the elements explorer tab. You should see something similar to the screenshot below.
 
-<img class="responsive-img" src="../../images/avatar-markup.png" />
+<img class="responsive-img" src="../../images/avatar-markup.png" alt="avatar markup"/>
 
 You will notice that the `Avatar` exposes 4 parts - `base`, `icon`, `image`, and `initials` depending on the type of the avatar. Those parts allow you to overwrite styles defined within their scope.
 
@@ -49,4 +49,4 @@ Having learned about CSS parts and CSS variables and in combination with the oth
 
 ## API References
 
- - `ConfigureTheme`
+- `ConfigureTheme`

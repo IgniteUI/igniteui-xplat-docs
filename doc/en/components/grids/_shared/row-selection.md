@@ -12,7 +12,7 @@ _canonicalLink: {CanonicalLinkToGridRowSelection}
 # {Platform} {ComponentTitle} Row Selection
 
 The {ProductName} Row Selection feature in {Platform} {ComponentTitle} allows users to interactively select, highlight, or deselect a single or multiple rows of data. There are several selection modes available in the `{ComponentName}`:
-- None Selection 
+- None Selection
 - Multiple Selection
 - Single Selection
 
@@ -72,6 +72,7 @@ Single row selection can now be easily set up, the only thing you need to do, is
         allow-filtering="true">
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -79,6 +80,7 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
+
 ```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
@@ -120,7 +122,7 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 
 ### Multiple Selection
 
-To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and click on another while holding the <kbd>SHIFT</kbd> key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you *click* while holding the <kbd>CTRL</kbd> key, the row will be toggled and the previous selection will be preserved.
+To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and click on another while holding the <kbd>SHIFT</kbd> key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you **click** while holding the <kbd>CTRL</kbd> key, the row will be toggled and the previous selection will be preserved.
 
 <!-- Angular -->
 ```html
@@ -160,7 +162,7 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
 
 ### Cascade Selection
 
-To enable cascade row selection in the `{ComponentName}` just set the `RowSelection` property to `MultipleCascade`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows which would select all children in the tree below. The selection persists through scrolling, paging, and data operations, such as sorting and filtering. The row can also be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and *click* on another while holding the <kbd>SHIFT</kbd> key, the selection of a parent record will select all of its children even if they are not in the selected range. In this selection mode, when you *click* on a single row, the previously selected rows will be deselected. If you *click* while holding the <kbd>CTRL</kbd> key, the row and its children will be toggled and the previous selection will be preserved.
+To enable cascade row selection in the `{ComponentName}` just set the `RowSelection` property to `MultipleCascade`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows which would select all children in the tree below. The selection persists through scrolling, paging, and data operations, such as sorting and filtering. The row can also be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and **click** on another while holding the <kbd>SHIFT</kbd> key, the selection of a parent record will select all of its children even if they are not in the selected range. In this selection mode, when you **click** on a single row, the previously selected rows will be deselected. If you **click** while holding the <kbd>CTRL</kbd> key, the row and its children will be toggled and the previous selection will be preserved.
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
@@ -201,15 +203,15 @@ In this mode a parent's selection state entirely depends on the selection state 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 <!-- Angular -->
-* In order to have proper row selection and cell selection, while `{ComponentName}` has remote virtualization, a `PrimaryKey` should be provided.
-* When the `{ComponentName}` has remote virtualization, then clicking the header checkbox will select/deselect all records that are currently in the grid. When new data is loaded in the `{ComponentName}` on demand, newly added rows will not be selected and it is a limitation, so you should handle that behavior by yourself and you can select these rows by using the provided API methods.
+- In order to have proper row selection and cell selection, while `{ComponentName}` has remote virtualization, a `PrimaryKey` should be provided.
+- When the `{ComponentName}` has remote virtualization, then clicking the header checkbox will select/deselect all records that are currently in the grid. When new data is loaded in the `{ComponentName}` on demand, newly added rows will not be selected and it is a limitation, so you should handle that behavior by yourself and you can select these rows by using the provided API methods.
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-* Row selection will trigger `RowSelectionChanging` event. This event gives you information about the *new selection*, *old selection*, the rows that have been *added* and *removed* from the old selection. Also the event is *cancellable*, so this allows you to prevent selection.
-* When row selection is enabled row selectors are displayed, but if you don't want to show them, you can set `HideRowSelectors` to **true**.
-* When you switch between row selection modes at runtime, this will clear the previous row selection state.
+- Row selection will trigger `RowSelectionChanging` event. This event gives you information about the **new selection**, **old selection**, the rows that have been **added** and **removed** from the old selection. Also the event is **cancellable**, so this allows you to prevent selection.
+- When row selection is enabled row selectors are displayed, but if you don't want to show them, you can set `HideRowSelectors` to **true**.
+- When you switch between row selection modes at runtime, this will clear the previous row selection state.
 
 
 ## API usage
@@ -334,6 +336,7 @@ auto-generate="true">
 
 <button id='deselect'>DeSelect</button>
 ```
+
 ```ts
 constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
@@ -363,7 +366,7 @@ When there is some change in the row selection `RowSelectionChanging` event is e
 - `Added` - array of row IDs that are currently added to the selection.
 - `Removed` - array of row IDs that are currently removed according old selection state.
 - `Event` - the original event that triggered row selection change.
-- `Cancel` -  allows you the prevent the row selection change.
+- `Cancel` - allows you the prevent the row selection change.
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -427,13 +430,13 @@ const handleRowSelectionChange = (args: IgrRowSelectionEventArgs) => {
 
 ### Select All Rows
 
-Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with *false* parameter, `SelectAllRows(false)` will always select all data in the grid, even if filtering is applied.
+Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with **false** parameter, `SelectAllRows(false)` will always select all data in the grid, even if filtering is applied.
 
 > **Note** Keep in mind that `SelectAllRows` will not select the rows that are deleted.
 
 ### Deselect All Rows
 
-`{ComponentName}` provides a `DeselectAllRows` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with *false* parameter, `DeselectAllRows(false)` will always clear all row selection state even if filtering is applied.
+`{ComponentName}` provides a `DeselectAllRows` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with **false** parameter, `DeselectAllRows(false)` will always clear all row selection state even if filtering is applied.
 
 ### How to get Selected Rows
 
@@ -611,6 +614,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 ```
 
 The `RowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
+
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
@@ -639,6 +643,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     );
 }
 ```
+
 In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `Checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -794,25 +799,25 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 ## API References
 
-* `{ComponentName}`
-* `{ComponentName}Row`
+- `{ComponentName}`
+- `{ComponentName}Row`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid, TreeGrid -->
-* [Selection](selection.md)
-* [Cell selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Virtualization and Performance](virtualization.md)
+- [Selection](selection.md)
+- [Cell selection](cell-selection.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Virtualization and Performance](virtualization.md)
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

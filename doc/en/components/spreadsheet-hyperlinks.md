@@ -51,6 +51,6 @@ this.spreadsheet.activeWorksheet.hyperlinks().add(new WorksheetHyperlink("A1", "
 
 ## API References
 
- - `Hyperlinks`
- - `Spreadsheet`
- - `WorksheetHyperlink`
+- `Hyperlinks`
+- `Spreadsheet`
+- `WorksheetHyperlink`

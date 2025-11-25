@@ -11,7 +11,7 @@ _license: MIT
 
 By default, the grid uses the key of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you should use a cell template renderer.
 
-To achieve that, set the **`cellTemplate`** property of the column.
+To achieve that, set the `cellTemplate` property of the column.
 
 <!-- React, WebComponents -->
 
@@ -43,8 +43,8 @@ const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency
 <!-- End: React, WebComponents -->
 
 You can combine values different fields from the data source as well.
-<!-- TODO: 
-Refer to the API documentation for **`GridLiteCellContext`** for more information. -->
+<!-- TODO:
+Refer to the API documentation for `GridLiteCellContext` for more information. -->
 
 <!-- React, WebComponents -->
 
@@ -62,7 +62,7 @@ const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency
 
 ## Custom DOM Templates
 
-Aside from using the **`cellTemplate`** property as a value formatter, you can also create your own DOM template, which
+Aside from using the `cellTemplate` property as a value formatter, you can also create your own DOM template, which
 will be rendered inside the cell container.
 
 We've decided to re-use the functionality provided by <a href="https://lit.dev/" target="_blank">Lit</a> and its
@@ -92,7 +92,7 @@ import { html } from "lit";
 
 ## Cell Context Object
 
-The custom cell renderer is passed an **`GridLiteCellContext`** object as a parameter with the following props:
+The custom cell renderer is passed an `GridLiteCellContext` object as a parameter with the following props:
 
 <!-- React, WebComponents -->
 ```typescript
@@ -127,18 +127,18 @@ export interface GridLiteCellContext<
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
 ## Additional Resources
 
-* [Column Configuration](column-configuration.md)
-* [Sorting](sorting.md)
-* [Filtering](filtering.md)
-* [Theming & Styling](theming.md)
+- [Column Configuration](column-configuration.md)
+- [Sorting](sorting.md)
+- [Filtering](filtering.md)
+- [Theming & Styling](theming.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

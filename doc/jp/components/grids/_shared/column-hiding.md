@@ -1102,57 +1102,57 @@ $custom-button: button-theme(
 
 その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
-* `ColumnActionsComponent`
+- `ColumnActionsComponent`
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents, React -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
 
-* `ColumnActionsComponent`
+- `ColumnActionsComponent`
 
 その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- end: Blazor, WebComponents, React -->
 
 `Column` プロパティ:
-* `DisableHiding`
+- `DisableHiding`
 
 `GridToolbar` プロパティ:
-* `showProgress`
+- `showProgress`
 
 <!-- Angular -->
 `GridToolbar` ディレクティブ:
-* `TitleDirective`
-* `ActionsDirective`
+- `TitleDirective`
+- `ActionsDirective`
 <!-- end: Angular -->
 
 `GridToolbar` メソッド:
-* `GridToolbarHiding`
-* `GridToolbarActions`
-* `GridToolbarTitle`
+- `GridToolbarHiding`
+- `GridToolbarActions`
+- `GridToolbarTitle`
 
 `{ComponentName}` イベント:
-* `ColumnVisibilityChanged`
+- `ColumnVisibilityChanged`
 
 <!-- Angular -->
 スタイル:
-* `{ComponentName}`
-* `Radio`
+- `{ComponentName}`
+- `Radio`
 <!-- end: Angular -->
 
 ## その他のリソース
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [フィルタリング](filtering.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [フィルタリング](filtering.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

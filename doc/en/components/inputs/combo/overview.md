@@ -37,7 +37,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcComboComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -162,10 +162,10 @@ const cities: City[] = [
 When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
 
 <!-- end: Blazor -->
- - `T` - *Required, if `ValueKey` is omitted, this should be set to "object", otherwise this needs to match the property type of `ValueKey`.
+- `T` - **required**, if `ValueKey` is omitted, this should be set to "object", otherwise this needs to match the property type of `ValueKey`.
 <!-- end: Blazor -->
- - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
- - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
+- `ValueKey` - **Optional**, **required** for complex data object - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
+- `DisplayKey` - **Optional**, **recommended** for complex data objects - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
 In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `DisplayKey` respectively.
 
 > [!Note]
@@ -175,7 +175,7 @@ In our case, we want the combo to display the `name` of each city and use the `i
 
 The ComboBox component exposes a `Value` getter and setter in addition to an attribute, which is also called value. You can use the value attribute to set the selected items on component initialization.
 
-If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`. 
+If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`.
 
 Example:
 
@@ -205,7 +205,7 @@ The combo component exposes APIs that allow you to change the currently selected
 
 Besides selecting items from the list of options by user interaction, you can select items programmatically. This is done via the `Select` and `Deselect` methods. You can pass an array of items to both methods. If the methods are called with no arguments all items will be selected/deselected depending on which method is called. If you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select/deselect:
 
-#### Select/deselect some items:
+#### Select/deselect some items
 <!-- WebComponents -->
 ```ts
 // Select/deselect items by their IDs as valueKey is set to 'id'
@@ -252,7 +252,7 @@ comboRef.current.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
 ```
 <!-- end: React -->
 
-#### Select/deselect all items:
+#### Select/deselect all items
 <!-- WebComponents -->
 ```ts
 // Select/deselect all items
@@ -386,5 +386,5 @@ igc-combo::part(toggle-icon) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

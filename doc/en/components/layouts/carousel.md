@@ -7,7 +7,8 @@ mentionedTypes: ["Carousel"]
 ---
 
 # {Platform} Carousel Overview
-The {ProductName} Carousel is a responsive, lightweight component that provides the most flexible way to create slideshow-like web experience for users who navigate back and forth through a collection of images with text slides, links, and other html elements. 
+
+The {ProductName} Carousel is a responsive, lightweight component that provides the most flexible way to create slideshow-like web experience for users who navigate back and forth through a collection of images with text slides, links, and other html elements.
 
 The {Platform} Carousel component allows you to use animations, slide transitions, and customization so you can easily tweak the interface and build {Platform} custom carousel.
 
@@ -66,7 +67,7 @@ You will also need to link an additional CSS file to apply the styling to the `C
 ```
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 Now that you have the {ProductName} Carousel imported, you can start with a basic configuration of the `Carousel` and its slides.
 
@@ -103,13 +104,13 @@ Use the `Carousel` selector to wrap your slides. The slides may feature any vali
 ```razor
 <IgbCarousel>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" alt="ignite-ui-angular-indigo-design" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/slider-image-chart.png" />
+        <img src="assets/images/carousel/slider-image-chart.png" alt="slider-image-chart" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" alt="ignite-ui-angular-charts" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -159,7 +160,7 @@ If you want a slide to be active by default, use the `Active` attribute:
 
 ### Carousel Configuration
 
-By default, the `Carousel` has its `DisableLoop` property set to **false** (*looping occurs when the first slide comes after the last by navigating using the Next action, or when the last slide comes after the first by using the Previous action*). The looping behavior can be disabled by setting the value of the `DisableLoop` property to **true**.
+By default, the `Carousel` has its `DisableLoop` property set to **false** (looping occurs when the first slide comes after the last by navigating using the Next action, or when the last slide comes after the first by using the Previous action). The looping behavior can be disabled by setting the value of the `DisableLoop` property to **true**.
 
 ```html
 <igc-carousel disable-loop="true">
@@ -255,10 +256,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </igc-carousel-indicator>
 
     <igc-carousel-slide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </igc-carousel-slide>
     <igc-carousel-slide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </igc-carousel-slide>
 </igc-carousel>
 ```
@@ -300,10 +301,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -491,20 +492,20 @@ The carousel [animations](carousel.md#animations) are fully supported on touch d
 
 ### Keyboard navigation
 
-* Navigation buttons
-    * <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key - navigates to the next/previous slide.
-* Indicators
-    * <kbd>🡐</kbd> key - navigates to the previous (next in Right-to-Left mode) slide.
-    * <kbd>🡒</kbd> key - navigates to the next (previous in Right-to-Left mode) slide.
-    * <kbd>HOME</kbd> key - navigates to the first (last in Right-to-Left mode) slide.
-    * <kbd>END</kbd> key - navigates to the last (first in Right-to-Left mode) slide.
+- Navigation buttons
+  - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key - navigates to the next/previous slide.
+- Indicators
+  - <kbd>🡐</kbd> key - navigates to the previous (next in Right-to-Left mode) slide.
+  - <kbd>🡒</kbd> key - navigates to the next (previous in Right-to-Left mode) slide.
+  - <kbd>HOME</kbd> key - navigates to the first (last in Right-to-Left mode) slide.
+  - <kbd>END</kbd> key - navigates to the last (first in Right-to-Left mode) slide.
 
 ### Automatic transitioning
 
 The `Carousel` can be easily configured to change the slides automatically, without any user interaction. This way you can create your own slideshow by only setting a transition interval to the `Interval` property, which determines the amount of time in milliseconds between slides transition.
 
 >[!NOTE]
->Hovering the mouse over any carousel content or moving keyboard focus to any of the carousel content pauses automatic transitioning. Automatic transitioning resumes when the mouse moves away from the carousel or when keyboard focus moves out of the carousel content. 
+>Hovering the mouse over any carousel content or moving keyboard focus to any of the carousel content pauses automatic transitioning. Automatic transitioning resumes when the mouse moves away from the carousel or when keyboard focus moves out of the carousel content.
 This can be prevented by setting `DisablePauseOnInteraction` property to **true**.
 
 ```html
@@ -531,11 +532,11 @@ Let's create a fully automated carousel with looping enabled. We will configure 
 
 
 To achieve this goal, we have to do the following configurations to the carousel:
- - enable the `DisablePauseOnInteraction` property
- - enable the `HideNavigation` property
- - enable the `Vertical` property
- - add transition `Interval`
- - add custom `CarouselIndicator` for each slide
+- enable the `DisablePauseOnInteraction` property
+- enable the `HideNavigation` property
+- enable the `Vertical` property
+- add transition `Interval`
+- add custom `CarouselIndicator` for each slide
 
 Our carousel will look like this in the template:
 
@@ -567,7 +568,7 @@ Our carousel will look like this in the template:
         <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
         <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
     </igc-carousel-indicator>
-        
+
     <igc-carousel-slide>
         <img src="assets/images/carousel/WonderfulCoast.png"/>
     </igc-carousel-slide>
@@ -673,19 +674,19 @@ const images = [
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/WonderfulCoast.png" />
+        <img src="assets/images/carousel/WonderfulCoast.png" alt="WonderfulCoast" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/CulturalDip.png" />
+        <img src="assets/images/carousel/CulturalDip.png" alt="CulturalDip" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/GoldenBeaches.png" />
+        <img src="assets/images/carousel/GoldenBeaches.png" alt="GoldenBeaches" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/IslandOfHistory.png" />
+        <img src="assets/images/carousel/IslandOfHistory.png" alt="IslandOfHistory" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/AmazingBridge.png" />
+        <img src="assets/images/carousel/AmazingBridge.png" alt="AmazingBridge" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -698,28 +699,33 @@ These configurations will have the following result:
 ## Accessibility
 
 ### WAI-ARIA Roles, States, and Properties
- * The Carousel base element role is [`region`](https://www.w3.org/TR/wai-aria-1.1/#region) - section containing content that is relevant to specific purpose and users will likely want to be able to navigate easily.
- * Carousel indicators are with role [`tab`](https://www.w3.org/TR/wai-aria-1.1/#tab) - grouping label providing a mechanism for selecting the tab content that is to be rendered to the user
- * The element that serves as the container for the set of tabs (carousel indicators) is with role [`tablist`](https://www.w3.org/TR/wai-aria-1.1/#tablist).
- * Each slide element is set with role [`tabpanel`](https://www.w3.org/TR/wai-aria-1.1/#tabpanel).
+
+- The Carousel base element role is [`region`](https://www.w3.org/TR/wai-aria-1.1/#region) - section containing content that is relevant to specific purpose and users will likely want to be able to navigate easily.
+- Carousel indicators are with role [`tab`](https://www.w3.org/TR/wai-aria-1.1/#tab) - grouping label providing a mechanism for selecting the tab content that is to be rendered to the user
+- The element that serves as the container for the set of tabs (carousel indicators) is with role [`tablist`](https://www.w3.org/TR/wai-aria-1.1/#tablist).
+- Each slide element is set with role [`tabpanel`](https://www.w3.org/TR/wai-aria-1.1/#tabpanel).
 
 ### ARIA support
+
 #### Carousel component
-* **Attributes**
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "carousel".
-    * [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - used to set the priority with which screen reader should treat updates to live regions - the possible settings are: **off** and **polite**. The default setting is **polite** and is set to the element that serves as the container for the set of slides. When the `Interval` option is set and the carousel is in playing state, the **aria-live** attribute would be set to **off**.
-    * [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (navigation buttons) - "Previous slide"/"Next slide".
+
+- **Attributes**
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "carousel".
+  - [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - used to set the priority with which screen reader should treat updates to live regions - the possible settings are: **off** and **polite**. The default setting is **polite** and is set to the element that serves as the container for the set of slides. When the `Interval` option is set and the carousel is in playing state, the **aria-live** attribute would be set to **off**.
+  - [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (navigation buttons) - "Previous slide"/"Next slide".
 
 #### Slide component
-* **Attributes**
-    * id - follows the pattern "igc-carousel-slide-${incremented_number}".
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "slide".
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "${index + 1} of ${total}".
+
+- **Attributes**
+  - id - follows the pattern "igc-carousel-slide-${incremented_number}".
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "slide".
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "${index + 1} of ${total}".
 
 #### Indicator component
-* **Attributes**
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "Slide ${index + 1}"
-    * [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) set to **true** or **false** based on the active slide.
+
+- **Attributes**
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "Slide ${index + 1}"
+  - [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) set to **true** or **false** based on the active slide.
 
 
 ## API References
@@ -733,5 +739,5 @@ These configurations will have the following result:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

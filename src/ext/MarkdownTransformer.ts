@@ -1469,16 +1469,11 @@ function omitFencedCode(options: any) {
     }
 }
 
-let invalidApiMembers = [
-    " IgxFinancialChart ",
-    " IgcFinancialChart ",
-    " IgrFinancialChart ",
-    " IgxCategoryChart ",
-    " IgcCategoryChart ",
-    " IgrCategoryChart ",
-    " IgxDataChart ",
-    " IgcDataChart ",
-    " IgrDataChart ",
+let apiComponents = [
+    "FinancialChart",
+    "CategoryChart",
+    "DataChart",
+    "DataGrid",
 ];
 
 export class MarkdownTransformer {
@@ -1600,18 +1595,8 @@ export class MarkdownTransformer {
         fileContent = this.replaceAll(fileContent, "<label>PREVIEW</label>", "<label class=\"badge badge--preview\">PREVIEW</label>");
         fileContent = this.replaceAll(fileContent, "<label>NEW</label>", "<label class=\"badge badge--new\">NEW</label>");
 
-        // check for strings that should be API links:
-        let fileLines = fileContent.toLowerCase().split("\n");
-        for (let i = 0; i < fileLines.length; i++) {
-            const line = fileLines[i];
-            for (const invalidString of invalidApiMembers) {
-                if (!line.includes("import") &&
-                     line.toLowerCase().includes(invalidString.toLowerCase())) {
-                     transformWarning("found string: \"" + invalidString + "\" without backticks on line #" + (i+1));
-                     break;
-                }
-            }
-        }
+        // using better looking arrows between API links this way we do not mess markdown with custom symbols
+        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
 
         let deleteMap: Set<any> = new Set<any>();
 
@@ -1639,6 +1624,53 @@ export class MarkdownTransformer {
             platformPascalPrefix: null as string | null,
             platformSpinalPrefix: null as string | null
         };
+
+        switch (this._platform) {
+            case APIPlatform.Angular:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igx";
+                options.platformSpinalPrefix = "igx-";
+                break;
+            case APIPlatform.React:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igr";
+                options.platformSpinalPrefix = "igr-";
+                break;
+            case APIPlatform.WebComponents:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igc";
+                options.platformSpinalPrefix = "igc-";
+                break;
+            case APIPlatform.Blazor:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igb";
+                options.platformSpinalPrefix = "Igb";
+        }
+
+        // check for strings that should be API links:
+        let fileWarnings = 0;
+        let fileLines = fileContent.toLowerCase().split("\n");
+        for (let i = 0; i < fileLines.length; i++) {
+            const line = fileLines[i];
+            const lineID = "line #" + (i+1);
+            const lineLower = line.toLowerCase();
+            for (const component of apiComponents) {
+                if (!line.includes("import") && !line.includes("Module") && !line.includes(" as ")) {
+                    var apiWithoutBackticks = " " + options.platformPascalPrefix + component + " ";
+                    if (lineLower.includes(apiWithoutBackticks.toLowerCase())) {
+                        transformWarning("found string: \"" + apiWithoutBackticks + "\" without backticks on " + lineID);
+                        fileWarnings++;
+                    }
+                    if (fileWarnings > 5){
+                        break;
+                    }
+                }
+            }
+        }
 
         //TODO-MT remove
         if (this._platform === APIPlatform.Angular) {
@@ -1710,34 +1742,6 @@ export class MarkdownTransformer {
             // console.log("sampleHost " + sampleHost);
             // console.log(this._envBrowser);
 
-        // using better looking arrows between API links this way we do not mess markdown with custom symbols
-        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
-
-        switch (this._platform) {
-            case APIPlatform.Angular:
-                options.platformPascalSuffix = "Component";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igx";
-                options.platformSpinalPrefix = "igx-";
-                break;
-            case APIPlatform.React:
-                options.platformPascalSuffix = "";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igr";
-                options.platformSpinalPrefix = "igr-";
-                break;
-            case APIPlatform.WebComponents:
-                options.platformPascalSuffix = "Component";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igc";
-                options.platformSpinalPrefix = "igc-";
-                break;
-            case APIPlatform.Blazor:
-                options.platformPascalSuffix = "";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igb";
-                options.platformSpinalPrefix = "Igb";
-        }
 
         // initial parsing of metadata from topics to get 'sharedComponents' array
         remark().data('settings', {
@@ -1810,7 +1814,13 @@ export class MarkdownTransformer {
                     return;
                 }
 
-                output.push({ content: vfile.toString(), componentOutput: componentOutput });
+                // cleanup markup
+                let fileContent = vfile.toString();
+                fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
+                fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
+                fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+
+                output.push({ content: fileContent, componentOutput: componentOutput });
 
                 if (iteration == runFor.length - 1) {
                     callback(null, output);

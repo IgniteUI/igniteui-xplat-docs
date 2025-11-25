@@ -33,7 +33,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcRippleComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -111,12 +111,12 @@ igc-ripple {
 
 ## API References
 
- - `Button`
- - `Ripple`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Ripple`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

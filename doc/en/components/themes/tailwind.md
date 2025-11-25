@@ -7,6 +7,7 @@ mentionedTypes: ["ConfigureTheme"]
 ---
 
 # Tailwind CSS Integration with Ignite UI for WebComponents
+
 Ignite UI for WebComponents offers full theming customization through CSS variables. In this guide, you'll learn how to integrate Tailwind CSS into your project and enhance it with custom utility classes provided by the `igniteui-theming` package. These classes expose Ignite UI design tokens for colors, shadows, and typography, enabling a seamless utility-first styling experience.
 <br>
 
@@ -37,6 +38,7 @@ If your project uses `sass` for styling:
 ```
 
 ## Using Ignite UI Custom Utility Classes
+
 The `igniteui-theming` package includes a custom Tailwind configuration that exposes Ignite UI design tokens through utility classes. These include support for:
 
 - Colors and contrast colors
@@ -48,6 +50,7 @@ The `igniteui-theming` package includes a custom Tailwind configuration that exp
 Let’s look at how to use each.
 
 ### Color Utility Classes
+
 Our color utility classes are powered by tokens from each Ignite UI theme. You can apply them directly in your HTML:
 
 <!-- WebComponents -->
@@ -56,7 +59,7 @@ Our color utility classes are powered by tokens from each Ignite UI theme. You c
 ```
 <!-- end: WebComponents -->
 
-You can explore Tailwind’s full color system [here](https://tailwindcss.com/docs/color), and apply it using the Ignite UI-provided class names.
+You can explore Tailwind’s full color system in this [topic](https://tailwindcss.com/docs/color), and apply it using the Ignite UI-provided class names.
 <br>
 
 ### Shadow utility classes
@@ -69,10 +72,11 @@ You can add depth using any of the predefined [elevation levels](https://www.inf
 ```
 <!-- end: WebComponents -->
 
-You can find all the shadow-related utility classes provided by Tailwind [here](https://tailwindcss.com/docs/box-shadow)
+You can find all the shadow-related utility classes provided by Tailwind in this [topic](https://tailwindcss.com/docs/box-shadow)
 <br>
 
 ### Typography custom utility styles
+
 To apply the font, add the `font-ig` class to a top-level element. You can also define the base font size using the `text-base` utility class.
 We provide custom utility classes for each typography level (e.g., h1, h2, body-1). Use them like so:
 
@@ -86,7 +90,7 @@ Each class applies all necessary font settings, spacing, and sizing according to
 
 ## Sample
 
-In the sample below, you’ll see a 404 page built entirely with Tailwind utility classes, including our `custom utilities` for `shadows`, `colors`, and `typography`.
+In the sample below, you’ll see a 404 page built entirely with Tailwind utility classes, including our "custom utilities" for "shadows", "colors", and "typography".
 
 `sample="/layouts/tailwind/styling", height="400", alt="{Platform} Tailwind Integration"`
 
@@ -94,4 +98,5 @@ In the sample below, you’ll see a 404 page built entirely with Tailwind utilit
 >This sample is fictional and fully custom, it’s not part of the Ignite UI component library.
 
 ## Summary
+
 With just a few configuration steps, you can combine Tailwind’s utility-first approach with Ignite UI’s robust design system. This integration allows you to rapidly build consistent, themed UI components using well-defined tokens for color, elevation, and typography, right from your HTML.

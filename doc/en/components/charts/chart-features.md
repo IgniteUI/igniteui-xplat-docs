@@ -113,7 +113,7 @@ Use trendlines to identify a trend or find patterns in your data. There are many
 
 ## API References
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
 

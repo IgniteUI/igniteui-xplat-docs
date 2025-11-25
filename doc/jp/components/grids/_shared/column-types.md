@@ -35,10 +35,10 @@ _language: ja
 
 ### Number (数値)
 
-`DataType` が *number* に設定されている場合、セル値はアプリケーションまたはグリッドの `Locale` 設定に基づいて書式設定され、`PipeArgs` プロパティが指定されている場合にも同じように設定されます。数値書式はそれらに基づいて変更されます。たとえば、以下を変更します:
+`DataType` が **number** に設定されている場合、セル値はアプリケーションまたはグリッドの `Locale` 設定に基づいて書式設定され、`PipeArgs` プロパティが指定されている場合にも同じように設定されます。数値書式はそれらに基づいて変更されます。たとえば、以下を変更します:
 
- - 小数点後の桁数。
- - `,` または `.` の少数桁の区切り文字
+- 小数点後の桁数。
+- `,` または `.` の少数桁の区切り文字
 
 <!-- Angular -->
 
@@ -93,8 +93,8 @@ const formatOptions : IgrColumnPipeArgs = {
 ### DateTime、Date and Time (日付と時刻)
 
 日付部分の外観は、`Locale` の形式または `PipeArgs` 入力に基づいて設定されます (例: 日、月、年)。Pipe 引数はカスタム日付書式またはタイムゾーンを指定するために使用できます。
- - **format** - 日付の書式設定のデフォルト値は `'mediumDate'` です。その他の利用可能なオプション `'short'`、`'long'`、`'shortDate'`、`'fullDate'`、`'longTime'`、`'fullTime'` などです。
- - **timezone** - ユーザーのローカル システム タイムゾーンがデフォルト値です。タイムゾーン オフセットまたは標準の UTC/GMT または米国本土のタイムゾーンの略語も渡すことができます。世界の任意の場所の対応する時間を表示するさまざまなタイムゾーンの例:
+- **format** - 日付の書式設定のデフォルト値は `'mediumDate'` です。その他の利用可能なオプション `'short'`、`'long'`、`'shortDate'`、`'fullDate'`、`'longTime'`、`'fullTime'` などです。
+- **timezone** - ユーザーのローカル システム タイムゾーンがデフォルト値です。タイムゾーン オフセットまたは標準の UTC/GMT または米国本土のタイムゾーンの略語も渡すことができます。世界の任意の場所の対応する時間を表示するさまざまなタイムゾーンの例:
 
 <!-- Angular -->
 
@@ -177,7 +177,7 @@ const formatOptions : IgrColumnPipeArgs = {
 
 `{ComponentName}` は、**Date オブジェクト**、**数値 (ミリ秒)** または **ISO 日付/時刻文字列**の日付値を受け取ります。このセクションは、[カスタム表示書式を構成する方法](../data-grid.md#カスタム表示形式)を示します。
 
-サンプルでは、特定の列タイプで使用可能な書式を紹介するために、さまざまな書式設定オプションを指定しています。たとえば、以下は日付オブジェクトの *time* 部分の書式設定オプションのサンプルです。
+サンプルでは、特定の列タイプで使用可能な書式を紹介するために、さまざまな書式設定オプションを指定しています。たとえば、以下は日付オブジェクトの **time** 部分の書式設定オプションのサンプルです。
 
 <!-- Angular, WebComponents -->
 
@@ -475,11 +475,11 @@ constructor() {
 
 ```tsx
 /**
-* Decimal representation options, specified by a string in the following format:
-* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
-* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
-* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
-* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+- Decimal representation options, specified by a string in the following format:
+- `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+- `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+- `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+- `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
 const formatOptions : IgrColumnPipeArgs = {
     digitsInfo: "2.2-3"
@@ -619,15 +619,15 @@ public init(column: IgxColumnComponent) {
 
 ## API リファレンス
 
-* `Cell`
-* `Column`
-* `PipeArgs`
-* `{ComponentName}`
-* `Locale`
-* `DataType`
+- `Cell`
+- `Column`
+- `PipeArgs`
+- `{ComponentName}`
+- `Locale`
+- `DataType`
 
 ## その他のリソース
 
 カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
-* [編集](editing.md)
-* [集計](summaries.md)
+- [編集](editing.md)
+- [集計](summaries.md)

@@ -303,10 +303,10 @@ onDataLoaded(csvData: string) {
 
 ## API References
 
- - `GeographicHighDensityScatterSeries`
- - `DataSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `HeatMaximumColor`
- - `HeatMinimumColor`
- - `PointExtent`
+- `GeographicHighDensityScatterSeries`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `HeatMaximumColor`
+- `HeatMinimumColor`
+- `PointExtent`
