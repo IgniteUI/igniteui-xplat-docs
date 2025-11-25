@@ -79,7 +79,7 @@ this.GeoMap.WindowScale = 0.5;
 
 ## API リファレンス
 
- - `ActualWindowRect`
- - `WindowRect`
- - `XamGeographicMap`
- - `Zoomable`
+- `ActualWindowRect`
+- `WindowRect`
+- `XamGeographicMap`
+- `Zoomable`

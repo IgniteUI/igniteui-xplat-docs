@@ -19,18 +19,18 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
 1 - Visual Studio で **[ツール] → [NuGet パッケージ マネージャー] → [パッケージ マネージャー設定]** を選択します。
 
-<img src="../images/general/nuget-package-manager-setting-menu-item.jpg" />
+<img src="../images/general/nuget-package-manager-setting-menu-item.jpg" alt="nuget-package-manager-setting-menu-item" />
 
 2 - [**パッケージ ソース**] セクションで、ダイアログの右上にある **[+]** アイコンをクリックして新しいパッケージ ソースを追加します。
-   - 名前を **Infragistics** に設定します。
-   - NuGet プロトコル バージョン 3 を使用する場合は、ソースを **https://packages.infragistics.com/nuget/licensed/v3/index.json** に設定します。それ以外の場合は、**https://packages.infragistics.com/nuget/licensed/** に設定する必要があります。
+  - 名前を **Infragistics** に設定します。
+  - NuGet プロトコル バージョン 3 を使用する場合は、ソースを **https://packages.infragistics.com/nuget/licensed/v3/index.json** に設定します。それ以外の場合は、**https://packages.infragistics.com/nuget/licensed/** に設定する必要があります。
 
 > [!Note]
 > v3 またはそれ以前のバージョンを使用するかどうかの詳細については、次の Web サイト (英語) をご覧ください: **https://devblogs.microsoft.com/nuget/nuget-3-what-and-why/** 。プロトコル v3 は、新しいバージョンの NuGet クライアント (2015 以降) を使用する場合にのみ適用されます。古い NuGet クライアントは、v3 と互換性がない場合があります。
 
-    **[更新]** ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
+**[更新]** ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
 
-<img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" />
+<img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" alt="nuget-package-manager-package-sources-ig-server" />
 
 > [!Note]
 > このソースから NuGet パッケージを初めて追加する場合、Infragistics 資格情報の入力を求められます。

@@ -26,8 +26,6 @@ You can bind your data to `ItemsSource` property of `BubbleSeries` and map data 
 
 `sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="{Platform} Bubble Chart with Single Series"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Bubble Chart with Multiple Series

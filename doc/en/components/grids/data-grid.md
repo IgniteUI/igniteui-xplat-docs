@@ -135,6 +135,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 Or to link it:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -626,7 +627,7 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.cell.value} 
+            <input name="price" type="number" value={ctx.cell.value}
                 onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
@@ -700,6 +701,7 @@ column.bodyTemplate = this.smallView;
     <!-- Column declarations -->
 </igc-grid>
 ```
+
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some condition.
@@ -790,6 +792,7 @@ public initColumns(column: IgxGridColumn) {
     }
 }
 ```
+
 ```typescript
 public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
@@ -941,7 +944,7 @@ const POJO = [{
 <!-- Angular, WebComponents, React -->
 ## Grid Data Binding
 
-Our {Platform} Data Grid provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more.  
+Our {Platform} Data Grid provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more.
 
 Before going any further with the {Platform} Data Grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
 
@@ -1114,9 +1117,9 @@ and in the template of the component:
 <!-- end: Angular, WebComponents, React -->
 ## Complex Data Binding
 
-Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} Data Grid, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record. 
+Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} Data Grid, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record.
 
-Take a look at the following data model: 
+Take a look at the following data model:
 
 ```typescript
 interface AminoAcid {
@@ -1251,7 +1254,7 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getName(ctx.cell.id.rowIndex)}
                     ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1282,7 +1285,7 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
             <div>
             <div>
                 { ctx.cell.value }
-                    {getName(ctx.cell.id.rowIndex)} 
+                    {getName(ctx.cell.id.rowIndex)}
                     {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1888,10 +1891,10 @@ Keyboard navigation of the `Grid` provides a rich variety of keyboard interactio
 
 Check out these resources for more information:
 
- - [Grid Keyboard Navigation](grid/keyboard-navigation.md)
- - [TreeGrid Keyboard Navigation](tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid Keyboard Navigation](hierarchical-grid/keyboard-navigation.md)
- - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+- [Grid Keyboard Navigation](grid/keyboard-navigation.md)
+- [TreeGrid Keyboard Navigation](tree-grid/keyboard-navigation.md)
+- [Hierarchical Grid Keyboard Navigation](hierarchical-grid/keyboard-navigation.md)
+- [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
  <!-- end: Angular -->
 
@@ -1993,28 +1996,28 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 
 ## API References
 
-* `Grid`
-* `Column`
-* `Cell`
-* `CellTemplateContext`
-* `GridRow`
-* `GridToolbar`
-* `Paginator`
+- `Grid`
+- `Column`
+- `Cell`
+- `CellTemplateContext`
+- `GridRow`
+- `GridToolbar`
+- `Paginator`
 
 <!-- Angular -->
 
 ## Theming Dependencies
 
-* **Icon Theme**
-* **InputGroup Theme**
-* **Chip Theme**
-* **Ripple Theme**
-* **Button Theme**
-* **Overlay Theme**
-* **DropDown Theme**
-* **Calendar Theme**
-* **SnackBar Theme**
-* **Badge Theme**
+- **Icon Theme**
+- **InputGroup Theme**
+- **Chip Theme**
+- **Ripple Theme**
+- **Button Theme**
+- **Overlay Theme**
+- **DropDown Theme**
+- **Calendar Theme**
+- **SnackBar Theme**
+- **Badge Theme**
 
 ## Tutorial video
 
@@ -2028,38 +2031,38 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 <!-- Angular -->
 
-* [Grid Sizing](grid/sizing.md)
-* [Virtualization and Performance](grid/virtualization.md)
-* [Paging](grid/paging.md)
-* [Filtering](grid/filtering.md)
-* [Sorting](grid/sorting.md)
-* [Summaries](grid/summaries.md)
-* [Column Moving](grid/column-moving.md)
-* [Column Pinning](grid/column-pinning.md)
-* [Column Resizing](grid/column-resizing.md)
-* [Selection](grid/selection.md)
-* [Column Data Types](grid/column-types.md#default-template)
+- [Grid Sizing](grid/sizing.md)
+- [Virtualization and Performance](grid/virtualization.md)
+- [Paging](grid/paging.md)
+- [Filtering](grid/filtering.md)
+- [Sorting](grid/sorting.md)
+- [Summaries](grid/summaries.md)
+- [Column Moving](grid/column-moving.md)
+- [Column Pinning](grid/column-pinning.md)
+- [Column Resizing](grid/column-resizing.md)
+- [Selection](grid/selection.md)
+- [Column Data Types](grid/column-types.md#default-template)
 <!-- * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md) -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-* [Grid Sizing](grid/sizing.md)
-* [Virtualization and Performance](grid/virtualization.md)
-* [Paging](grid/paging.md)
-* [Filtering](grid/filtering.md)
-* [Sorting](grid/sorting.md)
-* [Summaries](grid/summaries.md)
-* [Column Moving](grid/column-moving.md)
-* [Column Pinning](grid/column-pinning.md)
-* [Column Resizing](grid/column-resizing.md)
-* [Selection](grid/selection.md)
-* [Column Data Types](grid/column-types.md#default-template)
+- [Grid Sizing](grid/sizing.md)
+- [Virtualization and Performance](grid/virtualization.md)
+- [Paging](grid/paging.md)
+- [Filtering](grid/filtering.md)
+- [Sorting](grid/sorting.md)
+- [Summaries](grid/summaries.md)
+- [Column Moving](grid/column-moving.md)
+- [Column Pinning](grid/column-pinning.md)
+- [Column Resizing](grid/column-resizing.md)
+- [Selection](grid/selection.md)
+- [Column Data Types](grid/column-types.md#default-template)
 
 <!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

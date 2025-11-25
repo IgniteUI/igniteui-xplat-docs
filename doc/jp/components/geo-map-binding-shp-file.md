@@ -257,9 +257,9 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ## API リファレンス
 
- - `Fields`
- - `GeographicPolylineSeries`
- - `ImportCompleted`
- - `ItemsSource`
- - `Points`
- - `ShapefileConverter`
+- `Fields`
+- `GeographicPolylineSeries`
+- `ImportCompleted`
+- `ItemsSource`
+- `Points`
+- `ShapefileConverter`

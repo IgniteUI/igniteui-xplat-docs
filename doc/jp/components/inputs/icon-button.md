@@ -196,14 +196,14 @@ igc-icon-button::part(icon) {
 
 ## API リファレンス
 
- - `ButtonBase`
- - `Button`
- - `IconButton`
- - `Icon`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `ButtonBase`
+- `Button`
+- `IconButton`
+- `Icon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

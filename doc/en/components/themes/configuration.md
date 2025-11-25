@@ -98,4 +98,4 @@ As mentioned before, you can control the horizontal and vertical spacing individ
 
 ## API References
 
- - `ConfigureTheme`
+- `ConfigureTheme`

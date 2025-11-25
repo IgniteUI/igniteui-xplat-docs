@@ -54,6 +54,7 @@ const options: IgcChatOptions = {
   headerText: 'Support Chat',
 };
 ```
+
 ```html
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
@@ -184,6 +185,7 @@ const options: IgcChatOptions = {
   suggestionsPosition: "below-input"
 };
 ```
+
 ```html
 <igc-chat
   .options=${options}>
@@ -318,7 +320,7 @@ const options = {
           <button onClick={() => alert('Voice input!')}>🎤</button>
         </>
       );
-    } 
+    }
   }
 };
 ```
@@ -614,5 +616,5 @@ igc-chat::part(empty-state) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -41,6 +41,6 @@ The grid supports saving the following features:
 
 ## API References
 
- - `Grid`
- - `LoadLayout`
- - `SaveLayout`
+- `Grid`
+- `LoadLayout`
+- `SaveLayout`

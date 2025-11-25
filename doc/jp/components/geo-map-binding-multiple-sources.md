@@ -316,5 +316,5 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
 ## API リファレンス
 
- - `GeographicPolylineSeries`
- - `GeographicSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicSymbolSeries`

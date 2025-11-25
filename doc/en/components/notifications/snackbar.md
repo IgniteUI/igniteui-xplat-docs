@@ -71,7 +71,7 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 
@@ -148,14 +148,14 @@ igc-snackbar::part(base) {
 
 ## API References
 
- - `ActionText`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Snackbar`
- - [`Styling & Themes`](../themes/overview.md)
+- `ActionText`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Snackbar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

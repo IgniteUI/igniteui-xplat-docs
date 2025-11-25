@@ -34,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -184,22 +184,22 @@ The following sample demonstrates how to style the track fill and thumb parts:
 
 ## API References
 
- - `HidePrimaryLabels`
- - `HideSecondaryLabels`
- - `HideTooltip`
- - `PrimaryTicks`
- - `RangeSlider`
- - `SecondaryTicks`
- - `SliderLabel`
- - `Slider`
- - `SliderTickLabelRotation`
- - `TickOrientation`
- - `UpperBound`
- - `ValueFormatOptions`
- - `ValueFormat`
- - [`Styling & Themes`](../themes/overview.md)
+- `HidePrimaryLabels`
+- `HideSecondaryLabels`
+- `HideTooltip`
+- `PrimaryTicks`
+- `RangeSlider`
+- `SecondaryTicks`
+- `SliderLabel`
+- `Slider`
+- `SliderTickLabelRotation`
+- `TickOrientation`
+- `UpperBound`
+- `ValueFormatOptions`
+- `ValueFormat`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -130,7 +130,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ## コンポーネントのカスタマイズ
 `ExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[Input](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
 
-`ExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
+`ExpansionPanel` を使用すると、公開された **title**、*subTitle*、および **indicator** スロット全体でヘッダーを簡単にカスタマイズできます。
 
 展開インジケーターの位置の構成は、展開パネルの `IndicatorPosition` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
 
@@ -148,9 +148,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 **キーの組み合わせ**
 
- - <kbd>ALT</kbd> + <kbd>↓</kbd> - フォーカスされたパネルを展開します。
- - <kbd>ALT</kbd> + <kbd>↑</kbd> - フォーカスされたパネルを縮小します。
- - <kbd>SPACE</kbd> / <kbd>ENTER</kbd> - フォーカスされたパネルの展開状態を切り替えます。
+- <kbd>ALT</kbd> + <kbd>↓</kbd> - フォーカスされたパネルを展開します。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> - フォーカスされたパネルを縮小します。
+- <kbd>SPACE</kbd> / <kbd>ENTER</kbd> - フォーカスされたパネルの展開状態を切り替えます。
 
 
 ## スタイル設定
@@ -200,10 +200,10 @@ igc-expansion-panel::part(subtitle) {
 
 ## API リファレンス
 
- - `ExpansionPanel`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `ExpansionPanel`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -125,7 +125,7 @@ gridRef.current.selectRange(range)
     private {ComponentSelector} grid;
 
     private async void SetSelection()
-    {        
+    {
         IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
         selectionRange.ColumnStart = 1;
         selectionRange.ColumnEnd = 1;
@@ -387,6 +387,7 @@ To get started with styling the selection, we need to import the `index` file, w
 ### Define Colors
 
 Once done, we can make use of the [igx-contrast-color]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
+
 ```scss
     $text-color:contrast-color($default-palette, 'primary', 900);
     $background-color: color($default-palette, "primary", 900);
@@ -440,24 +441,24 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## API References
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [Selection](selection.md)
-* [Row Selection](row-selection.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Virtualization and Performance](virtualization.md)
+- [Selection](selection.md)
+- [Row Selection](row-selection.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Virtualization and Performance](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

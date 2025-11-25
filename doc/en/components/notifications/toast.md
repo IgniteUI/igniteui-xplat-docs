@@ -65,7 +65,7 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 
@@ -235,14 +235,14 @@ igc-toast {
 
 ## API References
 
- - `Calendar`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Toast`
- - [`Styling & Themes`](../themes/overview.md)
+- `Calendar`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Toast`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

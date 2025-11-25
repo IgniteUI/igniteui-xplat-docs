@@ -110,7 +110,7 @@ _language: ja
 
 ## インタラクション
 
-特定の列のフィルター行を開くには、ヘッダー下のフィルター チップをクリックします。状態を追加するために入力の左側のドロップダウンを使用してフィルター オペランドを選択し、値を入力します。*number* と *date* 列には、Equals がデフォルトで選択されます。*string* には 'Contains'、*boolean* には 'All' が選択されます。'Enter' を押して条件を確定して他の条件を追加できます。条件チップの間にドロップダウンがあり、それらの間の論理演算子を決定します。'AND' がデフォルトで選択されます。条件の削除はチップの X ボタンをクリックします。編集はチップを選択、入力はチップのデータで生成されます。フィルター行が開いているときにフィルター可能な列のヘッダーをクリックして選択し、フィルター条件を追加できます。
+特定の列のフィルター行を開くには、ヘッダー下のフィルター チップをクリックします。状態を追加するために入力の左側のドロップダウンを使用してフィルター オペランドを選択し、値を入力します。*number* と **date** 列には、Equals がデフォルトで選択されます。*string* には 'Contains'、*boolean* には 'All' が選択されます。'Enter' を押して条件を確定して他の条件を追加できます。条件チップの間にドロップダウンがあり、それらの間の論理演算子を決定します。'AND' がデフォルトで選択されます。条件の削除はチップの X ボタンをクリックします。編集はチップを選択、入力はチップのデータで生成されます。フィルター行が開いているときにフィルター可能な列のヘッダーをクリックして選択し、フィルター条件を追加できます。
 
 列に適用したフィルターがある場合、フィルター行が閉じられるとチップの閉じるボタンをクリックした条件の削除やいずれかのチップを選択してフィルター行を開くことができます。すべての条件を表示するための十分なスペースがない場合、条件数を示すバッジ付きのフィルター アイコンが表示されます。フィルター行を開くためにクリックできます。
 
@@ -159,6 +159,7 @@ _language: ja
     <igx-column field="Photo" [filterable]="false"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
     <igc-column field="Artist" filterable="true"></igc-column>
@@ -175,20 +176,20 @@ _language: ja
 ```
 
 > [!Note]
-> *string* 型の値が *date* データ型の列で使用される場合、`{ComponentName}` は値を *date* オブジェクトに解析しないためフィルター条件は使用できません。*string* オブジェクトを使用する場合、値を *date* オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
+> **string** 型の値が **date** データ型の列で使用される場合、`{ComponentName}` は値を **date** オブジェクトに解析しないためフィルター条件は使用できません。*string* オブジェクトを使用する場合、値を **date** オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
 <!-- Angular, WebComponents -->
 
 列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
 
-*   `Filter` - 単一の列または複数の列をフィルターします。
+- `Filter` - 単一の列または複数の列をフィルターします。
 
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
-   - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
-   - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
+  - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
+  - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
 
 ```typescript
 // Single column filtering
@@ -268,20 +269,21 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
-* `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
+- `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
 
 ```typescript
 // Filter all cells for a value which contains `myproduct`
 this.@@igObjectRef.filteringLogic = FilteringLogic.Or;
 this.@@igObjectRef.filterGlobal('myproduct', IgxStringFilteringOperand.instance().condition('contains'), false);
 ```
+
 ```typescript
 // Filter all cells for a value which contains `myproduct`
 this.grid.filteringLogic = FilteringLogic.Or;
 this.grid.filterGlobal('myproduct', IgcStringFilteringOperand.instance().condition('contains'), false);
 ```
 
-* `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
+- `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
 
 <!-- Angular -->
 ```typescript
@@ -332,14 +334,14 @@ public ngAfterViewInit() {
 ```typescript
 constructor() {
     const gridFilteringExpressionsTree: IgcFilteringExpressionsTree = { operator: FilteringLogic.And };
-    const productFilteringExpressionsTree: IgcFilteringExpression = { 
+    const productFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "ProductName",
         conditionName: "contains",
         ignoreCase: true,
         searchVal: "Chai"
     };
 
-    const quantityFilteringExpressionsTree: IgcFilteringExpression = { 
+    const quantityFilteringExpressionsTree: IgcFilteringExpression = {
         fieldName: "QuantityPerUnit",
         conditionName: "contains",
         ignoreCase: true,
@@ -624,6 +626,7 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
     <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var productName = document.getElementById('ProductName') as IgcColumnComponent;
@@ -659,6 +662,7 @@ constructor() {
     <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var artist = document.getElementById('Artist') as IgcColumnComponent;
@@ -989,41 +993,41 @@ $custom-input-group: input-group-theme(
 <!-- ComponentStart: Grid, TreeGrid -->
 
 ### 6.1.0 Volume 0 の重大な変更
-* `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
-* `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
-* `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
-  * `Name` - フィルターする列の名前。
-  * `Value` - フィルタリングに使用する値。
-  * `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
-  * `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
-* `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
-* フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
-* `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
-* カスタム フィルターは、`FilteringOperation` 型の処理で `FilteringOperand` の `Operations` プロパティを生成して {ComponentTitle} の列で使用できます。
+- `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
+- `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
+- `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
+  - `Name` - フィルターする列の名前。
+  - `Value` - フィルタリングに使用する値。
+  - `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
+  - `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
+- `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
+- フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
+- `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
+- カスタム フィルターは、`FilteringOperation` 型の処理で `FilteringOperand` の `Operations` プロパティを生成して {ComponentTitle} の列で使用できます。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

@@ -1,5 +1,5 @@
 ---
-title: 	{Platform} {ComponentTitle} 行のピン固定 - {ProductName}
+title:     {Platform} {ComponentTitle} 行のピン固定 - {ProductName}
 _description: {Platform} の行ピン固定機能を使用して、豊富で使いやすい API で行をロックします。ユーザーが特定の順序で行をピン固定または特別な領域に複製することを許可します。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 _license: commercial
@@ -177,7 +177,7 @@ const rowPinning = (event: IgrPinRowEventArgs) => {
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 
 function rowPinningHandler(event) {
     event.detail.insertAtIndex = 0;
@@ -237,7 +237,7 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-const pinning: IgrPinningConfig = { rows : RowPinningPosition.Bottom }; 
+const pinning: IgrPinningConfig = { rows : RowPinningPosition.Bottom };
 
 <{ComponentSelector} ref={gridRef} autoGenerate={true} pinning={pinning}>
 </{ComponentSelector}>
@@ -355,7 +355,7 @@ igRegisterScript("WebHierarchicalGridRowPinCellTemplate", (ctx) => {
     window.toggleRowPin = function toggleRowPin(row) {
         row.pinned = !row.pinned;
     }
-	const row = ctx.cell.row;
+    const row = ctx.cell.row;
     return html`<div>
     <span onpointerdown='toggleRowPin("${row}")'>📌</span>
 </div>`;
@@ -538,18 +538,18 @@ public onDropAllowed(args) {
 
 ## 行ピン固定の制限
 
-* データソースに存在するレコードのみをピン固定できます。
-* 行のピン固定状態は Excel にエクスポートされません。グリッドは行のピン固定が適用されずにエクスポートされます。
-* グリッドのスクロール可能領域におけるピン固定行のコピーは、ピン固定行が存在する状態で他のグリッド機能が動作するのに不可欠な役割を果たします。そのため、その生成を無効化または削除することはできません。
-* 行選択 は 行 ID のみで動作するため、ピン固定行を選択するとそのコピーも選択されます (逆も同様)。さらに、ピン固定領域での範囲選択 (<kbd>SHIFT</kbd> + クリックにより) は、スクロール可能な領域で行を範囲選択する場合と同じように機能します。結果として、間にある行はピン固定されていなくてもすべて選択されます。API を 介して選択した行を取得すると、選択した各レコードの単一のインスタンスのみを返します。
+- データソースに存在するレコードのみをピン固定できます。
+- 行のピン固定状態は Excel にエクスポートされません。グリッドは行のピン固定が適用されずにエクスポートされます。
+- グリッドのスクロール可能領域におけるピン固定行のコピーは、ピン固定行が存在する状態で他のグリッド機能が動作するのに不可欠な役割を果たします。そのため、その生成を無効化または削除することはできません。
+- 行選択 は 行 ID のみで動作するため、ピン固定行を選択するとそのコピーも選択されます (逆も同様)。さらに、ピン固定領域での範囲選択 (<kbd>SHIFT</kbd> + クリックにより) は、スクロール可能な領域で行を範囲選択する場合と同じように機能します。結果として、間にある行はピン固定されていなくてもすべて選択されます。API を 介して選択した行を取得すると、選択した各レコードの単一のインスタンスのみを返します。
 
 <!-- Angular -->
-* ピン固定行が内部でグリッドのピン固定領域と非固定領域の両方に存在するよう保存される仕様上、グリッド内のレコードがオンデマンドでリモート エンドポイントから取得される場合 (リモート仮想化)、行のピン固定はサポートされません。
-* グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合)、データ要求が完了すると、行は次の状態を失います:
-    * 行の選択
-    * 行の展開/縮小
-    * 行の編集
-    * 行のピン固定
+- ピン固定行が内部でグリッドのピン固定領域と非固定領域の両方に存在するよう保存される仕様上、グリッド内のレコードがオンデマンドでリモート エンドポイントから取得される場合 (リモート仮想化)、行のピン固定はサポートされません。
+- グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合)、データ要求が完了すると、行は次の状態を失います:
+  - 行の選択
+  - 行の展開/縮小
+  - 行の編集
+  - 行のピン固定
 
 <!-- end: Angular -->
 
@@ -661,24 +661,24 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 <!-- end: Angular -->
 
 ## API リファレンス
-* `{ComponentName}`
-* `{ComponentName}Row`
-* `RowType`
+- `{ComponentName}`
+- `{ComponentName}Row`
+- `RowType`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

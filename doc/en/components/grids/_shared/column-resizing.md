@@ -391,6 +391,7 @@ You can also configure the minimum and maximum allowable column widths. This is 
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -439,6 +440,7 @@ This means the following configurations are possible:
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="10%" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -485,6 +487,7 @@ or
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="5%" max-width="15%"></igc-column>
@@ -648,6 +651,7 @@ $custom-grid-theme: grid-theme(
     $resize-line-color: #0288D1
 );
 ```
+
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
 
@@ -719,6 +723,7 @@ $custom-grid-theme: grid-theme(
     $schema: $custom-light-grid-schema
 );
 ```
+
 Don't forget to include the theme in the same way as it was demonstrated above.
 
 ### Demo
@@ -766,21 +771,21 @@ Then set the related CSS property for that class:
 
 ## API References
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## Additional Resources
 
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Selection](selection.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

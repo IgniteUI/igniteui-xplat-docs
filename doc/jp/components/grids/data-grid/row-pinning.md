@@ -87,4 +87,4 @@ grid1.pinnedItems.add(data[4]);
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

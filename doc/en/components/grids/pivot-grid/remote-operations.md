@@ -189,16 +189,17 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 ```
 
 ## API References
-* `PivotGrid`
-* `PivotDataSelector`
+
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## Additional Resources
 
 <!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
-* [{Platform} Pivot Grid Overview](overview.md)
+- [{Platform} Pivot Grid Overview](overview.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

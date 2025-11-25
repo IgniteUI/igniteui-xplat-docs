@@ -209,8 +209,8 @@ addSeriesWith(locations: any[], brush: string)
 
 ## API References
 
- - `GeographicSymbolSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `ShapefileConverter`
+- `GeographicSymbolSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `ShapefileConverter`

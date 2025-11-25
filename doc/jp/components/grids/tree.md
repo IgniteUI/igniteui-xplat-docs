@@ -132,19 +132,19 @@ builder.Services.AddIgniteUIBlazor(
     <igc-tree-item>
         <div slot="label">
             I am a parent item 1
-	        <img src="hard_coded_src.webb" alt="Alt Text">
+            <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">
-	    </igc-tree-item>
+        <igc-tree-item label="I am a child item 1">
+        </igc-tree-item>
     </igc-tree-item>
 
     <igc-tree-item>
         <div slot="label">
             I am a parent item 2
-	        <img src="hard_coded_src.webb" alt="Alt Text">
+            <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">
-	    </igc-tree-item>
+        <igc-tree-item label="I am a child item 1">
+        </igc-tree-item>
     </igc-tree-item>
 </igc-tree>
 ```
@@ -284,25 +284,25 @@ builder.Services.AddIgniteUIBlazor(
 
 **キーの組み合わせ**
 
- - <kbd>↓</kbd> - 次に表示されている項目に移動します。項目をアクティブとしてマークします。最後の項目の場合は何もしません。
- - <kbd>CTRL</kbd> + <kbd>↓</kbd> - 次に表示されている項目に移動します。最後の項目の場合は何もしません。
- - <kbd>↑</kbd> - 前に表示されていた項目に移動します。項目をアクティブとしてマークします。最初の項目の場合は何もしません。
- - <kbd>CTRL</kbd> + <kbd>↑</kbd> - 前に表示されていた項目に移動します。最初の項目の場合は何もしません。
- - <kbd>←</kbd> - 展開された親項目の場合、項目を縮小します。項目が縮小されているか、子がない場合は、その親項目に移動します。親項目がない場合は何もしません。
- - <kbd>→</kbd> - 展開された親項目の場合、項目の最初の子に移動します。縮小された親項目の場合は、それを展開します。項目に子がない場合は何もしません。
- - <kbd>HOME</kbd> - 最初の項目に移動します。
- - <kbd>END</kbd> - 最後に表示された項目に移動します。
- - <kbd>TAB</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
- - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
- - <kbd>SPACE</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
- - <kbd>SHIFT</kbd> + <kbd>SPACE</kbd> - 選択が有効になっている場合、<kbd>SHIFT</kbd> キーを押しながら、アクティブな項目と <kbd>SPACE</kbd> を押した項目の間ですべての項目の選択を切り替えます。
- - <kbd>ENTER</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
- - <kbd>*</kbd> - 項目とすべての兄弟項目を同じレベルで展開します。
+- <kbd>↓</kbd> - 次に表示されている項目に移動します。項目をアクティブとしてマークします。最後の項目の場合は何もしません。
+- <kbd>CTRL</kbd> + <kbd>↓</kbd> - 次に表示されている項目に移動します。最後の項目の場合は何もしません。
+- <kbd>↑</kbd> - 前に表示されていた項目に移動します。項目をアクティブとしてマークします。最初の項目の場合は何もしません。
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> - 前に表示されていた項目に移動します。最初の項目の場合は何もしません。
+- <kbd>←</kbd> - 展開された親項目の場合、項目を縮小します。項目が縮小されているか、子がない場合は、その親項目に移動します。親項目がない場合は何もしません。
+- <kbd>→</kbd> - 展開された親項目の場合、項目の最初の子に移動します。縮小された親項目の場合は、それを展開します。項目に子がない場合は何もしません。
+- <kbd>HOME</kbd> - 最初の項目に移動します。
+- <kbd>END</kbd> - 最後に表示された項目に移動します。
+- <kbd>TAB</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
+- <kbd>SPACE</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
+- <kbd>SHIFT</kbd> + <kbd>SPACE</kbd> - 選択が有効になっている場合、<kbd>SHIFT</kbd> キーを押しながら、アクティブな項目と <kbd>SPACE</kbd> を押した項目の間ですべての項目の選択を切り替えます。
+- <kbd>ENTER</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
+- <kbd>*</kbd> - 項目とすべての兄弟項目を同じレベルで展開します。
 
 選択が有効になっている場合、エンドユーザーによる項目の選択は、描画されたチェックボックスを介してのみ許可されます。どちらの選択タイプでも複数選択できるため、次のマウスとキーボードの操作を利用できます。
 
- - <kbd>>クリック</kbd> - 項目のチェックボックスで実行すると、選択が有効になっている場合に項目の選択を切り替えます。それ以外の場合は、項目にフォーカスします。
- - <kbd>SHIFT</kbd> + <kbd>クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、<kbd>SHIFT</kbd> キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
+- <kbd>>クリック</kbd> - 項目のチェックボックスで実行すると、選択が有効になっている場合に項目の選択を切り替えます。それ以外の場合は、項目にフォーカスします。
+- <kbd>SHIFT</kbd> + <kbd>クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、<kbd>SHIFT</kbd> キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
 
 <!-- WebComponents -->
 
@@ -369,5 +369,5 @@ igc-tree-item::part(active) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

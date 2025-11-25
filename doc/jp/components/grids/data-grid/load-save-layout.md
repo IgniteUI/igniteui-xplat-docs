@@ -42,6 +42,6 @@ _language: ja
 
 ## API リファレンス
 
- - `Grid`
- - `LoadLayout`
- - `SaveLayout`
+- `Grid`
+- `LoadLayout`
+- `SaveLayout`

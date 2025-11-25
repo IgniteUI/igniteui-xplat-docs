@@ -128,5 +128,5 @@ public class EsriStyle
 
 ## API References
 
- - `ArcGISOnlineMapImagery`
- - `XamGeographicMap`
+- `ArcGISOnlineMapImagery`
+- `XamGeographicMap`

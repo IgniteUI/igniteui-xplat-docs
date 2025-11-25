@@ -19,6 +19,7 @@ This topic explains how to configure and set the built-in data validation rules.
 <div class="divider--half"></div>
 
 ## Dependencies
+
 When setting up the data validation rules you will need to import the rules you want to use.
 
 <!-- Angular -->
@@ -60,6 +61,7 @@ import { TwoConstraintDataValidationRule } from 'igniteui-webcomponents-excel';
 <div class="divider--half"></div>
 
 ## Usage
+
 The following snippet shows how you can setup the data validation rules
 
 ```ts
@@ -136,4 +138,4 @@ this.spreadsheet.workbook.worksheets(0).rows(7).cells(0).value = "Check Out Date
 
 ## API References
 
- - `Spreadsheet`
+- `Spreadsheet`

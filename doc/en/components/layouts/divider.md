@@ -69,7 +69,7 @@ import { defineComponents, IgcDividerComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDividerComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The `Divider` is capable of displaying images, initials, or any other content, including icons. Declaring an `Divider` is as simple as:
 
@@ -84,6 +84,7 @@ The `Divider` is capable of displaying images, initials, or any other content, i
 ```razor
 <IgbDivider></IgbDivider>
 ```
+
 ## Usage
 ### Vertical Divider
 
@@ -136,7 +137,7 @@ The `Divider` can be set in on both sides. To `inset` the divider, set the `Midd
 ```html
 // Both side
 <igc-divider middle="true" class="withInset"></igc-divider>
-// Left side only 
+// Left side only
 <igc-divider></igc-divider>
 ```
 
@@ -144,14 +145,14 @@ The `Divider` can be set in on both sides. To `inset` the divider, set the `Midd
 ```tsx
 // Both side
 <IgrDivider middle="true" className="withInset"></IgrDivider>
-// Left side only 
+// Left side only
 <IgrDivider  className="withInset"></IgrDivider>
 ```
 
 ```razor
 // Both side
 <IgbDivider Middle="True" class="withInset"</igrDivider>
-// Left side only 
+// Left side only
 <IgbDivider class="withInset"</igrDivider>
 ```
 
@@ -204,9 +205,9 @@ The `--color` css variable sets the color of the divider.
 
 ## API References
 
- - `Divider`
+- `Divider`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

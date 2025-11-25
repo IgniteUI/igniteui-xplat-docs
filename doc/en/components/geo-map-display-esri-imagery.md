@@ -143,5 +143,5 @@ protected override void OnInitialized()
 
 ## API References
 
- - `ArcGISOnlineMapImagery`
- - `XamGeographicMap`
+- `ArcGISOnlineMapImagery`
+- `XamGeographicMap`

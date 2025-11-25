@@ -60,11 +60,11 @@ _language: ja
 
 ## API リファレンス
 
- - `ModifierBased`
- - `MultipleCell`
- - `MultipleRow`
- - `RangeCell`
- - `SelectionBehavior`
- - `SelectionMode`
- - `SingleCell`
- - `SingleRow`
+- `ModifierBased`
+- `MultipleCell`
+- `MultipleRow`
+- `RangeCell`
+- `SelectionBehavior`
+- `SelectionMode`
+- `SingleCell`
+- `SingleRow`

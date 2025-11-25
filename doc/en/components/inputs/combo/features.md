@@ -110,11 +110,11 @@ switchDisable.addEventListener("igcChange", () => {
 ```
 
 ```razor
-<IgbCombo 
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+<IgbCombo
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name"
     DisableFiltering="@DisableFiltering"
     CaseSensitiveIcon="@CaseSensitiveIcon"
@@ -356,10 +356,10 @@ You can disable the ComboBox using the `Disabled` property:
 <!-- WebComponents -->
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

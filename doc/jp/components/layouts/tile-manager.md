@@ -13,7 +13,7 @@ _language: ja
 
 ## {Platform} Tile Manager の例
 
-次の {ProductName} タイル マネージャーの例では、コンポーネントの動作を示しています。 
+次の {ProductName} タイル マネージャーの例では、コンポーネントの動作を示しています。
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager の例"`
 
@@ -21,7 +21,7 @@ _language: ja
 
 ## 使用方法
 
-`TileManager` は、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。 
+`TileManager` は、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。
 
 タイル マネージャーでは、使用できる 2 つのコンポーネントが提供されます。
 - `Tile` - このコンポーネントは、タイル マネージャー内に表示される個々のタイルを表します。
@@ -367,9 +367,9 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 | `title` | タイル ヘッダーのコンテンツ。 |
 | `fullscreen-action` | デフォルトの全画面表示アクション コンテンツを上書きします。 |
 | `maximize-action` | デフォルトの最大化アクションのコンテンツを上書きします。 |
-| `actions` | 	デフォルトのアクションの後にレンダリングされるカスタム コンテンツ。 |
+| `actions` | デフォルトのアクションの後にレンダリングされるカスタム コンテンツ。 |
 | `side-adorner` | デフォルトの水平リサイズ ハンドルを上書きします。 |
-| `corner-adorner` | 	デフォルトの対角リサイズ ハンドルを上書きします。 |
+| `corner-adorner` | デフォルトの対角リサイズ ハンドルを上書きします。 |
 | `bottom-adorner` | デフォルトの垂直リサイズ ハンドルを上書きします。 |
 
 
@@ -380,7 +380,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 - `maximize` ボタンを使用すると、タイルのコンテンツがタイル マネージャーの幅全体に拡大され、コンテンツの表示範囲が広がります。
 - `fullscreen` ボタンを使用すると、タイルがユーザーのブラウザでフルスクリーン モードで開きます。
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="tile-manager-actions" />
 
 2 つのボタンのうち 1 つだけを表示する場合は、`DisableMaximize` または `DisableFullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
 
@@ -561,7 +561,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 ## スタイル設定
 
-`TileManager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。 
+`TileManager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。
 `TileManager` は、Tile Manager のベース ラッパーのスタイル設定に使用できる CSS プロパティ `base` のみを公開します。
 `Tile` は、使用できるいくつかの CSS プロパティを公開します。
 
@@ -595,7 +595,7 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-side),
 igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
@@ -648,6 +648,6 @@ igc-tile:nth-child(n+2)::part(trigger) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

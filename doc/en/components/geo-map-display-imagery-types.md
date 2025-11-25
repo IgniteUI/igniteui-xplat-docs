@@ -50,6 +50,6 @@ This code example explicitly sets `BackgroundContent` of the map component to th
 
 ## API References
 
- - `BackgroundContent`
- - `GeographicMapImagery`
- - `OpenStreetMapImagery`
+- `BackgroundContent`
+- `GeographicMapImagery`
+- `OpenStreetMapImagery`

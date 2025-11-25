@@ -108,6 +108,7 @@ _language: ja
     }
 }
 ```
+
 ```html
 <igc-grid id="grid" batch-editing="true" primary-key="ProductID" width="100%" height="500px"
     row-editable="true">
@@ -117,6 +118,7 @@ _language: ja
 <button id="redo">Redo</button>
 <button id="commit">Commit</button>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -192,6 +194,7 @@ private OnRedoClick() {
     }
 }
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" batch-editing="true" primary-key="ProductID" foreign-key="PID"
     width="100%" height="500px" row-editable="true">
@@ -201,6 +204,7 @@ private OnRedoClick() {
 <button id="redo">Redo</button>
 <button id="commit">Commit</button>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('grid') as IgcTreeGridComponent;
@@ -283,6 +287,7 @@ export class GridBatchEditingSampleComponent {
     }
 }
 ```
+
 ```ts
 export class GridBatchEditingSampleComponent {
     constructor() {
@@ -335,6 +340,7 @@ export class TreeGridBatchEditingSampleComponent {
     }
 }
 ```
+
 ```ts
 export class GridBatchEditingSampleComponent {
     constructor() {
@@ -416,42 +422,42 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ## API リファレンス
 
 <!-- ComponentStart: Grid -->
-* `Transactions`
-* `TransactionService`
+- `Transactions`
+- `TransactionService`
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-* `HierarchicalTransactionService`
-* `RowEditable`
+- `HierarchicalTransactionService`
+- `RowEditable`
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* `HierarchicalTransactionServiceFactory`
+- `HierarchicalTransactionServiceFactory`
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+- [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} 行の編集](row-editing.md)
-* [{ComponentTitle} 行の追加](row-adding.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 行の編集](row-editing.md)
+- [{ComponentTitle} 行の追加](row-adding.md)
 
 <!-- end: Blazor -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

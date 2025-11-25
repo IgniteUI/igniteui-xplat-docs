@@ -141,9 +141,9 @@ npm install igniteui-react-grids
 ```
 
 すべての子列に 3 つの状態があります。
--	親の展開状態に関係なく、常に表示できます。
--	親が縮小されているときに表示できます。
--	親が縮小されているときに非表示にできます。
+- 親の展開状態に関係なく、常に表示できます。
+- 親が縮小されているときに表示できます。
+- 親が縮小されているときに非表示にできます。
 
 縮小可能として指定された列グループの初期状態は `Expanded` が **true** に設定されていますが、**false** に設定することでこの動作を簡単に変更できます。
 
@@ -182,7 +182,7 @@ npm install igniteui-react-grids
         string icon = context.Column.Expanded ? "remove" : "add";
         return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
     };
-    
+
     protected override void OnAfterRender(bool firstRender)
     {
         this.infoColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
@@ -201,6 +201,7 @@ npm install igniteui-react-grids
     </igc-column-group>
 </igc-column-group>
 ```
+
 ```ts
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;
@@ -282,23 +283,23 @@ const collapsibleIndicatorTemplate = (ctx: IgrColumnTemplateContext) => {
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

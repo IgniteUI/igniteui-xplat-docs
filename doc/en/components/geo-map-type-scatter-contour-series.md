@@ -76,6 +76,7 @@ public render() {
     );
 }
 ```
+
 ```ts
 public onMapReferenced(map: IgrGeographicMap) {
     this.geoMap = map;
@@ -335,13 +336,13 @@ createContourSeries(data: any[])
 
 ## API References
 
- - `FillScale`
- - `GeographicContourLineSeries`
- - `GeographicScatterAreaSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `TrianglesSource`
- - `TriangulationSource`
- - `ValueBrushScale`
- - `ValueMemberPath`
+- `FillScale`
+- `GeographicContourLineSeries`
+- `GeographicScatterAreaSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `TrianglesSource`
+- `TriangulationSource`
+- `ValueBrushScale`
+- `ValueMemberPath`

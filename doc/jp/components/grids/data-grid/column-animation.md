@@ -82,8 +82,8 @@ _language: ja
 
 ## API リファレンス
 
- - `ColumnAddingAnimationMode`
- - `ColumnExchangingAnimationMode`
- - `ColumnHidingAnimationMode`
- - `ColumnMovingAnimationMode`
- - `ColumnPropertyUpdatingAnimationMode`
+- `ColumnAddingAnimationMode`
+- `ColumnExchangingAnimationMode`
+- `ColumnHidingAnimationMode`
+- `ColumnMovingAnimationMode`
+- `ColumnPropertyUpdatingAnimationMode`

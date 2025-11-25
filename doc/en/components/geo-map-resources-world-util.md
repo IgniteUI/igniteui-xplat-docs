@@ -413,4 +413,4 @@ export default class WorldUtils {
 
 ## API References
 
- - `XamGeographicMap`
+- `XamGeographicMap`

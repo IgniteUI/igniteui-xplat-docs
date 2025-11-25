@@ -300,19 +300,19 @@ These components expose templates giving flexibility for customization. For inst
 
 For more detailed information regarding the Action Strip API, refer to the following links:
 
-* `ActionStrip`
+- `ActionStrip`
 
 Additional components and/or directives that can be used within the Action Strip:
 
-* `GridActionsBaseDirective`
-* `DividerDirective`
+- `GridActionsBaseDirective`
+- `DividerDirective`
 
 <!-- end: Angular -->
 
-* `GridPinningActions`
-* `GridEditingActions`
+- `GridPinningActions`
+- `GridEditingActions`
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

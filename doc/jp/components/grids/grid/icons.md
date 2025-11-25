@@ -196,8 +196,8 @@ setIconRef('filter_list', 'default', {
 | **drag_indicator**   | 項目をドラッグできることを示すハンドルを表示するために使用されます。                      |
 | **error**            | 編集可能なセルで、誤ったデータ入力を示すために使用されます。                       |
 | **expand_more**      | Excel フィルタリング メニューで使用され、フィルターの追加を示します。     |
-| **file_dowload**     | Excel フィルター エクスポーターによって使用されます。                                             |
-| **filter_***         | さまざまなフィルタリング オペランドに使用されます。                                           |
+| **file_download**     | Excel フィルター エクスポーターによって使用されます。                                             |
+| **filter_**         | さまざまなフィルタリング オペランドに使用されます。                                           |
 | **group_work**       | グループ化ドロップ領域で使用されます。                                                |
 | **hide**             | さまざまな UI 要素によって列を非表示にするために使用されます。                                |
 | **import_export**    | ピボット データ セレクターが移動する際に使用されます。                                    |
@@ -237,11 +237,11 @@ setIconRef('filter_list', 'default', {
 | **more_vert** | ポップアップ メニューで使用されます。  |
 
 ## API リファレンス
-* `Grid`
+- `Grid`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

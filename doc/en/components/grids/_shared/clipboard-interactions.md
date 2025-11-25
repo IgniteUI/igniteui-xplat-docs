@@ -67,18 +67,18 @@ We expose `ClipboardOptions` property, which handles the following options:
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Selection](selection.md)
-* [Virtualization and Performance](virtualization.md)
-* [Multi-column headers](multi-column-headers.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Multi-column headers](multi-column-headers.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

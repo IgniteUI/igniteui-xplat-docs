@@ -140,7 +140,7 @@ In addition to the mouse highlighting, the `DataPieChart` exposes a highlight fi
 
 When these conditions are met, the values of the subset will be highlighted, while the remainder of the full set of data will be faded - effectively creating a highlight for the subset and allowing easier visualization of a subset of your data within the same control.
 
-The following example demonstrates highlight filtering. 
+The following example demonstrates highlight filtering.
 
 `sample="/charts/data-pie-chart/highlight-filter", height="600", alt="{Platform} Data Pie Chart Highlight Filtering"`
 

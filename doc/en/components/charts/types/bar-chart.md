@@ -86,8 +86,6 @@ The Bar Chart is able to render multiple bars per category for comparison purpos
 
 `sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} Bar Chart with Multiple Sources"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Bar Chart Styling

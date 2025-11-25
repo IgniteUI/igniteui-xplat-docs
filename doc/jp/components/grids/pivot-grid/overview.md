@@ -123,11 +123,11 @@ const dimension: IgrPivotDimension = {
 ピボット グリッドの一部として、構成を容易にするために、いくつかの追加の事前定義されたディメンションが公開されています:
 - `PivotDateDimension`
     日付フィールドに使用できます。デフォルトで次の階層を記述します:
-    - すべての期間
-    - 年
-    - 四半期
-    - 月
-    - 完全な日付
+  - すべての期間
+  - 年
+  - 四半期
+  - 月
+  - 完全な日付
 
 次のように、行または列に設定できます:
 
@@ -257,11 +257,11 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-    
+
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-    
+
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };
@@ -706,11 +706,11 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 ## API リファレンス
 
-* `PivotConfiguration`
-* `PivotGrid`
-* `PivotDataSelector`
-* `PivotDateDimension`
-* `Column`
+- `PivotConfiguration`
+- `PivotGrid`
+- `PivotDataSelector`
+- `PivotDateDimension`
+- `Column`
 
 <!-- ## その他のリソース -->
 
@@ -721,7 +721,7 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 
 

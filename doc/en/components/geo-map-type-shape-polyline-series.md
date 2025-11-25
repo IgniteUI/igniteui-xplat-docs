@@ -301,7 +301,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
 ## API References
 
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `ItemsSource`
- - `ShapefileConverter`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `ItemsSource`
+- `ShapefileConverter`

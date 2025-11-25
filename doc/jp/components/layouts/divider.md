@@ -85,6 +85,7 @@ defineComponents(IgcDividerComponent);
 ```razor
 <IgbDivider></IgbDivider>
 ```
+
 ## 使用方法
 ### 垂直デバイダー
 
@@ -137,7 +138,7 @@ defineComponents(IgcDividerComponent);
 ```html
 // Both side
 <igc-divider middle="true" class="withInset"></igc-divider>
-// Left side only 
+// Left side only
 <igc-divider></igc-divider>
 ```
 
@@ -145,14 +146,14 @@ defineComponents(IgcDividerComponent);
 ```tsx
 // Both side
 <IgrDivider middle="true" className="withInset"></IgrDivider>
-// Left side only 
+// Left side only
 <IgrDivider  className="withInset"></IgrDivider>
 ```
 
 ```razor
 // Both side
 <IgbDivider Middle="True" class="withInset"</igrDivider>
-// Left side only 
+// Left side only
 <IgbDivider class="withInset"</igrDivider>
 ```
 
@@ -205,9 +206,9 @@ defineComponents(IgcDividerComponent);
 
 ## API リファレンス
 
- - `Divider`
+- `Divider`
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

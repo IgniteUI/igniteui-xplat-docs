@@ -399,26 +399,27 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- end: Angular -->
 
 ## API References
-* `{ComponentName}`
-* `Paginator`
+
+- `{ComponentName}`
+- `Paginator`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
 <!-- * [Paginator](../paginator.md) -->
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

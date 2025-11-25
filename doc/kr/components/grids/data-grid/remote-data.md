@@ -38,6 +38,7 @@ import { ODataVirtualDataSource } from 'igniteui-react-datasources';
 
 IgrDataGridModule.register();
 ```
+
 ```ts
 import './odatajs-4.0.0';
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -63,6 +64,7 @@ vds.baseUri = ("https://services.odata.org/V4/Northwind/Northwind.svc");
 vds.entitySet = ("Orders");
 this.virtualData = vds;
 ```
+
 ```ts
 const vds = new ODataVirtualDataSource();
 vds.baseUri = ("https://services.odata.org/V4/Northwind/Northwind.svc");

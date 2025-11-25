@@ -162,7 +162,7 @@ To render a custom header above the list of options pass content to the `header`
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <header slot="header">
         Header content goes here
     </header>
@@ -187,7 +187,7 @@ To render a custom footer below the list of options pass content to the `footer`
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <footer slot="footer">
         Footer content goes here
     </footer>
@@ -212,7 +212,7 @@ To render a custom content when the filtering operation returns no result, use t
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
 ```
@@ -233,7 +233,7 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="down" slot="toggle-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -256,7 +256,7 @@ The clear icon can be changed via the `clear-icon` slot:
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -272,11 +272,11 @@ The clear icon can be changed via the `clear-icon` slot:
 <!-- WebComponents -->
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

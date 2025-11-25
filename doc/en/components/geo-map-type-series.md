@@ -28,4 +28,4 @@ The {Platform} Geographic Map component supports the following types of geograph
 
 ## API References
 
- - `XamGeographicMap`
+- `XamGeographicMap`
