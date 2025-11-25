@@ -78,7 +78,7 @@ The following table summarizes properties that can be used in navigation of the 
 
 ## API References
 
- - `ActualWindowRect`
- - `WindowRect`
- - `XamGeographicMap`
- - `Zoomable`
+- `ActualWindowRect`
+- `WindowRect`
+- `XamGeographicMap`
+- `Zoomable`

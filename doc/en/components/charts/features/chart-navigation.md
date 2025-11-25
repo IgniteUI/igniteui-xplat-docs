@@ -63,8 +63,6 @@ The following example demonstrates enabling scrollbars.
 
 `sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} Navigation Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Chart Navigation through Code

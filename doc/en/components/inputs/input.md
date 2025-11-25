@@ -59,7 +59,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcInputComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -165,12 +165,12 @@ igc-input::part(suffix) {
 
 ## API References
 
- - `Icon`
- - `Input`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Input`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

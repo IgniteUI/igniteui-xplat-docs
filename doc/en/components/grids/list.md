@@ -73,7 +73,7 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 defineComponents(IgcListComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ### Add List Items
 
@@ -463,16 +463,16 @@ In this article we covered a lot of ground with the `List` component. First, we 
 
 ## API References
 
- - `Avatar`
- - `Button`
- - `RadioGroup`
- - `Radio`
- - `ListHeader`
- - `ListItem`
- - `List`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- `Button`
+- `RadioGroup`
+- `Radio`
+- `ListHeader`
+- `ListItem`
+- `List`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

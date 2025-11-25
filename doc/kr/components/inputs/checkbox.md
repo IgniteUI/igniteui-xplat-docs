@@ -268,10 +268,10 @@ igc-checkbox::part(indicator checked) {
 
 ## API Reference
 
-* `Checkbox`
+- `Checkbox`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

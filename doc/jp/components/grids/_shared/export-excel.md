@@ -257,13 +257,13 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 
 ## API リファレンス
 
-* `ExcelExporterService`
-* `ExcelExporterOptions`
-* `{ComponentName}`
+- `ExcelExporterService`
+- `ExcelExporterOptions`
+- `{ComponentName}`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -181,7 +181,8 @@ The following lists all internal icons. Alias is the name of the icon by which i
 
 Here's a breakdown of all icons as used by component:
 
-#### Grid
+## Grid
+
 | Icon                 | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
 | **add**              | Used in excel-filter menu to add filter entry.                                 |
@@ -195,8 +196,8 @@ Here's a breakdown of all icons as used by component:
 | **drag_indicator**   | Used to show a handle to indicate an item can be dragged.                      |
 | **error**            | Used in editable cells to indicate erroneous data input.                       |
 | **expand_more**      | Used by the excel filtering menu to indicate the addition of more filters.     |
-| **file_dowload**     | Used by the excel filter exporter.                                             |
-| **filter_***         | Used for various filtering operands.                                           |
+| **file_download**    | Used by the excel filter exporter.                                             |
+| **filter_**          | Used for various filtering operands.                                           |
 | **group_work**       | Used by the group-by drop area.                                                |
 | **hide**             | Used by various UI elements for hiding columns.                                |
 | **import_export**    | Used by the pivot data selector for moving.                                    |
@@ -219,7 +220,8 @@ Here's a breakdown of all icons as used by component:
 | **unfold_more**      | Used by the hierarchical grid to expand all rows.                              |
 | **view_column**      | Used by the pivot data selector.                                               |
 
-#### Paginator
+## Paginator
+
 | Icon           | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | **first_page** | Used by the button used for navigating to the first page.    |
@@ -227,7 +229,7 @@ Here's a breakdown of all icons as used by component:
 | **prev**       | Used by the button used for navigating to the previous page. |
 | **next**       | Used by the button used for navigating to the next page.     |
 
-#### Action Strip
+## Action Strip
 
 | Icon          | Description              |
 | ------------- | ------------------------ |
@@ -236,11 +238,12 @@ Here's a breakdown of all icons as used by component:
 | **more_vert** | Used by the popup menu.  |
 
 ## API References
-* `Grid`
+
+- `Grid`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

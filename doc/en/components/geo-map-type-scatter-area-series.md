@@ -341,13 +341,13 @@ createAreaSeries(data: any[]) {
 
 ## API References
 
- - `ColorMemberPath`
- - `ColorScale`
- - `CustomPaletteColorScale`
- - `GeographicContourLineSeries`
- - `GeographicScatterAreaSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `TrianglesSource`
- - `TriangulationSource`
+- `ColorMemberPath`
+- `ColorScale`
+- `CustomPaletteColorScale`
+- `GeographicContourLineSeries`
+- `GeographicScatterAreaSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `TrianglesSource`
+- `TriangulationSource`

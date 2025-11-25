@@ -58,9 +58,9 @@ _language: ja
 ```
 
 各オプションを `{ComponentName}` に反映する方法を紹介します。サイズ オプション間で切り替える際に各 `{ComponentName}` 要素の高さとそのパディングが変更されます。カスタムの列 `Width` を適用する場合、左右のパディングより大きくする必要があることに注意してください。
- - **large** - これはデフォルトの `{ComponentName}` サイズです。サイズが最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
- - **medium** - 中サイズで、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
- - **small** - 強度が最も高く、行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
+- **large** - これはデフォルトの `{ComponentName}` サイズです。サイズが最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
+- **medium** - 中サイズで、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
+- **small** - 強度が最も高く、行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
 
 > [!Note]
 > 現在サイズは**オーバーライドできません**。
@@ -497,7 +497,7 @@ public ngOnInit() {
 ```
 
 ```razor
-<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="grid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="grid" Data="EmployeesFlatDetails" PrimaryKey="ID"
  ForeignKey="ParentID" AllowFiltering="true">
     <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true" Width="200">
     </IgbColumn>
@@ -654,7 +654,7 @@ public ngOnInit() {
     <IgbColumn Field="Country" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Phone" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Fax" DataType="GridColumnDataType.String"></IgbColumn>
-    
+
     <IgbRowIsland ChildDataKey="Orders" AutoGenerate="false">
         <IgbColumn Field="OrderID" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -668,7 +668,7 @@ public ngOnInit() {
         <IgbColumn Field="ShipCity" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipPostalCode" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipCountry" DataType="GridColumnDataType.String"></IgbColumn>
-        
+
         <IgbRowIsland ChildDataKey="OrderDetails" AutoGenerate="false">
             <IgbColumn Field="ProductID" DataType="GridColumnDataType.Number"></IgbColumn>
             <IgbColumn Field="UnitPrice" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -745,7 +745,7 @@ public ngOnInit() {
         <IgrColumn field="ShipCity" dataType="string"></IgrColumn>
         <IgrColumn field="ShipPostalCode" dataType="string"></IgrColumn>
         <IgrColumn field="ShipCountry" dataType="string"></IgrColumn>
-        
+
         <IgrRowIsland childDataKey="OrderDetails" autoGenerate={false}>
             <IgrColumn field="ProductID" dataType="number"></IgrColumn>
             <IgrColumn field="UnitPrice" dataType="number"></IgrColumn>
@@ -813,7 +813,7 @@ public webGridSetGridSize(sender: any, args: IgcPropertyEditorPropertyDescriptio
 <!-- Blazor -->
 ```razor
 @code {
-    *** In JavaScript ***
+    // In JavaScript
     igRegisterScript("WebGridSetGridSize", (sender, evtArgs) => {
         var newVal = evtArgs.newValue.toLowerCase();
         var grid = document.getElementById("grid");
@@ -867,8 +867,8 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `--ig-size` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - **`RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
- - `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
+- `RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
+- `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
 
@@ -909,24 +909,24 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 <!-- ComponentStart: Grid -->
 ## その他のリソース
-* [仮想化とパフォーマンス](virtualization.md)
-* [編集](editing.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [編集](editing.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

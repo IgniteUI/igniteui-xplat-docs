@@ -290,10 +290,10 @@ onDataLoaded(csvData: string) {
 
 ## API リファレンス
 
- - `GeographicHighDensityScatterSeries`
- - `GeographicHighDensityScatterSeries`
- - `HeatMaximumColor`
- - `HeatMinimumColor`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
+- `GeographicHighDensityScatterSeries`
+- `GeographicHighDensityScatterSeries`
+- `HeatMaximumColor`
+- `HeatMinimumColor`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`

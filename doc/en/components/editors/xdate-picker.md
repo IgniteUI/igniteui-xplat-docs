@@ -69,7 +69,7 @@ The {Platform} XDate Picker editor component consists of three default parts - t
 | Property | Type | Description |
 | ---------|------|------------ |
 | `IconColor` | string | Changes the color of the calendar button. |
-| `AllowTextInput`  |  bool   |  The xdate picker's value can be typed-in and modified by toggling this property to true. |
+| `AllowTextInput`  |  bool   |  The **xdate** picker's value can be typed-in and modified by toggling this property to true. |
 | `DateFormat` | enum | Defaults to DateShort e.g. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as e.g. Wednesday, April 14, 2021. |
 | `FirstDayOfWeek` | enum | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar, e.g. Monday through Sunday. |
 | `FormatString` | string  | When DateShort is used, the date's format can be configured e.g. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored. |

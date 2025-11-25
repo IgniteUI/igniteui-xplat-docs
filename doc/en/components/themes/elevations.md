@@ -59,6 +59,7 @@ Example:
 Now, all components that use elevation levels 1 and 2 will have their shadows updated.
 
 ### Shadowing
+
 You can shadow the globally set elevations for a specific scope only. We already saw that the Snackbar and the Toast component use elevation level 10. To change the shadows for both of them, all you need to do is:
 
 ```css
@@ -84,4 +85,4 @@ The `--ig-elevation-factor` can also be set to a decimal value or a value bigger
 
 ## API References
 
- - `Elevations`
+- `Elevations`

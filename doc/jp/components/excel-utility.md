@@ -333,6 +333,6 @@ export class ExcelUtility {
 
 ## API リファレンス
 
- - `WorkbookFormat`
- - `WorkbookSaveOptions`
- - `Workbook`
+- `WorkbookFormat`
+- `WorkbookSaveOptions`
+- `Workbook`

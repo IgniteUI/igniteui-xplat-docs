@@ -302,7 +302,7 @@ alt="{Platform} チャート マーカー、ツールチップ、およびテン
 
 このトピックで言及されているすべてのチャート タイプは、次の API コンポーネントに実装されています:
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
- - `Treemap`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `Treemap`

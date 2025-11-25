@@ -16,7 +16,7 @@ _language: ja
 
 デフォルトの動作 `SelectionMode` はオフになっており、次のいずれかのオプションを選択する必要があります。`{ComponentName}` に使用可能な選択モードがいくつかあります。
 
-- **Auto** 
+- **Auto**
 - **None**
 - **Brighten**
 - **FadeOthers**
@@ -35,7 +35,7 @@ _language: ja
 
 併せて、どの項目を選択するかをより細かく制御できる `SelectionBehavior` も利用できます。Auto のデフォルトの動作は `PerSeriesAndDataItemMultiSelect` です。
 
-- **Auto** 
+- **Auto**
 - **PerDataItemMultiSelect**
 - **PerDataItemSingleSelect**
 - **PerSeriesAndDataItemMultiSelect**
@@ -71,10 +71,10 @@ _language: ja
 
 ## プログラムによる選択
 
-チャートの選択項目は、起動時や実行時にチャートの選択項目を表示するようにコードで設定することもできます。これは、`CategoryChart` の `SelectedSeriesCollection` に項目を追加することで実現できます。`ChartSelection` オブジェクトの `Matcher` プロパティを使用すると、「マッチャー」に基づいてシリーズを選択できます。これはチャートから実際のシリーズにアクセスできない場合に最適です。データ ソースに含まれるプロパティがわかっていれば、シリーズが使用される `ValueMemberPath` を使用できます。 
+チャートの選択項目は、起動時や実行時にチャートの選択項目を表示するようにコードで設定することもできます。これは、`CategoryChart` の `SelectedSeriesCollection` に項目を追加することで実現できます。`ChartSelection` オブジェクトの `Matcher` プロパティを使用すると、「マッチャー」に基づいてシリーズを選択できます。これはチャートから実際のシリーズにアクセスできない場合に最適です。データ ソースに含まれるプロパティがわかっていれば、シリーズが使用される `ValueMemberPath` を使用できます。
 
 マッチャーは、`XamDataChart` のように実際のシリーズにアクセスできない場合、`CategoryChart` などのチャートで使用するのに最適です。この場合、データ ソースに含まれるプロパティがわかっていれば、シリーズに含まれる ValueMemberPaths を推測できます。たとえば、データ ソースに Nuclear、Coal、Oil、Solar という数値プロパティがある場合、これらのプロパティごとにシリーズが作成されていることがわかります。Solar 値にバインドされたシリーズをハイライト表示する場合は、次のプロパティが設定されたマッチャーを使用して、ChartSelection オブジェクトを `SelectedSeriesItems` コレクションに追加できます。
-   
+
 たとえば、データ ソースに Nuclear、Coal、Oil、Solar という数値プロパティがある場合、これらのプロパティごとにシリーズが作成されていることがわかります。Solar 値にバインドされたシリーズを選択する場合は、次のプロパティが設定されたマッチャーを使用して、ChartSelection オブジェクトを SelectedSeriesItems コレクションに追加できます。
 
  `sample="/charts/category-chart/selection-matcher", height="500", alt="{Platform} 選択マッチャー"`
@@ -83,6 +83,6 @@ _language: ja
 
 以下は上記のセクションで説明した API メンバーのリストです。
 
-| `CategoryChart` プロパティ                    | `XamDataChart` プロパティ | 
+| `CategoryChart` プロパティ                    | `XamDataChart` プロパティ |
 | ----------------------------------------------|---------------------------|
 |                                               |                           |

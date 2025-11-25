@@ -464,16 +464,16 @@ igc-list-item::part(subtitle) {
 
 ## API リファレンス
 
- - `Avatar`
- - `Button`
- - `RadioGroup`
- - `Radio`
- - `ListHeader`
- - `ListItem`
- - `List`
+- `Avatar`
+- `Button`
+- `RadioGroup`
+- `Radio`
+- `ListHeader`
+- `ListItem`
+- `List`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -54,6 +54,7 @@ Column pinning is controlled through the `Pinned` property of the `Column`. Pinn
     </igc-paginator>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -80,6 +81,7 @@ constructor() {
     <igx-column [field]="ID"></igx-column>
 </igx-tree-grid>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
@@ -106,6 +108,7 @@ constructor() {
     <igx-column [field]="Debut" [width]="200px"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
         height="600px" width="800px" >
@@ -330,6 +333,7 @@ This can be done by creating a header template for the columns with a custom ico
     </igx-column>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -345,6 +349,7 @@ This can be done by creating a header template for the columns with a custom ico
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -388,7 +393,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
     <IgbColumn Field="ID" Hidden="true"></IgbColumn>
 
-    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px"
     HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
 
     <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
@@ -419,7 +424,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 <IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
     <IgrColumn field="ID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    <IgrColumn field="CompanyName" header="Company" width="300px"
     headerTemplate={toggleColumnPin}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
@@ -436,7 +441,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -477,6 +482,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-tree-grid>
 </div>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -492,6 +498,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -538,19 +545,19 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
     <IgbColumn Field="Title" DataType="String" Pinned="true"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
-        
+
     <IgbColumn Field="Phone" DataType="String"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
-            
+
     <IgbColumn Field="Age" DataType="Number"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
-            
+
     <IgbColumn Field="HireDate" DataType="Date"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
-            
+
     <IgbColumn Field="OnPTO" DataType="Boolean"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
-</IgbTreeGrid> 
+</IgbTreeGrid>
 
 
 // In JavaScript
@@ -591,7 +598,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -632,6 +639,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hGrid" class="hierarchicalGrid" auto-generate="false"
     height="500px" width="100%">
@@ -651,6 +659,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
@@ -687,7 +696,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} autoGenerate={false} data={HierarchicalCustomersData} ref={grid}>
     <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="Company" header="Company Name" width="300px" 
+    <IgrColumn field="Company" header="Company Name" width="300px"
     headerTemplate={toggleColumnPin} pinned={true}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Contact Name" width="200px"
@@ -704,7 +713,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -733,7 +742,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## Pinning Limitations
 
-*   Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
+- Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -746,6 +755,7 @@ In the below steps, we are going through the steps of customizing the grid's Pin
 
 ### Importing Global Theme
 To begin the customization of the Pinning feature, you need to import the `index` file, where all styling functions and mixins are located.
+
 ```scss
 @use "igniteui-angular/theming" as *;
 
@@ -798,6 +808,7 @@ The `$custom-theme` contains the same properties as the one in the previous sect
 ### Defining Custom Schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
@@ -806,7 +817,9 @@ $custom-grid-schema: extend($_light-grid,(
     cell-active-border-color: color: ("secondary", 500)
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     igx-grid: $custom-grid-schema
@@ -819,6 +832,7 @@ $custom-theme: grid-theme(
 
 ### Applying the Custom Theme
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
+
 ```scss
 @include grid($custom-theme);
 ```
@@ -831,7 +845,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  > [!Note]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {
@@ -840,6 +854,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
     }
 }
 ```
+
 ### Demo
 
 <!-- NOTE this sample is differed -->
@@ -890,22 +905,23 @@ Then set the related CSS properties to this class:
 <!-- end: WebComponents, Blazor -->
 
 ## API References
-* `{ComponentName}`
-* `Column`
+
+- `{ComponentName}`
+- `Column`
 
 ## Additional Resources
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

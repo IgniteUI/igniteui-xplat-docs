@@ -62,7 +62,9 @@ export class MarkdownContent {
         for (const str of this.sectionStrings) {
             // var section = new MarkdownSection(str.trim());
             var section = new MarkdownSection(str);
-            section.index = this.sections.length;
+            // section.index = this.sections.length;
+            section.index = content.indexOf(str);
+            section.filePath = filePath;
             this.sections.push(section);
             // console.log("==================== section " +  this.sections.length + " ==================================================");
             // console.log(section.content);
@@ -80,6 +82,7 @@ export class MarkdownSection {
     
     public index: number = 0;
     public type: string = "";
+    public filePath: string = "";
 
     // public withMetadata() { return this.content.indexOf('---') === 0; }
     // public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }

@@ -21,9 +21,9 @@ The Infragistics {Platform} Excel Library has support for adding sparklines to a
 ## Supported Sparklines
 The following is a list of the supported predefined sparkline types.
 
--  Line
--  Column
--  Stacked (Win/Loss)
+- Line
+- Column
+- Stacked (Win/Loss)
 
 The following code demonstrates how to programmatically add Sparklines to a Worksheet via the sparklineGroups collection:
 
@@ -47,4 +47,4 @@ sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A1
 
 ## API References
 
- - `Workbook`
+- `Workbook`

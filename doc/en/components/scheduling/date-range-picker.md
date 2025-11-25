@@ -7,6 +7,7 @@ mentionedTypes: ["DateRangePicker"]
 ---
 
 # {Platform} Date Range Picker Overview
+
 The {ProductName} Date Range Picker is a lightweight component that includes a text input and a calendar pop-up, allowing users to easily select start and end dates.  It is highly customizable to fit various application requirements, offering features such as date range restrictions, configurable date formats, and more.
 
 ## Date Range Picker Example
@@ -54,7 +55,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 Now you can start with a basic configuration of the {Platform} `DateRangePicker`.
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Usage
 
@@ -104,7 +105,7 @@ const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
 useEffect (() => {
-  dateRangeRef.current.value = { start: startDate, end: endDate }	
+  dateRangeRef.current.value = { start: startDate, end: endDate }
 }, [])
 
 return (
@@ -147,7 +148,7 @@ Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`,
 <IgrDateRangePicker useTwoInputs nonEditable/>
 ```
 
-### Popup modes 
+### Popup modes
 
 By default, when clicked, the `DateRangePicker` opens its calendar pop-up in `dropdown` mode. Alternatively, the calendar can be opened in `dialog` mode by setting the `Mode` property to `dialog`.
 
@@ -166,7 +167,7 @@ The `DateRangePicker` features intuitive keyboard navigation, allowing users to 
 
 The available keyboard navigation options vary depending on whether the component is in single input or two inputs mode.
 
-**Two Inputs Mode:** 
+**Two Inputs Mode:**
 
 |Keys|Description|
 |----|-----------|
@@ -303,7 +304,7 @@ You can also set the `Min` and `Max` properties to restrict user input by disabl
 <IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
 ```
 
-### Custom & Predefined Date Ranges 
+### Custom & Predefined Date Ranges
 
 You can also add custom date range chips to the calendar pop-up for faster range selection using the `CustomRanges` property. For example, you can create a custom date range chip to quickly select the range for the upcoming 7 days, ending with the current date. In addition, by setting the `UsePredefinedRanges` property, a set of predefined ranges chips will be displayed along with the custom ones.
 
@@ -313,7 +314,7 @@ const today = new Date();
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7 
+  today.getDate() + 7
 );
 const nextWeek: CustomDateRange[] = [
   {
@@ -415,7 +416,7 @@ In addition to the properties we've already covered, the `DateRangePicker` compo
 |Name|Type|Description|
 |--|--|--|
 | `Disabled` | boolean | Disables the component. |
-| `NonEditable` | boolean |	Disables typing in the input field(s). |
+| `NonEditable` | boolean | Disables typing in the input field(s). |
 | `Placeholder` | string | Placeholder text for the single input mode. |
 | `PlaceholderStart` | string | Placeholder text for the start date input (two inputs mode). |
 | `PlaceholderEnd` | string | Placeholder text for the end date input (two inputs mode). |
@@ -425,7 +426,7 @@ In addition to the properties we've already covered, the `DateRangePicker` compo
 
 ### Slots
 
-You also have the ability to add custom content and modify the appearance of the `DateRangePicker` component using the available slots. 
+You also have the ability to add custom content and modify the appearance of the `DateRangePicker` component using the available slots.
 
 The `prefix` and `suffix` slots allow you to insert custom content before or after the input field (only available in single input mode):
 
@@ -579,15 +580,15 @@ igc-date-range-picker::part(clear-icon-end) {
 
 ## API References
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - `DateTimeInput`
- - `Dialog`
- - [`Styling & Themes`](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- `DateTimeInput`
+- `Dialog`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -1,12 +1,12 @@
 ---
-title: Open Source vs Premium | {ProductName} | Infragistics 
-_description: Ignite UI for Angular is a complete set of native Angular UI components, which allow you to build fast, feature-rich and Material designed applications! 
-_keywords: {ProductName}, getting started, angular components 
+title: Open Source vs Premium | {ProductName} | Infragistics
+_description: Ignite UI for Angular is a complete set of native Angular UI components, which allow you to build fast, feature-rich and Material designed applications!
+_keywords: {ProductName}, getting started, angular components
 ---
 
 # Open-Source vs Premium in {ProductName}
 
-{ProductName} offers two distinct paths for building modern, data-driven applications: Open-Source Components and Premium Components. This dual approach ensures flexibility for developers at every stage of their project. 
+{ProductName} offers two distinct paths for building modern, data-driven applications: Open-Source Components and Premium Components. This dual approach ensures flexibility for developers at every stage of their project.
 
 ## Open-Source Components
 
@@ -14,13 +14,13 @@ There are over 50 UI components available under the MIT license, including Grid 
 
 All Open-Source components are marked in the header of their topics with: ![alt text](../images/open-source-text.png)
 
-They are ideal for lightweight applications that need essential functionality without the overhead of enterprise features. You can use them freely in production, customize, fork, and contribute via GitHub. No license is required. 
+They are ideal for lightweight applications that need essential functionality without the overhead of enterprise features. You can use them freely in production, customize, fork, and contribute via GitHub. No license is required.
 
-## Premium Components 
+## Premium Components
 
 Our Ignite UI Premium components come with advanced enterprise features and are used for complex applications requiring high-performance and richer functionality. Premium components include:
 
-### Grids with advanced components:
+### Grids with advanced components
 
 - [Data Grid](../components/grids/data-grid.md), [Hierarchical Grid](../components/grids/hierarchical-grid/overview.md), [Tree Grid](../components/grids/tree-grid/overview.md), [Pivot Grid ](../components/grids/pivot-grid/overview.md)
 - [Dock Manager](../components/layouts/dock-manager.md) 
@@ -34,9 +34,9 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 
 All Premium components are marked in the header of their topics with: ![alt text](../images/premium-text.png)
 
-All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls. 
+All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls.
 
-## Upgrade Path 
+## Upgrade Path
 
 Start with Grid Lite for essential needs and seamlessly upgrade to the full-featured Data Grid as your application grows in complexity. This ensures minimal refactoring and a smooth transition to enterprise-grade capabilities.
 

@@ -49,4 +49,4 @@ Having learned about CSS parts and CSS variables and in combination with the oth
 
 ## API References
 
- - `ConfigureTheme`
+- `ConfigureTheme`

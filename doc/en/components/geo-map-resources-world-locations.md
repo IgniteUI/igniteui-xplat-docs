@@ -1293,4 +1293,4 @@ export default class WorldLocations {
 
 ## API References
 
- - `XamGeographicMap`
+- `XamGeographicMap`

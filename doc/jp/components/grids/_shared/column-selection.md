@@ -226,45 +226,45 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 以下は、列選択 UI のその他の API です。
 
-* `{ComponentName}`
-* `Column`
-* `ColumnGroup`
+- `{ComponentName}`
+- `Column`
+- `ColumnGroup`
 
 `{ComponentName}` プロパティ:
-* `ColumnSelection`
-* `SelectedColumns`
-* `SelectColumns`
-* `DeselectColumns`
-* `SelectAllColumns`
-* `DeselectAllColumns`
+- `ColumnSelection`
+- `SelectedColumns`
+- `SelectColumns`
+- `DeselectColumns`
+- `SelectAllColumns`
+- `DeselectAllColumns`
 
 `Column` プロパティ:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `ColumnGroup` プロパティ:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `{ComponentName}` イベント:
-* `OnColumnsSelectionChange`
+- `OnColumnsSelectionChange`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [選択](selection.md)
-* [セル選択](cell-selection.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
+- [選択](selection.md)
+- [セル選択](cell-selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

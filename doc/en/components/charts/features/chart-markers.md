@@ -19,8 +19,6 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} Configuration Options Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Chart Marker Templates

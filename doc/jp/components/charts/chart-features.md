@@ -114,7 +114,7 @@ _language: ja
 
 ## API リファレンス
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
 

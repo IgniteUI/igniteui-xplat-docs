@@ -10,11 +10,11 @@ _license: MIT
 # {Platform} {GridLiteTitle} Filter Operations
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the **`filter`** property of the column configuration object.
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `filter` property of the column configuration object.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the **`Filter`** property of the column configuration object.
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `Filter` property of the column configuration object.
 <!-- end: Blazor -->
 
 ```typescript
@@ -33,12 +33,12 @@ new IgbColumnConfiguration
 ```
 
 <!-- React, WebComponents -->
-The **`filter`** property can be either a simple boolean or a
-**`ColumnFilterConfiguration`** object which exposes additional configuration options:
+The `filter` property can be either a simple boolean or a
+`ColumnFilterConfiguration` object which exposes additional configuration options:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The **`Filter`** property can be either a simple boolean or a
-**`IgbColumnFilterConfiguration`** object which exposes additional configuration options:
+The `Filter` property can be either a simple boolean or a
+`IgbColumnFilterConfiguration` object which exposes additional configuration options:
 <!-- end: Blazor -->
 
 ```typescript
@@ -74,10 +74,10 @@ new IgbColumnConfiguration
 ## Filter Model
 
 <!-- React, WebComponents -->
-The building blocks for filter operations in the grid is the **`FilterExpression`** which has the following structure:
+The building blocks for filter operations in the grid is the `FilterExpression` which has the following structure:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The building blocks for filter operations in the grid is the **`IgbGridLiteFilterExpression`** which has the following structure:
+The building blocks for filter operations in the grid is the `IgbGridLiteFilterExpression` which has the following structure:
 <!-- end: Blazor -->
 
 ```typescript
@@ -158,15 +158,15 @@ public class IgbGridLiteFilterExpression
 ## Filter API
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the **`GridLite.filter()`**/**`GridLite.clearFilter()`** methods or through the **`Grid.Lite.filterExpressions`** property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.filter()`/`GridLite.clearFilter()` methods or through the `Grid.Lite.filterExpressions` property.
 
-The **`filter()`** method accepts either a single expression or an array of filter expression and then filters the grid data
+The `filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the **`GridLite.Filter()`**/**`GridLite.ClearFilter()`** methods or through the **`Grid.Lite.FilterExpressions`** property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.Filter()`/`GridLite.ClearFilter()` methods or through the `Grid.Lite.FilterExpressions` property.
 
-The **`Filter()`** method accepts either a single expression or an array of filter expression and then filters the grid data
+The `Filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.
 <!-- end: Blazor -->
 
@@ -193,10 +193,10 @@ await grid.Filter(new IgbGridLiteFilterExpression[]
 });
 ```
 <!-- React, WebComponents -->
-The **`clearFilter()`** method, as the name implies, clears the filter state of a single column or the whole grid component, depending on the passed arguments.
+The `clearFilter()` method, as the name implies, clears the filter state of a single column or the whole grid component, depending on the passed arguments.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The **`ClearFilter()`** method, as the name implies, clears the filter state of a single column or the whole grid component, depending on the passed arguments.
+The `ClearFilter()` method, as the name implies, clears the filter state of a single column or the whole grid component, depending on the passed arguments.
 <!-- end: Blazor -->
 
 ```typescript
@@ -218,9 +218,10 @@ grid.ClearFilter();
 ## Initial filter state
 
 <!-- Blazor -->
-The **`FilterExpressions`** property is very similar in behavior to the **`Filter()`** method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
+The `FilterExpressions` property is very similar in behavior to the `Filter()` method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
-For example: 
+For example:
+
 ```razor
 private IgbGridLiteFilterExpression[] filterState = new[]
 {
@@ -234,7 +235,7 @@ private IgbGridLiteFilterExpression[] filterState = new[]
 <!-- end: Blazor -->
 
 <!-- React, WebComponents -->
-The **`filterExpressions`** property is very similar in behavior to the **`filter()`** method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
+The `filterExpressions` property is very similar in behavior to the `filter()` method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
 
 For example here is a Lit-based sample:
@@ -271,15 +272,15 @@ SaveUserFilterState(state);
 
 ## Events
 <!-- React, WebComponents -->
-When a filter operation is performed through the UI, the component emits a custom **`filtering`** event. The **`detail`** property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
+When a filter operation is performed through the UI, the component emits a custom `filtering` event. The `detail` property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
 
-After the grid applies the new filter state, a **`filtered`** event is emitted. It contains the filter state for the column which was the target of the operation and it is not cancellable.
+After the grid applies the new filter state, a `filtered` event is emitted. It contains the filter state for the column which was the target of the operation and it is not cancellable.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-When a filter operation is performed through the UI, the component raises **`Filtering`** and **`Filtered`** events. The **`Filtering`** event is cancellable and if cancelled will prevent the current filter operation.
+When a filter operation is performed through the UI, the component raises `Filtering` and `Filtered` events. The `Filtering` event is cancellable and if cancelled will prevent the current filter operation.
 
-After the grid applies the new filter state, a **`Filtered`** event is raised. It contains the filter state for the column which was the target of the operation and it is not cancellable.
+After the grid applies the new filter state, a `Filtered` event is raised. It contains the filter state for the column which was the target of the operation and it is not cancellable.
 
 <!-- end: Blazor -->
 
@@ -312,7 +313,7 @@ grid.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>)
 In cases where filtering must be done remotely or you want to save the current state/data to a server somewhere,
 the {GridLiteTitle} exposes a hook where you can implement and customize this behavior.
 <!-- React, WebComponents -->
-Using the **`dataPipelineConfiguration`** property, you can provide a custom hook which will be called each time a filter operation is about to run. The callback is passed a **`DataPipelineParams`** object.
+Using the `dataPipelineConfiguration` property, you can provide a custom hook which will be called each time a filter operation is about to run. The callback is passed a `DataPipelineParams` object.
 
 ```typescript
 export type DataPipelineParams<T extends object> = {
@@ -337,7 +338,7 @@ grid.dataPipelineConfiguration = { filter: (params: DataPipelineParams<T>) => T[
 <!-- End: React, WebComponents -->
 
 <!-- Blazor -->
-Using the **`DataPipelineConfiguration`** property, you can provide a custom hook which will be called each time a filter operation is about to run. The callback is passed a **`DataPipelineParams`** object.
+Using the `DataPipelineConfiguration` property, you can provide a custom hook which will be called each time a filter operation is about to run. The callback is passed a `DataPipelineParams` object.
 
 ```razor
 public class DataPipelineParams
@@ -359,7 +360,7 @@ public class DataPipelineParams
 ```razor
 grid.DataPipelineConfiguration = new DataPipelineConfiguration
 {
-    Filter = async (params) => 
+    Filter = async (params) =>
     {
         // Custom filter logic
         return await Task.FromResult(params.Data);
@@ -380,15 +381,15 @@ The following example mocks remote filter operation, reflecting the REST endpoin
 <!-- TODO ## API References
 ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 -->
 
 ## Additional Resources
 
-* [Column Configuration](column-configuration.md)
-* [Sorting](sorting.md)
+- [Column Configuration](column-configuration.md)
+- [Sorting](sorting.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

@@ -15,16 +15,16 @@ When you use the Infragistics Blazor Excel library on your [Blazor WebAssembly a
 This article will guide you through the easiest ways to implement Blazor Excel library and will demonstrate how it all works by creating a sample application.
 
 Topics to be covered:
-* What is Blazor?
-* Creating a Blazor WebAssembly sample app
-* Implementation steps and project structure overview
-    - Adding NuGet package
-    - Adding a reference to a JavaScript file
-    - Workbook.InProcessRuntime - setting static property
-    - Reading and writing Excel files using the Workbook class
-* What to do if the process takes too long
-* How does "lazy loading of assembly" improve the initial app speed
-* Summary
+- What is Blazor?
+- Creating a Blazor WebAssembly sample app
+- Implementation steps and project structure overview
+  - Adding NuGet package
+  - Adding a reference to a JavaScript file
+  - Workbook.InProcessRuntime - setting static property
+  - Reading and writing Excel files using the Workbook class
+- What to do if the process takes too long
+- How does "lazy loading of assembly" improve the initial app speed
+- Summary
 
 ## Blazor in a Nutshell: Understanding WebAssembly and Blazor Server
 
@@ -38,7 +38,7 @@ Blazor Server, on the other hand, runs the client logic on the server, using a s
 
 To demonstrate how it all works, we will create a Blazor WebAssembly application that will obtain data from the [Japan Meteorological Agency in an XML format](https://www-data-go-jp.translate.goog/data/dataset/mlit_20170902_0034/resource/de72cea0-a658-4c64-987c-38effeca3eb8?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp). For the purpose of this article, we included a bar chart in the downloaded Excel file, containing the number of daily earthquakes that occurred in the course of 7 days.
 
-<img src="../images/general/blazor-excel.png" />
+<img src="../images/general/blazor-excel.png" alt="blazor-excel" />
 
 The source code of this sample application is published on [this GitHub repository](https://github-com.translate.goog/igjp-sample/IgbExcelDemo?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp).
 
@@ -153,9 +153,9 @@ As you can see, the entire processing of the Excel file is performed on the Web 
 
 Processing an Excel file may take a considerable amount of time depending on:
 
-* the content
-* the scale of the data you want to handle
-* the number of cells and so on
+- the content
+- the scale of the data you want to handle
+- the number of cells and so on
 
 In terms of Blazor WebAssembly applications where .NET code is processed in an interpreted manner, the processing performance is significantly degraded. Here are some useful ways to help you improve the processing speed in such cases.
 
@@ -177,7 +177,7 @@ Of course, you can rewrite the entire application from Blazor WebAssembly to Bla
 
 The assembly file (.dll) provided by the Infragistics Blazor Excel library is approximately 5 MB in size. If the content size increases at the first launch, it may lead to a slowdown in the content loading time and the initial speed time until the Blazor WebAssembly application starts operating.
 
-<img src="../images/general/lazy-loading-of-assembly.png" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="lazy-loading-of-assembly" />
 
 That’s why we suggest using the "delayed loading of assembly" technique (in .NET 5 or following versions). You will be able to improve the Blazor WebAssembly application launch performance by waiting for the application assembly to load until it is needed. This is called "lazy loading".
 
@@ -232,7 +232,7 @@ In this sample application, the assembly file of the Infragistics Blazor Excel l
 
 Now, if you try running this sample application as it is, you can see that the assembly file of the Infragistics Blazor Excel library is not loaded as expected when the page is displayed for the first time. Also, the content size is reduced by about 5MB.
 
-<img src="../images/general/lazy-loading-of-assembly.png" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="lazy-loading-of-assembly" />
 
 However, when clicking the download button, we get a "System.IO.FileNotFoundException: Could not load file or assembly" exception.
 
@@ -273,7 +273,7 @@ Using the Infragistics Blazor Excel library on your Blazor WebAssembly applicati
 
 This article also included several options for improving the processing speed by:
 
-* Pausing the automatic calculation of formulas.
-* Using Ahead-Of-Time (AOT) compilation.
-* Running on the server side.
-* Specifying “lazy loading of assembly."
+- Pausing the automatic calculation of formulas.
+- Using Ahead-Of-Time (AOT) compilation.
+- Running on the server side.
+- Specifying “lazy loading of assembly."

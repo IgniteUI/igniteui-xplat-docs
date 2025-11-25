@@ -118,10 +118,10 @@ To load the content of the panes, the Dock Manager uses [slots](https://develope
 ```
 
 The Dock Manager defines several pane types:
-* `ContentPane`
-* `SplitPane`
-* `TabGroupPane`
-* `DocumentHost`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`
+- `DocumentHost`
 
 Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane.
 
@@ -130,13 +130,13 @@ Each type of pane has a `Size` property. Depending on the parent orientation the
  <!-- end: WebComponents -->
 
 The end-user can perform the following actions to customize the layout at runtime:
-* Pin/unpin a pane
-* Resize a pane
-* Close a pane
-* Drag a pane to make it float
-* Move a floating pane
-* Dock a floating pane
-* Maximize a pane
+- Pin/unpin a pane
+- Resize a pane
+- Close a pane
+- Drag a pane to make it float
+- Move a floating pane
+- Dock a floating pane
+- Maximize a pane
 
 All of these are reflected in the `Layout` property of the Dock Manager.
 
@@ -204,6 +204,7 @@ const contentPane = {
     isPinned: false
 }
 ```
+
 ```tsx
 const contentPane = {
     type: IgrDockManagerPaneType.contentPane,
@@ -478,25 +479,25 @@ When you start dragging a floating pane, different docking indicators will appea
 
 In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="dockmanager-root-docking" />
 
 #### Pane Docking
 
 Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="dockmanager-pane-docking" />
 
 #### Document Host Docking
 
 If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="dockmanager-document-host-docking" />
 
 #### Splitter Docking
 
 While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking"/>
 
 ### Update Layout
 
@@ -606,19 +607,19 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
 ```
@@ -633,19 +634,19 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </IgrDockManager>
 ```
@@ -776,22 +777,22 @@ The shortcuts are as follows:
 - <kbd>SHIFT</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> Focuses next tab in document host
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> Focuses previous tab in document host
- - <kbd>ALT</kbd> + <kbd>F6</kbd> Focuses next content pane
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> Focuses previous content pane
+- <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> Focuses next tab in document host
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> Focuses previous tab in document host
+- <kbd>ALT</kbd> + <kbd>F6</kbd> Focuses next content pane
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
 Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  Starts from the first document forward
- - <kbd>ALT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>F8</kbd> Starts from the first pane forward
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last document backwards
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
+- <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  Starts from the first document forward
+- <kbd>ALT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>F8</kbd> Starts from the first pane forward
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last document backwards
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
 
 ### Other
- - <kbd>ALT</kbd> + <kbd>F3</kbd> Closes the active pane
+- <kbd>ALT</kbd> + <kbd>F3</kbd> Closes the active pane
 
 Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
@@ -917,9 +918,9 @@ The Dock Manager exposes `ResourceStrings` property which allows you to modify t
 
 ## API References
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
- - `SplitPane`
- - `TabGroupPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`

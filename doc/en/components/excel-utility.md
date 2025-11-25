@@ -332,6 +332,6 @@ export class ExcelUtility {
 
 ## API References
 
- - `WorkbookFormat`
- - `WorkbookSaveOptions`
- - `Workbook`
+- `WorkbookFormat`
+- `WorkbookSaveOptions`
+- `Workbook`

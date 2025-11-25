@@ -53,5 +53,5 @@ _language: ja
 
 ## API リファレンス
 
- - `ActivationMode`
- - `Cell`
+- `ActivationMode`
+- `Cell`

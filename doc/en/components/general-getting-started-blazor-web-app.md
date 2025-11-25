@@ -13,17 +13,17 @@ The steps below describe how to create a new Blazor Web App project. If you want
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Web App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-web-app.jpg" />
+<img src="../images/general/new-blazor-project-web-app.jpg" alt="new-blazor-project-web-app" />
 
 Provide a project name and location, and click **Next**
 
-<img src="../images/general/new-blazor-project-configuring-web-app.jpg" />
+<img src="../images/general/new-blazor-project-configuring-web-app.jpg" alt="new-blazor-project-configuring-web-app" />
 
 In the next step, keep note of the optional Interactivity location setup, as it defaults to per-page, within the Client project. eg. @rendermode InteractiveAuto. The other option, Global, moves the Interactivity render mode setup to App.razor, in one location, within the shared Blazor project. eg. <Routes @rendermode="InteractiveAuto"/>
 
 Specify additional project options, and click **Create**
 
-<img src="../images/general/new-blazor-project-web-app-info.jpg" />
+<img src="../images/general/new-blazor-project-web-app-info.jpg" alt="new-blazor-project-web-app-info" />
 
 ## Install Ignite UI for Blazor
 
@@ -121,4 +121,4 @@ Add an Ignite UI for Blazor component to your razor page (Please note that Ignit
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />

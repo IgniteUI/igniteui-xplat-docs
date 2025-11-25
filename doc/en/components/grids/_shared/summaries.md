@@ -25,20 +25,20 @@ The {ProductName} Summaries feature in {Platform} {ComponentTitle} functions on 
 
 
 For `string` and `boolean` `DataType`, the following function is available:
- - Count
+- Count
 
 For `number`, `currency` and `percent` data types, the following functions are available:
 
- - Count
- - Min
- - Max
- - Average
- - Sum
+- Count
+- Min
+- Max
+- Average
+- Sum
 
 For `date` data type, the following functions are available:
- - Count
- - Earliest
- - Latest
+- Count
+- Earliest
+- Latest
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
@@ -235,6 +235,7 @@ The other way to enable/disable summaries for a specific column or a list of col
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -331,6 +332,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -427,6 +429,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -493,7 +496,7 @@ const disableSummary = () => {
 <!-- Angular, WebComponents, Blazor -->
 ## Custom {ComponentTitle} Summaries
 
-If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. 
+If these functions do not fulfill your requirements you can provide a custom summary for the specific columns.
 
 
 <!-- WebComponents -->
@@ -671,6 +674,7 @@ And now let's add our custom summary to the column `UnitsInStock`. We will achie
     </igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -688,7 +692,7 @@ export class GridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="grid"
         @ref="grid"
@@ -730,6 +734,7 @@ And now let's add our custom summary to the column `GrammyAwards`. We will achie
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number" has-summary="true" id="grammyAwards"> </igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -747,7 +752,7 @@ export class HierarchicalGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="hierarchicalGrid"
         @ref="hierarchicalGrid"
@@ -787,6 +792,7 @@ And now let's add our custom summary to the column `Title`. We will achieve that
     <igc-column field="Title" data-type="string" has-summary="true" id="column1"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -804,7 +810,7 @@ export class TreeGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="treeGrid"
         @ref="treeGrid"
@@ -960,6 +966,7 @@ class PtoSummary {
 <igc-column id="column" has-summary="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
@@ -1091,20 +1098,20 @@ The following examples illustrate how to use the `DisabledSummaries` property to
 <!-- Blazor -->
 ```razor
 <!-- Disable default summaries -->
-<IgbColumn 
-    Field="UnitPrice" 
-    Header="Unit Price" 
+<IgbColumn
+    Field="UnitPrice"
+    Header="Unit Price"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
+    HasSummary="true"
     DisabledSummaries="['count', 'sum', 'average']" />
 
 <!-- Disable custom summaries -->
-<IgbColumn 
-    Field="UnitsInStock" 
-    Header="Units In Stock" 
+<IgbColumn
+    Field="UnitsInStock"
+    Header="Units In Stock"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
-    Summaries="discontinuedSummary" 
+    HasSummary="true"
+    Summaries="discontinuedSummary"
     DisabledSummaries="['discontinued', 'totalDiscontinued']" />
 ```
 <!-- end: Blazor -->
@@ -1166,6 +1173,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```html
 <igc-column id="column"></igx-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
@@ -1195,7 +1203,7 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
     }
     return result;
   }
-  
+
 <IgrColumn hasSummary={true} summaryFormatter={summaryFormatter}></IgrColumn>
 ```
 
@@ -1211,14 +1219,14 @@ When you have grouped by columns, the `{ComponentName}` allows you to change the
 
 The available values of the `SummaryCalculationMode` property are:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+- `RootLevelOnly` - Summaries are calculated only for the root level.
+- `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+- `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
 
- - `Top` - The summary row appears before the group by row children.
- - `Bottom` - The summary row appears after the group by row children. This is the default value.
+- `Top` - The summary row appears before the group by row children.
+- `Bottom` - The summary row appears after the group by row children. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
 
@@ -1242,14 +1250,14 @@ The `{ComponentName}` supports separate summaries for the root nodes and for eac
 
 The available values of the `SummaryCalculationMode` property are:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level nodes.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+- `RootLevelOnly` - Summaries are calculated only for the root level nodes.
+- `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+- `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
 
- - `Top` - The summary row appears before the list of child rows.
- - `Bottom` - The summary row appears after the list of child rows. This is the default value.
+- `Top` - The summary row appears before the list of child rows.
+- `Bottom` - The summary row appears after the list of child rows. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 
@@ -1375,6 +1383,7 @@ $custom-theme: grid-summary-theme(
     $pinned-border-color: #e41c77
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss
@@ -1469,30 +1478,30 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 
-* `SummaryOperand`
-* `NumberSummaryOperand`
-* `DateSummaryOperand`
-* `ColumnGroup`
-* `Column`
+- `SummaryOperand`
+- `NumberSummaryOperand`
+- `DateSummaryOperand`
+- `ColumnGroup`
+- `Column`
 
 ## Additional Resources
 
 <!-- Angular -->
 
 
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 <!-- ComponentStart: Grid -->
 
-* [Selection-based Aggregates](selection-based-aggregates.md)
+- [Selection-based Aggregates](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
 
@@ -1501,20 +1510,20 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Column Data Types](column-types.md#default-template)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

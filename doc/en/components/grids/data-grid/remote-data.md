@@ -109,4 +109,4 @@ grid1.dataSource = vds;
 
 ## API References
 
- - `Grid`
+- `Grid`

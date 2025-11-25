@@ -629,13 +629,13 @@ export class PasteHandler {
 <!-- end:Angular -->
 
 ## API リファレンス
-* `Grid`
+- `Grid`
 
 ## その他のリソース
 
-* [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングやソートなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
+- [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングやソートなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

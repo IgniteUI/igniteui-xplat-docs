@@ -262,5 +262,5 @@ export class ShapeComparison {
 
 ## API References
 
- - `GeographicShapeSeries`
- - `XamGeographicMap`
+- `GeographicShapeSeries`
+- `XamGeographicMap`

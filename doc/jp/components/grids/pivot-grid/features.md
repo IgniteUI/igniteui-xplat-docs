@@ -244,12 +244,12 @@ const igrPivotDimension2: IgrPivotDimension = {
 
 ## API リファレンス
 
-* `PivotGrid`
-* `PivotDataSelector`
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

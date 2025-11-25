@@ -37,7 +37,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSwitchComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -262,11 +262,11 @@ igc-switch::part(control checked) {
 
 ## API References
 
- - `LabelPosition`
- - `Switch`
- - [`Styling & Themes`](../themes/overview.md)
+- `LabelPosition`
+- `Switch`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

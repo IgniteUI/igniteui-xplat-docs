@@ -27,7 +27,7 @@ _language: ja
 
 ### 依存関係
 
-{Platform} Grid ライブラリ、特に {Platform} Tree Grid の使用を開始することは、階層情報を明確かつインタラクティブに表示する強力なデータ駆動型アプリケーションを構築する最初のステップです。{Platform} Tree Grid を使用して、親子構造のデータを慣れ親しんだ表形式で表示でき、行の展開、ソート、フィルタリング、編集、大規模データセットに対応した仮想化などの機能を備えています。 
+{Platform} Grid ライブラリ、特に {Platform} Tree Grid の使用を開始することは、階層情報を明確かつインタラクティブに表示する強力なデータ駆動型アプリケーションを構築する最初のステップです。{Platform} Tree Grid を使用して、親子構造のデータを慣れ親しんだ表形式で表示でき、行の展開、ソート、フィルタリング、編集、大規模データセットに対応した仮想化などの機能を備えています。
 
 {Platform} ツリー グリッドを初期化するには、<!-- Blazor -->{PackageCommon} パッケージ<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` パッケージ<!-- end: WebComponents --><!-- React -->`{PackageCommon}` と `{PackageGrids}` パッケージ<!-- end: React -->をインストールする必要があります。
 
@@ -82,6 +82,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -443,14 +444,14 @@ const data = [
 
 ## API リファレンス
 
-* `TreeGrid`
-* `Column`
-* `GridToolbar`
-* `TreeGridRecord`
+- `TreeGrid`
+- `Column`
+- `GridToolbar`
+- `TreeGridRecord`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -67,7 +67,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The `Avatar` is capable of displaying images, initials, or any other content, including icons. Declaring an `Avatar` is as simple as:
 
@@ -176,7 +176,7 @@ The avatar supports three shapes - `circle`, `rounded`, and `square`. The defaul
 
 ### Size
 
-Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size: 
+Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size:
 
 ```css
 igc-avatar {
@@ -215,10 +215,10 @@ igc-avatar::part(base) {
 
 ## API References
 
- - `Avatar`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -17,8 +17,8 @@ For detailed explanation of the Ignite UI license agreement and terms of use, [c
 
 Infragistics offers free, non-commercial, not-for-resale (NFR) licenses for the following:
 
-  - If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.
-  - If you are a primary, secondary or university student, or an academic institution, or a professor.
+- If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.
+- If you are a primary, secondary or university student, or an academic institution, or a professor.
 
 If you qualify for a free, non-commercial, NFR license or if you have any license questions, please [contact us](https://www.infragistics.com/about-us/contact-us).
 
@@ -33,7 +33,7 @@ Infragistics {ProductName} is available as npm packages and you can add them as 
 
 ### How to setup your environment to use the private npm feed
 
-#### First you need to setup the private registry and to associate this registry with the Infragistics scope.
+#### First you need to setup the private registry and to associate this registry with the Infragistics scope
 
 This will allow you to seamlessly use a mix of packages from the public npm registry and the Infragistics private registry. You will be asked to provide the username and the password that you use for logging into your Infragistics account. You should also provide the email that is registered to your Infragistics profile.
 
@@ -69,7 +69,7 @@ You will be asked to provide the username and the password that you use for logg
 
 > `npm` is disallowing the use of the `"@"` symbol inside your username as it is considered as being "not safe for the net". Because your username is actually the email that you use for your Infragistics account it always contains the symbol `"@"`. That's why you must escape this limitation by replacing the `"@"` symbol with `"!!"` (two exclamation marks). For example, if your username is `"username@example.com"` when asked about your username you should provide the following input: `"username!!example.com"`.
 
-#### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project:
+#### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project
 
 ```cmd
 npm uninstall igniteui-dockmanager
@@ -153,7 +153,7 @@ You can also authenticate to our private npm feed using an access token, which y
 
 The following information is on how to setup authentication to our private npm registry using an access token in local configuration, Azure Pipelines build procedures and Travis CI build process:
 
-* Generate a token from https://account.infragistics.com/access-tokens
+- Generate a token from https://account.infragistics.com/access-tokens
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 600px"
   src="../images/general/generate-token.jpg"
@@ -163,7 +163,7 @@ The following information is on how to setup authentication to our private npm r
 
 > Each token is with Base64 encoding.
 
-* Add the following into your [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) file
+- Add the following into your [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) file
 
 ```cmd
 @infragistics:registry=https://packages.infragistics.com/npm/js-licensed/
@@ -208,8 +208,8 @@ before_install:
 
 The best way to define an environment variable depends on what type of information it will contain. So [you have two options](https://docs.travis-ci.com/user/environment-variables/):
 
-* encrypt it and add it [to your .travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
-* add it to your [Repository Settings](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)
+- encrypt it and add it [to your .travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
+- add it to your [Repository Settings](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)
 
 ### GitHub Actions Configuration
 
@@ -220,4 +220,4 @@ Add the following scripts before the **npm i(ci)**  step to your [CI workflow co
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-Define [*secrets* (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token.
+Define [secrets (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token.

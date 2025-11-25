@@ -8,7 +8,7 @@ _language: ja
 ---
 
 # {Platform} Carousel (カルーセル) の概要
-{ProductName} カルーセルは、レスポンシブで軽量なコンポーネントであり、テキスト スライド、リンク、およびその他の html 要素を含む画像のコレクションを前後に移動するユーザーに、スライドショーのような Web エクスペリエンスを作成する最も柔軟な方法を提供します。 
+{ProductName} カルーセルは、レスポンシブで軽量なコンポーネントであり、テキスト スライド、リンク、およびその他の html 要素を含む画像のコレクションを前後に移動するユーザーに、スライドショーのような Web エクスペリエンスを作成する最も柔軟な方法を提供します。
 
 {Platform} カルーセル コンポーネントを使用すると、アニメーション、スライド トランジション、およびカスタマイズを使用できるため、インターフェイスを簡単に微調整して {Platform} カスタム カルーセルを構築できます。
 
@@ -104,13 +104,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 ```razor
 <IgbCarousel>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" alt="ignite-ui-angular-indigo-design" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/slider-image-chart.png" />
+        <img src="assets/images/carousel/slider-image-chart.png" alt="slider-image-chart" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" />
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" alt="ignite-ui-angular-charts" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -256,10 +256,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
     </igc-carousel-indicator>
 
     <igc-carousel-slide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </igc-carousel-slide>
     <igc-carousel-slide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </igc-carousel-slide>
 </igc-carousel>
 ```
@@ -301,10 +301,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/yosemite.jpg"/>
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -492,13 +492,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ### キーボード ナビゲーション
 
-* ナビゲーション ボタン
-    * <kbd>SPACE</kbd>/<kbd>ENTER</kbd> キー - 次のスライド/前のスライドに移動します。
-* インジケーター
-    * <kbd>🡐</kbd> キー - 前のスライド (右から左モードでは次) に移動します。
-    * <kbd>🡒</kbd> キー - 次のスライド  (右から左モードでは前へ) に移動します。
-    * <kbd>HOME</kbd> キー - 最初のスライド (右から左モードでは最後) に移動します。
-    * <kbd>End</kbd> キー - 最後のスライド (右から左モードでは最初) に移動します。
+- ナビゲーション ボタン
+  - <kbd>SPACE</kbd>/<kbd>ENTER</kbd> キー - 次のスライド/前のスライドに移動します。
+- インジケーター
+  - <kbd>🡐</kbd> キー - 前のスライド (右から左モードでは次) に移動します。
+  - <kbd>🡒</kbd> キー - 次のスライド  (右から左モードでは前へ) に移動します。
+  - <kbd>HOME</kbd> キー - 最初のスライド (右から左モードでは最後) に移動します。
+  - <kbd>End</kbd> キー - 最後のスライド (右から左モードでは最初) に移動します。
 
 ### 自動的なトランジション
 
@@ -532,11 +532,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 
 これを実現するには、カルーセルを以下のように構成する必要があります。
- - `DisablePauseOnInteraction` プロパティを有効にします。
- - `HideNavigation` プロパティを有効にします。
- - `Vertical` プロパティを有効にします。
- - トランジション `Interval` を追加します。
- - 各スライドにカスタム `CarouselIndicator` を追加します。
+- `DisablePauseOnInteraction` プロパティを有効にします。
+- `HideNavigation` プロパティを有効にします。
+- `Vertical` プロパティを有効にします。
+- トランジション `Interval` を追加します。
+- 各スライドにカスタム `CarouselIndicator` を追加します。
 
 カルーセル テンプレートは以下のようになります。
 
@@ -568,7 +568,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
         <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
         <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
     </igc-carousel-indicator>
-        
+
     <igc-carousel-slide>
         <img src="assets/images/carousel/WonderfulCoast.png"/>
     </igc-carousel-slide>
@@ -674,19 +674,19 @@ const images = [
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/WonderfulCoast.png" />
+        <img src="assets/images/carousel/WonderfulCoast.png" alt="WonderfulCoast" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/CulturalDip.png" />
+        <img src="assets/images/carousel/CulturalDip.png" alt="CulturalDip" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/GoldenBeaches.png" />
+        <img src="assets/images/carousel/GoldenBeaches.png" alt="GoldenBeaches" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/IslandOfHistory.png" />
+        <img src="assets/images/carousel/IslandOfHistory.png" alt="IslandOfHistory" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/AmazingBridge.png" />
+        <img src="assets/images/carousel/AmazingBridge.png" alt="AmazingBridge" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -706,21 +706,21 @@ const images = [
 
 ### ARIA のサポート
 #### Carousel コンポーネント
-* **属性**
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「carousel」 に設定します。
-    * [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - スクリーン リーダーがライブ リージョンの更新を処理する優先度を設定するために使用されます。可能な設定は **off** おとび **polite** です。デフォルト設定は **polite** であり、スライド セットのコンテナーとして機能する要素に設定されています。`Interval` オプションが設定され、カルーセルが再生状態の場合、**aria-live** 属性は **off** に設定されます。
-    * [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (ナビゲーション ボタン) - 「前のスライド」/「次のスライド」。
+- **属性**
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「carousel」 に設定します。
+  - [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - スクリーン リーダーがライブ リージョンの更新を処理する優先度を設定するために使用されます。可能な設定は **off** おとび **polite** です。デフォルト設定は **polite** であり、スライド セットのコンテナーとして機能する要素に設定されています。`Interval` オプションが設定され、カルーセルが再生状態の場合、**aria-live** 属性は **off** に設定されます。
+  - [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (ナビゲーション ボタン) - 「前のスライド」/「次のスライド」。
 
 #### Slide コンポーネント
-* **属性**
-    * id - 「igc-carousel-slide-${incremented_number}」 のパターンに従います。
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「slide」 に設定します。
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「${index + 1} of ${total}」 のパターンに従います。
+- **属性**
+  - id - 「igc-carousel-slide-${incremented_number}」 のパターンに従います。
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「slide」 に設定します。
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「${index + 1} of ${total}」 のパターンに従います。
 
 #### Indicator コンポーネント
-* **属性**
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「Slide ${index + 1}」 のパターンに従います。
-    * [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) - アクティブなスライドに基づいて **true** または **false** に設定します。
+- **属性**
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「Slide ${index + 1}」 のパターンに従います。
+  - [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) - アクティブなスライドに基づいて **true** または **false** に設定します。
 
 
 ## API リファレンス
@@ -734,5 +734,5 @@ const images = [
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

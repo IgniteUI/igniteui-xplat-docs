@@ -251,14 +251,14 @@ this.spreadsheet.zoomLevel = 200;
 
 ## API リファレンス
 
- - `ActiveCell`
- - `ActiveSelection`
- - `CellRanges`
- - `ExtendSelection`:
- - `SelectionMode`
- - `SpreadsheetCellRange`
- - `SpreadsheetSelection`
- - `Spreadsheet`
- - `WindowOptions`
- - `Workbook`
- - `ZoomLevel`
+- `ActiveCell`
+- `ActiveSelection`
+- `CellRanges`
+- `ExtendSelection`:
+- `SelectionMode`
+- `SpreadsheetCellRange`
+- `SpreadsheetSelection`
+- `Spreadsheet`
+- `WindowOptions`
+- `Workbook`
+- `ZoomLevel`

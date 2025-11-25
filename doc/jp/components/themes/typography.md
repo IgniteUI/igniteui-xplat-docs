@@ -61,4 +61,4 @@ _language: ja
 
 ## API リファレンス
 
- - `Typography`
+- `Typography`

@@ -162,39 +162,39 @@ uniqueFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(blue);
 
 ## API References
 
- - `AddAverageCondition`
- - `AddBlanksCondition`
- - `AddColorScaleCondition`
- - `AddDataBarCondition`
- - `AddDateTimeCondition`
- - `AddDuplicateCondition`
- - `AddErrorsCondition`
- - `AddFormulaCondition`
- - `AddIconSetCondition`
- - `AddNoBlanksCondition`
- - `AddNoErrorsCondition`
- - `AddOperatorCondition`
- - `AddRankCondition`
- - `AddTextCondition`
- - `AddUniqueCondition`
- - `CellFormat`
- - `ColorScaleConditionalFormat`
- - `ColorScaleConditionalFormat`:
- - `ConditionalFormats`
- - `DataBarConditionalFormat`
- - `DataBarConditionalFormat`:
- - `DateTimeConditionalFormat`:
- - `DuplicateConditionalFormat`:
- - `ErrorsConditionalFormat`:
- - `FormatConditionTextOperator`
- - `FormatString`
- - `FormulaConditionalFormat`:
- - `IconSetConditionalFormat`
- - `IconSetConditionalFormat`:
- - `NoBlanksConditionalFormat`:
- - `NoErrorsConditionalFormat`:
- - `OperatorConditionalFormat`:
- - `RankConditionalFormat`:
- - `Spreadsheet`
- - `TextOperatorConditionalFormat`:
- - `UniqueConditionalFormat`:
+- `AddAverageCondition`
+- `AddBlanksCondition`
+- `AddColorScaleCondition`
+- `AddDataBarCondition`
+- `AddDateTimeCondition`
+- `AddDuplicateCondition`
+- `AddErrorsCondition`
+- `AddFormulaCondition`
+- `AddIconSetCondition`
+- `AddNoBlanksCondition`
+- `AddNoErrorsCondition`
+- `AddOperatorCondition`
+- `AddRankCondition`
+- `AddTextCondition`
+- `AddUniqueCondition`
+- `CellFormat`
+- `ColorScaleConditionalFormat`
+- `ColorScaleConditionalFormat`:
+- `ConditionalFormats`
+- `DataBarConditionalFormat`
+- `DataBarConditionalFormat`:
+- `DateTimeConditionalFormat`:
+- `DuplicateConditionalFormat`:
+- `ErrorsConditionalFormat`:
+- `FormatConditionTextOperator`
+- `FormatString`
+- `FormulaConditionalFormat`:
+- `IconSetConditionalFormat`
+- `IconSetConditionalFormat`:
+- `NoBlanksConditionalFormat`:
+- `NoErrorsConditionalFormat`:
+- `OperatorConditionalFormat`:
+- `RankConditionalFormat`:
+- `Spreadsheet`
+- `TextOperatorConditionalFormat`:
+- `UniqueConditionalFormat`:

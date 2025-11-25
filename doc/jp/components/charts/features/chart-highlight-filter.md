@@ -70,13 +70,13 @@ HighlightedHighMemberPath, HighlightedLowMemberPath, HighlightedOpenMemberPath, 
 以下は上記のセクションで説明した API メンバーのリストです。
 
 
-| `CategoryChart` プロパティ                       | `XamDataChart` プロパティ | 
+| `CategoryChart` プロパティ                       | `XamDataChart` プロパティ |
 | ----------------------------------------------|---------------------------|
 | `CategoryChart.HighlightedItemsSource`        | `Series.HighlightedItemsSource`  |
-| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  | 
-| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     | 
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
-| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   | 
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
+| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  |
+| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     |
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
+| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   |
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
 | `CategoryChart.InitialHighlightFilter`        |  |
 | `CategoryChart.InitialGroups`                 |  |

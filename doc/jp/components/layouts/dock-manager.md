@@ -85,21 +85,21 @@ this.dockManager.layout = {
 ```
 
 ドック マネージャーは複数の pane types を定義します。
-* `ContentPane`
-* `SplitPane`
-* `TabGroupPane`
-* `DocumentHost`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`
+- `DocumentHost`
 
 各タイプのペインには `Size` プロパティがあります。親の方向に応じて、サイズはペインの幅または高さに影響します。ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。2 つの兄弟ペインがあり、最初のペインのサイズが 200 に設定され、2 番目のペインのサイズが 100 に設定されている場合、最初のペインは 2 番目のペインの 2 倍のサイズになり、これら 2 つのペインが使用可能なスペースをすべて埋めてしまいます。親の絶対サイズが 900px の場合、それぞれ 600px と 300px にサイズ設定されます。特定のペインのサイズをピクセル単位で指定する場合は、使用可能なすべてのスペースの相対的な配分に依存するのではなく、親の分割ペインの `useFixedSize` を設定する必要があります。詳細については、[分割ペインの固定サイズ モード](dock-manager-customization.md#分割ペインの固定サイズ-モード) トピックを参照してください。
 
 エンドユーザーは、ランタイムにレイアウトをカスタマイズするために以下のアクションを実行できます。
-* ペインをピン設定 / ピン解除します。
-* ペインをサイズ変更します。
-* ペインを閉じます。
-* ペインをフロートさせるためにドラッグします。
-* フローティング ペインを移動します。
-* フローティング ペインをドックします。
-* ペインを最大化します。
+- ペインをピン設定 / ピン解除します。
+- ペインをサイズ変更します。
+- ペインを閉じます。
+- ペインをフロートさせるためにドラッグします。
+- フローティング ペインを移動します。
+- フローティング ペインをドックします。
+- ペインを最大化します。
 
 これらはすべてドック マネージャーの `Layout` プロパティに反映されます。
 
@@ -304,25 +304,25 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 このタイプのドッキングでは、ペインをドラッグしているときに、ドックマネージャーの四隅付近に 4 つの矢印ドッキングインジケーターが表示されます。ペインをドロップすると、Dock Manager の `RootPane` の直接の子要素になります。視覚的には、新しくドッキングされたペインはそれぞれの端にスナップされ、ドック マネージャーの幅または高さの最大半分を占め、他のすべてのコンテンツは残りの半分に移動します。
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="dockmanager-root-docking" />
 
 #### ペイン ドッキング
 
 フローティング ペインをコンテンツ ペインまたはタブ グループ ペインの上にドラッグすると、ドッキング インジケーターがペインの中央に表示されます。ペインをドロップすると、ターゲット ペインの任意の側にスナップされるか、ターゲット ペインとグループ化されてタブ付きレイアウトが作成されます。初期レイアウトとドッキング位置の組み合わせにより、ドッキング操作により、ドラッグされたペインとターゲットペインの両方の新しい親となる分割されたペインまたはタブ グループ ペインが動的に作成されることがあります。
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="dockmanager-pane-docking" />
 
 #### ドキュメント ホスト ドッキング
 
 ドラッグしたペインがドキュメント ホストの上にある場合は、ターゲット ペインまたはドキュメント ホスト全体に対するドッキングを可能にする追加のドッキング インジケーターが表示されます。
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="dockmanager-document-host-docking" />
 
 #### スプリッター ドッキング
 
 フローティング ペインをドラッグしているときに、マウス カーソルがスプリッターに近づくと、その上にドッキング インジケーターが表示されます。ドラッグしたペインがドッキングされている場合、そのペインは対象のスプリッターを持つ分割ペインの子要素になります。スプリッター ドッキングは、Dock Manager の `allowSplitterDock` プロパティを **false** に設定することで無効にできます。
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking" />
 
 ### レイアウトの編集
 
@@ -409,19 +409,19 @@ Dock Manager コンポーネントは、スロットとパーツを使用して�
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
 ```
@@ -552,22 +552,22 @@ igc-dockmanager::part(pane-header-maximize-button) {
 - <kbd>SHIFT</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
- - <kbd>ALT</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
+- <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
+- <kbd>ALT</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
 ### ペイン ナビゲーター
 
 次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
 
- - <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
- - <kbd>ALT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
- - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
- - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
+- <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
+- <kbd>ALT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
 
 ### その他
- - <kbd>ALT</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
+- <kbd>ALT</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
@@ -675,9 +675,9 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 ## API リファレンス
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
- - `SplitPane`
- - `TabGroupPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`

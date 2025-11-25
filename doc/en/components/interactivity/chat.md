@@ -1,8 +1,8 @@
 ---
 title: {Platform} Chat | {ProductName}
-_description: With {ProductName} Chat, you can build interactive messaging experiences with support for messages, attachments, suggestions, typing indicators, and custom templates.  
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls  
-mentionedTypes: ["Chat"]  
+_description: With {ProductName} Chat, you can build interactive messaging experiences with support for messages, attachments, suggestions, typing indicators, and custom templates.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls
+mentionedTypes: ["Chat"]
 _license: MIT
 ---
 
@@ -45,6 +45,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 The CSS file includes one of our default themes. You can replace it with a different theme or create a custom one if you want the `Chat` to match your application’s branding.
 
 ## Usage
+
 The simplest way to use the `Chat` is to declare it as follows:
 <!-- WebComponents -->
 ```ts
@@ -53,6 +54,7 @@ const options: IgcChatOptions = {
   headerText: 'Support Chat',
 };
 ```
+
 ```html
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
@@ -176,6 +178,7 @@ const options: IgcChatOptions = {
   suggestionsPosition: "below-input"
 };
 ```
+
 ```html
 <igc-chat
   .options=${options}>
@@ -222,12 +225,15 @@ The `Chat` component addresses this need with a renderer system. A renderer is s
 
 #### ChatTemplateRenderer
 Every renderer follows the same function signature:
+
 ```ts
 export type ChatTemplateRenderer<T> = (ctx: T) => unknown;
 ```
 
 The ctx parameter provides different contextual data depending on what is being rendered.
+
 #### Renderer Contexts
+
 | Context Type                | Provided Data                                                                                                          |
 | --------------------------- | -----------------------------------------------------------------------------------------------------------------------|
 | `ChatRenderContext`       | `instance` (the chat component instance).                                                |
@@ -236,6 +242,7 @@ The ctx parameter provides different contextual data depending on what is being 
 | `ChatAttachmentRenderContext` | Inherits `ChatMessageRenderContext` and adds `attachment` (the `ChatMessageAttachment` being rendered).                      |
 
 #### Available Renderers
+
 The following parts of the Chat can be customized:
 - Message-level: message, messageHeader, messageContent, messageAttachments, messageActions
 - Attachment-level: attachment, attachmentHeader, attachmentContent
@@ -298,7 +305,7 @@ const options = {
           <button onClick={() => alert('Voice input!')}>🎤</button>
         </>
       );
-    } 
+    }
   }
 };
 ```
@@ -366,9 +373,11 @@ The Chat component includes built-in support for Markdown content through the `c
 
 > [!Note]
 > To use the Markdown renderer, you need to install the following peer dependencies in your project:
+
 ```cmd
 npm install marked marked-shiki shiki dompurify
 ```
+
 By default, messages are rendered as plain text. If you want to enable Markdown support, you can override the messageContent renderer and use the Markdown renderer as shown below:
 <!-- WebComponents -->
 ```ts
@@ -406,19 +415,23 @@ In this example:
 #### Syntax Highlighting
 
 The Markdown renderer also supports syntax highlighting for code blocks using [Shiki](https://shiki.matsu.io/). By default, it includes highlighting for JavaScript, TypeScript, HTML, and CSS with the github-light theme. You can customize this behavior through MarkdownRendererOptions:
+
 ```ts
 const markdownRenderer = await createMarkdownRenderer({
   theme: { light: 'min-light' },
   languages: ['javascript', 'python']
 });
 ```
+
 This will enable highlighted code blocks for JavaScript, Python, and Go, styled with the GitHub dark theme.
+
 #### Configuration Options
+
 | Option          | Description                                                                     |
 | --------------- | ------------------------------------------------------------------------------- |
 | `noHighlighter` | If `true`, disables syntax highlighting entirely.                               |
 | `languages`     | List of programming languages to support in highlighted code blocks.            |
-| `theme`         | An object specifying Shiki themes to apply. Supports separate values for `light` and `dark` mode (e.g., `{ light: 'github-light', dark: 'github-dark' }`). |
+| `theme`         | An object specifying **Shiki** themes to apply. Supports separate values for `light` and `dark` mode (e.g., `{ light: 'github-light', dark: 'github-dark' }`). |
 | `sanitizer`     | A custom function to sanitize the final HTML. Defaults to `DOMPurify.sanitize`. |
 
 ### Events
@@ -582,5 +595,5 @@ This allows you to style the `Chat` to match your brand without replacing its fu
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
