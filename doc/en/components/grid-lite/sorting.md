@@ -142,7 +142,7 @@ The following sample shows the grid `sortConfiguration` combinations and how the
 The following sample shows the grid `SortConfiguration` combinations and how they reflect in the grid.
 <!-- end: Blazor -->
 
-`sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
+`sample="/{GridLiteSample}/sorting-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
 
 ## Sort Model
 
@@ -342,7 +342,7 @@ After the grid applies the new sorting state, a `sorted` event is emitted. It co
 grid.addEventListener('sorting', (event: CustomEvent<SortExpression<T>>) => { ... });
 grid.addEventListener('sorted', (event: CustomEvent<SortExpression<T>>) => { ... });
 ```
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 When a sorting operation is performed through the UI, the component raises `Sorting` and `Sorted` events. The `Sorting` event is cancellable and if cancelled will stop the current sort operation.
@@ -369,6 +369,7 @@ After the grid applies the new sorting state, a `Sorted` event is raised. It con
 In the following sample, when you try to sort the **Name** and **Rating** columns, the operation will be cancelled. Watch the event log below to see it in action.
 
 `sample="/{GridLiteSample}/sort-config-events", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Events"`
+
 <!-- React, WebComponents -->
 ## Remote sort operations
 
