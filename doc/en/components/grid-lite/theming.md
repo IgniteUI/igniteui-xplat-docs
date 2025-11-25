@@ -34,52 +34,31 @@ As a rule of thumb, you can always copy the `themes` folder to your assets direc
 
 In the sample below, you can preview all the default base themes.
 
-`sample="/{GridLiteSample}/styling-config-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
+`sample="/{GridLiteSample}/styling-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
 
 ## Creating Custom Themes
 
-Aside from the default themes shipped with the {GridLiteTitle} package, you can also create and modify your own to match your project identity and branding.
+Aside from the default themes shipped with the {GridLiteTitle} package, you can further customize the look and feel of your data grid by using an alternate set of CSS custom properties.
 
----
+Refer to the [theming topic](../grids/theming-grid.md) for more details. 
 
-Refer to the <a href="https://github.com/IgniteUI/igniteui-theming#readme" target="_blank">Ignite UI theming package</a> wiki
-for documentation and usage of both the SCSS and CSS interfaces.
-
----
-
-```scss
-@use 'node_modules/igniteui-theming' as *;
-
-// Our dark theme
-$my_dark_palette: palette(
-  $primary: #dab785,
-  $secondary: #d5896f,
-  $surface: #031d44,
-  $gray: #04395e,
-);
-
-// Our light theme
-$my-light-palette: palette(
-  $primary: #c1292e,
-  $secondary: #f1d302,
-  $surface: #fdfffc,
-  $gray: #235789,
-);
-
-.custom-light {
-  @include palette($my_light_palette);
-  @include typography('"Roboto Condensed", sans-serif', $bootstrap-type-scale);
+```css
+.grid-sample {
+  --header-background: #494949;
+  --header-text-color: #f2c43c;
+  --cell-active-border-color: #f2c43c;
+  --row-hover-background: #707070;
+  --row-hover-text-color: #f2c43c;
 }
+```
 
-.custom-dark {
-  @include palette($my_dark_palette);
-  @include typography('"Merriweather Sans", sans-serif', $bootstrap-type-scale);
-}
+```razor
+ <IgbGridLite class="grid-lite-sample" />
 ```
 
 Here is an example showcasing the custom theming from above.
 
-`sample="/{GridLiteSample}/styling-custom-theme", height="600", alt="{Platform} {GridLiteTitle} Styling Custom Theme"`
+`sample="/{GridLiteSample}/styling-custom", height="600", alt="{Platform} {GridLiteTitle} Styling Custom Theme"`
 
 <!-- TODO ## API References
 
