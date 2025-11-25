@@ -2466,12 +2466,14 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "editors/multi-column-combobox.md",
-    "status": ""
+    "status": "",
+    "premium": true
   },
   {
     "exclude": ["Angular"],
     "name": "XDate Picker",
     "href": "editors/xdate-picker.md",
-    "status": ""
+    "status": "",
+    "premium": true
   }
 ]

@@ -18,8 +18,6 @@ They are ideal for lightweight applications that need essential functionality wi
 
 Our Ignite UI Premium components come with advanced enterprise features and are used for complex applications requiring high-performance and richer functionality. Premium components include:
 
-### Grids with advanced components
-
 - Data Grid, Hierarchical Grid, Tree Grid, Pivot Grid
 - Dock Manager
 - Charting library
@@ -27,6 +25,7 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 - Excel Library
 - Spreadsheet
 - Gauges
+- Toolbar
 
 All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls.
 
