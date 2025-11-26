@@ -29,6 +29,7 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 <!-- end: React, WebComponents -->
 - [Excel Library](../components/excel-library.md)  
 - Gauges - [Bullet Graph](../components/bullet-graph.md), [Linear Gauge](../components/linear-gauge.md) and [Radial Gauge](../components/radial-gauge.md)
+- [Toolbar](../components/menus/toolbar.md)
 
 All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls.
 
