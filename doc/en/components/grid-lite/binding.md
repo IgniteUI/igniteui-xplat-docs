@@ -50,7 +50,7 @@ grid.columns = [...];
     };
 
     // Update the column configuration to represent the new data.
-    this.Columns = new List<IgbColumnConfiguration>
+    this.columns = new List<IgbColumnConfiguration>
     {
         // column definitions
     };
@@ -83,7 +83,7 @@ grid.data = [];
     this.columns = new List<IgbColumnConfiguration>();
 
     // After the new binding the grid will infer the column collection from the bound data.
-    this.Data = new List<T>();
+    this.data = new List<T>();
 }
 ```
 <!-- React, WebComponents -->

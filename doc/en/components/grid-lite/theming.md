@@ -34,7 +34,7 @@ As a rule of thumb, you can always copy the `themes` folder to your assets direc
 
 In the sample below, you can preview all the default base themes.
 
-`sample="/{GridLiteSample}/styling-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
+`sample="/{GridLiteSample}/styling-config-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
 
 ## Creating Custom Themes
 
@@ -58,7 +58,7 @@ Refer to the [theming topic](../grids/theming-grid.md) for more details.
 
 Here is an example showcasing the custom theming from above.
 
-`sample="/{GridLiteSample}/styling-custom", height="600", alt="{Platform} {GridLiteTitle} Styling Custom Theme"`
+`sample="/{GridLiteSample}/styling-custom-theme", height="600", alt="{Platform} {GridLiteTitle} Styling Custom Theme"`
 
 <!-- TODO ## API References
 

@@ -142,7 +142,7 @@ The following sample shows the grid `sortConfiguration` combinations and how the
 The following sample shows the grid `SortConfiguration` combinations and how they reflect in the grid.
 <!-- end: Blazor -->
 
-`sample="/{GridLiteSample}/sorting-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
+`sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
 
 ## Sort Model
 
