@@ -12,6 +12,39 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageCharts} (チャート)
+
+#### <label>PREVIEW</label> ユーザー注釈
+
+{ProductName} では、ユーザー注釈機能により、実行時に `XamDataChart` にスライス注釈、ストリップ注釈、ポイント注釈を追加できるようになりました。これにより、エンドユーザーは、スライス注釈を使用して会社の四半期レポートなどの単一の重要イベントを強調したり、ストリップ注釈を使用して期間を持つイベントを示したりすることで、プロットに詳細を追加できます。ポイント注釈またはこれら 3 つの任意の組み合わせを使用して、プロットされたシリーズ上の個々のポイントを呼び出すこともできます。
+
+これは、`Toolbar` のデフォルトのツールと統合されています。
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> 軸注釈の衝突検出
+
+軸注釈が自動で衝突を検出し、適切に収まるよう切り詰めます。この機能を有効にするには、次のプロパティを設定します:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (地理マップ)
+
+- Azure Map Imagery は RTM になりました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|40136|Excel Library|Excel ワークブック読み込み時に FormulaParseException 例外が発生する。
+|40262|IgrSpreadsheet|警告がある場合に #Circularity! が表示される。Excel との一致を要求 — 値 (例: 0) を表示するように改善。
+|40458|IgrSpreadsheet|Arial フォント使用時、igx-spreadsheet がセル内のテキストを切り捨てる。
+|40490|IgrDatePicker|Autofill による入力は日付ピッカーに反映されない。
+
+## **{PackageVerChanges-25-1-OCT_2}**
+
 ### 新しいコンポーネント
 
 - `IgrChat` コンポーネントを追加しました。
@@ -67,7 +100,9 @@ _language: ja
      - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
      - グループ化処理を最適化しました。
 
+
 ### バグ修正
+
 | バグ修正 | コントロール | 説明 |
 |------------|---------|-------------|
 |[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |リスト コンポーネントおよびテーマ間で重複していた CSS 変数を削除。|
@@ -110,7 +145,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-_重大な変更_
+**重大な変更**
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -302,7 +337,7 @@ _重大な変更_
 
 ### {PackageGrids}
 
-_重大な変更_
+**重大な変更**
 
 - `IgrDataGrid` と `IgrMultiColumnComboBox` は、igniteui-react-data-grids パッケージの一部になりました。
 
@@ -416,8 +451,6 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
-|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |30286 | `IgrDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
 |32906 | `IgrDataChart` | `IgrDataChart` は上部に 2 つの xAxis を表示している。|
 |33605 | `IgrDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
@@ -425,12 +458,14 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 |34776 | `IgrDataChart` | `IgrDataChart` を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |34324 | `IgrGrid` | グリッド テンプレートの条件による列の非表示が機能しない。|
 |34678 | `IgrGrid` | 列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
+|32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
 |34053 | `IgrRadialGauge` | スケール ラベルの位置がずれる。|
 |35496 | `IgrSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
 |36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
 |36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
-|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -497,7 +532,7 @@ DashboardTile <label>PREVIEW</label>
 - `RadioGroup`
   - `Name` および `Value` プロパティを追加しました。
 
-_重大な変更_:
+**重大な変更**:
 
 - 古い **IgrDatePicker** の名前を **IgrXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
@@ -539,7 +574,7 @@ _重大な変更_:
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-_重大な変更_:
+**重大な変更**:
 
 - **すべてのグリッド**
   - `RowIsland`

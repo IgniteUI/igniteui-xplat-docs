@@ -2,6 +2,7 @@
 title: {Platform} スタイル設定およびテーマ | {Platform} パレット | インフラジスティックス
 _description:
 _keywords: {ProductName}, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
+_license: MIT
 mentionedTypes: ["Palettes"]
 _language: ja
 ---
