@@ -36,6 +36,7 @@ import { FormattedString } from "{PackageExcel}";
 <!-- end: Angular, React, WebComponents -->
 
 ## セルと領域を参照
+
 `Worksheet` オブジェクトの `GetCell` または `GetRegion` メソッドを呼び出して `WorksheetCell` オブジェクト または `WorksheetRegion` オブジェクトへアクセスできます。両メソッドはセルを参照する文字列パラメーターを許容します。書式設定を適用する場合または数式とセルのコンテンツで作業する場合にセル参照を取得すると便利です。
 
 以下のコード例では、セルと領域を参照する方法を示します。

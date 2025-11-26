@@ -45,7 +45,7 @@ mentionedTypes: ["XamBulletGraph"]
 
 ## IgniteUI CLI のインストール
 
-アプリケーションを最初から作成し、Ignite UI React  を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
+アプリケーションを最初から作成し、Ignite UI React を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
 
 ```cmd
 npm install -g igniteui-cli
@@ -57,7 +57,7 @@ npm install -g igniteui-cli
 ig
 ```
 
-次に、フレームワークとして React、タイプとして React TS を選択し、"Default Top Navigation" プロジェクト テンプレートを選択します。その後、特定のコンポーネントまたはビューを追加するか、または "Complete & Run" を選択してください。
+次に、フレームワークとして React、タイプとして React TS を選択し、**Default Top Navigation** プロジェクト テンプレートを選択します。その後、特定のコンポーネントまたはビューを追加するか、または **[Complete & Run]** を選択してください。
 さらに、Ignite UI CLI の詳細については[こちら](general-cli-overview.md)を参照してください。
 
 あるいは、React チームが推奨する Next.js、Vite、Expo などの一般的なフレームワークを使用することも可能です。以下では、これらの方法のいずれかを使用して Ignite UI React を利用した React アプリケーションを作成する手順をステップごとに説明します。
