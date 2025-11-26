@@ -47,8 +47,6 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 ### {PackageGrids} (Grids)
 
 #### **All Grids**
-- A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
-- The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
 
 - **Cell Merging**
   - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell. It can be enabled on the individual columns:
@@ -60,24 +58,19 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - The merging can be configured on the grid level to apply either:
     - `OnSort` - only when the column is sorted.
     - `Always` - always, regardless of data operations.
-
+  The default `CellMergeMode` is `OnSort`.
 ```razor
 <IgbGrid CellMergeMode="GridCellMergeMode.Always">
 </IgbGrid>
 ```
 
-    The default `CellMergeMode` is `OnSort`.
-
 - **Column Pinning**
   - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `PinningPosition` property on the column:
-
 ```razor
 <IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
 </IgbColumn>
 ```
-  
   - Or:
-  
 ```razor
 col.PinningPosition = ColumnPinningPosition.End;
 col.Pinned = true;
@@ -85,7 +78,6 @@ col.Pinned = true;
 col.PinningPosition = ColumnPinningPosition.Start;
 col.Pinned = true;
 ```
-
   - If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
 
 - **Sorting and Grouping Improvements**
@@ -93,6 +85,10 @@ col.Pinned = true;
   - Refactored sorting algorithms from recursive to iterative.
   - Refactored grouping algorithm from recursive to iterative.
   - Optimized grouping operations.
+
+- **Other Improvements**   
+  - A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
+  - The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
 
 ### General
 
