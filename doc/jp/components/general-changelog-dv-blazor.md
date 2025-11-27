@@ -11,13 +11,113 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+- バージョン 2025.2 以降、Ignite UI for Blazor ツールセットは .NET 10 をサポートします。.NET 10 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-10/overview)をご確認ください。
+
 - バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
 ## **{PackageVerLatest}**
 
+**重大な変更**
+
+2025.2 リリース以降、.NET 6 のサポートは終了しました。これは、[Microsoft .NET ライフサイクル](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)に対応しています。
+
+### {PackageCharts} (チャート)
+
+#### <label>PREVIEW</label> ユーザー注釈
+
+{ProductName} では、ユーザー注釈機能により、実行時に `XamDataChart` にスライス注釈、ストリップ注釈、ポイント注釈を追加できるようになりました。これにより、エンドユーザーは、スライス注釈を使用して会社の四半期レポートなどの単一の重要イベントを強調したり、ストリップ注釈を使用して期間を持つイベントを示したりすることで、プロットに詳細を追加できます。ポイント注釈またはこれら 3 つの任意の組み合わせを使用して、プロットされたシリーズ上の個々のポイントを呼び出すこともできます。
+
+これは、`Toolbar` のデフォルトのツールと統合されています。
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> 軸注釈の衝突検出
+
+軸注釈が自動で衝突を検出し、適切に収まるよう切り詰めます。この機能を有効にするには、次のプロパティを設定します:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
 ### {PackageMaps} (地理マップ)
 
-_重大な変更_
+- Azure Map Imagery は RTM になりました。
+
+### {PackageGrids} (グリッド)
+
+#### **すべてのグリッド**
+
+- **セルの結合**
+  - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。個々の列で有効化できます:
+
+```razor
+<IgbColumn Field="field" Merge="true"></IgbColumn>
+```
+
+- グリッド レベルで以下のいずれかの設定が可能です:
+    - `OnSort` - 列がソートされたときのみ結合。
+    - `Always` - データ操作に関わらず常に結合。
+  デフォルトの `CellMergeMode` は `OnSort` です。
+```razor
+<IgbGrid CellMergeMode="GridCellMergeMode.Always">
+</IgbGrid>
+```
+
+- **列のピン固定**
+  - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `PinningPosition` プロパティを宣言的に設定することで実行できます。
+```razor
+<IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
+</IgbColumn>
+```
+  - または:
+```razor
+col.PinningPosition = ColumnPinningPosition.End;
+col.Pinned = true;
+
+col.PinningPosition = ColumnPinningPosition.Start;
+col.Pinned = true;
+```
+  - 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
+
+- **ソートとグループ化の改善**
+  - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+  - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+  - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+  - グループ化処理を最適化しました。
+
+
+- **その他の改善**
+  - 列の `MinWidth` と `MaxWidth` によって、ユーザーが指定した width がこれらの範囲を超えないよう制限されるようになりました。
+  - `PagingMode` プロパティに、'local' および 'remote' の文字列を直接指定できるようになり、`GridPagingMode` 列挙型をインポートする必要がなくなりました。
+
+### 一般
+
+#### 追加
+- `DateRangePicker`
+
+#### 変更
+- すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
+- `Tooltip`
+  - 動作変更: `Tooltip` のデフォルトの placement は 「bottom」 になりました。
+  - 動作変更: with-arrow が設定されていない限り、`Tooltip` はデフォルトでは矢印インジケーターをレンダリングしません。
+  - 重大な変更: `Tooltip` イベントは、detail プロパティに anchor ターゲットを返さなくなりました。引き続き event.target.anchor でアクセスできます。
+
+#### 非推奨
+- `Tooltip` - `DisableArrow` は非推奨です。矢印インジケーターをレンダリングするには、`WithArrow` を使用してください。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|34960|IgbGrid|モーダル ダイアログ内にグリッドがある場合、Blazor Web Application で Maximum call stack size exceeded エラーが発生する。
+|40136|Excel Library|Excel ワークブック読み込み時に FormulaParseException 例外が発生する。
+|40490|IgbDatePicker|Autofill による入力は日付ピッカーに反映されない。
+
+## **{PackageVerChanges-25-1-SEP}**
+
+### {PackageMaps} (地理マップ)
+
+**重大な変更**
 
 - `AzureMapsMapImagery` は `AzureMapsImagery` に名前が変更されました。
 - `AzureMapsImagery` は `AzureMapsImageryStyle.Satellite` に名前が変更されました。
@@ -56,7 +156,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-_重大な変更_
+**重大な変更**
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -138,7 +238,7 @@ _重大な変更_
 |26952 | `IgbTabs` | Razor/JS の Change イベントで e.Detail が null になる問題を修正。|
 |26953 | `IgbTabs` | タブを選択状態にしても、その後の操作で選択が反映されない問題を修正。|
 |31910 | `IgbXDatePicker` | 「@bind-Value」 構文で値をバインドし、クリア ボタンをクリックするとエラーが発生する問題を修正。|
-|31323 | `IgbDataChart`, `IgbGrid`, `IgbCombo` | データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
+|31323 | `IgbDataChart`、`IgbGrid`、`IgbCombo` | データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
 |38903 | `IgbTabs` | タブ内に配置されたコンポーネントでドロップダウン リストが正しい位置に表示されない問題を修正。|
 |[139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput` | Date Picker および Date Time Input が null 許容値をサポートしていない問題を修正。|
 
@@ -224,6 +324,7 @@ _重大な変更_
   - `SliderBaseTickOrientation` (`Slider` および `RangeSlider`) の名前が `SliderTickOrientation` に変更されました。
   - `TickLabelRotation` (`Slider` と `RangeSlider`) の名前が `SliderTickLabelRotation` に変更されました。
 - `Tabs`
+
   設定を簡素化し、タブヘッダーとパネルを個別に定義してリンクする必要がなくなりました。`Panel` プロパティと `IgbTabPanel` 自体は削除されました。コンテンツを `Tab` に直接割り当てることができるようになり、ヘッダー テキストは新しい `Label` プロパティを介して、または要素を `slot="label"` に投影してより複雑なカスタマイズを行うことで簡単に設定できるようになりました。
 
     前:
@@ -419,7 +520,7 @@ _重大な変更_
 
 - <label>PREVIEW</label>[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用できるようになり、さらに [Toolbar](menus/toolbar.md) コンポーネントの <label>PREVIEW</label> ToolAction に統合され、実行時に視覚化を更新できるようになりました。
 
-_重大な変更_
+**重大な変更**
 
 - バージョン 2024.2 のリリースでは、[Microsoft .NET ライフサイクル](https://dotnet.microsoft.com/ja-jp/platform/support/policy/dotnet-core)に従い、.NET 3.1、.NET 5、.NET 7 はサポートされなくなりました。
 
@@ -464,7 +565,7 @@ _重大な変更_
 - `RadioGroup`
   - `Name` および `Value` プロパティを追加しました。`Value` は双方向バインディングもサポートします。
 
-_重大な変更_:
+**重大な変更**:
 
 - 古い **IgbDatePicker** の名前を **IgbXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
@@ -510,7 +611,7 @@ _重大な変更_:
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-_重大な変更_:
+**重大な変更**:
 - **すべてのグリッド**
   - `RowIsland`
   - `DisplayDensity` の非推奨のプロパティが削除されました。
@@ -607,6 +708,11 @@ _重大な変更_:
   - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamRadialChart`
   - 新しいラベル モード
+    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。 
+    - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[このトピック](radial-gauge.md#オプティカル-スケーリング)を参照してください。
+    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
+- `XamRadialChart` 
+    - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 
 ### 一般
