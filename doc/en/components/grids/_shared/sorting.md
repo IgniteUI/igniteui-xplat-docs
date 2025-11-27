@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Sorting - {ProductName}
 _description: Get started with the {Platform} sorting feature of {ProductName} {ComponentTitle}! Configure a mix of sortable columns & change the display order of data records.
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -15,7 +16,7 @@ The {ProductName} Data Sorting feature in {Platform} {ComponentTitle} is enabled
 <!-- Angular -->
 
 > [!Note]
-> Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> Up until now, grouping/sorting worked in conjunction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
@@ -733,6 +734,7 @@ $custom-theme: grid-theme(
     $sortable-header-icon-hover-color: black
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss
@@ -849,6 +851,7 @@ Then set the related CSS properties to this class:
     --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
@@ -857,22 +860,22 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `SortingExpression`
+- `SortingExpression`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

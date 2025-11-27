@@ -2,6 +2,7 @@
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
 _keywords: {ProductName}, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
+_license: MIT
 mentionedTypes: ["Card", "CardActions", "CardContent", "CardHeader", "CardMedia", "Avatar", "Button", "Icon", "IconButton", "Ripple"]
 _language: ja
 ---
@@ -258,7 +259,7 @@ defineComponents(IgcCardComponent );
     <div class="card-horizontal">
         <div>
             <IgbCardHeader>
-                <img slot="thumbnail" src="ROZES-Under-the-Grave.jpg" />
+                <img slot="thumbnail" src="ROZES-Under-the-Grave.jpg" alt="ROZES-Under-the-Grave" />
                 <h5 slot="title">Rozes</h5>
                 <h5 slot="subtitle">Under the Grave (2016)</h5>
             </IgbCardHeader>
@@ -380,7 +381,7 @@ defineComponents(IgcCardComponent );
             </IgbCardActions>
         </div>
         <IgbCardMedia class="card-media">
-            <img src="here_media.jpg" />
+            <img src="here_media.jpg" alt="here_media" />
         </IgbCardMedia>
     </div>
 </IgbCard>
@@ -490,7 +491,7 @@ defineComponents(IgcCardComponent );
 
 ## スタイル設定
 
-カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (`CardHeader`、`CardContent`、`CardMedia`、および `CardActions` のサブコンポーネント) をスタイル設定することによって行われます。 
+カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (`CardHeader`、`CardContent`、`CardMedia`、および `CardActions` のサブコンポーネント) をスタイル設定することによって行われます。
 
 ```css
 igc-card {
@@ -498,7 +499,7 @@ igc-card {
 }
 
 igc-card-content,
-igc-card-header::part(title) { 
+igc-card-header::part(title) {
   color: var(--ig-primary-500-contrast);
 }
 
@@ -523,18 +524,18 @@ igc-icon-button::part(base) {
 
 ## API リファレンス
 
- - `Avatar`
- - `Button`
- - `CardActions`
- - `CardContent`
- - `CardHeader`
- - `CardMedia`
- - `Card`
- - `IconButton`
- - `Icon`
+- `Avatar`
+- `Button`
+- `CardActions`
+- `CardContent`
+- `CardHeader`
+- `CardMedia`
+- `Card`
+- `IconButton`
+- `Icon`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。{ProductName} マップ シーリズについての詳細を表示します。
 _keywords: {Platform} map, scatter contour series, {ProductName}, Infragistics, {Platform} マップ, 散布等高線シリーズ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap","GeographicContourLineSeries","CustomPaletteColorScale", "Series"]
 _language: ja
 ---
@@ -76,6 +77,7 @@ public render() {
     );
 }
 ```
+
 ```ts
 public onMapReferenced(map: IgrGeographicMap) {
     this.geoMap = map;
@@ -335,13 +337,13 @@ createContourSeries(data: any[])
 
 ## API リファレンス
 
- - `FillScale`
- - `GeographicContourLineSeries`
- - `GeographicScatterAreaSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `TrianglesSource`
- - `TriangulationSource`
- - `ValueBrushScale`
- - `ValueMemberPath`
+- `FillScale`
+- `GeographicContourLineSeries`
+- `GeographicScatterAreaSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `TrianglesSource`
+- `TriangulationSource`
+- `ValueBrushScale`
+- `ValueMemberPath`

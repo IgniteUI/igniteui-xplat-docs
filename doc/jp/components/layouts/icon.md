@@ -2,6 +2,7 @@
 title: {Platform} Icon コンポーネント | {ProductName}
 _description: {Platform} Icon コンポーネントを簡単に使い始める方法をご覧ください。アイコンを選択し、さまざまなスタイル設定オプションから選択して、さらにカスタマイズします。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Icon コントロール
+_license: MIT
 mentionedTypes: ["Icon"]
 _language: ja
 ---
@@ -268,11 +269,11 @@ igc-icon {
 
 ## API リファレンス
 
- - `Icon`
- - `RegisterIcon`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `RegisterIcon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

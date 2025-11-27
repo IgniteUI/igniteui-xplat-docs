@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Advanced Filtering - {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -11,7 +12,7 @@ _canonicalLink: {CanonicalLinkToGridAdvancedFiltering}
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`. 
+The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
@@ -47,6 +48,7 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
     <igc-grid-toolbar></igc-grid-toolbar>
 <igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid = document.getElementById("grid") as IgcGridComponent;
@@ -73,6 +75,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
@@ -93,6 +96,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
@@ -422,6 +426,7 @@ $yellow-color: #FFCD0F;
 $black-color: #292826;
 $dark-palette: palette($primary: $yellow-color, $secondary: $black-color);
 ```
+
 And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
@@ -608,6 +613,7 @@ Then set the related CSS properties to this class:
     --ig-grid-filtering-background-or: #d83434;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
@@ -616,25 +622,25 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Filtering](filtering.md)
-* [Excel Style Filtering](excel-style-filtering.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Filtering](filtering.md)
+- [Excel Style Filtering](excel-style-filtering.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

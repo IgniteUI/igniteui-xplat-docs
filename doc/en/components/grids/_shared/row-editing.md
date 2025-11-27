@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Editing Rows - {ProductName}
 _description: Want to enable row editing in {Platform} {ComponentTitle}? Need a powerful API for CRUD operations? Try our {ProductName} {ComponentTitle} rows editing component!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -213,7 +214,7 @@ constructor() {
     <igc-column field="Debut" header="Debut" data-type="number"> </igc-column>
     <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="number"> </igc-column>
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number"> </igc-column>
-        
+
     <igc-row-island child-data-key="Albums" auto-generate="false" primary-key="Album" row-editable="true">
         <igc-column field="Album" header="Album" data-type="string"> </igc-column>
         <igc-column field="LaunchDate" header="Launch Date" data-type="date"> </igc-column>
@@ -314,7 +315,7 @@ RowEditable="true">
     Header="Grammy Awards"
     DataType="GridColumnDataType.Number">
     </IgbColumn>
-    
+
     <IgbRowIsland
     ChildDataKey="Albums"
     AutoGenerate="false"
@@ -340,7 +341,7 @@ RowEditable="true">
         Header="US Billboard 200"
         DataType="GridColumnDataType.String">
         </IgbColumn>
-        
+
         <IgbRowIsland
         ChildDataKey="Songs"
         AutoGenerate="false"
@@ -368,7 +369,7 @@ RowEditable="true">
             </IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
-    
+
     <IgbRowIsland
     ChildDataKey="Tours"
     AutoGenerate="false"
@@ -453,9 +454,9 @@ export class {ComponentName}RowEditSampleComponent {
 
 - If row is in edit mode and `{ComponentName}` is scrolled so that row goes outside the visible area, the latter will be still in edit mode. When `{ComponentName}` is scrolled, so that the row is visible again, the row will be still in edit mode. When clicked outside the `{ComponentName}`, the cell will also stay in edit mode.
 
-- When perform *sorting*, *filtering*, *searching* and *hiding* operations, will revert all current changes in the row and row will exit edit mode.
+- When perform **sorting**, **filtering**, **searching** and **hiding** operations, will revert all current changes in the row and row will exit edit mode.
 
-- When perform *paging*, *resizing*, *pinning* and *moving* operations, will exit edit mode and will submit latest value.
+- When perform **paging**, **resizing**, **pinning** and **moving** operations, will exit edit mode and will submit latest value.
 
 - Each modified cell gets edited style until row edit is finished. This is the behavior, when `{ComponentName}` is not provided with transactions. When transactions are available - then cell edit style is applied until all the changes are committed.
 
@@ -491,7 +492,7 @@ The `RowChangesCount` property is exposed and it holds the count of the changed 
 
 ```html
 <ng-template igxRowEditText let-rowChangesCount>
-	Changes: {{rowChangesCount}}
+    Changes: {{rowChangesCount}}
 </ng-template>
  ```
 
@@ -534,8 +535,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 ```html
  <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -544,8 +545,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
-	<button @click="(event) => endRowEdit(true, event)">Apply</button>
+  <button @click="(event) => endRowEdit(false, event)">Cancel</button>
+    <button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
 ```
@@ -584,12 +585,12 @@ Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter t
 
 The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
 
-    - [igx-banner](banner.md) in order to render its contents
-    - [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
+- [igx-banner](banner.md) in order to render its contents
+- [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
 
 In the below example, we will make use of those two components' styling options, ([button styling](button.md#styling) & [banner-styling](../banner.md#styling)), to customize the experience of our `{ComponentName}`'s Row Editing.
 
-We will also style the current cell's editor and background to make it more distinct. You can learn more about cell styling [here](cell-editing.md#styling).
+We will also style the current cell's editor and background to make it more distinct. You can learn more about cell styling in this [topic](cell-editing.md#styling).
 
 ### Import Theme
 
@@ -637,7 +638,7 @@ Since the Row Editing overlay makes use of a lot of other components' themes, st
 
 > [!Note]
 >If the component is using an [Emulated](themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
->We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+>We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements outside of our component:
 
 ```scss
 // custom.component.scss
@@ -671,7 +672,7 @@ To further customize our Row Editing overlay, we can pass a custom template so w
 </{ComponentSelector}>
 ```
 
-After we've defined our custom buttons, we can make use of the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling [here](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
+After we've defined our custom buttons, we can make use of the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling in this [topic](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
 
 ```scss
 // custom.component.scss
@@ -743,38 +744,38 @@ Then set the related CSS properties for that class:
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+- Row Selection
+- Row Expand/collapse
+- Row Editing
+- Row Pinning
 
 ## API References
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `EndEdit`
-* `Field`
-* `Editable`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `EndEdit`
+- `Field`
+- `Editable`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Transactions](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Editing](editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
@@ -783,5 +784,5 @@ Then set the related CSS properties for that class:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

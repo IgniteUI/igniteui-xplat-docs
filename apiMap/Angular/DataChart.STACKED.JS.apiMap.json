@@ -305,6 +305,8 @@
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "highlightedDataSource"}], "originalName": "HighlightedItemsSource"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedValuesDataLegendGroup"}], "originalName": "HighlightedValuesDataLegendGroup"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "highlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomCategoryMarkerStyleAllowed"}], "originalName": "IsCustomCategoryMarkerStyleAllowed"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}], "originalName": "IsCustomCategoryStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDropShadowEnabled"}], "originalName": "IsDropShadowEnabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},

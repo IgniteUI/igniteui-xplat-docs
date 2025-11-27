@@ -868,8 +868,8 @@ function buildStats(cb) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
                 link = link.trim();
-                link = link.replace('"', '');
-                link = link.replace('`', '');
+                link = link.split('"').join("");
+                link = link.split('`').join("");
                 link = link.replace('{environment:dvDemosBaseUrl}', '');
                 link = link.replace('{environment:demosBaseUrl}', '');
                 link = link.replace(config.samplesBrowsers.development, '');
@@ -1163,6 +1163,9 @@ function verifyMarkdown(cb) {
     'doc/jp/**/*.md',
     'doc/kr/**/*.md',
     // 'doc/en/**/chart-data-legend.md',
+    // 'doc/en/**/geo-map-display-azure-imagery.md',
+    // 'doc/en/**/card.md',
+    // 'doc/en/**/sizing.md',
     // 'doc/en/**/charts/**/*.md',
     // 'doc/en/**/grids/**/*.md',
     // 'doc/en/**/zoomslider*.md',
@@ -1175,6 +1178,28 @@ function verifyMarkdown(cb) {
         var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
         console.log('verifying: ' + filePath);
+    
+        // var fileLines = fileContent.split('\r\n');
+        // for (let i = 0; i < fileLines.length; i++) {
+        //     let line = fileLines[i];
+        //     if (line.indexOf('<img') >= 0 && line.indexOf('alt=""') > 0) {
+        //         let altStart = line.indexOf('alt=""')
+        //         let srcStart = line.indexOf('src="')
+        //         let srcEnd   = line.lastIndexOf('.')
+        //         let altText = line.substring(srcStart + 5, srcEnd)
+
+        //         let altFolder = altText.lastIndexOf('/');
+        //         if (altFolder > 0) {
+        //             altText = altText.substring(altFolder + 1);
+        //         }
+        //         line = line.replace('alt=""', 'alt="' + altText + '"')
+        //         fileLines[i] = line;
+        //     }
+        // }
+        // fileContent = fileLines.join('\r\n');
+        // fs.writeFileSync(filePath, fileContent);
+        // file.contents = Buffer.from(fileContent);
+        
         filesCount++;
         var result = mv.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
@@ -1373,7 +1398,7 @@ function getSampleSections(fileLines, filePath) {
                     sample.path = sample.path.substring(0, altLocation)
                 }
 
-                sample.path = sample.path.replace('>', "");
+                sample.path = sample.path.split('>').join("");
                 sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
                 sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
                 sample.path = sample.path.replace('Sample}-', "Sample}/");
@@ -1567,9 +1592,8 @@ function logSampleLinks(cb, platform, server) {
             if (line.indexOf("sample=") >= 0) {
                 var parts = line.split(',');
                 var link = parts[0].replace('sample="', '');
-                link = link.replace('"', '');
-                link = link.replace('`', '');
-                link = link.replace('`', '');
+                link = link.split('"').join('');
+                link = link.split('`').join(''); 
                 link = link.replace('{PivotGridSample}', 'grids/tree-grid');
                 link = link.replace('{TreeGridSample}', 'grids/tree-grid');
                 link = link.replace('{GridSample}', 'grids/grid');
@@ -1691,8 +1715,8 @@ function extractSampleLinks(cb, platform, server, outputType) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
                 link = link.trim();
-                link = link.replace('"', '');
-                link = link.replace('`', '');
+                link = link.split('"').join('');
+                link = link.split('`').join('');
                 link = link.replace('/blazor-client', '');
                 link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
                 link = link.replace(docsInfo.samplesHost, docsInfo.samplesHost + docsInfo.samplesBrowser);

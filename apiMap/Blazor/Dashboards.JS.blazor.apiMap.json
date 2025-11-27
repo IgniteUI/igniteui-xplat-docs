@@ -1,0 +1,243 @@
+{  "types":[
+  {
+    "originalName": "DataChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DataChartDashboardTileFeature.cs","mappedName": "DataChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "PieChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "PieChartDashboardTileFeature.cs","mappedName": "PieChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "RadialGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "RadialGaugeDashboardTileFeature.cs","mappedName": "RadialGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "LinearGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "LinearGaugeDashboardTileFeature.cs","mappedName": "LinearGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "GeographicMapDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "GeographicMapDashboardTileFeature.cs","mappedName": "GeographicMapDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionAdapterSettings",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DataSeriesToDescriptionAdapterSettings.cs","mappedName": "DataSeriesToDescriptionAdapterSettings"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addCoercion"}], "originalName": "AddCoercion"},
+      {"names":[{"platform": "Blazor", "mappedType": "TypeDescriptionContext","mappedName": "context"}], "originalName": "Context"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSeriesToDescriptionCustomizations","mappedName": "customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasSettingsValue"}], "originalName": "HasSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "originalData"}], "originalName": "OriginalData"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "provideSettings"}], "originalName": "ProvideSettings"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "refNamespace"}], "originalName": "RefNamespace"},
+      {"names":[{"platform": "Blazor", "mappedType": "(value: any) => any","mappedName": "resolveCoercion"}], "originalName": "ResolveCoercion"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setSettingsValue"}], "originalName": "SetSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "shouldPreferRadialCategories"}], "originalName": "ShouldPreferRadialCategories"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "shouldStackCategories"}], "originalName": "ShouldStackCategories"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_handlers"}], "originalName": "_handlers"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_settings"}], "originalName": "_settings"} ]
+  },
+  {
+    "originalName": "DashboardTile",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTile.cs","mappedName": "IgbDashboardTile"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBrushes"}], "originalName": "ActualBrushes"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualOutlines"}], "originalName": "ActualOutlines"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AutoCalloutsVisible"}], "originalName": "AutoCalloutsVisible"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "BaseControlTheme","mappedName": "BaseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Brushes"}], "originalName": "Brushes"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CancelAnnotationFlow"}], "originalName": "CancelAnnotationFlow"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CategoryAxisMajorStroke"}], "originalName": "CategoryAxisMajorStroke"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearSettings"}], "originalName": "ClearSettings"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CrosshairsAnnotationEnabled"}], "originalName": "CrosshairsAnnotationEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "CrosshairsDisplayMode","mappedName": "CrosshairsDisplayMode"}], "originalName": "CrosshairsDisplayMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileCustomizationCollection","mappedName": "Customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "Density"}], "originalName": "Density"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "ExcludedProperties"}], "originalName": "ExcludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "FilterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "FinalValueAnnotationsVisible"}], "originalName": "FinalValueAnnotationsVisible"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FinishAnnotationFlow"}], "originalName": "FinishAnnotationFlow"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "GroupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "GroupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "GroupSorts"}], "originalName": "GroupSorts"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "HasModifiedSettings"}], "originalName": "HasModifiedSettings"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "HighlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "HighlightedDataSource"}], "originalName": "HighlightedItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "HighlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "IncludedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "InitialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "InitialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "InitialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "InitialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "InitialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialSorts"}], "originalName": "InitialSorts"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialSummaries"}], "originalName": "InitialSummaries"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSummaryDescriptionCollection","mappedName": "InitialSummaryDescriptions"}], "originalName": "InitialSummaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsUserAnnotationsEnabled"}], "originalName": "IsUserAnnotationsEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "LoadAnnotationsFromJson"}], "originalName": "LoadAnnotationsFromJson"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "OnUIReady"}], "originalName": "OnUIReady"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Outlines"}], "originalName": "Outlines"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveSettingsValue"}], "originalName": "RemoveSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResetAnnotations"}], "originalName": "ResetAnnotations"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResetZoom"}], "originalName": "ResetZoom"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SaveAnnotationsToJson"}], "originalName": "SaveAnnotationsToJson"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbChartSelectedItemCollection","mappedName": "SelectedSeriesItems"}], "originalName": "SelectedSeriesItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldAvoidAxisAnnotationCollisions"}], "originalName": "ShouldAvoidAxisAnnotationCollisions"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldDisplayMockData"}], "originalName": "ShouldDisplayMockData"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldUseSkeletonStyleForMockData"}], "originalName": "ShouldUseSkeletonStyleForMockData"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSortDescriptionCollection","mappedName": "SortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StartCreatingAnnotation"}], "originalName": "StartCreatingAnnotation"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StartDeletingAnnotation"}], "originalName": "StartDeletingAnnotation"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDashboardTileSummaryDescriptionCollection","mappedName": "SummaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TileTitle"}], "originalName": "TileTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TrendLineBrushes"}], "originalName": "TrendLineBrushes"},
+      {"names":[{"platform": "Blazor", "mappedType": "TrendLineType","mappedName": "TrendLineType"}], "originalName": "TrendLineType"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbTrendLineTypeCollection","mappedName": "TrendLineTypes"}], "originalName": "TrendLineTypes"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UpdateSettingsValue"}], "originalName": "UpdateSettingsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ValidVisualizationTypePriorityThreshold"}], "originalName": "ValidVisualizationTypePriorityThreshold"},
+      {"names":[{"platform": "Blazor", "mappedType": "DashboardTileVisualizationType[]","mappedName": "ValidVisualizationTypes"}], "originalName": "ValidVisualizationTypes"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbValueModeCollection","mappedName": "ValueLines"}], "originalName": "ValueLines"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueLinesBrushes"}], "originalName": "ValueLinesBrushes"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueLinesGlobalAverageBrush"}], "originalName": "ValueLinesGlobalAverageBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueLinesGlobalMaximumBrush"}], "originalName": "ValueLinesGlobalMaximumBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueLinesGlobalMinimumBrush"}], "originalName": "ValueLinesGlobalMinimumBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "DashboardTileVisualizationType","mappedName": "VisualizationType"}], "originalName": "VisualizationType"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ZoomIn"}], "originalName": "ZoomIn"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ZoomOut"}], "originalName": "ZoomOut"} ]
+  },
+  {
+    "originalName": "DashboardTileChangingContentEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileChangingContentEventArgs.cs","mappedName": "IgbDashboardTileChangingContentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ContentJson"}], "originalName": "ContentJson"} ]
+  },
+  {
+    "originalName": "DashboardTileFilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileFilterStringErrorsParsingEventArgs.cs","mappedName": "IgbDashboardTileFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "DashboardTilePrimitiveValueWrapper",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTilePrimitiveValueWrapper.cs","mappedName": "DashboardTilePrimitiveValueWrapper"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DashboardTileCustomization",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileCustomization.cs","mappedName": "IgbDashboardTileCustomization"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "CollectionIndex"}], "originalName": "CollectionIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCollectionInsertionAtEnd"}], "originalName": "IsCollectionInsertionAtEnd"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCollectionInsertionAtIndex"}], "originalName": "IsCollectionInsertionAtIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCollectionInsertionAtStart"}], "originalName": "IsCollectionInsertionAtStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCollectionRemovaltIndex"}], "originalName": "IsCollectionRemovaltIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "MatchParentIndex"}], "originalName": "MatchParentIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MatchType"}], "originalName": "MatchType"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Order"}], "originalName": "Order"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "PropertyValue"}], "originalName": "PropertyValue"} ]
+  },
+  {
+    "originalName": "ValueGetterResult",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "ValueGetterResult.cs","mappedName": "ValueGetterResult"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "nullIsValue"}], "originalName": "NullIsValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionCustomizations",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DataSeriesToDescriptionCustomizations.cs","mappedName": "DataSeriesToDescriptionCustomizations"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addOtherCustomizations"}], "originalName": "AddOtherCustomizations"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "clearOtherCustomizations"}], "originalName": "ClearOtherCustomizations"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "ensureSorted"}], "originalName": "EnsureSorted"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getCollectionModifiers"}], "originalName": "GetCollectionModifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getPropertyCustomizations"}], "originalName": "GetPropertyCustomizations"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasCustomizationsFor"}], "originalName": "HasCustomizationsFor"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "loadCustomization"}], "originalName": "LoadCustomization"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "_allCollectionTypes"}], "originalName": "_allCollectionTypes"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "_allTypes"}], "originalName": "_allTypes"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_collectionWatchers"}], "originalName": "_collectionWatchers"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_customizationsByType"}], "originalName": "_customizationsByType"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "_needRerun"}], "originalName": "_needRerun"},
+      {"names":[{"platform": "Blazor", "mappedType": "HashSet","mappedName": "_needRerunSet"}], "originalName": "_needRerunSet"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "_otherCustomizations"}], "originalName": "_otherCustomizations"} ]
+  },
+  {
+    "originalName": "DashboardTileGroupDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeName": "DashboardTileSortDescription",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileGroupDescription.cs","mappedName": "IgbDashboardTileGroupDescription"}]
+  },
+  {
+    "originalName": "DashboardTileSortDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileSortDescription.cs","mappedName": "IgbDashboardTileSortDescription"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
+      {"names":[{"platform": "Blazor", "mappedType": "ListSortDirection","mappedName": "SortDirection"}], "originalName": "SortDirection"} ]
+  },
+  {
+    "originalName": "DashboardTileSummaryDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Blazor","fileName": "DashboardTileSummaryDescription.cs","mappedName": "IgbDashboardTileSummaryDescription"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Alias"}], "originalName": "Alias"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CalculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryOperand","mappedName": "Operand"}], "originalName": "Operand"} ]
+  }]
+}

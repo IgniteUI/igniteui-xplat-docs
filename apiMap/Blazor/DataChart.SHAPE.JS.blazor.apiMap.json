@@ -114,6 +114,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualMarkerBrush"}], "originalName": "ActualMarkerBrush"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualMarkerOutline"}], "originalName": "ActualMarkerOutline"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "ActualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MarkerBrush"}], "originalName": "MarkerBrush"},
       {"names":[{"platform": "Blazor", "mappedType": "CollisionAvoidanceType","mappedName": "MarkerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"},
       {"names":[{"platform": "Blazor", "mappedType": "MarkerFillMode","mappedName": "MarkerFillMode"}], "originalName": "MarkerFillMode"},

@@ -16,7 +16,7 @@ mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 
 <div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
+      <img src="../images/general/nodejs.svg" alt="nodejs"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -24,7 +24,7 @@ mentionedTypes: ["XamBulletGraph", "IgrGrid"]
       </a>
     </div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
+      <img src="../images/general/vs-code.svg" alt="vs-code"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -160,7 +160,7 @@ ig
 ```
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
 
 ## Install Polyfills
 
@@ -221,21 +221,25 @@ After the components are imported you can use them in your html:
 ### Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
+
 ```cmd
 mkdir wc-html
 ```
 
 2 - Change the command line path to the newly created directory
+
 ```cmd
 cd wc-html
 ```
 
 3 - Initialize **npm** in the directory
+
 ```cmd
 npm init -y
 ```
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
+
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -244,6 +248,7 @@ npm install webpack webpack-cli --save-dev
 > Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
 5 - Open the project in **VS Code**
+
 ```cmd
 code .
 ```
@@ -263,7 +268,7 @@ code .
 
 7 - Create a new folder named **src**, and within that folder create a new file named **index.js**. Your project structure should look like this:
 
-<img src="../images/wc-project.jpg"/>
+<img src="../images/wc-project.jpg" alt="wc-project" />
 
 8 - Update the **package.json** file to include a build script using **webpack**
 
@@ -295,6 +300,7 @@ npm install @webcomponents/custom-elements
 ```
 
 3 - Import the web component polyfills into **index.js**
+
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
@@ -362,14 +368,14 @@ npm run build
 
 3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
-<!-- <img src="../images/wc-live-server.jpg" /> -->
+<!-- <img src="../images/wc-live-server.jpg" alt="wc-live-server" /> -->
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 4 - Navigate to the **index.html** using a web browser on your local server. The final result should show interactive map of the world:
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="geo-map" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
 
@@ -441,26 +447,26 @@ This will automatically install packages for {ProductName}, along with all of th
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-# Getting Started With {ProductName}
+## Getting Started With {ProductName}
 
 This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
 
-## Create a New Blazor Server Project
+### Create a New Blazor Server Project
 The steps below describe how to create a new Blazor Server project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-server.jpg" />
+<img src="../images/general/new-blazor-project-server.jpg" alt="new-blazor-project-server" />
 
 Provide a project name and location, and click **Next**
 
-<img src="../images/general/new-blazor-project-configure-server.jpg" />
+<img src="../images/general/new-blazor-project-configure-server.jpg" alt="new-blazor-configure-server" />
 
 Specify additional project options, and click **Create**
 
-<img src="../images/general/new-blazor-project-info-server.jpg" />
+<img src="../images/general/new-blazor-project-info-server.jpg" alt="new-blazor-info-server" />
 
-## Install Ignite UI for Blazor
+### Install Ignite UI for Blazor
 
 Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
 
@@ -468,9 +474,9 @@ In Visual Studio, open the NuGet package manager by selecting **Tools** → **Nu
 
 For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
-## Register Ignite UI for Blazor
+### Register Ignite UI for Blazor
 
-### .NET 6 and Later Applications
+#### .NET 6 and Later Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
@@ -507,7 +513,7 @@ var app = builder.Build();
 <script src="_framework/blazor.server.js"></script>
 ```
 
-### .NET 5 Applications
+#### .NET 5 Applications
 
 1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:
 
@@ -540,7 +546,7 @@ public void ConfigureServices(IServiceCollection services)
 <script src="_framework/blazor.server.js"></script>
 ```
 
-## Add Ignite UI for Blazor Component
+### Add Ignite UI for Blazor Component
 
 Add an Ignite UI for Blazor component to your razor page:
 
@@ -566,6 +572,6 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />
 
 <!-- end: Blazor -->

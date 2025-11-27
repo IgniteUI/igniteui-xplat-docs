@@ -27,4 +27,4 @@ The {ProductName} Data Table / Data Grid is able to handle thousands of updates 
 
 ## API References
 
- - `Grid`
+- `Grid`

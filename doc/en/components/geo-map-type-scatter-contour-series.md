@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
 _description: Use Infragistics {Platform} map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about {ProductName} map's series!
 _keywords: {Platform} map, scatter contour series, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap","GeographicContourLineSeries","CustomPaletteColorScale", "Series"]
 ---
 # {Platform} Geographic Contour Map
@@ -75,6 +76,7 @@ public render() {
     );
 }
 ```
+
 ```ts
 public onMapReferenced(map: IgrGeographicMap) {
     this.geoMap = map;
@@ -334,13 +336,13 @@ createContourSeries(data: any[])
 
 ## API References
 
- - `FillScale`
- - `GeographicContourLineSeries`
- - `GeographicScatterAreaSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `TrianglesSource`
- - `TriangulationSource`
- - `ValueBrushScale`
- - `ValueMemberPath`
+- `FillScale`
+- `GeographicContourLineSeries`
+- `GeographicScatterAreaSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `TrianglesSource`
+- `TriangulationSource`
+- `ValueBrushScale`
+- `ValueMemberPath`

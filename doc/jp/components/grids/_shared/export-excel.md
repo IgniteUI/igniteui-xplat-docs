@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Excel へのエクスポート - {ProductName}
 _description: {ProductName} Excel Exporter を使用すると、クライアント Excel の機能をより便利でシンプルにできます。この形式では、フィルタリングやソートなどの機能が使用できます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -256,13 +257,13 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 
 ## API リファレンス
 
-* `ExcelExporterService`
-* `ExcelExporterOptions`
-* `{ComponentName}`
+- `ExcelExporterService`
+- `ExcelExporterOptions`
+- `{ComponentName}`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

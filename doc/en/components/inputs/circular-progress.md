@@ -2,11 +2,13 @@
 title: {Platform} Circular Progress | Circular Progress | Infragistics
 _description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
 _keywords: {Platform} Circular Progress, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["CircularProgress", "CircularGradient"]
 namespace: Infragistics.Controls
 ---
 
 # {Platform} Circular Progress Overview
+
 The {ProductName} Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
 
 ## {Platform} Circular Progress Example
@@ -33,7 +35,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcCircularProgressComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -225,14 +227,14 @@ igc-circular-progress::part(track) {
 
 ## API References
 
- - `Button`
- - `Calendar`
- - `CircularGradient`
- - `CircularProgress`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `CircularGradient`
+- `CircularProgress`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

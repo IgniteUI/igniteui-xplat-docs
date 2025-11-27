@@ -2,6 +2,7 @@
 title: {Platform} Accordion | アコーディオン | インフラジスティックス
 _description: アコーディオンは、アコーディオン メニューで垂直方向に展開可能なパネルを構築するために使用されます。
 _keywords: {Platform} Accordion, {ProductName}, Infragistics, {Platform} アコーディオン, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Accordion", "Infragistics.Controls.Layouts.Implementation.ExpansionPanel"]
 namespace: Infragistics.Controls
 _language: ja
@@ -151,8 +152,8 @@ private accordion: IgcAccordionComponent;
 private panels: IgcExpansionPanelComponent[];
 
 constructor() {
-	this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
-	this.panels = this.accordion.panels;
+    this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
+    this.panels = this.accordion.panels;
 }
 ```
 
@@ -163,7 +164,7 @@ constructor() {
 `HideAll` メソッドと `ShowAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanel` をプログラムでそれぞれ省略したり展開したりできます。
 
 > [!Note]
-> `SingleExpand` プロパティが *true* に設定されている場合、`ShowAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
+> `SingleExpand` プロパティが **true** に設定されている場合、`ShowAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
 
 ### {Platform} アコーディオンのカスタマイズの例
 
@@ -194,14 +195,14 @@ constructor() {
 アコーディオン ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすいです。
 
 **キーの組み合わせ**
- - <kbd>↓</kbd> - フォーカスを下のパネルに移動します。
- - <kbd>↑</kbd> - フォーカスを上のパネルに移動します。
- - <kbd>ALT</kbd> + <kbd>↓</kbd> - アコーディオンでフォーカスされたパネルを開きます。
- - <kbd>ALT</kbd> + <kbd>↑</kbd> - Accordion でフォーカスされたパネルを閉じます。
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - 有効なすべてのパネルを閉じます。
- - <kbd>HOME</kbd> - Accordion の最初の有効なパネルに移動します。
- - <kbd>END</kbd> - Accordion の最後の有効なパネルに移動します。
+- <kbd>↓</kbd> - フォーカスを下のパネルに移動します。
+- <kbd>↑</kbd> - フォーカスを上のパネルに移動します。
+- <kbd>ALT</kbd> + <kbd>↓</kbd> - アコーディオンでフォーカスされたパネルを開きます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> - Accordion でフォーカスされたパネルを閉じます。
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - 有効なすべてのパネルを閉じます。
+- <kbd>HOME</kbd> - Accordion の最初の有効なパネルに移動します。
+- <kbd>END</kbd> - Accordion の最後の有効なパネルに移動します。
 
 <div class="divider"></div>
 
@@ -212,5 +213,5 @@ constructor() {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

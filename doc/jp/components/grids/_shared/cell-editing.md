@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} セルの編集 - {ProductName}
 _description: {ComponentTitle} はセル内編集を使用しています。デフォルトのセル編集テンプレートがありますが、データ更新操作のカスタム テンプレートを定義することもできます。今すぐお試しください。
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -32,21 +33,21 @@ _language: ja
 ### UI を介した編集
 
 編集可能なセルがフォーカスされたときに以下のいずれかの方法で特定のセルを編集モードにすることができます。
- - ダブル クリック
- - シングル クリック - 以前選択したセルが編集モードで現在選択したセルが編集可能な場合のみ、シングル クリックで編集モードに入ります。以前選択したセルが編集モードではない場合、編集モードに入らずにシングル クリックでセルを選択します。
- - <kbd>ENTER</kbd> キーの押下
- - <kbd>F2</kbd> キーの押下
+- ダブル クリック
+- シングル クリック - 以前選択したセルが編集モードで現在選択したセルが編集可能な場合のみ、シングル クリックで編集モードに入ります。以前選択したセルが編集モードではない場合、編集モードに入らずにシングル クリックでセルを選択します。
+- <kbd>ENTER</kbd> キーの押下
+- <kbd>F2</kbd> キーの押下
 
 **変更をコミットしない場合**も以下の方法で編集モードを終了できます。
- - <kbd>Escape</kbd> キーの押下;
- - **ソート、フィルターリング、検索、非表示**操作の実行時。
+- <kbd>Escape</kbd> キーの押下;
+- **ソート、フィルターリング、検索、非表示**操作の実行時。
 
 変更を**コミット**しない場合も以下の方法で編集モードを終了できます。
- - <kbd>ENTER</kbd> キーの押下
- - <kbd>F2</kbd> キーの押下
- - <kbd>TAB</kbd> キーの押下
- - 他のセルをシングル クリック - `{ComponentName}` で他のセルをクリックしたときに変更がサブミットされます。
- - その他の操作 (ページング、サイズ変更、ピン固定、移動など) は、編集モードを終了して変更を送信します。
+- <kbd>ENTER</kbd> キーの押下
+- <kbd>F2</kbd> キーの押下
+- <kbd>TAB</kbd> キーの押下
+- 他のセルをシングル クリック - `{ComponentName}` で他のセルをクリックしたときに変更がサブミットされます。
+- その他の操作 (ページング、サイズ変更、ピン固定、移動など) は、編集モードを終了して変更を送信します。
 
 > [!Note]
 > セルは、垂直/水平方向へのスクロールや `{ComponentName}` 以外をクリックした場合も編集モードのままです。セル編集と行編集両方で有効です。
@@ -202,10 +203,12 @@ public updateCell() {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="class" field="class" header="Class" editable="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var class = this.class = document.getElementById('class') as IgcColumnComponent;
@@ -290,7 +293,7 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 そしてテンプレートを渡します:
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
@@ -544,7 +547,7 @@ useEffect(() => {
 
 <!-- end: React -->
 
-* 常時編集モード
+- 常時編集モード
 
 <!-- Angular, WebComponents -->
 
@@ -577,7 +580,7 @@ function handleKeyDown(event: KeyBoardEvent) {
     const grid = event.currentTarget as IgrGrid;
     const activeElem = grid.selectedCells[0];
 
-    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ")
         || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
         if (activeElem && !activeElem.editMode) {
             activeElem.editMode = true;
@@ -591,7 +594,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> ナビゲーション
+- <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> ナビゲーション
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -731,6 +734,7 @@ public addRow() {
     this.hierarchicalGrid.addRow(record);
 }
 ```
+
 ```razor
 @code {
     //Assuming we have a `GetNewRecord` method returning the new row data.
@@ -1086,7 +1090,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
         }
         if (args.detail.newValue > rowData.UnitsInStock) {
             args.detail.cancel = true;
-            alert("You cannot order more than the units in stock!");  
+            alert("You cannot order more than the units in stock!");
         }
     }
 }
@@ -1094,7 +1098,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
 <!-- end: React -->
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
     if (d.column != null && d.column.field == "UnitsOnOrder") {
@@ -1114,7 +1118,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
 ```typescript
 public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
-    		
+        
     if (column.field === 'Age') {
         if (event.detail.newValue < 18) {
             event.detail.cancel = true;
@@ -1131,21 +1135,21 @@ public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const column = event.detail.column;
 
-	if (column.field === 'Age') {
-		if (event.detail.newValue < 18) {
-			event.detail.cancel = true;
-			alert('Employees must be at least 18 years old!');
-		}
-	} else if (column.field === 'HireDate') {
-		if (event.detail.newValue > new Date().getTime()) {
-			event.detail.cancel = true;
-			alert('The employee hire date must be in the past!');
-		}
-	}
+    if (column.field === 'Age') {
+        if (event.detail.newValue < 18) {
+            event.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (event.detail.newValue > new Date().getTime()) {
+            event.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
 }, false);
 ```
 
@@ -1209,21 +1213,21 @@ public webHierarchicalGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): vo
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const today = new Date();
     const column = event.detail.column;
-	if (column.field === 'Debut') {
-		if (event.detail.newValue > today.getFullYear()) {
-			event.detail.cancel = true;
-			alert('The debut date must be in the past!');
-		}
-	} else if (column.field === 'LaunchDate') {
-		if (event.detail.newValue > today) {
-			event.detail.cancel = true;
-			alert('The launch date must be in the past!');
-		}
-	}
+    if (column.field === 'Debut') {
+        if (event.detail.newValue > today.getFullYear()) {
+            event.detail.cancel = true;
+            alert('The debut date must be in the past!');
+        }
+    } else if (column.field === 'LaunchDate') {
+        if (event.detail.newValue > today) {
+            event.detail.cancel = true;
+            alert('The launch date must be in the past!');
+        }
+    }
 }, false);
 ```
 <!-- Blazor -->
@@ -1422,29 +1426,29 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `InputDirective`
+- `InputDirective`
 <!-- end:Angular -->
 
-* `DatePicker`
+- `DatePicker`
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+- [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
 
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1454,15 +1458,15 @@ $custom-grid-theme: grid-theme(
 <!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

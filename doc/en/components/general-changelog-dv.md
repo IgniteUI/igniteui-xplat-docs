@@ -13,10 +13,43 @@ All notable changes for each version of {ProductName} are documented on this pag
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to igniteui-angular components, please see CHANGELOG.MD.
 
-* [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
+- [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
 
 ## **{PackageVerLatest}**
+
+### {PackageCharts} (Charts)
+
+#### <label>PREVIEW</label> User Annotations
+
+In {ProductName}, you can now annotate the `XamDataChart` with slice, strip, and point annotations at runtime using the new user annotations feature. This allows the end user to add more details to the plot such as calling out single important events such as company quarter reports by using the slice annotation or events that have a duration by using the strip annotation. You can also call out individual points on the plotted series by using the point annotation or any combination of these three.
+
+This is directly integrated with the available tools of the `Toolbar`.
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> Collision Detection for Axis Annotations
+
+Ability for axis annotations to automatically detect collisions and truncate to fit better. To enable this feature you must set the following properties:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (Geographic Map)
+
+- Azure Map Imagery is now RTM.
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
+|40262|IgxSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
+|40458|IgxSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
+|40490|IgxDatePicker|Inputs by Autofill won't give any effects for a date picker|
+
+## **{PackageVerChanges-25-1-SEP}**
 
 ### {PackageMaps} (Geographic Map)
 
@@ -79,12 +112,12 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|27304|IgxDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgxDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgxCategoryChart|Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37930|IgxDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgxGrid|Unpinned column does not return to the original position if hidden columns exist|
+|31624 | `IgxCategoryChart` | Resizing the containing window of the `IgxCategoryChart` causes the chart to fail to render the series|
+|27304 | `IgxDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
+|37930 | `IgxDataChart` | Data Annotation Overlay Text Color not working|
+|30600 | `IgxDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
+|38231 | `IgxGrid` | Unpinned column does not return to the original position if hidden columns exist|
+|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
 
 
 ## **{PackageVerChanges-25-1-AUG}**
@@ -93,7 +126,7 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|36448|IgxRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|36448 | `IgxRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
 
 ### {PackageCharts} (Charts)
 
@@ -101,9 +134,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 ## **{PackageVerChanges-25-1}**
 
-* Angular 20 support.
+- Angular 20 support.
 
-## **{PackageVerChanges-24-2-FEB}**
+## **{PackageVerChanges-24-2-APR}**
 
 ### {PackageMaps} (Geographic Map)
 
@@ -116,15 +149,15 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 ### {PackageCharts} (Charts)
 
 - Added <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) layers:
-  - Data Annotation Band Layer   
-  - Data Annotation Line Layer   
-  - Data Annotation Rect Layer   
-  - Data Annotation Slice Layer  
-  - Data Annotation Strip Layer 
+  - Data Annotation Band Layer
+  - Data Annotation Line Layer
+  - Data Annotation Rect Layer
+  - Data Annotation Slice Layer
+  - Data Annotation Strip Layer
 
-- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure.
 
-- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. 
+- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within.
 
 - <label>PREVIEW</label> The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text.
 
@@ -153,9 +186,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37023|IgxDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
-|37244|Excel|Custom Data Validation is not working.
-|37685|IgxSpreadsheet|Poor rendering of numbers formatted with Arial font.
+|37023 | `IgxDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37685 | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
+|37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -173,23 +206,23 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|30286|IgxDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906|IgxDataChart|IgxDataChart is showing two xAxis on the top|
-|33605|IgxDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
-|34053|IgxRadialGauge|The position of the scale label is shifted|
-|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|34776|IgxDataChart|Repeatedly showing and hiding the IgxDataChart causes memory leakage in JS Heap|
-|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
-|35496|IgxSpreadsheet|Error when setting styles in Excel with images|
-|35498|IgxDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
-|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
-|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+|30286 | `IgxDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|32906 | `IgxDataChart` | `IgxDataChart` is showing two xAxis on the top|
+|33605 | `IgxDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
+|35498 | `IgxDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
+|34776 | `IgxDataChart` | Repeatedly showing and hiding the `IgxDataChart` causes memory leakage in JS Heap|
+|34053 | `IgxRadialGauge` | The position of the scale label is shifted|
+|35496 | `IgxSpreadsheet` | Error when setting styles in Excel with images|
+|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
+|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
+|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
+|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
 
 
 ## **{PackageVerChanges-24-2-JAN}**
 
-* Angular 19 support.
+- Angular 19 support.
 
 ## **{PackageVerChanges-24-2-DEC}**
 
@@ -207,31 +240,31 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - <label>NEW</label> [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to plot slices similar to a pie chart, a type of data visualization where data points are represented as segments within a circular graph.
 
-- `Toolbar` 
+- `Toolbar`
 
-    - New ToolActionCheckboxList
+  - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
         Requires IgxCheckboxListModule to be registered.
 
-    - New Filtering Support
+  - New Filtering Support
 
-    - Axis Field Changes
+  - Axis Field Changes
         New default IconMenu in Toolbar when targeting CategoryChart.
         Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
         Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
 
 ## **{PackageVerChanges-24-1-JUN}**
 
-* Angular 18 support.
+- Angular 18 support.
 
 ### {PackageCharts} (Charts)
 
-* [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
+- [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
 
 - [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
-    
+
 - [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to represent progress or subset of a collection. The appearance is shown as a fill-in of its backcolor up to a specific value either by a member on your data item or by supplying a new `HighlightedItemsSource`. Can be toggled via `HighlightedValuesDisplayMode` and styled via `FillBrushes`.
 
 - `Toolbar` - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice.
@@ -239,96 +272,75 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 ### {PackageGauges} (Gauges)
 
 - `XamRadialGauge`
-    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
-
-## **{PackageVerChanges-24-1-JUN}**
-
-* Angular 18 support.
-
-### {PackageCharts} (Charts)
-
-* [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
-
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
-
-- [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
-    
-- [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to represent progress or subset of a collection. The appearance is shown as a fill-in of its backcolor up to a specific value either by a member on your data item or by supplying a new `HighlightedItemsSource`. Can be toggled via `HighlightedValuesDisplayMode` and styled via `FillBrushes`.
-
-- `Toolbar` - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice.
-
-### {PackageGauges} (Gauges)
-
-- `XamRadialGauge`
-    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
+  - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
 ## **{PackageVerChanges-23-2-MAR}**
 
 ### {PackageCharts}
 
- - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
+- New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
 
-- `XamRadialChart` 
-    - New Label Mode
+- `XamRadialChart`
+  - New Label Mode
         The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### {PackageGauges}
 
 - `XamRadialGauge`
-    - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
-    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
+  - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.
+  - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamLinearGauge`
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamBulletGraph`
-    - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
+  - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
 
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (Charts)
 
-* [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
+- [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
 ## **{PackageVerChanges-23-2}**
 
 ### {PackageGrids} - Toolbar - <label>PREVIEW</label>
 
-* Save tool action has been added to save the chart to an image via the clipboard.
-* Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
-* Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
+- Save tool action has been added to save the chart to an image via the clipboard.
+- Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully.
+- Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
 
 ## **{PackageVerChanges-23-1}**
 
 ### New Components
 
-* <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
+- <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ### {PackageCharts} (Charts)
 
-* [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
+- [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
 
-* It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
+- It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
 ## **{PackageVerChanges-22-2.2}**
-* Angular 16 support.
+- Angular 16 support.
 
 ## **{PackageVerChanges-22-2.1}**
-* Angular 15 support.
+- Angular 15 support.
 
 ## **{PackageVerChanges-22-2}**
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
 
-* Responsive layouts for horizontal label rotation based on browser / screen size.
-* Enhanced rendering for rounded labels on all platforms.
-* Added marker properties to StackedFragmentSeries.
-* Added `ShouldPanOnMaximumZoom` property.
-* New Category Axis Properties:
-    - ZoomMaximumCategoryRange
-    - ZoomMaximumItemSpan
-    - ZoomToCategoryRange
-    - ZoomToItemSpan
-* New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
+- Responsive layouts for horizontal label rotation based on browser / screen size.
+- Enhanced rendering for rounded labels on all platforms.
+- Added marker properties to StackedFragmentSeries.
+- Added `ShouldPanOnMaximumZoom` property.
+- New Category Axis Properties:
+  - ZoomMaximumCategoryRange
+  - ZoomMaximumItemSpan
+  - ZoomToCategoryRange
+  - ZoomToItemSpan
+- New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
   - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
@@ -348,20 +360,20 @@ The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not w
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} (Charts)
 
-* Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
-* Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
-* Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
-* Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
-* New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
-* New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
-    - `CalloutCornerRadius` for CalloutLayer
-    - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
-    - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
-* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
-* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with numeric axes (e.g. `NumericXAxis`, `NumericYAxis`, `PercentChangeAxis`).
-* New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
-* New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
-* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
+- Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
+- Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
+- Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
+- Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+- New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
+- New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
+  - `CalloutCornerRadius` for CalloutLayer
+  - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
+  - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
+- New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
+- New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with numeric axes (e.g. `NumericXAxis`, `NumericYAxis`, `PercentChangeAxis`).
+- New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
+- New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
+- New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
 <div class="divider--half"></div>
 
@@ -374,30 +386,30 @@ The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not w
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
-* Changed `YAxisLabelLocation` property's type to **YAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart` and `CategoryChart`
-* Changed `XAxisLabelLocation` property's type to **XAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart`
-* Added `XAxisLabelLocation` property to `CategoryChart`
-* Added support for representing geographic series of `XamGeographicMap` in a legend
-* Added crosshair lines by default in `FinancialChart` and `CategoryChart`
-* Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
-* Added final value annotation by default in `FinancialChart`
-* Added new properties in Category Chart and Financial Chart:
-   - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
-   - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
-   - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
-   - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
-   - `MarkerThickness` that allows changing thickness of markers
-* Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
-   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
-   - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
-* Added new properties in Series in Data Chart and Geographic Map:
-   - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
-* Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
-* Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
-* Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
-* Changed color palette of series and markers displayed in all charts to improve accessibility
+- Changed `YAxisLabelLocation` property's type to **YAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart` and `CategoryChart`
+- Changed `XAxisLabelLocation` property's type to **XAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart`
+- Added `XAxisLabelLocation` property to `CategoryChart`
+- Added support for representing geographic series of `XamGeographicMap` in a legend
+- Added crosshair lines by default in `FinancialChart` and `CategoryChart`
+- Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
+- Added final value annotation by default in `FinancialChart`
+- Added new properties in Category Chart and Financial Chart:
+  - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
+  - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
+  - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
+  - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
+  - `MarkerThickness` that allows changing thickness of markers
+- Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
+  - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
+  - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
+  - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
+- Added new properties in Series in Data Chart and Geographic Map:
+  - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
+  - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
+- Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
+- Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
+- Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
+- Changed color palette of series and markers displayed in all charts to improve accessibility
 
 | Old brushes/outlines | New outline/brushes |
 | -------------------- | ------------------- |
@@ -410,36 +422,36 @@ This release introduces a few improvements and simplifications to visual design 
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
 
-* Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
-* Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
-* Changed Scatter High Density series’ colors for heat max property from <span style="color:#ee5879">#ee5879</span> to <span style="color:#ee5879">#ee5879</span>
-* Changed Financial/Waterfall series’ `NegativeBrush` and `NegativeOutline` properties from <span style="color:#C62828">#C62828</span> to <span style="color:#ee5879">#ee5879</span>
-* Changed marker's thickness to 2px from 1px
-* Changed marker's fill to match the marker's outline for `PointSeries`, `BubbleSeries`, `ScatterSeries`, `PolarScatterSeries`. You can use set `MarkerFillMode` property to Normal to undo this change
-* Compressed labelling for the `TimeXAxis` and `OrdinalTimeXAxis`
-* New Marker Properties:
-    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
-    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
-    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
-* New Series Property:
-    - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
-* New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
-* New Highlighting Properties
-    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
-    - Note, in previous releases the highlighting was limited to fade on hover.
-* Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
-* Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
-* Added support for overriding the data source of individual stack fragments within a stacked series
-* Added custom style events to Stacked, Scatter, Range, Polar, Radial, and Shape series
-* Added support to automatically sync the vertical zoom to the series content
-* Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
-* Redesigned color palette of series and markers:
+- Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
+- Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
+- Changed Scatter High Density series’ colors for heat max property from <span style="color:#ee5879">#ee5879</span> to <span style="color:#ee5879">#ee5879</span>
+- Changed Financial/Waterfall series’ `NegativeBrush` and `NegativeOutline` properties from <span style="color:#C62828">#C62828</span> to <span style="color:#ee5879">#ee5879</span>
+- Changed marker's thickness to 2px from 1px
+- Changed marker's fill to match the marker's outline for `PointSeries`, `BubbleSeries`, `ScatterSeries`, `PolarScatterSeries`. You can use set `MarkerFillMode` property to Normal to undo this change
+- Compressed labelling for the `TimeXAxis` and `OrdinalTimeXAxis`
+- New Marker Properties:
+  - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
+  - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
+  - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
+- New Series Property:
+  - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
+- New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
+  - chart.`PlotAreaMarginLeft`
+  - chart.`PlotAreaMarginTop`
+  - chart.`PlotAreaMarginRight`
+  - chart.`PlotAreaMarginBottom`
+  - chart.`ComputedPlotAreaMarginMode`
+- New Highlighting Properties
+  - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+  - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+  - Note, in previous releases the highlighting was limited to fade on hover.
+- Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
+- Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
+- Added support for overriding the data source of individual stack fragments within a stacked series
+- Added custom style events to Stacked, Scatter, Range, Polar, Radial, and Shape series
+- Added support to automatically sync the vertical zoom to the series content
+- Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
+- Redesigned color palette of series and markers:
 
 | Old brushes/outlines | New outline/brushes |
 | -------------------- | ------------------- |
@@ -449,23 +461,23 @@ for example:
 
 |   |   |
 |---|---|
-| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
-| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
+| <img class="responsive-img" src="../images/chartDefaults1.png" alt="chartDefaults1" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="chartDefaults2" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" alt="chartDefaults3" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="chartDefaults4" /> |
 
 #### Chart Legend
 
-* Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
-* Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
+- Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
+- Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
 ### {PackageMaps} (GeoMap)
 
 > [!Note]
 > These features are CTP
 
-* Added support for wrap around display of the map (scroll infinitely horizontally)
-* Added support for shifting display of some map series while wrapping around the coordinate origin
-* Added support for highlighting of the shape series
-* Added support for some annotation layers for the shape series
+- Added support for wrap around display of the map (scroll infinitely horizontally)
+- Added support for shifting display of some map series while wrapping around the coordinate origin
+- Added support for highlighting of the shape series
+- Added support for some annotation layers for the shape series
 
 <div class="divider--half"></div>
 

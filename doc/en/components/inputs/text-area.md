@@ -3,6 +3,7 @@ title: {Platform} Text Area | Data Visualization Tools | Infragistics
 _description: Infragistics' {Platform} Text Area is a component where the user can enter a sizable amount of free-form text.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls
 mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
+_license: MIT
 ---
 # {Platform} Text Area Overview
 
@@ -46,7 +47,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcTextareaComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -140,12 +141,12 @@ igc-textarea::part(suffix) {
 
 ## API References
 
- - `Icon`
- - `Textarea`
- - `Toast`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Textarea`
+- `Toast`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

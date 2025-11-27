@@ -2,6 +2,7 @@
 title: {Platform} コンボボックス コンポーネント – {ProductName}
 _description: {ProductName} コンボボックス コンポーネントの機能
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントの機能
+_license: MIT
 mentionedTypes: ["Combo", "ComboList", "ComboItem"]
 _language: ja
 ---
@@ -110,11 +111,11 @@ switchDisable.addEventListener("igcChange", () => {
 ```
 
 ```razor
-<IgbCombo 
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+<IgbCombo
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name"
     DisableFiltering="@DisableFiltering"
     CaseSensitiveIcon="@CaseSensitiveIcon"
@@ -356,10 +357,10 @@ required プロパティを設定することで、コンボボックスを必�
 <!-- WebComponents -->
 ## API リファレンス
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

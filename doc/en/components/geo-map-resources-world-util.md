@@ -2,6 +2,7 @@
 title: {Platform} Map | World Utility | Data Source | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map data utility to generate geographic data. View {ProductName} map demos!
 _keywords: {Platform} map, map data, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 ---
 # {Platform} World Utility
@@ -412,4 +413,4 @@ export default class WorldUtils {
 
 ## API References
 
- - `XamGeographicMap`
+- `XamGeographicMap`

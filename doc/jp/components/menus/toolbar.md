@@ -2,6 +2,7 @@
 title: {Platform} Toolbar コンポーネント | {ProductName}
 _description: {Platform} ツールバー コンポーネントを簡単に始める方法をご覧ください。データ チャートと互換性があります。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ツールバー コンポーネント, {Platform} ツールバー コントロール
+_license: MIT
 mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 _language: ja
 ---
@@ -235,30 +236,30 @@ builder.Services.AddIgniteUIBlazor(
 トレンド操作
 
 - `AnalyzeMenu`: チャートのさまざまなオプションを構成するためのいくつかのオプションを含む `ToolActionIconMenu`。
- - `AnalyzeHeader`: サブ セクションのヘッダー。
+- `AnalyzeHeader`: サブ セクションのヘッダー。
   - `LinesMenu`: チャート上で水平破線を表示するためのさまざまなツールが含まれるサブ メニュー。
-    - `LinesHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
-      - `MaxValue`: シリーズの最大値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
-      - `MinValue`: シリーズの最小値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
-      - `Average`:  シリーズの平均値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
+  - `LinesHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
+   - `MaxValue`: シリーズの最大値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
+   - `MinValue`: シリーズの最小値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
+   - `Average`:  シリーズの平均値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
   - `TrendsMenu`: さまざまな近似曲線を `XamDataChart` プロット領域に適用するためのツールを含むサブ メニュー。
-    - `TrendsHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
-      - **Exponential**: チャート内の各シリーズの `TrendLineType` を **ExponentialFit** に設定する `ToolActionRadio`。
-      - **Linear**: チャート内の各シリーズの `TrendLineType` を **LinearFit** に設定する `ToolActionRadio`。
-      - **Logarithmic**: チャート内の各シリーズの `TrendLineType` を **LogarithmicFit** に設定する `ToolActionRadio`。
- - `HelpersHeader`: サブ セクションのヘッダー。
+  - `TrendsHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
+   - **Exponential**: チャート内の各シリーズの `TrendLineType` を **ExponentialFit** に設定する `ToolActionRadio`。
+   - **Linear**: チャート内の各シリーズの `TrendLineType` を **LinearFit** に設定する `ToolActionRadio`。
+   - **Logarithmic**: チャート内の各シリーズの `TrendLineType` を **LogarithmicFit** に設定する `ToolActionRadio`。
+- `HelpersHeader`: サブ セクションのヘッダー。
   - `SeriesAvg`: `Average` タイプの `ValueLayerValueMode` を使用して、チャートのシリーズ コレクションに `ValueLayer` を追加または削除する `ToolActionCheckbox`。
   - `ValueLabelsMenu`: `XamDataChart` のプロット領域に注釈を表示するためのさまざまなツールを含むサブ メニュー。
-    - `ValueLabelsHeader`: 次のツールのサブ メニュー セクション ヘッダー:
-      - `ShowValueLabels`: `CalloutLayer` を使用してデータ ポイント値を切り替える `ToolActionCheckbox`。
-      - `ShowLastValueLabel`: `FinalValueLayer` を使用して最終値軸の注釈を切り替える `ToolActionCheckbox`。
- - `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
- - `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
+  - `ValueLabelsHeader`: 次のツールのサブ メニュー セクション ヘッダー:
+   - `ShowValueLabels`: `CalloutLayer` を使用してデータ ポイント値を切り替える `ToolActionCheckbox`。
+   - `ShowLastValueLabel`: `FinalValueLayer` を使用して最終値軸の注釈を切り替える `ToolActionCheckbox`。
+- `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
+- `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
 
 画像に保存アクション
 
 - `CopyAsImage`: チャートをクリップボードにコピーするオプションを公開する `ToolActionLabel`。
- - `CopyHeader`: サブ セクションのヘッダー。
+- `CopyHeader`: サブ セクションのヘッダー。
 
 ### SVG アイコン
 
@@ -282,7 +283,7 @@ svg を追加するのと同様に、`RegisterIconFromDataURL` を介して URL 
 public toolbarCustomIconOnViewInit(): void {
 
   const icon = '<svg width="28px" height="28px" stroke="none" viewBox="0 0 3.5 3.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gis" preserveAspectRatio="xMidYMid meet"><path d="M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z" fill="#000000" fill-rule="evenodd"/></svg>';
-  
+
   this.toolbar.registerIconFromText("CustomCollection", "CustomIcon", icon);
 }
 ```
@@ -317,7 +318,7 @@ public toolbarCustomIconOnViewInit(): void {
 public toolbarCustomIconOnViewInit(): void {
 
   toolbar.registerIconFromDataURL("CustomCollection", "CustomIcon", "https://www.svgrepo.com/show/678/calculator.svg");
-  
+
 }
 ```
 
@@ -343,14 +344,14 @@ public toolbarCustomIconOnViewInit(): void {
 
     public void ToolbarCustomIconOnViewInit()
     {
-    	this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
-    	{
-    		string icon =
-    		@"
-    			<svg width=""28px"" height=""28px"" stroke=""none"" viewBox=""0 0 3.5 3.5"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" aria-hidden=""true"" role=""img"" class=""iconify iconify--gis"" preserveAspectRatio=""xMidYMid meet""><path d=""M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z"" fill=""#000000"" fill-rule=""evenodd""/></svg>
-    		";
-    		this.toolbar.RegisterIconFromTextAsync("CustomCollection", "CustomIcon", icon);
-    	}));
+        this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
+        {
+            string icon =
+            @"
+                <svg width=""28px"" height=""28px"" stroke=""none"" viewBox=""0 0 3.5 3.5"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" aria-hidden=""true"" role=""img"" class=""iconify iconify--gis"" preserveAspectRatio=""xMidYMid meet""><path d=""M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z"" fill=""#000000"" fill-rule=""evenodd""/></svg>
+            ";
+            this.toolbar.RegisterIconFromTextAsync("CustomCollection", "CustomIcon", icon);
+        }));
     }
 
 }
@@ -371,10 +372,10 @@ public toolbarCustomIconOnViewInit(): void {
 
     public void ToolbarCustomIconOnViewInit()
     {
-    	this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
-    	{
+        this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
+        {
             this.toolbar.RegisterIconFromDataURLAsync("CustomCollection", "CustomIcon", "https://www.svgrepo.com/show/678/calculator.svg");
-    	}));
+        }));
     }
 
 }
@@ -485,10 +486,10 @@ Name="toolbar"
 
 ## API リファレンス
 
- - `Toolbar`
- - `XamDataChart`
+- `Toolbar`
+- `XamDataChart`
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

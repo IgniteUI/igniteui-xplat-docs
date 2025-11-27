@@ -21,6 +21,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
@@ -28,6 +29,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 - [Shape Chart](shape-chart.md)
 
 ## API References
+
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`

@@ -2,6 +2,7 @@
 title: {Platform} Icon Button Component
 _description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with {ProductName} Icon Button component.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon Button components, {Platform} Icon Button controls
+_license: MIT
 mentionedTypes: ["IconButton", "ButtonBase", "Button", "Icon"]
 ---
 
@@ -34,7 +35,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcIconButtonComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -194,14 +195,14 @@ igc-icon-button::part(icon) {
 
 ## API References
 
- - `ButtonBase`
- - `Button`
- - `IconButton`
- - `Icon`
- - [`Styling & Themes`](../themes/overview.md)
+- `ButtonBase`
+- `Button`
+- `IconButton`
+- `Icon`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

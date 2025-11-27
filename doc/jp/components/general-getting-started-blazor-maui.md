@@ -22,10 +22,10 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 ## 前提条件
 
-* .NET SDK 7 以降
-* Visual Studio 2022 17.4 以降および次のワークロード:
-    - .NET によるモバイル開発
-    - ASP.NET と Web 開発
+- .NET SDK 7 以降
+- Visual Studio 2022 17.4 以降および次のワークロード:
+  - .NET によるモバイル開発
+  - ASP.NET と Web 開発
 
 ## .NET MAUI と Ignite UI for Blazor を使用して Blazor Hybrid アプリを作成して実行する
 
@@ -33,11 +33,11 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**.NET MAUI Blazor アプリ** テンプレートを選択して、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-maui.jpg" />
+<img src="../images/general/new-blazor-project-maui.jpg" alt="new-blazor-project-maui" />
 
 プロジェクト名と場所を入力し、**[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configure-maui.jpg" />
+<img src="../images/general/new-blazor-project-configure-maui.jpg" alt="new-blazor-project-configure-maui" />
 
 ## Ignite UI for Blazor のインストール
 
@@ -51,23 +51,22 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 1 - **MauiProgram.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
-
 ```cs
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
         // ...
-		builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddMauiBlazorWebView();
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
         //register IgniteUI for Blazor
-		builder.Services.AddIgniteUIBlazor();
-		return builder.Build();
-	}
+        builder.Services.AddIgniteUIBlazor();
+        return builder.Build();
+    }
 }
 ```
 
@@ -88,8 +87,8 @@ public static class MauiProgram
 4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。
 
 ```razor
-	<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-	<script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+    <script src="_framework/blazor.webview.js" autostart="false"></script>
 ```
 
 ## Ignite UI for Blazor コンポーネントの追加
@@ -118,7 +117,7 @@ Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 Windows 用の .NET MAUI Blazor アプリをビルドして実行します。
 
-<img src="../images/general/getting-started-blazor-card-windows.jpg" />
+<img src="../images/general/getting-started-blazor-card-windows.jpg" alt="getting-started-blazor-card-windows" />
 
 > [!Note]
 > .NET MAUI を使用したクロス プラットフォーム アプリケーションの構築の詳細については、[Microsoft のドキュメント](https://docs.microsoft.com/ja-jp/dotnet/maui/get-started/first-app?pivots=devices-android)を参照してください。

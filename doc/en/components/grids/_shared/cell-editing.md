@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Cell Editing - {ProductName}
 _description: The {ComponentTitle} is using in-cell editing. It has a default cell editing template, but it also lets you define your own custom templates for update-data action. Try it now!
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -31,21 +32,21 @@ In addition, you can define your own custom templates for update-data actions an
 ### Editing through UI
 
 You can enter edit mode for specific cell, when an editable cell is focused in one of the following ways:
- - on double click;
- - on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
- - on key press <kbd>ENTER</kbd>;
- - on key press <kbd>F2</kbd>;
+- on double click;
+- on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
+- on key press <kbd>ENTER</kbd>;
+- on key press <kbd>F2</kbd>;
 
 You can exit edit mode **without committing** the changes in one of the following ways:
- - on key press <kbd>Escape</kbd>;
- - when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
+- on key press <kbd>Escape</kbd>;
+- when you perform **sorting**, **filtering**, **searching** and **hiding** operations;
 
 You can exit edit mode and **commit** the changes in one of the following ways:
- - on key press <kbd>ENTER</kbd>;
- - on key press <kbd>F2</kbd>;
- - on key press <kbd>TAB</kbd>;
- - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
- - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
+- on key press <kbd>ENTER</kbd>;
+- on key press <kbd>F2</kbd>;
+- on key press <kbd>TAB</kbd>;
+- on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
+- operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
 > [!Note]
 > The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.
@@ -201,10 +202,12 @@ If you want to provide a custom template which will be applied when a cell is in
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="class" field="class" header="Class" editable="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var class = this.class = document.getElementById('class') as IgcColumnComponent;
@@ -289,7 +292,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 and pass the template:
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
@@ -506,7 +509,7 @@ public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
 ```
 <!-- end: React -->
 
-Working sample of the above can be found here for further reference: 
+Working sample of the above can be found here for further reference:
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
@@ -543,7 +546,7 @@ useEffect(() => {
 
 <!-- end: React -->
 
-* Constant edit mode
+- Constant edit mode
 
 <!-- Angular, WebComponents -->
 
@@ -576,7 +579,7 @@ function handleKeyDown(event: KeyBoardEvent) {
     const grid = event.currentTarget as IgrGrid;
     const activeElem = grid.selectedCells[0];
 
-    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ")
         || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
         if (activeElem && !activeElem.editMode) {
             activeElem.editMode = true;
@@ -590,7 +593,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> navigation
+- <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> navigation
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -645,7 +648,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 Please check the full sample for further reference:
 
-##### {Platform} Grid Excel Style Editing Sample
+#### {Platform} Grid Excel Style Editing Sample
 
 <!-- React -->
 `sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
@@ -730,6 +733,7 @@ public addRow() {
     this.hierarchicalGrid.addRow(record);
 }
 ```
+
 ```razor
 @code {
     //Assuming we have a `GetNewRecord` method returning the new row data.
@@ -1085,7 +1089,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
         }
         if (args.detail.newValue > rowData.UnitsInStock) {
             args.detail.cancel = true;
-            alert("You cannot order more than the units in stock!");  
+            alert("You cannot order more than the units in stock!");
         }
     }
 }
@@ -1093,7 +1097,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
 <!-- end: React -->
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
     if (d.column != null && d.column.field == "UnitsOnOrder") {
@@ -1104,6 +1108,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
+
 If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
 
 <!-- ComponentEnd: Grid -->
@@ -1113,7 +1118,7 @@ If the value entered in a cell under the **Units On Order** column is larger tha
 ```typescript
 public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
-    		
+        
     if (column.field === 'Age') {
         if (event.detail.newValue < 18) {
             event.detail.cancel = true;
@@ -1130,21 +1135,21 @@ public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const column = event.detail.column;
 
-	if (column.field === 'Age') {
-		if (event.detail.newValue < 18) {
-			event.detail.cancel = true;
-			alert('Employees must be at least 18 years old!');
-		}
-	} else if (column.field === 'HireDate') {
-		if (event.detail.newValue > new Date().getTime()) {
-			event.detail.cancel = true;
-			alert('The employee hire date must be in the past!');
-		}
-	}
+    if (column.field === 'Age') {
+        if (event.detail.newValue < 18) {
+            event.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (event.detail.newValue > new Date().getTime()) {
+            event.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
 }, false);
 ```
 
@@ -1208,21 +1213,21 @@ public webHierarchicalGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): vo
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const today = new Date();
     const column = event.detail.column;
-	if (column.field === 'Debut') {
-		if (event.detail.newValue > today.getFullYear()) {
-			event.detail.cancel = true;
-			alert('The debut date must be in the past!');
-		}
-	} else if (column.field === 'LaunchDate') {
-		if (event.detail.newValue > today) {
-			event.detail.cancel = true;
-			alert('The launch date must be in the past!');
-		}
-	}
+    if (column.field === 'Debut') {
+        if (event.detail.newValue > today.getFullYear()) {
+            event.detail.cancel = true;
+            alert('The debut date must be in the past!');
+        }
+    } else if (column.field === 'LaunchDate') {
+        if (event.detail.newValue > today) {
+            event.detail.cancel = true;
+            alert('The launch date must be in the past!');
+        }
+    }
 }, false);
 ```
 <!-- Blazor -->
@@ -1350,6 +1355,7 @@ In order to use the [Ignite UI Theming Library](../themes/styles.md), we must fi
 // IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
+
 Now we can make use of all of the functions exposed by the {ProductName} theme engine.
 
 ### Defining a Palette
@@ -1395,7 +1401,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  > [!Note]
- >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+ >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements outside of our component:
 
 ```scss
 :host {
@@ -1421,29 +1427,29 @@ In addition to the steps above, we can also style the controls that are used for
 
 ## API References
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `InputDirective`
+- `InputDirective`
 <!-- end:Angular -->
 
-* `DatePicker`
+- `DatePicker`
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
 
 
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
@@ -1453,15 +1459,15 @@ In addition to the steps above, we can also style the controls that are used for
 <!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

@@ -81,8 +81,8 @@ The following demonstrates the implementation of each of the column animations d
 
 ## API References
 
- - `ColumnAddingAnimationMode`
- - `ColumnExchangingAnimationMode`
- - `ColumnHidingAnimationMode`
- - `ColumnMovingAnimationMode`
- - `ColumnPropertyUpdatingAnimationMode`
+- `ColumnAddingAnimationMode`
+- `ColumnExchangingAnimationMode`
+- `ColumnHidingAnimationMode`
+- `ColumnMovingAnimationMode`
+- `ColumnPropertyUpdatingAnimationMode`

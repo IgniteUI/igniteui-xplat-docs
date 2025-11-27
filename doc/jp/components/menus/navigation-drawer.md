@@ -2,6 +2,7 @@
 title: {Platform} NavDrawer | インフラジスティックス
 _description: インフラジスティックスの {Platform} NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
 _keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["NavDrawer"]
 _language: ja
 ---
@@ -469,17 +470,17 @@ igc-nav-drawer-header-item {
 
 ## API リファレンス
 
- - `Button`
- - `Icon`
- - `NavDrawerHeaderItem`
- - `NavDrawerItem`
- - `NavDrawer`
- - `Navbar`
- - `RadioGroup`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Icon`
+- `NavDrawerHeaderItem`
+- `NavDrawerItem`
+- `NavDrawer`
+- `Navbar`
+- `RadioGroup`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

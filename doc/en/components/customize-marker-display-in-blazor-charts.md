@@ -11,14 +11,14 @@ In this quick how-to article, we will explain how to use the marker display cust
 
 Contents of this article:
 
-* [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
-* [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
-* [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
-* [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
-* [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
-* [Conclusion – why Blazor is such a great framework](#in-conclusion)
+- [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
+- [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
+- [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
+- [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
+- [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
+- [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
+- [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
+- [Conclusion – why Blazor is such a great framework](#in-conclusion)
 
 Let’s get started with the customization of the marker display in Blazor Charts and Graphs.
 
@@ -30,8 +30,8 @@ Keep in mind that prior knowledge about drawing on JavaScript and HTML Canvas is
 
 First, the type of sample data to be bound is the following record type. In addition to having properties such as XValue and YValue as the values ​​for the X-axis and Y-axis in the [Blazor Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview), which are generally used in [Blazor Scatter chart type](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart), we will also add:
 
-* a "Double" type Volume property
-* a "Color" property
+- a "Double" type Volume property
+- a "Color" property
 
 The Volume property value of the Blazor Chart will be used as the size of the marker and the Color property value as the fill color of the marker.
 
@@ -77,7 +77,7 @@ Then, bind the sample data to the IgbScatterSeries data source, provided in the 
 
 Below you can see how the scatter plot is displayed.
 
-<img src="../images/general/blazor-wasm-app.png" />
+<img src="../images/general/blazor-wasm-app.png" alt="blazor-wasm-app" />
 
 Moving on to customization now. Let’s tweak the display of the markers to show the size and fill color based on the properties of the bound item (Volume and Color this time).
 
@@ -156,6 +156,7 @@ function customMarkerTemplateFunc() {
     }
 }
 ```
+
 Note you can implement any custom drawing with the HTML Canvas 2D context.
 
 However, since the render method is responsible for rendering the markers, it is necessary to implement all the processing required to display the markers by yourself. Therefore, prior knowledge of 2D rendering to the HTML Canvas element is required.
@@ -191,6 +192,7 @@ The above JavaScript program is loaded into the browser. However, in order to av
     igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
+
 This completes the implementation on the JavaScript side.
 
 The created JavaScript program file (.js) should be included in the fallback page (wwwroot/index.html, Pages/_Layout.cshtml、Pages/_Host.cshtml) as a script element so that it can be loaded from the browser.
@@ -220,9 +222,10 @@ There is a string parameter called MarkerTemplateScript, where you specify the s
     @*...*@
 </IgbDataChart>
 ```
+
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.
 
-<img src="../images/general/blazor-wasm-app-2.png" />
+<img src="../images/general/blazor-wasm-app-2.png" alt="blazor-wasm-app-2" />
 
 ## In Conclusion
 

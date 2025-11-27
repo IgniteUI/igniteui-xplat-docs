@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Row Dragging - {ProductName}
 _description: Row dragging in {Platform} {ComponentTitle} is used to quickly rearrange rows by dragging them with the mouse. See how to configure row dragging in your project.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -20,7 +21,7 @@ The {ProductName} Row Dragging feature in {Platform} {ComponentTitle} is easily 
 
 ## Configuration
 
-In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
+In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and **moving the cursor** while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
 <!-- Angular -->
 ```html
@@ -66,7 +67,7 @@ In this example, we'll handle dragging a row from one grid to another, removing 
 
 ### Drop Areas
 
-Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-*dropping*.
+Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-dropping.
 We can define where we want our rows to be dropped using the [Drop` directive](../drag-drop.md).
 
 First we need to import the `DragDropModule` in our app module:
@@ -104,6 +105,7 @@ Then, in our template, we define a drop-area using the directive's selector:
 <!-- ComponentStart: Grid -->
 
 In this case, our drop-area will be a whole second grid where we'll drop the rows.
+
 ```html
 <igx-grid #targetGrid igxDrop [data]="data2" [autoGenerate]="false" [emptyGridTemplate]="dragHereTemplate"
     (enter)="onEnterAllowed($event)" (leave)="onLeaveAllowed($event)" (dropped)="onDropAllowed($event)" [primaryKey]="'ID'">
@@ -114,6 +116,7 @@ In this case, our drop-area will be a whole second grid where we'll drop the row
 <igc-grid id="targetGrid" auto-generate="false" primary-key="ID">
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;
@@ -161,7 +164,7 @@ export class {ComponentName}RowDragComponent {
 
 Once we've defined our drop-area in the template, we have to declare our handlers for the `IgxDrop`'s <kbd>ENTER</kbd>, `Leave` and `Dropped` events in our component's **.ts** file.
 
-First, let's take a look at our <kbd>ENTER</kbd> and `Leave` handlers. In those methods, we just want to change the icon of the drag's *ghost* so we can indicate to the user that they are above an area that allows them to drop the row:
+First, let's take a look at our <kbd>ENTER</kbd> and `Leave` handlers. In those methods, we just want to change the icon of the drag's **ghost** so we can indicate to the user that they are above an area that allows them to drop the row:
 
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -183,6 +186,7 @@ export class {ComponentName}RowDragComponent {
     }
 }
 ```
+
 The **changeGhostIcon** **private** method just changes the icon inside of the drag ghost. The logic in the method finds the element that contains the icon (using the **igx-grid__drag-indicator** class that is applied to the drag-indicator container), changing the element's inner text to the passed one.
 The icons themselves are from the [**material** font set](https://material.io/tools/icons/) and are defined in a separate **enum**:
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
@@ -202,7 +206,7 @@ enum DragIcon {
 ```
 <!-- ComponentEnd: Grid -->
 
-Next, we have to define what should happen when the user actually *drops* the row inside of the drop-area.
+Next, we have to define what should happen when the user actually drops the row inside of the drop-area.
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -577,7 +581,7 @@ igRegisterScript("WebHierarchicalGridReorderRowHandler", (args) => {
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }, false);
- 
+
 function getCurrentRowIndex(rowList, cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -586,7 +590,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }
     return -1;
 }
 ```
@@ -674,7 +678,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }
     return -1;
 }
 ```
@@ -705,19 +709,19 @@ Once `RowDraggable` is enabled and a drop zone has been defined, you need to imp
 
 <!-- ComponentStart: Grid -->
 
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
+- Was the row dropped inside of the grid?
+- If so, on which **other** row was the dragged row dropped?
+- Once you've found the **target** row, swap the records' places in the `Data` array
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-  - Is the row expanded? If so, collapse it.
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
-  - Was the row initially selected? If so, mark it as selected.
+- Is the row expanded? If so, collapse it.
+- Was the row dropped inside of the grid?
+- If so, on which **other** row was the dragged row dropped?
+- Once you've found the **target** row, swap the records' places in the `Data` array
+- Was the row initially selected? If so, mark it as selected.
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -738,7 +742,7 @@ public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }
-    
+
 public getCurrentRowIndex(rowList: any[], cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -764,7 +768,7 @@ const webGridReorderRowHandler = (args: IgrRowDragEndEventArgs): void => {
     gridRef.current.deleteRow(args.detail.dragData.key);
     gridRef.current.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }
-    
+
 const getCurrentRowIndex = (rowList: any[], cursorPosition) => {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -1094,11 +1098,11 @@ export class HGridRowReorderComponent {
 ```tsx
 const webHierarchicalGridReorderRowHandler = (args: IgrRowDragEndEventArgs): void => {
     const ghostElement = args.detail.dragDirective.ghostElement;
-    const dragElementPos = ghostElement.getBoundingClientRect();        
+    const dragElementPos = ghostElement.getBoundingClientRect();
     hierarchicalGridRef.current.collapseAll();
-    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));        
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));
     const currRowIndex = getCurrentRowIndex(rows,
-    { x: dragElementPos.x, y: dragElementPos.y });        
+    { x: dragElementPos.x, y: dragElementPos.y });
     if (currRowIndex === -1) { return; }
     // remove the row that was dragged and place it onto its new location
     hierarchicalGridRef.current.deleteRow(args.detail.dragData.key);
@@ -1164,7 +1168,7 @@ igRegisterScript("WebGridReorderRowHandler", (args) => {
     grid.deleteRow(args.detail.dragData.key);
     grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }, false);
- 
+
 function getCurrentRowIndex(rowList, cursorPosition) {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
@@ -1173,7 +1177,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
             // return the index of the targeted row
             return parseInt(row.attributes["data-rowindex"].value);
         }
-    }    
+    }
     return -1;
 }
 ```
@@ -1467,13 +1471,13 @@ Currently, there are no known limitations for the `RowDraggable`.
 
 ## API References
 
-* `RowDraggable`
-* `RowDragStart`
-* `RowDragEnd`
-* `{ComponentName}`
+- `RowDraggable`
+- `RowDragStart`
+- `RowDragEnd`
+- `{ComponentName}`
 
 ## Additional Resources
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

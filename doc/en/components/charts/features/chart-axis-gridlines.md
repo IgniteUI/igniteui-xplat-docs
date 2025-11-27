@@ -2,6 +2,7 @@
 title: {Platform} Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Axis Gridlines
 _keywords: {Platform} Axis, Gridlines, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "NumericXAxis", "NumericYAxis", "NumericAxisBase" ]
 namespace: Infragistics.Controls.Charts
 ---
@@ -63,7 +64,6 @@ The axes of the `XamDataChart` also have the ability to place a dash array on th
 The following example demonstrates a `XamDataChart` with the above dash array properties set:
 
 `sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} Axis Dash Array Example"`
-
 
 <div class="divider--half"></div>
 

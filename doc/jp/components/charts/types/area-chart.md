@@ -2,6 +2,7 @@
 title: {Platform} エリア チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} エリア チャート
 _keywords: {Platform} Charts, Area Chart, Infragistics, {Platform} チャート, エリア チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -93,10 +94,7 @@ _language: ja
 
 `sample="/charts/category-chart/step-area-multiple-sources", height="600", alt="{Platform} ステップ エリア チャート"`
 
-
 <div class="divider--half"></div>
-
-## 高度なタイプのエリア チャート
 
 次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの {Platform} エリア チャートについて説明します。
 

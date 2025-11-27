@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} セルの選択 - {ProductName}
 _description: さまざまなイベント、豊富な API、またはマウス操作を使用してセル データ選択を簡単に実行できます。{ComponentTitle} はセル選択で 3 つのモードをサポートします。今すぐお試しください。
 _keywords: data select, igniteui for {Platform}, infragistics, データ選択, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -125,7 +126,7 @@ gridRef.current.selectRange(range)
     private {ComponentSelector} grid;
 
     private async void SetSelection()
-    {        
+    {
         IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
         selectionRange.ColumnStart = 1;
         selectionRange.ColumnEnd = 1;
@@ -440,24 +441,24 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* [選択](selection.md)
-* [行選択](row-selection.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
+- [選択](selection.md)
+- [行選択](row-selection.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

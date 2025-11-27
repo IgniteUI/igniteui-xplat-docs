@@ -2,12 +2,13 @@
 title: {Platform} Tooltip | Infragistics
 _description: The {ProductName} Tooltip component provides us with the ability to easily create a tooltip and attach it into an element.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Tooltip components
-mentionedTypes: ["Tooltip"]
+_license: MIT
+mentionedTypes: ["Tooltip", "PopoverPlacement"]
 ---
 
 # {Platform} Tooltip
 
-The {ProductName} Tooltip component provides a way to display a tooltip for a specific element. A tooltip is a popup that displays information related to an element, usually when the element receives keyboard focus or when the mouse hovers over it. 
+The {ProductName} Tooltip component provides a way to display a tooltip for a specific element. A tooltip is a popup that displays information related to an element, usually when the element receives keyboard focus or when the mouse hovers over it.
 
 ## {ProductName} Tooltip Example
 
@@ -69,7 +70,7 @@ You will also need to link an additional CSS file to apply the styling to the `T
 
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 Now you can start with a basic configuration of the {Platform} `Tooltip`.
 
@@ -125,7 +126,7 @@ To attach a tooltip to the desired element, use the `Anchor` property of the `To
 ```
 
 <!-- WebComponents, React -->
-You can also specify the target by passing the element instance directly: 
+You can also specify the target by passing the element instance directly:
 <!-- end: WebComponents, React -->
 
 ```html
@@ -243,9 +244,9 @@ If you want to control the delay before showing and hiding the `Tooltip`, you ca
 
 ### Placement
 
-The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the following position options: `top`, `top-start`, `top-end`, `bottom`, `bottom-start`, `bottom-end `, `right`, `right-start`, `right-end`, `left`, `left-start`, `left-end`.
+The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the `PopoverPlacement` options.
 
-If the `Placement` property is not set, the default value is `bottom`, which places the `Tooltip` below the target element.
+If the `Placement` property is not set, the default value is `Bottom`, which places the `Tooltip` below the target element.
 
 Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, which adds a close button and keeps the `Tooltip` visible until the user closes it manually - either by clicking the close button or pressing the `Esc` key. This behavior overrides the default hover behavior, preventing the `Tooltip` from disappearing when the user stops hovering over the target element.
 
@@ -313,10 +314,10 @@ In addition to its configurable properties, the `Tooltip` also exposes three met
 
 The `Tooltip` is built with accessibility in mind and includes the following ARIA attributes:
 
-* `role` - When the tooltip is in its default behavior, `role="tooltip"` is applied. If the `Sticky` property is enabled, the role changes to `status`.
-* `inert` - Dynamically toggled based on visibility. When the tooltip is hidden, it becomes inert.
-* `aria-atomic` - Set to true, ensuring that the entire tooltip content is announced when it changes.
-* `aria-live` - Set to polite, indicating to screen readers that updates should be announced only when the user is idle.
+- `role` - When the tooltip is in its default behavior, `role="tooltip"` is applied. If the `Sticky` property is enabled, the role changes to `status`.
+- `inert` - Dynamically toggled based on visibility. When the tooltip is hidden, it becomes inert.
+- `aria-atomic` - Set to true, ensuring that the entire tooltip content is announced when it changes.
+- `aria-live` - Set to polite, indicating to screen readers that updates should be announced only when the user is idle.
 
 ## Styling
 
@@ -354,9 +355,9 @@ igc-tooltip::part(bottom) {
 - `Badge`
 - `List`
 - `CategoryChart`
- - [`Styling & Themes`](../themes/overview.md)
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
