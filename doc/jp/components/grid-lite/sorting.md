@@ -336,7 +336,7 @@ UI を通じてソート操作が実行されると、コンポーネントは�
 grid.addEventListener('sorting', (event: CustomEvent<SortExpression<T>>) => { ... });
 grid.addEventListener('sorted', (event: CustomEvent<SortExpression<T>>) => { ... });
 ```
-<!-- End: React, WebComponents -->
+<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 UI を介してソート操作が実行されると、コンポーネントは `Sorting` および `Sorted` イベントを発生させます。`Sorting` イベントはキャンセル可能で、キャンセルすると現在のソート操作が停止します。
@@ -363,6 +363,7 @@ UI を介してソート操作が実行されると、コンポーネントは `
 次のサンプルでは、**Name** と **Rating** 列のソートを試みると操作がキャンセルされます。下記のイベント ログで動作を確認してください。
 
 `sample="/{GridLiteSample}/sort-config-events", height="600", alt="{Platform} {GridLiteTitle} ソート構成イベント"`
+
 <!-- React, WebComponents -->
 ## リモート ソート操作
 

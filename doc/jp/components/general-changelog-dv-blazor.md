@@ -43,6 +43,68 @@ alt="{Platform} user-annotation-create"/>
 
 - Azure Map Imagery は RTM になりました。
 
+### {PackageGrids} (グリッド)
+
+#### **すべてのグリッド**
+
+- **セルの結合**
+  - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。個々の列で有効化できます:
+
+```razor
+<IgbColumn Field="field" Merge="true"></IgbColumn>
+```
+
+- グリッド レベルで以下のいずれかの設定が可能です:
+    - `OnSort` - 列がソートされたときのみ結合。
+    - `Always` - データ操作に関わらず常に結合。
+  デフォルトの `CellMergeMode` は `OnSort` です。
+```razor
+<IgbGrid CellMergeMode="GridCellMergeMode.Always">
+</IgbGrid>
+```
+
+- **列のピン固定**
+  - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `PinningPosition` プロパティを宣言的に設定することで実行できます。
+```razor
+<IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
+</IgbColumn>
+```
+  - または:
+```razor
+col.PinningPosition = ColumnPinningPosition.End;
+col.Pinned = true;
+
+col.PinningPosition = ColumnPinningPosition.Start;
+col.Pinned = true;
+```
+  - 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
+
+- **ソートとグループ化の改善**
+  - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+  - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+  - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+  - グループ化処理を最適化しました。
+
+
+- **その他の改善**
+  - 列の `MinWidth` と `MaxWidth` によって、ユーザーが指定した width がこれらの範囲を超えないよう制限されるようになりました。
+  - `PagingMode` プロパティに、'local' および 'remote' の文字列を直接指定できるようになり、`GridPagingMode` 列挙型をインポートする必要がなくなりました。
+
+### 一般
+
+#### 追加
+- `DateRangePicker`
+
+#### 変更
+- すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
+- `Tooltip`
+  - 動作変更: `Tooltip` のデフォルトの placement は 「bottom」 になりました。
+  - 動作変更: with-arrow が設定されていない限り、`Tooltip` はデフォルトでは矢印インジケーターをレンダリングしません。
+  - 重大な変更: `Tooltip` イベントは、detail プロパティに anchor ターゲットを返さなくなりました。引き続き event.target.anchor でアクセスできます。
+
+#### 非推奨
+- `Tooltip` - `DisableArrow` は非推奨です。矢印インジケーターをレンダリングするには、`WithArrow` を使用してください。
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |
