@@ -27,7 +27,9 @@ Infragistics {Platform} Dock Manager は、ペインでアプリケーション�
 ```cmd
 npm install --save {PackageDockManager}
 ```
+<!-- end: Angular, React, WebComponents -->
 
+<!-- Angular, WebComponents -->
 次に **defineCustomElements()** 関数をインポートして呼び出します。
 
 ```ts
@@ -39,7 +41,7 @@ defineCustomElements();
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 
 ## 使用方法
 
@@ -48,6 +50,11 @@ defineCustomElements();
 ```html
 <igc-dockmanager id="dockManager">
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+</IgrDockManager>
 ```
 
 > [!Note]
@@ -76,6 +83,27 @@ this.dockManager.layout = {
 };
 ```
 
+```tsx
+import {  IgrDockManager, IgrDockManagerPaneType, IgrSplitPaneOrientation } from 'igniteui-react-dockmanager';
+
+// ...
+
+this.dockManager = document.getElementById("dockManager") as IgrDockManager;
+this.dockManager.layout = {
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.contentPane,
+                contentId: 'content1',
+                header: 'Pane 1'
+            }
+        ]
+    }
+};
+```
+
 ペインのコンテンツをロードするために、ドック マネージャーは[スロット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/slot)を使用します。コンテンツ要素の [slot](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Global_attributes/slot) 属性はレイアウト構成のコンテンツ ペインの `ContentId` と一致する必要があります。エンドユーザーがペインのサイズを変更する場合は、予測可能な応答のために、コンテンツ要素の幅と高さを **100%** に設定することを強くお勧めします。
 
 ```html
@@ -84,13 +112,23 @@ this.dockManager.layout = {
 </igc-dockmanager>
 ```
 
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+</IgrDockManager>
+```
+
 ドック マネージャーは複数の pane types を定義します。
 - `ContentPane`
 - `SplitPane`
 - `TabGroupPane`
 - `DocumentHost`
 
-各タイプのペインには `Size` プロパティがあります。親の方向に応じて、サイズはペインの幅または高さに影響します。ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。2 つの兄弟ペインがあり、最初のペインのサイズが 200 に設定され、2 番目のペインのサイズが 100 に設定されている場合、最初のペインは 2 番目のペインの 2 倍のサイズになり、これら 2 つのペインが使用可能なスペースをすべて埋めてしまいます。親の絶対サイズが 900px の場合、それぞれ 600px と 300px にサイズ設定されます。特定のペインのサイズをピクセル単位で指定する場合は、使用可能なすべてのスペースの相対的な配分に依存するのではなく、親の分割ペインの `useFixedSize` を設定する必要があります。詳細については、[分割ペインの固定サイズ モード](dock-manager-customization.md#分割ペインの固定サイズ-モード) トピックを参照してください。
+各タイプのペインには `Size` プロパティがあります。親の方向に応じて、サイズはペインの幅または高さに影響します。ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。2 つの兄弟ペインがあり、最初のペインのサイズが 200 に設定され、2 番目のペインのサイズが 100 に設定されている場合、最初のペインは 2 番目のペインの 2 倍のサイズになり、これら 2 つのペインが使用可能なスペースをすべて埋めてしまいます。親の絶対サイズが 900px の場合、それぞれ 600px と 300px にサイズ設定されます。特定のペインのサイズをピクセル単位で指定する場合は、使用可能なすべてのスペースの相対的な配分に依存するのではなく、親の分割ペインの `useFixedSize` を設定する必要があります。
+
+<!-- WebComponents -->
+詳細については、[分割ペインの固定サイズ モード](dock-manager-customization.md#分割ペインの固定サイズ-モード) トピックを参照してください。
+<!-- end: WebComponents -->
 
 エンドユーザーは、ランタイムにレイアウトをカスタマイズするために以下のアクションを実行できます。
 - ペインをピン設定 / ピン解除します。
@@ -115,6 +153,14 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1'
+}
+```
+
 `Header` プロパティはコンテンツ ペインのテキスト ヘッダーを提供するために使用されます。このテキストは複数の場所で描画されます。トップコンテンツペインヘッダー、ペインがタブグループにある場合はタブヘッダー、ペインが固定解除されている場合は固定解除ヘッダーです。`HeaderId`、`TabHeaderId` および `UnpinnedHeaderId` プロパティを使用してそれぞれこれらの場所にカスタム スロット コンテンツを提供できます。これらのプロパティのいずれかが設定されていない場合、`Header` テキストが使用されます。以下は、タブ ヘッダー スロット コンテンツを提供する方法です。
 
 ```html
@@ -133,11 +179,36 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+    <span slot="tabHeader1">Pane 1 Tab</span>
+</IgrDockManager>
+```
+
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    tabHeaderId: 'tabHeader1'
+}
+```
+
 ペインのピン固定が解除されると、ドック マネージャーのいずれかの端にタブ ヘッダーとして表示されます。エンドユーザーに選択されると、そのコンテンツはドッキングされたピン固定ペインの上に表示されます。コンテンツ ペインのピン固定を解除するには、`IsPinned` プロパティを **false** に設定します。
 
 ```ts
 const contentPane = {
     type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    isPinned: false
+}
+```
+
+```tsx
+const contentPane = {
+    type: IgrDockManagerPaneType.contentPane,
     contentId: 'content1',
     header: 'Pane 1',
     isPinned: false
@@ -156,8 +227,16 @@ const contentPane = {
 
 デフォルトでは、ペインを閉じると、`Layout` オブジェクトから削除されます。ただし、場合によってはペインを一時的に非表示にして後で表示することもできます。`Layout` オブジェクトを変更せずにそれを行うには、コンテンツペインの `Hidden` プロパティを使用できます。プロパティを **true** に設定すると UI から非表示になりますが、`Layout` オブジェクトに残ります。デフォルトの閉じる動作をオーバーライドするには、このように `PaneClose` イベントにサブスクライブできます。
 
-
 ```ts
+this.dockManager.addEventListener('paneClose', ev => {
+    for (const pane of ev.detail.panes) {
+        pane.hidden = true;
+    }
+    ev.preventDefault();
+});
+```
+
+```tsx
 this.dockManager.addEventListener('paneClose', ev => {
     for (const pane of ev.detail.panes) {
         pane.hidden = true;
@@ -189,6 +268,25 @@ const splitPane: IgcSplitPane = {
 }
 ```
 
+```tsx
+const splitPane: IgrSplitPane = {
+    type: IgrDockManagerPaneType.splitPane,
+    orientation: IgrSplitPaneOrientation.horizontal,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
 分割ペインは、他のスプリットされたペインを含むすべてのペイン タイプの子ペインを含むことができます。
 
 デフォルトでは、分割ペインが空の場合は表示されません。ただし、その動作を変更したい場合は、`AllowEmpty` プロパティを true に設定すると、内部にペインがない場合でも、分割ペインが UI に表示されます。
@@ -208,6 +306,24 @@ const tabGroupPane: IgcTabGroupPane = {
         },
         {
             type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
+```tsx
+const tabGroupPane: IgrTabGroupPane = {
+    type: IgrDockManagerPaneType.tabGroupPane,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
             contentId: 'content2',
             header: 'Pane 2'
         }
@@ -252,6 +368,33 @@ const docHost: IgcDocumentHost = {
 }
 ```
 
+```tsx
+const docHost: IgrDocumentHost = {
+    type: IgrDockManagerPaneType.documentHost,
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.tabGroupPane,
+                panes: [
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content1',
+                        header: 'Grid'
+                    },
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content4',
+                        header: "List"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
 ### フローティング ペイン
 
 フローティング ペインは、フローティング ウィンドウで他のペインの上に描画される分割ペインです。フローティング ペインの定義は、`Layout` の `FloatingPanes` プロパティに保存されます。以下は、単一のコンテンツ ペインを含むフローティング ペインを追加する方法です。
@@ -281,6 +424,31 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
+```tsx
+const layout: IgrDockManagerLayout = {
+    rootPane: {
+        // ...
+    },
+    floatingPanes: [
+        {
+            type: IgrDockManagerPaneType.splitPane,
+            orientation: IgrSplitPaneOrientation.horizontal,
+            floatingLocation: { x: 80, y: 80 },
+            floatingWidth: 200,
+            floatingHeight: 150,
+            floatingResizable: true,
+            panes: [
+                {
+                    type: IgrDockManagerPaneType.contentPane,
+                    contentId: 'content1',
+                    header: 'Floating Pane 1'
+                }
+            ]
+        }
+    ]
+};
+```
+
 `FloatingLocation`、`FloatingWidth` と `FloatingHeight` プロパティは絶対寸法をピクセル単位で表します。これらのプロパティは、`FloatingPanes` 配列の分割ペインにのみ適用されることに注意してください。
 
 `FloatingResizable` と `AllowFloatingPanesResize` を使用して、フローティング ペインのサイズ変更を許可するかどうかを設定できます。`allowFloatingPanesResize` は **IgcDockManagerComponent** プロパティであるため、値が **false** に設定されている場合、フローティング ペインのサイズを変更することはできません。`floatingResizable` プロパティは、`floatPanes` 配列の各分割ペインに個別に適用できます。プロパティ値が設定されていない場合、デフォルトで `allowFloatingPanesResize` プロパティの値になります。`floatingResizable` プロパティが特定のペインに設定されている場合、その値は `allowFloatingPanesResize` プロパティ値に優先されます。
@@ -290,6 +458,13 @@ const layout: IgcDockManagerLayout = {
 ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインをハイライト表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
 
 ```ts
+this.dockManager.addEventListener('activePaneChanged', ev => {
+    console.log(ev.detail.oldPane);
+    console.log(ev.detail.newPane);
+});
+```
+
+```tsx
 this.dockManager.addEventListener('activePaneChanged', ev => {
     console.log(ev.detail.oldPane);
     console.log(ev.detail.newPane);
@@ -334,9 +509,19 @@ const contentPane = splitPane.panes[0] as IgcContentPane;
 this.dockManager.removePane(contentPane);
 ```
 
+```tsx
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgrSplitPane;
+const contentPane = splitPane.panes[0] as IgrContentPane;
+this.dockManager.removePane(contentPane);
+```
+
 これは、レイアウト オブジェクトを更新するだけです。Dock Manager の更新をトリガーして変更を UI に反映するには、レイアウト オブジェクトを再割り当てする必要があります。
 
 ```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
+```tsx
 this.dockManager.layout = { ...this.dockManager.layout };
 ```
 
@@ -356,6 +541,19 @@ private loadLayout() {
 }
 ```
 
+```tsx
+private savedLayout: string;
+
+private saveLayout() {
+    this.savedLayout = JSON.stringify(this.dockManager.layout);
+}
+
+private loadLayout() {
+    this.dockManager.layout = JSON.parse(this.savedLayout);
+}
+```
+
+<!-- WebComponents -->
 ### 実行時にペインを追加する
 
 コンテンツとペインは、実行時に `Layout` に追加できます。以下の例では、コンテンツ、ドキュメント、およびフローティング ペインを追加する方法を確認できます。
@@ -364,14 +562,14 @@ private loadLayout() {
 `sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} ドック マネージャー実行時にペインを追加するの例"`
 
 
-
 <div class="divider--half"></div>
+<!-- end: WebComponents -->
 
 ### イベント
 
 ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
 
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -424,6 +622,33 @@ Dock Manager コンポーネントは、スロットとパーツを使用して�
         <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+</IgrDockManager>
 ```
 
 次に、スタイルシートで公開されたパーツを使用します。このようにして、コンポーネントのスタイル設定を完全に制御できます。
@@ -640,12 +865,14 @@ igc-dockmanager::part(content-pane) {
 | `splitter-handle` | スプリッターのハンドル。 |
 | `horizontal` | 水平位置を示します。`splitter-handle` に適用されます。 |
 | `vertical` | 垂直位置を示します。`splitter-handle` に適用されます。 |
-<!-- WebComponents -->
+
+<!-- React, WebComponents -->
 
 ## テーマ
 
 ドック マネージャーには、light (明るい) テーマと dark (暗い) テーマがあります。Light テーマがデフォルトです。Dark に変更するには、**igc.themes.css** ファイルを css にインポートし、**dark-theme** クラスをドック マネージャーまたはその親に追加します。
 
+<!-- WebComponents -->
 ```scss
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
 ```
@@ -653,10 +880,25 @@ igc-dockmanager::part(content-pane) {
 ```html
 <igc-dockmanager class="dark-theme">
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```scss
+@import 'igniteui-dockmanager/dist/collection/styles/igc.themes';
+```
+
+```tsx
+<IgrDockManager class="dark-theme">
+```
+<!-- end: React -->
+
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。
+
+<!-- WebComponents -->
+その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -668,10 +910,11 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 
 addResourceStrings('fr', dockManagerStringsFr);
 ```
+<!-- end: WebComponents -->
 
 ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
 
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 ## API リファレンス
 

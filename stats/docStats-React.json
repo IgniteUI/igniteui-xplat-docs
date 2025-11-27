@@ -2240,7 +2240,6 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation": [
@@ -2749,9 +2748,6 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started": [
-      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"

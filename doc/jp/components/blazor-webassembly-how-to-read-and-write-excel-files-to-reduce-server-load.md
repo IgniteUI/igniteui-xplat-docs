@@ -1,8 +1,9 @@
 ---
 title: Blazor Webassembly | Blazor Excel ライブラリ | インフラジスティックス
 _description: Infragistics Blazor Webassembly - Blazor WebAssembly 上で Excel ファイルを読み書きし、サーバー負荷を減らす
-_keywords: Blazor Webassembly, Excel ライブラリ, Excel ファイルの読み書き, $ProductName$, インフラジスティックス
+_keywords: Blazor Webassembly, Excel ライブラリ, Excel ファイルの読み書き, {ProductName}, インフラジスティックス
 _language: ja
+_license: commercial
 mentionedTypes: []
 ---
 
@@ -251,7 +252,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
         // アセンブリの遅延読み込みを行なってから、その遅延読み込みされるアセンブリ内の機能を使うメソッドを呼び出します。
         // (アセンブリの遅延読み込みを行なうメソッド内で直接、遅延読み込みしたアセンブリ内の機能を参照していると、
-        //  System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
+        // System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
         Await this.DownloadAsExcelAsync();
     }
     // <summary>

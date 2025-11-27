@@ -2,6 +2,7 @@
 title: {Platform} スタイリングとテーマ | {Platform} テーマ設定 | テーマの切り替え | インフラジスティックス
 _description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドによるストリーミング ファイナンシャルおよびビジネス チャートで、データの視覚化を向上させます。
 _keywords: {ProductName}, Infragistics, Themes, Styling, インフラジスティックス, テーマ, スタイル設定
+_license: MIT
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
@@ -17,7 +18,7 @@ _language: ja
 コンポーネントが公開するパーツは、各コンポーネントの API ドキュメントで確認できます。それとも、選択したブラウザーの「インスペクター」インターフェイスを使用していつでも見つけることができます。
 たとえば、アバターが公開しているパーツを見つけたい場合は、ブラウザーでコンポーネントを右クリックし、(Chrome の場合) [検証] をクリックします。これにより、Web インスペクターが開き、エレメント エクスプローラー タブにカスタム エレメント マークアップが表示されます。以下のスクリーンショットのようなものが表示されるはずです。
 
-<img class="responsive-img" src="../../images/avatar-markup.png" alt="avatar-markup" />
+<img class="responsive-img" src="../../images/avatar-markup.png" alt="avatar-markup" alt="Avatar マークアップ" />
 
 `Avatar` は、アバターのタイプに応じて、`base`、`icon`、`image`、`initials` の 4 つのパーツを公開することに気付くでしょう。これらのパーツを使用すると、スコープ内で定義されたスタイルを上書きできます。
 

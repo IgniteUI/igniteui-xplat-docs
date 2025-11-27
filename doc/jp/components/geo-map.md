@@ -10,7 +10,7 @@ _language: ja
 
 {ProductName} Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-# {Platform} マップの例
+## {Platform} マップの例
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 

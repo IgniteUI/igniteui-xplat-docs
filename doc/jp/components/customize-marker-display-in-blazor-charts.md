@@ -1,7 +1,7 @@
 ---
 title: マーカー表示をカスタマイズする | Blazor チャート | インフラジスティックス
 _description: Infragistics Blazor チャート - Blazor チャートでマーカー表示をカスタマイズする方法
-_keywords: Blazor チャート, マーカー表示, $ProductName$, インフラジスティックス
+_keywords: Blazor チャート, マーカー表示, {ProductName}, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---

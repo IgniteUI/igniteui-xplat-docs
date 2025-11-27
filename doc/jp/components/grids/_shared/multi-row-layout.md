@@ -1,5 +1,5 @@
 ---
-title:     {Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
+title: {Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
 _license: commercial

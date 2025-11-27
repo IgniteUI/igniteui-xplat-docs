@@ -29,7 +29,9 @@ _language: ja
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。
 
 <!-- Angular -->
+
 スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
+
 <!-- end: Angular -->
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
