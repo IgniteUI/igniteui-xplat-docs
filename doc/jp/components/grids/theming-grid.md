@@ -37,7 +37,7 @@ _language: ja
 | --header-background                      | color                    | グリッド ヘッダーの背景色                                                             |
 | --header-text-color                      | color                    | グリッド ヘッダーのテキストの色                                                                   |
 | --header-selected-background             | color                    | 選択時のグリッド ヘッダーの背景色 (列の選択など)。                       |
-| --header-selected-text-color             | color                    | 選択時のグリッド ヘッダーのテキスト色 (列の選択など)。                             |
+| --header-selected-text-color             | color                    | 選択時のグリッド ヘッダーのテキストの色 (列の選択など)。                             |
 | --sortable-header-icon-hover-color       | color                    | 列のソートが可能な場合のグリッド ヘッダーのホバーのアイコンの色。                          |
 | --sorted-header-icon-color               | color                    | ソートされたテーブル ヘッダー アイコンの色。                                                           |
 | --header-border-width                    | border-width             | ヘッダー境界線に使用される境界線の幅。                                                    |
@@ -77,7 +77,7 @@ _language: ja
 | --cell-editing-background                | color                    | 編集モードのセルの背景色。                                                 |
 | --edit-mode-color                        | color                    | 編集モードのテキストの色                                                                  |
 | --edited-row-indicator                   | color                    | 編集された行のインジケーターの色。                                                         |
-| --cell-new-color                         | color                    | 編集されていない新しいセルのテキスト色。グリッドに新しい行を追加するときに使用されます。                  |
+| --cell-new-color                         | color                    | 編集されていない新しいセルのテキストの色。グリッドに新しい行を追加するときに使用されます。                  |
 | --cell-edited-value-color                | color                    | セル編集値の色。                                                              |
 | --cell-disabled-color                    | color                    | 無効なセルのテキストの色。                                                           |
 | --resize-line-color                      | color                    | グリッド ヘッダーのサイズ変更線の色。                                                           |
@@ -98,7 +98,7 @@ _language: ja
 | --filtering-header-background            | color                    | フィルター済み列ヘッダーの背景色。                                          |
 | --filtering-header-text-color            | color                    | フィルター済み列ヘッダーテキストの色。                                          |
 | --filtering-row-background               | color                    | フィルタリング行の背景色。                                                   |
-| --filtering-row-text-color               | color                    | フィルタリング行のテキスト色の色。                                                   |
+| --filtering-row-text-color               | color                    | フィルタリング行のテキストの色の色。                                                   |
 | --tree-filtered-text-color               | color                    | フォーカスされているグループ化行の背景色。                                                  |
 | --body-summaries-background              | color                    | 本体に配置される集計グループの背景色。                                 |
 | --body-summaries-text-color              | color                    | 本体に配置される集計グループのテキストの色。                                       |
