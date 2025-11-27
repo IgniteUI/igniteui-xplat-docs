@@ -43,14 +43,15 @@ grid.columns = [...];
 ```
 
 ```razor
+<IgbGridLite Data="data" Columns="columns" />
 @code {
-    grid.Data = new List<T>
+    this.data = new List<T>
     {
         // レコードが続きます
     };
 
     // 新しいデータを反映するように列の構成を更新します。
-    grid.Columns = new List<IgbColumnConfiguration>
+    this.columns = new List<IgbColumnConfiguration>
     {
         // 列定義
     };
@@ -75,14 +76,15 @@ grid.data = [];
 ```
 
 ```razor
+<IgbGridLite Data="data" AutoGenerate="true" Columns="columns" />
+
 @code {
-    grid.AutoGenerate = true;
 
     // 列定義
-    grid.Columns = new List<IgbColumnConfiguration>();
+    this.columns = new List<IgbColumnConfiguration>();
 
     // 新しいバインディング後、グリッドはバインドされたデータから列コレクションを推論します。
-    grid.Data = new List<T>();
+    this.data = new List<T>();
 }
 ```
 <!-- React, WebComponents -->
