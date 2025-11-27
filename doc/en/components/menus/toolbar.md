@@ -2,6 +2,7 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
+_license: MIT
 mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 ---
 
@@ -234,34 +235,34 @@ Zooming Actions
 Trend Actions
 
 - `AnalyzeMenu`: A `ToolActionIconMenu` that contains several options for configuring different options of the chart.
- - `AnalyzeHeader`: A sub section header.
+- `AnalyzeHeader`: A sub section header.
   - `LinesMenu`: A sub menu containing various tools for showing different dashed horizontal lines on the chart.
-    - `LinesHeader`: A sub menu section header for the following three tools:
-      - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
-      - `MinValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the minimum value of the series.
-      - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
+  - `LinesHeader`: A sub menu section header for the following three tools:
+    - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
+    - `MinValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the minimum value of the series.
+    - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
   - `TrendsMenu`: A sub menu containing tools for applying various trendlines to the `XamDataChart` plot area.
-    - `TrendsHeader`: A sub menu section header for the following three tools:
-      - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
-      - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
-      - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
- - `HelpersHeader`: A sub section header.
+  - `TrendsHeader`: A sub menu section header for the following three tools:
+    - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
+    - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
+    - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
+- `HelpersHeader`: A sub section header.
   - `SeriesAvg`: A `ToolActionCheckbox` that adds or removes a `ValueLayer` to the chart's series collection using the `ValueLayerValueMode` of type `Average`.
   - `ValueLabelsMenu`: A sub menu containing various tools for showing different annotations on the `XamDataChart`'s plot area.
-    - `ValueLabelsHeader`: A sub menu section header for the following tools:
-      - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
-      - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
- - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
- - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
+  - `ValueLabelsHeader`: A sub menu section header for the following tools:
+    - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
+    - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
+- `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
+- `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 
 Save to Image Action
 
 - `CopyAsImage`: A `ToolActionLabel` that exposes an option to copy the chart to the clipboard.
- - `CopyHeader`: A sub section header.
+- `CopyHeader`: A sub section header.
 
 ### SVG Icons
 
-When adding tools manually, icons can be assigned using the `RenderIconFromText` method. There are three paramters to pass in this method. The first is the icon collection name defined on the tool eg. `IconCollectionName`. The second is the name of the icon defined on the tool eg. `IconName`, followed by adding the SVG string. 
+When adding tools manually, icons can be assigned using the `RenderIconFromText` method. There are three parameters to pass in this method. The first is the icon collection name defined on the tool eg. `IconCollectionName`. The second is the name of the icon defined on the tool eg. `IconName`, followed by adding the SVG string.
 
 ### Data URL Icons
 
@@ -281,7 +282,7 @@ The following snippet shows both methods of adding an Icon.
 public toolbarCustomIconOnViewInit(): void {
 
   const icon = '<svg width="28px" height="28px" stroke="none" viewBox="0 0 3.5 3.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gis" preserveAspectRatio="xMidYMid meet"><path d="M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z" fill="#000000" fill-rule="evenodd"/></svg>';
-  
+
   this.toolbar.registerIconFromText("CustomCollection", "CustomIcon", icon);
 }
 ```
@@ -316,7 +317,7 @@ public toolbarCustomIconOnViewInit(): void {
 public toolbarCustomIconOnViewInit(): void {
 
   toolbar.registerIconFromDataURL("CustomCollection", "CustomIcon", "https://www.svgrepo.com/show/678/calculator.svg");
-  
+
 }
 ```
 
@@ -342,20 +343,15 @@ public toolbarCustomIconOnViewInit(): void {
 
     public void ToolbarCustomIconOnViewInit()
     {
-    	this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
-    	{
-    		string icon =
-    		@"
-    			<svg width=""28px"" height=""28px"" stroke=""none"" viewBox=""0 0 3.5 3.5"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" aria-hidden=""true"" role=""img"" class=""iconify iconify--gis"" preserveAspectRatio=""xMidYMid meet""><path d=""M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z"" fill=""#000000"" fill-rule=""evenodd""/></svg>
-    		";
-    		this.toolbar.RegisterIconFromTextAsync("CustomCollection", "CustomIcon", icon);
-    	}));
+      this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
+      {
+        string icon =
+        @"
+          <svg width=""28px"" height=""28px"" stroke=""none"" viewBox=""0 0 3.5 3.5"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" aria-hidden=""true"" role=""img"" class=""iconify iconify--gis"" preserveAspectRatio=""xMidYMid meet""><path d=""M0.436 0.178a0.073 0.073 0 0 0 -0.062 0.036L0.01 0.846a0.073 0.073 0 0 0 0.063 0.109h0.729a0.073 0.073 0 0 0 0.063 -0.109L0.501 0.214a0.073 0.073 0 0 0 -0.064 -0.036zm0.001 0.219 0.238 0.413H0.199zM1.4 0.507v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245zM0.073 1.388A0.073 0.073 0 0 0 0 1.461v0.583a0.073 0.073 0 0 0 0.073 0.073h0.729A0.073 0.073 0 0 0 0.875 2.045V1.461a0.073 0.073 0 0 0 -0.073 -0.073zm0.073 0.146h0.583v0.438H0.146zM1.4 1.674v0.245h0.945v-0.245zm1.19 0v0.245h0.91v-0.245zM0.438 2.447c-0.241 0 -0.438 0.197 -0.438 0.438 0 0.241 0.197 0.438 0.438 0.438s0.438 -0.197 0.438 -0.438c0 -0.241 -0.197 -0.438 -0.438 -0.438zm0 0.146a0.291 0.291 0 0 1 0.292 0.292 0.291 0.291 0 0 1 -0.292 0.292 0.291 0.291 0 0 1 -0.292 -0.292A0.291 0.291 0 0 1 0.438 2.593zM1.4 2.842v0.245h0.525v-0.245zm0.77 0v0.245h1.33v-0.245z"" fill=""#000000"" fill-rule=""evenodd""/></svg>
+        ";
+        this.toolbar.RegisterIconFromTextAsync("CustomCollection", "CustomIcon", icon);
+      }));
     }
-
-}
-```
-
-@code {
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -370,12 +366,11 @@ public toolbarCustomIconOnViewInit(): void {
 
     public void ToolbarCustomIconOnViewInit()
     {
-    	this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
-    	{
+      this.toolbar.EnsureReady().ContinueWith(new Action<Task>((e) =>
+      {
             this.toolbar.RegisterIconFromDataURLAsync("CustomCollection", "CustomIcon", "https://www.svgrepo.com/show/678/calculator.svg");
-    	}));
+      }));
     }
-
 }
 ```
 
@@ -402,10 +397,12 @@ By default the {Platform} Toolbar is shown horizontally, but it also has the abi
 ```tsx
 <IgrToolbar orientation="Vertical" />
 ```
-The following example demonstrates the vertical orientation of the {Platform} Toolbar.
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"`
 
-### Color Editor 
+The following example demonstrates the vertical orientation of the {Platform} Toolbar.
+
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Vertical Orientation"`
+
+### Color Editor
 
 You can add a custom color editor tool to the the {Platform} Toolbar, which will also work with the Command event to perform custom styling to your application.
 
@@ -483,10 +480,10 @@ The icon component can be styled by using it's `BaseTheme` property directly to 
 
 ## API References
 
- - `Toolbar`
- - `XamDataChart`
+- `Toolbar`
+- `XamDataChart`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Using Cells | Infragistics
 _description: Learn how to perform operations on Infragistics' {Platform} excel library's cells such as accessing them, adding formulas and comments, merging cells and formatting cells. View {ProductName} excel demos!
 _keywords: Excel library,  cell operations, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook", "Worksheet", "WorksheetCell", "WorkbookStyleCollection", "IWorksheetCellFormat", "WorkbookColorInfo", "DisplayOptions"]
 ---
 # {Platform} Using Cells
@@ -430,20 +431,20 @@ var cellText = worksheet.Rows[0].Cells[0].GetText();
 
 ## API References
 
- - `Add`
- - `CellFillLinearGradient`
- - `CellFillPattern`
- - `CellFillRectangularGradient`
- - `CellFill`
- - `CellFormat`
- - `DisplayOptions`'
- - `Formula`
- - `MergedCellsRegions`
- - `WorkbookColorInfo`
- - `WorkbookStyle`
- - `Workbook`
- - `WorksheetCell`
- - `WorksheetColumn`
- - `WorksheetRegion`
- - `WorksheetRow`
- - `Worksheet`
+- `Add`
+- `CellFillLinearGradient`
+- `CellFillPattern`
+- `CellFillRectangularGradient`
+- `CellFill`
+- `CellFormat`
+- `DisplayOptions`'
+- `Formula`
+- `MergedCellsRegions`
+- `WorkbookColorInfo`
+- `WorkbookStyle`
+- `Workbook`
+- `WorksheetCell`
+- `WorksheetColumn`
+- `WorksheetRegion`
+- `WorksheetRow`
+- `Worksheet`

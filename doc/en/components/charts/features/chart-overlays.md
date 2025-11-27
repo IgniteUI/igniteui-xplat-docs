@@ -2,6 +2,7 @@
 title: {Platform} Chart Overlays | Data Visualization Tools | Value Overlay | Infragistics
 _description: Use Infragistics {ProductName} chart control's value overlay feature to place horizontal or vertical lines at a single numeric value. Learn about our {ProductName} graph types!
 _keywords: {Platform} charts, data chart, value overlay, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "ValueOverlay", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -79,7 +80,7 @@ public Series StylingOverlayText()
 {
     var annoLayer = new IgbDataAnnotationSliceLayer();
 
-    // styling optional overlay text 
+    // styling optional overlay text
     annoLayer.OverlayTextColor = Brushes.White;
     annoLayer.OverlayTextBackground = Brushes.Green;
     annoLayer.OverlayTextBorderColor = Brushes.Black;

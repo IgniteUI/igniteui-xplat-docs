@@ -34,6 +34,7 @@ import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 IgrDataGridModule.register();
 ```
+
 ```ts
 import { ModuleManager } from 'igniteui-webcomponents-core';
 import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
@@ -101,6 +102,7 @@ ModuleManager.register(
 다음의 코드는 {Platform} 데이터 그리드를 상기의 데이터에 바인딩하는 방법을 보여줍니다.
 
 자동 생성된 열:
+
 ```tsx
 <IgrDataGrid
     height="100%"
@@ -108,6 +110,7 @@ ModuleManager.register(
     autoGenerateColumns="true"
     dataSource={this.data}/>
 ```
+
 ```html
 <igc-data-grid id="grid"
       height="100%"
@@ -122,6 +125,7 @@ grid1.dataSource = data;
 ```
 
 열의 수동 정의:
+
 ```tsx
 <IgrDataGrid
     height="100%"

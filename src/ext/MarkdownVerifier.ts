@@ -173,7 +173,11 @@ export class MarkdownVerifier {
                 this.verifySectionSample(section);
             else if (section.isTable()) 
                 this.verifySectionTable(section);
+            else if (section.isImage()) 
+                this.verifySectionImage(section);
             // else 
+                // console.log("verifyMarkdown else section");
+                // console.log(section);
             //     this.verifySectionParagraph(section);
         }
 
@@ -484,6 +488,23 @@ export class MarkdownVerifier {
                 
             }
         }
+    }
+
+    verifySectionImage(section: MarkdownSection) {
+        var content = section.content;
+        if (content === "") return;
+
+        // console.log(" ------------------------ verifySectionImage ------------------------")
+        // console.log(section);
+        // console.log("------------------------")
+        // LOG.action("verifySectionParagraph:", NEWLINE + paragraph);
+        
+        // var words = content.split(' ');
+        // for (var word of words) {
+        //     if (content.indexOf("src=") >= 0 && word.indexOf(".png") < 0){
+        //         this.errors.push('Topic is missing "' + ".png" + '" extension in ' + section.filePath + ":" + section.index + "\n" + content);
+        //     }
+        // }
     }
 
     verifyVariable(str: string) {

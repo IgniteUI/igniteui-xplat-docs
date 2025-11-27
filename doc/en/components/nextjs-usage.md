@@ -16,7 +16,7 @@ Explore the seamless integration of {ProductName} into your Next.js project. Thi
 
 <div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
+      <img src="../images/general/nodejs.svg" alt="nodejs"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -24,7 +24,7 @@ Explore the seamless integration of {ProductName} into your Next.js project. Thi
       </a>
     </div>
     <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
+      <img src="../images/general/vs-code.svg" alt="vs-code"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
          style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
@@ -85,6 +85,7 @@ import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 IgrGeographicMapModule.register();
 IgrDataChartInteractivityModule.register();
 ```
+
 > [!Note]
 > It's important to note that {ProductName} components are using client-only features like state and browser events. Infragistics' components will work as expected within Client Next.js Components since they have the "use client" directive, but they won't work within Server Components.
 
@@ -117,9 +118,10 @@ After executing this command, your project will be built and served locally on y
 
 The final result should look something like this screenshot:
 
-<img src="../images/general/geo-map.png" />
+<img src="../images/general/geo-map.png" alt="geo-map" />
 
 ## Using {Platform} in Next.js Server Components
+
 As mentioned earlier, most components of {Platform} rely on state and browser events, making them incompatible with direct use within Server Components. Nevertheless, if you find the need to use them this way, Infragistics' components can be wrapped within their respective Client Components.
 
 ```tsx
@@ -167,7 +169,7 @@ export default function DynamicButtonComponent() {
       return IgrButton;
     }
   );
-  
+
   return (
       <IgButton variant="contained">
         <span key="title">Click me</span>
@@ -255,7 +257,9 @@ export default function GridDynamicComponent() {
 > Implementing lazy loading for components can enhance performance, but it is advisable to use it exclusively when the components are not immediately visible on the page.
 
 ## Limitations
+
 - If your Next.js project is using Page routing then you should transpile the {ProductName} packages using the `next.config.js` options. Your config should contain the following:
+
 ```tsx
 const nextConfig = {
     transpilePackages: ['igniteui-react'],
@@ -267,11 +271,11 @@ const nextConfig = {
 
 ## Additional Resources
 
-* [Ignite UI for React](../components/general-getting-started.md)
-* [Grid Overview](../components/grids/data-grid.md)
-* [Next.js Documentation](https://nextjs.org/docs)
+- [Ignite UI for React](../components/general-getting-started.md)
+- [Grid Overview](../components/grids/data-grid.md)
+- [Next.js Documentation](https://nextjs.org/docs)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

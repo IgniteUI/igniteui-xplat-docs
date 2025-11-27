@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Data Spreadsheet | Infragistics
 _description: Use the Excel Library to work with spreadsheet data using Microsoft Excel features. Easily transfer data from excel to your application.
 _keywords: Excel library, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook"]
 ---
 # {Platform} Working with Grids
@@ -16,6 +17,7 @@ TODO
 <div class="divider--half"></div>
 
 ## Usage
+
 The following code demonstrates how to use ... TODO
 
 ```ts
@@ -24,4 +26,4 @@ TODO
 
 ## API References
 
- - `Workbook`
+- `Workbook`

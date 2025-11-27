@@ -2,6 +2,7 @@
 title: {Platform} Rating
 _description: {ProductName} Rating を使用すると、ユーザーは Unicode シンボル、SVG、またはアイコンを使用してフィードバックを表示および提供できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Rating components, {Platform} Rating controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Rating コンポーネント, {Platform} Rating コントロール
+_license: MIT
 mentionedTypes: ["Rating"]
 _language: ja
 ---
@@ -124,18 +125,18 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
         <IgrIcon name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-        <IgrIcon  name='heart' collection="material"></IgrIcon>                           
+        <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-      	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+      <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
-    </IgrRatingSymbol>                        
-</IgrRating> 
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
+    </IgrRatingSymbol>
+</IgrRating>
 ```
 <!-- end: React -->
 
@@ -174,26 +175,26 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <!-- React -->
 ```tsx
 <IgrRating single={true}>
-  <IgrRatingSymbol>                           
-      <div>😣</div>	
-      <div slot="empty">😣</div>
-    </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
-    </IgrRatingSymbol>                         
+    </IgrRatingSymbol>
+  <IgrRatingSymbol>
+      <div>😣</div>
+      <div slot="empty">😣</div>
+    </IgrRatingSymbol>
 </IgrRating>
 ```
 <!-- end: React -->
@@ -228,8 +229,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```tsx
 <IgrRatingSymbol>
     <div><IgrIcon name='bandage' collection="material"></IgrIcon></div>
-    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div> 
-</IgrRatingSymbol> 
+    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div>
+</IgrRatingSymbol>
 ```
 <!-- end: React -->
 
@@ -368,5 +369,5 @@ igc-rating::part(empty) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

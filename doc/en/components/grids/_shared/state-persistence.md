@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} State Persistence - {ProductName}
 _description: Easily save and restore the grid state, using our comprehensive Ignite UI toolset for {Platform}. Learn how to restore columns, explore usage, and see demos!
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["GridStateBaseDirective", "GridState", "PivotConfiguration", "PivotDimension", "PivotValue"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -28,41 +29,41 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* **Sorting**
-* **Filtering**
-* **Advanced Filtering**
-* **Paging**
-* **CellSelection**
-* **RowSelection**
-* **ColumnSelection**
-* **RowPinning**
-* **Expansion**
-* **GroupBy**
-* **Columns**
-    * Multi column headers
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
+- **Sorting**
+- **Filtering**
+- **Advanced Filtering**
+- **Paging**
+- **CellSelection**
+- **RowSelection**
+- **ColumnSelection**
+- **RowPinning**
+- **Expansion**
+- **GroupBy**
+- **Columns**
+  - Multi column headers
+  - Columns order
+  - Column properties defined by the `IColumnState` interface.
 <!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* **RowIslands**
-    * saving/restoring features for all child grids down the hierarchy
-* **Sorting**
-* **Filtering**
-* **AdvancedFiltering**
-* **Paging**
-* **CellSelection**
-* **RowSelection**
-* **ColumnSelection**
-* **RowPinning**
-* **Expansion**
-* **Columns**
-    * Multi column headers
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
+- **RowIslands**
+  - saving/restoring features for all child grids down the hierarchy
+- **Sorting**
+- **Filtering**
+- **AdvancedFiltering**
+- **Paging**
+- **CellSelection**
+- **RowSelection**
+- **ColumnSelection**
+- **RowPinning**
+- **Expansion**
+- **Columns**
+  - Multi column headers
+  - Columns order
+  - Column properties defined by the `IColumnState` interface.
 <!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -70,26 +71,26 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 <!-- ComponentStart: PivotGrid -->
 
 <!-- Angular, WebComponents -->
-* `Sorting`
-* `Filtering`
-* `CellSelection`
-* `ColumnSelection`
-* `Expansion`
-* `PivotConfiguration`
-    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
-    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
-    * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
+- `Sorting`
+- `Filtering`
+- `CellSelection`
+- `ColumnSelection`
+- `Expansion`
+- `PivotConfiguration`
+  - Pivot Configuration properties defined by the `IPivotConfiguration` interface.
+  - Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
+  - Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
 <!-- end: Angular, WebComponents -->
 
 <!-- Blazor, React -->
-* `Sorting`
-* `Filtering`
-* `CellSelection`
-* `ColumnSelection`
-* `Expansion`
-* `PivotConfiguration`
-    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
-    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
+- `Sorting`
+- `Filtering`
+- `CellSelection`
+- `ColumnSelection`
+- `Expansion`
+- `PivotConfiguration`
+  - Pivot Configuration properties defined by the `IPivotConfiguration` interface.
+  - Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
 <!-- end: Blazor, React -->
 
 
@@ -452,7 +453,7 @@ const restoreGridState = () => {
 
 `GridState` will not persist columns templates, column formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. Let's show how to do this for templated columns:
 
-1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
+1 - Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
 
 <!-- ComponentStart: Grid -->
 
@@ -543,6 +544,7 @@ function activeTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     </igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
@@ -624,7 +626,7 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-2. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+2 - Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 
 ```typescript
 @ViewChild('activeTemplate', { static: true }) public activeTemplate: TemplateRef<any>;
@@ -636,7 +638,7 @@ public onColumnInit(column: IgxColumnComponent) {
 ```
 
 <!-- Blazor, React, WebComponents -->
-2. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+3 - In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 <!-- end: Blazor, React, WebComponents -->
 
 ```typescript
@@ -679,7 +681,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 
 `GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `{ComponentName}` exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
-* Assign event handlers for the `DimensionInit` and `ValueInit` events:
+- Assign event handlers for the `DimensionInit` and `ValueInit` events:
 
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfig" [igxGridState]="options"
@@ -725,7 +727,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 
 > The `DimensionInit` and `ValueInit` events are emitted for each value and dimension defined in the `PivotConfiguration` property.
 
-* In the `ValueInit` event handler set all custom aggregators, formatters and styles:
+- In the `ValueInit` event handler set all custom aggregators, formatters and styles:
 
 <!-- Angular -->
 ```typescript
@@ -859,7 +861,7 @@ igRegisterScript("OnValueInit", (args) => {
 }, false);
 ```
 <!-- Angular, WebComponents -->
-* In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
+- In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
 <!-- end: Angular, WebComponents -->
 
 <!-- Angular -->
@@ -972,6 +974,7 @@ state.applyState(state, ['filtering', 'rowIslands']);
 
 <!-- Blazor -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
+
 ```razor
 gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering", "rowIslands" });
 ```
@@ -993,7 +996,7 @@ gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering",
 
 > `StateParsed` is only emitted when we are using `SetState` with string argument.
 
-* Set custom sorting strategy and custom pivot column and row dimension strategies:
+- Set custom sorting strategy and custom pivot column and row dimension strategies:
 
 <!-- Angular -->
 ```html
@@ -1058,7 +1061,7 @@ constructor() {
 Add snippet for blazor
 ```
 
-* Restoring the state from the `LocalStorage` and applying the custom strategies looks like the following:
+- Restoring the state from the `LocalStorage` and applying the custom strategies looks like the following:
 
 <!-- Angular -->
 ```typescript
@@ -1106,7 +1109,7 @@ Add snippet for blazor for restore state
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* When restoring all grid features at once (using `applyState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+- When restoring all grid features at once (using `applyState` API with no parameters), then column properties for the root grid might be reset to default. If this happens, restore the columns or column selection feature separately after that:
 
 ```typescript
 state.applyState(gridState);
@@ -1118,22 +1121,22 @@ state.applyState(gridState.columnSelection);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- Angular -->
-* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+- `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
 <!-- end: Angular -->
 
 <!-- React, WebComponents -->
-* `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+- `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-* `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+- `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
 <!-- end: Blazor -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart: PivotGrid -->
 
-* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions, `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
+- `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions, `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -1142,10 +1145,11 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid -->
 ## Additional Resources
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Selection](selection.md)
+
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
@@ -1155,6 +1159,6 @@ state.applyState(gridState.columnSelection);
 
 <!-- * [Pivot Grid Features](features.md) -->
 <!-- WebComponents -->
-* [Pivot Grid Remote Operations](remote-operations.md)
+- [Pivot Grid Remote Operations](remote-operations.md)
 <!-- end: WebComponents -->
 <!-- ComponentEnd: PivotGrid -->

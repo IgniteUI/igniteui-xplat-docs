@@ -2,6 +2,7 @@
 title: {Platform} Chat | {ProductName}
 _description: {ProductName} Chat を使用すると、メッセージ、添付、サジェスト、入力中インジケーター、カスタム テンプレートのサポートにより、インタラクティブなメッセージング エクスペリエンスを構築できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Chat コンポーネント, {Platform} Chat コントロール
+_license: MIT
 mentionedTypes: ["Chat"]
 _language: ja
 ---
@@ -53,6 +54,7 @@ const options: IgcChatOptions = {
   headerText: 'Support Chat',
 };
 ```
+
 ```html
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
@@ -183,6 +185,7 @@ const options: IgcChatOptions = {
   suggestionsPosition: "below-input"
 };
 ```
+
 ```html
 <igc-chat
   .options=${options}>
@@ -317,7 +320,7 @@ const options = {
           <button onClick={() => alert('Voice input!')}>🎤</button>
         </>
       );
-    } 
+    }
   }
 };
 ```
@@ -505,60 +508,60 @@ chatRef.current.addEventListener('onMessageCreated', (e) => {
 
 | パーツ名                           | 説明                                                    |
 |---------------------------------|-------------------------------------------------------|
-| `chat-container`                | メイン チャット コンテナーのスタイルを設定します。                            |
-| `header`                        | チャット ヘッダー コンテナーのスタイルを設定します。                           |
-| `prefix`                        | チャット タイトルの前の要素 (アバターなど) のスタイルを設定します。               |
-| `title`                         | チャット ヘッダー タイトルのスタイルを設定します。                            |
-| `message-area-container`        | メッセージと (オプションの) サジェストを保持するコンテナーのスタイルを設定します。         |
-| `message-list`                  | メッセージ リスト コンテナーのスタイルを設定します。                           |
-| `message-item`                  | 各メッセージ ラッパーのスタイルを設定します。                              |
-| `typing-indicator`              | 入力インジケーター コンテナーのスタイルを設定します。                         |
-| `typing-dot`                    | 個々の入力中インジケーターのドットをスタイルします。                          |
-| `suggestions-container`         | すべてのサジェストを保持するコンテナーのスタイルを設定します。                     |
-| `suggestions-header`            | サジェスト ヘッダーのスタイルを設定します。                                |
-| `suggestion`                    | 各サジェスト項目にスタイルを設定します。                               |
-| `suggestion-prefix`             | サジェスト内のアイコンまたはプレフィックスのスタイルを設定します。                    |
-| `suggestion-title`              | サジェストのテキスト/タイトルのスタイルを設定します。                           |
-| `empty-state`                   | メッセージがない場合の空の状態のコンテナーのスタイルを設定します。                |
-| `input-area-container`          | チャット入力領域のラッパーのスタイルを設定します。                         |
-| `input-container`               | メイン入力コンテナーのスタイルを設定します。                              |
-| `input-attachments-container`   | 入力内の添付のコンテナーのスタイルを設定します。                         |
-| `input-attachment-container`    | 入力領域内の単一の添付にスタイルを設定します。                      |
-| `input-attachment-name`         | 添付のファイル名のスタイルを設定します。                               |
-| `input-attachment-icon`         | 添付のアイコンのスタイルを設定します。                                 |
-| `text-input`                    | メッセージを入力するためのテキスト入力フィールドのスタイルを設定します。              |
-| `input-actions-container`       | 入力アクション用のコンテナーのスタイルを設定します。                         |
-| `input-actions-start`           | デフォルトのファイル アップロード後、入力の先頭にあるアクション グループをスタイル設定します。 |
-| `input-actions-end`             | 入力の末尾にあるアクション グループをスタイル設定します。                     |
-| `file-upload-container`         | ファイル アップロード入力用のコンテナーのスタイルを設定します。                   |
-| `file-upload`                   | ファイル アップロード入力自体のスタイルを設定します。                       |
-| `send-button-container`         | 送信ボタンの周囲のコンテナーのスタイルを設定します。                        |
-| `send-button`                   | 送信ボタンのスタイルを設定します。                                   |
-| `message-container`             | 単一メッセージのコンテナーをスタイルします。                                |
-| `message-list (forwarded)`      | メッセージの内部リストのスタイルを設定します。                             |
-| `message-header`                | メッセージのヘッダー (送信者、タイムスタンプなど) のスタイルを設定します。            |
-| `message-content`               | メッセージのテキスト コンテンツのスタイルを設定します。                          |
-| `message-attachments-container` | メッセージ添付のコンテナーのスタイルを設定します。                           |
-| `message-attachment`            | 単一のメッセージ添付にスタイルを設定します。                            |
-| `message-actions-container`     | メッセージ アクションを保持するコンテナーのスタイルを設定します。                   |
-| `message-sent`                  | 現在のユーザーによって送信済みとしてマークされたメッセージにスタイルを設定します。        |
-| `attachment-header`             | 添付ブロックのヘッダーにスタイルを設定します。                             |
-| `attachment-content`            | 添付ブロックのコンテンツにスタイルを設定します。                            |
-| `attachment-icon`               | 添付のアイコンのスタイルを設定します。                                 |
-| `file-name`                     | 添付に表示されるファイル名のスタイルを指定します。                        |
+| "chat-container"                | メイン チャット コンテナーのスタイルを設定します。                            |
+| "header"                        | チャット ヘッダー コンテナーのスタイルを設定します。                           |
+| "prefix"                        | チャット タイトルの前の要素 (アバターなど) のスタイルを設定します。               |
+| "title"                         | チャット ヘッダー タイトルのスタイルを設定します。                            |
+| "message-area-container"        | メッセージと (オプションの) サジェストを保持するコンテナーのスタイルを設定します。         |
+| "message-list"                  | メッセージ リスト コンテナーのスタイルを設定します。                           |
+| "message-item"                  | 各メッセージ ラッパーのスタイルを設定します。                              |
+| "typing-indicator"              | 入力インジケーター コンテナーのスタイルを設定します。                         |
+| "typing-dot"                    | 個々の入力中インジケーターのドットをスタイルします。                          |
+| "suggestions-container"         | すべてのサジェストを保持するコンテナーのスタイルを設定します。                     |
+| "suggestions-header"            | サジェスト ヘッダーのスタイルを設定します。                                |
+| "suggestion"                    | 各サジェスト項目にスタイルを設定します。                               |
+| "suggestion-prefix"             | サジェスト内のアイコンまたはプレフィックスのスタイルを設定します。                    |
+| "suggestion-title"              | サジェストのテキスト/タイトルのスタイルを設定します。                           |
+| "empty-state"                   | メッセージがない場合の空の状態のコンテナーのスタイルを設定します。                |
+| "input-area-container"          | チャット入力領域のラッパーのスタイルを設定します。                         |
+| "input-container"               | メイン入力コンテナーのスタイルを設定します。                              |
+| "input-attachments-container"   | 入力内の添付のコンテナーのスタイルを設定します。                         |
+| "input-attachment-container"    | 入力領域内の単一の添付にスタイルを設定します。                      |
+| "input-attachment-name"         | 添付のファイル名のスタイルを設定します。                               |
+| "input-attachment-icon"         | 添付のアイコンのスタイルを設定します。                                 |
+| "text-input"                    | メッセージを入力するためのテキスト入力フィールドのスタイルを設定します。              |
+| "input-actions-container"       | 入力アクション用のコンテナーのスタイルを設定します。                         |
+| "input-actions-start"           | デフォルトのファイル アップロード後、入力の先頭にあるアクション グループをスタイル設定します。 |
+| "input-actions-end"             | 入力の末尾にあるアクション グループをスタイル設定します。                     |
+| "file-upload-container"         | ファイル アップロード入力用のコンテナーのスタイルを設定します。                   |
+| "file-upload"                   | ファイル アップロード入力自体のスタイルを設定します。                       |
+| "send-button-container"         | 送信ボタンの周囲のコンテナーのスタイルを設定します。                        |
+| "send-button"                   | 送信ボタンのスタイルを設定します。                                   |
+| "message-container"             | 単一メッセージのコンテナーをスタイルします。                                |
+| "message-list (forwarded)"      | メッセージの内部リストのスタイルを設定します。                             |
+| "message-header"                | メッセージのヘッダー (送信者、タイムスタンプなど) のスタイルを設定します。            |
+| "message-content"               | メッセージのテキスト コンテンツのスタイルを設定します。                          |
+| "message-attachments-container" | メッセージ添付のコンテナーのスタイルを設定します。                           |
+| "message-attachment"            | 単一のメッセージ添付にスタイルを設定します。                            |
+| "message-actions-container"     | メッセージ アクションを保持するコンテナーのスタイルを設定します。                   |
+| "message-sent"                  | 現在のユーザーによって送信済みとしてマークされたメッセージにスタイルを設定します。        |
+| "attachment-header"             | 添付ブロックのヘッダーにスタイルを設定します。                             |
+| "attachment-content"            | 添付ブロックのコンテンツにスタイルを設定します。                            |
+| "attachment-icon"               | 添付のアイコンのスタイルを設定します。                                 |
+| "file-name"                     | 添付に表示されるファイル名のスタイルを指定します。                        |
 
 ### スロット
 
 | スロット名                | 説明                                             |
 |-----------------------|--------------------------------------------------|
-| `prefix`              | チャット タイトルの前にコンテンツ (アバターやアイコンなど) を挿入するためのスロット。 |
-| `title`               | チャット タイトルの内容をオーバーライドするためのスロット。                 |
-| `actions`             | ヘッダー アクション (ボタン、メニューなど) を挿入するためのスロット。          |
-| `suggestions-header`  | サジェスト リストのカスタム ヘッダーをレンダリングするためのスロット。             |
-| `suggestions`         | クイック リプライのサジェストのカスタム リストをレンダリングするためのスロット。        |
-| `suggestions-actions` | 追加のアクションをレンダリングするためのスロット。                      |
-| `suggestion`          | 単一のサジェスト項目をレンダリングするためのスロット。                  |
-| `empty-state`         | メッセージがない場合に表示されるスロット。                        |
+| "prefix"              | チャット タイトルの前にコンテンツ (アバターやアイコンなど) を挿入するためのスロット。 |
+| "title"               | チャット タイトルの内容をオーバーライドするためのスロット。                 |
+| "actions"             | ヘッダー アクション (ボタン、メニューなど) を挿入するためのスロット。          |
+| "suggestions-header"  | サジェスト リストのカスタム ヘッダーをレンダリングするためのスロット。             |
+| "suggestions"         | クイック リプライのサジェストのカスタム リストをレンダリングするためのスロット。        |
+| "suggestions-actions" | 追加のアクションをレンダリングするためのスロット。                      |
+| "suggestion"          | 単一のサジェスト項目をレンダリングするためのスロット。                  |
+| "empty-state"         | メッセージがない場合に表示されるスロット。                        |
 
 #### ルート スタイルの採用 (adoptRootStyles)
 
@@ -576,8 +579,8 @@ Chat コンポーネントのオプションには、高度なスタイル設定
 
 このプロパティに使用する前に、標準の Web Component スタイル設定アプローチを使用することを強くお勧めします。
 - CSS 変数と ::part API - 公開されたパーツと変数を使用したカスタマイズを優先します。
-- `<link>` 要素 – 大きなスタイルシートの場合は、Shadow DOM 内に挿入します。
-- インライン `<style>` タグ – 小さなスコープのスタイル オーバーライド用。
+- <link> 要素 – 大きなスタイルシートの場合は、Shadow DOM 内に挿入します。
+- インライン <style> タグ – 小さなスコープのスタイル オーバーライド用。
 
 #### 例
 
@@ -613,5 +616,5 @@ igc-chat::part(empty-state) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

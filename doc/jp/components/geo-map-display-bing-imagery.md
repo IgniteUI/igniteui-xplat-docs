@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | Bing 画像の表示 | インフラジスティックス
 _description: インフラジスティックスの {Platform} を使用して Microsoft Bing Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
 _keywords: {Platform} map, bing maps, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, bing マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "BingMapsMapImagery"]
 _language: ja
 ---
@@ -20,7 +21,7 @@ _language: ja
 
 <!-- `sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"` -->
 
-<img src="../images/general/BingMapsImagery.png" />
+<img src="../images/general/BingMapsImagery.png" alt="Angular Bing Maps 画像" />
 
 <div class="divider--half"></div>
 
@@ -99,6 +100,6 @@ geoMap.backgroundContent = tileSource;
 
 ## API リファレンス
 
- - `BingMapsImageryStyle`
- - `BingMapsMapImagery`
- - `XamGeographicMap`
+- `BingMapsImageryStyle`
+- `BingMapsMapImagery`
+- `XamGeographicMap`

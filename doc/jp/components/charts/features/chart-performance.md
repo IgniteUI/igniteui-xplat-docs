@@ -2,6 +2,7 @@
 title: {Platform} チャート パフォーマンス | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート パフォーマンス
 _keywords: {Platform} Charts, Performance, Infragistics, {Platform} チャート, パフォーマンス, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart", "FinancialChartVolumeType", "FinancialChartZoomSliderType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -540,10 +541,10 @@ this.LineSeries.Resolution = 10;
 
 `VolumeType` プロパティの設定はチャート パフォーマンスに次の影響を与える可能性があります:
 
-* `None` - ボリューム ペインが表示されないため、最も簡易です。
-* `Line` - 描画するのにより手間がかかるボリューム タイプです。データ ポイントの大量を描画するか、複数のデータ ソースをプロットする場合に使用することをお勧めします。
-* `Area` - `Line` ボリューム タイプより描画に手間がかかります。
-* `Column` - `Area` ボリューム タイプより描画に手間がかかります。1 つ ～ 3 つの株のボリューム データを描画する場合にお勧めします。
+- `None` - ボリューム ペインが表示されないため、最も簡易です。
+- `Line` - 描画するのにより手間がかかるボリューム タイプです。データ ポイントの大量を描画するか、複数のデータ ソースをプロットする場合に使用することをお勧めします。
+- `Area` - `Line` ボリューム タイプより描画に手間がかかります。
+- `Column` - `Area` ボリューム タイプより描画に手間がかかります。1 つ ～ 3 つの株のボリューム データを描画する場合にお勧めします。
 
 ## データ チャートのパフォーマンス
 

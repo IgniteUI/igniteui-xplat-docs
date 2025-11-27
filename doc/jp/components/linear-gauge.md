@@ -2,6 +2,7 @@
 title: {Platform} リニア ゲージ | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} リニア ゲージ コントロールを使用して、シンプルで簡潔なビューでデータを可視化します。{ProductName} リニア ゲージの設定可能な要素について説明します。
 _keywords: linear gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, リニア ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
+_license: commercial
 mentionedTypes: ["XamLinearGauge"]
 namespace: Infragistics.Controls.Gauges
 _language: ja
@@ -262,11 +263,11 @@ ModuleManager.register(
 ```html
 <igx-linear-gauge
     #linearGauge
-    height="80px" 
+    height="80px"
     width="400px"
     value=70
-    minimumValue=0 
-    maximumValue=100 
+    minimumValue=0
+    maximumValue=100
     interval=10
     labelInterval=10
     labelExtent=0.025
@@ -284,8 +285,8 @@ ModuleManager.register(
     height="80px"
     width="100%"
     value={75}
-    minimumValue={0} 
-    maximumValue={100} 
+    minimumValue={0}
+    maximumValue={100}
     interval={10}
     labelInterval={10}
     labelExtent={0.025}
@@ -293,7 +294,7 @@ ModuleManager.register(
     labelsPostInitial={0}
     needleBrush='blue'
     highlightValueDisplayMode="Overlay"
-    highlightValue={25} 
+    highlightValue={25}
     isHighlightNeedleDraggingEnabled={true}
     />
 ```
@@ -303,8 +304,8 @@ ModuleManager.register(
     id="gauge"
     height="80px"
     width="100%"
-    minimum-value="0" 
-    maximum-value="100" 
+    minimum-value="0"
+    maximum-value="100"
     value="75"
     interval="10"
     label-interval="10"
@@ -313,15 +314,15 @@ ModuleManager.register(
     labels-post-initial="0"
     needle-brush="blue"
     highlight-value-display-mode="Overlay"
-    highlight-value=25 
+    highlight-value=25
     is-highlight-needle-dragging-enabled=true>
 </igc-linear-gauge>
 ```
 
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
-    MinimumValue="0" 
-    MaximumValue="100" 
+    MinimumValue="0"
+    MaximumValue="100"
     Value="75"
     Interval="10"
     LabelInterval="10"
@@ -555,6 +556,7 @@ ModuleManager.register(
     font="11px Verdana">
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -680,6 +682,7 @@ ModuleManager.register(
     scale-end-extent=0.95>
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"

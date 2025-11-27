@@ -2,6 +2,7 @@
 title: {Platform} Chart Data Legend | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart with the data legend!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
 ---
@@ -15,8 +16,6 @@ In {ProductName}, the `XamDataLegend` is highly-customizable version of the `Leg
 The rows of the `XamDataLegend` include the header row, series row(s), and the summary row. The header row displays the axis label of the point that is hovered, and can be changed using the `HeaderText` property.
 
 `sample="/charts/category-chart/data-legend", height="450", alt="{Platform} Category Chart Data Legend Example"`
-
-
 
 ### Header Row
 
@@ -71,7 +70,7 @@ The unit column displays an abbreviation symbol on the right side of value colum
 
 ### Customizing Columns
 
-You can customize text displayed in the **Label** and **Unit** columns using  properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit**  on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
+You can customize text displayed in the **Label** and **Unit** columns using  properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit** on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
 
 |  Type of Series | Series Properties |
 | ------|---- |
@@ -89,7 +88,7 @@ Legend items can be positioned in a vertical or table structure via the `LayoutM
 
 eg.
 
-<img src="../../../images/general/layout_mode.png" />
+<img src="../../../images/general/layout_mode.png" alt="Layout Mode" />
 
 ## {Platform} Data Legend Styling
 
@@ -117,15 +116,15 @@ You have the ability to change the default decimal display of values within the 
 
 ## {Platform} Data Legend Grouping
 
-`DataLegendGroup` can be set, on all types of series, to a string that will categorize a group of series in Data Legend. Each group will have its own summary row displayed before another group of series is displayed: 
-By default, DataLegend will hide names of groups, but you can display group names by setting the `GroupRowVisible` property to true. 
+`DataLegendGroup` can be set, on all types of series, to a string that will categorize a group of series in Data Legend. Each group will have its own summary row displayed before another group of series is displayed:
+By default, DataLegend will hide names of groups, but you can display group names by setting the `GroupRowVisible` property to true.
 
 `sample="/charts/data-chart/data-legend-grouping", height="450", alt="{Platform} Data Legend Grouping"`
 
 
 ## {Platform} Data Legend Styling & Events
 
-Several properties are exposed including grouping portions of the legend. 
+Several properties are exposed including grouping portions of the legend.
 
 - `GroupRowMargin`
 - `GroupTextMargin`
@@ -136,11 +135,11 @@ Several properties are exposed including grouping portions of the legend.
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 The `XamDataLegend` has several events that fire when rendering their corresponding row, even during mouse interactions where the values are updating. These events are listed below with a description of what they are designed to be used for:
@@ -152,39 +151,39 @@ The `XamDataLegend` has several events that fire when rendering their correspond
 - `StyleSummaryRow`: This event fires once when rendering the summary row.
 - `StyleSummaryColumn`: This event fires once when rendering the summary column.
 
-Some of the events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series. 
+Some of the events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series.
 
-`StyleSummaryColumn` and `SeriesStyleColumn` events expose a `DataLegendStylingColumnEventArgs` parameter as its arguments, for customizing each field in the series. The event arguments also expose event-specific properties such as column index and value member related properies about the columns.
+`StyleSummaryColumn` and `SeriesStyleColumn` events expose a `DataLegendStylingColumnEventArgs` parameter as its arguments, for customizing each field in the series. The event arguments also expose event-specific properties such as column index and value member related properties about the columns.
 
 `sample="/charts/data-chart/data-legend-styling", height="450", alt="{Platform} Data Legend Styling"`
 
 
 ## API References
 
- - `ExcludedColumns`
- - `ExcludedSeries`
- - `HeaderFormatDate`
- - `HeaderFormatTime`
- - `HeaderText`
- - `IncludedColumns`
- - `IncludedSeries`
- - `LabelDisplayMode`
- - `LabelTextColor`
- - `StyleHeaderRow`:
- - `StyleSeriesColumn`:
- - `StyleSeriesRow`
- - `StyleSeriesRow`:
- - `StyleSummaryColumn`:
- - `StyleSummaryRow`:
- - `SummaryTitleText`
- - `SummaryType`
- - `TitleTextColor`
- - `UnitText`
- - `UnitsTextColor`
- - `ValueFormatAbbreviation`
- - `ValueFormatCulture`
- - `ValueFormatMaxFractions`
- - `ValueFormatMaxFractions`
- - `ValueFormatMinFractions`
- - `ValueFormatMode`
- - `ValueTextColor`
+- `ExcludedColumns`
+- `ExcludedSeries`
+- `HeaderFormatDate`
+- `HeaderFormatTime`
+- `HeaderText`
+- `IncludedColumns`
+- `IncludedSeries`
+- `LabelDisplayMode`
+- `LabelTextColor`
+- `StyleHeaderRow`:
+- `StyleSeriesColumn`:
+- `StyleSeriesRow`
+- `StyleSeriesRow`:
+- `StyleSummaryColumn`:
+- `StyleSummaryRow`:
+- `SummaryTitleText`
+- `SummaryType`
+- `TitleTextColor`
+- `UnitText`
+- `UnitsTextColor`
+- `ValueFormatAbbreviation`
+- `ValueFormatCulture`
+- `ValueFormatMaxFractions`
+- `ValueFormatMaxFractions`
+- `ValueFormatMinFractions`
+- `ValueFormatMode`
+- `ValueTextColor`

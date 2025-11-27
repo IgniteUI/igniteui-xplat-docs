@@ -2,6 +2,7 @@
 title: {Platform} List コンポーネント | インフラジスティックス
 _description: インフラジスティックスの {Platform} List コンポーネントは、項目のグループを表示するのに役立ちます。{ProductName} を使用したデータの表示方法について説明します。
 _keywords: {Platform} List, Item List, overview, {ProductName}, data binding, Infragistics, {Platform} リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
+_license: MIT
 mentionedTypes: ["List", "ListHeader", "ListItem", "Avatar", "Button", "RadioGroup", "Radio"]
 _language: ja
 ---
@@ -463,16 +464,16 @@ igc-list-item::part(subtitle) {
 
 ## API リファレンス
 
- - `Avatar`
- - `Button`
- - `RadioGroup`
- - `Radio`
- - `ListHeader`
- - `ListItem`
- - `List`
+- `Avatar`
+- `Button`
+- `RadioGroup`
+- `Radio`
+- `ListHeader`
+- `ListItem`
+- `List`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

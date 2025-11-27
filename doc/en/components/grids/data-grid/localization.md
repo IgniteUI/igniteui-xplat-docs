@@ -159,5 +159,5 @@ This is the full list of strings to localize the grid.
 
 ## API References
 
- - `ActualDataSource`
- - `SetCustomizedStringAsync`
+- `ActualDataSource`
+- `SetCustomizedStringAsync`

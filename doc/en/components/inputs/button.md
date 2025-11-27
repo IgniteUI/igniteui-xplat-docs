@@ -3,6 +3,7 @@ title: {Platform} Button Component | {ProductName}
 _description: Get started with the {Platform} Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the {Platform} Button OnClick event.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 mentionedTypes: ["Button", "ButtonBase"]
+_license: MIT
 ---
 
 # {Platform} Button Overview
@@ -32,7 +33,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcButtonComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -217,7 +218,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-}); 
+});
 ```
 
 ```tsx
@@ -352,15 +353,15 @@ igc-button::part(base) {
 
 ## API References
 
- - `Button`
- - `DisplayType`
- - `Download`
- - `Href`
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `DisplayType`
+- `Download`
+- `Href`
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

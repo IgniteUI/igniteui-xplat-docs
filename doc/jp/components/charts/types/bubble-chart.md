@@ -2,6 +2,7 @@
 title: {Platform} バブル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} バブル チャート
 _keywords: {Platform} Charts, Bubble Chart, Infragistics, {Platform} チャート, バブル チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries", "MarkerType"]
 namespace: Infragistics.Controls.Charts
 _language: ja

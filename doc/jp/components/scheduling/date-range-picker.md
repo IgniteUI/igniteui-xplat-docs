@@ -2,6 +2,7 @@
 title: {Platform} Date Range Picker コンポーネント - {ProductName}
 _description: インフラジスティックスの {Platform} Date Range Picker を使用すると、カレンダーから 2 つの日付の範囲を選択し、それを入力要素に設定できます。
 _keywords: {Platform} Date Range Picker, {ProductName}, Infragistics, {Platform} 日付範囲ピッカー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateRangePicker"]
 _language: ja
 ---
@@ -104,7 +105,7 @@ const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
 useEffect (() => {
-  dateRangeRef.current.value = { start: startDate, end: endDate }	
+  dateRangeRef.current.value = { start: startDate, end: endDate }
 }, [])
 
 return (
@@ -147,7 +148,7 @@ return (
 <IgrDateRangePicker useTwoInputs nonEditable/>
 ```
 
-### ポップアップ モード 
+### ポップアップ モード
 
 デフォルトでは、`DateRangePicker` をクリックすると、カレンダーのポップアップが `dropdown` モードで表示されます。`Mode` プロパティを `dialog` に設定することで、カレンダーを `dialog` モードで開くこともできます。
 
@@ -166,7 +167,7 @@ return (
 
 使用可能なキーボード ナビゲーション オプションは、コンポーネントがシングル インプット モードか 2 インプット モードかによって異なります。
 
-**2 インプット モード:** 
+**2 インプット モード:**
 
 |キー|説明|
 |----|-----------|
@@ -231,6 +232,7 @@ return (
 
 `Locale` プロパティでは、使用するロケール識別子を指定でき、地域の慣習に基づいて日付の表示形式が決定されます。
 たとえば、日付を日本形式で表示したい場合、locale プロパティを次のように設定します:
+
 ```html
 <igc-date-range-picker locale="ja-JP">
 </igc-date-range-picker>
@@ -302,7 +304,7 @@ return (
 <IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
 ```
 
-### カスタムおよび定義済みの日付範囲 
+### カスタムおよび定義済みの日付範囲
 
 `CustomRanges` プロパティを使用して、範囲選択を高速化するために、カレンダー ポップアップにカスタム日付範囲チップを追加することもできます。たとえば、現在の日付を終了日とし、今後 7 日間の範囲をすぐに選択できるカスタム日付範囲チップを作成できます。さらに、`UsePredefinedRanges` プロパティを設定すると、カスタム チップに加えて定義済みの範囲チップも表示されます。
 
@@ -312,7 +314,7 @@ const today = new Date();
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7 
+  today.getDate() + 7
 );
 const nextWeek: CustomDateRange[] = [
   {
@@ -414,7 +416,7 @@ return (
 |名前|タイプ|説明|
 |--|--|--|
 | `Disabled` | boolean | コンポーネントを無効にします。 |
-| `NonEditable` | boolean |	入力フィールドでの入力を無効にします。 |
+| `NonEditable` | boolean | 入力フィールドでの入力を無効にします。 |
 | `Placeholder` | string | シングル インプット モード時のプレースホルダー テキスト。 |
 | `PlaceholderStart` | string | 開始日入力 (2 インプット モード) のプレースホルダー テキスト。 |
 | `PlaceholderEnd` | string | 終了日入力 (2 インプット モード) のプレースホルダー テキスト。 |
@@ -424,7 +426,7 @@ return (
 
 ### スロット
 
-`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。 
+`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。
 
 シングル インプット モードでは、`prefix` および `suffix` スロットを使って、入力フィールドの前後にカスタム コンテンツを挿入できます。
 
@@ -578,15 +580,15 @@ igc-date-range-picker::part(clear-icon-end) {
 
 ## API リファレンス
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - `DateTimeInput`
- - `Dialog`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- `DateTimeInput`
+- `Dialog`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

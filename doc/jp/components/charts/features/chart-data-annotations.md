@@ -2,6 +2,7 @@
 title: {Platform} チャート データの注釈 | データ可視化 | インフラジスティックス
 _description: Infragistics' {Platform} チャート データの注釈
 _keywords: {Platform} Charts, Data Annotations, Infragistics, {Platform} チャート, データの注釈, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -22,7 +23,7 @@ _language: ja
 
 ## {Platform} データ注釈スライス レイヤーの例
 
-{Platform} では、DataAnnotationSliceLayer は、`XamDataChart` コンポーネントの軸の複数の値でチャートをスライスする複数の垂直線または水平線を描画します。このデータ注釈レイヤーは、X 軸上の重要なイベント (例: 企業の四半期決算) または Y 軸上の重要な値に注釈を付けるためによく使用されます。TargetAxis プロパティを y 軸に設定すると、データ注釈レイヤーは水平スライスとして描画され、TargetAxis プロパティを x 軸に設定すると、データ注釈レイヤーは垂直スライスとして描画されます。すべてのシリーズと同様に、DataAnnotationSliceLayer も `DataSource` プロパティを介したデータ バインディングをサポートします。このプロパティは、`AnnotationValueMemberPath` プロパティにマッピングされた少なくとも 1 つの数値データ列を持つデータ項目のコレクションに設定できます。 
+{Platform} では、DataAnnotationSliceLayer は、`XamDataChart` コンポーネントの軸の複数の値でチャートをスライスする複数の垂直線または水平線を描画します。このデータ注釈レイヤーは、X 軸上の重要なイベント (例: 企業の四半期決算) または Y 軸上の重要な値に注釈を付けるためによく使用されます。TargetAxis プロパティを y 軸に設定すると、データ注釈レイヤーは水平スライスとして描画され、TargetAxis プロパティを x 軸に設定すると、データ注釈レイヤーは垂直スライスとして描画されます。すべてのシリーズと同様に、DataAnnotationSliceLayer も `DataSource` プロパティを介したデータ バインディングをサポートします。このプロパティは、`AnnotationValueMemberPath` プロパティにマッピングされた少なくとも 1 つの数値データ列を持つデータ項目のコレクションに設定できます。
 
 たとえば、DataAnnotationSliceLayer を使用して、株式分割や収益報告の結果などの重要なイベントを株価に注釈として付けることができます。
 
@@ -32,7 +33,7 @@ _language: ja
 
 ## {Platform} データ注釈ストリップ レイヤーの例
 
-{Platform} では、`DataAnnotationStripLayer` は、`XamDataChart` コンポーネントの軸上の 2 つの値の間に複数の垂直または水平のストリップを描画します。このデータ注釈レイヤーを使用して、X 軸にイベントの期間 (株式市場の暴落など) または Y 軸に重要な範囲の値に注釈を付けることができます。TargetAxis プロパティを y 軸に設定すると、データ注釈レイヤーは水平ストリップとして描画され、TargetAxis プロパティを x 軸に設定すると、データ注釈レイヤーは垂直ストリップとして描画されます。すべてのシリーズと同様に、`DataAnnotationStripLayer` も `DataSource` プロパティを介したデータ バインディングをサポートします。このプロパティは、AnnotationValueMemberPath プロパティにマッピングされた少なくとも 1 つの数値データ列を持つデータ項目のコレクションに設定できます。 
+{Platform} では、`DataAnnotationStripLayer` は、`XamDataChart` コンポーネントの軸上の 2 つの値の間に複数の垂直または水平のストリップを描画します。このデータ注釈レイヤーを使用して、X 軸にイベントの期間 (株式市場の暴落など) または Y 軸に重要な範囲の値に注釈を付けることができます。TargetAxis プロパティを y 軸に設定すると、データ注釈レイヤーは水平ストリップとして描画され、TargetAxis プロパティを x 軸に設定すると、データ注釈レイヤーは垂直ストリップとして描画されます。すべてのシリーズと同様に、`DataAnnotationStripLayer` も `DataSource` プロパティを介したデータ バインディングをサポートします。このプロパティは、AnnotationValueMemberPath プロパティにマッピングされた少なくとも 1 つの数値データ列を持つデータ項目のコレクションに設定できます。
 
 たとえば、`DataAnnotationStripLayer` を使用して、株式市場の暴落や連邦金利の変更をチャートに注釈として付けることができます。
 

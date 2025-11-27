@@ -160,5 +160,5 @@ _language: ja
 
 ## API リファレンス
 
- - `ActualDataSource`
- - `SetCustomizedStringAsync`
+- `ActualDataSource`
+- `SetCustomizedStringAsync`

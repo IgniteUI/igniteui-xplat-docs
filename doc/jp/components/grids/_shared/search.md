@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 検索フィルター - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 namespace: Infragistics.Controls
@@ -76,11 +77,11 @@ _language: ja
 
 ```tsx
 <{ComponentSelector} ref={gridRef} className="gridSize" autoGenerate={false} allowFiltering={true} data={data}>
-    <IgrColumn field="IndustrySector" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="IndustryGroup" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="SectorType" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="KRD" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="MarketNotion" dataType="number" sortable={true}></IgrColumn>  
+    <IgrColumn field="IndustrySector" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="IndustryGroup" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="SectorType" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="KRD" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="MarketNotion" dataType="number" sortable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid -->
@@ -101,13 +102,14 @@ _language: ja
 <!-- WebComponents -->
 ```html
 <igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="100%" width="100%">
-    <igc-column field="Name" data-type="string" sortable="true"></igc-column>        
-    <igc-column field="ID" data-type="number" sortable="true"></igc-column>        
-    <igc-column field="Title" data-type="string" sortable="true"></igc-column>        
-    <igc-column field="Age" data-type="number" sortable="true"></igc-column>        
-    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>        
+    <igc-column field="Name" data-type="string" sortable="true"></igc-column>
+    <igc-column field="ID" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 private treeGrid: IgcTreeGridComponent;
 
@@ -120,11 +122,11 @@ constructor() {
 
 ```tsx
 <IgrTreeGrid ref={gridRef} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" allowFiltering={true} height="100%" width="100%">
-    <IgrColumn field="Name" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="ID" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>        
-    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>        
-    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>  
+    <IgrColumn field="Name" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 
@@ -154,10 +156,10 @@ public exactMatch: boolean = false;
 <!-- WebComponents -->
 
 ```typescript
-    private grid: IgcGridComponent;    
+    private grid: IgcGridComponent;
 
     private searchBox: IgcInputComponent;
-    
+
     private searchIcon: IgcIconComponent;
     private clearIcon: IgcIconComponent;
     private nextIconButton: IgcIconButtonComponent;
@@ -186,7 +188,7 @@ const [searchText, setSearchText] = useState('');
 <!-- ComponentStart: TreeGrid -->
 <!-- WebComponents -->
 ```ts
-private treeGrid: IgcTreeGridComponent;    
+private treeGrid: IgcTreeGridComponent;
 
 private searchBox: IgcInputComponent;
 
@@ -293,6 +295,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -390,6 +393,7 @@ const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -414,6 +418,7 @@ public nextSearch() {
 <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
 <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
+
 ```ts
 constructor() {
     this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
@@ -510,7 +515,7 @@ constructor() {
      });
 }
 
-public onSearchKeydown(evt: KeyboardEvent) {  
+public onSearchKeydown(evt: KeyboardEvent) {
         if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
             evt.preventDefault();
             this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
@@ -567,6 +572,7 @@ const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
 <igc-input id="searchBox" name="searchBox">
 </igc-input>
 ```
+
 ```ts
 constructor() {
     this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
@@ -577,7 +583,7 @@ constructor() {
     });
 }
 
-public onSearchKeydown(evt: KeyboardEvent) {  
+public onSearchKeydown(evt: KeyboardEvent) {
     if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
         evt.preventDefault();
         this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
@@ -840,7 +846,7 @@ builder.Services.AddIgniteUIBlazor(
     const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
     const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
     const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-    
+
     protected override void OnAfterRender(bool firstRender)
     {
         if (this.searchIconRef != null && firstRender)
@@ -1052,6 +1058,7 @@ public clearSearch() {
     </div>
 </igc-suffix>
 ```
+
 ```typescript
 public showResults() {
     if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {
@@ -1319,47 +1326,47 @@ useEffect(() => {
 このトピックでは、`{ComponentName}` にカスタム検索バーを実装し、更に検索結果を移動する際の機能を追加しました。アイコン、チップ、入力などその他の {ProductName} も使用しています。以下は検索 API です。
 
 `{ComponentName}` メソッド:
--   `FindNext`
--   `FindPrev`
--   `ClearSearch`
--   `RefreshSearch`
+- `FindNext`
+- `FindPrev`
+- `ClearSearch`
+- `RefreshSearch`
 
 `Column` プロパティ:
--   `Searchable`
+- `Searchable`
 
 その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- Angular -->
 
-* `InputGroup`
-* `RippleDirective`
-* `ButtonDirective`
+- `InputGroup`
+- `RippleDirective`
+- `ButtonDirective`
 
 <!-- end: Angular -->
 
-* `Icon`
-* `Chip`
+- `Icon`
+- `Chip`
 
 <!-- Blazor -->
 
-* `Input`
-* `IconButton`
+- `Input`
+- `IconButton`
 
 <!-- end: Blazor -->
 
 ## その他のリソース
 
-* [仮想化とパフォーマンス](virtualization.md)
-* [フィルタリング](filtering.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [フィルタリング](filtering.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

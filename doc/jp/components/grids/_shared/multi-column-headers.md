@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 複数列ヘッダー - {ProductName}
 _description: {ProductName} グリッドを使用して列ヘッダーを共通の階層ヘッダーの下に配置し、それらを複数のヘッダーに結合することで、列ヘッダーのグループ化を開始します。
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["Column"]
 namespace: Infragistics.Controls
@@ -847,6 +848,7 @@ import 'core-js/es7/array';
     --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
@@ -856,24 +858,24 @@ import 'core-js/es7/array';
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `ColumnGroup`
+- `{ComponentName}`
+- `ColumnGroup`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [Grid の概要](../data-grid.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [グループ化](groupby.md)
+- [Grid の概要](../data-grid.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [グループ化](groupby.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -19,6 +19,7 @@ This topic explains how to perform clipboard operations.
 <div class="divider--half"></div>
 
 ## Dependencies
+
 Before making use of the clipboard you will want to import the SpreadsheetAction
 
 ```ts
@@ -40,6 +41,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## Usage
+
 The following snippet shows how you can setup the data validation rules
 
 ```ts

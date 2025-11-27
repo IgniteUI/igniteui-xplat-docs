@@ -18,18 +18,18 @@ This topic contains the following sections:
 
 1 - In Visual Studio, select **Tools → NuGet Package Manager → Package Manager Settings**.
 
-<img src="../images/general/nuget-package-manager-setting-menu-item.jpg" />
+<img src="../images/general/nuget-package-manager-setting-menu-item.jpg" alt="nuget-package-manager-setting-menu-item" />
 
 2 - In the **Package Sources** section, add a new package source by clicking the **plus icon** in the top right corner of the dialog.
-   - Set the Name to **Infragistics**
-   - Set the Source to **https://packages.infragistics.com/nuget/licensed/v3/index.json** if you prefer using the NuGet protocol version 3. Otherwise this must be set to **https://packages.infragistics.com/nuget/licensed/**
+- Set the Name to **Infragistics**
+- Set the Source to **https://packages.infragistics.com/nuget/licensed/v3/index.json** if you prefer using the NuGet protocol version 3. Otherwise this must be set to **https://packages.infragistics.com/nuget/licensed/**
 
 > [!Note]
 > For more details on whether to use v3 or older please visit: **https://devblogs.microsoft.com/nuget/nuget-3-what-and-why/**. Protocol v3 is applicable only when using newer versions of NuGet clients (after 2015). Older NuGet clients may or may not be compatible with v3.
 
-    Click the **Update** button, and then click **OK** to close the dialog.
+Click the **Update** button, and then click **OK** to close the dialog.
 
-<img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" />
+<img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" alt="nuget-package-manager-package-sources-ig-server" />
 
 > [!Note]
 > When adding a NuGet package from this source for the first time, you will be prompted for your Infragistics credentials.

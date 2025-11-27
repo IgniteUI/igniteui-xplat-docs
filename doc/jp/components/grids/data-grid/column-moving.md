@@ -86,8 +86,8 @@ grid1.dataSource = data;
 
 ## API リファレンス
 
- - `ColumnMovingAnimationMode`
- - `ColumnMovingMode`
- - `ColumnMovingSeparatorBackground`
- - `ColumnMovingSeparatorWidth`
- - `Deferred`
+- `ColumnMovingAnimationMode`
+- `ColumnMovingMode`
+- `ColumnMovingSeparatorBackground`
+- `ColumnMovingSeparatorWidth`
+- `Deferred`

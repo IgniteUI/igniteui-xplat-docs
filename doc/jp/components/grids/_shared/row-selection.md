@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: ["GridBaseDirective", "RowSelectorTemplateDetails", "HeadSelectorTemplateDetails", "Checkbox"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -72,6 +73,7 @@ _language: ja
         allow-filtering="true">
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -79,6 +81,7 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
+
 ```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
@@ -201,15 +204,15 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 <!-- Angular -->
-* 行選択およびセル選択を正しく実行するには、`{ComponentName}` にリモート仮想化がある場合、`PrimaryKey` を設定します。
-* `{ComponentName}` でリモート仮想化を使用した場合、ヘッダーのチェックボックスをクリックすると、現在グリッドにあるすべてのレコードが選択/選択解除されます。新しいデータがオンデマンドで `{ComponentName}` にロードされると、新、しく追加された行は選択されない制限があるため、これらの行を選択するには API メソッドを使用して動作を処理する必要があります。
+- 行選択およびセル選択を正しく実行するには、`{ComponentName}` にリモート仮想化がある場合、`PrimaryKey` を設定します。
+- `{ComponentName}` でリモート仮想化を使用した場合、ヘッダーのチェックボックスをクリックすると、現在グリッドにあるすべてのレコードが選択/選択解除されます。新しいデータがオンデマンドで `{ComponentName}` にロードされると、新、しく追加された行は選択されない制限があるため、これらの行を選択するには API メソッドを使用して動作を処理する必要があります。
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-* 行を選択すると、`RowSelectionChanging` イベントがトリガーされます。このイベントは、新しい選択、古い選択、古い選択に対して追加および削除された行に関する情報を提供します。また、イベントはキャンセル可能であるため、選択を防ぐことができます。
-* 行選択が有効になっている場合、行セレクターが表示されますが、表示しない場合は、`HideRowSelectors` を **true** に設定できます。
-* 行選択モードのランタイムを切り替えると、優先行選択状態がクリアされます。
+- 行を選択すると、`RowSelectionChanging` イベントがトリガーされます。このイベントは、新しい選択、古い選択、古い選択に対して追加および削除された行に関する情報を提供します。また、イベントはキャンセル可能であるため、選択を防ぐことができます。
+- 行選択が有効になっている場合、行セレクターが表示されますが、表示しない場合は、`HideRowSelectors` を **true** に設定できます。
+- 行選択モードのランタイムを切り替えると、優先行選択状態がクリアされます。
 
 
 ## API の使用
@@ -334,6 +337,7 @@ auto-generate="true">
 
 <button id='deselect'>DeSelect</button>
 ```
+
 ```ts
 constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
@@ -795,25 +799,25 @@ const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `{ComponentName}Row`
+- `{ComponentName}`
+- `{ComponentName}Row`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid, TreeGrid -->
-* [選択](selection.md)
-* [セル選択](cell-selection.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
+- [選択](selection.md)
+- [セル選択](cell-selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

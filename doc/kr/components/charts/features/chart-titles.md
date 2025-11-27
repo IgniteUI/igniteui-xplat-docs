@@ -20,6 +20,7 @@ This topic provides information on using the chart title and subtitle feature of
 <div class="divider--half"></div>
 
 ## Overview
+
 The title and subtitle feature of the chart control allows you to add information to the top section of the chart control.
 
 When adding a title or subtitle to the chart control, the content of the chart automatically resizes allowing for the title and subtitle information.

@@ -2,6 +2,7 @@
 title: {Platform} Badge | Infragistics
 _description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
+_license: MIT
 mentionedTypes: ["Badge"]
 ---
 
@@ -33,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcBadgeComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -159,10 +160,10 @@ igc-badge::part(base) {
 
 ## API References
 
- - `Badge`
- - [`Styling & Themes`](../themes/overview.md)
+- `Badge`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

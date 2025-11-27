@@ -64,6 +64,6 @@ When users interact with the Grid like sorting and grouping, and you have enable
 
 ## API References
 
- - `Grid`
- - `IsPagerVisible`
- - `PageSize`
+- `Grid`
+- `IsPagerVisible`
+- `PageSize`

@@ -2,14 +2,15 @@
 title: {Platform} {ComponentTitle} カスケード コンボ - {ProductName}
 _description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} のカスケード コンボを介して更新を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 _language: ja
 sharedComponents: ["Grid"]
 mentionedTypes: ["Column", "Combo"]
 namespace: Infragistics.Controls
-_canonicalLink: {CanonicalLinkToGridCascadingCombos}
 ---
 
 # Cascading Combos (カスケード コンボ) を含む {Platform} {ComponentTitle}
+
 {ComponentTitle} の編集機能では、カスケード コンボボックス コンポーネントを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の {Platform} Combobox コンポーネントでの選択に関連するデータのみを受け取ります。
 
 ## カスケード コンボを使用した {Platform} {ComponentTitle} サンプルの概要
@@ -70,14 +71,14 @@ import { IgrCombo } from 'igniteui-react';
 
         return (
         <>
-            <IgrCombo 
-                data={countries} 
-                ref={getComboRef(comboId)} 
-                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }} 
-                placeholder="Choose Country..." 
-                valueKey="Country" 
-                displayKey="Country" 
-                singleSelect={true} 
+            <IgrCombo
+                data={countries}
+                ref={getComboRef(comboId)}
+                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }}
+                placeholder="Choose Country..."
+                valueKey="Country"
+                displayKey="Country"
+                singleSelect={true}
                 name={comboId}>
             </IgrCombo>
         </>
@@ -171,7 +172,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
         const cityCombo = getComboRef(`city_${rowId}`).current;
         const regions = regions;
         const newValue = event.detail.newValue[0];
-        
+
             if (newValue === undefined) {
                 regionCombo.deselect(regionCombo.value);
                 regionCombo.disabled = true;

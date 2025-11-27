@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to load geo-spatial data from shape files. View {ProductName} map demos!
 _keywords: {Platform} map, shapefiles, {ProductName}, Infragistics, data binding
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "ShapefileConverter", "Series", "GeographicShapeSeriesBase"]
 ---
 # {Platform} Binding Shape Files with Geo-spatial Data
@@ -56,8 +57,7 @@ The `ShapefileRecord` class provides properties for storing geo-spatial data, li
 
 | Property     | Description   |
 |--------------|---------------|
-|`Points`|Contains all the points in one geo-spatial shape loaded from a shape file (.shp). For example, the country of Japan in shape file would be represented as a list of a list of points object, where:<ul><li>The first list of points describes shape of Hokkaido island</li><li>The second list of points describes shape of Honshu island</li><li>The third list of points describes shape of Kyushu island</li><li>The fourth list of points describes shape of Shikoku island
-</li></ul>|
+|`Points`|Contains all the points in one geo-spatial shape loaded from a shape file (.shp). For example, the country of Japan in shape file would be represented as a list of a list of points object, where:<ul><li>The first list of points describes shape of Hokkaido island</li><li>The second list of points describes shape of Honshu island</li><li>The third list of points describes shape of Kyushu island</li><li>The fourth list of points describes shape of Shikoku island</li></ul>|
 | `Fields` |Contains a row of data from the shape database file (.dbf) keyed by a column name. For example, a data about county of Japan which includes population, area, name of a capital, etc.|
 
 This data structure is suitable for use in most Geographic Series as long as appropriate data columns are mapped to them.
@@ -255,9 +255,9 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ## API References
 
- - `Fields`
- - `GeographicPolylineSeries`
- - `ImportCompleted`
- - `ItemsSource`
- - `Points`
- - `ShapefileConverter`
+- `Fields`
+- `GeographicPolylineSeries`
+- `ImportCompleted`
+- `ItemsSource`
+- `Points`
+- `ShapefileConverter`

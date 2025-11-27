@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 行の編集 - {ProductName}
 _description: {Platform} {ComponentTitle}で行編集を有効にし、CRUD 操作のための強力な API が必要な場合、{ProductName} {ComponentTitle} 行編集コンポーネントをお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -214,7 +215,7 @@ constructor() {
     <igc-column field="Debut" header="Debut" data-type="number"> </igc-column>
     <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="number"> </igc-column>
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number"> </igc-column>
-        
+
     <igc-row-island child-data-key="Albums" auto-generate="false" primary-key="Album" row-editable="true">
         <igc-column field="Album" header="Album" data-type="string"> </igc-column>
         <igc-column field="LaunchDate" header="Launch Date" data-type="date"> </igc-column>
@@ -315,7 +316,7 @@ RowEditable="true">
     Header="Grammy Awards"
     DataType="GridColumnDataType.Number">
     </IgbColumn>
-    
+
     <IgbRowIsland
     ChildDataKey="Albums"
     AutoGenerate="false"
@@ -341,7 +342,7 @@ RowEditable="true">
         Header="US Billboard 200"
         DataType="GridColumnDataType.String">
         </IgbColumn>
-        
+
         <IgbRowIsland
         ChildDataKey="Songs"
         AutoGenerate="false"
@@ -369,7 +370,7 @@ RowEditable="true">
             </IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
-    
+
     <IgbRowIsland
     ChildDataKey="Tours"
     AutoGenerate="false"
@@ -492,7 +493,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 ```html
 <ng-template igxRowEditText let-rowChangesCount>
-	Changes: {{rowChangesCount}}
+    Changes: {{rowChangesCount}}
 </ng-template>
  ```
 
@@ -535,8 +536,8 @@ const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
 
 ```html
  <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -545,8 +546,8 @@ const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
-	<button @click="(event) => endRowEdit(true, event)">Apply</button>
+  <button @click="(event) => endRowEdit(false, event)">Cancel</button>
+    <button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
 ```
@@ -585,8 +586,8 @@ const rowEditActionsTemplate =(ctx: IgrGridRowEditActionsTemplateContext) => {
 
 行編集オーバーレイは複合要素です。UI は、他の 2 つのコンポーネントで構成されています。
 
-    - コンテンツをレンダリングするための [igx-banner](banner.md)
-    - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`Done` ボタンと `Cancel` ボタンの場合)。
+- コンテンツをレンダリングするための [igx-banner](banner.md)
+- [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`Done` ボタンと `Cancel` ボタンの場合)。
 
 以下の例では、これら 2 つのコンポーネントのスタイル設定オプション ([ボタン スタイル](button.md#スタイル設定) & [バナー スタイル](../banner.md#スタイル設定)) を使用して、`{ComponentName}` の行編集のエクスペリエンスをカスタマイズします。
 
@@ -744,38 +745,38 @@ $button-theme: button-theme(
 
 - グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
 
-* 行の選択
-* 行の展開/縮小
-* 行の編集
-* 行のピン固定
+- 行の選択
+- 行の展開/縮小
+- 行の編集
+- 行のピン固定
 
 ## API リファレンス
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `EndEdit`
-* `Field`
-* `Editable`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `EndEdit`
+- `Field`
+- `Editable`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- Angular -->
 
-* [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
+- [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
+- [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} トランザクション](batch-editing.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 編集](editing.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
@@ -784,5 +785,5 @@ $button-theme: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

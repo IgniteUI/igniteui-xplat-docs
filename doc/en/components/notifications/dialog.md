@@ -2,6 +2,7 @@
 title: {Platform} Dialog | Infragistics
 _description: With {ProductName} Dialog component, developers can easily integrate a dialog window centered on top of app content.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Dialog components
+_license: MIT
 mentionedTypes: ["Dialog"]
 ---
 
@@ -51,7 +52,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 <!-- end: React -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 Before using the {Platform} `Dialog`, you need to register it as follows:
@@ -189,5 +190,5 @@ igc-dialog::part(footer) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

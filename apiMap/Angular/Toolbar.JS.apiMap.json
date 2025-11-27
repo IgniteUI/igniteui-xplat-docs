@@ -4,7 +4,7 @@
   {
     "originalName": "DataGridToolbar",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-toolbar-component.ts","mappedName": "IgxDataGridToolbarComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},

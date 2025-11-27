@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Data Types - {ProductName}
 _description: Handle cell and editing templates in {Platform} by choosing from several predefined column data types - number, string, date, boolean, currency and percent column.
 _keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -10,7 +11,7 @@ _canonicalLink: {CanonicalLinkToGridColumnTypes}
 
 # {Platform} {ComponentTitle} Column Types Overview
 
-The {Platform} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+The {Platform} {ComponentTitle} provides a default handling of **number**, **string**, **date**, **boolean**, **currency** and **percent** column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -33,10 +34,10 @@ This column `DataType` is not changing the appearance or format of the cell valu
 
 ### Number
 
-If the `DataType` is set to *number*, the cell value will be formatted based on application or grid's `Locale` settings, as well as when `PipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
+If the `DataType` is set to **number**, the cell value will be formatted based on application or grid's `Locale` settings, as well as when `PipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
 
- - Number of digits after the decimal point
- - Decimal separator with `,` or `.`
+- Number of digits after the decimal point
+- Decimal separator with `,` or `.`
 
 <!-- Angular -->
 
@@ -91,8 +92,9 @@ const formatOptions : IgrColumnPipeArgs = {
 ### DateTime, Date and Time
 
 The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom date format or timezone:
- - **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
- - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
+
+- **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
+- **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
 <!-- Angular -->
 
@@ -173,9 +175,9 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../data-grid.md#custom-display-format).
+The `{ComponentName}` accepts date values of type **Date object**, **Number (milliseconds)**, **An ISO date-time string**. This section shows [how to configure a custom display format](../data-grid.md#custom-display-format).
 
-As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
+As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the **time** portion of the date object:
 
 <!-- Angular, WebComponents -->
 
@@ -236,7 +238,7 @@ The available Summary operands will be **Count**, **Earliest** (date/time) and *
 
 ### Boolean
 
-The default template is using material icons for visualization of boolean values - 'clear' icon for *false* values and 'check' icon for *true* values. As for the editing template, it is using `Checkbox` component.
+The default template is using material icons for visualization of boolean values - 'clear' icon for **false** values and 'check' icon for **true** values. As for the editing template, it is using `Checkbox` component.
 
 ```html
 <igx-column [dataType]="'boolean'">
@@ -292,7 +294,8 @@ When `AutoGenerate` is used for the columns, the grid analyses the values in the
 
 The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [LOCALE_ID](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
 
-*By using LOCALE_ID*
+**By using LOCALE_ID**
+
 ```ts
 import { LOCALE_ID } from '@angular/core';
 // ...
@@ -304,7 +307,7 @@ import { LOCALE_ID } from '@angular/core';
 })
 ```
 
-*By using Grid's locale*
+**By using Grid's locale**
 
 ```html
 <{ComponentSelector} [locale]="'fr-FR'" [data]="data">
@@ -319,7 +322,7 @@ The default template will show a numeric value with currency symbol that would b
 
 <!-- end: Blazor, WebComponents, React -->
 
-By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
+By using the `PipeArgs` input the end-user can customize the number format by **decimal point**, **currencyCode** and **display**.
 
 <!-- Angular -->
 
@@ -381,7 +384,7 @@ const formatOptions : IgrColumnPipeArgs = {
 ```
 
 | Parameter                 | Description                                                |
-|---------------------------| -------------------------                                  |
+|---------------------------| -------------------------|
 | digitsInfo                | Represents Decimal representation of currency value        |
 | display*                  | Displays the value by narrow or wide symbol                |
 <!-- Angular -->
@@ -391,7 +394,7 @@ const formatOptions : IgrColumnPipeArgs = {
 *display - for the default en-US locale, the code USD can be represented by the narrow symbol $ or the wide symbol US$.
 
 <!-- ComponentStart: Grid -->
-Upon editing of cell's value the *currency symbol* will be visible as suffix or prefix. More about that could be found in the official [Cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example).
+Upon editing of cell's value the **currency symbol** will be visible as suffix or prefix. More about that could be found in the official [Cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example).
 <!-- ComponentEnd: Grid -->
 
 > When using <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
@@ -473,11 +476,11 @@ constructor() {
 
 ```tsx
 /**
-* Decimal representation options, specified by a string in the following format:
-* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
-* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
-* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
-* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+- Decimal representation options, specified by a string in the following format:
+- `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+- `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+- `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+- `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
 const formatOptions : IgrColumnPipeArgs = {
     digitsInfo: "2.2-3"
@@ -617,15 +620,15 @@ public init(column: IgxColumnComponent) {
 
 ## API References
 
-* `Cell`
-* `Column`
-* `PipeArgs`
-* `{ComponentName}`
-* `Locale`
-* `DataType`
+- `Cell`
+- `Column`
+- `PipeArgs`
+- `{ComponentName}`
+- `Locale`
+- `DataType`
 
 ## Additional Resources
 
-* For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
-* [Editing](editing.md)
-* [Summaries](summaries.md)
+- For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
+- [Editing](editing.md)
+- [Summaries](summaries.md)
