@@ -4,7 +4,6 @@ _description: インフラジスティックスの {Platform} コンポーネン
 _keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 _language: ja
-mentionedTypes
 ---
 
 <!-- React -->
