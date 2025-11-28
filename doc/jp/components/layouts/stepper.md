@@ -413,7 +413,7 @@ igc-step::part(indicator) {
 <!-- end: WebComponents -->
 
 <!-- React,Blazor -->
-`sample="/layouts/stepper/styling", height="600", alt="{Platform} スタイル設定の例"`
+`sample="/layouts/stepper/styling", height="600", alt="{Platform} Stepper スタイル設定の例"`
 <!-- end: React,Blazor -->
 
 <div class="divider--half"></div>
