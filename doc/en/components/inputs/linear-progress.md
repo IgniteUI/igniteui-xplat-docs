@@ -106,7 +106,7 @@ You can set the type of your indicator, using  the `Variant` attribute. There ar
 
 You can make the indicator striped, using the `Striped` property:
 
-`sample="/inputs/linear-progress-indicator/types", height="200", alt="{Platform} Linear Progress Striped Example"`
+`sample="/inputs/linear-progress-indicator/types", height="250", alt="{Platform} Linear Progress Striped Example"`
 
 
 
