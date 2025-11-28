@@ -51,6 +51,22 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```
 <!-- end: React -->
 
+<!-- Blazor -->
+To get started with the `DateRangePicker` component, first we need to register its module as follows:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDateRangePickerModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `DateRangePicker` component. The following needs to be placed in the wwwroot/index.html file in a Blazor Web Assembly project or the Pages/_Host.cshtml file in a Blazor Server project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 Now you can start with a basic configuration of the {Platform} `DateRangePicker`.
 
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
@@ -76,6 +92,10 @@ To instantiate a `DateRangePicker` in its default single input mode, use the fol
 <IgrDateRangePicker/>
 ```
 
+```razor
+<IgbDateRangePicker @ref="DateRangePicker"></IgbDateRangePicker>
+```
+
 To switch the `DateRangePicker` to use two inputs, set the `UseTwoInputs` property to `true`.
 
 ```html
@@ -85,6 +105,10 @@ To switch the `DateRangePicker` to use two inputs, set the `UseTwoInputs` proper
 
 ```tsx
 <IgrDateRangePicker useTwoInputs/>
+```
+
+```razor
+<IgbDateRangePicker UseTwoInputs="true"></IgbDateRangePicker>
 ```
 
 ### Value
@@ -111,6 +135,21 @@ return (
 );
 ```
 
+```razor
+ <IgbDateRangePicker @ref="DateRangePicker" Value="@Range" Label="Date Range"/>
+
+ @code {
+    public IgbDateRangePicker DateRangePicker { get; set; }
+
+    public IgbDateRangeValue Range = new IgbDateRangeValue()
+    {
+        Start = DateTime.Today,
+        End = DateTime.Today.AddDays(3)
+    };
+}
+```
+<!-- WebComponents, React -->
+
 In addition, the value can be set as attribute. In this case it should represent an object that can be parsed correctly as JSON, where the `start` and `end` fields should have date values in the ISO 8601 format:
 
 ```html
@@ -121,6 +160,7 @@ In addition, the value can be set as attribute. In this case it should represent
 ```tsx
 <IgrDateRangePicker value={{start: new Date('2025-01-01'), end: new Date('2025-01-02')}}/>
 ```
+<!-- end: WebComponents, React -->
 
 ### Read-only & Non-editable
 
@@ -135,6 +175,10 @@ You can also make the `DateRangePicker` read-only, which disables changing the r
 <IgrDateRangePicker useTwoInputs readOnly/>
 ```
 
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" ReadOnly="true"/>
+```
+
 Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`, only prevents editing the input(s) via typing, while still allowing selection through the calendar and clearing via the clear icon.
 
 ```html
@@ -144,6 +188,10 @@ Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`,
 
 ```tsx
 <IgrDateRangePicker useTwoInputs nonEditable/>
+```
+
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" NonEditable="true"/>
 ```
 
 ### Popup modes 
@@ -157,6 +205,10 @@ By default, when clicked, the `DateRangePicker` opens its calendar pop-up in `dr
 
 ```tsx
 <IgrDateRangePicker mode='dialog'/>
+```
+
+```razor
+ <IgbDateRangePicker Mode="PickerMode.Dialog"/>
 ```
 
 ### Keyboard Navigation
@@ -215,6 +267,10 @@ You can define a label for the `DateRangePicker` component using the `Label` pro
 <IgrDateRangePicker label='Date Range'/>
 ```
 
+```razor
+ <IgbDateRangePicker Label="Date Range"/>
+```
+
 ```html
 <igc-date-range-picker use-two-inputs="true" label-start="Start Date" label-end="End Date">
 </igc-date-range-picker>
@@ -222,6 +278,10 @@ You can define a label for the `DateRangePicker` component using the `Label` pro
 
 ```tsx
 <IgrDateRangePicker useTwoInputs labelStart='Start Date' labelEnd='End Date'/>
+```
+
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" LabelStart="Start Date" LabelEnd="End Date"/>
 ```
 
 ### Format
@@ -240,6 +300,10 @@ For example, to display the date in a Japanese format, you can set the locale pr
 <IgrDateRangePicker locale='ja-JP'/>
 ```
 
+```razor
+ <IgbDateRangePicker Locale="ja-JP"/>
+```
+
 If you want to manually define the date format, you can use the `InputFormat` property by passing a custom format string:
 
 ```html
@@ -251,6 +315,10 @@ If you want to manually define the date format, you can use the `InputFormat` pr
 <IgrDateRangePicker inputFormat='dd/MM/yy'/>
 ```
 
+```razor
+ <IgbDateRangePicker InputFormat="dd/MM/yy"/>
+```
+
 The `DisplayFormat` property also accepts a custom format string, but it only applies when the input field is idle (i.e., not focused). When the field is focused, the format reverts to the default or to the one defined by `InputFormat`, if both properties are used together:
 
 ```html
@@ -260,6 +328,10 @@ The `DisplayFormat` property also accepts a custom format string, but it only ap
 
 ```tsx
 <IgrDateRangePicker inputFormat='dd/MM/yy' displayFormat='yy/MM/dd'/>
+```
+
+```razor
+ <IgbDateRangePicker InputFormat="dd/MM/yy" DisplayFormat='yy/MM/dd'/>
 ```
 
 ### Calendar Layout and Formatting
@@ -289,6 +361,10 @@ You can further customize the pop-up calendar using various properties:
 <IgrDateRangePicker orientation='vertical' visibleMonths={1} showWeekNumbers/>
 ```
 
+```razor
+ <IgbDateRangePicker Orientation="ContentOrientation.Vertical" VisibleMonths="1" ShowWeekNumbers="true"/>
+```
+
 ### Min & Max
 
 You can also set the `Min` and `Max` properties to restrict user input by disabling calendar dates outside the defined range. These properties act as validators, so even if the user manually types a date outside the range, the `DateRangePicker` will become invalid.
@@ -300,6 +376,15 @@ You can also set the `Min` and `Max` properties to restrict user input by disabl
 
 ```tsx
 <IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
+```
+
+```razor
+ <IgbDateRangePicker Min="@MinDate" Max="@MaxDate"/>
+
+ @code {
+    public DateTime MinDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+    public DateTime MaxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30);
+ }
 ```
 
 ### Custom & Predefined Date Ranges 
@@ -351,6 +436,33 @@ return (
 );
 ```
 
+```razor
+<IgbDateRangePicker CustomRanges="@CustomRanges" UsePredefinedRanges="true" Label="Custom Ranges" />
+
+@code {
+    public IgbCustomDateRange[] CustomRanges = [
+            new IgbCustomDateRange()
+            {
+                Label = "Previous 7 Days",
+                DateRange = new IgbDateRangeValue()
+                {
+                    Start = DateTime.Today.AddDays(-7),
+                    End = DateTime.Today
+                }
+            },
+            new IgbCustomDateRange()
+            {
+                Label = "Next 7 Days",
+                DateRange = new IgbDateRangeValue()
+                {
+                    Start = DateTime.Today,
+                    End = DateTime.Today.AddDays(7)
+                }
+            }
+    ];
+}
+```
+
 Now, when you click the newly created **"Next 7 days"** chip in the calendar pop-up, the range will automatically be selected, from today through the next 7 days.
 
 `sample="/scheduling/date-range-picker/custom-ranges", height="500", alt="{Platform} Date Range Picker Custom Ranges Example"`
@@ -391,13 +503,22 @@ return (
 );
 ```
 
-<!-- WebComponents -->
+```razor
+<IgbDateRangePicker DisabledDates="@DisabledDates" />
+
+@code {
+    public IgbDateRangeDescriptor[] DisabledDates = [
+        new IgbDateRangeDescriptor
+    {
+        RangeType = DateRangeType.Between,
+        DateRange = new DateTime[] { new DateTime(DateTime.Today.Year, DateTime.Today.Month, 5), new DateTime(DateTime.Today.Year, DateTime.Today.Month, 8) },
+    }];
+}
+```
 
 You can see more information about all the possibilities that the `DisabledDates` property offers here: [Disabled dates](./calendar.md#disabled-dates)
 
 You can also do the same if you want to set one or more special dates in the calendar; the only difference is that you need to use the `SpecialDates` property instead. [Special dates](./calendar.md#special-dates)
-
-<!-- end: WebComponents -->
 
 ### Forms
 
@@ -442,6 +563,13 @@ The `prefix` and `suffix` slots allow you to insert custom content before or aft
 </IgrDateRangePicker>
 ```
 
+```razor
+<IgbDateRangePicker>
+    <IgbIcon @ref="DropDownIcon" slot="prefix" IconName="dropdown" Collection="material"></IgbIcon>
+    <IgbIcon @ref="UploadIcon" slot="suffix" IconName="upload" Collection="material"></IgbIcon>
+</IgbDateRangePicker>
+```
+
 In two inputs mode, you can use the `prefix-start`, `prefix-end`, `suffix-start`, and `suffix-end` slots instead to target the individual inputs.
 
 Another set of useful slots are `clear-icon` and `calendar-icon`, which allow you to customize the icons for the clear and calendar buttons in the input fields:
@@ -460,6 +588,13 @@ Another set of useful slots are `clear-icon` and `calendar-icon`, which allow yo
 </IgrDateRangePicker>
 ```
 
+```razor
+<IgbDateRangePicker>
+    <IgbIcon slot="clear-icon" @ref="ClearIcon" IconName="bin" Collection="material"></IgbIcon>
+    <IgbIcon slot="calendar-icon" @ref="CalendarIcon" IconName="apps" Collection="material"></IgbIcon>
+</IgbDateRangePicker>
+```
+
 In two inputs mode, you can also customize the default “to” text between the fields by using the `separator` slot:
 
 ```html
@@ -472,6 +607,12 @@ In two inputs mode, you can also customize the default “to” text between the
 <IgrDateRangePicker useTwoInputs>
   <span slot='separator'>till</span>
 </IgrDateRangePicker>
+```
+
+```razor
+<IgbDateRangePicker UseTwoInputs="true">
+  <span slot="separator">till</span>
+</IgbDateRangePicker>
 ```
 
 The `actions` slot allows you to insert a custom action button with your own logic. For example, the button below toggles week numbers column in the calendar:
@@ -493,6 +634,12 @@ return (
     <IgrButton slot="actions" onClick={toggleWeekNumbers}>Toggle Week Numbers</IgrButton>
   </IgrDateRangePicker>
 );
+```
+
+```razor
+<IgbDateRangePicker Mode="PickerMode.Dialog" @ref="ActionsDateRange">
+    <IgbButton slot="actions" @onclick="() => ActionsDateRange.ShowWeekNumbers = !ActionsDateRange.ShowWeekNumbers">Toggle week numbers</IgbButton>
+</IgbDateRangePicker>
 ```
 
 In addition to the slots we've already covered, the following slots are also available in the `DateRangePicker` component:
@@ -580,7 +727,7 @@ igc-date-range-picker::part(clear-icon-end) {
 
  - `Input`
  - `Calendar`
- - `DatePicker`
+ - `DateRangePicker`
  - `DateTimeInput`
  - `Dialog`
  - [`Styling & Themes`](../themes/overview.md)
