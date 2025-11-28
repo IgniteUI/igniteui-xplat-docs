@@ -2,50 +2,41 @@
 title: 作業の開始 | {ProductName} | インフラジスティックス
 _description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
 _keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
+mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 _language: ja
-mentionedTypes: ["XamBulletGraph"]
 ---
-
-<!-- WebComponents -->
-# {ProductName} パッケージの概要
-
-{ProductName} は、UI ウィジェット、コンポーネント、デザイン ツール用の UI キット、および Web コンポーネント用のサポート サービスの完全なセットです。開発者が、最新のデスクトップ ブラウザー、モバイル エクスペリエンス、およびブラウザーの Web コンポーネント API をターゲットとするプログレッシブ Web アプリ (PWA) 向けの最新の高性能 HTML5 および JavaScript アプリを構築できるように設計されています。
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-# {ProductName} パッケージの概要
-
-{ProductName} は、React 向けの UI コンポーネント、デザイン ツールキット、関連サービスを包括的に提供するスイートです。デスクトップ ブラウザー、モバイル環境、PWA (Progressive Web App) など、あらゆる React アプリケーションでモダンかつ高パフォーマンスな開発を実現できるよう、開発者を強力にサポートします。
-
-<!-- end: React -->
-
-<!-- WebComponents, React -->
-
-## チャート & グラフ
-{ProductName} には、[チャートとグラフ](charts/chart-overview.md)のライブラリが含まれており、65 種類以上のシチャート リーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
-
-## ゲージ
-{ProductName} は、簡単かつ直感的な方法でデータを示すために使用される[ラジアル ゲージ](radial-gauge.md)、[リニア ゲージ](linear-gauge.md)と[バレット グラフ](bullet-graph.md) コンポーネントを提供します。[ラジアル ゲージ](radial-gauge.md)には、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。[リニア ゲージ](linear-gauge.md)は、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。[バレット グラフ](bullet-graph.md) コンポーネントを使用すると、ダッシュボードで使用されるメーターやゲージを単純な棒チャートに置き換えて、データの視覚化を作成できます。
-
-## マップ
-{ProductName} [地理マップ](geo-map.md)は、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
-
-## グリッド & 入力
-{ProductName} には複数の[グリッド](grids/grids-header.md) コンポーネントが用意されており、データをほとんど設定不要でバインドして表示できます。[データ グリッド](grids/data-grid.md)、[リスト](grids/list.md)、[ツリー](grids/tree.md)、さらには[スプレッドシート](spreadsheet-overview.md)形式での表示にも対応しています。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
-
-## ボタン、入力、レイアウト、メニュー
-{ProductName} は、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築できるようにするさまざまなタイプの[ボタン](inputs/button.md)、[入力](inputs/input.md)、[メニュー](menus/navbar.md)、[レイアウト](layouts/tabs.md)を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧くださ。これらのコンポーネントは [Indigo Design System](https://jp.infragistics.com/products/appbuilder/ui-toolkit) に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
-
-<!-- end: WebComponents, React -->
 
 <!-- React -->
 
 # {ProductName} を使用した作業の開始
 
-## IgniteUI CLI のインストール
+## 前提条件
 
-アプリケーションを最初から作成し、Ignite UI React を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
+1. NodeJS をインストールします。
+2. Visual Studio Code をインストールします。
+
+<div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/nodejs.svg" alt="nodejs"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        Node のダウンロード
+      </a>
+    </div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/vs-code.svg" alt="vs-code"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        VS Code のダウンロード
+      </a>
+    </div>
+</div>
+
+## Ignite UI CLI の使用
+
+アプリケーションを最初から作成し、Ignite UI React  を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
 
 ```cmd
 npm install -g igniteui-cli
@@ -57,48 +48,95 @@ npm install -g igniteui-cli
 ig
 ```
 
-次に、フレームワークとして React、タイプとして React TS を選択し、**Default Top Navigation** プロジェクト テンプレートを選択します。その後、特定のコンポーネントまたはビューを追加するか、または **[Complete & Run]** を選択してください。
-さらに、Ignite UI CLI の詳細については[こちら](general-cli-overview.md)を参照してください。
+まず、フレームワークとして `React`、タイプとして `Ignite UI for React TS` を選択し、`Default Top Navigation` プロジェクト テンプレートを選択します。その後、特定のコンポーネントまたはビューを追加するか、または `Complete & Run` を選択してください。
+Ignite UI CLI の詳細については、[CLI の概要](general-cli-overview.md)を参照してください。
 
-あるいは、React チームが推奨する Next.js、Vite、Expo などの一般的なフレームワークを使用することも可能です。以下では、これらの方法のいずれかを使用して Ignite UI React を利用した React アプリケーションを作成する手順をステップごとに説明します。
+プロンプト中にグリッド コンポーネントを追加した場合、アプリケーションが実行されると、次のようなものが表示されます。
 
-## 前提条件
+<img src="../images/general/ig-cli-grid.png" />
 
-1. NodeJS をインストールします。
-2. Visual Studio Code をインストールします。
+あるいは、React チームが推奨する Next.js、Vite、Expo などの一般的なフレームワークを使用することも可能です。以下では、これらの方法のいずれかを使用して Ignite UI for React を利用した React アプリケーションを作成する手順をステップごとに説明します。
 
-<div>
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
-        DOWNLOAD NODE
-      </a>
-    </div>
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
-        DOWNLOAD VS CODE
-      </a>
-    </div>
-</div>
+## Vite CLI の使用
 
-## 新しい React プロジェクトの作成
+### 新しい React プロジェクトの作成
 
-前提条件のインストール後、新しい React アプリケーションを作成できます。
+React 開発向けの主要なフレームワークはすべて、React アプリケーションをスキャフォールディングするための強力な CLI ツールを提供しています。
 
 1 - **VS Code** を開き、**[ターミナル]** メニューを選択してから、**[新しいターミナル]** オプションを選択します。
 
 2 - ターミナル ウィンドウに以下のコマンドのいずれかを入力します。
 
 ```cmd
-npx create-next-app@latest
+npm create vite@latest
 ```
 
-次に、プロンプトに従ってプロジェクトの名前、Typescript を使用するかどうか、React が提供するその他のさまざまなオプションを選択します。この例では、`npx` と `create-next-app` が必要です。React アプリケーションの初期構成 (ボイラープレート) を行うさまざまな方法については、<a href="https://react.dev/learn/creating-a-react-app" target="_blank">このトピック</a> を参照してください。
+その後、プロジェクト名、作成対象のプラットフォームとして React を選択するかどうか、TypeScript を使用するかどうか、そして Vite が提供するその他の各種オプションについて、プロンプトに従って選択します。React アプリケーションの初期構成 (ボイラープレート) を行うさまざまな方法については、<a href="https://react.dev/learn/creating-a-react-app" target="_blank">このトピック</a>を参照してください。 
+
+### Ignite UI React Grid コンポーネントの追加
+
+##### パッケージのインストール 
+Ignite UI React [**Grid**](grids/data-grid.md) コンポーネントをアプリに追加するには、`igniteui-react-grids` パッケージをインストールする必要があります。
+
+```cmd
+npm install igniteui-react-grids --save
+```
+
+#### コンポーネント モジュールのインポート
+
+次に、使いたいコンポーネントの必要なモジュールをインポートします。テンプレートでも使用する Grid コンポーネントと Column コンポーネントに対しても、同じことを実行してみましょう。テーマの 1 つをインポートする必要もあります。
+
+
+```ts
+import { IgrGrid, IgrColumn } from 'igniteui-react-grids';
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
+```
+
+#### コンポーネントの使用
+
+マークアップに {ProductName} グリッド コンポーネントを使用する準備が整いました。以下のように定義します。
+
+```tsx
+// App.txs
+function App() {
+  const data = [
+    { name: "John", age: 30 },
+    { name: "Jane", age: 25 },
+    { name: "Bob", age: 35 }
+  ];
+
+  return (
+    <div style={{ height: "100%", width: "100%" }}>
+      <IgrGrid
+        data={data}
+        autoGenerate={false}>
+        <IgrColumn
+          field="name"
+          header="Name"
+          dataType="string">
+        </IgrColumn>
+        <IgrColumn
+          field="age"
+          header="Age"
+          dataType="number">
+        </IgrColumn>
+      </IgrGrid>
+    </div>
+  );
+}
+```
+
+### アプリケーションの実行
+
+最後に、新しいアプリケーションを実行します。
+
+```cmd
+npm run dev
+```
+
+コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。最終結果には、サンプル データを含むデータ グリッドが表示されます。
+
+<img src="../images/general/ig-vite-grid.png" />
 
 <!-- end: React -->
 
@@ -179,26 +217,30 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <igc-badge></igc-badge>
 ```
 
-## Charts および Map Web コンポーネント パッケージのインストール
+## Charts および Map パッケージのインストール
 
 ### 手順 1 - Web コンポーネント プロジェクトの作成
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
+
 ```cmd
 mkdir wc-html
 ```
 
 2 - コマンドライン パスを新しく作成したディレクトリに変更します。
+
 ```cmd
 cd wc-html
 ```
 
 3 - ディレクトリで **npm** を初期化します。
+
 ```cmd
 npm init -y
 ```
 
 4 - **webpack** バンドラーおよび **webpack cli** を developer dependency としてインストールします。
+
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -258,6 +300,7 @@ npm install @webcomponents/custom-elements
 ```
 
 3 - Web コンポーネントのポリフィルを **index.js** にインポートします。
+
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
@@ -355,7 +398,7 @@ npm install --save {PackageMaps} {PackageCore}
 npm install --save {PackageSpreadsheet} {PackageCore}
 ```
 
-また
+または
 
 ```cmd
 yarn add {PackageCharts} {PackageCore}
@@ -368,103 +411,62 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 これにより、{ProductName} のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
 
-## モジュールのインポート
-
-はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
-
-
-```razor
-builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGeographicMapModule),
-    typeof(IgbDataChartInteractivityModule)
-);
-```
-
-```ts
-import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
-import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-
-IgrGeographicMapModule.register();
-IgrDataChartInteractivityModule.register();
-```
-
-```ts
-import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
-import { IgcGeographicMapComponent } from 'igniteui-webcomponents-maps';
-import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
-import { ModuleManager } from 'igniteui-webcomponents-core';
-
-ModuleManager.register(
-    IgcGeographicMapModule,
-    IgcDataChartInteractivityModule
-);
-```
-
-## コンポーネントの使用
-
-マークアップに {ProductName} マップ コンポーネントを使用する準備が整いました。以下のように定義します。
-
-```tsx
-// App.txs
-function App() {
-  return (
-    <div style={{ height: "100%", width: "100%" }}>
-      <IgrGeographicMap
-        width="800px"
-        height="500px"
-        zoomable="true" />
-    </div>
-  );
-}
-```
-
-```html
-<div style="height: 100%, width: 100%">
-    <igc-geographic-map
-      width="800px"
-      height="500px"
-      zoomable="true">
-    </igc-geographic-map>
-</div>
-```
-
-## アプリケーションの実行
-
-以下のコマンドを使用して新しいアプリケーションを実行できます。
-
-```cmd
-npm run-script start
-```
-
-コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。最終結果には、インタラクティブなワールドマップが表示されます。
-
-<!-- <img src="../images/general/geo-map.png" alt="geo-map" /> -->
-
-`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} 概要の例"`
-
 <!-- end: Angular, React -->
 
+<!-- WebComponents -->
+# {ProductName} パッケージの概要
+
+{ProductName} は、UI ウィジェット、コンポーネント、デザイン ツール用の UI キット、および Web コンポーネント用のサポート サービスの完全なセットです。開発者が、最新のデスクトップ ブラウザー、モバイル エクスペリエンス、およびブラウザーの Web コンポーネント API をターゲットとするプログレッシブ Web アプリ (PWA) 向けの最新の高性能 HTML5 および JavaScript アプリを構築できるように設計されています。
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+# {ProductName} パッケージの概要
+
+{ProductName} は、React 向けの UI コンポーネント、デザイン ツールキット、関連サービスを包括的に提供するスイートです。デスクトップ ブラウザー、モバイル環境、PWA (Progressive Web App) など、あらゆる React アプリケーションでモダンかつ高パフォーマンスな開発を実現できるよう、開発者を強力にサポートします。
+
+<!-- end: React -->
+
+<!-- WebComponents, React -->
+
+## チャートおよびグラフ
+{ProductName} には、[チャートとグラフ](charts/chart-overview.md)のライブラリが含まれており、65 種類以上のシチャート リーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
+
+## ゲージ
+{ProductName} は、簡単かつ直感的な方法でデータを示すために使用される[ラジアル ゲージ](radial-gauge.md)、[リニア ゲージ](linear-gauge.md)と[バレット グラフ](bullet-graph.md) コンポーネントを提供します。[ラジアル ゲージ](radial-gauge.md)には、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。[リニア ゲージ](linear-gauge.md)は、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。[バレット グラフ](bullet-graph.md) コンポーネントを使用すると、ダッシュボードで使用されるメーターやゲージを単純な棒チャートに置き換えて、データの視覚化を作成できます。
+
+## マップ
+{ProductName} [地理マップ](geo-map.md)は、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
+
+## グリッドと入力
+{ProductName} には複数の[グリッド](grids/grids-header.md) コンポーネントが用意されており、データをほとんど設定不要でバインドして表示できます。[データ グリッド](grids/data-grid.md)、[リスト](grids/list.md)、[ツリー](grids/tree.md)、さらには[スプレッドシート](spreadsheet-overview.md)形式での表示にも対応しています。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
+
+## ボタン、入力、レイアウト、メニュー
+{ProductName} は、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築できるようにするさまざまなタイプの[ボタン](inputs/button.md)、[入力](inputs/input.md)、[メニュー](menus/navbar.md)、[レイアウト](layouts/tabs.md)を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧くださ。これらのコンポーネントは [Indigo Design System](https://jp.infragistics.com/products/appbuilder/ui-toolkit) に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
+
+<!-- end: WebComponents, React -->
+
 <!-- Blazor -->
-# {ProductName} を使用した作業の開始
+## {ProductName} を使用した作業の開始
 
 このトピックでは、Visual Studio および Ignite UI for Blazor を使用して Blazor Server アプリケーションを作成するための手順を説明します。
 
-## 新しい Blazor Server プロジェクトの作成
+### 新しい Blazor Server プロジェクトの作成
 以下の手順では、新しい Blazor Server プロジェクトを作成する方法を説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#ignite-ui-for-blazor-のインストール) セクションに移動します。
 
-Visual Studio 2022 を起動し、開始ページで [新しいプロジェクトの作成] をクリックし、**Blazor Server App** テンプレートを選択して、**[次へ]** をクリックします。
+Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**Blazor Server App** テンプレートを選択して、**[次へ]** をクリックします。
 
 <img src="../images/general/new-blazor-project-server.jpg" alt="new-blazor-project-server" />
 
 プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configure-server.jpg" alt="new-blazor-project-configure-server" />
+<img src="../images/general/new-blazor-project-configure-server.jpg" alt="new-blazor-configure-server" />
 
 追加のプロジェクト オプションを指定し、**[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-info-server.jpg" alt="new-blazor-project-info-server" />
+<img src="../images/general/new-blazor-project-info-server.jpg" alt="new-blazor-info-server" />
 
-## Ignite UI for Blazor のインストール
+### Ignite UI for Blazor のインストール
 
 Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
@@ -472,9 +474,9 @@ Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャ
 
 NuGet を使用した Ignite UI for Blazor のインストールの詳細については、[Ignite UI for Blazor のインストール](general-installing-blazor.md) トピックを参照してください。
 
-## Ignite UI for Blazor の登録
+### Ignite UI for Blazor の登録
 
-### .NET 6 以降のアプリケーション
+#### .NET 6 以降のアプリケーション
 
 1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
@@ -511,7 +513,7 @@ var app = builder.Build();
 <script src="_framework/blazor.server.js"></script>
 ```
 
-### .NET 5 アプリケーション
+#### .NET 5 アプリケーション
 
 1 - **Startup.cs** ファイルを開き、**services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
 
@@ -544,7 +546,7 @@ public void ConfigureServices(IServiceCollection services)
 <script src="_framework/blazor.server.js"></script>
 ```
 
-## Ignite UI for Blazor コンポーネントの追加
+### Ignite UI for Blazor コンポーネントの追加
 
 Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
