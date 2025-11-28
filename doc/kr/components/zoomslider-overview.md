@@ -91,6 +91,7 @@ The following code demonstrates how to setup the ZoomSlider.
   height="100%"
  />
 ```
+
 ```html
   <igc-zoom-slider
       name="zoomSlider"

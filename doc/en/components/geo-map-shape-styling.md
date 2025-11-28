@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Shape Styling | Conditional Formatting | Infragistics
 _description: Learn how to apply custom styling to Infragistics' {Platform} map's shape series. Check out {ProductName} map tutorials!
 _keywords: {Platform} map, custom styling, {ProductName}, Infragistics, conditional formatting, shape styling
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "GeographicShapeSeries", "Series"]
 ---
 # {Platform} Shape Styling on Geographic Shape Series
@@ -43,10 +44,10 @@ import { IgcShapefileRecord } from 'igniteui-webcomponents-core';
 ```
 
 Note that the following code examples are using the [Shape Styling Utility](geo-map-resources-shape-styling-utility.md) file that provides four different ways of styling shapes:
-* [Shape Comparison Styling](#shape-comparison-styling)
-* [Shape Random Styling](#shape-random-styling)
-* [Shape Range Styling](#shape-range-styling)
-* [Shape Scale Styling](#shape-scale-styling)
+- [Shape Comparison Styling](#shape-comparison-styling)
+- [Shape Random Styling](#shape-random-styling)
+- [Shape Range Styling](#shape-range-styling)
+- [Shape Scale Styling](#shape-scale-styling)
 
 ## Shape Random Styling
 
@@ -403,5 +404,5 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
 
 ## API References
 
- - `GeographicShapeSeries`
- - `XamGeographicMap`
+- `GeographicShapeSeries`
+- `XamGeographicMap`

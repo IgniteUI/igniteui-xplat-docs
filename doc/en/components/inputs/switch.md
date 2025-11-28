@@ -3,6 +3,7 @@ title: {Platform} Switch Component – {ProductName}
 _description: {ProductName} Switch component enables developers to use binary on/off or true/false data input functions within their applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls
 mentionedTypes: ["Switch"]
+_license: MIT
 ---
 
 # {Platform} Switch
@@ -36,7 +37,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSwitchComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -261,11 +262,11 @@ igc-switch::part(control checked) {
 
 ## API References
 
- - `LabelPosition`
- - `Switch`
- - [`Styling & Themes`](../themes/overview.md)
+- `LabelPosition`
+- `Switch`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

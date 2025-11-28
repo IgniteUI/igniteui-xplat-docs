@@ -2,6 +2,7 @@
 title: {Platform} Chart Tooltips | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Tooltips
 _keywords: {Platform} Charts, Tooltips, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "ToolTipType"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -23,7 +24,7 @@ In {Platform} charts, tooltips provide details about bound data and they are ren
 The `ToolTipType` property is configurable and can be set to one of the following options:
 
 | Property Value     | Description  |
-| -------------------|----------------  |
+| -------------------|----------------|
 | `Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.  |
 | `Data` Tooltip | Display the data tooltips for all series in the chart.  |
 | `Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.  |
@@ -40,8 +41,6 @@ If none of built-in types of tooltips are matching your requirements, you can cr
 This example shows how to create custom tooltips for all series in {Platform} `CategoryChart` control. Note that you can also apply the same logic to custom tooltips in {Platform} `FinancialChart` control.
 
 `sample="/charts/category-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
-
-
 
 <div class="divider--half"></div>
 

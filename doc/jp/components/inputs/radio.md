@@ -2,6 +2,7 @@
 title: Radio と Radio Group
 _description: {ProductName} Radio Button と Radio Group コントロールを使用すると、開発者はユーザーが選択できるオプションのリストをシームレスに表示して、テンプレート駆動型のリアクティブ フォームでより優れた UI を実現できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Radio Button components, {Platform} Radio Button controls, {Platform} Radio Group component, {Platform} Radio Group control, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Radio Button コンポーネント, {Platform} Radio Button コントロール
+_license: MIT
 mentionedTypes: ["Radio", "RadioGroup", "Form"]
 _language: ja
 ---
@@ -348,12 +349,12 @@ igc-radio::part(label) {
 
 ## API リファレンス
 
- - `RadioGroup`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `RadioGroup`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

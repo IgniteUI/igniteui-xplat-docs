@@ -2,6 +2,7 @@
 title: {Platform} Snackbar | Infragistics
 _description: With {ProductName} Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Snackbar components
+_license: MIT
 mentionedTypes: ["Snackbar"]
 ---
 
@@ -70,7 +71,7 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 
@@ -147,14 +148,14 @@ igc-snackbar::part(base) {
 
 ## API References
 
- - `ActionText`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Snackbar`
- - [`Styling & Themes`](../themes/overview.md)
+- `ActionText`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Snackbar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

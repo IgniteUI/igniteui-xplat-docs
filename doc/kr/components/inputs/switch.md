@@ -138,10 +138,10 @@ igc-switch::part(thumb) {
 
 ## API Reference
 
-* `Switch`
+- `Switch`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

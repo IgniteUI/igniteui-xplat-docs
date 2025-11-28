@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet | Conditional Formatting | Infragistics
 _description: Use Infragistics' {Platform} spreadsheet control to conditionally format the cells of a worksheet. Check out {ProductName} spreadsheet demos!
 _keywords: Spreadsheet, conditional formatting, {ProductName}, Infragistics, Worksheet
+_license: commercial
 mentionedTypes: ["Spreadsheet", "ConditionalFormatCollection", "WorksheetCell", "Worksheet", "IWorksheetCellFormat"]
 ---
 # {Platform} Spreadsheet Conditional Formatting
@@ -161,39 +162,39 @@ uniqueFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(blue);
 
 ## API References
 
- - `AddAverageCondition`
- - `AddBlanksCondition`
- - `AddColorScaleCondition`
- - `AddDataBarCondition`
- - `AddDateTimeCondition`
- - `AddDuplicateCondition`
- - `AddErrorsCondition`
- - `AddFormulaCondition`
- - `AddIconSetCondition`
- - `AddNoBlanksCondition`
- - `AddNoErrorsCondition`
- - `AddOperatorCondition`
- - `AddRankCondition`
- - `AddTextCondition`
- - `AddUniqueCondition`
- - `CellFormat`
- - `ColorScaleConditionalFormat`
- - `ColorScaleConditionalFormat`:
- - `ConditionalFormats`
- - `DataBarConditionalFormat`
- - `DataBarConditionalFormat`:
- - `DateTimeConditionalFormat`:
- - `DuplicateConditionalFormat`:
- - `ErrorsConditionalFormat`:
- - `FormatConditionTextOperator`
- - `FormatString`
- - `FormulaConditionalFormat`:
- - `IconSetConditionalFormat`
- - `IconSetConditionalFormat`:
- - `NoBlanksConditionalFormat`:
- - `NoErrorsConditionalFormat`:
- - `OperatorConditionalFormat`:
- - `RankConditionalFormat`:
- - `Spreadsheet`
- - `TextOperatorConditionalFormat`:
- - `UniqueConditionalFormat`:
+- `AddAverageCondition`
+- `AddBlanksCondition`
+- `AddColorScaleCondition`
+- `AddDataBarCondition`
+- `AddDateTimeCondition`
+- `AddDuplicateCondition`
+- `AddErrorsCondition`
+- `AddFormulaCondition`
+- `AddIconSetCondition`
+- `AddNoBlanksCondition`
+- `AddNoErrorsCondition`
+- `AddOperatorCondition`
+- `AddRankCondition`
+- `AddTextCondition`
+- `AddUniqueCondition`
+- `CellFormat`
+- `ColorScaleConditionalFormat`
+- `ColorScaleConditionalFormat`:
+- `ConditionalFormats`
+- `DataBarConditionalFormat`
+- `DataBarConditionalFormat`:
+- `DateTimeConditionalFormat`:
+- `DuplicateConditionalFormat`:
+- `ErrorsConditionalFormat`:
+- `FormatConditionTextOperator`
+- `FormatString`
+- `FormulaConditionalFormat`:
+- `IconSetConditionalFormat`
+- `IconSetConditionalFormat`:
+- `NoBlanksConditionalFormat`:
+- `NoErrorsConditionalFormat`:
+- `OperatorConditionalFormat`:
+- `RankConditionalFormat`:
+- `Spreadsheet`
+- `TextOperatorConditionalFormat`:
+- `UniqueConditionalFormat`:

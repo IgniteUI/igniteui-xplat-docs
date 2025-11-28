@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["Column"]
 namespace: Infragistics.Controls
@@ -716,6 +717,7 @@ $custom-theme: igx-grid-theme(
     $header-border-color: rgba(0, 0, 0, 0.08)
 );
 ```
+
 The last step is to **include** the component mixins:
 
 ```scss
@@ -846,6 +848,7 @@ Then set the related CSS properties to this class:
     --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
@@ -855,24 +858,24 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `{ComponentName}`
-* `ColumnGroup`
+- `{ComponentName}`
+- `ColumnGroup`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Grid Overview](../data-grid.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Group by](groupby.md)
+- [Grid Overview](../data-grid.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Group by](groupby.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

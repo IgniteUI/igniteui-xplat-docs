@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | マップ概要 | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics, {Platform} マップ, 地理マップ, 画像タイル, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series"]
 _language: ja
 ---
@@ -9,7 +10,7 @@ _language: ja
 
 {ProductName} Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-# {Platform} マップの例
+## {Platform} マップの例
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 
@@ -64,7 +65,7 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
     imports: [
         // ...
         IgxGeographicMapModule,
-		IgxDataChartInteractivityModule
+        IgxDataChartInteractivityModule
         // ...
     ]
 })

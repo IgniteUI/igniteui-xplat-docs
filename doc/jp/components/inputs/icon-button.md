@@ -2,6 +2,7 @@
 title: {Platform} Icon Button コンポーネント
 _description: 開発者は、{ProductName} Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon Button components, {Platform} Icon Button controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Icon Button コンポーネント, {Platform} Icon Button コントロール
+_license: MIT
 mentionedTypes: ["IconButton", "ButtonBase", "Button", "Icon"]
 _language: ja
 ---
@@ -195,14 +196,14 @@ igc-icon-button::part(icon) {
 
 ## API リファレンス
 
- - `ButtonBase`
- - `Button`
- - `IconButton`
- - `Icon`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `ButtonBase`
+- `Button`
+- `IconButton`
+- `Icon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

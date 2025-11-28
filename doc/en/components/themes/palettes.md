@@ -2,6 +2,7 @@
 title: {Platform} Styling and Themes | {Platform} Palettes | Infragistics
 _description:
 _keywords: {ProductName}, Infragistics, Palettes, Styling
+_license: MIT
 mentionedTypes: ["Palettes"]
 ---
 
@@ -129,7 +130,8 @@ Palettes in {ProductName} dictate whether a theme is going to be light or dark. 
 
 To make this a bit clearer, below is the complete list of all `gray` and `surface` color variants in both a light and a dark theme.
 
-*Bootstrap Light:*
+**Bootstrap Light:**
+
 ```css
 :root {
   //...
@@ -142,7 +144,8 @@ To make this a bit clearer, below is the complete list of all `gray` and `surfac
 }
 ```
 
-*Bootstrap Dark:*
+**Bootstrap Dark:**
+
 ```css
 :root {
   //...
@@ -172,4 +175,4 @@ So far we've covered the `primary`, `secondary`, `gray`, and `surface` color var
 
 ## API References
 
- - `Palettes`
+- `Palettes`

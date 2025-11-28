@@ -89,7 +89,7 @@ npm install @infragistics/igniteui-dockmanager
 
 - すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `igniteui-dockmanager` 参照を `@infragistics/igniteui-dockmanager` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
 
-  **または**
+**または**
 
 - プロジェクトの **tsconfig.json** に **paths** マッピングを追加します。
 
@@ -154,7 +154,7 @@ npm を既に使用していて、{ProductName} ライセンスがある場合�
 
 以下は、ローカル構成でアクセス トークンを使用してプライベート npm レジストリへの認証を設定する方法、Azure Pipelines のビルド手順、および Travis CI のビルド プロセスです。
 
-* https://account.infragistics.com/access-tokens からトークンを生成します。
+- https://account.infragistics.com/access-tokens からトークンを生成します。
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 600px"
   src="../images/general/generate-token.jpg"
@@ -164,7 +164,7 @@ npm を既に使用していて、{ProductName} ライセンスがある場合�
 
 > 各トークンは Base64 エンコードです。
 
-* 以下を [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) ファイルに追加します。
+- 以下を [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) ファイルに追加します。
 
 ```cmd
 @infragistics:registry=https://packages.infragistics.com/npm/js-licensed/
@@ -209,8 +209,8 @@ before_install:
 
 環境変数を定義する方法は、含まれる情報のタイプによって異なるため、[2 つ のオプションがあります](https://docs.travis-ci.com/user/environment-variables/)。
 
-* 暗号化して [.travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml) に追加します。
-* [リポジトリ設定](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)に追加します。
+- 暗号化して [.travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml) に追加します。
+- [リポジトリ設定](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)に追加します。
 
 ### GitHub Actions の構成
 

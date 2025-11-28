@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップを使用してヒートマップ画像を表示します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, heat map imagery, {ProductName}, Infragistics, {Platform} マップ, ヒートマップ画像, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "ShapefileConverter", "HeatTileGenerator", "GeographicTileSeries"]
 _language: ja
 ---
@@ -344,14 +345,14 @@ public onDataLoaded(csvData: string) {
 
 ## API リファレンス
 
- - `GeographicTileSeries`
- - `HeatTileGenerator`
- - `MaximumColor`
- - `MinimumColor`
- - `ShapefileRecord`
- - `ShapefileConverter`
- - `TileGeneratorMapImagery`
- - `TileGenerator`
- - `TileImagery`
- - `UseBlurRadiusAdjustedForZoom`
- - `UseLogarithmicScale`
+- `GeographicTileSeries`
+- `HeatTileGenerator`
+- `MaximumColor`
+- `MinimumColor`
+- `ShapefileRecord`
+- `ShapefileConverter`
+- `TileGeneratorMapImagery`
+- `TileGenerator`
+- `TileImagery`
+- `UseBlurRadiusAdjustedForZoom`
+- `UseLogarithmicScale`

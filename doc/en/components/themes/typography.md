@@ -2,13 +2,16 @@
 title: {Platform} Styling and Themes | {Platform} Typography | Infragistics
 _description:
 _keywords: {ProductName}, Infragistics, Typography, Styling
+_license: MIT
 mentionedTypes: ["Typography"]
 ---
 
 # Typography in {ProductName}
+
 The typography in {ProductName} is modeled after the [Material Type System](https://material.io/design/typography/the-type-system.html#). It's non-intrusive and optional, allowing you to modify the type styles using CSS only.
 
 ## Overview
+
 The type system is a **_type scale_** consisting of **_13 different category type styles_** used across most components. All of the scale categories are completely reusable and adjustable by the end user.
 
 Here's a list of all 13 category styles as defined for the Bootstrap Theme in {ProductName}:
@@ -29,7 +32,7 @@ Here's a list of all 13 category styles as defined for the Bootstrap Theme in {P
 | **caption**        | System Font     | 400             | .75 rem       | none               | 0.025 rem          | 1 rem           | `--ig-caption-*`    |
 | **overline**       | System Font     | 400             | .625 rem      | uppercase          | 0.09375 rem        | 1 rem           | `--ig-overline-*`   |
 
-Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Boostrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
+Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Bootstrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
 
 ## Usage
 
@@ -60,4 +63,4 @@ Keep in mind that this will update the global button typography styles. If you w
 
 ## API References
 
- - `Typography`
+- `Typography`

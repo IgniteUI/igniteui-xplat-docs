@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Remote Data Operations - {ProductName}
 _description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with {ProductName}.
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["GridBaseDirective"]
 namespace: Infragistics.Controls
@@ -420,7 +421,7 @@ public columnValuesStrategy = (column: IgxColumnComponent,
 BLAZOR CODE SNIPPET HERE
 ```
 
-#### Unique Column Values Strategy Demo
+### Unique Column Values Strategy Demo
 
 `sample="/{ComponentSample}/excel-style-filtering-load-on-demand", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Unique Column Values Strategy Example"`
 
@@ -545,7 +546,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-    
+
     private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
         let qS = "";
         if (baseUrl) {
@@ -667,7 +668,7 @@ export class RemotePagingService {
 export class RemotePagingService {
     public static BASE_URL = 'https://data-northwind.indigo.design/';
     public static CUSTOMERS_URL = `${RemotePagingService.BASE_URL}Customers/GetCustomersWithPage`;
-  
+
     constructor() {}
 
     public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
@@ -675,7 +676,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-    
+
     public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
         return fetch(`${RemotePagingService.BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
         .then((result) => result.json());
@@ -794,11 +795,12 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+
 ```ts
   constructor() {
       this.grid = document.getElementById('grid') as IgcGridComponent;
       this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
-      
+
       this._bind = () => {
         window.addEventListener("load", () => {
           this.loadData(this.page,this.perPage);
@@ -817,12 +819,14 @@ First we need to bind to the relevant events so when we change pages and the amo
 
       this._bind();
   }
-``` 
+```
+
 We also need to set the method for loading data and update the UI accordingly:
-```ts 
+
+```ts
   private loadData(pageIndex?: number, pageSize?: number): void {
     this.grid.isLoading = true;
-    
+
     RemotePagingService.getDataWithPaging(pageIndex,pageSize)
     .then((response: CustomersWithPageResponseModel) => {
       this.totalRecordsCount = response.totalRecordsCount;
@@ -851,7 +855,7 @@ We also need to set the method for loading data and update the UI accordingly:
 
 For further reference, please check the demo bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -871,6 +875,7 @@ First we should load some data to the grid. It is best to do after the grid has 
         }
     }
 ```
+
 After that we just need to bind the paging events to our custom methods, and remote paging is set:
 
 ```razor
@@ -909,9 +914,10 @@ After that we just need to bind the paging events to our custom methods, and rem
     }
 }
 ```
+
 For further reference please check the full demo bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -927,7 +933,7 @@ For further reference please check the full demo bellow:
           height="600px"
           isLoading={isLoading}
         >
-        <IgrPaginator 
+        <IgrPaginator
           perPage={perPage}
           ref={paginator}
           onPageChange={onPageNumberChange}
@@ -943,6 +949,7 @@ For further reference please check the full demo bellow:
 ```
 
 then set up the state:
+
 ```tsx
   const grid = useRef<IgrGrid>(null);
   const paginator = useRef<IgrPaginator>(null);
@@ -957,6 +964,7 @@ then set up the state:
 ```
 
 and finally set up the method for loading the data:
+
 ```tsx
   function loadGridData(pageIndex?: number, pageSize?: number) {
     // Set loading state
@@ -981,7 +989,7 @@ and finally set up the method for loading the data:
 
 For further reference please check the full sample bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -1019,6 +1027,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+
 ```ts
     constructor() {
         this.hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
@@ -1048,17 +1057,19 @@ First we need to bind to the relevant events so when we change pages and the amo
             ordersRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Customers");
             });
-    
+
             orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Orders");
             });
         }
-    
+
         this._bind();
     }
-``` 
+```
+
 We also need to set the method for loading data and update the UI accordingly:
-```ts 
+
+```ts
   private updateUI(): void {
         if (this.hierarchicalGrid && this.data) { // Check if grid and data are available
             this.hierarchicalGrid.data = this.data;
@@ -1067,7 +1078,7 @@ We also need to set the method for loading data and update the UI accordingly:
 
     private loadCustomersData(pageIndex?: number, pageSize?: number): void {
         this.hierarchicalGrid.isLoading = true;
-        
+
         RemotePagingService.getDataWithPaging(pageIndex,pageSize)
         .then((response: CustomersWithPageResponseModel) => {
           this.totalRecordsCount = response.totalRecordsCount;
@@ -1088,6 +1099,7 @@ We also need to set the method for loading data and update the UI accordingly:
 ```
 
 And finally we need to handle the behaviour behind the actual hierarchy levels of the Hierarchical Gird
+
 ```ts
     public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, parentKey: string) {
         const context = event.detail;
@@ -1111,7 +1123,7 @@ And finally we need to handle the behaviour behind the actual hierarchy levels o
 
     public webHierarchicalGridPaginatorTemplate = () => {
        return html `
-        <igc-paginator 
+        <igc-paginator
             id="islandPaginator">
         </igc-paginator>`
     }
@@ -1119,7 +1131,7 @@ And finally we need to handle the behaviour behind the actual hierarchy levels o
 
 For further reference, please check the demo bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 
@@ -1139,6 +1151,7 @@ First we should load some data to the grid. It is best to do after the grid has 
         }
     }
 ```
+
 After that we just need to bind the paging events to our custom methods, and remote paging is set:
 
 ```razor
@@ -1177,9 +1190,10 @@ After that we just need to bind the paging events to our custom methods, and rem
     }
 }
 ```
+
 For further reference please check the full demo bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 
@@ -1216,7 +1230,9 @@ For further reference please check the full demo bellow:
           </IgrRowIsland>
         </IgrHierarchicalGrid>
 ```
+
 then set up the state:
+
 ```tsx
   const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
   const paginator = useRef<IgrPaginator>(null);
@@ -1232,6 +1248,7 @@ then set up the state:
 ```
 
 next set up the method for loading the data:
+
 ```tsx
   function loadGridData(pageIndex?: number, pageSize?: number) {
     // Set loading state
@@ -1295,7 +1312,7 @@ and finally set up the behaviour for the RowIslands:
 
 For further reference please check the full sample bellow:
 
-### Grid Remote Paging Demo  
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1418,9 +1435,9 @@ When we define a custom paginator content we need to define the content in a way
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>
-	    <igx-page-size></igx-page-size>
+        <igx-page-size></igx-page-size>
         [This is my custom content]
-	    <igx-page-nav></igx-page-nav>
+        <igx-page-nav></igx-page-nav>
     </igx-paginator-content>
 </igx-paginator>
 ```
@@ -1682,30 +1699,30 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+- Row Selection
+- Row Expand/collapse
+- Row Editing
+- Row Pinning
 
 ## API References
 
-* `Paginator`
-* `{ComponentName}`
+- `Paginator`
+- `{ComponentName}`
 
 ## Additional Resources
 <!-- ComponentStart: Grid -->
-* [Paging](paging.md)
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Paging](paging.md)
+- [Virtualization and Performance](virtualization.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

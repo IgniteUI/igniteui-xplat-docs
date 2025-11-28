@@ -2,6 +2,7 @@
 title: {Platform} Navbar | インフラジスティックス
 _description: インフラジスティックスの {Platform} ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Navbar"]
 _language: ja
 ---
@@ -162,11 +163,11 @@ igc-navbar::part(middle) {
 
 ## API リファレンス
 
- - `Icon`
- - `Navbar`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `Navbar`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

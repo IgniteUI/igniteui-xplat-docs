@@ -37,10 +37,10 @@ _language: ja
 <!-- TODO fix build flagging list items -->
 <!-- - [仮想データのバインディング](remote-data.md) -->
 <!-- end: Angular, React, WebComponents -->
-- [列タイプ ](column-types.md)
+- [列タイプ](column-types.md)
 - [行のグループ化](row-grouping.md)
 
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

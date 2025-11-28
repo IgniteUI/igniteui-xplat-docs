@@ -2,6 +2,7 @@
 title: {Platform} チャート API | データ視覚化ツール | インフラジスティックス
 _description: インフラジスティックスの {ProductName} マップは、マップ ビジュアルを構成およびスタイル設定するための便利な API を提供します。
 _keywords: {Platform} maps, geographic, map API, API, {Platform} マップ, 地理, マップ API, API, {ProductName}
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series", "SeriesViewer", "GeographicSymbolSeries", "GeographicProportionalSymbolSeries", "GeographicShapeSeries", "GeographicHighDensityScatterSeries", "GeographicScatterAreaSeries", "GeographicContourLineSeries", "GeographicShapeSeriesBase"]
 namespace: Infragistics.Controls.Maps
 _language: ja
@@ -20,17 +21,17 @@ _language: ja
 - `GetGeographicPoint`
 - `GetPixelPoint`
 
-# {Platform} 地理的シリーズの種類
+## {Platform} 地理的シリーズの種類
 
 {Platform} `XamGeographicMap` には 7 種類のシリーズがあり、データ バインディング用の `ItemsSource` プロパティがあります。
 
- - `GeographicHighDensityScatterSeries`
- - `GeographicSymbolSeries`
- - `GeographicProportionalSymbolSeries`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `GeographicScatterAreaSeries`
- - `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicScatterAreaSeries`
+- `GeographicContourLineSeries`
 
 さらに、シリーズの各種類には、データ項目をマッピングし、その外観をスタイル設定するための特定のプロパティがあります。
 

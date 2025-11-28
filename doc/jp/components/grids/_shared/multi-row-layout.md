@@ -1,7 +1,8 @@
 ---
-title: 	{Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
+title: {Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["Column"]
 namespace: Infragistics.Controls
@@ -21,27 +22,27 @@ _language: ja
 複数行レイアウトの宣言は、`ColumnLayout` コンポーネントによって実現されます。各 `ColumnLayout` コンポーネントは、単一または複数の `Column` コンポーネントを含むブロックと見なします。一部のグリッド機能はブロック レベルで機能します (下記の「機能の統合」セクション参照)。たとえば、仮想化ではブロックを使用して仮想チャンクを決定します。そのため、レイアウトで許容される場合は、パフォーマンスを向上させるために列を更に `ColumnLayout` ブロックに分割します。複数行のレイアウトを設定するときは、これらのブロックの外側に列がなく、`ColumnGroup` を使用しないでください。複数行のレイアウトは、[グリッド レイアウト](https://www.w3.org/TR/css-grid-1/)仕様上に実装されており、その要件に準拠する必要があります。
 
 `Column` は各セルの位置と範囲を決めるために 4 つの `Input` プロパティを公開します。
-* `ColStart` - フィールドの開始位置となる列インデックス。このプロパティは**必須**です。
-* `RowStart` - フィールドの開始位置となる行インデックス。このプロパティは**必須**です。
-* `ColEnd` - 現在のフィールドが終了する位置の列インデックス。colStart と colEnd の間の列数によって、そのフィールドまでの列の幅が決まります。このプロパティは**オプション**です。設定されていない場合、デフォルトは **colStart + 1** になります。
-* `RowEnd` - 現在のフィールドが終了する行インデックス。rowStart と rowEnd の間の行数によって、そのフィールドにまたがる行数が決まります。このプロパティは**オプション**です。設定されていない場合は、デフォルトで **rowStart + 1** に設定されます。
+- `ColStart` - フィールドの開始位置となる列インデックス。このプロパティは**必須**です。
+- `RowStart` - フィールドの開始位置となる行インデックス。このプロパティは**必須**です。
+- `ColEnd` - 現在のフィールドが終了する位置の列インデックス。colStart と colEnd の間の列数によって、そのフィールドまでの列の幅が決まります。このプロパティは**オプション**です。設定されていない場合、デフォルトは **colStart + 1** になります。
+- `RowEnd` - 現在のフィールドが終了する行インデックス。rowStart と rowEnd の間の行数によって、そのフィールドにまたがる行数が決まります。このプロパティは**オプション**です。設定されていない場合は、デフォルトで **rowStart + 1** に設定されます。
 
 
 ```html
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [rowEnd]="3" field="ID"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [rowEnd]="3" field="ID"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="CompanyName"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="1" [colEnd]="2" field="ContactName"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="2" [colEnd]="3" field="ContactTitle"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="CompanyName"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="1" [colEnd]="2" field="ContactName"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="2" [colEnd]="3" field="ContactTitle"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="Country"></igx-column>
-	<igx-column [rowStart]="1" [colStart]="3" [colEnd]="5" field="Region"></igx-column>
-	<igx-column [rowStart]="1" [colStart]="5" [colEnd]="7" field="PostalCode"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="1" [colEnd]="4" field="City"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="4" [colEnd]="7" field="Address"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="Country"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="3" [colEnd]="5" field="Region"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="5" [colEnd]="7" field="PostalCode"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="1" [colEnd]="4" field="City"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="4" [colEnd]="7" field="Address"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
     <igx-column [rowStart]="1" [colStart]="1" field="Phone"></igx-column>
@@ -73,19 +74,19 @@ _language: ja
 
 ```html
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
+    <igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
-	<igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
-	<igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
+    <igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
+    <igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
+    <igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
-	<igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
-	<igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
-	<igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
-	<igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
+    <igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
+    <igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
+    <igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
+    <igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
+    <igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
     <igc-column row-start="1" col-start="1" field="Phone"></igc-column>
@@ -143,15 +144,15 @@ _language: ja
 
 ### 水平ナビゲーション
 
-* <kbd>←</kbd> または <kbd>→</kbd> は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>←</kbd> と <kbd>→</kbd> は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
-* <kbd>CTRL</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) または <kbd>CTRL</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
+- <kbd>←</kbd> または <kbd>→</kbd> は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>←</kbd> と <kbd>→</kbd> は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) または <kbd>CTRL</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
 
 
 ### 垂直ナビゲーション
 
-* <kbd>↑</kbd> または <kbd>↓</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
-* <kbd>CTRL</kbd> + <kbd>↑</kbd> または <kbd>CTRL</kbd> + <kbd>↓</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
-* <kbd>CTRL</kbd> + <kbd>HOME</kbd> または <kbd>CTRL</kbd> + <kbd>END</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
+- <kbd>↑</kbd> または <kbd>↓</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
+- <kbd>CTRL</kbd> + <kbd>↑</kbd> または <kbd>CTRL</kbd> + <kbd>↓</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd> または <kbd>CTRL</kbd> + <kbd>END</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
 
 
 > [!Note]
@@ -182,14 +183,14 @@ _language: ja
 
 列レイアウトを構成するときに、適切な `ColStart` および `ColEnd`、または `RowStart` および `RowEnd` を計算して設定するのが難しい場合があります。特に 1 つのレイアウトに多数の列がある場合などですが、適用時のプレビューを簡単に確認するためにコンフィギュレーターを使用できます。以下の操作が可能です。
 
-* 設定全体の行数を設定します。すべてのレイアウトは同じ行数である必要があります。
-* **[レイアウトの追加]** チップをクリックするか、レイアウトチップを左右にドラッグしてソートします。
-* 各レイアウトに特定の設定を列数と幅に合わせて設定します。設定は現在選択されているレイアウトを参照します。
-* レイアウト プレビューで列セルのサイズを変更して、より多くの列/行にまたがるようにしたり、`[削除]` ボタンを使用して列セルを消去したりできます。
-* プレビューで列チップをドラッグして列を設定します。
-* **[列の追加]** チップを使用して新しい列を追加/削除します。
+- 設定全体の行数を設定します。すべてのレイアウトは同じ行数である必要があります。
+- **[レイアウトの追加]** チップをクリックするか、レイアウトチップを左右にドラッグしてソートします。
+- 各レイアウトに特定の設定を列数と幅に合わせて設定します。設定は現在選択されているレイアウトを参照します。
+- レイアウト プレビューで列セルのサイズを変更して、より多くの列/行にまたがるようにしたり、`[削除]` ボタンを使用して列セルを消去したりできます。
+- プレビューで列チップをドラッグして列を設定します。
+- **[列の追加]** チップを使用して新しい列を追加/削除します。
 
-* [NgForOf](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
+- [NgForOf](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
 
 <!-- end: Angular -->
 
@@ -371,6 +372,7 @@ $my-custom-schema: extend($light-schema, (
     --ig-grid-header-text-color: #fff;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
@@ -380,21 +382,21 @@ $my-custom-schema: extend($light-schema, (
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `ColumnLayout`
-* `Column`
+- `{ComponentName}`
+- `ColumnLayout`
+- `Column`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

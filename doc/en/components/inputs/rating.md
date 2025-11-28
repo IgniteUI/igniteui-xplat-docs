@@ -2,6 +2,7 @@
 title: {Platform} Rating
 _description: With {ProductName} Rating, allows users to view and provide feedback using unicode symbols, svg, or icons.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Rating components, {Platform} Rating controls
+_license: MIT
 mentionedTypes: ["Rating"]
 ---
 
@@ -56,7 +57,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcRatingComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -123,18 +124,18 @@ The `Rating` component allows you to use custom symbols in place of the default 
         <IgrIcon name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-        <IgrIcon  name='heart' collection="material"></IgrIcon>                           
+        <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-      	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+      <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
-    </IgrRatingSymbol>                        
-</IgrRating> 
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
+    </IgrRatingSymbol>
+</IgrRating>
 ```
 <!-- end: React -->
 
@@ -173,26 +174,26 @@ The {ProductName} Rating component has a single selection mode that allows users
 <!-- React -->
 ```tsx
 <IgrRating single={true}>
-  <IgrRatingSymbol>                           
-      <div>😣</div>	
-      <div slot="empty">😣</div>
-  </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                           
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
-  </IgrRatingSymbol>                         
+  </IgrRatingSymbol>
+  <IgrRatingSymbol>
+      <div>😣</div>
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>
 </IgrRating>
 ```
 <!-- end: React -->
@@ -227,8 +228,8 @@ The {ProductName} Rating component allows users to use different icons/elements 
 ```tsx
 <IgrRatingSymbol>
     <div><IgrIcon name='bandage' collection="material"></IgrIcon></div>
-    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div> 
-</IgrRatingSymbol> 
+    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div>
+</IgrRatingSymbol>
 ```
 <!-- end: React -->
 
@@ -237,30 +238,30 @@ The {ProductName} Rating component allows users to use different icons/elements 
 
 ## Configuration
 
-#### Single
+### Single
 
 Turns on the `Single` visual mode for the rating. Useful when using symbols that communicate unique values, like feedback emoji faces.
 
-#### Value
+### Value
 
 The `Value` attribute sets the current value of the component.
 
-#### Label
+### Label
 
 The `Label` attribute allows setting the label value of the rating component.
 
-#### Value Format
+### Value Format
 A format string which sets [aria-valuetext](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext). All instances of it will be replaced with the current value of the control. Important for screen-readers and useful for localization.
 
-#### Max Value
+### Max Value
 
 The `Max` attribute sets the maximum allowed value of the rating component.
 
-#### Step
+### Step
 
 The `Step` attribute sets the allowed fraction of steps between two symbols. Useful when splitting the rating symbols in halves.
 
-#### Hover Preview
+### Hover Preview
 
 <!-- WebComponents -->
 The `hover-preview` attribute makes the component show the possible outcome of user selection on hover. It is useful when you want to give instant feedback about what the selected value could be.
@@ -274,21 +275,21 @@ The `HoverPreview` attribute makes the component show the possible outcome of us
 The `hoverPreview` attribute makes the component show the possible outcome of user selection on hover. It is useful when you want to give instant feedback about what the selected value could be.
 <!-- end: React -->
 
-#### Read-Only
+### Read-Only
 
 The `ReadOnly` attribute allows the users to set the `Rating` in read-only mode. This attribute is useful when you want to use the component for information purposes only.
 
-#### Disabled
+### Disabled
 
 The `Disabled` attribute disables the component, making it impossible to select a value using the mouse or keyboard.
 
 ## Methods
 
-#### Step Up
+### Step Up
 
 The `StepUp` method increments the value of the component by `n` steps. Determined by the `step` factor.
 
-#### Step Down
+### Step Down
 
 The `StepDown` method decrements the value of the component by `n` steps. Determined by the `step` factor.
 
@@ -306,7 +307,7 @@ The `Rating` component emits two separate events - `Hover` and `Change`.
 The `Rating` component emits two separate events - `hover` and `change`.
 <!-- end: React -->
 
-#### Hover Event
+### Hover Event
 
 <!-- WebComponents -->
 The `igcHover` event is fired when hovering over a symbol. It provides the value of the symbol under the mouse cursor. Useful for creating custom value labels and readouts.
@@ -320,7 +321,7 @@ The `Hover` event is fired when hovering over a symbol. It provides the value of
 The `hover` event is fired when hovering over a symbol. It provides the value of the symbol under the mouse cursor. Useful for creating custom value labels and readouts.
 <!-- end: React -->
 
-#### Change Event
+### Change Event
 
 <!-- WebComponents -->
 The `igcChange` event is fired when the selected value changes.
@@ -367,5 +368,5 @@ igc-rating::part(empty) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

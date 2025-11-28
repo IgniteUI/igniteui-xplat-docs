@@ -2,6 +2,7 @@
 title: {Platform} 積層型チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 積層型チャート
 _keywords: {Platform} Charts, Stacked Chart, Stacked 100% Chart, Infragistics, {Platform} チャート, 積層型チャート, 積層型 100% チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -42,7 +43,6 @@ _language: ja
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100AreaSeries` にバインドします。
 
 `sample="/charts/data-chart/stacked-100-area-chart", height="600", alt="{Platform} 積層型 100 エリア チャート"`
-
 
 
 <div class="divider--half"></div>

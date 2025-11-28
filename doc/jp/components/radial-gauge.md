@@ -2,6 +2,7 @@
 title: {Platform} ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。{ProductName} ラジアル ゲージの設定可能な要素について説明します。
 _keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
+_license: commercial
 mentionedTypes: ["XamRadialGauge", "XamRadialGaugeRange"]
 namespace: Infragistics.Controls.Gauges
 _language: ja
@@ -284,6 +285,7 @@ IgrRadialGaugeModule.register();
     maximumValue=80 interval=10>
 </igx-radial-gauge>
 ```
+
 ```tsx
 <IgrRadialGauge
     scaleStartAngle={135}
@@ -706,14 +708,14 @@ IgrRadialGaugeModule.register();
 ```
 
 ```tsx
-<IgrRadialGauge                    
+<IgrRadialGauge
     highlightValueDisplayMode="Overlay"
     highlightValue="25"
     isHighlightNeedleDraggingEnabled="true"
     isNeedleDraggingEnabled="true"
     titleDisplaysValue="true"
     label-interval="10"
-    label-extent="0.65"        
+    label-extent="0.65"
     height="100%"
     width="100%"
     minimumValue={0} value={75}
@@ -729,7 +731,7 @@ IgrRadialGaugeModule.register();
     highlight-label-snaps-to-needle-pivot="true"
     is-highlight-needle-dragging-enabled="true"
     label-interval="10"
-    label-extent="0.65"        
+    label-extent="0.65"
     height="100%"
     width="100%"
     minimum-value="0" value="30"

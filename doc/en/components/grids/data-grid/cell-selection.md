@@ -59,11 +59,11 @@ The following example demonstrates how to selected or deselected all rows in the
 
 ## API References
 
- - `ModifierBased`
- - `MultipleCell`
- - `MultipleRow`
- - `RangeCell`
- - `SelectionBehavior`
- - `SelectionMode`
- - `SingleCell`
- - `SingleRow`
+- `ModifierBased`
+- `MultipleCell`
+- `MultipleRow`
+- `RangeCell`
+- `SelectionBehavior`
+- `SelectionMode`
+- `SingleCell`
+- `SingleRow`

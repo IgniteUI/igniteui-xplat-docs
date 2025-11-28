@@ -2,6 +2,7 @@
 title: {Platform} Button コンポーネント | {ProductName}
 _description: {Platform} Button コンポーネントの使用を開始します。{Platform} Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} Button コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Button", "ButtonBase"]
 _language: ja
 ---
@@ -217,7 +218,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-}); 
+});
 ```
 
 ```tsx
@@ -352,15 +353,15 @@ igc-button::part(base) {
 
 ## API リファレンス
 
- - `Button`
- - `DisplayType`
- - `Download`
- - `Href`
- - `RadioGroup`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `DisplayType`
+- `Download`
+- `Href`
+- `RadioGroup`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

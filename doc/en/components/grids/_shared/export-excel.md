@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Export to Excel - {ProductName}
 _description: With {ProductName} Excel Exporter you can make client Excel functionality more convenient & simpler. This format allows features like filtering, sorting, etc.
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -78,7 +79,7 @@ If all went well, you should see the {ComponentTitle} component and a button und
 
 ## Export All Data
 
-There are some cases when you might be using remote operations like *Paging* and the Grid won't have access to all of its data. In these cases, we recommend using the [Excel Export Service](../exporter-excel.md) and pass the whole data collection, if available. Example:
+There are some cases when you might be using remote operations like **paging** and the Grid won't have access to all of its data. In these cases, we recommend using the [Excel Export Service](../exporter-excel.md) and pass the whole data collection, if available. Example:
 
 ```ts
 public exportButtonHandler() {
@@ -91,7 +92,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## Export Grouped Data
 
-To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. You can find example in the beggining of the topic.
+To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. You can find example in the beginning of the topic.
 
 <!-- Angular -->
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example"`
@@ -255,13 +256,13 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 
 ## API References
 
-* `ExcelExporterService`
-* `ExcelExporterOptions` 
-* `{ComponentName}`
+- `ExcelExporterService`
+- `ExcelExporterOptions`
+- `{ComponentName}`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

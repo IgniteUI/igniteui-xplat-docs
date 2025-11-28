@@ -2,6 +2,7 @@
 title: {Platform} チャート データ ツールチップ | データ視覚化ツール | インフラジスティックス
 _description: データ ツールチップ レイヤーで Infragistics {ProductName} チャートをお試しください!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -48,20 +49,20 @@ _language: ja
 単位の列には、省略記号や単位のテキストが表示されます。これらは、すべての列に `DataToolTipUnitsText` を設定するか、チャートの各系列で次のプロパティを使用して、**DataToolTip** で設定できます:
 
 - カテゴリ シリーズ (例: ColumnSeries):
-    - ValueMemberAsLegendUnit="K"
+  - ValueMemberAsLegendUnit="K"
 - 財務物価シリーズ:
-    - OpenMemberAsLegendUnit="K"
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
-    - CloseMemberAsLegendUnit="K"
+  - OpenMemberAsLegendUnit="K"
+  - LowMemberAsLegendUnit="K"
+  - HighMemberAsLegendUnit="K"
+  - CloseMemberAsLegendUnit="K"
 - 範囲シリーズ:
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
+  - LowMemberAsLegendUnit="K"
+  - HighMemberAsLegendUnit="K"
 - ラジアル シリーズ:
-    - ValueMemberAsLegendUnit="km"
+  - ValueMemberAsLegendUnit="km"
 - 極座標シリーズ:
-    - RadiusMemberAsLegendUnit="km"
-    - AngleMemberAsLegendUnit="degrees"
+  - RadiusMemberAsLegendUnit="km"
+  - AngleMemberAsLegendUnit="degrees"
 
 上記のプロパティには、前述のラベル列のテキストを決定するための **MemberAsLegendLabel** で終わる対応するプロパティがあります。
 
@@ -111,7 +112,7 @@ _language: ja
 凡例項目は、`LayoutMode` プロパティを使って垂直または表形式の構造に配置できます。デフォルト値は `Table` で、以前のリリースと同じ外観と操作性を維持します。
 
 例:
-<img src="../../../images/general/layout_mode.png" />
+<img src="../../../images/general/layout_mode.png" alt="Layout Mode" />
 
 ## {Platform} データ ツールチップのスタイル設定
 
@@ -131,34 +132,34 @@ _language: ja
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 
 ## API リファレンス
 
- - `DataToolTipExcludedColumns`
- - `DataToolTipGroupedPositionModeX`
- - `DataToolTipGroupedPositionModeY`
- - `DataToolTipGroupingMode`
- - `DataToolTipHeaderText`
- - `DataToolTipIncludedColumns`
- - `DataToolTipLabelTextColor`
- - `DataToolTipLayer`
- - `DataToolTipSummaryTitleText`
- - `DataToolTipSummaryType`
- - `DataToolTipTitleTextColor`
- - `DataToolTipUnitsTextColor`
- - `DataToolTipUnitsText`
- - `DataToolTipValueFormatAbbreviation`
- - `DataToolTipValueFormatCulture`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMaxFractions`
- - `DataToolTipValueFormatMinFractions`
- - `DataToolTipValueFormatMode`
- - `DataToolTipValueTextColor`
- - `MemberAsLegendLabel`
+- `DataToolTipExcludedColumns`
+- `DataToolTipGroupedPositionModeX`
+- `DataToolTipGroupedPositionModeY`
+- `DataToolTipGroupingMode`
+- `DataToolTipHeaderText`
+- `DataToolTipIncludedColumns`
+- `DataToolTipLabelTextColor`
+- `DataToolTipLayer`
+- `DataToolTipSummaryTitleText`
+- `DataToolTipSummaryType`
+- `DataToolTipTitleTextColor`
+- `DataToolTipUnitsTextColor`
+- `DataToolTipUnitsText`
+- `DataToolTipValueFormatAbbreviation`
+- `DataToolTipValueFormatCulture`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMaxFractions`
+- `DataToolTipValueFormatMinFractions`
+- `DataToolTipValueFormatMode`
+- `DataToolTipValueTextColor`
+- `MemberAsLegendLabel`

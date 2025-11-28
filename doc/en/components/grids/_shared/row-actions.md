@@ -2,6 +2,7 @@
 title:  Row actions in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentName} provides the ability to use ActionStrip and utilize CRUD for row/cell components and row pinning.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -299,19 +300,19 @@ These components expose templates giving flexibility for customization. For inst
 
 For more detailed information regarding the Action Strip API, refer to the following links:
 
-* `ActionStrip`
+- `ActionStrip`
 
 Additional components and/or directives that can be used within the Action Strip:
 
-* `GridActionsBaseDirective`
-* `DividerDirective`
+- `GridActionsBaseDirective`
+- `DividerDirective`
 
 <!-- end: Angular -->
 
-* `GridPinningActions`
-* `GridEditingActions`
+- `GridPinningActions`
+- `GridEditingActions`
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

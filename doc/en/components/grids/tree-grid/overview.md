@@ -2,13 +2,14 @@
 title: {Platform} Tree Grid Component - {ProductName} by Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["GridBaseDirective", "TreeGrid", "Column"]
 namespace: Infragistics.Controls
 ---
 
 # {Platform} Tree Grid Overview and Configuration
 
-The {Platform} Tree Grid is a UI component that combines the functionality of a data grid (table) with a tree view, allowing hierarchical data to be easily displayed in a tabular format. Unlike a regular grid, a tree grid enables rows to expand and collapse, revealing child rows nested under parent rows, making it useful for representing structured data such as file explorers, organizational charts, project tasks, or product categories.  
+The {Platform} Tree Grid is a UI component that combines the functionality of a data grid (table) with a tree view, allowing hierarchical data to be easily displayed in a tabular format. Unlike a regular grid, a tree grid enables rows to expand and collapse, revealing child rows nested under parent rows, making it useful for representing structured data such as file explorers, organizational charts, project tasks, or product categories.
 
 {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little code or use a variety of events to customize different behaviors. This component provides a rich set of features like data selection, excel style filtering, sorting, paging, templating and column moving. Displaying of tabular data has never been easier and beautiful thanks to the Material Table-based UI Tree Grid.
 
@@ -25,7 +26,7 @@ In this example, you can see how users can manipulate hierarchical or flat data.
 
 ### Dependencies
 
-Getting started with our {Platform} Grid library and the {Platform} Tree Grid in particular is the first step to building powerful, data-rich applications that display hierarchical information in a clear and interactive way. The {Platform} Tree Grid allows you to present parent-child data structures in a familiar tabular format, complete with features like row expansion, sorting, filtering, editing, and virtualization for high performance with large datasets. 
+Getting started with our {Platform} Grid library and the {Platform} Tree Grid in particular is the first step to building powerful, data-rich applications that display hierarchical information in a clear and interactive way. The {Platform} Tree Grid allows you to present parent-child data structures in a familiar tabular format, complete with features like row expansion, sorting, filtering, editing, and virtualization for high performance with large datasets.
 
 To get started with the {Platform} tree grid, first you need to install the <!-- Blazor -->{PackageCommon} package.<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` package.<!-- end: WebComponents --><!-- React -->`{PackageCommon}` and `{PackageGrids}` packages.<!-- end: React -->
 
@@ -80,6 +81,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
 Or to link it:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -441,14 +443,14 @@ Then set the related CSS properties for that class:
 
 ## API References
 
-* `TreeGrid`
-* `Column`
-* `GridToolbar`
-* `TreeGridRecord`
+- `TreeGrid`
+- `Column`
+- `GridToolbar`
+- `TreeGridRecord`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

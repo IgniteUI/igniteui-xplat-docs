@@ -164,5 +164,5 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 
 ## API リファレンス
 
- - `Grid`
- - `XamSparkline`
+- `Grid`
+- `XamSparkline`

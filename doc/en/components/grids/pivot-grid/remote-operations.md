@@ -2,6 +2,7 @@
 title: {Platform} Pivot Grid Custom Remote | Pivot Tables | Infragistics
 _description: Create fast, responsive {Platform} pivot grids and tables with Ignite UI for {Platform}. Perform complex data analysis via pivot data.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, ignite ui for {Platform}, pivot grid customization, pivot grid remote, pivot remote
+_license: commercial
 mentionedTypes: ["PivotGrid", "PivotConfiguration", "PivotKeys"]
 namespace: Infragistics.Controls
 ---
@@ -188,16 +189,17 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 ```
 
 ## API References
-* `PivotGrid`
-* `PivotDataSelector`
+
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## Additional Resources
 
 <!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
-* [{Platform} Pivot Grid Overview](overview.md)
+- [{Platform} Pivot Grid Overview](overview.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

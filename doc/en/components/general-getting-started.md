@@ -2,49 +2,40 @@
 title: Getting Started | {ProductName} | Infragistics
 _description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
 _keywords: {ProductName}, Infragistics, Getting Started
-mentionedTypes: ["XamBulletGraph"]
+mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 ---
-
-<!-- WebComponents -->
-# {ProductName} Packages Overview
-
-{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-# {ProductName} Packages Overview
-
-{ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
-
-<!-- end: React -->
-
-<!-- WebComponents, React -->
-
-## Charts & Graphs
-{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
-
-## Gauges
-{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
-
-## Maps
-{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
-
-## Grids & Inputs
-{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
-
-## Buttons, Inputs, Layouts & Menus
-{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
-
-<!-- end: WebComponents, React -->
 
 <!-- React -->
 
 # Getting Started With {ProductName}
 
-## Install IgniteUI CLI
+## Prerequisites
 
-To create an application from scratch and configure it to use the Ignite UI React you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
+1. Install NodeJS.
+2. Install Visual Studio Code.
+
+<div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/nodejs.svg" alt="nodejs"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD NODE
+      </a>
+    </div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/vs-code.svg" alt="vs-code"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD VS CODE
+      </a>
+    </div>
+</div>
+
+## Using Ignite UI CLI
+
+To create an application from scratch and configure it to use Ignite UI React you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
 
 ```cmd
 npm install -g igniteui-cli
@@ -56,48 +47,95 @@ If you want to get a guided experience through the available options, you can in
 ig
 ```
 
-Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+Then choose `React` as framework, `Ignite UI for React TS` as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
+For more information about the Ignite UI CLI, see the [CLI overview](general-cli-overview.md).
+
+If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
+
+<img src="../images/general/ig-cli-grid.png" />
 
 Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.
 
-## Prerequisites
+## Using Vite CLI
 
-1. Install NodeJS.
-2. Install Visual Studio Code.
+### Creating a New React Project
 
-<div>
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
-        DOWNLOAD NODE
-      </a>
-    </div>
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
-        DOWNLOAD VS CODE
-      </a>
-    </div>
-</div>
-
-## Creating New React Project
-
-With above prerequisites installed, we can create a new React application.
+All popular frameworks for React development provide powerful CLI tools for scaffolding a React application.
 
 1 - Open **VS Code**, select **Terminal** menu and then **New Terminal** option.
 
-2 - Type one of these commands in terminal window:
+2 - Type the following command in the terminal window:
 
 ```cmd
-npx create-next-app@latest
+npm create vite@latest
 ```
 
-Then follow the prompts to choose a name for the project, whether to use Typescript or not and for various other options React provides. For this example `npx` and `create-next-app` are required. Refer to this <a href="https://react.dev/learn/creating-a-react-app" target="_blank">topic</a> for more information on the different ways to boilerplate a React application.
+Then follow the prompts to choose a name for the project, React as a platform to create the project for, whether to use Typescript or not and for various other options Vite provides. Please, refer to this <a href="https://react.dev/learn/creating-a-react-app" target="_blank">topic</a> for more information on the different ways to boilerplate a React application.
+
+### Adding an Ignite UI React Grid Component
+
+##### Package Installation 
+To add the Ignite UI React [**Grid**](grids/data-grid.md) component to the app you need to install the `igniteui-react-grids` package:
+
+```cmd
+npm install igniteui-react-grids --save
+```
+
+#### Importing Component Modules
+
+Then we can import the required modules of the components we want to use. Let's do this for the Grid and Column components that we will also use in the template. We also need to import one of the themes.
+
+
+```ts
+import { IgrGrid, IgrColumn } from 'igniteui-react-grids';
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
+```
+
+#### Using Components
+
+We are now ready to use the {ProductName} grid component in our markup! Let's go ahead and define it:
+
+```tsx
+// App.txs
+function App() {
+  const data = [
+    { name: "John", age: 30 },
+    { name: "Jane", age: 25 },
+    { name: "Bob", age: 35 }
+  ];
+
+  return (
+    <div style={{ height: "100%", width: "100%" }}>
+      <IgrGrid
+        data={data}
+        autoGenerate={false}>
+        <IgrColumn
+          field="name"
+          header="Name"
+          dataType="string">
+        </IgrColumn>
+        <IgrColumn
+          field="age"
+          header="Age"
+          dataType="number">
+        </IgrColumn>
+      </IgrGrid>
+    </div>
+  );
+}
+```
+
+### Running Application
+
+Finally, we can run our new application:
+
+```cmd
+npm run dev
+```
+
+After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show a data grid with sample data:
+
+<img src="../images/general/ig-vite-grid.png" />
 
 <!-- end: React -->
 
@@ -122,7 +160,7 @@ ig
 ```
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
 
 ## Install Polyfills
 
@@ -183,21 +221,25 @@ After the components are imported you can use them in your html:
 ### Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
+
 ```cmd
 mkdir wc-html
 ```
 
 2 - Change the command line path to the newly created directory
+
 ```cmd
 cd wc-html
 ```
 
 3 - Initialize **npm** in the directory
+
 ```cmd
 npm init -y
 ```
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
+
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -206,6 +248,7 @@ npm install webpack webpack-cli --save-dev
 > Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
 5 - Open the project in **VS Code**
+
 ```cmd
 code .
 ```
@@ -225,7 +268,7 @@ code .
 
 7 - Create a new folder named **src**, and within that folder create a new file named **index.js**. Your project structure should look like this:
 
-<img src="../images/wc-project.jpg"/>
+<img src="../images/wc-project.jpg" alt="wc-project" />
 
 8 - Update the **package.json** file to include a build script using **webpack**
 
@@ -257,6 +300,7 @@ npm install @webcomponents/custom-elements
 ```
 
 3 - Import the web component polyfills into **index.js**
+
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
@@ -324,14 +368,14 @@ npm run build
 
 3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
-<!-- <img src="../images/wc-live-server.jpg" /> -->
+<!-- <img src="../images/wc-live-server.jpg" alt="wc-live-server" /> -->
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 4 - Navigate to the **index.html** using a web browser on your local server. The final result should show interactive map of the world:
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/geo-map.png" alt="geo-map" /> -->
 
 `sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
 
@@ -340,7 +384,7 @@ npm run build
 
 <!-- Angular, React -->
 
-## Updating Existing App
+## Updating Existing Apps
 
 If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
@@ -367,103 +411,62 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
-## Importing Component Modules
-
-First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
-
-
-```razor
-builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGeographicMapModule),
-    typeof(IgbDataChartInteractivityModule)
-);
-```
-
-```ts
-import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
-import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-
-IgrGeographicMapModule.register();
-IgrDataChartInteractivityModule.register();
-```
-
-```ts
-import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
-import { IgcGeographicMapComponent } from 'igniteui-webcomponents-maps';
-import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
-import { ModuleManager } from 'igniteui-webcomponents-core';
-
-ModuleManager.register(
-    IgcGeographicMapModule,
-    IgcDataChartInteractivityModule
-);
-```
-
-## Using Components
-
-We are now ready to use the {ProductName} map component in our markup! Let's go ahead and define it:
-
-```tsx
-// App.txs
-function App() {
-  return (
-    <div style={{ height: "100%", width: "100%" }}>
-      <IgrGeographicMap
-        width="800px"
-        height="500px"
-        zoomable="true" />
-    </div>
-  );
-}
-```
-
-```html
-<div style="height: 100%, width: 100%">
-    <igc-geographic-map
-      width="800px"
-      height="500px"
-      zoomable="true">
-    </igc-geographic-map>
-</div>
-```
-
-## Running Application
-
-Finally, we can run our new application by using one of the following commands:
-
-```cmd
-npm run-script start
-```
-
-After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show interactive map of the world:
-
-<!-- <img src="../images/general/geo-map.png" /> -->
-
-`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
-
 <!-- end: Angular, React -->
 
+<!-- WebComponents -->
+# {ProductName} Packages Overview
+
+{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+# {ProductName} Packages Overview
+
+{ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
+
+<!-- end: React -->
+
+<!-- WebComponents, React -->
+
+## Charts & Graphs
+{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+
+## Gauges
+{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
+
+## Maps
+{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+
+## Grids & Inputs
+{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
+
+## Buttons, Inputs, Layouts & Menus
+{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+
+<!-- end: WebComponents, React -->
+
 <!-- Blazor -->
-# Getting Started With {ProductName}
+## Getting Started With {ProductName}
 
 This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
 
-## Create a New Blazor Server Project
+### Create a New Blazor Server Project
 The steps below describe how to create a new Blazor Server project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-server.jpg" />
+<img src="../images/general/new-blazor-project-server.jpg" alt="new-blazor-project-server" />
 
 Provide a project name and location, and click **Next**
 
-<img src="../images/general/new-blazor-project-configure-server.jpg" />
+<img src="../images/general/new-blazor-project-configure-server.jpg" alt="new-blazor-configure-server" />
 
 Specify additional project options, and click **Create**
 
-<img src="../images/general/new-blazor-project-info-server.jpg" />
+<img src="../images/general/new-blazor-project-info-server.jpg" alt="new-blazor-info-server" />
 
-## Install Ignite UI for Blazor
+### Install Ignite UI for Blazor
 
 Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
 
@@ -471,9 +474,9 @@ In Visual Studio, open the NuGet package manager by selecting **Tools** → **Nu
 
 For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
-## Register Ignite UI for Blazor
+### Register Ignite UI for Blazor
 
-### .NET 6 and Later Applications
+#### .NET 6 and Later Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
@@ -510,7 +513,7 @@ var app = builder.Build();
 <script src="_framework/blazor.server.js"></script>
 ```
 
-### .NET 5 Applications
+#### .NET 5 Applications
 
 1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:
 
@@ -543,7 +546,7 @@ public void ConfigureServices(IServiceCollection services)
 <script src="_framework/blazor.server.js"></script>
 ```
 
-## Add Ignite UI for Blazor Component
+### Add Ignite UI for Blazor Component
 
 Add an Ignite UI for Blazor component to your razor page:
 
@@ -569,6 +572,6 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />
 
 <!-- end: Blazor -->

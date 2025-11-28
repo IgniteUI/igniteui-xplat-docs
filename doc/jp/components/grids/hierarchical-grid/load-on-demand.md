@@ -2,6 +2,7 @@
 title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
 _description: {ProductName} Hierarchical Grid は、展開された各子グリッドでロードオンデマンドに必要なツールを提供します。データ量が大幅に軽減されてユーザがデータを必要な場合のみ取得されます。
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["HierarchicalGrid", "RowIsland"]
 namespace: Infragistics.Controls
 _language: ja
@@ -68,7 +69,7 @@ function getData(dataState) {
 
 次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://data-northwind.indigo.design/swagger/index.html)の `Customers` データを使用し、それ以外のレベルには `Orders` と `Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
 
-<img class="responsive-img" src="../../../images/hgrid-database.jpg" />
+<img class="responsive-img" src="../../../images/hgrid-database.jpg" alt="hgrid-database" />
 
 はじめに必要となるのはグリッドのデータ、親業のプライマリキーとその一意の ID をどこから取得するかを決定するテーブルの `key` が必要です。
 
@@ -381,7 +382,7 @@ function buildUrl(dataState) {
 
 展開されている子にデータを設定する方法は異なります。行がはじめて展開されたときに新し子 `HierarchicalGrid` が描画がされるため、データを設定するために新しく作成されたグリッドの参照を取得する必要があります。各 `RowIsland` コンポーネントに `GridCreated` イベントがあり、特定の子アイランドに新しい子グリッドが作成されたときに発生します。新しいグリッドの参照を取得するために使用でき、サービスからデータを要求して適用します。
 
-サービスをビルドしているためルートレベルの場合に情報のみが必要なため、すべてのアイランドに 1 メソッドを使用できます。このすべての情報には、イベント引数から直接またはイベントをトリガーする行アイランドからアクセスできます。 
+サービスをビルドしているためルートレベルの場合に情報のみが必要なため、すべてのアイランドに 1 メソッドを使用できます。このすべての情報には、イベント引数から直接またはイベントをトリガーする行アイランドからアクセスできます。
 
 <!-- Angular, WebComponents, React -->
 `gridCreated` を使用するメソッドに名前を付けます。
@@ -392,7 +393,7 @@ function buildUrl(dataState) {
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-`GridCreated` イベントは `parentID` プロパティ、`owner` として行アイランドへの参照、新しい子 `grid` プロパティを提供するため、最初の引数として渡されます。親行の `primaryKey` についての情報はありませんが、バインドした行アイランドに基づいて 2 番目の引数として簡単に渡すことができます。 
+`GridCreated` イベントは `parentID` プロパティ、`owner` として行アイランドへの参照、新しい子 `grid` プロパティを提供するため、最初の引数として渡されます。親行の `primaryKey` についての情報はありませんが、バインドした行アイランドに基づいて 2 番目の引数として簡単に渡すことができます。
 <!-- end: Angular, WebComponents -->
 
 <!-- React -->
@@ -455,6 +456,7 @@ function buildUrl(dataState) {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     const ordersRowIsland = document.getElementById("ordersRowIsland");
@@ -697,7 +699,7 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-これにより、アプリケーションの設定はほぼ完了です。最後の手順は、空グリッドを表示する代わりにユーザーにデータがまだ読み込み中であることを通知してユーザー エクスペリエンスを向上します。`HierarchicalGrid` は、グリッドが空のときに表示できるインジケーターの読み込みサポートします。新しいデータが取得されると読み込みインジケーターが非表示となりデータが描画されます。 
+これにより、アプリケーションの設定はほぼ完了です。最後の手順は、空グリッドを表示する代わりにユーザーにデータがまだ読み込み中であることを通知してユーザー エクスペリエンスを向上します。`HierarchicalGrid` は、グリッドが空のときに表示できるインジケーターの読み込みサポートします。新しいデータが取得されると読み込みインジケーターが非表示となりデータが描画されます。
 
 ### 読み込み通知の設定
 
@@ -806,7 +808,7 @@ const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
 useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
-    
+
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
         hierarchicalGrid.current.isLoading = false;
@@ -825,9 +827,9 @@ function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
         parentKey: _parentKey,
         rootLevel: false,
     };
-    
+
     context.grid.isLoading = true;
-    
+
     getData(dataState).then((data: any[]) => {
         context.grid.isLoading = false;
         context.grid.data = data;
@@ -875,14 +877,14 @@ igRegisterScript("OnGridCreated", (args) => {
 
 ## API リファレンス
 
-* `HierarchicalGrid`
-* `RowIsland`
+- `HierarchicalGrid`
+- `RowIsland`
 
 ## その他のリソース
 
-* [Hierarchical Grid コンポーネント](overview.md)
+- [Hierarchical Grid コンポーネント](overview.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

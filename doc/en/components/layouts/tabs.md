@@ -2,14 +2,16 @@
 title: {Platform} Tabs Control | Layout Controls | {ProductName}
 _description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets. Try it Now
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
+_license: MIT
 mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 ---
 
 # {Platform} Tabs Overview
 
-The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more. 
+The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more.
 
 The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected its corresponding content is displayed.
+
 ## {Platform} Tabs Example
 
 The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
@@ -57,7 +59,7 @@ import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTabsComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 Simple `Tabs` declaration is done as follows:
 
@@ -246,5 +248,5 @@ igc-tab::part(content) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} Chart Animations | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Animations
 _keywords: {Platform} Charts, Animations, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -17,7 +18,6 @@ Animations are disabled in the {ProductName} Charts, but they can be enabled by 
 The following example depicts a [Line Chart](../types/line-chart.md) with an animation set to the default `TransitionInMode` - "Auto." The drop-down and slider at the top in this example will allow you to modify the `TransitionInMode` and `TransitionInDuration`, respectively, so that you can see what the different supported animations look like at different speeds.
 
 `sample="/charts/category-chart/line-chart-with-animations", height="500", alt="{Platform} Configuration Options Example"`
-
 
 
 <div class="divider--half"></div>

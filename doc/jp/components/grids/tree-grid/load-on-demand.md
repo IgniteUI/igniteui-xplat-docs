@@ -2,6 +2,7 @@
 title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テーブル | インフラジスティックス
 _description: {ProductName} ツリー Tree Grid は、親行が展開されたときに必要な子データのみを読み込むことにより、取得およびレンダリングするデータ量が大幅に軽減されます。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
+_license: commercial
 _language: ja
 mentionedTypes: ["TreeGrid"]
 namespace: Infragistics.Controls
@@ -58,7 +59,7 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
 
 <!-- end: WebComponents -->
 
-ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。done コールバックが呼び出されると、読み込みインジケーターが消え、子が読み込まれます。ツリーグリッドは子を基になるデータソースに追加し、必要なキーを自動的に設定します。 
+ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。done コールバックが呼び出されると、読み込みインジケーターが消え、子が読み込まれます。ツリーグリッドは子を基になるデータソースに追加し、必要なキーを自動的に設定します。
 
 ### 展開インジケーターの表示
 
@@ -118,11 +119,11 @@ public rowLoadingTemplate() {
 
 ## API リファレンス
 
-* `TreeGrid`
+- `TreeGrid`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

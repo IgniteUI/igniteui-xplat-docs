@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 状態保持 - {ProductName}
 _description: 包括的な {ProductName} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の永続化, インフラジスティックス
+_license: commercial
 mentionedTypes: ["GridStateBaseDirective", "GridState", "PivotConfiguration", "PivotDimension", "PivotValue"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -29,41 +30,41 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* **Sorting**
-* **Filtering**
-* **Advanced Filtering**
-* **Paging**
-* **CellSelection**
-* **RowSelection**
-* **ColumnSelection**
-* **RowPinning**
-* **Expansion**
-* **GroupBy**
-* **Columns**
-    * 複数列ヘッダー
-    * 列の順序
-    * `IColumnState` インターフェイスによって定義される列プロパティ。
+- **Sorting**
+- **Filtering**
+- **Advanced Filtering**
+- **Paging**
+- **CellSelection**
+- **RowSelection**
+- **ColumnSelection**
+- **RowPinning**
+- **Expansion**
+- **GroupBy**
+- **Columns**
+  - 複数列ヘッダー
+  - 列の順序
+  - `IColumnState` インターフェイスによって定義される列プロパティ。
 <!-- * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。 -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* **RowIslands**
-    * 階層のすべての子グリッドの保存/復元機能
-* **Sorting**
-* **Filtering**
-* **AdvancedFiltering**
-* **Paging**
-* **CellSelection**
-* **RowSelection**
-* **ColumnSelection**
-* **RowPinning**
-* **Expansion**
-* **Columns**
-    * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
-    * 列の順序
-    * `IColumnState` インターフェイスによって定義される列プロパティ。
+- **RowIslands**
+  - 階層のすべての子グリッドの保存/復元機能
+- **Sorting**
+- **Filtering**
+- **AdvancedFiltering**
+- **Paging**
+- **CellSelection**
+- **RowSelection**
+- **ColumnSelection**
+- **RowPinning**
+- **Expansion**
+- **Columns**
+  - **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
+  - 列の順序
+  - `IColumnState` インターフェイスによって定義される列プロパティ。
 <!-- * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。 -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -71,26 +72,26 @@ _language: ja
 <!-- ComponentStart: PivotGrid -->
 
 <!-- Angular, WebComponents -->
-* `Sorting`
-* `Filtering`
-* `CellSelection`
-* `ColumnSelection`
-* `Expansion`
-* `PivotConfiguration`
-    * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
-    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
-    * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
+- `Sorting`
+- `Filtering`
+- `CellSelection`
+- `ColumnSelection`
+- `Expansion`
+- `PivotConfiguration`
+  - `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
+  - ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+  - ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
 <!-- end: Angular, WebComponents -->
 
 <!-- Blazor, React -->
-* `Sorting`
-* `Filtering`
-* `CellSelection`
-* `ColumnSelection`
-* `Expansion`
-* `PivotConfiguration`
-    * `IPivotConfiguration` iインターフェイスによって定義されるピボット構成プロパティ。
-    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+- `Sorting`
+- `Filtering`
+- `CellSelection`
+- `ColumnSelection`
+- `Expansion`
+- `PivotConfiguration`
+  - `IPivotConfiguration` iインターフェイスによって定義されるピボット構成プロパティ。
+  - ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
 <!-- end: Blazor, React -->
 
 
@@ -544,6 +545,7 @@ function activeTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     </igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
@@ -680,7 +682,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 
 `GridState` は、デフォルトではピボット ディメンション関数、値フォーマッタなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。`{ComponentName}` は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
 
-* `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
+- `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfig" [igxGridState]="options"
@@ -726,7 +728,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 
 > `DimensionInit` および `ValueInit` イベントは、`PivotConfiguration` プロパティで定義された値とディメンションごとに発行されます。
 
-* `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッタ、およびスタイルを設定します。
+- `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッタ、およびスタイルを設定します。
 
 <!-- Angular -->
 ```typescript
@@ -860,7 +862,7 @@ igRegisterScript("OnValueInit", (args) => {
 }, false);
 ```
 <!-- Angular, WebComponents -->
-* In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
+- In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
 <!-- end: Angular, WebComponents -->
 
 <!-- Angular -->
@@ -994,7 +996,7 @@ gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering",
 
 > `StateParsed` は、文字列引数で `SetState` を使用している場合にのみ発行します。
 
-* カスタム ソート方法およびカスタム ピボット列/行ディメンション ストラテジを設定します。
+- カスタム ソート方法およびカスタム ピボット列/行ディメンション ストラテジを設定します。
 
 <!-- Angular -->
 ```html
@@ -1059,7 +1061,7 @@ constructor() {
 Add snippet for blazor
 ```
 
-* `LocalStorage` から状態を復元し、カスタム ストラテジを適用します。
+- `LocalStorage` から状態を復元し、カスタム ストラテジを適用します。
 
 <!-- Angular -->
 ```typescript
@@ -1107,7 +1109,7 @@ Add snippet for blazor for restore state
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* パラメーターなしで `applyState` API を使用してすべてのグリッド機能を一度に復元する場合、ルート グリッドの列プロパティがデフォルトにリセットされる場合があります。その場合は、後で列または列の選択機能を復元してください。
+- パラメーターなしで `applyState` API を使用してすべてのグリッド機能を一度に復元する場合、ルート グリッドの列プロパティがデフォルトにリセットされる場合があります。その場合は、後で列または列の選択機能を復元してください。
 
 ```typescript
 state.applyState(gridState);
@@ -1119,22 +1121,22 @@ state.applyState(gridState.columnSelection);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- Angular -->
-* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+- `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 <!-- end: Angular -->
 
 <!-- React, WebComponents -->
-* `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+- `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-* `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+- `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 <!-- end: Blazor -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart: PivotGrid -->
 
-* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
+- `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -1143,10 +1145,10 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid -->
 ## その他のリソース
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [選択](selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
@@ -1156,6 +1158,6 @@ state.applyState(gridState.columnSelection);
 
 <!-- * [ピボット グリッド機能](features.md) -->
 <!-- WebComponents -->
-* [ピボット グリッドのリモート操作](remote-operations.md)
+- [ピボット グリッドのリモート操作](remote-operations.md)
 <!-- end: WebComponents -->
 <!-- ComponentEnd: PivotGrid -->

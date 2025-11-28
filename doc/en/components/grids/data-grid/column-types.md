@@ -346,20 +346,20 @@ igRegisterScript("onUpdatingAddressColumn", onUpdatingAddressColumn, false);
 
 ## API References
 
- - `Grid`
- - `CellInfo`
- - `CellUpdating`
- - `ComboBoxColumn`
- - `Content`
- - `DataSource`
- - `DateTimeColumn`
- - `Field`
- - `ImageColumn`
- - `ImageResourceType`
- - `ImageStretchOption`
- - `NumericColumn`
- - `TemplateCellInfo`
- - `TemplateCellUpdatingEventArgs`
- - `TemplateColumn`
- - `TextField`
- - `ValueField`
+- `Grid`
+- `CellInfo`
+- `CellUpdating`
+- `ComboBoxColumn`
+- `Content`
+- `DataSource`
+- `DateTimeColumn`
+- `Field`
+- `ImageColumn`
+- `ImageResourceType`
+- `ImageStretchOption`
+- `NumericColumn`
+- `TemplateCellInfo`
+- `TemplateCellUpdatingEventArgs`
+- `TemplateColumn`
+- `TextField`
+- `ValueField`

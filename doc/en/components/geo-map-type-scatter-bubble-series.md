@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
 _description: Use Infragistics {Platform} map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about {ProductName} map's series!
 _keywords: {Platform} map, scatter proportional series, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series"]
 ---
 # {Platform} Geographic Bubble Map
@@ -299,9 +300,9 @@ addSeriesWith(locations: any[])
 
 ## API References
 
- - `GeographicProportionalSymbolSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `RadiusMemberPath`
- - `RadiusScale`
+- `GeographicProportionalSymbolSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `RadiusMemberPath`
+- `RadiusScale`

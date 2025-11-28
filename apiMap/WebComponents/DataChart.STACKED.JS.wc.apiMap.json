@@ -305,6 +305,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "highlightedDataSource"}], "originalName": "HighlightedItemsSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedValuesDataLegendGroup"}], "originalName": "HighlightedValuesDataLegendGroup"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "highlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomCategoryMarkerStyleAllowed"}], "originalName": "IsCustomCategoryMarkerStyleAllowed"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}], "originalName": "IsCustomCategoryStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDropShadowEnabled"}], "originalName": "IsDropShadowEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},

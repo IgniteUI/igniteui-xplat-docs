@@ -2,6 +2,7 @@
 title: {Platform} Text Area (テキスト エリア) | データ可視化ツール | インフラジスティックス
 _description: Infragistics の {Platform} テキスト エリアは、ユーザーが大量の自由形式のテキストを入力できるコンポーネントです。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls, {ProductName}, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Input, {Platform} Textarea コンポーネント, {Platform} Textarea コントロール
+_license: MIT
 mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
 _language: ja
 ---
@@ -141,12 +142,12 @@ igc-textarea::part(suffix) {
 
 ## API リファレンス
 
- - `Icon`
- - `Textarea`
- - `Toast`
+- `Icon`
+- `Textarea`
+- `Toast`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
