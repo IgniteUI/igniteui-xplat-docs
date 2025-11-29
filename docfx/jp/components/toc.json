@@ -29,7 +29,8 @@
   {
     "exclude": ["Angular"],
     "name": "オープンソース vs プレミアム",
-    "href": "general-open-source-vs-premium.md"
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],

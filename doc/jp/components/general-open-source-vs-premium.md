@@ -25,9 +25,7 @@ Ignite UI のプレミアム コンポーネントは、高度なエンタープ
 - [ドック マネージャー](../components/layouts/dock-manager.md)
 - [チャート ライブラリ](../components/charts/chart-overview.md)
 - [マップ ライブラリ](../components/geo-map.md)
-<!-- React, WebComponents -->
 - [スプレッドシート](../components/spreadsheet-overview.md)
-<!-- end: React, WebComponents -->
 - [Excel ライブラリ](../components/excel-library.md)
 - ゲージ - [ブレットグラフ](../components/bullet-graph.md)、[リニア ゲージ](../components/linear-gauge.md) および [ラジアル ゲージ](../components/radial-gauge.md)
 - [ツールバー](../components/menus/toolbar.md)
