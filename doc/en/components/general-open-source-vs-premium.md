@@ -26,9 +26,7 @@ Our Ignite UI Premium components come with advanced enterprise features and are 
 - [Dock Manager](../components/layouts/dock-manager.md) 
 - [Charting library](../components/charts/chart-overview.md)
 - [Maps library](../components/geo-map.md)
-<!-- React, WebComponents -->
 - [Spreadsheet](../components/spreadsheet-overview.md)
-<!-- end: React, WebComponents -->
 - [Excel Library](../components/excel-library.md)  
 - Gauges - [Bullet Graph](../components/bullet-graph.md), [Linear Gauge](../components/linear-gauge.md) and [Radial Gauge](../components/radial-gauge.md)
 - [Toolbar](../components/menus/toolbar.md)
