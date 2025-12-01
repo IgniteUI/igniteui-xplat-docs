@@ -2,6 +2,7 @@
 title: Getting Started | {ProductName} Open-Source Libraries | Infragistics
 _description: Use Infragistics' Open-Source {Platform} components to create apps with lightweight, MIT licensed components including Grid Lite. Try now.
 _keywords: {ProductName}, Infragistics, Getting Started, Open-Source, MIT License
+_language: ja
 mentionedTypes: []
 ---
 # Getting Started with Open-Source Libraries
