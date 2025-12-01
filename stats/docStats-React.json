@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 775,
+  "samplesCount": 774,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -428,9 +428,6 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polyline-series": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/shape-chart"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/user-annotation-layer": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-user-annotations"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/waterfall-chart": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
@@ -2240,6 +2237,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation": [
@@ -2333,15 +2331,6 @@
     "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/disabled-dates": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/formatting": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/header": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
-    ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
@@ -2355,9 +2344,6 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/special-dates": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling": [
@@ -2406,7 +2392,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 326,
+  "topicsCount": 325,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2568,9 +2554,6 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-trendlines": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-trendline",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/trendlines"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-user-annotations": [
-      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/user-annotation-layer"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-multiple-sources",
@@ -2760,6 +2743,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"
@@ -3793,15 +3779,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/tickmarks"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar": [
-      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/disabled-dates",
-      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/formatting",
-      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/header",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-selection",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/range-selection",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size",
-      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/special-dates",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers"
     ],
