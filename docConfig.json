@@ -599,7 +599,7 @@
             { "name": "{PackageVerChanges-25-1-JULY}", "value": "25.1.46 (July 2025)"},
             { "name": "{PackageVerChanges-25-1-AUG}", "value": "25.1.63 (August 2025)"},
             { "name": "{PackageVerChanges-25-1-SEP}", "value": "25.1.82 (September 2025)"},
-            { "name": "{PackageVerLatest}",            "value": "25.2.XXXX (November 2025)"},
+            { "name": "{PackageVerLatest}",            "value": "25.2.32 (November 2025)"},
 
             { "name": "{RepoSamples}",      "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",      "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},

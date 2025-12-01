@@ -135,7 +135,6 @@ Following the same approach, we can switch `Selection` to range mode:
 
 The {ProductName} Calendar component allows you to switch between three different views: days, months and years. The `ActiveView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `ActiveDate` property. The `ActiveDate` property also reflects the changes of the currently visible date made by the end user.
 
-<!-- WebComponents -->
 
 ### Header Options
 
@@ -155,15 +154,23 @@ The {ProductName} Calendar component exposes a `title` slot which allows you to 
 </igc-calendar>
 ```
 
+```tsx
+<IgrCalendar selection="range" headerOrientation="vertical">
+    <span slot="title">Trip dates</span>
+</IgrCalendar>
+```
+
+```razor
+ <IgbCalendar HeaderOrientation="@CalendarHeaderOrientation.Vertical" HasHeader="true">
+    <span slot="title">Trip dates</span>
+ </IgbCalendar>
+```
+
 The following sample demonstrates the above configuration:
 
 `sample="/scheduling/calendar/header", height="370", alt="{Platform} Calendar Header Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ### Localization and Formatting
 
@@ -204,15 +211,53 @@ this.radios.forEach(radio => {
 })
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal" value={this.state.calendarLocale}>
+    <IgrRadio name="lang" value="en" checked={true} onChange={this.onRadioChange}>
+        <span>EN</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="de" onChange={this.onRadioChange}>
+        <span>DE</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="fr" onChange={this.onRadioChange}>
+        <span>FR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ar" onChange={this.onRadioChange}>
+        <span>AR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ja" onChange={this.onRadioChange}>
+        <span>JA</span>
+    </IgrRadio>                    
+</IgrRadioGroup>
+
+<IgrCalendar weekStart='monday' formatOptions={this.state.calendarFormat} 
+    locale={this.state.calendarLocale}
+    value={new Date()}/>
+```
+
+```tsx
+constructor(props: any) {
+    super(props);
+    this.onRadioChange = this.onRadioChange.bind(this);
+    const formatOptions: IgrCalendarFormatOptions = {
+        month: 'short',
+        weekday: 'short',
+    }
+    this.state = { calendarLocale: "en", calendarFormat: formatOptions };
+}
+
+public onRadioChange(e: any) {
+    if (e.detail.checked) {
+        this.setState({ calendarLocale: e.detail.value });
+    }
+}
+```
+
 If everything went well, we should now have a Calendar with customized display, that also changes the locale representation, based on the user selection. Let's have a look at it:
 
 `sample="/scheduling/calendar/formatting", height="520", alt="{Platform} Calendar Formatting Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- end: WebComponents, React -->
 
 ### Disabled dates
 
@@ -239,15 +284,47 @@ const range = [
 this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar disabledDates={this.state.disabledDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+];
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Specific,
+}
+const disabledDates = [desc];
+this.state = { disabledDates };
+```
+
+```razor
+    <IgbCalendar DisabledDates="@DisabledDateDescriptor" />
+
+    @code {
+    public IgbDateRangeDescriptor[] DisabledDateDescriptor { get; set; }
+
+    protected override void OnInitialized()
+    {
+        var today = DateTime.Today;
+
+        DateTime[] range = new DateTime[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) };
+
+        IgbDateRangeDescriptor dateDescriptor = new IgbDateRangeDescriptor() { DateRange = range, RangeType = DateRangeType.Specific };
+
+        this.DisabledDateDescriptor = new IgbDateRangeDescriptor[] { dateDescriptor };
+    }
+}
+```
+
 These configurations should have the following result:
 
 `sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar Disabled Dates Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
 
 ### Special dates
 
@@ -265,13 +342,50 @@ const range = [
 this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar specialDates={this.state.specialDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+]
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Between,
+}
+const specialDates = [desc]
+this.state = { specialDates };
+```
+
+```razor
+<IgbCalendar SpecialDates="@CalendarSpecialDates"/>
+
+@code {
+
+    private IgbDateRangeDescriptor[] CalendarSpecialDates { get; set; }
+
+    protected override void OnInitialized()
+    {
+        DateTime today = DateTime.Today;
+        IgbDateRangeDescriptor specialDates = new IgbDateRangeDescriptor()
+        {
+            DateRange = new[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) },
+            RangeType = DateRangeType.Between
+        };
+
+        this.CalendarSpecialDates = new IgbDateRangeDescriptor[] { specialDates };
+    }
+}
+
+```
+
 The following demo illustrates a Calendar with a vacation request option:
 
 `sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar Special Dates Example"`
 
-
-
-<!-- end: WebComponents -->
 
 ### Week numbers
 
