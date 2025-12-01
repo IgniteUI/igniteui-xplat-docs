@@ -21,17 +21,25 @@ They are ideal for lightweight applications that need essential functionality wi
 Our Ignite UI Premium components come with advanced enterprise features and are used for complex applications requiring high-performance and richer functionality. Premium components include:
 
 ### Grids with advanced components
-
+<!-- Blazor -->
 - [Data Grid](../components/grids/data-grid.md), [Hierarchical Grid](../components/grids/hierarchical-grid/overview.md), [Tree Grid](../components/grids/tree-grid/overview.md), [Pivot Grid](../components/grids/pivot-grid/overview.md) 
 - [Dock Manager](../components/layouts/dock-manager.md) 
 - [Charting library](../components/charts/chart-overview.md)
 - [Maps library](../components/geo-map.md)
-<!-- React, WebComponents -->
-- [Spreadsheet](../components/spreadsheet-overview.md)
-<!-- end: React, WebComponents -->
 - [Excel Library](../components/excel-library.md)  
 - Gauges - [Bullet Graph](../components/bullet-graph.md), [Linear Gauge](../components/linear-gauge.md) and [Radial Gauge](../components/radial-gauge.md)
 - [Toolbar](../components/menus/toolbar.md)
+<!-- end: Blazor -->
+<!-- React, WebComponents -->
+- [Data Grid](../components/grids/data-grid.md), [Hierarchical Grid](../components/grids/hierarchical-grid/overview.md), [Tree Grid](../components/grids/tree-grid/overview.md), [Pivot Grid](../components/grids/pivot-grid/overview.md) 
+- [Dock Manager](../components/layouts/dock-manager.md) 
+- [Charting library](../components/charts/chart-overview.md)
+- [Maps library](../components/geo-map.md)
+- [Spreadsheet](../components/spreadsheet-overview.md)
+- [Excel Library](../components/excel-library.md)  
+- Gauges - [Bullet Graph](../components/bullet-graph.md), [Linear Gauge](../components/linear-gauge.md) and [Radial Gauge](../components/radial-gauge.md)
+- [Toolbar](../components/menus/toolbar.md)
+<!-- end: React, WebComponents -->
 
 All the Premium components can be evaluated locally and even tested in production with watermarking. However, a commercial license is required for customer-facing deployments and for unlocking the full power of the advanced Grids, Charts, and other Premium controls.
 
