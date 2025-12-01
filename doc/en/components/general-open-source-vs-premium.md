@@ -137,7 +137,7 @@ Start with Grid Lite for essential needs and seamlessly upgrade to the full-feat
 | Tile Manager                      | ✅          | ✅      |
 | Toast                             | ✅          | ✅      |
 | Toggle Button                     | ✅          | ✅      |
-| Toolbar                           | ✅          | ✅      |
+| Toolbar                           | ❌          | ✅      |
 | Tooltip                           | ✅          | ✅      |
 | Tree                              | ✅          | ✅      |
 | Zoom Slider                       | ❌          | ✅      |
