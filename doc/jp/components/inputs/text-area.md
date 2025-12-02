@@ -16,7 +16,7 @@ _language: ja
 
 <!-- React, WebComponents, Blazor -->
 
-`sample="/inputs/textarea/overview", height="120", alt="{Platform} テキスト エリアの例"`
+`sample="/inputs/textarea/overview", height="150", alt="{Platform} テキスト エリアの例"`
 
 <!-- end:React, WebComponents, Blazor -->
 
@@ -85,13 +85,13 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 `prefix` スロットと `suffix` スロットを使用すると、テキスト エリアのメイン コンテンツの前後に異なるコンテンツを追加できます。`helper-text` スロットは、テキスト エリアの下に配置されたヒントを提供します。次のサンプルでは、​​テキスト プレフィックス、アイコン サフィックス、およびヒントとしてヘルパー テキストを含む新しいテキスト エリアフィールドを作成します。
 
-`sample="/inputs/textarea/slots", height="120", alt="{Platform} テキスト エリアのプレフィックスとサフィックスの例"`
+`sample="/inputs/textarea/slots", height="160", alt="{Platform} テキスト エリアのプレフィックスとサフィックスの例"`
 
 ## テキスト エリアのサイズ変更
 
 `Textarea` には 3 つの異なるサイズ変更オプションがあります。`none` に設定すると、テキスト エリアのサイズは変更されず、スクロール バーを使用してオーバーフロー テキストが表示されます。`vertical` (デフォルトのオプション) に設定すると、テキスト エリアは垂直方向にサイズ変更できます。`auto` に設定すると、テキスト エリアにすべてのユーザー入力が一度に表示されます。オーバーフローしたテキストは新しい行に折り返され、テキスト エリアが自動的に拡張されます。
 
-`sample="/inputs/textarea/resize", height="320", alt="{Platform} テキスト エリアのサイズ変更の例"`
+`sample="/inputs/textarea/resize", height="450", alt="{Platform} テキスト エリアのサイズ変更の例"`
 
 <!-- WebComponents -->
 
@@ -136,7 +136,7 @@ igc-textarea::part(suffix) {
 }
 ```
 
-`sample="/inputs/textarea/styling", height="150", alt="{Platform} テキスト エリアのスタイル設定"`
+`sample="/inputs/textarea/styling", height="160", alt="{Platform} テキスト エリアのスタイル設定"`
 
 <div class="divider"></div>
 
