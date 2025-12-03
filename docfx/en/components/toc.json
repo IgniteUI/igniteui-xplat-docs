@@ -29,7 +29,8 @@
   {
     "exclude": ["Angular"],
     "name": "Open-Source vs Premium",
-    "href": "general-open-source-vs-premium.md"
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -2187,7 +2188,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Date Range Picker",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"
