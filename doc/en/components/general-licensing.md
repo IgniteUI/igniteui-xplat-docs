@@ -106,8 +106,8 @@ As a result you can either:
     "outDir": "./dist/out-tsc",
     /* ... */
     "paths": {
-      "igniteui-dockmanager": ["./node_modules/@infragistics/{PackageDockManager}"],
-      "igniteui-dockmanager/*": ["./node_modules/@infragistics/{PackageDockManager}/*"],
+      "{PackageDockManager}": ["./node_modules/@infragistics/{PackageDockManager}"],
+      "{PackageDockManager}/*": ["./node_modules/@infragistics/{PackageDockManager}/*"],
     }
   }
 }

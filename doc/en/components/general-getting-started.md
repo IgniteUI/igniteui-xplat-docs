@@ -5,11 +5,15 @@ _keywords: {ProductName}, Infragistics, Getting Started
 mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 ---
 
+<!-- React, WebComponents -->
+
 # Getting Started With {ProductName}
 
 [`{ProductName}`]({GithubLink}) is a complete set of UI widgets, components, and Sketch UI kits for {Platform} by Infragistics. It enables developers to build modern, high-performance HTML5 and JavaScript apps for desktop browsers, mobile experiences, and progressive web apps (PWAs).
 
 {ProductName} comprises several packages available under either an MIT or a commercial license, depending on the components and services they contain. For a detailed list of components and their license, please refer to the [License FAQ and Installation](./general-licensing.md) and [Open Source vs Premium](./general-open-source-vs-premium.md) topics.
+
+<!-- end: React, WebComponents -->
 
 <!-- React -->
 
@@ -59,7 +63,7 @@ If you added a Grid component during the prompts, once the application is runnin
 <img src="../images/general/ig-cli-grid.png" />
 
 >[!NOTE]
-> Keep in mind that by default Ignite UI CLI installs the Trial version of Ignite UI for React's Grid component which is under [commercial license](./open-source-vs-premium.md#comparison-table-for-all-components).
+> Keep in mind that by default Ignite UI CLI installs the Trial version of Ignite UI for React's Grid component which is under [commercial license](./general-open-source-vs-premium.md#comparison-table-for-all-components).
 
 Alternatively, you can use popular frameworks such as Next.js, Vite, or Expo as recommended by the React team. The following are step-by-step instructions for creating React applications with Ignite UI for React using one of these methods.
 
@@ -147,10 +151,6 @@ After executing this command, your project will be built and served locally on y
 <!-- end: React -->
 
 <!-- WebComponents -->
-# Getting Started With {ProductName}
-
-This section provides step-by-step instructions for creating a Web Components application with Ignite UI for Web Components.
-
 
 ## Install Ignite UI CLI
 
