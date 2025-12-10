@@ -208,11 +208,11 @@ The `Tab` component exposes the following CSS parts:
 
 ```css
 igc-tab::part(tab-header) {
-  background-color: var(--ig-gray-200);
+  background-color: var(--ig-surface-600);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body) {
+  color: var(--ig-success-300);
 }
 ```
 <!-- end: WebComponents, React -->
@@ -244,7 +244,6 @@ igc-tab::part(content) {
 - `IconButton`
 - `RadioGroup`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 
