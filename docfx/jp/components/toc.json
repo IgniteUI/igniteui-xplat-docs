@@ -29,7 +29,8 @@
   {
     "exclude": ["Angular"],
     "name": "オープンソース vs プレミアム",
-    "href": "general-open-source-vs-premium.md"
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -59,6 +60,12 @@
         "name": ".NET MAUI Blazor のアプリケーション",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+
+        "name": "オープンソース ライブラリ",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },
@@ -2179,7 +2186,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "日付範囲ピッカー",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"

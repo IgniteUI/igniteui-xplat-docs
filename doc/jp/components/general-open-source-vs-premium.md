@@ -21,22 +21,32 @@ MIT ライセンスのもとで利用できる 40 以上の UI コンポーネ�
 
 Ignite UI のプレミアム コンポーネントは、高度なエンタープライズ機能を備え、高いパフォーマンスと豊富な機能を求める複雑なアプリケーション向けに設計されています。プレミアム コンポーネントには、次のようなものが含まれます。
  
+### 高度なコンポーネントを備えたグリッド
+<!-- Blazor -->
 - [データ グリッド](../components/grids/data-grid.md)、[階層グリッド](../components/grids/hierarchical-grid/overview.md)、[ツリー グリッド](../components/grids/tree-grid/overview.md)、[ピボット グリッド](../components/grids/pivot-grid/overview.md)
 - [ドック マネージャー](../components/layouts/dock-manager.md)
 - [チャート ライブラリ](../components/charts/chart-overview.md)
 - [マップ ライブラリ](../components/geo-map.md)
-<!-- React, WebComponents -->
-- [スプレッドシート](../components/spreadsheet-overview.md)
-<!-- end: React, WebComponents -->
 - [Excel ライブラリ](../components/excel-library.md)
 - ゲージ - [ブレットグラフ](../components/bullet-graph.md)、[リニア ゲージ](../components/linear-gauge.md) および [ラジアル ゲージ](../components/radial-gauge.md)
 - [ツールバー](../components/menus/toolbar.md)
+<!-- end: Blazor -->
+<!-- React, WebComponents -->
+- [データ グリッド](../components/grids/data-grid.md)、[階層グリッド](../components/grids/hierarchical-grid/overview.md)、[ツリー グリッド](../components/grids/tree-grid/overview.md)、[ピボット グリッド](../components/grids/pivot-grid/overview.md)
+- [ドック マネージャー](../components/layouts/dock-manager.md)
+- [チャート ライブラリ](../components/charts/chart-overview.md)
+- [マップ ライブラリ](../components/geo-map.md)
+- [スプレッドシート](../components/spreadsheet-overview.md)
+- [Excel ライブラリ](../components/excel-library.md)
+- ゲージ - [ブレットグラフ](../components/bullet-graph.md)、[リニア ゲージ](../components/linear-gauge.md) および [ラジアル ゲージ](../components/radial-gauge.md)
+- [ツールバー](../components/menus/toolbar.md)
+<!-- end: React, WebComponents -->
 
 すべてのプレミアム コンポーネントは、トピックのヘッダーに次のようにマークされます。![alt text](/doc/jp/images/premium-text.png)
  
 すべてのプレミアム コンポーネントはローカル環境で評価できるほか、ウォーターマーク付きでプロダクション環境でもテスト可能です。ただし、顧客向けの本番デプロイや、高度なグリッドやチャートをはじめとする各種プレミアム コントロールのフル機能を利用するには、商用ライセンスが必要です。
 
-## アップグレードパス
+## アップグレード パス
  
 まずは基本機能を提供する グリッド ライトから利用を開始し、アプリケーションの要件や複雑さが増すにつれて、フル機能のデータ グリッドへシームレスにアップグレードできます。これにより、リファクタリングを最小限に抑えながら、エンタープライ ズレベルの機能へスムーズに移行できます。
 
@@ -138,7 +148,7 @@ Ignite UI のプレミアム コンポーネントは、高度なエンタープ
 | Tile Manager                      | ✅          | ✅      |
 | Toast                             | ✅          | ✅      |
 | Toggle Button                     | ✅          | ✅      |
-| Toolbar                           | ✅          | ✅      |
+| Toolbar                           | ❌          | ✅      |
 | Tooltip                           | ✅          | ✅      |
 | Tree                              | ✅          | ✅      |
 | Zoom Slider                       | ❌          | ✅      |

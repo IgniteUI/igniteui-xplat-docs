@@ -39,42 +39,22 @@ _language: ja
 
 ## カスタム テーマの作成
 
-{GridLiteTitle} パッケージに同梱のデフォルト テーマ以外に、プロジェクトのアイデンティティやブランディングに合わせて独自のテーマを作成・変更できます。
+{GridLiteTitle} パッケージに付属するデフォルト テーマに加えて、別の CSS カスタム プロパティ セットを使用することで、データ グリッドの外観と操作感をさらにカスタマイズできます。
 
----
+詳細については、[テーマ設定](../grids/theming-grid.md)のトピックを参照してください。
 
-SCSS と CSS インターフェイスの両方のドキュメントと使用方法については、<a href="https://github.com/IgniteUI/igniteui-theming#readme" target="_blank">Ignite UI テーマ パッケージ</a> wiki を参照してください。
-
----
-
-```scss
-@use 'node_modules/igniteui-theming' as *;
-
-// Our dark theme
-$my_dark_palette: palette(
-  $primary: #dab785,
-  $secondary: #d5896f,
-  $surface: #031d44,
-  $gray: #04395e,
-);
-
-// Our light theme
-$my-light-palette: palette(
-  $primary: #c1292e,
-  $secondary: #f1d302,
-  $surface: #fdfffc,
-  $gray: #235789,
-);
-
-.custom-light {
-  @include palette($my_light_palette);
-  @include typography('"Roboto Condensed", sans-serif', $bootstrap-type-scale);
+```css
+.grid-sample {
+  --header-background: #494949;
+  --header-text-color: #f2c43c;
+  --cell-active-border-color: #f2c43c;
+  --row-hover-background: #707070;
+  --row-hover-text-color: #f2c43c;
 }
+```
 
-.custom-dark {
-  @include palette($my_dark_palette);
-  @include typography('"Merriweather Sans", sans-serif', $bootstrap-type-scale);
-}
+```razor
+ <IgbGridLite class="grid-lite-sample" />
 ```
 
 以下は、上記のカスタム テーマの例です。
