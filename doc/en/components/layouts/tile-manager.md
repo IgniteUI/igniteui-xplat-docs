@@ -418,7 +418,7 @@ If you want to display just one of the two buttons, you can set either `DisableM
 
 You also have the option to disable both action buttons and create custom ones according to your preferences.
 
-`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager Actions Example"`
+`sample="/layouts/tile-manager/actions", height="730", alt="{Platform} Tile Manager Actions Example"`
 
 In this example, we created custom action buttons using the Ignite UI Icon Button component.
 
@@ -546,7 +546,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager Drag and drop Example"`
+`sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager Drag and drop Example"`
 
 ## Serialization
 
@@ -555,7 +555,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 - The `SaveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
 - The `LoadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
-`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
+`sample="/layouts/tile-manager/layout", height="560", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
@@ -636,7 +636,7 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager Styling Example"`
+`sample="/layouts/tile-manager/styling", height="520", alt="{Platform} Tile Manager Styling Example"`
 
 ## API Reference
 
