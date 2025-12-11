@@ -60,6 +60,12 @@
         "name": ".NET MAUI Blazor App",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+
+        "name": "Open-Source Libraries",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },
