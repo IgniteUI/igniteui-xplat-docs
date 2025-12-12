@@ -17,6 +17,25 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgbDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgbDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgbDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+|41050|IgbDataChart|gbAxisMouseEventArgs で軸が設定されていない。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
 **重大な変更**
 
 2025.2 リリース以降、.NET 6 のサポートは終了しました。これは、[Microsoft .NET ライフサイクル](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)に対応しています。
@@ -55,9 +74,12 @@ alt="{Platform} user-annotation-create"/>
 ```
 
 - グリッド レベルで以下のいずれかの設定が可能です:
-    - `OnSort` - 列がソートされたときのみ結合。
-    - `Always` - データ操作に関わらず常に結合。
+
+  - `OnSort` - 列がソートされたときのみ結合。
+  - `Always` - データ操作に関わらず常に結合。
+
   デフォルトの `CellMergeMode` は `OnSort` です。
+
 ```razor
 <IgbGrid CellMergeMode="GridCellMergeMode.Always">
 </IgbGrid>
@@ -65,11 +87,14 @@ alt="{Platform} user-annotation-create"/>
 
 - **列のピン固定**
   - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `PinningPosition` プロパティを宣言的に設定することで実行できます。
+
 ```razor
 <IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
 </IgbColumn>
 ```
-  - または:
+
+- または:
+
 ```razor
 col.PinningPosition = ColumnPinningPosition.End;
 col.Pinned = true;
@@ -77,7 +102,8 @@ col.Pinned = true;
 col.PinningPosition = ColumnPinningPosition.Start;
 col.Pinned = true;
 ```
-  - 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
+
+- 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
 
 - **ソートとグループ化の改善**
   - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
@@ -93,9 +119,11 @@ col.Pinned = true;
 ### 一般
 
 #### 追加
+
 - `DateRangePicker`
 
 #### 変更
+
 - すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
 - `Tooltip`
   - 動作変更: `Tooltip` のデフォルトの placement は 「bottom」 になりました。
@@ -103,6 +131,7 @@ col.Pinned = true;
   - 重大な変更: `Tooltip` イベントは、detail プロパティに anchor ターゲットを返さなくなりました。引き続き event.target.anchor でアクセスできます。
 
 #### 非推奨
+
 - `Tooltip` - `DisableArrow` は非推奨です。矢印インジケーターをレンダリングするには、`WithArrow` を使用してください。
 
 ### バグ修正
@@ -399,10 +428,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -432,9 +463,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### List
+
 - `ListItem` に新しいプロパティ `Selected` を追加しました。
 
 #### Accordion
+
 - 新しいイベント `Open` および `Close` を追加しました。
 
 ### {PackageGrids}
@@ -461,6 +494,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - 内部グリッド アクション ボタンをカプセル化しました。
 
 ### バグ修正
+
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
 |35497 | `IgbDialog` | ShowAsync と HideAsync が呼び出されると、後続のコードは実行されない。|
@@ -527,6 +561,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般
+
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 - `Input`
   - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
@@ -708,11 +743,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamRadialChart`
   - 新しいラベル モード
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。 
+    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
     - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[このトピック](radial-gauge.md#オプティカル-スケーリング)を参照してください。
     - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
-- `XamRadialChart` 
-    - 新しいラベル モード
+- `XamRadialChart`
+  - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 
 ### 一般
@@ -726,11 +761,13 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 非推奨
 
 - `size` プロパティと属性は、すべてのコンポーネントで非推奨になりました。代わりに `--ig-size` CSS カスタム プロパティを使用してください。次の例では、Avatar コンポーネントのサイズを小さく設定します:
+
     ```css
     .avatar {
         --ig-size: var(--ig-size-small);
     }
     ```
+
 - `DateTimeInput`
   - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
 - `RangeSlider`
@@ -993,6 +1030,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 ## **{PackageVerChanges-21-1}**
+
 ### 新しいビジュアル デザイン
 
 #### チャートとマップ

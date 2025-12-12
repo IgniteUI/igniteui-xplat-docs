@@ -7,30 +7,37 @@ mentionedTypes: []
 ---
 
 # ライセンスについてのよくある質問とインストール
-# {ProductName} 使用許諾契約
-購入して使用する {ProductName} に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
-> 2020 年第 2 四半期にライセンス条項とサブスクリプション モデルを更新しました。
+{ProductName} は、MIT または商用ライセンスで利用可能なパッケージで構成されています。このライセンス モデルは、プロジェクトに組み込む特定のコンポーネント、モジュール、およびサービスに応じて、商用利用と寛容なオープン ソース利用の両方をサポートします。
 
-トライアルが終了した場合、またはサブスクリプションが[期限切れ](https://jp.infragistics.com/renewal)になった場合、Ignite UI を使用しているチームの各開発者はサブスクリプションを[購入する](https://jp.infragistics.com/how-to-buy/product-pricing)必要があります。これにより、<https://packages.infragistics.com/npm/js-licensed/> でホストされるプライベート npm フィードを開発に使用できます。ここには、{ProductName} パッケージの最新バージョンがあります。現在サブスクリプションをお持ちの場合は、{ProductName} の製品版をプライベート フィードによりアクセスできます。
+どのライセンスがパッケージのどの部分に適用されるかを理解することが重要です。どのコンポーネントにどのライセンスが適用されるかは、[オープンソースとプレミアム](./general-open-source-vs-premium.md) トピックに詳しく記載されています。
 
-Ignite UI ライセンス契約および使用条件の詳細については、[ここをクリック](https://jp.infragistics.com/legal/license/igultimate-la)してください。
+## {ProductName} 使用許諾契約
+
+商用ライセンス対象のコンポーネントには、購入・使用に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)が適用されます。
+
+> 2025 年第 4 四半期にライセンス条項とサブスクリプション モデルを更新しました。
+
+トライアル期間終了またはサブスクリプションの[期限切れ](https://jp.infragistics.com/renewal)の場合、該当コンポーネントを使用するすべての開発者が[購入する](https://jp.infragistics.com/how-to-buy/product-pricing)必要があります。これにより、<https://packages.infragistics.com/npm/js-licensed/> でホストされるプライベート npm フィードを開発に使用できます。ここには、{ProductName} パッケージの最新バージョンがあります。現在サブスクリプションをお持ちの場合は、{ProductName} の製品版をプライベート フィードによりアクセスできます。
+
+<!-- Ignite UI ライセンス契約および使用条件の詳細については、[こちら](https://jp.infragistics.com/legal/license/igultimate-la)をクリックしてください。 -->
 
 インフラジスティックスは、以下の無料の非営利および再販禁止 (NFR) ライセンスを提供しています。
 
-  - Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。
-  - 小学生、中学生、大学生、または教育機関、または教授である場合。
+- Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。
+- 小学生、中学生、大学生、または教育機関、または教授である場合。
 
 無料の非商用の NFR ライセンスを取得する資格がある場合、またはライセンスに関する質問がある場合は、[お問い合わせ](https://jp.infragistics.com/about-us/contact-us)ください。
-
-> 現在、プライベート npm フィードで利用できるのは **igniteui-dockmanager** パッケージのみですが、将来的には他の {ProductName} パッケージも追加する予定です。
 
 ## {ProductName} npm パッケージ - プライベート npm フィードの使用
 Npm は Node.js ランタイム環境で使用する一般的なデフォルト パッケージ マネージャーです。プロジェクトに依存するパッケージをすばやく簡単に処理できます。npm の使用方法の詳細については、[npm ヘルプ](https://docs.npmjs.com/)を参照してください。
 
-Infragistics {ProductName} は npm パッケージで提供され、[いくつかの簡単な手順](./general-getting-started.md)でプロジェクトの依存関係として追加できます。この方法を選択する場合、npm を構成する必要はありません。このパッケージをインストールすると、製品の **{ProductName} トライアル版**の使用が開始されます。
+Infragistics {ProductName} は npm パッケージで提供され、[いくつかの簡単な手順](./general-getting-started.md)でプロジェクトの依存関係として追加できます。この方法を選択する場合、npm を構成する必要はありません。商用ライセンスのパッケージをインストールする場合、製品の **{ProductName} のトライアル版バージョン** の使用を開始します。
 
-> 現在、[igniteui-dockmanager](https://www.npmjs.com/package/igniteui-dockmanager) の npm パッケージのみにトライアル ウォーターマークがありますが、今後は他の {ProductName} パッケージにも追加する予定です。
+>[!NOTE]
+> トライアル版の使用を開始するとはどういう意味ですか？これは、Web ビューの一部に**ウォーターマーク**が付いた製品のバージョンを使用することを意味します。たとえば、1 か月など、有効期限が切れるまでの一定期間、ライセンス パッケージを使用することを意味するものではありません。
+
+Infragistics が提供するプライベート npm フィードには、商用ライセンスのパッケージのライセンス バージョンが含まれています。
 
 ### プライベート npm フィードを使用するための環境設定方法
 
@@ -73,11 +80,11 @@ Infragistics アカウントにログインするユーザー名およびパス�
 #### 完了した後に、ログイン済みの状態で、プロジェクトで Ignite UI の最新バージョンをインストールできます。
 
 ```cmd
-npm uninstall igniteui-dockmanager
-npm install @infragistics/igniteui-dockmanager
+npm uninstall {PackageDockManager}
+npm install @infragistics/{PackageDockManager}
 
-npm uninstall igniteui-dockmanager
-npm install @infragistics/igniteui-dockmanager
+npm uninstall {PackageDockManager}
+npm install @infragistics/{PackageDockManager}
 ```
 
 {ProductName} パッケージをスコープに設定したため、プライベート フィードおよび npmjs.org からのパッケージを同時にインストールするためにレジストリを変更する必要はありません。
@@ -87,7 +94,7 @@ npm install @infragistics/igniteui-dockmanager
 トライアル版からライセンス版パッケージにアップグレードする場合、新しいパッケージは `@infragistics` の下でスコープされます。
 その結果、次のいずれかを行うことができます。
 
-- すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `igniteui-dockmanager` 参照を `@infragistics/igniteui-dockmanager` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
+- すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `{PackageDockManager}` 参照を `@infragistics/{PackageDockManager}` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
 
 **または**
 
@@ -101,8 +108,8 @@ npm install @infragistics/igniteui-dockmanager
     "outDir": "./dist/out-tsc",
     /* ... */
     "paths": {
-      "igniteui-dockmanager": ["./node_modules/@infragistics/igniteui-dockmanager"],
-      "igniteui-dockmanager/*": ["./node_modules/@infragistics/igniteui-dockmanager/*"],
+      "{PackageDockManager}": ["./node_modules/@infragistics/{PackageDockManager}"],
+      "{PackageDockManager}/*": ["./node_modules/@infragistics/{PackageDockManager}/*"],
     }
   }
 }
@@ -115,6 +122,7 @@ npm install @infragistics/igniteui-dockmanager
       "paths": {
         "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
         "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
+        "igniteui-react-dockmanager": ["node_modules/igniteui-react-dockmanager", "node_modules/@infragistics/igniteui-react-dockmanager"],
         "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
         "igniteui-react-data-grids": ["node_modules/igniteui-react-data-grids", "node_modules/@infragistics/igniteui-react-data-grids"],
         "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
@@ -127,9 +135,7 @@ npm install @infragistics/igniteui-dockmanager
         "igniteui-react-datasources": ["node_modules/igniteui-react-datasources", "node_modules/@infragistics/igniteui-react-datasources"],
         "igniteui-react-spreadsheet": ["node_modules/igniteui-react-spreadsheet", "node_modules/@infragistics/igniteui-react-spreadsheet"],
         "igniteui-react-spreadsheet-chart-adapter": ["node_modules/igniteui-react-spreadsheet-chart-adapter", "node_modules/@infragistics/igniteui-react-spreadsheet-chart-adapter"],
-        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"],
-        "igniteui-dockmanager": ["node_modules/igniteui-dockmanager", "node_modules/@infragisics/igniteui-dockmanager"],
-        "igniteui-dockmanager/loader": ["node_modules/igniteui-dockmanager/loader", "node_modules/@infragistics/igniteui-dockmanager/loader"]
+        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"]
       }
 ```
 
@@ -139,11 +145,11 @@ npm install @infragistics/igniteui-dockmanager
 - テーマのインポートを以下のように変更します。
 
 ```ts
-@import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
+@import '~{PackageDockManager}/dist/collection/styles/igc.themes';
 
 // Should be changed to
 
-@import '~@infragistics/igniteui-dockmanager/dist/collection/styles/igc.themes';
+@import '~@infragistics/{PackageDockManager}/dist/collection/styles/igc.themes';
 ```
 
 npm を既に使用していて、{ProductName} ライセンスがある場合、Infragistics プライベート フィードを構成してください。
@@ -221,4 +227,4 @@ before_install:
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-[*シークレット* (暗号化された環境変数)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) を定義してアクセス トークンなどの機密情報に対して GitHub Actions ワークフローでそれらを使用します。
+[_シークレット_ (暗号化された環境変数)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) を定義してアクセス トークンなどの機密情報に対して GitHub Actions ワークフローでそれらを使用します。

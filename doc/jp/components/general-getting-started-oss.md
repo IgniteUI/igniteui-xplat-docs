@@ -1,60 +1,60 @@
 ---
-title: Getting Started | {ProductName} Open-Source Libraries | Infragistics
-_description: Use Infragistics' Open-Source {Platform} components to create apps with lightweight, MIT licensed components including Grid Lite. Try now.
-_keywords: {ProductName}, Infragistics, Getting Started, Open-Source, MIT License
+title: 作業の開始 | {ProductName} オープン ソース ライブラリ | インフラジスティックス
+_description: インフラジスティックスのオープン ソース {Platform} コンポーネントを使用して、Grid Lite を含む軽量な MIT ライセンス コンポーネントでアプリを作成できます。今すぐお試しください。
+_keywords: {ProductName}, Infragistics, Getting Started, Open-Source, MIT License, 作業の開始, オープン ソース, MIT ライセンス, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---
-# Getting Started with Open-Source Libraries
+# オープン ソース ライブラリの概要
 
-This topic provides step-by-step instructions for creating Blazor applications with the Ignite UI for Blazor open-source libraries using Visual Studio.
+このトピックでは、Visual Studio を使用して Ignite UI for Blazor オープン ソース ライブラリで Blazor アプリケーションを作成するための段階的な手順を説明します。
 
-## Overview
+## 概要
 
-{ProductName} offers open-source UI components under the MIT license. These lightweight packages provide essential functionality for building modern web applications without requiring a commercial license.
+{ProductName} は、MIT ライセンスの下でオープン ソース UI コンポーネントを提供します。これらの軽量パッケージは、商用ライセンスを必要とせずに最新の Web アプリケーションを構築するための基本的な機能を提供します。
 
-The open-source libraries include:
+オープン ソース ライブラリには以下が含まれます。
 
-- **IgniteUI.Blazor.Lite** - A lightweight package containing open-source UI components
-- **IgniteUI.Blazor.GridLite** - A lightweight, open-source data grid component
+- **IgniteUI.Blazor.Lite** - オープン ソース UI コンポーネントを含む軽量パッケージ
+- **IgniteUI.Blazor.GridLite** - 軽量でオープン ソースのデータ グリッド コンポーネント
 
-## Create a New Blazor Project
+## 新しい Blazor プロジェクトの作成
 
- - Start Visual Studio and click **Create a new project** on the start page, select a Blazor template such as **Blazor Server App**, **Blazor WebAssembly App**, or **Blazor Web App**, and click **Next**.
+ - Visual Studio を起動し、スタート ページで **[新しいプロジェクトの作成]** をクリックし、**Blazor Server App**、**Blazor WebAssembly App**、**Blazor Web App** などの Blazor テンプレートを選択して **[次へ]** をクリックします。
 
 > [!Note]
-> When using **Blazor Server App**, ensure you add `@rendermode InteractiveServer` in the pages where the components are used.
+> **Blazor Server App** を使用する場合は、コンポーネントが使用されるページに `@rendermode InteractiveServer` を追加してください。
 
-- Provide a project name and location, then click **Next**.
+- プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
-- Specify additional project options and click **Create**.
+- **追加のプロジェクト オプションを指定し、[作成]** をクリックします。
 
-## Install IgniteUI.Blazor.Lite
+## IgniteUI.Blazor.Lite のインストール
 
-The IgniteUI.Blazor.Lite package contains open-source UI components delivered via NuGet.
+IgniteUI.Blazor.Lite パッケージには、NuGet 経由で配信されるオープン ソース UI コンポーネントが含まれています。
 
-> [!Warning]
-> You should not combine the **IgniteUI.Blazor** and **IgniteUI.Blazor.Lite** packages in the same project. They use the same namespaces and contain duplicate components, so only one of them should be used.
+> [!WARNING]
+> **IgniteUI.Blazor** パッケージと **IgniteUI.Blazor.Lite** パッケージを同じプロジェクトで組み合わせないでください。これらは同じ名前空間を使用し、重複するコンポーネントが含まれているため、いずれか 1 つのみを使用する必要があります。
 
-In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor.Lite** NuGet package.
+Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。**IgniteUI.Blazor.Lite** NuGet パッケージを検索してインストールします。
 
-Or install via the Package Manager Console:
+または、パッケージ マネージャー コンソール経由でインストールします。
 
 ```cmd
 Install-Package IgniteUI.Blazor.Lite
 ```
 
-Or via .NET CLI:
+または、.NET CLI 経由でインストールします。
 
 ```cmd
 dotnet add package IgniteUI.Blazor.Lite
 ```
 
-## Register IgniteUI.Blazor.Lite
+## IgniteUI.Blazor.Lite の登録
 
-### .NET 6 and Later Applications
+### .NET 6 以降のアプリケーション
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```razor
 var builder = WebApplication.CreateBuilder(args);
@@ -68,13 +68,13 @@ builder.Services.AddIgniteUIBlazor();
 var app = builder.Build();
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - **_Imports.razor** ファイルに **IgniteUI.Blazor.Controls** 名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the appropriate location based on your project type:
+3 - プロジェクト タイプに基づいて適切な場所にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -82,15 +82,15 @@ var app = builder.Build();
 </head>
 ```
 
-4 - Add Script Reference:
+4 - スクリプト参照を追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 ```
 
-## Using the OSS Blazor Components
+## OSS Blazor コンポーネントの使用
 
-Add an Ignite UI for Blazor component to your razor page, for example:
+Ignite UI for Blazor コンポーネントを razor ページに追加します。たとえば、次のようになります。
 
 ```razor
 <IgbCard style="width:350px">
@@ -112,36 +112,36 @@ Add an Ignite UI for Blazor component to your razor page, for example:
 </IgbCard>
 ```
 
-For more detailed information about which components are included in the light package, see the - [Open-Source vs Premium Components](general-open-source-vs-premium.md) topic.
+軽量パッケージに含まれるコンポーネントの詳細については、[オープン ソースとプレミアム コンポーネント](general-open-source-vs-premium.md) トピックを参照してください。
 
 ## Grid Lite
 
-The Grid Lite component is a lightweight, open-source data grid that provides essential features for displaying tabular data.
+Grid Lite コンポーネントは、表形式のデータを表示するための基本的な機能を提供する軽量でオープン ソースのデータ グリッドです。
 
-### Install IgniteUI.Blazor.GridLite
+### IgniteUI.Blazor.GridLite のインストール
 
-In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor.GridLite** NuGet package.
+Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。**IgniteUI.Blazor.GridLite** NuGet パッケージを検索してインストールします。
 
-Or install via the Package Manager Console:
+または、パッケージ マネージャー コンソール経由でインストールします。
 
 ```cmd
 Install-Package IgniteUI.Blazor.GridLite
 ```
 
-Or via .NET CLI:
+または、.NET CLI 経由でインストールします。
 
 ```cmd
 dotnet add package IgniteUI.Blazor.GridLite
 ```
-### Using Grid Lite
+### Grid Lite の使用
 
-1 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+1 - **_Imports.razor** ファイルに **IgniteUI.Blazor.Controls** 名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-2 - Add the Style Sheet in the appropriate location based on your project type:
+2 - プロジェクト タイプに基づいて適切な場所にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -149,7 +149,7 @@ dotnet add package IgniteUI.Blazor.GridLite
 </head>
 ```
 
-3 - Add the Grid Lite component to your razor page:
+3 - Grid Lite コンポーネントを razor ページに追加します。
 
 ```razor
 <IgbGridLite Data="data" AutoGenerateColumns="true">
@@ -165,9 +165,9 @@ dotnet add package IgniteUI.Blazor.GridLite
 }
 ```
 
-For more detailed information about Grid Lite features and configuration, see the [Grid Lite Overview](grid-lite/overview.md) topic.
+Grid Lite の機能と構成の詳細については、[Grid Lite の概要](grid-lite/overview.md)トピックを参照してください。
 
-## Additional Resources
+## その他のリソース
 
-- [Open-Source vs Premium Components](general-open-source-vs-premium.md)
-- [Grid Lite Overview](grid-lite/overview.md)
+- [オープン ソースとプレミアム コンポーネント](general-open-source-vs-premium.md)
+- [Grid Lite の概要](grid-lite/overview.md)

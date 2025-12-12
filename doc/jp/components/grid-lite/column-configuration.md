@@ -1,6 +1,6 @@
 ---
 title: {Platform} {GridLiteTitle} 列の構成 | {ProductName} | MIT ライセンス
-_description: Grid Lite 列の構成と列のプロパティ。オープンソースの {Platform} {GridLiteTitle} をお試しください。軽量でありながら、必要な機能がすべて搭載されています。
+_description: Grid Lite 列の構成と列のプロパティ。オープン ソースの {Platform} {GridLiteTitle} をお試しください。軽量でありながら、必要な機能がすべて搭載されています。
 _keywords: column configuration, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 列の構成, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls

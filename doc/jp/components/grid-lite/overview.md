@@ -1,6 +1,6 @@
 ---
 title: {Platform} {GridLiteTitle} の概要 | {ProductName} | MIT ライセンス
-_description: オープンソースの {GridLiteTitle} を使用してアプリを作成できます。軽量でありながら、フィルタリング、非表示、ソート など、必要な機能がすべて搭載されています。今すぐお試しください。
+_description: オープン ソースの {GridLiteTitle} を使用してアプリを作成できます。軽量でありながら、フィルタリング、非表示、ソート など、必要な機能がすべて搭載されています。今すぐお試しください。
 _keywords: overview, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 概要, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -8,9 +8,9 @@ _license: MIT
 _language: ja
 ---
 
-# オープンソース {Platform} グリッド (Grid Lite)
+# オープン ソース {Platform} グリッド (Grid Lite)
 
-{ProductName} {GridLiteTitle} は、Infragistics の新しいオープンソース UI コンポーネント セットの一部であり、今後も継続的にサポートおよびメンテナンスされます。これはオープンソースの JavaScript データ グリッドで、Web コンポーネントとして構築されているため、Web フレームワークの有無に関係なく依存関係なしで使用できます。現在、Angular、React、Blazor、Web Components 向けに 40 以上の OSS コントロールが MIT ライセンスのもとで利用可能です。
+{ProductName} {GridLiteTitle} は、Infragistics の新しいオープン ソース UI コンポーネント セットの一部であり、今後も継続的にサポートおよびメンテナンスされます。これはオープン ソースの JavaScript データ グリッドで、Web コンポーネントとして構築されているため、Web フレームワークの有無に関係なく依存関係なしで使用できます。現在、Angular、React、Blazor、Web Components 向けに 40 以上の OSS コントロールが MIT ライセンスのもとで利用可能です。
 
 {GridLiteTitle} は、必要最小限のオーバーヘッドで本質的なデータ表示機能を提供し、ユーザーが期待するパフォーマンスを実現します。これは、エンタープライズ グリッドの複雑さを避けつつ、高速で軽量なデータ表示を必要とする開発者向けに設計されています。
 
