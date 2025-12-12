@@ -84,7 +84,7 @@ public activeRowCondition = (row: RowType) => this.grid?.navigation.activeNode?.
 ```razor
 igRegisterScript("RowClassesHandler", () => {
     return {
-        activeRow: (row) => row.index === 0
+        activeRow: (row) => row.index % 2 === 0
     };
 }, true);
 ```
@@ -104,7 +104,7 @@ const rowClasses = {
 
 ```css
 .activeRow {
-    border: 2px solid #fc81b8;
+    border-top: 2px solid #fc81b8;
     border-left: 3px solid #e41c77;
 }
 ```
