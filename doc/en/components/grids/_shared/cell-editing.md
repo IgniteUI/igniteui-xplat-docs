@@ -1339,6 +1339,54 @@ Then set the related CSS properties for that class:
 
 <!-- end: WebComponents, Blazor, React -->
 
+<!-- React -->
+
+### Defining a palette
+
+After we've properly imported the index file, we create a custom palette that we can use. Let's define some base colors that we like and use them to build a palette:
+
+```css
+:root {
+    /* Base colors */
+    --white: #fff;
+    --blue: #4567bb;
+    --orange: #cc6600;
+    --gold: #ffcd0f;
+    --gray: #efefef;
+    --dark-gray: #404040;
+    --border-gray: #555555;
+
+    /* Color Palette */
+    --palette-primary: var(--white);
+    --palette-secondary: var(--blue);
+    --palette-surface: var(--gray);
+    --palette-accent: var(--gold);
+    --palette-highlight: var(--orange);
+    --palette-background: var(--dark-gray);
+    --palette-border: var(--border-gray);
+}
+
+.custom-grid-palette-theme {
+    --ig-grid-pinned-border-width: 5px;
+    --ig-grid-pinned-border-color: var(--palette-accent);
+    --ig-grid-pinned-border-style: double;
+    --ig-grid-cell-active-border-color: var(--palette-accent);
+
+    --ig-size: var(--ig-size-medium);
+}
+```
+Then all we have to do is to add the custom palette as a class to our {ProductName}
+
+```tsx
+<{ComponentSelector} className="custom-grid-palette-theme">
+</{ComponentSelector}>
+```
+
+`sample="/{ComponentSample}/cell-editing-custom-palette", height="650", alt="{Platform} {ComponentTitle} Cell Editing Custom Palette Example"`
+
+
+<!-- end: React -->
+
 <!-- Angular -->
 
 The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
