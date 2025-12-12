@@ -247,7 +247,7 @@ In case you don't want to show the `{ComponentName}` toolbar, you could use the 
 > [!Note]
 > You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
-<!-- Angular -->
+<!-- Angular, React -->
 ## External Advanced Filtering
 
 As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentName}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentName}`.
@@ -276,7 +276,11 @@ It's super easy to configure the advanced filtering to work outside of the `{Com
 </igc-advanced-filtering-dialog>
 ```
 
-<!-- end: Angular -->
+```tsx
+<IgrAdvancedFilteringDialog grid="grid1"></IgrAdvancedFilteringDialog>
+```
+
+<!-- end: Angular, React -->
 <!-- Angular -->
 
 ## Styling
