@@ -863,14 +863,33 @@ class MySummary extends IgcNumberSummaryOperand {
 ```
 
 ```razor
-class WebGridDiscontinuedSummary {
+class HGridCustomSummary {
     operate(data, allData, fieldName) {
-        const discontinuedData = allData.filter((rec) => rec['Discontinued']).map(r => r[fieldName]);
+        const result = [];
         result.push({
-            key: 'totalDiscontinued',
-            label: 'Total Discontinued Items',
-            summaryResult: discontinuedData.length ? discontinuedData.reduce((a, b) => +a + +b) : 0
+            key: 'artists',
+            label: 'Artists',
+            summaryResult: allData.length
         });
+        const totalAwards = fieldName === 'GrammyAwards' && data.length ? data.reduce((a, b) => +a + +b, 0) : 0;
+        result.push({
+            key: 'totalAwards',
+            label: 'Total Grammy Awards',
+            summaryResult: totalAwards
+        });
+        const awardWinners = allData.filter(r => r['HasGrammyAward']).length;
+        result.push({
+            key: 'awardWinners',
+            label: 'Award Winners',
+            summaryResult: awardWinners
+        });
+        const totalNominations = allData.reduce((sum, r) => sum + (r['GrammyNominations'] || 0), 0);
+        result.push({
+            key: 'totalNominations',
+            label: 'Total Grammy Nominations',
+            summaryResult: totalNominations
+        });
+
         return result;
     }
 }
