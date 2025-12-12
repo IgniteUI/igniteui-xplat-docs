@@ -221,15 +221,11 @@ These components expose templates giving flexibility for customization. For inst
     <IgbHierarchicalGrid Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
+            <IgbGridEditingActions
+                EditRow="true"
+                DeleteRow="true"
+                AddRow="true">
+            </IgbGridEditingActions>
         </IgbActionStrip>
     </IgbHierarchicalGrid>
 </div>
