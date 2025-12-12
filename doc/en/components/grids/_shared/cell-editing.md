@@ -1339,6 +1339,69 @@ Then set the related CSS properties for that class:
 
 <!-- end: WebComponents, Blazor, React -->
 
+<!-- React -->
+
+Additionally, after importing and using a theme from the predefined ones, you can create your own custom colors as a palette and then customize the theme and add it as a class to the grid instead. This can be done in a couple of simple steps. First you should create your own pallette:
+
+```css
+:root {
+    /* Base colors */
+    --white: #fff;
+    --blue: #4567bb;
+    --orange: #cc6600;
+    --gold: #ffcd0f;
+    --gray: #efefef;
+    --dark-gray: #404040;
+    --border-gray: #555555;
+    
+    /* Color Palette */
+    --palette-primary: var(--white);
+    --palette-secondary: var(--blue);
+    --palette-surface: var(--gray);
+    --palette-accent: var(--gold);
+    --palette-highlight: var(--orange);
+    --palette-background: var(--dark-gray);
+    --palette-border: var(--border-gray);
+    
+    /* Secondary color variations */
+    --palette-secondary-200: #6B87DD; 
+    --palette-secondary-400: var(--blue);
+    --palette-secondary-600: #3A4FA0; 
+}
+```
+
+And then create the custom theme 
+
+```css
+.custom-grid-palette-theme {
+    --ig-grid-cell-editing-background: var(--palette-highlight); 
+    --ig-grid-cell-edited-value-color: var(--palette-primary);
+    --ig-grid-cell-active-border-color: var(--palette-primary);
+    --ig-grid-edit-mode-color: var(--palette-secondary-200);
+
+    --ig-input-text-color: var(--palette-primary);
+    --ig-input-background: var(--palette-background);
+    --ig-input-border-color: var(--palette-border);
+    --ig-input-focused-border-color: var(--palette-accent);
+    
+    --ig-size: var(--ig-size-medium);
+}
+```
+
+Once this has been added to your css sheet, all you need to do is add the theme to your grid
+
+```tsx
+<IgrGrid
+...
+className="custom-grid-palette-theme"
+...
+></IgrGrid>
+
+```
+
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="650", alt="{Platform} {ComponentTitle} Keyboard Navigation Guide Example"`
+
+
 <!-- Angular -->
 
 The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
