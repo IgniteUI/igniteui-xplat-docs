@@ -91,14 +91,14 @@ igRegisterScript("RowClassesHandler", () => {
 <!-- WebComponents -->
 ```ts
 public rowClasses = {
-    activeRow: (row: IgcRowType) => row.index === 0
+    activeRow: (row: IgcRowType) => row.index % 2 === 0
 }
 ```
 <!-- end: WebComponents -->
 
 ```tsx
 const rowClasses = {
-    activeRow: (row: IgrRowType) => row.index === 0
+    activeRow: (row: IgrRowType) => row.index % 2 === 0
 }
 ```
 
