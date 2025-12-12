@@ -420,7 +420,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 両方のアクション ボタンを無効にしたり、好みに応じてカスタム ボタンを作成したりすることもできます。
 
-`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager アクションの例"`
+`sample="/layouts/tile-manager/actions", height="730", alt="{Platform} Tile Manager アクションの例"`
 
 この例では、Ignite UI Icon Button コンポーネントを使用してカスタム アクション ボタンを作成しました。
 
@@ -548,7 +548,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
+`sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
 
 ## シリアル化
 

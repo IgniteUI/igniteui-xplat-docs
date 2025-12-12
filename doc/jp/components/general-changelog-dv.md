@@ -18,6 +18,24 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgxDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgxDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgxDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
 ### {PackageCharts} (チャート)
 
 #### <label>PREVIEW</label> ユーザー注釈
@@ -176,10 +194,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -344,9 +364,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 - **ダッシュ配列**を `XamDataChart` のシリーズのさまざまな部分に適用できるようになりました。これは、チャートにプロットされた[シリーズ](charts/types/line-chart.md#{PlatformLower}-折れ線チャートのスタイル設定)、チャートの[グリッド線](charts/features/chart-axis-gridlines.md#{PlatformLower}-軸グリッド線のプロパティ)、およびチャートにプロットされたシリーズの[トレンドライン](charts/features/chart-trendlines.md#{PlatformLower}-チャート-トレンドラインのダッシュ配列の例)に適用できます。
 
 ## **{PackageVerChanges-22-2.2}**
+
 - Angular 16 のサポート。
 
 ## **{PackageVerChanges-22-2.1}**
+
 - Angular 15 のサポート。
 
 ## **{PackageVerChanges-22-2}**
@@ -377,7 +399,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - GroupSortDescriptions
 
 > [!Note]
-`IncludedProperties` | `ExcludedProperties` を使用している場合、チャートの[集計](charts/features/chart-data-aggregations.md)は機能しません。これらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
+> `IncludedProperties` | `ExcludedProperties` を使用している場合、チャートの[集計](charts/features/chart-data-aggregations.md)は機能しません。これらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} (チャート)
@@ -440,6 +462,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
+
 ### {PackageCharts} (チャート)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。

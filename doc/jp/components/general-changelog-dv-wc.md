@@ -13,6 +13,24 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgcDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgcDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgcDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
 ### {PackageCharts} (チャート)
 
 #### <label>PREVIEW</label> ユーザー注釈
@@ -31,11 +49,9 @@ alt="{Platform} user-annotation-create"/>
 - `ShouldAvoidAnnotationCollisions`
 - `ShouldAutoTruncateAnnotations`
 
-
 ### {PackageMaps} (地理マップ)
 
 - Azure Map Imagery は RTM になりました。
-
 
 ### バグ修正
 
@@ -54,6 +70,7 @@ alt="{Platform} user-annotation-create"/>
 - `IgrChat` コンポーネントを追加しました。
 
 ### {PackageGrids} (グリッド)
+
 - `IgcGrid`、`IgcTreeGrid`、`IgcHierarchicalGrid`
   - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
 
@@ -63,8 +80,9 @@ alt="{Platform} user-annotation-create"/>
         <igc-column field="field" merge="true"></igc-column>
         ```
         グリッド レベルで以下のいずれかの設定が可能です:
-     - `onSort` - 列がソートされたときのみ結合。
-     - `always` - データ操作に関わらず常に結合。
+
+    - `onSort` - 列がソートされたときのみ結合。
+    - `always` - データ操作に関わらず常に結合。
 
         ```html
         <igc-grid cellMergeMode="always">
@@ -98,13 +116,14 @@ alt="{Platform} user-annotation-create"/>
         列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
 
   - **ソートの改善**
-     - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
-     - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+    - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
   - **グループ化の改善**
-     - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
-     - グループ化処理を最適化しました。
+    - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - グループ化処理を最適化しました。
 
 ### バグ修正
+
 | バグ修正 | コントロール | 説明 |
 |------------|---------|-------------|
 |[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |リスト コンポーネントおよびテーマ間で重複していた CSS 変数を削除。|
@@ -233,7 +252,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 |[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo のエレベーション スタイルを修正。|
 |[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date Range Picker|キーボード操作時にメイン入力へフォーカスを戻す。|
 |[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Material テーマでのプレースホルダーとラベルの整列を修正。|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|*relative* 位置スタイルとアニメーションを更新。|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|_relative_ 位置スタイルとアニメーションを更新。|
 |[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|無効状態のテーマ適用問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material テーマでのインタラクション問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|サフィックス部分でのリサイズの動作を修正。|
@@ -256,18 +275,22 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 重大な変更
 
 #### File Input
-  - `igcChange` および `igcCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
+
+- `igcChange` および `igcCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
 
 #### Tooltip
-  - Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
+
+- Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
 
 ### 動作変更
 
 #### Tooltip
-  - **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
-  - **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
+
+- **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
+- **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
 
 ### 機能拡張
+
 - すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
 
 ### バグ修正
@@ -333,10 +356,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -469,11 +494,13 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
+
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
 
 ### {PackageGrids}
+
 - `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
 
 ### {PackageCharts}
@@ -566,7 +593,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 - 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` と、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部に導入されました。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
 - `RowSelectionChanging` イベント引数が変更されました。グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
 - グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
-- * 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
+- 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
 - `OnGroupingDone` イベントは `GroupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
 - `OnDensityChanged` イベントの名前が `DensityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
 
@@ -636,6 +663,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 - `DataGrid`:
   - 新機能 - [行ページング](grids/data-grid/row-paging.md)を追加しました。これは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
 ### {PackageCharts}
 
 - 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントを追加しました。これは、`Legend` とよく似ていますが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
@@ -677,15 +705,15 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 - `DataGrid`:
   - 新規機能:
-   - [フィルター行](grids/data-grid/column-filtering.md)
-   - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
-   - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
-   - [セルの結合](grids/data-grid/cell-merging.md)
+  - [フィルター行](grids/data-grid/column-filtering.md)
+  - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+  - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+  - [セルの結合](grids/data-grid/cell-merging.md)
   - 新規 API:
-   - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
+  - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
   - 重大な変更:
-   - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
-   - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
+  - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+  - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
@@ -755,7 +783,6 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
   - アクセシビリティの追加
 
-
 ### {PackageMaps}
 
 > [!Note]
@@ -765,7 +792,6 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 - 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
 - シェイプ シリーズのハイライト表示のサポートが追加されました。
 - シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
-
 
 ### {PackageCharts}
 
@@ -873,7 +899,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 ## **{PackageVerChangedImports}**
 
-### All Packages
+### すべてのパッケージ
 
 - Import ステートメントの変更
 
@@ -955,6 +981,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-5.1.0}**
 
 #### 追加
+
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 
 ### **{PackageCommonVerChanges-5.0.0}**
@@ -991,25 +1018,30 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.11.1}**
 
 #### 変更
+
 - `Stepper` - 垂直モードでのデザインの変更。
 
 ### **{PackageCommonVerChanges-4.11.0}**
 
 #### 変更
+
 - `Toast`、`Rating`、`Stepper` - Indigo テーマのスタイル設定の変更。
 
 ### **{PackageCommonVerChanges-4.10.0}**
 
 #### 追加
+
 - 新しい [Banner](notifications/banner.md) コンポーネント。
 - 新しい [Divider](layouts/divider.md) コンポーネント。
 - 新しい [DatePicker](scheduling/date-picker.md) コンポーネント。
 - `RadioGroup` - ラジオ グループを通じて、基礎となるラジオ コンポーネントの名前とチェック状態をバインドします。
 
 #### 非推奨
+
 - `Input` `Inputmode` プロパティ。代わりに、ネイティブの `inputMode` DOM プロパティに調整されます。
 
 #### 修正
+
 - `Input`、`Textarea`- 値に `undefined` を渡すと、基になる入力値が undefined に設定されます。
 - `MaskInput` - フォームの `reset` の呼び出し後、基になる入力値とプレースホルダーの状態が正しく更新されます。
 - `Tree` - 項目 `indicator` CSS パーツに `--ig-size` を設定すると、アイコンのサイズが変更されるようになりました。
@@ -1023,21 +1055,26 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.9.0}**
 
 #### 追加
+
 - `ButtonGroup` - `SelectedItems` プロパティを介して選択状態をリセットできるようになりました。
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 
 #### 変更
+
 - `Combo`、`Select`、`Dropdown` - ネイティブの `Popover` API を使用するようになりました。
 
 #### 非推奨
+
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 
 #### 修正
+
 - `DateTimeInput` - コンポーネントが読み取り専用モードの場合、Material テーマのラベルが壊れます。
 
 ### **{PackageCommonVerChanges-4.8.2}**
 
 #### 修正
+
 - `Textarea` - サフィックスのないテキスト領域のサイズ変更ハンドルの位置。
 - `Tabs` - 単一の呼び出しスタックでタブ グループとタブを動的に作成および追加するときにエラーが発生します。
 - `Checkbox`/`Switch` - 最初にチェックしたときにフォームの送信に参加します。
@@ -1046,6 +1083,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.8.1}**
 
 #### 修正
+
 - `DateTimeInput` - `InputFormat` は、既に設定されている値には適用されません。
 - `Checkbox`、`Radio`、`Switch` - フォーム検証を同期的に適用します。
 - `Select`、`Dropdown` - ドロップダウン/選択項目スロット内のラップ要素をクリックしても項目を選択できません。
@@ -1054,17 +1092,21 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.8.0}**
 
 #### 追加
+
 - `Combo` では、`GroupSorting` を none に設定できるようになりました。これにより、提供されたデータの順序でグループが表示されます。
 - `Button`/`IconButton` - テーマ間でビジュアルの外観が更新され、新しい状態が追加されました。
 - `NavBar` - Bootstrap テーマに境界線が追加されました。
 
 #### 変更
+
 - `Combo` でのグループ化ではデータがソートされなくなりました。`GroupSorting` プロパティは、グループのソート方向にのみ影響するようになりました。**動作変更**: 以前のリリースでは、グループのソート方向によって項目もソートされていました。この動作を実現したい場合は、既にソートされたデータを `Combo` に渡すことができます。
 
 #### 非推奨
+
 - `Slider` - `aria-label-upper` と `aria-label-lower` は非推奨であり、次のメジャー リリースで削除されます。代わりに、`thumb-label-upper` と `thumb-label-lower` を使用してください。
 
 #### 修正
+
 - `Button` - スロットアイコンのサイズ。
 - `ButtonGroup`
   - Fluent テーマの外観を更新しました。
@@ -1083,25 +1125,31 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.7.0}**
 
 #### 追加
+
 - `Tree` - ノードをクリックすると展開状態が変更されるかどうかを決定する `ToggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
 
 - `Rating` - `AllowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作変更**: 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
 
 #### 変更
+
 - `Avatar`、`Badge`、および `Combo` の WAI-ARIA 準拠を改善しました。
+
 #### 修正
+
 - `Dropdown`、`Select`、および `Combo` のアクティブ項目のビジュアル スタイル。
 - `NavDrawer` - ミニ バリアントの壊れたビジュアル スタイル。
 
 ### **{PackageCommonVerChanges-4.6.0}**
 
 #### 追加
+
 - `Snackbar` に `action` スロットが追加されました。
 - `indicator-expanded` スロットが `ExpansionPanel` に追加されました。
 - `toggle-icon-expanded` スロットが `Select` に追加されました。
 - `Select`、`Dropdown` - `selectedItem`、`items`、`groups` ゲッターを公開しました。
 
 #### 変更
+
 - パッケージを Lit v3 に更新しました。
 - コンポーネントのダーク バリアントはシャドウ ルートにバインドされるようになりました。
 - コンポーネントは現在のテーマに基づいてデフォルトのサイズを実装します。
@@ -1110,6 +1158,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 - `Icon`、`Select`、`Dropdown`、`List` の WAI-ARIA が改善されました。
 
 #### 修正
+
 - `Textarea` にスタイル設定パーツがありません。
 - `TreeItem` の無効なスタイル。
 - `Snackbar` の不要なスタイルを削除しました。
@@ -1137,6 +1186,7 @@ igc-avatar {
 ```
 
 #### 修正
+
 - Safari でのコンボ項目の位置。
 - RTL コンテキストのカレンダー ナビゲーション ボタン。
 - `IgcComboChangeEventArgs` タイプのエクスポート。
@@ -1146,6 +1196,7 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.4.0}**
 
 #### 追加
+
 - 次のコンポーネントは、フォームに関連付けられたカスタム要素になりました。これらは親 `<form>` に自動的に関連付けられ、ブラウザーが提供するコントロールのように動作します。
 
   - `Button` & `IconButton`
@@ -1162,10 +1213,12 @@ igc-avatar {
 - `Stepper` はアニメーションをサポートするようになりました。
 
 #### 変更
+
 - `Rating` - Fluent テーマのカラー。
 - `Stepper` - インジケーターのスタイルとカラー スキーマ。
 
 #### 非推奨
+
 - `IgcForm` コンポーネントは非推奨です。
 - `Input`:
   - `minlength` プロパティは非推奨になり、次のメジャー バージョンで削除される予定です。代わりに `minLength` を使用してください。
@@ -1181,6 +1234,7 @@ igc-avatar {
   - `readonly` プロパティは非推奨になり、次のメジャー バージョンで削除される予定です。代わりに `readOnly` を使用してください。
 
 #### 削除済
+
 - デフォルトの属性を隠していた独自の `dir` 属性が削除されました。これは**互換性のある変更**です。
 - `Slider` - `ariaLabel` シャドウ プロパティ。これは**互換性のある変更**です。
 - `Checkbox` - `ariaLabelledBy` シャドウ属性。これは**互換性のある変更**です。
@@ -1188,6 +1242,7 @@ igc-avatar {
 - `Radio` - `ariaLabelledBy` シャドウ属性。これは**互換性のある変更**です。
 
 #### 修正
+
 - `Input` - バリアントのスタイル設定の問題と Indigo テーマの問題を概説しました。
 - `Select` - バリアントのスタイル設定の問題を概説しました。
 - `DateTimeInput` - `spinUp/spinDown` は、入力にフォーカスがあるときにキャレットを移動するように呼び出します。
@@ -1195,35 +1250,42 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.3.1}**
 
 #### 追加
+
 - `Tree` - コンポーネントアニメーション。
 - コンポーネントの境界半径は、そのスキーマから使用されます。
 
 #### 変更
+
 - `Combo`、`Input`、`Select` - スキーマのカラー。
 - `Dropdown` - スキーマのカラー。
 - `Icon` - テーマのスタイルとサイズが更新されました。
 
 #### 修正
+
 - `Combo` - 特定のシナリオでは単一選択が機能しません。
 - `Dropdown` - さまざまなスタイル設定の修正。
 - `IconButton` - リップルのある境界線の半径。
 - `IconButton` - Fluent テーマの間違ったカラーを修正しました。
 - `Input` - さまざまなスタイル設定の修正。
-- `TreeItem` - 最も近い *igc-tree-item* 祖先を親として割り当てます。
+- `TreeItem` - 最も近い _igc-tree-item_ 祖先を親として割り当てます。
 - `Tabs` - 内部の **hidden** スタイルとカスタム表示プロパティ。
 
 ### **{PackageCommonVerChanges-4.3.0}**
 
 #### 追加
+
 - `Combo`:
   - `matchDiacritics` をフィルタリング オプション プロパティに追加しました。デフォルトは **false** です。**true** に設定すると、フィルターはアクセント付き文字とその基本文字を区別します。それ以外の場合、文字列は正規化されてから照合されます。
   - 現在の選択内容をデータ オブジェクトの配列として返す `selection` プロパティ。
 - `Card`: 明示的な高さのサポート
 - `Dialog`: アニメーションの追加
+
 - `Snackbar`: アニメーションの追加
+
 - `Toast`: アニメーションの追加
 
 #### 変更
+
 - `Combo`:
   - `value` は読み取り専用ではなくなり、明示的に設定できるようになりました。value 属性は宣言型のバインディングもサポートしており、有効な JSON 文字列化配列を受け入れます。
 
@@ -1244,9 +1306,11 @@ igc-avatar {
   ```
 
 #### 非推奨
+
 - `Select`: `sameWidth`、`positionStrategy`、`flip` は非推奨になりました。これらは次のメジャー リリースで削除される予定です。
 
 #### 修正
+
 - `Select`: `prefix`/`suffix`/`helper-text` スロットが描画されません。
 - `Tabs`: ネストされたタブの選択。
 - `Dialog`: 背景は要素をオーバーレイしません。
@@ -1259,9 +1323,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.3}**
 
 #### 非推奨
+
 - `Dialog` - `closeOnEscape` プロパティは非推奨となり、代わりに新しい `keepOpenOnEscape` プロパティが使用されます。
 
 #### 修正
+
 - `Radio`- 選択されたフォーカス状態のカラー。
 - `IconButton` - 他のデザイン システム製品に合わせてアイコンのサイズを設定します。
 - `Chip` - Fluent および Material テーマのアウトライン スタイルが削除されました。
@@ -1271,9 +1337,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.2}**
 
 #### 非推奨
+
 - `Button` - `prefix`/`suffix` スロットは不要になったため、次のメジャー リリースで削除される予定です。
 
 #### 修正
+
 - `Button` - UI の不一致。
 - `Calendar` - Fluent テーマの不一致。
 - `Combo` - API 経由の選択は検索リストでは機能しません。
@@ -1286,14 +1354,17 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.1}**
 
 #### 修正
+
 - `Combo` - 単一選択モードでのフィルタリングでは一致する項目がアクティブ化されません。
 
 ### **{PackageCommonVerChanges-4.2.0}**
 
 #### 追加
+
 - `Combo` - `single-select` 属性による単一選択モード。
 
 #### 修正
+
 - `Input` - UI の不一致。
 - `Badge` - `igc-icon` とフォント アイコンが正しく描画されません。
 - `Radio` - UI の不一致。
@@ -1302,6 +1373,7 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.1.1}**
 
 #### 修正
+
 - `Input`
   - コンポーネントのサイズに基づいてラベルを配置します。
   - Material のテーマがデザインと一致しません。
@@ -1313,16 +1385,19 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.1.0}**
 
 #### 追加
+
 - 新しい [Stepper](layouts/stepper.md) コンポーネント。
 - 新しい [Combo](inputs/combo/overview.md) コンポーネント。
 - `MaskInput` - コンポーネント内のシンボルを削除するときにリテラル位置をスキップします。
 
 #### 修正
+
 - `MaskInput` - ユーザー入力の検証状態。
 
 ### **{PackageCommonVerChanges-4.0.0}**
 
 #### 変更
+
 - テーマ
   - ビルド - テーマをビルドするときに [Ignite UI Theming](https://github.com/IgniteUI/igniteui-theming) パッケージを利用します。
   - サイズ変更 - すべてのコンポーネントまたは個々のコンポーネントのサイズを実行時に CSS 構成できる CSS 変数を導入しました。
@@ -1332,24 +1407,29 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.4.2}**
 
 #### 修正
+
 - `DateRangeType` のインポート エラーを解決しました。
 
 ### **{PackageCommonVerChanges-3.4.1}**
 
 #### 変更
+
 - `Slider` - 最新の Fluent 仕様に合わせてテーマを更新しました。
 - `Calendar` - 週末の色を更新しました。
 
 #### 修正
+
 - `Tabs` の `selected` 属性により、初期化時にコンテンツの可視性が損なわれます。
 
 ### **{PackageCommonVerChanges-3.4.0}**
 
 #### 追加
+
 - 新しい [Dialog](notifications/dialog.md) コンポーネント。
 - 新しい [Select](inputs/select.md) コンポーネント。
 
 #### 修正
+
 - `Calendar` - 範囲選択の a11y 改善。
 - `RangeSlider` - 範囲値を選択するための a11y の改善。
 - `Rating` - 支援ソフトウェアが項目の総数を読み取れるようになり、a11y が改善されました。
@@ -1360,9 +1440,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.3.1}**
 
 #### 変更
+
 - `Tree` - テーマ指定の高さを削除しました。
 
 #### 修正
+
 - `Dropdown` - トップレベルのイベント リスナーを破棄します。
 - `LinearProgress` - Safari での不確定なアニメーション。
 - `RadioGroup` - 子ラジオ コンポーネントの自動登録。
@@ -1370,12 +1452,14 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.3.0}**
 
 #### 追加
+
 - 新しい [DateTimeInput](inputs/date-time-input.md) コンポーネント。
 - 新しい [Tabs](layouts/tabs.md) コンポーネント。
 - 新しい [Accordion](layouts/accordion.md) コンポーネント。
 - テーマのタイポグラフィ スタイル。
 
 #### 変更
+
 - `Rating` - 単一選択と空のシンボルのサポートが追加されました。
 - `Slider` - スライダー ステップの描画を改善しました。
 - コンポーネントは、`defineComponents` で登録されると、その依存関係を自動登録するようになりました。
@@ -1390,6 +1474,7 @@ defineComponents(IgcDropdownComponent);
 詳細については、[公式ドキュメント](https://jp.infragistics.com/products/ignite-ui-web-components/web-components/components/general-getting-started)を参照してください。
 
 #### 修正
+
 - 空の入力ヘルパー テキスト コンテナーを削除するようにしました。
 - Safari で `Icon` が表示されない問題を修正しました。
 - Safari で `Checkbox` が表示されない問題を修正しました。
@@ -1400,6 +1485,7 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-3.2.0}**
 
 #### 追加
+
 - 新しい [MaskInput](inputs/mask-input.md) コンポーネント。
 - 新しい [ExpansionPanel](layouts/expansion-panel.md) コンポーネント。
 - 新しい [Tree](grids/tree.md) コンポーネント。
@@ -1407,6 +1493,7 @@ defineComponents(IgcDropdownComponent);
 - `IconButton` - スロット化されたコンテンツを許可します。
 
 #### 修正
+
 - `NavDrawer` - さまざまなスタイルの修正。
 - Buttons - 垂直方向の配置とフォーカスの管理。
 - `Input` - `suffix`/`prefix` のオーバーフロー。
@@ -1416,6 +1503,7 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-3.1.0}**
 
 #### 追加
+
 - `Chip`: `prefix` と `suffix` のスロットを追加しました。
 - `Snackbar`: `toggle` メソッドを追加しました。
 
@@ -1423,6 +1511,7 @@ defineComponents(IgcDropdownComponent);
 - `Chip`: 以前に公開された `start` スロットと `end` スロットは、`prefix` と `suffix` に置き換えられます。これらは引き続き有効ですが、現在は非推奨であり、将来のバージョンでは削除される予定です。
 
 #### 修正
+
 - `Chip`:
   - 内部アイコンを自動読み込みます。
   - 選択したチップの位置がずれています。
@@ -1431,17 +1520,20 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-3.0.0}**
 
 #### 変更
+
 - **重大な変更**: すべてのドロップダウン関連クラスの名前が `IgcDropDown*` から `IgcDropdown*` に変更されました。
 
 ### **{PackageCommonVerChanges-2.2.0}**
 
 #### 追加
+
 - 新しい [DropDown](inputs/dropdown.md) コンポーネント。
 - `Calendar`: アクティブ日付は属性を介して設定できます。
 
 ### **{PackageCommonVerChanges-2.1.1}**
 
 #### 追加
+
 - `--igc-radius-factor` と `--igc-elevation-factor` から境界の半径と標高を制御します。
 
 例:
@@ -1457,6 +1549,7 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-2.1.0}**
 
 #### 追加
+
 - 新しい [LinearProgress](inputs/linear-progress.md) コンポーネント。
 - 新しい [CircularProgress](inputs/circular-progress.md) コンポーネント。
 - 新しい [Chip](inputs/chip.md) コンポーネント。
@@ -1468,12 +1561,14 @@ defineComponents(IgcDropdownComponent);
 ### **{PackageCommonVerChanges-2.0.0}**
 
 #### 追加
+
 - ダーク テーマ
 - 新しい [Slider](inputs/slider.md) コンポーネント。
 - 新しい [RangeSlider](inputs/slider.md) コンポーネント。
 - `Radio` コンポーネントの `required` プロパティのサポート。
 
 #### 変更
+
 - チェックボックス/スイッチの検証状態を修正しました。
 - `Calendar` の `value: Date | Date[]` プロパティを 2 つのプロパティに分割しました:  `value: Date` おとび `values: Date[]`。``
 - `Calendar` の `hasHeader`  プロパティと `has-header` 属性をそれぞれ `hideHeader` と `hide-header` に置き換えました。
@@ -1487,6 +1582,7 @@ defineComponents(IgcDropdownComponent);
 Ignite UI Web Components の初期リリース
 
 #### 追加
+
 - [Avatar](layouts/avatar.md) コンポーネント
 - [Badge](inputs/badge.md) コンポーネント
 - [Button](inputs/button.md) コンポーネント
@@ -1495,7 +1591,7 @@ Ignite UI Web Components の初期リリース
 - [Checkbox](inputs/checkbox.md) コンポーネント
 - Form コンポーネント
 - [Icon](layouts/icon.md) コンポーネント
-- [IconB utton](inputs/icon-button.md) コンポーネント
+- [Icon Button](inputs/icon-button.md) コンポーネント
 - [Input](inputs/input.md) コンポーネント
 - [List](grids/list.md) コンポーネント
 - [Navigation bar](menus/navbar.md) コンポーネント
@@ -1504,9 +1600,6 @@ Ignite UI Web Components の初期リリース
 - [Radio](inputs/radio.md) コンポーネント
 - [Ripple](inputs/ripple.md) コンポーネント
 - [Switch](inputs/switch.md) コンポーネント
-
-
-
 
 ## {PackageDockManager}
 
@@ -1518,17 +1611,20 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.14.3}**
 
 #### 修正
+
 - ドック マネージャーは、Vite ベースのビルドでエラーをスローします。
 - 空のルート分割ペインのエッジにドッキングするとエラーが発生します。
 
 ### **{PackageDockManagerVerChanges-1.14.2}**
 
 #### 修正
+
 - すばやくドラッグして、パネルをドック マネージャーの境界内に制限します。
 
 ### **{PackageDockManagerVerChanges-1.14.1}**
 
 #### 修正
+
 - 近接ドックの RTL チェック
 
 ### **{PackageDockManagerVerChanges-1.14.0}**
@@ -1540,30 +1636,37 @@ Ignite UI Web Components の初期リリース
 - `containedInBoundaries` プロパティを追加しました。
 
 #### 機能拡張
+
 - 要素の `contentId` を CSS パーツとして追加します。
 
 #### 修正
+
 - ペインを最大化してピン固定を解除すると、ペインがクリックできなくなります。
 - `DockManager` の `AllowInnerDock` が **false** に設定されている場合、`AcceptsInnerDock` が **true** に設定されているペインでは中央ドックが可能です。
 
 ### **{PackageDockManagerVerChanges-1.13.0}**
 
 #### 新機能
+
 - `FocusPane` メソッドを追加しました。
 - `AllowInnerDock` プロパティと `AcceptsInnerDock` プロパティを追加しました。
 
 #### 機能拡張
+
 - レイアウトでペインの最大化された状態を保存します。
 
 #### 修正
+
 - タブの選択順序は保持されません。
 
 #### **{PackageDockManagerVerChanges-1.12.5}**
 
 #### 新機能
+
 - `paneScroll` イベントを追加しました。
 
 #### 修正
+
 - ТabGroupPane: ピン固定されていない複数のペインのうち 1 つをピン固定すると、すべてのペインがピン固定されます。
 - RTL モードでコンテキスト メニューが正しく配置されません。
 - キーボードとドッキングすると、アクティブなペインは保持されません。
@@ -1571,19 +1674,23 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.12.4}**
 
 #### 修正
+
 - フローティング ペイン内に複数のタブ グループ ペインがある場合、アクティブ ペインが誤って設定されます。
 
 ### **{PackageDockManagerVerChanges-1.12.3}**
 
 #### 修正
+
 - 別のウィンドウにペインをドロップするとエラーが発生します。
 
 ### **{PackageDockManagerVerChanges-1.12.2}**
 
 #### 機能拡張
+
 - `tabs-more-menu-content` と `tabs-more-menu-item` CSS パーツを追加しました。
 
 #### 修正
+
 - RTL モードでは、ドッキング インジケーターの左/右矢印の位置が逆になります。
 - コンテキスト メニューが正しく配置されていません。
 - `addEventListener` および `removeEventListener` の不足しているオーバーロード。
@@ -1591,15 +1698,18 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.12.1}**
 
 #### 機能拡張
+
 - `splitterResizeStart` イベントと `splitterResizeEnd` イベントにペイン情報を含めます。
 - `DockManager` がクラスとしてエクスポートされるようになりました。
 
 #### 修正
+
 - `unpinnedHeaderId` を持つスロットのコンテンツは正しく更新されません。
 
 ### **{PackageDockManagerVerChanges-1.12.0}**
 
 #### 修正
+
 - `allowFloating: false` ではドッキングが機能しません。
 - アクティブなときにフライアウト ペインが閉じます。
 - フォーカス可能な要素はフォーカスを受け取りません。
@@ -1610,22 +1720,26 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.11.3}**
 
 #### 新機能
+
 - `contextMenuPosition` プロパティを追加しました。
 - `tab-header-close-button` CSS パーツに `selected` オプションを追加しました。
 
 ### **{PackageDockManagerVerChanges-1.11.2}**
 
 #### 新機能
+
 - `tab-header-close-button` CSS パーツに `hovered` オプションを追加しました。
 
 ### **{PackageDockManagerVerChanges-1.11.1}**
 
 #### 修正
+
 - `tab-header` の CSS パーツの修正。
 
 ### **{PackageDockManagerVerChanges-1.11.0}**
 
 #### 新機能
+
 - さまざまなボタンの `ShowHeaderIconOnHover` プロパティのオプションを追加しました。
 - スプリッター ハンドル CSS パーツに `horizontal` および `vertical` オプションを追加しました。
 - `header-title` の CSS パーツを追加しました。
@@ -1635,9 +1749,11 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.10.0}**
 
 #### 新機能
+
 - `ShowHeaderIconOnHover` プロパティを追加しました。
 
 #### 修正
+
 - アクティブなペインはフロート/ドック上で保持されません。
 - スプリッター スタイルは適用されません。
 - カスタマイズされたヘッダー ボタンの `click` イベントが機能しません。
@@ -1646,18 +1762,21 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.9.0}**
 
 #### 修正
+
 - スタイルは適用されません。
 - RTL モードでのサイズ変更。
 
 ### **{PackageDockManagerVerChanges-1.8.0}**
 
 #### 新機能
+
 - ドック マネージャーのボタンをカスタマイズします。
 - レイアウトが更新されたときに発生する `LayoutChange`  イベント。
 
 ### **{PackageDockManagerVerChanges-1.7.0}**
 
 #### 新機能
+
 - カスタマイズ可能なフローティング ペイン ヘッダー。
 - ペインごとの `Disabled` プロパティ。
 - `DocumentOnly` プロパティは、コンテンツ ペインをドキュメント ホスト内にのみドッキングできるようにします。
@@ -1665,34 +1784,41 @@ Ignite UI Web Components の初期リリース
 - ドック マネージャーの `DisableKeyboardNavigation` プロパティ。
 
 #### 修正
+
 - ドッキング インジケーターは、現在ドラッグされているフローティング ペイン上に表示されます。
 
 ### **{PackageDockManagerVerChanges-1.6.0}**
 
 #### 新機能
+
 - ドック マネージャーのペインとタブをカスタマイズします。
 
 #### 修正
+
 - フローティング ペインはページの外側にドラッグ可能です。
 
 ### **{PackageDockManagerVerChanges-1.5.0}**
 
 #### 新機能
+
 - ペインごとの `AllowMaximize` プロパティ。
 
 #### 修正
+
 - ピン固定されていないペインは、そのコンテンツをクリックすると自動的に閉じます。
 - 同じタブ グループにピン固定されていないペインがある場合、オーバーフロー メニューから選択されたペインはアクティブ化されません。
 
 ### **{PackageDockManagerVerChanges-1.4.1}**
 
 #### 修正
+
 - タブ グループ内に配置された `allowPinning: false` が指定されたペインはピン固定を解除できます。
 - キーボードを使用して最大化されたペインから移動するときに、最大化されたペインを正規化します。
 
 ### **{PackageDockManagerVerChanges-1.4.0}**
 
 #### 新機能
+
 - フローティング ペインを作成せずにタブを並べ替えます。
 - キーボードナビゲーション。
 - ペイ ンナビゲーター。
@@ -1700,6 +1826,7 @@ Ignite UI Web Components の初期リリース
 - フローティング ペインのサイズ変更のためのイベント。
 
 #### 修正
+
 - アクティブ化されたときにペインを選択します。
 - アクティブ化されると、ピン固定されていないペインがフライアウトされます。
 - ペイン内で外部ポップアップをホストするときにエラーが発生します。
@@ -1710,6 +1837,7 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.3.0}**
 
 #### 新機能
+
 - すべてのタブ ヘッダーを表示するのに十分なスペースがない場合は、その他のタブ メニューが表示されます。
 - `hidden` プロパティを使用して、レイアウトからペインを削除せずに非表示にします。
 - タブとピン固定されていないペインのヘッダー スロット プロパティ - `tabHeaderId` と `unpinnedHeaderId`。
@@ -1717,10 +1845,12 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.2.0}**
 
 #### 新機能
+
 - アクティブ ペイン。
 - ローカライズのサポート
 
 #### 修正
+
 - 最後のドキュメント ホスト タブをドラッグし、ピン固定されていないペインがある場合にエラーが発生します。
 - `allowFloating: false` でペインをドッキングすると、タブのコンテンツが消えます。
 - ドッキング インジケーターをすばやく切り替えるときに例外が発生します。
@@ -1728,6 +1858,7 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.1.0}**
 
 #### 新機能
+
 - ペインの最大化。
 - ドッキング プレビュー シャドウ。
 - ARIA のサポート。
@@ -1738,20 +1869,24 @@ Ignite UI Web Components の初期リリース
 ### **{PackageDockManagerVerChanges-1.0.3}**
 
 #### 機能拡張
+
 - キーボードを使用してスプリッターのサイズを変更します。
 
 ### **{PackageDockManagerVerChanges-1.0.2}**
 
 #### 修正
+
 - ペインは最小サイズに変更すると表示されなくなります。
 
 ### **{PackageDockManagerVerChanges-1.0.1}**
 
 #### 機能拡張
+
 - アクティブ カラーの CSS 変数を追加します。
 - コンテキスト メニューにキーボード サポートを追加します。
 
 #### 修正
+
 - コンテキスト メニューを開いたときに最初のクリックで選択が機能しません。
 - 兄弟タブをピン固定/ピン固定解除した後、単一のタブが正しく描画されません。
 
