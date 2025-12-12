@@ -142,7 +142,7 @@ The `LabelFormat` property can be used to customize the `LinearProgress` default
 
 The following sample demonstrates the above configuration:
 
-`sample="/inputs/linear-progress-indicator/striped", height="200", alt="{Platform} Linear Progress Text Example"`
+`sample="/inputs/linear-progress-indicator/striped", height="250", alt="{Platform} Linear Progress Text Example"`
 
 
 
