@@ -99,7 +99,7 @@ If the `Vertical` attribute is set the direction of the divider would be changed
 ```
 
 ```razor
-<igrDivider Vertical></igrDivider>
+<IgbDivider vertical></IgbDivider>
 ```
 
 `sample="/layouts/divider/vertical", height="330", alt="{Platform} Divider Vertical Example"`
