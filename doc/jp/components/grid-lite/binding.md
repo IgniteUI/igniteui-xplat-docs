@@ -1,6 +1,6 @@
 ---
 title: {Platform} {GridLiteTitle} データ バインディング - {ProductName} | MIT ライセンス
-_description: {GridLiteTitle} のデータ バインディング。オープンソースの {Platform} {GridLiteTitle} を使用してアプリを作成できます。軽量でありながら、必要な機能がすべて揃っています。今すぐお試しください。
+_description: {GridLiteTitle} のデータ バインディング。オープン ソースの {Platform} {GridLiteTitle} を使用してアプリを作成できます。軽量でありながら、必要な機能がすべて揃っています。今すぐお試しください。
 _keywords: data binding, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データ バインディング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
