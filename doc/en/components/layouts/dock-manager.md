@@ -473,7 +473,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### Docking
 
-When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
+When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking. Edge docking is available as an additional behavior when root docking is disabled and works along the orientation of the root split pane.
 
 #### Root Docking
 
@@ -495,9 +495,26 @@ If the dragged pane is over a document host, then additional docking indicators 
 
 #### Splitter Docking
 
-While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
+Splitter docking lets your end-users place panes with precision inside an existing split layout. While dragging a floating pane, if the cursor moves close to any splitter between two panes, a docking indicator will appear over that splitter.
+
+When the user drops the pane over this indicator, the dock manager inserts the pane into the split pane that owns the targeted splitter, adjusting the neighboring panes to make room. This makes it easy to refine complex layouts by inserting new tools or views exactly between two existing panes, without having to restructure the entire layout.
+
+If your scenario requires a simpler experience without this level of precision, splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
 
 <img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking"/>
+
+#### Edge Docking
+
+Edge docking gives your end-users a simple way to add important panes at the very beginning or at the very end of their main layout, without having to carefully target a specific splitter or pane. Once root docking is disabled by setting the `allowRootDock` property to **false**, the dock manager automatically enables edge docking indicators along the first and last positions of the root split pane. Since the root split pane is either horizontal or vertical, edge docking is available only in that single direction (left/right for a horizontal root or top/bottom for a vertical root).
+
+This behavior is especially useful when the root pane is scrollable (when its `useFixedSize` property is set to **true** and the content extends beyond the visible area). In these scenarios, users can:
+
+- For a **horizontal** root split pane, drag any pane towards the **left** edge to dock it as the first item, or towards the **right** edge to dock it as the last item.
+- For a **vertical** root split pane, drag any pane towards the **top** edge to dock it as the first item, or towards the **bottom** edge to dock it as the last item.
+
+When the user drops the pane over the edge docking indicator, the dock manager inserts the pane at the chosen edge and automatically scrolls it into view. This ensures that newly added tool windows or dashboards are immediately visible, even in complex, scrollable layouts.
+
+<img class="responsive-img" src="../../images/dockmanager-edge-docking.jpg" alt="dockmanager-edge-docking"/>
 
 ### Update Layout
 
