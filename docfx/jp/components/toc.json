@@ -28,7 +28,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "オープンソース vs プレミアム",
+    "name": "オープン ソース vs プレミアム",
     "href": "general-open-source-vs-premium.md",
     "status": "NEW"
   },
@@ -60,6 +60,12 @@
         "name": ".NET MAUI Blazor のアプリケーション",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+
+        "name": "オープン ソース ライブラリ",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },

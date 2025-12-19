@@ -18,6 +18,25 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|33808|IgbDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
+|34255|IgbDataChart|0.00001 scale tick marks are displayed overlapping each other|
+|38510|IgbDataChart|AssigningCategoryStyle event support for Stacked Series|
+|41050|IgbDataChart|Axis is not being populated in IgbAxisMouseEventArgs|
+
+### Enhancements
+
+#### Charts
+
+- Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
+
+- Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
+
+## **{PackageVerChanges-25-2-NOV}**
+
 **Breaking Changes**
 
 As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
