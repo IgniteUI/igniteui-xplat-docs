@@ -99,6 +99,26 @@ Try it in the example below:
 
 `sample="/layouts/dock-manager/contained-in-boundaries", height="600", alt="{Platform} Dock Manager Contained in Boundaries Example"`
 
+## Highlight Resizing Panes
+
+When users resize panes by dragging a splitter, it is not always obvious which panes are affected, especially in more complex layouts. To make this interaction clearer, the Dock Manager can draw a border around the panes that are currently being resized. This visual cue helps users immediately understand which parts of the layout will grow or shrink as they move the splitter.
+
+You can enable and style this behavior by configuring the following CSS custom properties on the Dock Manager host element (or a parent element):
+
+- `--igc-resize-target-border-color` – controls the color of the resize target border.
+- `--igc-resize-target-border-width` – controls the thickness of the border (for example, `2px`).
+- `--igc-resize-target-border-style` – controls the border style (for example, `solid`, `dashed`).
+
+```css
+igc-dockmanager {
+    --igc-resize-target-border-color: #0078d4;
+    --igc-resize-target-border-width: 2px;
+    --igc-resize-target-border-style: solid;
+}
+```
+
+Once these variables are set, any pane that is impacted by a splitter drag will be wrapped with the configured border for the duration of the resize operation, giving users clear, immediate feedback about which panes are being adjusted.
+
 ## Split Panes Fixed Size Mode
 
 By default, each pane in a split layout receives a relative size compared to its siblings and that size defaults to 100. For example, if you have two sibling panes where the first pane has its size set to 400 and the second one to 200, the first will be twice the size of the second and together they will fill all the available space.
