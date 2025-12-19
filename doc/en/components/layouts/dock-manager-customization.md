@@ -121,9 +121,16 @@ Once these variables are set, any pane that is impacted by a splitter drag will 
 
 ## Split Panes Fixed Size Mode
 
-By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 400 and the second one - to 200, the first will be twice the size of the second one and these two panes would fill up all the available space.
+By default, each pane in a split layout receives a relative size compared to its siblings and that size defaults to 100. For example, if you have two sibling panes where the first pane has its size set to 400 and the second one to 200, the first will be twice the size of the second and together they will fill all the available space.
 
-If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane. When this property is set to **true** all children are sized in pixels, based on their `size` property. With that modification, the first pane will span across 400 pixels and the second one - 200 pixels. Further resizing via the splitter would change only the size of the current content pane without affecting the sizes of its siblings. Once the sum of the child panes' sizes exceeds their parent's size, a scrollbar will appear making the parent split pane scrollable.
+If, for certain panes, you want explicit pixel-based sizing instead of relative sizing, you can turn on fixed size mode by setting the `useFixedSize` property of the parent split pane to **true**. When this property is enabled, all children are sized in pixels based on their `size` property. In the previous example, the first pane will span 400 pixels and the second pane 200 pixels. Resizing via the splitter changes only the size of the pane you are interacting with, without redistributing space across its siblings.
+
+As soon as the sum of the child panes' sizes exceeds the available size of the parent, the split pane becomes scrollable. The dock manager now also provides built-in autoscrolling to keep the user focused on their content:
+
+- When users **drag panes toward the edges** of a fixed-size root pane, the container scrolls in the direction of the drag so they can easily reach off-screen areas.
+- When users **resize panes via the splitter**, the container scrolls as needed to reveal newly expanded content.
+
+For a **horizontal** split pane, autoscrolling happens to the **left** or **right**; for a **vertical** split pane, it happens to the **top** or **bottom**, depending on the direction of the drag or resize.
 
 
 ```ts
