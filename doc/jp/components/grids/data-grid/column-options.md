@@ -102,7 +102,7 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 
 ## API リファレンス
 
- - `HeaderClickAction`
- - `IsColumnOptionsEnabled`
- - `IsFilteringEnabled`
- - `SortByOneColumnOnly`
+- `HeaderClickAction`
+- `IsColumnOptionsEnabled`
+- `IsFilteringEnabled`
+- `SortByOneColumnOnly`

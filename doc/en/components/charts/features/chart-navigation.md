@@ -2,6 +2,7 @@
 title: {Platform} Data Chart | Data Visualization Tools | Navigation | Infragistics
 _description: Navigate Infragistics' {Platform} charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about {ProductName} graph navigation capabilities!
 _keywords: {Platform} charts, data chart, navigation, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -61,8 +62,6 @@ These can be configured to the following options
 The following example demonstrates enabling scrollbars.
 
 `sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} Navigation Example"`
-
-
 
 <div class="divider--half"></div>
 

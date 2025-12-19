@@ -326,8 +326,8 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 
 ## API References
 
- - `CellBatch`
- - `EditModeClickAction`
- - `EditMode`
- - `SingleClick`
- - `TransactionType`
+- `CellBatch`
+- `EditModeClickAction`
+- `EditMode`
+- `SingleClick`
+- `TransactionType`

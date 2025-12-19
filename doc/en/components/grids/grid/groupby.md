@@ -2,6 +2,7 @@
 title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
+_license: commercial
 mentionedTypes: ["Grid", "RowDirective", "GroupByRowSelectorTemplateDetails"]
 namespace: Infragistics.Controls
 ---
@@ -243,7 +244,7 @@ groupRow.expanded = false;
 }
 ```
 
-Groups can be created expanded (***default***) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
+Groups can be created expanded (**default**) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
 
 ### Select/Deselect All Rows in a Group API
 
@@ -440,16 +441,16 @@ Integration between Group By and Summaries is described in the [Summaries](summa
 The grouping UI supports the following keyboard interactions:
 
 - For group rows (focus should be on the row or the expand/collapse cell)
-   - <kbd>ALT</kbd> + <kbd>RIGHT</kbd> - Expands the group
-   - <kbd>ALT</kbd> + <kbd>LEFT</kbd> - Collapses the group
-   - <kbd>SPACE</kbd> - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
+  - <kbd>ALT</kbd> + <kbd>RIGHT</kbd> - Expands the group
+  - <kbd>ALT</kbd> + <kbd>LEFT</kbd> - Collapses the group
+  - <kbd>SPACE</kbd> - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
 
 - For group `Chip` components in the group by area (focus should be on the chip)
-   - <kbd>SHIFT</kbd> + <kbd>LEFT</kbd> - moves the focused chip left, changing the grouping order, if possible
-   - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
-   - <kbd>SPACE</kbd> - changes the sorting direction
-   - <kbd>DELETE</kbd> - ungroups the field
-   - The separate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
+  - <kbd>SHIFT</kbd> + <kbd>LEFT</kbd> - moves the focused chip left, changing the grouping order, if possible
+  - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
+  - <kbd>SPACE</kbd> - changes the sorting direction
+  - <kbd>DELETE</kbd> - ungroups the field
+  - The separate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
 
 <!-- WebComponents, Angular, React -->
 
@@ -631,6 +632,7 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
+
 After a custom palette has been generated, the `color` function can be used to obtain different varieties of the primary and the secondary colors.
 
 ```scss
@@ -653,9 +655,12 @@ $custom-chips-theme: chip-theme(
     $hover-text-color:contrast-color($custom-palette, "primary", 600)
 );
 ```
+
 ### Defining Custom Schemas
+
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     group-row-background: (-color:('secondary', 100)),
@@ -669,7 +674,9 @@ $custom-grid-schema: extend($_light-grid,(
     expand-icon-hover-color: (-color:('primary', 400))
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     -grid: $custom-grid-schema
@@ -684,6 +691,7 @@ $custom-theme: grid-theme(
 ### Applying the Custom Theme
 
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
+
 ```scss
 @include grid($custom-theme);
 @include chip($custom-chips-theme);
@@ -698,7 +706,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  > [!Note]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {
@@ -730,26 +738,26 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## API References
 
-* `Grid`
-* `GroupByRecord`
-* `ISortingExpression`
-* `Column`
-* `IGroupByExpandState`
-* `Chip`
+- `Grid`
+- `GroupByRecord`
+- `ISortingExpression`
+- `Column`
+- `IGroupByExpandState`
+- `Chip`
 
 ## Additional Resources
 
-* [Grid overview](../data-grid.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Summaries](summaries.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Grid overview](../data-grid.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Column Moving](column-moving.md)
+- [Summaries](summaries.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

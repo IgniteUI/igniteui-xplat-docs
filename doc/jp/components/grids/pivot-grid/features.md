@@ -2,6 +2,7 @@
 title: {Platform} {PivotGridTitle} 機能 | ピボット テーブル | インフラジスティックス
 _description: {ProductName} を使用して、高速で応答性の高い {Platform} {PivotGridTitle} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 namespace: Infragistics.Controls
 _language: ja
@@ -243,12 +244,12 @@ const igrPivotDimension2: IgrPivotDimension = {
 
 ## API リファレンス
 
-* `PivotGrid`
-* `PivotDataSelector`
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

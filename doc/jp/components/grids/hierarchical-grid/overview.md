@@ -2,6 +2,7 @@
 title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
 _description: {ProductName} 階層グリッドは、階層データを簡単に表示および操作するために使用されます。最小限のコードでデータをすばやくバインドできます。無料でお試しください。
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["HierarchicalGridBaseDirective"]
 namespace: Infragistics.Controls
 _language: ja
@@ -81,6 +82,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -120,7 +122,7 @@ export class AppModule {}
 
 ### データ バインディング
 
-*{HierarchicalGridSelector}* は、{GridSelector} から派生し、ほとんどの機能を共有します。主要な違いは階層で複数レベルを定義できることです。*{RowIslandSelector}* と呼ばれる *{HierarchicalGridSelector}* の定義内の個別のタグで設定されます。*{RowIslandSelector}* コンポーネントは、特定レベルの各子グリッドの設定を定義します。レベルごとの複数行アイランドがサポートされます。
+**{HierarchicalGridSelector}** は、{GridSelector} から派生し、ほとんどの機能を共有します。主要な違いは階層で複数レベルを定義できることです。**{RowIslandSelector}** と呼ばれる **{HierarchicalGridSelector}** の定義内の個別のタグで設定されます。**{RowIslandSelector}** コンポーネントは、特定レベルの各子グリッドの設定を定義します。レベルごとの複数行アイランドがサポートされます。
 階層グリッドで 2 通りのデータ バインドがサポートされます。
 
 ### 階層データの使用
@@ -157,6 +159,7 @@ export const singers = [{
     }]
 }];
 ```
+
 ```razor
 public class SingersData : List<SingersDataItem>
 {
@@ -199,7 +202,7 @@ public class SingersData : List<SingersDataItem>
     }
 }
 ```
-各 *{RowIslandSelector}* は、子データを保持するプロパティのキーを指定します。
+各 **{RowIslandSelector}** は、子データを保持するプロパティのキーを指定します。
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="singers" [autoGenerate]="true">
@@ -838,6 +841,7 @@ $custom-theme: grid-theme(
     --header-text-color: #FFF;
 }
 ```
+
 ### サンプル
 `sample="/{HierarchicalGridSample}/hierarchical-grid-styling", height="700", alt="{Platform} Hierarchical Grid スタイル設定の例"`
 
@@ -851,27 +855,27 @@ $custom-theme: grid-theme(
 
 ## API リファレンス
 
-* `HierarchicalGrid`
-* `RowIsland`
-* `Grid`
-* `Column`
-* `Cell`
+- `HierarchicalGrid`
+- `RowIsland`
+- `Grid`
+- `Column`
+- `Cell`
 
 <!-- TODO: uncomment when all of the topics are ready -->
 <!-- ## その他のリソース
 
-* [グリッドのサイズ設定](sizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md) -->
+- [グリッドのサイズ設定](sizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

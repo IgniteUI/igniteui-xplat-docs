@@ -2,6 +2,7 @@
 title: {Platform} Icon Component | {ProductName}
 _description: See how you can easily get started with {Platform} Icon Component. Choose icons and select from different styling options to customize them further.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls
+_license: MIT
 mentionedTypes: ["Icon"]
 ---
 
@@ -31,7 +32,7 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -266,11 +267,11 @@ igc-icon {
 
 ## API References
 
- - `Icon`
- - `RegisterIcon`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `RegisterIcon`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

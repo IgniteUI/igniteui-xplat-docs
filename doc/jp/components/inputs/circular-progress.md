@@ -2,6 +2,7 @@
 title: {Platform} Circular Progress | Circular Progress | インフラジスティックス
 _description: Circular Progress Indicator コンポーネントを使用すると、開発者は無限のカスタマイズ オプションを使用して進行状況を円で表示できます。
 _keywords: {Platform} Circular Progress, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["CircularProgress", "CircularGradient"]
 namespace: Infragistics.Controls
 _language: ja
@@ -225,14 +226,14 @@ igc-circular-progress::part(track) {
 
 ## API リファレンス
 
- - `Button`
- - `Calendar`
- - `CircularGradient`
- - `CircularProgress`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `CircularGradient`
+- `CircularProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

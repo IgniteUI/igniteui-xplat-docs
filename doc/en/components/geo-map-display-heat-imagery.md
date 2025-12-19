@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to display heat map imagery. Check out {ProductName} map demos!
 _keywords: {Platform} map, heat map imagery, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "ShapefileConverter", "HeatTileGenerator", "GeographicTileSeries"]
 ---
 # {Platform} Displaying Heat Imagery
@@ -343,14 +344,14 @@ public onDataLoaded(csvData: string) {
 
 ## API References
 
- - `GeographicTileSeries`
- - `HeatTileGenerator`
- - `MaximumColor`
- - `MinimumColor`
- - `ShapefileRecord`
- - `ShapefileConverter`
- - `TileGeneratorMapImagery`
- - `TileGenerator`
- - `TileImagery`
- - `UseBlurRadiusAdjustedForZoom`
- - `UseLogarithmicScale`
+- `GeographicTileSeries`
+- `HeatTileGenerator`
+- `MaximumColor`
+- `MinimumColor`
+- `ShapefileRecord`
+- `ShapefileConverter`
+- `TileGeneratorMapImagery`
+- `TileGenerator`
+- `TileImagery`
+- `UseBlurRadiusAdjustedForZoom`
+- `UseLogarithmicScale`

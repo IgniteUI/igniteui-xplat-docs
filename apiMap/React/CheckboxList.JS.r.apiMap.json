@@ -23,6 +23,8 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
       {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "React", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},

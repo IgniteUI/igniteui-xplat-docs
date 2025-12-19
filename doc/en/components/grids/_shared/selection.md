@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Selection - {ProductName}
 _description: See how easy it is to select data in {ProductName} grid using variety of events, rich API or with simple mouse interactions like single select.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

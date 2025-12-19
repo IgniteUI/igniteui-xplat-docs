@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 選択 - {ProductName}
 _description: {ProductName} グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -15,20 +16,22 @@ _language: ja
 
 - 行の選択
 - セルの選択
-- 列の選択 
+- 列の選択
 
 `RowSelection` プロパティを使用すると、以下を指定できます。
 
 - None (なし)
-- Single (単一)  
-- Multiple Select (複数選択) 
+- Single (単一)
+- Multiple Select (複数選択)
 
 ## {Platform} {ComponentTitle} 選択の例
 
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。
 
 <!-- Angular -->
+
 スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
+
 <!-- end: Angular -->
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
@@ -51,7 +54,7 @@ _language: ja
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-- `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
+- `MultipleCascade` - これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -262,7 +265,7 @@ public copySelectedCells(event) {
         this.copyData(selectedData);
         const selectedDataArea = document.getElementById('selectedArea');
         selectedDataArea.innerText = JSON.stringify(selectedData);
-        
+
         this.toggleContextMenu();
     }
 

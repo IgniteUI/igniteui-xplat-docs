@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Live Data updates - {ProductName}
 _description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid"]
 namespace: Infragistics.Controls
 ---
@@ -164,7 +165,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
 
 ### Start the hub connection
 
-The signal-r.service handles the connectivity and updates of the exposed manageable parameters *frequency*, *volume* and *live-update state toggle* (Start/Stop).
+The signal-r.service handles the connectivity and updates of the exposed manageable parameters **frequency**, **volume** and **live-update state toggle** (Start/Stop).
 
 ```ts
 this.hubConnection = new signalR.HubConnectionBuilder()
@@ -185,7 +186,7 @@ Based on the specified frequency a total of 30 new updates will be received by t
 
 ### Update frequency and data volume
 
-By using the Action panel on the left, you can manage the frequency of the data feed and the volume of the requested data. All grids use the same data source. Feel free to use the other action elements to *stop the data feed*, change the *application theme* or add *dynamically a DockSlot container* with a igxGrid.
+By using the Action panel on the left, you can manage the frequency of the data feed and the volume of the requested data. All grids use the same data source. Feel free to use the other action elements to **stop the data feed**, change the **application theme** or add **dynamically a DockSlot container** with a igxGrid.
 
 We use the `updateParameters` method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
 
@@ -208,24 +209,25 @@ Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent 
 
 
 ## API References
-* `{ComponentName}`
+
+- `{ComponentName}`
 
 ## Additional Resources
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 
 

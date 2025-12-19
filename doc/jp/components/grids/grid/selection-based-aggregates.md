@@ -2,6 +2,7 @@
 title: {Platform} Grid の選択ベースのデータ集計 - {ProductName}
 _description: Ignite UI を使用して選択したデータをグリッドに集計する方法を説明します。次のプロジェクトのために仮想化データと豊富な API でコンテンツを即時に集計します。
 _keywords: Data aggregation, selection, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics {Platform}, infragistics, データ集計, 選択, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 ---
@@ -52,23 +53,23 @@ const dates = data.filter(rec => isDate(rec));
 
 ## API リファレンス
 
-* `GridComponent`
-* `Cell`
+- `GridComponent`
+- `Cell`
 
 ## その他のリソース
 <div class="divider--half"></div>
 
-* [Grid の概要](../data-grid.md)
-* [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
-* [行の選択](row-selection.md)
-* [セルの選択](cell-selection.md)
-* [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
-* [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
-* [集計](summaries.md)
-* [ページング](paging.md)
+- [Grid の概要](../data-grid.md)
+- [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
+- [行の選択](row-selection.md)
+- [セルの選択](cell-selection.md)
+- [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
+- [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
+- [集計](summaries.md)
+- [ページング](paging.md)
 
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

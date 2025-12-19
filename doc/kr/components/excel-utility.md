@@ -2,6 +2,7 @@
 title: {Platform} Excel Utility | Data Spreadsheet | Infragistics
 _description: Use the Excel Utility to load and save Microsoft Excel files using Excel Library.
 _keywords: Excel Utility, Excel library, {ProductName}, Infragistics
+_license: commercial
 _language: kr
 mentionedTypes: ["Workbook", "WorkbookFormat", "WorkbookSaveOptions"]
 ---
@@ -129,7 +130,6 @@ IgrExcelModule.register();
 IgrExcelXlsxModule.register();
 
 export class ExcelUtility {
-    public static getExtension(format: WorkbookFormat) {
         switch (format) {
             case WorkbookFormat.StrictOpenXml:
             case WorkbookFormat.Excel2007:

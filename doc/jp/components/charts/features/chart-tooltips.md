@@ -2,6 +2,7 @@
 title: {Platform} チャート ツールチップ | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート ツールチップ
 _keywords: {Platform} Charts, Tooltips, Infragistics, {Platform} チャート, ツールチップ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "ToolTipType"]
 namespace: Infragistics.Controls.Charts
 _language: ja

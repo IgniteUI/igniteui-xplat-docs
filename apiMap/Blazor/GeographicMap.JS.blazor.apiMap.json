@@ -91,7 +91,6 @@
     "names":[{"platform": "Blazor","fileName": "GeographicMapImagery.cs","mappedName": "IgbGeographicMapImagery"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearTileCache"}], "originalName": "ClearTileCache"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbGeographicMap","mappedName": "GeographicMap"}], "originalName": "GeographicMap"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsHorizontalWrappingEnabled"}], "originalName": "IsHorizontalWrappingEnabled"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Opacity"}], "originalName": "Opacity"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Referer"}], "originalName": "Referer"},

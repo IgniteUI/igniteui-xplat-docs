@@ -70,7 +70,7 @@ public connectedCallback() {
     GroupHeaderDisplayMode="GroupHeaderDisplayMode.Split" />
 ```
 
-## Collapsable Groups
+## Collapsible Groups
 
 Also, the `Grid` can display a toggle on each group section to allow the end user to expand or collapse the grouped data via the `IsGroupCollapsable` property.
 
@@ -195,8 +195,8 @@ public connectedCallback() {
 
 ## API References
 
- - `Grid`
- - `GroupDescriptions`
- - `GroupHeaderDisplayMode`
- - `IsGroupByAreaVisible`
- - `IsGroupCollapsable`
+- `Grid`
+- `GroupDescriptions`
+- `GroupHeaderDisplayMode`
+- `IsGroupByAreaVisible`
+- `IsGroupCollapsable`

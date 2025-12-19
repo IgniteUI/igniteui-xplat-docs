@@ -2,6 +2,7 @@
 title: {Platform} Bubble Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Bubble Chart
 _keywords: {Platform} Charts, Bubble Chart, Infragistics
+_license: commercial
 mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries", "MarkerType"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -24,8 +25,6 @@ You can create {ProductName} Bubble Chart in `XamDataChart` control using the `B
 You can bind your data to `ItemsSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
 
 `sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="{Platform} Bubble Chart with Single Series"`
-
-
 
 <div class="divider--half"></div>
 

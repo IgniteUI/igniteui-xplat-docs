@@ -3,6 +3,7 @@ title: {Platform} Text Area | Data Visualization Tools | Infragistics
 _description: Infragistics' {Platform} Text Area is a component where the user can enter a sizable amount of free-form text.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls
 mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
+_license: MIT
 ---
 # {Platform} Text Area Overview
 
@@ -14,7 +15,7 @@ The {ProductName} Text Area represents a multi-line plain-text editing control, 
 
 <!-- React, WebComponents, Blazor -->
 
-`sample="/inputs/textarea/overview", height="120", alt="{Platform} Text Area Example"`
+`sample="/inputs/textarea/overview", height="150", alt="{Platform} Text Area Example"`
 
 <!-- end:React, WebComponents, Blazor -->
 
@@ -46,7 +47,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcTextareaComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -83,13 +84,13 @@ After we import the `Textarea` component we are ready to start using it, so let'
 
 With `prefix` and `suffix` slots we can add different content before and after the main content of the Text Area. The `helper-text` slot provides a hint placed below the Text Area. In the following sample we will create a new Text Area field with a text prefix, an icon suffix and a helper text as a hint:
 
-`sample="/inputs/textarea/slots", height="120", alt="{Platform} Textarea Prefix & Suffix Example"`
+`sample="/inputs/textarea/slots", height="160", alt="{Platform} Textarea Prefix & Suffix Example"`
 
 ## Text Area Resizing
 
 There are three different resize options of the `Textarea`. When set to `none`, the text area does not resize and uses a scroll bar to show overflow text. When set to `vertical` (the default option), the text area lets the user resize it vertically. When set to `auto`, the text area shows all the user input at once. Overflow text wraps onto a new line and expands the text area automatically.
 
-`sample="/inputs/textarea/resize", height="320", alt="{Platform} Textarea Resizing Example"`
+`sample="/inputs/textarea/resize", height="450", alt="{Platform} Textarea Resizing Example"`
 
 <!-- WebComponents -->
 
@@ -134,18 +135,18 @@ igc-textarea::part(suffix) {
 }
 ```
 
-`sample="/inputs/textarea/styling", height="150", alt="{Platform} Text Area Styling"`
+`sample="/inputs/textarea/styling", height="160", alt="{Platform} Text Area Styling"`
 
 <div class="divider"></div>
 
 ## API References
 
- - `Icon`
- - `Textarea`
- - `Toast`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Textarea`
+- `Toast`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

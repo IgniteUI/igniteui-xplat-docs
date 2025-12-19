@@ -223,4 +223,4 @@ public initData() {
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

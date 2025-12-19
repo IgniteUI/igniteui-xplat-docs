@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet | Activation | Infragistics
 _description: Learn how to use the activation feature of the  {Platform} spreadsheet control which is split between the cells, panes and worksheets. Check out the {ProductName} spreadsheet demos!
 _keywords: Excel Spreadsheet, activation, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Spreadsheet"]
 
 ---
@@ -38,9 +39,9 @@ this.spreadsheet.activeCell = new SpreadsheetCell("C5");
 
 ## API References
 
- - `ActiveCell`
- - `ActivePane`
- - `ActiveWorksheet`
- - `SpreadsheetCell`
- - `Spreadsheet`
- - `Workbook`
+- `ActiveCell`
+- `ActivePane`
+- `ActiveWorksheet`
+- `SpreadsheetCell`
+- `Spreadsheet`
+- `Workbook`

@@ -2,6 +2,7 @@
 title: {Platform} NavDrawer | Infragistics
 _description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
 _keywords: {Platform} navbar, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["NavDrawer"]
 ---
 
@@ -73,7 +74,7 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 defineComponents(IgcNavDrawerComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Adding Navigation Drawer Items
 
@@ -468,17 +469,17 @@ igc-nav-drawer-header-item {
 
 ## API References
 
- - `Button`
- - `Icon`
- - `NavDrawerHeaderItem`
- - `NavDrawerItem`
- - `NavDrawer`
- - `Navbar`
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Icon`
+- `NavDrawerHeaderItem`
+- `NavDrawerItem`
+- `NavDrawer`
+- `Navbar`
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

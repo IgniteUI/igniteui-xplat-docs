@@ -91,14 +91,14 @@ The Form component exposes the following methods:
 
 ## API References
 
-* `Form`
+- `Form`
 - `Button`
 - `Checkbox`
-* `Input`
-* `Radio`
-* `Switch`
+- `Input`
+- `Radio`
+- `Switch`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

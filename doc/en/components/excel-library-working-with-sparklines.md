@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Working with Sparklines | Infragistics
 _description: Use sparkline charts in Infragistics' {Platform} excel library to visual data trends across a region of cells in your worksheet. View {ProductName} excel engine tutorials!
 _keywords: Excel library, sparkline chart, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook"]
 ---
 # {Platform} Working with Sparklines
@@ -20,9 +21,9 @@ The Infragistics {Platform} Excel Library has support for adding sparklines to a
 ## Supported Sparklines
 The following is a list of the supported predefined sparkline types.
 
--  Line
--  Column
--  Stacked (Win/Loss)
+- Line
+- Column
+- Stacked (Win/Loss)
 
 The following code demonstrates how to programmatically add Sparklines to a Worksheet via the sparklineGroups collection:
 
@@ -46,4 +47,4 @@ sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A1
 
 ## API References
 
- - `Workbook`
+- `Workbook`

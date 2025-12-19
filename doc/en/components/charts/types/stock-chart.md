@@ -2,6 +2,7 @@
 title: {Platform} Stock/Financial Charts | {ProductName}
 _description: The {ProductName} Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: {Platform} Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", "Series", "FinancialChartType"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -49,7 +50,7 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 - Trend Lines
 - Navigation / Zoombar View
 
-### Stock Chart Data Structure:
+### Stock Chart Data Structure
 
 - The data source must be an array or a list of data items.
 - The data source must contain at least one data item.

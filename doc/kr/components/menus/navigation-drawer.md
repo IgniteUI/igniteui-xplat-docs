@@ -210,16 +210,16 @@ igc-nav-drawer-header-item {
 
 ## API References
 
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
+- `NavDrawer`
+- `NavDrawerItem`
+- `NavDrawerHeaderItem`
+- `Icon`
+- `Button`
+- `Radio`
+- `RadioGroup`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

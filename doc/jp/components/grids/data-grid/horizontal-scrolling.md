@@ -38,6 +38,7 @@ _language: ja
     defaultColumnMinWidth={300}
     dataSource={this.data}/>
 ```
+
 ```html
  <igc-data-grid id="grid"
       height="100%"
@@ -104,4 +105,4 @@ _language: ja
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

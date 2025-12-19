@@ -196,8 +196,8 @@ public connectedCallback() {
 
 ## API リファレンス
 
- - `Grid`
- - `GroupDescriptions`
- - `GroupHeaderDisplayMode`
- - `IsGroupByAreaVisible`
- - `IsGroupCollapsable`
+- `Grid`
+- `GroupDescriptions`
+- `GroupHeaderDisplayMode`
+- `IsGroupByAreaVisible`
+- `IsGroupCollapsable`

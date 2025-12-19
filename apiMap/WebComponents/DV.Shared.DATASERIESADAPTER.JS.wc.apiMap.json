@@ -284,6 +284,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "StepLine"}], "originalName": "StepLine"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "TrendLineLayer"}], "originalName": "TrendLineLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "Unknown"}], "originalName": "Unknown"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "UserAnnotationToolTipLayer"}], "originalName": "UserAnnotationToolTipLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "ValueLayer"}], "originalName": "ValueLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "ValueOverlay"}], "originalName": "ValueOverlay"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "Waterfall"}], "originalName": "Waterfall"} ]

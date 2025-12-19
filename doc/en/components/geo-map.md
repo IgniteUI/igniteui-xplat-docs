@@ -2,13 +2,14 @@
 title: {Platform} Map | Data Visualization Tools | Map Overview | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the {ProductName} map demos!
 _keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series"]
 ---
 # {Platform} Map Overview
 
 The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# {Platform} Map Example
+## {Platform} Map Example
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
@@ -63,7 +64,7 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
     imports: [
         // ...
         IgxGeographicMapModule,
-		IgxDataChartInteractivityModule
+        IgxDataChartInteractivityModule
         // ...
     ]
 })

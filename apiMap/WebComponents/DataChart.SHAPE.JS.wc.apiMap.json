@@ -130,6 +130,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualMarkerBrush"}], "originalName": "ActualMarkerBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualMarkerOutline"}], "originalName": "ActualMarkerOutline"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgDataTemplate","mappedName": "actualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasMarkers"}], "originalName": "HasMarkers"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasVisibleMarkers"}], "originalName": "HasVisibleMarkers"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"},

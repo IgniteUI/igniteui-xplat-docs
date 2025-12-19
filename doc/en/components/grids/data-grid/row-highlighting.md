@@ -64,5 +64,5 @@ The following demonstrates how to enable row highlighting on the {Platform} data
 
 ## API References
 
- - `IsRowHoverEnabled`
- - `RowHoverBackground`
+- `IsRowHoverEnabled`
+- `RowHoverBackground`

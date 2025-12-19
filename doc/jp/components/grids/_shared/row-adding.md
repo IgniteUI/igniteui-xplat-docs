@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 行の追加 - {ProductName}
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -289,7 +290,7 @@ export class AppModule {}
     <IgbActionStrip>
         <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
     </IgbActionStrip>
-    
+
     <IgbRowIsland AutoGenerate="false" Key="Albums" PrimaryKey="USBillboard200" RowEditable="true">
         <IgbColumn Field="Album" Header="Album" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="LaunchDate" Header="Launch Date" DataType="GridColumnDataType.Date"></IgbColumn>
@@ -362,7 +363,7 @@ export class AppModule {}
            <IgrActionStrip>
                 <IgrGridEditingActions addRow={true}>
                 </IgrGridEditingActions>
-            </IgrActionStrip>                  
+            </IgrActionStrip>
        <IgrColumn field="Tour" header="Tour" dataType="string" resizable={true}>
        </IgrColumn>
        <IgrColumn field="StartedOn" header="Started on" dataType="string" resizable={true}>
@@ -540,7 +541,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
-	    Adding Row
+        Adding Row
     </ng-template>
 </{ComponentSelector}>
 ```
@@ -567,7 +568,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         </>
     );
 }
-```            
+```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
@@ -596,8 +597,8 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
 
 ```html
 <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -610,13 +611,13 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
 
 行編集オーバーレイのボタンをカスタマイズするには、`RowEditActions` テンプレートを使用します。
 
-<!-- 
+<!--
 REQUIRES FIX!
 ```ts
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
         <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```
@@ -666,22 +667,22 @@ igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
 
 ## API リファレンス
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `RowEditCancel`
-* `EndEdit`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `RowEditCancel`
+- `EndEdit`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## その他のリソース
 
 
-* [{ComponentTitle} 編集](editing.md)
+- [{ComponentTitle} 編集](editing.md)
 <!-- * [{ComponentTitle} トランザクション](batch-editing.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -210,6 +210,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-color-editor-component.ts","dynamicModuleName": "igc-tool-action-color-editor-dynamic-module.ts","moduleName": "igc-tool-action-color-editor-module.ts","mappedName": "IgcToolActionColorEditorComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -221,6 +222,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-combo-component.ts","dynamicModuleName": "igc-tool-action-combo-dynamic-module.ts","moduleName": "igc-tool-action-combo-module.ts","mappedName": "IgcToolActionComboComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "displayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcLayoutSelectedItemsCollection","mappedName": "selectedValues"}], "originalName": "SelectedValues"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
@@ -250,6 +252,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualRightIconStroke"}], "originalName": "ActualRightIconStroke"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
       {"names":[{"platform": "WebComponents", "mappedType": "ToolActionButtonGroupDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isToggleDisabled"}], "originalName": "IsToggleDisabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "leftCommandArgument"}], "originalName": "LeftCommandArgument"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "leftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
@@ -291,6 +294,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-checkbox-list-component.ts","dynamicModuleName": "igc-tool-action-checkbox-list-dynamic-module.ts","moduleName": "igc-tool-action-checkbox-list-module.ts","mappedName": "IgcToolActionCheckboxListComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "ToolActionCheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
@@ -387,6 +391,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-sub-panel-component.ts","dynamicModuleName": "igc-tool-action-sub-panel-dynamic-module.ts","moduleName": "igc-tool-action-sub-panel-module.ts","mappedName": "IgcToolActionSubPanelComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "itemSpacing"}], "originalName": "ItemSpacing"} ]
   },
   {
@@ -397,6 +402,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-text-input-component.ts","dynamicModuleName": "igc-tool-action-text-input-dynamic-module.ts","moduleName": "igc-tool-action-text-input-module.ts","mappedName": "IgcToolActionTextInputComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -420,7 +426,8 @@
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-button-component.ts","dynamicModuleName": "igc-tool-action-button-dynamic-module.ts","moduleName": "igc-tool-action-button-module.ts","mappedName": "IgcToolActionButtonComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionLabel",
@@ -428,7 +435,9 @@
     "originalBaseTypeNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeName": "ToolAction",
     "packageName": "igniteui-layouts",
-    "names":[{"platform": "WebComponents","fileName": "igc-tool-action-label-component.ts","dynamicModuleName": "igc-tool-action-label-dynamic-module.ts","moduleName": "igc-tool-action-label-module.ts","mappedName": "IgcToolActionLabelComponent"}]
+    "names":[{"platform": "WebComponents","fileName": "igc-tool-action-label-component.ts","dynamicModuleName": "igc-tool-action-label-dynamic-module.ts","moduleName": "igc-tool-action-label-module.ts","mappedName": "IgcToolActionLabelComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionRadio",
@@ -445,6 +454,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "channel"}], "originalName": "Channel"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isManual"}], "originalName": "IsManual"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
@@ -458,6 +468,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-separator-component.ts","dynamicModuleName": "igc-tool-action-separator-dynamic-module.ts","moduleName": "igc-tool-action-separator-module.ts","mappedName": "IgcToolActionSeparatorComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isGroupHeaderSeparator"}], "originalName": "IsGroupHeaderSeparator"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "size"}], "originalName": "Size"} ]
   },
@@ -493,7 +504,8 @@
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-group-header-component.ts","dynamicModuleName": "igc-tool-action-group-header-dynamic-module.ts","moduleName": "igc-tool-action-group-header-module.ts","mappedName": "IgcToolActionGroupHeaderComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualBackIconColor"}], "originalName": "ActualBackIconColor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionIconMenu",
@@ -522,6 +534,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualUncheckedBorderColor"}], "originalName": "ActualUncheckedBorderColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "uncheckedBorderColor"}], "originalName": "UncheckedBorderColor"} ]
@@ -534,6 +547,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "WebComponents","fileName": "igc-tool-action-number-input-component.ts","dynamicModuleName": "igc-tool-action-number-input-dynamic-module.ts","moduleName": "igc-tool-action-number-input-module.ts","mappedName": "IgcToolActionNumberInputComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -918,9 +932,9 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "captionExpandedTextColor"}], "originalName": "CaptionExpandedTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "captionTextColor"}], "originalName": "CaptionTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "collapse"}], "originalName": "Collapse"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "description"}], "originalName": "Description"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "descriptionCollapsedTextColor"}], "originalName": "DescriptionCollapsedTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "descriptionExpandedTextColor"}], "originalName": "DescriptionExpandedTextColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "descriptionText"}], "originalName": "DescriptionText"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "descriptionTextColor"}], "originalName": "DescriptionTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "elevation"}], "originalName": "Elevation"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},

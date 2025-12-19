@@ -2,6 +2,7 @@
 title: {Platform} Snackbar | インフラジスティックス
 _description: {ProductName} Snackbar コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Snackbar コンポーネント
+_license: MIT
 mentionedTypes: ["Snackbar"]
 _language: ja
 ---
@@ -148,14 +149,14 @@ igc-snackbar::part(base) {
 
 ## API リファレンス
 
- - `ActionText`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Snackbar`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `ActionText`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Snackbar`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

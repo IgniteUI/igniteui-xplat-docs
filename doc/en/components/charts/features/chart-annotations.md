@@ -2,6 +2,7 @@
 title: {Platform} Chart Annotations | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Annotations
 _keywords: {Platform} Charts, Annotations, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -15,7 +16,6 @@ The {Platform} chart's hover interactions and annotations are implemented throug
 The following example demonstrates the annotation layers that are available on the {Platform} chart. Click on the checkboxes to turn each layer on and off.
 
 `sample="/charts/category-chart/line-chart-with-annotations", height="600", alt="{Platform} Annotations Example"`
-
 
 
 <div class="divider--half"></div>
@@ -77,6 +77,7 @@ The following example demonstrates how to style the final value layer annotation
     dataSource={this.state.data}
     finalValueAnnotationsVisible={true} />
 ```
+
 ```html
 <igc-category-chart
      id="chart"

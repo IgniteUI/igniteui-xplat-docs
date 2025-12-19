@@ -2,6 +2,7 @@
 title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid provides the necessary tools to load child data on demand when a parent row is expanded. That way the volume of data would be greatly reduced and can be retrieved only when the user needs it.
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["TreeGrid"]
 namespace: Infragistics.Controls
 ---
@@ -47,7 +48,7 @@ constructor() {
 The LoadChildrenOnDemand callback provides two parameters:
 
 - parentID - the ID of the parent row that is being expanded.
-- done - callback that should be called with the children when they are retrieved from the server. 
+- done - callback that should be called with the children when they are retrieved from the server.
 
 ```typescript
 public loadChildren = (parentID: any, done: (children: any[]) => void) => {
@@ -57,7 +58,7 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
 
 <!-- end: WebComponents -->
 
-After the user clicks the expand icon, it is replaced by a loading indicator. When the done callback is called, the loading indicator disappears and the children are loaded. The Tree Grid adds the children to the underlying data source and populates the necessary keys automatically. 
+After the user clicks the expand icon, it is replaced by a loading indicator. When the done callback is called, the loading indicator disappears and the children are loaded. The Tree Grid adds the children to the underlying data source and populates the necessary keys automatically.
 
 ### Expanding Indicator Visibility
 
@@ -117,11 +118,11 @@ If you want to provide your own custom loading indicator, you may create an ng-t
 
 ## API References
 
-* `TreeGrid`
+- `TreeGrid`
 
 ## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

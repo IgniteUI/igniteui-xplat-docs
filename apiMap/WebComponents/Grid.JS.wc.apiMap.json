@@ -508,6 +508,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxLeft"}], "originalName": "SuffixIconViewBoxLeft"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxTop"}], "originalName": "SuffixIconViewBoxTop"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxWidth"}], "originalName": "SuffixIconViewBoxWidth"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixMargin"}], "originalName": "SuffixMargin"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "suffixText"}], "originalName": "SuffixText"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "suffixTextColor"}], "originalName": "SuffixTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
@@ -1985,6 +1986,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxLeft"}], "originalName": "SuffixIconViewBoxLeft"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxTop"}], "originalName": "SuffixIconViewBoxTop"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixIconViewBoxWidth"}], "originalName": "SuffixIconViewBoxWidth"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "suffixMargin"}], "originalName": "SuffixMargin"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "suffixText"}], "originalName": "SuffixText"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "suffixTextColor"}], "originalName": "SuffixTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "TextCellDecoration","mappedName": "textDecoration"}], "originalName": "TextDecoration"},
@@ -2630,6 +2632,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "SortIndicatorStyle","mappedName": "Default"}], "originalName": "Default"},
       {"names":[{"platform": "WebComponents", "mappedType": "SortIndicatorStyle","mappedName": "FadingSimpleUpDownArrows"}], "originalName": "FadingSimpleUpDownArrows"},
       {"names":[{"platform": "WebComponents", "mappedType": "SortIndicatorStyle","mappedName": "FadingUpDownArrows"}], "originalName": "FadingUpDownArrows"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SortIndicatorStyle","mappedName": "None"}], "originalName": "None"},
       {"names":[{"platform": "WebComponents", "mappedType": "SortIndicatorStyle","mappedName": "Unset"}], "originalName": "Unset"} ]
   },
   {

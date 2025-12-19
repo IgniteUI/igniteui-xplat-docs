@@ -271,7 +271,10 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "flushTextContentChangedCheck"}], "originalName": "FlushTextContentChangedCheck"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFinancial"}], "originalName": "IsFinancial"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"} ]
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "simulateClick"}], "originalName": "SimulateClick"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "simulateHover"}], "originalName": "SimulateHover"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "simulateMouseLeave"}], "originalName": "SimulateMouseLeave"} ]
   },
   {
     "originalName": "FinancialLegend",

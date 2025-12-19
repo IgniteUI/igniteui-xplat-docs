@@ -2,6 +2,7 @@
 title: {Platform} Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} map provides useful API to configure and styles map visuals
 _keywords: {Platform} maps, geographic, map API, API, {ProductName},
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series", "SeriesViewer", "GeographicSymbolSeries", "GeographicProportionalSymbolSeries", "GeographicShapeSeries", "GeographicHighDensityScatterSeries", "GeographicScatterAreaSeries", "GeographicContourLineSeries", "GeographicShapeSeriesBase"]
 namespace: Infragistics.Controls.Maps
 ---
@@ -19,17 +20,17 @@ The {Platform} `XamGeographicMap` has the following API members:
 - `GetGeographicPoint`
 - `GetPixelPoint`
 
-# {Platform} Geographic Series Types
+## {Platform} Geographic Series Types
 
 The {Platform} `XamGeographicMap` has 7 types of series and they have the `ItemsSource` property for data binding.
 
- - `GeographicHighDensityScatterSeries`
- - `GeographicSymbolSeries`
- - `GeographicProportionalSymbolSeries`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `GeographicScatterAreaSeries`
- - `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicScatterAreaSeries`
+- `GeographicContourLineSeries`
 
 In addition, each type of series has specific properties for mapping data items and styling their appearance:
 

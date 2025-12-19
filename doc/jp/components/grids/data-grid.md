@@ -2,6 +2,7 @@
 title: {Platform} Data Grid コンポーネント - インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
 namespace: Infragistics.Controls
 _language: ja
@@ -135,6 +136,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -625,7 +627,7 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.cell.value} 
+            <input name="price" type="number" value={ctx.cell.value}
                 onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
@@ -699,6 +701,7 @@ column.bodyTemplate = this.smallView;
     <!-- Column declarations -->
 </igc-grid>
 ```
+
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some condition.
@@ -789,6 +792,7 @@ public initColumns(column: IgxGridColumn) {
     }
 }
 ```
+
 ```typescript
 public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
@@ -1248,7 +1252,7 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getName(ctx.cell.id.rowIndex)}
                     ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1279,7 +1283,7 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
             <div>
             <div>
                 { ctx.cell.value }
-                    {getName(ctx.cell.id.rowIndex)} 
+                    {getName(ctx.cell.id.rowIndex)}
                     {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1885,10 +1889,10 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 詳細については、これらのリソースを参照してください。
 
- - [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
- - [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
- - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+- [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
+- [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
+- [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
+- [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
  <!-- end: Angular -->
 
@@ -1990,28 +1994,28 @@ platformBrowserDynamic()
 
 ## API リファレンス
 
-* `Grid`
-* `Column`
-* `Cell`
-* `CellTemplateContext`
-* `GridRow`
-* `GridToolbar`
-* `Paginator`
+- `Grid`
+- `Column`
+- `Cell`
+- `CellTemplateContext`
+- `GridRow`
+- `GridToolbar`
+- `Paginator`
 
 <!-- Angular -->
 
 ## テーマの依存関係
 
-* **Icon Theme**
-* **InputGroup Theme**
-* **Chip Theme**
-* **Ripple Theme**
-* **Button Theme**
-* **Overlay Theme**
-* **DropDown Theme**
-* **Calendar Theme**
-* **SnackBar Theme**
-* **Badge Theme**
+- **Icon Theme**
+- **InputGroup Theme**
+- **Chip Theme**
+- **Ripple Theme**
+- **Button Theme**
+- **Overlay Theme**
+- **DropDown Theme**
+- **Calendar Theme**
+- **SnackBar Theme**
+- **Badge Theme**
 
 ## チュートリアル ビデオ
 
@@ -2025,38 +2029,38 @@ platformBrowserDynamic()
 
 <!-- Angular -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 <!-- * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md) -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 
 <!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

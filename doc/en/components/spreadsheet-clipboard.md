@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet | Clipboard Operations | Infragistics
 _description: Use clipboard operations such as copy, cut and paste within Infragistics' {Platform} spreadsheet control. View Infragistics {ProductName} spreadsheet demos today!
 _keywords: Spreadsheet, clipboard operations, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Spreadsheet", "SpreadsheetAction", "SpreadsheetCommandType", "Command"]
 ---
 # {Platform} Working with Clipboard
@@ -18,6 +19,7 @@ This topic explains how to perform clipboard operations on the {ProductName} spr
 <div class="divider--half"></div>
 
 ## Dependencies
+
 Before making use of the clipboard you will want to import the `SpreadsheetAction` enumeration:
 
 <!-- Angular -->
@@ -41,6 +43,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## Usage
+
 The following code snippet shows how you can execute commands related to the clipboard in the {Platform} `Spreadsheet` control:
 
 ```ts
@@ -59,5 +62,5 @@ public paste(): void {
 
 ## API References
 
- - `SpreadsheetAction`
- - `Spreadsheet`
+- `SpreadsheetAction`
+- `Spreadsheet`

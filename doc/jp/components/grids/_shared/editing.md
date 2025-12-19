@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 編集 - {ProductName}
 _description: 強力なパブリック API を使用し、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。{Platform} {ComponentTitle} 編集オプションをお試しください。
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データの変更, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -51,16 +52,16 @@ _language: ja
 
  データ型固有の**編集テンプレート**を使用する場合、列 `DataType` プロパティを指定する必要があります。次に各型のデフォルト テンプレートについて説明します。
 
- - `string` データ型の場合、デフォルトのテンプレートは `Input` を使用します。
- - `number` データ型のデフォルト テンプレートは `Input` type="number" を使用します。数値に解析できない値にセルを更新した場合、変更は無視されてセルの値が 0 に設定されます。
- - `date` データ型ではデフォルトのテンプレートは `DatePicker` を使用します。
- - `dateTime` データ型ではデフォルトのテンプレートは `DateTimeEditor` を使用します。このエディターは、DateTime オブジェクトの入力要素部分のマスクを提供します。
- - `time` データ型ではデフォルトのテンプレートは `TimePicker` を使用します。
- - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
- - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
- - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
+- `string` データ型の場合、デフォルトのテンプレートは `Input` を使用します。
+- `number` データ型のデフォルト テンプレートは `Input` type="number" を使用します。数値に解析できない値にセルを更新した場合、変更は無視されてセルの値が 0 に設定されます。
+- `date` データ型ではデフォルトのテンプレートは `DatePicker` を使用します。
+- `dateTime` データ型ではデフォルトのテンプレートは `DateTimeEditor` を使用します。このエディターは、DateTime オブジェクトの入力要素部分のマスクを提供します。
+- `time` データ型ではデフォルトのテンプレートは `TimePicker` を使用します。
+- `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
+- `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
+- `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
  <!-- ComponentStart: Grid -->
- - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+- カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
  <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
@@ -85,10 +86,10 @@ _language: ja
 
 ### イベントのキャンセル
 
- - `RowEditEnter` - `Row` も `Cell` も編集モードに入りません。
- - `CellEditEnter` - セル編集に入ることを防止します。`RowEditable` が有効な場合、セルの編集は禁止されたままですが、行の編集がトリガーされます。
- - `CellEdit` - `Cell`/`Row` の編集を許可し、**[完了]** ボタンまたは **[Enter]** を押しても値または行のトランザクションはコミットされません。**[キャンセル]** ボタンをクリックするまで、セル編集と行編集は閉じません。
- - `RowEdit` - 行全体ではなくセルのコミットは可能です。行は編集モードのままになり、行トランザクションは開いていると見なされます。**[完了]** を押しても、行をコミットまたは閉じません。**[キャンセル]** ボタンは、変更をコミットせずに編集プロセスとトランザクションを閉じます。
+- `RowEditEnter` - `Row` も `Cell` も編集モードに入りません。
+- `CellEditEnter` - セル編集に入ることを防止します。`RowEditable` が有効な場合、セルの編集は禁止されたままですが、行の編集がトリガーされます。
+- `CellEdit` - `Cell`/`Row` の編集を許可し、**[完了]** ボタンまたは **[Enter]** を押しても値または行のトランザクションはコミットされません。**[キャンセル]** ボタンをクリックするまで、セル編集と行編集は閉じません。
+- `RowEdit` - 行全体ではなくセルのコミットは可能です。行は編集モードのままになり、行トランザクションは開いていると見なされます。**[完了]** を押しても、行をコミットまたは閉じません。**[キャンセル]** ボタンは、変更をコミットせずに編集プロセスとトランザクションを閉じます。
 
 以下のサンプルは、実行中の編集実行シーケンスを示しています。
 
@@ -172,27 +173,27 @@ function onSorting(args: IgrSortingEventArgs) {
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 <!-- Angular -->
-* `DatePicker`
-* `Checkbox`
-* `Overlay`
+- `DatePicker`
+- `Checkbox`
+- `Overlay`
 <!-- end: Angular -->
 
 ## その他のリソース
 
 <!-- Angular, WebComponents, React -->
 
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [検索](search.md) -->
@@ -203,16 +204,16 @@ function onSorting(args: IgrSortingEventArgs) {
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 
 <!-- ComponentEnd: Grid -->
 

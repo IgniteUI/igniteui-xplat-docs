@@ -6,34 +6,40 @@ mentionedTypes: []
 ---
 
 # License FAQ and Installation
+
+{ProductName} comprises packages available under either an MIT or a commercial license. This licensing model supports both commercial and permissive open-source usage, depending on the specific components, modules, and services you incorporate into your project.
+
+It is crucial to understand which license applies to which part of the package. The topic [Open Source vs Premium](./general-open-source-vs-premium.md) contains details on what type of license is applied to each component and therefore if you need to buy a commercial license based on the components you are using in your projects.
+
 ## License Agreements in {ProductName}
-It is important to know all the [legal terms and conditions](https://www.infragistics.com/legal/license/igultimate-la) regarding the {ProductName} that you purchase and use.
+For components under commercial license, it is important to know all the [legal terms and conditions](https://www.infragistics.com/legal/license/igultimate-la) regarding their purchase and use.
 
-> We have updated our license terms and subscription model in second quarter of 2020.
+> We have updated our license terms and subscription model in fourth quarter of 2025.
 
-If your trial has ended or your subscription [has expired](http://www.infragistics.com/renewal), each developer on your team using Ignite UI will need to [purchase](https://www.infragistics.com/how-to-buy/product-pricing) a subscription. This will enable you to use our private npm feed hosted on <https://packages.infragistics.com/npm/js-licensed/> for development. There you will find the latest versions of the {ProductName} packages. If you have a current subscription, you can use this private feed and you will have access to the full version of {ProductName}.
+If your trial has ended or your subscription [has expired](http://www.infragistics.com/renewal), each developer on your team using components under commercial license from Ignite UI will need to [purchase](https://www.infragistics.com/how-to-buy/product-pricing) a subscription. This will enable you to use our private npm feed hosted on <https://packages.infragistics.com/npm/js-licensed/> for development. There you will find the latest versions of the {ProductName} packages. If you have a current subscription, you can use this private feed and you will have access to the full version of {ProductName}.
 
-For detailed explanation of the Ignite UI license agreement and terms of use, [click here](https://www.infragistics.com/legal/license/igultimate-la).
+<!-- For detailed explanation of the Ignite UI license agreement and terms of use, [click here](https://www.infragistics.com/legal/license/igultimate-la).-->
 
 Infragistics offers free, non-commercial, not-for-resale (NFR) licenses for the following:
 
-  - If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.
-  - If you are a primary, secondary or university student, or an academic institution, or a professor.
+- If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.
+- If you are a primary, secondary or university student, or an academic institution, or a professor.
 
 If you qualify for a free, non-commercial, NFR license or if you have any license questions, please [contact us](https://www.infragistics.com/about-us/contact-us).
-
-> Currently only the **igniteui-dockmanager** package is available in our private npm feed, but in the future we will add the other {ProductName} packages as well.
 
 ## {ProductName} npm packages - Using the Private npm feed
 Npm is the most popular package manager and is also the default one for the runtime environment Node.js. It is highly adopted and is one of the fastest and easiest ways to manage the packages that you depend on in your project. For more information on how npm works, read the official [npm documentation](https://docs.npmjs.com/).
 
-Infragistics {ProductName} is available as npm packages and you can add them as dependencies to your project in a [few easy steps](./general-getting-started.md). Choosing this approach will not require configuring npm. By installing this package you will start using the **{ProductName} Trial version** of the product.
+Infragistics {ProductName} is available as npm packages and you can add them as dependencies to your project in a [few easy steps](./general-getting-started.md). Choosing this approach will not require configuring npm. If you are installing a package under commercial license, you will start using the **{ProductName} Trial version** of the product.
 
-> Currently only the [igniteui-dockmanager](https://www.npmjs.com/package/igniteui-dockmanager) npm package has a trial watermark, but in the future we will add it to the other {ProductName} packages as well.
+>[!NOTE]
+> What does it mean to start using a trial version? It means that you will be using a version of our product with a **Watermark** part of your web view. It doesn’t mean that you will be using the licensed package for a certain amount of time before it expires. For example, for a month.
+
+The private npm feed Infragistics provides contains licensed versions of the packages under commercial license.
 
 ### How to setup your environment to use the private npm feed
 
-#### First you need to setup the private registry and to associate this registry with the Infragistics scope.
+#### First you need to setup the private registry and to associate this registry with the Infragistics scope
 
 This will allow you to seamlessly use a mix of packages from the public npm registry and the Infragistics private registry. You will be asked to provide the username and the password that you use for logging into your Infragistics account. You should also provide the email that is registered to your Infragistics profile.
 
@@ -69,14 +75,14 @@ You will be asked to provide the username and the password that you use for logg
 
 > `npm` is disallowing the use of the `"@"` symbol inside your username as it is considered as being "not safe for the net". Because your username is actually the email that you use for your Infragistics account it always contains the symbol `"@"`. That's why you must escape this limitation by replacing the `"@"` symbol with `"!!"` (two exclamation marks). For example, if your username is `"username@example.com"` when asked about your username you should provide the following input: `"username!!example.com"`.
 
-#### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project:
+#### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project
 
 ```cmd
-npm uninstall igniteui-dockmanager
-npm install @infragistics/igniteui-dockmanager
+npm uninstall {PackageDockManager}
+npm install @infragistics/{PackageDockManager}
 
-npm uninstall igniteui-dockmanager
-npm install @infragistics/igniteui-dockmanager
+npm uninstall {PackageDockManager}
+npm install @infragistics/{PackageDockManager}
 ```
 
 Have in mind that we have set the {ProductName} package to be scoped, meaning that no changing the registries is needed if you want to install packages from our private feed and from npmjs.org simultaneously.
@@ -86,7 +92,7 @@ Have in mind that we have set the {ProductName} package to be scoped, meaning th
 If you are upgrading from trial to licensed package the new packages will be scoped under `@infragistics`.
 As a result you can either:
 
-- Do a global replace for all trial packages and change then to the licensed scoped version across all files in your project. For example, replace all `igniteui-dockmanager` references to `@infragistics/igniteui-dockmanager` The change should affect all imports where such packages are used.
+- Do a global replace for all trial packages and change then to the licensed scoped version across all files in your project. For example, replace all `{PackageDockManager}` references to `@infragistics/{PackageDockManager}` The change should affect all imports where such packages are used.
 
   **Or**
 
@@ -100,8 +106,8 @@ As a result you can either:
     "outDir": "./dist/out-tsc",
     /* ... */
     "paths": {
-      "igniteui-dockmanager": ["./node_modules/@infragistics/igniteui-dockmanager"],
-      "igniteui-dockmanager/*": ["./node_modules/@infragistics/igniteui-dockmanager/*"],
+      "{PackageDockManager}": ["./node_modules/@infragistics/{PackageDockManager}"],
+      "{PackageDockManager}/*": ["./node_modules/@infragistics/{PackageDockManager}/*"],
     }
   }
 }
@@ -114,6 +120,7 @@ Here's a full example with all path mappings for the react packages you may need
       "paths": {
         "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
         "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
+        "igniteui-react-dockmanager": ["node_modules/igniteui-react-dockmanager", "node_modules/@infragistics/igniteui-react-dockmanager"],
         "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
         "igniteui-react-data-grids": ["node_modules/igniteui-react-data-grids", "node_modules/@infragistics/igniteui-react-data-grids"],
         "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
@@ -126,9 +133,7 @@ Here's a full example with all path mappings for the react packages you may need
         "igniteui-react-datasources": ["node_modules/igniteui-react-datasources", "node_modules/@infragistics/igniteui-react-datasources"],
         "igniteui-react-spreadsheet": ["node_modules/igniteui-react-spreadsheet", "node_modules/@infragistics/igniteui-react-spreadsheet"],
         "igniteui-react-spreadsheet-chart-adapter": ["node_modules/igniteui-react-spreadsheet-chart-adapter", "node_modules/@infragistics/igniteui-react-spreadsheet-chart-adapter"],
-        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"],
-        "igniteui-dockmanager": ["node_modules/igniteui-dockmanager", "node_modules/@infragisics/igniteui-dockmanager"],
-        "igniteui-dockmanager/loader": ["node_modules/igniteui-dockmanager/loader", "node_modules/@infragistics/igniteui-dockmanager/loader"]
+        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"]
       }
 ```
 
@@ -138,11 +143,11 @@ Here's a full example with all path mappings for the react packages you may need
 - Change the themes imports like this:
 
 ```ts
-@import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
+@import '~{PackageDockManager}/dist/collection/styles/igc.themes';
 
 // Should be changed to
 
-@import '~@infragistics/igniteui-dockmanager/dist/collection/styles/igc.themes';
+@import '~@infragistics/{PackageDockManager}/dist/collection/styles/igc.themes';
 ```
 
 So, if you've already adopted npm and you have an {ProductName} license, don't hesitate setting up the Infragistics private feed and boost your productivity, using the full potential of {ProductName}.
@@ -153,7 +158,7 @@ You can also authenticate to our private npm feed using an access token, which y
 
 The following information is on how to setup authentication to our private npm registry using an access token in local configuration, Azure Pipelines build procedures and Travis CI build process:
 
-* Generate a token from https://account.infragistics.com/access-tokens
+- Generate a token from https://account.infragistics.com/access-tokens
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 600px"
   src="../images/general/generate-token.jpg"
@@ -163,7 +168,7 @@ The following information is on how to setup authentication to our private npm r
 
 > Each token is with Base64 encoding.
 
-* Add the following into your [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) file
+- Add the following into your [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) file
 
 ```cmd
 @infragistics:registry=https://packages.infragistics.com/npm/js-licensed/
@@ -208,8 +213,8 @@ before_install:
 
 The best way to define an environment variable depends on what type of information it will contain. So [you have two options](https://docs.travis-ci.com/user/environment-variables/):
 
-* encrypt it and add it [to your .travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
-* add it to your [Repository Settings](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)
+- encrypt it and add it [to your .travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
+- add it to your [Repository Settings](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)
 
 ### GitHub Actions Configuration
 
@@ -220,4 +225,4 @@ Add the following scripts before the **npm i(ci)**  step to your [CI workflow co
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-Define [*secrets* (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token.
+Define [secrets (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token.

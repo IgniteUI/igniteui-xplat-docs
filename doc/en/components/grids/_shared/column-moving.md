@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Reordering & Moving - {ProductName}
 _description: Set custom column order & enable columns reordering via drag/drop mouse or touch gestures, or by using the {Platform} Column Moving API. Try {ProductName}!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -201,6 +202,7 @@ constructor() {
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 }
 ```
+
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -291,6 +293,7 @@ Instead of hardcoding the color values like we just did, we can achieve greater 
 
 
 **igx-palette** generates a color palette based on the primary and secondary colors that are passed:
+
 ```scss
 $yellow-color: #F4D45C;
 $black-color: #575757;
@@ -298,7 +301,7 @@ $black-color: #575757;
 $dark-palette: palette($primary: $yellow-color, $secondary: $black-color);
 ```
 
-And then with [**igx-color**]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the pallete.
+And then with [**igx-color**]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $dark-grid-column-moving-theme: grid-theme(
@@ -311,7 +314,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 
 > [!Note]
-> Thecolor andpalette are powerful functions for generating and retrieving colors. Please refer to [Palettes](/components/themes/palettes.html) topic for detailed guidance on how to use them.
+> The color and palette are powerful functions for generating and retrieving colors. Please refer to [Palettes](/components/themes/palettes.html) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
@@ -394,6 +397,7 @@ Then set the related CSS properties to this class:
     --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
@@ -402,24 +406,24 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
-* [Searching](search.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
+- [Searching](search.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} Ripple
 _description: {ProductName} Ripple を使用すると、開発者は、視覚的に魅力的な UI 拡張のためにリップル アニメーション効果を受け取った領域を定義できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Ripple コンポーネント, {Platform} Ripple コントロール
+_license: MIT
 mentionedTypes: ["Ripple", "Button"]
 _language: ja
 ---
@@ -111,12 +112,12 @@ igc-ripple {
 
 ## API リファレンス
 
- - `Button`
- - `Ripple`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Ripple`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

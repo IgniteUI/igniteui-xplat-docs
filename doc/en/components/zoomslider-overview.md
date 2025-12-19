@@ -2,6 +2,7 @@
 title: {Platform} ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with {ProductName} zoom slider!
 _keywords: zoom slider, {ProductName}, Infragistics, data chart
+_license: commercial
 mentionedTypes: ["ZoomSlider", "XamDataChart"]
 ---
 
@@ -14,7 +15,6 @@ The {Platform} ZoomSlider control provides zooming functionality to range-enable
 The following sample demonstrates how to use `ZoomSlider` to navigate content in `XamDataChart`.
 
 `sample="/charts/zoomslider/overview", height="600", alt="{Platform} Zoom Slider Example"`
-
 
 
 <div class="divider--half"></div>
@@ -33,6 +33,7 @@ The following sample demonstrates how to use `ZoomSlider` to navigate content in
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
+
 When installing the {Platform} chart component, the core package must also be installed.
 
 ```cmd
@@ -81,6 +82,7 @@ IgcZoomSliderModule.register();
 ```
 
 ## Code Snippet
+
 The following code demonstrates how to setup the ZoomSlider.
 
 ```html
@@ -105,6 +107,7 @@ The following code demonstrates how to setup the ZoomSlider.
       height="160px" >
   </igc-zoom-slider>
 ```
+
 <div class="divider--half"></div>
 
 ## Additional Resources

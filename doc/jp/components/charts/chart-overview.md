@@ -2,6 +2,7 @@
 title: {Platform} チャートとグラフ ライブラリー | {ProductName}
 _description: {ProductName} チャートおよびグラフは、データ視覚化の広範なライブラリであり、Web アプリやモバイル アプリの魅力的でインタラクティブなチャートを実現します。無料でお試しください。
 _keywords: {Platform} Charts, Chart, Infragistics, {Platform} チャート, チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 _language: ja
 ---
@@ -301,7 +302,7 @@ alt="{Platform} チャート マーカー、ツールチップ、およびテン
 
 このトピックで言及されているすべてのチャート タイプは、次の API コンポーネントに実装されています:
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
- - `Treemap`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `Treemap`

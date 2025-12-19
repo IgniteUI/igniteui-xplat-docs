@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Row Adding - {ProductName}
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -288,7 +289,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     <IgbActionStrip>
         <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
     </IgbActionStrip>
-    
+
     <IgbRowIsland AutoGenerate="false" Key="Albums" PrimaryKey="USBillboard200" RowEditable="true">
         <IgbColumn Field="Album" Header="Album" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="LaunchDate" Header="Launch Date" DataType="GridColumnDataType.Date"></IgbColumn>
@@ -361,7 +362,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
            <IgrActionStrip>
                 <IgrGridEditingActions addRow={true}>
                 </IgrGridEditingActions>
-            </IgrActionStrip>                  
+            </IgrActionStrip>
        <IgrColumn field="Tour" header="Tour" dataType="string" resizable={true}>
        </IgrColumn>
        <IgrColumn field="StartedOn" header="Started on" dataType="string" resizable={true}>
@@ -539,7 +540,7 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
-	    Adding Row
+        Adding Row
     </ng-template>
 </{ComponentSelector}>
 ```
@@ -566,7 +567,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         </>
     );
 }
-```            
+```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
@@ -582,7 +583,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         return @<span>Adding Row</span>;
     };
 }
-```                 
+```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
@@ -595,8 +596,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 ```html
 <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -609,13 +610,13 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 Customizing the buttons of the row editing overlay is possible by using the `RowEditActions` template.
 
-<!-- 
+<!--
 REQUIRES FIX!
 ```ts
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
         <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```
@@ -665,22 +666,22 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 
 ## API References
 
-* `RowEditable`
-* `RowEditEnter`
-* `RowEdit`
-* `RowEditDone`
-* `RowEditCancel`
-* `EndEdit`
-* `PrimaryKey`
-* `{ComponentName}`
+- `RowEditable`
+- `RowEditEnter`
+- `RowEdit`
+- `RowEditDone`
+- `RowEditCancel`
+- `EndEdit`
+- `PrimaryKey`
+- `{ComponentName}`
 
 ## Additional Resources
 
 
-* [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Editing](editing.md)
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

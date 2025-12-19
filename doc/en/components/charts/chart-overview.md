@@ -2,6 +2,7 @@
 title: {Platform} Charts & Graphs Library | {ProductName}
 _description: {ProductName} Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: {Platform} Charts, Chart, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 ---
 # {Platform} Charts & Graphs Overview
@@ -32,7 +33,6 @@ The {Platform} product has over 65 different chart and graph types for any scena
 - Real-Time Streaming Support
 - High-Volume (Millions of Data Points) Support
 - Trends Lines and other Data Analysis features
-
 Built with a modular design of axis, markers, series, legend, and annotation layers, the {Platform} chart makes it easy to design a render any type of data story. Build a simple chart with a single data series, or build more complex data stories with multiple series of data, with multiple axis in composite views.
 
 ## Category and Financial Chart vs. Data Chart
@@ -45,7 +45,7 @@ Domain charts are using a data chart at its core; so the same performance optimi
 
 It can be difficult to know which chart to pick at first. It's crucial to understand the type of series and how many additional features you want to present. For a more light-weight basic category or financial series, we recommend using one of the domain charts. For more advances scenarios we recommend using {Platform} Data Chart, such as presenting something other than what is covered by the category chart's `CategoryChart.ChartType` property such as a stacked or scatter series, or numeric or time-based data. It's worth noting that the {Platform} Financial Chart covers only column, OHLC bar, candlestick, and line series types.
 
-We make {Platform} Category and Financial Chart easier to use, the good news you can always switch to data chart in the future. 
+We make {Platform} Category and Financial Chart easier to use, the good news you can always switch to data chart in the future.
 
 ### {Platform} Bar Chart
 
@@ -299,7 +299,7 @@ If you are considering any other {Platform} Charts on the market, here are a few
 
 All types of chart types mentioned in this topic are implemented in these API components:
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
- - `Treemap`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `Treemap`

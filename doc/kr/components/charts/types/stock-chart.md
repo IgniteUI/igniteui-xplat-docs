@@ -49,7 +49,7 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 - Trend Lines
 - Navigation / Zoombar View
 
-### Stock Chart Data Structure:
+### Stock Chart Data Structure
 
 - The data source must be an array or a list of data items.
 - The data source must contain at least one data item.

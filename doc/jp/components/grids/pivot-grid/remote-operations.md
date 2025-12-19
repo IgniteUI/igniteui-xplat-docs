@@ -2,6 +2,7 @@
 title: {Platform} グリッド カスタム リモート | ピボット テーブル | インフラジスティックス
 _description: Ignite UI for {Platform} を使用して、高速で応答性の高い {Platform} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, ignite ui for {Platform}, pivot grid customization, pivot grid remote, pivot remote, {Platform} ピボット グリッド, {Platform} material ピボット テーブル, ピボット グリッドのカスタマイズ, ピボット グリッド リモート, ピボット リモート
+_license: commercial
 mentionedTypes: ["PivotGrid", "PivotConfiguration", "PivotKeys"]
 namespace: Infragistics.Controls
 _language: ja
@@ -188,16 +189,16 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 ```
 
 ## API リファレンス
-* `PivotGrid`
-* `PivotDataSelector`
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## その他のリソース
 
 <!-- * [{Platform} ピボット グリッドの機能](pivot-grid-features.md) -->
-* [{Platform} グリッドの概要](overview.md)
+- [{Platform} グリッドの概要](overview.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

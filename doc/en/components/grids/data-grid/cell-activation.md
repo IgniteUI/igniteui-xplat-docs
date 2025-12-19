@@ -52,5 +52,5 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 
 ## API References
 
- - `ActivationMode`
- - `Cell`
+- `ActivationMode`
+- `Cell`

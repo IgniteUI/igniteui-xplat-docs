@@ -2,6 +2,7 @@
 title: {Platform} ブレット グラフ | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックスのデータ視覚化ツールを是非お試しください!
 _keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, {Platform} ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamBulletGraph"]
 namespace: Infragistics.Controls.Gauges
 _language: ja
@@ -265,12 +266,12 @@ MaximumValue="55" TargetValue="43">
 ```html
 <igx-bullet-graph
     #bulletGraph
-    height="80px" 
+    height="80px"
     width="400px"
-    value=70 
+    value=70
     targetValue=90
-    minimumValue=0 
-    maximumValue=100 
+    minimumValue=0
+    maximumValue=100
     interval=10
     labelInterval=10
     labelExtent=0.025
@@ -285,11 +286,11 @@ MaximumValue="55" TargetValue="43">
 <IgrBulletGraph
     height="80px"
     width="100%"
-    value={70} 
+    value={70}
     targetValue={90}
     interval={10}
-    minimumValue={0} 
-    maximumValue={100} 
+    minimumValue={0}
+    maximumValue={100}
     labelInterval={10}
     labelExtent={0.025}
     labelsPreTerminal={0}
@@ -303,9 +304,9 @@ MaximumValue="55" TargetValue="43">
     id="gauge"
     height="80px"
     width="100%"
-    minimum-value="0" 
+    minimum-value="0"
     maximum-value="100"
-    value="70" 
+    value="70"
     interval="10"
     target-value="90"
     label-interval="10"
@@ -319,11 +320,11 @@ MaximumValue="55" TargetValue="43">
 
 ```razor
 <IgbBulletGraph Height="80px" Width="100%"
-    MinimumValue="0" 
+    MinimumValue="0"
     Value="70"
     TargetValue="90"
     Interval="10"
-    MaximumValue="100" 
+    MaximumValue="100"
     LabelInterval="10"
     LabelExtent="0.025"
     HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
@@ -507,6 +508,7 @@ MaximumValue="55" TargetValue="43">
     minor-tick-stroke-thickness="1">
   </igc-bullet-graph>
 ```
+
 ```razor
 <IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"

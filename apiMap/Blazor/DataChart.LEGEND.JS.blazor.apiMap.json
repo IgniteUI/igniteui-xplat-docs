@@ -244,7 +244,10 @@
     "names":[{"platform": "Blazor","fileName": "LegendBase.cs","mappedName": "IgbLegendBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FlushTextContentChangedCheck"}], "originalName": "FlushTextContentChangedCheck"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FlushTextContentChangedCheck"}], "originalName": "FlushTextContentChangedCheck"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SimulateClick"}], "originalName": "SimulateClick"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SimulateHover"}], "originalName": "SimulateHover"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SimulateMouseLeave"}], "originalName": "SimulateMouseLeave"} ]
   },
   {
     "originalName": "FinancialLegend",

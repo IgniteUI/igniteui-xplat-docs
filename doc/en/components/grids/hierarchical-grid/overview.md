@@ -2,6 +2,7 @@
 title: {Platform} Hierarchical Grid | Fastest {Platform} Hierarchical Table | Infragistics
 _description: The {ProductName} Hierarchical Grid is used to display and manipulate hierarchical with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["HierarchicalGridBaseDirective"]
 namespace: Infragistics.Controls
 ---
@@ -80,6 +81,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 Or to link it:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -119,7 +121,7 @@ export class AppModule {}
 
 ### Data Binding
 
-The *{HierarchicalGridSelector}* derives from {GridSelector} and shares most of its functionality. The main difference is that it allows multiple levels of hierarchy to be defined. They are configured through a separate tag within the definition of *{HierarchicalGridSelector}*, called *{RowIslandSelector}*. The *{RowIslandSelector}* component defines the configuration for each child grid for the particular level. Multiple row islands per level are also supported.
+The **{HierarchicalGridSelector}** derives from {GridSelector} and shares most of its functionality. The main difference is that it allows multiple levels of hierarchy to be defined. They are configured through a separate tag within the definition of **{HierarchicalGridSelector}**, called **{RowIslandSelector}**. The **{RowIslandSelector}** component defines the configuration for each child grid for the particular level. Multiple row islands per level are also supported.
 The Hierarchical Grid supports two ways of binding to data:
 
 ### Using hierarchical data
@@ -156,6 +158,7 @@ export const singers = [{
     }]
 }];
 ```
+
 ```razor
 public class SingersData : List<SingersDataItem>
 {
@@ -198,7 +201,8 @@ public class SingersData : List<SingersDataItem>
     }
 }
 ```
-Each *{RowIslandSelector}* should specify the key of the property that holds the children data.
+
+Each **{RowIslandSelector}** should specify the key of the property that holds the children data.
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="singers" [autoGenerate]="true">
@@ -241,6 +245,7 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
     </IgbRowIsland>
 </IgbHierarchicalGrid>
 ```
+
 > [!NOTE]
 > Note that instead of `data` the user configures only the `childDataKey` that the {HierarchicalGridSelector} needs to read to set the data automatically.
 
@@ -661,7 +666,7 @@ The Selection and Navigation features work globally for the whole {HierarchicalG
 
 The Hierarchical Grid allows the users to conveniently collapse all its currently expanded rows by pressing the "Collapse All" button at its top left corner. Additionally, every child grid which contains other grids and is a Hierarchical Grid itself, also has such a button - this way the user is able to collapse only a given grid in the hierarchy:
 
-<img class="responsive-img" src="../../../images/unfold_less_icon_screenshot.jpg" srcset="../../images/unfold_less_icon_screenshoto@2x.jpg 2x" />
+<img class="responsive-img" src="../../../images/unfold_less_icon_screenshot.jpg" srcset="../../images/unfold_less_icon_screenshoto@2x.jpg 2x" alt="unfold_less_icon_screenshot" />
 
 <!-- TODO: uncomment when sizing topic is ready -->
 <!-- ## Sizing
@@ -727,7 +732,9 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
+
 After a custom palette has been generated, the `igx-color` function can be used to obtain different varieties of the primary and the secondary colors.
+
 ```scss
 $custom-theme: grid-theme(
     $cell-active-border-color: (igx-color($custom-palette, "secondary", 500)),
@@ -746,6 +753,7 @@ $custom-theme: grid-theme(
 ### Defining custom schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we will use `$_light_grid`.
+
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     cell-active-border-color: (igx-color:('secondary', 500)),
@@ -760,7 +768,9 @@ $custom-grid-schema: extend($_light-grid,(
     row-highlight: (igx-color:('secondary', 500))
 ));
 ```
+
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+
 ```scss
 $my-custom-schema: extend($light-schema, (
     igx-grid: $custom-grid-schema
@@ -788,7 +798,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
  >[!NOTE]
  >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {
@@ -837,6 +847,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
     --header-text-color: #FFF;
 }
 ```
+
 ### Demo
 `sample="/{HierarchicalGridSample}/hierarchical-grid-styling", height="700", alt="{Platform} Hierarchical Grid styling example"`
 
@@ -850,27 +861,27 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 
 ## API References
 
-* `HierarchicalGrid`
-* `RowIsland`
-* `Grid`
-* `Column`
-* `Cell`
+- `HierarchicalGrid`
+- `RowIsland`
+- `Grid`
+- `Column`
+- `Cell`
 
 <!-- TODO: uncomment when all of the topics are ready -->
 <!-- ## Additional Resources
 
-* [Grid Sizing](sizing.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md) -->
+- [Grid Sizing](sizing.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md) -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

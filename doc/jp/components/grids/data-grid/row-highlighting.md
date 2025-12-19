@@ -65,5 +65,5 @@ _language: ja
 
 ## API リファレンス
 
- - `IsRowHoverEnabled`
- - `RowHoverBackground`
+- `IsRowHoverEnabled`
+- `RowHoverBackground`

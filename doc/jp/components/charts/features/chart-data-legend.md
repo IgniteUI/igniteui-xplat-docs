@@ -2,6 +2,7 @@
 title: {Platform} チャートのデータ凡例 | データ視覚化ツール | インフラジスティックス
 _description: インフラジスティックスの {ProductName} チャートでデータ凡例をお試しください!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -90,7 +91,7 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 例:
 
-<img src="../../../images/general/layout_mode.png" />
+<img src="../../../images/general/layout_mode.png" alt="Layout Mode" />
 
 ## {Platform} データ凡例のスタイル設定
 
@@ -136,11 +137,11 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor`  
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
+- `HeaderTextFontStretch`
 - `HeaderTextFontWeight`
 
 `XamDataLegend` には、値が更新されているマウス操作中であっても、対応する行を描画するときに発生するいくつかのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
@@ -161,30 +162,30 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 ## API リファレンス
 
- - `ExcludedColumns`
- - `ExcludedSeries`
- - `HeaderFormatDate`
- - `HeaderFormatTime`
- - `HeaderText`
- - `IncludedColumns`
- - `IncludedSeries`
- - `LabelDisplayMode`
- - `LabelTextColor`
- - `StyleHeaderRow`:
- - `StyleSeriesColumn`:
- - `StyleSeriesRow`
- - `StyleSeriesRow`:
- - `StyleSummaryColumn`:
- - `StyleSummaryRow`:
- - `SummaryTitleText`
- - `SummaryType`
- - `TitleTextColor`
- - `UnitText`
- - `UnitsTextColor`
- - `ValueFormatAbbreviation`
- - `ValueFormatCulture`
- - `ValueFormatMaxFractions`
- - `ValueFormatMaxFractions`
- - `ValueFormatMinFractions`
- - `ValueFormatMode`
- - `ValueTextColor`
+- `ExcludedColumns`
+- `ExcludedSeries`
+- `HeaderFormatDate`
+- `HeaderFormatTime`
+- `HeaderText`
+- `IncludedColumns`
+- `IncludedSeries`
+- `LabelDisplayMode`
+- `LabelTextColor`
+- `StyleHeaderRow`:
+- `StyleSeriesColumn`:
+- `StyleSeriesRow`
+- `StyleSeriesRow`:
+- `StyleSummaryColumn`:
+- `StyleSummaryRow`:
+- `SummaryTitleText`
+- `SummaryType`
+- `TitleTextColor`
+- `UnitText`
+- `UnitsTextColor`
+- `ValueFormatAbbreviation`
+- `ValueFormatCulture`
+- `ValueFormatMaxFractions`
+- `ValueFormatMaxFractions`
+- `ValueFormatMinFractions`
+- `ValueFormatMode`
+- `ValueTextColor`

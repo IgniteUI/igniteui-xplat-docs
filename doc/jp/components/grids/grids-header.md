@@ -2,6 +2,7 @@
 title: {Platform} グリッド & テーブル | 最速の {Platform} UI グリッド | インフラジスティックス
 _description: 高速な {Platform} グリッドとテーブルをお探しですか? {ProductName} は、{Platform} ネイティブでマテリアル ベースの UI データ グリッドとテーブルの完全なライブラリを提供します。詳しい情報をご覧ください。
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics, {Platform} データ グリッド, テーブル, グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 
@@ -405,9 +406,9 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div id="list-features-included">
 <ul>
 <li>
-    
+
 [インライン編集](grid/editing.md)
-    
+
 </li>
 
 <li>
@@ -599,7 +600,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 
 </li>
 <li>
-                
+
 グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)
 
 </li>

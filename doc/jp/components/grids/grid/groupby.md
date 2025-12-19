@@ -2,6 +2,7 @@
 title: {Platform} Grid グループ化 | 複数のフィールドでグループ化 | インフラジスティックス
 _description: グループを設定して {Platform} Material テーブルにデータ レコードを視覚化し、グループ化されたデータを個別の列グループに視覚化できます。
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics, グリッド, グループ化, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Grid", "RowDirective", "GroupByRowSelectorTemplateDetails"]
 namespace: Infragistics.Controls
 _language: ja
@@ -441,16 +442,16 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 グループ UI は、以下のキーボード インタラクションをサポートします。
 
 - グループ行 (行または展開/縮小セルにフォーカス)
-   - <kbd>ALT</kbd> + <kbd>右矢印</kbd> - グループを展開します。
-   - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
-   - <kbd>SPACE</kbd> - <kbd>rowSelection</kbd> プロパティが multiple に設定されている場合、グループ内のすべての行を選択します。
+  - <kbd>ALT</kbd> + <kbd>右矢印</kbd> - グループを展開します。
+  - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
+  - <kbd>SPACE</kbd> - <kbd>rowSelection</kbd> プロパティが multiple に設定されている場合、グループ内のすべての行を選択します。
 
 - グループ領域の `Chip` コンポーネントのグループ化 (チップにフォーカス)
-   - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
-   - <kbd>SHIFT</kbd> + <kbd>右矢印</kbd> - フォーカスしたチップの右へ移動し、可能な場合はグループ順序を変更します。
-   - <kbd>SPACE</kbd> - ソートの方向を変更します。
-   - <kbd>DELETE</kbd> - フィールドのグループ解除。
-   - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
+  - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
+  - <kbd>SHIFT</kbd> + <kbd>右矢印</kbd> - フォーカスしたチップの右へ移動し、可能な場合はグループ順序を変更します。
+  - <kbd>SPACE</kbd> - ソートの方向を変更します。
+  - <kbd>DELETE</kbd> - フィールドのグループ解除。
+  - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
 
 <!-- WebComponents, Angular, React -->
 
@@ -654,6 +655,7 @@ $custom-chips-theme: chip-theme(
     $hover-text-color:contrast-color($custom-palette, "primary", 600)
 );
 ```
+
 ### カスタム スキーマの定義
 [**スキーマ**](../themes/sass/schemas.md)のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
@@ -731,26 +733,26 @@ $custom-theme: grid-theme(
 
 ## API リファレン
 
-* `Grid`
-* `GroupByRecord`
-* `ISortingExpression`
-* `Column`
-* `IGroupByExpandState`
-* `Chip`
+- `Grid`
+- `GroupByRecord`
+- `ISortingExpression`
+- `Column`
+- `IGroupByExpandState`
+- `Chip`
 
 ## その他のリソース
 
-* [Grid の概要](../data-grid.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [集計](summaries.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [Grid の概要](../data-grid.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [集計](summaries.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

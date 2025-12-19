@@ -92,10 +92,10 @@ igc-icon-button::part(icon) {
 
 ## API Reference
 
-* `IconButton`
+- `IconButton`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

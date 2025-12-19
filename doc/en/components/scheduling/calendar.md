@@ -2,6 +2,7 @@
 title: {Platform} Calendar Component - {ProductName}
 _description: With {Platform} Calendar Component, users can create intuitive calendars for applications to display date information using three different selection modes. Try it Now
 _keywords: {Platform} Calendar, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 ---
 
@@ -73,7 +74,7 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The simplest way to start using the {ProductName} `Calendar` is as follows:
 
@@ -134,7 +135,6 @@ Following the same approach, we can switch `Selection` to range mode:
 
 The {ProductName} Calendar component allows you to switch between three different views: days, months and years. The `ActiveView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `ActiveDate` property. The `ActiveDate` property also reflects the changes of the currently visible date made by the end user.
 
-<!-- WebComponents -->
 
 ### Header Options
 
@@ -154,15 +154,23 @@ The {ProductName} Calendar component exposes a `title` slot which allows you to 
 </igc-calendar>
 ```
 
+```tsx
+<IgrCalendar selection="range" headerOrientation="vertical">
+    <span slot="title">Trip dates</span>
+</IgrCalendar>
+```
+
+```razor
+ <IgbCalendar HeaderOrientation="@CalendarHeaderOrientation.Vertical" HasHeader="true">
+    <span slot="title">Trip dates</span>
+ </IgbCalendar>
+```
+
 The following sample demonstrates the above configuration:
 
 `sample="/scheduling/calendar/header", height="370", alt="{Platform} Calendar Header Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ### Localization and Formatting
 
@@ -203,27 +211,66 @@ this.radios.forEach(radio => {
 })
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal" value={this.state.calendarLocale}>
+    <IgrRadio name="lang" value="en" checked={true} onChange={this.onRadioChange}>
+        <span>EN</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="de" onChange={this.onRadioChange}>
+        <span>DE</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="fr" onChange={this.onRadioChange}>
+        <span>FR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ar" onChange={this.onRadioChange}>
+        <span>AR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ja" onChange={this.onRadioChange}>
+        <span>JA</span>
+    </IgrRadio>                    
+</IgrRadioGroup>
+
+<IgrCalendar weekStart='monday' formatOptions={this.state.calendarFormat} 
+    locale={this.state.calendarLocale}
+    value={new Date()}/>
+```
+
+```tsx
+constructor(props: any) {
+    super(props);
+    this.onRadioChange = this.onRadioChange.bind(this);
+    const formatOptions: IgrCalendarFormatOptions = {
+        month: 'short',
+        weekday: 'short',
+    }
+    this.state = { calendarLocale: "en", calendarFormat: formatOptions };
+}
+
+public onRadioChange(e: any) {
+    if (e.detail.checked) {
+        this.setState({ calendarLocale: e.detail.value });
+    }
+}
+```
+
 If everything went well, we should now have a Calendar with customized display, that also changes the locale representation, based on the user selection. Let's have a look at it:
 
 `sample="/scheduling/calendar/formatting", height="520", alt="{Platform} Calendar Formatting Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- end: WebComponents, React -->
 
 ### Disabled dates
 
 In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
 
 These are the available options for the `Type` property:
-*  `After` - disables the dates after the first date in the `DateRange`
-*  `Before` - disables the dates before the first date in the `DateRange`
-*  `Between` - disables the dates between the first and the second date in the `DateRange`
-*  `Specific` - disables the dates specified in the `DateRange` array
-*  `Weekdays` - disables all weekdays
-*  `Weekends` - disables all weekends
+
+- `After` - disables the dates after the first date in the `DateRange`
+- `Before` - disables the dates before the first date in the `DateRange`
+- `Between` - disables the dates between the first and the second date in the `DateRange`
+- `Specific` - disables the dates specified in the `DateRange` array
+- `Weekdays` - disables all weekdays
+- `Weekends` - disables all weekends
 
 Let's create a sample that is disabling the dates between the 3rd and the 8th of the current month:
 
@@ -237,15 +284,47 @@ const range = [
 this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar disabledDates={this.state.disabledDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+];
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Specific,
+}
+const disabledDates = [desc];
+this.state = { disabledDates };
+```
+
+```razor
+    <IgbCalendar DisabledDates="@DisabledDateDescriptor" />
+
+    @code {
+    public IgbDateRangeDescriptor[] DisabledDateDescriptor { get; set; }
+
+    protected override void OnInitialized()
+    {
+        var today = DateTime.Today;
+
+        DateTime[] range = new DateTime[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) };
+
+        IgbDateRangeDescriptor dateDescriptor = new IgbDateRangeDescriptor() { DateRange = range, RangeType = DateRangeType.Specific };
+
+        this.DisabledDateDescriptor = new IgbDateRangeDescriptor[] { dateDescriptor };
+    }
+}
+```
+
 These configurations should have the following result:
 
 `sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar Disabled Dates Example"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
 
 ### Special dates
 
@@ -263,13 +342,50 @@ const range = [
 this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar specialDates={this.state.specialDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+]
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Between,
+}
+const specialDates = [desc]
+this.state = { specialDates };
+```
+
+```razor
+<IgbCalendar SpecialDates="@CalendarSpecialDates"/>
+
+@code {
+
+    private IgbDateRangeDescriptor[] CalendarSpecialDates { get; set; }
+
+    protected override void OnInitialized()
+    {
+        DateTime today = DateTime.Today;
+        IgbDateRangeDescriptor specialDates = new IgbDateRangeDescriptor()
+        {
+            DateRange = new[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) },
+            RangeType = DateRangeType.Between
+        };
+
+        this.CalendarSpecialDates = new IgbDateRangeDescriptor[] { specialDates };
+    }
+}
+
+```
+
 The following demo illustrates a Calendar with a vacation request option:
 
 `sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar Special Dates Example"`
 
-
-
-<!-- end: WebComponents -->
 
 ### Week numbers
 
@@ -359,6 +475,7 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 ## Keyboard navigation
 
 If you traverse the page using the <kbd>TAB</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `Calendar` introduces the following tab stops:
+
 - Month selection button
 - Year selection button
 - Previous button
@@ -366,6 +483,7 @@ If you traverse the page using the <kbd>TAB</kbd> key you should keep in mind th
 - Active date element
 
 When a **day/month/year** in the `Calendar` component is focused, use:
+
 - <kbd>PAGE UP</kbd> key to move to the previous month/year/years page.
 - <kbd>PAGE DOWN</kbd> key to move to the next month/year/years page.
 - <kbd>HOME</kbd> key to focus the first day of the current month/first month in view/first year in view.
@@ -373,23 +491,29 @@ When a **day/month/year** in the `Calendar` component is focused, use:
 - <kbd>Arrow</kbd> keys to navigate through the days/months/years. Navigating before the first item and after the last item will switch the view to the next/previous month/year/years page.
 
 When a **day** inside the `days` view is focused, use:
+
 - <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> keys to move to the previous year.
 - <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> keys to move to the next year.
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to select the currently focused day.
 
 When a **month** inside the `months` view is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to change the `ActiveDate` to the currently focused month and switch to `days` view.
 
 When an **year** inside the `years` view is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to change the `ActiveDate` to the currently focused year and switch to `months` view.
 
 When the **previous** or the **next** buttons (in the subheader) are focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to the previous/next month/year/years page.
 
 When the **month** button (in the subheader) is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to `months` view.
 
 When the **year** button (in the subheader) is focused, use:
+
 - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key to switch to `years` view.
 
 ## Styling
@@ -486,5 +610,5 @@ The following sample demonstrates the above CSS configuration:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

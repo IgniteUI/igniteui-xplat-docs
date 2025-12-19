@@ -2,6 +2,7 @@
 title: {Platform} Badge | Infragistics
 _description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
+_license: MIT
 mentionedTypes: ["Badge"]
 ---
 
@@ -33,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcBadgeComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -139,6 +140,24 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 `sample="/inputs/badge/shape", height="60", alt="{Platform} Badge Example"`
 
 
+### Dot
+
+The {ProductName} badge component can also render as a minimal dot indicator for notifications by setting its `dot` attribute. Dot badges do not support content, but they can be outlined and can use any of the available dot types (e.g., primary, success, info, etc.).
+
+```tsx
+<IgrBadge dot={true} ></IgrBadge>
+```
+
+```html
+<igc-badge dot></igc-badge>
+```
+
+```razor
+<IgbBadge Dot="true" />
+```
+
+`sample="/inputs/badge/dot", height="60", alt="{Platform} Badge Example"`
+
 
 ## Styling
 
@@ -159,10 +178,10 @@ igc-badge::part(base) {
 
 ## API References
 
- - `Badge`
- - [`Styling & Themes`](../themes/overview.md)
+- `Badge`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

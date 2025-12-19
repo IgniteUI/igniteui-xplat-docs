@@ -2,6 +2,7 @@
 title: {Platform} Ripple
 _description: With {ProductName} Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls
+_license: MIT
 mentionedTypes: ["Ripple", "Button"]
 ---
 
@@ -32,7 +33,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcRippleComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -110,12 +111,12 @@ igc-ripple {
 
 ## API References
 
- - `Button`
- - `Ripple`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Ripple`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

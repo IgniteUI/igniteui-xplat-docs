@@ -67,6 +67,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledPosition"}], "originalName": "GetUnscaledPosition"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomRadialMarkerStyleAllowed"}], "originalName": "IsCustomRadialMarkerStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomRadialStyleAllowed"}], "originalName": "IsCustomRadialStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isRadial"}], "originalName": "IsRadial"},

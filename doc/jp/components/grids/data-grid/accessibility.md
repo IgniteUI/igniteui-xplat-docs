@@ -125,5 +125,5 @@ ARIA 属性
 
 ## API リファレンス
 
- - `Grid`
- - `UseAccessibility`
+- `Grid`
+- `UseAccessibility`

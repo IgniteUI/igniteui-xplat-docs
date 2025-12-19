@@ -172,6 +172,31 @@
       {"names":[{"platform": "Angular", "mappedType": "IRandomnessSource","mappedName": "testRandomnessSource"}], "originalName": "TestRandomnessSource"} ]
   },
   {
+    "originalName": "ImageLoadStatus",
+    "originalNamespace": "Infragistics",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ImageLoadStatus.ts","mappedName": "ImageLoadStatus"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "Canceled"}], "originalName": "Canceled"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "Completed"}], "originalName": "Completed"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "Failed"}], "originalName": "Failed"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "Loading"}], "originalName": "Loading"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "Unknown"}], "originalName": "Unknown"} ]
+  },
+  {
+    "originalName": "ImageLoadEventArgs",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-image-load-event-args.ts","mappedName": "IgxImageLoadEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "error"}], "originalName": "Error"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "path"}], "originalName": "Path"},
+      {"names":[{"platform": "Angular", "mappedType": "ImageLoadStatus","mappedName": "status"}], "originalName": "Status"} ]
+  },
+  {
     "originalName": "FontRegistry",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-core",
@@ -303,6 +328,18 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "legendLabel"}], "originalName": "LegendLabel"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "outline"}], "originalName": "Outline"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "thickness"}], "originalName": "Thickness"} ]
+  },
+  {
+    "originalName": "FeatureState",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FeatureState.ts","mappedName": "FeatureState"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "FeatureState","mappedName": "Disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "Angular", "mappedType": "FeatureState","mappedName": "Enabled"}], "originalName": "Enabled"},
+      {"names":[{"platform": "Angular", "mappedType": "FeatureState","mappedName": "Unset"}], "originalName": "Unset"} ]
   },
   {
     "originalName": "HighlightedValueLabelMode",

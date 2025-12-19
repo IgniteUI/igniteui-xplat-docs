@@ -394,8 +394,8 @@ connectedCallback() {
 
 ## API リファレンス
 
- - `Button`
- - `DataGridToolbar`
- - `PinColumn`
- - `PinnedPositions`
- - `Pinned`
+- `Button`
+- `DataGridToolbar`
+- `PinColumn`
+- `PinnedPositions`
+- `Pinned`

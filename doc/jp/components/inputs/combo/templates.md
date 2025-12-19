@@ -2,6 +2,7 @@
 title: {Platform} コンボボックス コンポーネントのテンプレート – {ProductName}
 _description: {ProductName} コンボボックス コンポーネントのテンプレート
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントのテンプレート
+_license: MIT
 mentionedTypes: ["Combo"]
 _language: ja
 ---
@@ -162,7 +163,7 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <header slot="header">
         Header content goes here
     </header>
@@ -187,7 +188,7 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <footer slot="footer">
         Footer content goes here
     </footer>
@@ -212,7 +213,7 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
 ```
@@ -233,7 +234,7 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="down" slot="toggle-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -256,7 +257,7 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -272,11 +273,11 @@ const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
 <!-- WebComponents -->
 ## API リファレンス
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Collapsible Column Groups - {ProductName}
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["ColumnGroup"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -139,9 +140,9 @@ Let's see the markup below:
 ```
 
 To summarize, every child column has three states:
--	Can be always visible, no matter the expanded state of its parent.
--	Can be visible, when its parent is collapsed.
--	Can be hidden, when its parent is collapsed.
+- Can be always visible, no matter the expanded state of its parent.
+- Can be visible, when its parent is collapsed.
+- Can be hidden, when its parent is collapsed.
 
 The initial state of the column group which is specified as collapsible is `Expanded` set to **true**, but you can easily change this behavior by setting it to **false**.
 
@@ -150,11 +151,11 @@ The initial state of the column group which is specified as collapsible is `Expa
 
 Default expand indicator for the `{ComponentName}` is the following:
 
- <img class="responsive-img" src="../../../images/general/expand_indicator.png" style="width: 450px; height: 130px"/>
+<img class="responsive-img" src="../../../images/general/expand_indicator.png" alt="expand_indicator" style="width: 450px; height: 130px"/>
 
 Default collapse indicator for the `{ComponentName}` is the following:
 
-<img class="responsive-img" src="../../../images/general/collapsed_indicator.png" style="width: 400px; height: 130px"/>
+<img class="responsive-img" src="../../../images/general/collapsed_indicator.png" alt="collapsed_indicator" style="width: 400px; height: 130px"/>
 
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
 
@@ -180,7 +181,7 @@ Also, if you need to change the default expand/collapse indicator, we provide te
         string icon = context.Column.Expanded ? "remove" : "add";
         return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
     };
-    
+
     protected override void OnAfterRender(bool firstRender)
     {
         this.infoColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
@@ -199,6 +200,7 @@ Also, if you need to change the default expand/collapse indicator, we provide te
     </igc-column-group>
 </igc-column-group>
 ```
+
 ```ts
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;
@@ -280,23 +282,23 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

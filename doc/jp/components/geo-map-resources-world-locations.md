@@ -2,6 +2,7 @@
 title: {Platform} マップ | 世界の場所 | データ ソース | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップ データ ユーティリティを使用して、都市の地理的位置と国の首都を生成します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, map data, {ProductName}, Infragistics, {Platform} マップ, マップ データ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 _language: ja
 ---
@@ -1293,4 +1294,4 @@ export default class WorldLocations {
 
 ## API リファレンス
 
- - `XamGeographicMap`
+- `XamGeographicMap`

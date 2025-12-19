@@ -2,6 +2,7 @@
 title: {Platform} Linear Progress | Linear Progress | インフラジスティックス
 _description: プログレス バーを表示し、Linear Progress Indicator コンポーネントを使用して、無限の色とストライプ オプションで外観をカスタマイズします。
 _keywords: {Platform} Linear Progress, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["LinearProgress"]
 _language: ja
 ---
@@ -198,13 +199,13 @@ igc-linear-progress::part(label){
 
 ## API リファレンス
 
- - `Button`
- - `Calendar`
- - `LinearProgress`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `LinearProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -271,7 +271,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "flushTextContentChangedCheck"}], "originalName": "FlushTextContentChangedCheck"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFinancial"}], "originalName": "IsFinancial"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "simulateClick"}], "originalName": "SimulateClick"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "simulateHover"}], "originalName": "SimulateHover"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "simulateMouseLeave"}], "originalName": "SimulateMouseLeave"} ]
   },
   {
     "originalName": "FinancialLegend",

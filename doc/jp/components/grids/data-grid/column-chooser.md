@@ -286,10 +286,10 @@ connectedCallback() {
 
 ## API リファレンス
 
- - `Button`
- - `ColumnChooserText`
- - `ColumnChooserTitle`
- - `ColumnChooser`
- - `ColumnHidingAnimationMode`
- - `ColumnShowingAnimationMode`
- - `DataGridToolbar`
+- `Button`
+- `ColumnChooserText`
+- `ColumnChooserTitle`
+- `ColumnChooser`
+- `ColumnHidingAnimationMode`
+- `ColumnShowingAnimationMode`
+- `DataGridToolbar`

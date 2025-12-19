@@ -2,6 +2,7 @@
 title: {Platform} Banner | インフラジスティックス
 _description: {ProductName} Banner コンポーネントを使用すると、開発者は、モバイル アプリケーションやデスクトップ アプリケーション内に、短くて邪魔にならないメッセージ (およびオプションのアクション) を簡単に統合できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Banner components, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Banner コンポーネント
+_license: MIT
 mentionedTypes: ["Banner"]
 _language: ja
 ---
@@ -253,6 +254,7 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
     ...
 </igc-banner>
 ```
+
 ```ts
 const banner = document.getElementById('banner') as IgcBannerComponent;
 
@@ -282,6 +284,7 @@ banner.addEventListener('igcClosing', (event) => {
     }
 }
 ```
+
 ```razor
 //In JavaScript:
 function handleClosing() {
@@ -474,7 +477,7 @@ return(
     private IgbBanner bannerRef;
     private string iconName = "signal_wifi_off";
     private bool wifiState = false;
-    
+
     private void RefreshBanner()
     {
         if (!this.wifiState)
@@ -537,5 +540,5 @@ igc-banner::part(content) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

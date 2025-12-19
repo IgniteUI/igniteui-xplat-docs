@@ -63,10 +63,10 @@ Since the operands are applied to the column they can be added in several ways, 
 
 ## API References
 
- - `DisplayName`
- - `FilterExpressions`
- - `FilterFactory`
- - `FilterLogicalOperator`
- - `FilterOperand`
- - `FilterRequested`
- - `FilterUIType`
+- `DisplayName`
+- `FilterExpressions`
+- `FilterFactory`
+- `FilterLogicalOperator`
+- `FilterOperand`
+- `FilterRequested`
+- `FilterUIType`

@@ -80,6 +80,7 @@ yarn install
 `./docfx/en/components/toc.json`
   - If you want to add status (new, updated, preview) to all topics for WebComponents, React and Blazor you can set the property status like this `status = "NEW"`
   - If you want to add status specific only to a single platform you can set the property status like this `status = ["NEW_REACT", "PREVIEW_BLAZOR", "UPDATED_WEBCOMPONENTS"]`
+  - If you want to add premium icon to any item in the TOC you can set the property premium to true `"premium": true`. Note that the parent of the item would become premium as well.
 
 - commit your changes to you branch
 - push your branch to origin

@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | マップ ナビゲーション | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップをナビゲートするには、マウスまたはタッチを使用して左右にパンニングし、水平および垂直にズームします。{ProductName} マップのナビゲーション機能について説明します。
 _keywords: {Platform} map, navigation, {ProductName}, Infragistics, {Platform} マップ, ナビゲーション, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 _language: ja
 ---
@@ -78,7 +79,7 @@ this.GeoMap.WindowScale = 0.5;
 
 ## API リファレンス
 
- - `ActualWindowRect`
- - `WindowRect`
- - `XamGeographicMap`
- - `Zoomable`
+- `ActualWindowRect`
+- `WindowRect`
+- `XamGeographicMap`
+- `Zoomable`

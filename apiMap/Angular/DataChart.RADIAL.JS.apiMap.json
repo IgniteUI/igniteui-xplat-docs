@@ -67,6 +67,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getUnscaledPosition"}], "originalName": "GetUnscaledPosition"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomRadialMarkerStyleAllowed"}], "originalName": "IsCustomRadialMarkerStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomRadialStyleAllowed"}], "originalName": "IsCustomRadialStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isRadial"}], "originalName": "IsRadial"},

@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Selection - {ProductName}
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -225,45 +226,45 @@ In order to style components for Internet Explorer 11, we have to use a differen
 
 The column selection UI has a few more APIs to explore, which are listed below.
 
-* `{ComponentName}`
-* `Column`
-* `ColumnGroup`
+- `{ComponentName}`
+- `Column`
+- `ColumnGroup`
 
 `{ComponentName}` properties:
-* `ColumnSelection`
-* `SelectedColumns`
-* `SelectColumns`
-* `DeselectColumns`
-* `SelectAllColumns`
-* `DeselectAllColumns`
+- `ColumnSelection`
+- `SelectedColumns`
+- `SelectColumns`
+- `DeselectColumns`
+- `SelectAllColumns`
+- `DeselectAllColumns`
 
 `Column` properties:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `ColumnGroup` properties:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `{ComponentName}` events:
-* `OnColumnsSelectionChange`
+- `OnColumnsSelectionChange`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Selection](selection.md)
-* [Cell Selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Virtualization and Performance](virtualization.md)
+- [Selection](selection.md)
+- [Cell Selection](cell-selection.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Virtualization and Performance](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

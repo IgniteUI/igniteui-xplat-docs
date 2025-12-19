@@ -121,10 +121,10 @@ igc-badge::part(base) {
 
 ## API Reference
 
-* `Badge`
+- `Badge`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

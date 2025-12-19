@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View {ProductName} map tutorials!
 _keywords: {Platform} map, geographic series, {ProductName}, Infragistics, data binding
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "SeriesViewer", "Series", "GeographicShapeSeriesBase"]
 ---
 # {Platform} Binding Multiple Data Sources
@@ -314,5 +315,5 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
 ## API References
 
- - `GeographicPolylineSeries`
- - `GeographicSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicSymbolSeries`

@@ -2,6 +2,7 @@
 title: {Platform} Network Chart | Network Graph | Polyline Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Network Chart  / Graph
 _keywords: {Platform} Charts, Network Chart, Network Graph, Network Polar Chart, Network Scatter Chart, Polyline Chart, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -32,11 +33,13 @@ This example shows how to create Network Scatter Chart using `ScatterSeries` (fo
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bubble Chart](bubble-chart.md)
 - [Scatter Chart](scatter-chart.md)
 - [Shape Chart](shape-chart.md)
 
 ## API References
+
 - `CategoryYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

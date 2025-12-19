@@ -2,6 +2,7 @@
 title: {Platform} Linear Gauge | Data Visualization Tools | Infragistics
 _description: Use Infragistics' {Platform} linear gauge control to visualize data with a simple and concise view. Learn about the {ProductName} linear gauge configurable elements!
 _keywords: linear gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks
+_license: commercial
 mentionedTypes: ["XamLinearGauge"]
 namespace: Infragistics.Controls.Gauges
 ---
@@ -21,6 +22,7 @@ The following sample demonstrates how setting multiple properties on the same `X
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
+
 When installing the {Platform} gauge component, the core package must also be installed.
 
 ```cmd
@@ -159,6 +161,7 @@ The following code demonstrates how create a linear gauge containing a needle an
 <div class="divider--half"></div>
 
 ## Needle
+
 This is the primary measure displayed by the linear gauge component and is visualized as a bar or you can customize it to show almost any shape as is demonstrated below.
 
 ```html
@@ -261,11 +264,11 @@ The linear gauge can be modified to show a second needle. This will make the mai
 ```html
 <igx-linear-gauge
     #linearGauge
-    height="80px" 
+    height="80px"
     width="400px"
     value=70
-    minimumValue=0 
-    maximumValue=100 
+    minimumValue=0
+    maximumValue=100
     interval=10
     labelInterval=10
     labelExtent=0.025
@@ -283,8 +286,8 @@ The linear gauge can be modified to show a second needle. This will make the mai
     height="80px"
     width="100%"
     value={75}
-    minimumValue={0} 
-    maximumValue={100} 
+    minimumValue={0}
+    maximumValue={100}
     interval={10}
     labelInterval={10}
     labelExtent={0.025}
@@ -292,7 +295,7 @@ The linear gauge can be modified to show a second needle. This will make the mai
     labelsPostInitial={0}
     needleBrush='blue'
     highlightValueDisplayMode="Overlay"
-    highlightValue={25} 
+    highlightValue={25}
     isHighlightNeedleDraggingEnabled={true}
     />
 ```
@@ -302,8 +305,8 @@ The linear gauge can be modified to show a second needle. This will make the mai
     id="gauge"
     height="80px"
     width="100%"
-    minimum-value="0" 
-    maximum-value="100" 
+    minimum-value="0"
+    maximum-value="100"
     value="75"
     interval="10"
     label-interval="10"
@@ -312,15 +315,15 @@ The linear gauge can be modified to show a second needle. This will make the mai
     labels-post-initial="0"
     needle-brush="blue"
     highlight-value-display-mode="Overlay"
-    highlight-value=25 
+    highlight-value=25
     is-highlight-needle-dragging-enabled=true>
 </igc-linear-gauge>
 ```
 
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
-    MinimumValue="0" 
-    MaximumValue="100" 
+    MinimumValue="0"
+    MaximumValue="100"
     Value="75"
     Interval="10"
     LabelInterval="10"
@@ -337,6 +340,7 @@ The linear gauge can be modified to show a second needle. This will make the mai
 `sample="/gauges/linear-gauge/highlight-needle", height="125", alt="{Platform} linear gauge highlight needle"`
 
 ## Ranges
+
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same times the degree to which it resides within that state.
 
 ```html
@@ -425,6 +429,7 @@ The ranges are visual elements that highlight a specified range of values on a s
 
 
 ## Tick Marks
+
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the linear gauge.
 
 Major tick marks – The major tick marks are used as primary delimiters on the scale. The frequency they appear at, their extents and style can be controlled by setting their corresponding properties.
@@ -512,6 +517,7 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
 
 
 ## Labels
+
 The labels indicate the measures on the scale.
 
 ```html
@@ -554,6 +560,7 @@ The labels indicate the measures on the scale.
     font="11px Verdana">
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -572,6 +579,7 @@ The labels indicate the measures on the scale.
 
 
 ## Backing
+
 The backing element represents background and border of the linear gauge component. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
 
 ```html
@@ -631,6 +639,7 @@ The backing element represents background and border of the linear gauge compone
 
 
 ## Scale
+
 The scale is a visual element that highlights the full range of values in the linear gauge. You can customize the appearance and the shape of the scale. It can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
 
 ```html
@@ -679,6 +688,7 @@ The scale is a visual element that highlights the full range of values in the li
     scale-end-extent=0.95>
 </igc-linear-gauge>
 ```
+
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -699,6 +709,7 @@ The scale is a visual element that highlights the full range of values in the li
 
 
 ## Summary
+
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the linear gauge with all features and visuals enabled.
 
 ```html
@@ -993,6 +1004,7 @@ For your convenience, all above code snippets are combined into one code block b
     </IgbLinearGraphRange>
 </IgbLinearGauge>
 ```
+
 <div class="divider--half"></div>
 
 ## API References

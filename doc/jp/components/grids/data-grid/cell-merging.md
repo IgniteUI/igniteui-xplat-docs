@@ -46,7 +46,7 @@ _language: ja
 
 ## API リファレンス
 
- - `FormattedText`
- - `MergedCellEvaluationCriteria`
- - `MergedCellMode`
- - `OnlyWhenSorted`
+- `FormattedText`
+- `MergedCellEvaluationCriteria`
+- `MergedCellMode`
+- `OnlyWhenSorted`

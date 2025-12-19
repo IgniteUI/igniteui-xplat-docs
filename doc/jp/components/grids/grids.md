@@ -2,6 +2,7 @@
 title: {Platform} Grid レイアウト| リアルタイム {Platform} テーブル | 軽量の {Platform} Web コンポーネント テーブル | インフラジスティックス
 _description: {Platform} Grid レイアウトは、コーディングや構成をほとんど行わずに、動的でタッチ レスポンシブなデータ グリッドを構築するのに役立ちます。{ProductName} の 30 日間無料トライアルをお試しください。
 _keywords: {Platform} data grid, infragistics, grids, {ProductName}, table, {Platform} データ グリッド, インフラジスティック, グリッド, テーブル
+_license: commercial
 _language: ja
 ---
 

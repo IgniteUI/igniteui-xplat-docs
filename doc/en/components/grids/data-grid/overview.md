@@ -472,4 +472,4 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 
 ## API References
 
- - `Grid`
+- `Grid`

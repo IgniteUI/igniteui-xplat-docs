@@ -2,6 +2,7 @@
 title: {Platform} Data Chart | Data Visualization Tools | Synchronization | Infragistics
 _description: Synchronize between multiple Infragistics' {Platform} charts controls including zooming, panning and crosshair events. Learn about our {ProductName} graph synchronization capabilities!
 _keywords: {Platform} charts, data chart, synchronization, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -14,8 +15,6 @@ The {ProductName} data chart allows for synchronization with respect to the coor
 This sample shows synchronization of two {Platform} data charts:
 
 `sample="/charts/data-chart/chart-synchronization", height="600", alt="{Platform} Chart Synchronization Example"`
-
-
 
 <div class="divider--half"></div>
 

@@ -2,6 +2,7 @@
 title: {Platform} 日時入力 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateTimeInput"]
 _language: ja
 ---
@@ -310,14 +311,14 @@ igc-date-time-input::part(suffix) {
 
 ## API リファレンス
 
- - `Input`
- - `MaskInput`
- - `Icon`
- - `DateTimeInput`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `MaskInput`
+- `Icon`
+- `DateTimeInput`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

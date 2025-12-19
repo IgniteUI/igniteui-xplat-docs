@@ -2,6 +2,7 @@
 title: {Platform} 円チャートとグラフ | {ProductName}
 _description: {ProductName} 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊な UI コントロールです。無料でお試しください。
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamPieChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -106,15 +107,15 @@ _language: ja
 
 円チャート コンポーネントは、選択モードを 3 つコンポーネントサポートします。
 
-* Single - single モードに設定すると、一度に 1 つのスライスのみ選択します。他のスライスを選択すると、最初に選択したスライスは選択解除され、新しいスライスが選択されます。
-* Multiple - Multiple モードに設定すると、一度に複数のスライスを選択します。スライスをクリックするとスライスが選択され、他のスライスをクリックすると、最初のスライスも、新しくクリックしたスライスも選択されます。
-* 手動 - Manual モードに設定すると、選択は無効化されます。
+- Single - single モードに設定すると、一度に 1 つのスライスのみ選択します。他のスライスを選択すると、最初に選択したスライスは選択解除され、新しいスライスが選択されます。
+- Multiple - Multiple モードに設定すると、一度に複数のスライスを選択します。スライスをクリックするとスライスが選択され、他のスライスをクリックすると、最初のスライスも、新しくクリックしたスライスも選択されます。
+- 手動 - Manual モードに設定すると、選択は無効化されます。
 
 円チャート コンポーネントには、選択機能に関連する 4 つのイベントがあります。
-* SelectedItemChanging
-* SelectedItemChanged
-* SelectedItemsChanging
-* SelectedItemsChanged
+- SelectedItemChanging
+- SelectedItemChanged
+- SelectedItemsChanging
+- SelectedItemsChanged
 
 「Changing」で終わるイベントはキャンセル可能なイベントです。すなわち、イベント引数プロパティ `Cancel` を true に設定することで、スライスの選択を停止します。True に設定すると、関連付けられたプロパティは更新されず、その結果スライスは選択されません。この設定はたとえば、スライスのデータによって一定のスライスの選択を無効化する場合に使用します。
 

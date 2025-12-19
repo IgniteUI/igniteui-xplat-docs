@@ -2,13 +2,14 @@
 title: {Platform} Tooltip | インフラジスティックス
 _description: {ProductName} Tooltip コンポーネントを使用すると、ツールチップを簡単に作成し、要素に添付することができます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Tooltip components, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Tooltip コンポーネント
-mentionedTypes: ["Tooltip"]
+_license: MIT
+mentionedTypes: ["Tooltip", "PopoverPlacement"]
 _language: ja
 ---
 
 # {Platform} Tooltip (ツールチップ)
 
-{ProductName} Tooltip コンポーネントは、特定の要素のツールチップを表示する方法を提供します。ツールチップは、通常、要素がキーボード フォーカスを受け取ったとき、またはマウスを要素の上に置いたときに、要素に関連する情報を表示するポップアップです。 
+{ProductName} Tooltip コンポーネントは、特定の要素のツールチップを表示する方法を提供します。ツールチップは、通常、要素がキーボード フォーカスを受け取ったとき、またはマウスを要素の上に置いたときに、要素に関連する情報を表示するポップアップです。
 
 ## {ProductName} Tooltip の例
 
@@ -244,9 +245,9 @@ tooltip.anchor = anchor;
 
 ### 配置
 
-`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの配置オプションとともに使用するだけです。
+`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティと `PopoverPlacement` のいずれかの配置オプションとともに使用するだけです。
 
-`Placement` プロパティが設定されていない場合、デフォルト値は `bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
+`Placement` プロパティが設定されていない場合、デフォルト値は `Bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
 
 さらに、`Sticky` プロパティを使用して `Tooltip` を固定することができます。これにより、閉じるボタンが追加され、ユーザーが閉じるボタンをクリックするか、`Esc` キーを押して手動で閉じるまで、`Tooltip` が表示されたままになります。この動作はデフォルトのホバー動作をオーバーライドし、ユーザーがターゲット要素上でホバーを停止したときに `Tooltip` が消えないようにします。
 
@@ -314,10 +315,10 @@ tooltip.anchor = anchor;
 
 `Tooltip` はアクセシビリティを考慮して構築されており、次の ARIA 属性が含まれています。
 
-* `role` - ツールチップがデフォルトの動作になっている場合、`role="tooltip"` が適用されます。`Sticky` プロパティが有効な場合、ロールは `status` に変更されます。
-* `inert` - 可視性に基づいて動的に切り替えられます。ツールチップが非表示になると、ツールチップは非アクティブになります。
-* `aria-atomic` - true に設定すると、ツールチップのコンテンツ全体が変更時に通知されるようになります。
-* `aria-live` - polite に設定して、ユーザーがアイドル状態のときにのみ更新を通知することをスクリーン リーダーに示します。
+- `role` - ツールチップがデフォルトの動作になっている場合、`role="tooltip"` が適用されます。`Sticky` プロパティが有効な場合、ロールは `status` に変更されます。
+- `inert` - 可視性に基づいて動的に切り替えられます。ツールチップが非表示になると、ツールチップは非アクティブになります。
+- `aria-atomic` - true に設定すると、ツールチップのコンテンツ全体が変更時に通知されるようになります。
+- `aria-live` - polite に設定して、ユーザーがアイドル状態のときにのみ更新を通知することをスクリーン リーダーに示します。
 
 ## スタイル設定
 
@@ -355,9 +356,9 @@ igc-tooltip::part(bottom) {
 - `Badge`
 - `List`
 - `CategoryChart`
- - [スタイル設定およびテーマ](../themes/overview.md)
+- [スタイル設定およびテーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

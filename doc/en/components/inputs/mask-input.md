@@ -2,6 +2,7 @@
 title: {Platform} MaskInput | Infragistics
 _description: Infragistics' {Platform} MaskInput allows the user to control input and format the visible value based on configurable mask rules
 _keywords: {Platform} input, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["MaskInput"]
 ---
 
@@ -21,6 +22,7 @@ First, you need to install the {ProductName} by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 Before using the `MaskInput`, you need to register it as follows:
 <!-- end: WebComponents -->
 
@@ -39,6 +41,7 @@ npm install igniteui-react
 ```
 
 You will then need to import the `MaskInput`, its necessary CSS, and register its module, like so:
+
 ```tsx
 import { IgrMaskInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
@@ -71,7 +74,7 @@ You will also need to link an additional CSS file to apply the styling to the `M
 
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ### Mask Rules
 The table bellow shows the supported built-in mask rules:
@@ -142,7 +145,7 @@ Developers can customize the prompt symbol used for unfilled parts of the mask. 
 <IgbMaskInput @ref="MaskInputRef" Mask="(####) 00-00-00 Ext. 9999" Prompt="-"></IgbMaskInput>
 ```
 
-By default, the `prompt` character is *underscore*.
+By default, the `prompt` character is **underscore**.
 
 ### Placeholder
 
@@ -162,7 +165,7 @@ Developers can also take advantage of the `Placeholder` property, which serves t
 
 ### Value Modes
 
-The `MaskInput` exposes a `ValueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `ValueMode` is set to *raw*. Try it for yourself in the example below:
+The `MaskInput` exposes a `ValueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `ValueMode` is set to `raw`. Try it for yourself in the example below:
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} Mask Input Value Modes Example"`
 
@@ -211,5 +214,5 @@ igc-mask-input::part(input)::placeholder {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -27,6 +27,7 @@ _language: kr
 ```ts
 import { HeaderClickAction } from 'igniteui-react-data-grids';
 ```
+
 ```tsx
 <IgrDataGrid
     height="100%"
@@ -35,6 +36,7 @@ import { HeaderClickAction } from 'igniteui-react-data-grids';
     dataSource={this.data}
     ref={this.onGridRef}/>
 ```
+
 ```html
 <igc-data-grid
     id="grid"
@@ -60,6 +62,7 @@ colSortDesc.field = "UnitsInStock";
 colSortDesc.sortDirection = ListSortDirection.Descending;
 this.grid.sortDescriptions.add(colSortDesc);
 ```
+
 ```ts
 import { IgcColumnSortDescription } from 'igniteui-webcomponents-data-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
