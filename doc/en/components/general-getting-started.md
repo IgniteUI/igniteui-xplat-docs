@@ -10,7 +10,7 @@ mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 
 # Getting Started With {ProductName}
 
-[`{ProductName}`]({GithubLink}) is a complete set of UI widgets, components, and Sketch UI kits for {Platform} by Infragistics. It enables developers to build modern, high-performance HTML5 and JavaScript apps for desktop browsers, mobile experiences, and progressive web apps (PWAs).
+[`{ProductName}`]({GithubLink}) is a complete set of UI widgets, components, and Figma UI kits for {Platform} by Infragistics. It enables developers to build modern, high-performance HTML5 and JavaScript apps for desktop browsers, mobile experiences, and progressive web apps (PWAs).
 
 {ProductName} comprises several packages available under either an MIT or a commercial license, depending on the components and services they contain. For a detailed list of components and their license, please refer to the [License FAQ and Installation](./general-licensing.md) and [Open Source vs Premium](./general-open-source-vs-premium.md) topics.
 
@@ -450,7 +450,7 @@ The {ProductName} [Geographic Map](geo-map.md) component brings the ability to v
 {ProductName} provides several [Grid](grids/grids-header.md) components that allow you to bind and display data with little configuration in the form of [Grid Lite](grid-lite/overview.md) - a light-weight grid component under MIT license, [Data Grid](grids/data-grid.md) - a feature-rich grid component under commercial license, [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md).
 
 ## Buttons, Inputs, Layouts, and Menus
-{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Figma.
 
 <!-- end: WebComponents, React -->
 
