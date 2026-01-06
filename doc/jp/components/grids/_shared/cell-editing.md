@@ -1281,8 +1281,9 @@ public handleCellEdit(event: IgrGridEditEventArgs): void {
 
 ```css
 .grid {
-    --ig-grid-edit-mode-color: orange;
-    --ig-grid-cell-editing-background: lightblue;
+    --ig-grid-edit-mode-color: #FFA500;
+    --ig-grid-cell-active-border-color: #FFA500;
+    --ig-grid-cell-editing-background: #add8e6;
 }
 ```
 <!-- ComponentEnd: Grid -->
@@ -1304,8 +1305,9 @@ public handleCellEdit(event: IgrGridEditEventArgs): void {
 
 ```css
 .treeGrid {
-    --ig-grid-edit-mode-color: orange;
-    --ig-grid-cell-editing-background: lightblue;
+    --ig-grid-edit-mode-color: #FFA500;
+    --ig-grid-cell-active-border-color: #FFA500;
+    --ig-grid-cell-editing-background: #add8e6;
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -1327,8 +1329,9 @@ public handleCellEdit(event: IgrGridEditEventArgs): void {
 
 ```css
 .hierarchicalGrid {
-    --ig-grid-edit-mode-color: orange;
-    --ig-grid-cell-editing-background: lightblue;
+    --ig-grid-edit-mode-color: #FFA500;
+    --ig-grid-cell-active-border-color: #FFA500;
+    --ig-grid-cell-editing-background: #add8e6;
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
