@@ -209,11 +209,11 @@ defineComponents(IgcTabsComponent);
 
 ```css
 igc-tab::part(tab-header) {
-  background-color: var(--ig-gray-200);
+  background-color: var(--ig-surface-600);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body) {
+  color: var(--ig-success-300);
 }
 ```
 <!-- end: WebComponents, React -->
@@ -245,7 +245,6 @@ igc-tab::part(content) {
 - `IconButton`
 - `RadioGroup`
 - [スタイル設定 & テーマ](../themes/overview.md)
-
 
 ## その他のリソース
 
