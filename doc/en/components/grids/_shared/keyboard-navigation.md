@@ -129,7 +129,7 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 ## Demo
 
 
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
 <!-- end: Angular, WebComponents, React -->
 
