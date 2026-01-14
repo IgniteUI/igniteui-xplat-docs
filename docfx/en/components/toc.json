@@ -825,7 +825,7 @@
         ]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Keyboard navigation",
         "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "",
