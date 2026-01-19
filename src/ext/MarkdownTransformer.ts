@@ -4,7 +4,7 @@ import { MarkdownVerifier } from './MarkdownVerifier';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
 import { ComponentDetector } from './ComponentDetector';
-
+import { transformCodeRefs as transformCodeRefsSimple } from './MarkdownTransformer.simple';
 import { LOG } from './Logger';
 
 let remark = require(`remark`);
@@ -233,6 +233,10 @@ function pad(num: number, width: number) {
 }
 
 function transformCodeRefs(options: any) {
+    if (!options.mappings?.length) {
+        console.log("No mappings provided, using simple code ref transformer.");
+        return transformCodeRefsSimple(options);
+    }
 
     function transformRef(node: any, index: number, parent: any) {
         let memberName = node.value;

@@ -1,0 +1,75 @@
+{
+  "platforms": {
+    "Angular": {
+      "prefix": "Igx",
+      "suffix": "Component",
+      "apiRoot": "https://www.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/",
+      "packageJoin": "_",
+      "packageOverrides": {
+        "igniteui-dockmanager": {
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+        }
+      }
+    },
+    "React": {
+      "prefix": "Igr",
+      "suffix": "",
+      "apiRoot": "https://www.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/",
+      "packageJoin": "_",
+      "packageOverrides": {
+        "igniteui-dockmanager": {
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+        },
+        "igniteui-data-grids": {
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/"
+        }
+      }
+    },
+    "WebComponents": {
+      "prefix": "Igc",
+      "suffix": "Component",
+      "apiRoot": "https://www.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/",
+      "packageJoin": "_",
+      "packageOverrides": {
+        "igniteui-dockmanager": {
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+        }
+      }
+    },
+    "Blazor": {
+      "prefix": "Igb",
+      "suffix": "",
+      "apiRoot": "https://www.infragistics.com/blazor-apps/blazor-api/api/",
+      "packageJoin": "."
+    }
+  },
+  "componentPackageMap": {
+    "DockManager": "igniteui-dockmanager",
+    "CheckboxList": "igniteui-data-grids",
+    "Grid": "igniteui-webgrids",
+    "HierarchicalGrid": "igniteui-webgrids",
+    "TreeGrid": "igniteui-webgrids",
+    "PivotGrid": "igniteui-webgrids",
+    "CategoryChart": "igniteui-charts",
+    "DataChart": "igniteui-charts",
+    "LinearGauge": "igniteui-gauges",
+    "RadialGauge": "igniteui-gauges",
+    "BulletGraph": "igniteui-gauges",
+    "Spreadsheet": "igniteui-spreadsheet",
+    "GeographicMap": "igniteui-maps"
+  },
+  "componentPlatformAvailability": {
+    "DockManager": {
+      "availableOn": ["React", "WebComponents", "Blazor"],
+      "fallbackByPlatform": {
+        "Angular": "WebComponents"
+      }
+    }
+  },
+  "typePatterns": {
+    "class": "classes/",
+    "interface": "interfaces/",
+    "enum": "enums/",
+    "type": "types/"
+  }
+}

@@ -1202,6 +1202,7 @@ function verifyMarkdown(cb) {
         
         filesCount++;
         var result = mv.verifyMarkdown(fileContent, filePath);
+
         if (result.isValid) {
             // console.log('verified:  ' + filePath);
             // fileContent = result.fileContent;
