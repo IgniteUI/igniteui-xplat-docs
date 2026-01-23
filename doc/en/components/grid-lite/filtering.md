@@ -10,64 +10,47 @@ _license: MIT
 # {Platform} {GridLiteTitle} Filter Operations
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `filter` property of the column configuration object.
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `filterable` attribute on the column element.
+
+```html
+<igc-grid-lite .data=${data}>
+  <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
+</igc-grid-lite>
+```
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `Filter` property of the column configuration object.
-<!-- end: Blazor -->
-
-```typescript
-{
-  key: 'price',
-  filter: true
-}
-```
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `Filterable` parameter on the column.
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "LastName",
-    Filter = true
-}
+<IgbGridLite Data="@data">
+    <IgbGridLiteColumn Field="LastName" Filterable="true" />
+</IgbGridLite>
 ```
+<!-- end: Blazor -->
 
 <!-- React, WebComponents -->
-The `filter` property can be either a simple boolean or a
-`ColumnFilterConfiguration` object which exposes additional configuration options:
-<!-- end: React, WebComponents -->
-<!-- Blazor -->
-The `Filter` property can be either a simple boolean or a
-`IgbColumnFilterConfiguration` object which exposes additional configuration options:
-<!-- end: Blazor -->
+You can also control whether the filter operations for string columns should be case sensitive by using the `filtering-case-sensitive` attribute:
 
-```typescript
-{
-  key: 'price',
-  filter: {
-    /**
-     * For string data types controls whether the filter operations for this column will be case sensitive.
-     * By default, filter operations for string types are case insensitive.
-     */
-    caseSensitive: true;
-  }
-}
+```html
+<igc-grid-lite-column 
+  field="price" 
+  filterable
+  filtering-case-sensitive
+></igc-grid-lite-column>
 ```
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+You can also control whether the filter operations for string columns should be case sensitive by using the `FilteringCaseSensitive` parameter:
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "FirstName",
-    Filter = new IgbColumnFilterConfiguration
-    {
-        /**
-        * For string data types controls whether the filter operations for this column will be case sensitive.
-        * By default, filter operations for string types are case insensitive.
-        */
-        CaseSensitive = true
-    }
-},
+<IgbGridLiteColumn 
+    Field="FirstName" 
+    Filterable="true"
+    FilteringCaseSensitive="true" />
 ```
+<!-- end: Blazor -->
 
 `sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} Filtering Config"`
 
@@ -83,9 +66,9 @@ The building blocks for filter operations in the grid is the `IgbGridLiteFilterE
 ```typescript
 export interface FilterExpression<T, K extends Keys<T> = Keys<T>> {
   /**
-   * The target column for the filter operation.
+   * The target column field for the filter operation.
    */
-  key: K;
+  field: K;
   /**
    * The filter function which will be executed against the data records.
    */
@@ -117,10 +100,10 @@ export interface FilterExpression<T, K extends Keys<T> = Keys<T>> {
 public class IgbGridLiteFilterExpression
 {
     /// <summary>
-    /// The target column for the filter operation.
+    /// The target column field for the filter operation.
     /// </summary>
-    [JsonPropertyName("key")]
-    public string Key { get; set; }
+    [JsonPropertyName("field")]
+    public string Field { get; set; }
 
     /// <summary>
     /// The filter condition to apply. Can be a condition name (string) or a FilterOperation // TODO
@@ -172,24 +155,24 @@ based on those expressions.
 
 ```typescript
 // Single
-grid.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
+grid.filter({ field: 'firstName', condition: 'contains', searchTerm: 'George' });
 
 // Multiple
 grid.filter([
-  { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
-  { key: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
+  { field: 'firstName', condition: 'startsWith', searchTerm: 'a' },
+  { field: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
 ]);
 ```
 
 ```razor
 // Single
-await grid.Filter(new IgbGridLiteFilterExpression { Key = "FirstName", Condition = "contains", SearchTerm = "George" });
+await grid.Filter(new IgbGridLiteFilterExpression { Field = "FirstName", Condition = "contains", SearchTerm = "George" });
 
 // Multiple
 await grid.Filter(new IgbGridLiteFilterExpression[]
 {
-    new IgbGridLiteFilterExpression { Key = "FirstName", Condition = "startsWith", SearchTerm = "a" },
-    new IgbGridLiteFilterExpression { Key = "FirstName", Condition = "startsWith", SearchTerm = "g", Criteria = "or" }
+    new IgbGridLiteFilterExpression { Field = "FirstName", Condition = "startsWith", SearchTerm = "a" },
+    new IgbGridLiteFilterExpression { Field = "FirstName", Condition = "startsWith", SearchTerm = "g", Criteria = "or" }
 });
 ```
 <!-- React, WebComponents -->
@@ -225,9 +208,9 @@ For example:
 ```razor
 private IgbGridLiteFilterExpression[] filterState = new[]
 {
-    new IgbGridLiteFilterExpression { Key = "Age", Condition = "greaterThan", SearchTerm = 21 },
+    new IgbGridLiteFilterExpression { Field = "Age", Condition = "greaterThan", SearchTerm = 21 },
     // unary condition so `SearchTerm` is not required
-    new IgbGridLiteFilterExpression { Key = "Active", Condition = "true" }
+    new IgbGridLiteFilterExpression { Field = "Active", Condition = "true" }
 };
 
 <IgbGridLite FilterExpressions="filterState" />
@@ -243,9 +226,9 @@ For example here is a Lit-based sample:
 ```typescript
 {
   filterState: FilterExpression<User>[] = [
-    { key: 'age', condition: 'greaterThan', searchTerm: 21 },
+    { field: 'age', condition: 'greaterThan', searchTerm: 21 },
     /** unary condition so `searchTerm` is not required */
-    { key: 'active', condition: 'true' },
+    { field: 'active', condition: 'true' },
   ];
 
   render() {
