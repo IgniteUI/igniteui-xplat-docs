@@ -76,7 +76,8 @@ public exportButtonHandler() {
   this.excelExportService.export(this.{ComponentName}, new ExcelExporterOptions('ExportedDataFile'));
 }
 
-public exportPdfButtonHandler() {  this.pdfExportService.export(this.{ComponentName}, new PdfExporterOptions('ExportedDataFile'));
+public exportPdfButtonHandler() {
+  this.pdfExportService.export(this.{ComponentName}, new PdfExporterOptions('ExportedDataFile'));
 }
 ```
 
@@ -132,6 +133,7 @@ public exportButtonHandler() {
 `sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例"`
 
 ## 固定された列ヘッダーを使用してグリッドをエクスポートする
+
 
 デフォルトでは、Excel エクスポーター サービスは、スクロール可能な (固定されていない) 列ヘッダーを使用してグリッドをエクスポートします。多くのシナリオでは、エクスポートされた Excel ファイルの上部にすべてのヘッダーを固定し、ユーザーがレコードをスクロールしても常に表示されるようにしたい場合があります。これを実現するには、`ExporterOption` `FreezeHeaders` を **true** に設定します。
 
@@ -237,7 +239,7 @@ igRegisterScript("WebHierarchicalGridExportEventFreezeHeaders", (ev) => {
 
 上記の例では、Excel Exporter サービスはすべての使用可能なデータをエクスポートします。行または列全体のエクスポートをしない方が良い場合があります。これを実現するには、それぞれ各列と各行に対して発生する `columnExporting` および `rowExporting` イベントをサブスクライブし、イベント引数オブジェクトの `cancel` プロパティを **true** に設定してイベントをキャンセルします。
 
-以下の例では、ヘッダーが「Age」で、インデックスが 1 の場合、エクスポートから列を除外します。
+以下の例では、ヘッダーが 「Age」 で、インデックスが 1 の場合、エクスポートから列を除外します。
 
 ```ts
 // component.ts
