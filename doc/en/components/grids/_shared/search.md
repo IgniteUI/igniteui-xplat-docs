@@ -350,6 +350,54 @@ Let's also display the position of the current occurrence, along with the total 
 
 <!-- end: Angular -->
 
+<!-- React -->
+
+### Display Results Count
+
+Let's also display the position of the current occurrence, along with the total results count! We can do that by using the grid's `lastSearchInfo` property. This property is automatically updated when using the `findPrev` & `findNext` methods.
+ 
+- The `lastSearchInfo.matchCount` value will give us the total results count.
+- The `lastSearchInfo.activeMatchIndex` value will give us the index position of the current occurrence(match).
+
+```tsx
+// declare variables to track search results
+const [matchCount, setMatchCount] = useState(0);
+const [activeMatchIndex, setActiveMatchIndex] = useState(0);
+
+// update info on search operation
+const updateSearchInfo = () => {
+    const searchInfo = gridRef.current?.lastSearchInfo;
+    if (searchInfo) {
+        setMatchCount(searchInfo.matchCount);
+        setActiveMatchIndex(searchInfo.activeMatchIndex);
+    } else {
+        setMatchCount(0);
+        setActiveMatchIndex(0);
+    }
+}; 
+
+const prevSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findPrev(text, caseSensitive, exactMatch);
+    updateSearchInfo();
+};
+
+const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findNext(text, caseSensitive, exactMatch);
+    updateSearchInfo();
+};
+
+// reset state
+const clearSearch = () => {
+    setSearchText('');
+    gridRef.current.clearSearch();
+    setMatchCount(0);
+    setActiveMatchIndex(0);
+};
+
+```
+
+<!-- end: React -->
+
 ### Add Search Buttons
 
 In order to freely search and navigate among our search results, let's create a couple of buttons by invoking the `FindNext` and the `FindPrev` methods inside the buttons' respective click event handlers.
