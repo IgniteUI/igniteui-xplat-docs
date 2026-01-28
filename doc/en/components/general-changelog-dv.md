@@ -15,8 +15,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
-
 ## **{PackageVerLatest}**
+
+- Angular 21 support.
+
+## **{PackageVerChanges-25-2-DEC}**
 
 ### Bug Fixes
 
