@@ -361,7 +361,7 @@ this.ordersFields = [
 
 ### Demo
 
-We’ve created this {Platform} Query Builder example to show you the templating and formatter functionalities for the header and the search value of the {Platform} Query Builder component.
+We’ve created this example to show you the templating and formatter functionalities for the header and the search value of the {Platform} Query Builder component.
 
 `sample="/interactions/query-builder/template", height="900", alt="{Platform} Query Builder Template Example"`
 
