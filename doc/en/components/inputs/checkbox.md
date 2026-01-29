@@ -269,12 +269,11 @@ With this four CSS parts we have full control over the Checkbox styling.
 
 ```css
 igc-checkbox::part(indicator) {
-  stroke: var(--ig-secondary-500-contrast);
+  --tick-color: var(--ig-secondary-500-contrast); /* check icon color */
 }
 
 igc-checkbox::part(control checked)::after {
-  border-radius: 4px;
-  background: var(--ig-secondary-500);
+  --fill-color: var(--ig-secondary-500); /* checkbox background color */
 }
 ```
 

@@ -165,9 +165,8 @@ The `Badge` component exposes a `base` CSS part that can be used to change all o
 
 ```css
 igc-badge::part(base) {
-  background: var(--ig-primary-500);
-  color: var(--ig-primary-500-contrast);
-  border-radius: 2px;
+    --background-color: var(--ig-error-A100);
+    --border-radius: 2px;
 }
 ```
 
