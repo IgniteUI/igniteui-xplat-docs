@@ -207,12 +207,39 @@ The `Tab` component exposes the following CSS parts:
 | `tab-body` | Holds the body content of a single tab, only the body of the selected tab is visible. |
 
 ```css
-igc-tab::part(tab-header) {
-  background-color: var(--ig-surface-600);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(tab-body) {
-  color: var(--ig-success-300);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: WebComponents, React -->
@@ -225,12 +252,39 @@ igc-tab::part(tab-body) {
 | `suffix` | The suffix wrapper. |
 
 ```css
-igc-tabs::part(headers-content) {
-  background-color: var(--ig-gray-200);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: Blazor -->
