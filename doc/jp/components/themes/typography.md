@@ -2,6 +2,7 @@
 title: {Platform} スタイル設定およびテーマ | {Platform} タイポグラフィ | インフラジスティックス
 _description:
 _keywords: {ProductName}, Infragistics, Typography, Styling, インフラジスティックス, タイポグラフィ, スタイル設定
+_license: MIT
 mentionedTypes: ["Typography"]
 _language: ja
 ---

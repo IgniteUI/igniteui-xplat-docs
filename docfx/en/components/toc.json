@@ -29,7 +29,8 @@
   {
     "exclude": ["Angular"],
     "name": "Open-Source vs Premium",
-    "href": "general-open-source-vs-premium.md"
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -59,6 +60,12 @@
         "name": ".NET MAUI Blazor App",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+
+        "name": "Open-Source Libraries",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },
@@ -254,9 +261,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -526,9 +534,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -794,9 +803,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -1889,7 +1899,8 @@
   {
     "name": "Toolbar",
     "href": "menus/toolbar.md",
-    "status": "UPDATED"
+    "status": "UPDATED",
+    "premium": true
   },
   {
     "exclude": ["Angular"],
@@ -2022,7 +2033,8 @@
   {
     "name": "Color Editor",
     "href": "inputs/color-editor.md",
-    "status": "PREVIEW"
+    "status": "PREVIEW",
+    "premium": true
   },
   {
     "exclude": ["Angular"],
@@ -2179,7 +2191,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Date Range Picker",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"
@@ -2464,12 +2476,14 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "editors/multi-column-combobox.md",
-    "status": ""
+    "status": "",
+    "premium": true
   },
   {
     "exclude": ["Angular"],
     "name": "XDate Picker",
     "href": "editors/xdate-picker.md",
-    "status": ""
+    "status": "",
+    "premium": true
   }
 ]

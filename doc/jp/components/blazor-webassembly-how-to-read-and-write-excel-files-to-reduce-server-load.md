@@ -1,8 +1,9 @@
 ---
 title: Blazor Webassembly | Blazor Excel ライブラリ | インフラジスティックス
 _description: Infragistics Blazor Webassembly - Blazor WebAssembly 上で Excel ファイルを読み書きし、サーバー負荷を減らす
-_keywords: Blazor Webassembly, Excel ライブラリ, Excel ファイルの読み書き, $ProductName$, インフラジスティックス
+_keywords: Blazor Webassembly, Excel ライブラリ, Excel ファイルの読み書き, {ProductName}, インフラジスティックス
 _language: ja
+_license: commercial
 mentionedTypes: []
 ---
 
@@ -28,7 +29,7 @@ mentionedTypes: []
 
 ## Blazor WebAssembly と Blazor Server を理解する
 
-[Blazor](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) を簡潔に説明すると、これはマイクロソフトが開発したオープンソースのクライアント Web アプリケーション フレームワークです。JavaScript ではなく .NET と C# を使ったシングルページ Web アプリケーションの構築を可能にします。Blazor アプリケーションをホストする方法は [Blazor Server と Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) の 2 種類があります。
+[Blazor](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) を簡潔に説明すると、これはマイクロソフトが開発したオープン ソースのクライアント Web アプリケーション フレームワークです。JavaScript ではなく .NET と C# を使ったシングルページ Web アプリケーションの構築を可能にします。Blazor アプリケーションをホストする方法は [Blazor Server と Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) の 2 種類があります。
 
 Blazor WebAssembly (WASM とも呼ばれます) は、[W3C](https://www.computerhope.com/jargon/w/w3c.htm) が策定した、Web ブラウザ上で動作するソフトウェアを作成するための規格であり、CPU のネイティブに近い速度で動作する、コンパイルされたソフトウェアです。
 
@@ -251,7 +252,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
         // アセンブリの遅延読み込みを行なってから、その遅延読み込みされるアセンブリ内の機能を使うメソッドを呼び出します。
         // (アセンブリの遅延読み込みを行なうメソッド内で直接、遅延読み込みしたアセンブリ内の機能を参照していると、
-        //  System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
+        // System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
         Await this.DownloadAsExcelAsync();
     }
     // <summary>

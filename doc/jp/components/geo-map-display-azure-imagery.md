@@ -6,22 +6,21 @@ _license: commercial
 mentionedTypes: ["XamGeographicMap", "AzureMapsImagery", "GeographicTileSeries"]
 _language: ja
 ---
-# {Platform} Azure Maps からの画像の表示 <label>PREVIEW</label>
+# {Platform} Azure Maps からの画像 <label>PREVIEW</label>
 
 {Platform} `AzureMapsImagery` は、Microsoft® が提供する地理的画像マッピング サービスです。
 世界の地理的画像タイルを複数のスタイルで供します。この地理的画像サービスは、<a href="https://azure.microsoft.com/ja-jp/products/azure-maps" target="_blank">www.azure.microsoft.com</a> ウェブサイトから直接アクセスできます。{ProductName} Map コンポーネントは、`AzureMapsImagery` クラスを使用して、地図の背景コンテンツに Azure Maps の地理的画像を表示します。
 
-## {Platform} Azure Maps からの画像の表示例
-
+## {Platform} Azure Maps からの画像の表示 - 概要
 
 <img src="../images/general/AzureMapsImagery.png" alt="AzureMapsImagery" />
-
 
 <div class="divider--half"></div>
 
 `sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Azure Maps からの画像の表示例"`
 
-## コード スニペット
+## {Platform} Azure Maps からの画像の表示 - コード例
+
 以下のコード スニペットは、`AzureMapsImagery` クラスを使用して {Platform} `XamGeographicMap` で Azure Maps からの地理的画像タイルを表示する方法を示します。
 
 ```html
@@ -98,7 +97,7 @@ map.backgroundContent = tileSource;
 }
 ```
 
-## {Platform} Azure Maps の画像上にタイル シリーズ オーバーレイを表示する例
+## Azure Maps からの画像オーバーレイ - 概要
 
 `GeographicTileSeries` を使用する際には、**ベース マップ スタイル** (例: **Satellite**, **Road**, **DarkGrey**) の上に**オーバーレイ** (交通情報、天気、ラベル) を重ね合わせることができます。例えば **Satellite** と **TerraOverlay** を組み合わせることで、地形を視覚化できます。
 
@@ -115,7 +114,7 @@ map.backgroundContent = tileSource;
 
 <div class="divider--half"></div>
 
-## コード スニペット
+## Azure Maps からの画像オーバーレイ - コード例
 
 次のコード スニペットは、`AzureMapsImagery` クラスと `GeographicTileSeries` クラスを使用して、{Platform} `XamGeographicMap` の交通情報と濃い灰色のマップを結合した背景画像の上に地理画像タイルを表示する方法を示しています。
 

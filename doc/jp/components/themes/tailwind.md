@@ -87,7 +87,7 @@ Tailwind が提供するすべてのシャドウ関連のユーティリティ �
 
 ## サンプル
 
-以下のサンプルでは、`shadows`、`colors`、`typography` 用のカスタム ユーティリティを含む、Tailwind ユーティリティ クラスのみを使用して構築された 404 ページが表示されます。
+以下のサンプルでは、shadows、colors、typography 用のカスタム ユーティリティを含む、Tailwind ユーティリティ クラスのみを使用して構築された 404 ページが表示されます。
 
 `sample="/layouts/tailwind/styling", height="400", alt="{Platform} Tailwind の統合"`
 

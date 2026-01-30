@@ -18,6 +18,61 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+- Angular 21 のサポート。
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgxDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgxDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgxDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
+### {PackageCharts} (チャート)
+
+#### <label>PREVIEW</label> ユーザー注釈
+
+{ProductName} では、ユーザー注釈機能により、実行時に `XamDataChart` にスライス注釈、ストリップ注釈、ポイント注釈を追加できるようになりました。これにより、エンドユーザーは、スライス注釈を使用して会社の四半期レポートなどの単一の重要イベントを強調したり、ストリップ注釈を使用して期間を持つイベントを示したりすることで、プロットに詳細を追加できます。ポイント注釈またはこれら 3 つの任意の組み合わせを使用して、プロットされたシリーズ上の個々のポイントを呼び出すこともできます。
+
+これは、`Toolbar` のデフォルトのツールと統合されています。
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> 軸注釈の衝突検出
+
+軸注釈が自動で衝突を検出し、適切に収まるよう切り詰めます。この機能を有効にするには、次のプロパティを設定します:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (地理マップ)
+
+- Azure Map Imagery は RTM になりました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|40136|Excel Library|Excel ワークブック読み込み時に FormulaParseException 例外が発生する。
+|40262|IgxSpreadsheet|警告がある場合に #Circularity! が表示される。Excel との一致を要求 — 値 (例: 0) を表示するように改善。
+|40458|IgxSpreadsheet|Arial フォント使用時、igx-spreadsheet がセル内のテキストを切り捨てる。
+|40490|IgxDatePicker|Autofill による入力は日付ピッカーに反映されない。
+
+## **{PackageVerChanges-25-1-SEP}**
+
 ### {PackageMaps} (地理マップ)
 
 #### <label>PREVIEW</label> Azure マップ画像のサポート
@@ -49,7 +104,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-_重大な変更_
+**重大な変更**
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -80,8 +135,8 @@ _重大な変更_
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
 |31624 | `IgxCategoryChart` | `IgxCategoryChart` を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
-|37930 | `IgxDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
 |27304 | `IgxDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
+|37930 | `IgxDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
 |30600 | `IgxDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
 |38231 | `IgxGrid` | 非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
 |33861 | Excel Library | 折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
@@ -136,26 +191,28 @@ _重大な変更_
 
 ### {PackageGrids}
 
-_重大な変更_
+**重大な変更**
 
 - 'igniteui-angular-grids' パッケージの名前が 'igniteui-angular-data-grids' に変更されました。
 
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|37023 | `IgxDataChart` | overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
-|37244 | Excel Library | カスタム データ検証が機能しない。.
-|37685 | `IgxSpreadsheet` | Arial フォントで書式設定された数値が正しく描画されない。
+|37023 | `IgxDataChart` | overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。|
+|37685 | `IgxSpreadsheet` | Arial フォントで書式設定された数値が正しく描画されない。|
+|37244 | Excel Library | カスタム データ検証が機能しない。|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -183,8 +240,8 @@ _重大な変更_
 |36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
 |36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
 |26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
-|34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
 |35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -311,9 +368,11 @@ _重大な変更_
 - **ダッシュ配列**を `XamDataChart` のシリーズのさまざまな部分に適用できるようになりました。これは、チャートにプロットされた[シリーズ](charts/types/line-chart.md#{PlatformLower}-折れ線チャートのスタイル設定)、チャートの[グリッド線](charts/features/chart-axis-gridlines.md#{PlatformLower}-軸グリッド線のプロパティ)、およびチャートにプロットされたシリーズの[トレンドライン](charts/features/chart-trendlines.md#{PlatformLower}-チャート-トレンドラインのダッシュ配列の例)に適用できます。
 
 ## **{PackageVerChanges-22-2.2}**
+
 - Angular 16 のサポート。
 
 ## **{PackageVerChanges-22-2.1}**
+
 - Angular 15 のサポート。
 
 ## **{PackageVerChanges-22-2}**
@@ -344,7 +403,7 @@ _重大な変更_
   - GroupSortDescriptions
 
 > [!Note]
-`IncludedProperties` | `ExcludedProperties` を使用している場合、チャートの[集計](charts/features/chart-data-aggregations.md)は機能しません。これらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
+> `IncludedProperties` | `ExcludedProperties` を使用している場合、チャートの[集計](charts/features/chart-data-aggregations.md)は機能しません。これらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} (チャート)
@@ -407,6 +466,7 @@ _重大な変更_
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
+
 ### {PackageCharts} (チャート)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。

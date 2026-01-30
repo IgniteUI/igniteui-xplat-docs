@@ -18,6 +18,25 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|33808|IgbDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
+|34255|IgbDataChart|0.00001 scale tick marks are displayed overlapping each other|
+|38510|IgbDataChart|AssigningCategoryStyle event support for Stacked Series|
+|41050|IgbDataChart|Axis is not being populated in IgbAxisMouseEventArgs|
+
+### Enhancements
+
+#### Charts
+
+- Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
+
+- Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
+
+## **{PackageVerChanges-25-2-NOV}**
+
 **Breaking Changes**
 
 As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
@@ -43,6 +62,67 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 ### {PackageMaps} (Geographic Map)
 
 - Azure Map Imagery is now RTM.
+
+### {PackageGrids} (Grids)
+
+#### **All Grids**
+
+- **Cell Merging**
+  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell. It can be enabled on the individual columns:
+
+```razor
+<IgbColumn Field="field" Merge="true"></IgbColumn>
+```
+
+- The merging can be configured on the grid level to apply either:
+    - `OnSort` - only when the column is sorted.
+    - `Always` - always, regardless of data operations.
+  The default `CellMergeMode` is `OnSort`.
+```razor
+<IgbGrid CellMergeMode="GridCellMergeMode.Always">
+</IgbGrid>
+```
+
+- **Column Pinning**
+  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `PinningPosition` property on the column:
+```razor
+<IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
+</IgbColumn>
+```
+  - Or:
+```razor
+col.PinningPosition = ColumnPinningPosition.End;
+col.Pinned = true;
+
+col.PinningPosition = ColumnPinningPosition.Start;
+col.Pinned = true;
+```
+  - If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
+
+- **Sorting and Grouping Improvements**
+  - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
+  - Refactored sorting algorithms from recursive to iterative.
+  - Refactored grouping algorithm from recursive to iterative.
+  - Optimized grouping operations.
+
+- **Other Improvements**   
+  - A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
+  - The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
+
+### General
+
+#### Added
+- `DateRangePicker`
+
+#### Changed
+- Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
+- `Tooltip`
+  - Behavioral change: `Tooltip` default placement is "bottom" now.
+  - Behavioral change: `Tooltip` will not render an arrow indicator by default unless with-arrow is set.
+  - Breaking change: `Tooltip` events will no longer return its anchor target in its detail property. You can still access it at event.target.anchor.
+
+#### Deprecated
+- `Tooltip` - `DisableArrow` is deprecated. Use `WithArrow` to render an arrow indicator.
 
 ### Bug Fixes
 

@@ -21,7 +21,7 @@ _language: ja
 - `GetGeographicPoint`
 - `GetPixelPoint`
 
-# {Platform} 地理的シリーズの種類
+## {Platform} 地理的シリーズの種類
 
 {Platform} `XamGeographicMap` には 7 種類のシリーズがあり、データ バインディング用の `ItemsSource` プロパティがあります。
 

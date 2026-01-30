@@ -73,8 +73,8 @@ const pivotConfiguration: IgrPivotConfiguration = {
 ```
 
 - `IgrButton`
-  - _重大な変更_
+  - **重大な変更**
   - `clicked` イベントは削除されました。代わりにネイティブの `onClick` を使用してください。
 - `IgrInput`
-  - _重大な変更_
+  - **重大な変更**
   - `inputOccurred` イベントの名前が `onInput` に変更されました。

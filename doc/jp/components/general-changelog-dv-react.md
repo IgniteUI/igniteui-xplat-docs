@@ -12,11 +12,63 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgrDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgrDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgrDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
+### {PackageCharts} (チャート)
+
+#### <label>PREVIEW</label> ユーザー注釈
+
+{ProductName} では、ユーザー注釈機能により、実行時に `XamDataChart` にスライス注釈、ストリップ注釈、ポイント注釈を追加できるようになりました。これにより、エンドユーザーは、スライス注釈を使用して会社の四半期レポートなどの単一の重要イベントを強調したり、ストリップ注釈を使用して期間を持つイベントを示したりすることで、プロットに詳細を追加できます。ポイント注釈またはこれら 3 つの任意の組み合わせを使用して、プロットされたシリーズ上の個々のポイントを呼び出すこともできます。
+
+これは、`Toolbar` のデフォルトのツールと統合されています。
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> 軸注釈の衝突検出
+
+軸注釈が自動で衝突を検出し、適切に収まるよう切り詰めます。この機能を有効にするには、次のプロパティを設定します:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (地理マップ)
+
+- Azure Map Imagery は RTM になりました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|40136|Excel Library|Excel ワークブック読み込み時に FormulaParseException 例外が発生する。
+|40262|IgrSpreadsheet|警告がある場合に #Circularity! が表示される。Excel との一致を要求 — 値 (例: 0) を表示するように改善。
+|40458|IgrSpreadsheet|Arial フォント使用時、igx-spreadsheet がセル内のテキストを切り捨てる。
+|40490|IgrDatePicker|Autofill による入力は日付ピッカーに反映されない。
+
+## **{PackageVerChanges-25-1-OCT_2}**
+
 ### 新しいコンポーネント
 
 - `IgrChat` コンポーネントを追加しました。
 
 ### {PackageGrids} (グリッド)
+
 - `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`
   - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
 
@@ -26,8 +78,8 @@ _language: ja
         <IgrColumn field="field" merge={true}></IgrColumn>
         ```
         グリッド レベルで以下のいずれかの設定が可能です:
-     - `onSort` - 列がソートされたときのみ結合。
-     - `always` - データ操作に関わらず常に結合。
+    - `onSort` - 列がソートされたときのみ結合。
+    - `always` - データ操作に関わらず常に結合。
 
         ```tsx
         <IgrGrid cellMergeMode="always">
@@ -61,13 +113,16 @@ _language: ja
         列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
 
   - **ソートの改善**
-     - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
-     - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+    - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+
   - **グループ化の改善**
-     - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
-     - グループ化処理を最適化しました。
+    - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - グループ化処理を最適化しました。
+
 
 ### バグ修正
+
 | バグ修正 | コントロール | 説明 |
 |------------|---------|-------------|
 |[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |リスト コンポーネントおよびテーマ間で重複していた CSS 変数を削除。|
@@ -110,7 +165,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
 
-_重大な変更_
+**重大な変更**
 
 - `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
@@ -211,7 +266,7 @@ _重大な変更_
 |[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo のエレベーション スタイルを修正。|
 |[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date Range Picker|キーボード操作時にメイン入力へフォーカスを戻す。|
 |[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Material テーマでのプレースホルダーとラベルの整列を修正。|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|*relative* 位置スタイルとアニメーションを更新。|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|_relative_ 位置スタイルとアニメーションを更新。|
 |[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|無効状態のテーマ適用問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material テーマでのインタラクション問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|サフィックス部分でのリサイズの動作を修正。|
@@ -233,18 +288,22 @@ _重大な変更_
 ### 重大な変更
 
 #### File Input
-  - `onChange` および `onCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
+
+- `onChange` および `onCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
 
 #### Tooltip
-  - Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
+
+- Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
 
 ### 動作変更
 
 #### Tooltip
-  - **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
-  - **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
+
+- **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
+- **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
 
 ### 機能拡張
+
 - すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
 
 ### バグ修正
@@ -302,17 +361,19 @@ _重大な変更_
 
 ### {PackageGrids}
 
-_重大な変更_
+**重大な変更**
 
 - `IgrDataGrid` と `IgrMultiColumnComboBox` は、igniteui-react-data-grids パッケージの一部になりました。
 
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -331,6 +392,7 @@ _重大な変更_
 [アップデート ガイド](update-guide.md)
 
 ### 削除済
+
 - `CheckboxChangeEventArgs` は削除されました。代わりに `IgrCheckboxChangeEventArgs` を使用してください。
 - `RadioChangeEventArgs` は削除されました。代わりに `IgrRadioChangeEventArgs` を使用してください。
 - `IgrRangeSliderValue` は削除されました。代わりに `IgrRangeSliderValueEventArgs` を使用してください。
@@ -341,9 +403,11 @@ _重大な変更_
 ### 機能拡張
 
 #### Stepper
+
 Stepper Step の `titlePosition` は、同じ動作を持つ undefined ではなく、デフォルトで `auto` に設定されるようになりました。
 
 #### Tabs
+
 `igr-tab` パネル プロパティは削除されました。
 
 igr-tab-panel コンポーネントは削除されました。igr-tab では、タブ ヘッダーとタブ コンテンツの両方が 1 つのコンポーネントに含まれるようになりました。
@@ -384,6 +448,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 ## **{PackageVerChanges-24-2-MAR1}**
 
 ### {PackageGrids}
+
 次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
 
 | バグ番号 | コントロール | 説明      |
@@ -399,6 +464,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
   - 内部グリッド アクション ボタンをカプセル化しました。
 
 ### {PackageCommon}
+
 - `Dockmanager` に、分割内で直接ドッキングできる新しい `allowSplitterDock` プロパティが追加されました。
 - `Dockmanager` の `SplitPane` に新しい `useFixedSize` プロパティが追加され、新しいサイズ変更動作が可能になりました。
 
@@ -416,8 +482,6 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
-|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |30286 | `IgrDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
 |32906 | `IgrDataChart` | `IgrDataChart` は上部に 2 つの xAxis を表示している。|
 |33605 | `IgrDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
@@ -425,12 +489,14 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 |34776 | `IgrDataChart` | `IgrDataChart` を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |34324 | `IgrGrid` | グリッド テンプレートの条件による列の非表示が機能しない。|
 |34678 | `IgrGrid` | 列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
+|32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
 |34053 | `IgrRadialGauge` | スケール ラベルの位置がずれる。|
 |35496 | `IgrSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
 |36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
 |36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
-|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -456,6 +522,7 @@ DashboardTile <label>PREVIEW</label>
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般
+
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 - `Input`
   - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
@@ -497,7 +564,7 @@ DashboardTile <label>PREVIEW</label>
 - `RadioGroup`
   - `Name` および `Value` プロパティを追加しました。
 
-_重大な変更_:
+**重大な変更**:
 
 - 古い **IgrDatePicker** の名前を **IgrXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
@@ -539,7 +606,7 @@ _重大な変更_:
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
   - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
-_重大な変更_:
+**重大な変更**:
 
 - **すべてのグリッド**
   - `RowIsland`
@@ -561,6 +628,7 @@ _重大な変更_:
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
+
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
@@ -640,11 +708,13 @@ _重大な変更_:
 
 - `Form` コンポーネントは非推奨になりました。代わりにネイティブのフォーム要素を使用してください。
 - `size` プロパティと属性は、すべてのコンポーネントで非推奨になりました。代わりに `--ig-size` CSS カスタム プロパティを使用してください。次の例では、Avatar コンポーネントのサイズを小さく設定します:
+
     ```css
     .avatar {
         --ig-size: var(--ig-size-small);
     }
     ```
+
 - `DateTimeInput`
   - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
 - `RangeSlider`
@@ -735,6 +805,7 @@ _重大な変更_:
 - **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
+
 ### {PackageCharts} (チャート)
 
 - 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
@@ -761,6 +832,7 @@ _重大な変更_:
 ### {PackageGrids} (データ グリッド)
 
 #### データ グリッド
+
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
 > [!Note]
@@ -771,9 +843,11 @@ _重大な変更_:
 ### {PackageInputs} (入力)
 
 #### 日付ピッカー
+
 - ValueChanged イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス
+
 - `TextChanged` イベントを `TextValueChanged` に変更しました。
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
@@ -835,6 +909,7 @@ _重大な変更_:
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
+
 ### {PackageCharts} (チャート)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。

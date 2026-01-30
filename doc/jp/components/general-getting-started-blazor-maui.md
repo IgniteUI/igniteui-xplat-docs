@@ -17,7 +17,7 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 ### .NET MAUI とは
 
-.NET MAUI (.NET Multi-platform App UI) は、単一の共有コードベースからネイティブ デスクトップおよびモバイル アプリを構築するための、オープンソースのクロス プラットフォーム フレームワークです。これにより、C# と XAML を使用して、Android、iOS、macOS、Windows など、さまざまなデバイスやオペレーティング システムで実行される Blazor アプリケーションをより簡単に開発できます。
+.NET MAUI (.NET Multi-platform App UI) は、単一の共有コードベースからネイティブ デスクトップおよびモバイル アプリを構築するための、オープン ソースのクロス プラットフォーム フレームワークです。これにより、C# と XAML を使用して、Android、iOS、macOS、Windows など、さまざまなデバイスやオペレーティング システムで実行される Blazor アプリケーションをより簡単に開発できます。
 
 
 ## 前提条件
@@ -50,7 +50,6 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 ## Ignite UI for Blazor の登録
 
 1 - **MauiProgram.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
-
 
 ```cs
 public static class MauiProgram

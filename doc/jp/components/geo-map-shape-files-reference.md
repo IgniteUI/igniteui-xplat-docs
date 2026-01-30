@@ -104,7 +104,7 @@ _language: ja
 
 このトピックに関連する追加情報については、以下のトピックを参照してください。
 
- * [シェープファイルのバインディング](geo-map-binding-shp-file.md)
+ - [シェープファイルのバインディング](geo-map-binding-shp-file.md)
 
 ## API リファレンス
 

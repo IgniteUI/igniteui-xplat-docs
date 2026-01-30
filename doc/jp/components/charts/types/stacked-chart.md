@@ -45,7 +45,6 @@ _language: ja
 `sample="/charts/data-chart/stacked-100-area-chart", height="600", alt="{Platform} 積層型 100 エリア チャート"`
 
 
-
 <div class="divider--half"></div>
 
 
