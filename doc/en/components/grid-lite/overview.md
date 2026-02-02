@@ -24,6 +24,10 @@ The {GridLiteTitle} delivers essential data-display functionality with minimal o
 - Themes And Styling
 - Column Data Types
 
+## Installation and Setup
+More on installation and setup see in this [Open-Source Libraries Overview](../general-getting-started-oss.md)
+
+## Grid Lite in Action
 `sample="/{GridLiteSample}/overview", height="600", alt="{Platform} {GridLiteTitle} App Sample Main"`
 
 {GridLiteTitle} is designed to give you the core features that you need to deliver a beautiful data grid / data table experience in your apps. Designed for performance and beauty, the {GridLiteTitle} will work in any framework, on any platform.

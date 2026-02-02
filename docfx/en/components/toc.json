@@ -75,7 +75,6 @@
       }
     ]
   },
-  
   {
     "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
