@@ -35,20 +35,21 @@ npm install igniteui-grid-lite
 ```
 
 or using yarn
+
 ```cmd
-yarn install igniteui-grid-lite
+yarn add igniteui-grid-lite
 ```
 
 ### Using the Grid Lite in your {Platform} code
 
 In your component import the Grid Lite component like this
 
-```cmd
+```ts
 import { IgcGridLite } from 'igniteui-grid-lite';
 ```
 
 Then you need to register it before the declaration of your component class or function
-```cmd
+```ts
 IgcGridLite.register();
 ```
 
@@ -56,7 +57,7 @@ IgcGridLite.register();
 Get the element from the html in your typescript file by id
 
 ```ts
-const gridLite = document.getElementById('grid-lite') as any;
+const gridLite = document.getElementById('grid-lite') as IgcGridLite<ProductInfo>;
 ```
 <!-- end: WebComponents -->
 
@@ -77,7 +78,7 @@ Finally add the grid lite component to your html template
 <!-- WebComponents -->
 
 Finally add the grid lite component to your html template
-```ts
+```html
 <div class="grid-lite-wrapper">
     <igc-grid-lite id="grid-lite"></igc-grid-lite>
 </div>
