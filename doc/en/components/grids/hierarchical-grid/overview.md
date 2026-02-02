@@ -45,64 +45,52 @@ Afterwards, you may start implementing the control by adding the following names
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-
 ```cmd
 npm install --save {PackageGrids}
 ```
-
 <!-- end: Angular, WebComponents -->
 
 <!-- React -->
-
 ```cmd
 npm install --save {PackageCommon}
 npm install --save {PackageGrids}
 ```
-
 <!-- end: React -->
 
 <!-- Angular, React, WebComponents -->
 
 <!-- WebComponents -->
-
 You also need to include the following import to use the grid:
 
 ```typescript
-import "igniteui-webcomponents-grids/grids/combined.js";
+import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
-
 <!-- end: WebComponents -->
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
 <!-- WebComponents -->
-
 ```typescript
-import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
-
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids/themes/light/bootstrap.css";
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 ```
 
 <!-- WebComponents -->
-
 Or to link it:
 
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
-
 <!-- end: WebComponents -->
-
 For more details on how to customize the appearance of the hierarchical grid, you may have a look at the [styling](overview.md#Styling) section.
 
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, Blazor -->
-
 ### Component Modules
 
 ```razor
@@ -114,15 +102,15 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbhierarchicalGridModule));
 ```typescript
 // app.module.ts
 
-import { IgxhierarchicalGridModule } from "igniteui-angular";
+import { IgxhierarchicalGridModule } from 'igniteui-angular';
 // import { IgxhierarchicalGridModule } from '@infragistics/igniteui-angular'; for licensed package
 
 @NgModule({
-  imports: [
-    // ...
-    IgxhierarchicalGridModule,
-    // ...
-  ],
+    imports: [
+        // ...
+        IgxhierarchicalGridModule,
+        // ...
+    ]
 })
 export class AppModule {}
 ```
@@ -141,42 +129,34 @@ The Hierarchical Grid supports two ways of binding to data:
 If the application loads the whole hierarchical data as an array of objects referencing children arrays of objects, then the Hierarchical Grid can be configured to read it and bind to it automatically. Here is an example of a properly structured hierarchical data source:
 
 ```ts
-export const singers = [
-  {
-    Artist: "Naomí Yepes",
-    Photo: "assets/images/hgrid/naomi.png",
-    Debut: "2011",
+export const singers = [{
+    "Artist": "Naomí Yepes",
+    "Photo": "assets/images/hgrid/naomi.png",
+    "Debut": "2011",
     "Grammy Nominations": 6,
     "Grammy Awards": 0,
-    Tours: [
-      {
-        Tour: "Faithful Tour",
+    "Tours": [{
+        "Tour": "Faithful Tour",
         "Started on": "Sep-12",
-        Location: "Worldwide",
-        Headliner: "NO",
-        "Toured by": "Naomí Yepes",
-      },
-    ],
-    Albums: [
-      {
-        Album: "Dream Driven",
+        "Location": "Worldwide",
+        "Headliner": "NO",
+        "Toured by": "Naomí Yepes"
+    }],
+    "Albums": [{
+        "Album": "Dream Driven",
         "Launch Date": new Date("August 25, 2014"),
         "Billboard Review": "81",
         "US Billboard 200": "1",
-        Artist: "Naomí Yepes",
-        Songs: [
-          {
+        "Artist": "Naomí Yepes",
+        "Songs": [{
             "No.": "1",
-            Title: "Intro",
-            Released: "*",
-            Genre: "*",
-            Album: "Dream Driven",
-          },
-        ],
-      },
-    ],
-  },
-];
+            "Title": "Intro",
+            "Released": "*",
+            "Genre": "*",
+            "Album": "Dream Driven"
+        }]
+    }]
+}];
 ```
 
 ```razor
@@ -226,29 +206,34 @@ Each **{RowIslandSelector}** should specify the key of the property that holds t
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="singers" [autoGenerate]="true">
-  <igx-row-island [key]="'Albums'" [autoGenerate]="true">
-    <igx-row-island [key]="'Songs'" [autoGenerate]="true"> </igx-row-island>
-  </igx-row-island>
-  <igx-row-island [key]="'Tours'" [autoGenerate]="true"> </igx-row-island>
+    <igx-row-island [key]="'Albums'" [autoGenerate]="true">
+        <igx-row-island [key]="'Songs'" [autoGenerate]="true">
+        </igx-row-island>
+    </igx-row-island>
+    <igx-row-island [key]="'Tours'" [autoGenerate]="true">
+    </igx-row-island>
 </igx-hierarchical-grid>
 ```
 
 ```html
 <igc-hierarchical-grid auto-generate="true">
-  <igc-row-island child-data-key="Albums" auto-generate="true">
-    <igc-row-island child-data-key="Songs" auto-generate="true">
+    <igc-row-island child-data-key="Albums" auto-generate="true">
+        <igc-row-island child-data-key="Songs" auto-generate="true">
+        </igc-row-island>
     </igc-row-island>
-  </igc-row-island>
-  <igc-row-island child-data-key="Tours" auto-generate="true"> </igc-row-island>
+    <igc-row-island child-data-key="Tours" auto-generate="true">
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 
 ```tsx
 <IgrHierarchicalGrid autoGenerate={true} data={singers}>
-  <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
-    <IgrRowIsland childDataKey="Songs" autoGenerate={true}></IgrRowIsland>
-  </IgrRowIsland>
-  <IgrRowIsland childDataKey="Tours" autoGenerate={true}></IgrRowIsland>
+    <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
+        <IgrRowIsland childDataKey="Songs" autoGenerate={true}>
+        </IgrRowIsland>
+    </IgrRowIsland>
+    <IgrRowIsland childDataKey="Tours" autoGenerate={true}>
+    </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
 
@@ -269,31 +254,14 @@ Each **{RowIslandSelector}** should specify the key of the property that holds t
 Most applications are designed to load as little data as possible initially, which results in faster load times. In such cases {HierarchicalGridSelector} may be configured to allow user-created services to feed it with data on demand.
 
 <!-- Angular -->
-
 ```html
 <!-- hierarchicalGridSample.component.html -->
 
-<igx-hierarchical-grid
-  #hGrid
-  [primaryKey]="'customerId'"
-  [autoGenerate]="true"
-  [height]="'600px'"
-  [width]="'100%'"
->
-  <igx-row-island
-    [key]="'Orders'"
-    [primaryKey]="'orderId'"
-    [autoGenerate]="true"
-    (gridCreated)="gridCreated($event, 'Customers')"
-  >
-    <igx-row-island
-      [key]="'Details'"
-      [primaryKey]="'productId'"
-      [autoGenerate]="true"
-      (gridCreated)="gridCreated($event, 'Orders')"
-    >
+<igx-hierarchical-grid #hGrid [primaryKey]="'customerId'" [autoGenerate]="true" [height]="'600px'" [width]="'100%'">
+    <igx-row-island [key]="'Orders'" [primaryKey]="'orderId'" [autoGenerate]="true"  (gridCreated)="gridCreated($event, 'Customers')">
+        <igx-row-island [key]="'Details'" [primaryKey]="'productId'" [autoGenerate]="true" (gridCreated)="gridCreated($event, 'Orders')">
+        </igx-row-island>
     </igx-row-island>
-  </igx-row-island>
 </igx-hierarchical-grid>
 ```
 
@@ -340,55 +308,37 @@ export class HierarchicalGridLoDSampleComponent implements AfterViewInit {
 
 @Injectable()
 export class RemoteLoDService {
-  public url = `https://data-northwind.indigo.design/`;
+    public url = `https://data-northwind.indigo.design/`;
 
-  constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) { }
 
-  public getData(dataState: any): Observable<any[]> {
-    return this.http
-      .get(this.buildUrl(dataState))
-      .pipe(map((response) => response));
-  }
-
-  public buildUrl(dataState) {
-    let qS = "";
-    if (dataState) {
-      if (dataState.rootLevel) {
-        qS += `${dataState.key}`;
-      } else {
-        qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
-      }
+    public getData(dataState: any): Observable<any[]> {
+        return this.http.get(this.buildUrl(dataState)).pipe(
+            map((response) => response)
+        );
     }
-    return `${this.url}${qS}`;
-  }
+
+    public buildUrl(dataState) {
+        let qS = "";
+        if (dataState) {
+            if (dataState.rootLevel) {
+                qS += `${dataState.key}`;
+            } else {
+                qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
+            }
+        }
+        return `${this.url}${qS}`;
+    }
 }
 ```
-
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-
 ```html
-<igc-hierarchical-grid
-  id="hGrid"
-  primary-key="customerId"
-  auto-generate="true"
-  height="600px"
-  width="100%"
->
-  <igc-row-island
-    id="ordersRowIsland"
-    child-data-key="Orders"
-    primary-key="orderId"
-    auto-generate="true"
-  >
-    <igc-row-island
-      id="orderDetailsRowIsland"
-      child-data-key="Details"
-      primary-key="productId"
-      auto-generate="true"
-    ></igc-row-island>
-  </igc-row-island>
+<igc-hierarchical-grid id="hGrid" primary-key="customerId" auto-generate="true" height="600px" width="100%">
+    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="orderId" auto-generate="true">
+        <igc-row-island id="orderDetailsRowIsland" child-data-key="Details" primary-key="productId" auto-generate="true"></igc-row-island>
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 
@@ -396,54 +346,44 @@ export class RemoteLoDService {
 import { getData } from "./remoteService";
 
 export class HierarchicalGridLoadOnDemand {
-  constructor() {
-    const hierarchicalGrid = document.getElementById(
-      "hGrid",
-    ) as IgcHierarchicalGridComponent;
-    const ordersRowIsland = document.getElementById("ordersRowIsland");
-    const orderDetailsRowIsland = document.getElementById(
-      "orderDetailsRowIsland",
-    );
+    constructor() {
+        const hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
+        const ordersRowIsland = document.getElementById("ordersRowIsland");
+        const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland");
 
-    ordersRowIsland.addEventListener("gridCreated", (event: any) => {
-      this.gridCreated(event, "Customers");
-    });
-    orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
-      this.gridCreated(event, "Orders");
-    });
+        ordersRowIsland.addEventListener("gridCreated", (event: any) => {
+            this.gridCreated(event, "Customers");
+        });
+        orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
+            this.gridCreated(event, "Orders");
+        });
 
-    hierarchicalGrid.isLoading = true;
+        hierarchicalGrid.isLoading = true;
 
-    getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
-      (data: any) => {
-        hierarchicalGrid.isLoading = false;
-        hierarchicalGrid.data = data;
-        hierarchicalGrid.markForCheck();
-      },
-    );
-  }
+        getData({ parentID: null, rootLevel: true, key: "Customers" }).then((data: any) => {
+            hierarchicalGrid.isLoading = false;
+            hierarchicalGrid.data = data;
+            hierarchicalGrid.markForCheck();
+        });
+    }
 
-  public gridCreated(
-    event: CustomEvent<IgcGridCreatedEventArgs>,
-    _parentKey: string,
-  ) {
-    const context = event.detail;
-    const dataState = {
-      key: context.owner.childDataKey,
-      parentID: context.parentID,
-      parentKey: _parentKey,
-      rootLevel: false,
-    };
-    context.grid.isLoading = true;
-    getData(dataState).then((data: any[]) => {
-      context.grid.isLoading = false;
-      context.grid.data = data;
-      context.grid.markForCheck();
-    });
-  }
+    public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: string) {
+        const context = event.detail;
+        const dataState = {
+            key: context.owner.childDataKey,
+            parentID: context.parentID,
+            parentKey: _parentKey,
+            rootLevel: false
+        };
+        context.grid.isLoading = true;
+        getData(dataState).then((data: any[]) => {
+            context.grid.isLoading = false;
+            context.grid.data = data;
+            context.grid.markForCheck();
+        });
+    }
 }
 ```
-
 <!-- end: WebComponents -->
 
 ```tsx
@@ -469,7 +409,7 @@ export default function Sample() {
       context.grid.data = data;
       context.grid.markForCheck();
     });
-  };
+  }
 
   useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
@@ -479,64 +419,56 @@ export default function Sample() {
         hierarchicalGrid.current.isLoading = false;
         hierarchicalGrid.current.data = data;
         hierarchicalGrid.current.markForCheck();
-      },
+      }
     );
   }, []);
 
   return (
     <IgrHierarchicalGrid
-      ref={hierarchicalGrid}
-      primaryKey="customerId"
-      autoGenerate={true}
-      height="600px"
-      width="100%"
-    >
-      <IgrRowIsland
-        childDataKey="Orders"
-        primaryKey="orderId"
+        ref={hierarchicalGrid}
+        primaryKey="customerId"
         autoGenerate={true}
-        onGridCreated={(e: IgrGridCreatedEventArgs) =>
-          gridCreated(e, "Customers")
-        }
-      >
-        <IgrRowIsland
-          childDataKey="Details"
-          primaryKey="productId"
-          autoGenerate={true}
-          onGridCreated={(e: IgrGridCreatedEventArgs) =>
-            gridCreated(e, "Orders")
-          }
-        ></IgrRowIsland>
-      </IgrRowIsland>
+        height="600px"
+        width="100%">
+            <IgrRowIsland
+                childDataKey="Orders"
+                primaryKey="orderId"
+                autoGenerate={true}
+                onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Customers")}>
+                    <IgrRowIsland
+                        childDataKey="Details"
+                        primaryKey="productId"
+                        autoGenerate={true}
+                        onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Orders")}>
+                    </IgrRowIsland>
+            </IgrRowIsland>
     </IgrHierarchicalGrid>
   );
 }
 ```
 
 <!-- WebComponents, React -->
-
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
 
 export async function getData(dataState: any): Promise<any> {
-  const response = await fetch(buildUrl(dataState));
-  const data = await response.json();
-  return data;
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 
 function buildUrl(dataState: any) {
-  let qS = "";
-  if (dataState) {
-    if (dataState.rootLevel) {
-      qS += `${dataState.key}`;
-    } else {
-      qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
+    let qS = "";
+    if (dataState) {
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
+        }
     }
-  }
-  return `${URL}${qS}`;
+    return `${URL}${qS}`;
 }
 ```
-
 <!-- end: WebComponents, React -->
 
 ```razor
@@ -601,30 +533,18 @@ function buildUrl(dataState) {
 If you have a way to provide information whether a row has children prior to its expanding, you could use the `HasChildrenKey` input property. This way you could provide a boolean property from the data objects which indicates whether an expansion indicator should be displayed.
 
 ```html
-<igx-hierarchical-grid
-  #grid
-  [data]="data"
-  primaryKey="ID"
-  hasChildrenKey="hasChildren"
->
+<igx-hierarchical-grid #grid [data]="data" primaryKey="ID" hasChildrenKey="hasChildren">
 </igx-hierarchical-grid>
 ```
 
 ```html
-<igc-hierarchical-grid
-  data="data"
-  primary-key="ID"
-  has-children-key="hasChildren"
->
+<igc-hierarchical-grid data="data" primary-key="ID" has-children-key="hasChildren">
 </igc-hierarchical-grid>
 ```
 
 ```tsx
-<IgrHierarchicalGrid
-  data={data}
-  primaryKey="ID"
-  hasChildrenKey="hasChildren"
-></IgrHierarchicalGrid>
+<IgrHierarchicalGrid data={data} primaryKey="ID" hasChildrenKey="hasChildren">
+</IgrHierarchicalGrid>
 ```
 
 ```razor
@@ -642,66 +562,44 @@ This UI is disabled by default for performance reasons and it is not recommended
 The grid features could be enabled and configured through the {RowIslandSelector} markup - they get applied for every grid that is created for it. Changing options at runtime through the row island instance changes them for each of the grids it has spawned.
 
 ```html
-<igx-hierarchical-grid
-  [data]="localData"
-  [autoGenerate]="false"
-  [allowFiltering]="true"
-  [height]="'600px'"
-  [width]="'800px'"
-  #hGrid
->
-  <igx-column field="ID" [pinned]="true" [filterable]="true"></igx-column>
-  <igx-column-group header="Information">
-    <igx-column field="ChildLevels"></igx-column>
-    <igx-column field="ProductName" hasSummary="true"></igx-column>
-  </igx-column-group>
-  <igx-row-island
-    [key]="'childData'"
-    [autoGenerate]="false"
-    [rowSelection]="'multiple'"
-    #layout1
-  >
-    <igx-column
-      field="ID"
-      [hasSummary]="true"
-      [dataType]="'number'"
-    ></igx-column>
-    <igx-column-group header="Information2">
-      <igx-column field="ChildLevels"></igx-column>
-      <igx-column field="ProductName"></igx-column>
+<igx-hierarchical-grid [data]="localData" [autoGenerate]="false"
+    [allowFiltering]='true' [height]="'600px'" [width]="'800px'" #hGrid>
+    <igx-column field="ID" [pinned]="true" [filterable]='true'></igx-column>
+    <igx-column-group header="Information">
+        <igx-column field="ChildLevels"></igx-column>
+        <igx-column field="ProductName" hasSummary='true'></igx-column>
     </igx-column-group>
-    <igx-paginator *igxPaginator [perPage]="5"></igx-paginator>
-  </igx-row-island>
-  <igx-paginator> </igx-paginator>
+    <igx-row-island [key]="'childData'" [autoGenerate]="false" [rowSelection]="'multiple'" #layout1>
+        <igx-column field="ID" [hasSummary]='true' [dataType]="'number'"></igx-column>
+        <igx-column-group header="Information2">
+            <igx-column field="ChildLevels"></igx-column>
+            <igx-column field="ProductName"></igx-column>
+        </igx-column-group>
+        <igx-paginator *igxPaginator [perPage]="5"></igx-paginator>
+    </igx-row-island>
+    <igx-paginator>
+    </igx-paginator>
 </igx-hierarchical-grid>
 ```
 
 ```html
-<igc-hierarchical-grid
-  data="localData"
-  auto-generate="false"
-  allow-filtering="true"
-  height="600px"
-  width="800px"
->
-  <igc-column field="ID" pinned="true" filterable="true"></igc-column>
-  <igc-column-group header="Information">
-    <igc-column field="ChildLevels"></igc-column>
-    <igc-column field="ProductName" has-summary="true"></igc-column>
-  </igc-column-group>
-  <igc-row-island
-    child-data-key="childData"
-    auto-generate="false"
-    row-selection="multiple"
-  >
-    <igc-column field="ID" has-summary="true" data-type="number"></igc-column>
-    <igc-column-group header="Information2">
-      <igc-column field="ChildLevels"></igc-column>
-      <igc-column field="ProductName"></igc-column>
+<igc-hierarchical-grid data="localData" auto-generate="false"
+    allow-filtering='true' height="600px" width="800px">
+    <igc-column field="ID" pinned="true" filterable="true"></igc-column>
+    <igc-column-group header="Information">
+        <igc-column field="ChildLevels"></igc-column>
+        <igc-column field="ProductName" has-summary="true"></igc-column>
     </igc-column-group>
-    <igc-paginator per-page="5"></igc-paginator>
-  </igc-row-island>
-  <igc-paginator> </igc-paginator>
+    <igc-row-island child-data-key="childData" auto-generate="false" row-selection="multiple">
+        <igc-column field="ID" has-summary="true" data-type="number"></igc-column>
+        <igc-column-group header="Information2">
+            <igc-column field="ChildLevels"></igc-column>
+            <igc-column field="ProductName"></igc-column>
+        </igc-column-group>
+        <igc-paginator per-page="5"></igc-paginator>
+    </igc-row-island>
+    <igc-paginator>
+    </igc-paginator>
 </igc-hierarchical-grid>
 ```
 
@@ -760,9 +658,9 @@ The following grid features work on a per grid level, which means that each grid
 The Selection and Navigation features work globally for the whole {HierarchicalGridTitle}
 
 - Selection
-  Selection does not allow selected cells to be present for two different child grids at once.
+    Selection does not allow selected cells to be present for two different child grids at once.
 - Navigation
-  When navigating <kbd>↑</kbd> + <kbd>↓</kbd>, if next/prev element is a child grid, navigation will continue in the related child grid, marking the related cell as selected and focused. If the child cell is outside the current visible view port it is scrolled into view so that selected cell is always visible.
+    When navigating <kbd>↑</kbd> + <kbd>↓</kbd>, if next/prev element is a child grid, navigation will continue in the related child grid, marking the related cell as selected and focused. If the child cell is outside the current visible view port it is scrolled into view so that selected cell is always visible.
 
 ## Collapse All Button
 
@@ -776,7 +674,6 @@ The Hierarchical Grid allows the users to conveniently collapse all its currentl
 See the [Hierarchical Grid Sizing](sizing.md) topic. -->
 
 <!-- Angular -->
-
 ## CRUD operations
 
 > [!NOTE]
@@ -785,31 +682,27 @@ See the [Hierarchical Grid Sizing](sizing.md) topic. -->
 Calling CRUD API methods should still be done through each separate grid instance.
 
 Check out the How-to [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md) topic.
-
 <!-- end: Angular -->
 
 <!-- Angular -->
-
 ## Styling
-
 The igxHierarchicalGrid allows styling through the [Ignite UI for Angular Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the igxHierarchicalGrid styling.
 
 ### Importing global theme
-
 To begin the customization of the hierarchical grid, you need to import the `index` file, where all styling functions and mixins are located.
 
 ```scss
-@import "~igniteui-angular/lib/core/styles/themes/index";
+@import '~igniteui-angular/lib/core/styles/themes/index'
 ```
 
 ### Defining custom theme
-
 Next, create a new theme, that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the hierarchical grid as desired.
 
-> [!NOTE]
-> There is no specific `sass` hierarchical grid function.
+ >[!NOTE]
+ >There is no specific `sass` hierarchical grid function.
+
 
 ```scss
 $custom-theme: grid-theme(
@@ -822,22 +715,21 @@ $custom-theme: grid-theme(
   $expand-icon-color: #ffcd0f,
   $expand-icon-hover-color: #e0b710,
   $resize-line-color: #ffcd0f,
-  $row-highlight: #ffcd0f,
+  $row-highlight: #ffcd0f
 );
 ```
 
 ### Defining a custom color palette
-
 In the approach, that was described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 `igx-palette` generates a color palette, based on provided primary and secondary colors.
 
-```scss
+ ```scss
 $black-color: #494949;
-$yellow-color: #ffcd0f;
+$yellow-color: #FFCD0F;
 
 $custom-palette: palette(
   $primary: $black-color,
-  $secondary: $yellow-color,
+  $secondary: $yellow-color
 );
 ```
 
@@ -845,130 +737,52 @@ After a custom palette has been generated, the `igx-color` function can be used 
 
 ```scss
 $custom-theme: grid-theme(
-  $cell-active-border-color: (
-    igx-color($custom-palette, "secondary", 500),
-  ),
-  $cell-selected-background: (
-    igx-color($custom-palette, "primary", 300),
-  ),
-  $row-hover-background: (
-    igx-color($custom-palette, "secondary", 100),
-  ),
-  $row-selected-background: (
-    igx-color($custom-palette, "primary", 100),
-  ),
-  $header-background: (
-    igx-color($custom-palette, "primary", 500),
-  ),
-  $header-text-color: (
-    igx-contrast-color($custom-palette, "primary", 500),
-  ),
-  $expand-icon-color: (
-    igx-color($custom-palette, "secondary", 500),
-  ),
-  $expand-icon-hover-color: (
-    igx-color($custom-palette, "secondary", 600),
-  ),
-  $resize-line-color: (
-    igx-color($custom-palette, "secondary", 500),
-  ),
-  $row-highlight: (
-    igx-color($custom-palette, "secondary", 500),
-  ),
+    $cell-active-border-color: (igx-color($custom-palette, "secondary", 500)),
+    $cell-selected-background: (igx-color($custom-palette, "primary", 300)),
+    $row-hover-background: (igx-color($custom-palette, "secondary", 100)),
+    $row-selected-background: (igx-color($custom-palette, "primary", 100)),
+    $header-background: (igx-color($custom-palette, "primary", 500)),
+    $header-text-color: (igx-contrast-color($custom-palette, "primary", 500)),
+    $expand-icon-color: (igx-color($custom-palette, "secondary", 500)),
+    $expand-icon-hover-color: (igx-color($custom-palette, "secondary", 600)),
+    $resize-line-color: (igx-color($custom-palette, "secondary", 500)),
+    $row-highlight: (igx-color($custom-palette, "secondary", 500))
 );
 ```
 
 ### Defining custom schemas
-
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we will use `$_light_grid`.
 
 ```scss
-$custom-grid-schema: extend(
-  $_light-grid,
-  (
-    cell-active-border-color: (
-      igx-color: (
-        "secondary",
-        500,
-      ),
-    ),
-    cell-selected-background: (
-      igx-color: (
-        "primary",
-        300,
-      ),
-    ),
-    row-hover-background: (
-      igx-color: (
-        "secondary",
-        100,
-      ),
-    ),
-    row-selected-background: (
-      igx-color: (
-        "primary",
-        100,
-      ),
-    ),
-    header-background: (
-      igx-color: (
-        "primary",
-        500,
-      ),
-    ),
-    header-text-color: (
-      igx-contrast-color: (
-        "primary",
-        500,
-      ),
-    ),
-    expand-icon-color: (
-      igx-color: (
-        "secondary",
-        500,
-      ),
-    ),
-    expand-icon-hover-color: (
-      igx-color: (
-        "secondary",
-        600,
-      ),
-    ),
-    resize-line-color: (
-      igx-color: (
-        "secondary",
-        500,
-      ),
-    ),
-    row-highlight: (
-      igx-color: (
-        "secondary",
-        500,
-      ),
-    ),
-  )
-);
+$custom-grid-schema: extend($_light-grid,(
+    cell-active-border-color: (igx-color:('secondary', 500)),
+    cell-selected-background: (igx-color:('primary', 300)),
+    row-hover-background: (igx-color:('secondary', 100)),
+    row-selected-background: (igx-color:('primary', 100)),
+    header-background: (igx-color:('primary', 500)),
+    header-text-color: (igx-contrast-color:('primary', 500)),
+    expand-icon-color: (igx-color:('secondary', 500)),
+    expand-icon-hover-color: (igx-color:('secondary', 600)),
+    resize-line-color: (igx-color:('secondary', 500)),
+    row-highlight: (igx-color:('secondary', 500))
+));
 ```
 
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
 
 ```scss
-$my-custom-schema: extend(
-  $light-schema,
-  (
-    igx-grid: $custom-grid-schema,
-  )
-);
+$my-custom-schema: extend($light-schema, (
+    igx-grid: $custom-grid-schema
+));
 
 $custom-theme: grid-theme(
-  $palette: $custom-palette,
-  $schema: $my-custom-schema,
+    $palette: $custom-palette,
+    $schema: $my-custom-schema
 );
 ```
 
 ### Applying the custom theme
-
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
 
 ```scss
@@ -981,16 +795,16 @@ In order for the custom theme do affect only specific component, you can move al
 
 This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
-> [!NOTE]
-> If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
-> [!NOTE]
-> Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
+ >[!NOTE]
+ >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >[!NOTE]
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {
-  ::ng-deep {
-    @include grid($custom-theme);
-  }
+    ::ng-deep {
+        @include grid($custom-theme);
+    }
 }
 ```
 
@@ -1002,23 +816,19 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
            iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-styling" >
 </code-view>
 
-> [!NOTE]
-> The sample will not be affected by the selected global theme from **Change Theme**.
-
+>[!NOTE]
+>The sample will not be affected by the selected global theme from **Change Theme**.
 <!-- end: Angular -->
 
+
 <!-- WebComponents, Blazor, React -->
-
 ## Styling
-
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 <!-- WebComponents -->
-
 ```html
 <igc-hierarchical-grid class="grid"></igc-hierarchical-grid>
 ```
-
 <!-- end: WebComponents -->
 
 ```tsx
@@ -1033,22 +843,21 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 
 ```css
 .grid {
-  --header-background: #494949;
-  --header-text-color: #fff;
+    --header-background: #494949;
+    --header-text-color: #FFF;
 }
 ```
 
 ### Demo
-
 `sample="/{HierarchicalGridSample}/hierarchical-grid-styling", height="700", alt="{Platform} Hierarchical Grid styling example"`
 
 <!-- end: WebComponents, Blazor, React -->
 
 ## Known Limitations
 
-| Limitation | Description                                                 |
-| ---------- | ----------------------------------------------------------- |
-| Group By   | Group By feature is not supported by the hierarchical grid. |
+|Limitation|Description|
+|--- |--- |
+|Group By|Group By feature is not supported by the hierarchical grid.|
 
 ## API References
 
