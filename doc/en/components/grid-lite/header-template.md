@@ -15,12 +15,21 @@ Similar to the cell templates, column headers can also be customized to better f
 
 <!-- React, WebComponents -->
 By default the column uses the `field` property for label text. To customize the label, set the `header` property to a more human readable format.
+<!-- End: React, WebComponents -->
 
+<!-- WebComponents -->
 ```html
 <igc-grid-lite-column field="price" header="Price per item"></igc-grid-lite-column>
 ```
+<!-- End: WebComponents -->
 
-<!-- End: React, WebComponents -->
+```tsx
+return (
+  <igc-grid-lite>
+    <igc-grid-lite-column field="price" header="Price per item"></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
 
 <!-- Blazor -->
 By default the column uses the `Field` property for label text. To customize the label, set the `Header` property to a more human readable format.
@@ -43,7 +52,7 @@ Similar to the cell template, you can also pass a custom template renderer and c
 ```typescript
 import { html } from 'lit';
 
-// For WebComponents, headerTemplate is configured as a property on the column element
+
 const column = document.querySelector('igc-grid-lite-column');
 column.headerTemplate = () => html`<h3>⭐ Rating ⭐</h3>`;
 ```
@@ -52,12 +61,8 @@ column.headerTemplate = () => html`<h3>⭐ Rating ⭐</h3>`;
 <!-- Blazor -->
 
 ```razor
-<!-- Header templates in Blazor are defined using the HeaderTemplate parameter -->
-<IgbGridLiteColumn Field="Rating">
-    <HeaderTemplate>
-        <h3>⭐ Rating ⭐</h3>
-    </HeaderTemplate>
-</IgbGridLiteColumn>
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Rating"></IgbGridLiteColumn>
 ```
 <!-- End: Blazor -->
 

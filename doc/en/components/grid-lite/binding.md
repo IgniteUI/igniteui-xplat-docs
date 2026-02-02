@@ -23,22 +23,38 @@ When applying data transformations, such as sorting and filtering, the grid does
 
 The component supports changing its data source at runtime. If the new source has a different "shape" than the previous one make sure to update your column configuration as well.
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 ```typescript
 grid.data = [...{
   /** records follow */
 }];
-
-// Update the column configuration to represent the new data.
-// Add or remove <igc-grid-lite-column> elements as needed
 ```
-<!-- end: React, WebComponents -->
 
-<!-- Blazor -->
+```html
+<igc-grid-lite>
+    <!-- Update column configuration, add or remove columns as needed to represent the new data. -->
+    <igc-grid-lite-column field="id"></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+this.gridRef.current.data = [...{
+  /** records follow */
+}];
+
+return (
+    <igc-grid-lite data={data}>
+        {/* Update column configuration, add or remove columns as needed to represent the new data. */}
+        <igc-grid-lite-column field="id"></igc-grid-lite-column>
+    </igc-grid-lite>
+);
+```
+
 ```razor
 <IgbGridLite Data="data">
+    <!-- Update column configuration, add or remove columns as needed to represent the new data. -->
     <IgbGridLiteColumn Field="Id" />
-    <!-- Add or remove column definitions as needed -->
 </IgbGridLite>
 
 @code {
@@ -48,7 +64,7 @@ grid.data = [...{
     };
 }
 ```
-<!-- end: Blazor -->
+
 <!-- React, WebComponents -->
 If the grid has `autoGenerate` enabled, it will "_infer_" the new column configuration automatically when the data changes.
 <!-- end: React, WebComponents -->

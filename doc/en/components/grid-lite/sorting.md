@@ -9,27 +9,39 @@ _license: MIT
 
 # Sort operations
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `sortable` attribute on the column element.
+The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `sortable` property of the column.
+<!-- end: React, WebComponents -->
+<!-- Blazor -->
+The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `Sortable` property of the column.
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```html
 <igc-grid-lite .data=${data}>
   <igc-grid-lite-column field="price" sortable></igc-grid-lite-column>
 </igc-grid-lite>
 ```
-<!-- end: React, WebComponents -->
-<!-- Blazor -->
-The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the `Sortable` parameter on the column.
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column field="price" sortable></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
 
 ```razor
 <IgbGridLite Data="@data">
     <IgbGridLiteColumn Field="Price" Sortable="true" />
 </IgbGridLite>
 ```
-<!-- end: Blazor -->
 
 <!-- React, WebComponents -->
-You can also control whether the sort operations for string columns should be case sensitive by using the `sorting-case-sensitive` attribute. 
+You can also control whether the sort operations for string columns should be case sensitive by using the `sortingCaseSensitive` property or `sorting-case-sensitive` attribute.
+<!-- end: React, WebComponents -->
 
+<!-- WebComponents -->
 ```html
 <igc-grid-lite-column 
   field="name" 
@@ -37,8 +49,22 @@ You can also control whether the sort operations for string columns should be ca
   sorting-case-sensitive
 ></igc-grid-lite-column>
 ```
+<!-- end: WebComponents -->
 
-For custom comparison logic, use JavaScript to set the `sortConfiguration` property with a `comparer` function:
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column 
+      field="name" 
+      sortable
+      sorting-case-sensitive
+    ></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
+<!-- React, WebComponents -->
+For custom comparison logic, set the `sortConfiguration` property with a `comparer` function:
 
 ```typescript
 const column = document.querySelector('igc-grid-lite-column[field="name"]');
@@ -61,15 +87,6 @@ You can also control whether the sort operations for string columns should be ca
     Sortable="true"
     SortingCaseSensitive="true" />
 ```
-
-For custom comparison logic, you can use the `SortConfiguration` parameter with a custom comparer:
-
-```razor
-<IgbGridLiteColumn 
-    Field="Name" 
-    Sortable="true"
-    SortConfiguration="@(new { Comparer = new Func<object, object, int>((a, b) => ((string)a).Length - ((string)b).Length) })" />
-```
 <!-- end: Blazor -->
 
 
@@ -78,51 +95,40 @@ For custom comparison logic, you can use the `SortConfiguration` parameter with 
 ## Single and multi-sorting
 <!-- React, WebComponents -->
 The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the `sortingOptions` property of the grid. The `mode` property accepts `'single'` or `'multiple'` as values.
-
-```typescript
-// Enable single-column sorting
-grid.sortingOptions = { mode: 'single' };
-
-// Enable multi-column sorting (default)
-grid.sortingOptions = { mode: 'multiple' };
-```
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the `SortingOptions` property of the grid. The `Mode` property accepts `GridLiteSortingMode.Single` or `GridLiteSortingMode.Multiple` as values.
+<!-- end: Blazor -->
+
+```typescript
+// Enable single-column sorting
+grid.sortingOptions = { mode: 'single' };
+```
 
 ```razor
 // Enable single-column sorting
 grid.SortingOptions = new IgbGridLiteSortingOptions { Mode = GridLiteSortingMode.Single };
-
-// Enable multi-column sorting (default)
-grid.SortingOptions = new IgbGridLiteSortingOptions { Mode = GridLiteSortingMode.Multiple };
 ```
-<!-- end: Blazor -->
 
 
 >[!NOTE]
 >The single/multi-column sorting behavior controls how end-users interact with the {GridLiteTitle}. Sorting through the API with multiple expression will still work when single sorting is enabled.
 
 ### Tri-state sorting
-<!-- React, WebComponents -->
-The {GridLiteTitle} supports tri-state sorting and it is always enabled. End-users will cycle through the following states when clicking on sortable column headers:
-<!-- end: React, WebComponents -->
-<!-- Blazor -->
-The {GridLiteTitle} supports tri-state sorting and it is always enabled. End-users will cycle through the following states when clicking on sortable column headers:
-<!-- end: Blazor -->
+The {GridLiteTitle} supports tri-state sorting and it is always enabled. End-users will cycle through the following direction states when clicking on sortable column headers:
 
-
-- **Tri-State Sorting**
-
-  - ```typescript
-    ascending -> descending -> none -> ascending
-    ```
 
 <!-- React, WebComponents -->
+```
+ascending -> descending -> none -> ascending
+```
 where `none` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
+```
+Ascending -> Descending -> None -> Ascending
+```
 where `None` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: Blazor -->
 
@@ -142,7 +148,7 @@ The following sample shows the grid `SortingOptions` property and how it control
 ## Sort Model
 
 <!-- React, WebComponents -->
-The building block for sort operations in the {GridLiteTitle} is the `SortingExpression` which has the following properties:
+The building block for sort operations in the {GridLiteTitle} is the `SortingExpression<T>` which has the following properties:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
 The building block for sort operations in the {GridLiteTitle} is the `IgbGridLiteSortingExpression` which has the following properties:
@@ -152,9 +158,9 @@ The building block for sort operations in the {GridLiteTitle} is the `IgbGridLit
 ```typescript
 type SortingExpression<T> = {
   /**
-   * The `field` of the target column for the sort operation.
+   * The `key` of the target column for the sort operation.
    */
-  field: keyof T;
+  key: keyof T;
   /**
    * The sort direction for the operation.
    */
@@ -176,10 +182,10 @@ type SortingExpression<T> = {
 public class IgbGridLiteSortingExpression
 {
     /// <summary>
-    /// The target column field.
+    /// The target column.
     /// </summary>
-    [JsonPropertyName("field")]
-    public string Field { get; set; }
+    [JsonPropertyName("key")]
+    public string Key { get; set; }
 
     /// <summary>
     /// Sort direction for this operation.
@@ -194,13 +200,6 @@ public class IgbGridLiteSortingExpression
     [JsonPropertyName("caseSensitive")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public bool? CaseSensitive { get; set; }
-
-    /// <summary>
-    /// Custom comparer function for this operation.
-    /// Note: This is not directly supported in Blazor and would need JavaScript interop.
-    /// </summary>
-    [JsonIgnore]
-    internal Func<object, object, int> Comparer { get; set; }
 }
 ```
 
@@ -210,37 +209,37 @@ an end-user interacts with the component. See below for additional information.
 ## Sort API
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `GridLite.sort()`/`GridLite.clearSort()` methods or through the `GridLite.sortingExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `sort()`/`clearSort()` methods or through the `sortingExpressions` property.
 
 The `sort()` method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `GridLite.Sort()`/`GridLite.ClearSort()` methods or through the `GridLite.SortingExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the `Sort()`/`ClearSort()` methods or through the `SortingExpressions` property.
 
 The `Sort()` method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 <!-- end: Blazor -->
 
 ```typescript
 // Single
-grid.sort({ field: 'price', direction: 'descending' });
+grid.sort({ key: 'price', direction: 'descending' });
 
 // Multiple
 grid.sort([
-  { field: 'price', direction: 'descending' },
-  { field: 'name', direction: 'descending' },
+  { key: 'price', direction: 'descending' },
+  { key: 'name', direction: 'descending' },
 ]);
 ```
 
 ```razor
 // Single
-await grid.Sort(new IgbGridLiteSortingExpression { Field = "Price", Direction = GridLiteSortingDirection.Descending });
+await grid.Sort(new IgbGridLiteSortingExpression { Key = "Price", Direction = GridLiteSortingDirection.Descending });
 
 // Multiple
 await grid.Sort(new IgbGridLiteSortingExpression[]
 {
-    new IgbGridLiteSortingExpression { Field = "Price", Direction = GridLiteSortingDirection.Descending },
-    new IgbGridLiteSortingExpression { Field = "Name", Direction = GridLiteSortingDirection.Descending }
+    new IgbGridLiteSortingExpression { Key = "Price", Direction = GridLiteSortingDirection.Descending },
+    new IgbGridLiteSortingExpression { Key = "Name", Direction = GridLiteSortingDirection.Descending }
 });
 ```
 
@@ -287,8 +286,8 @@ For example here is a Lit-based sample:
 ```typescript
 {
   sortState: SortingExpression<Products>[] = [
-    { field: 'price', direction: 'descending' },
-    { field: 'name', direction: 'ascending', caseSensitive: true },
+    { key: 'price', direction: 'descending' },
+    { key: 'name', direction: 'ascending', caseSensitive: true },
   ];
 
   render() {
@@ -304,8 +303,8 @@ For example:
 ```razor
 private IgbGridLiteSortingExpression[] sortState = new[]
 {
-    new IgbGridLiteSortingExpression { Field = "Price", Direction = GridLiteSortingDirection.Descending },
-    new IgbGridLiteSortingExpression { Field = "Name", Direction = GridLiteSortingDirection.Ascending, CaseSensitive = true }
+    new IgbGridLiteSortingExpression { Key = "Price", Direction = GridLiteSortingDirection.Descending },
+    new IgbGridLiteSortingExpression { Key = "Name", Direction = GridLiteSortingDirection.Ascending, CaseSensitive = true }
 };
 
 <IgbGridLite SortingExpressions="sortState" />

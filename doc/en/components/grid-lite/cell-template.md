@@ -9,17 +9,9 @@ _license: MIT
 
 # Column Cell Template
 
-<!-- React, WebComponents -->
-By default, the grid uses the field of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you should use a cell template renderer.
+By default, the grid uses the field of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you can customize the cell template.
 
-To achieve that, set the `cellTemplate` property of the column element using JavaScript.
-<!-- End: React, WebComponents -->
-
-<!-- Blazor -->
-By default, the grid uses the field of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you should use a cell template.
-
-To achieve that, use the `CellTemplate` parameter of the `IgbGridLiteColumn` component.
-<!-- End: Blazor -->
+To achieve that, set the `cellTemplate` property of the column.
 
 <!-- React, WebComponents -->
 
@@ -28,7 +20,7 @@ To achieve that, use the `CellTemplate` parameter of the `IgbGridLiteColumn` com
 const column = document.querySelector('igc-grid-lite-column[field="price"]');
 
 // Set the cellTemplate property
-column.cellTemplate = (params: GridLiteCellContext<T, K>) => TemplateResult;
+column.cellTemplate = (params: IgcCellContext<T, K>) => { return html`<!-- template content -->`};
 ```
 
 <!-- End: React, WebComponents -->
@@ -36,14 +28,8 @@ column.cellTemplate = (params: GridLiteCellContext<T, K>) => TemplateResult;
 <!-- Blazor -->
 
 ```razor
-<IgbGridLiteColumn Field="Price">
-    <CellTemplate>
-        @{
-            var value = (context as CellTemplateContext).Cell.Value;
-            <!-- Template content -->
-        }
-    </CellTemplate>
-</IgbGridLiteColumn>
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
 ```
 
 <!-- End: Blazor -->
@@ -55,7 +41,7 @@ For the simple scenario where some formatting is required, one can just return t
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
 // Get a reference to the column element
 const column = document.querySelector('igc-grid-lite-column');
@@ -69,15 +55,8 @@ column.cellTemplate = (params) => asCurrency(params.value); // => "€123,456.79
 <!-- Blazor -->
 
 ```razor
-<IgbGridLiteColumn Field="Price">
-    <CellTemplate>
-        @{
-            var value = (decimal)(context as CellTemplateContext).Cell.Value;
-            var formatted = value.ToString("C", new CultureInfo("en-EN"));
-            @formatted
-        }
-    </CellTemplate>
-</IgbGridLiteColumn>
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
 ```
 
 <!-- End: Blazor -->
@@ -89,7 +68,7 @@ Refer to the API documentation for `GridLiteCellContext` for more information. -
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
 // Get a reference to the column element
 const column = document.querySelector('igc-grid-lite-column');
@@ -102,18 +81,8 @@ column.cellTemplate = ({value, row}) => asCurrency(value * row.data.count); // =
 <!-- Blazor -->
 
 ```razor
-<IgbGridLiteColumn Field="Price">
-    <CellTemplate>
-        @{
-            var cellContext = (CellTemplateContext)context;
-            var value = (decimal)cellContext.Cell.Value;
-            var count = (int)cellContext.Cell.Row.Data.GetType().GetProperty("Count").GetValue(cellContext.Cell.Row.Data);
-            var total = value * count;
-            var formatted = total.ToString("C", new CultureInfo("en-EN"));
-            @formatted
-        }
-    </CellTemplate>
-</IgbGridLiteColumn>
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
 ```
 <!-- End: Blazor -->
 
@@ -146,14 +115,8 @@ column.cellTemplate = ({ value }) => html`<igc-rating readonly value=${value}></
 <!-- Blazor -->
 
 ```razor
-<IgbGridLiteColumn Field="Rating">
-    <CellTemplate>
-        @{
-            var value = (int)(context as CellTemplateContext).Cell.Value;
-            <IgbRating ReadOnly="true" Value="@value" />
-        }
-    </CellTemplate>
-</IgbGridLiteColumn>
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Rating"></IgbGridLiteColumn>
 ```
 
 <!-- End: Blazor -->
@@ -185,7 +148,7 @@ export interface GridLiteCellContext<
   /**
    * The current configuration for the column.
    */
-  column: IgcGridLiteColumn<T, K>;
+  column: ColumnConfiguration<T, K>;
   /**
    * The value from the data source for this cell.
    */
