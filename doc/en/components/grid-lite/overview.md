@@ -24,6 +24,7 @@ The {GridLiteTitle} delivers essential data-display functionality with minimal o
 - Themes And Styling
 - Column Data Types
 
+<!-- React, WebComponents -->
 ## Installation and Setup
 
 ### Installation
@@ -83,6 +84,56 @@ Finally add the grid lite component to your html template
 ```
 <!-- end: WebComponents -->
 
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+### Install IgniteUI.Blazor.GridLite
+
+In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor.GridLite** NuGet package.
+
+Or install via the Package Manager Console:
+
+```cmd
+Install-Package IgniteUI.Blazor.GridLite
+```
+
+Or via .NET CLI:
+
+```cmd
+dotnet add package IgniteUI.Blazor.GridLite
+```
+### Using Grid Lite
+
+1 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+
+```razor
+@using IgniteUI.Blazor.Controls
+```
+
+2 - Add the Style Sheet in the appropriate location based on your project type:
+
+```razor
+<head>
+       <link href="_content/IgniteUI.Blazor.GridLite/css/themes/light/bootstrap.css" rel="stylesheet" />
+</head>
+```
+
+3 - Add the Grid Lite component to your razor page:
+
+```razor
+<IgbGridLite Data="data" AutoGenerateColumns="true">
+</IgbGridLite>
+
+@code {
+    private object[] data = new object[]
+    {
+        new { Name = "John", Age = 30, City = "New York" },
+        new { Name = "Jane", Age = 25, City = "Los Angeles" },
+        new { Name = "Bob", Age = 35, City = "Chicago" }
+    };
+}
+```
+<!-- end: Blazor -->
 
 ## Grid Lite in Action
 `sample="/{GridLiteSample}/overview", height="600", alt="{Platform} {GridLiteTitle} App Sample Main"`
