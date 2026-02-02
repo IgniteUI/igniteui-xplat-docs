@@ -237,6 +237,13 @@ igc-icon {
 
 `sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon のサイズ変更"`
 
+アイコン コンポーネントにはカスタム サイズを設定することもできます。最も推奨される方法は、`--size` CSS 変数を使用することです。
+
+```css
+igc-icon {
+  --size: 32px;
+}
+```
 
 ### Mirrored (ミラー化済み)
 

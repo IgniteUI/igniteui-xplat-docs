@@ -62,7 +62,6 @@
         "status": ""
       },
       {
-
         "name": "Open-Source Libraries",
         "href": "general-getting-started-oss.md",
         "status": "NEW"
@@ -261,9 +260,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -533,9 +533,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -801,9 +802,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
