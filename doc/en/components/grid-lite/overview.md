@@ -25,7 +25,64 @@ The {GridLiteTitle} delivers essential data-display functionality with minimal o
 - Column Data Types
 
 ## Installation and Setup
-More on installation and setup see in this [Open-Source Libraries Overview](../general-getting-started-oss.md)
+
+### Installation
+To install it, go to the root folder of your project (where package.json is located) and run the following command using npm
+
+```cmd
+npm install igniteui-grid-lite
+```
+
+or using yarn
+```cmd
+yarn install igniteui-grid-lite
+```
+
+### Using the Grid Lite in your {Platform} code
+
+In your component import the Grid Lite component like this
+
+```cmd
+import { IgcGridLite } from 'igniteui-grid-lite';
+```
+
+Then you need to register it before the declaration of your component class or function
+```cmd
+IgcGridLite.register();
+```
+
+<!-- WebComponents -->
+Get the element from the html in your typescript file by id
+
+```ts
+const gridLite = document.getElementById('grid-lite') as any;
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+Finally add the grid lite component to your html template
+
+```tsx
+ return (
+      <div className="container sample ig-typography">
+        <div className="grid-lite-wrapper">
+          <igc-grid-lite ref={this.gridRef} id="grid-lite"></igc-grid-lite>
+        </div>
+      </div>
+    );
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+
+Finally add the grid lite component to your html template
+```ts
+<div class="grid-lite-wrapper">
+    <igc-grid-lite id="grid-lite"></igc-grid-lite>
+</div>
+```
+<!-- end: WebComponents -->
+
 
 ## Grid Lite in Action
 `sample="/{GridLiteSample}/overview", height="600", alt="{Platform} {GridLiteTitle} App Sample Main"`

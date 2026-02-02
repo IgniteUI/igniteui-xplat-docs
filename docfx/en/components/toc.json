@@ -24,14 +24,7 @@
     "exclude": ["Blazor", "Angular"],
     "name": "Getting Started",
     "href": "general-getting-started.md",
-    "status": "",
-    "items": [
-      {
-        "name": "Open-Source Libraries",
-        "href": "general-getting-started-oss.md",
-        "status": "NEW"
-      }
-    ]
+    "status": ""
   },
   {
     "exclude": ["Angular"],
