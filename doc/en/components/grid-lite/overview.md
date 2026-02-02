@@ -44,11 +44,21 @@ yarn add igniteui-grid-lite
 
 In the file where you want to use Grid Lite, import and register it before your component class or function is declared:
 
+<!-- React -->
+```tsx
+import { IgcGridLite } from 'igniteui-grid-lite';
+
+IgcGridLite.register();
+```
+<!-- End: React -->
+
+<!-- WebComponents -->
 ```ts
 import { IgcGridLite } from 'igniteui-grid-lite';
 
 IgcGridLite.register();
 ```
+<!-- End: WebComponents -->
 
 <!-- WebComponents -->
 Get the element from the HTML in your TypeScript file by id:
