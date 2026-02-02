@@ -13,20 +13,26 @@ The {ProductName} Query Builder provides a rich UI that allows developers to bui
 `sample="/interactions/query-builder/overview", height="900", alt="{Platform} Query Builder Overview Example"`
 
 # Getting started with {Platform} Query Builder
+To start using the `QueryBuilder`, first, you need to install the `{ProductName}` package by running the following command:
 
 <!-- WebComponents -->
-To start using the `QueryBuilder`, first, you need to install the `{PackageGrids}` package by running the following command:
 
 ```cmd
 npm install {PackageWebComponents} {PackageGrids}
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```cmd
+npm install igniteui-react {PackageGrids}
+```
+<!-- end: React -->
 
 You also need to reference the corresponding styles based on your project configuration.
 
 ```ts
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
-<!-- end: WebComponents -->
 
 # Using the {Platform} Query Builder
 
@@ -54,28 +60,28 @@ public ordersFields: any[] = [];
 public expressionTree!: IgcExpressionTree;
 
 constructor() {
-this.queryBuilder = document.getElementById('queryBuilder') as IgcQueryBuilderComponent;
-this.initFields();
+  this.queryBuilder = document.getElementById('queryBuilder') as IgcQueryBuilderComponent;
+  this.initFields();
 }
 
 private initFields(): void {
-this.ordersFields = [
+  this.ordersFields = [
     { field: 'orderId', dataType: 'number' },
     { field: 'customerId', dataType: 'string' },
     { field: 'orderDate', dataType: 'date' }
-];
+  ];
 
-this.entities = [
+  this.entities = [
     { name: 'Orders', fields: this.ordersFields }
-];
+  ];
 
-const tree = new IgcFilteringExpressionsTree();
-tree.operator = FilteringLogic.And;
-tree.entity = 'Orders';
+  const tree = new IgcFilteringExpressionsTree();
+  tree.operator = FilteringLogic.And;
+  tree.entity = 'Orders';
 
-this.expressionTree = tree;
-this.queryBuilder.entities = this.entities;
-this.queryBuilder.expressionTree = this.expressionTree;
+  this.expressionTree = tree;
+  this.queryBuilder.entities = this.entities;
+  this.queryBuilder.expressionTree = this.expressionTree;
 }
 ```
 
@@ -88,6 +94,82 @@ this.queryBuilder.addEventListener('expressionTreeChange', (e: CustomEvent<IgcEx
 });
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+private queryBuilderRef: React.RefObject<IgcQueryBuilderComponent>;
+
+constructor(props: any) {
+  super(props);
+  this.queryBuilderRef = React.createRef();
+  this.state = {
+    expressionTree: null
+  };
+}
+
+componentDidMount() {
+  const tree = new IgrFilteringExpressionsTree();
+  tree.operator = FilteringLogic.And;
+  tree.entity = 'Orders';
+
+  this.setState({ expressionTree: tree });
+
+  if (this.queryBuilderRef.current && tree) {
+    const queryBuilder = this.queryBuilderRef.current;
+    queryBuilder.entities = this.entities as any;
+    queryBuilder.expressionTree = tree;
+    queryBuilder.addEventListener('expressionTreeChange', this.handleExpressionTreeChange);
+  }
+}
+
+componentWillUnmount() {
+  if (this.queryBuilderRef.current) {
+    this.queryBuilderRef.current.removeEventListener('expressionTreeChange', this.handleExpressionTreeChange);
+  }
+}
+
+private handleExpressionTreeChange = (event: CustomEvent<IgcExpressionTree>) => {
+  this.setState({ expressionTree: event.detail });
+};
+
+private get ordersFields(): Field[] {
+  return [
+    { field: 'orderId', dataType: 'number' },
+    { field: 'customerId', dataType: 'string' },
+    { field: 'orderDate', dataType: 'date' }
+  ];
+}
+
+private get entities(): Entity[] {
+  return [
+    { name: 'Orders', fields: this.ordersFields }
+  ];
+}
+
+private onExpressionTreeChange() {
+  // Handle expression tree changes
+  console.log('Expression tree changed:', this.state.expressionTree);
+}
+
+public render(): JSX.Element {
+  return (
+    <div className="container sample">
+      <IgrQueryBuilder ref={this.queryBuilderRef} id="queryBuilder"></IgrQueryBuilder>
+    </div>
+  );
+}
+```
+
+The `ExpressionTree` is stored in the component state which means you can subscribe to the `ExpressionTreeChange` event to receive notifications when the end-user changes the UI by creating, editing or removing conditions. The event listener is attached in `componentDidMount` and cleaned up in `componentWillUnmount`.
+
+```tsx
+private handleExpressionTreeChange = (event: CustomEvent<IgcExpressionTree>) => {
+  this.setState({ expressionTree: event.detail });
+  this.onExpressionTreeChange();
+};
+```
+<!-- end: React -->
 
 # Expressions Dragging
 
@@ -142,47 +224,98 @@ conditions for those fields.
 <!-- WebComponents -->
 ```ts
 constructor() {
-    this.queryBuilder = document.getElementById('queryBuilder') as IgcQueryBuilderComponent;
-    this.queryBuilder.searchValueTemplate = (ctx) => this.buildSearchValueTemplate(ctx);
+  this.queryBuilder = document.getElementById('queryBuilder') as IgcQueryBuilderComponent;
+  this.queryBuilder.searchValueTemplate = (ctx) => this.buildSearchValueTemplate(ctx);
 }
 
 private buildSearchValueTemplate(ctx: IgcQueryBuilderSearchValueContext) {
-    const field = ctx.selectedField?.field;
-    const condition = ctx.selectedCondition;
-    const matchesEqualityCondition = condition === 'equals' || condition === 'doesNotEqual';
+  const field = ctx.selectedField?.field;
+  const condition = ctx.selectedCondition;
+  const matchesEqualityCondition = condition === 'equals' || condition === 'doesNotEqual';
 
-    if (!ctx.implicit) {
-        ctx.implicit = { value: null };
-    }
+  if (!ctx.implicit) {
+      ctx.implicit = { value: null };
+  }
 
-    // Custom template for Region field
-    if (field === 'Region' && matchesEqualityCondition) {
-        return this.buildRegionSelect(ctx);
-    }
+  // Custom template for Region field
+  if (field === 'Region' && matchesEqualityCondition) {
+      return this.buildRegionSelect(ctx);
+  }
 
-    // Custom template for OrderStatus field
-    if (field === 'OrderStatus' && matchesEqualityCondition) {
-        return this.buildStatusRadios(ctx);
-    }
+  // Custom template for OrderStatus field
+  if (field === 'OrderStatus' && matchesEqualityCondition) {
+      return this.buildStatusRadios(ctx);
+  }
 
-    // Custom template for date fields
-    if (ctx.selectedField?.dataType === 'date') {
-        return this.buildDatePicker(ctx);
-    }
+  // Custom template for date fields
+  if (ctx.selectedField?.dataType === 'date') {
+      return this.buildDatePicker(ctx);
+  }
 
-    // Custom template for time fields
-    if (ctx.selectedField?.dataType === 'time') {
-        return this.buildTimeInput(ctx);
-    }
+  // Custom template for time fields
+  if (ctx.selectedField?.dataType === 'time') {
+      return this.buildTimeInput(ctx);
+  }
 
-    // Default template for all other fields (string, number, boolean, etc.)
-    // This ensures all fields have a functioning editor
-    return this.buildDefaultInput(ctx);
+  // Default template for all other fields (string, number, boolean, etc.)
+  // This ensures all fields have a functioning editor
+  return this.buildDefaultInput(ctx);
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<IgrQueryBuilder 
+  ref={this.queryBuilderRef} 
+  id="queryBuilder"
+  searchValueTemplate={this.buildSearchValueTemplate}>
+  <IgrQueryBuilderHeader title="Query Builder Template Sample"></IgrQueryBuilderHeader>
+</IgrQueryBuilder>
+```
+
+```tsx
+componentDidMount() {
+  if (this.queryBuilderRef.current && tree) {
+    const queryBuilder = this.queryBuilderRef.current;
+    queryBuilder.entities = this.entities as any;
+    queryBuilder.expressionTree = tree;
+  }
+}
+
+private buildSearchValueTemplate = (ctx: QueryBuilderSearchValueContext) => {
+  const field = ctx.selectedField?.field;
+  const condition = ctx.selectedCondition;
+  const matchesEqualityCondition = condition === 'equals' || condition === 'doesNotEqual';
+
+  if (!ctx.implicit) {
+    ctx.implicit = { value: null };
+  }
+
+  if (field === 'Region' && matchesEqualityCondition) {
+    return this.buildRegionSelect(ctx);
+  }
+
+  if (field === 'OrderStatus' && matchesEqualityCondition) {
+    return this.buildStatusRadios(ctx);
+  }
+
+  if (ctx.selectedField?.dataType === 'date') {
+    return this.buildDatePicker(ctx);
+  }
+
+  if (ctx.selectedField?.dataType === 'time') {
+    return this.buildTimeInput(ctx);
+  }
+
+  return this.buildDefaultInput(ctx, matchesEqualityCondition);
+};
+```
+<!-- end: React -->
 
 Below are examples showing one template for each type of editor:
 
+<!-- WebComponents -->
 For the Region Select example:
 
 ```ts
@@ -332,11 +465,207 @@ private buildDefaultInput(ctx: IgcQueryBuilderSearchValueContext) {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+For the Region Select example:
+
+```tsx
+// Field definition
+{ field: 'Region', dataType: 'string' }
+
+// Template
+private buildRegionSelect = (ctx: QueryBuilderSearchValueContext) => {
+  const currentValue = ctx?.implicit?.value?.value ?? '';
+  const key = `region-select-${currentValue}`;
+
+  return (
+    <IgrSelect
+      className="qb-select"
+      key={key}
+      value={currentValue}
+      change={(sender: any) => {
+        const value = sender.value;
+        const currentKey = ctx?.implicit?.value?.value ?? '';
+
+        if (!value || value === currentKey) return;
+
+        setTimeout(() => {
+          ctx.implicit.value = this.regionOptions.find(option => option.value === value) ?? null;
+        });
+      }}>
+      {this.regionOptions.map(option => (
+        <IgrSelectItem key={option.value} value={option.value}>
+          <span>{option.text}</span>
+        </IgrSelectItem>
+      ))}
+    </IgrSelect>
+  );
+};
+```
+
+For the Status Radio Group example:
+
+```tsx
+// Field definition
+{ field: 'OrderStatus', dataType: 'number' }
+
+// Template
+private buildStatusRadios = (ctx: QueryBuilderSearchValueContext) => {
+  const implicitValue = ctx.implicit?.value;
+  const currentValue = implicitValue === null ? '' : implicitValue.toString();
+  const key = `status-radio-${currentValue}`;
+
+  return (
+    <IgrRadioGroup
+      key={key}
+      style={{ gap: '5px' }}
+      alignment="horizontal"
+      value={currentValue}
+      change={(sender: any) => {
+        const value = sender.value;
+        if (value === undefined) return;
+
+        const numericValue = Number(value);
+        if (ctx.implicit.value === numericValue) return;
+
+        setTimeout(() => {
+          ctx.implicit.value = numericValue;
+        });
+      }}>
+      {this.statusOptions.map(option => (
+        <IgrRadio
+          key={option.value}
+          name="status"
+          value={option.value.toString()}
+          checked={option.value.toString() === currentValue}
+          labelText={option.text}>
+        </IgrRadio>
+      ))}
+    </IgrRadioGroup>
+  );
+};
+```
+
+For the Date Picker example:
+
+```tsx
+// Field definition
+{ field: 'OrderDate', dataType: 'date' }
+
+// Template
+private buildDatePicker = (ctx: QueryBuilderSearchValueContext) => {
+  const implicitValue = ctx.implicit?.value;
+  const currentValue = implicitValue instanceof Date
+    ? implicitValue
+    : implicitValue
+      ? new Date(implicitValue)
+      : null;
+
+  const allowedConditions = ['equals', 'doesNotEqual', 'before', 'after'];
+  const isEnabled = allowedConditions.indexOf(ctx.selectedCondition ?? '') !== -1;
+  const key = `date-picker-${currentValue}`;
+
+  return (
+    <IgrDatePicker
+      key={key}
+      value={currentValue}
+      disabled={!isEnabled}
+      click={(sender: any) => sender.show()}
+      change={(sender: any) => {
+        setTimeout(() => {
+          ctx.implicit.value = sender.value;
+        });
+      }}>
+    </IgrDatePicker>
+  );
+};
+```
+
+For the Time Input example:
+
+```tsx
+// Field definition
+{ field: 'RequiredTime', dataType: 'time' }
+
+// Template
+private buildTimeInput = (ctx: QueryBuilderSearchValueContext) => {
+  const currentValue = this.normalizeTimeValue(ctx.implicit?.value);
+  const allowedConditions = ['at', 'not_at', 'at_before', 'at_after', 'before', 'after'];
+  const isDisabled = ctx.selectedField == null || allowedConditions.indexOf(ctx.selectedCondition ?? '') === -1;
+  const key = `time-input-${currentValue}`;
+
+  return (
+    <IgrDateTimeInput
+      key={key}
+      inputFormat="hh:mm tt"
+      value={currentValue}
+      disabled={isDisabled}
+      change={(sender: any) => {
+        setTimeout(() => {
+          ctx.implicit.value = sender.value;
+        });
+      }}>
+      <div slot="prefix">
+        <IgrIcon name="clock" collection="material" />
+      </div>
+    </IgrDateTimeInput>
+  );
+};
+```
+
+For the Default Input template:
+
+```tsx
+// Field definitions for string, number, and boolean types
+{ field: 'ShipCountry', dataType: 'string' }
+{ field: 'OrderID', dataType: 'number' }
+{ field: 'IsRushOrder', dataType: 'boolean' }
+
+// Template that handles all these types
+private buildDefaultInput = (ctx: QueryBuilderSearchValueContext, matchesEqualityCondition: boolean) => {
+  const selectedField = ctx.selectedField;
+  const dataType = selectedField?.dataType;
+  const isNumber = dataType === 'number';
+  const isBoolean = dataType === 'boolean';
+
+  const placeholder = ctx.selectedCondition === 'inQuery' || ctx.selectedCondition === 'notInQuery'
+    ? 'Sub-query results'
+    : 'Value';
+
+  const currentValue = typeof ctx.implicit?.value === 'object' && (ctx.implicit.value && 'text' in ctx.implicit.value)
+    ? matchesEqualityCondition ? ctx.implicit.value.text : ''
+    : ctx.implicit?.value;
+
+  const inputValue = currentValue == null ? '' : currentValue;
+  const disabledConditions = ['empty', 'notEmpty', 'null', 'notNull', 'inQuery', 'notInQuery'];
+  const isDisabled = isBoolean || selectedField == null || disabledConditions.indexOf(ctx.selectedCondition ?? '') !== -1;
+  const key = `default-input-${inputValue}`;
+
+  return (
+    <IgrInput 
+      key={key}
+      value={inputValue?.toString() || ''}
+      disabled={isDisabled}
+      placeholder={placeholder}
+      type={isNumber ? 'number' : 'text'}
+      input={(sender: any) => {
+        const value = sender.value;
+        setTimeout(() => {
+          ctx.implicit.value = isNumber
+            ? value === '' ? null : Number(value)
+            : value;
+        });
+      }}>
+    </IgrInput>
+  );
+};
+```
+<!-- end: React -->
+
 ### Formatter
 
 In order to change the appearance of the search value in the chip displayed when a condition is not in edit mode, you can set a formatter function to the fields array. The search value can be accessed through the value argument as follows:
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 ```ts
 this.ordersFields = [
   { field: 'OrderID', dataType: 'number' },
@@ -357,7 +686,7 @@ this.ordersFields = [
   }
 ];
 ```
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 ### Demo
 
