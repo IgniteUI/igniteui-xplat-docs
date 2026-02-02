@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 814,
+  "samplesCount": 815,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1778,6 +1778,9 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/dot": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/badge"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/outlined": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/badge"
@@ -3629,6 +3632,7 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/badge": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/dot",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/outlined",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/shape",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/styling",

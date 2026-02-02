@@ -9,7 +9,7 @@ _license: MIT
 
 # Open Source {Platform} Grid
 
-The {ProductName} {GridLiteTitle} is part of Infragistics’ new open-source UI component set that will be actively supported and maintained. It is open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework. There are 40+ OSS controls now available under the MIT license across Angular, React, Blazor, and Web Components.
+The {ProductName} {GridLiteTitle} is part of Infragistics’ open-source UI component set, actively supported and maintained. It is an open-source JavaScript data grid built as a Web Component, so you can use it dependency-free with or without a web framework. There are 40+ OSS controls available under the MIT license across Angular, React, Blazor, and Web Components.
 
 The {GridLiteTitle} delivers essential data-display functionality with minimal overhead and the performance users expect. It is designed for developers who need fast, lightweight data presentation without the complexity of an enterprise grid.
 
@@ -21,20 +21,20 @@ The {GridLiteTitle} delivers essential data-display functionality with minimal o
 - Sorting
 - Row Virtualization
 - Accessibility
-- Themes And Styling
+- Themes and Styling
 - Column Data Types
 
 <!-- React, WebComponents -->
 ## Installation and Setup
 
 ### Installation
-To install it, go to the root folder of your project (where package.json is located) and run the following command using npm
+To install {GridLiteTitle}, go to the root folder of your project (where `package.json` is located) and run the following command using npm:
 
 ```cmd
-npm install igniteui-grid-lite
+npm install igniteui-grid-lite --save
 ```
 
-or using yarn
+Or using yarn:
 
 ```cmd
 yarn add igniteui-grid-lite
@@ -42,42 +42,37 @@ yarn add igniteui-grid-lite
 
 ### Using the Grid Lite in your {Platform} code
 
-In your component import the Grid Lite component like this
+In the file where you want to use Grid Lite, import and register it before your component class or function is declared:
 
 ```ts
 import { IgcGridLite } from 'igniteui-grid-lite';
-```
 
-Then you need to register it before the declaration of your component class or function
-```ts
 IgcGridLite.register();
 ```
 
 <!-- WebComponents -->
-Get the element from the html in your typescript file by id
+Get the element from the HTML in your TypeScript file by id:
 
 ```ts
 const gridLite = document.getElementById('grid-lite') as IgcGridLite<ProductInfo>;
 ```
 <!-- end: WebComponents -->
 
-<!-- React -->
-Finally add the grid lite component to your html template
+Add the `<igc-grid-lite>` element to your markup:
 
+<!-- React -->
 ```tsx
- return (
-      <div className="container sample ig-typography">
-        <div className="grid-lite-wrapper">
-          <igc-grid-lite ref={this.gridRef} id="grid-lite"></igc-grid-lite>
-        </div>
-      </div>
-    );
+return (
+  <div className="container sample ig-typography">
+    <div className="grid-lite-wrapper">
+      <igc-grid-lite ref={this.gridRef} id="grid-lite"></igc-grid-lite>
+    </div>
+  </div>
+);
 ```
 <!-- end: React -->
 
 <!-- WebComponents -->
-
-Finally add the grid lite component to your html template
 ```html
 <div class="grid-lite-wrapper">
     <igc-grid-lite id="grid-lite"></igc-grid-lite>
@@ -147,7 +142,7 @@ Row-level virtualization allows you to render unlimited amounts of data with smo
 
 ## Automatic Column Types
 
-Column types are automatically generated base on your data source with built-in filtering based on column type.
+Column types are automatically generated based on your data source, with built-in filtering tailored to each column type.
 
 <!-- WebComponents -->
 ## Custom Column Templates
@@ -157,7 +152,7 @@ Deliver any type of UX with column templates. Anything you imagine can render in
 
 ## Interactive Features
 
-All the core interactive features your users expect, like column filtering, column hiding, column resizing, columns sorting, and more!
+All the core interactive features your users expect: column filtering, column hiding, column resizing, column sorting, and more.
 
 ## Beautiful UX & Branding
 
@@ -165,4 +160,4 @@ Built-in theme support for Bootstrap, Material & Fluent, plus endless branding o
 
 ## Rich Keyboard Navigation
 
-Full Excel-style keyboard navigation gives user the experience they expect with high-performance keyboard navigation.
+Full Excel-style keyboard navigation gives users the experience they expect, with high performance even on large datasets.
