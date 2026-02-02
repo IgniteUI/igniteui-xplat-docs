@@ -24,7 +24,14 @@
     "exclude": ["Blazor", "Angular"],
     "name": "Getting Started",
     "href": "general-getting-started.md",
-    "status": ""
+    "status": "",
+    "items": [
+      {
+        "name": "Open-Source Libraries",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular"],
@@ -62,13 +69,13 @@
         "status": ""
       },
       {
-
         "name": "Open-Source Libraries",
         "href": "general-getting-started-oss.md",
         "status": "NEW"
       }
     ]
   },
+  
   {
     "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
