@@ -18,6 +18,10 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+- Angular 21 のサポート。
+
+## **{PackageVerChanges-25-2-DEC}**
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |

@@ -259,9 +259,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -531,9 +532,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -781,27 +783,28 @@
             "exclude": ["Angular"],
             "name": "セルの編集",
             "href": "grids/tree-grid/cell-editing.md",
-        "premium": true
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "行の追加",
             "href": "grids/tree-grid/row-adding.md",
-        "premium": true
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "行の編集",
             "href": "grids/tree-grid/row-editing.md",
-        "premium": true
+            "premium": true
           }
         ]
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
