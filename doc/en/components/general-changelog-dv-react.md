@@ -17,6 +17,21 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
+|2270|IgrDataChart|Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis |
+|2251|igniteui-react-layouts|Skip resolving property editor props containing @constantValues |
+|2353|IgrDataChart|syntax error while building infragistics.dvcommonwidget.js |
+|2354|IgrDataChart|infragistics.dvcommonwidget.js has "unser" typo instead of "unset" in case names |
+|2338|IgrDataPieChart|SeriesPointerMove event doesn't fire correctly when StartAngle is set |
+|2235|Excel|Workbook.Load() throwing a Excel.FormulaParseException. |
+|2234|IgrRadialChart|Added a check for bucket size equals to 0 |
+|2234|IgrDataChart|fix GetCategoryIndexAxis() for annotation layers |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
 |33808|IgrDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
 |34255|IgrDataChart|0.00001 scale tick marks are displayed overlapping each other|
 |38510|IgrDataChart|AssigningCategoryStyle event support for Stacked Series|
