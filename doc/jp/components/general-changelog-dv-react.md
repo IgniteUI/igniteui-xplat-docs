@@ -14,6 +14,21 @@ _language: ja
 
 ### バグ修正
 
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|2270|IgrDataChart|DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加。 |
+|2251|igniteui-react-layouts|@constantValues を含むプロパティ エディターのプロパティを解決しないように修正。 |
+|2353|IgrDataChart|infragistics.dvcommonwidget.js のビルド時に発生する構文エラーを修正。 |
+|2354|IgrDataChart|infragistics.dvcommonwidget.js の case 名で "unset" の代わりに "unser" となっていたタイポを修正。 |
+|2338|IgrDataPieChart|StartAngle が設定されている場合に SeriesPointerMove イベントが正しく発火しない問題を修正。 |
+|2235|Excel|Workbook.Load() が Excel.FormulaParseException をスローする問題を修正。 |
+|2234|IgrRadialChart|バケット サイズが 0 に等しい場合のチェックを追加。 |
+|2234|IgrDataChart|注釈レイヤーにおける GetCategoryIndexAxis() を修正。 |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### バグ修正
+
 | バグ番号 | コントロール | 説明      |
 |------------|---------|-------------|
 |33808|IgrDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
