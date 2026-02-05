@@ -44,53 +44,63 @@ yarn add igniteui-grid-lite
 
 In the file where you want to use Grid Lite, import and register it before your component class or function is declared:
 
-<!-- React -->
+```ts
+import { IgcGridLite } from 'igniteui-grid-lite';
+
+IgcGridLite.register();
+```
+
 ```tsx
 import { IgcGridLite } from 'igniteui-grid-lite';
 
 IgcGridLite.register();
 ```
-<!-- End: React -->
-
-<!-- WebComponents -->
-```ts
-import { IgcGridLite } from 'igniteui-grid-lite';
-
-IgcGridLite.register();
-```
-<!-- End: WebComponents -->
-
-<!-- WebComponents -->
-Get the element from the HTML in your TypeScript file by id:
-
-```ts
-const gridLite = document.getElementById('grid-lite') as IgcGridLite<ProductInfo>;
-```
-<!-- end: WebComponents -->
 
 Add the `<igc-grid-lite>` element to your markup:
 
-<!-- React -->
+<!-- end: React, WebComponents -->
+
 ```tsx
+const data = [
+    { name: "John", age: 30, city: "New York" },
+    { name: "Jane", age: 25, city: "Los Angeles" },
+    { name: "Bob", age: 35, city: "Chicago" }
+]
+
 return (
-  <div className="container sample ig-typography">
-    <div className="grid-lite-wrapper">
-      <igc-grid-lite ref={this.gridRef} id="grid-lite"></igc-grid-lite>
-    </div>
-  </div>
+    <igc-grid-lite data={data} auto-generate={true}>
+        <igc-grid-lite-column field="name" header="Name"></igc-grid-lite-column>
+        <igc-grid-lite-column field="age" header="Age" data-type="number"></igc-grid-lite-column>
+        <igc-grid-lite-column field="city" header="City"></igc-grid-lite-column>
+    </igc-grid-lite>
 );
 ```
-<!-- end: React -->
 
 <!-- WebComponents -->
+```ts
+private data = [
+  { name: "John", age: 30, city: "New York" },
+  { name: "Jane", age: 25, city: "Los Angeles" },
+  { name: "Bob", age: 35, city: "Chicago" }
+];
+
+constructor() {
+  const gridLite = document.getElementById('grid-lite') as any;
+  gridLite.data = this.data;
+}
+```
+
 ```html
-<div class="grid-lite-wrapper">
-    <igc-grid-lite id="grid-lite"></igc-grid-lite>
+<div id="root">
+    <igc-grid-lite id="grid-lite" auto-generate="true">
+        <igc-grid-lite-column field="name" header="Name"></igc-grid-lite-column>
+        <igc-grid-lite-column field="age" header="Age" data-type="number"></igc-grid-lite-column>
+        <igc-grid-lite-column field="city" header="City"></igc-grid-lite-column>
+    </igc-grid-lite>
 </div>
 ```
 <!-- end: WebComponents -->
 
-<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 ### Install IgniteUI.Blazor.GridLite
