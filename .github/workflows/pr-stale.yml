@@ -1,0 +1,26 @@
+name: "Mark stale pull requests and issues"
+on:
+  schedule:
+    # Run every day at midnight UTC
+    - cron: '0 0 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9 # Use the actions/stale action
+        with:
+          remove-pr-stale-when-updated: true
+          days-before-stale: 30
+          # days-before-pr-close: 7
+          stale-issue-message: 'Auto-tagged as stale status because no activity in the last 30 days.' 
+          stale-pr-message:    'Auto-tagged as stale status because no activity in the last 30 days.' 
+          # It will be closed in 7 days if no further activity occurs. Thank you for your contributions.'
+          # close-pr-message: 'This pull request has been closed due to inactivity.'
+          stale-pr-label:    'status: stale'
+          stale-issue-label: 'status: stale'
+          # exempt-pr-labels: 'keep-open, awaiting-upstream' # Labels to exempt from being marked stale
+          # https://github.com/actions/stale - arguments reference
