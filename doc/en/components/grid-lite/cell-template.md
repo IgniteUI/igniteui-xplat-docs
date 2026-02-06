@@ -9,19 +9,30 @@ _license: MIT
 
 # Column Cell Template
 
-By default, the grid uses the key of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you should use a cell template renderer.
+By default, the grid uses the field of the column to render the value as a string inside the cell. This is fine for basic scenarios, but if you want to customize the rendered output or the final output is a combination of different data fields, you can customize the cell template.
 
 To achieve that, set the `cellTemplate` property of the column.
 
 <!-- React, WebComponents -->
 
 ```typescript
-{
-  cellTemplate?: (params: GridLiteCellContext<T, K>) => TemplateResult;
-}
+// Get a reference to the column element
+const column = document.querySelector('igc-grid-lite-column[field="price"]');
+
+// Set the cellTemplate property
+column.cellTemplate = (params: IgcCellContext<T, K>) => { return html`<!-- template content -->`};
 ```
 
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
 
 ## Use as a Formatter Function
 
@@ -30,17 +41,25 @@ For the simple scenario where some formatting is required, one can just return t
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
-{
-  ...
-  /** Return the custom currency format for a value `value = 123456.789` */
-  cellTemplate: (params) => asCurrency(params.value) // => "€123,456.79"
-  ...
-}
+// Get a reference to the column element
+const column = document.querySelector('igc-grid-lite-column');
+
+// Return the custom currency format for a value `value = 123456.789`
+column.cellTemplate = (params) => asCurrency(params.value); // => "€123,456.79"
 ```
 
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
 
 You can combine values different fields from the data source as well.
 <!-- TODO:
@@ -49,16 +68,23 @@ Refer to the API documentation for `GridLiteCellContext` for more information. -
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
-{
-  ...
-  /** Return the custom currency format for an order of 10 items where the price is 99.99 */
-  cellTemplate: ({value, row}) => asCurrency(value * row.data.count) // => "€999.90"
-  ...
-}
+// Get a reference to the column element
+const column = document.querySelector('igc-grid-lite-column');
+
+// Return the custom currency format for an order of 10 items where the price is 99.99
+column.cellTemplate = ({value, row}) => asCurrency(value * row.data.count); // => "€999.90"
 ```
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+<!-- End: Blazor -->
 
 ## Custom DOM Templates
 
@@ -77,15 +103,23 @@ You can template any standard DOM elements as well as web components from other 
 // Import the `html` tag function from the Lit package.
 import { html } from "lit";
 
-{
-  key: 'rating',
-  // Use another web component to represent the `rating` value in the grid
-  cellTemplate: ({ value }) => html`<igc-rating readonly value=${value}></igc-rating>`
-  ...
-}
+// Get a reference to the column element
+const column = document.querySelector('igc-grid-lite-column[field="rating"]');
+
+// Use another web component to represent the `rating` value in the grid
+column.cellTemplate = ({ value }) => html`<igc-rating readonly value=${value}></igc-rating>`;
 ```
 
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Rating"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
 
 >[!NOTE]
 >Keep in mind the more complex and involved the template is, the greater the performance cost. Avoid complex DOM structures if performance is important.
