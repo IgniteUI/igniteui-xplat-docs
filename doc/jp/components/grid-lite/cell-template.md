@@ -10,19 +10,30 @@ _language: ja
 
 # 列セル テンプレート
 
-デフォルトでは、グリッドは列のキーを使用してセル内の値を文字列としてレンダリングします。基本的なシナリオではこれで問題ありませんが、レンダリング結果をカスタマイズしたい場合や、最終出力が異なるデータ フィールドの組み合わせである場合は、セル テンプレート レンダラーを使用します。
+デフォルトでは、グリッドは列のフィールドを使用してセル内の値を文字列としてレンダリングします。これは基本的なシナリオでは問題ありませんが、レンダリングされる出力をカスタマイズしたい場合や、最終的な出力が異なるデータ フィールドの組み合わせである場合は、セル テンプレートをカスタマイズできます。
 
 列の `cellTemplate` プロパティを設定することで、これを実現できます。
 
 <!-- React, WebComponents -->
 
 ```typescript
-{
-  cellTemplate?: (params: GridLiteCellContext<T, K>) => TemplateResult;
-}
+// 列要素への参照を取得します
+const column = document.querySelector('igc-grid-lite-column[field="price"]');
+
+// cellTemplate プロパティを設定します
+column.cellTemplate = (params: IgcCellContext<T, K>) => { return html`<!-- template content -->`};
 ```
 
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
 
 ## フォーマッタ関数として使用する
 
@@ -31,35 +42,50 @@ _language: ja
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
-{
-  ...
-  /** 値 `value = 123456.789` に対してカスタム通貨形式を返します。 */
-  cellTemplate: (params) => asCurrency(params.value) // => "€123,456.79"
-  ...
-}
+// 列要素への参照を取得します
+const column = document.querySelector('igc-grid-lite-column');
+
+// 値 `value = 123456.789` に対してカスタム通貨形式を返します。
+column.cellTemplate = (params) => asCurrency(params.value); // => "€123,456.79"
 ```
 
 <!-- End: React, WebComponents -->
 
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
+
 データ ソース内の異なるフィールドの値を組み合わせることも可能です。
-<!-- TODO: 
-Refer to the API documentation for `GridLiteCellContext` for more information. -->
+<!-- TODO:
+詳細については、`GridLiteCellContext` の API ドキュメントを参照してください。 -->
 
 <!-- React, WebComponents -->
 
 ```typescript
-const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'EUR' });
+const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currency', currency: 'EUR' });
 
-{
-  ...
-  /** 価格が 99.99 の品目 10 個の注文に対してカスタム通貨形式を返します。 */
-  cellTemplate: ({value, row}) => asCurrency(value * row.data.count) // => "€999.90"
-  ...
-}
+// 列要素への参照を取得します
+const column = document.querySelector('igc-grid-lite-column');
+
+// 価格が 99.99 の品目 10 個の注文に対してカスタム通貨形式を返します
+column.cellTemplate = ({value, row}) => asCurrency(value * row.data.count); // => "€999.90"
 ```
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Price"></IgbGridLiteColumn>
+```
+<!-- End: Blazor -->
 
 ## カスタム DOM テンプレート
 
@@ -75,15 +101,23 @@ const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency
 // Lit パッケージから `html` タグ関数をインポートします。
 import { html } from "lit";
 
-{
-  key: 'rating',
-  // グリッド内の `rating` 値を表すために別の Web コンポーネントを使用します。
-  cellTemplate: ({ value }) => html`<igc-rating readonly value=${value}></igc-rating>`
-  ...
-}
+// 列要素への参照を取得します
+const column = document.querySelector('igc-grid-lite-column[field="rating"]');
+
+// グリッド内の `rating` 値を表すために別の Web コンポーネントを使用します
+column.cellTemplate = ({ value }) => html`<igc-rating readonly value=${value}></igc-rating>`;
 ```
 
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Rating"></IgbGridLiteColumn>
+```
+
+<!-- End: Blazor -->
 
 >[!NOTE]
 >テンプレートが複雑であればあるほど、パフォーマンス コストが増加します。パフォーマンスが重要な場合は複雑な DOM 構造を避けてください。
