@@ -13,7 +13,6 @@ namespace: Infragistics.Controls
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
-
 ### Bug Fixes
 
 | Bug Number | Control | Description |
@@ -31,7 +30,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 - Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
 
 ## **{PackageVerChanges-25-2-NOV}**
-
 ### {PackageCharts} (Charts)
 
 #### <label>PREVIEW</label> User Annotations
@@ -56,93 +54,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - Azure Map Imagery is now RTM.
 
 
-### Bug Fixes
-
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker
-
-
-## **{PackageCommonVerChanges-6.3.6}**
-
-### New Components
-
-- Added `IgrChat` component
-
-### {PackageGrids} (Grids)
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`
-  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
-
-        It can be enabled on the individual columns:
-
-        ```html
-        <igc-column field="field" merge="true"></igc-column>
-        ```
-        The merging can be configured on the grid level to apply either:
-     - `onSort` - only when the column is sorted.
-     - `always` - always, regardless of data operations.
-
-        ```html
-        <igc-grid cellMergeMode="always">
-        </igc-grid>
-        ```
-
-        The default `cellMergeMode` is `onSort`.
-
-        The functionality can be modified by setting a custom `mergeStrategy` on the grid, in case some other merge conditions or logic is needed for a custom scenario.
-
-        It's possible also to set a `mergeComparer` on the individual columns, in case some custom handling is needed for a particular data field.
-
-  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `pinningPosition` property on the column:
-
-        ```html
-        <igc-column field="Col1" pinned="true" pinningPosition="pinningPosition">
-        </igc-column>
-        ```
-
-        ```ts
-        pinningPosition = ColumnPinningPosition.End;
-        ```
-
-        Or with the API, via optional parameter:
-
-        ```ts
-        grid.pinColumn('Col1', 0, ColumnPinningPosition.End);
-        grid.pinColumn('Col2', 0, ColumnPinningPosition.Start);
-        ```
-
-        If property `pinningPosition` is not set on a column, the column will default to the position specified on the grid's `pinning` options for `columns`.
-
-  - **Sorting improvements**
-     - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-     - Refactored sorting algorithms from recursive to iterative.
-  - **Groupby improvements**
-     - Refactored grouping algorithm from recursive to iterative.
-     - Optimized grouping operations.
-
-
-
-
-### Bug Fixes
-
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |removed duplicated CSS variables across list components and themes|
-|[1871](https://github.com/IgniteUI/igniteui-webcomponents/pull/1871)| Card |Consume colors from themes|
-|[1873](https://github.com/IgniteUI/igniteui-webcomponents/pull/1873)| Card |Avatar size in card header|
-|[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |Message actions not rendered after last message|
-|[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |Change event not emitted for non-editable input configuration|
-|[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Issues when clearing the value and notch border in Material theme|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker|
-
 ## **{PackageVerChanges-25-1-SEP}**
-
 ### {PackageMaps}
 
 #### <label>PREVIEW</label> Azure Map Imagery Support
@@ -178,28 +90,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
 
-### {PackageGrids}
-
-#### <label>PREVIEW</label> Cell Suffix Content
-
-Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below and is available on the `DataGridColumn` and `CellInfo` class:
-
-- `SuffixText`
-- `SuffixTextColor`
-- `SuffixTextFont`
-- `SuffixIconName`
-- `SuffixIconCollectionName`
-- `SuffixIconStroke`
-- `SuffixIconFill`
-- `SuffixIconViewBoxLeft`
-- `SuffixIconViewBoxTop`
-- `SuffixIconViewBoxWidth`
-- `SuffixIconViewBoxHeight`
-- `TextDecoration`
-
-Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
-
-
 ### Bug Fixes
 
 | Bug Number | Control | Description |
@@ -208,8 +98,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37930| `IgcDataChart` | Data Annotation Overlay Text Color not working|
 |30600| `IgcDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
 |31624| `IgcCategoryChart` | Resizing the containing window of the Category Chart causes the chart to fail to render the series|
-|38231| `IgcGrid` | Unpinned column does not return to the original position if hidden columns exist|
-|33861| Excel Library | Adding line chart corrupts excel File for German culture|
 
 ### Enhancements
 
@@ -237,74 +125,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 - <label>PREVIEW</label> Added new `LabelsVisible` property
 
-## **{PackageVerChanges-25-1-AUG}**
-
-### Enhancements
-- Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
-  [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
-- Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid
-  styles unless interacted through the UI or through a form `requestSubmit()/reset()` invocation.
-
-### Bug Fixes
-
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|Invalid state in **readonly** mode|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|Cannot style **helper-text**|
-|[1795](https://github.com/IgniteUI/igniteui-webcomponents/pull/1795)|Card|Slotted igc-avatar in Indigo theme|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Combo|Border overlaps label text in invalid state|
-|[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo elevation styles|
-|[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date range picker|Return focus to main input on keyboard interactions|
-|[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Placeholder and label alignment in Material theme|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update **relative** positions styles and animation|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|Invalid state theming issues|
-|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material theme interaction issues|
-|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Resizing behavior with suffix part|
-|[1775](https://github.com/IgniteUI/igniteui-webcomponents/pull/1775)|Calendar|Vertical mode container paddings|
-|[1731](https://github.com/IgniteUI/igniteui-webcomponents/issues/1731)|Carousel|Pause automatic rotation on pointer-initiated focus|
-|[1772](https://github.com/IgniteUI/igniteui-webcomponents/issues/1772)|Carousel|Ensure `igcSlideChanged` event is emitted when a slide is changed|
-|[1765](https://github.com/IgniteUI/igniteui-webcomponents/pull/1765)|Date picker|Styling issues|
-|[1764](https://github.com/IgniteUI/igniteui-webcomponents/pull/1764)|Date range picker|CSS borders and elevation|
-|[1747](https://github.com/IgniteUI/igniteui-webcomponents/pull/1747)|File input|Bootstrap invalid box-shadow styles|
-|[1672](https://github.com/IgniteUI/igniteui-webcomponents/pull/1672)|Stepper|Error when setting linear property in deferred rendering scenarios|
-|[1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)|Textarea|Readonly state styles|
-|[1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)|Dropdown|Icon size in Bootstrap theme|
-|[1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)|Inputs|Label positioning and transition logic in Material theme|
-
-## **{PackageVerChanges-25-1-JUL-2}**
-
-- <label>NEW</label> Component - Date Range Picker
-
-### Breaking Changes
-
-#### File Input
-- `igcChange` & `igcCancel` events detail now returns the underlying component `files` property.
-
-#### Tooltip
-- Tooltip events will no longer return its `anchor` target in its `detail` property
-
-### Behavioral Changes
-
-#### Tooltip
-
-- **Behavioral change**: Tooltip default `placement` is 'bottom' now.
-- **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
-
-### Enhancements
-- Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
-
-### Bug Fixes
-
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710)|Calendar and Date Picker|Incorrect date rollover for in certain scenarios
-|[1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)|Combo|Case insensitive icon styles in themes
-|[1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)|Input|Replace border in fluent theme with a box-shadow
-|[1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)|Input|Focused state background color in Indigo theme
-|[1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)|Text Area|Label height and component height override
-
 ## **{PackageVerChanges-25-1-JUL}**
-
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
@@ -317,7 +138,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - Add <label>NEW</label> `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
 
 ## **{PackageVerChanges-25-1-JUN}**
-
 ### {PackageMaps}
 
 > [!Note]
@@ -348,46 +168,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 - The `IgcDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgcDashboardTile` to an instance of `IgcLocalDataSource`.
 
-### {PackageGrids}
-
-**Breaking Changes**
-
-- The `IgcDataGrid` & `IgcMultiColumnComboBox` are now part of the igniteui-webcomponents-data-grids package.
-
-### Enhancements
-
-#### Toolbar
-- Value layers added from the toolbar now appear on the legend.
-- The zoom reset tool has been moved to the zoom drop-down.
-
-#### Data Pie Chart
-- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
-
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25997 | `IgcDataGrid` | Summaries are only showing for first grouped child row|
 |37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
-|37244 | Excel Library | Custom Data Validation is not working.|
-
-## **{PackageVerChanges-24-2-APR}**
-
-### {PackageGrids}
-
-- **All Grids**
-  - Allow applying initial filtering through `FilteringExpressionsTree` property
-
-### Bug Fixes
-
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-| 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced|
-| 25602 | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-| 30319 | `IgcDataGrid` | Records are sorted despite no value changed|
-| 32598 | `IgcDataGrid` | Multi-selection is not working correctly
-| 36374 | `IgcInput` | A previous value was bound when a form was submitted on any touch device|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -411,24 +196,8 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 | 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap|
 | 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
 | 34053 | `IgcRadialGauge` | The position of the scale label is shifted|
-| 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images|
-| 26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-| 34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-| 35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
-| 36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
-| 36379 | Excel Library |Colors with any alpha channel in an excel workbook fail to load|
-
-## **{PackageVerChanges-24-2-JAN}**
-
-- Bug Fixes
-
-### {PackageGrids}
-
-- **All Grids**
-  - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
 
 ## **{PackageVerChanges-24-2-DEC}**
-
 ### {PackageCharts}
 
 - <label>PREVIEW</label> [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
@@ -438,7 +207,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - <label>PREVIEW</label> [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
 
 ## **{PackageVerChanges-24-1-SEP}**
-
 ### {PackageCharts}
 
 - New [Data Pie Chart](charts/types/data-pie-chart.md) - The `DataPieChart` is a new component that renders a pie chart. This component works similarly to the `CategoryChart`, in that it will automatically detect the properties on your underlying data model while allowing selection, highlighting, animation and legend support via the ItemLegend component.
@@ -458,47 +226,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
         Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
         Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
 
-### {PackageGrids}
-
-- **All Grids**
-  - Added new `RowClick` event.
-- `PivotGrid`
-  - Added `sortable` property for a `PivotDimension`.
-  - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
-  - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `horizontalSummary` to **true**.
-  - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
-  - Added row headers for the row dimensions. Can be enabled inside the new `pivotUI` property as `showHeaders` **true**.
-  - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
-
-**Breaking Changes**
-- **All Grids**
-  - `RowIsland`
-  - Removed `displayDensity` deprecated property.
-  - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
-  - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
-  - Renamed `contextMenu` event argument type to `GridContextMenuEventArgs`.
-  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.
-- `PivotGrid`
-  - removed `showPivotConfigurationUI` property. Use `pivotUI` and set inside it the new `showConfiguration` option.
-- `Column`
-  - Removed `movable` property. Use Grid's `moving` property now.
-  - Removed `columnChildren` property. Use `childColumns` instead.
-- `ColumnGroup`
-  - Removed `children` property. Use `childColumns` instead.
-- `Paginator`
-  - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
-
-
 ## **{PackageVerChanges-24-1-JUN}**
-
-### {PackageCommon}
-- `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
-- `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
-- `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
-
-### {PackageGrids}
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more regarding the Grid.
 ### {PackageCharts}
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
@@ -519,13 +247,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
 ## **{PackageVerChanges-23-2-MAR}**
-
-
-### {PackageGrids}
-
-- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component.
-
-
 ### {PackageCharts}
 
 - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
@@ -547,34 +268,11 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 
 ## **{PackageVerChanges-23-2-JAN}**
-
 ### {PackageCharts}
 
 - [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
-## **{PackageVerChanges-23-2-DEC}**
-
-### {PackageGrids}
-
-- Added New Features (Grid) - [State Persistence](grids/grid/state-persistence.md).
-
-
-## **{PackageVerChanges-23-2}**
-
-### {PackageLayouts}
-
-- <label>PREVIEW</label> [Toolbar](menus/toolbar.md)
-  - Save tool action has been added to save the chart to an image via the clipboard.
-  - Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully.
-  - Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
-
-
 ## **{PackageVerChanges-23-1}**
-
-### {PackageLayouts}
-
-- <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
-
 ### {PackageCharts}
 
 - [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
@@ -582,48 +280,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
 
-## **{PackageVerChanges-22-2.2}**
-
-
-### {PackageGrids}
-
-- A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
-- `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
-- When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-- When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
-- The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
-- The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
-
-- `PivotGrid`: The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
-
-
-### {PackageInputs}
-
-- `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
-- `IgcRadio` and `IgcRadioGroup`, added component validation along with styles for invalid state
-- `IgcMask`, added the capability to escape mask pattern literals.
-- `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
-- `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
-
-
-## **{PackageVerChanges-22-2.1}**
-
-### {PackageGrids}
-
-- New [Pivot Grid](grids/pivot-grid/overview.md) component.
-
 ## **{PackageVerChanges-22-2}**
-
-### {PackageGrids}
-
-- New [Grid](grids/data-grid.md) component.
-- New [Tree Grid](grids/tree-grid/overview.md) component.
-- `DataGrid`:
-  - Changed **{IgPrefix}Column** to `DataGridColumn`
-  - Changed **GridCellEventArgs** to `DataGridCellEventArgs`
-  - Changed **GridSelectionMode** to `DataGridSelectionMode`
-  - Changed **SummaryOperand** to `DataSourceSummaryOperand`
-
 ### {PackageCharts}
 
 - Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
@@ -656,12 +313,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 
 ## **{PackageVerChanges-22-1}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-  - Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
-
 ### {PackageCharts}
 
 - Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
@@ -679,44 +330,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 - New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-## **{PackageVerChanges-21-2.1}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-  - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
-
-> [!Note]
-> The following breaking changes were introduced: Changed `ValueField` property from type string[] to string.
-
-### {PackageInputs}
-
-- Date Picker:
-  - Changed ValueChanged event to `SelectedValueChanged`.
-- Multi-Column ComboBox:
-  - Changed `TextChanged` event to `TextValueChanged`.
-  - Changed `ValueChanged` event to `SelectedValueChanged`.
-
 ## **{PackageVerChanges-21-2}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-  - New Features Added:
-    - [Filter Row](grids/data-grid/column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-    - [Cell Merging](grids/data-grid/cell-merging.md)
-  - New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions, e.g. Multiple row selection.
-  - Breaking Changes:
-    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
-
-
-> [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
-
 ### {PackageCharts}
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
@@ -752,22 +366,6 @@ This release introduces a few improvements and simplifications to visual design 
 
 
 ## **{PackageVerChanges-21-1}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-  - Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
-  - Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-  - Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
-  - Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
-  - Added `SelectAllRows` - method.
-  - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-  - Click and drag to select rows
-  - <kbd>SHIFT</kbd> and click to select multiple rows.
-  - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
-  - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
-  - Added Column Summaries to Column Options Dialog.
-
 ### {PackageCharts}
 
 - Date Picker:
@@ -844,59 +442,6 @@ for example:
 
 - Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 - Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
-
-## **{PackageVerChangedFields}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-
-> [!Note]
-> These breaking changes were introduce in the grid package.
-
-- Changed name of PropertyPath
-
-The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
-
-```html
-<igc-text-column field="Name"></igc-text-column>
-```
-
-```ts
-import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-data-grids'
-const productCount = new IgcColumnSummaryDescription();
-productCount.field = "ProductName";
-const colSortDesc = new IgcColumnSortDescription();
-colSortDesc.field = "UnitsInStock";
-const income = new IgcColumnGroupDescription();
-income.field = "Income";
-```
-
-## **{PackageVerRenamedGrid}**
-
-### {PackageGrids}
-
-- `DataGrid`:
-
-- Changed Name of Live Grid - the data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
-
-> [!Note]
-> These breaking changes were introduce in these packages and components only:
-
-The new code for importing the grid and it's corresponding module is:
-
-```ts
-import { IgcDataGrid } from "igniteui-webcomponents-data-grids";
-import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
-```
-
-- Required Peer Dependency for `DataGrid`
-
-The data grid component requires the "inputs" package.
-
-```ts
-**npm install --save {PackageInputs}**
-```
 
 ## **{PackageVerChangedImports}**
 

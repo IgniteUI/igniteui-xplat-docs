@@ -6,18 +6,14 @@ mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Tool
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {ProductName} Changelog
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-- As of version 2025.2, the Ignite UI for Blazor toolset supports .NET 10. For more information on .NET 10 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview).
-
-- As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
-
 ## **{PackageVerLatest}**
-
 ### Bug Fixes
 
 | Bug Number | Control | Description |
@@ -36,11 +32,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 - Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
 
 ## **{PackageVerChanges-25-2-NOV}**
-
-**Breaking Changes**
-
-As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
-
 ### {PackageCharts} (Charts)
 
 #### <label>PREVIEW</label> User Annotations
@@ -63,77 +54,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 - Azure Map Imagery is now RTM.
 
-### {PackageGrids} (Grids)
-
-#### **All Grids**
-
-- **Cell Merging**
-  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell. It can be enabled on the individual columns:
-
-```razor
-<IgbColumn Field="field" Merge="true"></IgbColumn>
-```
-
-- The merging can be configured on the grid level to apply either:
-    - `OnSort` - only when the column is sorted.
-    - `Always` - always, regardless of data operations.
-  The default `CellMergeMode` is `OnSort`.
-```razor
-<IgbGrid CellMergeMode="GridCellMergeMode.Always">
-</IgbGrid>
-```
-
-- **Column Pinning**
-  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `PinningPosition` property on the column:
-```razor
-<IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
-</IgbColumn>
-```
-  - Or:
-```razor
-col.PinningPosition = ColumnPinningPosition.End;
-col.Pinned = true;
-
-col.PinningPosition = ColumnPinningPosition.Start;
-col.Pinned = true;
-```
-  - If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
-
-- **Sorting and Grouping Improvements**
-  - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-  - Refactored sorting algorithms from recursive to iterative.
-  - Refactored grouping algorithm from recursive to iterative.
-  - Optimized grouping operations.
-
-- **Other Improvements**   
-  - A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
-  - The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
-
-### General
-
-#### Added
-- `DateRangePicker`
-
-#### Changed
-- Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
-- `Tooltip`
-  - Behavioral change: `Tooltip` default placement is "bottom" now.
-  - Behavioral change: `Tooltip` will not render an arrow indicator by default unless with-arrow is set.
-  - Breaking change: `Tooltip` events will no longer return its anchor target in its detail property. You can still access it at event.target.anchor.
-
-#### Deprecated
-- `Tooltip` - `DisableArrow` is deprecated. Use `WithArrow` to render an arrow indicator.
-
-### Bug Fixes
-
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|34960|IgbGrid|Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40490|IgbDatePicker|Inputs by Autofill won't give any effects for a date picker|
-
 ## **{PackageVerChanges-25-1-SEP}**
-
 ### {PackageMaps} (Geographic Map)
 
 **Breaking Changes**
@@ -179,38 +100,14 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
 
-### {PackageGrids} (Grids)
-
-#### <label>PREVIEW</label> Cell Suffix Content
-
-Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below and is available on the `DataGridColumn` and `CellInfo` class:
-
-- `SuffixText`
-- `SuffixTextColor`
-- `SuffixTextFont`
-- `SuffixIconName`
-- `SuffixIconCollectionName`
-- `SuffixIconStroke`
-- `SuffixIconFill`
-- `SuffixIconViewBoxLeft`
-- `SuffixIconViewBoxTop`
-- `SuffixIconViewBoxWidth`
-- `SuffixIconViewBoxHeight`
-- `TextDecoration`
-
-Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
-
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |31624 | `IgbCategoryChart` | Resizing the containing window of the `IgbCategoryChart` causes the chart to fail to render the series|
-|37307 | `IgbCheckBox` | JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
 |37930 | `IgbDataChart` | Data Annotation Overlay Text Color not working|
 |27304 | `IgbDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
 |30600 | `IgbDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
-|38231 | `IgbGrid` | Unpinned column does not return to the original position if hidden columns exist|
-|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
 
 ### Enhancements
 
@@ -238,7 +135,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 
 ## **{PackageVerChanges-25-1-AUG}**
-
 ### {PackageMaps} (Geographic Map)
 
 #### <label>PREVIEW</label> Azure Map Imagery Support
@@ -250,46 +146,18 @@ Note: Support for Bing Maps imagery is being phased out. Existing enterprise key
 Explore some of the publicly available [Azure maps here](https://azure.microsoft.com/en-us/products/azure-maps).
 
 
-### Bug Fixes
-
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|26952 | `IgbTabs` | e.Detail is null in Change event in Razor/JS|
-|26953 | `IgbTabs` | Marking a tab selected won't apply on subsequent attempts|
-|31910 | `IgbXDatePicker` | An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
-|31323 | `IgbDataChart`, `IgbGrid`, `IgbCombo` | A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
-|38903 | `IgbTabs` | Dropdown list is not displaying in the correct location for components inside the tab|
-|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput` | Date picker and data time input do not support nullable values|
-
-### General
-The following properties of these components are now nullable:
-- `Button`: `Form`
-- `Calendar`: `SpecialDates`, `DisabledDates`
-- `Combo`: `ValueKey`, `DisplayKey`, `GroupKey`
-- `DatePicker`: `Value`, `Min`, `Max`
-- `DateTimePicker`: `Value`, `Min`, `Max`
-- `Dropdown`: `SelectedItem`
-- `Input`: `Pattern`, `MinLength`, `MaxLength`, `Min`, `Max`, `Step`
-- `Select`: `Value`, `SelectedItem`
-- `Tile`: `ColStart`, `RowStart`
-- `TileManager`: `MinColumnWidth`, `MinRowHeight`, `Gap`
-
 ## **{PackageVerChanges-25-1-JULY}**
-
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |36448 | `IgbRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
-|37718 | `IgbTab` | Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
-|37855 | `IgbGrid` | Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 
 ### {PackageCharts} (Charts)
 
 - Added <label>NEW</label> `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
 
 ## **{PackageVerChanges-25-1-JUNE}**
-
 ### {PackageMaps} (Geographic Map)
 
 > [!Note]
@@ -386,23 +254,6 @@ The following properties of these components are now nullable:
 - `Textarea`
   - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
 
-### {PackageGrids} (Grids)
-
-- `Column`
-  - Added events: `HiddenChange`, `ExpandedChange`, `WidthChange`, `PinnedChange`
-- `Grid`
-  - Added events: `GroupingExpressionsChange`, `GroupingExpansionStateChange`
-- `RowIsland`
-  - Added new parameter `ParentRowData` in `GridCreatedEventArgsDetail` args for `GridCreated` event
-- `Grid`, `HierarchicalGrid`, `TreeGrid`
-  - Added property - `ExpansionStates` - represents a list of key-value pairs [row ID, expansion state].
-  - Added event: `ExpansionStatesChange`
-  - Type of `Rendered` event is changed from `VoidHandler` to `ComponentBoolValueChangedEventHandler`
-  - Type of DataChanging event is changed from `ForOfDataChangingEventHandler` to `ForOfDataChangeEventHandler`
-  - Type of DataChanged event is changed from `VoidHandler` to `ForOfDataChangeEventHandler`
-- `PivotDataSelector`
-  - Added events: `ColumnsExpandedChange`, `RowsExpandedChange`, `FiltersExpandedChange`, `ValuesExpandedChange`
-
 ### {PackageDashboards} (Dashboards)
 
 - The `IgbDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgbDashboardTile` to an instance of `IgbLocalDataSource`.
@@ -420,62 +271,14 @@ The following properties of these components are now nullable:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25997 | `IgbDataGrid` | Summaries are only showing for first grouped child row|
 |37023 | `IgbDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37244 | Excel Library | Custom Data Validation is not working|
 
 ## **{PackageVerChanges-24-2-MAY}**
-
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37271 | `IgbHierarchicalGrid` | ParentRowData included to IGridCreatedEventArgs|
 |37681 | `IgbDataChart` | Category Chart - values labels are should appear above columns when there is adequate space|
-|37244 | Excel Library | Custom Data Validation is not working|
-
-## **{PackageVerChanges-24-2-APR}**
-
-### New Components
-
-- IgbTileManager
-
-### Enhancements
-
-#### List
-- Added new property on `ListItem` called `Selected`
-
-#### Accordion
-- Added new events `Open` and `Close`
-
-### {PackageGrids}
-
-- **All Grids**
-  - Allow applying initial filtering through `FilteringExpressionsTree` property
-
-### Bug Fixes
-
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|25602 | `IgbDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-|28480 | `IgbCombo` | Undefined reference error is thrown when a datasource is replaced|
-|32598 | `IgbDataGrid` | Multi-selection is not working correctly
-|36374 | `IgbInput` | A previous value was bound when a form was submitted on any touch device|
-|37214|General|Intermittent error in Blazor's WebCallback.Register()
-
-## **{PackageVerChanges-24-2-MAR}**
-
-### {PackageGrids}
-
-- **All Grids**
-  - Added new `DisabledSummaries` for the columns of the grid, allowing the developers to skip some of the summaries
-  - Encapsulate internal grid action button
-
-### Bug Fixes
-
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|35497 | `IgbDialog` | When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -493,37 +296,15 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|29998 | `IgbCombo` | The Change event callback was fired multiple times in .NET 8|
 |30286 | `IgbDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
 |34776 | `IgbDataChart` | Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
 |32906 | `IgbDataChart` | IgbDataChart is showing two xAxis on the top|
 |33605 | `IgbDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
 |35498 | `IgbDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
-|31344 | `IgbGrid` | Two way binding for the SelectedRows doesn't work|
-|34149 | `IgbGrid` | Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
-|34224 | `IgbGrid` | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the render mode|
-|34654 | `IgbGrid` | NullReferenceException is thrown if a data contains an empty list|
-|35439 | `IgbGrid` | CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
-|36024 | `IgbGrid` | The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
 |34053 | `IgbRadialGauge` | The position of the scale label is shifted|
-|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
-|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
-|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
 
-
-## **{PackageVerChanges-24-2-JAN}**
-
-- Bug Fixes
-
-### {PackageGrids}
-
-- **All Grids**
-  - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
 
 ## **{PackageVerChanges-24-2-DEC}**
-
 ### {PackageCharts} (Charts)
 
 - <label>PREVIEW</label> [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
@@ -535,15 +316,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 **Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
-## **{PackageVerChanges-24-2-NOV}**
-
-### General
-- New [Carousel](layouts/carousel.md) component.
-- `Input`
-  - Changed `change` event argument type from `ComponentDataValueChangedEventArgs` to `ComponentValueChangedEventArgs`
-
 ## **{PackageVerChanges-24-1-SEP}**
-
 ### {PackageCharts} (Charts)
 
 - New [Data Pie Chart](charts/types/data-pie-chart.md) - The `DataPieChart` is a new component that renders a pie chart. This component works similarly to the `CategoryChart`, in that it will automatically detect the properties on your underlying data model while allowing selection, highlighting, animation and legend support via the ItemLegend component.
@@ -608,51 +381,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - `Rating`
   - Renamed `Readonly` property to `ReadOnly`.
 
-### {PackageGrids}
-
-- **All Grids**
-  - Added `GetColumns` / `GetColumnsAsync` methods, which return the grid columns collection.
-  - Added new `RowClick` event.
-- `PivotGrid`
-  - Added `Sortable` property for a `PivotDimension`.
-  - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
-  - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `HorizontalSummary` to **true**.
-  - Added `HorizontalSummariesPosition` property to the `PivotUI`, configuring horizontal summaries position.
-  - Added row headers for the row dimensions. Can be enabled inside the new `PivotUI` property as `ShowHeaders` **true**.
-  - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
-
-**Breaking Changes**
-- **All Grids**
-  - `RowIsland`
-  - Removed `DisplayDensity` deprecated property.
-  - Renamed `Columns`, `ActualColumns`, `ContentColumns` properties to `ColumnList`, `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method instead.
-  - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
-  - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
-  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
-- `PivotGrid`
-  - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
-- `Column`
-  - Removed `Movable` property. Use Grid's `Moving` property now.
-  - Removed `ColumnChildren` property. Use `ChildColumns` instead.
-- `ColumnGroup`
-  - Removed `Children` property. Use `ChildColumns` instead.
-- `Paginator`
-  - Removed `IsFirstPageDisabled` and `IsLastPageDisabled` properties. Use `IsFirstPage` and `IsLastPage` instead.
-
 ## **{PackageVerChanges-24-1-JUN}**
-
-### General
-- `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
-- `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
-- `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
-
-### {PackageGrids}
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
-- `PivotGrid` - The type of Columns, Rows, Filters from `PivotConfiguration` option is now array of IgbPivotDimension - `IgbPivotDimension[]`, it was `IgbPivotDimensionCollection` previously.
-
-The type of Values from `PivotConfiguration` option is now array of IgbPivotValue - `IgbPivotValue[]`, it was `IgbPivotValueCollection` previously.
-
 ### {PackageCharts} (Charts)
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
@@ -674,7 +403,6 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
   - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
 ## **{PackageVerChanges-23-2-APR2}**
-
 ### {PackageCharts} (Charts)
 
 Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
@@ -685,10 +413,6 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamRadialGauge`
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
-
-## **{PackageVerChanges-23-2-APR}**
-
-- Bug Fixes
 
 ## **{PackageVerChanges-23-2-MAR}**
 
@@ -748,26 +472,9 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 - `Radio` - `ariaLabelledBy` shadowed attribute. This is a non-breaking change.
 
 ## **{PackageVerChanges-23-2-JAN}**
-
-### .NET 8.0 support
-
-- 2023.2 release now support .NET 8. For more information on .NET 8 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8) .
-
 ### {PackageCharts} (Charts)
 
 - [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
-
-## **{PackageVerChanges-23-2}**
-
-### {PackageGrids} - Toolbar - <label>PREVIEW</label>
-
-- Save tool action has been added to save the chart to an image via the clipboard.
-- Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully.
-- Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
-
-### {PackageGrids} (Grid)
-
-- Added New Features - [State Persistence](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-1}**
 
@@ -781,56 +488,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 - It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
-## **{PackageVerChanges-22-2.65}**
-### New Components
-
-- [Stepper](layouts/stepper.md)
-
-### New Components
-
-- [Dialog](notifications/dialog.md)
-- [Select](inputs/select.md)
-
-### {PackageGrids} (Data Grid)
-
-- A new argument `PrimaryKey` has been introduced to `IgbRowDataEventArgs` from `Detail`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to null.
-- `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
-- When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-- When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
-- The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
-- The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
-
-### {PackageGrids} (Pivot Grid)
-
-- The `IgbPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
-
-### {PackageInputs} (Inputs)
-
-- `IgbDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
-- `IgbRadio` and `IgbRadioGroup`, added component validation along with styles for invalid state
-- `IgbMask`, added the capability to escape mask pattern literals.
-- `IgbBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
-- `IgbAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
-
-### {PackageDockManager} (DockManager)
-
-- [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
-
-## **{PackageVerChanges-22-2.50}**
-
-### New Components
-
-- [Combo](inputs/combo/overview.md)
-- [Pivot Grid](grids/pivot-grid/overview.md)
-- .NET 7.0
-
 ## **{PackageVerChanges-22-2}**
-
-### New Components
-
-- [Grid](grids/data-grid.md)
-- [TreeGrid](grids/tree-grid/overview.md)
-
 ### {PackageCharts} (Charts)
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
@@ -861,15 +519,7 @@ Added significant improvements to default behaviors, and refined the Category Ch
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids} (Data Grid)
-
-- Changed **{IgPrefix}Column** to `DataGridColumn`
-- Changed **GridCellEventArgs** to `DataGridCellEventArgs`
-- Changed **GridSelectionMode** to `DataGridSelectionMode`
-- Changed **SummaryOperand** to `DataSourceSummaryOperand`
-
 ## **{PackageVerChanges-22-1}**
-
 ### {PackageCharts} (Charts)
 
 - Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
@@ -886,44 +536,6 @@ Added significant improvements to default behaviors, and refined the Category Ch
 - New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
 - New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 - New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
-
-### {PackageGrids} (Data Grid)
-
-Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
-
-### {PackageDockManager} (Dock Manager)
-
-- The {Platform} Dock Manager is now in <label>PREVIEW</label> state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The [Dock Manager](layouts/dock-manager.md) allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
-
-### New Components
-
-- [Chip](inputs/chip.md)
-- [Circular Progress](inputs/circular-progress.md)
-- [Linear Progress](inputs/linear-progress.md)
-- [Drop Down](inputs/dropdown.md)
-- [Slider & Range Slider](inputs/slider.md)
-- [Snackbar](notifications/snackbar.md)
-- [Toast](notifications/toast.md)
-
-## **{PackageVerChanges-21-2.1}**
-
-> [!Note]
-> The following breaking changes were introduced
-
-### {PackageGrids} (Data Grid)
-
-- Changed `ValueField` property from type string[] to string.
-
-### {PackageInputs} (Inputs)
-
-- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without data binding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
-
-#### Date Picker
-- Changed `ValueChanged` event to `SelectedValueChanged`.
-
-#### Multi-Column ComboBox
-- Changed `TextChanged` event to `TextValueChanged`.
-- Changed `ValueChanged` event to `SelectedValueChanged`.
 
 ## **{PackageVerChanges-21-2}**
 
@@ -980,20 +592,6 @@ This release introduces a few improvements and simplifications to visual design 
 | Old brushes/outlines | New outline/brushes |
 | -------------------- | ------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
-
-### {PackageGrids} (Data Grid)
-
-- New Features Added:
-  - [Filter Row](grids/data-grid/column-filtering.md)
-  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-  - [Cell Merging](grids/data-grid/cell-merging.md)
-- New API:
-  - Added `SelectionChanged` event. Used to detect changes on selection interactions
-     e.g. Multiple row selection.
-- Breaking Changes:
-  - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-  - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 ## **{PackageVerChanges-21-1}**
 ### New Visual Designs
@@ -1059,31 +657,3 @@ for example:
 - Added support for highlighting of the shape series
 - Added support for some annotation layers for the shape series
 
-### {PackageGrids} (Data Grid)
-
-- Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
-- Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-- Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
-- Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
-- Added `SelectAllRows` - method.
-- Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-  - Click and drag to select rows
-  - <kbd>SHIFT</kbd> and click to select multiple rows.
-  - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
-- Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
-- Added Column Summaries to Column Options Dialog.
-
-### {PackageInputs} (Inputs)
-
-#### Date Picker
-
-- `ShowTodayButton` - Toggles Today button visibility
-- `Label` - Adds a label above the date value
-- `Placeholder` property - adds custom text when no value is selected
-- `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
-- `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
-- `FirstDayOfWeek` - Specifies first day of week
-- `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
-- `ShowWeekNumbers` - Toggles Week number visibility
-- `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
-- Added Accessibility
