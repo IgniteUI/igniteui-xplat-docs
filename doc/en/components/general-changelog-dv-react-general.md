@@ -22,6 +22,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-25-2-DEC}**
 
+### Enhancements
+
 ## **{PackageVerChanges-25-2-NOV}**
 
 ### Bug Fixes
@@ -49,6 +51,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 
 ## **{PackageVerChanges-25-1-OCT}**
+
+### Enhancements
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -139,6 +143,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-24-2-APR2}**
 
+### Enhancements
+
 ## **{PackageVerChanges-24-2-APR2}**
 > [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
 
@@ -192,12 +198,6 @@ igr-tab-panel component is removed. The igr-tab now encompasses both the tab hea
 - Added new `useFixedSize` property for the `SplitPane` of `Dockmanager` that allows new resize behavior.
 
 ### Enhancements
-
-#### Toolbar
-
-- Added new `groupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.
-- Added new property on `ToolAction` called `TitleHorizontalAlignment` which controls the horizontal alignment of the title text.
-- Added new property on `ToolActionSubPanel` called `itemSpacing` which controls the spacing between items inside the panel.
 
 ## **{PackageVerChanges-24-2-JAN}**
 

@@ -23,8 +23,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |38510|IgbDataChart|AssigningCategoryStyle event support for Stacked Series|
 |41050|IgbDataChart|Axis is not being populated in IgbAxisMouseEventArgs|
 
-### Enhancements
-
 #### Charts
 
 - Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
@@ -109,8 +107,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |27304 | `IgbDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
 |30600 | `IgbDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
 
-### Enhancements
-
 #### IgbBulletGraph
 
 - <label>PREVIEW</label> Added new `LabelsVisible` property
@@ -124,10 +120,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 - Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
 
 - Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
-
-#### IgbDataGrid
-
-- Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
 
 #### IgbLinearGauge
 
@@ -258,8 +250,6 @@ Explore some of the publicly available [Azure maps here](https://azure.microsoft
 
 - The `IgbDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgbDashboardTile` to an instance of `IgbLocalDataSource`.
 
-### Enhancements
-
 #### Toolbar
 - Value layers added from the toolbar now appear on the legend.
 - The zoom reset tool has been moved to the zoom drop-down.
@@ -281,9 +271,6 @@ Explore some of the publicly available [Azure maps here](https://azure.microsoft
 |37681 | `IgbDataChart` | Category Chart - values labels are should appear above columns when there is adequate space|
 
 ## **{PackageVerChanges-24-2-FEB}**
-
-### Enhancements
-
 #### Toolbar
 
 - Added new `GroupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.

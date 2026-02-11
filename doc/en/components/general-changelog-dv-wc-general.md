@@ -14,6 +14,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Enhancements
+
 ## **{PackageVerChanges-25-2-NOV}**
 
 ### Bug Fixes
@@ -42,6 +44,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 |40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ## **{PackageVerChanges-25-1-SEP}**
+
+### Enhancements
 
 ## **{PackageVerChanges-25-1-AUG}**
 
@@ -113,6 +117,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-25-1-JUN}**
 
+### Enhancements
+
 ## **{PackageVerChanges-24-2-APR}**
 
 ### Bug Fixes
@@ -121,6 +127,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 |------------|---------|------------------|
 | 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced|
 | 36374 | `IgcInput` | A previous value was bound when a form was submitted on any touch device|
+
+## **{PackageVerChanges-24-2-FEB}**
+
+### Enhancements
 
 ## **{PackageVerChanges-24-2-JAN}**
 

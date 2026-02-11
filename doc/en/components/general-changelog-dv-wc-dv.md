@@ -21,8 +21,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |34255|IgcDataChart|0.00001 scale tick marks are displayed overlapping each other|
 |38510|IgcDataChart|AssigningCategoryStyle event support for Stacked Series|
 
-### Enhancements
-
 #### Charts
 
 - Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
@@ -99,8 +97,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |30600| `IgcDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
 |31624| `IgcCategoryChart` | Resizing the containing window of the Category Chart causes the chart to fail to render the series|
 
-### Enhancements
-
 #### IgrBulletGraph
 
 - <label>PREVIEW</label> Added new `LabelsVisible` property
@@ -116,10 +112,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 - Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
 
 - Expose `CalloutLabelUpdating` event for domain charts.
-
-#### IgcDataGrid
-
-- Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
 
 #### IgcLinearGauge
 
@@ -168,6 +160,13 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - The `IgcDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgcDashboardTile` to an instance of `IgcLocalDataSource`.
 
+#### Toolbar
+- Value layers added from the toolbar now appear on the legend.
+- The zoom reset tool has been moved to the zoom drop-down.
+
+#### Data Pie Chart
+- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
@@ -175,9 +174,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
 
 ## **{PackageVerChanges-24-2-FEB}**
-
-### Enhancements
-
 #### Toolbar
 
 - Added new `GroupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.

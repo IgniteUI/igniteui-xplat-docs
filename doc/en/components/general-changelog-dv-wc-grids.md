@@ -115,31 +115,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |38231| `IgcGrid` | Unpinned column does not return to the original position if hidden columns exist|
 |33861| Excel Library | Adding line chart corrupts excel File for German culture|
 
-### Enhancements
-
-#### IgrBulletGraph
-
-- <label>PREVIEW</label> Added new `LabelsVisible` property
-
-#### Charts
-
-- New properties added to the DataToolTipLayer, ItemToolTipLayer, and CategoryToolTipLayer to aid in styling: `ToolTipBackground`, `ToolTipBorderBrush`, and `ToolTipBorderThickness`
-
-- New properties added to the DataLegend to aid in styling: `ContentBackground`, `ContentBorderBrush`, and `ContentBorderThickness`. The `ContentBorderBrush` and `ContentBorderThickness` default to transparent and 0 respectively, so in order to see these borders, you will need to set these properties.
-
-- Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
-
-- Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
-
-- Expose `CalloutLabelUpdating` event for domain charts.
-
 #### IgcDataGrid
 
 - Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
-
-#### IgcLinearGauge
-
-- <label>PREVIEW</label> Added new `LabelsVisible` property
 
 ## **{PackageVerChanges-25-1-JUN}**
 ### {PackageGrids}
@@ -147,15 +125,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 **Breaking Changes**
 
 - The `IgcDataGrid` & `IgcMultiColumnComboBox` are now part of the igniteui-webcomponents-data-grids package.
-
-### Enhancements
-
-#### Toolbar
-- Value layers added from the toolbar now appear on the legend.
-- The zoom reset tool has been moved to the zoom drop-down.
-
-#### Data Pie Chart
-- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
 
 ### Bug Fixes
 

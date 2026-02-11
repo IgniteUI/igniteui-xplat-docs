@@ -15,6 +15,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Enhancements
+
 ## **{PackageVerChanges-25-2-NOV}**
 
 **Breaking Changes**
@@ -36,29 +38,6 @@ As of the 2025.2 release, we no longer support .NET 6. This corresponds with the
 |37307 | `IgbCheckBox` | JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
 
 ### Enhancements
-
-#### IgbBulletGraph
-
-- <label>PREVIEW</label> Added new `LabelsVisible` property
-
-#### Charts
-
-- New properties added to the DataToolTipLayer, ItemToolTipLayer, and CategoryToolTipLayer to aid in styling: `ToolTipBackground`, `ToolTipBorderBrush`, and `ToolTipBorderThickness`
-
-- New properties added to the DataLegend to aid in styling: `ContentBackground`, `ContentBorderBrush`, and `ContentBorderThickness`. The `ContentBorderBrush` and `ContentBorderThickness` default to transparent and 0 respectively, so in order to see these borders, you will need to set these properties.
-
-- Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
-
-- Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
-
-#### IgbDataGrid
-
-- Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
-
-#### IgbLinearGauge
-
-- <label>PREVIEW</label> Added new `LabelsVisible` property
-
 
 ## **{PackageVerChanges-25-1-AUG}**
 
@@ -95,6 +74,8 @@ The following properties of these components are now nullable:
 
 ## **{PackageVerChanges-25-1-JUNE}**
 
+### Enhancements
+
 ## **{PackageVerChanges-24-2-MAY}**
 
 ## **{PackageVerChanges-24-2-APR}**
@@ -128,6 +109,9 @@ The following properties of these components are now nullable:
 |35497 | `IgbDialog` | When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
 
 ## **{PackageVerChanges-24-2-FEB}**
+
+### Enhancements
+
 ### Bug Fixes
 
 The following table lists the bug fixes made for the {ProductName} toolset for this release:
