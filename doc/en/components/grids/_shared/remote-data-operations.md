@@ -20,6 +20,17 @@ The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} 
 
 
 <!-- end: Angular -->
+
+<!-- React -->
+The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+
+## {Platform} {ComponentTitle} Remote Data Operations Overview Example
+
+`sample="/{ComponentSample}/remote-filtering-data", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example"`
+
+
+<!-- end: React -->
+
 By default, the `{ComponentName}` uses its own logic for performing data operations.
 
 You can perform these tasks remotely and feed the resulting data to the `{ComponentName}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentName}`.
@@ -88,6 +99,75 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 
 <!-- end: Angular -->
+
+<!-- React -->
+
+<!-- ComponentStart: Grid -->
+
+## Remote Virtualization
+
+The `{ComponentName}` supports the scenario in which the data chunks are requested from a remote service, exposing the behavior implemented in the `ForOf` directive it uses internally.
+
+To utilize this feature, you need to subscribe to the `DataPreLoad` event so that you make the appropriate request based on the arguments received, as well as set the public `{ComponentName}` property `TotalItemCount` with the respective information coming from the service.
+
+```tsx
+<IgrGrid
+    ref={gridRef}
+    data={data}
+    autoGenerate={false}
+    isLoading={isLoading}
+    onDataPreLoad={(e) => processData(false)}
+    onSortingDone={(e) => processData(true)}
+>
+    <IgrColumn field="ProductID" sortable={true}></IgrColumn>
+    <IgrColumn field="ProductName" sortable={true}></IgrColumn>
+    <IgrColumn field="UnitPrice" dataType="number" sortable={true}></IgrColumn>
+</IgrGrid>
+```
+
+```tsx
+const gridRef = useRef<IgrGrid>(null);
+const [data, setData] = useState<any[]>([]);
+const [isLoading, setIsLoading] = useState(true);
+
+useEffect(() => {
+    const grid = gridRef.current;
+    setIsLoading(true);
+
+    RemoteService.getData(grid.virtualizationState, grid.sortingExpressions[0], true)
+        .then((response: any) => {
+            grid.totalItemCount = response["@odata.count"];
+            setData(response.value);
+            setIsLoading(false);
+        });
+}, []);
+
+function processData(reset: boolean) {
+    const grid = gridRef.current;
+
+    RemoteService.getData(grid.virtualizationState, grid.sortingExpressions[0], reset)
+        .then((response: any) => {
+            setData(response.value);
+        });
+}
+```
+
+When requesting data, you need to utilize the `IForOfState` interface, which provides the `StartIndex` and `ChunkSize` properties.
+
+> [!Note]
+>The first `ChunkSize` will always be 0 and should be determined by you based on the specific application scenario.
+
+### Remote Virtualization Demo
+
+<!-- NOTE this sample is differed -->
+
+`sample="/{ComponentSample}/data-performance-operations", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example"`
+
+
+
+<!-- ComponentEnd: Grid -->
+
+<!-- end: React -->
 
 
 ## Infinite Scroll
@@ -492,6 +572,74 @@ BLAZOR CODE SNIPPET HERE
 <div class="divider--half"></div>
 
 <!-- end: Angular -->
+
+<!-- React -->
+
+<!-- ComponentStart: Grid -->
+
+## Remote Sorting/Filtering
+
+To provide remote sorting and filtering, you need to subscribe to the `DataPreLoad`, `SortingExpressionsChange` and `FilteringExpressionsTreeChange` events, so that you make the appropriate request based on the arguments received, as well as set the public `{ComponentName}` property `TotalItemCount` with the respective information coming from the service.
+
+```tsx
+const gridRef = useRef<IgrGrid>(null);
+const [remoteData, setRemoteData] = useState<any[]>([]);
+const [isLoading, setIsLoading] = useState(true);
+
+useEffect(() => {
+    processData();
+}, []);
+
+function processData(reset: boolean = false) {
+    setIsLoading(true);
+    const grid = gridRef.current;
+
+    RemoteService.getData(
+        grid.virtualizationState,
+        grid.filteringExpressionsTree,
+        grid.sortingExpressions,
+        reset
+    ).then((response: any) => {
+        grid.totalItemCount = response["@odata.count"];
+        setRemoteData(response.value);
+        setIsLoading(false);
+    });
+}
+```
+
+When remote sorting and filtering are provided, usually we do not need the built-in sorting and filtering of the grid. We can disable them by setting the `sortStrategy` and the `filterStrategy` properties of the grid to the `NoopSortingStrategy` and the `NoopFilteringStrategy` respective instances.
+
+```tsx
+import { NoopFilteringStrategy, NoopSortingStrategy } from "igniteui-react-grids";
+
+<IgrGrid
+    ref={gridRef}
+    data={remoteData}
+    height="500px"
+    autoGenerate={false}
+    filterStrategy={NoopFilteringStrategy.instance()}
+    sortStrategy={NoopSortingStrategy.instance()}
+    allowFiltering={true}
+    onDataPreLoad={() => processData(false)}
+    onFilteringExpressionsTreeChange={() => processData(true)}
+    onSortingExpressionsChange={() => processData(false)}
+>
+    <IgrColumn field="ProductID" sortable={true}></IgrColumn>
+    <IgrColumn field="ProductName" sortable={true} filterable={true}></IgrColumn>
+    <IgrColumn field="UnitPrice" dataType="number" sortable={true} filterable={true}></IgrColumn>
+</IgrGrid>
+```
+
+> [!Note]
+>When remote data is requested, the filtering operation is case-sensitive.
+
+### Remote Sorting/Filtering Demo
+
+You can see the result of the code from above at the beginning of this article in the Demo section.
+
+<!-- ComponentEnd: Grid -->
+
+<!-- end: React -->
 
 ## Remote Paging
 
