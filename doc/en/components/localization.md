@@ -39,6 +39,17 @@ You can set the locale that will be used globally using the `setCurrentI18n` met
 
 <!-- end: React -->
 
+<!-- Blazor -->
+
+You can set the locale that will be used globally using the `SetCurrentI18n` method, that comes from the `I18nManager`. It will affect both formatting and registered resource strings used in all of our components. For more on resource strings see [Localized resource strings](#localized-resource-strings). Like mentioned, first you will need to import the `IgniteUII18nManager`:
+
+```razor
+@inject IIgniteUII18nManager I18nManager;
+
+I18nManager.SetCurrentI18nAsync("de");
+```
+
+<!-- end: Blazor -->
 
 ```ts
 setCurrentI18n('de');
@@ -48,13 +59,35 @@ We support the full range of possible locales supported by `Intl`. If you provid
 
 In general you should register your resources under the languages, regions and scripts for the tags you plan to use, so that your components are localized as well. For more see [Regions and Scripts](#regions-and-scripts) section.
 
-#### `lang` attribute
+### `lang` attribute
 
 With this approach we have the ability to set localization through the `lang` global attribute of the `HTML` tag. This attribute is being watched and if it is changed, all rendered components will update their resource strings to the currently set language. All rules regarding the tag used apply as described above.
 
 > Note: This works only on root level and will not work for inner elements on the page.
 
+<!-- WebComponents, Blazor -->
+
 ```html
+<html lang="ja">
+    <head>
+        <title>My app</title>
+    </head>
+    <body></body>
+</html>
+```
+
+<!-- end: WebComponents, Blazor -->
+
+```tsx
+<html lang="ja">
+    <head>
+        <title>My app</title>
+    </head>
+    <body></body>
+</html>
+```
+
+```razor
 <html lang="ja">
     <head>
         <title>My app</title>
@@ -79,6 +112,13 @@ Each component will also have its own `locale` property, that you can specify an
     <IgrColumn field="ProductName" header="Product Name" groupable={true}></IgrColumn>
     <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" groupable={true}></IgrColumn>
 </IgrGrid>
+```
+
+```razor
+<IgbGrid Data="@data" Locale="ja">
+    <IgbColumn Field="ProductName" Header="Product Name" Groupable="true"></IgbColumn>
+    <IgbColumn Field="QuantityPerUnit" Header="Quantity Per Unit" Groupable="true"></IgbColumn>
+</IgbGrid>
 ```
 
 ## Formatting
@@ -156,6 +196,8 @@ All components in {ProductName} render in English by default and they can be ren
 
 The translations for the component strings are stored in resource strings and they will need to be registered in our localization system so that the component can use them.
 
+<!-- WebComponents, React -->
+
 To achieve that, you first need to install the [`igniteui-i18n-resources`](https://www.npmjs.com/package/igniteui-i18n-resources) package, which contains the localized resource strings for all languages:
 
 ```
@@ -171,6 +213,22 @@ registerI18n(ResourceStringsDE, 'de');
 registerI18n(ResourceStringsJA, 'ja');
 ```
 
+<!-- end: WebComponents, React -->
+
+<!-- Blazor -->
+
+To achieve that, you first need to install the [`IgnieteUI.Blazor.I18n.Resources`] NuGet package, which contains the localized resource strings for all languages:
+
+```
+nuget install IgnieteUI.Blazor.I18n.Resources
+```
+
+```razor
+I18nManager.RegisterI18nAsync(new IgbResourceStringsBG(), "bg");
+```
+
+<!-- end: Blazor -->
+
 You will also need to provide to which locale they will apply to. If not a valid tag is provided, it will set the resources for the default 'en-US' locale.
 
 ### Regions and scripts
@@ -183,13 +241,15 @@ The script for us has higher priority than the region when registering resources
 
 Anyway, if you happen to use them both, lets take for example the `en` language with `GB` region and `Latn` script. If you define resources for both region and script like `en-GB` and `en-Latn`, and later on you set your locale, having both region and script to `en-Latn-GB`, we will take the resources from the script one first. If it is not available, then we will return the available region, unless you explicitly set your locale to `en-Latn`, of course. If you have for none of them registered resources, we will take the default for `en` if available.
 
+<!-- Angular -->
+
 ## Customize a component
 
-If you would like to have specific component in your app use either the already registered resources globally but with different localization or completely replace the resource strings for it, you can do that the following way.
+If you would like to have specific component in your app use either the already registered resources globally but with different localization.
 
-### Language and formatting
+### Locale
 
-If you would like to set different from the global localization for a component, you can do that by setting the `locale` property. This will affect the language of the resource strings used as well as the formatting, since they are tied together.
+If you would like to set different from the global localization locale for a component, you can do that by setting the `locale` property. This will affect the language of the resource strings used as well as the formatting, since they are tied together.
 
 With this approach you should already have the available resource strings globally registered:
 
@@ -213,6 +273,13 @@ By setting the `locale` property of the component, this will override the global
     <IgrColumn field="ProductName" header="Product Name" groupable={true}></IgrColumn>
     <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" groupable={true}></IgrColumn>
 </IgrGrid>
+```
+
+```razor
+<IgbGrid Data="@data" Locale="ja">
+    <IgbColumn Field="ProductName" Header="Product Name" Groupable="true"></IgrColumn>
+    <IgbColumn Field="QuantityPerUnit" Header="Quantity Per Unit" Groupable="true"></IgrColumn>
+</IgbGrid>
 ```
 
 #### Language only
@@ -241,16 +308,17 @@ import { GridResourceStringsDE } from 'igniteui-i18n-resources';
 // Inside App Component:
 public resourcesDE = GridResourceStringsDE;
 ```
+<!-- end: Angular -->
 
 ## Custom localized resource strings
 
-If you would like to localize your app, but we do not provide resource strings for the language you use and would like to provide your own translation, you can always provide custom resource string. You can do that globally or per component(using the `resourceStrings` property).
+If you would like to localize your app, but we do not provide resource strings for the language you use and would like to provide your own translation, you can always provide custom resource string.
 
 >Note: Feel free to contribute to the [`igniteui-i18n-resources`](https://github.com/IgniteUI/igniteui-i18n/tree/master/projects/igniteui-i18n-resources) GitHub repo with more languages.
 
+<!-- WebComponents -->
 You can use the provided `IResourceStrings` type for all components to get typings for the resource stings used:
 
-<!-- WebComponents -->
 ```ts
 import { IResourceStrings } from 'igniteui-webcomponents';
 
@@ -262,6 +330,8 @@ registerI18n(customResourcesForAll, 'custom');
 <!-- end: WebComponents -->
 
 <!-- React -->
+You can use the provided `IResourceStrings` type for all components to get typings for the resource stings used:
+
 ```tsx
 import { IResourceStrings } from 'igniteui-react';
 
@@ -271,6 +341,19 @@ export const customResourcesForAll: IResourceStrings = {
 registerI18n(customResourcesForAll, 'custom');
 ```
 <!-- end: React -->
+
+<!-- Blazor -->
+You can use the provided `IgbResourceStrings` class for all components to get typings for the resource stings used:
+
+```razor
+IgbResourceStrings customResourcesAll = new IgbResourceStrings()
+{
+    //...
+};
+
+I18nManager.RegisterI18nAsync(customResourcesAll, "de");
+```
+<!-- end: Blazor -->
 
 Or for a specific component separately, in this case the grids:
 
@@ -304,9 +387,22 @@ export const customGridResources: IGridResourceStrings = {
 ```
 <!-- end: React -->
 
-You can even mix however you want the already existing resource strings with the ones you want to customize, even for the default English language:
+<!-- Blazor -->
+```razor
+IgbGridResourceStrings gridRes = new IgbGridResourceStrings()
+{
+    GridSummaryCount: 'गणना',
+    GridSummaryMin: 'न्यून',
+    GridSummaryMax: 'अधिक',
+    GridSummarySum: 'योग',
+    GridSummaryAverage: 'औसत'
+};
+```
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
+You can even mix however you want the already existing resource strings with the ones you want to customize, even for the default English language:
+
 ```ts
 import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-webcomponents';
 
@@ -327,6 +423,8 @@ registerI18n(customResources, 'en');
 <!-- end: WebComponents -->
 
 <!-- React -->
+You can even mix however you want the already existing resource strings with the ones you want to customize, even for the default English language:
+
 ```tsx
 import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-react';
 
