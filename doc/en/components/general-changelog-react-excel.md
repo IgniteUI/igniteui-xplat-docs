@@ -16,7 +16,7 @@ All notable changes for each version of {ProductName} Excel Library are document
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|2235|Excel|Workbook.Load() throwing a Excel.FormulaParseException. |
+|2235|Excel|Workbook.Load() throwing an Excel.FormulaParseException. |
 ## **{PackageVerChanges-25-2-NOV}**
 
 ### Bug Fixes
