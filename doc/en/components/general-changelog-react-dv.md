@@ -6,6 +6,8 @@ _keywords: Changelog, {ProductName}, Infragistics, Data Visualization
 
 # {Platform} Data Visualization Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} Data Visualization are documented on this page.
 
 ## **{PackageVerLatest}**

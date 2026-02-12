@@ -6,6 +6,8 @@ _keywords: Changelog, {ProductName}, Infragistics, Excel Library
 
 # {Platform} Excel Library Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} Excel Library are documented on this page.
 
 ## **{PackageVerLatest}**

@@ -6,6 +6,8 @@ _keywords: Changelog, {ProductName}, Infragistics, Grids
 
 # {Platform} Grids Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} Grids are documented on this page.
 
 ## **{PackageVerChanges-25-1-OCT_2}**
@@ -61,6 +63,7 @@ All notable changes for each version of {ProductName} Grids are documented on th
   - **Groupby improvements**
      - Refactored grouping algorithm from recursive to iterative.
      - Optimized grouping operations.
+
 ## **{PackageVerChanges-25-1-OCT}**
 
 ### {PackageGrids} (Grids)

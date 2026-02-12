@@ -6,6 +6,8 @@ _keywords: Changelog, {ProductName}, Infragistics, Spreadsheet
 
 # {Platform} Spreadsheet Changelog
 
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
 All notable changes for each version of {ProductName} Spreadsheet are documented on this page.
 
 ## **{PackageVerChanges-25-2-NOV}**

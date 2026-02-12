@@ -6,7 +6,9 @@ _keywords: Changelog, {ProductName}, Infragistics, General Components
 
 # {Platform} General Components Changelog
 
-All notable changes for each version of {ProductName} General are documented on this page.
+<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+
+All notable changes for each version of {ProductName} General Components are documented on this page.
 
 ## **{PackageVerLatest}**
 
