@@ -138,25 +138,6 @@ Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefine
 igr-tab `panel` property is removed.
 
 igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
-## **{PackageVerChanges-24-2-APR2}**
-
-### Removed
-
-- `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
-- `RadioChangeEventArgs` removed, use `IgrRadioChangeEventArgs` instead.
-- `IgrRangeSliderValue` removed, use `IgrRangeSliderValueEventArgs` instead.
-- `IgrActiveStepChangingArgs` removed, use `IgrActiveStepChangingEventArgs` instead.
-- `IgrActiveStepChangedArgs` removed, use `IgrActiveStepChangedEventArgs` instead.
-### Enhancements
-
-#### Stepper
-
-Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefined, which has the same behavior.
-#### Tabs
-
-igr-tab `panel` property is removed.
-
-igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
 ## **{PackageVerChanges-24-2-APR}**
 
 ### New Components
