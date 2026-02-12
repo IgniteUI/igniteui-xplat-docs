@@ -6,7 +6,7 @@ _keywords: Changelog, {ProductName}, Infragistics, Spreadsheet
 
 # {Platform} Spreadsheet Changelog
 
-All notable changes for each version of {ProductName} Spreadsheet component are documented on this page.
+All notable changes for each version of {ProductName} Spreadsheet are documented on this page.
 
 ## **{PackageVerChanges-25-2-NOV}**
 

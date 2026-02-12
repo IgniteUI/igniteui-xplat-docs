@@ -6,7 +6,7 @@ _keywords: Changelog, {ProductName}, Infragistics, Grids
 
 # {Platform} Grids Changelog
 
-All notable changes for each version of {ProductName} Grid components are documented on this page.
+All notable changes for each version of {ProductName} Grids are documented on this page.
 
 ## **{PackageVerChanges-25-1-OCT_2}**
 

@@ -6,7 +6,7 @@ _keywords: Changelog, {ProductName}, Infragistics, Data Visualization
 
 # {Platform} Data Visualization Changelog
 
-All notable changes for each version of {ProductName} Data Visualization components are documented on this page.
+All notable changes for each version of {ProductName} Data Visualization are documented on this page.
 
 ## **{PackageVerLatest}**
 
