@@ -112,10 +112,71 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": [],
     "name": "Changelog",
-    "href": "general-changelog-dv-react.md",
-    "status": "UPDATED"
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Angular", "Blazor", "WebComponents"],
+        "name": "Changelog General",
+        "href": "general-changelog-react-general.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "WebComponents"],
+        "name": "Changelog Data Visualization",
+        "href": "general-changelog-react-dv.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "WebComponents"],
+        "name": "Changelog Grids",
+        "href": "general-changelog-react-grids.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "WebComponents"],
+        "name": "Changelog Excel",
+        "href": "general-changelog-react-excel.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "WebComponents"],
+        "name": "Changelog Spreadsheet",
+        "href": "general-changelog-react-spreadsheet.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Changelog General",
+        "href": "general-changelog-wc-general.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Changelog Data Visualization",
+        "href": "general-changelog-wc-dv.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Changelog Grids",
+        "href": "general-changelog-wc-grids.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Changelog Excel",
+        "href": "general-changelog-wc-excel.md",
+        "status": "UPDATED"
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Changelog Spreadsheet",
+        "href": "general-changelog-wc-spreadsheet.md",
+        "status": "UPDATED"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "Blazor"],

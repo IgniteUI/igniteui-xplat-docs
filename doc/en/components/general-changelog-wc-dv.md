@@ -2,6 +2,8 @@
 title: {Platform} Data Visualization Changelog | {ProductName} | Infragistics
 _description: {Platform} Data Visualization changelog.
 _keywords: Changelog, {ProductName}, Infragistics, Data Visualization
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "XamRadialGauge", "XamRadialChart"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # {Platform} Data Visualization Changelog

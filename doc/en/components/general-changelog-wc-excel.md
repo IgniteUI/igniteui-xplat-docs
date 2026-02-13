@@ -2,6 +2,8 @@
 title: {Platform} Excel Library Changelog | {ProductName} | Infragistics
 _description: {Platform} Excel Library changelog.
 _keywords: Changelog, {ProductName}, Infragistics, Excel Library
+mentionedTypes: ["FormulaParseException"]
+namespace: Infragistics.Controls.Excel
 ---
 
 # {Platform} Excel Library Changelog

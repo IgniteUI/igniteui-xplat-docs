@@ -2,6 +2,8 @@
 title: {Platform} Spreadsheet Changelog | {ProductName} | Infragistics
 _description: {Platform} Spreadsheet changelog.
 _keywords: Changelog, {ProductName}, Infragistics, Spreadsheet
+mentionedTypes: []
+namespace: Infragistics.Controls.Spreadsheet
 ---
 
 # {Platform} Spreadsheet Changelog

@@ -7,7 +7,7 @@ mentionedTypes: ["Input", "Button"]
 
 # Update Guide
 
-In the Ignite UI for React versioning the first number always matches the major version of React the code supports and the second is dedicated for major version releases. Breaking changes may be introduced between major releases. A comprehensive list of changes for each release of Ignite UI for React can be found in the product [CHANGELOG](./general-changelog-dv-react.md).
+In the Ignite UI for React versioning the first number always matches the major version of React the code supports and the second is dedicated for major version releases. Breaking changes may be introduced between major releases. A comprehensive list of changes for each release of Ignite UI for React can be found in the product [CHANGELOG](./general-changelog-react-general.md).
 
 
 ## From 18.9.0 to 19.0.0

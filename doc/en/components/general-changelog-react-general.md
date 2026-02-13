@@ -2,6 +2,7 @@
 title: {Platform} General Components Changelog | {ProductName} | Infragistics
 _description: {Platform} General Components changelog.
 _keywords: Changelog, {ProductName}, Infragistics, General Components
+mentionedTypes: ["DatePicker", "Card", "List", "Select", "Combo"]
 ---
 
 # {Platform} General Components Changelog

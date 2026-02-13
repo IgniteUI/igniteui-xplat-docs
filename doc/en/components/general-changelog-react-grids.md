@@ -2,6 +2,8 @@
 title: {Platform} Grids Changelog | {ProductName} | Infragistics
 _description: {Platform} Grids changelog.
 _keywords: Changelog, {ProductName}, Infragistics, Grids
+mentionedTypes: ["Toolbar", "DatePicker", "Grid", "GridSelectionMode"]
+namespace: Infragistics.Controls.Grids
 ---
 
 # {Platform} Grids Changelog
