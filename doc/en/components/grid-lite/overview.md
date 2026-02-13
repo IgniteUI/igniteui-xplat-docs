@@ -1,5 +1,5 @@
 ---
-title: {Platform} {GridLiteTitle} Overview | {ProductName} | MIT license
+title: Free {Platform} Data {GridLiteTitle} (Open Source) - Ignite UI Grid Lite | MIT license
 _description: Create apps with our open-source {GridLiteTitle}. It’s lightweight and packed with essential features - filtering, hiding, sorting, and more. Try now.
 _keywords: overview, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,22 +7,21 @@ namespace: Infragistics.Controls
 _license: MIT
 ---
 
-# Open Source {Platform} Grid
+# Free & Open-Source {Platform} Data Grid (Grid Lite)
 
-The {ProductName} {GridLiteTitle} is part of Infragistics’ open-source UI component set, actively supported and maintained. It is an open-source JavaScript data grid built as a Web Component, so you can use it dependency-free with or without a web framework. There are 40+ OSS controls available under the MIT license across Angular, React, Blazor, and Web Components.
+The {ProductName} {GridLiteTitle} is a lightweight, high-performance {Platform} data grid that’s free to use, open-source, and built for modern {Platform} applications.
 
-The {GridLiteTitle} delivers essential data-display functionality with minimal overhead and the performance users expect. It is designed for developers who need fast, lightweight data presentation without the complexity of an enterprise grid.
+<!-- React, Blazor -->
+This free {Platform} data grid is open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework. It delivers essential data-display functionality with minimal overhead and the performance users expect. The {Platform} Grid Lite is designed for developers who need fast and lightweight data presentation.
+<!-- end: React, Blazor -->
 
-{GridLiteTitle} features:
+<!-- WebComponents -->
+Grid Lite is a free, open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework. It delivers essential data-display functionality with minimal overhead and the performance users expect. The {Platform} Grid Lite is designed for developers who need fast and lightweight data presentation.
+<!-- end: WebComponents -->
 
-- Column Filtering
-- Hiding
-- Resizing
-- Sorting
-- Row Virtualization
-- Accessibility
-- Themes and Styling
-- Column Data Types
+## What You Get with our Free {Platform} Data Grid
+
+Our free, open-source {Platform} Grid Lite comes with the following column-based features: sorting, filtering, hiding, resizing and a variety of pre-defined data types. Blazing-fast performance is delivered with the use of row virtualization. In addition, the component supports keyboard navigation and theming through the [Ignite UI Theming Framework](../themes/overview.md).
 
 <!-- React, WebComponents -->
 ## Installation and Setup
@@ -171,3 +170,17 @@ Built-in theme support for Bootstrap, Material & Fluent, plus endless branding o
 ## Rich Keyboard Navigation
 
 Full Excel-style keyboard navigation gives users the experience they expect, with high performance even on large datasets.
+
+## Is Grid Lite a Free & Open-Source {Platform} Data Grid?
+
+Yes. Ignite UI Grid Lite is a free, open-source {Platform} data grid released under the MIT license. You can use it in commercial or personal projects with no licensing fees. It is part of our initiative to make Ignite UI more open, transparent, and accessible.
+
+- MIT-licensed
+
+- Free for commercial use
+
+- Community-driven development
+
+- No feature gating
+
+However, if your project scales and grows in complexity and functionality, and you require an enterprise-grade application, we have a seamless upgrade strategy. It will make the transitioning from the free {Platform} data grid (Grid Lite) to the full-featured and advanced Data Grid simpler and faster.
