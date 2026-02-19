@@ -7,7 +7,7 @@ mentionedTypes: ["Grid"]
 
 # {Platform} Localization (i18n)
 
-With our new localization we introduce more features with less requirements for both our localization strings and formatting for all available locales. The formatting is now based on the standards introduced by the `Intl` API.
+The new localization introduces more features with fewer requirements for both the localization strings and formatting for all available locales. The formatting is based on the standards introduced by the `Intl` API.
 
 Currently, {ProductName} ships with resource strings for the following languages: `Bulgarian`, `Czech`, `Danish`, `Dutch`, `English`, `French`, `German`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Norwegian`, `Polish`, `Portuguese`, `Romanian`, `Spanish`, `Swedish`, `Turkish`, `Traditional Chinese (zh-Hant)` and `Simplified Chinese (zh-Hans)`. These are available via the `igniteui-i18n-resources` package, except for English which comes as a default localization.
 
@@ -15,33 +15,33 @@ Currently, {ProductName} ships with resource strings for the following languages
 
 `sample="/{GridSample}/localization", height="605", alt="{Platform} {GridTitle} Localization Example"`
 
->Note: Hindi (HI) included in the sample is only for illustrational purposes and to emphasize on the possibility to pass a custom localization object. In this sample, it contains only several localized strings for the summary. More details at [Custom localized resource strings](#custom-localized-resource-strings) section below.
+>Note: Hindi (HI) included in the sample is for illustrative purposes only, to demonstrate the possibility of passing a custom localization object. In this sample, it contains only a few localized strings for the summary. For more details, see the [Custom localized resource strings](#custom-localized-resource-strings) section below.
 
 ## Locale
 
-By locale, we will refer to the general strings defining the different languages and regions on Earth. In our case they are based on the [BCP 47](https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag) tag definition and most of the basic ones are described in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) and for a list of languages you can also `refer to [ISO 639 language standard](https://www.loc.gov/standards/iso639-2/).
+By locale, the term refers to the general strings defining the different languages and regions. These are based on the [BCP 47](https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag) tag definition. Most of the basic ones are described in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). For a list of languages, refer to the [ISO 639 language standard](https://www.loc.gov/standards/iso639-2/).
 
-It affects both the formatting of the dates and numbers and the localized resource strings that our components use. The default locale for the {ProductName} is `en-US`.
+It affects both the formatting of dates and numbers and the localized resource strings that {ProductName} components use. The default locale for {ProductName} is `en-US`.
 
-There are several ways that you can set locale. Either globally or per component.
+The locale can be set in several ways, either globally or per component.
 
 ### Global API
 
 <!-- WebComponents -->
 
-You can set the locale that will be used globally using the `setCurrentI18n` method, that comes from the [`igniteui-webcomponents`](https://www.npmjs.com/package/igniteui-webcomponents) or [`igniteui-webcomponents-grids`](https://www.npmjs.com/package/igniteui-webcomponents-grids) package. All types and APIs can be imported from either package. It will affect both formatting and registered resource strings used in all of our components. For more on resource strings see [Localized resource strings](#localized-resource-strings)
+You can set the locale that will be used globally using the `setCurrentI18n` method, available from the [`igniteui-webcomponents`](https://www.npmjs.com/package/igniteui-webcomponents) or [`igniteui-webcomponents-grids`](https://www.npmjs.com/package/igniteui-webcomponents-grids) package. All types and APIs can be imported from either package. It affects both formatting and the registered resource strings used in all components. For more on resource strings, see [Localized resource strings](#localized-resource-strings).
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 
-You can set the locale that will be used globally using the `setCurrentI18n` method, that comes from the [`igniteui-react`](https://www.npmjs.com/package/igniteui-react)  or [`igniteui-react-grids`](http://npmjs.com/package/igniteui-react-grids) package. It will affect both formatting and registered resource strings used in all of our components. All types and APIs can be imported from either package. For more on resource strings see [Localized resource strings](#localized-resource-strings)
+You can set the locale that will be used globally using the `setCurrentI18n` method, available from the [`igniteui-react`](https://www.npmjs.com/package/igniteui-react) or [`igniteui-react-grids`](http://npmjs.com/package/igniteui-react-grids) package. All types and APIs can be imported from either package. It affects both formatting and the registered resource strings used in all components. For more on resource strings, see [Localized resource strings](#localized-resource-strings).
 
 <!-- end: React -->
 
 <!-- Blazor -->
 
-You can set the locale that will be used globally using the `SetCurrentI18n` method, that comes from the `I18nManager`. It will affect both formatting and registered resource strings used in all of our components. For more on resource strings see [Localized resource strings](#localized-resource-strings). Like mentioned, first you will need to import the `IgniteUII18nManager`:
+You can set the locale that will be used globally using the `SetCurrentI18n` method, available from the `I18nManager`. It affects both formatting and the registered resource strings used in all components. For more on resource strings, see [Localized resource strings](#localized-resource-strings). As mentioned, the `IgniteUII18nManager` must first be imported:
 
 ```razor
 @inject IIgniteUII18nManager I18nManager;
@@ -55,13 +55,13 @@ I18nManager.SetCurrentI18nAsync("de");
 setCurrentI18n('de');
 ```
 
-We support the full range of possible locales supported by `Intl`. If you provide a locale that is not valid or supported, it will use the default `en-US` locale for the time being, until you change it to a valid one.
+{ProductName} supports the full range of locales supported by `Intl`. If a provided locale is not valid or supported, the default `en-US` locale is used until a valid locale is set.
 
-In general you should register your resources under the languages, regions and scripts for the tags you plan to use, so that your components are localized as well. For more see [Regions and Scripts](#regions-and-scripts) section.
+In general, resources should be registered under the languages, regions, and scripts for the tags intended for use, so that the components are properly localized. For more information, see the [Regions and Scripts](#regions-and-scripts) section.
 
 ### `lang` attribute
 
-With this approach we have the ability to set localization through the `lang` global attribute of the `HTML` tag. This attribute is being watched and if it is changed, all rendered components will update their resource strings to the currently set language. All rules regarding the tag used apply as described above.
+This approach enables setting the localization through the `lang` global attribute of the `HTML` tag. This attribute is observed, and if it changes, all rendered components update their resource strings to the currently set language. All rules regarding the tag used apply as described above.
 
 > Note: This works only on root level and will not work for inner elements on the page.
 
@@ -98,7 +98,7 @@ With this approach we have the ability to set localization through the `lang` gl
 
 ### Per component
 
-Each component will also have its own `locale` property, that you can specify and it will then not be affected by the global locale.
+Each component also has its own `locale` property. When specified, the component is not affected by the global locale.
 
 ```html
 <igc-grid locale="ja">
@@ -123,11 +123,11 @@ Each component will also have its own `locale` property, that you can specify an
 
 ## Formatting
 
-Locale, like mentioned previously, affects the formatting in all {ProductName} components that render dates, numbers and some strings related to them and is based on the `Intl` API. It is enabled by default.
+The locale, as mentioned previously, affects the formatting in all {ProductName} components that render dates, numbers, and related strings, and is based on the `Intl` API. It is enabled by default.
 
 ### Date formats
 
-Components like the Grid or DatePicker allow for specifying date format (for the grid per column). The lists bellow show the available options that you can set or build your own custom format.
+Components such as the Grid or DatePicker allow specifying a date format (per column for the grid). The tables below show the available options that can be set or used to build a custom format.
 
 Available predefined format options:
 
@@ -192,9 +192,9 @@ Custom format options:
 
 ## Localized resource strings
 
-All components in {ProductName} render in English by default and they can be rendered in any of the listed languages at the top as well. There are three ways you can achieve that globally and one way per component. For any language that is not currently available, custom translation can be provided for each resource string that is available through our API.
+All {ProductName} components render in English by default and can be rendered in any of the listed languages. There are three ways to achieve this globally and one way per component. For any language not currently available, a custom translation can be provided for each resource string available through the API.
 
-The translations for the component strings are stored in resource strings and they will need to be registered in our localization system so that the component can use them.
+The translations for the component strings are stored in resource strings and need to be registered in the localization system before the components can use them.
 
 <!-- WebComponents, React -->
 
@@ -204,7 +204,7 @@ To achieve that, you first need to install the [`igniteui-i18n-resources`](https
 npm install igniteui-i18n-resources --save-dev
 ```
 
-After that you will need to register each language you would like to have available to them. Lets say German and Japanese:
+After that, register each language to be made available. For example, German and Japanese:
 
 ```ts
 import { ResourceStringsDE, ResourceStringsJA } from 'igniteui-i18n-resources';
@@ -217,7 +217,7 @@ registerI18n(ResourceStringsJA, 'ja');
 
 <!-- Blazor -->
 
-To achieve that, you first need to install the [`IgnieteUI.Blazor.I18n.Resources`] NuGet package, which contains the localized resource strings for all languages:
+To achieve that, first install the [`IgniteUI.Blazor.I18n.Resources`] NuGet package, which contains the localized resource strings for all languages:
 
 ```
 nuget install IgnieteUI.Blazor.I18n.Resources
@@ -229,17 +229,17 @@ I18nManager.RegisterI18nAsync(new IgbResourceStringsBG(), "bg");
 
 <!-- end: Blazor -->
 
-You will also need to provide to which locale they will apply to. If not a valid tag is provided, it will set the resources for the default 'en-US' locale.
+You also need to specify the locale to which the resource strings will apply. If an invalid tag is provided, the resources are set for the default `en-US` locale.
 
 ### Regions and scripts
 
-We take into account the `language + region` or `language + script` from the locale you used to register your resources, since these are the most commonly used. They are separated by `-` and region/script are usually defined on a second or third position. For example, `en-US` and `en-GB` or `en-Latn`.
+The `language + region` or `language + script` portion of the locale used to register resources is taken into account, as these are the most commonly used combinations. Region and script are separated by `-` and are usually defined in the second or third position — for example, `en-US`, `en-GB`, or `en-Latn`.
 
-If you do not use region or script, the resources you register will apply to all locales that use the `en` language, for example. That is unless you define resources for the regions and scripts as well. Then only for those you have not defined, will return the resources for `en` in this case.
+If neither region nor script is specified, the registered resources apply to all locales using that base language (for example, `en`). However, if resources are also defined for specific regions or scripts, only those locales without their own defined resources fall back to the base language resources.
 
-The script for us has higher priority than the region when registering resources. We recommend in general to use either region or script, without mixing them and using both at the same time. That way it is easier to manage and know which one you have available and should be used, based on the locale you set.
+Script takes higher priority than region when registering resources. It is recommended to use either region or script, without mixing both simultaneously. This makes it easier to manage and identify which resources are available for a given locale.
 
-Anyway, if you happen to use them both, lets take for example the `en` language with `GB` region and `Latn` script. If you define resources for both region and script like `en-GB` and `en-Latn`, and later on you set your locale, having both region and script to `en-Latn-GB`, we will take the resources from the script one first. If it is not available, then we will return the available region, unless you explicitly set your locale to `en-Latn`, of course. If you have for none of them registered resources, we will take the default for `en` if available.
+If both region and script are used, consider the `en` language with `GB` region and `Latn` script as an example. If resources are defined for both `en-GB` and `en-Latn`, and the locale is later set to `en-Latn-GB` (specifying both region and script), the script resources take priority. If script resources are not available, the region resources are used. If neither region nor script resources are registered, the default `en` resources are used if available.
 
 <!-- Angular -->
 
@@ -312,12 +312,12 @@ public resourcesDE = GridResourceStringsDE;
 
 ## Custom localized resource strings
 
-If you would like to localize your app, but we do not provide resource strings for the language you use and would like to provide your own translation, you can always provide custom resource string.
+If {ProductName} does not provide resource strings for the required language, custom resource strings can always be provided.
 
->Note: Feel free to contribute to the [`igniteui-i18n-resources`](https://github.com/IgniteUI/igniteui-i18n/tree/master/projects/igniteui-i18n-resources) GitHub repo with more languages.
+>Note: Contributions to the [`igniteui-i18n-resources`](https://github.com/IgniteUI/igniteui-i18n/tree/master/projects/igniteui-i18n-resources) GitHub repo with additional languages are welcome.
 
 <!-- WebComponents -->
-You can use the provided `IResourceStrings` type for all components to get typings for the resource stings used:
+You can use the provided `IResourceStrings` type for all components to get typings for the resource strings used:
 
 ```ts
 import { IResourceStrings } from 'igniteui-webcomponents';
@@ -330,7 +330,7 @@ registerI18n(customResourcesForAll, 'custom');
 <!-- end: WebComponents -->
 
 <!-- React -->
-You can use the provided `IResourceStrings` type for all components to get typings for the resource stings used:
+You can use the provided `IResourceStrings` type for all components to get typings for the resource strings used:
 
 ```tsx
 import { IResourceStrings } from 'igniteui-react';
@@ -343,7 +343,7 @@ registerI18n(customResourcesForAll, 'custom');
 <!-- end: React -->
 
 <!-- Blazor -->
-You can use the provided `IgbResourceStrings` class for all components to get typings for the resource stings used:
+You can use the provided `IgbResourceStrings` class for all components to get typings for the resource strings used:
 
 ```razor
 IgbResourceStrings customResourcesAll = new IgbResourceStrings()
@@ -401,7 +401,7 @@ IgbGridResourceStrings gridRes = new IgbGridResourceStrings()
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
-You can even mix however you want the already existing resource strings with the ones you want to customize, even for the default English language:
+The existing resource strings can be mixed with custom strings in any combination, including for the default English language:
 
 ```ts
 import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-webcomponents';
@@ -423,7 +423,7 @@ registerI18n(customResources, 'en');
 <!-- end: WebComponents -->
 
 <!-- React -->
-You can even mix however you want the already existing resource strings with the ones you want to customize, even for the default English language:
+The existing resource strings can be mixed with custom strings in any combination, including for the default English language:
 
 ```tsx
 import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-react';
@@ -444,7 +444,7 @@ registerI18n(customResources, 'en');
 ```
 <!-- end: React -->
 
->Note: The last examples set only specific resource strings. This means that the rest will default to English, if they are not available for the components in use to get.
+>Note: The last examples set only specific resource strings. The remaining strings default to English if they are not available for the components in use.
 
 ## Available resource strings
 
