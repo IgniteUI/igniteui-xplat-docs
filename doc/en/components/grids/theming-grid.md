@@ -15,11 +15,120 @@ In addition to predefined themes and palettes, you can further customize the loo
 `sample="/grids/grid/overview-dark", height="500", alt="{Platform} Grid Dark Theme Example"`
 
 
+## Available Themes
+
+Each theme comes in light and dark variants:
+
+| Theme     | Light                  | Dark                  |
+|-----------|------------------------|-----------------------|
+| Bootstrap | light/bootstrap.css    | dark/bootstrap.css    |
+| Material  | light/material.css     | dark/material.css     |
+| Fluent    | light/fluent.css       | dark/fluent.css       |
+| Indigo    | light/indigo.css       | dark/indigo.css       |
+
+### Applying a Theme
+
+<!-- Blazor -->
+
+Add a `<link>` tag in the `<head>` of your `index.html` pointing to the desired theme CSS. All Blazor theme paths follow the pattern: `_content/IgniteUI.Blazor/themes/grid/{light|dark}/{theme}.css`.
+
 ```razor
-<head>
-    <link href="_content/IgniteUI.Blazor/themes/grid/dark/bootstrap.css" rel="stylesheet" />
-</head>
+<link id="grid-theme" href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
+
+<!-- end: Blazor -->
+
+<!-- React -->
+
+Import the theme CSS directly — it will be injected into the page automatically:
+
+```tsx
+import "igniteui-react-grids/grids/themes/light/bootstrap.css";
+```
+
+<!-- end: React -->
+
+<!-- WebComponents -->
+
+Import the theme CSS in your module:
+
+```ts
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
+```
+
+Or link it directly in your HTML:
+
+```ts
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+```
+
+<!-- end: WebComponents -->
+
+### Runtime Theme Switching
+
+<!-- Blazor -->
+
+To switch themes at runtime, add a JavaScript function that updates the theme link's `href` and call it from Blazor via `IJSRuntime`:
+
+```razor
+
+@inject IJSRuntime JS
+
+@code {
+    private async Task SwitchTheme(string themePath)
+    {
+        await JS.InvokeVoidAsync("changeGridTheme", themePath);
+    }
+}
+```
+For further reference, please check the full sample above.
+<!-- end: Blazor -->
+
+<!-- React -->
+
+To switch themes at runtime with Vite, import the CSS as a string using the `?inline` suffix and inject it via a `<style>` tag:
+
+```tsx
+import lightBootstrap from "igniteui-react-grids/grids/themes/light/bootstrap.css?inline";
+import darkBootstrap from "igniteui-react-grids/grids/themes/dark/bootstrap.css?inline";
+
+function App() {
+  const [themeCss, setThemeCss] = useState(lightBootstrap);
+
+  return (
+    <div>
+      <style>{themeCss}</style>
+      <IgrGrid data={data} autoGenerate={true} />
+    </div>
+  );
+}
+```
+
+The `?inline` suffix tells Vite to return the CSS content as a string instead of injecting it into `<head>`, enabling you to swap it dynamically.
+
+<!-- end: React -->
+
+<!-- WebComponents -->
+
+To switch themes at runtime with Vite, import the CSS as a string using the `?inline` suffix and inject it via a `<style>` element:
+
+```ts
+import lightBootstrap from "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css?inline";
+import darkBootstrap from "igniteui-webcomponents-grids/grids/themes/dark/bootstrap.css?inline";
+
+const styleElement = document.createElement('style');
+styleElement.textContent = lightBootstrap;
+document.head.appendChild(styleElement);
+
+// To switch themes:
+function switchTheme(isDark: boolean) {
+    styleElement.textContent = isDark ? darkBootstrap : lightBootstrap;
+}
+```
+
+The `?inline` suffix tells Vite to return the CSS content as a string instead of injecting it into `<head>`, enabling you to swap it dynamically.
+
+<!-- end: WebComponents -->
 
 ## Available Theming Properties
 
