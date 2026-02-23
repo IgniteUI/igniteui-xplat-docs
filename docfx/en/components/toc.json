@@ -130,6 +130,17 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Common Changelog",
+    "href": "changelog/igniteui-webcomponents.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Dock Manager Changelog",
+    "href": "changelog/igniteui-dockmanager.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Integrating Ignite UI for React with Next.js",
     "href": "nextjs-usage.md"
