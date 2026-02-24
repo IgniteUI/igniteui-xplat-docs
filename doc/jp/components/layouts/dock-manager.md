@@ -30,12 +30,12 @@ npm install --save {PackageDockManager}
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, WebComponents -->
-次に **defineCustomElements()** 関数をインポートして呼び出します。
+次に **defineComponents()** 関数をインポートして呼び出します。
 
 ```ts
-import { defineCustomElements } from 'igniteui-dockmanager/loader';
+import { defineComponents, IgcDockManagerComponent } from 'igniteui-dockmanager';
 
-defineCustomElements();
+defineComponents(IgcDockManagerComponent);
 ```
 <!-- end: Angular, React, WebComponents -->
 
