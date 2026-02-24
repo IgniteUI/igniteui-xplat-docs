@@ -2207,6 +2207,12 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor"],
+    "name": "Theming MCP",
+    "href": "themes/mcp.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Configuration",
     "href": "themes/configuration.md",
