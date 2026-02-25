@@ -13,6 +13,18 @@ namespace: Infragistics.Controls
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|2327|IgcToolbar|SubPanel sample not working in WebComponents|
+|2638|IgcDataChart|Improve mouse hot detection for rotated labels|
+|2959|IgcLinearGauge|Gauges should not call View functions|
+|2842|IgcDataChart|AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series|
+|2326|IgcDataChart| Add property to set others color|
+
+
+## **{PackageVerChanges-25-2-DEC}**
 
 ### Enhancements
 
