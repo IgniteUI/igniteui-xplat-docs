@@ -260,7 +260,7 @@ The AI will call `create_theme` and return a ready-to-use `styles.scss` file. Th
 
 ```scss
 /* styles.scss */
-@use 'igniteui-angular/theming' as *;
+@use '{PackageCommon}/theming' as *;
 
 $my-palette: palette(
   $primary: #2563eb,
