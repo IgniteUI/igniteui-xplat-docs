@@ -68,9 +68,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
   - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
 
-- `IgcCombo`, `IgcSimpleCombo`
-  - Combo and Simple Combo now close the dropdown list and move the focus to the next focusable element on "Tab" press and clear the selection if the combo is collapsed on "Escape".
-
 **Breaking Changes**
 
 - `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
