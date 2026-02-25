@@ -82,7 +82,6 @@ All notable changes for each version of {ProductName} are documented on this pag
   - New `Intl` implementation for all currently supported components that format and render data like dates and numbers.
   - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
   - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
-  - Old resources and API should still remain working and not experience any change in behavior, despite internally using the new localization as well.
 
 
 ## **{PackageVerChanges-25-2-DEC}**
