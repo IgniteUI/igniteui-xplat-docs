@@ -398,6 +398,7 @@
             { "name": "{PackageCommonVerChanges-5.1.0}", "value": "5.1.0 (October 2024)"},
             { "name": "{PackageCommonVerChanges-5.2.0}", "value": "5.2.0 (January 2025)"},
             { "name": "{PackageCommonVerChanges-6.3.6}", "value": "6.3.6 (November 2025)"},
+            { "name": "{PackageCommonVerChanges-7.0.0}", "value": "7.0.0 (February 2026)"},
             { "name": "{PackageDockManagerVerChanges-1.0.0}", "value": "1.0.0"},
             { "name": "{PackageDockManagerVerChanges-1.0.1}", "value": "1.0.1"},
             { "name": "{PackageDockManagerVerChanges-1.0.2}", "value": "1.0.2"},
