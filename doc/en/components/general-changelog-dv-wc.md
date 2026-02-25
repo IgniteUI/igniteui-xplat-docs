@@ -13,7 +13,9 @@ namespace: Infragistics.Controls
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
-### Bug Fixes
+
+### {PackageCharts}
+#### Bug Fixes
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
@@ -24,9 +26,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 |2326|IgcDataChart|Add property to set others color|
 
 
-## **{PackageCommonVerChanges-7.0.0}**
+### {PackageCommon}
 
-### New Features
+#### New Features
 
 - #### AI-Assisted Development - Copilot Skills
   - Four end-user skills are now shipped with the `{PackageCommon}` package under the `skills/` directory providing step-by-step guidance to GitHub Copilot and other LLM agents for common tasks:
@@ -38,20 +40,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 - #### Chat
   - `adoptRootStyles` can now be toggled on/off at runtime.
 
-### {PackageGrids} (Grids)
 
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
-  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
-
-- `IgcCombo`, `IgcSimpleCombo`
-  - Combo and Simple Combo now close the dropdown list and move the focus to the next focusable element on "Tab" press and clear the selection if the combo is collapsed on "Escape".
-
-**Breaking Changes**
-
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
-  - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
-
-### Breaking Changes
+#### Breaking Changes
 
 - #### Themes
   - Changed global prefixes for CSS custom properties for component themes to align with other Ignite UI component libraries.
@@ -65,13 +55,26 @@ All notable changes for each version of {ProductName} are documented on this pag
 - #### Library
   - Minimum Node version required is now >= 22.
 
-### Bug Fixes
+#### Bug Fixes
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
 |[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Context instantiation in Blazor|
 |[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|Correct cursor style over non input parts|
 |[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|Correct cursor style over non input parts|
+
+### {PackageGrids} (Grids)
+
+- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+- `IgcCombo`, `IgcSimpleCombo`
+  - Combo and Simple Combo now close the dropdown list and move the focus to the next focusable element on "Tab" press and clear the selection if the combo is collapsed on "Escape".
+
+**Breaking Changes**
+
+- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
+  - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
 
 
 ## **{PackageVerChanges-25-2-DEC}**
