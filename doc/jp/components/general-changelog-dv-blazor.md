@@ -17,6 +17,12 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### 機能拡張
+
+### {PackageCharts}
+
+DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加しました。
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |

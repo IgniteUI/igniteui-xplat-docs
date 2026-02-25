@@ -26,6 +26,7 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
   * [Creating Branches](#Creating-Branches)
   * [Following Rules](#Following-Rules)
   * [Using Variables](#Using-Variables)
+  * [Creating Changelog](#Creating-Changelog)
 
 - [Running Docs](#Running-Docs)
 - [Building Docs](#Building-Docs)
@@ -196,6 +197,23 @@ For example with this entry:
 
 you can have `{ProductName}` replaced with `Ignite UI for Angular` wherever it appears in the input documentation.
 
+
+#### Creating Changelog
+
+Follow these insttructions to create changelog:
+
+1. Open [merged pull requests on the dev-tools](https://github.com/Infragistics-Developer-Tools/dev-tools/pulls?q=is%3Apr+is%3Amerged) repo
+
+2. Get a list of pull requests since the last release
+
+3. For each pull requests, perform these steps:
+
+- add an entry in the [Angular changelog](.\doc\en\components\general-changelog-dv.md) topic
+- add an entry in the [Blazor changelog](.\doc\en\components\general-changelog-dv-blazor.md) topic
+- add an entry in the [React changelog](.\doc\en\components\general-changelog-dv-react.md) topic
+- add an entry in the [WC changelog](.\doc\en\components\general-changelog-dv-wc.md) topic
+
+4. Submit a new pull request with these changes
 
 ## Running Docs
 

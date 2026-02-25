@@ -10,43 +10,53 @@ _license: MIT
 # Column Configuration
 <!-- React, WebComponents -->
 
-The columns are defined with the `columns` property which has the type `ColumnConfiguration<T>[]`. `key` is the only required property for the `ColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
-
-```typescript
-const accountColumn: ColumnConfiguration<T> = {
-  key: 'account',
-
-  /* Additional configuration follows */
-  ...
-};
-```
+Columns are defined declaratively using column child components within the grid. The `field` property is the only required for a column, as it serves as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
 
 <!-- end: React, WebComponents -->
 
-<!-- Blazor -->
-
-The columns are defined with the `Columns` property which has the type `List<IgbColumnConfiguration<T>>`. `Key` is the only required property for the `IgbColumnConfiguration<T>` as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
-
-```razor
-columns = new List<IgbColumnConfiguration<ProductInfo>>
-{
-    new IgbColumnConfiguration<ProductInfo>
-    {
-        Key = "Name",
-        HeaderText = "Product Name",
-        Type = DataType.String
-    },
-    /* Additional configuration follows */
+<!-- WebComponents -->
+```html
+<igc-grid-lite .data=${data}>
+  <igc-grid-lite-column
+    field="account"
+    header="Account Number"
     ...
-};
+  ></igc-grid-lite-column>
+  <!-- Additional columns follow -->
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column
+      field="account"
+      header="Account Number"
+      ...
+    ></igc-grid-lite-column>
+    <!-- Additional columns follow -->
+  </igc-grid-lite>
+);
 ```
 
->[!NOTE]
->As a rule of thumb, the **Column** prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
+<!-- Blazor -->
+
+Columns are defined declaratively using `<IgbGridLiteColumn>` child elements within the grid. The `Field` property is the only required for a column, as it serves as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
+
+```razor
+<IgbGridLite Data="@products">
+    <IgbGridLiteColumn 
+        Field="Name"
+        Header="Product Name"
+        DataType="GridLiteColumnDataType.String" />
+    <!-- Additional columns follow -->
+</IgbGridLite>
+```
 
 ## Configuration Based on the Data Source
 
-The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `Key` and `Type` props based on records in the data.
+The grid supports inferring the column configuration based on the provided data source when `AutoGenerate` is set to true. It tries to infer the appropriate `Field` and `DataType` properties based on records in the data.
 
 ```razor
 <IgbGridLite AutoGenerate=true Data="@products"/>
@@ -75,12 +85,9 @@ The grid supports inferring the column configuration based on the provided data 
 
 <!-- React, WebComponents -->
 
->[!NOTE]
->As a rule of thumb, the `column` prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
+## Configuration Based on the Data Source
 
-## Configuration based on the data source
-
-The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate `key` and `type` props based on records in the data.
+The grid supports inferring the column configuration based on the provided data source when `autoGenerate` is set to true. It tries to infer the appropriate `field` and `dataType` based on records in the data.
 
 ```typescript
 const data: Record[] = [
@@ -88,45 +95,56 @@ const data: Record[] = [
   ...
 ];
 ```
+<!-- end: React, WebComponents -->
 
+<!-- WebComponents -->
 ```html
 <igc-grid-lite auto-generate .data=${data}></igc-grid-lite>
 ```
+<!-- end: WebComponents -->
 
-<!-- end: React, WebComponents -->
-
-The previous snippet will result in the following column configuration for the grid:
-
-<!-- React, WebComponents -->
-
-```typescript
-[
-  { key: 'entryId', type: 'string' },
-  { key: 'source', type: 'string' },
-  { key: 'ts', type: 'number' },
-];
+```tsx
+return (
+  <igc-grid-lite data={data} auto-generate></igc-grid-lite>
+);
 ```
 
-<!-- end: React, WebComponents -->
-<!-- Blazor -->
+The previous snippet will result in the grid automatically creating columns equivalent to:
+
+<!-- WebComponents -->
+```html
+<igc-grid-lite .data=${data}>
+  <igc-grid-lite-column field="entryId" data-type="string"></igc-grid-lite-column>
+  <igc-grid-lite-column field="source" data-type="string"></igc-grid-lite-column>
+  <igc-grid-lite-column field="ts" data-type="number"></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column field="entryId" data-type="string"></igc-grid-lite-column>
+    <igc-grid-lite-column field="source" data-type="string"></igc-grid-lite-column>
+    <igc-grid-lite-column field="ts" data-type="number"></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
 ```razor
-new List<IgbColumnConfiguration<ProductInfo>>
-{
-    new IgbColumnConfiguration<ProductInfo> { Key = "Id", Type = DataType.String },
-    new IgbColumnConfiguration<ProductInfo> { Key = "Name", Type = DataType.String },
-    new IgbColumnConfiguration<ProductInfo> { Key = "Price", Type = DataType.Number },
-}
+<IgbGridLite Data="@products">
+    <IgbGridLiteColumn Field="Id" DataType="GridLiteColumnDataType.String" />
+    <IgbGridLiteColumn Field="Name" DataType="GridLiteColumnDataType.String" />
+    <IgbGridLiteColumn Field="Price" DataType="GridLiteColumnDataType.Number" />
+</IgbGridLite>
 ```
-<!-- end: Blazor -->
 
 Useful for a quick render of some data without any additional customizations.
 
->[!NOTE]
->This is a one-time operation which is executed when the grid is initially added to the DOM. Passing an empty data source or having a late bound data source (such as a HTTP request) will usually result in empty column configuration for the grid. This property is ignored if any existing column configuration already exists in the grid. See [the data binding topic](./binding.md) for additional information on auto-generating the column configuration based on the data source.
 
 ## Additional Column Configuration
 
-The column configuration object exposes several more properties:
+The column exposes several more properties for customization:
 
 ### Column Width
 
@@ -134,30 +152,30 @@ By default, the columns have a width of **minmax(136px, 1fr)** which translates 
 1 part of the available space in the {GridLiteTitle}. This way the columns are fluid and responsive accommodating for changes
 in the grid width.
 
-To change the width of column, use the **width** property of the **ColumnConfiguration** object.
-
 <!-- React, WebComponents -->
-To change the width of column, use the `width` property of the `ColumnConfiguration` object.
-
-```typescript
-{
-  ...
-  width: '250px'
-}
-```
-
+To change the width of column, use the `width` property of the column.
 <!-- end: React, WebComponents -->
 
+
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column field="price" width="250px"></igc-grid-lite-column>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite>
+    <igc-grid-lite-column field="price" width="250px"></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
 <!-- Blazor -->
-To change the width of column, use the `Width` property of the `IgbColumnConfiguration` object.
-
-
+To change the width of column, use the `Width` parameter of the `IgbGridLiteColumn` component.
 
 ```razor
-{
-  ...
-  Width = "250px"
-}
+<IgbGridLiteColumn Field="Price" Width="250px" />
 ```
 
 <!-- end: Blazor -->
@@ -166,25 +184,29 @@ The property accepts <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS
 
 ### Hiding columns
 <!-- React, WebComponents -->
-Columns can be hidden/shown by setting the **hidden** property to of the `ColumnConfiguration` object.
-
-```typescript
-{
-  ...,
-  hidden: true
-}
-```
-
+Columns can be hidden/shown by setting the `hidden` property of the column.
 <!-- end: React, WebComponents -->
 
+
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column field="price" hidden></igc-grid-lite-column>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite>
+    <igc-grid-lite-column field="price" hidden></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
 <!-- Blazor -->
-Columns can be hidden/shown by setting the **Hidden** property to of the `IgbColumnConfiguration` object.
+Columns can be hidden/shown by setting the `Hidden` parameter on the `IgbGridLiteColumn` component.
 
 ```razor
-{
-  ...,
-  Hidden = true
-}
+<IgbGridLiteColumn Field="Price" Hidden="true" />
 ```
 
 <!-- end: Blazor -->
@@ -192,24 +214,28 @@ Columns can be hidden/shown by setting the **Hidden** property to of the `IgbCol
 ### Column resize
 
 <!-- React, WebComponents -->
-Each column of the {GridLiteTitle} can be configured to be resizable by setting the `resizable` property in the column definition.
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `resizable` property of the column element.
+<!-- end: React, WebComponents -->
 
-```typescript
-{
-  ...
-  resizable: true
-}
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column field="price" resizable></igc-grid-lite-column>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite>
+    <igc-grid-lite-column field="price" resizable></igc-grid-lite-column>
+  </igc-grid-lite>
+);
 ```
 
-<!-- end: React, WebComponents -->
 <!-- Blazor -->
-Each column of the {GridLiteTitle} can be configured to be resizable by setting the `Resizable` property in the column definition.
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the `Resizable` parameter on the `IgbGridLiteColumn` component.
 
 ```razor
-{
-  ...
-  Resizable = true
-}
+<IgbGridLiteColumn Field="Price" Resizable="true" />
 ```
 
 <!-- end: Blazor -->

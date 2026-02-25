@@ -201,7 +201,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid id="grid1" data={localData} autoGenerate={true}></IgrGrid>
+<IgrGrid id="grid1" autoGenerate={true} data={localData}></IgrGrid>
 ```
 
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。

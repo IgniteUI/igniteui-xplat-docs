@@ -14,6 +14,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
 ### Bug Fixes
 
 | Bug Number | Control | Description |
