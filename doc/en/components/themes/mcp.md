@@ -245,9 +245,6 @@ Here is a brief overview of each tool:
 > [!NOTE]
 > For compound components (e.g., `combo`, `select`, `grid`), `get_component_design_tokens` returns a list of related child themes instead of a flat token list. For example, querying `grid` may return child themes such as `grid`, `grid-toolbar`, `grid-filtering`, and `paginator`. The AI will generate a separate `create_component_theme` call for each child theme using the appropriate scoped selector.
 
-> [!NOTE]
-> If your project uses the licensed `@infragistics/igniteui-angular` package, tell the AI so it can set the `licensed` parameter on palette, theme, and component tools. This adjusts the generated import paths accordingly.
-
 ## Example Scenarios
 
 The following scenarios show what you can ask the AI to do once the MCP server is connected.
@@ -260,22 +257,22 @@ The AI will call `create_theme` and return a ready-to-use `styles.scss` file. Th
 
 ```scss
 /* styles.scss */
-@use '{PackageCommon}/theming' as *;
+@use 'igniteui-theming' as *;
+@use 'igniteui-theming/sass/typography/presets' as *;
+@use 'igniteui-theming/sass/elevations/presets' as *;
 
 $my-palette: palette(
   $primary: #2563eb,
   $secondary: #f97316,
   $surface: #fff,
-  $gray: #9e9e9e,
 );
 
-$my-typography: typography(
-  $font-family: 'Roboto, sans-serif',
+@include elevations($material-elevations);
+@include palette($light-material-palette);
+@include typography(
+  $font-family: "Titillium Web, sans-serif",
+  $type-scale: $material-type-scale
 );
-
-@include core();
-@include typography($my-typography);
-@include theme($my-palette, $schema: $light-material-schema);
 ```
 
 ### Dark Mode Variant
@@ -304,7 +301,7 @@ The AI will call `set_spacing` scoped to the calendar component and `set_size` a
 
 **Platform not detected**
 
-If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `igniteui-angular`, `igniteui-webcomponents`) as a dependency. You can also tell the AI explicitly: _"Use {ProductName}."_
+If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `igniteui-react`) as a dependency. You can also tell the AI explicitly: _"Use {ProductName}."_
 
 **Luminance warning on colors**
 
