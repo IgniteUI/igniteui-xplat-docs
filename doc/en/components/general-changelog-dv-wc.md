@@ -78,8 +78,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Localization(i18n)**
 
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`, `IgcCombo`, `IgcDatePicker`, `IgcDateRangePicker`, `IgcTimePicker`, `IgcCalendar`, `IgcCarousel`, `IgcChip`, `IgcInput`, `IgcList`, `IgcTree`
-  - New `Intl` implementation for all currently supported components that format and render data like dates and numbers.
+- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`, `IgcCombo`, `IgcDatePicker`, `IgcDateRangePicker`, `IgcCalendar`, `IgcCarousel`, `IgcChip`, `IgcInput`, `IgcList`, `IgcTree`
+  - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgcCalendar`, `IgcDatePicker`, and `IgcDateRangePicker` that previously used it in `igniteui-webcomponents`.
   - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
   - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
 
