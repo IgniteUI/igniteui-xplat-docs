@@ -1,5 +1,21 @@
 [
   {
+    "name": "AI-Assisted Development",
+    "header": true
+  },
+  {
+    "exclude": ["Blazor", "Angular"],
+    "name": "{ProductName} Skills",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor", "Angular"],
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+  {
     "name": "General",
     "header": true
   },
