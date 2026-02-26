@@ -2148,6 +2148,12 @@
     "href": "zoomslider-overview.md",
     "status": ""
   },
+    {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Query Builder",
+    "href": "inputs/query-builder.md",
+    "status": "new"
+  },
   {
     "exclude": ["Angular"],
     "name": "Notifications",
