@@ -310,3 +310,10 @@ If the AI warns about color luminance, it means the chosen color is too light or
 **Surface color mismatch**
 
 For light themes use a light surface (e.g., `#fafafa`). For dark themes use a dark surface (e.g., `#121212`). Mismatched surface colors cause the AI to emit a warning.
+
+## Additional Resources
+
+- [{ProductName} Skills](./skills.md)
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
+
