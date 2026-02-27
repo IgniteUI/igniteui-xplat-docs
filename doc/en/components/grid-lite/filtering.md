@@ -10,71 +10,78 @@ _license: MIT
 # {Platform} {GridLiteTitle} Filter Operations
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `filter` property of the column configuration object.
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `filterable` property of the column.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `Filter` property of the column configuration object.
+The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the `Filterable` property of the column.
 <!-- end: Blazor -->
 
-```typescript
-{
-  key: 'price',
-  filter: true
-}
+<!-- WebComponents -->
+```html
+<igc-grid-lite .data=${data}>
+  <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
+  </igc-grid-lite>
+);
 ```
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "LastName",
-    Filter = true
-}
+<IgbGridLite Data="@data">
+    <IgbGridLiteColumn Field="LastName" Filterable="true" />
+</IgbGridLite>
 ```
 
 <!-- React, WebComponents -->
-The `filter` property can be either a simple boolean or a
-`ColumnFilterConfiguration` object which exposes additional configuration options:
+You can also control whether the filter operations for string columns should be case sensitive by using the `filteringCaseSensitive` property or `filtering-case-sensitive` attribute:
 <!-- end: React, WebComponents -->
-<!-- Blazor -->
-The `Filter` property can be either a simple boolean or a
-`IgbColumnFilterConfiguration` object which exposes additional configuration options:
-<!-- end: Blazor -->
 
-```typescript
-{
-  key: 'price',
-  filter: {
-    /**
-     * For string data types controls whether the filter operations for this column will be case sensitive.
-     * By default, filter operations for string types are case insensitive.
-     */
-    caseSensitive: true;
-  }
-}
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column 
+  field="price" 
+  filterable
+  filtering-case-sensitive
+></igc-grid-lite-column>
 ```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column 
+      field="price" 
+      filterable
+      filtering-case-sensitive
+    ></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
+<!-- Blazor -->
+You can also control whether the filter operations for string columns should be case sensitive by using the `FilteringCaseSensitive` parameter:
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "FirstName",
-    Filter = new IgbColumnFilterConfiguration
-    {
-        /**
-        * For string data types controls whether the filter operations for this column will be case sensitive.
-        * By default, filter operations for string types are case insensitive.
-        */
-        CaseSensitive = true
-    }
-},
+<IgbGridLiteColumn 
+    Field="FirstName" 
+    Filterable="true"
+    FilteringCaseSensitive="true" />
 ```
+<!-- end: Blazor -->
 
 `sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} Filtering Config"`
 
 ## Filter Model
 
 <!-- React, WebComponents -->
-The building blocks for filter operations in the grid is the `FilterExpression` which has the following structure:
+The building blocks for filter operations in the grid is the `FilterExpression<T, K>` which has the following structure:
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
 The building blocks for filter operations in the grid is the `IgbGridLiteFilterExpression` which has the following structure:

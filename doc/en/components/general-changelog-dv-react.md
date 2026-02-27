@@ -12,6 +12,73 @@ namespace: Infragistics.Controls.Charts
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**
+### {PackageCommon}
+
+#### New Features
+
+- #### AI-Assisted Development - Copilot Skills
+  - Four end-user skills are now shipped with the `{PackageCommon}` package under the `skills/` directory providing step-by-step guidance to GitHub Copilot and other LLM agents for common tasks:
+    - **igniteui-wc-choose-components** - Identify the right component for a given UI pattern.
+    - **igniteui-wc-integrate-with-framework** - Set up and use components in React, Angular, Vue, or vanilla JS.
+    - **igniteui-wc-customize-component-theme** - Apply custom styles via CSS custom properties, parts, and the theming system.
+    - **igniteui-wc-optimize-bundle-size** - Reduce production bundle size through selective imports and lazy loading.
+- #### Chat
+  - `adoptRootStyles` can now be toggled on/off at runtime.
+
+
+#### Breaking Changes
+
+- #### Themes
+  - Changed global prefixes for CSS custom properties for component themes to align with other Ignite UI component libraries.
+
+- #### Chat
+  - Removed the `typingIndicator` template renderer. Use the `typing-indicator` slot instead.
+
+- #### Tooltip
+  - Removed the `disableArrow` deprecated property.
+
+- #### Library
+  - Minimum Node version required is now >= 22.
+
+  #### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Context instantiation in Blazor|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|Correct cursor style over non input parts|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|Correct cursor style over non input parts|
+
+### {PackageGrids} (Grids)
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+**Breaking Changes**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
+
+**Localization(i18n)**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`, `IgrCombo`, `IgrDatePicker`, `IgrDateRangePicker`, `IgrCalendar`, `IgrCarousel`, `IgrChip`, `IgrInput`, `IgrTree`
+  - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgrCalendar`, `IgrDatePicker`, and `IgrDateRangePicker`.
+  - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
+  - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
+
+**PDF export**
+- Added PDF export functionality allowing users to export grid data to PDF format.
+
+**Popover API**
+
+- Dropdown menus and dialogs are now using HTML Popover API to provide better positioning and accessibility.
+
+## **{PackageVerChanges-25-2-FEB}**
+
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
 
 ### Bug Fixes
 

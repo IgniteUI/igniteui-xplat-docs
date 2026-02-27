@@ -23,69 +23,75 @@ When applying data transformations, such as sorting and filtering, the grid does
 
 The component supports changing its data source at runtime. If the new source has a different "shape" than the previous one make sure to update your column configuration as well.
 
+<!-- WebComponents -->
 ```typescript
 grid.data = [...{
   /** records follow */
 }];
-
-// Update the column configuration to represent the new data.
-grid.columns = [...];
 ```
 
-```typescript
-grid.data = [...{
+```html
+<igc-grid-lite>
+    <!-- Update column configuration, add or remove columns as needed to represent the new data. -->
+    <igc-grid-lite-column field="id"></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+this.gridRef.current.data = [...{
   /** records follow */
 }];
 
-// Update the column configuration to represent the new data.
-grid.columns = [...];
+return (
+    <igc-grid-lite data={data}>
+        {/* Update column configuration, add or remove columns as needed to represent the new data. */}
+        <igc-grid-lite-column field="id"></igc-grid-lite-column>
+    </igc-grid-lite>
+);
 ```
 
 ```razor
-<IgbGridLite Data="data" Columns="columns" />
+<IgbGridLite Data="data">
+    <!-- Update column configuration, add or remove columns as needed to represent the new data. -->
+    <IgbGridLiteColumn Field="Id" />
+</IgbGridLite>
+
 @code {
     this.data = new List<T>
     {
         // records follow
     };
-
-    // Update the column configuration to represent the new data.
-    this.columns = new List<IgbColumnConfiguration>
-    {
-        // column definitions
-    };
 }
 ```
+
 <!-- React, WebComponents -->
-If the grid has `autoGenerate` enabled, it will "_infer_" the new column configuration only if the old one is reset.
+If the grid has `autoGenerate` enabled, it will "_infer_" the new column configuration automatically when the data changes.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-If the grid has `AutoGenerate` enabled, it will "_infer_" the new column configuration only if the old one is reset.
+If the grid has `AutoGenerate` enabled, it will "_infer_" the new column configuration automatically when the data changes.
 <!-- end: Blazor -->
 
+<!-- React, WebComponents -->
 ```typescript
 grid.autoGenerate = true;
-
-/** Reset the previous column collection */
-grid.columns = [];
 
 /** After the new binding the grid will infer the column collection from the bound data. */
 grid.data = [];
 ```
+<!-- end: React, WebComponents -->
 
+<!-- Blazor -->
 ```razor
-<IgbGridLite Data="data" AutoGenerate="true" Columns="columns" />
+<IgbGridLite Data="data" AutoGenerate="true" />
 
 @code {
-
-    // Reset the previous column collection
-    this.columns = new List<IgbColumnConfiguration>();
-
     // After the new binding the grid will infer the column collection from the bound data.
     this.data = new List<T>();
 }
 ```
+<!-- end: Blazor -->
 <!-- React, WebComponents -->
 >[!NOTE]
 >The sort/filter states of the {GridLiteTitle} are kept when changing the data source in this manner.

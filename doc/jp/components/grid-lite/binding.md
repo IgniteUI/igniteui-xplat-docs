@@ -24,69 +24,75 @@ _language: ja
 
 コンポーネントは実行時にデータ ソースの変更をサポートします。新しいソースが前のものと異なる「形状」を持つ場合、列の設定も更新する必要があります。
 
+<!-- WebComponents -->
 ```typescript
 grid.data = [...{
-  /** レコードが続きます */
+  /** レコードが続きます*/
 }];
-
-// 新しいデータを反映するように列の構成を更新します。
-grid.columns = [...];
 ```
 
-```typescript
-grid.data = [...{
-  /** レコードが続きます */
+```html
+<igc-grid-lite>
+    <!-- 新しいデータを表すために、必要に応じて列の構成を更新し、列を追加または削除します。 -->
+    <igc-grid-lite-column field="id"></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+this.gridRef.current.data = [...{
+  /** レコードが続きます*/
 }];
 
-// 新しいデータを反映するように列の構成を更新します。
-grid.columns = [...];
+return (
+    <igc-grid-lite data={data}>
+        {/* 新しいデータを表すために、必要に応じて列の構成を更新し、列を追加または削除します。 */}
+        <igc-grid-lite-column field="id"></igc-grid-lite-column>
+    </igc-grid-lite>
+);
 ```
 
 ```razor
-<IgbGridLite Data="data" Columns="columns" />
+<IgbGridLite Data="data">
+    <!-- 新しいデータを表すために、必要に応じて列の構成を更新し、列を追加または削除します。 -->
+    <IgbGridLiteColumn Field="Id" />
+</IgbGridLite>
+
 @code {
     this.data = new List<T>
     {
         // レコードが続きます
     };
-
-    // 新しいデータを反映するように列の構成を更新します。
-    this.columns = new List<IgbColumnConfiguration>
-    {
-        // 列定義
-    };
 }
 ```
+
 <!-- React, WebComponents -->
-グリッドで `autoGenerate` が有効になっている場合、古い列設定をリセットした場合にのみ、新しい列設定を「推測します」。
+グリッドで `autoGenerate` が有効になっている場合、データが変更されると新しい列の構成が自動的に「推測されます」。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-グリッドで `AutoGenerate` が有効になっている場合、古い列設定をリセットした場合にのみ、新しい列設定を「推測します」。
+グリッドで `AutoGenerate` が有効になっている場合、データが変更されると新しい列の構成が自動的に「推測されます」。
 <!-- end: Blazor -->
 
+<!-- React, WebComponents -->
 ```typescript
 grid.autoGenerate = true;
-
-/** 列定義 */
-grid.columns = [];
 
 /** 新しいバインディング後、グリッドはバインドされたデータから列コレクションを推論します。 */
 grid.data = [];
 ```
+<!-- end: React, WebComponents -->
 
+<!-- Blazor -->
 ```razor
-<IgbGridLite Data="data" AutoGenerate="true" Columns="columns" />
+<IgbGridLite Data="data" AutoGenerate="true" />
 
 @code {
-
-    // 列定義
-    this.columns = new List<IgbColumnConfiguration>();
-
     // 新しいバインディング後、グリッドはバインドされたデータから列コレクションを推論します。
     this.data = new List<T>();
 }
 ```
+<!-- end: Blazor -->
 <!-- React, WebComponents -->
 >[!NOTE]
 >{GridLiteTitle} のソート/フィルター状態は、この方法でデータ ソースを変更しても保持されます。
@@ -106,8 +112,8 @@ grid.data = [];
 
 <!-- TODO ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 -->
 
