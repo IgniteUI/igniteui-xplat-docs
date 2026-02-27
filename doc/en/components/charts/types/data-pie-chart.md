@@ -65,6 +65,19 @@ Below is an example that demonstrates usage of the ItemLegend with the `DataPieC
 
 <div class="divider--half"></div>
 
+
+## {Platform} Data Pie Chart Slice Label Positioning
+
+The `DataPieChart` supports positioning slice labels either inside or outside of the pie slices using the `SliceLabelPositionMode` property. This property accepts the following `CalloutCollisionMode` values:
+
+- `RadialOutsideEnd`: Labels are positioned outside the slices (default).
+- `RadialInsideEnd`: Labels are positioned inside the slices, near the outer edge.
+- `RadialCenter`: Labels are centered inside the slices.
+- `RadialBestFit`: The chart automatically decides whether to place labels inside or outside based on available space.
+
+Setting `SliceLabelPositionMode` to `RadialInsideEnd` provides a label appearance similar to the `IgcPieChart`, where labels render directly within each slice.
+
+<div class="divider--half"></div>
 ## {Platform} Pie Chart Others Category
 
 Sometimes, the underlying data for the pie chart will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice.
@@ -191,6 +204,8 @@ The following table lists API members mentioned in the above sections:
 - `SelectionMode`
 - `SelectionBehavior`
 
+- `SliceLabelPositionMode`
+- `CalloutCollisionMode`
  |Chart Type       | Control Name   | API Members |
  |-----------------|----------------|------------ |
  |Data Pie Chart      | `DataPieChart`     | `DataPieChart` |
