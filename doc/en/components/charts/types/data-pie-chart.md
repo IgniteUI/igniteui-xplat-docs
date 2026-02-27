@@ -75,7 +75,7 @@ The `DataPieChart` supports positioning slice labels either inside or outside of
 - `RadialCenter`: Labels are centered inside the slices.
 - `RadialBestFit`: The chart automatically decides whether to place labels inside or outside based on available space.
 
-Setting `SliceLabelPositionMode` to `RadialInsideEnd` provides a label appearance similar to the `IgcPieChart`, where labels render directly within each slice.
+Setting `SliceLabelPositionMode` to `RadialInsideEnd` provides a label appearance similar to the `PieChart`, where labels render directly within each slice.
 
 <div class="divider--half"></div>
 ## {Platform} Pie Chart Others Category
