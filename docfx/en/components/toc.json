@@ -157,6 +157,108 @@
     "status": "NEW"
   },
   {
+    "name": "Changelog",
+      "status": "UPDATED",
+      "href": "changelog/general.md",
+      "items": [
+        {          
+          "name": "Common Web Components Changelog",
+          "href": "changelog/igniteui-webcomponents.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Blazor", "Angular", "WebComponents"],
+          "name": "Common React Changelog",
+          "href": "changelog/igniteui-react.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Dock Manager Changelog",
+          "href": "changelog/igniteui-dockmanager.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Charts Changelog",
+          "href": "changelog/igniteui-charts.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Core Changelog",
+          "href": "changelog/igniteui-core.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Dashboards Changelog",
+          "href": "changelog/igniteui-dashboards.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Angular"],
+          "name": "(Deprecated) Data-Grids Changelog",
+          "href": "changelog/igniteui-data-grids.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Blazor"],
+          "name": "Datasources Changelog",
+          "href": "changelog/igniteui-datasources.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Blazor", "React", "WebComponents"],
+          "name": "FDC3 Changelog",
+          "href": "changelog/igniteui-angular-fdc3.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Blazor", "Angular", "WebComponents"],
+          "name": "FDC3 Changelog",
+          "href": "changelog/igniteui-react-fdc3.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Gauges Changelog",
+          "href": "changelog/igniteui-gauges.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Grids Changelog",
+          "href": "changelog/igniteui-grids.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Inputs Changelog",
+          "href": "changelog/igniteui-inputs.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Layouts Changelog",
+          "href": "changelog/igniteui-layouts.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Maps Changelog",
+          "href": "changelog/igniteui-maps.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Spreadsheet Changelog",
+          "href": "changelog/igniteui-spreadsheet.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Spreadsheet Chart Adapter Changelog",
+          "href": "changelog/igniteui-spreadsheet-chart-adapter.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "Excel Changelog",
+          "href": "changelog/igniteui-excel.md",
+          "status": "UPDATED"
+        }
+      ]
+  },
+  {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Integrating Ignite UI for React with Next.js",
     "href": "nextjs-usage.md"
