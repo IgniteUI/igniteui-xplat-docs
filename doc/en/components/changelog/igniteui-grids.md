@@ -24,13 +24,6 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 - {IgPrefix}Grid, {IgPrefix}TreeGrid, {IgPrefix}HierarchicalGrid, {IgPrefix}PivotGrid
   - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
 
-**Localization(i18n)**
-
-- {IgPrefix}Grid, {IgPrefix}TreeGrid, {IgPrefix}HierarchicalGrid, {IgPrefix}PivotGrid
-  - New `Intl` implementation for the grid components that format and render data like dates and numbers.
-  - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
-  - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
-
 **PDF export**
 - Added PDF export functionality allowing users to export grid data to PDF format.
 
