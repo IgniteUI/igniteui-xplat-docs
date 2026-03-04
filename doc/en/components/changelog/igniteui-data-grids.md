@@ -5,14 +5,14 @@ _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 ---
-# {ProductName} Changelog
+# Changelog for igniteui-{PlatformLower}-data-grids
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
 <!-- React, WebComponents, Blazor -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+Please note that this control has been deprecated and replaced with the [Grid](../grids/data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: React, WebComponents, Blazor -->
 
@@ -52,7 +52,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### Deprecated Components
 
-> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](grids/data-grid.md)
+> [DataGrid](../grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](../grids/data-grid.md)
 
 ## **{PackageVerChanges-22-2}**
 
@@ -79,13 +79,13 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Data Grid)
 
-Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users "scroll" through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+Added New Feature - [Row Paging](../grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users "scroll" through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
 - New Features Added:
-  - [Filter Row](grids/data-grid/column-filtering.md)
-  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-  - [Cell Merging](grids/data-grid/cell-merging.md)
+  - [Filter Row](../grids/data-grid/column-filtering.md)
+  - [Load/Save Layout Customizations](../grids/data-grid/load-save-layout.md)
+  - [GroupBy Area for column grouping](../grids/data-grid/row-grouping.md)
+  - [Cell Merging](../grids/data-grid/cell-merging.md)
 - New API:
   - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.

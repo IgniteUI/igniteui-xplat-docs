@@ -5,7 +5,7 @@ _keywords: {Platform} Inputs, Infragistics, DatePicker, MultiColumnComboBox, Cha
 mentionedTypes: ["DatePicker", "MultiColumnComboBox"]
 ---
 
-# {Platform} Inputs Changelog
+# Changelog for igniteui-{PlatformLower}-inputs
 
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 ## **{PackageVerChanges-25-2-NOV}**

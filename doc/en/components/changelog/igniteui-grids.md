@@ -6,7 +6,7 @@ mentionedTypes: ["Grid", "TreeGrid", "HierarchicalGrid", "PivotGrid"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# {Platform} Grids Changelog
+# Changelog for igniteui-{PlatformLower}-grids
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
@@ -238,7 +238,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - `Paginator`
   - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
 
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/grid/size.md) topic for more.
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 
@@ -246,27 +246,27 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids} (Grid)
 
-- Added New Features - [State Persistence](grids/grid/state-persistence.md)
+- Added New Features - [State Persistence](../grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-2}**
 
 <!-- React, WebComponents -->
-- [Grid](grids/data-grid.md) - This is a new fully functional cross-platform grid and includes features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
+- [Grid](../grids/data-grid.md) - This is a new fully functional cross-platform grid and includes features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-- [Grid](grids/data-grid.md) - New grid component with features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
+- [Grid](../grids/data-grid.md) - New grid component with features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
 <!-- end: Blazor -->
 
 ### Deprecated Components
 
-> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](grids/data-grid.md)
+> [DataGrid](../grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](../grids/data-grid.md)
 
 ## **{PackageVerChanges-23-2-MAR}**
 
 ### {PackageGrids}
 
-- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
+- New [`HierarchicalGrid`](../grids/hierarchical-grid/overview.md) component
 
 ## **{PackageVerChanges-22-2.2}**
 
@@ -287,11 +287,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids}
 
-- New [Pivot Grid](grids/pivot-grid/overview.md) component.
+- New [Pivot Grid](../grids/pivot-grid/overview.md) component.
 
 ## **{PackageVerChanges-22-2}**
 
 ### {PackageGrids}
 
-- New [Grid](grids/data-grid.md) component.
-- New [Tree Grid](grids/tree-grid/overview.md) component.
+- New [Grid](../grids/data-grid.md) component.
+- New [Tree Grid](../grids/tree-grid/overview.md) component.

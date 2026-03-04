@@ -6,7 +6,7 @@ mentionedTypes: ["XamGeographicMap"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# {ProductName} Maps Changelog
+# Changelog for igniteui-{PlatformLower}-maps
 
 All notable changes for the {ProductName} Maps package are documented on this page.
 
@@ -86,7 +86,7 @@ Import statements have been simplified to use just package names instead of full
 
 | Affected Packages | Affected Components |
 | ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)  |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](../geo-map.md), [Treemap](../charts/types/treemap-chart.md)  |
 
 <!-- Angular -->
 

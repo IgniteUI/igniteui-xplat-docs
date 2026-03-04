@@ -5,7 +5,7 @@ _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 ---
-# {ProductName} Changelog
+# Changelog for igniteui-{PlatformLower}-dockmanager
 
 All notable changes for each version of {ProductName} are documented on this page.
 

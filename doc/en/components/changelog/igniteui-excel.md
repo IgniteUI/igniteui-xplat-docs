@@ -5,7 +5,7 @@ _keywords: {Platform} Excel, Infragistics, Excel Library, Changelog
 mentionedTypes: []
 ---
 
-# {Platform} Excel Library Changelog
+# Changelog for igniteui-{PlatformLower}-excel
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 

@@ -5,7 +5,7 @@ _keywords: {Platform} Spreadsheet, Infragistics, Spreadsheet, Changelog
 mentionedTypes: []
 ---
 
-# {Platform} Spreadsheet Changelog
+# Changelog for igniteui-{PlatformLower}-spreadsheet
 
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 

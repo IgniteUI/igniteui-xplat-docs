@@ -5,7 +5,7 @@ _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 ---
-# {ProductName} Core Package Changelog
+# Changelog for igniteui-{PlatformLower}-core
 
 The {PackageCore} package is a peer dependency for visualization and data components. This page documents when core package updates are required based on features and breaking changes in other packages.
 

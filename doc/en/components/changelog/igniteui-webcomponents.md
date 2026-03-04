@@ -5,7 +5,8 @@ _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 ---
-# {ProductName} Changelog
+
+# Changelog for igniteui-{PlatformLower}-webcomponents
 
 All notable changes for each version of {ProductName} are documented on this page.
 
@@ -33,7 +34,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### **{PackageCommonVerChanges-5.1.0}**
 
 #### Added
-- New [Carousel](layouts/carousel.md) component.
+- New [Carousel](../layouts/carousel.md) component.
 
 ### **{PackageCommonVerChanges-5.0.0}**
 
@@ -79,9 +80,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### **{PackageCommonVerChanges-4.10.0}**
 
 #### Added
-- New [Banner](notifications/banner.md) component
-- New [Divider](layouts/divider.md) component
-- New [DatePicker](scheduling/date-picker.md) component
+- New [Banner](../notifications/banner.md) component
+- New [Divider](../layouts/divider.md) component
+- New [DatePicker](../scheduling/date-picker.md) component
 - `RadioGroup` - Bind underlying radio components name and checked state through the radio group.
 
 #### Deprecated
@@ -198,8 +199,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 #### Added
 
-- New [Text Area](inputs/text-area.md) component.
-- New [Button Group](inputs/button-group.md) component.
+- New [Text Area](../inputs/text-area.md) component.
+- New [Button Group](../inputs/button-group.md) component.
 - New `ToggleButton`.
 - `NavDrawer` now supports CSS transitions.
 - Position attribute for `Toast` and `Snackbar`.
@@ -388,8 +389,8 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.1.0}**
 
 #### Added
-- New [Stepper](layouts/stepper.md) component.
-- New [Combo](inputs/combo/overview.md) component.
+- New [Stepper](../layouts/stepper.md) component.
+- New [Combo](../inputs/combo/overview.md) component.
 - `MaskInput` - Skip literal positions when deleting symbols in the component
 
 #### Fixed
@@ -421,8 +422,8 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.4.0}**
 
 #### Added
-- New [Dialog](notifications/dialog.md) component.
-- New [Select](inputs/select.md) component.
+- New [Dialog](../notifications/dialog.md) component.
+- New [Select](../inputs/select.md) component.
 
 #### Fixed
 - `Calendar` - range selection a11y improvements.
@@ -445,9 +446,9 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.3.0}**
 
 #### Added
-- New [DateTimeInput](inputs/date-time-input.md) component.
-- New [Tabs](layouts/tabs.md) component.
-- New [Accordion](layouts/accordion.md) component.
+- New [DateTimeInput](../inputs/date-time-input.md) component.
+- New [Tabs](../layouts/tabs.md) component.
+- New [Accordion](../layouts/accordion.md) component.
 - Typography styles in themes.
 
 #### Changed
@@ -475,9 +476,9 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 ### **{PackageCommonVerChanges-3.2.0}**
 
 #### Added
-- New [MaskInput](inputs/mask-input.md) component.
-- New [ExpansionPanel](layouts/expansion-panel.md) component.
-- New [Tree](grids/tree.md) component.
+- New [MaskInput](../inputs/mask-input.md) component.
+- New [ExpansionPanel](../layouts/expansion-panel.md) component.
+- New [Tree](../grids/tree.md) component.
 - `Rating` - Added `selected` CSS part and exposed CSS variable to control symbol sizes.
 - `IconButton` - Allow slotted content.
 
@@ -511,7 +512,7 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 ### **{PackageCommonVerChanges-2.2.0}**
 
 #### Added
-- New [DropDown](inputs/dropdown.md) component.
+- New [DropDown](../inputs/dropdown.md) component.
 - `Calendar`: Active date can be set via an attribute.
 
 ### **{PackageCommonVerChanges-2.1.1}**
@@ -532,20 +533,20 @@ Example:
 ### **{PackageCommonVerChanges-2.1.0}**
 
 #### Added
-- New [LinearProgress](inputs/linear-progress.md) component.
-- New [CircularProgress](inputs/circular-progress.md) component.
-- New [Chip](inputs/chip.md) component.
-- New [Snackbar](notifications/snackbar.md) component.
-- New [Toast](notifications/toast.md) component.
-- New [Rating](inputs/rating.md) component.
+- New [LinearProgress](../inputs/linear-progress.md) component.
+- New [CircularProgress](../inputs/circular-progress.md) component.
+- New [Chip](../inputs/chip.md) component.
+- New [Snackbar](../notifications/snackbar.md) component.
+- New [Toast](../notifications/toast.md) component.
+- New [Rating](../inputs/rating.md) component.
 - Component themes can be changed at runtime by calling the `configureTheme(theme: Theme)` function
 
 ### **{PackageCommonVerChanges-2.0.0}**
 
 #### Added
 - Dark Themes
-- New [Slider](inputs/slider.md) component.
-- New [RangeSlider](inputs/slider.md) component.
+- New [Slider](../inputs/slider.md) component.
+- New [RangeSlider](../inputs/slider.md) component.
 - Support `required` property in `Radio` component.
 
 #### Changed
@@ -562,20 +563,20 @@ Example:
 Initial release of Ignite UI Web Components
 
 #### Added
-- [Avatar](layouts/avatar.md) component
-- [Badge](inputs/badge.md) component
-- [Button](inputs/button.md) component
-- [Calendar](scheduling/calendar.md) component
-- [Card](layouts/card.md) component
-- [Checkbox](inputs/checkbox.md) component
+- [Avatar](../layouts/avatar.md) component
+- [Badge](../inputs/badge.md) component
+- [Button](../inputs/button.md) component
+- [Calendar](../scheduling/calendar.md) component
+- [Card](../layouts/card.md) component
+- [Checkbox](../inputs/checkbox.md) component
 - Form component
-- [Icon](layouts/icon.md) component
-- [IconButton](inputs/icon-button.md) component
-- [Input](inputs/input.md) component
-- [List](grids/list.md) component
-- [Navigation bar](menus/navbar.md) component
-- [Navigation drawer](menus/navigation-drawer.md) component
-- [Radio group](inputs/radio.md) component
-- [Radio](inputs/radio.md) component
-- [Ripple](inputs/ripple.md) component
-- [Switch](inputs/switch.md) component
+- [Icon](../layouts/icon.md) component
+- [IconButton](../inputs/icon-button.md) component
+- [Input](../inputs/input.md) component
+- [List](../grids/list.md) component
+- [Navigation bar](../menus/navbar.md) component
+- [Navigation drawer](../menus/navigation-drawer.md) component
+- [Radio group](../inputs/radio.md) component
+- [Radio](../inputs/radio.md) component
+- [Ripple](../inputs/ripple.md) component
+- [Switch](../inputs/switch.md) component

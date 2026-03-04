@@ -5,7 +5,7 @@ _keywords: {Platform} Gauges, Infragistics, Radial Gauge, Linear Gauge, Bullet G
 mentionedTypes: ["XamRadialGauge", "XamLinearGauge", "XamBulletGraph"]
 ---
 
-# {Platform} Gauges Changelog
+# Changelog for igniteui-{PlatformLower}-gaguges
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
@@ -45,7 +45,7 @@ mentionedTypes: ["XamRadialGauge", "XamLinearGauge", "XamBulletGraph"]
 
 - `XamRadialGauge`
   - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.
-  - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
+  - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](../radial-gauge.md#optical-scaling)
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
   - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 - `XamLinearGauge`

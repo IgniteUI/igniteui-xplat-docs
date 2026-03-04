@@ -5,7 +5,7 @@ _keywords: {Platform} Layouts, Infragistics, Toolbar, Changelog
 mentionedTypes: ["Toolbar"]
 ---
 
-# {Platform} Layouts Changelog
+# Changelog for igniteui-{PlatformLower}-layouts
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
@@ -58,4 +58,4 @@ mentionedTypes: ["Toolbar"]
 
 ### New Components
 
-- <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
+- <label>PREVIEW</label> [Toolbar](../menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.

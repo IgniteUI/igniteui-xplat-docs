@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 815,
+  "samplesCount": 817,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -2139,6 +2139,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/template": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion"
     ],
@@ -2514,7 +2520,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 339,
+  "topicsCount": 355,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3739,6 +3745,10 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/mask-input/overview",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/mask-input/styling",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/mask-input/value-modes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/overview",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/radio": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/radio/alignment",

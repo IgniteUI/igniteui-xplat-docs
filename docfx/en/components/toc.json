@@ -146,114 +146,99 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular"],
-    "name": "Common Changelog",
-    "href": "changelog/igniteui-webcomponents.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Dock Manager Changelog",
-    "href": "changelog/igniteui-dockmanager.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Changelog",
+    "name": "Changelog for Packages",
       "status": "UPDATED",
       "href": "changelog/general.md",
       "items": [
         {          
-          "name": "Common Web Components Changelog",
+          "exclude": ["Blazor", "Angular", "React"],
+          "name": "igniteui-webcomponents",
           "href": "changelog/igniteui-webcomponents.md",
           "status": "UPDATED"
         },
         {
           "exclude": ["Blazor", "Angular", "WebComponents"],
-          "name": "Common React Changelog",
+          "name": "igniteui-react",
           "href": "changelog/igniteui-react.md",
           "status": "UPDATED"
         },
         {
-          "name": "Dock Manager Changelog",
-          "href": "changelog/igniteui-dockmanager.md",
-          "status": "UPDATED"
-        },
-        {
-          "name": "Charts Changelog",
+          "name": "igniteui-charts",
           "href": "changelog/igniteui-charts.md",
           "status": "UPDATED"
         },
         {
-          "name": "Core Changelog",
+          "name": "igniteui-core",
           "href": "changelog/igniteui-core.md",
           "status": "UPDATED"
         },
         {
-          "name": "Dashboards Changelog",
+          "name": "igniteui-dashboards",
           "href": "changelog/igniteui-dashboards.md",
           "status": "UPDATED"
         },        
         {
-          "exclude": ["Blazor"],
-          "name": "Datasources Changelog",
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+          "name": "igniteui-datasources",
           "href": "changelog/igniteui-datasources.md",
           "status": "UPDATED"
         },
         {
-          "name": "Excel Changelog",
+          "name": "igniteui-dockmanager",
+          "href": "changelog/igniteui-dockmanager.md",
+          "status": "UPDATED"
+        },
+        {
+          "name": "igniteui-excel",
           "href": "changelog/igniteui-excel.md",
           "status": "UPDATED"
         },        
         {
-          "name": "Gauges Changelog",
+          "name": "igniteui-gauges",
           "href": "changelog/igniteui-gauges.md",
           "status": "UPDATED"
         },
         {
-          "name": "Grids Changelog",
+          "name": "igniteui-grids",
           "href": "changelog/igniteui-grids.md",
           "status": "UPDATED"
         },
         {
-          "name": "Inputs Changelog",
+          "name": "igniteui-inputs",
           "href": "changelog/igniteui-inputs.md",
           "status": "UPDATED"
         },
         {
-          "name": "Layouts Changelog",
+          "name": "igniteui-layouts",
           "href": "changelog/igniteui-layouts.md",
           "status": "UPDATED"
         },
         {
-          "name": "Maps Changelog",
+          "name": "igniteui-maps",
           "href": "changelog/igniteui-maps.md",
           "status": "UPDATED"
         },
         {
           "exclude": ["Blazor"],
-          "name": "Spreadsheet Changelog",
+          "name": "igniteui-spreadsheet",
           "href": "changelog/igniteui-spreadsheet.md",
           "status": "UPDATED"
         },
         {
-          "name": "Spreadsheet Chart Adapter Changelog",
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+          "name": "igniteui-spreadsheet-chart-adapter",
           "href": "changelog/igniteui-spreadsheet-chart-adapter.md",
           "status": "UPDATED"
         },
         {
-          "exclude": ["Blazor", "React", "WebComponents"],
-          "name": "FDC3 Changelog",
-          "href": "changelog/igniteui-angular-fdc3.md",
-          "status": "UPDATED"
-        },
-        {
-          "exclude": ["Blazor", "Angular", "WebComponents"],
-          "name": "FDC3 Changelog",
-          "href": "changelog/igniteui-react-fdc3.md",
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+          "name": "igniteui-fdc3",
+          "href": "changelog/igniteui-fdc3.md",
           "status": "UPDATED"
         },
         {
           "exclude": ["Angular"],
-          "name": "(Deprecated) Data-Grids Changelog",
+          "name": "igniteui-data-grids (Deprecated)",
           "href": "changelog/igniteui-data-grids.md",
           "status": "UPDATED"
         }

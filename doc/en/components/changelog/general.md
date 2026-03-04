@@ -8,46 +8,52 @@ _keywords: Changelog, What's New, {ProductName}, Infragistics
 
 All notable changes for {ProductName} are documented across the following changelog pages:
 
-- [Common Web Components Changelog](igniteui-webcomponents.md)
+
+<!-- WebComponents -->
+- [igniteui-webcomponents](igniteui-webcomponents.md)
+<!-- end: WebComponents -->
 
 <!-- React -->
-- [Common React Changelog](igniteui-react.md)
+- [igniteui-react](igniteui-react.md)
 <!-- end: React -->
 
-- [Core Changelog](igniteui-core.md)
+- [igniteui-{PlatformLower}-core](igniteui-core.md)
 
-- [Charts Changelog](igniteui-charts.md)
+- [igniteui-{PlatformLower}-charts](igniteui-charts.md)
 
-- [Dashboards Changelog](igniteui-dashboards.md)
+- [igniteui-{PlatformLower}-dashboards](igniteui-dashboards.md)
 
 <!-- React, WebComponents, Angular -->
-- [Datasources Changelog](igniteui-datasources.md)
+<!-- - [igniteui-{PlatformLower}-datasources](igniteui-datasources.md) -->
 <!-- end: React, WebComponents, Angular -->
 
-- [Dock Manager Changelog](igniteui-dockmanager.md)
 
-- [Excel Changelog](igniteui-excel.md)
+- [igniteui-{PlatformLower}-excel](igniteui-excel.md)
 
-- [Gauges Changelog](igniteui-gauges.md)
+- [igniteui-{PlatformLower}-gauges](igniteui-gauges.md)
 
-- [Grids Changelog](igniteui-grids.md)
+- [igniteui-{PlatformLower}-grids](igniteui-grids.md)
 
-- [Inputs Changelog](igniteui-inputs.md)
+<!-- - [igniteui-{PlatformLower}-i18n](igniteui-i18n.md) -->
 
-- [Layouts Changelog](igniteui-layouts.md)
+- [igniteui-{PlatformLower}-inputs](igniteui-inputs.md)
 
-- [Maps Changelog](igniteui-maps.md)
+- [igniteui-{PlatformLower}-layout](igniteui-layouts.md)
+
+- [igniteui-{PlatformLower}-map](igniteui-maps.md)
 
 <!-- React, WebComponents, Angular -->
-- [Spreadsheet Changelog](igniteui-spreadsheet.md)
+- [igniteui-{PlatformLower}-spreadsheet](igniteui-spreadsheet.md)
 
-- [Spreadsheet Chart Adapter Changelog](igniteui-spreadsheet-chart-adapter.md)
+<!-- - [igniteui-{PlatformLower}-spreadsheet-chart-adapter](igniteui-spreadsheet-chart-adapter.md) -->
 <!-- React, WebComponents, Angular -->
 
 <!-- Angular, React -->
-<!-- - [FDC3 Changelog](igniteui-fdc3.md) -->
+<!-- - [FDC3](igniteui-fdc3.md) -->
 <!-- end: Angular, React -->
 
 <!-- React, WebComponents, Blazor -->
-- [(Deprecated) Data-Grids Changelog](igniteui-data-grids.md)
+- [igniteui-{PlatformLower}-data-grids (Deprecated)](igniteui-data-grids.md)
 <!-- end: React, WebComponents, Blazor -->
+
+- [igniteui-dockmanager](igniteui-dockmanager.md)

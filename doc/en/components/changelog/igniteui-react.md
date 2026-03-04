@@ -5,7 +5,7 @@ _keywords: {Platform} React, Infragistics, React Components, Changelog
 mentionedTypes: []
 ---
 
-# {Platform} React Components Changelog
+# Changelog for igniteui-{PlatformLower}-react
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
@@ -67,7 +67,7 @@ Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefine
 
 ### New Components
 
-- New [Carousel](layouts/carousel.md) component - A slideshow component for cycling through elements
+- New [Carousel](../layouts/carousel.md) component - A slideshow component for cycling through elements
 
 ### Component Changes
 
@@ -78,8 +78,8 @@ Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefine
 
 ### New Components
 
-- New [Banner](notifications/banner.md) component
-- New [DatePicker](scheduling/date-picker.md) component
+- New [Banner](../notifications/banner.md) component
+- New [DatePicker](../scheduling/date-picker.md) component
 - New `Divider` component
 
 ### Enhancements
