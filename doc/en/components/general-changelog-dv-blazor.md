@@ -8,8 +8,6 @@ namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
 All notable changes for each version of {ProductName} are documented on this page.
 
 - As of version 2025.2, the Ignite UI for Blazor toolset supports .NET 10. For more information on .NET 10 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview).
