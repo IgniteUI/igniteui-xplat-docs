@@ -50,17 +50,11 @@ All notable changes for {ProductName} are documented across the following change
 
 <!-- React, WebComponents, Angular -->
 
-<!-- Angular -->
+<!-- Angular, React -->
 
-- [FDC3 Changelog](igniteui-angular-fdc3.md)
+- [FDC3 Changelog](igniteui-fdc3.md)
 
-<!-- end: Angular -->
-
-<!-- React -->
-
-- [FDC3 Changelog](igniteui-react-fdc3.md)
-
-<!-- end: React -->
+<!-- end: Angular, React -->
 
 <!-- React, WebComponents, Blazor -->
 
