@@ -7,8 +7,6 @@ mentionedTypes: ["XamRadialGauge", "XamLinearGauge", "XamBulletGraph"]
 
 # Changelog for igniteui-{PlatformLower}-gaguges
 
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 
 ## **{PackageVerChanges-25-1-OCT_2}**

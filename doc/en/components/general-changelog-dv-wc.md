@@ -8,8 +8,6 @@ namespace: Infragistics.Controls
 
 # {ProductName} Changelog
 
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerLatest}**

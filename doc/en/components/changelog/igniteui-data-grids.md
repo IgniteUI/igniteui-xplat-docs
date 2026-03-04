@@ -7,8 +7,6 @@ namespace: Infragistics.Controls.Charts
 ---
 # Changelog for igniteui-{PlatformLower}-data-grids
 
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
 <!-- React, WebComponents, Blazor -->
 
 > [!Note]
