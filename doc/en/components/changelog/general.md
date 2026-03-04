@@ -11,9 +11,7 @@ All notable changes for {ProductName} are documented across the following change
 - [Common Web Components Changelog](igniteui-webcomponents.md)
 
 <!-- React -->
-
 - [Common React Changelog](igniteui-react.md)
-
 <!-- end: React -->
 
 - [Core Changelog](igniteui-core.md)
@@ -23,9 +21,7 @@ All notable changes for {ProductName} are documented across the following change
 - [Dashboards Changelog](igniteui-dashboards.md)
 
 <!-- React, WebComponents, Angular -->
-
 - [Datasources Changelog](igniteui-datasources.md)
-
 <!-- end: React, WebComponents, Angular -->
 
 - [Dock Manager Changelog](igniteui-dockmanager.md)
@@ -43,21 +39,15 @@ All notable changes for {ProductName} are documented across the following change
 - [Maps Changelog](igniteui-maps.md)
 
 <!-- React, WebComponents, Angular -->
-
 - [Spreadsheet Changelog](igniteui-spreadsheet.md)
 
 - [Spreadsheet Chart Adapter Changelog](igniteui-spreadsheet-chart-adapter.md)
-
 <!-- React, WebComponents, Angular -->
 
 <!-- Angular, React -->
-
-- [FDC3 Changelog](igniteui-fdc3.md)
-
+<!-- - [FDC3 Changelog](igniteui-fdc3.md) -->
 <!-- end: Angular, React -->
 
 <!-- React, WebComponents, Blazor -->
-
 - [(Deprecated) Data-Grids Changelog](igniteui-data-grids.md)
-
 <!-- end: React, WebComponents, Blazor -->
