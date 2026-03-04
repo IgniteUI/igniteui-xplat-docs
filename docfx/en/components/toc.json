@@ -205,6 +205,11 @@
         },
         {
           "name": "igniteui-inputs",
+          "href": "changelog/igniteui-i18n.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Inputs Changelog",
           "href": "changelog/igniteui-inputs.md",
           "status": "UPDATED"
         },

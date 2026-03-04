@@ -73,12 +73,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`
   - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
 
-**Localization(i18n)**
-
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`, `IgcPivotGrid`, `IgcCombo`, `IgcDatePicker`, `IgcDateRangePicker`, `IgcCalendar`, `IgcCarousel`, `IgcChip`, `IgcInput`, `IgcTree`
-  - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgcCalendar`, `IgcDatePicker`, and `IgcDateRangePicker` that previously used it in `igniteui-webcomponents`.
-  - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
-  - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
 **PDF export**
 - Added PDF export functionality allowing users to export grid data to PDF format.
 
