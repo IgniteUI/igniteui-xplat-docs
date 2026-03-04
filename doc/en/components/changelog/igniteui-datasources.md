@@ -7,6 +7,6 @@ namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
 All notable changes for each version of {ProductName} are documented on this page.
+
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->

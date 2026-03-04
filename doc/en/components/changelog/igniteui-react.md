@@ -11,6 +11,8 @@ mentionedTypes: []
 
 This changelog covers React-specific component changes, new React components, breaking changes, and package updates.
 
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
+
 ## **{PackageVerChanges-25-1-OCT_2}**
 
 ### New Components

@@ -10,6 +10,8 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for the {ProductName} Maps package are documented on this page.
 
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
+
 ## **{PackageVerChanges-25-2-NOV}**
 
 - Azure Map Imagery is now RTM.

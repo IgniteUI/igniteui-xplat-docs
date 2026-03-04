@@ -18,6 +18,8 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
+
 ## **{PackageVerChanges-25-1-JUNE}**
 
 ### {PackageGrids} (Data Grid)

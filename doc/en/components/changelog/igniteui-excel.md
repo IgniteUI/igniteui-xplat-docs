@@ -9,6 +9,8 @@ mentionedTypes: []
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
 
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
+
 ## **{PackageVerChanges-25-2-NOV}**
 
 ### Bug Fixes

@@ -8,7 +8,7 @@ mentionedTypes: ["Toolbar"]
 # {Platform} Layouts Changelog
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
-
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 ## **{PackageVerChanges-24-2-MAY}**
 
 ### Enhancements

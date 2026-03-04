@@ -10,6 +10,8 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes to the {ProductName} charts package are documented on this page.
 
+<!-- NOTE: Add new version sections below this comment for automated changelog updates -->
+
 ## **{PackageVerLatest}**
 
 
