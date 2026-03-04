@@ -1,12 +1,12 @@
 ---
-title: {Platform} Internationalization | Changelog | Infragistics 
-_description: Learn about new features and updates for internationalization (i18n) and localization in {ProductName}
-_keywords: {Platform} i18n, Infragistics, Internationalization, Localization, Changelog
+title: {Platform} i18n | Changelog | Infragistics 
+_description: 
+_keywords: {Platform} i18n, i18n Changelog
+mentionedTypes: ["Grid"]
+sharedComponents: ["Grid"]
 ---
 
-# {Platform} Internationalization Changelog
-
-<!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
+# Changelog for igniteui-{PlatformLower}-i18n
 
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 
