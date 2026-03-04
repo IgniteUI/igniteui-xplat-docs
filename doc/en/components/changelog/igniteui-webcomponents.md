@@ -17,58 +17,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### New Components
 
-- Added `IgrChat` component
-
-### {PackageGrids} (Grids)
-- `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`
-  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
-
-        It can be enabled on the individual columns:
-
-        ```html
-        <igc-column field="field" merge="true"></igc-column>
-        ```
-        The merging can be configured on the grid level to apply either:
-     - `onSort` - only when the column is sorted.
-     - `always` - always, regardless of data operations.
-
-        ```html
-        <igc-grid cellMergeMode="always">
-        </igc-grid>
-        ```
-
-        The default `cellMergeMode` is `onSort`.
-
-        The functionality can be modified by setting a custom `mergeStrategy` on the grid, in case some other merge conditions or logic is needed for a custom scenario.
-
-        It's possible also to set a `mergeComparer` on the individual columns, in case some custom handling is needed for a particular data field.
-
-  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `pinningPosition` property on the column:
-
-        ```html
-        <igc-column field="Col1" pinned="true" pinningPosition="pinningPosition">
-        </igc-column>
-        ```
-
-        ```ts
-        pinningPosition = ColumnPinningPosition.End;
-        ```
-
-        Or with the API, via optional parameter:
-
-        ```ts
-        grid.pinColumn('Col1', 0, ColumnPinningPosition.End);
-        grid.pinColumn('Col2', 0, ColumnPinningPosition.Start);
-        ```
-
-        If property `pinningPosition` is not set on a column, the column will default to the position specified on the grid's `pinning` options for `columns`.
-
-  - **Sorting improvements**
-     - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-     - Refactored sorting algorithms from recursive to iterative.
-  - **Groupby improvements**
-     - Refactored grouping algorithm from recursive to iterative.
-     - Optimized grouping operations.
+- Added `IgcChat` component
 
 ### Bug Fixes
 
@@ -80,10 +29,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |Message actions not rendered after last message|
 |[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |Change event not emitted for non-editable input configuration|
 |[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Issues when clearing the value and notch border in Material theme|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ### **{PackageCommonVerChanges-5.1.0}**
 

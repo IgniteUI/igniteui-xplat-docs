@@ -191,13 +191,7 @@
           "name": "Dashboards Changelog",
           "href": "changelog/igniteui-dashboards.md",
           "status": "UPDATED"
-        },
-        {
-          "exclude": ["Angular"],
-          "name": "(Deprecated) Data-Grids Changelog",
-          "href": "changelog/igniteui-data-grids.md",
-          "status": "UPDATED"
-        },
+        },        
         {
           "exclude": ["Blazor"],
           "name": "Datasources Changelog",
@@ -205,17 +199,10 @@
           "status": "UPDATED"
         },
         {
-          "exclude": ["Blazor", "React", "WebComponents"],
-          "name": "FDC3 Changelog",
-          "href": "changelog/igniteui-angular-fdc3.md",
+          "name": "Excel Changelog",
+          "href": "changelog/igniteui-excel.md",
           "status": "UPDATED"
-        },
-        {
-          "exclude": ["Blazor", "Angular", "WebComponents"],
-          "name": "FDC3 Changelog",
-          "href": "changelog/igniteui-react-fdc3.md",
-          "status": "UPDATED"
-        },
+        },        
         {
           "name": "Gauges Changelog",
           "href": "changelog/igniteui-gauges.md",
@@ -242,6 +229,7 @@
           "status": "UPDATED"
         },
         {
+          "exclude": ["Blazor"],
           "name": "Spreadsheet Changelog",
           "href": "changelog/igniteui-spreadsheet.md",
           "status": "UPDATED"
@@ -252,10 +240,23 @@
           "status": "UPDATED"
         },
         {
-          "name": "Excel Changelog",
-          "href": "changelog/igniteui-excel.md",
+          "exclude": ["Blazor", "React", "WebComponents"],
+          "name": "FDC3 Changelog",
+          "href": "changelog/igniteui-angular-fdc3.md",
           "status": "UPDATED"
-        }
+        },
+        {
+          "exclude": ["Blazor", "Angular", "WebComponents"],
+          "name": "FDC3 Changelog",
+          "href": "changelog/igniteui-react-fdc3.md",
+          "status": "UPDATED"
+        },
+        {
+          "exclude": ["Angular"],
+          "name": "(Deprecated) Data-Grids Changelog",
+          "href": "changelog/igniteui-data-grids.md",
+          "status": "UPDATED"
+        },
       ]
   },
   {

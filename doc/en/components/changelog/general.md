@@ -18,8 +18,6 @@ All notable changes for {ProductName} are documented across the following change
 
 - [Core Changelog](igniteui-core.md)
 
-- [Dock Manager Changelog](igniteui-dockmanager.md)
-
 - [Charts Changelog](igniteui-charts.md)
 
 - [Dashboards Changelog](igniteui-dashboards.md)
@@ -29,6 +27,8 @@ All notable changes for {ProductName} are documented across the following change
 - [Datasources Changelog](igniteui-datasources.md)
 
 <!-- end: React, WebComponents, Angular -->
+
+- [Dock Manager Changelog](igniteui-dockmanager.md)
 
 - [Excel Changelog](igniteui-excel.md)
 
@@ -42,9 +42,13 @@ All notable changes for {ProductName} are documented across the following change
 
 - [Maps Changelog](igniteui-maps.md)
 
+<!-- React, WebComponents, Angular -->
+
 - [Spreadsheet Changelog](igniteui-spreadsheet.md)
 
 - [Spreadsheet Chart Adapter Changelog](igniteui-spreadsheet-chart-adapter.md)
+
+<!-- React, WebComponents, Angular -->
 
 <!-- Angular -->
 
