@@ -25,9 +25,9 @@ By default the column uses the `field` property for label text. To customize the
 
 ```tsx
 return (
-  <igc-grid-lite>
-    <igc-grid-lite-column field="price" header="Price per item"></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite>
+    <IgrGridLiteColumn field="price" header="Price per item"></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -47,7 +47,7 @@ By default the column uses the `Field` property for label text. To customize the
 
 Similar to the cell template, you can also pass a custom template renderer and create your own DOM inside the column header.
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 
 ```typescript
 import { html } from 'lit';
@@ -56,7 +56,22 @@ import { html } from 'lit';
 const column = document.querySelector('igc-grid-lite-column');
 column.headerTemplate = () => html`<h3>⭐ Rating ⭐</h3>`;
 ```
-<!-- End: React, WebComponents -->
+<!-- End: WebComponents -->
+<!-- React -->
+
+```tsx
+const ratingHeaderTemplate = (ctx: IgrHeaderContext) => (
+  <h3>{"⭐ Rating ⭐"}</h3>
+);
+
+
+return (
+  <IgrGridLite>
+    <IgrGridLiteColumn field="rating" headerTemplate={ratingHeaderTemplate}></IgrGridLiteColumn>
+  </IgrGridLite>
+);
+```
+<!-- End: React -->
 
 <!-- Blazor -->
 

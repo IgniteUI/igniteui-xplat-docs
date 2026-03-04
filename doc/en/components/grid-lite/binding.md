@@ -39,15 +39,15 @@ grid.data = [...{
 <!-- end: WebComponents -->
 
 ```tsx
-this.gridRef.current.data = [...{
-  /** records follow */
-}];
+const [data, setData] = React.useState([/* initial data */]);
+
+setData([/* new data */])
 
 return (
-    <igc-grid-lite data={data}>
+    <IgrGridLite data={data}>
         {/* Update column configuration, add or remove columns as needed to represent the new data. */}
-        <igc-grid-lite-column field="id"></igc-grid-lite-column>
-    </igc-grid-lite>
+        <IgrGridLiteColumn field="id"></IgrGridLiteColumn>
+    </IgrGridLite>
 );
 ```
 
@@ -73,14 +73,24 @@ If the grid has `autoGenerate` enabled, it will "_infer_" the new column configu
 If the grid has `AutoGenerate` enabled, it will "_infer_" the new column configuration automatically when the data changes.
 <!-- end: Blazor -->
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 ```typescript
 grid.autoGenerate = true;
 
 /** After the new binding the grid will infer the column collection from the bound data. */
 grid.data = [];
 ```
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const [data, setData] = React.useState([/* initial data */]);
+
+<IgrGridLite id="grid-lite" data={data} autoGenerate={true} />
+
+/** After the new binding the grid will infer the column collection from the bound data. */
+setData([/* new data */]);
+```
+<!-- end: React -->
 
 <!-- Blazor -->
 ```razor
