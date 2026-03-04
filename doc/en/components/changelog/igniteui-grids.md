@@ -229,7 +229,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - `Paginator`
   - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
 
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/grid/size.md) topic for more.
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/_shared/size.md) topic for more.
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 
@@ -237,7 +237,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids} (Grid)
 
-- Added New Features - [State Persistence](../grids/grid/state-persistence.md)
+- Added New Features - [State Persistence](../grids/_shared/state-persistence.md)
 
 ## **{PackageVerChanges-23-2}**
 
