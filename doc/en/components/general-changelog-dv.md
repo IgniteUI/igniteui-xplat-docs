@@ -17,6 +17,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
+### General
+
 - Angular 21 support.
 
 ## **{PackageVerChanges-25-2-DEC}**

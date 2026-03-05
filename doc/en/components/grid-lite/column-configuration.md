@@ -29,14 +29,14 @@ Columns are defined declaratively using column child components within the grid.
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn
       field="account"
       header="Account Number"
       ...
-    ></igc-grid-lite-column>
-    <!-- Additional columns follow -->
-  </igc-grid-lite>
+    ></IgrGridLiteColumn>
+    {/* Additional columns follow */}
+  </IgrGridLite>
 );
 ```
 
@@ -105,7 +105,7 @@ const data: Record[] = [
 
 ```tsx
 return (
-  <igc-grid-lite data={data} auto-generate></igc-grid-lite>
+  <IgrGridLite data={data} autoGenerate={true}></IgrGridLite>
 );
 ```
 
@@ -123,11 +123,11 @@ The previous snippet will result in the grid automatically creating columns equi
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column field="entryId" data-type="string"></igc-grid-lite-column>
-    <igc-grid-lite-column field="source" data-type="string"></igc-grid-lite-column>
-    <igc-grid-lite-column field="ts" data-type="number"></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn field="entryId" dataType="string"></IgrGridLiteColumn>
+    <IgrGridLiteColumn field="source" dataType="string"></IgrGridLiteColumn>
+    <IgrGridLiteColumn field="ts" dataType="number"></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -165,9 +165,9 @@ To change the width of column, use the `width` property of the column.
 
 ```tsx
 return (
-  <igc-grid-lite>
-    <igc-grid-lite-column field="price" width="250px"></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite>
+    <IgrGridLiteColumn field="price" width="250px"></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -196,9 +196,9 @@ Columns can be hidden/shown by setting the `hidden` property of the column.
 
 ```tsx
 return (
-  <igc-grid-lite>
-    <igc-grid-lite-column field="price" hidden></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite>
+    <IgrGridLiteColumn field="price" hidden></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -225,9 +225,9 @@ Each column of the {GridLiteTitle} can be configured to be resizable by setting 
 
 ```tsx
 return (
-  <igc-grid-lite>
-    <igc-grid-lite-column field="price" resizable></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite>
+    <IgrGridLiteColumn field="price" resizable></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
