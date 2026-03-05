@@ -332,7 +332,7 @@ SaveUserFilterState(state);
 
 ## Events
 <!-- React, WebComponents -->
-When a filter operation is performed through the UI, the component emits a custom `filtering` event. The `detail` property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
+When a filter operation is performed through the UI, the component emits a custom `filtering` event. The `detail` property is the filter expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
 
 After the grid applies the new filter state, a `filtered` event is emitted. It contains the filter state for the column which was the target of the operation and it is not cancellable.
 <!-- end: React, WebComponents -->

@@ -42,17 +42,19 @@ grid.data = [...{
 /* First we set the initial data */
 const [data, setData] = React.useState([/* initial data */]);
 
-/* Then inside en event handler or a useEffect we update the data via setData */
+/* Then inside an event handler or a useEffect we update the data via setData */
 const updateData = () => {
   setData([]);
 };
 
 return (
-    <IgrButton onClick={updateData}>Update Data</IgrButton>
-    <IgrGridLite data={data}>
-        {/* Update column configuration, add or remove columns as needed to represent the new data. */}
-        <IgrGridLiteColumn field="id"></IgrGridLiteColumn>
-    </IgrGridLite>
+    <>
+        <IgrButton onClick={updateData}>Update Data</IgrButton>
+        <IgrGridLite data={data}>
+            {/* Update column configuration, add or remove columns as needed to represent the new data. */}
+            <IgrGridLiteColumn field="id"></IgrGridLiteColumn>
+        </IgrGridLite>
+    </>
 );
 ```
 
@@ -97,8 +99,10 @@ const updateData = () => {
 };
 
 return (
-    <IgrButton onClick={updateData}>Update Data</IgrButton>
-    <IgrGridLite id="grid-lite" data={data} autoGenerate={true} />
+    <>
+        <IgrButton onClick={updateData}>Update Data</IgrButton>
+        <IgrGridLite id="grid-lite" data={data} autoGenerate={true} />
+    </>
 );
 ```
 <!-- end: React -->
