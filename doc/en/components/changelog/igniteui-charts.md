@@ -129,7 +129,7 @@ DashboardTile <label>PREVIEW</label>
 
 ### {PackageCharts} (Inputs)
 
-- <label>PREVIEW</label> [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
+- <label>PREVIEW</label> [Color Editor](../inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](../menus/toolbar.md) component to update visualizations at runtime.
 
 
 <!-- end:React -->
