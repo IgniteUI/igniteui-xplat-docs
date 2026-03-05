@@ -85,7 +85,8 @@ For custom comparison logic, set the `sortConfiguration` property with a `compar
  * Custom comparer function which will be used for sort operations for this column.
  * In the following sample, we compare the `name` values based on their length.
  */
-<IgrGridLite data={data}>
+return (
+  <IgrGridLite data={data}>
     <IgrGridLiteColumn 
       field="name" 
       sortable
@@ -94,6 +95,7 @@ For custom comparison logic, set the `sortConfiguration` property with a `compar
       }}
     ></IgrGridLiteColumn>
   </IgrGridLite>
+);
 ```
 <!-- end: React -->
 

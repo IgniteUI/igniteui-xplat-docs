@@ -39,11 +39,16 @@ grid.data = [...{
 <!-- end: WebComponents -->
 
 ```tsx
+/* First we set the initial data */
 const [data, setData] = React.useState([/* initial data */]);
 
-setData([/* new data */])
+/* Then inside en event handler or a useEffect we update the data via setData */
+const updateData = () => {
+  setData([]);
+};
 
 return (
+    <IgrButton onClick={updateData}>Update Data</IgrButton>
     <IgrGridLite data={data}>
         {/* Update column configuration, add or remove columns as needed to represent the new data. */}
         <IgrGridLiteColumn field="id"></IgrGridLiteColumn>
@@ -85,10 +90,16 @@ grid.data = [];
 ```tsx
 const [data, setData] = React.useState([/* initial data */]);
 
-<IgrGridLite id="grid-lite" data={data} autoGenerate={true} />
 
 /** After the new binding the grid will infer the column collection from the bound data. */
-setData([/* new data */]);
+const updateData = () => {
+  setData([/* new data */]);
+};
+
+return (
+    <IgrButton onClick={updateData}>Update Data</IgrButton>
+    <IgrGridLite id="grid-lite" data={data} autoGenerate={true} />
+);
 ```
 <!-- end: React -->
 

@@ -188,7 +188,7 @@ grid.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
 // Multiple
 grid.filter([
   { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
-  { key: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
+  { key: 'firstName', condition: 'startsWith', searchTerm: 'g', criteria: 'or' },
 ]);
 ```
 <!-- end: WebComponents -->
@@ -200,7 +200,7 @@ gridRef.current.filter({ key: 'firstName', condition: 'contains', searchTerm: 'G
 // Multiple
 gridRef.current.filter([
   { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
-  { key: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
+  { key: 'firstName', condition: 'startsWith', searchTerm: 'g', criteria: 'or' },
 ]);
 ```
 <!-- end: React -->
@@ -293,7 +293,7 @@ For example here is a Lit-based sample:
 Here is an example:
 
 ```tsx
-filterState: FilterExpression<User>[] = [
+const filterState: FilterExpression<User>[] = [
   { key: 'age', condition: 'greaterThan', searchTerm: 21 },
   /** unary condition so `searchTerm` is not required */
   { key: 'active', condition: 'true' },

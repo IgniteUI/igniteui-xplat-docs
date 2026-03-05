@@ -67,7 +67,7 @@ const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currenc
 // Get a reference to the column element
 const column = document.querySelector('igc-grid-lite-column');
 
-/// Return the custom currency formatted value
+// Return the custom currency formatted value
 column.cellTemplate = (params) => asCurrency(params.value); // => "€123,456.79"
 ```
 
@@ -75,7 +75,7 @@ column.cellTemplate = (params) => asCurrency(params.value); // => "€123,456.79
 <!-- React -->
 
 ```tsx
-const formatter = new Intl.NumberFormat("en-150", {
+const formatCurrency = new Intl.NumberFormat("en-150", {
   style: "currency",
   currency: "EUR",
 });
@@ -109,20 +109,20 @@ const { format: asCurrency } = new Intl.NumberFormat('en-150', { style: 'currenc
 const column = document.querySelector('igc-grid-lite-column');
 
 // Return the custom currency formatted value
-column.cellTemplate = ({value, row}) => asCurrency(value * row.index);
+column.cellTemplate = ({value, row}) => asCurrency(value * row.data.count);
 ```
 <!-- End: WebComponents -->
 <!-- React -->
 
 ```tsx
-const asCurrency = new Intl.NumberFormat("en-150", {
+const { format: asCurrency } = new Intl.NumberFormat("en-150", {
   style: "currency",
   currency: "EUR",
 });
 
 // Return the custom currency formatted value
 const totalCellTemplate = (ctx: IgrCellContext) => (
-  <span>{asCurrency(ctx.value * ctx.row.index)}</span>
+  <span>{asCurrency(ctx.value * ctx.row.data.count)}</span>
 );
 ```
 <!-- End: React -->

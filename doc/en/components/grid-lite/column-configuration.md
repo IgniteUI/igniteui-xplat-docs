@@ -35,7 +35,7 @@ return (
       header="Account Number"
       ...
     ></IgrGridLiteColumn>
-    <!-- Additional columns follow -->
+    {/* Additional columns follow */}
   </IgrGridLite>
 );
 ```
