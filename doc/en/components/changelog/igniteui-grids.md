@@ -227,11 +227,13 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - **All Grids**
   - Allow applying initial filtering through `FilteringExpressionsTree` property
 
+<!-- React -->
 ## **{PackageVerChanges-24-2-MAR}**
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
 |36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
+<!-- end:React -->
 
 ## **{PackageVerChanges-24-2-FEB}**
 
