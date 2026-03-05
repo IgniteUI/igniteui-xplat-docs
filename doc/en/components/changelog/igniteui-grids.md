@@ -230,7 +230,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
   - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
 
 <!-- React, WebComponents, Blazor -->
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/_shared/size.md) topic for more.
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/grid/size.md) topic for more.
 <!-- end: React, WebComponents, Blazor -->
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
@@ -240,7 +240,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### {PackageGrids} (Grid)
 
 <!-- React, WebComponents, Blazor -->
-- Added New Features - [State Persistence](../grids/_shared/state-persistence.md)
+- Added New Features - [State Persistence](../grids/grid/state-persistence.md)
 <!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-23-2}**
