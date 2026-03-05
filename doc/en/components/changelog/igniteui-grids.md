@@ -222,13 +222,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 <!-- end: Blazor -->
 
-<!-- Blazor -->
-## **{PackageVerChanges-25-1}**
-
-- Initial release of {ProductName} Grids for Blazor version 20.0.0 (June 2025)
-
-<!-- end: Blazor -->
-
 ## **{PackageVerChanges-24-2-MAY}**
 
 - **All Grids**
@@ -300,15 +293,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 
-## **{PackageVerChanges-23-2-JUL}**
-
- (Grid)
+## **{PackageVerChanges-23-2}**
 
 <!-- React, WebComponents, Blazor -->
 - Added New Features - [State Persistence](../grids/grid/state-persistence.md)
 <!-- end: React, WebComponents, Blazor -->
-
-## **{PackageVerChanges-23-2}**
 
 <!-- React, WebComponents -->
 - [Grid](../grids/data-grid.md) - This is a new fully functional cross-platform grid and includes features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
@@ -330,10 +319,16 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - New [`HierarchicalGrid`](../grids/hierarchical-grid/overview.md) component
 <!-- end: React, WebComponents, Blazor -->
 
-## **{PackageVerChanges-22-2.2}**
+<!-- Blazor -->
+## **{PackageVerChanges-22-2.65}**
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
-- A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
+## **{PackageVerChanges-22-2.2}**
+<!-- end: WebComponents -->
+
+<!-- WebComponents, Blazor -->
+- A new argument `PrimaryKey` has been introduced to `{IgPrefix}RowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
 - `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
 - When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
 - When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
@@ -341,9 +336,15 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
 
 - `PivotGrid`: The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+<!-- end: WebComponents, Blazor -->
+
+<!-- WebComponents -->
+## **{PackageVerChanges-22-2.1}**
 <!-- end: WebComponents -->
 
-## **{PackageVerChanges-22-2.1}**
+<!-- Blazor -->
+## **{PackageVerChanges-22-2.50}**
+<!-- end: Blazor -->
 
 <!-- React, WebComponents, Blazor -->
 - New [Pivot Grid](../grids/pivot-grid/overview.md) component.
