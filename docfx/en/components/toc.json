@@ -199,6 +199,7 @@
           "status": "UPDATED"
         },
         {
+          "exclude": ["Angular"],
           "name": "igniteui-grids",
           "href": "changelog/igniteui-grids.md",
           "status": "UPDATED"

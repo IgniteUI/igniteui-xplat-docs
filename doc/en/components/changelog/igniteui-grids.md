@@ -229,7 +229,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - `Paginator`
   - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
 
+<!-- React, WebComponents, Blazor -->
 - `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](../grids/_shared/size.md) topic for more.
+<!-- end: React, WebComponents, Blazor -->
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 
@@ -237,7 +239,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids} (Grid)
 
+<!-- React, WebComponents, Blazor -->
 - Added New Features - [State Persistence](../grids/_shared/state-persistence.md)
+<!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-23-2}**
 
@@ -249,15 +253,19 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - [Grid](../grids/data-grid.md) - New grid component with features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
 <!-- end: Blazor -->
 
+<!-- React, WebComponents, Blazor -->
 ### Deprecated Components
 
 > [DataGrid](../grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](../grids/data-grid.md)
+<!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-23-2-MAR}**
 
 ### {PackageGrids}
 
+<!-- React, WebComponents, Blazor -->
 - New [`HierarchicalGrid`](../grids/hierarchical-grid/overview.md) component
+<!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-22-2.2}**
 
@@ -278,11 +286,15 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### {PackageGrids}
 
+<!-- React, WebComponents, Blazor -->
 - New [Pivot Grid](../grids/pivot-grid/overview.md) component.
+<!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-22-2}**
 
 ### {PackageGrids}
 
+<!-- React, WebComponents, Blazor -->
 - New [Grid](../grids/data-grid.md) component.
 - New [Tree Grid](../grids/tree-grid/overview.md) component.
+<!-- end: React, WebComponents, Blazor -->
