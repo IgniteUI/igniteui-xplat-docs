@@ -43,6 +43,12 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular"],
+    "name": "Localization(i18n)",
+    "href": "localization.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Open-Source vs Premium",
     "href": "general-open-source-vs-premium.md",
