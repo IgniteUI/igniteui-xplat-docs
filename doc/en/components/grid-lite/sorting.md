@@ -25,9 +25,9 @@ The {GridLiteTitle} supports sorting operations on its data source. Data sorting
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column field="price" sortable></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn field="price" sortable></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -37,9 +37,12 @@ return (
 </IgbGridLite>
 ```
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 You can also control whether the sort operations for string columns should be case sensitive by using the `sortingCaseSensitive` property or `sorting-case-sensitive` attribute.
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+You can also control whether the sort operations for string columns should be case sensitive by using the `sortingCaseSensitive` property.
+<!-- end: React -->
 
 <!-- WebComponents -->
 ```html
@@ -53,17 +56,17 @@ You can also control whether the sort operations for string columns should be ca
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column 
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn 
       field="name" 
       sortable
-      sorting-case-sensitive
-    ></igc-grid-lite-column>
-  </igc-grid-lite>
+      sortingCaseSensitive
+    ></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 For custom comparison logic, set the `sortConfiguration` property with a `comparer` function:
 
 ```typescript
@@ -76,7 +79,28 @@ column.sortConfiguration = {
   comparer: (a, b) => a.length - b.length
 };
 ```
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+For custom comparison logic, set the `sortConfiguration` property with a `comparer` function:
+
+```tsx
+/**
+ * Custom comparer function which will be used for sort operations for this column.
+ * In the following sample, we compare the `name` values based on their length.
+ */
+return (
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn 
+      field="name" 
+      sortable
+      sortConfiguration={{
+        comparer: (a: string, b: string) => a.length - b.length
+      }}
+    ></IgrGridLiteColumn>
+  </IgrGridLite>
+);
+```
+<!-- end: React -->
 
 <!-- Blazor -->
 You can also control whether the sort operations for string columns should be case sensitive by using the `SortingCaseSensitive` parameter:
@@ -101,10 +125,22 @@ The {GridLiteTitle} supports both single and multi-column sorting. Multi-column 
 The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the `SortingOptions` property of the grid. The `Mode` property accepts `GridLiteSortingMode.Single` or `GridLiteSortingMode.Multiple` as values.
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```typescript
 // Enable single-column sorting
 grid.sortingOptions = { mode: 'single' };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+// Enable single-column sorting
+gridRef.current.sortingOptions = { mode: 'single' };
+
+// or directly in the JSX
+<IgrGridLite sortingOptions={{ mode: 'single' }}/>
+```
+<!-- end: React -->
+
 
 ```razor
 // Enable single-column sorting
@@ -220,6 +256,7 @@ The {GridLiteTitle} exposes two main approaches for applying sort operations fro
 The `Sort()` method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```typescript
 // Single
 grid.sort({ key: 'price', direction: 'descending' });
@@ -230,6 +267,20 @@ grid.sort([
   { key: 'name', direction: 'descending' },
 ]);
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+// Single
+gridRef.current.sort({ key: 'price', direction: 'descending' });
+
+// Multiple
+gridRef.current.sort([
+  { key: 'price', direction: 'descending' },
+  { key: 'name', direction: 'descending' },
+]);
+```
+<!-- end: React -->
+
 
 ```razor
 // Single
@@ -252,6 +303,7 @@ The `ClearSort()` method, as the name implies, clears the sort state of a single
 on the passed arguments.
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```typescript
 // Clear the sort state for the `price` column.
 grid.clearSort('price');
@@ -259,6 +311,16 @@ grid.clearSort('price');
 // Clear the sort state of the grid.
 grid.clearSort();
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+// Clear the sort state for the `price` column.
+gridRef.current.clearSort('price');
+
+// Clear the sort state of the grid.
+gridRef.current.clearSort();
+```
+<!-- end: React -->
 
 ```razor
 // Clear the sort state for the `Price` column.
@@ -280,7 +342,7 @@ The `SortingExpressions` property is very similar in behavior to the `Sort()` me
 sort state in the grid, but the most useful property is the ability to set initial sort state when the {GridLiteTitle} is first rendered.
 <!-- end: Blazor -->
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 For example here is a Lit-based sample:
 
 ```typescript
@@ -295,7 +357,21 @@ For example here is a Lit-based sample:
   }
 }
 ```
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+Here is an example:
+
+```tsx
+const sortState: SortingExpression<Products>[] = [
+  { key: 'price', direction: 'descending' },
+  { key: 'name', direction: 'ascending', caseSensitive: true },
+];
+
+return (
+  <IgrGridLite sortingExpressions={sortState} />
+);
+```
+<!-- end: React -->
 
 <!-- Blazor -->
 For example:
@@ -313,11 +389,20 @@ private IgbGridLiteSortingExpression[] sortState = new[]
 
 It can be used to get the current sort state of the component and do additional processing depending on another state in your application.
 
+<!-- WebComponents -->
 ```typescript
 const state = grid.sortingExpressions;
 // Save the current sort state
 saveUserSortState(state);
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+const state = gridRef.current.sortingExpressions;
+// Save the current sort state
+saveUserSortState(state);
+```
+<!-- end: React -->
 
 ```razor
 var state = grid.SortingExpressions;
@@ -332,10 +417,19 @@ When a sorting operation is performed through the UI, the component emits a cust
 
 After the grid applies the new sorting state, a `sorted` event is emitted. It contains the expression which was used in the last sort operation and it is not cancellable.
 
+<!-- WebComponents -->
 ```typescript
 grid.addEventListener('sorting', (event: CustomEvent<SortingExpression<T>>) => { ... });
 grid.addEventListener('sorted', (event: CustomEvent<SortingExpression<T>>) => { ... });
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+gridRef.current.addEventListener('sorting', (event: CustomEvent<SortingExpression<T>>) => { ... });
+gridRef.current.addEventListener('sorted', (event: CustomEvent<SortingExpression<T>>) => { ... });
+```
+<!-- end: React -->
+
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
@@ -388,10 +482,16 @@ export type DataPipelineParams<T extends object> = {
   type: 'sort' | 'filter';
 };
 ```
-
+<!-- WebComponents -->
 ```typescript
 grid.dataPipelineConfiguration = { sort: (params: DataPipelineParams<T>) => T[] | Promise<T[]> };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+gridRef.current.dataPipelineConfiguration = { sort: (params: DataPipelineParams<T>) => T[] | Promise<T[]> };
+```
+<!-- end: React -->
 <!-- End: React, WebComponents -->
 
 <!-- Blazor -->

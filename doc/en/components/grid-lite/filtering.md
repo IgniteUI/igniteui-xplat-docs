@@ -27,9 +27,9 @@ The {GridLiteTitle} supports filtering operations on its data source. Data filte
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
-  </igc-grid-lite>
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn field="price" filterable></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -39,9 +39,12 @@ return (
 </IgbGridLite>
 ```
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 You can also control whether the filter operations for string columns should be case sensitive by using the `filteringCaseSensitive` property or `filtering-case-sensitive` attribute:
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+You can also control whether the filter operations for string columns should be case sensitive by using the `filteringCaseSensitive` property:
+<!-- end: React -->
 
 <!-- WebComponents -->
 ```html
@@ -55,13 +58,13 @@ You can also control whether the filter operations for string columns should be 
 
 ```tsx
 return (
-  <igc-grid-lite data={data}>
-    <igc-grid-lite-column 
+  <IgrGridLite data={data}>
+    <IgrGridLiteColumn 
       field="price" 
       filterable
-      filtering-case-sensitive
-    ></igc-grid-lite-column>
-  </igc-grid-lite>
+      filteringCaseSensitive
+    ></IgrGridLiteColumn>
+  </IgrGridLite>
 );
 ```
 
@@ -165,18 +168,19 @@ public class IgbGridLiteFilterExpression
 ## Filter API
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.filter()`/`GridLite.clearFilter()` methods or through the `Grid.Lite.filterExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.filter()`/`GridLite.clearFilter()` methods or through the `GridLite.filterExpressions` property.
 
 The `filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.Filter()`/`GridLite.ClearFilter()` methods or through the `Grid.Lite.FilterExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.Filter()`/`GridLite.ClearFilter()` methods or through the `GridLite.FilterExpressions` property.
 
 The `Filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```typescript
 // Single
 grid.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
@@ -184,9 +188,22 @@ grid.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
 // Multiple
 grid.filter([
   { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
-  { key: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
+  { key: 'firstName', condition: 'startsWith', searchTerm: 'g', criteria: 'or' },
 ]);
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+// Single
+gridRef.current.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
+
+// Multiple
+gridRef.current.filter([
+  { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
+  { key: 'firstName', condition: 'startsWith', searchTerm: 'g', criteria: 'or' },
+]);
+```
+<!-- end: React -->
 
 ```razor
 // Single
@@ -206,6 +223,7 @@ The `clearFilter()` method, as the name implies, clears the filter state of a si
 The `ClearFilter()` method, as the name implies, clears the filter state of a single column or the whole grid component, depending on the passed arguments.
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```typescript
 // Clear the filter state for the `age` column.
 grid.clearFilter('age');
@@ -213,6 +231,16 @@ grid.clearFilter('age');
 // Clear the filter state of the grid.
 grid.clearFilter();
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+// Clear the filter state for the `age` column.
+gridRef.current.clearFilter('age');
+
+// Clear the filter state of the grid.
+gridRef.current.clearFilter();
+```
+<!-- end: React -->
 
 ```razor
 // Clear the filter state for the `Age` column.
@@ -244,7 +272,7 @@ private IgbGridLiteFilterExpression[] filterState = new[]
 <!-- React, WebComponents -->
 The `filterExpressions` property is very similar in behavior to the `filter()` method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
-
+<!-- WebComponents -->
 For example here is a Lit-based sample:
 
 ```typescript
@@ -260,16 +288,41 @@ For example here is a Lit-based sample:
   }
 }
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+Here is an example:
 
-<!-- End: React, WebComponents -->
+```tsx
+const filterState: FilterExpression<User>[] = [
+  { key: 'age', condition: 'greaterThan', searchTerm: 21 },
+  /** unary condition so `searchTerm` is not required */
+  { key: 'active', condition: 'true' },
+];
+
+return(
+  <IgrGridLite filterExpressions={filterState}></IgrGridLite>
+);
+```
+<!-- end: React -->
+<!-- end: React, WebComponents -->
 
 It can be used to get the current filter state of the component and do additional processing depending on another state in your application.
 
+<!-- WebComponents -->
 ```typescript
 const state = grid.filterExpressions;
 // Save the current filter state
 saveUserFilterState(state);
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+const state = gridRef.current.filterExpressions;
+// Save the current filter state
+saveUserFilterState(state);
+```
+<!-- end: React -->
+
 
 ```razor
 var state = grid.FilterExpressions;
@@ -279,7 +332,7 @@ SaveUserFilterState(state);
 
 ## Events
 <!-- React, WebComponents -->
-When a filter operation is performed through the UI, the component emits a custom `filtering` event. The `detail` property is the sort expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
+When a filter operation is performed through the UI, the component emits a custom `filtering` event. The `detail` property is the filter expression which will be applied by the {GridLiteTitle}. The event is cancellable and if cancelled will prevent the current filter operation.
 
 After the grid applies the new filter state, a `filtered` event is emitted. It contains the filter state for the column which was the target of the operation and it is not cancellable.
 <!-- end: React, WebComponents -->
@@ -290,11 +343,18 @@ When a filter operation is performed through the UI, the component raises `Filte
 After the grid applies the new filter state, a `Filtered` event is raised. It contains the filter state for the column which was the target of the operation and it is not cancellable.
 
 <!-- end: Blazor -->
-
+<!-- WebComponents -->
 ```typescript
 grid.addEventListener('filtering', (event: CustomEvent<GridLiteFilteringEvent<T>>) => { ... });
 grid.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>) => { ... });
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+gridRef.current.addEventListener('filtering', (event: CustomEvent<GridLiteFilteringEvent<T>>) => { ... });
+gridRef.current.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>) => { ... });
+```
+<!-- end: React -->
 
 ```razor
 <IgbGridLite Filtering="OnFiltering" Filtered="OnFiltered" />
@@ -338,10 +398,16 @@ export type DataPipelineParams<T extends object> = {
   type: 'sort' | 'filter';
 };
 ```
-
+<!-- WebComponents -->
 ```typescript
 grid.dataPipelineConfiguration = { filter: (params: DataPipelineParams<T>) => T[] | Promise<T[]> };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```typescript
+gridRef.current.dataPipelineConfiguration = { filter: (params: DataPipelineParams<T>) => T[] | Promise<T[]> };
+```
+<!-- end: React -->
 <!-- End: React, WebComponents -->
 
 <!-- Blazor -->
