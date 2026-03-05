@@ -168,13 +168,13 @@ public class IgbGridLiteFilterExpression
 ## Filter API
 
 <!-- React, WebComponents -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.filter()`/`GridLite.clearFilter()` methods or through the `Grid.Lite.filterExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.filter()`/`GridLite.clearFilter()` methods or through the `GridLite.filterExpressions` property.
 
 The `filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.Filter()`/`GridLite.ClearFilter()` methods or through the `Grid.Lite.FilterExpressions` property.
+The {GridLiteTitle} exposes two main approaches for applying filter operations from its API. Either through the `GridLite.Filter()`/`GridLite.ClearFilter()` methods or through the `GridLite.FilterExpressions` property.
 
 The `Filter()` method accepts either a single expression or an array of filter expression and then filters the grid data
 based on those expressions.

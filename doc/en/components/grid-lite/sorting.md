@@ -37,9 +37,12 @@ return (
 </IgbGridLite>
 ```
 
-<!-- React, WebComponents -->
+<!-- WebComponents -->
 You can also control whether the sort operations for string columns should be case sensitive by using the `sortingCaseSensitive` property or `sorting-case-sensitive` attribute.
-<!-- end: React, WebComponents -->
+<!-- end: WebComponents -->
+<!-- React -->
+You can also control whether the sort operations for string columns should be case sensitive by using the `sortingCaseSensitive` property.
+<!-- end: React -->
 
 <!-- WebComponents -->
 ```html

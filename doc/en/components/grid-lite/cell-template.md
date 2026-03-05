@@ -140,9 +140,11 @@ const totalCellTemplate = (ctx: IgrCellContext) => (
 Aside from using the `cellTemplate` property as a value formatter, you can also create your own DOM template, which
 will be rendered inside the cell container.
 
+<!-- WebComponents -->
 We've decided to re-use the functionality provided by <a href="https://lit.dev/" target="_blank">Lit</a> and its
 <a href="https://lit.dev/docs/templates/expressions/" target="_blank">tagged template syntax</a> for building declarative
 DOM fragments.
+<!-- end: WebComponents -->
 
 You can template any standard DOM elements as well as web components from other libraries.
 
@@ -170,7 +172,9 @@ defineComponents(IgcRatingComponent);
 
 // Use the web component as you would normally inside the react cell template
 const satisfactionCellTemplate = (ctx: IgrCellContext) => (
-  <igc-rating readonly value={ctx.value}></igc-rating>
+  <span>
+    <igc-rating readonly value={ctx.value}></igc-rating>
+  </span>
 );
 ```
 <!-- End: React -->
