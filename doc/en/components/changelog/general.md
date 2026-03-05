@@ -27,12 +27,13 @@ All notable changes for {ProductName} are documented across the following change
 <!-- - [igniteui-{PlatformLower}-datasources](igniteui-datasources.md) -->
 <!-- end: React, WebComponents, Angular -->
 
-
 - [igniteui-{PlatformLower}-excel](igniteui-excel.md)
 
 - [igniteui-{PlatformLower}-gauges](igniteui-gauges.md)
 
+<!-- React, WebComponents, Blazor -->
 - [igniteui-{PlatformLower}-grids](igniteui-grids.md)
+<!-- React, WebComponents, Blazor -->
 
 <!-- - [igniteui-{PlatformLower}-i18n](igniteui-i18n.md) -->
 
