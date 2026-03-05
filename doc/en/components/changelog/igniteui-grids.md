@@ -11,7 +11,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 
 <!-- React, WebComponents -->
-## **{PackageVerChanges-25-2-APR}**
+## **{PackageVerChanges-25-2-FEB}**
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
@@ -222,7 +222,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 <!-- end: Blazor -->
 
-## **{PackageVerChanges-24-2-MAY}**
+## **{PackageVerChanges-24-2-APR}**
 
 - **All Grids**
   - Allow applying initial filtering through `FilteringExpressionsTree` property
@@ -293,6 +293,12 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 
+## **{PackageVerChanges-23-2-MAR}**
+
+<!-- React, WebComponents, Blazor -->
+- New [HierarchicalGrid](../grids/hierarchical-grid/overview.md) component
+<!-- end: React, WebComponents, Blazor -->
+
 ## **{PackageVerChanges-23-2}**
 
 <!-- React, WebComponents, Blazor -->
@@ -311,12 +317,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### Deprecated Components
 
 > [DataGrid](../grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](../grids/data-grid.md)
-<!-- end: React, WebComponents, Blazor -->
-
-## **{PackageVerChanges-23-2-MAR}**
-
-<!-- React, WebComponents, Blazor -->
-- New [`HierarchicalGrid`](../grids/hierarchical-grid/overview.md) component
 <!-- end: React, WebComponents, Blazor -->
 
 <!-- Blazor -->
@@ -346,9 +346,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ## **{PackageVerChanges-22-2.50}**
 <!-- end: Blazor -->
 
-<!-- React, WebComponents, Blazor -->
+<!-- WebComponents, Blazor -->
 - New [Pivot Grid](../grids/pivot-grid/overview.md) component.
-<!-- end: React, WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor -->
 
 ## **{PackageVerChanges-22-2}**
 
