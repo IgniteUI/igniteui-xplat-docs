@@ -35,64 +35,91 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 #### **All Grids**
 
-<!-- React, WebComponents -->
-- {IgPrefix}Grid, {IgPrefix}TreeGrid, {IgPrefix}HierarchicalGrid
-  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
-
-        It can be enabled on the individual columns:
-<!-- end: React, WebComponents -->
-
-<!-- React -->
-        ```tsx
-        <IgrColumn field="field" merge={true}></IgrColumn>
-        ```
-        The merging can be configured on the grid level to apply either:
-     - `onSort` - only when the column is sorted.
-     - `always` - always, regardless of data operations.
-
-        ```tsx
-        <IgrGrid cellMergeMode="always">
-        </IgrGrid>
-        ```
-<!-- end: React -->
-
-<!-- WebComponents -->
-        ```html
-        <igc-column field="field" merge="true"></igc-column>
-        ```
-        The merging can be configured on the grid level to apply either:
-     - `onSort` - only when the column is sorted.
-     - `always` - always, regardless of data operations.
-
-        ```html
-        <igc-grid cell-merge-mode="always">
-        </igc-grid>
-        ```
-<!-- end: WebComponents -->
-
-<!-- Blazor -->
 - **Cell Merging**
   - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell. It can be enabled on the individual columns:
 
+<!-- React -->
+```tsx
+<IgrColumn field="field" merge={true}></IgrColumn>
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+```html
+<igc-column field="field" merge="true"></igc-column>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
 ```razor
 <IgbColumn Field="field" Merge="true"></IgbColumn>
 ```
+<!-- end: Blazor -->
 
-- The merging can be configured on the grid level to apply either:
+  - The merging can be configured on the grid level to apply either:
+<!-- React, WebComponents -->
+    - `onSort` - only when the column is sorted.
+    - `always` - always, regardless of data operations.
+<!-- end: React, WebComponents -->
+<!-- Blazor -->
     - `OnSort` - only when the column is sorted.
     - `Always` - always, regardless of data operations.
+  
   The default `CellMergeMode` is `OnSort`.
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrGrid cellMergeMode="always">
+</IgrGrid>
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+```html
+<igc-grid cell-merge-mode="always">
+</igc-grid>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
 ```razor
 <IgbGrid CellMergeMode="GridCellMergeMode.Always">
 </IgbGrid>
 ```
+<!-- end: Blazor -->
 
 - **Column Pinning**
-  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `PinningPosition` property on the column:
+  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the <!-- React -->`pinningPosition`<!-- end: React --><!-- WebComponents -->`pinningPosition`<!-- end: WebComponents --><!-- Blazor -->`PinningPosition`<!-- end: Blazor --> property on the column:
+
+<!-- React -->
+```tsx
+<IgrColumn field="Col1" pinned={true} pinningPosition="pinningPosition">
+</IgrColumn>
+```
+
+```ts
+pinningPosition = ColumnPinningPosition.End;
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+```html
+<igc-column field="Col1" pinned="true" pinningPosition="pinningPosition">
+</igc-column>
+```
+
+```ts
+pinningPosition = ColumnPinningPosition.End;
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
 ```razor
 <IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
 </IgbColumn>
 ```
+
   - Or:
 ```razor
 col.PinningPosition = ColumnPinningPosition.End;
@@ -101,14 +128,33 @@ col.Pinned = true;
 col.PinningPosition = ColumnPinningPosition.Start;
 col.Pinned = true;
 ```
-  - If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
+<!-- end: Blazor -->
 
-- **Sorting and Grouping Improvements**
+<!-- React, WebComponents -->
+  - Or with the API, via optional parameter:
+
+```ts
+grid.pinColumn('Col1', 0, ColumnPinningPosition.End);
+grid.pinColumn('Col2', 0, ColumnPinningPosition.Start);
+```
+<!-- end: React, WebComponents -->
+
+  - If property <!-- React, WebComponents -->`pinningPosition`<!-- end: React, WebComponents --><!-- Blazor -->`PinningPosition`<!-- end: Blazor --> is not set on a column, the column will default to the position specified on the grid's <!-- React, WebComponents -->`pinning`<!-- end: React, WebComponents --><!-- Blazor -->pinning<!-- end: Blazor --> options for <!-- React, WebComponents -->`columns`<!-- end: React, WebComponents --><!-- Blazor -->columns<!-- end: Blazor -->.
+
+- **Sorting<!-- React, WebComponents --> improvements<!-- end: React, WebComponents --><!-- Blazor --> and Grouping Improvements<!-- end: Blazor -->**
   - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
   - Refactored sorting algorithms from recursive to iterative.
+<!-- Blazor -->
   - Refactored grouping algorithm from recursive to iterative.
   - Optimized grouping operations.
+<!-- end: Blazor -->
+<!-- React, WebComponents -->
+- **Groupby improvements**
+  - Refactored grouping algorithm from recursive to iterative.
+  - Optimized grouping operations.
+<!-- end: React, WebComponents -->
 
+<!-- Blazor -->
 - **Other Improvements**   
   - A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
   - The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
