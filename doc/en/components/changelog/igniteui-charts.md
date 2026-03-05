@@ -30,7 +30,9 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - `ShouldAvoidAnnotationCollisions`
 - `ShouldAutoTruncateAnnotations`
 
+<!-- React, WebComponents -->
 ## **{PackageVerChanges-25-2-FEB}**
+<!-- end: React, WebComponents -->
 
 
 Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis

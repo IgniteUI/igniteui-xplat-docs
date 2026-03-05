@@ -9,7 +9,13 @@ mentionedTypes: ["XamRadialGauge", "XamLinearGauge", "XamBulletGraph"]
 
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 
+<!-- React, WebComponents -->
 ## **{PackageVerChanges-25-1-OCT_2}**
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+## **{PackageVerChanges-25-1-SEP}**
+<!-- end: Blazor -->
 
 ### Enhancements
 

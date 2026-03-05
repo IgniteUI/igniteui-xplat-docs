@@ -29,7 +29,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 - Dropdown menus and dialogs are now using HTML Popover API to provide better positioning and accessibility.
 
+<!-- React, WebComponents -->
 ## **{PackageVerChanges-25-1-OCT_2}**
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+## **{PackageVerChanges-25-2-NOV}**
+<!-- end: Blazor -->
 
 ### {PackageGrids} (Grids)
 
