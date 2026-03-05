@@ -47,7 +47,7 @@ All notable changes for {ProductName} are documented across the following change
 - [igniteui-{PlatformLower}-spreadsheet](igniteui-spreadsheet.md)
 
 <!-- - [igniteui-{PlatformLower}-spreadsheet-chart-adapter](igniteui-spreadsheet-chart-adapter.md) -->
-<!-- React, WebComponents, Angular -->
+<!-- end: React, WebComponents, Angular -->
 
 <!-- Angular, React -->
 <!-- - [FDC3](igniteui-fdc3.md) -->
