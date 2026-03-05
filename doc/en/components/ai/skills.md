@@ -236,7 +236,7 @@ node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-with-framework\
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
-```bash
+```shell
 npx skills add IgniteUI/igniteui-webcomponents
 ```
 
