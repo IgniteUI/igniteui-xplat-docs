@@ -10,9 +10,33 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <!-- NOTE: Add new version sections below this comment for automated changelog updates -->
 
+<!-- React, WebComponents -->
 ## **{PackageVerChanges-25-2-APR}**
+<!-- end: React, WebComponents -->
 
-### {PackageGrids} (Grids)
+<!-- Blazor -->
+## **{PackageVerChanges-25-2-NOV}**
+
+- `IgbColumn`
+  - Added events: `HiddenChange`, `ExpandedChange`, `WidthChange`, `PinnedChange`
+
+- `Grid`
+  - Added events: `GroupingExpressionsChange`, `GroupingExpansionStateChange`
+
+- `IgbRowIsland`
+  - Added new parameter `ParentRowData` in `IgbGridCreatedEventArgsDetail` args for `GridCreated` event
+
+- `Grid`, `IgbHierarchicalGrid`, `IgbTreeGrid`
+  - Added property - `ExpansionStates` - represents a list of key-value pairs [row ID, expansion state].
+  - Added event: `ExpansionStatesChange`
+  - Type of `Rendered` event is changed from `VoidHandler` to `ComponentBoolValueChangedEventHandler`
+  - Type of `DataChanging` event is changed from `ForOfDataChangingEventHandler` to `ForOfDataChangeEventHandler`
+  - Type of `DataChanged` event is changed from `VoidHandler` to `ForOfDataChangeEventHandler`
+
+- `IgbPivotDataSelector`
+  - Added events: `ColumnsExpandedChange`, `RowsExpandedChange`, `FiltersExpandedChange`, `ValuesExpandedChange`
+
+<!-- end: Blazor -->
 
 - {IgPrefix}Grid, {IgPrefix}TreeGrid, {IgPrefix}HierarchicalGrid, {IgPrefix}PivotGrid
   - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
@@ -32,12 +56,6 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <!-- React, WebComponents -->
 ## **{PackageVerChanges-25-1-OCT_2}**
 <!-- end: React, WebComponents -->
-
-<!-- Blazor -->
-## **{PackageVerChanges-25-2-NOV}**
-<!-- end: Blazor -->
-
-### {PackageGrids} (Grids)
 
 #### **All Grids**
 
@@ -168,8 +186,6 @@ grid.pinColumn('Col2', 0, ColumnPinningPosition.Start);
 
 ## **{PackageVerChanges-25-1-SEP}**
 
-### {PackageGrids} (Grids)
-
 #### <label>PREVIEW</label> Cell Suffix Content
 
 Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below:
@@ -206,24 +222,25 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 <!-- end: Blazor -->
 
-## **{PackageVerChanges-24-2-MAY}**
+<!-- Blazor -->
+## **{PackageVerChanges-25-1}**
 
-### {PackageGrids}
+- Initial release of {ProductName} Grids for Blazor version 20.0.0 (June 2025)
+
+<!-- end: Blazor -->
+
+## **{PackageVerChanges-24-2-MAY}**
 
 - **All Grids**
   - Allow applying initial filtering through `FilteringExpressionsTree` property
 
 ## **{PackageVerChanges-24-2-MAR}**
 
-### {PackageGrids}
-
 | Bug Number | Control | Description |
 |------------|---------|-------------|
 |36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
 
 ## **{PackageVerChanges-24-2-FEB}**
-
-### {PackageGrids}
 
 - **All Grids**
   - Added new `disabledSummaries` for the columns of the grid, allowing the developers to skip some of the summaries
@@ -241,14 +258,10 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-24-2-JAN}**
 
-### {PackageGrids}
-
 - **All Grids**
   - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
 
 ## **{PackageVerChanges-24-1-JUN}**
-
-### {PackageGrids}
 
 - **All Grids**
   - Added new `RowClick` event.
@@ -289,7 +302,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-23-2-JUL}**
 
-### {PackageGrids} (Grid)
+ (Grid)
 
 <!-- React, WebComponents, Blazor -->
 - Added New Features - [State Persistence](../grids/grid/state-persistence.md)
@@ -313,15 +326,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-23-2-MAR}**
 
-### {PackageGrids}
-
 <!-- React, WebComponents, Blazor -->
 - New [`HierarchicalGrid`](../grids/hierarchical-grid/overview.md) component
 <!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-22-2.2}**
-
-### {PackageGrids}
 
 <!-- WebComponents -->
 - A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
@@ -336,15 +345,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ## **{PackageVerChanges-22-2.1}**
 
-### {PackageGrids}
-
 <!-- React, WebComponents, Blazor -->
 - New [Pivot Grid](../grids/pivot-grid/overview.md) component.
 <!-- end: React, WebComponents, Blazor -->
 
 ## **{PackageVerChanges-22-2}**
-
-### {PackageGrids}
 
 <!-- React, WebComponents, Blazor -->
 - New [Grid](../grids/data-grid.md) component.
