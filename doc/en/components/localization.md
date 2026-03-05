@@ -19,7 +19,7 @@ Currently, {ProductName} ships with resource strings for the following languages
 
 ## Locale
 
-By locale, the term refers to the general strings defining the different languages and regions. These are based on the [BCP 47](https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag) tag definition. Most of the basic ones are described in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). For a list of languages, refer to the [ISO 639 language standard](https://www.loc.gov/standards/iso639-2/).
+The term **locale** refers to the general strings defining the different languages and regions. These are based on the [BCP 47](https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag) tag definition. Most of the basic ones are described in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). For a list of languages, refer to the [ISO 639 language standard](https://www.loc.gov/standards/iso639-2/).
 
 It affects both the formatting of dates and numbers and the localized resource strings that {ProductName} components use. The default locale for {ProductName} is `en-US`.
 
