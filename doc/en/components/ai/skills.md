@@ -35,14 +35,14 @@ GitHub Copilot reads custom instructions from a `.github/copilot-instructions.md
 1. Create (or open) `.github/copilot-instructions.md` in your project root.
 2. Add a reference or paste the relevant skill content into that file. For example:
 
-    ```
-    # Copilot Instructions
+````markdown
+# Copilot Instructions
 
-    This project uses {ProductName}. Follow the guidelines in the skill files below:
+This project uses {ProductName}. Follow the guidelines in the skill files below:
 
-    - Components & Layout: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md
-    - Theming & Styling: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
-    ```
+- Components & Layout: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md
+- Theming & Styling: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
+````
 
 3. Alternatively, paste the full content of the relevant `SKILL.md` files directly into `copilot-instructions.md` for fully offline, self-contained instructions.
 4. Copilot will now apply these instructions automatically on every chat and inline suggestion in VS Code.
@@ -54,12 +54,12 @@ Cursor supports persistent project rules through a `.cursorrules` file or the `.
 1. Create `.cursorrules` in your project root (or `.cursor/rules/igniteui.md` for a named rule).
 2. Paste the contents of the desired `SKILL.md` files into that file. For example:
 
-    ```
+    ````markdown
     # {ProductName} Rules
 
     <paste contents of skills/igniteui-wc-choose-components/SKILL.md here>
     <paste contents of skills/igniteui-wc-customize-component-theme/SKILL.md here>
-    ```
+    ````
 
 3. Cursor will include these rules in every AI request automatically. You can also use the `@rules` mention in chat to reference a specific rule on demand.
 
@@ -86,13 +86,13 @@ Claude Code supports a `CLAUDE.md` file at the project root as persistent agent 
 1. Create `CLAUDE.md` in your project root.
 2. Paste the contents of the relevant `SKILL.md` files into it. For example:
 
-    ```
+    ````markdown
     # Project Instructions
 
     This project uses {ProductName}. Always follow these guidelines:
 
     <paste contents of SKILL.md files here>
-    ```
+    ````
 
 3. Claude Code will automatically read `CLAUDE.md` at the start of every session.
 
@@ -103,7 +103,7 @@ Alternatively, one can use a general Agent Skills config so your Agent can easil
 1. Create a `.agents/skills/` directory in your project root.
 2. Copy the skill directories from `igniteui-webcomponents/skills/` repository into `.agents/skills/`:
 
-    ```
+    ```shell
     .agents/
       skills/
         igniteui-wc-choose-components/
@@ -129,7 +129,7 @@ Use this approach when you want to load a specific skill on demand, without perm
 
 Each skill file can be downloaded directly from GitHub. First, create the `.agents/skills/` directory in your project root, then download the files into it:
 
-```
+```bash
 # Create the .agents/skills directory
 mkdir -p .agents/skills
 
@@ -161,7 +161,7 @@ The `gemini skills install` command installs skills directly from a Git reposito
 
 **Install to user scope (default):**
 
-```
+```bash
 gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-choose-components
 gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-optimize-bundle-size
@@ -170,7 +170,7 @@ gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --p
 
 **Install to workspace scope:**
 
-```
+```bash
 gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-choose-components
 gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-optimize-bundle-size
@@ -184,12 +184,12 @@ Once installed, the skill files are available in the respective location and wil
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
 
-```
+```bash
 # macOS / Linux
 cp -r node_modules/igniteui-webcomponents/skills/. .agents/skills/
 ```
 
-```cmd
+```powershell
 # Windows (PowerShell)
 Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\* .agents\skills\
 ```
@@ -198,7 +198,7 @@ Or copy individual skill directories as needed:
 
 **macOS / Linux**
 
-```cmd
+```bash
 cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-choose-components .agents/skills/
 cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-customize-component-theme .agents/skills/
 cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-optimize-bundle-size .agents/skills/
@@ -207,7 +207,7 @@ cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-integrate-with-fram
 
 **Windows (PowerShell)**
 
-```cmd
+```powershell
 Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-choose-components .agents\skills\
 Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-customize-component-theme .agents\skills\
 Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-optimize-bundle-size .agents\skills\
@@ -225,7 +225,7 @@ xcopy /E /I node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-wit
 
 The skill files are located at:
 
-```
+```shell
 node_modules\igniteui-webcomponents\skills\igniteui-wc-choose-components\SKILL.md
 node_modules\igniteui-webcomponents\skills\igniteui-wc-customize-component-theme\SKILL.md
 node_modules\igniteui-webcomponents\skills\igniteui-wc-optimize-bundle-size\SKILL.md
@@ -236,7 +236,7 @@ node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-with-framework\
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
-```
+```shell
 npx skills add IgniteUI/igniteui-webcomponents
 ```
 

@@ -1491,7 +1491,8 @@ export class MarkdownTransformer {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
         if (language === "json" || language === "cmd" ||
-            language === "css" || language === "scss") {
+            language === "css" || language === "scss" ||
+            language === "shell" || language === "bash" || language === "powershell" || language === "markdown") {
             return false;
         }
 

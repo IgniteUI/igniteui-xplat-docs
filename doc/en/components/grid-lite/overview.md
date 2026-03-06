@@ -26,6 +26,7 @@ Our free, open-source {Platform} Grid Lite comes with the following column-based
 <!-- React, WebComponents -->
 ## Installation and Setup
 
+<!-- WebComponents -->
 ### Installation
 To install {GridLiteTitle}, go to the root folder of your project (where `package.json` is located) and run the following command using npm:
 
@@ -38,20 +39,35 @@ Or using yarn:
 ```cmd
 yarn add igniteui-grid-lite
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+### Installation
+To install {GridLiteTitle}, go to the root folder of your project (where `package.json` is located) and run the following command using npm:
+
+```cmd
+npm install igniteui-react --save
+```
+
+Or using yarn:
+
+```cmd
+yarn add igniteui-react
+```
+<!-- end: React -->
 
 ### Using the Grid Lite in your {Platform} code
 
-In the file where you want to use Grid Lite, import and register it before your component class or function is declared:
-
 <!-- React -->
-```tsx
-import { IgcGridLite } from 'igniteui-grid-lite';
+In the file where you want to use Grid Lite, first we need to import it:
 
-IgcGridLite.register();
+```tsx
+import { IgrGridLite } from 'igniteui-react/grid-lite';
 ```
 <!-- End: React -->
 
 <!-- WebComponents -->
+In the file where you want to use Grid Lite, import and register it before your component class or function is declared:
+
 ```ts
 import { IgcGridLite } from 'igniteui-grid-lite';
 
@@ -65,16 +81,18 @@ Get the element from the HTML in your TypeScript file by id:
 ```ts
 const gridLite = document.getElementById('grid-lite') as IgcGridLite<ProductInfo>;
 ```
-<!-- end: WebComponents -->
 
 Add the `<igc-grid-lite>` element to your markup:
+<!-- end: WebComponents -->
 
 <!-- React -->
+Add the `<IgrGridLite>` component to your markup:
+
 ```tsx
 return (
   <div className="container sample ig-typography">
     <div className="grid-lite-wrapper">
-      <igc-grid-lite ref={this.gridRef} id="grid-lite"></igc-grid-lite>
+      <IgrGridLite ref={this.gridRef} id="grid-lite"></IgrGridLite>
     </div>
   </div>
 );
