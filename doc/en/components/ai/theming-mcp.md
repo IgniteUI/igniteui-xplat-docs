@@ -313,7 +313,12 @@ For light themes use a light surface (e.g., `#fafafa`). For dark themes use a da
 
 ## Additional Resources
 
+<!-- WebComponents -->
 - [{ProductName} Skills](./skills.md)
+<!-- end: WebComponents -->
+<!-- React -->
+- [{ProductName} Skills](./react-skills.md)
+<!-- end: React -->
 - [{ProductName} **Forums**]({ForumsLink})
 - [{ProductName} **GitHub**]({GithubLink})
 
