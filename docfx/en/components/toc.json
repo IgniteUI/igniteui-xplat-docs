@@ -4,9 +4,15 @@
     "header": true
   },
   {
-    "exclude": ["Blazor", "Angular"],
+    "exclude": ["Blazor", "Angular", "React"],
     "name": "{ProductName} Skills",
     "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor", "Angular", "WebComponents"],
+    "name": "{ProductName} Skills",
+    "href": "ai/react-skills.md",
     "status": "new"
   },
   {
