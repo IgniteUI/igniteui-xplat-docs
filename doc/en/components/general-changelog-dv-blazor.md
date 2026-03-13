@@ -18,6 +18,19 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageGrids} (Grids)
+
+#### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+#### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid
+  - Added PDF export functionality to grid components. Grids can now be exported to PDF format alongside the existing Excel and CSV export options.
+
+#### Breaking Changes
+
+- IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
+  - Original data array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array ref change for the change to be detected.
+
 ### General
 
 #### IgbThemeProvider
@@ -43,6 +56,20 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### Bug Fixes
 | Bug Number | Control | Description |
 |------------|---------|-------------|
+| 2189 | DataChart | DataChart skips rendering axis when there are no labels |
+| 2959 | LinearGauge | Gauges should not call View functions |
+| 2221 | Excel | Adding Excel support for round tripping the camera tool |
+| 2235 | Excel | fixed Excel Formula parser |
+| 2842 | DataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series |
+| 2234 | DataChart | Improve DataChart rendering - skip when bucket size is 0 |
+| 2326 | PieChart | Add property to set others color |
+| 2871 | DataLegend | Preserve deterministic ordering of series groups in DataLegend |
+| 2722 | DataChart | DataTooltipLayer - TitleTextColor is overridden when chart's TitleTextColor is used |
+| 2317 | Grid | Improve IgbGrid BodyTemplate Performance (C#/.NET templating) |
+| 2280 | CategoryChart | regression issue in Blazor Chart when doing aggregations (ex. grouping and summarizing) |
+| 2908 | MaskInput | IgbMaskInput Prompt parameter is not propagated to the underlying Web Component prompt property |
+| 2907 | DateTimeInput  | IgbDateTimeInput Prompt parameter is not propagated to the underlying Web Component prompt property |
+| 2909 | PivotGrid  | IgbPivotGrid exposes SnackbarDisplayTime, but the property is not applicable and causes false test failures |
 | [#2079](https://github.com/IgniteUI/igniteui-webcomponents/pull/2079) | Calendar | `aria-hidden` state for weeks outside of the current month |
 | [#2078](https://github.com/IgniteUI/igniteui-webcomponents/pull/2078) | Date Picker | CSS border for slotted actions in dialog mode |
 | [#2068](https://github.com/IgniteUI/igniteui-webcomponents/pull/2068) | Input | Placeholder color on focus |
@@ -78,6 +105,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 | [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028) | Tabs | Selected indicator alignment |
 | [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip | Do not show the tooltip when the tooltip target is clicked |
 | [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | Removed the max-width constraint for slotted content |
+
+
 
 ## **{PackageVerChanges-25-2-DEC}**
 
