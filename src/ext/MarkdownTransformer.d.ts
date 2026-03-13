@@ -4,6 +4,7 @@ export declare class MarkdownTransformer {
     private _platformDetector;
     private _componentDetector;
     private _mappings;
+    private _typeDocResolver;
     private _platform;
     private _envTarget;
     private _envBrowser;
@@ -12,6 +13,7 @@ export declare class MarkdownTransformer {
     shouldOmitFencedCode(language: string, platform: APIPlatform[], components: string[], options: any): boolean;
     private _docs;
     configure(mappings: MappingLoader, platform: APIPlatform, docs: any, envTarget: string): void;
+    private loadTypeDocResolver;
     replaceAll(orgStr: string, oldStr: string, newStr: string): string;
     transformContent(typeName: string, fileContent: string, filePath: string, callback: (err: any, results: {
         content: string;

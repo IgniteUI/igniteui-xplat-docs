@@ -5,6 +5,7 @@ import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './Platf
 import { JsonEx } from './JsonEx';
 import { ComponentDetector } from './ComponentDetector';
 import { transformCodeRefs as transformCodeRefsSimple } from './MarkdownTransformer.simple';
+import { TypeDocApiResolver } from './TypeDocApiResolver';
 import { LOG } from './Logger';
 
 let remark = require(`remark`);
@@ -232,12 +233,42 @@ function pad(num: number, width: number) {
     return str.length >= width ? str : new Array(width - str.length + 1).join('0') + str;
 }
 
+/**
+ * Routes to the correct transformer pass(es) depending on what data is available:
+ *
+ * - No apiMap types  → TypeDoc-only (simple) transformer.
+ *   Handles CSS-part / slot suppression and member-context resolution.
+ * - Only apiMap types → Legacy apiMap transformer.
+ * - Both present     → Simple transformer runs first (TypeDoc + suppression), then
+ *   the legacy transformer processes any remaining `inlineCode` nodes.
+ *   Because the simple transformer converts resolved nodes from `inlineCode` to `link`,
+ *   the legacy visitor skips them automatically.  Charts / gauges / spreadsheet types
+ *   that exist only in apiMap are therefore still resolved correctly.
+ */
 function transformCodeRefs(options: any) {
-    if (!options.mappings?.length) {
-        console.log("No mappings provided, using simple code ref transformer.");
+    const hasApiMapTypes = !!(options.mappings?.mapping?.types?.length);
+
+    if (!hasApiMapTypes) {
+        // Pure TypeDoc path (no apiMap data at all).
         return transformCodeRefsSimple(options);
     }
 
+    if (options.typeDocResolver) {
+        // Both TypeDoc and apiMap data are available.
+        // Chain: TypeDoc pass first, then legacy apiMap pass on remaining nodes.
+        const simplePass = transformCodeRefsSimple(options);
+        const legacyPass = transformCodeRefsLegacy(options);
+        return function (tree: any) {
+            simplePass(tree);
+            legacyPass(tree);
+        };
+    }
+
+    // Only apiMap data available.
+    return transformCodeRefsLegacy(options);
+}
+
+function transformCodeRefsLegacy(options: any) {
     function transformRef(node: any, index: number, parent: any) {
         let memberName = node.value;
         if (memberName == "") {
@@ -511,7 +542,7 @@ function transformCodeRefs(options: any) {
     return function (tree: any) {
         visit(tree, 'inlineCode', transformRef)
     }
-}
+}  // end transformCodeRefsLegacy
 
 function getFrontMatterTypes(options: any, filePath: string) {
 
@@ -1484,6 +1515,7 @@ export class MarkdownTransformer {
     private _platformDetector: PlatformDetector | undefined;
     private _componentDetector: ComponentDetector | undefined;
     private _mappings: MappingLoader | undefined;
+    private _typeDocResolver: TypeDocApiResolver | undefined;
     private _platform: APIPlatform | undefined;
     private _envTarget: string = "development";
     private _envBrowser: string = "";
@@ -1565,6 +1597,9 @@ export class MarkdownTransformer {
         this._docs = docs;
         this._envTarget = envTarget; // development || staging || production
 
+        // Load TypeDoc JSON if available for this platform
+        this._typeDocResolver = this.loadTypeDocResolver(platform);
+
         if (this.docsVerifier === undefined)
             this.docsVerifier = new MarkdownVerifier();
 
@@ -1582,6 +1617,37 @@ export class MarkdownTransformer {
 
         let platformName = APIPlatform[platform].toString();
         LOG.info('called transformer with config: platform="' + platformName + '", environment="' + this._envTarget + '", browser=' + this._envBrowser);
+        if (this._typeDocResolver) {
+            LOG.info('TypeDoc resolver loaded with ' + this._typeDocResolver.typeCount + ' types');
+        }
+    }
+
+    private loadTypeDocResolver(platform: APIPlatform): TypeDocApiResolver | undefined {
+        const platformName = APIPlatform[platform].toString();
+        const path = require('path');
+        const fs = require('fs');
+
+        // Look for TypeDoc JSON files in the apiMap folder for this platform
+        const apiMapDir = path.resolve(__dirname, '../../apiMap/' + platformName);
+        if (!fs.existsSync(apiMapDir)) return undefined;
+
+        const files: string[] = fs.readdirSync(apiMapDir)
+            .filter((f: string) => f.endsWith('.json') && !f.endsWith('.apiMap.json') && !f.endsWith('.overrides.json'));
+
+        if (files.length === 0) return undefined;
+
+        const resolver = new TypeDocApiResolver(platformName as any);
+        for (const file of files) {
+            const filePath = path.join(apiMapDir, file);
+            try {
+                resolver.load(filePath);
+                LOG.info('Loaded TypeDoc JSON: ' + filePath);
+            } catch (e: any) {
+                LOG.warn('Failed to load TypeDoc JSON: ' + filePath + ' - ' + e.message);
+            }
+        }
+
+        return resolver.typeCount > 0 ? resolver : undefined;
     }
 
     replaceAll(orgStr: string, oldStr: string, newStr: string): string {
@@ -1622,6 +1688,7 @@ export class MarkdownTransformer {
             toDelete: deleteMap,
             platformDetector: this._platformDetector,
             componentDetector: this._componentDetector,
+            typeDocResolver: this._typeDocResolver,
             docs: this._docs,
             platformSpinalSuffix: null as string | null,
             platformPascalSuffix: null as string | null,

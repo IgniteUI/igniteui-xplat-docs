@@ -205,7 +205,7 @@ constructor() {
 
 The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.
 
-The `@api:Grid.AutoGenerate` property tells the grid to auto generate the grid's `@api:Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
+The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
 <!-- Angular -->
 
