@@ -20,6 +20,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Grids)
 
+#### IgbQueryBuilder
+- Added new component - IgbQueryBuilder - a UI component that allows users to build complex filtering conditions through an intuitive visual interface.
+
 #### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
   - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
 
