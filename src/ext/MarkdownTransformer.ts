@@ -347,6 +347,35 @@ function transformCodeRefsLegacy(options: any) {
 
         let mappings: MappingLoader = options.mappings;
 
+        // If a bare ref is explicitly declared in front matter as a mentioned type,
+        // resolve it as a type first. This avoids collisions such as `Tree` being
+        // mapped to TreeItem.tree instead of the Tree component.
+        if (!memberHasCharDot && Array.isArray(options.mentionedTypes)) {
+            const mentionedTypeMatch = options.mentionedTypes.some((t: string) =>
+                typeof t === 'string' && t.toLowerCase() === memberName.toLowerCase());
+
+            if (mentionedTypeMatch) {
+                const mentionedTypeResolved = mappings.getPlatformTypeName(
+                    <string>memberName,
+                    <APIPlatform>options.platform,
+                    options.filePath);
+
+                if (mentionedTypeResolved !== null) {
+                    isTypeName = true;
+                    apiTypeName = memberName;
+                    options.typeName = memberName;
+
+                    if (createLink) {
+                        const typeLink = getApiLink(apiDocRoot, apiTypeName!, null, options);
+                        if (typeLink) {
+                            parent.children.splice(index, 1, typeLink);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
         let resolvedName = mappings.getPlatformMemberName(
             <string>options.typeName,
             <APIPlatform>options.platform,
@@ -542,7 +571,7 @@ function transformCodeRefsLegacy(options: any) {
     return function (tree: any) {
         visit(tree, 'inlineCode', transformRef)
     }
-}  // end transformCodeRefsLegacy
+}
 
 function getFrontMatterTypes(options: any, filePath: string) {
 

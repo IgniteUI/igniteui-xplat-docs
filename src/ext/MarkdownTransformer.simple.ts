@@ -56,6 +56,22 @@ function transformCodeRefs(options: any) {
         return /^\|/.test(text) && /\n\|(?:\s*:?[-]+:?[\s|]*)+\n?/m.test(text);
     }
 
+    function findNearestHeadingText(parent: any, beforeIndex: number): string {
+        if (!parent || !Array.isArray(parent.children) || typeof beforeIndex !== 'number') return '';
+        for (let i = beforeIndex - 1; i >= 0; i--) {
+            const sibling = parent.children[i];
+            if (sibling?.type === 'heading') {
+                return getNodeText(sibling);
+            }
+        }
+        return '';
+    }
+
+    function isSlotOrPartHeading(text: string): boolean {
+        const normalized = text.toLowerCase();
+        return /\bslots?\b|\bparts?\b|css\s+parts?/.test(normalized);
+    }
+
     function markSkippedInlineCode(tree: any) {
         function walk(node: any, parent?: any, index?: number) {
             if (!node) return;
@@ -67,6 +83,21 @@ function transformCodeRefs(options: any) {
                 const tableText = getNodeText(node);
 
                 if (isSlotOrCssPartContextText(tableText) || isSlotOrCssPartContextText(previousSiblingText)) {
+                    for (const inlineNode of collectInlineCodeNodes(node)) {
+                        if (looksLikeUiPartOrSlotName(inlineNode.value)) {
+                            skippedNodes.add(inlineNode);
+                        }
+                    }
+                }
+            } else if (node.type === 'list') {
+                // Flag inline code in lists that appear under a Slots or CSS Parts section.
+                // Check the previous sibling text first (e.g. an intro paragraph that says "several slots"),
+                // then fall back to scanning for the nearest heading in the same parent.
+                const inSlotOrPartContext =
+                    isSlotOrCssPartContextText(previousSiblingText) ||
+                    isSlotOrPartHeading(findNearestHeadingText(parent, index ?? 0));
+
+                if (inSlotOrPartContext) {
                     for (const inlineNode of collectInlineCodeNodes(node)) {
                         if (looksLikeUiPartOrSlotName(inlineNode.value)) {
                             skippedNodes.add(inlineNode);
@@ -136,16 +167,24 @@ function transformCodeRefs(options: any) {
 
         if (!typeDocResolver) return;
 
+        const mentionedTypeNames = Array.isArray(options.mentionedTypes)
+            ? options.mentionedTypes.filter((t: any) => typeof t === 'string').map((t: string) => t.toLowerCase())
+            : [];
+
         let result = null;
 
-        // For bare member names (e.g. `Label`, `selection`) prefer resolving against
-        // front-matter context (`mentionedTypes`) and current type context before
-        // falling back to type names. This avoids collisions such as `Select`
-        // linking to the `IgrSelect` component instead of the current type's
-        // `select` member.
+        // Prefer context type members for bare refs, e.g. `Select` on
+        // DateRangePicker should resolve to a member, not IgrSelect type.
         if (value.indexOf('.') < 0) {
+            // If a ref is declared as a mentioned type for the topic, treat it as
+            // a component/type name first to avoid matching similarly named members
+            // on context types (e.g. `Tree` -> TreeItem.tree).
+            if (mentionedTypeNames.indexOf(value.toLowerCase()) >= 0 && typeDocResolver.hasType(value)) {
+                result = typeDocResolver.resolveApiLink(value);
+            }
+
             const contextTypes = getContextTypes();
-            if (contextTypes.length > 0) {
+            if (!result && contextTypes.length > 0) {
                 result = typeDocResolver.resolveMemberLink(value, contextTypes);
             }
         }
@@ -153,7 +192,6 @@ function transformCodeRefs(options: any) {
         if (!result) {
             result = typeDocResolver.resolveApiLink(value);
         }
-
         if (!result) return;
 
         const link = {

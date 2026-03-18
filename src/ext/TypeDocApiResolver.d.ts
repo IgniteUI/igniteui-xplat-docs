@@ -14,12 +14,25 @@ export interface TypeDocTypeInfo {
 export interface TypeDocMemberInfo {
     name: string;
     kind: MemberCategory;
+    typeName?: string;
 }
 interface TypeDocNode {
+    id: number;
     name: string;
     kind: number;
+    variant?: string;
     packageName?: string;
+    flags?: Record<string, boolean>;
     children?: TypeDocNode[];
+    signatures?: TypeDocNode[];
+    comment?: any;
+    type?: any;
+    sources?: {
+        fileName: string;
+        line: number;
+        character: number;
+    }[];
+    parameters?: TypeDocNode[];
 }
 export declare class TypeDocApiResolver {
     private platform;
@@ -34,6 +47,9 @@ export declare class TypeDocApiResolver {
     constructor(platform: Platform);
     /**
      * Loads and parses a TypeDoc JSON file, populating the lookup maps.
+     * The module name is taken from the root node's `packageName` field when present
+     * (e.g. "igniteui-dockmanager"), falling back to the filename stem so that
+     * packageOverrides keys are matched correctly.
      */
     load(jsonPath: string): void;
     /**
@@ -56,13 +72,8 @@ export declare class TypeDocApiResolver {
         displayText: string;
     } | null;
     /**
-     * Resolves a bare member name using one or more context types.
-     *
-     * Example:
-     *   memberName: "label"
-     *   contextTypes: ["TreeItem", "Tree"]
-     *
-     * Returns the first matching member link or null.
+     * Resolves a bare member name (e.g. `selection`) against context types
+     * from front matter (`mentionedTypes`) and current file type.
      */
     resolveMemberLink(memberName: string, contextTypes: string[]): {
         url: string;
@@ -77,27 +88,16 @@ export declare class TypeDocApiResolver {
      */
     getType(name: string): TypeDocTypeInfo | null;
     private findType;
-    private buildUrl;
-    /**
-     * Builds the filename prefix for the type in a TypeDoc URL.
-     *
-     * When `typeDocFilenameUseModulePrefix` is true (e.g. React), every type filename
-     * is prefixed with the module name using hyphens:
-     *   "igniteui-react"       → "igniteui-react."
-     *   "igniteui-react-grids" → "igniteui-react-grids."
-     *
-     * Otherwise (e.g. WebComponents) the legacy behaviour is used:
-     *   core module            → "" (no prefix)
-     *   sub-package            → "igniteui_webcomponents_grids." (underscore-joined)
-     */
-    private buildFilenamePrefix;
     private findMember;
-    private getLegacyPackagePrefix;
+    private buildUrl;
+    private buildMemberAnchor;
+    private getPackagePrefix;
     private parseProject;
     private parseType;
     private stripPlatformAffixes;
     private classifyType;
     private classifyMember;
+    private resolveTypeName;
 }
 export {};
 //# sourceMappingURL=TypeDocApiResolver.d.ts.map

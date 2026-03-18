@@ -3,7 +3,7 @@ title: {Platform} Select Component – {ProductName}
 _description: {ProductName} Select component
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Select components, {Platform} Select controls
 _license: MIT
-mentionedTypes: ["Select"]
+mentionedTypes: ["Select", "SelectItem"]
 ---
 
 # {Platform} Select

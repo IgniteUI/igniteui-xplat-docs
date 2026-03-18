@@ -7,8 +7,8 @@ dist
 dist_BK
 src/**/*.js
 src/**/*.js.map
-test/**/*.js
-test/**/*.js.map
+src/**/*.d.ts
+src/**/*.d.ts.map
 
 doc/**/obsolete
 

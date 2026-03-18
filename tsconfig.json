@@ -56,9 +56,6 @@
       // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
       "resolveJsonModule": true,
       "moduleResolution": "node",
-      "declaration": true,
-      "declarationMap": true,
-      "types": ["node"]
     },
     "exclude": [
       "node_modules",

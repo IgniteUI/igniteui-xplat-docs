@@ -7,10 +7,16 @@ const KIND = {
     MODULE: 2,
     ENUM: 8,
     ENUM_MEMBER: 16,
+    VARIABLE: 32,
+    FUNCTION: 64,
     CLASS: 128,
     INTERFACE: 256,
+    CONSTRUCTOR: 512,
     PROPERTY: 1024,
     METHOD: 2048,
+    CALL_SIGNATURE: 4096,
+    PARAMETER: 32768,
+    TYPE_LITERAL: 65536,
     GET_SIGNATURE: 262144,
     REFERENCE: 1048576,
     TYPE_ALIAS: 2097152,
@@ -33,13 +39,22 @@ export interface TypeDocTypeInfo {
 export interface TypeDocMemberInfo {
     name: string;
     kind: MemberCategory;
+    typeName?: string;
 }
 
 interface TypeDocNode {
+    id: number;
     name: string;
     kind: number;
+    variant?: string;
     packageName?: string;
+    flags?: Record<string, boolean>;
     children?: TypeDocNode[];
+    signatures?: TypeDocNode[];
+    comment?: any;
+    type?: any;
+    sources?: { fileName: string; line: number; character: number }[];
+    parameters?: TypeDocNode[];
 }
 
 export class TypeDocApiResolver {
@@ -63,10 +78,16 @@ export class TypeDocApiResolver {
 
     /**
      * Loads and parses a TypeDoc JSON file, populating the lookup maps.
+     * The module name is taken from the root node's `packageName` field when present
+     * (e.g. "igniteui-dockmanager"), falling back to the filename stem so that
+     * packageOverrides keys are matched correctly.
      */
     load(jsonPath: string): void {
+        const path = require('path');
         const raw = JSON.parse(fs.readFileSync(jsonPath, 'utf8')) as TypeDocNode;
-        this.parseProject(raw);
+        const fileBasedModule = path.basename(jsonPath, '.json') as string;
+        const rootModule = raw.packageName ?? fileBasedModule;
+        this.parseProject(raw, rootModule);
     }
 
     /**
@@ -107,11 +128,12 @@ export class TypeDocApiResolver {
 
         // Validate member if specified
         if (memberName) {
-            const member = this.findMember(typeInfo, memberName);
+            const member = typeInfo.members.get(memberName) ??
+                           typeInfo.members.get(memberName.toLowerCase());
             // Even if member not found in our data, still create the link
             // (the type is known, member might be inherited)
             const resolvedMember = member?.name ?? memberName;
-            const url = this.buildUrl(typeInfo) + '#' + resolvedMember;
+            const url = this.buildUrl(typeInfo) + '#' + this.buildMemberAnchor(typeInfo.module, resolvedMember);
             return { url, displayText: resolvedMember };
         }
 
@@ -120,13 +142,8 @@ export class TypeDocApiResolver {
     }
 
     /**
-     * Resolves a bare member name using one or more context types.
-     *
-     * Example:
-     *   memberName: "label"
-     *   contextTypes: ["TreeItem", "Tree"]
-     *
-     * Returns the first matching member link or null.
+     * Resolves a bare member name (e.g. `selection`) against context types
+     * from front matter (`mentionedTypes`) and current file type.
      */
     resolveMemberLink(memberName: string, contextTypes: string[]): { url: string; displayText: string } | null {
         if (!memberName || !contextTypes || contextTypes.length === 0) {
@@ -141,7 +158,7 @@ export class TypeDocApiResolver {
             if (!member) continue;
 
             const resolvedMember = member.name;
-            const url = this.buildUrl(typeInfo) + '#' + resolvedMember;
+            const url = this.buildUrl(typeInfo) + '#' + this.buildMemberAnchor(typeInfo.module, resolvedMember);
             return { url, displayText: resolvedMember };
         }
 
@@ -193,37 +210,12 @@ export class TypeDocApiResolver {
         return null;
     }
 
-    private buildUrl(typeInfo: TypeDocTypeInfo): string {
-        const categoryPath = this.typePatterns[typeInfo.kind] ?? 'classes/';
-        const apiRoot = this.config.typeDocApiRoot ?? this.config.apiRoot;
-        const filePrefix = this.buildFilenamePrefix(typeInfo.module);
-        return `${apiRoot}${categoryPath}${filePrefix}${typeInfo.name.toLowerCase()}.html`;
-    }
-
-    /**
-     * Builds the filename prefix for the type in a TypeDoc URL.
-     *
-     * When `typeDocFilenameUseModulePrefix` is true (e.g. React), every type filename
-     * is prefixed with the module name using hyphens:
-     *   "igniteui-react"       → "igniteui-react."
-     *   "igniteui-react-grids" → "igniteui-react-grids."
-     *
-     * Otherwise (e.g. WebComponents) the legacy behaviour is used:
-     *   core module            → "" (no prefix)
-     *   sub-package            → "igniteui_webcomponents_grids." (underscore-joined)
-     */
-    private buildFilenamePrefix(moduleName: string): string {
-        if (this.config.typeDocFilenameUseModulePrefix) {
-            return moduleName + '.';
-        }
-        return this.getLegacyPackagePrefix(moduleName);
-    }
-
     private findMember(typeInfo: TypeDocTypeInfo, memberName: string): TypeDocMemberInfo | null {
         const exact = typeInfo.members.get(memberName);
         if (exact) return exact;
 
         const lower = memberName.toLowerCase();
+
         const loweredKey = typeInfo.members.get(lower);
         if (loweredKey) return loweredKey;
 
@@ -236,9 +228,37 @@ export class TypeDocApiResolver {
         return null;
     }
 
-    private getLegacyPackagePrefix(moduleName: string): string {
-        // Legacy apiMap-style prefix (used when typeDocFilenameUseModulePrefix is false/unset).
-        // Core module → no prefix; sub-packages → underscore-joined prefix.
+    private buildUrl(typeInfo: TypeDocTypeInfo): string {
+        const categoryPath = this.typePatterns[typeInfo.kind] ?? 'classes/';
+
+        // If a packageOverride exists for this module (e.g. igniteui-dockmanager),
+        // use its apiRoot directly and skip any typeDocApiRoot.
+        const override = this.config.packageOverrides?.[typeInfo.module];
+        const baseApiRoot = override?.apiRoot ?? this.config.typeDocApiRoot ?? this.config.apiRoot;
+
+        // When an override provides its own root it already points to that package's
+        // docs, so no package-name prefix is needed in the path.
+        const packagePrefix = override?.apiRoot ? '' : this.getPackagePrefix(typeInfo.module);
+
+        // When typeDocFilenameUseModulePrefix is set the TypeDoc site uses filenames
+        // like "igniteui-react.igraccordion.html" instead of "igraccordion.html".
+        const modulePrefix = this.config.typeDocFilenameUseModulePrefix && !override?.apiRoot
+            ? typeInfo.module + '.'
+            : '';
+
+        return `${baseApiRoot}${categoryPath}${packagePrefix}${modulePrefix}${typeInfo.name.toLowerCase()}.html`;
+    }
+
+    private buildMemberAnchor(moduleName: string, memberName: string): string {
+        const override = this.config.packageOverrides?.[moduleName];
+        const preserve = override?.preserveMemberCasing ?? this.config.preserveMemberCasing ?? false;
+        return preserve ? memberName : memberName.toLowerCase();
+    }
+
+    private getPackagePrefix(moduleName: string): string {
+        // The module name from TypeDoc (e.g. "igniteui-react-grids") maps to a URL prefix.
+        // Core module (igniteui-react / igniteui-webcomponents) → no prefix
+        // Sub-packages get a prefix like "igniteui_react_grids."
         const platformLower = this.platform.toLowerCase();
         const join = this.config.packageJoin ?? '_';
 
@@ -253,33 +273,34 @@ export class TypeDocApiResolver {
         return moduleName.replace(/-/g, join) + '.';
     }
 
-    private parseProject(root: TypeDocNode): void {
-        const children = root.children ?? [];
-        const modules = children.filter((child) => child.kind === KIND.MODULE);
+    private parseProject(root: TypeDocNode, defaultModuleName?: string): void {
+        // Some TypeDoc outputs emit declarations under module nodes, while others
+        // place declarations directly under the project root. Traverse recursively
+        // so we can collect types in either shape.
+        if (!defaultModuleName) {
+            defaultModuleName = `igniteui-${this.platform.toLowerCase()}`;
+        }
 
-        // Newer TypeDoc outputs can either:
-        // 1) group declarations under module nodes (kind === MODULE), or
-        // 2) emit declarations directly under the project root.
-        if (modules.length > 0) {
-            for (const module of modules) {
-                // Skip the "typescript" built-in module
-                if (module.name === 'typescript') continue;
-
-                const moduleName = module.name;
-
-                for (const typeNode of module.children ?? []) {
-                    this.parseType(typeNode, moduleName);
+        const walk = (node: TypeDocNode, currentModuleName: string) => {
+            let moduleName = currentModuleName;
+            if (node.kind === KIND.MODULE) {
+                // Skip the "typescript" built-in module.
+                if (node.name === 'typescript') {
+                    return;
                 }
+                moduleName = node.name;
             }
-            return;
-        }
 
-        // Flat project-root fallback (e.g. igniteui-webcomponents.json).
-        // Use root packageName when present to keep URL prefix behavior consistent.
-        const fallbackModuleName = root.packageName ?? `igniteui-${this.platform.toLowerCase()}`;
-        for (const typeNode of children) {
-            this.parseType(typeNode, fallbackModuleName);
-        }
+            if (this.classifyType(node.kind)) {
+                this.parseType(node, moduleName);
+            }
+
+            for (const child of node.children ?? []) {
+                walk(child, moduleName);
+            }
+        };
+
+        walk(root, defaultModuleName);
     }
 
     private parseType(node: TypeDocNode, moduleName: string): void {
@@ -296,6 +317,7 @@ export class TypeDocApiResolver {
             members.set(child.name, {
                 name: child.name,
                 kind: memberKind,
+                typeName: this.resolveTypeName(child.type),
             });
         }
 
@@ -358,4 +380,19 @@ export class TypeDocApiResolver {
         }
     }
 
+    private resolveTypeName(type: any): string | undefined {
+        if (!type) return undefined;
+        if (type.type === 'intrinsic') return type.name;
+        if (type.type === 'literal') return String(type.value);
+        if (type.type === 'reference') return type.name;
+        if (type.type === 'union') {
+            return type.types?.map((t: any) => this.resolveTypeName(t)).filter(Boolean).join(' | ');
+        }
+        if (type.type === 'array') {
+            const el = this.resolveTypeName(type.elementType);
+            return el ? el + '[]' : undefined;
+        }
+        if (type.type === 'reflection') return '(callback)';
+        return undefined;
+    }
 }

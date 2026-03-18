@@ -7,7 +7,8 @@
       "packageJoin": "_",
       "packageOverrides": {
         "igniteui-dockmanager": {
-          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/",
+          "preserveMemberCasing": true
         }
       }
     },
@@ -16,6 +17,7 @@
       "suffix": "",
       "apiRoot": "https://www.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/",
       "typeDocApiRoot": "https://www.infragistics.com/products/ignite-ui-react/docs/typescript/latest/",
+      "preserveMemberCasing": true,
       "typeDocFilenameUseModulePrefix": true,
       "packageJoin": "_",
       "packageOverrides": {
@@ -35,7 +37,8 @@
       "packageJoin": "_",
       "packageOverrides": {
         "igniteui-dockmanager": {
-          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+          "apiRoot": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/",
+          "preserveMemberCasing": true
         }
       }
     },
@@ -44,29 +47,6 @@
       "suffix": "",
       "apiRoot": "https://www.infragistics.com/blazor-apps/blazor-api/api/",
       "packageJoin": "."
-    }
-  },
-  "componentPackageMap": {
-    "DockManager": "igniteui-dockmanager",
-    "CheckboxList": "igniteui-data-grids",
-    "Grid": "igniteui-webgrids",
-    "HierarchicalGrid": "igniteui-webgrids",
-    "TreeGrid": "igniteui-webgrids",
-    "PivotGrid": "igniteui-webgrids",
-    "CategoryChart": "igniteui-charts",
-    "DataChart": "igniteui-charts",
-    "LinearGauge": "igniteui-gauges",
-    "RadialGauge": "igniteui-gauges",
-    "BulletGraph": "igniteui-gauges",
-    "Spreadsheet": "igniteui-spreadsheet",
-    "GeographicMap": "igniteui-maps"
-  },
-  "componentPlatformAvailability": {
-    "DockManager": {
-      "availableOn": ["React", "WebComponents", "Blazor"],
-      "fallbackByPlatform": {
-        "Angular": "WebComponents"
-      }
     }
   },
   "typePatterns": {

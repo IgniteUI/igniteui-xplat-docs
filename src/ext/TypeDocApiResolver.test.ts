@@ -144,7 +144,7 @@ describe('TypeDocApiResolver', () => {
             const result = resolver.resolveApiLink('List');
             expect(result).not.toBeNull();
             expect(result!.url).toContain('/classes/');
-            expect(result!.url).toContain('igniteui-react.igrlist.html');
+            expect(result!.url).toContain('igrlist.html');
             expect(result!.displayText).toBe('IgrList');
         });
 
@@ -152,28 +152,28 @@ describe('TypeDocApiResolver', () => {
             const result = resolver.resolveApiLink('IgrGrid');
             expect(result).not.toBeNull();
             expect(result!.url).toContain('/classes/');
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html');
+            expect(result!.url).toContain('igrgrid.html');
         });
 
         test('should resolve enum', () => {
             const result = resolver.resolveApiLink('AvatarShape');
             expect(result).not.toBeNull();
             expect(result!.url).toContain('/enums/');
-            expect(result!.url).toContain('igniteui-react.avatarshape.html');
+            expect(result!.url).toContain('avatarshape.html');
         });
 
         test('should resolve interface', () => {
             const result = resolver.resolveApiLink('ChatRenderContext');
             expect(result).not.toBeNull();
             expect(result!.url).toContain('/interfaces/');
-            expect(result!.url).toContain('igniteui-react.chatrendercontext.html');
+            expect(result!.url).toContain('chatrendercontext.html');
         });
 
         test('should resolve type alias', () => {
             const result = resolver.resolveApiLink('ButtonVariant');
             expect(result).not.toBeNull();
             expect(result!.url).toContain('/types/');
-            expect(result!.url).toContain('igniteui-react.buttonvariant.html');
+            expect(result!.url).toContain('buttonvariant.html');
         });
 
         test('should return null for unknown type', () => {
@@ -186,33 +186,33 @@ describe('TypeDocApiResolver', () => {
         test('should resolve type.property', () => {
             const result = resolver.resolveApiLink('List.size');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react.igrlist.html#size');
+            expect(result!.url).toContain('igrlist.html#size');
             expect(result!.displayText).toBe('size');
         });
 
         test('should resolve type.method', () => {
             const result = resolver.resolveApiLink('Grid.selectAllRows');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html#selectAllRows');
+            expect(result!.url).toContain('igrgrid.html#selectallrows');
         });
 
         test('should resolve type.event', () => {
             const result = resolver.resolveApiLink('Grid.onCellClick');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html#onCellClick');
+            expect(result!.url).toContain('igrgrid.html#oncellclick');
         });
 
         test('should resolve platform-prefixed type.member', () => {
             const result = resolver.resolveApiLink('IgrGrid.primaryKey');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html#primaryKey');
+            expect(result!.url).toContain('igrgrid.html#primarykey');
             expect(result!.displayText).toBe('primaryKey');
         });
 
         test('should still link when member not found in data (inherited)', () => {
             const result = resolver.resolveApiLink('List.unknownMember');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react.igrlist.html#unknownMember');
+            expect(result!.url).toContain('igrlist.html#unknownmember');
             expect(result!.displayText).toBe('unknownMember');
         });
 
@@ -220,39 +220,20 @@ describe('TypeDocApiResolver', () => {
             const result = resolver.resolveApiLink('NonExistent.prop');
             expect(result).toBeNull();
         });
-
-        test('should resolve bare member using context types', () => {
-            const result = resolver.resolveMemberLink('size', ['List']);
-            expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react.igrlist.html#size');
-            expect(result!.displayText).toBe('size');
-        });
-
-        test('should resolve bare member using case-insensitive match', () => {
-            const result = resolver.resolveMemberLink('PrimaryKey', ['Grid']);
-            expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html#primaryKey');
-            expect(result!.displayText).toBe('primaryKey');
-        });
-
-        test('should return null for bare member when no context type contains it', () => {
-            const result = resolver.resolveMemberLink('unknownMember', ['List', 'Grid']);
-            expect(result).toBeNull();
-        });
     });
 
     describe('Package prefixes in URL', () => {
-        test('core module types should use module name as filename prefix', () => {
+        test('core module types should have no package prefix', () => {
             const result = resolver.resolveApiLink('IgrList');
             expect(result).not.toBeNull();
-            // Core module is "igniteui-react" → filename prefix "igniteui-react."
-            expect(result!.url).toContain('igniteui-react.igrlist.html');
+            // Should not have "igniteui_react." in the URL
+            expect(result!.url).not.toContain('igniteui_react.');
         });
 
-        test('grids module types should use grids module name as filename prefix', () => {
+        test('grids module types should have package prefix', () => {
             const result = resolver.resolveApiLink('IgrGrid');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igniteui-react-grids.igrgrid.html');
+            expect(result!.url).toContain('igniteui_react_grids.');
         });
     });
 
@@ -292,5 +273,25 @@ describe('TypeDocApiResolver - WebComponents', () => {
         const result = resolver.resolveApiLink('IgcListComponent');
         expect(result).not.toBeNull();
         expect(result!.url).toContain('igclistcomponent.html');
+    });
+});
+
+describe('TypeDocApiResolver - project-root declarations', () => {
+    test('should load declarations directly under project root', () => {
+        const resolver = new TypeDocApiResolver('WebComponents');
+        const wcRootDeclarations = makeTypeDocJson([
+            makeClass(100, 'IgcListComponent', [
+                makeProperty(101, 'size'),
+            ]),
+            makeEnum(200, 'DatePart', [
+                makeEnumMember(201, 'Year', 'year'),
+            ]),
+        ]);
+
+        resolver.loadFromObject(wcRootDeclarations as any);
+
+        expect(resolver.typeCount).toBe(2);
+        expect(resolver.resolveApiLink('List')?.url).toContain('igclistcomponent.html');
+        expect(resolver.resolveApiLink('DatePart')?.url).toContain('/enums/datepart.html');
     });
 });
