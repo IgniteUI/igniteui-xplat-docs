@@ -1,5 +1,22 @@
 [
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "AI-Assisted Development",
+    "header": true
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React"],
+    "name": "{ProductName} Skills",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React"],
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+  {
     "name": "General",
     "header": true
   },
@@ -25,6 +42,12 @@
     "name": "Getting Started",
     "href": "general-getting-started.md",
     "status": ""
+  },
+  {
+    "exclude": ["Blazor", "Angular"],
+    "name": "Localization(i18n)",
+    "href": "localization.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -62,7 +85,6 @@
         "status": ""
       },
       {
-
         "name": "Open-Source Libraries",
         "href": "general-getting-started-oss.md",
         "status": "NEW"
@@ -261,9 +283,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -533,9 +556,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -801,9 +825,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -2145,6 +2170,12 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+    {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Query Builder",
+    "href": "inputs/query-builder.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular"],

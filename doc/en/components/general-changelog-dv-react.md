@@ -17,6 +17,100 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
+| 3055 | IgrDataPieChart | missing styling properties for the Others Slice |
+| 38668 | IgrDataTooltipLayer | TitleTextColor is overriden when chart's TitleTextColor is used |
+| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
+| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+| 41594 | IgrDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
+
+## **{PackageVerChanges-26-2-FEB}**
+### {PackageCommon}
+
+#### New Features
+
+- #### AI-Assisted Development - Copilot Skills
+  - Four end-user skills are now shipped with the `{PackageCommon}` package under the `skills/` directory providing step-by-step guidance to GitHub Copilot and other LLM agents for common tasks:
+    - **igniteui-wc-choose-components** - Identify the right component for a given UI pattern.
+    - **igniteui-wc-integrate-with-framework** - Set up and use components in React, Angular, Vue, or vanilla JS.
+    - **igniteui-wc-customize-component-theme** - Apply custom styles via CSS custom properties, parts, and the theming system.
+    - **igniteui-wc-optimize-bundle-size** - Reduce production bundle size through selective imports and lazy loading.
+- #### Chat
+  - `adoptRootStyles` can now be toggled on/off at runtime.
+
+
+#### Breaking Changes
+
+- #### Themes
+  - Changed global prefixes for CSS custom properties for component themes to align with other Ignite UI component libraries.
+
+- #### Chat
+  - Removed the `typingIndicator` template renderer. Use the `typing-indicator` slot instead.
+
+- #### Tooltip
+  - Removed the `disableArrow` deprecated property.
+
+- #### Library
+  - Minimum Node version required is now >= 22.
+
+  #### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Context instantiation in Blazor|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|Correct cursor style over non input parts|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|Correct cursor style over non input parts|
+
+### {PackageGrids} (Grids)
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+**Breaking Changes**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
+
+**Localization(i18n)**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`, `IgrCombo`, `IgrDatePicker`, `IgrDateRangePicker`, `IgrCalendar`, `IgrCarousel`, `IgrChip`, `IgrInput`, `IgrTree`
+  - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgrCalendar`, `IgrDatePicker`, and `IgrDateRangePicker`.
+  - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
+  - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
+
+**PDF export**
+- Added PDF export functionality allowing users to export grid data to PDF format.
+
+**Popover API**
+
+- Dropdown menus and dialogs are now using HTML Popover API to provide better positioning and accessibility.
+
+## **{PackageVerChanges-25-2-FEB}**
+
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|2270|IgrDataChart|Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis |
+|2251|igniteui-react-layouts|Skip resolving property editor props containing @constantValues |
+|2353|IgrDataChart|syntax error while building infragistics.dvcommonwidget.js |
+|2354|IgrDataChart|infragistics.dvcommonwidget.js has "unser" typo instead of "unset" in case names |
+|2338|IgrDataPieChart|SeriesPointerMove event doesn't fire correctly when StartAngle is set |
+|2235|Excel|Workbook.Load() throwing a Excel.FormulaParseException. |
+|2234|IgrRadialChart|Added a check for bucket size equals to 0 |
+|2234|IgrDataChart|fix GetCategoryIndexAxis() for annotation layers |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
 |33808|IgrDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
 |34255|IgrDataChart|0.00001 scale tick marks are displayed overlapping each other|
 |38510|IgrDataChart|AssigningCategoryStyle event support for Stacked Series|

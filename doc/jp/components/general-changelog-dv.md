@@ -18,6 +18,18 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### 機能拡張
+
+### {PackageCharts}
+
+DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加しました。
+
+### 一般
+
+- Angular 21 のサポート。
+
+## **{PackageVerChanges-25-2-DEC}**
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |

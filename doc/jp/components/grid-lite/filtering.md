@@ -11,71 +11,78 @@ _language: ja
 # {Platform} {GridLiteTitle} フィルター操作
 
 <!-- React, WebComponents -->
-{GridLiteTitle} は、データ ソースでのフィルター操作をサポートします。データ フィルタリングは列ごとに制御されるため、フィルタリング可能な列とフィルタリング不可能な列を設定できます。デフォルトでは、列構成オブジェクトの `filter` プロパティで明示的に構成されない限り、列のフィルタリングは無効になっています。
+{GridLiteTitle} は、データ ソースでのフィルター操作をサポートします。データ フィルタリングは列ごとに制御されるため、フィルタリング可能な列とフィルタリング不可能な列を設定できます。デフォルトでは、列の `filterable` プロパティで明示的に構成されない限り、列のフィルタリングは無効になっています。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-{GridLiteTitle} は、データ ソースでのフィルター操作をサポートします。データ フィルタリングは列ごとに制御されるため、フィルタリング可能な列とフィルタリング不可能な列を設定できます。デフォルトでは、列構成オブジェクトの `Filter` プロパティで明示的に構成されない限り、列のフィルタリングは無効になっています。
+{GridLiteTitle} は、データ ソースでのフィルター操作をサポートします。データ フィルタリングは列ごとに制御されるため、フィルタリング可能な列とフィルタリング不可能な列を設定できます。デフォルトでは、列の `Filterable` プロパティで明示的に構成されない限り、列のフィルタリングは無効になっています。
 <!-- end: Blazor -->
 
-```typescript
-{
-  key: 'price',
-  filter: true
-}
+<!-- WebComponents -->
+```html
+<igc-grid-lite .data=${data}>
+  <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
+</igc-grid-lite>
+```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column field="price" filterable></igc-grid-lite-column>
+  </igc-grid-lite>
+);
 ```
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "LastName",
-    Filter = true
-}
+<IgbGridLite Data="@data">
+    <IgbGridLiteColumn Field="LastName" Filterable="true" />
+</IgbGridLite>
 ```
 
 <!-- React, WebComponents -->
-`filter` プロパティは、単純なブール値、または追加の構成オプションを公開する `ColumnFilterConfiguration` オブジェクトのいずれかになります。
-
+`filteringCaseSensitive` プロパティまたは `filtering-case-sensitive` 属性を使用して、文字列列のフィルター操作で大文字と小文字を区別するかどうかを制御することもできます:
 <!-- end: React, WebComponents -->
-<!-- Blazor -->
-`Filter` プロパティは、単純なブール値、または追加の構成オプションを公開する `IgbColumnFilterConfiguration` オブジェクトのいずれかになります。
 
-<!-- end: Blazor -->
-
-```typescript
-{
-  key: 'price',
-  filter: {
-    /**
-     * string データ タイプの場合、この列のフィルター操作で大文字と小文字を区別するかどうかを制御します。
-     * 既定では、string タイプのフィルター操作は大文字と小文字を区別しません。
-     */
-    caseSensitive: true;
-  }
-}
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column 
+  field="price" 
+  filterable
+  filtering-case-sensitive
+></igc-grid-lite-column>
 ```
+<!-- end: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite data={data}>
+    <igc-grid-lite-column 
+      field="price" 
+      filterable
+      filtering-case-sensitive
+    ></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
+<!-- Blazor -->
+`FilteringCaseSensitive` パラメーターを使用して、文字列列のフィルター操作で大文字と小文字を区別するかどうかを制御することもできます:
 
 ```razor
-new IgbColumnConfiguration
-{
-    Key = "FirstName",
-    Filter = new IgbColumnFilterConfiguration
-    {
-        /**
-        * string データ タイプの場合、この列のフィルター操作で大文字と小文字を区別するかどうかを制御します。
-        * 既定では、string タイプのフィルター操作は大文字と小文字を区別しません。
-        */
-        CaseSensitive = true
-    }
-},
+<IgbGridLiteColumn 
+    Field="FirstName" 
+    Filterable="true"
+    FilteringCaseSensitive="true" />
 ```
+<!-- end: Blazor -->
 
 `sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} フィルタリング構成"`
 
 ## フィルター モデル
 
 <!-- React, WebComponents -->
-グリッド内のフィルター操作の構成要素は、次の構造を持つ `FilterExpression` です。
+グリッド内のフィルター操作の構成要素は、次の構造を持つ `FilterExpression<T, K>` です。
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
 グリッド内のフィルター操作の構成要素は、次の構造を持つ `IgbGridLiteFilterExpression` です。
@@ -164,16 +171,16 @@ public class IgbGridLiteFilterExpression
 `filter()` メソッドは、単一の式またはフィルター式の配列を受け入れ、それらの式に基づいてグリッド データをフィルターします。
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
-{GridLiteTitle} は、API からフィルター操作を適用する 2 つの方法を提供します。`GridLite.Filter()`/`GridLite.ClearFilter())`メソッドまたは `Grid.Lite.FilterExpressions` プロパティのいずれかを使用します。
+{GridLiteTitle} は、API からフィルター操作を適用する 2 つの方法を提供します。`GridLite.Filter()`/`GridLite.ClearFilter()`メソッドまたは `Grid.Lite.FilterExpressions` プロパティのいずれかを使用します。
 
 `Filter()` メソッドは、単一の式またはフィルター式の配列を受け入れ、それらの式に基づいてグリッド データをフィルターします。
 <!-- end: Blazor -->
 
 ```typescript
-// Single
+// 単一
 grid.filter({ key: 'firstName', condition: 'contains', searchTerm: 'George' });
 
-// Multiple
+// 複数
 grid.filter([
   { key: 'firstName', condition: 'startsWith', searchTerm: 'a' },
   { key: 'firstName', condition: 'startsWith' searchTerm: 'g', criteria: 'or' },
@@ -181,10 +188,10 @@ grid.filter([
 ```
 
 ```razor
-// Single
+// 単一
 await grid.Filter(new IgbGridLiteFilterExpression { Key = "FirstName", Condition = "contains", SearchTerm = "George" });
 
-// Multiple
+// 複数
 await grid.Filter(new IgbGridLiteFilterExpression[]
 {
     new IgbGridLiteFilterExpression { Key = "FirstName", Condition = "startsWith", SearchTerm = "a" },
@@ -358,7 +365,7 @@ public class DataPipelineParams
 ```razor
 grid.DataPipelineConfiguration = new DataPipelineConfiguration
 {
-    Filter = async (params) => 
+    Filter = async (params) =>
     {
         // カスタム フォルター ロジック
         return await Task.FromResult(params.Data);

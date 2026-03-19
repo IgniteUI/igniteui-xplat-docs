@@ -15,8 +15,33 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
-
 ## **{PackageVerLatest}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+| 2189 | IgxDataChart | DataChart skips rendering axis when there are no labels |
+| 3055 | IgxDataPieChart | added missing styling properties for the Others Slice |
+| 38668 | IgxDataTooltipLayer | TitleTextColor is overriden when chart's TitleTextColor is used |
+| 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
+| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
+| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+| 41594 | IgxDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
+
+## **{PackageVerChanges-26-1-JAN}**
+
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
+### General
+
+- Angular 21 support.
+
+## **{PackageVerChanges-25-2-DEC}**
 
 ### Bug Fixes
 
