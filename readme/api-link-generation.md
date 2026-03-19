@@ -255,7 +255,7 @@ URL built by `buildUrl()`:
 
 The module prefix is also suppressed when a `packageOverride` provides its own `apiRoot`.
 
-**Member fragment:**
+**Member fragment (Angular/React/WC):**
 ```
 {url}#{memberName}
 ```
@@ -270,6 +270,30 @@ Member anchor casing is controlled by `preserveMemberCasing` (resolved in priori
 | React | `true` (preserves casing) | inherited from platform |
 | WebComponents | `false` (lowercased) | `true` |
 | Angular | `false` (lowercased) | `true` |
+
+**Member fragment (Blazor):**
+
+Blazor anchors are derived from the member's `uid` field in the DocFX JSON, with dots and parentheses replaced by underscores:
+
+```
+{url}#{uid_with_dots_and_parens_as_underscores}
+```
+
+For example, `IgbSliderBase.Step` with uid `IgniteUI.Blazor.Controls.IgbSliderBase.Step` produces:
+
+```
+#IgniteUI_Blazor_Controls_IgbSliderBase_Step
+```
+
+For parameterized methods like `LoadLayout(String)`, the uid includes the parameter types, which ensures unique anchors:
+
+```
+#IgniteUI_Blazor_Controls_IgbDockManager_LoadLayout_String_
+```
+
+If no uid is available (fallback), the anchor is constructed as `{namespace_with_underscores}_{TypeName}_{memberName}`.
+
+`preserveMemberCasing` does **not** apply to Blazor — the uid is used as-is.
 
 ---
 
@@ -356,14 +380,12 @@ After URL construction, the legacy pass checks whether the resolved type belongs
 
 ## 6. Platform-specific URL rules
 
-| Platform | Prefix | Suffix | apiMap URL pattern |
-|---|---|---|---|
-| Angular | `Igx` | `Component` | `.../ignite-ui-angular/docs/typescript/latest/{category}/{file}.html` |
-| React | `Igr` | `""` | `.../ignite-ui-react/api/docs/typescript/latest/{category}/{file}.html` |
-| React (TypeDoc) | `Igr` | `""` | `.../ignite-ui-react/docs/typescript/latest/{category}/{file}.html` |
-| WebComponents | `Igc` | `Component` | `.../ignite-ui-web-components/api/docs/typescript/latest/{category}/{file}.html` |
-| WebComponents (TypeDoc) | `Igc` | `Component` | `.../ignite-ui-web-components/docs/typescript/latest/{category}/{file}.html` |
-| Blazor | `Igb` | `""` | `.../blazor-apps/blazor-api/api/{BlazorNamespace}.{TypeName}.html` |
+| Platform | Prefix | Suffix | apiRoot (legacy / apiMap) | typeDocApiRoot |
+|---|---|---|---|---|
+| Angular | `Igx` | `Component` | `.../ignite-ui-angular/docs/typescript/latest/` | *(not set — uses apiRoot)* |
+| React | `Igr` | `""` | `.../ignite-ui-react/api/docs/typescript/latest/` | `.../ignite-ui-react/docs/typescript/latest/` |
+| WebComponents | `Igc` | `Component` | `.../ignite-ui-web-components/api/docs/typescript/latest/` | `.../ignite-ui-web-components/docs/typescript/latest/` |
+| Blazor | `Igb` | `""` | `.../blazor/docs/api/api/` | *(not set — uses apiRoot)* |
 
 **Interface detection heuristic** (Angular/React/WC legacy pass): if the resolved type name starts with `I` followed by an uppercase letter, it is assumed to be an interface and the URL uses `interfaces/` instead of `classes/`.
 
