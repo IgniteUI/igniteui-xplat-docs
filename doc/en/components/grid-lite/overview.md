@@ -31,7 +31,7 @@ Our free, open-source {Platform} Grid Lite comes with the following column-based
 To install {GridLiteTitle}, go to the root folder of your project (where `package.json` is located) and run the following command using npm:
 
 ```cmd
-npm install igniteui-grid-lite --save
+npm install igniteui-grid-lite
 ```
 
 Or using yarn:
@@ -45,13 +45,15 @@ yarn add igniteui-grid-lite
 To install {GridLiteTitle}, go to the root folder of your project (where `package.json` is located) and run the following command using npm:
 
 ```cmd
-npm install igniteui-react --save
+npm install igniteui-react
+npm install igniteui-grid-lite
 ```
 
 Or using yarn:
 
 ```cmd
 yarn add igniteui-react
+yarn add igniteui-grid-lite
 ```
 <!-- end: React -->
 
