@@ -45,7 +45,7 @@
     "Blazor": {
       "prefix": "Igb",
       "suffix": "",
-      "apiRoot": "https://www.infragistics.com/blazor-apps/blazor-api/api/",
+      "apiRoot": "https://www.infragistics.com/blazor/docs/api/api/",
       "packageJoin": "."
     }
   },

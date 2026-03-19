@@ -1,6 +1,8 @@
 import * as fs from 'fs';
 import apiConfig from '../../api-config.json';
 import type { ApiConfig, Platform, PlatformConfig } from '../types/api-config.types';
+// Blazor DocFX adapter — remove this import once Blazor ships real TypeDoc JSON
+import { isBlazorDocFxJson, parseBlazorDocFxJson, buildBlazorUrl, buildBlazorMemberHash } from './BlazorDocFxAdapter';
 
 // TypeDoc kind constants
 const KIND = {
@@ -33,13 +35,19 @@ export interface TypeDocTypeInfo {
     kind: TypeCategory;
     /** Module name from TypeDoc, e.g. "igniteui-react" or "igniteui-react-grids" */
     module: string;
+    /** Blazor namespace, e.g. "IgniteUI.Blazor.Controls" */
+    namespace?: string;
     members: Map<string, TypeDocMemberInfo>;
+    /** Base class names (platform-specific) from inheritance metadata */
+    inheritance?: string[];
 }
 
 export interface TypeDocMemberInfo {
     name: string;
     kind: MemberCategory;
     typeName?: string;
+    /** Blazor DocFX uid, used for anchor generation */
+    uid?: string;
 }
 
 interface TypeDocNode {
@@ -84,10 +92,20 @@ export class TypeDocApiResolver {
      */
     load(jsonPath: string): void {
         const path = require('path');
-        const raw = JSON.parse(fs.readFileSync(jsonPath, 'utf8')) as TypeDocNode;
+        const raw = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+
+        // Blazor DocFX adapter — remove this block once Blazor ships real TypeDoc JSON
+        if (isBlazorDocFxJson(raw)) {
+            const entries = parseBlazorDocFxJson(raw, (name) => this.stripPlatformAffixes(name));
+            for (const info of entries) {
+                this.indexType(info);
+            }
+            return;
+        }
+
         const fileBasedModule = path.basename(jsonPath, '.json') as string;
         const rootModule = raw.packageName ?? fileBasedModule;
-        this.parseProject(raw, rootModule);
+        this.parseProject(raw as TypeDocNode, rootModule);
     }
 
     /**
@@ -128,13 +146,32 @@ export class TypeDocApiResolver {
 
         // Validate member if specified
         if (memberName) {
-            const member = typeInfo.members.get(memberName) ??
-                           typeInfo.members.get(memberName.toLowerCase());
-            // Even if member not found in our data, still create the link
-            // (the type is known, member might be inherited)
-            const resolvedMember = member?.name ?? memberName;
-            const url = this.buildUrl(typeInfo) + '#' + this.buildMemberAnchor(typeInfo.module, resolvedMember);
-            return { url, displayText: resolvedMember };
+            const member = this.findMember(typeInfo, memberName);
+            if (member) {
+                const anchor = typeInfo.namespace
+                    ? buildBlazorMemberHash(typeInfo, member.name, member.uid)
+                    : this.buildMemberAnchor(typeInfo.module, member.name);
+                const url = this.buildUrl(typeInfo) + '#' + anchor;
+                return { url, displayText: member.name };
+            }
+
+            // Member not found on direct type — walk the inheritance chain
+            const inherited = this.findMemberInherited(typeInfo, memberName);
+            if (inherited) {
+                const anchor = inherited.ownerType.namespace
+                    ? buildBlazorMemberHash(inherited.ownerType, inherited.member.name, inherited.member.uid)
+                    : this.buildMemberAnchor(inherited.ownerType.module, inherited.member.name);
+                const url = this.buildUrl(inherited.ownerType) + '#' + anchor;
+                return { url, displayText: inherited.member.name };
+            }
+
+            // Even if member not found anywhere, still create the link
+            // (the type is known, member might exist on the page)
+            const anchor = typeInfo.namespace
+                ? buildBlazorMemberHash(typeInfo, memberName)
+                : this.buildMemberAnchor(typeInfo.module, memberName);
+            const url = this.buildUrl(typeInfo) + '#' + anchor;
+            return { url, displayText: memberName };
         }
 
         const url = this.buildUrl(typeInfo);
@@ -154,12 +191,25 @@ export class TypeDocApiResolver {
             const typeInfo = this.findType(contextType);
             if (!typeInfo) continue;
 
+            // Direct member lookup
             const member = this.findMember(typeInfo, memberName);
-            if (!member) continue;
+            if (member) {
+                const anchor = typeInfo.namespace
+                    ? buildBlazorMemberHash(typeInfo, member.name, member.uid)
+                    : this.buildMemberAnchor(typeInfo.module, member.name);
+                const url = this.buildUrl(typeInfo) + '#' + anchor;
+                return { url, displayText: member.name };
+            }
 
-            const resolvedMember = member.name;
-            const url = this.buildUrl(typeInfo) + '#' + this.buildMemberAnchor(typeInfo.module, resolvedMember);
-            return { url, displayText: resolvedMember };
+            // Walk inheritance chain for inherited members
+            const inherited = this.findMemberInherited(typeInfo, memberName);
+            if (inherited) {
+                const anchor = inherited.ownerType.namespace
+                    ? buildBlazorMemberHash(inherited.ownerType, inherited.member.name, inherited.member.uid)
+                    : this.buildMemberAnchor(inherited.ownerType.module, inherited.member.name);
+                const url = this.buildUrl(inherited.ownerType) + '#' + anchor;
+                return { url, displayText: inherited.member.name };
+            }
         }
 
         return null;
@@ -207,6 +257,11 @@ export class TypeDocApiResolver {
         if (this.typesByLowerName.has(lower)) {
             return this.typesByLowerName.get(lower)!;
         }
+        // 6. Namespace-qualified name: "Infragistics.Controls.Layouts.Implementation.ExpansionPanel" → "ExpansionPanel"
+        if (name.indexOf('.') >= 0) {
+            const shortName = name.substring(name.lastIndexOf('.') + 1);
+            return this.findType(shortName);
+        }
         return null;
     }
 
@@ -228,7 +283,36 @@ export class TypeDocApiResolver {
         return null;
     }
 
+    /**
+     * Walks the inheritance chain of a type to find a member defined on a base class.
+     * Returns both the member and the owning type (needed for correct URL generation).
+     */
+    private findMemberInherited(typeInfo: TypeDocTypeInfo, memberName: string): { member: TypeDocMemberInfo; ownerType: TypeDocTypeInfo } | null {
+        if (!typeInfo.inheritance) return null;
+
+        for (const baseName of typeInfo.inheritance) {
+            const baseType = this.findType(baseName);
+            if (!baseType) continue;
+
+            const member = this.findMember(baseType, memberName);
+            if (member) {
+                return { member, ownerType: baseType };
+            }
+
+            // Recurse into the base type's own inheritance chain
+            const deeper = this.findMemberInherited(baseType, memberName);
+            if (deeper) return deeper;
+        }
+
+        return null;
+    }
+
     private buildUrl(typeInfo: TypeDocTypeInfo): string {
+        // Blazor DocFX adapter — remove this block once Blazor ships real TypeDoc JSON
+        if (typeInfo.namespace) {
+            return buildBlazorUrl(this.config.apiRoot, typeInfo);
+        }
+
         const categoryPath = this.typePatterns[typeInfo.kind] ?? 'classes/';
 
         // If a packageOverride exists for this module (e.g. igniteui-dockmanager),
@@ -336,16 +420,21 @@ export class TypeDocApiResolver {
             members,
         };
 
-        this.typesByPlatformName.set(node.name, info);
-        this.typesByLowerName.set(node.name.toLowerCase(), info);
+        this.indexType(info);
+    }
+
+    /** Adds a TypeDocTypeInfo to all lookup maps. */
+    private indexType(info: TypeDocTypeInfo): void {
+        this.typesByPlatformName.set(info.name, info);
+        this.typesByLowerName.set(info.name.toLowerCase(), info);
 
         // Only set generic name if not already taken (first match wins)
-        if (!this.typesByGenericName.has(genericName)) {
-            this.typesByGenericName.set(genericName, info);
+        if (!this.typesByGenericName.has(info.genericName)) {
+            this.typesByGenericName.set(info.genericName, info);
         }
 
         // Also index by lowercase generic name 
-        const genericLower = genericName.toLowerCase();
+        const genericLower = info.genericName.toLowerCase();
         if (!this.typesByLowerName.has(genericLower)) {
             this.typesByLowerName.set(genericLower, info);
         }

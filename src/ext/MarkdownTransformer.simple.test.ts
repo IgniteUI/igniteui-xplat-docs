@@ -204,4 +204,66 @@ describe('MarkdownTransformer.simple', () => {
         expect(tree.children[0].children[1].url).toContain('igniteui-react.igrdaterangepicker.html#select');
         expect(tree.children[0].children[1].url).not.toContain('igniteui-react.igrselect.html');
     });
+
+    test('links known types in API References section', () => {
+        const selectNode = { type: 'inlineCode', value: 'Select' };
+        const avatarNode = { type: 'inlineCode', value: 'Avatar' };
+
+        const tree = {
+            type: 'root',
+            children: [
+                {
+                    type: 'heading',
+                    depth: 2,
+                    children: [{ type: 'text', value: 'API References' }],
+                },
+                {
+                    type: 'list',
+                    ordered: false,
+                    children: [
+                        {
+                            type: 'listItem',
+                            children: [{ type: 'paragraph', children: [selectNode] }],
+                        },
+                        {
+                            type: 'listItem',
+                            children: [{ type: 'paragraph', children: [avatarNode] }],
+                        },
+                    ],
+                },
+            ],
+        };
+
+        runTransform(tree, resolver, { mentionedTypes: ['Avatar'] });
+
+        expect(tree.children[1].children[0].children[0].children[0].type).toBe('link');
+        expect(tree.children[1].children[0].children[0].children[0].url).toContain('igrselect.html');
+        expect(tree.children[1].children[1].children[0].children[0].type).toBe('link');
+        expect(tree.children[1].children[1].children[0].children[0].url).toContain('igravatar.html');
+    });
+
+    test('links known types in prose even when not in mentionedTypes', () => {
+        // Select is a known type but NOT in mentionedTypes — should still link
+        // because the member lookup found no match on context types.
+        const selectNode = { type: 'inlineCode', value: 'Select' };
+
+        const tree = {
+            type: 'root',
+            children: [{
+                type: 'paragraph',
+                children: [
+                    { type: 'text', value: 'The ' },
+                    selectNode,
+                    { type: 'text', value: ' component is useful.' },
+                ],
+            }],
+        };
+
+        // typeName is Avatar (no 'select' member), mentionedTypes does NOT include Select
+        runTransform(tree, resolver, { mentionedTypes: ['Avatar'], typeName: 'Avatar' });
+
+        // Select should be linked — it's a known type and not a member of context types
+        expect(tree.children[0].children[1].type).toBe('link');
+        expect(tree.children[0].children[1].url).toContain('igrselect.html');
+    });
 });

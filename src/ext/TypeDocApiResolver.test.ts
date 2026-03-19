@@ -193,26 +193,26 @@ describe('TypeDocApiResolver', () => {
         test('should resolve type.method', () => {
             const result = resolver.resolveApiLink('Grid.selectAllRows');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igrgrid.html#selectallrows');
+            expect(result!.url).toContain('igrgrid.html#selectAllRows');
         });
 
         test('should resolve type.event', () => {
             const result = resolver.resolveApiLink('Grid.onCellClick');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igrgrid.html#oncellclick');
+            expect(result!.url).toContain('igrgrid.html#onCellClick');
         });
 
         test('should resolve platform-prefixed type.member', () => {
             const result = resolver.resolveApiLink('IgrGrid.primaryKey');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igrgrid.html#primarykey');
+            expect(result!.url).toContain('igrgrid.html#primaryKey');
             expect(result!.displayText).toBe('primaryKey');
         });
 
         test('should still link when member not found in data (inherited)', () => {
             const result = resolver.resolveApiLink('List.unknownMember');
             expect(result).not.toBeNull();
-            expect(result!.url).toContain('igrlist.html#unknownmember');
+            expect(result!.url).toContain('igrlist.html#unknownMember');
             expect(result!.displayText).toBe('unknownMember');
         });
 
@@ -293,5 +293,100 @@ describe('TypeDocApiResolver - project-root declarations', () => {
         expect(resolver.typeCount).toBe(2);
         expect(resolver.resolveApiLink('List')?.url).toContain('igclistcomponent.html');
         expect(resolver.resolveApiLink('DatePart')?.url).toContain('/enums/datepart.html');
+    });
+});
+
+describe('TypeDocApiResolver - inheritance chain', () => {
+    // Minimal Blazor DocFX-style JSON for testing inheritance
+    function makeBlazorJson(classes: any[]) {
+        return {
+            uid: 'IgniteUI.Blazor.Controls',
+            kindString: 'namespace',
+            children: classes,
+        };
+    }
+
+    function makeBlazorClass(name: string, members: any[], inheritance?: any[]) {
+        return {
+            uid: `IgniteUI.Blazor.Controls.${name}`,
+            name,
+            kindString: 'class',
+            namespace: 'IgniteUI.Blazor.Controls',
+            children: members,
+            ...(inheritance ? { inheritance } : {}),
+        };
+    }
+
+    function makeBlazorProp(className: string, propName: string) {
+        return {
+            uid: `IgniteUI.Blazor.Controls.${className}.${propName}`,
+            name: propName,
+            kindString: 'property',
+        };
+    }
+
+    test('should resolve inherited members via inheritance chain', () => {
+        const resolver = new TypeDocApiResolver('Blazor');
+        const json = makeBlazorJson([
+            makeBlazorClass('IgbSliderBase', [
+                makeBlazorProp('IgbSliderBase', 'Step'),
+                makeBlazorProp('IgbSliderBase', 'Min'),
+                makeBlazorProp('IgbSliderBase', 'Max'),
+            ]),
+            makeBlazorClass('IgbSlider', [
+                makeBlazorProp('IgbSlider', 'Value'),
+            ], [
+                { uid: 'System.Object', name: 'Object' },
+                { uid: 'IgniteUI.Blazor.Controls.IgbSliderBase', name: 'IgbSliderBase' },
+            ]),
+        ]);
+        resolver.load = function(this: any) {}; // stub
+        // Use the real Blazor loading path
+        const { parseBlazorDocFxJson } = require('./BlazorDocFxAdapter');
+        const entries = parseBlazorDocFxJson(json, (name: string) => name.replace(/^Igb/, ''));
+        // Manually index them
+        for (const entry of entries) {
+            (resolver as any).indexType(entry);
+        }
+
+        // Direct member resolves on its own type
+        const value = resolver.resolveMemberLink('Value', ['Slider']);
+        expect(value).not.toBeNull();
+        expect(value!.url).toContain('IgbSlider.html');
+
+        // Inherited member resolves to the base class
+        const step = resolver.resolveMemberLink('Step', ['Slider']);
+        expect(step).not.toBeNull();
+        expect(step!.url).toContain('IgbSliderBase.html');
+        expect(step!.displayText).toBe('Step');
+
+        // Dotted ref also resolves inherited member to base class
+        const sliderStep = resolver.resolveApiLink('Slider.Step');
+        expect(sliderStep).not.toBeNull();
+        expect(sliderStep!.url).toContain('IgbSliderBase.html');
+    });
+
+    test('should fall back to best-effort link when member not in chain', () => {
+        const resolver = new TypeDocApiResolver('Blazor');
+        const json = makeBlazorJson([
+            makeBlazorClass('IgbSlider', [
+                makeBlazorProp('IgbSlider', 'Value'),
+            ]),
+        ]);
+        const { parseBlazorDocFxJson } = require('./BlazorDocFxAdapter');
+        const entries = parseBlazorDocFxJson(json, (name: string) => name.replace(/^Igb/, ''));
+        for (const entry of entries) {
+            (resolver as any).indexType(entry);
+        }
+
+        // Dotted ref with unknown member still creates a link to the type
+        const result = resolver.resolveApiLink('Slider.unknownProp');
+        expect(result).not.toBeNull();
+        expect(result!.url).toContain('IgbSlider.html');
+        expect(result!.displayText).toBe('unknownProp');
+
+        // Bare unknown member returns null from resolveMemberLink
+        const bare = resolver.resolveMemberLink('unknownProp', ['Slider']);
+        expect(bare).toBeNull();
     });
 });

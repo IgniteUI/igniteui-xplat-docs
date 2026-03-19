@@ -190,6 +190,10 @@ function transformCodeRefs(options: any) {
         }
 
         if (!result) {
+            // For dotted refs (e.g. "Grid.selection") always try type+member resolution.
+            // For bare refs, try resolving as a type. The member lookup above (which
+            // includes inheritance chain walking) has already been attempted, so if we
+            // reach here the token is not a known member of any context type.
             result = typeDocResolver.resolveApiLink(value);
         }
         if (!result) return;

@@ -162,11 +162,70 @@ When a member name accompanies a type (e.g. `Grid.primaryKey`), `findMember()` t
 2. Exact match by lowercased name
 3. Case-insensitive scan of all member keys
 
-If the member is not found in the TypeDoc data but the type is known, the link is still generated using the raw member name as the fragment — inherited members may exist at runtime even if not present in the JSON.
+If the member is not found on the direct type, the resolver walks the **inheritance chain** (see §4c-i below). If still not found, the link is generated using the raw member name as the fragment against the original type.
 
-### 4d. Bare-member resolution (context-aware)
+#### 4c-i. Inheritance chain walking
 
-When a token has **no dot** (e.g. just `selection`), the pass first attempts to resolve it as a **member of one of the context types** (from front-matter `typeName` and `mentionedTypes`) before trying it as a type name. This prevents accidental links like `Select` → `IgrSelect` when `Select` is actually a property of the current component being documented.
+Types may declare an `inheritance` array listing their base class names (platform-specific names, e.g. `IgbSliderBase`). When a member is not found on a type directly, `findMemberInherited()` walks this chain recursively:
+
+1. For each base class in the type's `inheritance` array:
+   - Look up the base class via `findType()`
+   - Try `findMember()` on the base class
+   - If found, return the member **and** the base class as the owner
+   - If not found, recurse into the base class's own `inheritance` array
+2. If no base class has the member, fall back to best-effort linking on the original type
+
+The owner type matters because the link URL and anchor point to the **base class's documentation page** where the member is actually declared. For example, `Slider.Step` resolves to `IgbSliderBase.html#...Step` because `Step` is declared on `IgbSliderBase`, not `IgbSlider`.
+
+**Where inheritance data comes from:**
+
+| JSON format | Source field | Populated by |
+|---|---|---|
+| Blazor DocFX | `inheritance[]` array with `{ uid, name }` entries | `BlazorDocFxAdapter.parseBlazorDocFxJson()` |
+| TypeDoc | Not yet populated (TypeDoc flattens inherited members onto the class) | — |
+
+The `Object` base class is filtered out during parsing. Only classes that exist in the loaded TypeDoc data are useful — if a base class isn't in the JSON, it is silently skipped.
+
+**Impact on `resolveApiLink()` (dotted refs like `Slider.Step`):**
+1. Find the type (`IgbSlider`)
+2. Try `findMember()` on the direct type → not found
+3. Try `findMemberInherited()` → found on `IgbSliderBase`
+4. Build URL using `IgbSliderBase` as the owner → `IgbSliderBase.html#...Step`
+
+**Impact on `resolveMemberLink()` (bare refs like `Step` with context types):**
+Same inheritance walk per context type. If the member is found on a base class, the link points to the base class.
+
+### 4d. Bare-ref resolution (context-aware)
+
+When a token has **no dot** (e.g. just `selection` or `Slider`), the pass applies a multi-step resolution strategy:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│               Bare-ref resolution for token T                       │
+│                                                                     │
+│  1. Is T in mentionedTypes AND a known type?                        │
+│     YES → resolve as type link (e.g. `Slider` → IgbSlider)         │
+│                                                                      │
+│  2. Is T a member of any context type (typeName + mentionedTypes)?  │
+│     Checked via resolveMemberLink() which also walks inheritance.   │
+│     YES → resolve as member link (e.g. `Step` → SliderBase#Step)   │
+│                                                                      │
+│  3. Is T a known type (in any loaded TypeDoc data)?                 │
+│     YES → resolve as type link (e.g. `NavDrawerItem` → type page)  │
+│                                                                      │
+│  4. Otherwise → leave as plain inlineCode (no link)                 │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Step 1** handles the "mentionedTypes priority" rule: if the front matter declares `Slider` as a mentioned type, the token `Slider` should link to the Slider component even if a `slider` member exists on one of the context types (e.g. `TreeItem.tree`).
+
+**Step 2** tries resolving as a member of the topic's context types (from `typeName` and `mentionedTypes`). This includes walking the inheritance chain (§4c-i), so inherited members like `Step` on `Slider` resolve correctly. Because inheritance walking is thorough, members like `Step` are caught here and do **not** fall through to step 3 where they might incorrectly match an unrelated type like `IgbStep`.
+
+**Step 3** is the general type fallback. If the token is not a member of any context type (including inherited members), it is tried as a type name against the full TypeDoc data. This allows any known type to be linked regardless of whether it appears in `mentionedTypes` — for example, `NavDrawerItem` referenced in prose on a NavDrawer topic will link even if the author forgot to add it to `mentionedTypes`.
+
+**Step 4** ensures unknown tokens remain as plain inline code.
+
+**Why this is safe:** The risk of false positives (e.g. `Step` linking to `IgbStep` on a Slider topic) is mitigated by step 2: the inheritance chain walk finds `Step` as a member of `IgbSliderBase` before step 3 can match `IgbStep` as a type. Only tokens that are genuinely not members of any context type reach step 3.
 
 See [Section 9](#9-front-matter-and-context-resolution) for how context types are populated.
 
@@ -375,13 +434,30 @@ Each markdown file carries a YAML front-matter block. The transformer reads it v
 
 ### `mentionedTypes`
 
-A comma-separated list (or YAML array) of type names that are relevant to the current topic:
+A YAML array of **all** type names that the topic references and expects to be linked. This list must be comprehensive — any type referenced by bare name (no dot) in the topic's prose or API References section that is not in `mentionedTypes` will **not** be linked in general prose (see §4d).
 
 ```yaml
 ---
 mentionedTypes: ['Grid', 'Column', 'GridStateOptions']
 ---
 ```
+
+> **Important:** `mentionedTypes` serves two critical roles in the TypeDoc simple pass:
+>
+> 1. **Type-over-member priority** — When a bare token like `` `Slider` `` appears and matches both a type name and a member on a context type, being listed in `mentionedTypes` ensures it resolves as the **type** (step 1 in §4d). Without the entry, it would resolve as a member first if one exists.
+> 2. **Member resolution context** — The listed types (plus `typeName`) form the context for bare-member resolution. A token like `` `position` `` is tried as a member of each context type in order, including inherited members.
+>
+> Note: Unlike earlier versions of the resolver, `mentionedTypes` is **not** required for a bare type to be linked. Any known type in the TypeDoc data will be linked as a fallback (step 3 in §4d) if it is not first resolved as a member of a context type. However, listing types in `mentionedTypes` is still important for disambiguation — see §4d for the full resolution order.
+
+**What to include:** List types where disambiguation matters, or where the type name collides with a member name on context types:
+
+- The primary type being documented (also set as `typeName` by the build)
+- Related types whose names could collide with member names (e.g. `Select` if a context type has a `select()` method)
+- Any type whose members you want resolved via bare refs (they become part of the context)
+
+This last point is especially important: **bare member refs are only resolved against context types**. If a topic documents `Chat` and references properties like `` `currentUserId` `` or `` `headerText` `` that actually belong to `ChatOptions`, those members will not be linked unless `ChatOptions` is added to `mentionedTypes`. The resolver only searches context types (and their inheritance chains) for bare members — it does not search all types in the TypeDoc data. When a member is not linked, first check whether its owning type is in `mentionedTypes`.
+
+**What NOT to include:** Types that only appear in code samples, HTML tags, or import statements do not need to be listed — those are not processed as inline-code nodes. Types that have unique names (no collision with member names) will be linked automatically without being in `mentionedTypes`.
 
 The transformer also automatically expands `mentionedTypes` by appending base-type names (walking the inheritance chain via apiMap), except for root types like `Object`, `Control`, `DependencyObject`, `EventArgs`.
 
@@ -476,13 +552,13 @@ The link generation system relies on several assumptions that, if violated, will
 
 4. **Only the first generic name wins.** If two TypeDoc JSON files export types whose generic name (after stripping platform prefix/suffix) collides, the first file loaded wins for generic-name lookup. Platform-specific names never conflict.
 
-5. **`mentionedTypes` in front matter must list actual resolvable types.** If a type listed in `mentionedTypes` does not exist in either TypeDoc or apiMap data, it is silently ignored. However, it also means the type won't become a link in the API References section.
+5. **`mentionedTypes` controls disambiguation, not linking.** The `mentionedTypes` array determines which types get priority when a bare token could be either a type or a member (step 1 in §4d), and which types are used as context for member resolution (step 2). However, `mentionedTypes` is **not** required for a bare type to be linked — any known type in the TypeDoc data will be linked as a fallback (step 3) if the member lookup doesn't match first. The main risk of omitting a type from `mentionedTypes` is disambiguation: if the type name collides with a member name on a context type, the member will win.
 
 6. **Slot/part suppression relies on document structure.** The suppression heuristics look for keyword patterns in sibling text and nearby headings. If a slot/part table or list appears without the expected contextual heading or prose, its inline-code tokens may be incorrectly linked.
 
 7. **The TypeDoc pass takes precedence.** When both TypeDoc and apiMap data are available, the TypeDoc pass runs first. Any type it resolves becomes a `link` node and will NOT be processed by the legacy apiMap pass. This means the TypeDoc data effectively "wins" for all types it covers.
 
-8. **Inherited members may not appear in TypeDoc data.** The TypeDoc JSON only contains directly declared members. If a markdown topic references an inherited member, the TypeDoc pass still generates a link (using the raw member name as the hash fragment) as long as the owning type is known.
+8. **Inherited members in TypeDoc JSON.** TypeDoc JSON for WC/React typically flattens inherited members onto the derived class, so they are resolved directly. Blazor DocFX JSON does **not** flatten inherited members — they only appear on the base class (e.g. `Step` on `IgbSliderBase`, not on `IgbSlider`). The resolver handles this via inheritance chain walking (§4c-i): it reads the `inheritance` array on each type and recursively searches base classes for the member. The link then points to the base class's documentation page. If the inheritance chain doesn't include the member either, a best-effort link is still generated against the original type.
 
 9. **API documentation sites must use the expected URL patterns.** The resolver constructs URLs based on the patterns in `typePatterns` and the platform config. If the target API documentation site changes its URL structure, the config must be updated to match.
 
@@ -582,4 +658,6 @@ Create or edit `apiMap/<Platform>/<name>.apiMap.overrides.json` using the same f
 6. **Missing package prefix or wrong prefix?** Check that the module name is correct in the TypeDoc JSON (`packageName` at root or module node name). Check `packageJoin` setting.
 7. **Type linked but shouldn't be (e.g. a slot name)?** Check whether the slot/part suppression context is correctly structured — the section needs a recognizable heading or keyword-containing prose before the table/list.
 8. **For Blazor**, check that the type belongs to the correct namespace in the `BlazorNamespaces` array in `MarkdownTransformer.ts` if the URL path looks wrong.
+9. **Member exists but no link generated?** The member may be inherited. Check the Blazor JSON for an `inheritance` array on the type — if the member lives on a base class, the resolver should walk the chain (§4c-i). If the base class itself isn't in the JSON, it won't be found.
+10. **Type not linked but it exists in TypeDoc data?** The token may be matching as a member of a context type first (step 2 in §4d). Check whether any context type has a member with the same name — if so, add the type to `mentionedTypes` to give it priority (step 1).
 
