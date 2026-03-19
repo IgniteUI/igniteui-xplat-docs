@@ -123,7 +123,52 @@ Alternatively, one can use a general Agent Skills config so your Agent can easil
 
 Use this approach when you want to load a specific skill on demand, without permanently modifying project configuration files.
 
-### **Option A — Use the `gemini skills` CLI**
+### **Option A — Use the installed npm package**
+
+If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
+
+**macOS / Linux / Windows (PowerShell)**
+
+```bash
+cp -r node_modules/igniteui-react/skills/. .agents/skills/
+```
+
+**Windows (Command Prompt)**
+
+```cmd
+robocopy node_modules\igniteui-react\skills .agents\skills /E /S
+```
+
+Or copy individual skill directories as needed:
+
+**macOS / Linux / Windows (PowerShell)**
+
+```bash
+cp -r node_modules/igniteui-react/skills/igniteui-react-choose-components .agents/skills/
+cp -r node_modules/igniteui-react/skills/igniteui-react-customize-theme .agents/skills/
+cp -r node_modules/igniteui-react/skills/igniteui-react-optimize-bundle-size .agents/skills/
+cp -r node_modules/igniteui-react/skills/igniteui-react-use-components .agents/skills/
+```
+
+**Windows (Command Prompt)**
+
+```cmd
+robocopy node_modules\igniteui-react\skills\igniteui-react-choose-components .agents\skills\igniteui-react-choose-components /E
+robocopy node_modules\igniteui-react\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
+robocopy node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
+robocopy node_modules\igniteui-react\skills\igniteui-react-use-components .agents\skills\igniteui-react-use-components /E
+```
+
+The skill files are located at:
+
+```shell
+node_modules\igniteui-react\skills\igniteui-react-choose-components\SKILL.md
+node_modules\igniteui-react\skills\igniteui-react-customize-theme\SKILL.md
+node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size\SKILL.md
+node_modules\igniteui-react\skills\igniteui-react-use-components\SKILL.md
+```
+
+### **Option B — Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -149,61 +194,6 @@ gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-rea
 ```
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
-
-
-### **Option B — Use the installed npm package**
-
-If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
-
-**macOS / Linux**
-
-```bash
-cp -r node_modules/igniteui-react/skills/. .agents/skills/
-```
-
-**Windows (PowerShell)**
-
-```powershell
-cp -r node_modules/igniteui-react/skills/. .agents/skills/
-```
-
-Or copy individual skill directories as needed:
-
-**macOS / Linux**
-
-```bash
-cp -r node_modules/igniteui-react/skills/igniteui-react-choose-components .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-customize-theme .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-optimize-bundle-size .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-use-components .agents/skills/
-```
-
-**Windows (PowerShell)**
-
-```powershell
-cp -r node_modules/igniteui-react/skills/igniteui-react-choose-components .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-customize-theme .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-optimize-bundle-size .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-use-components .agents/skills/
-```
-
-**Windows (Command Prompt)**
-
-```cmd
-robocopy node_modules\igniteui-react\skills\igniteui-react-choose-components .agents\skills\igniteui-react-choose-components /E
-robocopy node_modules\igniteui-react\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
-robocopy node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
-robocopy node_modules\igniteui-react\skills\igniteui-react-use-components .agents\skills\igniteui-react-use-components /E
-```
-
-The skill files are located at:
-
-```shell
-node_modules\igniteui-react\skills\igniteui-react-choose-components\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-customize-theme\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-use-components\SKILL.md
-```
 
 ### **Option C — Use the `npx skills` CLI**
 
