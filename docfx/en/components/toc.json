@@ -1,5 +1,6 @@
 [
   {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "AI-Assisted Development",
     "header": true
   },
