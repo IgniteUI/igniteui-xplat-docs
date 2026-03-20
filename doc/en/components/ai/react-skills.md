@@ -136,7 +136,7 @@ cp -r node_modules/igniteui-react/skills/. .agents/skills/
 **Windows (Command Prompt)**
 
 ```cmd
-robocopy node_modules\igniteui-react\skills .agents\skills /E /S
+robocopy node_modules\igniteui-react\skills .agents\skills /E
 ```
 
 Or copy individual skill directories as needed:
@@ -157,15 +157,6 @@ robocopy node_modules\igniteui-react\skills\igniteui-react-choose-components .ag
 robocopy node_modules\igniteui-react\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
 robocopy node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
 robocopy node_modules\igniteui-react\skills\igniteui-react-use-components .agents\skills\igniteui-react-use-components /E
-```
-
-The skill files are located at:
-
-```shell
-node_modules\igniteui-react\skills\igniteui-react-choose-components\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-customize-theme\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size\SKILL.md
-node_modules\igniteui-react\skills\igniteui-react-use-components\SKILL.md
 ```
 
 ### **Option B — Use the `gemini skills` CLI**
