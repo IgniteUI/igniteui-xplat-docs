@@ -915,7 +915,16 @@ The Dock Manager comes with a light and a dark theme. The light theme is the def
 The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by reading the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on the root `<html>` element. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN).
 
 <!-- WebComponents -->
-In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method:
+The Dock Manager includes ready-to-use resource strings for Spanish (`es`), Japanese (`ja`), and Korean (`ko`). To use one of these languages, install the `igniteui-i18n-resources` peer dependency and register the corresponding bundle with `igniteui-i18n-core`:
+
+```ts
+import { registerI18n } from 'igniteui-i18n-core';
+import { DockManagerResourceStringsES } from 'igniteui-i18n-resources';
+
+registerI18n(DockManagerResourceStringsES, 'es');
+```
+
+If you need to support a different language, use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method to provide your own translated strings:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
