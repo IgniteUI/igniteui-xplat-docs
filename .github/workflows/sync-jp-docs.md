@@ -24,6 +24,8 @@ tools:
     - "git log *"
     - "ls *"
     - "cat *"
+    - "mkdir *"
+    - "touch *"
   edit:
 
 safe-outputs:
