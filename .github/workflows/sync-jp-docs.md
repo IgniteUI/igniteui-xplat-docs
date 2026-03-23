@@ -24,8 +24,8 @@ tools:
     - "git log *"
     - "ls *"
     - "cat *"
-    - "mkdir *"
-    - "touch *"
+    - "mkdir -p *"
+    - "find *"
   edit:
 
 safe-outputs:
@@ -172,6 +172,10 @@ translating all new or modified English prose into natural, fluent Japanese.
 ### Step 5 — Write the updated Japanese file(s)
 
 Use the `edit` tool to write each updated Japanese file to its path under `doc/jp/`.
+The `edit` tool automatically creates any missing parent directories, so you do
+**not** need to run `mkdir` or any other shell command before writing a file.
+Never use shell commands (`awk`, `tar`, `touch`, `patch`, etc.) to create or
+modify files — always use the `edit` tool.
 
 ### Step 6 — Create a pull request
 
