@@ -16,8 +16,7 @@ The skill files live in the [`skills/`](https://github.com/IgniteUI/igniteui-rea
 
 | Skill | Path | Description |
 |:------|:-----|:------------|
-| Components & Layout | [`skills/igniteui-react-choose-components/SKILL.md`](https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-choose-components/SKILL.md) | Standalone components, form controls, overlays, layout |
-| Using Components | [`skills/igniteui-react-use-components/SKILL.md`](https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-use-components/SKILL.md) | Helps with integrating components to the user's platform of choice |
+| Components | [`skills/igniteui-react-components/SKILL.md`](https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them — JSX patterns, event handling, refs, forms, TypeScript |
 | Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`](https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`](https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
 
@@ -40,7 +39,7 @@ GitHub Copilot reads custom instructions from a `.github/copilot-instructions.md
 
 This project uses {ProductName}. Follow the guidelines in the skill files below:
 
-- Components & Layout: https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-choose-components/SKILL.md
+- Components: https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-components/SKILL.md
 - Theming & Styling: https://github.com/IgniteUI/igniteui-react/blob/master/skills/igniteui-react-customize-theme/SKILL.md
 ````
 
@@ -57,7 +56,7 @@ Cursor supports persistent project rules through a `.cursorrules` file or the `.
     ````markdown
     # {ProductName} Rules
 
-    <paste contents of skills/igniteui-react-choose-components/SKILL.md here>
+    <paste contents of skills/igniteui-react-components/SKILL.md here>
     <paste contents of skills/igniteui-react-customize-theme/SKILL.md here>
     ````
 
@@ -106,7 +105,7 @@ Alternatively, one can use a general Agent Skills config so your Agent can easil
     ```shell
     .agents/
       skills/
-        igniteui-react-choose-components/
+        igniteui-react-components/
         igniteui-react-customize-theme/
         igniteui-react-optimize-bundle-size/
     ```
@@ -144,19 +143,17 @@ Or copy individual skill directories as needed:
 **macOS / Linux / Windows (PowerShell)**
 
 ```bash
-cp -r node_modules/igniteui-react/skills/igniteui-react-choose-components .agents/skills/
+cp -r node_modules/igniteui-react/skills/igniteui-react-components .agents/skills/
 cp -r node_modules/igniteui-react/skills/igniteui-react-customize-theme .agents/skills/
 cp -r node_modules/igniteui-react/skills/igniteui-react-optimize-bundle-size .agents/skills/
-cp -r node_modules/igniteui-react/skills/igniteui-react-use-components .agents/skills/
 ```
 
 **Windows (Command Prompt)**
 
 ```cmd
-robocopy node_modules\igniteui-react\skills\igniteui-react-choose-components .agents\skills\igniteui-react-choose-components /E
+robocopy node_modules\igniteui-react\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
 robocopy node_modules\igniteui-react\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
 robocopy node_modules\igniteui-react\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
-robocopy node_modules\igniteui-react\skills\igniteui-react-use-components .agents\skills\igniteui-react-use-components /E
 ```
 
 ### **Option B — Use the `gemini skills` CLI**
@@ -169,19 +166,17 @@ The `gemini skills install` command installs skills directly from a Git reposito
 **Install to user scope (default):**
 
 ```bash
-gemini skills install https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-choose-components
+gemini skills install https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-components
 gemini skills install https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-customize-theme
 gemini skills install https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-optimize-bundle-size
-gemini skills install https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-use-components
 ```
 
 **Install to workspace scope:**
 
 ```bash
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-choose-components
+gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-components
 gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-customize-theme
 gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-optimize-bundle-size
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-react.git --path skills/igniteui-react-use-components
 ```
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
