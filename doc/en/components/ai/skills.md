@@ -182,39 +182,71 @@ Alternatively, one can use a general Agent Skills config so your Agent can easil
 
 Use this approach when you want to load a specific skill on demand, without permanently modifying project configuration files.
 
-### Step 1: Get the Skill Files
+### **Option A — Use the installed npm package**
+
+If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
+
+**macOS / Linux / Windows (PowerShell)**
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/. .agents/skills/
+```
+
+**Windows (Command Prompt)**
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills .agents\skills /E
+```
+
+Or copy individual skill directories as needed:
+
+**macOS / Linux / Windows (PowerShell)**
 
 <!-- WebComponents -->
 
-#### **Option A — Download individual files**
-
-Each skill file can be downloaded directly from GitHub. First, create the `.agents/skills/` directory in your project root, then download the files into it:
-
 ```bash
-# Create the .agents/skills directory
-mkdir -p .agents/skills
-
-# Download skill files into .agents/skills/
-cd .agents/skills
-
-# Components & Layout
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md
-
-# Theming & Styling
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
-
-# Optimization
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md
-
-# Platform Integration
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-choose-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-customize-component-theme .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-optimize-bundle-size .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .agents/skills/
 ```
-
-The skill files will now be available in `.agents/skills/` and will be automatically discovered by compatible AI assistants.
 
 <!-- end: WebComponents -->
 
-#### **Option B — Use the `gemini skills` CLI**
+<!-- React -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-customize-theme .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .agents/skills/
+```
+
+<!-- end: React -->
+
+**Windows (Command Prompt)**
+
+<!-- WebComponents -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agents\skills\igniteui-wc-choose-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\igniteui-wc-customize-component-theme /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\igniteui-wc-optimize-bundle-size /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\igniteui-wc-integrate-with-framework /E
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
+```
+
+<!-- end: React -->
+
+### **Option B — Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -269,88 +301,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-#### **Option C — Use the installed npm package**
-
-If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
-
-<!-- WebComponents -->
-
-```bash
-# macOS / Linux
-cp -r node_modules/{PackageCommon}/skills/. .agents/skills/
-```
-
-```powershell
-# Windows (PowerShell)
-Copy-Item -Recurse node_modules\{PackageCommon}\skills\* .agents\skills\
-```
-
-Or copy individual skill directories as needed:
-
-**macOS / Linux**
-
-```bash
-cp -r node_modules/{PackageCommon}/skills/igniteui-wc-choose-components .agents/skills/
-cp -r node_modules/{PackageCommon}/skills/igniteui-wc-customize-component-theme .agents/skills/
-cp -r node_modules/{PackageCommon}/skills/igniteui-wc-optimize-bundle-size .agents/skills/
-cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .agents/skills/
-```
-
-**Windows (PowerShell)**
-
-```powershell
-Copy-Item -Recurse node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agents\skills\
-Copy-Item -Recurse node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\
-Copy-Item -Recurse node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\
-Copy-Item -Recurse node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\
-```
-
-**Windows (Command Prompt)**
-
-```cmd
-xcopy /E /I node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agents\skills\igniteui-wc-choose-components
-xcopy /E /I node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\igniteui-wc-customize-component-theme
-xcopy /E /I node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\igniteui-wc-optimize-bundle-size
-xcopy /E /I node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\igniteui-wc-integrate-with-framework
-```
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-
-**macOS / Linux / Windows (PowerShell)**
-
-```bash
-cp -r node_modules/{PackageCommon}/skills/. .agents/skills/
-```
-
-**Windows (Command Prompt)**
-
-```cmd
-robocopy node_modules\{PackageCommon}\skills .agents\skills /E
-```
-
-Or copy individual skill directories as needed:
-
-**macOS / Linux / Windows (PowerShell)**
-
-```bash
-cp -r node_modules/{PackageCommon}/skills/igniteui-react-components .agents/skills/
-cp -r node_modules/{PackageCommon}/skills/igniteui-react-customize-theme .agents/skills/
-cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .agents/skills/
-```
-
-**Windows (Command Prompt)**
-
-```cmd
-robocopy node_modules\{PackageCommon}\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
-robocopy node_modules\{PackageCommon}\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
-robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
-```
-
-<!-- end: React -->
-
-#### **Option D — Use the `npx skills` CLI**
+### **Option C — Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
@@ -367,19 +318,6 @@ The CLI will guide you through a series of prompts to:
 Once complete, the skills are ready to use — no manual file copying required.
 
 > **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/{PackageCommon}]({GithubLink}) repository.
-
-### Step 2: Load the Skill into Your IDE
-
-Once you have the files, open them and load them into your AI assistant:
-
-| IDE / Tool | How to load |
-|:-----------|:------------|
-| **VS Code + GitHub Copilot** | Use `#file:path/to/SKILL.md` in the Copilot Chat input to attach it as context for that session. |
-| **Cursor** | Drag the `SKILL.md` file into the chat window, or type `@file` and select it. |
-| **Windsurf** | Attach the file using the **+** button in the Cascade chat panel. |
-| **JetBrains AI Assistant** | Click the paperclip icon in the AI chat to attach the file as context. |
-| **Claude Desktop** | Drag the file into the chat or add it to the project knowledge base via **Project → Add Content**. |
-| **Other assistants** | Open the `SKILL.md` file, copy its full contents, and paste them into the system prompt or at the top of your first message. |
 
 ---
 
