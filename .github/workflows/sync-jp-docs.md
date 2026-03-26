@@ -102,8 +102,8 @@ including their surrounding braces.
 
 ### Step 1 — Identify changed English files
 
-**Important:** Only use the exact bash commands shown below. Do not use
-`git show` or any other commands — they are not available.
+**Important:** Use only `git diff` and `git log` for identifying changed files
+(not `git show`). The commands below are the recommended approach.
 
 Run the following to find files changed in the most recent push to `doc/en/`:
 
