@@ -8,9 +8,10 @@ description: >
 
 on:
   push:
-    branches: [vnext, gedinakova/jp-translation-workflow]
+    branches: [vnext]
     paths:
       - "doc/en/**"
+  workflow_dispatch:
 
 permissions:
   contents: read
