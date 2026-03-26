@@ -938,7 +938,7 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 <!-- end: WebComponents -->
 
-The Dock Manager exposes `ResourceStrings` property which allows you to modify the strings. If you set the `ResourceStrings` property, the Dock Manager will use your strings no matter what [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
+The Dock Manager also exposes a `ResourceStrings` property that you can use to modify individual strings directly. When you set the `ResourceStrings` property, the Dock Manager uses the strings you provide regardless of the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on the page.
 
 <!-- end: React, WebComponents -->
 
