@@ -102,13 +102,16 @@ including their surrounding braces.
 
 ### Step 1 — Identify changed English files
 
+**Important:** Only use the exact bash commands shown below. Do not use
+`git show` or any other commands — they are not available.
+
 Run the following to find files changed in the most recent push to `doc/en/`:
 
 ```bash
 git diff --name-only HEAD~1 HEAD -- doc/en/
 ```
 
-If that returns nothing (e.g. the push was a merge or shallow clone), use:
+If that returns nothing (e.g. the push was a merge or shallow clone), try:
 
 ```bash
 git log --name-only --format="" -1 -- doc/en/
@@ -120,8 +123,10 @@ Replace the leading `doc/en/` path segment with `doc/jp/` to find the counterpar
 - `doc/en/components/avatar.md` → `doc/jp/components/avatar.md`
 - `doc/en/components/grids/grid/overview.md` → `doc/jp/components/grids/grid/overview.md`
 
-If a Japanese counterpart does not exist, create it by adapting the English file
-as described below.
+Check whether the Japanese file already exists by reading it with the `cat`
+command. If the file does not exist, you will create it from scratch in Step 5.
+**Do not attempt to create directories with shell commands** — the `edit` tool
+handles that automatically.
 
 ### Step 3 — Determine what changed in each English file
 
@@ -172,10 +177,29 @@ translating all new or modified English prose into natural, fluent Japanese.
 ### Step 5 — Write the updated Japanese file(s)
 
 Use the `edit` tool to write each updated Japanese file to its path under `doc/jp/`.
-The `edit` tool automatically creates any missing parent directories, so you do
-**not** need to run `mkdir` or any other shell command before writing a file.
-Never use shell commands (`awk`, `tar`, `touch`, `patch`, etc.) to create or
-modify files — always use the `edit` tool.
+
+**Critical:** The `edit` tool is the **only** way to create or modify files.
+It automatically creates any missing parent directories. You must **never** use
+shell commands (`mkdir`, `touch`, `awk`, `tar`, `patch`, `cp`, `git checkout`,
+`sha1sum`, `openssl`, `git rebase`, etc.) to create directories or files.
+
+#### Creating a brand-new file
+
+If the Japanese file does not yet exist (the corresponding `doc/jp/` path is
+missing), follow these steps exactly:
+
+1. Read the full English source file with `cat doc/en/<path>`.
+2. Translate all prose into Japanese following the rules in Step 4.
+3. Add `_language: ja` to the YAML frontmatter.
+4. Write the complete translated file using the `edit` tool to the target path
+   (e.g. `doc/jp/components/ai/skills.md`). The `edit` tool will create the
+   `doc/jp/components/ai/` directory automatically — do **not** run `mkdir` first.
+
+#### Updating an existing file
+
+1. Read the current Japanese file with `cat doc/jp/<path>`.
+2. Apply only the changes that correspond to the English diff.
+3. Write the updated file using the `edit` tool.
 
 ### Step 6 — Create a pull request
 
