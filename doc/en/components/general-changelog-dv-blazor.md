@@ -18,6 +18,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+| 3229  | Grids | Latest version of Blazor Grids shows Trial watermark for Licensed version |
+| 2754  | IgbTabs | Changing the check state for IgbSwitch inside the tab causes the tab content to disappear |
+
+## **{PackageVerChanges-25-2-MAR}**
+
 ### {PackageGrids} (Grids)
 
 #### IgbQueryBuilder
