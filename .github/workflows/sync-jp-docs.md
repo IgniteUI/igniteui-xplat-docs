@@ -25,7 +25,6 @@ tools:
     - "git log *"
     - "ls *"
     - "cat *"
-    - "mkdir -p *"
     - "find *"
   edit:
 
