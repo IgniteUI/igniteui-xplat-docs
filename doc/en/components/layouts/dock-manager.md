@@ -915,7 +915,7 @@ The Dock Manager comes with a light and a dark theme. The light theme is the def
 The Dock Manager lets you localize the strings used in context menus, tooltips, and ARIA attributes. By default, it reads the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute from the root `<html>` element to determine which language to use. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is missing or set to an unsupported value, the Dock Manager uses [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN).
 
 <!-- WebComponents -->
-The Dock Manager includes ready-to-use resource strings for Spanish (`es`), Japanese (`ja`), and Korean (`ko`). To use one of these languages, install the `igniteui-i18n-resources` peer dependency and register the corresponding bundle with `igniteui-i18n-core`:
+Ready-to-use Dock Manager resource strings for Spanish (`es`), Japanese (`ja`), and Korean (`ko`) are provided via the `igniteui-i18n-resources` peer dependency. To use one of these languages, install `igniteui-i18n-resources` and register the corresponding bundle with `igniteui-i18n-core`:
 
 ```ts
 import { registerI18n } from 'igniteui-i18n-core';
