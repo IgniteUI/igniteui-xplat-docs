@@ -1,5 +1,22 @@
 [
   {
+    "exclude": ["Blazor"],
+    "name": "AI 支援開発",
+    "header": true
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "エージェント スキル",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+  {
     "name": "概要",
     "header": true
   },
