@@ -377,9 +377,15 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 
 <div class="divider--half"></div>
 
+<!-- React, WebComponents -->
 - [Getting Started with {ProductName}](../general-getting-started.md)
 - [Ignite UI CLI](../general-cli-overview.md)
-- [Ignite UI Theming MCP](./theming-mcp.md)
+<!-- end: React, WebComponents -->
+<!-- Angular -->
+<!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
+- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
+- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
+<!-- end: Angular -->
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
