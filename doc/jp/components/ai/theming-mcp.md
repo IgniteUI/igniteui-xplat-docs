@@ -23,33 +23,46 @@ _language: ja
 
 **接続後に試すプロンプトの例:**
 
-> _「プライマリ #2563eb とコーラル セカンダリ #f97316 を使用して、{Platform} アプリ用の完全な Material Design ダーク テーマを作成して」_
+> 「プライマリ #2563eb とコーラル セカンダリ #f97316 を使用して、{Platform} アプリ用の完全な Material Design ダーク テーマを作成して」
 
-> _「ボタン コンポーネントで利用可能なデザイン トークンは何ですか? ブランドの紫 #8b5cf6 でカスタマイズして」_
+> 「ボタン コンポーネントで利用可能なデザイン トークンは何ですか? ブランドの紫 #8b5cf6 でカスタマイズして」
 
-> _「ブランド ガイドラインでは、すべてのプライマリ シェードに正確な 16 進数値が指定されています。これらの明示的な値でカスタム パレットを作成して」_
+> 「ブランド ガイドラインでは、すべてのプライマリ シェードに正確な 16 進数値が指定されています。これらの明示的な値でカスタム パレットを作成して」
 
-> _「カレンダー コンポーネントでより小さい間隔を使用するようにして」_
+> 「カレンダー コンポーネントでより小さい間隔を使用するようにして」
 
 ## 前提条件
 
-MCP サーバーを構成する前に、次のものがあることを確認してください:
+MCP サーバーを構成する前に、次のものがあることを確認してください。
 
 - **Node.js** (v18 以降) がインストールされていること — これにより、サーバーの起動に使用される `npx` コマンドが提供されます。
 - `package.json` に依存関係として **Ignite UI パッケージ**がリストされているプロジェクト。
+<!-- Angular -->
+Angular の場合、これは `igniteui-angular` (v15.0 以降) です。サーバーは、`igniteui-webcomponents`、`igniteui-react`、`igniteui-blazor` もサポートします。
+<!-- end: Angular -->
 - **MCP サポートを備えた AI クライアント** — 例: VS Code と GitHub Copilot、Cursor、Claude Desktop、Claude Code、または AI Assistant プラグインを備えた JetBrains IDE。
 
-Ignite UI Theming がまだインストールされていない場合は、次のコマンドを実行します:
+<!-- Angular -->
+`igniteui-angular` がまだインストールされていない場合は、次のコマンドを実行します。
+
+```bash
+ng add igniteui-angular
+```
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
+Ignite UI Theming がまだインストールされていない場合は、次のコマンドを実行します。
 
 ```bash
 npm install igniteui-theming
 ```
+<!-- end: React, WebComponents -->
 
 ## セットアップ
 
 MCP サーバーは `igniteui-theming` パッケージにバンドルされており、`npx` 経由で起動されます。プロジェクトに Ignite UI パッケージが既にインストールされている以外に、別途インストールする必要はありません。
 
-正規の起動コマンドは次のとおりです:
+正規の起動コマンドは次のとおりです。
 
 ```bash
 npx -y igniteui-theming igniteui-theming-mcp
@@ -58,9 +71,19 @@ npx -y igniteui-theming igniteui-theming-mcp
 > [!NOTE]
 > `-y` フラグは、`npx` にパッケージ ダウンロード プロンプトを自動確認するように指示するため、サーバーは手動介入なしで起動できます。
 
+<!-- Angular -->
+### バージョン解決の仕組み
+
+`igniteui-theming` は `igniteui-angular` の依存関係であるため、`npm install` 後には既に `node_modules` に存在します。上記の起動コマンドを実行すると、`npx` はローカルにインストールされたコピーを検出し、直接実行します。ネットワーク リクエストは行われません。つまり、MCP サーバーのバージョンは、常に他の Ignite UI パッケージと同期した状態を保ちます。
+
+プロジェクトの外部 (または `npm install` を実行する前) でコマンドを実行すると、`npx -y` は代わりに npm から**最新**バージョンを一時キャッシュにダウンロードします。サーバーは引き続き起動しますが、検査する `package.json` がないため、`detect_platform` は `generic` を返します。
+<!-- end: Angular -->
+
+以下から AI クライアントを選択して、特定の構成手順を確認してください。
+
 ### VS Code
 
-VS Code の GitHub Copilot は、ワークスペース レベルの構成ファイルを介して MCP サーバーをサポートします。プロジェクト ルートに `.vscode/mcp.json` を作成または編集します:
+VS Code の GitHub Copilot は、ワークスペース レベルの構成ファイルを介して MCP サーバーをサポートします。プロジェクト ルートに `.vscode/mcp.json` を作成または編集します。
 
 ```json
 {
@@ -80,7 +103,7 @@ VS Code の GitHub Copilot は、ワークスペース レベルの構成ファ�
 
 ### Cursor
 
-Cursor は、プロジェクト スコープの MCP 構成をサポートします。プロジェクト ルートに `.cursor/mcp.json` を作成または編集します:
+Cursor は、プロジェクト スコープの MCP 構成をサポートします。プロジェクト ルートに `.cursor/mcp.json` を作成または編集します。
 
 ```json
 {
@@ -100,7 +123,7 @@ Cursor は、プロジェクト スコープの MCP 構成をサポートしま�
 
 ### Claude Desktop
 
-Claude Desktop 構成ファイルにサーバーを追加します:
+Claude Desktop 構成ファイルにサーバーを追加します。
 
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
@@ -120,7 +143,7 @@ Claude Desktop 構成ファイルにサーバーを追加します:
 
 ### Claude Code
 
-Claude Code は、CLI とプロジェクト スコープの `.mcp.json` ファイルを介して MCP サーバーをサポートします。構成をチームと共有するには、プロジェクト ルートに `.mcp.json` を作成または編集します:
+Claude Code は、CLI とプロジェクト スコープの `.mcp.json` ファイルを介して MCP サーバーをサポートします。構成をチームと共有するには、プロジェクト ルートに `.mcp.json` を作成または編集します。
 
 ```json
 {
@@ -133,7 +156,7 @@ Claude Code は、CLI とプロジェクト スコープの `.mcp.json` ファ�
 }
 ```
 
-あるいは、ローカル環境のみにコマンド ラインを介してサーバーを追加できます:
+あるいは、ローカル環境のみにコマンド ラインを介してサーバーを追加できます。
 
 ```bash
 claude mcp add igniteui-theming -- npx -y igniteui-theming igniteui-theming-mcp
@@ -143,12 +166,12 @@ Claude Code 内で `/mcp` コマンドを使用して、サーバーが接続さ
 
 ### JetBrains IDE
 
-JetBrains AI Assistant は、IDE 設定を介して MCP サーバーをサポートします:
+JetBrains AI Assistant は、IDE 設定を介して MCP サーバーをサポートします。
 
 1. **[Settings]** (macOS では **[Preferences]**) を開きます。
 2. **[Tools] → [AI Assistant] → [Model Context Protocol (MCP)]** に移動します。
 3. **[+ Add]** をクリックし、**[As JSON]** を選択するか、フォーム フィールドを使用します。
-4. 以下の構成を入力します:
+4. 以下の構成を入力します。
 
     ```json
     {
@@ -168,7 +191,7 @@ JetBrains AI Assistant は、IDE 設定を介して MCP サーバーをサポー
 
 ### その他の MCP クライアント
 
-その他の MCP 互換クライアントの場合は、次のコマンドと引数で STDIO トランスポートを使用します:
+その他の MCP 互換クライアントの場合は、次のコマンドと引数で STDIO トランスポートを使用します。
 
 - **コマンド**: `npx`
 - **引数**: `-y`、`igniteui-theming`、`igniteui-theming-mcp`
@@ -221,11 +244,11 @@ globs: ["**/*.scss", "**/styles/**"]
 
 MCP サーバーは、プロンプトに基づいて AI が自動的に使用するツール セットを公開します。それらを直接呼び出す必要はありません。必要なものを説明するだけです。
 
-現在の完全なツール リストとそのパラメーターをいつでも確認するには、AI アシスタントに次のように尋ねてください:
+現在の完全なツール リストとそのパラメーターをいつでも確認するには、AI アシスタントに次のように尋ねてください。
 
-> _「Ignite UI Theming MCP はどのようなツールを提供していますか?」_
+> 「Ignite UI Theming MCP はどのようなツールを提供していますか?」
 
-各ツールの簡単な概要を以下に示します:
+各ツールの簡単な概要を以下に示します。
 
 | ツール | 説明 |
 |------|-------------|
@@ -246,15 +269,46 @@ MCP サーバーは、プロンプトに基づいて AI が自動的に使用す
 > [!NOTE]
 > 複合コンポーネント (例: `combo`、`select`、`grid`) の場合、`get_component_design_tokens` はフラットなトークン リストではなく、関連する子テーマのリストを返します。たとえば、`grid` をクエリすると、`grid`、`grid-toolbar`、`grid-filtering`、`paginator` などの子テーマが返される場合があります。AI は、適切なスコープされたセレクターを使用して、各子テーマに対して個別の `create_component_theme` 呼び出しを生成します。
 
+<!-- Angular -->
+> [!NOTE]
+> プロジェクトでライセンス版の `@infragistics/igniteui-angular` パッケージを使用している場合は、AI にそのことを伝えてください。そうすることで、パレット、テーマ、コンポーネント ツールで `licensed` パラメーターを設定できます。これにより、生成されるインポート パスがそれに応じて調整されます。
+<!-- end: Angular -->
+
 ## シナリオ例
 
 次のシナリオは、MCP サーバーが接続された後に AI に何を依頼できるかを示します。
 
 ### 新しいプロジェクト テーマ
 
-> _「Ignite UI を使用して新しい {Platform} プロジェクトを開始しています。プライマリ #2563eb、セカンダリ #f97316、Roboto フォントで完全な Material Design ライト テーマを作成して。」_
+> 「Ignite UI を使用して新しい {Platform} プロジェクトを開始しています。プライマリ #2563eb、セカンダリ #f97316、Roboto フォントで完全な Material Design ライト テーマを作成して。」
 
-AI は `create_theme` を呼び出し、すぐに使用できる `styles.scss` ファイルを返します。生成される出力は次のようになります:
+AI は `create_theme` を呼び出し、すぐに使用できる `styles.scss` ファイルを返します。生成される出力は次のようになります。
+
+<!-- Angular -->
+
+```scss
+/* styles.scss */
+@use 'igniteui-angular/theming' as *;
+
+$my-palette: palette(
+  $primary: #2563eb,
+  $secondary: #f97316,
+  $surface: #fff,
+  $gray: #9e9e9e,
+);
+
+$my-typography: typography(
+  $font-family: 'Roboto, sans-serif',
+);
+
+@include core();
+@include typography($my-typography);
+@include theme($my-palette, $schema: $light-material-schema);
+```
+
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
 
 ```scss
 /* styles.scss */
@@ -276,25 +330,27 @@ $my-palette: palette(
 );
 ```
 
+<!-- end: React, WebComponents -->
+
 ### ダーク モード バリアント
 
-> _「既存のテーマのダーク モード バージョンが必要です。同じプライマリ ブルーを維持しますが、ダーク サーフェス #121212 を使用して。」_
+> 「既存のテーマのダーク モード バージョンが必要です。同じプライマリ ブルーを維持しますが、ダーク サーフェス #121212 を使用して。」
 
 ### ブランド固有のカラー シェード
 
-> _「デザイン システムでは、プライマリ グリーンの 14 個すべてのシェードに正確な 16 進数値が指定されています。値を貼り付けます — カスタム パレットを作成して。」_
+> 「デザイン システムでは、プライマリ グリーンの 14 個すべてのシェードに正確な 16 進数値が指定されています。値を貼り付けます — カスタム パレットを作成して。」
 
 AI は、プライマリ カラーに `mode: "explicit"` を使用して `create_custom_palette` を呼び出し、残りは自動生成します。
 
 ### コンポーネント レベルのカスタマイズ
 
-> _「フラット ボタンを紫の背景 #8b5cf6 と白いテキストでスタイル設定し、ホバー時にはより明るい紫 #a78bfa にして。」_
+> 「フラット ボタンを紫の背景 #8b5cf6 と白いテキストでスタイル設定し、ホバー時にはより明るい紫 #a78bfa にして。」
 
 AI は最初に `get_component_design_tokens` を呼び出して有効なトークン名を検出し、次に正しい値で `create_component_theme` を呼び出します。
 
 ### レイアウト調整
 
-> _「カレンダーが場所を取りすぎている感じがします — 間隔を減らして、すべてのコンポーネントを少し小さくして。」_
+> 「カレンダーが場所を取りすぎている感じがします — 間隔を減らして、すべてのコンポーネントを少し小さくして。」
 
 AI は、カレンダー コンポーネントにスコープされた `set_spacing` と `:root` レベルで `set_size` を呼び出します。
 
@@ -302,7 +358,7 @@ AI は、カレンダー コンポーネントにスコープされた `set_spac
 
 **プラットフォームが検出されない**
 
-`detect_platform` が `null` または `generic` を返す場合は、`package.json` に Ignite UI パッケージ (例: `igniteui-react`) が依存関係としてリストされていることを確認してください。AI に明示的に伝えることもできます: _「{ProductName} を使用して。」_
+`detect_platform` が `null` または `generic` を返す場合は、`package.json` に Ignite UI パッケージ (例: `igniteui-react`) が依存関係としてリストされていることを確認してください。AI に明示的に伝えることもできます: 「{ProductName} を使用して。」
 
 **カラーの輝度警告**
 
@@ -311,6 +367,18 @@ AI がカラーの輝度について警告した場合、選択したカラー�
 **サーフェス カラーの不一致**
 
 ライト テーマには明るいサーフェス (例: `#fafafa`) を使用してください。ダーク テーマには暗いサーフェス (例: `#121212`) を使用してください。不一致のサーフェス カラーは、AI に警告を発生させます。
+
+<!-- Angular -->
+**生成された Sass がコンパイルされない**
+
+`igniteui-angular` と `igniteui-theming` がインストールされていることを確認してください。
+
+```bash
+ng add igniteui-angular
+```
+
+また、`styles.scss` で他のテーマ mixin の前に `core()` が呼び出されていることを確認してください。
+<!-- end: Angular -->
 
 ## その他のリソース
 
