@@ -86,23 +86,10 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 | Scope | Location |
 |:------|:---------|
-| Project | `.github/skills/` |
-| Project | `.claude/skills/` |
-| Project | `.agents/skills/` |
-| Personal | `~/.copilot/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
-| Personal | `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
+| Project | `.github/skills/`, `.claude/skills/`, `.agents/skills/` |
+| Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
 
 > **Tip:** In VS Code, you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
-
-### Cursor
-
-[Cursor](https://cursor.com/docs/skills) discovers skills from:
-
-| Scope | Location |
-|:------|:---------|
-| Project | `.agents/skills/` |
-| Project | `.cursor/skills/` |
-| User (global) | `~/.cursor/skills/` |
 
 ### Claude
 
@@ -113,16 +100,23 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 | Project | `.claude/skills/` |
 | Personal | `~/.claude/skills/` |
 
+### Cursor
+
+[Cursor](https://cursor.com/docs/skills) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.agents/skills/`, `.cursor/skills/` |
+| User (global) | `~/.cursor/skills/` |
+
 ### Gemini CLI and Antigravity
 
 [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers) and [Antigravity](https://antigravity.google/docs/skills) discover skills from:
 
 | Scope | Location |
 |:------|:---------|
-| Workspace | `.gemini/skills/` |
-| Workspace | `.agents/skills/` (alias) |
-| User | `~/.gemini/skills/` |
-| User | `~/.agents/skills/` (alias) |
+| Workspace | `.gemini/skills/`, `.agents/skills/` |
+| User | `~/.gemini/skills/`, `~/.agents/skills/` |
 
 > **Tip:** Use the `/skills` slash command in Gemini CLI to view and manage installed skills.
 
@@ -140,10 +134,8 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 | Scope | Location |
 |:------|:---------|
-| Workspace | `.windsurf/skills/` |
-| Workspace | `.agents/skills/` (cross-agent compatibility) |
-| Global | `~/.codeium/windsurf/skills/` |
-| Global | `~/.agents/skills/` (cross-agent compatibility) |
+| Workspace | `.windsurf/skills/`, `.agents/skills/` |
+| Global | `~/.codeium/windsurf/skills/`, `~/.agents/skills/` |
 
 ---
 
