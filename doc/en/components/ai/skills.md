@@ -1,158 +1,262 @@
 ---
-title: AI-Assisted Development | AI Skills | {ProductName} | Infragistics
+title: Agent Skills | AI Skills | AI-Assisted Development | {ProductName} | Infragistics
 _description: Learn how to use Agent Skills to supercharge AI-assisted development with {ProductName} components, grids, data operations, and theming.
-_keywords: {ProductName}, copilot skills, ai assisted development, github copilot, cursor, windsurf, claude, jetbrains ai
+_keywords: {ProductName}, agent skills, ai assisted development, github copilot, cursor, windsurf, claude, gemini cli, junie
 _license: MIT
 mentionedTypes: []
 ---
 
-# AI-Assisted Development
+# {ProductName} Agent Skills
 
-{ProductName} ships with **Agent Skills** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+{ProductName} ships with **[Agent Skills](https://agentskills.io/)** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini CLI, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+
+> [!NOTE]
+> The AI tooling landscape is evolving rapidly. Skill discovery locations and distribution options may change as tools and IDEs are updated. Always consult the official documentation for your specific tool or agent for the latest information.
 
 ## Available Skills
 
-The skill files live in the [`skills/`](https://github.com/IgniteUI/igniteui-webcomponents/tree/master/skills) directory of the Ignite UI for WebComponents repository:
+The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directory of the {ProductName} repository:
+
+<!-- WebComponents -->
 
 | Skill | Path | Description |
 |:------|:-----|:------------|
-| Components & Layout | [`skills/igniteui-wc-choose-components/SKILL.md`](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md) | Standalone components, form controls, overlays, layout |
-| Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
-| Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
-| Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
+| Components & Layout | [`skills/igniteui-wc-choose-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-choose-components/SKILL.md) | Standalone components, form controls, overlays, layout |
+| Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
+| Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
 
+<!-- end: WebComponents -->
 
-There are two ways to use skills with your AI assistant: [create a persistent IDE agent](#approach-1-create-a-persistent-ide-agent) that always applies them automatically, or [download and load them manually](#approach-2-download-and-load-the-skills) into your preferred IDE on demand.
+<!-- React -->
 
-## Approach 1: Create a Persistent IDE Agent
+| Skill | Path | Description |
+|:------|:-----|:------------|
+| Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them — JSX patterns, event handling, refs, forms, TypeScript |
+| Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
 
-This approach wires the skills permanently into your project so that every AI session automatically follows the {ProductName} guidelines — no copy-pasting required.
+<!-- end: React -->
 
-### GitHub Copilot (VS Code)
+<!-- Angular -->
 
-GitHub Copilot reads custom instructions from a `.github/copilot-instructions.md` file at the root of your repository. To create a persistent agent:
+| Skill | Path | Description |
+|:------|:-----|:------------|
+| Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout |
+| Data Grids | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
+| Theming & Styling | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 
-1. Create (or open) `.github/copilot-instructions.md` in your project root.
-2. Add a reference or paste the relevant skill content into that file. For example:
+> [!NOTE]
+> Starting with {ProductName} **21.1.0**, these skills are automatically discovered when placed in your agent's skills path (e.g., `.claude/skills`, `.agents/skills`, `.cursor/rules/`). This release ships with an optional migration to add these skills to your project automatically.
 
-````markdown
-# Copilot Instructions
+<!-- end: Angular -->
 
-This project uses {ProductName}. Follow the guidelines in the skill files below:
+## Skill Locations
 
-- Components & Layout: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md
-- Theming & Styling: https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
-````
+Each AI coding tool discovers skills from specific directories. Place your skill files in the appropriate location so your AI assistant can find and use them automatically. The general `.agents/skills/` convention is supported across multiple tools, while each tool also has its own specific directories.
 
-3. Alternatively, paste the full content of the relevant `SKILL.md` files directly into `copilot-instructions.md` for fully offline, self-contained instructions.
-4. Copilot will now apply these instructions automatically on every chat and inline suggestion in VS Code.
+### General (`.agents/skills/`)
+
+The `.agents/skills/` directory is a cross-agent convention supported by multiple tools, including [VS Code with Copilot](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [OpenAI Codex](https://developers.openai.com/codex/skills), [Cursor](https://cursor.com/docs/skills), [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers), [Antigravity](https://antigravity.google/docs/skills), and [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes). Copy the skill directories into `.agents/skills/` in your project root:
+
+<!-- WebComponents -->
+
+```
+.agents/
+  skills/
+    igniteui-wc-choose-components/
+      SKILL.md
+    igniteui-wc-integrate-with-framework/
+      SKILL.md
+    igniteui-wc-customize-component-theme/
+      SKILL.md
+    igniteui-wc-optimize-bundle-size/
+      SKILL.md
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```
+.agents/
+  skills/
+    igniteui-react-components/
+      SKILL.md
+    igniteui-react-customize-theme/
+      SKILL.md
+    igniteui-react-optimize-bundle-size/
+      SKILL.md
+```
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+```
+.agents/
+  skills/
+    igniteui-angular-components/
+      SKILL.md
+    igniteui-angular-grids/
+      SKILL.md
+    igniteui-angular-theming/
+      SKILL.md
+```
+
+<!-- end: Angular -->
+
+For user-level (global) skills available across all projects, use `~/.agents/skills/` instead.
+
+### GitHub Copilot
+
+[GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.github/skills/`, `.claude/skills/` |
+| Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
+
+> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general  `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
+
+### Claude
+
+[Claude](https://code.claude.com/docs/en/skills#where-skills-live) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.claude/skills/` |
+| Personal | `~/.claude/skills/` |
 
 ### Cursor
 
-Cursor supports persistent project rules through a `.cursorrules` file or the `.cursor/rules/` directory:
+[Cursor](https://cursor.com/docs/skills#skill-directories) discovers skills from:
 
-1. Create `.cursorrules` in your project root (or `.cursor/rules/igniteui.md` for a named rule).
-2. Paste the contents of the desired `SKILL.md` files into that file. For example:
+| Scope | Location |
+|:------|:---------|
+| Project | `.agents/skills/`, `.cursor/skills/` |
+| User (global) | `~/.cursor/skills/` |
 
-    ````markdown
-    # {ProductName} Rules
+### Gemini CLI and Antigravity
 
-    <paste contents of skills/igniteui-wc-choose-components/SKILL.md here>
-    <paste contents of skills/igniteui-wc-customize-component-theme/SKILL.md here>
-    ````
+[Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers) and [Antigravity](https://antigravity.google/docs/skills) discover skills from:
 
-3. Cursor will include these rules in every AI request automatically. You can also use the `@rules` mention in chat to reference a specific rule on demand.
+| Scope | Location |
+|:------|:---------|
+| Workspace | `.gemini/skills/`, `.agents/skills/` |
+| User | `~/.gemini/skills/`, `~/.agents/skills/` |
+
+> **Tip:** Use the `/skills` slash command in Gemini CLI to view and manage installed skills.
+
+### Junie (JetBrains IDEs)
+
+[Junie](https://junie.jetbrains.com/docs/agent-skills.html) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.junie/skills/` |
+| User | `~/.junie/skills/` |
 
 ### Windsurf
 
-Windsurf reads persistent rules from a `.windsurfrules` file at the project root:
+[Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes) discovers skills from:
 
-1. Create `.windsurfrules` in your project root.
-2. Paste the contents of the relevant `SKILL.md` files into it.
-3. Every Cascade AI session in Windsurf will now include these as persistent instructions.
-
-### JetBrains IDEs (WebStorm, IntelliJ)
-
-JetBrains AI Assistant supports project-level prompts that are applied to every AI interaction:
-
-1. Open **Settings** (or **Preferences** on macOS) → **Tools** → **AI Assistant** → **Project-level prompt**.
-2. Paste the contents of the relevant `SKILL.md` files into the prompt field.
-3. Click **Apply**. The AI Assistant will now follow these instructions for all requests inside the project.
-
-### Claude Code
-
-Claude Code supports a `CLAUDE.md` file at the project root as persistent agent instructions:
-
-1. Create `CLAUDE.md` in your project root.
-2. Paste the contents of the relevant `SKILL.md` files into it. For example:
-
-    ````markdown
-    # Project Instructions
-
-    This project uses {ProductName}. Always follow these guidelines:
-
-    <paste contents of SKILL.md files here>
-    ````
-
-3. Claude Code will automatically read `CLAUDE.md` at the start of every session.
-
-### General AI Agents
-
-Alternatively, one can use a general Agent Skills config so your Agent can easily discover and load skills automatically on demand:
-
-1. Create a `.agents/skills/` directory in your project root.
-2. Copy the skill directories from `igniteui-webcomponents/skills/` repository into `.agents/skills/`:
-
-    ```shell
-    .agents/
-      skills/
-        igniteui-wc-choose-components/
-        igniteui-wc-customize-component-theme/
-        igniteui-wc-optimize-bundle-size/
-    ```
-
-3. The Agent will now discover these skills and load the relevant one automatically based on the context of your request.
-
-> **Tip for VS Code:** VS Code searches for skills in `.github/skills/`, `.claude/skills/`, and `.agents/skills/` by default. You can configure additional locations using the `chat.agentSkillsLocations` setting.
-
-> **Tip:** VS Code searches for skills in `.github/skills/`, `.claude/skills/`, and `.agents/skills/` by default. You can configure additional locations using the `chat.agentSkillsLocations` setting.
+| Scope | Location |
+|:------|:---------|
+| Workspace | `.windsurf/skills/`, `.agents/skills/` |
+| Global | `~/.codeium/windsurf/skills/`, `~/.agents/skills/` |
 
 ---
 
-## Approach 2: Download and Load the Skills
+## Installing Skills
 
-Use this approach when you want to load a specific skill on demand, without permanently modifying project configuration files.
+Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
-### Step 1: Get the Skill Files
+### **Option A — Use the installed npm package**
 
-#### **Option A — Download individual files**
+If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
-Each skill file can be downloaded directly from GitHub. First, create the `.agents/skills/` directory in your project root, then download the files into it:
+**macOS / Linux / Windows (PowerShell)**
 
 ```bash
-# Create the .agents/skills directory
-mkdir -p .agents/skills
-
-# Download skill files into .agents/skills/
-cd .agents/skills
-
-# Components & Layout
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-choose-components/SKILL.md
-
-# Theming & Styling
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
-
-# Optimization
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md
-
-# Platform Integration
-curl -O https://raw.githubusercontent.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md
+cp -r node_modules/{PackageCommon}/skills/. .agents/skills/
 ```
 
-The skill files will now be available in `.agents/skills/` and will be automatically discovered by compatible AI assistants.
+**Windows (Command Prompt)**
 
+```cmd
+robocopy node_modules\{PackageCommon}\skills .agents\skills /E
+```
 
-#### **Option B — Use the `gemini skills` CLI**
+Or copy individual skill directories as needed:
+
+**macOS / Linux / Windows (PowerShell)**
+
+<!-- WebComponents -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-choose-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-customize-component-theme .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-optimize-bundle-size .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .agents/skills/
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-customize-theme .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .agents/skills/
+```
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-grids .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skills/
+```
+
+<!-- end: Angular -->
+
+**Windows (Command Prompt)**
+
+<!-- WebComponents -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agents\skills\igniteui-wc-choose-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\igniteui-wc-customize-component-theme /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\igniteui-wc-optimize-bundle-size /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\igniteui-wc-integrate-with-framework /E
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
+```
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-components .agents\skills\igniteui-angular-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-grids .agents\skills\igniteui-angular-grids /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\skills\igniteui-angular-theming /E
+```
+
+<!-- end: Angular -->
+
+### **Option B — Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -161,83 +265,78 @@ The `gemini skills install` command installs skills directly from a Git reposito
 
 **Install to user scope (default):**
 
+<!-- WebComponents -->
+
 ```bash
-gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-choose-components
-gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-customize-component-theme
-gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-optimize-bundle-size
-gemini skills install https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-choose-components
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gemini skills install {GithubLink}.git --path skills/igniteui-react-components
+gemini skills install {GithubLink}.git --path skills/igniteui-react-customize-theme
+gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+```
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+```bash
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-components
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-grids
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
+```
+
+<!-- end: Angular -->
 
 **Install to workspace scope:**
 
+<!-- WebComponents -->
+
 ```bash
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-choose-components
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-customize-component-theme
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-optimize-bundle-size
-gemini skills install --scope workspace https://github.com/IgniteUI/igniteui-webcomponents.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-choose-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-customize-theme
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+```
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+```bash
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-grids
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-theming
+```
+
+<!-- end: Angular -->
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-
-#### **Option C — Use the installed npm package**
-
-If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
-
-```bash
-# macOS / Linux
-cp -r node_modules/igniteui-webcomponents/skills/. .agents/skills/
-```
-
-```powershell
-# Windows (PowerShell)
-Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\* .agents\skills\
-```
-
-Or copy individual skill directories as needed:
-
-**macOS / Linux**
-
-```bash
-cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-choose-components .agents/skills/
-cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-customize-component-theme .agents/skills/
-cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-optimize-bundle-size .agents/skills/
-cp -r node_modules/igniteui-webcomponents/skills/igniteui-wc-integrate-with-framework .agents/skills/
-```
-
-**Windows (PowerShell)**
-
-```powershell
-Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-choose-components .agents\skills\
-Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-customize-component-theme .agents\skills\
-Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-optimize-bundle-size .agents\skills\
-Copy-Item -Recurse node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-with-framework .agents\skills\
-```
-
-**Windows (Command Prompt)**
-
-```cmd
-xcopy /E /I node_modules\igniteui-webcomponents\skills\igniteui-wc-choose-components .agents\skills\onents
-xcopy /E /I node_modules\igniteui-webcomponents\skills\igniteui-wc-customize-component-theme .agents\skills
-xcopy /E /I node_modules\igniteui-webcomponents\skills\igniteui-wc-optimize-bundle-size .agents\skills\
-xcopy /E /I node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-with-framework .agents\skills\
-```
-
-The skill files are located at:
-
-```shell
-node_modules\igniteui-webcomponents\skills\igniteui-wc-choose-components\SKILL.md
-node_modules\igniteui-webcomponents\skills\igniteui-wc-customize-component-theme\SKILL.md
-node_modules\igniteui-webcomponents\skills\igniteui-wc-optimize-bundle-size\SKILL.md
-node_modules\igniteui-webcomponents\skills\igniteui-wc-integrate-with-framework\SKILL.md
-```
-
-#### **Option D — Use the `npx skills` CLI**
+### **Option C — Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
 ```shell
-npx skills add IgniteUI/igniteui-webcomponents
+npx skills add IgniteUI/{PackageCommon}
 ```
 
 The CLI will guide you through a series of prompts to:
@@ -248,26 +347,29 @@ The CLI will guide you through a series of prompts to:
 
 Once complete, the skills are ready to use — no manual file copying required.
 
-> **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/igniteui-webcomponents](https://github.com/IgniteUI/igniteui-webcomponents) repository.
-
-### Step 2: Load the Skill into Your IDE
-
-Once you have the files, open them and load them into your AI assistant:
-
-| IDE / Tool | How to load |
-|:-----------|:------------|
-| **VS Code + GitHub Copilot** | Use `#file:path/to/SKILL.md` in the Copilot Chat input to attach it as context for that session. |
-| **Cursor** | Drag the `SKILL.md` file into the chat window, or type `@file` and select it. |
-| **Windsurf** | Attach the file using the **+** button in the Cascade chat panel. |
-| **JetBrains AI Assistant** | Click the paperclip icon in the AI chat to attach the file as context. |
-| **Claude Desktop** | Drag the file into the chat or add it to the project knowledge base via **Project → Add Content**. |
-| **Other assistants** | Open the `SKILL.md` file, copy its full contents, and paste them into the system prompt or at the top of your first message. |
+> **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/{PackageCommon}]({GithubLink}) repository.
 
 ---
 
 ## Theming MCP Server
 
-The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+<!-- WebComponents -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: React -->
+
+<!-- Angular -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: Angular -->
 
 For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./theming-mcp.md) documentation.
 
@@ -275,9 +377,15 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 
 <div class="divider--half"></div>
 
+<!-- React, WebComponents -->
 - [Getting Started with {ProductName}](../general-getting-started.md)
 - [Ignite UI CLI](../general-cli-overview.md)
-- [Ignite UI Theming MCP](./theming-mcp.md)
+<!-- end: React, WebComponents -->
+<!-- Angular -->
+<!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
+- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
+- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
+<!-- end: Angular -->
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
