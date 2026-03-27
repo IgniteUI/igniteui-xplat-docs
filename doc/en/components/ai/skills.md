@@ -281,7 +281,7 @@ npx skills add IgniteUI/{PackageCommon}
 The CLI will guide you through a series of prompts to:
 
 1. Select which skills to install (components, theming, etc.).
-2. Choose the target location for the skill files in your project (e.g. `.agents/skills/`, `.github/skills/` — see [Skill Locations](#skill-locations) for all options).
+2. Choose the target location for the skill files in your project (e.g. `.agents/skills/`, `.github/skills/`).
 3. Download and write the selected skill files automatically.
 
 Once complete, the skills are ready to use — no manual file copying required.
