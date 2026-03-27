@@ -1,14 +1,17 @@
 ---
 title: AI-Assisted Development | AI Skills | {ProductName} | Infragistics
 _description: Learn how to use Agent Skills to supercharge AI-assisted development with {ProductName} components, grids, data operations, and theming.
-_keywords: {ProductName}, copilot skills, ai assisted development, github copilot, cursor, windsurf, claude, jetbrains ai
+_keywords: {ProductName}, agent skills, ai assisted development, github copilot, cursor, windsurf, claude, gemini cli, junie
 _license: MIT
 mentionedTypes: []
 ---
 
 # AI-Assisted Development
 
-{ProductName} ships with **Agent Skills** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+{ProductName} ships with **[Agent Skills](https://agentskills.io/)** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini CLI, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+
+> [!NOTE]
+> The AI tooling landscape is evolving rapidly. Skill discovery locations and distribution options may change as tools and IDEs are updated. Always consult the official documentation for your specific tool or agent for the latest information.
 
 ## Available Skills
 
@@ -35,156 +38,115 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 
 <!-- end: React -->
 
-There are two ways to use skills with your AI assistant: [create a persistent IDE agent](#approach-1-create-a-persistent-ide-agent) that always applies them automatically, or [download and load them manually](#approach-2-download-and-load-the-skills) into your preferred IDE on demand.
+## Skill Locations
 
-## Approach 1: Create a Persistent IDE Agent
+Each AI coding tool discovers skills from specific directories. Place your skill files in the appropriate location so your AI assistant can find and use them automatically. The general `.agents/skills/` convention is supported across multiple tools, while each tool also has its own specific directories.
 
-This approach wires the skills permanently into your project so that every AI session automatically follows the {ProductName} guidelines — no copy-pasting required.
+### General (`.agents/skills/`)
 
-### GitHub Copilot (VS Code)
-
-GitHub Copilot reads custom instructions from a `.github/copilot-instructions.md` file at the root of your repository. To create a persistent agent:
-
-1. Create (or open) `.github/copilot-instructions.md` in your project root.
-2. Add a reference or paste the relevant skill content into that file. For example:
+The `.agents/skills/` directory is a cross-agent convention supported by multiple tools, including [VS Code with Copilot](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [OpenAI Codex](https://developers.openai.com/codex/skills), [Cursor](https://cursor.com/docs/skills), [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers), [Antigravity](https://antigravity.google/docs/skills), and [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes). Copy the skill directories into `.agents/skills/` in your project root:
 
 <!-- WebComponents -->
 
-````markdown
-# Copilot Instructions
-
-This project uses {ProductName}. Follow the guidelines in the skill files below:
-
-- Components & Layout: {GithubLink}/blob/master/skills/igniteui-wc-choose-components/SKILL.md
-- Theming & Styling: {GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md
-````
+```
+.agents/
+  skills/
+    igniteui-wc-choose-components/
+      SKILL.md
+    igniteui-wc-integrate-with-framework/
+      SKILL.md
+    igniteui-wc-customize-component-theme/
+      SKILL.md
+    igniteui-wc-optimize-bundle-size/
+      SKILL.md
+```
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 
-````markdown
-# Copilot Instructions
-
-This project uses {ProductName}. Follow the guidelines in the skill files below:
-
-- Components: {GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md
-- Theming & Styling: {GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md
-````
+```
+.agents/
+  skills/
+    igniteui-react-components/
+      SKILL.md
+    igniteui-react-customize-theme/
+      SKILL.md
+    igniteui-react-optimize-bundle-size/
+      SKILL.md
+```
 
 <!-- end: React -->
 
-3. Alternatively, paste the full content of the relevant `SKILL.md` files directly into `copilot-instructions.md` for fully offline, self-contained instructions.
-4. Copilot will now apply these instructions automatically on every chat and inline suggestion in VS Code.
+For user-level (global) skills available across all projects, use `~/.agents/skills/` instead.
+
+### GitHub Copilot
+
+[GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.github/skills/`, `.claude/skills/` |
+| Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
+
+> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general  `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
+
+### Claude
+
+[Claude](https://code.claude.com/docs/en/skills#where-skills-live) discovers skills from:
+
+| Scope | Location |
+|:------|:---------|
+| Project | `.claude/skills/` |
+| Personal | `~/.claude/skills/` |
 
 ### Cursor
 
-Cursor supports persistent project rules through a `.cursorrules` file or the `.cursor/rules/` directory:
+[Cursor](https://cursor.com/docs/skills#skill-directories) discovers skills from:
 
-1. Create `.cursorrules` in your project root (or `.cursor/rules/igniteui.md` for a named rule).
-2. Paste the contents of the desired `SKILL.md` files into that file. For example:
+| Scope | Location |
+|:------|:---------|
+| Project | `.agents/skills/`, `.cursor/skills/` |
+| User (global) | `~/.cursor/skills/` |
 
-<!-- WebComponents -->
+### Gemini CLI and Antigravity
 
-    ````markdown
-    # {ProductName} Rules
+[Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers) and [Antigravity](https://antigravity.google/docs/skills) discover skills from:
 
-    <paste contents of skills/igniteui-wc-choose-components/SKILL.md here>
-    <paste contents of skills/igniteui-wc-customize-component-theme/SKILL.md here>
-    ````
+| Scope | Location |
+|:------|:---------|
+| Workspace | `.gemini/skills/`, `.agents/skills/` |
+| User | `~/.gemini/skills/`, `~/.agents/skills/` |
 
-<!-- end: WebComponents -->
+> **Tip:** Use the `/skills` slash command in Gemini CLI to view and manage installed skills.
 
-<!-- React -->
+### JetBrains IDEs (Junie)
 
-    ````markdown
-    # {ProductName} Rules
+[Junie](https://junie.jetbrains.com/docs/agent-skills.html) discovers skills from:
 
-    <paste contents of skills/igniteui-react-components/SKILL.md here>
-    <paste contents of skills/igniteui-react-customize-theme/SKILL.md here>
-    ````
-
-<!-- end: React -->
-
-3. Cursor will include these rules in every AI request automatically. You can also use the `@rules` mention in chat to reference a specific rule on demand.
+| Scope | Location |
+|:------|:---------|
+| Project | `.junie/skills/` |
+| User | `~/.junie/skills/` |
 
 ### Windsurf
 
-Windsurf reads persistent rules from a `.windsurfrules` file at the project root:
+[Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes) discovers skills from:
 
-1. Create `.windsurfrules` in your project root.
-2. Paste the contents of the relevant `SKILL.md` files into it.
-3. Every Cascade AI session in Windsurf will now include these as persistent instructions.
-
-### JetBrains IDEs (WebStorm, IntelliJ)
-
-JetBrains AI Assistant supports project-level prompts that are applied to every AI interaction:
-
-1. Open **Settings** (or **Preferences** on macOS) → **Tools** → **AI Assistant** → **Project-level prompt**.
-2. Paste the contents of the relevant `SKILL.md` files into the prompt field.
-3. Click **Apply**. The AI Assistant will now follow these instructions for all requests inside the project.
-
-### Claude Code
-
-Claude Code supports a `CLAUDE.md` file at the project root as persistent agent instructions:
-
-1. Create `CLAUDE.md` in your project root.
-2. Paste the contents of the relevant `SKILL.md` files into it. For example:
-
-    ````markdown
-    # Project Instructions
-
-    This project uses {ProductName}. Always follow these guidelines:
-
-    <paste contents of SKILL.md files here>
-    ````
-
-3. Claude Code will automatically read `CLAUDE.md` at the start of every session.
-
-### General AI Agents
-
-Alternatively, one can use a general Agent Skills config so your Agent can easily discover and load skills automatically on demand:
-
-1. Create a `.agents/skills/` directory in your project root.
-2. Copy the skill directories from `{PackageCommon}/skills/` repository into `.agents/skills/`:
-
-<!-- WebComponents -->
-
-    ```shell
-    .agents/
-      skills/
-        igniteui-wc-choose-components/
-        igniteui-wc-customize-component-theme/
-        igniteui-wc-optimize-bundle-size/
-    ```
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-
-    ```shell
-    .agents/
-      skills/
-        igniteui-react-components/
-        igniteui-react-customize-theme/
-        igniteui-react-optimize-bundle-size/
-    ```
-
-<!-- end: React -->
-
-3. The Agent will now discover these skills and load the relevant one automatically based on the context of your request.
-
-> **Tip:** VS Code searches for skills in `.github/skills/`, `.claude/skills/`, and `.agents/skills/` by default. You can configure additional locations using the `chat.agentSkillsLocations` setting.
+| Scope | Location |
+|:------|:---------|
+| Workspace | `.windsurf/skills/`, `.agents/skills/` |
+| Global | `~/.codeium/windsurf/skills/`, `~/.agents/skills/` |
 
 ---
 
-## Approach 2: Download and Load the Skills
+## Installing Skills
 
-Use this approach when you want to load a specific skill on demand, without permanently modifying project configuration files.
+Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
 ### **Option A — Use the installed npm package**
 
-If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. for use with General AI Agents under `.agents/skills/`), run:
+If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
 **macOS / Linux / Windows (PowerShell)**
 
