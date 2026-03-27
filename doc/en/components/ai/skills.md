@@ -93,7 +93,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 ### Claude
 
-[Claude](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview#sharing-scope) discovers skills from:
+[Claude](https://code.claude.com/docs/en/skills#where-skills-live) discovers skills from:
 
 | Scope | Location |
 |:------|:---------|
@@ -102,7 +102,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 ### Cursor
 
-[Cursor](https://cursor.com/docs/skills) discovers skills from:
+[Cursor](https://cursor.com/docs/skills#skill-directories) discovers skills from:
 
 | Scope | Location |
 |:------|:---------|
@@ -127,6 +127,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 | Scope | Location |
 |:------|:---------|
 | Project | `.junie/skills/` |
+| User | `~/.junie/skills/` |
 
 ### Windsurf
 
