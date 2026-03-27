@@ -1,14 +1,14 @@
 ---
 title: AI-Assisted Development | AI Skills | {ProductName} | Infragistics
 _description: Learn how to use Agent Skills to supercharge AI-assisted development with {ProductName} components, grids, data operations, and theming.
-_keywords: {ProductName}, agent skills, ai assisted development, github copilot, cursor, windsurf, claude, gemini, junie, jetbrains ai
+_keywords: {ProductName}, agent skills, ai assisted development, github copilot, cursor, windsurf, claude, gemini cli, junie
 _license: MIT
 mentionedTypes: []
 ---
 
 # AI-Assisted Development
 
-{ProductName} ships with **[Agent Skills](https://agentskills.io/)** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+{ProductName} ships with **[Agent Skills](https://agentskills.io/)** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini CLI, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
 
 > [!NOTE]
 > The AI tooling landscape is evolving rapidly. Skill discovery locations and distribution options may change as tools and IDEs are updated. Always consult the official documentation for your specific tool or agent for the latest information.
