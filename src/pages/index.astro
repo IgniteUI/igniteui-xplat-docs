@@ -1,0 +1,64 @@
+---
+import { sidebar } from 'virtual:docs-template/site-meta';
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+type SidebarEntry = { label: string; slug: string } | { label: string; items: SidebarEntry[] };
+type TocItem = { name?: string; href?: string; default?: boolean; items?: TocItem[] };
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
+
+let lang = 'en';
+try {
+    const cfg = JSON.parse(readFileSync(path.join(root, '.platform.json'), 'utf8'));
+    lang = cfg.lang ?? lang;
+} catch { /* use default */ }
+
+const tocPath = path.join(root, 'src', 'content', lang, 'toc.json');
+const toc: TocItem[] = existsSync(tocPath)
+    ? JSON.parse(readFileSync(tocPath, 'utf8'))
+    : [];
+
+function hrefToSlug(href: string): string {
+    return href.replace(/\\/g, '/').replace(/\.md$/i, '').toLowerCase().replace(/\/index$/, '');
+}
+
+function findDefaultSlug(items: TocItem[]): string | null {
+    for (const item of items) {
+        if (item.default && item.href) return hrefToSlug(item.href);
+        if (item.items) {
+            const found = findDefaultSlug(item.items);
+            if (found) return found;
+        }
+    }
+    return null;
+}
+
+function firstSlug(items: SidebarEntry[]): string | null {
+    for (const item of items) {
+        if ('slug' in item) return item.slug;
+        if ('items' in item) {
+            const found = firstSlug(item.items);
+            if (found) return found;
+        }
+    }
+    return null;
+}
+
+function slugExistsInSidebar(items: SidebarEntry[], target: string): boolean {
+    for (const item of items) {
+        if ('slug' in item && item.slug === target) return true;
+        if ('items' in item && slugExistsInSidebar(item.items, target)) return true;
+    }
+    return false;
+}
+
+const typedSidebar = sidebar as SidebarEntry[];
+const defaultSlug = findDefaultSlug(toc);
+const slug = (defaultSlug && slugExistsInSidebar(typedSidebar, defaultSlug))
+    ? defaultSlug
+    : firstSlug(typedSidebar);
+const redirectTo = slug ? `/${slug}/` : '/404/';
+return Astro.redirect(redirectTo, 301);
+---
