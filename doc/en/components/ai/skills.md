@@ -44,7 +44,7 @@ Each AI coding tool discovers skills from specific directories. Place your skill
 
 ### General (`.agents/skills/`)
 
-The `.agents/skills/` directory is a cross-agent convention supported by [VS Code with Copilot](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [OpenAI Codex](https://developers.openai.com/codex/skills), [Cursor](https://cursor.com/docs/skills), [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers), [Antigravity](https://antigravity.google/docs/skills), and [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes). Copy the skill directories into `.agents/skills/` in your project root:
+The `.agents/skills/` directory is a cross-agent convention supported by multiple tools, including [VS Code with Copilot](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [OpenAI Codex](https://developers.openai.com/codex/skills), [Cursor](https://cursor.com/docs/skills), [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers), [Antigravity](https://antigravity.google/docs/skills), and [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes). Copy the skill directories into `.agents/skills/` in your project root:
 
 <!-- WebComponents -->
 
@@ -86,10 +86,10 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 | Scope | Location |
 |:------|:---------|
-| Project | `.github/skills/`, `.claude/skills/`, `.agents/skills/` |
+| Project | `.github/skills/`, `.claude/skills/` |
 | Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
 
-> **Tip:** In VS Code, you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
+> **Tip:** In VS Code, you can configure additional skill locations (including `.agents/skills/`) using the `chat.agentSkillsLocations` setting.
 
 ### Claude
 
