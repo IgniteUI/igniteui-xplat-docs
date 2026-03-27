@@ -10,7 +10,7 @@ on:
     branches: [ master, vnext ]
 
 jobs:
-  build:
+  build-wc:
 
     runs-on: ubuntu-latest
 
