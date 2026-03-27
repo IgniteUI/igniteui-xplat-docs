@@ -38,6 +38,19 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 
 <!-- end: React -->
 
+<!-- Angular -->
+
+| Skill | Path | Description |
+|:------|:-----|:------------|
+| Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout |
+| Data Grids | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
+| Theming & Styling | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+
+> [!NOTE]
+> Starting with {ProductName} **21.1.0**, these skills are automatically discovered when placed in your agent's skills path (e.g., `.claude/skills`, `.agents/skills`, `.cursor/rules/`). This release ships with an optional migration to add these skills to your project automatically.
+
+<!-- end: Angular -->
+
 ## Skill Locations
 
 Each AI coding tool discovers skills from specific directories. Place your skill files in the appropriate location so your AI assistant can find and use them automatically. The general `.agents/skills/` convention is supported across multiple tools, while each tool also has its own specific directories.
@@ -77,6 +90,21 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
 ```
 
 <!-- end: React -->
+
+<!-- Angular -->
+
+```
+.agents/
+  skills/
+    igniteui-angular-components/
+      SKILL.md
+    igniteui-angular-grids/
+      SKILL.md
+    igniteui-angular-theming/
+      SKILL.md
+```
+
+<!-- end: Angular -->
 
 For user-level (global) skills available across all projects, use `~/.agents/skills/` instead.
 
@@ -185,6 +213,16 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .a
 
 <!-- end: React -->
 
+<!-- Angular -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-grids .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skills/
+```
+
+<!-- end: Angular -->
+
 **Windows (Command Prompt)**
 
 <!-- WebComponents -->
@@ -207,6 +245,16 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size
 ```
 
 <!-- end: React -->
+
+<!-- Angular -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-components .agents\skills\igniteui-angular-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-grids .agents\skills\igniteui-angular-grids /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\skills\igniteui-angular-theming /E
+```
+
+<!-- end: Angular -->
 
 ### **Option B — Use the `gemini skills` CLI**
 
@@ -238,6 +286,16 @@ gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bun
 
 <!-- end: React -->
 
+<!-- Angular -->
+
+```bash
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-components
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-grids
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
+```
+
+<!-- end: Angular -->
+
 **Install to workspace scope:**
 
 <!-- WebComponents -->
@@ -260,6 +318,16 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 ```
 
 <!-- end: React -->
+
+<!-- Angular -->
+
+```bash
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-grids
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-theming
+```
+
+<!-- end: Angular -->
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
@@ -296,6 +364,12 @@ The **Theming skill** includes setup instructions for the `igniteui-theming` MCP
 The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
 
 <!-- end: React -->
+
+<!-- Angular -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: Angular -->
 
 For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./theming-mcp.md) documentation.
 
