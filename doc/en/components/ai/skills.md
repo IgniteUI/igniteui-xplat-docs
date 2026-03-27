@@ -148,7 +148,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 > **Tip:** Use the `/skills` slash command in Gemini CLI to view and manage installed skills.
 
-### JetBrains IDEs (Junie)
+### Junie (JetBrains IDEs)
 
 [Junie](https://junie.jetbrains.com/docs/agent-skills.html) discovers skills from:
 
