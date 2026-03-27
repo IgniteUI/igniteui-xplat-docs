@@ -89,7 +89,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 | Project | `.github/skills/`, `.claude/skills/` |
 | Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
 
-> **Tip:** In VS Code, you can configure additional skill locations (including `.agents/skills/`) using the `chat.agentSkillsLocations` setting.
+> **Tip:** In VS Code, these locations also include the general  `.agents/skills/`/`~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
 
 ### Claude
 
