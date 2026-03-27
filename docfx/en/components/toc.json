@@ -1909,6 +1909,12 @@
     "status": "new"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Splitter",
+    "href": "layouts/splitter.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
