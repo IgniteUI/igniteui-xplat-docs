@@ -6,7 +6,7 @@
   },
   {
     "exclude": ["Blazor"],
-    "name": "{ProductName} Skills",
+    "name": "Agent Skills",
     "href": "ai/skills.md",
     "status": "new"
   },
