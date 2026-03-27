@@ -384,8 +384,8 @@ Theming MCP の詳細については、[Ignite UI Theming MCP](./theming-mcp.md)
 <!-- end: React, WebComponents -->
 <!-- Angular -->
 <!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
-- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">{ProductName} で作業を開始</a>
-- <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
+- <a href="https://jp.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">{ProductName} で作業を開始</a>
+- <a href="https://jp.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
