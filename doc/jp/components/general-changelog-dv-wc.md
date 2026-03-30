@@ -31,9 +31,9 @@ _language: ja
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
 |2327|IgcToolbar|WebComponents で SubPanel サンプルが機能しない。|
-|2638|IgcDataChart|回転したラベルのマウス ホット検出を改善。|
+|2638|IgcDataChart|回転したラベルのマウス ヒット検出を改善。|
 |2959|IgcLinearGauge|ゲージが View 関数を呼び出さないように修正。|
-|2326|IgcDataChart|その他の色を設定するプロパティを追加。|
+|2326|IgcDataChart|others の色を設定するプロパティを追加。|
 |41594|IgcDataChart|AssigningCategoryStyle の args.GetItems が null であるか、フラグメント シリーズのアイテム更新に機能しない。|
 
 ### {PackageCommon}
