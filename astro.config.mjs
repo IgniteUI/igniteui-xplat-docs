@@ -72,6 +72,13 @@ const PLATFORM_KEY = {
     Blazor: 'blazor',
 };
 
+const PLATFORM_SITE = {
+    Angular:       'https://www.infragistics.com/products/ignite-ui-angular/angular/components',
+    React:         'https://www.infragistics.com/products/ignite-ui-react/react/components',
+    WebComponents: 'https://www.infragistics.com/products/ignite-ui-web-components/web-components/components',
+    Blazor:        'https://www.infragistics.com/products/ignite-ui-blazor/blazor/components',
+};
+
 // Generated markdown lives in generated/{platform}/{lang}/ (produced by scripts/generate.mjs)
 const XPLAT_ROOT = path.join(__dirname, 'generated', platform, lang);
 
@@ -79,7 +86,7 @@ console.log(`[astro.config] Platform: ${platform}  lang: ${lang}  mode: ${mode} 
 
 // https://astro.build/config
 export default createDocsSite({
-    site: 'https://my-org.github.io/xplat-docs',
+    site: PLATFORM_SITE[/** @type {keyof typeof PLATFORM_SITE} */ (platform)] ?? 'https://www.infragistics.com',
     title: meta.title,
     description: meta.description,
     platform: /** @type {any} */ (PLATFORM_KEY[/** @type {keyof typeof PLATFORM_KEY} */ (platform)] ?? null),
