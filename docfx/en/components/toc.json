@@ -1,17 +1,17 @@
 [
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Blazor"],
     "name": "AI-Assisted Development",
     "header": true
   },
   {
-    "exclude": ["Blazor", "Angular", "React"],
-    "name": "{ProductName} Skills",
+    "exclude": ["Blazor"],
+    "name": "Agent Skills",
     "href": "ai/skills.md",
     "status": "new"
   },
   {
-    "exclude": ["Blazor", "Angular", "React"],
+    "exclude": ["Blazor"],
     "name": "Theming MCP",
     "href": "ai/theming-mcp.md",
     "status": "new"
