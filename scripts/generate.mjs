@@ -20,11 +20,10 @@
 
 import {
     readFileSync, writeFileSync, mkdirSync,
-    existsSync, readdirSync, statSync,
+    existsSync, readdirSync, statSync, rmSync,
 } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import yaml from 'js-yaml';
 
 // ---------------------------------------------------------------------------
 // CLI arguments
@@ -103,11 +102,27 @@ function buildComponentReplacements(componentKey) {
 function parseFrontmatter(content) {
     const match = content.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(\r?\n|$)/);
     if (!match) return { data: {} };
-    try {
-        return { data: yaml.load(match[1]) || {} };
-    } catch {
-        return { data: {} };
+    const fm = match[1];
+
+    const lineMatch = fm.match(/^sharedComponents:[ \t]*(.*)/m);
+    if (!lineMatch) return { data: {} };
+
+    const rest = lineMatch[1].trim();
+    let sharedComponents;
+
+    if (rest.startsWith('[')) {
+        // Flow sequence: ["Grid", "TreeGrid", "HierarchicalGrid"]
+        sharedComponents = [...rest.matchAll(/"([^"]+)"|'([^']+)'|([A-Za-z][\w]*)/g)]
+            .map(m => m[1] ?? m[2] ?? m[3])
+            .filter(Boolean);
+    } else {
+        const blockMatch = fm.match(/^sharedComponents:\s*\r?\n((?:[ \t]*-[ \t]+\S.*\r?\n?)*)/m);
+        if (!blockMatch) return { data: {} };
+        sharedComponents = [...blockMatch[1].matchAll(/^[ \t]*-[ \t]+(.+?)[ \t]*$/mg)]
+            .map(m => m[1]);
     }
+
+    return { data: { sharedComponents } };
 }
 
 // ---------------------------------------------------------------------------
@@ -417,7 +432,7 @@ function generateEnvironmentJson() {
         };
     }
 
-    // Write one level above the components/ output dir: dist/{Platform}/{lang}/environment.json
+    // Write one level above the components/ output dir: generated/{Platform}/{lang}/environment.json
     const outPath = path.join(path.dirname(OUT_DIR), 'environment.json');
     writeFileSync(outPath, JSON.stringify(envJson, null, 2), 'utf8');
     console.log(`[generate] environment.json: ${outPath}`);
@@ -438,6 +453,12 @@ if (!existsSync(SRC_COMPONENTS)) {
     process.exit(1);
 }
 
+// Clean the output root (generated/{PLATFORM}/{LANG}/)
+const OUT_ROOT = path.dirname(OUT_DIR); // generated/{PLATFORM}/{LANG}/
+if (existsSync(OUT_ROOT)) {
+    rmSync(OUT_ROOT, { recursive: true, force: true });
+    console.log(`[generate] Cleaned output: ${OUT_ROOT}`);
+}
 mkdirSync(OUT_DIR, { recursive: true });
 processDir(SRC_COMPONENTS, OUT_DIR);
 generateToc();
@@ -449,5 +470,13 @@ writeFileSync(
     JSON.stringify({ platform: PLATFORM, lang: LANG }, null, 2),
     'utf8',
 );
+
+// Clear Astro's content cache so the next dev/build picks up the correct
+// platform + language content rather than serving stale cached entries.
+const astroCacheDir = path.join(ROOT, '.astro');
+if (existsSync(astroCacheDir)) {
+    rmSync(astroCacheDir, { recursive: true, force: true });
+    console.log('[generate] Cleared .astro cache.');
+}
 
 console.log('[generate] Done.');
