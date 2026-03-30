@@ -10,7 +10,7 @@ on:
     branches: [ master, vnext ]
 
 jobs:
-  build:
+  build-react:
 
     runs-on: ubuntu-latest
 
