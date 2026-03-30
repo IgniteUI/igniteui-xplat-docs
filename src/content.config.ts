@@ -14,7 +14,7 @@ try {
     lang     = cfg.lang     ?? lang;
 } catch { /* use defaults */ }
 
-const docsDir = path.join(root, 'dist', platform, lang, 'components');
+const docsDir = path.join(root, 'generated', platform, lang, 'components');
 console.log(`[content.config] platform=${platform} lang=${lang} → ${docsDir}`);
 
 export const collections = {

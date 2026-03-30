@@ -8,7 +8,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-
     "generate": "node scripts/generate.mjs",
     "generate:angular": "node scripts/generate.mjs --platform=Angular",
     "generate:react": "node scripts/generate.mjs --platform=React",
@@ -18,7 +17,6 @@
     "generate:react:jp": "node scripts/generate.mjs --platform=React --lang=jp",
     "generate:webcomponents:jp": "node scripts/generate.mjs --platform=WebComponents --lang=jp",
     "generate:blazor:jp": "node scripts/generate.mjs --platform=Blazor --lang=jp",
-
     "dev:angular": "npm run generate:angular && astro dev",
     "dev:react": "npm run generate:react && astro dev",
     "dev:webcomponents": "npm run generate:webcomponents && astro dev",
@@ -27,11 +25,30 @@
     "dev:react:jp": "npm run generate:react:jp && astro dev",
     "dev:webcomponents:jp": "npm run generate:webcomponents:jp && astro dev",
     "dev:blazor:jp": "npm run generate:blazor:jp && astro dev",
-
     "build:angular": "npm run generate:angular && astro build",
     "build:react": "npm run generate:react && astro build",
     "build:webcomponents": "npm run generate:webcomponents && astro build",
-    "build:blazor": "npm run generate:blazor && astro build"
+    "build:blazor": "npm run generate:blazor && astro build",
+    "build:angular:jp": "npm run generate:angular:jp && astro build",
+    "build:react:jp": "npm run generate:react:jp && astro build",
+    "build:webcomponents:jp": "npm run generate:webcomponents:jp && astro build",
+    "build:blazor:jp": "npm run generate:blazor:jp && astro build",
+    "build-staging:angular": "cross-env NODE_ENV=staging npm run build:angular",
+    "build-staging:react": "cross-env NODE_ENV=staging npm run build:react",
+    "build-staging:webcomponents": "cross-env NODE_ENV=staging npm run build:webcomponents",
+    "build-staging:blazor": "cross-env NODE_ENV=staging npm run build:blazor",
+    "build-staging:angular:jp": "cross-env NODE_ENV=staging npm run build:angular:jp",
+    "build-staging:react:jp": "cross-env NODE_ENV=staging npm run build:react:jp",
+    "build-staging:webcomponents:jp": "cross-env NODE_ENV=staging npm run build:webcomponents:jp",
+    "build-staging:blazor:jp": "cross-env NODE_ENV=staging npm run build:blazor:jp",
+    "build-production:angular": "cross-env NODE_ENV=production npm run build:angular",
+    "build-production:react": "cross-env NODE_ENV=production npm run build:react",
+    "build-production:webcomponents": "cross-env NODE_ENV=production npm run build:webcomponents",
+    "build-production:blazor": "cross-env NODE_ENV=production npm run build:blazor",
+    "build-production:angular:jp": "cross-env NODE_ENV=production npm run build:angular:jp",
+    "build-production:react:jp": "cross-env NODE_ENV=production npm run build:react:jp",
+    "build-production:webcomponents:jp": "cross-env NODE_ENV=production npm run build:webcomponents:jp",
+    "build-production:blazor:jp": "cross-env NODE_ENV=production npm run build:blazor:jp"
   },
   "keywords": [],
   "author": "infragistics",
@@ -44,6 +61,7 @@
     "sharp": "^0.34.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "js-yaml": "^4.1.1",
     "sass-embedded": "^1.98.0"
   }

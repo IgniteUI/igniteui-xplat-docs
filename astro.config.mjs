@@ -3,6 +3,8 @@ import path from 'node:path';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createDocsSite } from 'docs-template/integration';
+import { remarkEnv } from './src/plugins/remark-env.mjs';
+import { remarkApiLinks } from './src/plugins/remark-api-links.mjs';
 
 // ---------------------------------------------------------------------------
 // Platform selection
@@ -30,6 +32,13 @@ function resolveSetting(envKey, jsonKey, fallback) {
 
 const platform = resolveSetting('PLATFORM', 'platform', 'React');
 const lang     = resolveSetting('LANG_CODE', 'lang',     'en');
+
+// NODE_ENV: 'development' | 'staging' | 'production'  (default: 'development')
+const nodeEnv = process.env.NODE_ENV || 'development';
+/** @type {'dev' | 'staging' | 'prod'} */
+const mode = nodeEnv === 'production' ? 'prod'
+    : nodeEnv === 'staging' ? 'staging'
+    : 'dev';
 
 // ---------------------------------------------------------------------------
 // Per-platform site metadata
@@ -63,10 +72,10 @@ const PLATFORM_KEY = {
     Blazor: 'blazor',
 };
 
-// Generated markdown lives in dist/{platform}/{lang}/ (produced by scripts/generate.mjs)
-const XPLAT_ROOT = path.join(__dirname, 'dist', platform, lang);
+// Generated markdown lives in generated/{platform}/{lang}/ (produced by scripts/generate.mjs)
+const XPLAT_ROOT = path.join(__dirname, 'generated', platform, lang);
 
-console.log(`[astro.config] Platform: ${platform}  lang: ${lang}  →  ${XPLAT_ROOT}`);
+console.log(`[astro.config] Platform: ${platform}  lang: ${lang}  mode: ${mode}  →  ${XPLAT_ROOT}`);
 
 // https://astro.build/config
 export default createDocsSite({
@@ -74,16 +83,16 @@ export default createDocsSite({
     title: meta.title,
     description: meta.description,
     platform: /** @type {any} */ (PLATFORM_KEY[/** @type {keyof typeof PLATFORM_KEY} */ (platform)] ?? null),
-    navLang: 'en',
+    navLang: lang === 'jp' ? 'ja' : lang,
+    mode,
     source: {
         tocPath: path.join(XPLAT_ROOT, 'components', 'toc.json'),
         docsDir: path.join(XPLAT_ROOT, 'components'),
-        imagesDir: path.join(XPLAT_ROOT, 'images'),
     },
     starlight: {
         logo: { src: './public/favicon.svg' },
     },
     // Serve images statically from public/ — no Astro image optimization needed
     image: { service: { entrypoint: 'astro/assets/services/noop' } },
-    markdown: { remarkPlugins: [] },
+    markdown: { remarkPlugins: [remarkEnv, remarkApiLinks] },
 });

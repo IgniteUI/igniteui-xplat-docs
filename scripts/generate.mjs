@@ -49,7 +49,7 @@ const SRC_COMPONENTS = path.join(ROOT, 'src', 'content', LANG, 'components');
 // Source toc.json:  src/content/{lang}/toc.json
 const SRC_TOC = path.join(ROOT, 'src', 'content', LANG, 'toc.json');
 
-const OUT_DIR = path.join(ROOT, 'dist', PLATFORM, LANG, 'components');
+const OUT_DIR = path.join(ROOT, 'generated', PLATFORM, LANG, 'components');
 
 const DOC_CONFIG     = path.join(ROOT, 'docConfig.json');
 const DOC_COMPONENTS = path.join(ROOT, 'docComponents.json');
@@ -413,6 +413,7 @@ function generateEnvironmentJson() {
             dvDemosBaseUrl:        url,
             demosBaseUrl:          url,   // alias used in some older samples
             infragisticsBaseUrl:   'https://www.infragistics.com',
+            dvApiBaseUrl:          'https://www.infragistics.com',
         };
     }
 
