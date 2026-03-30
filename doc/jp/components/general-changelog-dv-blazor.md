@@ -21,8 +21,8 @@ _language: ja
 
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
-| 3229 | IgbGrid | グリッドのパフォーマンス改善。 |
-| 2754 | IgbDataChart | チャートのレンダリング問題を修正。 |
+| 3229 | IgbGrid | グリッドにライセンス版にもかかわらず Trial の透かしが表示される。 |
+| 2754 | IgbTabs | 	IgbTabs	タブ内の IgbSwitch のチェック状態を変更すると、タブのコンテンツが消える。 |
 
 ## **{PackageVerChanges-25-2-MAR}**
 
@@ -72,7 +72,7 @@ _language: ja
 | 2326  | IgbDataPieChart | DataPieChart に OthersCategory スタイリング プロパティを追加 |
 | 2907  | IgbDateTimeInput  | IgbDateTimeInput の Prompt パラメーターが基盤となる Web Component の prompt プロパティに伝播されない |
 | 2908  | IgbMaskInput | IgbMaskInput の Prompt パラメーターが基盤となる Web Component の prompt プロパティに伝播されない |
-| 2909  | IgbPivotGrid  | IgbPivotGrid は SnackbarDisplayTime を公開しているが、このプロパティは適用されず、偽のテスト失敗を引き起こす |
+| 2909  | IgbPivotGrid  | IgbPivotGrid は SnackbarDisplayTime を公開しているが、このプロパティは適用されず、誤ったテスト失敗を引き起こす |
 | 38668 | IgbDataTooltipLayer | チャートの TitleTextColor を使用すると TitleTextColor がオーバーライドされる |
 | 40238 | Excel | Excel 数式パーサーを修正 - Workbook.Load() が Excel.FormulaParseException をスローする |
 | 41167 | Excel | オブジェクトの数式がラウンドトリップされない - カメラ ツールのラウンドトリップの Excel サポートを追加 |
@@ -99,10 +99,10 @@ _language: ja
 | [#1991](https://github.com/IgniteUI/igniteui-webcomponents/pull/1991) | Sass Theme Support | Switch — テーマ パッケージの Sass ツールを使用してスタイル設定 |
 | [#2015](https://github.com/IgniteUI/igniteui-webcomponents/pull/2015) | Sass Theme Support | List — テーマ パッケージの Sass ツールを使用してスタイル設定 |
 | [#2030](https://github.com/IgniteUI/igniteui-webcomponents/pull/2030) | Calendar | 月/年ビューのフォーカス スタイル |
-| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965) | Combo | ノッチ ボーダー スタイル |
+| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965) | Combo | Notch ボーダー スタイル |
 | [#1964](https://github.com/IgniteUI/igniteui-webcomponents/pull/1964) | Checkbox & Switch | `helper-text` スロットのスロット付きコンテンツにカーソルを合わせたときの内部リップルの不透明度 |
 | [#1947](https://github.com/IgniteUI/igniteui-webcomponents/pull/1947) | Dialog | 基盤となるダイアログ要素が `display: contents` を持つようになり、DOM レイアウトに参加しない |
-| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986) | Dialog | `keepOpenOnEscape` が Escape キー押下時にダイアログが閉じるのを防がない |
+| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986) | Dialog | `keepOpenOnEscape` が Escape キー押下時にダイアログが閉じるのを防げていない |
 | [#1997](https://github.com/IgniteUI/igniteui-webcomponents/pull/1997) | Dialog | 基本スタイルとテーマ |
 | [#1985](https://github.com/IgniteUI/igniteui-webcomponents/pull/1985) | List & List Item | リスト アイテムのスロット付き `igc-icon` に不足していたスタイルを追加 |
 | [#2010](https://github.com/IgniteUI/igniteui-webcomponents/pull/2010) | List & List Item | Indigo テーマのアイコンとアイコン ボタンのサイズ |
@@ -110,10 +110,10 @@ _language: ja
 | [#1956](https://github.com/IgniteUI/igniteui-webcomponents/pull/1956) | Navbar | アイコンとアイコン ボタンのサイズ |
 | [#1957](https://github.com/IgniteUI/igniteui-webcomponents/pull/1957) | Select | アウトライン タイプのカラー |
 | [#1998](https://github.com/IgniteUI/igniteui-webcomponents/pull/1998) | Tabs | Material テーマでアクティブ タブの疑似要素の背景を追加 |
-| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008) | Tabs | アクティブ タブ インジケーターの配置時にスケール ファクターを考慮 |
+| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008) | Tabs | アクティブ タブ インジケーターの配置時にスケール係数を考慮 |
 | [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028) | Tabs | 選択されたインジケーターの配置 |
 | [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip | ツールチップ ターゲットがクリックされたときにツールチップを表示しない |
-| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | スロット付きコンテンツの最大幅制限を削除 |
+| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | スロット付きコンテンツの max-width 制限を削除 |
 
 ## **{PackageVerChanges-25-2-DEC}**
 
