@@ -591,7 +591,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
-        let reference = node.url;
+        let reference: string = node.url;
 
         // allows usage of $Platform$ in links to topics/sections
         if (reference.indexOf("$Platform$") > 0) {
@@ -607,7 +607,8 @@ function transformDocLinks(options: any) {
         var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
                            reference.indexOf("{environment:demo") > 0;
 
-        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        var isExternalLink = reference.startsWith("http://") || reference.startsWith("https://");
+        var isTopicLink = !isApiDocLink && !isExternalLink && reference.indexOf(".md") > 0;
         if (isTopicLink) {
             // ensuring link to topics/section using lower-case per DocFX requirement
             node.url = reference.toLowerCase();
