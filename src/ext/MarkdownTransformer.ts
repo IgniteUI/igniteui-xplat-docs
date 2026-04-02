@@ -591,7 +591,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
-        let reference = node.url;
+        let reference: string = node.url;
 
         // allows usage of $Platform$ in links to topics/sections
         if (reference.indexOf("$Platform$") > 0) {
@@ -607,7 +607,8 @@ function transformDocLinks(options: any) {
         var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
                            reference.indexOf("{environment:demo") > 0;
 
-        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        var isExternalLink = reference.startsWith("http://") || reference.startsWith("https://");
+        var isTopicLink = !isApiDocLink && !isExternalLink && reference.indexOf(".md") > 0;
         if (isTopicLink) {
             // ensuring link to topics/section using lower-case per DocFX requirement
             node.url = reference.toLowerCase();
@@ -1262,6 +1263,17 @@ function omitPlatformSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
+                            } else if (platformsEqual(currPlats, segment.platforms) && segment.platforms.indexOf(options.platform) != -1) {
+                                // platform matches: keep content but remove the comment markers
+                                parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+                                if (parent.children[checkIndex].value.length == 0) {
+                                    options.toDelete.add(parent.children[checkIndex]);
+                                }
+                                parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+                                if (parent.children[index].value.length == 0) {
+                                    options.toDelete.add(parent.children[index]);
+                                }
+                                break;
                             }
                         }
                     }
@@ -1808,7 +1820,7 @@ export class MarkdownTransformer {
             .use(finishRemoveBlocks, options)
             .use(transformNotes, options)
             .use(finishRemoveNotes, options)
-            .use(stringify)
+            .use(stringify, { rule: '-', ruleRepetition: 3, ruleSpaces: false, emphasis: '_', fences: true })
             .process(fileContent, function(err: any, vfile: any) {
                 if (err) {
                     callback(err, null);
@@ -1820,6 +1832,7 @@ export class MarkdownTransformer {
                 fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
                 fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
                 fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+                fileContent = fileContent.split("\\[!").join("[!"); // note blocks: remark-stringify escapes "[" in "[!NOTE]" as "\[!NOTE]"
 
                 output.push({ content: fileContent, componentOutput: componentOutput });
 
