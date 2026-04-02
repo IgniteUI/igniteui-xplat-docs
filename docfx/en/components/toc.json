@@ -127,25 +127,25 @@
           "status": ""
         },
         {
-          "exclude": ["Blazor"],
-          "name": "Ignite UI MCP Overview",
+          "exclude": ["Angular", "Blazor"],
+          "name": "Ignite UI CLI MCP Overview",
           "href": "general-how-to-mcp-overview.md",
           "status": "NEW"
         },
         {
-          "exclude": ["Blazor"],
+          "exclude": ["Angular", "Blazor"],
           "name": "Start from an Empty Folder with MCP",
           "href": "general-how-to-start-mcp.md",
           "status": "NEW"
         },
         {
-          "exclude": ["Blazor"],
+          "exclude": ["Angular", "Blazor"],
           "name": "Create a Project with Ignite UI CLI, then Continue with MCP",
           "href": "general-how-to-start-mcp-cli-project.md",
           "status": "NEW"
         },
         {
-          "exclude": ["Blazor"],
+          "exclude": ["Angular", "Blazor"],
           "name": "Use MCP in an Existing Project",
           "href": "general-how-to-use-mcp-existing-project.md",
           "status": "NEW"
