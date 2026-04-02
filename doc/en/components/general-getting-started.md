@@ -57,6 +57,13 @@ ig
 ```
 
 Then choose `React` as the framework and `Ignite UI for React TS` as the project type. Select the `Default Top Navigation` project template, add a specific component/view, or select `Complete & Run`.
+
+Or create a project directly in one command, for example:
+
+```cmd
+ig new <project name> --framework=react --type=igr-ts --template=top-nav
+```
+
 For more information about the Ignite UI CLI, see the [CLI overview](general-cli-overview.md).
 
 If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
@@ -67,6 +74,12 @@ If you added a Grid component during the prompts, once the application is runnin
 > Keep in mind that by default Ignite UI CLI installs the Trial version of Ignite UI for React's Grid component which is under [commercial license](./general-open-source-vs-premium.md#comparison-table-for-all-components).
 
 Alternatively, you can use popular frameworks such as Next.js, Vite, or Expo as recommended by the React team. The following are step-by-step instructions for creating React applications with Ignite UI for React using one of these methods.
+
+## AI-Assisted Development
+
+The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+
+Learn more in the Ignite UI MCP Server topic.
 
 ## Using Vite CLI
 
@@ -153,7 +166,7 @@ After executing this command, your project will be built and served locally on y
 
 <!-- WebComponents -->
 
-## Install Ignite UI CLI
+## Using Ignite UI CLI
 
 To create an application from scratch and configure it to use the Ignite UI Web Components you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
 
@@ -168,7 +181,20 @@ ig
 ```
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
+
+Or create a project directly in one command, for example:
+
+```cmd
+ig new <project name> --framework=webcomponents --type=igc-ts --template=side-nav
+```
+
 Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
+
+## AI-Assisted Development
+
+The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+
+Learn more in the Ignite UI MCP Server topic.
 
 ## Install Polyfills
 
@@ -420,6 +446,16 @@ yarn add {PackageSpreadsheet} {PackageCore}
 This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
 <!-- end: Angular, React -->
+
+<!-- React, WebComponents -->
+
+## AI-Assisted Development
+
+The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+
+Learn more in the Ignite UI MCP Server topic.
+
+<!-- end: React, WebComponents -->
 
 <!-- WebComponents -->
 # {ProductName} Packages Overview
