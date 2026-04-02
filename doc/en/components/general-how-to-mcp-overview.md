@@ -6,7 +6,7 @@ _language: en
 mentionedTypes: []
 ---
 
-# Ignite UI MCP Overview
+# Ignite UI CLI MCP Overview
 
 This topic is the quick entry point for Ignite UI MCP for {Platform}.
 

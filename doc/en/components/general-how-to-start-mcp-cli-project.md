@@ -110,7 +110,7 @@ npx --package igniteui-cli igniteui new my-app --framework=react
 Common variants include:
 
 - `--framework=react`
-- `--template=base` for an project structure with routing
+- `--template=base` for a project structure with routing
 - `--template=empty` for an empty project structure with routing and home page
 - `--template=side-nav` for a project with side navigation
 <!-- end: React -->
