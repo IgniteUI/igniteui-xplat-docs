@@ -55,7 +55,7 @@ The matrix below provides a high-level outline of the accessibility support prov
 | - Date picker|||<span class="greenCheck" />|||||||<span class="greenCheck" />&#42;||<span class="redCheck" />||<span class="greenCheck" />|||
 | - Divider|<span class="greenCheck" />||<span class="greenCheck" />|||||||||<span class="greenCheck" />|||||
 | - Dialog|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />||||||<span class="greenCheck" />&#42;||<span class="greenCheck" />||<span class="greenCheck" />|||
-| - Drop down|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />||||||<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />||<span class="greenCheck" />|||
+| - Dropdown|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />||||||<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />||<span class="greenCheck" />|||
 | - Expansion panel|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />||||||<span class="greenCheck" />&#42;||<span class="greenCheck" />||<span class="greenCheck" />|||
 | - Icon|||<span class="greenCheck" />|||||||||<span class="redCheck" />|||||
 | - Input|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />||||||||<span class="greenCheck" />||<span class="greenCheck" />|||
@@ -80,12 +80,12 @@ The matrix below provides a high-level outline of the accessibility support prov
 ||||
 |---|---|---|
 |<span class="greenCheck" />|The control/component is completely accessible in this particular area.||
-|<span class="greenCheck" />&#42;|The control/component is accessible in this particular area after implementing certain configurations| Example: Use **NoopAnimationsModule**utility module to allow disabling of animations|
+|<span class="greenCheck" />&#42;|The control/component is accessible in this particular area after implementing certain configurations| Example: Use **NoopAnimationsModule** utility module to allow disabling of animations|
 |<span class="redCheck" />|The control/component is not entirely accessible unless you perform some sort of action.||
 |'white space'|this particular rule does not apply to the control||
 
 > [!WARNING]
-> The table above is relevant only to the **Default theme**of Ignite UI for {Platform} theming library. The checklist compliance might be different when it comes to custom themes, typography and any visual changes related to animations and colors.
+> The table above is relevant only to the **Default theme** of Ignite UI for {Platform} theming library. The checklist compliance might be different when it comes to custom themes, typography and any visual changes related to animations and colors.
 
 ### Compliance Information
 
@@ -130,11 +130,11 @@ The matrix below provides a high-level outline of the accessibility support prov
 | - Chip||||<span class="greenCheck" />|<span class="greenCheck" />||<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
 | - Circular progress|<span class="greenCheck" />|||<span class="greenCheck" />||<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|||<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
 | - Combo|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />|
-| - Date time editor||||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />||
+| - Date time input||||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />||
 | - Date picker||||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />||
 | - Divider|<span class="greenCheck" />||||||||||<span class="greenCheck" />&#42;|||
 | - Dialog|<span class="greenCheck" />|||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
-| - Drop down|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
+| - Dropdown|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="redCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
 | - Expansion panel|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />&#42;|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
 | - Icon||||<span class="greenCheck" />||<span class="greenCheck" />||||<span class="greenCheck" />|<span class="greenCheck" />&#42;|||
 | - Input|<span class="greenCheck" />|||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />||<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />|<span class="greenCheck" />&#42;|<span class="greenCheck" />||
@@ -162,12 +162,12 @@ The matrix below provides a high-level outline of the accessibility support prov
 ||||
 |---|---|---|
 |<span class="greenCheck" />|The control/component is completely accessible in this particular area.||
-|<span class="greenCheck" />&#42;|The control/component is accessible in this particular area after implementing certain configurations|Example 1: Guideline 2.2. For certain components additional actions and time parameters should be set; Example 2: Guideline 2.3. Use **NoopAnimationsModule**utility module to allow disabling of animations;|
+|<span class="greenCheck" />&#42;|The control/component is accessible in this particular area after implementing certain configurations|Example 1: Guideline 2.2. For certain components additional actions and time parameters should be set; Example 2: Guideline 2.3. Use **NoopAnimationsModule** utility module to allow disabling of animations;|
 |<span class="redCheck" />|The control/component is not entirely accessible unless you perform some sort of action.||
 |'white space'|this particular rule does not apply to the control||
 
 > [!WARNING]
-> The table above is relevant only to the **Default theme**of Ignite UI for {Platform} theming library. The checklist compliance might be different when it comes to custom themes, typography and any visual changes related to animations and colors.
+> The table above is relevant only to the **Default theme** of Ignite UI for {Platform} theming library. The checklist compliance might be different when it comes to custom themes, typography and any visual changes related to animations and colors.
 
 ### Compliance Information
 
