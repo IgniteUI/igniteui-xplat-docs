@@ -495,7 +495,8 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-APR2}**
-> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
+> [!Note]
+> With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
 
 [Update Guide](update-guide.md)
 
