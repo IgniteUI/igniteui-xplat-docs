@@ -13,7 +13,7 @@ mentionedTypes: ["Splitter"]
 
 ## {Platform} スプリッターの例
 
-`sample="/layouts/splitter/base", height="520", alt="{Platform} Splitter Example"`
+`sample="/layouts/splitter/base", height="520", alt="{Platform} スプリッターの例"`
 
 <div class="divider--half"></div>
 
@@ -103,7 +103,7 @@ splitter.toggle('start'); // expand start pane
 
 スプリッターをネストして、複数の領域のレイアウトを作成できます。
 
-`sample="/layouts/splitter/nested", height="520", alt="{Platform} Nested Splitter Example"`
+`sample="/layouts/splitter/nested", height="520", alt="{Platform} ネストされたスプリッターの例"`
 
 ## イベント
 
@@ -116,9 +116,9 @@ splitter.toggle('start'); // expand start pane
 イベントの詳細には、進行中のイベントと終了イベントの現在の `startPanelSize`、`endPanelSize`、および `delta` が含まれます。
 
 ```ts
-const splitter = document.querySelector('igc-splitter');
+const splitter = document.querySelector('igc-splitter') as IgcSplitterComponent;
 
-splitter?.addEventListener('igcResizeEnd', (event: CustomEvent) => {
+splitter.addEventListener('igcResizeEnd', (event: CustomEvent) => {
   console.log(event.detail.startPanelSize, event.detail.endPanelSize, event.detail.delta);
 });
 ```
@@ -174,7 +174,7 @@ igc-splitter {
 }
 ```
 
-`sample="/layouts/splitter/styling", height="520", alt="{Platform} Splitter Styling Example"`
+`sample="/layouts/splitter/styling", height="520", alt="{Platform} スプリッターのスタイリング例"`
 
 ## API リファレンス
 
