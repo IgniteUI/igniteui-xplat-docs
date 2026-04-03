@@ -4,7 +4,7 @@ _description: Set up Ignite UI CLI MCP and Ignite UI Theming MCP in a new empty 
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, agent
 _language: en
 _license: MIT
-_canonicalLink: {environment:dvUrl}/components/general-how-to-start-mcp
+_canonicalLink: "{environment:dvUrl}/components/general-how-to-start-mcp"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
