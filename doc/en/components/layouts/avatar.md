@@ -19,11 +19,13 @@ The {ProductName} Avatar helps to display initials, images, or icons in your app
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} npm package by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -37,23 +39,23 @@ npm install igniteui-react
 You will then need to import the `Avatar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrAvatar } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrAvatar } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
 
 Before using the `Avatar`, you need to register it as follows:
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
 ```
+
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the `Avatar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Avatar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -62,7 +64,7 @@ You will also need to link an additional CSS file to apply the styling to the `A
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcAvatarComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcAvatarComponent);
 ```
@@ -93,7 +95,7 @@ The avatar has several attributes that allow rendering different content based o
 
 ```tsx
 <IgrAvatar>
-    <IgrIcon name="home" />
+  <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -117,7 +119,7 @@ If the `Initials` attribute is set all children elements of the avatar will be i
 
 ```tsx
 <IgrAvatar initials="AZ">
-    <IgrIcon name="home" />
+  <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -131,8 +133,6 @@ If the `Initials` attribute is set all children elements of the avatar will be i
 
 `sample="/layouts/avatar/initials", height="80", alt="{Platform} Avatar Example"`
 
-
-
 ### Image
 
 The avatar can also display an image when the `Src` attribute is assigned a valid URL to a static asset. In that case the `Initials` value will be ignored and children elements will not be rendered.
@@ -141,19 +141,21 @@ The avatar can also display an image when the `Src` attribute is assigned a vali
 <igc-avatar
   initials="AZ"
   src="https://www.infragistics.com/angular-demos/assets/images/men/1.jpg"
-  alt="A photo of a man.">
+  alt="A photo of a man."
+>
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
 ```
 
 ```tsx
-<IgrAvatar initials="AZ"
-           src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
-           alt="A photo of a man.">
-    <IgrIcon name="home" />
+<IgrAvatar
+  initials="AZ"
+  src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
+  alt="A photo of a man."
+>
+  <IgrIcon name="home" />
 </IgrAvatar>
 ```
-
 
 ```razor
 <IgbAvatar Initials="AZ"
@@ -165,14 +167,11 @@ The avatar can also display an image when the `Src` attribute is assigned a vali
 
 `sample="/layouts/avatar/image", height="80", alt="{Platform} Avatar Example"`
 
-
 ### Shape
 
 The avatar supports three shapes - `circle`, `rounded`, and `square`. The default shape of the avatar is `square` and it can be changed via the `shape` attribute.
 
 `sample="/layouts/avatar/shape", height="80", alt="{Platform} Avatar Example"`
-
-
 
 ### Size
 
@@ -186,24 +185,22 @@ igc-avatar {
 
 `sample="/layouts/avatar/size", height="130", alt="{Platform} Avatar Example"`
 
-
-
 ### Styling
 
 The `Avatar` component exposes several CSS parts, giving you full control over its style:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the avatar. |
+| Name       | Description                         |
+| ---------- | ----------------------------------- |
+| `base`     | The base wrapper of the avatar.     |
 | `initials` | The initials wrapper of the avatar. |
-| `image` | The image wrapper of the avatar. |
-| `icon` | The icon wrapper of the avatar. |
+| `image`    | The image wrapper of the avatar.    |
+| `icon`     | The icon wrapper of the avatar.     |
 
 ```css
 igc-avatar::part(base) {
   --size: 60px;
   color: var(--ig-success-500-contrast);
-  background: var(--ig-success-500);;
+  background: var(--ig-success-500);
   border-radius: 20px;
 }
 ```
@@ -211,7 +208,6 @@ igc-avatar::part(base) {
 `sample="/layouts/avatar/styling", height="150", alt="{Platform} Avatar Example"`
 
 <div class="divider--half"></div>
-
 
 ## API References
 

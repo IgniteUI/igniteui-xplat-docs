@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -19,14 +19,14 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 The {ProductName} Data Table / Data Grid supports localizing the resource strings specific to the column options pop-up and summaries. Note, this is not intended to be used nor capable of translating the data.
 
 <!-- Blazor -->
+
 The Data Grid contains `SetCustomizedStringAsync` for assigning strings associated with the column options. The grid's `ActualDataSource` property also has this method for assigning resource strings necessary for the summaries.
+
 <!-- end: Blazor -->
 
 ## {Platform} Grid Localization Example
 
 `sample="/grids/data-grid/localization", height="600", alt="{Platform} Grid Localization Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -103,6 +103,7 @@ This is the full list of strings to localize the grid.
 - DataSource_Summary_Sum
 
 <!-- React, WebComponents -->
+
 ### Date-Time Column Strings
 
 - January_Full

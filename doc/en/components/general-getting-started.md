@@ -61,7 +61,7 @@ For more information about the Ignite UI CLI, see the [CLI overview](general-cli
 
 If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
 
-<img src="../images/general/ig-cli-grid.png" />
+<img alt="ig-cli" src="../images/general/ig-cli-grid.png" />
 
 >[!NOTE]
 > Keep in mind that by default Ignite UI CLI installs the Trial version of Ignite UI for React's Grid component which is under [commercial license](./general-open-source-vs-premium.md#comparison-table-for-all-components).
@@ -86,7 +86,7 @@ Then follow the prompts to choose a name for the project, React as the framework
 
 ### Adding an Ignite UI React Grid Component
 
-##### Package Installation 
+#### Package Installation
 To add the Ignite UI React [**Grid**](grids/data-grid.md) component to the app you need to install the `igniteui-react-grids` package:
 
 ```cmd
@@ -147,7 +147,7 @@ npm run dev
 
 After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show a data grid with sample data:
 
-<img src="../images/general/ig-vite-grid.png" />
+<img alt="vite-grid"src="../images/general/ig-vite-grid.png" />
 
 <!-- end: React -->
 
@@ -422,14 +422,14 @@ This will automatically install packages for {ProductName}, along with all of th
 <!-- end: Angular, React -->
 
 <!-- WebComponents -->
-# {ProductName} Packages Overview
+## {ProductName} Packages Overview
 
 {ProductName} is a complete set of UI widgets, components, and UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 and JavaScript apps for modern desktop browsers, mobile experiences, and progressive web apps (PWAs) targeting the browsers web components APIs.
 
 <!-- end: WebComponents -->
 
 <!-- React -->
-# {ProductName} Packages Overview
+## {ProductName} Packages Overview
 
 {ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
 

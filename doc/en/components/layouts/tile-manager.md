@@ -31,14 +31,17 @@ The Tile Manager offers two components that we can use:
 ### Getting Started
 
 <!-- WebComponents -->
+
 To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -50,37 +53,47 @@ npm install igniteui-react
 Before using the Tile Manager, you need to import it as follows:
 
 <!-- WebComponents -->
+
 ```ts
-import { defineComponents, IgcTileManagerComponent } from 'igniteui-webcomponents';
+import {
+  defineComponents,
+  IgcTileManagerComponent,
+} from "igniteui-webcomponents";
 
 defineComponents(IgcTileManagerComponent);
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 ```tsx
-import { IgrTile, IgrTileManager } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrTile, IgrTileManager } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `TileManager` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `TileManager` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 Now you can start with a basic configuration of the {Platform} Tile Manager.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager>
   <igc-tile>
@@ -94,8 +107,10 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
   </igc-tile>
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager>
   <IgbTile>
@@ -109,22 +124,25 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
   </IgbTile>
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
+
 ```tsx
-  <IgrTileManager>
-    <IgrTile>
-      <p>Tile 1</p>
-    </IgrTile>
-    <IgrTile>
-      <p>Tile 2</p>
-    </IgrTile>
-    <IgrTile>
-      <p>Tile 3</p>
-    </IgrTile>
-  </IgrTileManager>
+<IgrTileManager>
+  <IgrTile>
+    <p>Tile 1</p>
+  </IgrTile>
+  <IgrTile>
+    <p>Tile 2</p>
+  </IgrTile>
+  <IgrTile>
+    <p>Tile 3</p>
+  </IgrTile>
+</IgrTileManager>
 ```
+
 <!-- end: React -->
 
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
@@ -136,6 +154,7 @@ For a complete introduction to the {ProductName}, read the [**Getting Started**]
 We can specify the number of grid columns for our Tile Manager. To do this, simply set the `ColumnCount` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager column-count="2">
   <igc-tile>
@@ -153,9 +172,11 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
   ...
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 ```tsx
 <IgrTileManager columnCount={2}>
   <IgrTile>
@@ -173,9 +194,11 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
   ...
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager ColumnCount="2">
   <IgbTile>
@@ -193,7 +216,9 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
   ...
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
+
 In this code snippet, the three tiles in the Tile Manager will be arranged into 2 rows and 2 columns.
 
 ### Gap
@@ -201,6 +226,7 @@ In this code snippet, the three tiles in the Tile Manager will be arranged into 
 Another property that can be used in the Tile Manager is the `Gap` property, which defines the space between tiles. The value of the `Gap` property must be a number followed by a length unit (e.g., px, rem, em, ...). This value will apply to both the horizontal gap (width) and the vertical gap (height) between tiles.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager gap="20px">
   <igc-tile>
@@ -214,8 +240,10 @@ Another property that can be used in the Tile Manager is the `Gap` property, whi
   ...
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTileManager gap="20px">
   <IgrTile>
@@ -229,8 +257,10 @@ Another property that can be used in the Tile Manager is the `Gap` property, whi
   ...
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager Gap="20px">
   <IgbTile>
@@ -244,12 +274,15 @@ Another property that can be used in the Tile Manager is the `Gap` property, whi
   ...
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
+
 ### Minimum width and height
 
 We also have properties for setting the minimum width of the columns (`MinColumnWidth`) and the minimum height of the rows (`MinRowHeight`) in the Tile Manager. Similar to the gap property, the values for these properties must be a number followed by a length unit. These values will define the minimum width for all columns and the minimum height for all rows in the Tile Manager.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager min-column-width="200px" min-row-height="150px">
   <igc-tile>
@@ -263,9 +296,11 @@ We also have properties for setting the minimum width of the columns (`MinColumn
   ...
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 ```tsx
 <IgrTileManager minColumnWidth="200px" minRowHeight="150px">
   <IgrTile>
@@ -279,9 +314,11 @@ We also have properties for setting the minimum width of the columns (`MinColumn
   ...
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager MinColumnWidth="200px" MinRowHeight="150px">
   <IgbTile>
@@ -295,6 +332,7 @@ We also have properties for setting the minimum width of the columns (`MinColumn
   ...
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 ### Example
@@ -314,6 +352,7 @@ The Tile component has properties that can be set individually for each tile. So
 - The `DisableResize` property prevents the tile from being resized by the user.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager>
   <igc-tile col-span="2" disable-resize>
@@ -327,8 +366,10 @@ The Tile component has properties that can be set individually for each tile. So
   ...
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTileManager>
   <IgrTile colSpan={2} disableResize={true}>
@@ -342,8 +383,10 @@ The Tile component has properties that can be set individually for each tile. So
   ...
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager>
   <IgbTile ColSpan="2" DisableResize="true">
@@ -357,20 +400,20 @@ The Tile component has properties that can be set individually for each tile. So
   ...
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 The Tile component also exposes several slots which you can use:
 
-| Slot name | Description |
-| ---------|------------ |
-| `title` | Content for the tile header. |
-| `fullscreen-action` | Overwrite the default fullscreen action content. |
-| `maximize-action` | Overwrite the default maximize action content. |
-| `actions` | Custom content rendered after the default actions. |
-| `side-adorner` | Overwrite the default horizontal resize adorner. |
-| `corner-adorner` | Overwrite the default diagonal resize adorner. |
-| `bottom-adorner` | Overwrite the default vertical resize adorner. |
-
+| Slot name           | Description                                        |
+| ------------------- | -------------------------------------------------- |
+| `title`             | Content for the tile header.                       |
+| `fullscreen-action` | Overwrite the default fullscreen action content.   |
+| `maximize-action`   | Overwrite the default maximize action content.     |
+| `actions`           | Custom content rendered after the default actions. |
+| `side-adorner`      | Overwrite the default horizontal resize adorner.   |
+| `corner-adorner`    | Overwrite the default diagonal resize adorner.     |
+| `bottom-adorner`    | Overwrite the default vertical resize adorner.     |
 
 ### Header section actions
 
@@ -384,28 +427,40 @@ By default, the header section includes two action buttons:
 If you want to display just one of the two buttons, you can set either `DisableMaximize` or `DisableFullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager>
   <igc-tile disable-fullscreen>
-    <igc-icon-button slot="maximize-actions" name="north_east" collection="material">
+    <igc-icon-button
+      slot="maximize-actions"
+      name="north_east"
+      collection="material"
+    >
     </igc-icon-button>
     <p>Tile 1 Content</p>
   </igc-tile>
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTileManager>
   <IgrTile disableFullscreen={true}>
-    <IgrIconButton slot="maximize-actions" name="north_east" collection="material">
-    </IgrIconButton>
+    <IgrIconButton
+      slot="maximize-actions"
+      name="north_east"
+      collection="material"
+    ></IgrIconButton>
     <p>Tile 1 Content</p>
   </IgrTile>
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager>
   <IgbTile DisableFullscreen="true">
@@ -415,6 +470,7 @@ If you want to display just one of the two buttons, you can set either `DisableM
   </IgbTile>
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 You also have the option to disable both action buttons and create custom ones according to your preferences.
@@ -441,8 +497,9 @@ The Tile Manager automatically rearranges itself when a tile changes size, ensur
 We can use the `ResizeMode` property to control how resizing is applied in the Tile Manager. It can be set to `none`, `hover` or `always`, which determines when the resize adorners are visible. The default value is `none` and the tile could not be resized.
 
 <!-- WebComponents -->
+
 ```html
-<igc-tile-manager resize-mode='hover'>
+<igc-tile-manager resize-mode="hover">
   <igc-tile>
     <p>Tile 1</p>
   </igc-tile>
@@ -451,8 +508,10 @@ We can use the `ResizeMode` property to control how resizing is applied in the T
   </igc-tile>
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTileManager resizeMode="hover">
   <IgrTile>
@@ -463,8 +522,10 @@ We can use the `ResizeMode` property to control how resizing is applied in the T
   </IgrTile>
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager ResizeMode="TileManagerResizeMode.Hover">
   <IgbTile>
@@ -475,6 +536,7 @@ We can use the `ResizeMode` property to control how resizing is applied in the T
   </IgbTile>
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 You can see the difference between the three states in the example below:
@@ -507,6 +569,7 @@ You can reorder tiles in the Tile Manager using the drag-and-drop feature. By de
 Similar to resizing, when you initiate the drag-and-drop process, a ghost element appears beneath the tile you’ve grabbed. As you drag the tile, the ghost element moves with it, dynamically reordering the other tiles in real time. This allows you to preview how the tile grid will look when you drop the tile.
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile-manager drag-mode="tile-header">
   <igc-tile>
@@ -519,8 +582,10 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
   </igc-tile>
 </igc-tile-manager>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTileManager dragMode="tile-header">
   <IgrTile>
@@ -533,8 +598,10 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
   </IgrTile>
 </IgrTileManager>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTileManager DragMode="TileManagerDragMode.TileHeader">
   <IgbTile>
@@ -547,6 +614,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
   </IgbTile>
 </IgbTileManager>
 ```
+
 <!-- end: Blazor -->
 
 `sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager Drag and drop Example"`
@@ -566,16 +634,16 @@ You can also customize the appearance of the two components - `TileManager` and 
 The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
 The `Tile` exposes several CSS properties we can use:
 
-| Part name | Description |
-| ---------|------------ |
-| `base` | The wrapping container of the tile component. |
-| `header` | The header container of the tile, including title and actions parts. |
-| `title` | The title container. |
-| `actions` | The actions container. |
-| `content-container` | The container wrapping the tile default slot. |
-| `trigger-side` | The horizontal adorner. |
-| `trigger` | The diagonal adorner |
-| `trigger-bottom` | The vertical adorner. |
+| Part name           | Description                                                          |
+| ------------------- | -------------------------------------------------------------------- |
+| `base`              | The wrapping container of the tile component.                        |
+| `header`            | The header container of the tile, including title and actions parts. |
+| `title`             | The title container.                                                 |
+| `actions`           | The actions container.                                               |
+| `content-container` | The container wrapping the tile default slot.                        |
+| `trigger-side`      | The horizontal adorner.                                              |
+| `trigger`           | The diagonal adorner                                                 |
+| `trigger-bottom`    | The vertical adorner.                                                |
 
 Using these CSS parts you can customize the appearance of the two components as follows:
 
@@ -596,12 +664,12 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side),
-igc-tile:nth-child(n+2)::part(trigger-bottom) {
+igc-tile:nth-child(n + 2)::part(trigger-side),
+igc-tile:nth-child(n + 2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
 
-igc-tile:nth-child(n+2)::part(trigger) {
+igc-tile:nth-child(n + 2)::part(trigger) {
   background-color: var(--ig-error-500);
 }
 ```
@@ -609,6 +677,7 @@ igc-tile:nth-child(n+2)::part(trigger) {
 You can also change the icon of the adorners to a custom one using the `side-adorner`, `corner-adorner`, and `bottom-adorner` slots. For instance:
 
 <!-- WebComponents -->
+
 ```html
 <igc-tile>
   <igc-icon slot="side-adorner" class="side" name="indicator"></igc-icon>
@@ -617,8 +686,10 @@ You can also change the icon of the adorners to a custom one using the `side-ado
   <span slot="title">Tile header</span>
 </igc-tile>
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 ```tsx
 <IgrTile>
   <IgrIcon slot="side-adorner" className="side" name="indicator"></IgrIcon>
@@ -627,8 +698,10 @@ You can also change the icon of the adorners to a custom one using the `side-ado
   <span slot="title">Tile header</span>
 </IgrTile>
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 ```razor
 <IgbTile>
   <IgbIcon slot="side-adorner" Class="side" IconName="indicator"></IgbIcon>
@@ -637,6 +710,7 @@ You can also change the icon of the adorners to a custom one using the `side-ado
   <span slot="title">Tile header</span>
 </IgbTile>
 ```
+
 <!-- end: Blazor -->
 
 `sample="/layouts/tile-manager/styling", height="520", alt="{Platform} Tile Manager Styling Example"`
@@ -653,4 +727,3 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 - `TileManager`
 - [{ProductName} **Forums**]({ForumsLink})
 - [{ProductName} **GitHub**]({GithubLink})
-

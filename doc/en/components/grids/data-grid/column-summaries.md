@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridSummaries}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid supports column summaries. In some case
 
 ## {Platform} Column Summaries Example
 
-
 `sample="/grids/data-grid/column-summaries", height="600", alt="{Platform} Column Summaries Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -50,34 +47,61 @@ The {Platform} data grid supports configuration of the locations that summaries 
 
 ```tsx
 <IgrDataGrid
-    summaryScope = "Groups"
-    groupSummaryDisplayMode = "RowTop"
-    height="calc(100% - 40px)"
-    width="100%"
-    autoGenerateColumns="false"
-    dataSource={this.data}>
-        <IgrTextColumn field="ProductName" headerText="Product"/>
-        <IgrNumericColumn positivePrefix="$" field="BundlePrice" showGroupingSeparator="true" headerText="Price" />
-        <IgrNumericColumn field="OrderItems" headerText="Order Items"/>
-        <IgrNumericColumn field="OrderValue" showGroupingSeparator="true" headerText="Order Totals"
-        positivePrefix="$"  />
-        <IgrTextColumn field="Countries" headerText="Ship Country"/>
+  summaryScope="Groups"
+  groupSummaryDisplayMode="RowTop"
+  height="calc(100% - 40px)"
+  width="100%"
+  autoGenerateColumns="false"
+  dataSource={this.data}
+>
+  <IgrTextColumn field="ProductName" headerText="Product" />
+  <IgrNumericColumn
+    positivePrefix="$"
+    field="BundlePrice"
+    showGroupingSeparator="true"
+    headerText="Price"
+  />
+  <IgrNumericColumn field="OrderItems" headerText="Order Items" />
+  <IgrNumericColumn
+    field="OrderValue"
+    showGroupingSeparator="true"
+    headerText="Order Totals"
+    positivePrefix="$"
+  />
+  <IgrTextColumn field="Countries" headerText="Ship Country" />
 </IgrDataGrid>
 ```
 
 ```html
 <igc-data-grid
-    summary-scope="Root"
-    group-summary-display-mode="RowTop"
-    auto-generate-columns="false"
-    is-group-collapsable="true"
-    group-header-display-mode="combined"
-    default-column-min-width="100">
-        <igc-text-column field="ProductName" header-text="Product"></igc-text-column>
-        <igc-numeric-column positive-prefix="$" field="BundlePrice" show-grouping-separator="true" header-text="Price" ></igc-numeric-column>
-        <igc-numeric-column field="OrderItems" header-text="Order Items"></igc-numeric-column>
-        <igc-numeric-column field="OrderValue" show-grouping-separator="true" header-text="Order Totals" positive-prefix="$"></igc-numeric-column>
-        <igc-text-column field="Countries" header-text="Ship Country"></igc-text-column>
+  summary-scope="Root"
+  group-summary-display-mode="RowTop"
+  auto-generate-columns="false"
+  is-group-collapsable="true"
+  group-header-display-mode="combined"
+  default-column-min-width="100"
+>
+  <igc-text-column field="ProductName" header-text="Product"></igc-text-column>
+  <igc-numeric-column
+    positive-prefix="$"
+    field="BundlePrice"
+    show-grouping-separator="true"
+    header-text="Price"
+  ></igc-numeric-column>
+  <igc-numeric-column
+    field="OrderItems"
+    header-text="Order Items"
+  ></igc-numeric-column>
+  <igc-numeric-column
+    field="OrderValue"
+    show-grouping-separator="true"
+    header-text="Order Totals"
+    positive-prefix="$"
+  ></igc-numeric-column>
+  <igc-text-column
+    field="Countries"
+    header-text="Ship Country"
+  ></igc-text-column>
 </igc-data-grid>
 ```
 
@@ -207,6 +231,7 @@ connectedCallback() {
 ```
 
 <!-- Angular, React, WebComponents -->
+
 ## Custom Summaries
 
 In some situations, you may want to expand the default set of summaries. For example, if you were looking to show the number of times a particular value in a column appears, a custom summary would be required for this.
@@ -296,8 +321,8 @@ class CustomDomestic extends SummaryCalculator
     }
 }
 ```
-<!--end: Angular, React, WebComponents -->
 
+<!--end: Angular, React, WebComponents -->
 
 ## API References
 

@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridFiltering}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid includes column filtering with both a f
 
 ## {Platform} Grid Filtering Example
 
-
 `sample="/grids/data-grid/column-filtering", height="600", alt="{Platform} Grid Filtering Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -37,10 +34,7 @@ In the example below, the data grid's FilterExpressions collection is updated to
 
 `sample="/grids/data-grid/column-filter-expressions", height="600", alt="{Platform} Grid Filter Expressions Example"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## Filter Operators
 
@@ -52,12 +46,12 @@ In addition, the grid's `FilterLogicalOperator` property is responsible for indi
 - `Or` logical operator. In order for a successful match, at least one of the conditions have to pass.
 
 <!-- Blazor -->
+
 Since the operands are applied to the column they can be added in several ways, such as inline, in-code, or in a separate class. Each approach is demonstrated in the example below.
+
 <!-- end:Blazor -->
 
 `sample="/grids/data-grid/column-filter-operands", height="600", alt="{Platform} Grid Filtering Example"`
-
-
 
 <div class="divider--half"></div>
 

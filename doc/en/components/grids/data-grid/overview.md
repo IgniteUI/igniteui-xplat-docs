@@ -10,13 +10,13 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md), and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md), and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Data Grid Overview
 
-The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The {Platform} tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
+The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns. The {Platform} tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
 
 ## {Platform} Data Grid Example
 
@@ -25,8 +25,6 @@ Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summari
 
 `sample="/grids/data-grid/overview", height="600", alt="{Platform} Data Grid Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Getting Started
@@ -34,7 +32,9 @@ Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summari
 ### Dependencies
 
 <!-- Blazor -->
+
 Please refer to these topics on adding the IgniteUI.Blazor package.
+
 - [Getting Started](../../general-getting-started.md)
 - [Adding Nuget Package](../../general-nuget-feed.md)
 
@@ -43,9 +43,11 @@ Afterwards, you may start implementing the control by adding the following names
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
+
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
+
 When installing the {Platform} grid package, the core package must also be installed.
 
 ```cmd
@@ -53,6 +55,7 @@ npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 ```
+
 <!-- end: Angular, React, WebComponents -->
 
 ### Component Modules
@@ -72,8 +75,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 <!-- React -->
 
 ```ts
-import { IgrDataGridModule } from 'igniteui-react-data-grids';
-import { IgrDataGrid } from 'igniteui-react-data-grids';
+import { IgrDataGridModule } from "igniteui-react-data-grids";
+import { IgrDataGrid } from "igniteui-react-data-grids";
 
 IgrDataGridModule.register();
 ```
@@ -83,13 +86,11 @@ IgrDataGridModule.register();
 <!-- WebComponents -->
 
 ```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
+import { ModuleManager } from "igniteui-webcomponents-core";
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
 
-ModuleManager.register(
-    IgcDataGridModule
-);
+ModuleManager.register(IgcDataGridModule);
 ```
 
 <!-- end: WebComponents -->
@@ -111,9 +112,9 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGridColumnOptionsModule } from 'igniteui-react-data-grids';
+import { IgrGridColumnOptionsModule } from "igniteui-react-data-grids";
 import { IgrDataGridToolbarModule } from "igniteui-react-data-grids";
-import { IgrSparklineModule } from 'igniteui-react-charts';
+import { IgrSparklineModule } from "igniteui-react-charts";
 
 IgrGridColumnOptionsModule.register();
 IgrDataGridToolbarModule.register();
@@ -121,73 +122,79 @@ IgrSparklineModule.register();
 ```
 
 ```ts
-import { IgcGridColumnOptionsModule } from 'igniteui-webcomponents-data-grids';
-import { IgcGridColumnOptionsComponent } from 'igniteui-webcomponents-data-grids';
-import { IgcDataGridToolbarModule } from 'igniteui-webcomponents-data-grids';
-import { IgcDataGridToolbarComponent } from 'igniteui-webcomponents-data-grids';
-import { IgcSparklineModule } from 'igniteui-webcomponents-charts';
-import { IgcSparklineComponent } from 'igniteui-webcomponents-charts';
+import { IgcGridColumnOptionsModule } from "igniteui-webcomponents-data-grids";
+import { IgcGridColumnOptionsComponent } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridToolbarModule } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridToolbarComponent } from "igniteui-webcomponents-data-grids";
+import { IgcSparklineModule } from "igniteui-webcomponents-charts";
+import { IgcSparklineComponent } from "igniteui-webcomponents-charts";
 
 ModuleManager.register(
-    IgcGridColumnOptionsModule,
-    IgcDataGridToolbarModule,
-    IgcSparklineModule
+  IgcGridColumnOptionsModule,
+  IgcDataGridToolbarModule,
+  IgcSparklineModule,
 );
 ```
-
 
 <div class="divider--half"></div>
 
 ### Sample Data Source
+
 Now that the {Platform} data grid module is imported, next is the basic configuration of the {Platform} grid that binds to local data.
 
 ```ts
-    this.data = [{
-        Discontinued: false,
-        OrderDate: new Date("2012-02-12"),
-        ProductID: 1,
-        ProductName: "Chai",
-        QuantityPerUnit: "10 boxes x 20 bags",
-        ReorderLevel: 10,
-        UnitPrice: 18.0000,
-        UnitsInStock: 39
-    }, {
-        Discontinued: false,
-        OrderDate: new Date("2003-03-17"),
-        ProductID: 2,
-        ProductName: "Chang",
-        QuantityPerUnit: "24 - 12 oz bottles",
-        ReorderLevel: 25,
-        UnitPrice: 19.0000,
-        UnitsInStock: 17
-    }, {
-        Discontinued: false,
-        OrderDate: new Date("2006-03-17"),
-        ProductID: 3,
-        ProductName: "Aniseed Syrup",
-        QuantityPerUnit: "12 - 550 ml bottles",
-        ReorderLevel: 25,
-        UnitPrice: 10.0000,
-        UnitsInStock: 13
-    }, {
-        Discontinued: false,
-        OrderDate: new Date("2016-03-17"),
-        ProductID: 4,
-        ProductName: "Chef Antony Cajun Seasoning",
-        QuantityPerUnit: "48 - 6 oz jars",
-        ReorderLevel: 0,
-        UnitPrice: 22.0000,
-        UnitsInStock: 53
-    }, {
-        Discontinued: true,
-        OrderDate: new Date("2011-11-11"),
-        ProductID: 5,
-        ProductName: "Chef Antony Gumbo Mix",
-        QuantityPerUnit: "36 boxes",
-        ReorderLevel: 0,
-        UnitPrice: 21.3500,
-        UnitsInStock: 0
-    }];
+this.data = [
+  {
+    Discontinued: false,
+    OrderDate: new Date("2012-02-12"),
+    ProductID: 1,
+    ProductName: "Chai",
+    QuantityPerUnit: "10 boxes x 20 bags",
+    ReorderLevel: 10,
+    UnitPrice: 18.0,
+    UnitsInStock: 39,
+  },
+  {
+    Discontinued: false,
+    OrderDate: new Date("2003-03-17"),
+    ProductID: 2,
+    ProductName: "Chang",
+    QuantityPerUnit: "24 - 12 oz bottles",
+    ReorderLevel: 25,
+    UnitPrice: 19.0,
+    UnitsInStock: 17,
+  },
+  {
+    Discontinued: false,
+    OrderDate: new Date("2006-03-17"),
+    ProductID: 3,
+    ProductName: "Aniseed Syrup",
+    QuantityPerUnit: "12 - 550 ml bottles",
+    ReorderLevel: 25,
+    UnitPrice: 10.0,
+    UnitsInStock: 13,
+  },
+  {
+    Discontinued: false,
+    OrderDate: new Date("2016-03-17"),
+    ProductID: 4,
+    ProductName: "Chef Antony Cajun Seasoning",
+    QuantityPerUnit: "48 - 6 oz jars",
+    ReorderLevel: 0,
+    UnitPrice: 22.0,
+    UnitsInStock: 53,
+  },
+  {
+    Discontinued: true,
+    OrderDate: new Date("2011-11-11"),
+    ProductID: 5,
+    ProductName: "Chef Antony Gumbo Mix",
+    QuantityPerUnit: "36 boxes",
+    ReorderLevel: 0,
+    UnitPrice: 21.35,
+    UnitsInStock: 0,
+  },
+];
 ```
 
 ```razor
@@ -293,53 +300,56 @@ Now that the {Platform} data grid module is imported, next is the basic configur
 ```
 
 ### Auto-Generate Columns
+
 The following code demonstrates how to bind the {Platform} data grid to the above local data.
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    autoGenerateColumns="true"
-    defaultColumnMinWidth="100"
-    summaryScope="Root"
-    isColumnOptionsEnabled="true"
-    isGroupCollapsable="true"
-    groupSummaryDisplayMode="RowBottom"
-    columnMovingMode="Deferred"
-    columnMovingAnimationMode="SlideOver"
-    columnMovingSeparatorWidth="2"
-    columnShowingAnimationMode="slideFromRightAndFadeIn"
-    columnHidingAnimationMode="slideToRightAndFadeOut"
-    selectionMode="SingleRow"
-    cornerRadiusTopLeft="0"
-    cornerRadiusTopRight="0"
-    />
+  height="100%"
+  width="100%"
+  dataSource={this.data}
+  autoGenerateColumns="true"
+  defaultColumnMinWidth="100"
+  summaryScope="Root"
+  isColumnOptionsEnabled="true"
+  isGroupCollapsable="true"
+  groupSummaryDisplayMode="RowBottom"
+  columnMovingMode="Deferred"
+  columnMovingAnimationMode="SlideOver"
+  columnMovingSeparatorWidth="2"
+  columnShowingAnimationMode="slideFromRightAndFadeIn"
+  columnHidingAnimationMode="slideToRightAndFadeOut"
+  selectionMode="SingleRow"
+  cornerRadiusTopLeft="0"
+  cornerRadiusTopRight="0"
+/>
 ```
 
 ```html
-<igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      auto-generate-columns="true"
-      default-column-min-width="100"
-      summary-scope="Root"
-      is-column-options-enabled="true"
-      is-group-collapsable="true"
-      group-summary-display-mode="RowBottom"
-      column-moving-mode="Deferred"
-      column-moving-animation-mode="SlideOver"
-      column-moving-separator-width="2"
-      column-showing-animation-mode="slideFromRightAndFadeIn"
-      column-hiding-animation-mode="slideToRightAndFadeOut"
-      selection-mode="SingleRow"
-      corner-radius-top-left="0"
-      corner-radius-top-right="0">
+<igc-data-grid
+  id="grid"
+  height="100%"
+  width="100%"
+  auto-generate-columns="true"
+  default-column-min-width="100"
+  summary-scope="Root"
+  is-column-options-enabled="true"
+  is-group-collapsable="true"
+  group-summary-display-mode="RowBottom"
+  column-moving-mode="Deferred"
+  column-moving-animation-mode="SlideOver"
+  column-moving-separator-width="2"
+  column-showing-animation-mode="slideFromRightAndFadeIn"
+  column-hiding-animation-mode="slideToRightAndFadeOut"
+  selection-mode="SingleRow"
+  corner-radius-top-left="0"
+  corner-radius-top-right="0"
+>
 </igc-data-grid>
 ```
 
 ```ts
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = data;
 ```
 
@@ -367,33 +377,51 @@ grid1.dataSource = data;
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    autoGenerateColumns="false">
-    <IgrNumericColumn field="ProductID" headerText="Product ID"/>
-    <IgrTextColumn field="ProductName" headerText="Product Name"/>
-    <IgrTextColumn field="QuantityPerUnit" headerText="Quantity Per Unit"/>
-    <IgrNumericColumn field="UnitsInStock" headerText="Units In Stock"/>
-    <IgrDateTimeColumn field="OrderDate" headerText="Order Date"/>
+  height="100%"
+  width="100%"
+  dataSource={this.data}
+  autoGenerateColumns="false"
+>
+  <IgrNumericColumn field="ProductID" headerText="Product ID" />
+  <IgrTextColumn field="ProductName" headerText="Product Name" />
+  <IgrTextColumn field="QuantityPerUnit" headerText="Quantity Per Unit" />
+  <IgrNumericColumn field="UnitsInStock" headerText="Units In Stock" />
+  <IgrDateTimeColumn field="OrderDate" headerText="Order Date" />
 </IgrDataGrid>
 ```
 
 ```html
-<igc-data-grid id="grid"
-    width="100%"
-    height="500px"
-    auto-generate-columns="false">
-        <igc-numeric-column field="ProductID" header-text="Product ID"></igc-numeric-column>
-        <igc-text-column field="ProductName" header-text="Product Name"></igc-text-column>
-        <igc-text-column field="QuantityPerUnit" header-text="Quantity Per Unit"></igc-text-column>
-        <igc-numeric-column field="UnitsInStock" header-text="Units In Stock"></igc-numeric-column>
-        <igc-date-time-column field="OrderDate" header-text="Order Date"></igc-date-time-column>
+<igc-data-grid
+  id="grid"
+  width="100%"
+  height="500px"
+  auto-generate-columns="false"
+>
+  <igc-numeric-column
+    field="ProductID"
+    header-text="Product ID"
+  ></igc-numeric-column>
+  <igc-text-column
+    field="ProductName"
+    header-text="Product Name"
+  ></igc-text-column>
+  <igc-text-column
+    field="QuantityPerUnit"
+    header-text="Quantity Per Unit"
+  ></igc-text-column>
+  <igc-numeric-column
+    field="UnitsInStock"
+    header-text="Units In Stock"
+  ></igc-numeric-column>
+  <igc-date-time-column
+    field="OrderDate"
+    header-text="Order Date"
+  ></igc-date-time-column>
 </igc-data-grid>
 ```
 
 ```ts
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = data;
 ```
 
@@ -411,19 +439,20 @@ grid1.dataSource = data;
 ```
 
 ### Styling Columns
+
 The following code demonstrates how to style specific columns using the provided column's properties.
 
 ```tsx
 <IgrTextColumn
-    background="SkyBlue"
-    textStyle="Italic Bold 16pt Times New Roman"
+  background="SkyBlue"
+  textStyle="Italic Bold 16pt Times New Roman"
 />
 ```
 
 ```html
 <igc-text-column
-    background="SkyBlue"
-    text-style="Italic Bold 16pt Times New Roman"
+  background="SkyBlue"
+  text-style="Italic Bold 16pt Times New Roman"
 ></igc-text-column>
 ```
 
@@ -438,6 +467,7 @@ The following code demonstrates how to style specific columns using the provided
 ```
 
 <!-- Blazor -->
+
 ### Tutorial Video
 
 Learn more about creating a Blazor data grid in our short tutorial video:

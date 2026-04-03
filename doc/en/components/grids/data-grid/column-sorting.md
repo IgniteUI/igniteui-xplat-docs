@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridSorting}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid supports ascending and descending colum
 
 ## {Platform} Grid Sorting Example
 
-
 `sample="/grids/data-grid/column-sorting", height="600", alt="{Platform} Grid Sorting Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -37,30 +34,34 @@ You can sort by a single or multiple column ascending or descending in the {Plat
 - `SortByOneColumnOnlyTriState`
 
 <!--React-->
+
 ```ts
-import { HeaderClickAction } from 'igniteui-react-data-grids';
+import { HeaderClickAction } from "igniteui-react-data-grids";
 ```
 
 <!--WebComponents-->
+
 ```ts
-import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
+import { HeaderClickAction } from "igniteui-webcomponents-data-grids";
 ```
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    headerClickAction={HeaderClickAction.SortByMultipleColumns}
-    dataSource={this.data}
-    ref={this.onGridRef}/>
+  height="100%"
+  width="100%"
+  headerClickAction={HeaderClickAction.SortByMultipleColumns}
+  dataSource={this.data}
+  ref={this.onGridRef}
+/>
 ```
 
 ```html
 <igc-data-grid
-    id="grid"
-    height="100%"
-    width="100%"
-    header-click-action="SortByMultipleColumns">
+  id="grid"
+  height="100%"
+  width="100%"
+  header-click-action="SortByMultipleColumns"
+>
 </igc-data-grid>
 ```
 
@@ -73,8 +74,8 @@ import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
 ## Sorting through API
 
 ```ts
-import { IgrColumnSortDescription } from 'igniteui-react-data-grids';
-import { ListSortDirection } from 'igniteui-react-core';
+import { IgrColumnSortDescription } from "igniteui-react-data-grids";
+import { ListSortDirection } from "igniteui-react-core";
 ```
 
 ```ts
@@ -89,10 +90,10 @@ this.grid.sortDescriptions.add(colSortDesc);
 ```
 
 ```ts
-import { IgcColumnSortDescription } from 'igniteui-webcomponents-data-grids';
-import { ListSortDirection } from 'igniteui-webcomponents-core';
+import { IgcColumnSortDescription } from "igniteui-webcomponents-data-grids";
+import { ListSortDirection } from "igniteui-webcomponents-core";
 
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = data;
 
 let colSortDesc = new IgcColumnSortDescription();

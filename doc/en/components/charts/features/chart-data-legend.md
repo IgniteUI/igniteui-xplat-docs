@@ -35,18 +35,16 @@ The columns of the `XamDataLegend` include the series title, label, value of dat
 
 `sample="/charts/financial-chart/data-legend", height="450", alt="{Platform} Financial Chart Data Legend Example"`
 
-
-
 Setting values on the `IncludedColumns` and `ExcludedColumns` properties, depends on type of series and how many data columns they support. For example, you can set `IncludedColumns` property to a collection of **Open** and **Close** strings and the legend will show only open and close values for stock prices when the chart is plotting financial series. The following table lists all column names that can be use to filter columns in data legend.
 
-|  Type of Series  | Column Names |
-| -----------------|-------------- |
-| Category Series  | Value |
-| Radial Series    | Value |
-| Polar Series     | Radius, Angle |
-| Bubble Series    | X, Y, Radius |
-| Scatter Series   | X, Y |
-| Range Series     | High, Low |
+| Type of Series   | Column Names                                         |
+| ---------------- | ---------------------------------------------------- |
+| Category Series  | Value                                                |
+| Radial Series    | Value                                                |
+| Polar Series     | Radius, Angle                                        |
+| Bubble Series    | X, Y, Radius                                         |
+| Scatter Series   | X, Y                                                 |
+| Range Series     | High, Low                                            |
 | Financial Series | High, Low, Open, Close, Change, TypicalPrice, Volume |
 
 Where the **TypicalPrice** and percentage **Change** of OHLC prices are automatically calculated by financial series so you do not need to include them in your data sources.
@@ -63,21 +61,20 @@ The label column displays short name on the left side of value column, e.g. "O" 
 
 The value column displays values of series as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
-
 ### Unit Column
 
 The unit column displays an abbreviation symbol on the right side of value column. The unit symbol depends on the `ValueFormatAbbreviation` property, e.g. "M" for the `Million` abbreviation.
 
 ### Customizing Columns
 
-You can customize text displayed in the **Label** and **Unit** columns using  properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit** on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
+You can customize text displayed in the **Label** and **Unit** columns using properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit** on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
 
-|  Type of Series | Series Properties |
-| ------|---- |
-| Category Series | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M" |
-| Radial Series | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM" |
-| Polar Series | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°" |
-| Range Series | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" |
+| Type of Series   | Series Properties                                                                                                                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Category Series  | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M"                                                                                                                                                                                                           |
+| Radial Series    | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM"                                                                                                                                                                                                  |
+| Polar Series     | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°"                                                                                                                          |
+| Range Series     | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K"                                                                                                                                            |
 | Financial Series | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br> |
 
 Also, you can use the `UnitText` property on the `XamDataLegend` to change text displayed in all Unit columns.
@@ -96,8 +93,6 @@ The `XamDataLegend` provides properties for styling each type of column. Each of
 
 `sample="/charts/financial-chart/data-legend-styling-props", height="450", alt="{Platform} Data Legend Styling Example"`
 
-
-
 ## {Platform} Data Legend Value Formatting
 
 The `XamDataLegend` provides automatic abbreviation of large numbers using its `ValueFormatAbbreviation` property. This adds a multiplier in the units column such as kilo, million, billion, etc. You can customize the number of fractional digits that are displayed by setting the `ValueFormatMinFractions` and `ValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
@@ -105,14 +100,11 @@ The following example demonstrates how to use those properties:
 
 `sample="/charts/category-chart/data-legend-formatting-decimals", height="450", alt="{Platform} Data Legend Formatting Decimals Example"`
 
-
-
 ## {Platform} Data Legend Value Mode
 
 You have the ability to change the default decimal display of values within the `XamDataLegend` to a currency by changing the `ValueFormatMode` property. Also, you can change the culture of the displayed currency symbol by setting the `ValueFormatCulture` property a culture tag. For example, the following example data legend with the `ValueFormatCulture` set to "en-GB" to display British Pounds (£) symbol:
 
 `sample="/charts/financial-chart/data-legend-formatting-currency", height="450", alt="{Platform} Formatting Currency Example"`
-
 
 ## {Platform} Data Legend Grouping
 
@@ -120,7 +112,6 @@ You have the ability to change the default decimal display of values within the 
 By default, DataLegend will hide names of groups, but you can display group names by setting the `GroupRowVisible` property to true.
 
 `sample="/charts/data-chart/data-legend-grouping", height="450", alt="{Platform} Data Legend Grouping"`
-
 
 ## {Platform} Data Legend Styling & Events
 
@@ -156,7 +147,6 @@ Some of the events exposes a `DataLegendStylingRowEventArgs` parameter as its ar
 `StyleSummaryColumn` and `SeriesStyleColumn` events expose a `DataLegendStylingColumnEventArgs` parameter as its arguments, for customizing each field in the series. The event arguments also expose event-specific properties such as column index and value member related properties about the columns.
 
 `sample="/charts/data-chart/data-legend-styling", height="450", alt="{Platform} Data Legend Styling"`
-
 
 ## API References
 

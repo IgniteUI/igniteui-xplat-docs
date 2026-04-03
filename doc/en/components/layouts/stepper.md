@@ -31,7 +31,7 @@ npm install {PackageWebComponents}
 Before using the `Stepper`, you need to register it as follows:
 
 ```ts
-import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcStepperComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcStepperComponent);
 ```
@@ -51,11 +51,12 @@ npm install igniteui-react
 You will then need to import the `Stepper` and its necessary CSS, like so:
 
 ```tsx
-import { IgrStepper, IgrStep } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrStepper, IgrStep } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
+
 ```razor
 // in Program.cs file
 
@@ -66,7 +67,7 @@ builder.Services.AddIgniteUIBlazor(
 
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the `Stepper` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Stepper` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -77,23 +78,26 @@ You will also need to link an additional CSS file to apply the styling to the `S
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
 ## How To Use {Platform} Stepper
+
 The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Step.Invalid`, `Step.Active`, `Step.Optional`, `Step.Disabled` and `Step.Complete` properties, which give you the ability to configure the step states according to your business requirement.
 
 ### Declaring {Platform} Stepper
+
 Steps can be declared using one of the following approaches.
+
 - Iterating through a data set
 
 ```html
 <igc-stepper>
-    ${stepsData.map((step) => html`
-    <igc-step .disabled=${step.disabled}>
-        <div slot="indicator">
-            <igc-icon .iconName=${step.indicator}></igc-icon>
-        </div>
+  ${stepsData.map((step) => html`
+  <igc-step .disabled="${step.disabled}">
+    <div slot="indicator">
+      <igc-icon .iconName="${step.indicator}"></igc-icon>
+    </div>
 
-        <p slot="title">${step.title}</p>
-    </igc-step>
-    `
+    <p slot="title">${step.title}</p>
+  </igc-step>
+  `
 </igc-stepper>
 ```
 
@@ -122,12 +126,12 @@ Steps can be declared using one of the following approaches.
 
 ```html
 <igc-stepper>
-    <igc-step>
-       <p slot="title">Step 1</p>
-    </igc-step>
-    <igc-step>
-       <p slot="title">Step 2</p>
-    </igc-step>
+  <igc-step>
+    <p slot="title">Step 1</p>
+  </igc-step>
+  <igc-step>
+    <p slot="title">Step 2</p>
+  </igc-step>
 </igc-stepper>
 ```
 
@@ -144,12 +148,12 @@ Steps can be declared using one of the following approaches.
 
 ```tsx
 <IgrStepper>
-    <IgrStep>
-       <p slot="title">Step 1</p>
-    </IgrStep>
-     <IgrStep>
-       <p slot="title">Step 2</p>
-    </IgrStep>
+  <IgrStep>
+    <p slot="title">Step 1</p>
+  </IgrStep>
+  <IgrStep>
+    <p slot="title">Step 2</p>
+  </IgrStep>
 </IgrStepper>
 ```
 
@@ -160,14 +164,12 @@ For each step the user has the ability to configure indicator, title and subtitl
 
 ```html
 <igc-stepper>
-    <igc-step>
-       <igc-icon slot="indicator" iconName="home"></igc-icon>
-       <p slot="title">Home</p>
-       <p slot="subtitle">Home Sub Title</p>
-       <div>
-          Step Content
-       </div>
-    </igc-step>
+  <igc-step>
+    <igc-icon slot="indicator" iconName="home"></igc-icon>
+    <p slot="title">Home</p>
+    <p slot="subtitle">Home Sub Title</p>
+    <div>Step Content</div>
+  </igc-step>
 </igc-stepper>
 ```
 
@@ -187,21 +189,19 @@ For each step the user has the ability to configure indicator, title and subtitl
 
 ```tsx
 <IgrStepper>
-    <IgrStep>
-        <IgrIcon slot="indicator" name="home" collection="material" />
-        <p slot="title">Home</p>
-        <p slot="subtitle">Home Sub Title</p>
-        <div>
-            Step Content
-            ...
-        </div>
-    </IgrStep>
+  <IgrStep>
+    <IgrIcon slot="indicator" name="home" collection="material" />
+    <p slot="title">Home</p>
+    <p slot="subtitle">Home Sub Title</p>
+    <div>Step Content ...</div>
+  </IgrStep>
 </IgrStepper>
 ```
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png" alt="stepper-step"/>
 
 ### Orientation in {Platform} Stepper
+
 You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** **(default value)** or **vertical**.
 
 **Horizontal Stepper Orientation**
@@ -219,8 +219,6 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 `sample="/layouts/stepper/orientation", height="528", alt="{Platform} Stepper Orientation Example"`
 
-
-
 <div class="divider--half"></div>
 
 ### Step States
@@ -237,15 +235,14 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to **false** and the user is enabled to select any non-disabled step in the `Stepper`.
 
-
 ```html
 <igc-stepper linear="true">
-    <igc-step>
-       <p slot="title">Step 1</p>
-    </igc-step>
-    <igc-step>
-       <p slot="title">Step 2</p>
-    </igc-step>
+  <igc-step>
+    <p slot="title">Step 1</p>
+  </igc-step>
+  <igc-step>
+    <p slot="title">Step 2</p>
+  </igc-step>
 </igc-stepper>
 ```
 
@@ -262,12 +259,12 @@ The {Platform} `Stepper` gives you the opportunity to set its steps flow using t
 
 ```tsx
 <IgrStepper linear={true}>
-    <IgrStep>
-       <p slot="title">Step 1</p>
-    </IgrStep>
-     <IgrStep>
-       <p slot="title">Step 2</p>
-    </IgrStep>
+  <IgrStep>
+    <p slot="title">Step 1</p>
+  </IgrStep>
+  <IgrStep>
+    <p slot="title">Step 2</p>
+  </IgrStep>
 </IgrStepper>
 ```
 
@@ -281,6 +278,7 @@ If the current non-optional step is not valid you cannot go forward to the next 
 ### Step Interactions
 
 `Stepper` provides the following API methods for step interactions:
+
 - **navigateTo** – activates the step by given index.
 - **next** - activates the next non-disabled step.
 - **prev** – activates the previous non-disabled step.
@@ -294,6 +292,7 @@ If the current non-optional step is not valid you cannot go forward to the next 
 The {ProductName} Stepper gives you the ability to configure different options for titles, indicators and more.
 
 This could be achieved through the `StepType` property of the `Stepper`. It takes the following values:
+
 - Full **(default value)**
 - Indicator
 - Title
@@ -304,6 +303,7 @@ If titles and subtitles are defined, with this setup both indicators and titles 
 
 The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
 The user can configure the title position using the `TitlePosition` property. It takes the following values:
+
 - undefined **(default value)**
 - end
 - start
@@ -375,26 +375,26 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 
 You can change the appearance of the `Step`, by using some of the exposed CSS parts listed below:
 
-| Part name | Description |
-| ---------|------------ |
-| `header-container` | Wrapper of the step's header and its separators. |
-| `disabled` | Indicates a disabled state. Applies to header-container. |
-| `complete-start` | Indicates a complete state of the current step. Applies to header-container. |
-| `complete-end` | Indicates a complete state of the previous step. Applies to header-container. |
-| `optional` | Indicates an optional state. Applies to header-container. |
-| `invalid` | Indicates an invalid state. Applies to header-container. |
-| `top` | Indicates that the title should be above the indicator. Applies to header-container. |
-| `bottom` | Indicates that the title should be below the indicator. Applies to header-container. |
-| `start` | Indicates that the title should be before the indicator. Applies to header-container. |
-| `end` | Indicates that the title should be after the indicator. Applies to header-container. |
-| `header` | Wrapper of the step's indicator and text. |
-| `indicator` | The indicator of the step. |
-| `text` | Wrapper of the step's title and subtitle. |
-| `empty` | Indicates that no title and subtitle has been provided to the step. Applies to text. |
-| `title` | The title of the step. |
-| `subtitle` | The subtitle of the step. |
-| `body` | Wrapper of the step's content. |
-| `content` | The steps content. |
+| Part name          | Description                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------- |
+| `header-container` | Wrapper of the step's header and its separators.                                      |
+| `disabled`         | Indicates a disabled state. Applies to header-container.                              |
+| `complete-start`   | Indicates a complete state of the current step. Applies to header-container.          |
+| `complete-end`     | Indicates a complete state of the previous step. Applies to header-container.         |
+| `optional`         | Indicates an optional state. Applies to header-container.                             |
+| `invalid`          | Indicates an invalid state. Applies to header-container.                              |
+| `top`              | Indicates that the title should be above the indicator. Applies to header-container.  |
+| `bottom`           | Indicates that the title should be below the indicator. Applies to header-container.  |
+| `start`            | Indicates that the title should be before the indicator. Applies to header-container. |
+| `end`              | Indicates that the title should be after the indicator. Applies to header-container.  |
+| `header`           | Wrapper of the step's indicator and text.                                             |
+| `indicator`        | The indicator of the step.                                                            |
+| `text`             | Wrapper of the step's title and subtitle.                                             |
+| `empty`            | Indicates that no title and subtitle has been provided to the step. Applies to text.  |
+| `title`            | The title of the step.                                                                |
+| `subtitle`         | The subtitle of the step.                                                             |
+| `body`             | Wrapper of the step's content.                                                        |
+| `content`          | The steps content.                                                                    |
 
 Using these CSS parts we can customize thе appearance of the `Stepper` component like this:
 
@@ -411,14 +411,16 @@ igc-step::part(indicator) {
 ```
 
 <!-- WebComponents -->
+
 `sample="/layouts/stepper/styling", height="300", alt="{Platform} Stepper Styling Example"`
+
 <!-- end: WebComponents -->
 
 <!-- React,Blazor -->
+
 `sample="/layouts/stepper/styling", height="600", alt="{Platform} Stepper Styling Example"`
+
 <!-- end: React,Blazor -->
-
-
 
 <div class="divider--half"></div>
 
@@ -429,7 +431,6 @@ igc-step::part(indicator) {
 - `Avatar`
 - `Icon`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 

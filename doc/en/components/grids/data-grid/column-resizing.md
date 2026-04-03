@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridColumnResizing}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Grid supports the ability to resize columns, giving you f
 
 ## {Platform} Grid Column Resizing Example
 
-
 `sample="/grids/data-grid/column-resizing", height="600", alt="{Platform} Grid Column Resizing Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -46,50 +43,56 @@ When resizing a star-width column, it will change that column to a fixed column.
 The following code snippet demonstrates how to implement column resizing in the {Platform} data grid, where the <b>Street</b> column in this case will not be resizable. In this case, the column resizing separator will be 5 pixels wide and the columns that are resizable would animate when resized as well:
 
 <!--React-->
+
 ```ts
-import { ColumnResizingMode } from 'igniteui-react-data-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-react-data-grids';
+import { ColumnResizingMode } from "igniteui-react-data-grids";
+import { ColumnResizingAnimationMode } from "igniteui-react-data-grids";
 ```
 
 <!--WebComponents-->
+
 ```ts
-import { ColumnResizingMode } from 'igniteui-webcomponents-data-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnResizingMode } from "igniteui-webcomponents-data-grids";
+import { ColumnResizingAnimationMode } from "igniteui-webcomponents-data-grids";
 ```
 
 ```tsx
-<IgrDataGrid ref={this.onGridRef}
-    height="100%"
-    width="100%"
-    columnResizingAnimationMode={ColumnResizingAnimationMode.Interpolate}
-    columnResizingMode={ColumnResizingMode.Deferred}
-    columnResizingSeparatorWidth={5}
-    autoGenerateColumns={false}
-    dataSource={this.data} >
-    <IgrTextColumn field="FirstName" headerText="First Name" />
-    <IgrTextColumn field="LastName" headerText="Last Name" />
-    <IgrTextColumn field="Street" headerText="Street" isResizingEnabled={false} />
-    <IgrTextColumn field="City" headerText="City" />
+<IgrDataGrid
+  ref={this.onGridRef}
+  height="100%"
+  width="100%"
+  columnResizingAnimationMode={ColumnResizingAnimationMode.Interpolate}
+  columnResizingMode={ColumnResizingMode.Deferred}
+  columnResizingSeparatorWidth={5}
+  autoGenerateColumns={false}
+  dataSource={this.data}
+>
+  <IgrTextColumn field="FirstName" headerText="First Name" />
+  <IgrTextColumn field="LastName" headerText="Last Name" />
+  <IgrTextColumn field="Street" headerText="Street" isResizingEnabled={false} />
+  <IgrTextColumn field="City" headerText="City" />
 </IgrDataGrid>
 ```
 
 ```html
-<igc-data-grid id="grid"
-    auto-generate-columns="false"
-    height="500px"
-    width="500px"
-    column-resizing-mode="Deferred"
-    column-resizing-animation-mode="Interpolate"
-    column-moving-separator-width="5" >
-    <igc-text-column field="FirstName"></igc-text-column>
-    <igc-text-column field="LastName"></igc-text-column>
-    <igc-text-column field="Street" is-resizing-enabled=false></igc-text-column>
-    <igc-text-column field="City"></igc-text-column>
+<igc-data-grid
+  id="grid"
+  auto-generate-columns="false"
+  height="500px"
+  width="500px"
+  column-resizing-mode="Deferred"
+  column-resizing-animation-mode="Interpolate"
+  column-moving-separator-width="5"
+>
+  <igc-text-column field="FirstName"></igc-text-column>
+  <igc-text-column field="LastName"></igc-text-column>
+  <igc-text-column field="Street" is-resizing-enabled="false"></igc-text-column>
+  <igc-text-column field="City"></igc-text-column>
 </igc-data-grid>
 ```
 
 ```ts
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = data;
 ```
 

@@ -16,17 +16,18 @@ This sample demonstrates how to create `Snackbar` component.
 
 `sample="/notifications/snackbar/overview", height="230", alt="{Platform} Snackbar Example"`
 
-
 <div class="divider--half"></div>
 
 ### Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -40,14 +41,13 @@ npm install igniteui-react
 You will then need to import the `Snackbar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrSnackbar } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrSnackbar } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
 
 Before using the `Snackbar`, you need to register it as follows:
-
 
 ```razor
 // in Program.cs file
@@ -57,7 +57,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSnackbarModule));
 
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the `Snackbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Snackbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -66,7 +66,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcSnackbarComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcSnackbarComponent);
 ```
@@ -76,7 +76,9 @@ For a complete introduction to the {ProductName}, read the [**Getting Started**]
 The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 
 ```html
-<igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
+<igc-button onclick="snackbar.show()" variant="contained"
+  >Show Snackbar</igc-button
+>
 <igc-snackbar id="snackbar">Snackbar Message</igc-snackbar>
 ```
 
@@ -112,26 +114,22 @@ Use the `DisplayTime` property to configure how long the snackbar component is v
 
 `sample="/notifications/snackbar/display-time", height="230", alt="{Platform} Snackbar Display Time Example"`
 
-
-
 ### Action Text
 
 By default, the snackbar component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the snackbar will remain visible. Using the snackbar `ActionText` you can display an action button inside the component.
 
 `sample="/notifications/snackbar/action-text", height="230", alt="{Platform} Sanckbar Action Text Example"`
 
-
-
 ## Styling
 
 The `Snackbar` component exposes several CSS parts to give you full control over its styling:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the snackbar component. |
-| `message` | The snackbar message. |
-| `action` | The default snackbar action button. |
-| `action-container` | The area holding the actions. |
+| Name               | Description                                 |
+| ------------------ | ------------------------------------------- |
+| `base`             | The base wrapper of the snackbar component. |
+| `message`          | The snackbar message.                       |
+| `action`           | The default snackbar action button.         |
+| `action-container` | The area holding the actions.               |
 
 ```css
 igc-snackbar::part(base) {
@@ -144,7 +142,6 @@ igc-snackbar::part(base) {
 `sample="/notifications/snackbar/styling", height="230", alt="{Platform} SnackBar Styling Example"`
 
 <div class="divider--half"></div>
-
 
 ## API References
 

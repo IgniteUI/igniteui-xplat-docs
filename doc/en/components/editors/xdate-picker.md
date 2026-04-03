@@ -4,6 +4,7 @@ _description: Infragistics' {Platform} xdate picker component helps your users s
 _keywords: {Platform} xdate picker, drop down, {ProductName}, Infragistics
 mentionedTypes: ["XDatePicker"]
 ---
+
 # {Platform} XDate Picker Overview
 
 The XDate Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
@@ -17,10 +18,10 @@ This sample demonstrates how to create `XDatePicker` with option to select a sin
 
 `sample="/editors/x-date-picker/overview", height="350", alt="{Platform} XDate Picker Example"`
 
-
-
 <!-- React, WebComponents -->
+
 ## Dependencies
+
 When installing the XDate Picker component, the core and inputs packages must also be installed.
 
 ```cmd
@@ -28,6 +29,7 @@ npm install --save {PackageCore}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
 ```
+
 <!-- end: React, WebComponents -->
 
 ## Component Modules
@@ -42,14 +44,14 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrXDatePickerModule } from 'igniteui-react-inputs';
+import { IgrXDatePickerModule } from "igniteui-react-inputs";
 
 IgrXDatePickerModule.register();
 ```
 
 ```ts
-import { IgcXDatePickerModule } from 'igniteui-webcomponents-inputs';
-import { ModuleManager } from 'igniteui-webcomponents-core';
+import { IgcXDatePickerModule } from "igniteui-webcomponents-inputs";
+import { ModuleManager } from "igniteui-webcomponents-core";
 
 ModuleManager.register(IgcXDatePickerModule);
 ```
@@ -66,23 +68,23 @@ The {Platform} XDate Picker editor component consists of three default parts - t
 
 - Clear Button: The 'x' icon will clear the current value.
 
-| Property | Type | Description |
-| ---------|------|------------ |
-| `IconColor` | string | Changes the color of the calendar button. |
-| `AllowTextInput`  |  bool   |  The **xdate** picker's value can be typed-in and modified by toggling this property to true. |
-| `DateFormat` | enum | Defaults to DateShort e.g. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as e.g. Wednesday, April 14, 2021. |
-| `FirstDayOfWeek` | enum | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar, e.g. Monday through Sunday. |
-| `FormatString` | string  | When DateShort is used, the date's format can be configured e.g. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored. |
-| `Label`  |  string | Displays custom text above the date in the top-left corner of the XDate Picker. |
-| `MinDate` | DateTime | Restricts earlier dates from being selected or viewed. |
-| `MaxDate` | DateTime | Restricts later dates from being selected or viewed. |
-| `Placeholder` | string  |  A custom string to be displayed when the value within the edit portion of the calendar is cleared. |
-| `ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the XDate Picker. The clear button's visibility can be toggled on and off. |
-| `ShowTodayButton`| bool  |  The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off. |
-| `ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the XDate Picker. The week number's visibility can be toggled on and off. |
-| `FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek. |
-| `OpenOnFocus` | bool | By default, the dropdown portion of the XDate Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar. |
-| `Value` | date | Sets the value of the XDate Picker and selects it in the dropdown calendar. |
+| Property          | Type     | Description                                                                                                                                                                                                                  |
+| ----------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `IconColor`       | string   | Changes the color of the calendar button.                                                                                                                                                                                    |
+| `AllowTextInput`  | bool     | The **xdate** picker's value can be typed-in and modified by toggling this property to true.                                                                                                                                 |
+| `DateFormat`      | enum     | Defaults to DateShort e.g. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as e.g. Wednesday, April 14, 2021.                                                                               |
+| `FirstDayOfWeek`  | enum     | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar, e.g. Monday through Sunday.                                                                                    |
+| `FormatString`    | string   | When DateShort is used, the date's format can be configured e.g. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored.                                             |
+| `Label`           | string   | Displays custom text above the date in the top-left corner of the XDate Picker.                                                                                                                                              |
+| `MinDate`         | DateTime | Restricts earlier dates from being selected or viewed.                                                                                                                                                                       |
+| `MaxDate`         | DateTime | Restricts later dates from being selected or viewed.                                                                                                                                                                         |
+| `Placeholder`     | string   | A custom string to be displayed when the value within the edit portion of the calendar is cleared.                                                                                                                           |
+| `ShowClearButton` | bool     | Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the XDate Picker. The clear button's visibility can be toggled on and off. |
+| `ShowTodayButton` | bool     | The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off.                                                   |
+| `ShowWeekNumbers` | bool     | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the XDate Picker. The week number's visibility can be toggled on and off.                                          |
+| `FirstWeekOfYear` | enum     | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek.                                                                                                       |
+| `OpenOnFocus`     | bool     | By default, the dropdown portion of the XDate Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar.                                                                     |
+| `Value`           | date     | Sets the value of the XDate Picker and selects it in the dropdown calendar.                                                                                                                                                  |
 
 Users can also customize the XDate Picker's font by using the various text properties of the control. They are: `TextColor`, `TextFontFamily`, `TextFontSize`, `TextFontStyle`, and `TextFontWeight`.
 
@@ -92,8 +94,6 @@ The following example demonstrates how to enable editing in the `XDatePicker`.
 
 `sample="/editors/x-date-picker/editing", height="300", alt="{Platform} XDate Picker Editing Example"`
 
-
-
 <div class="divider--half"></div>
 
 ### Date Limits
@@ -101,8 +101,6 @@ The following example demonstrates how to enable editing in the `XDatePicker`.
 The following example demonstrates how to restrict selected dates in the `XDatePicker`.
 
 `sample="/editors/x-date-picker/date-limits", height="360", alt="{Platform} XDate Picker Date Limits Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -112,8 +110,6 @@ The following example demonstrates how apply a long date in the `XDatePicker`.
 
 `sample="/editors/x-date-picker/format", height="350", alt="{Platform} XDate Picker Format Example"`
 
-
-
 <div class="divider--half"></div>
 
 ### Date Ranges
@@ -121,8 +117,6 @@ The following example demonstrates how apply a long date in the `XDatePicker`.
 The following example demonstrates how combine multiple `XDatePicker` controls.
 
 `sample="/editors/x-date-picker/range", height="300", alt="{Platform} XDate Picker Date Range Example"`
-
-
 
 <div class="divider--half"></div>
 

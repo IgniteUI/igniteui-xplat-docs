@@ -156,15 +156,19 @@ The {GridLiteTitle} supports tri-state sorting and it is always enabled. End-use
 
 
 <!-- React, WebComponents -->
+
 ```
 ascending -> descending -> none -> ascending
 ```
+
 where `none` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
+
 ```
 Ascending -> Descending -> None -> Ascending
 ```
+
 where `None` is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: Blazor -->
 

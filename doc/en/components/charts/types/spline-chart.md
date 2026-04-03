@@ -5,6 +5,7 @@ _keywords: {Platform} Charts, Spline Chart, Infragistics
 _license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "Series", "CategoryChartType"]
 ---
+
 # {Platform} Spline Chart
 
 The {ProductName} Spline Chart belongs to a group of Category Charts that render as a collection of points connected by smooth curves of spline. Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. Spline Chart is identical to [Line Chart](line-chart.md) in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
@@ -14,8 +15,6 @@ The {ProductName} Spline Chart belongs to a group of Category Charts that render
 The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline` enum.
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart Multiple Sources"`
-
-
 
 <div class="divider--half"></div>
 
@@ -27,8 +26,6 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 `sample="/charts/category-chart/spline-single-source", height="600", alt="{Platform} Spline Chart with Single Source"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Spline Chart with Multiple Series
@@ -39,8 +36,6 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart with Multiple Sources"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Spline Chart Styling
@@ -50,8 +45,6 @@ If you need a Spline Chart with more features such as composite other series, yo
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline`, as shown in the example below:
 
 `sample="/charts/category-chart/spline-styling", height="600", alt="{Platform} Spline Chart Styling"`
-
-
 
 <div class="divider--half"></div>
 
@@ -67,8 +60,6 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} Stacked Spline Chart"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Stacked 100% Spline Chart
@@ -78,8 +69,6 @@ The Stacked 100% Spline Chart is identical to the Stacked Spline Chart in all as
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100SplineSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} Stacked 100 Spline Chart"`
-
-
 
 <div class="divider--half"></div>
 
@@ -97,8 +86,8 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-| Chart Type          | Control Name       | API Members |
-| --------------------|--------------------|-------------------------- |
+| Chart Type          | Control Name    | API Members                          |
+| ------------------- | --------------- | ------------------------------------ |
 | Spline              | `CategoryChart` | `CategoryChart.ChartType` = `Spline` |
-| Stacked Spline      | `XamDataChart`     | `StackedSplineSeries` |
-| Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries` |
+| Stacked Spline      | `XamDataChart`  | `StackedSplineSeries`                |
+| Stacked 100% Spline | `XamDataChart`  | `Stacked100SplineSeries`             |

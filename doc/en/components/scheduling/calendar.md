@@ -43,14 +43,13 @@ npm install igniteui-react
 You will then need to import the {ProductName} `Calendar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrCalendar } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrCalendar } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
 
 Before using the `Calendar`, you need to register it as follows:
-
 
 ```razor
 // in Program.cs file
@@ -60,7 +59,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCalendarModule));
 
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the {ProductName} `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the {ProductName} `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -69,7 +68,7 @@ You will also need to link an additional CSS file to apply the styling to the {P
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcCalendarComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcCalendarComponent);
 ```
@@ -108,8 +107,6 @@ Users can choose from three different selection modes - single selection, multip
 
 `sample="/scheduling/calendar/multiple-selection", height="370", alt="{Platform} Calendar Multiple Selection Example"`
 
-
-
 ### Range Selection
 
 Following the same approach, we can switch `Selection` to range mode:
@@ -129,12 +126,9 @@ Following the same approach, we can switch `Selection` to range mode:
 
 `sample="/scheduling/calendar/range-selection", height="480", alt="{Platform} Calendar Range Selection Example"`
 
-
-
 ### Active View and Date
 
 The {ProductName} Calendar component allows you to switch between three different views: days, months and years. The `ActiveView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `ActiveDate` property. The `ActiveDate` property also reflects the changes of the currently visible date made by the end user.
-
 
 ### Header Options
 
@@ -150,13 +144,13 @@ The {ProductName} Calendar component exposes a `title` slot which allows you to 
 
 ```html
 <igc-calendar selection="range" header-orientation="vertical">
-    <span slot="title">Trip dates</span>
+  <span slot="title">Trip dates</span>
 </igc-calendar>
 ```
 
 ```tsx
 <IgrCalendar selection="range" headerOrientation="vertical">
-    <span slot="title">Trip dates</span>
+  <span slot="title">Trip dates</span>
 </IgrCalendar>
 ```
 
@@ -180,35 +174,33 @@ Let's go ahead and try those along with other customizations. First thing we nee
 
 ```html
 <igc-radio-group alignment="horizontal">
-    <igc-radio name="locale" value="en" checked>EN</igc-radio>
-    <igc-radio name="locale" value="de">DE</igc-radio>
-    <igc-radio name="locale" value="fr">FR</igc-radio>
-    <igc-radio name="locale" value="ar">AR</igc-radio>
-    <igc-radio name="locale" value="ja">JA</igc-radio>
+  <igc-radio name="locale" value="en" checked>EN</igc-radio>
+  <igc-radio name="locale" value="de">DE</igc-radio>
+  <igc-radio name="locale" value="fr">FR</igc-radio>
+  <igc-radio name="locale" value="ar">AR</igc-radio>
+  <igc-radio name="locale" value="ja">JA</igc-radio>
 </igc-radio-group>
 
-<igc-calendar
-    id="calendar1"
-    week-start="monday"
->
-</igc-calendar>
+<igc-calendar id="calendar1" week-start="monday"> </igc-calendar>
 ```
 
 ```ts
-this.calendar = document.getElementById('calendar1') as IgcCalendarComponent;
+this.calendar = document.getElementById("calendar1") as IgcCalendarComponent;
 this.calendar.formatOptions = {
-    month: 'short',
-    weekday: 'short'
+  month: "short",
+  weekday: "short",
 };
 
-this.radios = document.querySelectorAll('igc-radio') as NodeListOf<IgcRadioComponent>;
-this.radios.forEach(radio => {
-    radio.addEventListener('igcChange', () => {
-        if (radio.checked) {
-            this.calendar.locale = radio.value;
-        }
-    });
-})
+this.radios = document.querySelectorAll(
+  "igc-radio",
+) as NodeListOf<IgcRadioComponent>;
+this.radios.forEach((radio) => {
+  radio.addEventListener("igcChange", () => {
+    if (radio.checked) {
+      this.calendar.locale = radio.value;
+    }
+  });
+});
 ```
 
 ```tsx
@@ -227,10 +219,10 @@ this.radios.forEach(radio => {
     </IgrRadio>
     <IgrRadio name="lang" value="ja" onChange={this.onRadioChange}>
         <span>JA</span>
-    </IgrRadio>                    
+    </IgrRadio>
 </IgrRadioGroup>
 
-<IgrCalendar weekStart='monday' formatOptions={this.state.calendarFormat} 
+<IgrCalendar weekStart='monday' formatOptions={this.state.calendarFormat}
     locale={this.state.calendarLocale}
     value={new Date()}/>
 ```
@@ -277,27 +269,29 @@ Let's create a sample that is disabling the dates between the 3rd and the 8th of
 ```ts
 const today = new Date(Date.now());
 const range = [
-    new Date(today.getFullYear(), today.getMonth(), 3),
-    new Date(today.getFullYear(), today.getMonth(), 8)
+  new Date(today.getFullYear(), today.getMonth(), 3),
+  new Date(today.getFullYear(), today.getMonth(), 8),
 ];
 
-this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }];
+this.calendar.disabledDates = [
+  { type: DateRangeType.Between, dateRange: range },
+];
 ```
 
 ```tsx
-<IgrCalendar disabledDates={this.state.disabledDates}/>
+<IgrCalendar disabledDates={this.state.disabledDates} />
 ```
 
 ```tsx
 const today = new Date();
 const range = [
-    new Date(today.getFullYear(), today.getMonth(), 3),
-    new Date(today.getFullYear(), today.getMonth(), 8)
+  new Date(today.getFullYear(), today.getMonth(), 3),
+  new Date(today.getFullYear(), today.getMonth(), 8),
 ];
 const desc: DateRangeDescriptor = {
-    dateRange: range,
-    type: DateRangeType.Specific,
-}
+  dateRange: range,
+  type: DateRangeType.Specific,
+};
 const disabledDates = [desc];
 this.state = { disabledDates };
 ```
@@ -325,7 +319,6 @@ These configurations should have the following result:
 
 `sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar Disabled Dates Example"`
 
-
 ### Special dates
 
 The `SpecialDates` property is using almost the same configuration principles as the `DisabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
@@ -335,28 +328,30 @@ Let's add some special dates to our Calendar. In order to do this, we will creat
 ```ts
 const today = new Date();
 const range = [
-    new Date(today.getFullYear(), today.getMonth(), 3),
-    new Date(today.getFullYear(), today.getMonth(), 8)
+  new Date(today.getFullYear(), today.getMonth(), 3),
+  new Date(today.getFullYear(), today.getMonth(), 8),
 ];
 
-this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
+this.calendar.specialDates = [
+  { type: DateRangeType.Between, dateRange: range },
+];
 ```
 
 ```tsx
-<IgrCalendar specialDates={this.state.specialDates}/>
+<IgrCalendar specialDates={this.state.specialDates} />
 ```
 
 ```tsx
 const today = new Date();
 const range = [
-    new Date(today.getFullYear(), today.getMonth(), 3),
-    new Date(today.getFullYear(), today.getMonth(), 8)
-]
+  new Date(today.getFullYear(), today.getMonth(), 3),
+  new Date(today.getFullYear(), today.getMonth(), 8),
+];
 const desc: DateRangeDescriptor = {
-    dateRange: range,
-    type: DateRangeType.Between,
-}
-const specialDates = [desc]
+  dateRange: range,
+  type: DateRangeType.Between,
+};
+const specialDates = [desc];
 this.state = { specialDates };
 ```
 
@@ -386,7 +381,6 @@ The following demo illustrates a Calendar with a vacation request option:
 
 `sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar Special Dates Example"`
 
-
 ### Week numbers
 
 You can use the `ShowWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
@@ -406,8 +400,6 @@ You can use the `ShowWeekNumbers` property to show the week numbers of the Calen
 The following demo illustrates a Calendar with enabled week numbers:
 
 `sample="/scheduling/calendar/week-numbers", height="480", alt="{Platform} Calendar Week Numbers Example"`
-
-
 
 ### Multiple Months
 
@@ -431,15 +423,11 @@ The following sample demonstrates the multiple months configuration:
 
 `sample="/scheduling/calendar/multiple-months", height="480", alt="{Platform} Calendar Multiple Months Example"`
 
-
-
 ### Size
 
 You could control the size and spacing of the calendar inner elements using the `--ig-size` CSS variable. The default size of the component is large.
 
 `sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar Size Example"`
-
-
 
 ### Events
 
@@ -448,7 +436,7 @@ The Calendar component emits the `Change` event when the selected dates are chan
 <!-- WebComponents -->
 
 ```ts
-this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
+this.calendar.addEventListener("igcChange", (ev) => console.log(ev.detail));
 ```
 
 <!-- end: WebComponents -->
@@ -520,44 +508,44 @@ When the **year** button (in the subheader) is focused, use:
 
 The `Calendar` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
-|Name|Description|
-|--|--|
-| `header` | The header element. |
-| `header-title` | The header title element. |
-| `header-date` | The header date element. |
-| `content` | The content element which contains the views and navigation elements. |
-| `navigation` | The navigation container element. |
-| `months-navigation` | The months navigation button element. |
-| `years-navigation` | The years navigation button element. |
-| `years-range` | The years range element. |
-| `navigation-buttons` | The navigation buttons container. |
-| `navigation-button` | Previous/next navigation button. |
-| `days-view-container` | The days view container element. |
-| `days-view` | Days view element. |
-| `months-view` | The months view element. |
-| `years-view` | The years view element. |
-| `days-row` | Days row element. |
-| `label` | Week header label element. |
-| `week-number` | Week number element. |
-| `week-number-inner` | Week number inner element. |
-| `date` | Date element. |
-| `date-inner` | Date inner element. |
-| `first` | The first selected date element. |
-| `last` | The last selected date element. |
-| `inactive` | Inactive date element. |
-| `hidden` | Hidden date element. |
-| `weekend` | Weekend date element. |
-| `range` | Range selected element. |
-| `special` | Special date element. |
-| `disabled` | Disabled date element. |
-| `single` | Single selected date element. |
-| `preview` | Range selection preview date element. |
-| `month` | Month element. |
-| `month-inner` | Month inner element. |
-| `year` | Year element. |
-| `year-inner` | Year inner element. |
-| `selected` | Indicates selected state. Applies to date, month and year elements. |
-| `current` | Indicates current state. Applies to date, month and year elements. |
+| Name                  | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| `header`              | The header element.                                                   |
+| `header-title`        | The header title element.                                             |
+| `header-date`         | The header date element.                                              |
+| `content`             | The content element which contains the views and navigation elements. |
+| `navigation`          | The navigation container element.                                     |
+| `months-navigation`   | The months navigation button element.                                 |
+| `years-navigation`    | The years navigation button element.                                  |
+| `years-range`         | The years range element.                                              |
+| `navigation-buttons`  | The navigation buttons container.                                     |
+| `navigation-button`   | Previous/next navigation button.                                      |
+| `days-view-container` | The days view container element.                                      |
+| `days-view`           | Days view element.                                                    |
+| `months-view`         | The months view element.                                              |
+| `years-view`          | The years view element.                                               |
+| `days-row`            | Days row element.                                                     |
+| `label`               | Week header label element.                                            |
+| `week-number`         | Week number element.                                                  |
+| `week-number-inner`   | Week number inner element.                                            |
+| `date`                | Date element.                                                         |
+| `date-inner`          | Date inner element.                                                   |
+| `first`               | The first selected date element.                                      |
+| `last`                | The last selected date element.                                       |
+| `inactive`            | Inactive date element.                                                |
+| `hidden`              | Hidden date element.                                                  |
+| `weekend`             | Weekend date element.                                                 |
+| `range`               | Range selected element.                                               |
+| `special`             | Special date element.                                                 |
+| `disabled`            | Disabled date element.                                                |
+| `single`              | Single selected date element.                                         |
+| `preview`             | Range selection preview date element.                                 |
+| `month`               | Month element.                                                        |
+| `month-inner`         | Month inner element.                                                  |
+| `year`                | Year element.                                                         |
+| `year-inner`          | Year inner element.                                                   |
+| `selected`            | Indicates selected state. Applies to date, month and year elements.   |
+| `current`             | Indicates current state. Applies to date, month and year elements.    |
 
 Using these CSS parts we can customize thе appearance of the `Calendar` component like this:
 

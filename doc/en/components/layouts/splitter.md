@@ -27,7 +27,7 @@ npm install {PackageWebComponents}
 Before using the `Splitter`, you need to register it as follows:
 
 ```ts
-import { defineComponents, IgcSplitterComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcSplitterComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcSplitterComponent);
 ```
@@ -92,10 +92,10 @@ Use these properties to control interactions:
 You can also collapse or expand panes programmatically:
 
 ```ts
-const splitter = document.querySelector('igc-splitter') as IgcSplitterComponent;
+const splitter = document.querySelector("igc-splitter") as IgcSplitterComponent;
 
-splitter.toggle('start'); // collapse start pane
-splitter.toggle('start'); // expand start pane
+splitter.toggle("start"); // collapse start pane
+splitter.toggle("start"); // expand start pane
 ```
 
 ### Nested Splitters
@@ -115,10 +115,14 @@ The Splitter emits the following events during resize operations:
 The event detail includes current `startPanelSize`, `endPanelSize`, and `delta` for ongoing and end events.
 
 ```ts
-const splitter = document.querySelector('igc-splitter');
+const splitter = document.querySelector("igc-splitter");
 
-splitter?.addEventListener('igcResizeEnd', (event: CustomEvent) => {
-  console.log(event.detail.startPanelSize, event.detail.endPanelSize, event.detail.delta);
+splitter?.addEventListener("igcResizeEnd", (event: CustomEvent) => {
+  console.log(
+    event.detail.startPanelSize,
+    event.detail.endPanelSize,
+    event.detail.delta,
+  );
 });
 ```
 
@@ -126,29 +130,29 @@ splitter?.addEventListener('igcResizeEnd', (event: CustomEvent) => {
 
 When the splitter bar is focused:
 
-| Keys | Description |
-| ---- | ----------- |
-| <kbd>Arrow Left</kbd> / <kbd>Arrow Right</kbd> | Resize panes in horizontal orientation |
-| <kbd>Arrow Up</kbd> / <kbd>Arrow Down</kbd> | Resize panes in vertical orientation |
-| <kbd>Home</kbd> | Snap start pane to its minimum size |
-| <kbd>End</kbd> | Snap start pane to its maximum size |
-| <kbd>Ctrl</kbd> + <kbd>Arrow Left</kbd> / <kbd>Arrow Up</kbd> | Collapse or expand the start pane |
-| <kbd>Ctrl</kbd> + <kbd>Arrow Right</kbd> / <kbd>Arrow Down</kbd> | Collapse or expand the end pane |
+| Keys                                                             | Description                            |
+| ---------------------------------------------------------------- | -------------------------------------- |
+| <kbd>Arrow Left</kbd> / <kbd>Arrow Right</kbd>                   | Resize panes in horizontal orientation |
+| <kbd>Arrow Up</kbd> / <kbd>Arrow Down</kbd>                      | Resize panes in vertical orientation   |
+| <kbd>Home</kbd>                                                  | Snap start pane to its minimum size    |
+| <kbd>End</kbd>                                                   | Snap start pane to its maximum size    |
+| <kbd>Ctrl</kbd> + <kbd>Arrow Left</kbd> / <kbd>Arrow Up</kbd>    | Collapse or expand the start pane      |
+| <kbd>Ctrl</kbd> + <kbd>Arrow Right</kbd> / <kbd>Arrow Down</kbd> | Collapse or expand the end pane        |
 
 ## Styling
 
 The `Splitter` component exposes CSS parts for styling:
 
-| Name | Description |
-| ---- | ----------- |
-| `splitter-bar` | The draggable separator between panes |
-| `drag-handle` | The drag handle element in the splitter bar |
-| `start-pane` | The start pane container |
-| `end-pane` | The end pane container |
-| `start-collapse-btn` | Button that collapses the start pane |
-| `end-collapse-btn` | Button that collapses the end pane |
-| `start-expand-btn` | Button that expands the start pane |
-| `end-expand-btn` | Button that expands the end pane |
+| Name                 | Description                                 |
+| -------------------- | ------------------------------------------- |
+| `splitter-bar`       | The draggable separator between panes       |
+| `drag-handle`        | The drag handle element in the splitter bar |
+| `start-pane`         | The start pane container                    |
+| `end-pane`           | The end pane container                      |
+| `start-collapse-btn` | Button that collapses the start pane        |
+| `end-collapse-btn`   | Button that collapses the end pane          |
+| `start-expand-btn`   | Button that expands the start pane          |
+| `end-expand-btn`     | Button that expands the end pane            |
 
 It also supports theme CSS variables, including:
 

@@ -24,8 +24,6 @@ This example shows how configure the axis gridline to display major and minor gr
 
 `sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Axis Gridlines Properties
@@ -36,16 +34,16 @@ In order to display minor gridlines that correspond to minor interval, you need 
 
 You can customize how the gridlines are displayed in your {Platform} chart by setting the following properties:
 
-| Axis Visuals           | Type    | Property Names                                               | Description |
-| -----------------------|---------|--------------------------------------------------------------|---------------- |
-| Major Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | These properties set the color of axis major gridlines. |
-| Minor Stroke Color     | string  | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | These properties set the color of axis minor gridlines. |
-| Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | These properties set the thickness in pixels of the axis major gridlines. |
-| Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | These properties set the thickness in pixels of the axis minor gridlines. |
-| Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`                         | These properties set interval between axis major gridlines and labels. |
-| Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | These properties set interval between axis minor gridlines, if used. |
-| Axis Line Stroke Color | string  | `XAxisStroke` <br> `YAxisStroke`                   | These properties set the color of an axis line. |
-| Axis Stroke Thickness  | number  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | These properties set the thickness in pixels of an axis line. |
+| Axis Visuals           | Type   | Property Names                                               | Description                                                               |
+| ---------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Major Stroke Color     | string | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | These properties set the color of axis major gridlines.                   |
+| Minor Stroke Color     | string | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | These properties set the color of axis minor gridlines.                   |
+| Major Stroke Thickness | number | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | These properties set the thickness in pixels of the axis major gridlines. |
+| Minor Stroke Thickness | number | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | These properties set the thickness in pixels of the axis minor gridlines. |
+| Major Interval         | number | `XAxisInterval` <br> `YAxisInterval`                         | These properties set interval between axis major gridlines and labels.    |
+| Minor Interval         | number | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | These properties set interval between axis minor gridlines, if used.      |
+| Axis Line Stroke Color | string | `XAxisStroke` <br> `YAxisStroke`                             | These properties set the color of an axis line.                           |
+| Axis Stroke Thickness  | number | `XAxisStrokeThickness` <br> `YAxisStrokeThickness`           | These properties set the thickness in pixels of an axis line.             |
 
 Regarding the Major and Minor Interval in the table above, it is important to note that the major interval for axis labels will also be set by this value, displaying one label at the point on the axis associated with the interval. The minor interval gridlines are always rendered between the major gridlines, and as such, the minor interval properties should always be set to something much smaller (usually 2-5 times smaller) than the value of the major Interval properties.
 
@@ -77,20 +75,17 @@ The following example demonstrates how to customize the tickmarks by setting the
 
 `sample="/charts/category-chart/axis-tickmarks", height="450", alt="{Platform} Axis Tickmarks Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Axis Tickmarks Properties
 
 You can customize how the axis tickmarks are displayed in our {Platform} chats by setting the following properties:
 
-| Axis Visuals           | Type    | Property Names                                             | Description |
-| -----------------------|---------|------------------------------------------------------------|------------------------- |
-| Tick Stroke Color      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | These properties set the color of the tickmarks. |
-| Tick Stroke Thickness  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | These properties set the thickness of the axis tick marks. |
-| Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`                   | These properties set the length of the axis tick marks. |
-
+| Axis Visuals          | Type   | Property Names                                             | Description                                                |
+| --------------------- | ------ | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| Tick Stroke Color     | string | `XAxisTickStroke` <br> `YAxisTickStroke`                   | These properties set the color of the tickmarks.           |
+| Tick Stroke Thickness | number | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | These properties set the thickness of the axis tick marks. |
+| Tick Stroke Length    | number | `XAxisTickLength` <br> `YAxisTickLength`                   | These properties set the length of the axis tick marks.    |
 
 ## Additional Resources
 
@@ -103,25 +98,25 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-| `XamDataChart`                                     | `CategoryChart` or `FinancialChart` |
-| -------------------------------------------------- | ----------------------------------- |
-| `Axes` -> `NumericXAxis` -> `Interval`             | `XAxisInterval` (Major Interval) |
-| `Axes` -> `NumericYAxis` -> `Interval`             | `YAxisInterval` (Major Interval) |
-| `Axes` -> `NumericXAxis` -> `MinorInterval`        | `XAxisMinorInterval`    |
-| `Axes` -> `NumericYAxis` -> `MinorInterval`        | `YAxisMinorInterval`    |
-| `Axes` -> `NumericXAxis` -> `MajorStroke`          | `XAxisMajorStroke`    |
-| `Axes` -> `NumericYAxis` -> `MajorStroke`          | `YAxisMajorStroke`    |
-| `Axes` -> `NumericXAxis` -> `MajorStrokeThickness` | `XAxisMajorStrokeThickness` |
-| `Axes` -> `NumericYAxis` -> `MajorStrokeThickness` | `YAxisMajorStrokeThickness` |
-| `Axes` -> `NumericXAxis` -> `MinorStrokeThickness` | `XAxisMinorStrokeThickness` |
-| `Axes` -> `NumericYAxis` -> `MinorStrokeThickness` | `YAxisMinorStrokeThickness` |
-| `Axes` -> `NumericXAxis` -> `StrokeThickness`      | `XAxisStrokeThickness`   |
-| `Axes` -> `NumericYAxis` -> `StrokeThickness`      | `YAxisStrokeThickness`   |
-| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (Axis Line Color) |
-| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (Axis Line Color) |
-| `Axes` -> `NumericXAxis` -> `TickLength`           | `XAxisTickLength`    |
-| `Axes` -> `NumericYAxis` -> `TickLength`           | `YAxisTickLength`    |
-| `Axes` -> `NumericXAxis` -> `TickStroke`           | `XAxisTickStroke`    |
-| `Axes` -> `NumericYAxis` -> `TickStroke`           | `YAxisTickStroke`    |
+| `XamDataChart`                                     | `CategoryChart` or `FinancialChart`          |
+| -------------------------------------------------- | -------------------------------------------- |
+| `Axes` -> `NumericXAxis` -> `Interval`             | `XAxisInterval` (Major Interval)             |
+| `Axes` -> `NumericYAxis` -> `Interval`             | `YAxisInterval` (Major Interval)             |
+| `Axes` -> `NumericXAxis` -> `MinorInterval`        | `XAxisMinorInterval`                         |
+| `Axes` -> `NumericYAxis` -> `MinorInterval`        | `YAxisMinorInterval`                         |
+| `Axes` -> `NumericXAxis` -> `MajorStroke`          | `XAxisMajorStroke`                           |
+| `Axes` -> `NumericYAxis` -> `MajorStroke`          | `YAxisMajorStroke`                           |
+| `Axes` -> `NumericXAxis` -> `MajorStrokeThickness` | `XAxisMajorStrokeThickness`                  |
+| `Axes` -> `NumericYAxis` -> `MajorStrokeThickness` | `YAxisMajorStrokeThickness`                  |
+| `Axes` -> `NumericXAxis` -> `MinorStrokeThickness` | `XAxisMinorStrokeThickness`                  |
+| `Axes` -> `NumericYAxis` -> `MinorStrokeThickness` | `YAxisMinorStrokeThickness`                  |
+| `Axes` -> `NumericXAxis` -> `StrokeThickness`      | `XAxisStrokeThickness`                       |
+| `Axes` -> `NumericYAxis` -> `StrokeThickness`      | `YAxisStrokeThickness`                       |
+| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (Axis Line Color)              |
+| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (Axis Line Color)              |
+| `Axes` -> `NumericXAxis` -> `TickLength`           | `XAxisTickLength`                            |
+| `Axes` -> `NumericYAxis` -> `TickLength`           | `YAxisTickLength`                            |
+| `Axes` -> `NumericXAxis` -> `TickStroke`           | `XAxisTickStroke`                            |
+| `Axes` -> `NumericYAxis` -> `TickStroke`           | `YAxisTickStroke`                            |
 | `Axes` -> `NumericXAxis` -> `Strip`                | `XAxisStrip` (Space between Major Gridlines) |
 | `Axes` -> `NumericYAxis` -> `Strip`                | `YAxisStrip` (Space between Major Gridlines) |

@@ -19,32 +19,32 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 
 <!-- WebComponents -->
 
-| Skill | Path | Description |
-|:------|:-----|:------------|
-| Components & Layout | [`skills/igniteui-wc-choose-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-choose-components/SKILL.md) | Standalone components, form controls, overlays, layout |
-| Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
-| Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
-| Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
+| Skill                | Path                                                                                                                                      | Description                                                        |
+| :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
+| Components & Layout  | [`skills/igniteui-wc-choose-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-choose-components/SKILL.md)                 | Standalone components, form controls, overlays, layout             |
+| Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md)   | Helps with integrating components to the user's platform of choice |
+| Theming & Styling    | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server     |
+| Optimization         | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md)           | Ensuring best practices for tree shaking to optimize bundle size   |
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 
-| Skill | Path | Description |
-|:------|:-----|:------------|
-| Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them — JSX patterns, event handling, refs, forms, TypeScript |
-| Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
-| Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
+| Skill             | Path                                                                                                                                  | Description                                                                                                          |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------- |
+| Components        | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md)                     | Identify the right components, install, import, and use them — JSX patterns, event handling, refs, forms, TypeScript |
+| Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md)           | Palettes, typography, elevations, component themes, MCP server                                                       |
+| Optimization      | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size                                                     |
 
 <!-- end: React -->
 
 <!-- Angular -->
 
-| Skill | Path | Description |
-|:------|:-----|:------------|
-| Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout |
-| Data Grids | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
-| Theming & Styling | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Skill               | Path                                                                                                                  | Description                                                                                       |
+| :------------------ | :-------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout                                            |
+| Data Grids          | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md)           | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
+| Theming & Styling   | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md)       | Palettes, typography, elevations, component themes, MCP server                                    |
 
 > [!NOTE]
 > Starting with {ProductName} **21.1.0**, these skills are automatically discovered when placed in your agent's skills path (e.g., `.claude/skills`, `.agents/skills`, `.cursor/rules/`). This release ships with an optional migration to add these skills to your project automatically.
@@ -112,39 +112,39 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 [GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) discovers skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Project | `.github/skills/`, `.claude/skills/` |
+| Scope    | Location                                                                                     |
+| :------- | :------------------------------------------------------------------------------------------- |
+| Project  | `.github/skills/`, `.claude/skills/`                                                         |
 | Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
 
-> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general  `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
+> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
 
 ### Claude
 
 [Claude](https://code.claude.com/docs/en/skills#where-skills-live) discovers skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Project | `.claude/skills/` |
+| Scope    | Location            |
+| :------- | :------------------ |
+| Project  | `.claude/skills/`   |
 | Personal | `~/.claude/skills/` |
 
 ### Cursor
 
 [Cursor](https://cursor.com/docs/skills#skill-directories) discovers skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Project | `.agents/skills/`, `.cursor/skills/` |
-| User (global) | `~/.cursor/skills/` |
+| Scope         | Location                             |
+| :------------ | :----------------------------------- |
+| Project       | `.agents/skills/`, `.cursor/skills/` |
+| User (global) | `~/.cursor/skills/`                  |
 
 ### Gemini CLI and Antigravity
 
 [Gemini CLI](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers) and [Antigravity](https://antigravity.google/docs/skills) discover skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Workspace | `.gemini/skills/`, `.agents/skills/` |
-| User | `~/.gemini/skills/`, `~/.agents/skills/` |
+| Scope     | Location                                 |
+| :-------- | :--------------------------------------- |
+| Workspace | `.gemini/skills/`, `.agents/skills/`     |
+| User      | `~/.gemini/skills/`, `~/.agents/skills/` |
 
 > **Tip:** Use the `/skills` slash command in Gemini CLI to view and manage installed skills.
 
@@ -152,19 +152,19 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 [Junie](https://junie.jetbrains.com/docs/agent-skills.html) discovers skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Project | `.junie/skills/` |
-| User | `~/.junie/skills/` |
+| Scope   | Location           |
+| :------ | :----------------- |
+| Project | `.junie/skills/`   |
+| User    | `~/.junie/skills/` |
 
 ### Windsurf
 
 [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills#skill-scopes) discovers skills from:
 
-| Scope | Location |
-|:------|:---------|
-| Workspace | `.windsurf/skills/`, `.agents/skills/` |
-| Global | `~/.codeium/windsurf/skills/`, `~/.agents/skills/` |
+| Scope     | Location                                           |
+| :-------- | :------------------------------------------------- |
+| Workspace | `.windsurf/skills/`, `.agents/skills/`             |
+| Global    | `~/.codeium/windsurf/skills/`, `~/.agents/skills/` |
 
 ---
 
@@ -378,11 +378,12 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
+
 - [Getting Started with {ProductName}](../general-getting-started.md)
 - [Ignite UI CLI](../general-cli-overview.md)
-<!-- end: React, WebComponents -->
-<!-- Angular -->
-<!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
+  <!-- end: React, WebComponents -->
+  <!-- Angular -->
+  <!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->

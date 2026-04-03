@@ -40,7 +40,7 @@ In the sample below, you can preview all the default base themes.
 
 Aside from the default themes shipped with the {GridLiteTitle} package, you can further customize the look and feel of your data grid by using an alternate set of CSS custom properties.
 
-Refer to the [theming topic](../grids/theming-grid.md) for more details. 
+Refer to the [theming topic](../grids/theming-grid.md) for more details.
 
 ```css
 .grid-sample {

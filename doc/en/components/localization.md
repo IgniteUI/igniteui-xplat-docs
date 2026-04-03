@@ -15,7 +15,7 @@ Currently, {ProductName} ships with resource strings for the following languages
 
 `sample="/{GridSample}/localization", height="605", alt="{Platform} {GridTitle} Localization Example"`
 
->Note: Hindi (HI) included in the sample is for illustrative purposes only, to demonstrate the possibility of passing a custom localization object. In this sample, it contains only a few localized strings for the summary. For more details, see the [Custom localized resource strings](#custom-localized-resource-strings) section below.
+> Note: Hindi (HI) included in the sample is for illustrative purposes only, to demonstrate the possibility of passing a custom localization object. In this sample, it contains only a few localized strings for the summary. For more details, see the [Custom localized resource strings](#custom-localized-resource-strings) section below.
 
 ## Locale
 
@@ -52,7 +52,7 @@ I18nManager.SetCurrentI18nAsync("de");
 <!-- end: Blazor -->
 
 ```ts
-setCurrentI18n('de');
+setCurrentI18n("de");
 ```
 
 {ProductName} supports the full range of locales supported by `Intl`. If a provided locale is not valid or supported, the default `en-US` locale is used until a valid locale is set.
@@ -69,10 +69,10 @@ This approach enables setting the localization through the `lang` global attribu
 
 ```html
 <html lang="ja">
-    <head>
-        <title>My app</title>
-    </head>
-    <body></body>
+  <head>
+    <title>My app</title>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -80,10 +80,10 @@ This approach enables setting the localization through the `lang` global attribu
 
 ```tsx
 <html lang="ja">
-    <head>
-        <title>My app</title>
-    </head>
-    <body></body>
+  <head>
+    <title>My app</title>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -102,15 +102,31 @@ Each component also has its own `locale` property. When specified, the component
 
 ```html
 <igc-grid locale="ja">
-    <igc-column field="ProductName" header="Product Name" groupable="true"></igc-column>
-    <igc-column field="QuantityPerUnit" header="Quantity Per Unit" groupable="true"></igc-column>
+  <igc-column
+    field="ProductName"
+    header="Product Name"
+    groupable="true"
+  ></igc-column>
+  <igc-column
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable="true"
+  ></igc-column>
 </igc-grid>
 ```
 
 ```tsx
 <IgrGrid data={data} locale="ja">
-    <IgrColumn field="ProductName" header="Product Name" groupable={true}></IgrColumn>
-    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" groupable={true}></IgrColumn>
+  <IgrColumn
+    field="ProductName"
+    header="Product Name"
+    groupable={true}
+  ></IgrColumn>
+  <IgrColumn
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable={true}
+  ></IgrColumn>
 </IgrGrid>
 ```
 
@@ -131,64 +147,64 @@ Components such as the Grid or DatePicker allow specifying a date format (per co
 
 Available predefined format options:
 
-| Option | Equivalent to | Examples (given in en-US locale) |
-| ------ | --------------| --------------------------------|
-| 'short' | 'M/d/yy, h:mm a' | 6/15/15, 9:03 AM |
-| 'medium' | 'MMM d, y, h:mm:ss a' | Jun 15, 2015, 9:03:01 AM |
-| 'long' | 'MMMM d, y, h:mm:ss a z' | June 15, 2015 at 9:03:01 AM GMT+1 |
-| 'full' | 'EEEE, MMMM d, y, h:mm:ss a zzzz' | Monday, June 15, 2015 at 9:03:01 AM GMT+01:00 |
-| 'shortDate' | 'M/d/yy' | 6/15/15 |
-| 'mediumDate' | 'MMM d, y' | Jun 15, 2015 |
-| 'longDate' | 'MMMM d, y' | June 15, 2015 |
-| 'fullDate' | 'EEEE, MMMM d, y' | Monday, June 15, 2015 |
-| 'shortTime' | 'h:mm a' | 9:03 AM |
-| 'mediumTime' | 'h:mm:ss a' | 9:03:01 AM |
-| 'longTime' | 'h:mm:ss a z' | 9:03:01 AM GMT+1 |
-| 'fullTime' | 'h:mm:ss a zzzz' | 9:03:01 AM GMT+01:00 |
+| Option       | Equivalent to                     | Examples (given in en-US locale)              |
+| ------------ | --------------------------------- | --------------------------------------------- |
+| 'short'      | 'M/d/yy, h:mm a'                  | 6/15/15, 9:03 AM                              |
+| 'medium'     | 'MMM d, y, h:mm:ss a'             | Jun 15, 2015, 9:03:01 AM                      |
+| 'long'       | 'MMMM d, y, h:mm:ss a z'          | June 15, 2015 at 9:03:01 AM GMT+1             |
+| 'full'       | 'EEEE, MMMM d, y, h:mm:ss a zzzz' | Monday, June 15, 2015 at 9:03:01 AM GMT+01:00 |
+| 'shortDate'  | 'M/d/yy'                          | 6/15/15                                       |
+| 'mediumDate' | 'MMM d, y'                        | Jun 15, 2015                                  |
+| 'longDate'   | 'MMMM d, y'                       | June 15, 2015                                 |
+| 'fullDate'   | 'EEEE, MMMM d, y'                 | Monday, June 15, 2015                         |
+| 'shortTime'  | 'h:mm a'                          | 9:03 AM                                       |
+| 'mediumTime' | 'h:mm:ss a'                       | 9:03:01 AM                                    |
+| 'longTime'   | 'h:mm:ss a z'                     | 9:03:01 AM GMT+1                              |
+| 'fullTime'   | 'h:mm:ss a zzzz'                  | 9:03:01 AM GMT+01:00                          |
 
 Custom format options:
 
-| Date field | Value | Description | Example |
-|-|-|-|-|
-| Weekday | c, cc, ccc, E, EE, EEE | Short version of the weekday | Tue |
-| | cccc, EEEE | Long version of the weekday | Tuesday |
-| | ccccc, EEEEE | Narrow version of the weekday | T |
-| Day| d | Numeric display (single digit when possible) | 1, 10 |
-| | dd | 2-digit always (zero padded) | 01, 10 |
-| Month | M, L | Numeric display (single digit when possible) | 8, 12 |
-| | MM, LL | 2-digit always (zero padded) | 08, 12 |
-| | MMM, LLL | Short month name | Oct |
-| | MMMM, LLLL | Long month name | October |
-| | MMMMM, LLLLL | Narrow month name | O |
-| Year | y, yyy, yyyy | Numeric display | 1, 24, 632, 2025 |
-| | yy | 2-digit display (zero padded when possible) | 01, 24, 32, 25 |
-| ISO 8601 year  | Y, YYY, YYYY | Numeric display | 1, 24, 632, 2025 |
-| | YY | 2-digit display (zero padded when possible) | 01, 24, 32, 25 |
-| Era | G, GG, GGG | Short display | AD, BC |
-| | GGGG | Long display |  Anno Domini, Before Christ|
-| | GGGGG | Narrow display | A, B |
-| Minute | m | Numeric (single digit when possible) | 1, 5, 22 |
-| | mm | 2-digit display (zero padded)| 01, 05, 22 |
-| Hour 1-12 | h | Numeric (single digit when possible) | 8, 12 |
-| | hh | 2-digit (zero padded) | 08, 13 |
-| Hour 0-23 | H | Numeric (single digit when possible) | 8, 21 |
-| | HH | 2-digit  (zero padded)| 08, 21 |
-| Hour 0-11 | K | Numeric (single digit when possible) | 0, 11 |
-| | KK | 2-digit (zero padded) | 00, 11 |
-| Second | s | Numeric (single digit when possible) | 0...59 |
-| | ss | 2-digit (zero padded) | 00...59 |
-| Fractional seconds | S | Numeric for 1 digit | 0...9 |
-| | SS | Numeric for 2 digits | 00...99 |
-| | SSS | Numeric for 3 digits | 000...999 |
-| Period of time - abbreviated | a, t | Lower case always | am, pm |
-| | aa, aaa, tt, ttt | Upper case always | AM, PM |
-| | aaaa, tttt | Case based on locale | am, pm, AM, PM |
-| | aaaaa, ttttt | Narrow lower case always | a, p |
-| Period of time - extended | b, bb, bbb, B, BB, BBB | Short display. Based on `Intl` locale | en-GB: at night |
-| | bbbb, BBBB | Long display. Based on `Intl` locale| en-GB: at night |
-| | bbbbb, BBBBB | Narrow display. Based on `Intl` locale | en-GB: at night |
-| Timezone | z, zz, zzz, Z, ZZ, ZZZ, O, OO, OOO | Short display | GMT+4 |
-| | zzzz, ZZZZ, OOOO | Long display | GMT+0430 |
+| Date field                   | Value                              | Description                                  | Example                    |
+| ---------------------------- | ---------------------------------- | -------------------------------------------- | -------------------------- |
+| Weekday                      | c, cc, ccc, E, EE, EEE             | Short version of the weekday                 | Tue                        |
+|                              | cccc, EEEE                         | Long version of the weekday                  | Tuesday                    |
+|                              | ccccc, EEEEE                       | Narrow version of the weekday                | T                          |
+| Day                          | d                                  | Numeric display (single digit when possible) | 1, 10                      |
+|                              | dd                                 | 2-digit always (zero padded)                 | 01, 10                     |
+| Month                        | M, L                               | Numeric display (single digit when possible) | 8, 12                      |
+|                              | MM, LL                             | 2-digit always (zero padded)                 | 08, 12                     |
+|                              | MMM, LLL                           | Short month name                             | Oct                        |
+|                              | MMMM, LLLL                         | Long month name                              | October                    |
+|                              | MMMMM, LLLLL                       | Narrow month name                            | O                          |
+| Year                         | y, yyy, yyyy                       | Numeric display                              | 1, 24, 632, 2025           |
+|                              | yy                                 | 2-digit display (zero padded when possible)  | 01, 24, 32, 25             |
+| ISO 8601 year                | Y, YYY, YYYY                       | Numeric display                              | 1, 24, 632, 2025           |
+|                              | YY                                 | 2-digit display (zero padded when possible)  | 01, 24, 32, 25             |
+| Era                          | G, GG, GGG                         | Short display                                | AD, BC                     |
+|                              | GGGG                               | Long display                                 | Anno Domini, Before Christ |
+|                              | GGGGG                              | Narrow display                               | A, B                       |
+| Minute                       | m                                  | Numeric (single digit when possible)         | 1, 5, 22                   |
+|                              | mm                                 | 2-digit display (zero padded)                | 01, 05, 22                 |
+| Hour 1-12                    | h                                  | Numeric (single digit when possible)         | 8, 12                      |
+|                              | hh                                 | 2-digit (zero padded)                        | 08, 13                     |
+| Hour 0-23                    | H                                  | Numeric (single digit when possible)         | 8, 21                      |
+|                              | HH                                 | 2-digit (zero padded)                        | 08, 21                     |
+| Hour 0-11                    | K                                  | Numeric (single digit when possible)         | 0, 11                      |
+|                              | KK                                 | 2-digit (zero padded)                        | 00, 11                     |
+| Second                       | s                                  | Numeric (single digit when possible)         | 0...59                     |
+|                              | ss                                 | 2-digit (zero padded)                        | 00...59                    |
+| Fractional seconds           | S                                  | Numeric for 1 digit                          | 0...9                      |
+|                              | SS                                 | Numeric for 2 digits                         | 00...99                    |
+|                              | SSS                                | Numeric for 3 digits                         | 000...999                  |
+| Period of time - abbreviated | a, t                               | Lower case always                            | am, pm                     |
+|                              | aa, aaa, tt, ttt                   | Upper case always                            | AM, PM                     |
+|                              | aaaa, tttt                         | Case based on locale                         | am, pm, AM, PM             |
+|                              | aaaaa, ttttt                       | Narrow lower case always                     | a, p                       |
+| Period of time - extended    | b, bb, bbb, B, BB, BBB             | Short display. Based on `Intl` locale        | en-GB: at night            |
+|                              | bbbb, BBBB                         | Long display. Based on `Intl` locale         | en-GB: at night            |
+|                              | bbbbb, BBBBB                       | Narrow display. Based on `Intl` locale       | en-GB: at night            |
+| Timezone                     | z, zz, zzz, Z, ZZ, ZZZ, O, OO, OOO | Short display                                | GMT+4                      |
+|                              | zzzz, ZZZZ, OOOO                   | Long display                                 | GMT+0430                   |
 
 ## Localized resource strings
 
@@ -207,10 +223,10 @@ npm install igniteui-i18n-resources --save-dev
 After that, register each language to be made available. For example, German and Japanese:
 
 ```ts
-import { ResourceStringsDE, ResourceStringsJA } from 'igniteui-i18n-resources';
+import { ResourceStringsDE, ResourceStringsJA } from "igniteui-i18n-resources";
 
-registerI18n(ResourceStringsDE, 'de');
-registerI18n(ResourceStringsJA, 'ja');
+registerI18n(ResourceStringsDE, "de");
+registerI18n(ResourceStringsJA, "ja");
 ```
 
 <!-- end: WebComponents, React -->
@@ -254,24 +270,40 @@ If you would like to set different from the global localization locale for a com
 With this approach you should already have the available resource strings globally registered:
 
 ```ts
-import { ResourceStringsJA } from 'igniteui-i18n-resources';
+import { ResourceStringsJA } from "igniteui-i18n-resources";
 
-registerI18n(ResourceStringsJA, 'ja');
+registerI18n(ResourceStringsJA, "ja");
 ```
 
 By setting the `locale` property of the component, this will override the global locale currently in use:
 
 ```html
 <igc-grid locale="ja">
-    <igc-column field="ProductName" header="Product Name" groupable="true"></igc-column>
-    <igc-column field="QuantityPerUnit" header="Quantity Per Unit" groupable="true"></igc-column>
+  <igc-column
+    field="ProductName"
+    header="Product Name"
+    groupable="true"
+  ></igc-column>
+  <igc-column
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable="true"
+  ></igc-column>
 </igc-grid>
 ```
 
 ```tsx
 <IgrGrid data={data} locale="ja">
-    <IgrColumn field="ProductName" header="Product Name" groupable={true}></IgrColumn>
-    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" groupable={true}></IgrColumn>
+  <IgrColumn
+    field="ProductName"
+    header="Product Name"
+    groupable={true}
+  ></IgrColumn>
+  <IgrColumn
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable={true}
+  ></IgrColumn>
 </IgrGrid>
 ```
 
@@ -288,15 +320,31 @@ If you would like to change only the language of the component, without changing
 
 ```html
 <igc-grid>
-    <igc-column field="ProductName" header="Product Name" groupable="true"></igc-column>
-    <igc-column field="QuantityPerUnit" header="Quantity Per Unit" groupable="true"></igc-column>
+  <igc-column
+    field="ProductName"
+    header="Product Name"
+    groupable="true"
+  ></igc-column>
+  <igc-column
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable="true"
+  ></igc-column>
 </igc-grid>
 ```
 
 ```tsx
 <IgrGrid data={data} resourceStrings={resourcesDE}>
-    <IgrColumn field="ProductName" header="Product Name" groupable={true}></IgrColumn>
-    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" groupable={true}></IgrColumn>
+  <IgrColumn
+    field="ProductName"
+    header="Product Name"
+    groupable={true}
+  ></IgrColumn>
+  <IgrColumn
+    field="QuantityPerUnit"
+    header="Quantity Per Unit"
+    groupable={true}
+  ></IgrColumn>
 </IgrGrid>
 ```
 
@@ -308,41 +356,47 @@ import { GridResourceStringsDE } from 'igniteui-i18n-resources';
 // Inside App Component:
 public resourcesDE = GridResourceStringsDE;
 ```
+
 <!-- end: Angular -->
 
 ## Custom localized resource strings
 
 If {ProductName} does not provide resource strings for the required language, custom resource strings can always be provided.
 
->Note: Contributions to the [`igniteui-i18n-resources`](https://github.com/IgniteUI/igniteui-i18n/tree/master/projects/igniteui-i18n-resources) GitHub repo with additional languages are welcome.
+> Note: Contributions to the [`igniteui-i18n-resources`](https://github.com/IgniteUI/igniteui-i18n/tree/master/projects/igniteui-i18n-resources) GitHub repo with additional languages are welcome.
 
 <!-- WebComponents -->
+
 You can use the provided `IResourceStrings` type for all components to get typings for the resource strings used:
 
 ```ts
-import { IResourceStrings } from 'igniteui-webcomponents';
+import { IResourceStrings } from "igniteui-webcomponents";
 
 export const customResourcesForAll: IResourceStrings = {
-    //...
+  //...
 };
-registerI18n(customResourcesForAll, 'custom');
+registerI18n(customResourcesForAll, "custom");
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 You can use the provided `IResourceStrings` type for all components to get typings for the resource strings used:
 
 ```tsx
-import { IResourceStrings } from 'igniteui-react';
+import { IResourceStrings } from "igniteui-react";
 
 export const customResourcesForAll: IResourceStrings = {
-    //...
+  //...
 };
-registerI18n(customResourcesForAll, 'custom');
+registerI18n(customResourcesForAll, "custom");
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 You can use the provided `IgbResourceStrings` class for all components to get typings for the resource strings used:
 
 ```razor
@@ -353,41 +407,45 @@ IgbResourceStrings customResourcesAll = new IgbResourceStrings()
 
 I18nManager.RegisterI18nAsync(customResourcesAll, "de");
 ```
+
 <!-- end: Blazor -->
 
 Or for a specific component separately, in this case the grids:
 
 <!-- WebComponents -->
+
 ```ts
-import { IGridResourceStrings } from 'igniteui-webcomponents';
+import { IGridResourceStrings } from "igniteui-webcomponents";
 
 export const customGridResources: IGridResourceStrings = {
-    grid_summary_count: 'गणना',
-    grid_summary_min: 'न्यून',
-    grid_summary_max: 'अधिक',
-    grid_summary_sum: 'योग',
-    grid_summary_average: 'औसत'
+  grid_summary_count: "गणना",
+  grid_summary_min: "न्यून",
+  grid_summary_max: "अधिक",
+  grid_summary_sum: "योग",
+  grid_summary_average: "औसत",
 };
-
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 ```tsx
-import { IGridResourceStrings } from 'igniteui-react';
+import { IGridResourceStrings } from "igniteui-react";
 
 export const customGridResources: IGridResourceStrings = {
-    grid_summary_count: 'गणना',
-    grid_summary_min: 'न्यून',
-    grid_summary_max: 'अधिक',
-    grid_summary_sum: 'योग',
-    grid_summary_average: 'औसत'
+  grid_summary_count: "गणना",
+  grid_summary_min: "न्यून",
+  grid_summary_max: "अधिक",
+  grid_summary_sum: "योग",
+  grid_summary_average: "औसत",
 };
-
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 ```razor
 IgbGridResourceStrings gridRes = new IgbGridResourceStrings()
 {
@@ -398,53 +456,64 @@ IgbGridResourceStrings gridRes = new IgbGridResourceStrings()
     GridSummaryAverage: 'औसत'
 };
 ```
+
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
+
 The existing resource strings can be mixed with custom strings in any combination, including for the default English language:
 
 ```ts
-import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-webcomponents';
+import {
+  IResourceStrings,
+  CalendarResourceStringsEN,
+  DatePickerResourceStringsEN,
+} from "igniteui-webcomponents";
 
 export const customResources: IResourceStrings = Object.assign(
-    {},
-    CalendarResourceStringsEN,
-    DatePickerResourceStringsEN,
-    {
-        grid_summary_count: 'Custom count',
-        grid_summary_min: 'Minium',
-        grid_summary_max: 'Maximum',
-        grid_summary_sum: 'Custom summary'
-    }
+  {},
+  CalendarResourceStringsEN,
+  DatePickerResourceStringsEN,
+  {
+    grid_summary_count: "Custom count",
+    grid_summary_min: "Minium",
+    grid_summary_max: "Maximum",
+    grid_summary_sum: "Custom summary",
+  },
 );
-registerI18n(customResources, 'en');
-
+registerI18n(customResources, "en");
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 The existing resource strings can be mixed with custom strings in any combination, including for the default English language:
 
 ```tsx
-import { IResourceStrings, CalendarResourceStringsEN, DatePickerResourceStringsEN } from 'igniteui-react';
+import {
+  IResourceStrings,
+  CalendarResourceStringsEN,
+  DatePickerResourceStringsEN,
+} from "igniteui-react";
 
 export const customResources: IResourceStrings = Object.assign(
-    {},
-    CalendarResourceStringsEN,
-    DatePickerResourceStringsEN,
-    {
-        grid_summary_count: 'Custom count',
-        grid_summary_min: 'Minium',
-        grid_summary_max: 'Maximum',
-        grid_summary_sum: 'Custom summary'
-    }
+  {},
+  CalendarResourceStringsEN,
+  DatePickerResourceStringsEN,
+  {
+    grid_summary_count: "Custom count",
+    grid_summary_min: "Minium",
+    grid_summary_max: "Maximum",
+    grid_summary_sum: "Custom summary",
+  },
 );
-registerI18n(customResources, 'en');
-
+registerI18n(customResources, "en");
 ```
+
 <!-- end: React -->
 
->Note: The last examples set only specific resource strings. The remaining strings default to English if they are not available for the components in use.
+> Note: The last examples set only specific resource strings. The remaining strings default to English if they are not available for the components in use.
 
 ## Available resource strings
 

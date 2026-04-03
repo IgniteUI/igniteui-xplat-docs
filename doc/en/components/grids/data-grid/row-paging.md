@@ -10,21 +10,19 @@ _canonicalLink: {CanonicalLinkToGridPaging}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Grid/Table Pagination
 
-Tabular table UIs are used commonly in many web products. Building a tabular table UI from scratch isn't easy, however, {ProductName} grid, creating a Table UI is simple, and binding large amounts of local or remote data to the {Platform} grid is easy.  Since the grid is virtualized by default, you are not required to include table pagination to show large data sets.  It is mainly used due to its most efficient ways of organizing complex data in the UI. With table pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without actually needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows / buttons that let users flip through pages, as demonstrated here:
+Tabular table UIs are used commonly in many web products. Building a tabular table UI from scratch isn't easy, however, {ProductName} grid, creating a Table UI is simple, and binding large amounts of local or remote data to the {Platform} grid is easy. Since the grid is virtualized by default, you are not required to include table pagination to show large data sets. It is mainly used due to its most efficient ways of organizing complex data in the UI. With table pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without actually needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows / buttons that let users flip through pages, as demonstrated here:
 
 Row Paging is enabled within the {ProductName} Data Table / Data Grid by setting the `IsPagerVisible` property. In addition, you can limit the maximum number of visible rows by setting `PageSize`.
 
 ## {Platform} Row Paging Example
 
 `sample="/grids/data-grid/pager", height="600", alt="{Platform} Row Paging Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -47,7 +45,7 @@ Table Pagination Negatives:
 - Page loading may be slow
 - Users are confused whether actions apply to Page or entire set of data
 
-With the Ignite UI {Platform} grid, we allow the developer to add paging, however, as the grid has infinite scrolling built in by default, we recommend infinite (or virtual) scrolling vs. adding a pager to the grid.  With virtualized, infinite scrolling as the default user experience, you get:
+With the Ignite UI {Platform} grid, we allow the developer to add paging, however, as the grid has infinite scrolling built in by default, we recommend infinite (or virtual) scrolling vs. adding a pager to the grid. With virtualized, infinite scrolling as the default user experience, you get:
 
 - Best performance while still having control or how much data is ‘paged’ via the scrolling interaction
 - Natural approach to scrolling all content

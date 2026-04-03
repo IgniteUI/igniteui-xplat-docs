@@ -6,6 +6,7 @@ _license: commercial
 mentionedTypes: ["DataPieChart", "XamDataChart", "OthersCategoryType", "SeriesSelectionMode", "SeriesSelectionBehavior", "SeriesHighlightingBehavior"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {Platform} Data Pie Chart
 
 The {ProductName} Data Pie Chart is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
@@ -191,7 +192,7 @@ The following table lists API members mentioned in the above sections:
 - `SelectionMode`
 - `SelectionBehavior`
 
- |Chart Type       | Control Name   | API Members |
- |-----------------|----------------|------------ |
- |Data Pie Chart      | `DataPieChart`     | `DataPieChart` |
- |Item Legend | `ItemLegend` | `ItemLegend` |
+| Chart Type     | Control Name   | API Members    |
+| -------------- | -------------- | -------------- |
+| Data Pie Chart | `DataPieChart` | `DataPieChart` |
+| Item Legend    | `ItemLegend`   | `ItemLegend`   |

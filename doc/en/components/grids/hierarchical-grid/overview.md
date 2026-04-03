@@ -855,9 +855,9 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 
 ## Known Limitations
 
-|Limitation|Description|
-|--- |--- |
-|Group By|Group By feature is not supported by the hierarchical grid.|
+| Limitation | Description                                                 |
+| ---------- | ----------------------------------------------------------- |
+| Group By   | Group By feature is not supported by the hierarchical grid. |
 
 ## API References
 

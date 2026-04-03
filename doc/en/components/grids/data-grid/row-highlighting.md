@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid supports configuring the appearance of 
 
 ## {Platform} Grid Highlighting Example
 
-
 `sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid Highlighting Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -39,19 +36,22 @@ The following demonstrates how to enable row highlighting on the {Platform} data
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    isRowHoverEnabled={true}
-    rowHoverBackground="#bfbfff"/>
+  height="100%"
+  width="100%"
+  dataSource={this.data}
+  isRowHoverEnabled={true}
+  rowHoverBackground="#bfbfff"
+/>
 ```
 
 ```html
-<igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      is-row-hover-enabled="true"
-      row-hover-background="#bfbfff">
+<igc-data-grid
+  id="grid"
+  height="100%"
+  width="100%"
+  is-row-hover-enabled="true"
+  row-hover-background="#bfbfff"
+>
 </igc-data-grid>
 ```
 

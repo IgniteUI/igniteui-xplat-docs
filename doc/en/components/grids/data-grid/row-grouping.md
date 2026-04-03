@@ -10,19 +10,17 @@ _canonicalLink: {CanonicalLinkToGridGroupBy}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Row Grouping
 
-The {ProductName} Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
+The {ProductName} Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group. This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
 
 ## {Platform} Row Group-By Area Example
 
 `sample="/grids/data-grid/row-grouping", height="600", alt="{Platform} Row Grouping Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -34,16 +32,14 @@ Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the exa
 
 `sample="/grids/data-grid/row-group-descriptions", height="600", alt="{Platform} Row Grouping Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Hierarchical Groups
 
 The `GroupHeaderDisplayMode` property allows the groups to be hierarchical. By default, each group description that is added gets aggregated together. Setting the `GroupHeaderDisplayMode` to `Split` will create a section header for ever group defined in `GroupDescriptions` property of the `Grid`.
 
-
 <!-- React -->
+
 ```ts
 import { GroupHeaderDisplayMode } from 'igniteui-react-core';
 
@@ -54,6 +50,7 @@ public componentDidMount() {
 ```
 
 <!-- WebComponents -->
+
 ```ts
 import { GroupHeaderDisplayMode } from 'igniteui-webcomponents-core';
 
@@ -75,6 +72,7 @@ public connectedCallback() {
 Also, the `Grid` can display a toggle on each group section to allow the end user to expand or collapse the grouped data via the `IsGroupCollapsable` property.
 
 <!-- React -->
+
 ```ts
 public componentDidMount() {
     // ...
@@ -83,6 +81,7 @@ public componentDidMount() {
 ```
 
 <!-- WebComponents -->
+
 ```ts
 public connectedCallback() {
     // ...
@@ -99,7 +98,6 @@ public connectedCallback() {
 ## Summary
 
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project.
-
 
 ```ts
 import { IgrColumnGroupDescription } from 'igniteui-react-data-grids';

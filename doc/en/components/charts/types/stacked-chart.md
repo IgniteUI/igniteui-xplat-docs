@@ -6,6 +6,7 @@ _license: commercial
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {Platform} Stacked Chart
 
 The {ProductName} Stacked Chart belongs to a special group of charts that render multiple values of data items as stacked area/polygons, bars, columns, lines, or splines. Standard Stacked Charts render actual values of data items while Stacked 100% Charts render values as percentage of total values.
@@ -15,8 +16,6 @@ The {ProductName} Stacked Chart belongs to a special group of charts that render
 The following example, you can use the drop-down to switch between all of the different types stacked charts available in the {Platform} `XamDataChart` control.
 
 `sample="/charts/data-chart/stacked-chart-types", height="600", alt="{Platform} Stacked Chart Types"`
-
-
 
 <div class="divider--half"></div>
 
@@ -30,22 +29,17 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-area-chart", height="600", alt="{Platform} Stacked Area Chart"`
 
-
-
 <div class="divider--half"></div>
 
-
 ## {Platform} Stacked 100 Area Chart
+
 Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100AreaSeries`, as shown in the example below.
 
 `sample="/charts/data-chart/stacked-100-area-chart", height="600", alt="{Platform} Stacked 100 Area Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked Bar Chart
 
@@ -57,10 +51,7 @@ In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels
 
 `sample="/charts/data-chart/stacked-bar-chart", height="600", alt="{Platform} Stacked Bar Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked 100% Bar Chart
 
@@ -70,10 +61,7 @@ In this example of a Stacked 100% Bar Chart, the Energy Product values are shown
 
 `sample="/charts/data-chart/stacked-100-bar-chart", height="600", alt="{Platform} Stacked 100 Bar Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked Column Chart
 
@@ -83,10 +71,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-column-chart", height="600", alt="{Platform} Stacked Column Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked 100% Column Chart
 
@@ -96,10 +81,7 @@ The example below shows a study made for online shopping traffic by departments 
 
 `sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} Stacked 100 Column Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked Line Chart
 
@@ -107,10 +89,7 @@ The Stacked Line Chart is often used to show the change of value over time such 
 
 `sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} Stacked Line Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked 100% Line Chart
 
@@ -120,10 +99,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} Stacked 100 Line Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked Spline Area Chart
 
@@ -133,10 +109,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-spline-area-chart", height="600", alt="{Platform} Stacked Spline Area Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked 100% Spline Area Chart
 
@@ -146,10 +119,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-100-spline-area-chart", height="600", alt="{Platform} Stacked 100 Spline Area Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked Spline Chart
 
@@ -157,10 +127,7 @@ The Stacked Spline Chart is often used to show the change of value over time suc
 
 `sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} Stacked Spline Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## {Platform} Stacked 100% Spline Chart
 
@@ -170,10 +137,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} Stacked 100 Spline Chart"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## Additional Resources
 
@@ -189,17 +153,17 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-| Chart Type               | Control Name   | API Members |
-| -------------------------|----------------|-------------------------------- |
-| Stacked Area             | `XamDataChart` | `StackedAreaSeries` |
-| Stacked Bar              | `XamDataChart` | `StackedBarSeries` |
-| Stacked Column           | `XamDataChart` | `StackedColumnSeries` |
-| Stacked Line             | `XamDataChart` | `StackedLineSeries` |
-| Stacked Spline           | `XamDataChart` | `StackedSplineSeries` |
-| Stacked Spline Area      | `XamDataChart` | `StackedSplineAreaSeries` |
-| Stacked 100% Area        | `XamDataChart` | `Stacked100AreaSeries` |
-| Stacked 100% Bar         | `XamDataChart` | `Stacked100BarSeries` |
-| Stacked 100% Column      | `XamDataChart` | `Stacked100ColumnSeries` |
-| Stacked 100% Line        | `XamDataChart` | `Stacked100LineSeries` |
-| Stacked 100% Spline      | `XamDataChart` | `Stacked100SplineSeries` |
+| Chart Type               | Control Name   | API Members                  |
+| ------------------------ | -------------- | ---------------------------- |
+| Stacked Area             | `XamDataChart` | `StackedAreaSeries`          |
+| Stacked Bar              | `XamDataChart` | `StackedBarSeries`           |
+| Stacked Column           | `XamDataChart` | `StackedColumnSeries`        |
+| Stacked Line             | `XamDataChart` | `StackedLineSeries`          |
+| Stacked Spline           | `XamDataChart` | `StackedSplineSeries`        |
+| Stacked Spline Area      | `XamDataChart` | `StackedSplineAreaSeries`    |
+| Stacked 100% Area        | `XamDataChart` | `Stacked100AreaSeries`       |
+| Stacked 100% Bar         | `XamDataChart` | `Stacked100BarSeries`        |
+| Stacked 100% Column      | `XamDataChart` | `Stacked100ColumnSeries`     |
+| Stacked 100% Line        | `XamDataChart` | `Stacked100LineSeries`       |
+| Stacked 100% Spline      | `XamDataChart` | `Stacked100SplineSeries`     |
 | Stacked 100% Spline Area | `XamDataChart` | `Stacked100SplineAreaSeries` |

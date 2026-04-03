@@ -24,6 +24,7 @@ Below you can see a sample that demonstrates how the Date Picker works when user
 ## Getting Started with {Platform} Date Picker
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -33,13 +34,18 @@ npm install {PackageWebComponents}
 You will then need to import the `DatePicker`, its necessary CSS, and register its module, like so:
 
 ```ts
-import { defineComponents, IgcDatePickerComponent } from 'igniteui-webcomponents';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import {
+  defineComponents,
+  IgcDatePickerComponent,
+} from "igniteui-webcomponents";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcDatePickerComponent);
 ```
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -49,11 +55,13 @@ npm install igniteui-react
 You will then need to import the `DatePicker`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrDatePicker } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrDatePicker } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 <!-- Blazor -->
+
 To get started with the `DatePicker` component, first we need to register its module as follows:
 
 ```razor
@@ -62,11 +70,12 @@ To get started with the `DatePicker` component, first we need to register its mo
 builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `DatePicker` component. The following needs to be placed in the wwwroot/index.html file in a Blazor Web Assembly project or the Pages/_Host.cshtml file in a Blazor Server project:
+You will also need to link an additional CSS file to apply the styling to the `DatePicker` component. The following needs to be placed in the wwwroot/index.html file in a Blazor Web Assembly project or the Pages/\_Host.cshtml file in a Blazor Server project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
@@ -79,7 +88,7 @@ To instantiate a `DatePicker` in its default `dropdown` state, use the following
 
 ```html
 <igc-date-picker>
-    <p slot="helper-text">Date</p>
+  <p slot="helper-text">Date</p>
 </igc-date-picker>
 ```
 
@@ -92,16 +101,24 @@ To instantiate a `DatePicker` in its default `dropdown` state, use the following
 ```
 
 ### Options
+
 <!-- WebComponents -->
+
 The `DatePicker` can be bound to a `date` or a `string`.
+
 <!-- end: WebComponents -->
 <!-- React, Blazor -->
+
 The `DatePicker` can be bound to a `date`.
+
 <!-- end: React, Blazor -->
 
 <!-- WebComponents -->
+
 ```typescript
-const DatePicker = document.querySelector('igc-date-picker') as IgcDatePickerComponent;
+const DatePicker = document.querySelector(
+  "igc-date-picker",
+) as IgcDatePickerComponent;
 const date = new Date();
 
 DatePicker.value = date;
@@ -112,7 +129,7 @@ DatePicker.value = date;
 ```tsx
 const date = new Date();
 
-<IgrDatePicker value={date}/>
+<IgrDatePicker value={date} />;
 ```
 
 ```Razor
@@ -130,12 +147,15 @@ const date = new Date();
     }
 }
 ```
+
 <!-- WebComponents -->
+
 If a string is bound to the picker, it needs to be in the **ISO 8601** format:
 
 ```html
 <igc-date-picker value="2000-01-01"></igc-date-picker>
 ```
+
 <!-- end: WebComponents -->
 
 ### Projecting components
@@ -144,19 +164,25 @@ With prefix and suffix slots we can add different content before and after the m
 
 ```html
 <igc-date-picker id="DatePicker">
-    <igc-icon slot="suffix" name="arrow_upward" collection="material" class="small" onclick="DatePicker.stepUp()"></igc-icon>
+  <igc-icon
+    slot="suffix"
+    name="arrow_upward"
+    collection="material"
+    class="small"
+    onclick="DatePicker.stepUp()"
+  ></igc-icon>
 </igc-date-picker>
 ```
 
 ```tsx
 <IgrDatePicker>
-    <IgrIcon
-        slot="suffix"
-        name="arrow_upward"
-        collection="material"
-        class="small"
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
-    </IgrIcon>
+  <IgrIcon
+    slot="suffix"
+    name="arrow_upward"
+    collection="material"
+    class="small"
+    onClick={() => datePickerRef.current.stepUp(DatePart.Month)}
+  ></IgrIcon>
 </IgrDatePicker>
 ```
 
@@ -180,15 +206,35 @@ The calendar and clear icon could be templated by using the `calendar` and `clea
 
 ```html
 <igc-date-picker id="DatePicker">
-    <igc-icon slot="calendar" name="calendar" collection="material" class="small"></igc-icon>
-    <igc-icon slot="clear" name="delete" collection="material" class="small"></igc-icon>
+  <igc-icon
+    slot="calendar"
+    name="calendar"
+    collection="material"
+    class="small"
+  ></igc-icon>
+  <igc-icon
+    slot="clear"
+    name="delete"
+    collection="material"
+    class="small"
+  ></igc-icon>
 </igc-date-picker>
 ```
 
 ```tsx
 <IgrDatePicker>
-    <IgrIcon slot="calendar" name="calendar" collection="material" class="small"></IgrIcon>
-    <IgrIcon slot="clear" name="delete" collection="material" class="small"></IgrIcon>
+  <IgrIcon
+    slot="calendar"
+    name="calendar"
+    collection="material"
+    class="small"
+  ></IgrIcon>
+  <IgrIcon
+    slot="clear"
+    name="delete"
+    collection="material"
+    class="small"
+  ></IgrIcon>
 </IgrDatePicker>
 ```
 
@@ -205,17 +251,20 @@ The picker's action buttons can be templated using the `actions` slot:
 
 ```html
 <igc-date-picker id="DatePicker">
-    <igc-button slot="actions" onclick="DatePicker.showWeekNumbers = true">Show Week Numbers</igc-button>
+  <igc-button slot="actions" onclick="DatePicker.showWeekNumbers = true"
+    >Show Week Numbers</igc-button
+  >
 </igc-date-picker>
 ```
 
 ```tsx
 <IgrDatePicker>
-    <IgrButton
-        slot='actions'
-        onClick={() => datePickerRef.current.showWeekNumbers = true}>
-        <span>Show Week Numbers</span>
-    </IgrButton>
+  <IgrButton
+    slot="actions"
+    onClick={() => (datePickerRef.current.showWeekNumbers = true)}
+  >
+    <span>Show Week Numbers</span>
+  </IgrButton>
 </IgrDatePicker>
 ```
 
@@ -229,18 +278,18 @@ The picker's action buttons can be templated using the `actions` slot:
 
 The `DatePicker` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different DateParts among others without having to touch the mouse.
 
-|Keys|Description|
-|----|-----------|
-| <kbd>←</kbd> | Move one character to the beginning |
-| <kbd>→</kbd> | Move one character to the end |
-| <kbd>HOME</kbd> | Move to the beginning |
-| <kbd>END</kbd> | Move to the end |
+| Keys                                            | Description                                                              |
+| ----------------------------------------------- | ------------------------------------------------------------------------ |
+| <kbd>←</kbd>                                    | Move one character to the beginning                                      |
+| <kbd>→</kbd>                                    | Move one character to the end                                            |
+| <kbd>HOME</kbd>                                 | Move to the beginning                                                    |
+| <kbd>END</kbd>                                  | Move to the end                                                          |
 | <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>←</kbd> | Move to the beginning of the date/time section - current one or left one |
-| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | Move to the end of the date/time section - current on or right one |
-| Focus on a date/time part + <kbd>↓</kbd> | Decrements a date/time part |
-| Focus on a date/time part + <kbd>↑</kbd> | Increments a date/time part |
-| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
-| <kbd>ESC</kbd> | Closes the calendar pop-up and focuses the input field |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | Move to the end of the date/time section - current on or right one       |
+| Focus on a date/time part + <kbd>↓</kbd>        | Decrements a date/time part                                              |
+| Focus on a date/time part + <kbd>↑</kbd>        | Increments a date/time part                                              |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor                    |
+| <kbd>ESC</kbd>                                  | Closes the calendar pop-up and focuses the input field                   |
 
 ## Examples
 
@@ -249,8 +298,7 @@ The `DatePicker` has intuitive keyboard navigation that makes it easy to increme
 The `DatePicker` also supports a `dialog` mode:
 
 ```html
-<igc-date-picker id="DatePicker" mode="dialog">
-</igc-date-picker>
+<igc-date-picker id="DatePicker" mode="dialog"> </igc-date-picker>
 ```
 
 ```tsx
@@ -281,25 +329,35 @@ The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come fro
 
 ```html
 <igc-date-picker id="DatePicker">
-    <igc-icon slot="prefix" name="arrow_upward" collection="material" onclick="DatePicker.stepUp()"></igc-icon>
-    <igc-icon slot="suffix" name="arrow_downward" collection="material" onclick="DatePicker.stepDown()"></igc-icon>
+  <igc-icon
+    slot="prefix"
+    name="arrow_upward"
+    collection="material"
+    onclick="DatePicker.stepUp()"
+  ></igc-icon>
+  <igc-icon
+    slot="suffix"
+    name="arrow_downward"
+    collection="material"
+    onclick="DatePicker.stepDown()"
+  ></igc-icon>
 </igc-date-picker>
 ```
 
 ```tsx
 <IgrDatePicker>
-    <IgrIcon
-        slot="prefix"
-        name="arrow_upward"
-        collection="material"
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
-    </IgrIcon>
-    <IgrIcon
-        slot="suffix"
-        name="arrow_downward"
-        collection="material"
-        onClick={() => datePickerRef.current.stepDown(DatePart.Month)}>
-    </IgrIcon>
+  <IgrIcon
+    slot="prefix"
+    name="arrow_upward"
+    collection="material"
+    onClick={() => datePickerRef.current.stepUp(DatePart.Month)}
+  ></IgrIcon>
+  <IgrIcon
+    slot="suffix"
+    name="arrow_downward"
+    collection="material"
+    onClick={() => datePickerRef.current.stepDown(DatePart.Month)}
+  ></IgrIcon>
 </IgrDatePicker>
 ```
 
@@ -325,13 +383,19 @@ The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come fro
 The `DatePicker` could be used in a form element, the component's `Min` and `Max` properties act as form validators.
 
 <!-- WebComponents -->
+
 In forms, we can handle the `igcChange` event of the component and update the value of the label.
+
 <!-- end: WebComponents -->
 <!-- React -->
+
 In forms, we can handle the `change` event of the component and update the value of the label.
+
 <!-- end: React -->
 <!-- Blazor -->
+
 In forms, we can handle the `Change` event of the component and update the value of the label.
+
 <!-- end: Blazor -->
 
 `sample="/scheduling/date-picker/form", height="500", alt="{Platform} Date Picker Input Form Example"`
@@ -347,8 +411,7 @@ The localization of the `DatePicker` can be controlled through its `Locale` inpu
 Here is how a `DatePicker` with Japanese locale definition would look like:
 
 ```html
-<igc-date-picker locale="ja-JP">
-</igc-date-picker>
+<igc-date-picker locale="ja-JP"> </igc-date-picker>
 ```
 
 ```tsx
@@ -403,7 +466,6 @@ igc-date-picker::part(year-inner selected) {
 - `Calendar`
 - `DatePicker`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 

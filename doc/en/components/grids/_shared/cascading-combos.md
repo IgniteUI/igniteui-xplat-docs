@@ -18,12 +18,14 @@ The {ComponentTitle}'s Editing functionality provides with the opportunity to us
 The sample below demonstrates how `{ComponentName}` works with nested Cascading `Combo` components.
 
 <!-- ComponentStart: Grid -->
+
 <code-view style="height:500px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}/cascading-combo"
            github-src="{ComponentSample}/cascading-combo"
            alt="{Platform} {ComponentName} Cascading Combos">
 </code-view>
+
 <!-- ComponentEnd: Grid -->
 
 ## Setup
@@ -32,16 +34,17 @@ In order enable column editing, make sure `Editable` property is set to `true`.
 
 Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `SingleSelect` property.
 
-
 <!-- WebComponents, Blazor, React -->
+
 To get started with the `Combo`, first you need to import it:
 
-
 <!-- WebComponents -->
+
 ```ts
-import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
+import { IgcComboComponent, defineAllComponents } from "igniteui-webcomponents";
 defineAllComponents();
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -52,41 +55,42 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
-import { IgrCombo } from 'igniteui-react';
+import { IgrCombo } from "igniteui-react";
 ```
 
 Then you should define the column template with the combo:
 
-
 ```tsx
-   <IgrColumn
-    field="Country"
-    header="Country"
-    bodyTemplate={webGridCountryDropDownTemplate}>
-    </IgrColumn>
+<IgrColumn
+  field="Country"
+  header="Country"
+  bodyTemplate={webGridCountryDropDownTemplate}
+></IgrColumn>
 ```
 
 ```tsx
-    const webGridCountryDropDownTemplate = (ctx: IgrCellTemplateContext) => {
-        const rowId = ctx.cell?.id.rowID;
-        if (!rowId) return <></>;
-        const comboId = `country_${rowId}`;
+const webGridCountryDropDownTemplate = (ctx: IgrCellTemplateContext) => {
+  const rowId = ctx.cell?.id.rowID;
+  if (!rowId) return <></>;
+  const comboId = `country_${rowId}`;
 
-        return (
-        <>
-            <IgrCombo
-                data={countries}
-                ref={getComboRef(comboId)}
-                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }}
-                placeholder="Choose Country..."
-                valueKey="Country"
-                displayKey="Country"
-                singleSelect={true}
-                name={comboId}>
-            </IgrCombo>
-        </>
-        );
-    }
+  return (
+    <>
+      <IgrCombo
+        data={countries}
+        ref={getComboRef(comboId)}
+        onChange={(event: CustomEvent) => {
+          onCountryChange(rowId, event);
+        }}
+        placeholder="Choose Country..."
+        valueKey="Country"
+        displayKey="Country"
+        singleSelect={true}
+        name={comboId}
+      ></IgrCombo>
+    </>
+  );
+};
 ```
 
 ```razor
@@ -110,7 +114,7 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 }
 ```
 
-- `DisplayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `DisplayKey`, the  combo will use the specified `ValueKey` (if any).
+- `DisplayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
 
 In order to handle the selection change, we need the `onChange` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
 
@@ -170,29 +174,29 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 ```
 
 ```tsx
-    const onCountryChange = (rowId: string, event: CustomEvent) => {
-        const regionCombo = getComboRef(`region_${rowId}`).current;
-        const cityCombo = getComboRef(`city_${rowId}`).current;
-        const regions = regions;
-        const newValue = event.detail.newValue[0];
+const onCountryChange = (rowId: string, event: CustomEvent) => {
+  const regionCombo = getComboRef(`region_${rowId}`).current;
+  const cityCombo = getComboRef(`city_${rowId}`).current;
+  const regions = regions;
+  const newValue = event.detail.newValue[0];
 
-        if (newValue === undefined) {
-            regionCombo.deselect(regionCombo.value);
-            regionCombo.disabled = true;
-            regionCombo.data = [];
+  if (newValue === undefined) {
+    regionCombo.deselect(regionCombo.value);
+    regionCombo.disabled = true;
+    regionCombo.data = [];
 
-            cityCombo.deselect(regionCombo.value);
-            cityCombo.disabled = true;
-            cityCombo.data = [];
-        } else {
-            regionCombo.disabled = false;
-            regionCombo.data = regions.filter(x => x.Country === newValue);
+    cityCombo.deselect(regionCombo.value);
+    cityCombo.disabled = true;
+    cityCombo.data = [];
+  } else {
+    regionCombo.disabled = false;
+    regionCombo.data = regions.filter((x) => x.Country === newValue);
 
-            cityCombo.deselect(cityCombo.value);
-            cityCombo.disabled = true;
-            cityCombo.data = [];
-        }
-    }
+    cityCombo.deselect(cityCombo.value);
+    cityCombo.disabled = true;
+    cityCombo.data = [];
+  }
+};
 ```
 
 <!-- end: WebComponents, Blazor, React -->
@@ -220,24 +224,27 @@ Then, in the template, you should bind the combos `SimpleCombo` to some data.
 
 ```typescript
 export class MySimpleComboComponent implements OnInit {
-    public countriesData: Country[];
-    public selectedCountry: Country;
-    public selectedCity: City;
+  public countriesData: Country[];
+  public selectedCountry: Country;
+  public selectedCity: City;
 
-    public ngOnInit() {
-        this.countriesData = getCountries([
-            'United States',
-            'Japan',
-            'United Kingdom'
-        ]);
-    }
+  public ngOnInit() {
+    this.countriesData = getCountries([
+      "United States",
+      "Japan",
+      "United Kingdom",
+    ]);
+  }
 }
 ```
 
 In order to handle the selection change, we need `selectionChanging`. The emitted event arguments, `IComboSelectionChangingEventArgs`, contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
 
 ```html
-<igx-combo [data]="countriesData" (selectionChanging)="countryChanging($event)"></igx-combo>
+<igx-combo
+  [data]="countriesData"
+  (selectionChanging)="countryChanging($event)"
+></igx-combo>
 ```
 
 ```typescript
@@ -252,12 +259,15 @@ And lastly, adding the `LinearProgress`, which is required while loading the lis
 The `id` is necessary to set the value of `id` attribute.
 
 ```html
- <igx-linear-bar
-    [id]="'region-progress-' + cell.row.data.ID"
-    [style.visibility]="'hidden'"
-    type="info" [indeterminate]="true">
+<igx-linear-bar
+  [id]="'region-progress-' + cell.row.data.ID"
+  [style.visibility]="'hidden'"
+  type="info"
+  [indeterminate]="true"
+>
 </igx-linear-bar>
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
@@ -275,14 +285,11 @@ The `id` is necessary to set the value of `id` attribute.
     }
 ```
 
-
 <!-- end: WebComponents -->
 
-
 <!-- Blazor -->
+
 And lastly, adding the `LinearProgress`, which is required while loading the list of data.
-
-
 
 ```razor
     public static RenderFragment<IgbCellTemplateContext> WebGridRegionDropDownTemplate = (context) =>
@@ -291,15 +298,17 @@ And lastly, adding the `LinearProgress`, which is required while loading the lis
         return @<div style="display:flex;flex-direction:column;"><IgbCombo id="@id" Placeholder="Choose Region..." SingleSelect=true ValueKey="Region" DisplayKey="Region" ChangeScript="RegionChange"></IgbCombo><IgbLinearProgress Indeterminate=true></IgbLinearProgress></div>;
     };
 ```
+
 <!-- end: Blazor -->
 
 ## Known Issues and Limitations
 
-|Limitation|Description|
-|--- |--- |
+| Limitation                                              | Description                                                                                                                    |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Combo drop-down list may hide behind other UI elements. | Due to the stacking order of elements in the grid the combo drop-down may hide behind other elements like header, footers etc. |
 
 ## {Platform} {ComponentTitle} API Members
+
 - `{ComponentName}`
 - `Combo`
 - `LinearProgress`

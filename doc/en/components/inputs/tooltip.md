@@ -27,8 +27,8 @@ npm install {PackageWebComponents}
 After that, you need to import the `Tooltip`, its necessary CSS, and register its module, as follows:
 
 ```ts
-import { defineComponents, IgcTooltipComponent } from 'igniteui-webcomponents';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { defineComponents, IgcTooltipComponent } from "igniteui-webcomponents";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcTooltipComponent);
 ```
@@ -46,8 +46,8 @@ npm install igniteui-react
 After that, you need to import the `Tooltip` component and its necessary CSS as follows:
 
 ```tsx
-import { IgrTooltip } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrTooltip } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
@@ -62,7 +62,7 @@ Before using the `Tooltip`, you need to register it as follows:
 builder.Services.AddIgniteUIBlazor(typeof(IgbTooltipModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Tooltip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Tooltip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -126,13 +126,13 @@ To attach a tooltip to the desired element, use the `Anchor` property of the `To
 ```
 
 <!-- WebComponents, React -->
+
 You can also specify the target by passing the element instance directly:
+
 <!-- end: WebComponents, React -->
 
 ```html
-<igc-tooltip id="tooltip">
-  Congrats you've hovered the button!
-</igc-tooltip>
+<igc-tooltip id="tooltip"> Congrats you've hovered the button! </igc-tooltip>
 <igc-button id="hover-button">Hover me</igc-button>
 ```
 
@@ -145,8 +145,8 @@ constructor() {
 ```
 
 ```tsx
-const anchor = document.querySelector('#hover-button') as IgrButton;
-const tooltip = document.querySelector('#tooltip') as IgrTooltip;
+const anchor = document.querySelector("#hover-button") as IgrButton;
+const tooltip = document.querySelector("#tooltip") as IgrTooltip;
 tooltip.anchor = anchor;
 ```
 
@@ -162,15 +162,11 @@ tooltip.anchor = anchor;
 The tooltip content is defined by placing custom content between the opening and closing tags of the `Tooltip`.
 
 ```html
-<igc-tooltip>
-  This is my custom content here.
-</igc-tooltip>
+<igc-tooltip> This is my custom content here. </igc-tooltip>
 ```
 
 ```tsx
-<IgrTooltip>
-  Congrats you have hovered the button!
-</IgrTooltip>
+<IgrTooltip>Congrats you have hovered the button!</IgrTooltip>
 ```
 
 ```razor
@@ -180,7 +176,9 @@ The tooltip content is defined by placing custom content between the opening and
 ```
 
 <!-- WebComponents, React -->
+
 Alternatively, to set simple text, you can use the `Message` property.
+
 <!-- end: WebComponents, React -->
 
 ```html
@@ -192,7 +190,9 @@ Alternatively, to set simple text, you can use the `Message` property.
 ```
 
 <!-- WebComponents, React -->
+
 If you use both approaches (slotted content and the `Message` property), the slotted content will take priority and the `Message` value will be ignored.
+
 <!-- end: WebComponents, React -->
 
 ```html
@@ -210,7 +210,9 @@ If you use both approaches (slotted content and the `Message` property), the slo
 ```
 
 <!-- WebComponents, React -->
+
 In this example, the slotted content (“I will be shown!”) will be displayed instead of the `Message` property value.
+
 <!-- end: WebComponents, React -->
 
 The `Tooltip` content can be more than just simple text. Since the `Tooltip` is a regular element in the markup, you can enhance its content by adding any elements you need and styling them accordingly.
@@ -294,21 +296,21 @@ In the following example, you can see how we create descriptive tooltips by usin
 
 Apart from the properties we've already covered, the `Tooltip` component offers a variety of additional properties that allow you to further configure its behavior, position, and appearance.
 
-|Name|Type|Description|
-|--|--|--|
-| `Open` | boolean | Determines whether the tooltip is visible. |
+| Name        | Type    | Description                                                      |
+| ----------- | ------- | ---------------------------------------------------------------- |
+| `Open`      | boolean | Determines whether the tooltip is visible.                       |
 | `WithArrow` | boolean | Determines whether to render an arrow indicator for the tooltip. |
-| `Offset` | number | Sets the pixel distance between the tooltip and its `Anchor`. |
+| `Offset`    | number  | Sets the pixel distance between the tooltip and its `Anchor`.    |
 
 ### Methods
 
 In addition to its configurable properties, the `Tooltip` also exposes three methods that you can use:
 
-|Name|Description|
-|--|--|
-| `Show` | Displays the tooltip if it’s not already shown. If a target is provided, it sets the target as a transient `Anchor`. |
-| `Hide` | Hides the tooltip if it’s not already hidden. |
-| `Toggle` |  Toggles the tooltip between the shown and hidden states. |
+| Name     | Description                                                                                                          |
+| -------- | -------------------------------------------------------------------------------------------------------------------- |
+| `Show`   | Displays the tooltip if it’s not already shown. If a target is provided, it sets the target as a transient `Anchor`. |
+| `Hide`   | Hides the tooltip if it’s not already hidden.                                                                        |
+| `Toggle` | Toggles the tooltip between the shown and hidden states.                                                             |
 
 ## Accessibility & ARIA Support
 
@@ -323,9 +325,9 @@ The `Tooltip` is built with accessibility in mind and includes the following ARI
 
 The `Tooltip` component exposes two CSS parts that you can use for styling:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the tooltip component. |
+| Name                           | Description                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `base`                         | The base wrapper of the tooltip component.                                                                |
 | `top, right, bottom, left ...` | The area containing the tooltip arrow. The part name matches the value of the tooltip placement property. |
 
 ```css
@@ -342,7 +344,6 @@ igc-tooltip::part(bottom) {
 `sample="/inputs/tooltip/styling", height="140", alt="{Platform} Tooltip Styling Example"`
 
 <div class="divider--half"></div>
-
 
 ## API References
 

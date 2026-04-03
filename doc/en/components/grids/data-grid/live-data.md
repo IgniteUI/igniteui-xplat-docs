@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid is able to handle thousands of updates 
 
 ## {Platform} Binding Live Data Example
 
-
 `sample="/grids/data-grid/binding-live-data", height="600", alt="{Platform} Binding Live Data Example"`
-
-
 
 ## API References
 

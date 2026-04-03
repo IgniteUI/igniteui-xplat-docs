@@ -20,6 +20,7 @@ The {ProductName} Expansion Panel is a lightweight accordion component which can
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -29,7 +30,10 @@ npm install {PackageWebComponents}
 Before using the `ExpansionPanel`, you need to register it as follows:
 
 ```ts
-import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponents';
+import {
+  defineComponents,
+  IgcExpansionPanelComponent,
+} from "igniteui-webcomponents";
 
 defineComponents(IgcExpansionPanelComponent);
 ```
@@ -49,8 +53,8 @@ npm install igniteui-react
 You will then need to import the `ExpansionPanel`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrExpansionPanel } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrExpansionPanel } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
@@ -58,30 +62,38 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 The simplest way to start using the `ExpansionPanel` is as follows:
 
 <!-- WebComponents -->
+
 ```html
 <igc-expansion-panel>
-    <div slot="title">Golden Retriever</div>
-    <div slot="subTitle">Medium-large gun dog</div>
-    <div>
-        <p>The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
-        and upland game birds, during hunting and shooting parties.[3] The name "retriever" refers to the breed's ability
-        to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and
-        are easy to train to basic or advanced obedience standards.</p>
-    </div>
+  <div slot="title">Golden Retriever</div>
+  <div slot="subTitle">Medium-large gun dog</div>
+  <div>
+    <p>
+      The Golden Retriever is a medium-large gun dog that retrieves shot
+      waterfowl, such as ducks and upland game birds, during hunting and
+      shooting parties.[3] The name "retriever" refers to the breed's ability to
+      retrieve shot game undamaged due to their soft mouth. Golden retrievers
+      have an instinctive love of water, and are easy to train to basic or
+      advanced obedience standards.
+    </p>
+  </div>
 </igc-expansion-panel>
 ```
+
 <!-- end: WebComponents -->
 
 ```tsx
 <IgrExpansionPanel>
-    <h1 slot="title">Golden Retriever</h1>
-    <h3 slot="subtitle">Medium-large gun dog</h3>
-    <span>
-        The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
-        and upland game birds, during hunting and shooting parties.[3] The name retriever refers to the breeds ability
-        to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and
-        are easy to train to basic or advanced obedience standards.
-    </span>
+  <h1 slot="title">Golden Retriever</h1>
+  <h3 slot="subtitle">Medium-large gun dog</h3>
+  <span>
+    The Golden Retriever is a medium-large gun dog that retrieves shot
+    waterfowl, such as ducks and upland game birds, during hunting and shooting
+    parties.[3] The name retriever refers to the breeds ability to retrieve shot
+    game undamaged due to their soft mouth. Golden retrievers have an
+    instinctive love of water, and are easy to train to basic or advanced
+    obedience standards.
+  </span>
 </IgrExpansionPanel>
 ```
 
@@ -123,11 +135,10 @@ We can do this by binding to the `Opened` and `Closed` events:
 
 `sample="/layouts/expansion-panel/properties-and-events", height="320", alt="{Platform} Expansion Panel Events"`
 
-
-
 <div class="divider--half"></div>
 
 ## Component Customization
+
 The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [input](../inputs/input.md), charts and even other expansion panels!
 
 The `ExpansionPanel` allows for easy customization of the header through the exposed **title**, **subTitle** and **indicator** slots.
@@ -137,8 +148,6 @@ Configuring the position of the expansion indicator can be done through the `Ind
 The next code sample demonstrates how to configure the component's button to go on the **right**side.
 
 `sample="/layouts/expansion-panel/component-customization", height="460", alt="{Platform} Expansion Panel Customization"`
-
-
 
 <div class="divider--half"></div>
 
@@ -152,18 +161,17 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 - <kbd>ALT</kbd> + <kbd>↑</kbd> - collapses the focused panel
 - <kbd>SPACE</kbd>/<kbd>ENTER</kbd> - toggle the expansion state of the focused panel
 
-
 ## Styling
 
 The `ExpansionPanel` component exposes several CSS parts, giving you full control over its style:
 
-|Name|Description|
-|--|--|
-| `header` | The container of the expansion indicator, title and subtitle. |
-| `title` | The title container. |
-| `subtitle` | The subtitle container. |
-| `indicator` | The indicator container. |
-| `content` | The expansion panel's content wrapper. |
+| Name        | Description                                                   |
+| ----------- | ------------------------------------------------------------- |
+| `header`    | The container of the expansion indicator, title and subtitle. |
+| `title`     | The title container.                                          |
+| `subtitle`  | The subtitle container.                                       |
+| `indicator` | The indicator container.                                      |
+| `content`   | The expansion panel's content wrapper.                        |
 
 ```css
 igc-expansion-panel {
@@ -196,7 +204,6 @@ igc-expansion-panel::part(subtitle) {
 `sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} Expansion Panel Styling"`
 
 <div class="divider"></div>
-
 
 ## API References
 

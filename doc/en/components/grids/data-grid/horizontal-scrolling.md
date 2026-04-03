@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 
 ## {Platform} Horizontal Scrolling Example
 
-
 `sample="/grids/data-grid/column-scrolling", height="600", alt="{Platform} Horizontal Scrolling Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -31,19 +28,22 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    autoGenerateColumns="true"
-    defaultColumnMinWidth={300}
-    dataSource={this.data}/>
+  height="100%"
+  width="100%"
+  autoGenerateColumns="true"
+  defaultColumnMinWidth={300}
+  dataSource={this.data}
+/>
 ```
 
 ```html
- <igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      default-column-min-width=200>
- </igc-data-grid>
+<igc-data-grid
+  id="grid"
+  height="100%"
+  width="100%"
+  default-column-min-width="200"
+>
+</igc-data-grid>
 ```
 
 ```razor
@@ -56,34 +56,37 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    autoGenerateColumns="false"
-    dataSource={this.data}>
-        <IgrTextColumn field="FirstName" headerText="First Name" width="300"/>
-        <IgrTextColumn field="LastName" headerText="Last Name" width="300"/>
-        <IgrNumericColumn field="Age" headerText="Age" width="300"/>
-        <IgrDateTimeColumn field="Birthday" headerText="Birth Date" width="300"/>
-        <IgrTextColumn field="Street" headerText="Street Address" width="300"/>
-        <IgrTextColumn field="City" headerText="City and State" width="300"/>
-        <IgrTextColumn field="Salary" headerText="Salary" width="300"/>
-        <IgrTextColumn field="Sales" headerText="Sales" width="300"/>
-    </IgrDataGrid>
+  height="100%"
+  width="100%"
+  autoGenerateColumns="false"
+  dataSource={this.data}
+>
+  <IgrTextColumn field="FirstName" headerText="First Name" width="300" />
+  <IgrTextColumn field="LastName" headerText="Last Name" width="300" />
+  <IgrNumericColumn field="Age" headerText="Age" width="300" />
+  <IgrDateTimeColumn field="Birthday" headerText="Birth Date" width="300" />
+  <IgrTextColumn field="Street" headerText="Street Address" width="300" />
+  <IgrTextColumn field="City" headerText="City and State" width="300" />
+  <IgrTextColumn field="Salary" headerText="Salary" width="300" />
+  <IgrTextColumn field="Sales" headerText="Sales" width="300" />
+</IgrDataGrid>
 ```
 
 ```html
-<igc-data-grid id="grid"
-     width="100%"
-     height="100%"
-     auto-generate-columns="false">
-      <igc-text-column id="FirstName" width="300"></igc-text-column>
-      <igc-text-column id="LastName" width="300"></igc-text-column>
-      <igc-numeric-column id="Age" width="300"></igc-numeric-column>
-      <igc-date-time-column id="OrderDate" width="300"></igc-date-time-column>
-      <igc-text-column id="Street" width="300"></igc-text-column>
-      <igc-text-column id="City" width="300"></igc-text-column>
-      <igc-text-column id="Salary" width="300"></igc-text-column>
-      <igc-text-column id="Sales" width="300"></igc-text-column>
+<igc-data-grid
+  id="grid"
+  width="100%"
+  height="100%"
+  auto-generate-columns="false"
+>
+  <igc-text-column id="FirstName" width="300"></igc-text-column>
+  <igc-text-column id="LastName" width="300"></igc-text-column>
+  <igc-numeric-column id="Age" width="300"></igc-numeric-column>
+  <igc-date-time-column id="OrderDate" width="300"></igc-date-time-column>
+  <igc-text-column id="Street" width="300"></igc-text-column>
+  <igc-text-column id="City" width="300"></igc-text-column>
+  <igc-text-column id="Salary" width="300"></igc-text-column>
+  <igc-text-column id="Sales" width="300"></igc-text-column>
 </igc-data-grid>
 ```
 

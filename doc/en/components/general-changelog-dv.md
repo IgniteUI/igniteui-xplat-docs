@@ -5,6 +5,7 @@ _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "DataPieChart", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
@@ -19,15 +20,15 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-| 2189 | IgxDataChart | DataChart skips rendering axis when there are no labels |
-| 3055 | IgxDataPieChart | added missing styling properties for the Others Slice |
-| 38668 | IgxDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used |
-| 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
-| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
-| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
-| 41594 | IgxDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
+| Bug Number | Control             | Description                                                                                         |
+| ---------- | ------------------- | --------------------------------------------------------------------------------------------------- |
+| 2189       | IgxDataChart        | DataChart skips rendering axis when there are no labels                                             |
+| 3055       | IgxDataPieChart     | added missing styling properties for the Others Slice                                               |
+| 38668      | IgxDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used                                    |
+| 40238      | Excel               | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException                 |
+| 41167      | Excel               | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool    |
+| 41419      | Excel               | Saving a VBA Signed Excel file does not keep a signature/certificate.                               |
+| 41594      | IgxDataChart        | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
 
 ## **{PackageVerChanges-26-1-JAN}**
 
@@ -45,11 +46,11 @@ Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and Proporti
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|33808|IgxDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
-|34255|IgxDataChart|0.00001 scale tick marks are displayed overlapping each other|
-|38510|IgxDataChart|AssigningCategoryStyle event support for Stacked Series|
+| Bug Number | Control      | Description                                                               |
+| ---------- | ------------ | ------------------------------------------------------------------------- |
+| 33808      | IgxDataChart | The scale set for IntervalType Ticks in TimeAxisInterval is not displayed |
+| 34255      | IgxDataChart | 0.00001 scale tick marks are displayed overlapping each other             |
+| 38510      | IgxDataChart | AssigningCategoryStyle event support for Stacked Series                   |
 
 ### Enhancements
 
@@ -85,12 +86,12 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40262|IgxSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
-|40458|IgxSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
-|40490|IgxDatePicker|Inputs by Autofill won't give any effects for a date picker|
+| Bug Number | Control        | Description                                                                                                |
+| ---------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| 40136      | Excel Library  | FormulaParseException exception when loading an Excel workbook                                             |
+| 40262      | IgxSpreadsheet | #Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead |
+| 40458      | IgxSpreadsheet | When using Arial font, the igx-spreadsheet cuts off text in the cells                                      |
+| 40490      | IgxDatePicker  | Inputs by Autofill won't give any effects for a date picker                                                |
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -153,23 +154,22 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|31624 | `IgxCategoryChart` | Resizing the containing window of the `IgxCategoryChart` causes the chart to fail to render the series|
-|27304 | `IgxDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
-|37930 | `IgxDataChart` | Data Annotation Overlay Text Color not working|
-|30600 | `IgxDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
-|38231 | `IgxGrid` | Unpinned column does not return to the original position if hidden columns exist|
-|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
-
+| Bug Number | Control            | Description                                                                                            |
+| ---------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| 31624      | `IgxCategoryChart` | Resizing the containing window of the `IgxCategoryChart` causes the chart to fail to render the series |
+| 27304      | `IgxDataChart`     | Zoom rectangle is not positioned the same as the background rectangle                                  |
+| 37930      | `IgxDataChart`     | Data Annotation Overlay Text Color not working                                                         |
+| 30600      | `IgxDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)                              |
+| 38231      | `IgxGrid`          | Unpinned column does not return to the original position if hidden columns exist                       |
+| 33861      | Excel Library      | Adding line chart corrupts excel File for German culture                                               |
 
 ## **{PackageVerChanges-25-1-AUG}**
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|36448 | `IgxRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
+| Bug Number | Control          | Description                                                        |
+| ---------- | ---------------- | ------------------------------------------------------------------ |
+| 36448      | `IgxRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles) |
 
 ### {PackageCharts} (Charts)
 
@@ -219,19 +219,21 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 ### Enhancements
 
 #### Toolbar
+
 - Value layers added from the toolbar now appear on the legend.
 - The zoom reset tool has been moved to the zoom drop-down.
 
 #### Data Pie Chart
+
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|37023 | `IgxDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37685 | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
-|37244 | Excel Library | Custom Data Validation is not working.|
+| Bug Number | Control          | Description                                               |
+| ---------- | ---------------- | --------------------------------------------------------- |
+| 37023      | `IgxDataChart`   | Tooltips are cut-off/offscreen if overflow hidden is set. |
+| 37685      | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.      |
+| 37244      | Excel Library    | Custom Data Validation is not working.                    |
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -247,21 +249,20 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 The following table lists the bug fixes made for the {ProductName} toolset for this release:
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|30286 | `IgxDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906 | `IgxDataChart` | `IgxDataChart` is showing two xAxis on the top|
-|33605 | `IgxDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
-|35498 | `IgxDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
-|34776 | `IgxDataChart` | Repeatedly showing and hiding the `IgxDataChart` causes memory leakage in JS Heap|
-|34053 | `IgxRadialGauge` | The position of the scale label is shifted|
-|35496 | `IgxSpreadsheet` | Error when setting styles in Excel with images|
-|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
-|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
-|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
-|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-
+| Bug Number | Control          | Description                                                                                                                 |
+| ---------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 30286      | `IgxDataChart`   | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble                                |
+| 32906      | `IgxDataChart`   | `IgxDataChart` is showing two xAxis on the top                                                                              |
+| 33605      | `IgxDataChart`   | ScatterLineSeries is not showing the color of the line correctly in the legend                                              |
+| 35498      | `IgxDataChart`   | Tooltips for the series specified in IncludedSeries are not displayed                                                       |
+| 34776      | `IgxDataChart`   | Repeatedly showing and hiding the `IgxDataChart` causes memory leakage in JS Heap                                           |
+| 34053      | `IgxRadialGauge` | The position of the scale label is shifted                                                                                  |
+| 35496      | `IgxSpreadsheet` | Error when setting styles in Excel with images                                                                              |
+| 36176      | Excel Library    | Exception occurs when loading an Excel workbook that has a LET function                                                     |
+| 36379      | Excel Library    | Colors with any alpha channel in an excel workbook fail to load                                                             |
+| 26218      | Excel Library    | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file |
+| 35495      | Excel Library    | Pictures in cells are lost when a template file is loaded                                                                   |
+| 34083      | Excel Library    | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file                |
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -284,17 +285,16 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - <label>NEW</label> [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to plot slices similar to a pie chart, a type of data visualization where data points are represented as segments within a circular graph.
 
 - `Toolbar`
-
   - New ToolActionCheckboxList
-        A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
-        Requires IgxCheckboxListModule to be registered.
+    A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
+    Requires IgxCheckboxListModule to be registered.
 
   - New Filtering Support
 
   - Axis Field Changes
-        New default IconMenu in Toolbar when targeting CategoryChart.
-        Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
-        Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
+    New default IconMenu in Toolbar when targeting CategoryChart.
+    Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
+    Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
 
 ## **{PackageVerChanges-24-1-JUN}**
 
@@ -304,7 +304,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
 
 - [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
 
@@ -325,7 +325,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - `XamRadialChart`
   - New Label Mode
-        The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
+    The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### {PackageGauges}
 
@@ -365,9 +365,11 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
 ## **{PackageVerChanges-22-2.2}**
+
 - Angular 16 support.
 
 ## **{PackageVerChanges-22-2.1}**
+
 - Angular 15 support.
 
 ## **{PackageVerChanges-22-2}**
@@ -398,9 +400,10 @@ Added significant improvements to default behaviors, and refined the Category Ch
   - GroupSortDescriptions
 
 > [!Note]
-The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties` because these properties are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
+> The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties` because these properties are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render. The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ## **{PackageVerChanges-22-1}**
+
 ### {PackageCharts} (Charts)
 
 - Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
@@ -454,13 +457,14 @@ This release introduces a few improvements and simplifications to visual design 
 - Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
 - Changed color palette of series and markers displayed in all charts to improve accessibility
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
+
 ### {PackageCharts} (Charts)
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
@@ -496,14 +500,14 @@ This release introduces several new and improved visual design and configuration
 - Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
 - Redesigned color palette of series and markers:
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 for example:
 
-|   |   |
-|---|---|
+|                                                                                        |                                                                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | <img class="responsive-img" src="../images/chartDefaults1.png" alt="chartDefaults1" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="chartDefaults2" /> |
 | <img class="responsive-img" src="../images/chartDefaults3.png" alt="chartDefaults3" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="chartDefaults4" /> |
 
@@ -533,14 +537,14 @@ Import statements have been simplified to use just package names instead of full
 > [!Note]
 > These breaking changes were introduce in these packages and components only:
 
-| Affected Packages | Affected Components |
-| ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
-| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)  |
-| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
-| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart, Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
+| Affected Packages                                                                                                    | Affected Components                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a>             | [Excel Library](excel-library.md)                                                                          |
+| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md)                                                                     |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a>               | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)                                            |
+| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a>           | [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)          |
+| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>           | Category Chart, Data Chart, Donut Chart, Financial Chart, Pie Chart, [Zoom Slider](zoomslider-overview.md) |
+| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a>               | all classes and enums                                                                                      |
 
 - Code After Changes
 
@@ -553,10 +557,10 @@ Please also note that the name of the Data Grid component and its corresponding 
 import { IgxLinearGauge } from "igniteui-angular-gauges";
 import { IgxLinearGaugeModule } from "igniteui-angular-gauges";
 import { IgxLinearGraphRange } from "igniteui-angular-gauges";
-import { IgxRadialGauge } from 'igniteui-angular-gauges}';
-import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeRange } from 'igniteui-angular-gauges';
-import { SweepDirection } from 'igniteui-angular-core';
+import { IgxRadialGauge } from "igniteui-angular-gauges}";
+import { IgxRadialGaugeModule } from "igniteui-angular-gauges";
+import { IgxRadialGaugeRange } from "igniteui-angular-gauges";
+import { SweepDirection } from "igniteui-angular-core";
 // charts:
 import { IgxFinancialChartComponent } from "igniteui-angular-charts";
 import { IgxFinancialChartModule } from "igniteui-angular-charts";
@@ -573,9 +577,9 @@ Before, you had to import using full paths to API classes and enums:
 
 ```ts
 // gauges:
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-component';
-import { IgxLinearGaugeModule } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-module';
-import { IgxLinearGraphRange } from 'igniteui-angular-gauges/ES5/igx-linear-graph-range';
+import { IgxLinearGaugeComponent } from "igniteui-angular-gauges/ES5/igx-linear-gauge-component";
+import { IgxLinearGaugeModule } from "igniteui-angular-gauges/ES5/igx-linear-gauge-module";
+import { IgxLinearGraphRange } from "igniteui-angular-gauges/ES5/igx-linear-graph-range";
 
 import { IgxRadialGaugeComponent } from "igniteui-angular-gauges/ES5/igx-radial-gauge-component";
 import { IgxRadialGaugeModule } from "igniteui-angular-gauges/ES5/igx-radial-gauge-module";

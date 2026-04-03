@@ -5,16 +5,14 @@ _keywords: Excel Spreadsheet, hyperlinks, {ProductName}, Infragistics
 _license: commercial
 mentionedTypes: ["Spreadsheet"]
 ---
+
 # {Platform} Spreadsheet Hyperlinks
 
 The {Platform} Spreadsheet component allows display of pre-existing hyperlinks in your Excel workbook as well as insertion of new ones that can link to websites, file directories, and even other worksheets in the workbook.
 
 ## {Platform} Spreadsheet Hyperlinks Example
 
-
 `sample="/excel/spreadsheet/hyperlinks", height="500", alt="{Platform} Spreadsheet Hyperlinks Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -27,18 +25,21 @@ Hyperlinks are added to the `Spreadsheet` control by accessing the `Hyperlinks` 
 When setting up your {Platform} spreadsheet control to use hyperlinks, you will need to import the `WorksheetHyperlink` class like so:
 
 <!-- Angular -->
+
 ```ts
-import { WorksheetHyperlink } from 'igniteui-angular-excel';
+import { WorksheetHyperlink } from "igniteui-angular-excel";
 ```
 
 <!-- React -->
+
 ```ts
-import { WorksheetHyperlink } from 'igniteui-react-excel';
+import { WorksheetHyperlink } from "igniteui-react-excel";
 ```
 
 <!-- WebComponents -->
+
 ```ts
-import { WorksheetHyperlink } from 'igniteui-webcomponents-excel';
+import { WorksheetHyperlink } from "igniteui-webcomponents-excel";
 ```
 
 ## Code Snippet
@@ -46,7 +47,16 @@ import { WorksheetHyperlink } from 'igniteui-webcomponents-excel';
 The following code snippet demonstrates how to add a hyperlink to the currently viewed worksheet in the {Platform} `Spreadsheet` control:
 
 ```ts
-this.spreadsheet.activeWorksheet.hyperlinks().add(new WorksheetHyperlink("A1", "http://www.infragistics.com", "Infragistics", "Infragistics Home Page"));
+this.spreadsheet.activeWorksheet
+  .hyperlinks()
+  .add(
+    new WorksheetHyperlink(
+      "A1",
+      "http://www.infragistics.com",
+      "Infragistics",
+      "Infragistics Home Page",
+    ),
+  );
 ```
 
 ## API References

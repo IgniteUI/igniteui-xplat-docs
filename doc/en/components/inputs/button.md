@@ -10,7 +10,6 @@ _license: MIT
 
 The {Platform} Button Component lets you enable clickable elements that trigger actions in your {Platform} app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the {Platform} Button <!-- WebComponents, Blazor -->OnClick event<!-- end: WebComponents, Blazor --><!-- React -->clicked callback<!-- end: React -->, toggle the {Platform} button, disable the {Platform} button, and more.
 
-
 ## {Platform} Button Example
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
@@ -18,6 +17,7 @@ The {Platform} Button Component lets you enable clickable elements that trigger 
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -28,7 +28,7 @@ You will then need to import the `Button`, its necessary CSS, and register its m
 
 ```ts
 import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcButtonComponent);
 ```
@@ -38,6 +38,7 @@ For a complete introduction to the {ProductName}, read the [**Getting Started**]
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
@@ -47,9 +48,10 @@ npm install igniteui-react
 You will then need to import the `Button` and its necessary CSS, like so:
 
 ```tsx
-import { IgrButton } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrButton } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -62,7 +64,7 @@ Before using the `Button`, you need to register it as follows:
 builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Button` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Button` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -90,13 +92,13 @@ With `prefix` and `suffix` slots of the `Button` component, we can add different
 
 ```tsx
 <IgrButton type="button" variant="contained">
-    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+  <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </IgrButton>
 ```
 
 ```html
 <igc-button type="button" variant="contained">
-    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+  <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </igc-button>
 ```
 
@@ -122,7 +124,9 @@ In the case when the button component uses an actual [`<button>`](https://develo
 Use the `Variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
 
 ```tsx
-<IgrButton variant="contained"><span>Contained</span></IgrButton>
+<IgrButton variant="contained">
+  <span>Contained</span>
+</IgrButton>
 ```
 
 ```html
@@ -140,7 +144,9 @@ Use the `Variant` attribute to add a simple contained button in your component t
 All you have to do to create an `outlined` button is to change the value of the `Variant` property:
 
 ```tsx
-<IgrButton variant="outlined"><span>Outlined</span></IgrButton>
+<IgrButton variant="outlined">
+  <span>Outlined</span>
+</IgrButton>
 ```
 
 ```html
@@ -158,7 +164,9 @@ All you have to do to create an `outlined` button is to change the value of the 
 Analogically, we can switch to `flat` variant.
 
 ```tsx
-<IgrButton variant="flat"><span>Flat</span></IgrButton>
+<IgrButton variant="flat">
+  <span>Flat</span>
+</IgrButton>
 ```
 
 ```html
@@ -176,7 +184,9 @@ Analogically, we can switch to `flat` variant.
 We can create a floating action button by setting the `Variant` property to `fab`:
 
 ```tsx
-<IgrButton variant="fab"><span>Fab</span></IgrButton>
+<IgrButton variant="fab">
+  <span>Fab</span>
+</IgrButton>
 ```
 
 ```html
@@ -194,30 +204,55 @@ We can create a floating action button by setting the `Variant` property to `fab
 Users can change the size of the `Button` using the `--ig-size` CSS variable. In the following example, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the button.
 
 ```ts
-import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import {
+  defineComponents,
+  IgcButtonComponent,
+  IgcRadioComponent,
+  IgcRadioGroupComponent,
+} from "igniteui-webcomponents";
 defineComponents(IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
-    <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
-    <igc-radio name="size" value="medium" label-position="after" checked>Medium</igc-radio>
-    <igc-radio name="size" value="large" label-position="after">Large</igc-radio>
+  <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
+  <igc-radio name="size" value="medium" label-position="after" checked
+    >Medium</igc-radio
+  >
+  <igc-radio name="size" value="large" label-position="after">Large</igc-radio>
 </igc-radio-group>
 ```
 
 ```ts
-this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
-this.outlinedButton = document.getElementById('outlined-btn') as IgcButtonComponent;
-this.flatButton = document.getElementById('flat-btn') as IgcButtonComponent;
-this.containedButton = document.getElementById('contained-btn') as IgcButtonComponent;
-this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
+this.radioGroup = document.getElementById(
+  "radio-group",
+) as IgcRadioGroupComponent;
+this.outlinedButton = document.getElementById(
+  "outlined-btn",
+) as IgcButtonComponent;
+this.flatButton = document.getElementById("flat-btn") as IgcButtonComponent;
+this.containedButton = document.getElementById(
+  "contained-btn",
+) as IgcButtonComponent;
+this.fabButton = document.getElementById("fab-btn") as IgcButtonComponent;
 
-this.radioGroup.addEventListener('click', (radio: any) => {
-    this.outlinedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-    this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-    this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-    this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+this.radioGroup.addEventListener("click", (radio: any) => {
+  this.outlinedButton.style.setProperty(
+    "--ig-size",
+    `var(--ig-size-${radio.target.value})`,
+  );
+  this.flatButton.style.setProperty(
+    "--ig-size",
+    `var(--ig-size-${radio.target.value})`,
+  );
+  this.containedButton.style.setProperty(
+    "--ig-size",
+    `var(--ig-size-${radio.target.value})`,
+  );
+  this.fabButton.style.setProperty(
+    "--ig-size",
+    `var(--ig-size-${radio.target.value})`,
+  );
 });
 ```
 
@@ -293,29 +328,24 @@ The result of implementing the above code should look like the following:
 
 `sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
 
-
-
 ### Download
 
 Setting the `Download` property will prompt the user to save the linked URL instead of navigating to it.
 
 ```tsx
-<IgrButton
-    href=""
-    variant="contained"
-    download="url"
-    target="_blank" >
-    <span>Download</span>
+<IgrButton href="" variant="contained" download="url" target="_blank">
+  <span>Download</span>
 </IgrButton>
 ```
 
 ```html
 <igc-button
-    href=""
-    variant="contained"
-    download="url_to_content"
-    target="_blank">
-    Download
+  href=""
+  variant="contained"
+  download="url_to_content"
+  target="_blank"
+>
+  Download
 </igc-button>
 ```
 
@@ -331,11 +361,11 @@ Setting the `Download` property will prompt the user to save the linked URL inst
 
 The `Button` exposes three CSS parts which we can use for styling:
 
-|Name|Description|
-|--|--|
-| `base` | The native button element of the igc-button component. |
-| `prefix` | The prefix container of the igc-button component. |
-| `suffix` | The suffix container of the igc-button component. |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| `base`   | The native button element of the igc-button component. |
+| `prefix` | The prefix container of the igc-button component.      |
+| `suffix` | The suffix container of the igc-button component.      |
 
 The `base` CSS part allows us to style the wrapped element (`<button>` or `<a>`).
 
@@ -348,8 +378,6 @@ igc-button::part(base) {
 ```
 
 `sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
-
-
 
 ## API References
 

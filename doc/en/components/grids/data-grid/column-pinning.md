@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridColumnPinning}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -22,10 +22,7 @@ A column or multiple columns can be pinned to the left-hand or right-hand side o
 
 ## {Platform} Grid Column Pinning Example
 
-
 `sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid Column Pinning Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -41,41 +38,75 @@ Unpinned columns that are adjacent to pinned columns will still maintain horizon
 
 The `PinColumn` function contains two required parameters. The first parameter is the column to be pinned, and the second is with the `PinnedPositions` enumeration setting.
 
-
 ## Code Snippet
 
 The following code demonstrates how to implement column pinning in the {Platform} Data Grid with column pinning by using the `Pinned` property and `PinColumn` function:
 
 <!--React-->
+
 ```tsx
 <IgrDataGrid
-ref={this.onGridRef}
-height="calc(100% - 40px)"
-width="100%"
-autoGenerateColumns="false"
-defaultColumnMinWidth={120}
-scrollbarStyle="thin"
-dataSource={this.data}>
+  ref={this.onGridRef}
+  height="calc(100% - 40px)"
+  width="100%"
+  autoGenerateColumns="false"
+  defaultColumnMinWidth={120}
+  scrollbarStyle="thin"
+  dataSource={this.data}
+>
+  {/*Columns pinned left*/}
+  <IgrTextColumn
+    pinned="left"
+    field="ID"
+    headerText="Employee ID"
+    width="100"
+    horizontalAlignment="center"
+  />
+  <IgrTextColumn
+    pinned="left"
+    field="FirstName"
+    headerText="First Name"
+    width="170"
+  />
+  <IgrTextColumn
+    pinned="left"
+    field="LastName"
+    headerText="Last Name"
+    width="170"
+  />
 
-    {/*Columns pinned left*/}
-    <IgrTextColumn pinned="left" field="ID" headerText="Employee ID" width="100"  horizontalAlignment="center"/>
-    <IgrTextColumn pinned="left" field="FirstName" headerText="First Name" width="170"/>
-    <IgrTextColumn pinned="left" field="LastName" headerText="Last Name" width="170"/>
+  {/*Columns unpinned*/}
+  <IgrDateTimeColumn
+    pinned="none"
+    field="Birthday"
+    headerText="Date of Birth"
+    width="150"
+    horizontalAlignment="center"
+  />
+  <IgrNumericColumn
+    pinned="none"
+    field="Age"
+    width="100"
+    horizontalAlignment="center"
+  />
+  <IgrImageColumn
+    pinned="none"
+    field="CountryFlag"
+    headerText="Country"
+    width="140"
+    contentOpacity="1"
+    horizontalAlignment="center"
+  />
 
-    {/*Columns unpinned*/}
-    <IgrDateTimeColumn pinned="none" field="Birthday" headerText="Date of Birth" width="150" horizontalAlignment="center"/>
-    <IgrNumericColumn pinned="none" field="Age" width="100" horizontalAlignment="center"/>
-    <IgrImageColumn pinned="none" field="CountryFlag" headerText="Country"
-    width="140" contentOpacity="1" horizontalAlignment="center"/>
-
-    {/*Columns pinned right*/}
-    <IgrTextColumn field="Street" headerText="Address" width="240"/>
-    <IgrTextColumn field="City"  width="150" />
-    <IgrTextColumn field="Country"  width="150" />
+  {/*Columns pinned right*/}
+  <IgrTextColumn field="Street" headerText="Address" width="240" />
+  <IgrTextColumn field="City" width="150" />
+  <IgrTextColumn field="Country" width="150" />
 </IgrDataGrid>
 ```
 
 <!--React-->
+
 ```ts
 import { PinnedPositions } from 'igniteui-react-data-grids';
 
@@ -146,30 +177,71 @@ public onButtonUnPin = (e: any) => {
 ```
 
 <!--WebComponents-->
+
 ```html
 <igc-data-grid
-id="grid"
-height="calc(100% - 40px)"
-width="100%"
-auto-generate-columns="false"
-default-column-min-width="120px"
-scrollbar-style="thin"
+  id="grid"
+  height="calc(100% - 40px)"
+  width="100%"
+  auto-generate-columns="false"
+  default-column-min-width="120px"
+  scrollbar-style="thin"
 >
-    <igc-text-column pinned="left" field="ID" header-text="Employee ID" width="100"  horizontal-alignment="center"></igc-text-column>
-    <igc-text-column pinned="left" field="FirstName" header-text="First Name" width="170"></igc-text-column>
-    <igc-text-column pinned="left" field="LastName" header-text="Last Name" width="170"></igc-text-column>
+  <igc-text-column
+    pinned="left"
+    field="ID"
+    header-text="Employee ID"
+    width="100"
+    horizontal-alignment="center"
+  ></igc-text-column>
+  <igc-text-column
+    pinned="left"
+    field="FirstName"
+    header-text="First Name"
+    width="170"
+  ></igc-text-column>
+  <igc-text-column
+    pinned="left"
+    field="LastName"
+    header-text="Last Name"
+    width="170"
+  ></igc-text-column>
 
-    <igc-date-time-column pinned="none" field="Birthday" header-text="Date of Birth" width="150" horizontal-alignment="center"></igc-date-time-column>
-    <igc-numeric-column pinned="none" field="Age" width="100" horizontal-alignment="center"></igc-numeric-column>
-    <igc-image-column pinned="none" field="CountryFlag" header-text="Country" width="140" content-opacity="1" horizontal-alignment="center"></igc-image-column>
+  <igc-date-time-column
+    pinned="none"
+    field="Birthday"
+    header-text="Date of Birth"
+    width="150"
+    horizontal-alignment="center"
+  ></igc-date-time-column>
+  <igc-numeric-column
+    pinned="none"
+    field="Age"
+    width="100"
+    horizontal-alignment="center"
+  ></igc-numeric-column>
+  <igc-image-column
+    pinned="none"
+    field="CountryFlag"
+    header-text="Country"
+    width="140"
+    content-opacity="1"
+    horizontal-alignment="center"
+  ></igc-image-column>
 
-    <igc-text-column pinned="right" field="Street" header-text="Address" width="240"></igc-text-column>
-    <igc-text-column pinned="right" field="City"  width="150" ></igc-text-column>
-    <igc-text-column pinned="right" field="Country"  width="150" ></igc-text-column>
+  <igc-text-column
+    pinned="right"
+    field="Street"
+    header-text="Address"
+    width="240"
+  ></igc-text-column>
+  <igc-text-column pinned="right" field="City" width="150"></igc-text-column>
+  <igc-text-column pinned="right" field="Country" width="150"></igc-text-column>
 </igc-data-grid>
 ```
 
 <!--WebComponents-->
+
 ```ts
 import { PinnedPositions } from 'igniteui-webcomponents-data-grids';
 
@@ -271,13 +343,12 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 
 ## Demo
 
-
 `sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
-
 
 ## Code Snippet
 
 <!--React-->
+
 ```tsx
 <IgrDataGridToolbar ref={this.onToolbarRef}
     toolbarTitle="Grid Title"
@@ -294,6 +365,7 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 ```
 
 <!--React-->
+
 ```ts
 import { IgrDataGrid } from 'igniteui-react-data-grids';
 import { IgrDataGridToolbar } from 'igniteui-react-data-grids';
@@ -328,24 +400,28 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 ```
 
 <!--WebComponents-->
+
 ```html
 <igc-dataGrid-toolbar
-    toolbar-title="Grid Title"
-    column-pinning="true"
-    column-pinning-text="Pinning"
-    column-pinning-title="Columns Pinned Left">
+  toolbar-title="Grid Title"
+  column-pinning="true"
+  column-pinning-text="Pinning"
+  column-pinning-title="Columns Pinned Left"
+>
 </igc-dataGrid-toolbar>
 <igc-data-grid
-    id="grid"
-    height="calc(100% - 40px)"
-    width="100%"
-    auto-generate-columns="false"
-    default-column-min-width="120px"
-    scrollbar-style = "thin">
+  id="grid"
+  height="calc(100% - 40px)"
+  width="100%"
+  auto-generate-columns="false"
+  default-column-min-width="120px"
+  scrollbar-style="thin"
+>
 </igc-data-grid>
 ```
 
 <!--WebComponents-->
+
 ```ts
 import { IgcDataGrid } from 'igniteui-webcomponents-data-grids';
 import { IgcDataGridToolbar } from 'igniteui-webcomponents-data-grids';

@@ -12,7 +12,7 @@ The {ProductName} Query Builder provides a rich UI that allows developers to bui
 
 `sample="/interactions/query-builder/overview", height="900", alt="{Platform} Query Builder Overview Example"`
 
-# Getting started with {Platform} Query Builder
+## Getting started with {Platform} Query Builder
 To start using the `QueryBuilder`, first, you need to install the `{ProductName}` package by running the following command:
 
 <!-- WebComponents -->
@@ -34,7 +34,7 @@ You also need to reference the corresponding styles based on your project config
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
-# Using the {Platform} Query Builder
+## Using the {Platform} Query Builder
 
 If no expression tree is initially set, you start by choosing an entity and which of its fields the query should return. After that, conditions or sub-groups can be added.
 
@@ -42,7 +42,7 @@ In order to add a condition you select a field, an operand based on the field da
 
 Clicking on the (AND or OR) button placed above each group, will open a menu with options to change the group type or ungroup the conditions inside.
 
-Since every condition is related to a specific field from a particular entity changing the entity will lead to resetting all preset conditions and groups. 
+Since every condition is related to a specific field from a particular entity changing the entity will lead to resetting all preset conditions and groups.
 
 You can start using the component by setting the `Entities` property to an array describing the entity name and an array of its fields, where each field is defined by its name and data type. Once a field is selected it will automatically assign the corresponding operands based on the data type.
 The Query Builder has the `ExpressionTree` property. You could use it to set an initial state of the control and access the user-specified filtering logic.
@@ -171,7 +171,7 @@ private handleExpressionTreeChange = (event: CustomEvent<IgcExpressionTree>) => 
 ```
 <!-- end: React -->
 
-# Expressions Dragging
+## Expressions Dragging
 
 Condition chips can be easily repositioned using mouse Drag & Drop or Keyboard reordering approaches. With those, users can adjust their query logic dynamically.
 
@@ -218,7 +218,7 @@ By default the `{ComponentName}` header would not be displayed. In order to defi
 The search value of a condition can be templated by setting the `SearchValueTemplate` property to a function that returns a lit-html template.
 
 > [!Note]
-> When using `SearchValueTemplate`, you must provide templates for all field types in your entity, or the query builder will not function correctly. It is mandatory to implement a default/fallback template that handles any fields or conditions not covered by specific custom templates. Without this, users will not be able to edit 
+> When using `SearchValueTemplate`, you must provide templates for all field types in your entity, or the query builder will not function correctly. It is mandatory to implement a default/fallback template that handles any fields or conditions not covered by specific custom templates. Without this, users will not be able to edit
 conditions for those fields.
 
 <!-- WebComponents -->

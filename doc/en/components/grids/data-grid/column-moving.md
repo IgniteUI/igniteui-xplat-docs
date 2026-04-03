@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridColumnMoving}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Grid supports the ability to move columns, giving you the
 
 ## {Platform} Grid Column Moving Example
 
-
 `sample="/grids/data-grid/column-moving", height="600", alt="{Platform} Grid Column Moving Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -38,40 +35,45 @@ You can also animate the column movements, if you wish. This can be done by sett
 The following demonstrates how to implement column moving in the {ProductName} Data Grid with deferred column moving, animations enabled, and a 5px wide separator:
 
 <!--React-->
+
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-react-data-grids';
-import { ColumnMovingMode } from 'igniteui-react-data-grids';
+import { ColumnMovingAnimationMode } from "igniteui-react-data-grids";
+import { ColumnMovingMode } from "igniteui-react-data-grids";
 ```
 
 <!--WebComponents-->
+
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-data-grids';
-import { ColumnMovingMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnMovingAnimationMode } from "igniteui-webcomponents-data-grids";
+import { ColumnMovingMode } from "igniteui-webcomponents-data-grids";
 ```
 
 ```tsx
 <IgrDataGrid
-    ref={this.onGridRef}
-    height="500px"
-    width="100%"
-    dataSource={this.data}
-    columnMovingMode={ColumnMovingMode.Deferred}
-    columnMovingAnimationMode={ColumnMovingAnimationMode.SlideOver}
-    columnMovingSeparatorWidth={5} />
+  ref={this.onGridRef}
+  height="500px"
+  width="100%"
+  dataSource={this.data}
+  columnMovingMode={ColumnMovingMode.Deferred}
+  columnMovingAnimationMode={ColumnMovingAnimationMode.SlideOver}
+  columnMovingSeparatorWidth={5}
+/>
 ```
 
 ```html
-<igc-data-grid id="grid"
-    height="100%"
-    width="100%"
-    column-moving-mode="Deferred"
-    column-moving-animation-mode="SlideOver"
-    column-moving-separator-width="5">
+<igc-data-grid
+  id="grid"
+  height="100%"
+  width="100%"
+  column-moving-mode="Deferred"
+  column-moving-animation-mode="SlideOver"
+  column-moving-separator-width="5"
+>
 </igc-data-grid>
 ```
 
 ```ts
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = data;
 ```
 

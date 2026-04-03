@@ -16,21 +16,22 @@ This sample demonstrates how to create a Dialog component in {Platform}.
 
 `sample="/notifications/dialog/overview", height="400", alt="{Platform} Dialog Example"`
 
-
 <div class="divider--half"></div>
 
 ### Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 ```ts
-import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcDialogComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcDialogComponent);
 ```
@@ -46,8 +47,8 @@ npm install igniteui-react
 You will then need to import the {Platform} `Dialog` and its necessary CSS, like so:
 
 ```tsx
-import { IgrDialog } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrDialog } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
@@ -55,14 +56,15 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
-Before using the {Platform} `Dialog`, you need to register it as follows:
 
+Before using the {Platform} `Dialog`, you need to register it as follows:
 
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbDialogModule));
 ```
+
 <!-- end: Blazor -->
 
 The simplest way to display the dialog component is to use its `Show` method and call it on a button click.
@@ -96,9 +98,16 @@ The simplest way to display the dialog component is to use its `Show` method and
 <igc-button onclick="dialog.show()" variant="contained">Show Dialog</igc-button>
 
 <igc-dialog id="dialog" title="Confirmation">
-    <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
-    <igc-button slot="footer" onclick="dialog.close()" variant="flat">Cancel</igc-button>
-    <igc-button slot="footer" onclick="dialog.close()" variant="flat">OK</igc-button>
+  <p>
+    Are you sure you want to delete the Annual_Report_2016.pdf and
+    Annual_Report_2017.pdf files?
+  </p>
+  <igc-button slot="footer" onclick="dialog.close()" variant="flat"
+    >Cancel</igc-button
+  >
+  <igc-button slot="footer" onclick="dialog.close()" variant="flat"
+    >OK</igc-button
+  >
 </igc-dialog>
 ```
 
@@ -147,17 +156,16 @@ Form elements can close a Dialog if they have the attribute `method="dialog"`. S
 
 `sample="/notifications/dialog/form", height="500", alt="{Platform} Dialog Form Example"`
 
-
 ## Styling
 
 The `Dialog` component exposes several CSS parts to give you full control over its style:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the dialog. |
-| `title` | The title container. |
-| `footer` | The footer container. |
-| `content` | The content container. |
+| Name      | Description                     |
+| --------- | ------------------------------- |
+| `base`    | The base wrapper of the dialog. |
+| `title`   | The title container.            |
+| `footer`  | The footer container.           |
+| `content` | The content container.          |
 
 ```css
 igc-dialog::part(content) {
@@ -173,7 +181,6 @@ igc-dialog::part(footer) {
 ```
 
 `sample="/notifications/dialog/styling", height="400", alt="{Platform} Dialog Styling Example"`
-
 
 <div class="divider--half"></div>
 

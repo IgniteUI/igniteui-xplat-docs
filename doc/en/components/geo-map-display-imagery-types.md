@@ -11,26 +11,28 @@ mentionedTypes: ["XamGeographicMap"]
 {Platform} Geographic imagery is a detailed representation of the world from a top view perspective. It can consist of an aerial-satellite map or road maps in a multi-scale imagery tiles structure. The geographic map component can display geographic imagery in order to provide end-users with rich and interactive world maps and geographic context for geo-spatial data.
 
 ## Types of geographic imagery
+
 The map component can display geographic imagery tiles from three supported mapping services or from other mapping services that can be easily implemented in an application.
 
 The following table summarizes supported and custom geographic imagery sources for the map component.
 
-| Imagery                    | Description   |
-|----------------------------| --------------|
-| Open Street Maps | Provides geographic imagery from Open Street Maps service with an option to display a road map style only in one coloring theme. |
-| Bing Maps |Provides geographic imagery from Bing Maps service with configurable options to display the following map styles:<ul><li> Satellite Map Style</li><li> Satellite Map with Labels Style</li><li> Road Map Style</li>|
+| Imagery          | Description                                                                                                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Open Street Maps | Provides geographic imagery from Open Street Maps service with an option to display a road map style only in one coloring theme.                                                                                    |
+| Bing Maps        | Provides geographic imagery from Bing Maps service with configurable options to display the following map styles:<ul><li> Satellite Map Style</li><li> Satellite Map with Labels Style</li><li> Road Map Style</li> |
 
 <!-- | Map Quest |Provides custom geographic imagery from Map Quest service with configurable options to display the following map styles:<ul><li>Satellite Map Style</li><li>Road Map Style</li></ul> -->
 
 ## Map Background Content
+
 The map component's `BackgroundContent` property is used to display all supported types of geographic imagery sources. For each imagery source, there is an imagery class used for rendering corresponding geographic imagery tiles.
 
 The following table summarizes imagery classes provided by the map component.
 
-| Imagery Class | Description   |
-|---------------|---------------|
-|`GeographicMapImagery`|Represents the base control for all imagery classes that display all types of supported geographic imagery tiles. This class can be extended for the purpose of implementing support for geographic imagery tiles from other geographic imagery sources such as Map Quest mapping service.|
-|`OpenStreetMapImagery`|Represents the multi-scale imagery control for displaying geographic imagery tiles from the Open Street Maps service.|
+| Imagery Class          | Description                                                                                                                                                                                                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `GeographicMapImagery` | Represents the base control for all imagery classes that display all types of supported geographic imagery tiles. This class can be extended for the purpose of implementing support for geographic imagery tiles from other geographic imagery sources such as Map Quest mapping service. |
+| `OpenStreetMapImagery` | Represents the multi-scale imagery control for displaying geographic imagery tiles from the Open Street Maps service.                                                                                                                                                                      |
 
 <!-- |`BingMapsMapImagery`|Represents the multi-scale imagery control for displaying geographic imagery tiles from the Bing Maps service.| -->
 
@@ -45,7 +47,7 @@ In the map component, map background content is always rendered behind all geogr
 This code example explicitly sets `BackgroundContent` of the map component to the `OpenStreetMapImagery` object which provides geographic imagery tile from the Open Street Maps.
 
 ```html
- TODO - ADD CODE SNIPPET
+TODO - ADD CODE SNIPPET
 ```
 
 ## API References

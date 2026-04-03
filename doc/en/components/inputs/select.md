@@ -14,7 +14,6 @@ The {ProductName} Select component allows a single selection from a list of item
 
 `sample="/inputs/select/overview", height="275", alt="{Platform} Select Example"`
 
-
 <div class="divider--half"></div>
 
 ## Usage
@@ -30,12 +29,8 @@ npm install {PackageWebComponents}
 Before using the `Select` component, you need to register it together with its additional components:
 
 ```ts
-import {
-    defineComponents,
-    IgcSelectComponent
-}
-from 'igniteui-webcomponents';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { defineComponents, IgcSelectComponent } from "igniteui-webcomponents";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcSelectComponent);
 ```
@@ -54,7 +49,7 @@ Before using the `Select` component, you need to register it together with its a
 builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Select` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Select` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -73,8 +68,8 @@ npm install igniteui-react
 You will then need to import the `Select` and the `SelectItem` and its necessary CSS, like so:
 
 ```tsx
-import { IgrSelect, IgrSelectItem } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrSelect, IgrSelectItem } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
@@ -85,17 +80,20 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 To start using the component add the `Select` along with a list of `SelectItem`'s to choose from:
 
 <!-- WebComponents -->
+
 ```html
 <igc-select>
-    <igc-select-item value="orange">Orange</igc-select-item>
-    <igc-select-item value="apple">Apple</igc-select-item>
-    <igc-select-item value="banana">Banana</igc-select-item>
-    <igc-select-item value="mango">Mango</igc-select-item>
+  <igc-select-item value="orange">Orange</igc-select-item>
+  <igc-select-item value="apple">Apple</igc-select-item>
+  <igc-select-item value="banana">Banana</igc-select-item>
+  <igc-select-item value="mango">Mango</igc-select-item>
 </igc-select>
 ```
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbSelect>
     <IgbSelectItem Value="orange">Orange</IgbSelectItem>
@@ -104,16 +102,25 @@ To start using the component add the `Select` along with a list of `SelectItem`'
     <IgbSelectItem Value="mango">Mango</IgbSelectItem>
 </IgbSelect>
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
 
 ```tsx
 <IgrSelect>
-  <IgrSelectItem value="Orange"><span>Orange</span></IgrSelectItem>
-  <IgrSelectItem value="Apple"><span>Apple</span></IgrSelectItem>
-  <IgrSelectItem value="Banana"><span>Banana</span></IgrSelectItem>
-  <IgrSelectItem value="Mango"><span>Mango</span></IgrSelectItem>
+  <IgrSelectItem value="Orange">
+    <span>Orange</span>
+  </IgrSelectItem>
+  <IgrSelectItem value="Apple">
+    <span>Apple</span>
+  </IgrSelectItem>
+  <IgrSelectItem value="Banana">
+    <span>Banana</span>
+  </IgrSelectItem>
+  <IgrSelectItem value="Mango">
+    <span>Mango</span>
+  </IgrSelectItem>
 </IgrSelect>
 ```
 
@@ -129,28 +136,30 @@ The `SelectItem` component allows the users to declaratively specify a list of o
 
 `sample="/inputs/select/item", height="275", alt="{Platform} Select Item Example"`
 
-
 ### Header
 
 You can use the `SelectHeader` to provide a header for a group of items.
 
 `sample="/inputs/select/header", height="275", alt="{Platform} Select Header Example"`
 
-
 <!-- WebComponents -->
+
 ```html
 <igc-select>
-    <igc-select-header>Tasks</igc-select-header>
+  <igc-select-header>Tasks</igc-select-header>
 </igc-select>
 ```
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbSelect>
     <IgbSelectHeader>Tasks</IgbSelectHeader>
 </IgbSelect>
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -175,34 +184,42 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
 `sample="/inputs/select/group", height="500", alt="{Platform} Select Group Example"`
 
 <!-- WebComponents -->
+
 ```html
 <igc-select>
-    <igc-select-group>
-        <span slot="label">Europe</span>
+  <igc-select-group>
+    <span slot="label">Europe</span>
 
-        <igc-select-item>
-          <igc-icon @ref="IconRef" slot="prefix" name="place" collection="material"></igc-icon>
-          Germany
-          <span slot="suffix">DE</span>
-        </igc-select-item>
+    <igc-select-item>
+      <igc-icon
+        @ref="IconRef"
+        slot="prefix"
+        name="place"
+        collection="material"
+      ></igc-icon>
+      Germany
+      <span slot="suffix">DE</span>
+    </igc-select-item>
 
-        <igc-select-item>
-          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
-          France
-          <span slot="suffix">FR</span>
-        </igc-select-item>
+    <igc-select-item>
+      <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+      France
+      <span slot="suffix">FR</span>
+    </igc-select-item>
 
-        <igc-select-item>
-          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
-          Spain
-          <span slot="suffix">ES</span>
-        </igc-select-item>
-    </igc-select-group>
+    <igc-select-item>
+      <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+      Spain
+      <span slot="suffix">ES</span>
+    </igc-select-item>
+  </igc-select-group>
 </igc-select>
 ```
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbSelect>
     <IgbSelectGroup>
@@ -228,6 +245,7 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
     </IgbSelectGroup>
 </IgbSelect>
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -298,29 +316,29 @@ You can change the appearance of the {ProductName} `Select` component and its it
 
 **Select Component**
 
-| Part name | Description |
-| ---------|------------ |
-| `input` | The encapsulated igc-input. |
-| `label` | The encapsulated text label. |
-| `list` | A wrapper that holds the list of options. |
-| `prefix`  | A prefix wrapper that renders content before the input. |
-| `suffix` | A suffix wrapper that renders content after the input. |
+| Part name     | Description                                                           |
+| ------------- | --------------------------------------------------------------------- |
+| `input`       | The encapsulated igc-input.                                           |
+| `label`       | The encapsulated text label.                                          |
+| `list`        | A wrapper that holds the list of options.                             |
+| `prefix`      | A prefix wrapper that renders content before the input.               |
+| `suffix`      | A suffix wrapper that renders content after the input.                |
 | `toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper. |
-| `helper-text` | A helper-text wrapper that renders content below the input. |
+| `helper-text` | A helper-text wrapper that renders content below the input.           |
 
 **Select Item Component**
 
-| Part name | Description |
-| ---------|------------ |
-| `content` | The main wrapper that holds the text content of an item. |
+| Part name | Description                                                    |
+| --------- | -------------------------------------------------------------- |
+| `content` | The main wrapper that holds the text content of an item.       |
 | `prefix`  | A prefix wrapper that renders content before the main wrapper. |
-| `suffix` | A suffix wrapper that renders content after the main wrapper. |
+| `suffix`  | A suffix wrapper that renders content after the main wrapper.  |
 
 **Select Group Component**
 
-| Part name | Description |
-| ---------|------------ |
-| `label` | A label wrapper that renders content above the select group items. |
+| Part name | Description                                                        |
+| --------- | ------------------------------------------------------------------ |
+| `label`   | A label wrapper that renders content above the select group items. |
 
 ```css
 igc-select::part(base) {
@@ -346,7 +364,6 @@ igc-select::part(suffix) {
 
 <!-- end: WebComponents, React -->
 
-
 ## API Reference
 
 - `Select`
@@ -354,7 +371,6 @@ igc-select::part(suffix) {
 - `SelectHeader`
 - `SelectGroup`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 

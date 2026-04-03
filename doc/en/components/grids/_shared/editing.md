@@ -12,6 +12,7 @@ _canonicalLink: {CanonicalLinkToGridEditing}
 # {Platform} {ComponentTitle} Editing
 
 The {ProductName} Cell Editing feature in {Platform} {ComponentTitle} provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The `{ComponentName}` provides you with a powerful public API which allows you to customize the way these operations are performed. The data manipulation phases are:
+
 - [Cell Editing](cell-editing.md)
 - [Row Editing](row-editing.md)
 - Batch Editing (Coming Soon)
@@ -31,7 +32,7 @@ The `Editable` property enables you to specify the following options:
 - **false** - the editing for the corresponding column will be disabled. This is the default value.
 - **true** - the editing for the corresponding column will be enabled.
 
->Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the `{ComponentName}`.
+> Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the `{ComponentName}`.
 
 The `RowEditable` property enables you to specify the following options:
 
@@ -49,7 +50,7 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
 
 ### Editing Templates
 
- If you want to use a data type specific edit templates, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
+If you want to use a data type specific edit templates, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
 
 - For `string` data type, default template is using `Input`.
 - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
@@ -59,29 +60,34 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
 - For `boolean` data type, default template is using `Checkbox`.
 - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
 - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
- <!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid -->
 - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
- <!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### Event Arguments and Sequence
+
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
- | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
- | `RowEditEnter`  | If `RowEditing` is enabled, fires when a row enters edit mode                                                                                             | `GridEditEventArgs`     | **true**    |
- | `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`)                                                                                             | `GridEditEventArgs`     | **true**    |
- | `CellEdit`      | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing <kbd>ENTER</kbd>)                                                     | `GridEditEventArgs`     | **true**    |
- | `CellEditDone`  | If value is changed, fires **after** a cell has been edited and cell's value is **committed**                                                             | `GridEditDoneEventArgs` | **false**   |
- | `CellEditExit`  | Fires when a cell **exits edit mode**                                                                                                                     | `GridEditDoneEventArgs` | **false**   |
- | `RowEdit`       | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `GridEditEventArgs`     | **true**    |
- | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `GridEditDoneEventArgs` | **false**   |
- | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `GridEditDoneEventArgs` | **false**   |
+| Event           | Description                                                                                                                                               | Arguments               | Cancellable |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ----------- |
+| `RowEditEnter`  | If `RowEditing` is enabled, fires when a row enters edit mode                                                                                             | `GridEditEventArgs`     | **true**    |
+| `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`)                                                                                             | `GridEditEventArgs`     | **true**    |
+| `CellEdit`      | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing <kbd>ENTER</kbd>)                                            | `GridEditEventArgs`     | **true**    |
+| `CellEditDone`  | If value is changed, fires **after** a cell has been edited and cell's value is **committed**                                                             | `GridEditDoneEventArgs` | **false**   |
+| `CellEditExit`  | Fires when a cell **exits edit mode**                                                                                                                     | `GridEditDoneEventArgs` | **false**   |
+| `RowEdit`       | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `GridEditEventArgs`     | **true**    |
+| `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `GridEditDoneEventArgs` | **false**   |
+| `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `GridEditDoneEventArgs` | **false**   |
 
 ### Event Cancellation
 
@@ -94,16 +100,16 @@ The following sample demonstrates the editing execution sequence in action:
 
 `sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} editing lifecycle"`
 
-
 ### Features integration
+
 While a cell/row is in edit mode, a user may interact with the grid in many ways. The following table specifies how a certain interaction affects the current editing:
 
-| {ComponentTitle} | Filtering | Sorting | Paging | Moving | Pinning | Hiding | GroupBy | Resizing | Escape | Enter |  F2   |  Tab  | Cell Click | Add new row/Delete/Edit |
-| ---------------- | :-------: | :-----: | :----: | :----: | :-----: | :----: | :-----: | :------: | :----: | :---: | :---: | :---: | :--------: | :---------------------: |
-| Keep edit mode   |           |         |        |        |         |        |         |    ✔     |        |       |       |       |            |                         |
-| Exit edit mode   |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |   ✔   |   ✔   |   ✔   |     ✔      |            ✔            |
-| Commit           |           |         |        |        |         |        |         |          |        |   ✔   |   ✔   |   ✔   |     ✔      |            ✔            |
-| Discard          |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |       |       |       |            |                         |
+| {ComponentTitle} | Filtering | Sorting | Paging | Moving | Pinning | Hiding | GroupBy | Resizing | Escape | Enter | F2  | Tab | Cell Click | Add new row/Delete/Edit |
+| ---------------- | :-------: | :-----: | :----: | :----: | :-----: | :----: | :-----: | :------: | :----: | :---: | :-: | :-: | :--------: | :---------------------: |
+| Keep edit mode   |           |         |        |        |         |        |         |    ✔     |        |       |     |     |            |                         |
+| Exit edit mode   |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |   ✔   |  ✔  |  ✔  |     ✔      |            ✔            |
+| Commit           |           |         |        |        |         |        |         |          |        |   ✔   |  ✔  |  ✔  |     ✔      |            ✔            |
+| Discard          |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |       |     |     |            |                         |
 
 As seen from the table, all interactions, except resizing a column, will end the editing and will discard the new values. Should the new value be committed, this can be done by the developer in the corresponding feature "-ing" event.
 
@@ -125,6 +131,7 @@ public onSorting(event: ISortingEventArgs) {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```html
 <{ComponentSelector} id="grid" primary-key="ProductID" >
 </{ComponentSelector}>
@@ -142,6 +149,7 @@ public onSorting(event: IgcSortingEventArgs) {
     grid.endEdit(true);
 }
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -159,6 +167,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
 <!-- React -->
+
 ```tsx
 function onSorting(args: IgrSortingEventArgs) {
     const grid = args.target as {ComponentSelector};
@@ -168,6 +177,7 @@ function onSorting(args: IgrSortingEventArgs) {
 <{ComponentSelector} data={localData} primaryKey="ProductID" onSorting={onSorting}>
 </{ComponentSelector}>
 ```
+
 <!-- end: React -->
 
 ## API References
@@ -175,6 +185,7 @@ function onSorting(args: IgrSortingEventArgs) {
 - `{ComponentName}`
 
 <!-- Angular -->
+
 - `DatePicker`
 - `Checkbox`
 - `Overlay`
@@ -203,6 +214,7 @@ function onSorting(args: IgrSortingEventArgs) {
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
+
 - [Column Data Types](column-types.md#default-template)
 - [Virtualization and Performance](virtualization.md)
 - [Paging](paging.md)

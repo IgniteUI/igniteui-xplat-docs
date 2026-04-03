@@ -46,7 +46,6 @@ Before using the `Tabs`, you need to import it as follows:
 import { IgrTabs, IgrTab } from "igniteui-react";
 ```
 
-
 ```razor
 // in Program.cs file
 
@@ -54,7 +53,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTabsModule));
 ```
 
 ```ts
-import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcTabsComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcTabsComponent);
 ```
@@ -65,18 +64,18 @@ Simple `Tabs` declaration is done as follows:
 
 ```html
 <igc-tabs>
-    <igc-tab>
-      <div slot="label">Tab 1</div>
-      <span>Content for tab 1</span>
-    </igc-tab>
-    <igc-tab>
-      <div slot="label">Tab 2</div>
-      <span>Content for tab 2</span>
-    </igc-tab>
-    <igc-tab>
-      <div slot="label">Tab 3</div>
-      <span>Content for tab 3</span>
-    </igc-tab>
+  <igc-tab>
+    <div slot="label">Tab 1</div>
+    <span>Content for tab 1</span>
+  </igc-tab>
+  <igc-tab>
+    <div slot="label">Tab 2</div>
+    <span>Content for tab 2</span>
+  </igc-tab>
+  <igc-tab>
+    <div slot="label">Tab 3</div>
+    <span>Content for tab 3</span>
+  </igc-tab>
 </igc-tabs>
 ```
 
@@ -93,15 +92,15 @@ Simple `Tabs` declaration is done as follows:
 
 ```tsx
 <IgrTabs>
-    <IgrTab label="Tab 1">
-      <span>Panel 1</span>
-    </IgrTab>
-    <IgrTab label="Tab 2">
-      <span>Panel 2</span>
-    </IgrTab>
-    <IgrTab label="Tab 3">
-      <span>Panel 3</span>
-    </IgrTab>
+  <IgrTab label="Tab 1">
+    <span>Panel 1</span>
+  </IgrTab>
+  <IgrTab label="Tab 2">
+    <span>Panel 2</span>
+  </IgrTab>
+  <IgrTab label="Tab 3">
+    <span>Panel 3</span>
+  </IgrTab>
 </IgrTabs>
 ```
 
@@ -142,25 +141,21 @@ If the space is not enough to fit all tabs, scroll buttons are displayed.
 
 `sample="/layouts/tabs/alignment", height="200", alt="{Platform} Tabs Example"`
 
-
-
 ### Scrolling
 
 Scroll buttons are shown when the available space is not enough to render all {Platform} tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
 
 `sample="/layouts/tabs/scrolling", height="150", alt="{Platform} Tabs Example"`
 
-
-
 ### Keyboard Navigation
 
-|Keys|Description|
-|----|-----------|
-| <kbd>←</kbd> | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
-| <kbd>→</kbd> | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
-| <kbd>HOME</kbd> | Selects the first tab. |
-| <kbd>END</kbd> | Selects the last tab. |
-| <kbd>ENTER</kbd> / <kbd>SPACE</kbd> | Selects the focused tab when `Activation` is `Manual` |
+| Keys                                | Description                                                                                                                                  |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| <kbd>←</kbd>                        | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
+| <kbd>→</kbd>                        | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
+| <kbd>HOME</kbd>                     | Selects the first tab.                                                                                                                       |
+| <kbd>END</kbd>                      | Selects the last tab.                                                                                                                        |
+| <kbd>ENTER</kbd> / <kbd>SPACE</kbd> | Selects the focused tab when `Activation` is `Manual`                                                                                        |
 
 ### Prefix / Suffix
 
@@ -168,126 +163,133 @@ Each tab has default slot to display information - icon, text or both and `prefi
 
 `sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} Tabs Example"`
 
-
-
 ## Styling
 
 The `Tabs` component exposes several CSS parts, giving you full control over its style:
 
 <!-- WebComponents, React -->
-| Name | Description |
-|--|--|
-| `selected-indicator` | The selected indicator. |
+
+| Name                  | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `selected-indicator`  | The selected indicator.                                   |
 | `start-scroll-button` | The start scroll button displayed when the tabs overflow. |
-| `end-scroll-button` | The end scroll button displayed when the tabs overflow. |
+| `end-scroll-button`   | The end scroll button displayed when the tabs overflow.   |
+
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-| Name | Description |
-|--|--|
-| `headers` | The wrapper which includes the tabs and the scroll buttons. |
-| `headers-content` | The container for the tabs which represents the available space for rendering of the tabs. |
-| `headers-wrapper` | The wrapper for the tabs and the selected indicator. |
-| `headers-scroll` | The container for the tabs. |
-| `selected-indicator` | The selected indicator. |
-| `start-scroll-button` | The start scroll button displayed when the tabs overflow. |
-| `end-scroll-button` | The end scroll button displayed when the tabs overflow. |
-| `content` | The container for the content where the data is displayed. |
+
+| Name                  | Description                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| `headers`             | The wrapper which includes the tabs and the scroll buttons.                                |
+| `headers-content`     | The container for the tabs which represents the available space for rendering of the tabs. |
+| `headers-wrapper`     | The wrapper for the tabs and the selected indicator.                                       |
+| `headers-scroll`      | The container for the tabs.                                                                |
+| `selected-indicator`  | The selected indicator.                                                                    |
+| `start-scroll-button` | The start scroll button displayed when the tabs overflow.                                  |
+| `end-scroll-button`   | The end scroll button displayed when the tabs overflow.                                    |
+| `content`             | The container for the content where the data is displayed.                                 |
+
 <!-- end: Blazor -->
 
 The `Tab` component exposes the following CSS parts:
 
 <!-- WebComponents, React -->
-|Name|Description|
-|--|--|
-| `content` | Tab header's label slot container. |
-| `prefix` | Tab header's label prefix. |
-| `suffix` | Tab header's label suffix. |
-| `tab-header` | The header of a single tab. |
-| `tab-body` | Holds the body content of a single tab, only the body of the selected tab is visible. |
+
+| Name         | Description                                                                           |
+| ------------ | ------------------------------------------------------------------------------------- |
+| `content`    | Tab header's label slot container.                                                    |
+| `prefix`     | Tab header's label prefix.                                                            |
+| `suffix`     | Tab header's label suffix.                                                            |
+| `tab-header` | The header of a single tab.                                                           |
+| `tab-body`   | Holds the body content of a single tab, only the body of the selected tab is visible. |
 
 ```css
 igc-tab::part(tab-header),
 igc-tabs::part(inner)::after {
-    --item-background: var(--ig-surface-600);
-    --border-color: var(--ig-success-300);
+  --item-background: var(--ig-surface-600);
+  --border-color: var(--ig-success-300);
 }
 
 igc-tab::part(tab-body),
 igc-tab[selected] igc-icon {
-    --item-active-icon-color: var(--ig-success-300);
+  --item-active-icon-color: var(--ig-success-300);
 }
 
 igc-tab:not([selected]) igc-icon {
-    --item-icon-color: var(--ig-gray-500);
+  --item-icon-color: var(--ig-gray-500);
 }
 
 igc-tabs::part(start-scroll-button),
 igc-tabs::part(end-scroll-button) {
-    --background: var(--ig-surface-600);
-    --hover-background: var(--ig-surface-700);
-    --active-background: var(--ig-surface-700);
-    --disabled-background: var(--ig-gray-100);
-    --button-color: var(--ig-gray-700);
-    --button-hover-color: var(--ig-gray-800);
-    --button-disabled-color: var(--ig-gray-300);
-    --border-color: var(--ig-surface-600);
+  --background: var(--ig-surface-600);
+  --hover-background: var(--ig-surface-700);
+  --active-background: var(--ig-surface-700);
+  --disabled-background: var(--ig-gray-100);
+  --button-color: var(--ig-gray-700);
+  --button-hover-color: var(--ig-gray-800);
+  --button-disabled-color: var(--ig-gray-300);
+  --border-color: var(--ig-surface-600);
 }
 
 igc-tab::part(tab-header) {
-    --item-hover-color: var(--ig-success-500);
+  --item-hover-color: var(--ig-success-500);
 }
 
 igc-tab::part(tab-header)::before {
-    --border-color--hover: var(--ig-gray-500);
+  --border-color--hover: var(--ig-gray-500);
 }
 ```
+
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-|Name|Description|
-|--|--|
+
+| Name      | Description          |
+| --------- | -------------------- |
 | `content` | The content wrapper. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
+| `prefix`  | The prefix wrapper.  |
+| `suffix`  | The suffix wrapper.  |
 
 ```css
 igc-tab::part(tab-header),
 igc-tabs::part(inner)::after {
-    --item-background: var(--ig-surface-600);
-    --border-color: var(--ig-success-300);
+  --item-background: var(--ig-surface-600);
+  --border-color: var(--ig-success-300);
 }
 
 igc-tab::part(tab-body),
 igc-tab[selected] igc-icon {
-    --item-active-icon-color: var(--ig-success-300);
+  --item-active-icon-color: var(--ig-success-300);
 }
 
 igc-tab:not([selected]) igc-icon {
-    --item-icon-color: var(--ig-gray-500);
+  --item-icon-color: var(--ig-gray-500);
 }
 
 igc-tabs::part(start-scroll-button),
 igc-tabs::part(end-scroll-button) {
-    --background: var(--ig-surface-600);
-    --hover-background: var(--ig-surface-700);
-    --active-background: var(--ig-surface-700);
-    --disabled-background: var(--ig-gray-100);
-    --button-color: var(--ig-gray-700);
-    --button-hover-color: var(--ig-gray-800);
-    --button-disabled-color: var(--ig-gray-300);
-    --border-color: var(--ig-surface-600);
+  --background: var(--ig-surface-600);
+  --hover-background: var(--ig-surface-700);
+  --active-background: var(--ig-surface-700);
+  --disabled-background: var(--ig-gray-100);
+  --button-color: var(--ig-gray-700);
+  --button-hover-color: var(--ig-gray-800);
+  --button-disabled-color: var(--ig-gray-300);
+  --border-color: var(--ig-surface-600);
 }
 
 igc-tab::part(tab-header) {
-    --item-hover-color: var(--ig-success-500);
+  --item-hover-color: var(--ig-success-500);
 }
 
 igc-tab::part(tab-header)::before {
-    --border-color--hover: var(--ig-gray-500);
+  --border-color--hover: var(--ig-gray-500);
 }
 ```
+
 <!-- end: Blazor -->
+
 `sample="/layouts/tabs/styling", height="150", alt="Tabs Styling Example"`
 
 ## API Reference

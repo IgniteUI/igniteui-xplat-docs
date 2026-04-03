@@ -5,6 +5,7 @@ _keywords: {Platform} File input, {ProductName}, Infragistics
 _license: MIT
 mentionedTypes: ["Input", "Icon", "Button"]
 ---
+
 # {Platform} File Input Overview
 
 The {ProductName} File Input component provides an interactive way for users to select and upload files. It extends the base `Input` functionality by adding file-specific features such as file selection, displaying selected file names, and supporting multiple file uploads.
@@ -32,7 +33,10 @@ npm install {PackageWebComponents}
 After that, you need to import the `FileInput` as follows:
 
 ```ts
-import { defineComponents, IgcFileInputComponent } from 'igniteui-webcomponents';
+import {
+  defineComponents,
+  IgcFileInputComponent,
+} from "igniteui-webcomponents";
 
 defineComponents(IgcFileInputComponent);
 ```
@@ -42,7 +46,7 @@ defineComponents(IgcFileInputComponent);
 Now you can start with a basic configuration of the {Platform} `FileInput`.
 
 ```html
-<igc-file-input label="File Input" required=true></igc-file-input>
+<igc-file-input label="File Input" required="true"></igc-file-input>
 ```
 
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
@@ -69,7 +73,8 @@ The `FileInput` component offers a variety of properties that allow you to confi
   accept=".jpg, .png, .gif"
   placeholder="Files missing"
   required
-  multiple>
+  multiple
+>
 </igc-file-input>
 ```
 
@@ -105,6 +110,7 @@ The `FileInput` component integrates seamlessly with the HTML Form element. Usin
 ## Limitations
 
 The `FileInput` component currently has the following limitations:
+
 - The default strings for the "Browse" button and the "No file chosen" message is not automatically localized. These strings remain the same across all locales but can be manually customized using the appropriate slots or placeholder binding.
 - Files cannot be set manually through the `value` property. File selection can be done only via the file picker. You can however pass an empty string `''` to reset the field.
 
@@ -121,17 +127,16 @@ To support accessibility best practices, the component also applies relevant ARI
 
 The `FileInput` component exposes CSS parts which we can use for styling. The following table lists all of the exposed CSS parts:
 
-|Name|Description|
-|--|--|
-| `container` | The main wrapper that holds all main input elements. |
-| `input` | The native input element. |
-| `label` | The native label element. |
-| `file-names` | The file names wrapper. |
-| `file-selector-button` | The browse button. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
-| `helper-text` | The helper text wrapper. |
-
+| Name                   | Description                                          |
+| ---------------------- | ---------------------------------------------------- |
+| `container`            | The main wrapper that holds all main input elements. |
+| `input`                | The native input element.                            |
+| `label`                | The native label element.                            |
+| `file-names`           | The file names wrapper.                              |
+| `file-selector-button` | The browse button.                                   |
+| `prefix`               | The prefix wrapper.                                  |
+| `suffix`               | The suffix wrapper.                                  |
+| `helper-text`          | The helper text wrapper.                             |
 
 ```scss
 igc-file-input::part(file-names) {
@@ -152,7 +157,6 @@ igc-file-input::part(label) {
 `sample="/inputs/file-input/styling", height="120", alt="{Platform} File Input Styling"`
 
 <div class="divider"></div>
-
 
 ## API References
 

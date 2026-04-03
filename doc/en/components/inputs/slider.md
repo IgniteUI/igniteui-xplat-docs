@@ -14,11 +14,10 @@ The {Platform} Slider & Range Slider components allow selection in a given range
 
 `sample="/inputs/slider/overview", height="200", alt="{Platform} Slider Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -28,8 +27,12 @@ npm install {PackageWebComponents}
 Before using the `Slider` and `RangeSlider`, you need to register them as follows:
 
 ```ts
-import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import {
+  defineComponents,
+  IgcSliderComponent,
+  IgcRangeSliderComponent,
+} from "igniteui-webcomponents";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
@@ -39,6 +42,7 @@ For a complete introduction to the {ProductName}, read the [**Getting Started**]
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
@@ -48,14 +52,15 @@ npm install igniteui-react
 You will then need to import the `Slider` and `RangeSlider`and its necessary CSS, like so:
 
 ```tsx
-import { IgrSlider, IgrRangeSlider } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrSlider, IgrRangeSlider } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
-Before using the `Slider` and `RangeSlider`, you need to register them as follows:
 
+Before using the `Slider` and `RangeSlider`, you need to register them as follows:
 
 ```razor
 // in Program.cs file
@@ -92,10 +97,7 @@ The main difference between the Slider and Range Slider components is that the S
 
 Both sliders emit two events when any of the values is changed. The `Input` event is emitted whenever a value is changed using keyboard or drag interaction while the `Change` event is emitted when the value change is committed on drag end or keyboard interaction.
 
-
 `sample="/inputs/slider/value", height="250", alt="{Platform} Slider Value Example"`
-
-
 
 While dragging a slider thumb, it displays its value in a tooltip. You could hide this tooltip using the `HideTooltip` property.
 
@@ -105,23 +107,17 @@ You can use the `Disabled` property of the sliders to disable their user interac
 
 `sample="/inputs/slider/disabled", height="120", alt="{Platform} Slider Disabled Example"`
 
-
-
 ### Constraints
 
 The track of the sliders has a minimum and maximum values which are configured using the `Min` and `Max` properties. Additionally, you can restrict the thumb dragging using the `LowerBound` and `UpperBound` properties.
 
 `sample="/inputs/slider/constraints", height="120", alt="{Platform} Slider Constraints Example"`
 
-
-
 ### Step
 
 The `Step` property specifies the granularity of the slider that the value must adhere to. By default, the slider track looks continuous. Setting the `DiscreteTrack` property of the slider to **true** will make it to display the steps on the track.
 
 `sample="/inputs/slider/discrete", height="120", alt="{Platform} Slider Discrete Track Example"`
-
-
 
 If the `Step` property is set to `0`, no stepping is implied and any value in the slider range is allowed. In this case, the slider will look continuous even if `DiscreteTrack` is set to **true**.
 
@@ -131,15 +127,11 @@ The slider components could display tick marks and labels. The slider components
 
 `sample="/inputs/slider/ticks", height="150", alt="{Platform} Slider Tick Marks Example"`
 
-
-
 Additionally, you could configure the orientation of the tick marks using the `TickOrientation` property. By default, the `TickOrientation` value is `end` which displays the ticks below the slider track. You could set it to `start` which displays them above the track and `mirror` which mirrors the ticks above and below the track.
 
 By default, the tick marks display labels with their values. You could modify the rotation of the tick labels using the `SliderTickLabelRotation` property. Additionally, you could hide the labels of the primary and secondary ticks using the `HidePrimaryLabels` and `HideSecondaryLabels` properties.
 
 `sample="/inputs/slider/tick-labels", height="150", alt="{Platform} Slider Tick Mark Labels Example"`
-
-
 
 ### Value Format
 
@@ -147,36 +139,32 @@ If you want to format the thumb and tick label values, the slider provides `Valu
 
 `sample="/inputs/slider/value-format", height="230", alt="{Platform} Slider Value Format Example"`
 
-
-
 ### Labels
 
 In some cases you would want to format the values of the slider as string values i.e. map the values **[0, 1, 2]** to **['Low', 'Medium', 'High']**. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
 
 `sample="/inputs/slider/labels", height="150", alt="{Platform} Slider Labels Example"`
 
-
-
 ## Styling
 
 The `Slider` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the slider. |
-| `ticks` | The ticks container. |
-| `tick-group` | The tick group container. |
-| `tick` | The tick element. |
-| `tick-label` | The tick label element. |
-| `tick-label-inner` | The inner element of the tick label. |
-| `thumbs` | The thumbs container. |
-| `thumb` | The thumb element. |
-| `thumb-label` | The label container of the thumb tooltip. |
-| `thumb-label-inner` | The label element of the thumb tooltip. |
-| `track` | The track container. |
-| `steps` | The track steps element. |
-| `inactive` | The inactive element of the track. |
-| `fill` | The filled part of the track. |
+| Name                | Description                               |
+| ------------------- | ----------------------------------------- |
+| `base`              | The base wrapper of the slider.           |
+| `ticks`             | The ticks container.                      |
+| `tick-group`        | The tick group container.                 |
+| `tick`              | The tick element.                         |
+| `tick-label`        | The tick label element.                   |
+| `tick-label-inner`  | The inner element of the tick label.      |
+| `thumbs`            | The thumbs container.                     |
+| `thumb`             | The thumb element.                        |
+| `thumb-label`       | The label container of the thumb tooltip. |
+| `thumb-label-inner` | The label element of the thumb tooltip.   |
+| `track`             | The track container.                      |
+| `steps`             | The track steps element.                  |
+| `inactive`          | The inactive element of the track.        |
+| `fill`              | The filled part of the track.             |
 
 The following sample demonstrates how to style the track fill and thumb parts:
 

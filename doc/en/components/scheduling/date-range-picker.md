@@ -8,7 +8,7 @@ mentionedTypes: ["DateRangePicker"]
 
 # {Platform} Date Range Picker Overview
 
-The {ProductName} Date Range Picker is a lightweight component that includes a text input and a calendar pop-up, allowing users to easily select start and end dates.  It is highly customizable to fit various application requirements, offering features such as date range restrictions, configurable date formats, and more.
+The {ProductName} Date Range Picker is a lightweight component that includes a text input and a calendar pop-up, allowing users to easily select start and end dates. It is highly customizable to fit various application requirements, offering features such as date range restrictions, configurable date formats, and more.
 
 ## Date Range Picker Example
 
@@ -29,8 +29,11 @@ npm install {PackageWebComponents}
 After that, you need to import the `DateRangePicker`, its necessary CSS, and register its module, as follows:
 
 ```ts
-import { defineComponents, IgcDateRangePickerComponent } from 'igniteui-webcomponents';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import {
+  defineComponents,
+  IgcDateRangePickerComponent,
+} from "igniteui-webcomponents";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcDateRangePickerComponent);
 ```
@@ -48,12 +51,14 @@ npm install igniteui-react
 After that, you need to import the `DateRangePicker` and its necessary CSS, as follows:
 
 ```tsx
-import { IgrDateRangePicker } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrDateRangePicker } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 To get started with the `DateRangePicker` component, first we need to register its module as follows:
 
 ```razor
@@ -62,11 +67,12 @@ To get started with the `DateRangePicker` component, first we need to register i
 builder.Services.AddIgniteUIBlazor(typeof(IgbDateRangePickerModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `DateRangePicker` component. The following needs to be placed in the wwwroot/index.html file in a Blazor Web Assembly project or the Pages/_Host.cshtml file in a Blazor Server project:
+You will also need to link an additional CSS file to apply the styling to the `DateRangePicker` component. The following needs to be placed in the wwwroot/index.html file in a Blazor Web Assembly project or the Pages/\_Host.cshtml file in a Blazor Server project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 Now you can start with a basic configuration of the {Platform} `DateRangePicker`.
@@ -86,12 +92,11 @@ When the calendar is visible, a date range can be selected by choosing both a st
 To instantiate a `DateRangePicker` in its default single input mode, use the following code:
 
 ```html
-<igc-date-range-picker>
-</igc-date-range-picker>
+<igc-date-range-picker> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker/>
+<IgrDateRangePicker />
 ```
 
 ```razor
@@ -101,12 +106,11 @@ To instantiate a `DateRangePicker` in its default single input mode, use the fol
 To switch the `DateRangePicker` to use two inputs, set the `UseTwoInputs` property to `true`.
 
 ```html
-<igc-date-range-picker use-two-inputs="true">
-</igc-date-range-picker>
+<igc-date-range-picker use-two-inputs="true"> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker useTwoInputs/>
+<IgrDateRangePicker useTwoInputs />
 ```
 
 ```razor
@@ -118,23 +122,23 @@ To switch the `DateRangePicker` to use two inputs, set the `UseTwoInputs` proper
 In addition to being selected or typed by the user, the range value of the `DateRangePicker` can also be set using the `Value` property. It's important to note that the value must follow the format: **{ start: startDate, end: endDate }**, where `startDate` and `endDate` are `Date` objects representing the selected range.
 
 ```ts
-let dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
+let dateRange = document.querySelector(
+  "igc-date-range-picker",
+) as IgcDateRangePickerComponent;
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
-dateRange.value = { start: startDate, end: endDate }
+dateRange.value = { start: startDate, end: endDate };
 ```
 
 ```tsx
 const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
-useEffect (() => {
-  dateRangeRef.current.value = { start: startDate, end: endDate }
-}, [])
+useEffect(() => {
+  dateRangeRef.current.value = { start: startDate, end: endDate };
+}, []);
 
-return (
-  <IgrDateRangePicker ref={dateRangeRef} />
-);
+return <IgrDateRangePicker ref={dateRangeRef} />;
 ```
 
 ```razor
@@ -150,18 +154,23 @@ return (
     };
 }
 ```
+
 <!-- WebComponents, React -->
 
 In addition, the value can be set as attribute. In this case it should represent an object that can be parsed correctly as JSON, where the `start` and `end` fields should have date values in the ISO 8601 format:
 
 ```html
 <igc-date-range-picker value='{"start":"2025-01-01","end":"2025-01-02"}'>
-<igc-date-range-picker/>
+  <igc-date-range-picker
+/></igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker value={{start: new Date('2025-01-01'), end: new Date('2025-01-02')}}/>
+<IgrDateRangePicker
+  value={{ start: new Date("2025-01-01"), end: new Date("2025-01-02") }}
+/>
 ```
+
 <!-- end: WebComponents, React -->
 
 ### Read-only & Non-editable
@@ -169,12 +178,11 @@ In addition, the value can be set as attribute. In this case it should represent
 You can also make the `DateRangePicker` read-only, which disables changing the range value through both typing and calendar selection, disables keyboard navigation, and makes the calendar and clear icons appear visually disabled. This is useful when the range is assigned via the value attribute and is intended to be display-only. To enable this behavior, simply set the `ReadOnly` property.
 
 ```html
-<igc-date-range-picker use-two-inputs="true" readonly>
-</igc-date-range-picker>
+<igc-date-range-picker use-two-inputs="true" readonly> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker useTwoInputs readOnly/>
+<IgrDateRangePicker useTwoInputs readOnly />
 ```
 
 ```razor
@@ -189,7 +197,7 @@ Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`,
 ```
 
 ```tsx
-<IgrDateRangePicker useTwoInputs nonEditable/>
+<IgrDateRangePicker useTwoInputs nonEditable />
 ```
 
 ```razor
@@ -201,12 +209,11 @@ Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`,
 By default, when clicked, the `DateRangePicker` opens its calendar pop-up in `dropdown` mode. Alternatively, the calendar can be opened in `dialog` mode by setting the `Mode` property to `dialog`.
 
 ```html
-<igc-date-range-picker mode="dialog">
-</igc-date-range-picker>
+<igc-date-range-picker mode="dialog"> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker mode='dialog'/>
+<IgrDateRangePicker mode="dialog" />
 ```
 
 ```razor
@@ -221,38 +228,38 @@ The available keyboard navigation options vary depending on whether the componen
 
 **Two Inputs Mode:**
 
-|Keys|Description|
-|----|-----------|
-| <kbd>←</kbd> | Moves the caret one character to the left |
-| <kbd>→</kbd> | Moves the caret one character to the right |
-| <kbd>CTRL</kbd> + <kbd>ArrowLeft</kbd> | Moves the caret to the beginning of the current input mask section or to the start of the previous one if it's already at the beginning |
-| <kbd>CTRL</kbd> + <kbd>ArrowRight</kbd> | Moves the caret to the end of the current input mask section or to the end of the next one if it's already at the end |
-| <kbd>ArrowUp</kbd> | Increments the currently "focused" part of the input mask by one step |
-| <kbd>ArrowDown</kbd> | Decrements the currently "focused" part of the input mask by one step |
-| <kbd>HOME</kbd> | Moves the caret to the beginning of the input mask |
-| <kbd>END</kbd> | Moves the caret to the end of the input mask |
-| <kbd>CTRL</kbd> + <kbd>;</kbd> | Sets the current date as the value of the component |
+| Keys                                    | Description                                                                                                                             |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <kbd>←</kbd>                            | Moves the caret one character to the left                                                                                               |
+| <kbd>→</kbd>                            | Moves the caret one character to the right                                                                                              |
+| <kbd>CTRL</kbd> + <kbd>ArrowLeft</kbd>  | Moves the caret to the beginning of the current input mask section or to the start of the previous one if it's already at the beginning |
+| <kbd>CTRL</kbd> + <kbd>ArrowRight</kbd> | Moves the caret to the end of the current input mask section or to the end of the next one if it's already at the end                   |
+| <kbd>ArrowUp</kbd>                      | Increments the currently "focused" part of the input mask by one step                                                                   |
+| <kbd>ArrowDown</kbd>                    | Decrements the currently "focused" part of the input mask by one step                                                                   |
+| <kbd>HOME</kbd>                         | Moves the caret to the beginning of the input mask                                                                                      |
+| <kbd>END</kbd>                          | Moves the caret to the end of the input mask                                                                                            |
+| <kbd>CTRL</kbd> + <kbd>;</kbd>          | Sets the current date as the value of the component                                                                                     |
 
 **Both Single and Two Inputs Modes:**
 
-|Keys|Description|
-|----|-----------|
-| <kbd>ALT</kbd> + <kbd>↓</kbd> | Opens the calendar dropdown |
+| Keys                          | Description                  |
+| ----------------------------- | ---------------------------- |
+| <kbd>ALT</kbd> + <kbd>↓</kbd> | Opens the calendar dropdown  |
 | <kbd>ALT</kbd> + <kbd>↑</kbd> | Closes the calendar dropdown |
 
 You can also navigate within the calendar pop-up using the keyboard. The navigation is the same as in the `Calendar` component.
 
-|Keys|Description|
-|----|-----------|
-| <kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd>| Navigates through the days in the month |
-| <kbd>ENTER</kbd> | Selects the currently focused day |
-| <kbd>PAGE UP</kbd> | Moves to the previous month's view |
-| <kbd>PAGE DOWN</kbd> | Moves to the next month's view |
-| <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> | Moves to the previous year |
-| <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> | Moves to the next year |
-| <kbd>HOME</kbd> | Focuses the first day of the current month that is in view (or earliest month when more than one month view is displayed) |
-| <kbd>END</kbd> | Focuses the last day of the current month that is in view. (or latest month when more than one month view is displayed) |
-| <kbd>Escape</kbd> | Closes the calender pop-up |
+| Keys                                                      | Description                                                                                                               |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> | Navigates through the days in the month                                                                                   |
+| <kbd>ENTER</kbd>                                          | Selects the currently focused day                                                                                         |
+| <kbd>PAGE UP</kbd>                                        | Moves to the previous month's view                                                                                        |
+| <kbd>PAGE DOWN</kbd>                                      | Moves to the next month's view                                                                                            |
+| <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd>                     | Moves to the previous year                                                                                                |
+| <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd>                   | Moves to the next year                                                                                                    |
+| <kbd>HOME</kbd>                                           | Focuses the first day of the current month that is in view (or earliest month when more than one month view is displayed) |
+| <kbd>END</kbd>                                            | Focuses the last day of the current month that is in view. (or latest month when more than one month view is displayed)   |
+| <kbd>Escape</kbd>                                         | Closes the calender pop-up                                                                                                |
 
 ## Layout
 
@@ -261,12 +268,11 @@ You can also navigate within the calendar pop-up using the keyboard. The navigat
 You can define a label for the `DateRangePicker` component using the `Label` property when it is in single input mode. In two inputs mode, you can use the `LabelStart` and `LabelEnd` properties to define labels for the start and end date input fields, respectively.
 
 ```html
-<igc-date-range-picker label="Date Range">
-</igc-date-range-picker>
+<igc-date-range-picker label="Date Range"> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker label='Date Range'/>
+<IgrDateRangePicker label="Date Range" />
 ```
 
 ```razor
@@ -274,12 +280,16 @@ You can define a label for the `DateRangePicker` component using the `Label` pro
 ```
 
 ```html
-<igc-date-range-picker use-two-inputs="true" label-start="Start Date" label-end="End Date">
+<igc-date-range-picker
+  use-two-inputs="true"
+  label-start="Start Date"
+  label-end="End Date"
+>
 </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker useTwoInputs labelStart='Start Date' labelEnd='End Date'/>
+<IgrDateRangePicker useTwoInputs labelStart="Start Date" labelEnd="End Date" />
 ```
 
 ```razor
@@ -294,12 +304,11 @@ The `Locale` property allows you to set the desired locale identifier, which det
 For example, to display the date in a Japanese format, you can set the locale property like this:
 
 ```html
-<igc-date-range-picker locale="ja-JP">
-</igc-date-range-picker>
+<igc-date-range-picker locale="ja-JP"> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker locale='ja-JP'/>
+<IgrDateRangePicker locale="ja-JP" />
 ```
 
 ```razor
@@ -309,12 +318,11 @@ For example, to display the date in a Japanese format, you can set the locale pr
 If you want to manually define the date format, you can use the `InputFormat` property by passing a custom format string:
 
 ```html
-<igc-date-range-picker input-format="dd/MM/yy">
-</igc-date-range-picker>
+<igc-date-range-picker input-format="dd/MM/yy"> </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker inputFormat='dd/MM/yy'/>
+<IgrDateRangePicker inputFormat="dd/MM/yy" />
 ```
 
 ```razor
@@ -329,7 +337,7 @@ The `DisplayFormat` property also accepts a custom format string, but it only ap
 ```
 
 ```tsx
-<IgrDateRangePicker inputFormat='dd/MM/yy' displayFormat='yy/MM/dd'/>
+<IgrDateRangePicker inputFormat="dd/MM/yy" displayFormat="yy/MM/dd" />
 ```
 
 ```razor
@@ -340,27 +348,31 @@ The `DisplayFormat` property also accepts a custom format string, but it only ap
 
 You can further customize the pop-up calendar using various properties:
 
-|Name|Type|Description|
-|--|--|--|
-| `Orientation` | 'vertical' or 'horizontal' | Allows you to set whether the calendar should be displayed vertically or horizontally. |
-| `VisibleMonths` | string | Controls how many months are visible at a time, with a value of either 1 or 2. |
-| `ShowWeekNumbers` | string | Enables or disables the week number column in the calendar. |
-| `Open` | boolean | Determines whether the calendar picker is open. |
-| `KeepOpenOnSelect` | boolean | Keeps the calendar picker open after a date selection. |
-| `KeepOpenOnOutsideClick` | boolean | Keeps the calendar picker open when clicking outside of it. |
-| `WeekStart` | string | Sets the start day of the week. |
-| `HideOutsideDays` | boolean | Hides days that fall outside the current month view. |
-| `HideHeader` | boolean | Hides the calendar header (applicable only in dialog mode). |
-| `HeaderOrientation` | 'vertical' or 'horizontal' | Aligns the calendar header vertically or horizontally (dialog mode only). |
-| `ActiveDate` | Date | Sets the date that is initially highlighted in the calendar. If not set, the current date becomes the active date. |
+| Name                     | Type                       | Description                                                                                                        |
+| ------------------------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `Orientation`            | 'vertical' or 'horizontal' | Allows you to set whether the calendar should be displayed vertically or horizontally.                             |
+| `VisibleMonths`          | string                     | Controls how many months are visible at a time, with a value of either 1 or 2.                                     |
+| `ShowWeekNumbers`        | string                     | Enables or disables the week number column in the calendar.                                                        |
+| `Open`                   | boolean                    | Determines whether the calendar picker is open.                                                                    |
+| `KeepOpenOnSelect`       | boolean                    | Keeps the calendar picker open after a date selection.                                                             |
+| `KeepOpenOnOutsideClick` | boolean                    | Keeps the calendar picker open when clicking outside of it.                                                        |
+| `WeekStart`              | string                     | Sets the start day of the week.                                                                                    |
+| `HideOutsideDays`        | boolean                    | Hides days that fall outside the current month view.                                                               |
+| `HideHeader`             | boolean                    | Hides the calendar header (applicable only in dialog mode).                                                        |
+| `HeaderOrientation`      | 'vertical' or 'horizontal' | Aligns the calendar header vertically or horizontally (dialog mode only).                                          |
+| `ActiveDate`             | Date                       | Sets the date that is initially highlighted in the calendar. If not set, the current date becomes the active date. |
 
 ```html
-<igc-date-range-picker orientation="vertical" visible-months="1" show-week-numbers="true">
+<igc-date-range-picker
+  orientation="vertical"
+  visible-months="1"
+  show-week-numbers="true"
+>
 </igc-date-range-picker>
 ```
 
 ```tsx
-<IgrDateRangePicker orientation='vertical' visibleMonths={1} showWeekNumbers/>
+<IgrDateRangePicker orientation="vertical" visibleMonths={1} showWeekNumbers />
 ```
 
 ```razor
@@ -377,7 +389,7 @@ You can also set the `Min` and `Max` properties to restrict user input by disabl
 ```
 
 ```tsx
-<IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
+<IgrDateRangePicker min={new Date("2025-05-06")} max={new Date("2025-05-10")} />
 ```
 
 ```razor
@@ -399,19 +411,21 @@ const today = new Date();
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7
+  today.getDate() + 7,
 );
 const nextWeek: CustomDateRange[] = [
   {
-    label: 'Next 7 days',
+    label: "Next 7 days",
     dateRange: {
       start: today,
-      end: nextSeven
-    }
-  }
-]
+      end: nextSeven,
+    },
+  },
+];
 
-const dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
+const dateRange = document.querySelector(
+  "igc-date-range-picker",
+) as IgcDateRangePickerComponent;
 dateRange.customRanges = nextWeek;
 dateRange.usePredefinedRanges = true;
 ```
@@ -421,21 +435,19 @@ const today = new Date();
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7
+  today.getDate() + 7,
 );
 const nextWeek: CustomDateRange[] = [
   {
     label: "Next 7 days",
     dateRange: {
       start: today,
-      end: nextSeven
-    }
-  }
+      end: nextSeven,
+    },
+  },
 ];
 
-return (
-  <IgrDateRangePicker usePredefinedRanges customRanges={nextWeek} />
-);
+return <IgrDateRangePicker usePredefinedRanges customRanges={nextWeek} />;
 ```
 
 ```razor
@@ -474,7 +486,9 @@ Now, when you click the newly created **"Next 7 days"** chip in the calendar pop
 You also have the ability to set disabled dates in the calendar to narrow the range of dates the user can choose from. To set the disabled dates, you can use the `DisabledDates` property.
 
 ```ts
-let dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
+let dateRange = document.querySelector(
+  "igc-date-range-picker",
+) as IgcDateRangePickerComponent;
 
 const minDate = new Date(2025, 4, 1);
 const maxDate = new Date(2025, 4, 31);
@@ -482,8 +496,8 @@ const maxDate = new Date(2025, 4, 31);
 dateRange.disabledDates = [
   {
     type: DateRangeType.Between,
-    dateRange: [minDate, maxDate]
-  }
+    dateRange: [minDate, maxDate],
+  },
 ] as DateRangeDescriptor[];
 ```
 
@@ -491,18 +505,16 @@ dateRange.disabledDates = [
 const dateRangeRef = useRef<IgrDateRangePicker>();
 const minDate = new Date(2025, 4, 5);
 const maxDate = new Date(2025, 4, 15);
-useEffect (() => {
+useEffect(() => {
   dateRangeRef.current.disabledDates = [
     {
       type: DateRangeType.Between,
-      dateRange: [minDate, maxDate]
-    }
+      dateRange: [minDate, maxDate],
+    },
   ] as DateRangeDescriptor[];
-}, [])
+}, []);
 
-return (
-  <IgrDateRangePicker ref={dateRangeRef} />
-);
+return <IgrDateRangePicker ref={dateRangeRef} />;
 ```
 
 ```razor
@@ -534,16 +546,16 @@ The `DateRangePicker` component can also be used seamlessly with the HTML form e
 
 In addition to the properties we've already covered, the `DateRangePicker` component offers a variety of additional properties that allow you to further configure its behavior.
 
-|Name|Type|Description|
-|--|--|--|
-| `Disabled` | boolean | Disables the component. |
-| `NonEditable` | boolean | Disables typing in the input field(s). |
-| `Placeholder` | string | Placeholder text for the single input mode. |
-| `PlaceholderStart` | string | Placeholder text for the start date input (two inputs mode). |
-| `PlaceholderEnd` | string | Placeholder text for the end date input (two inputs mode). |
-| `Outlined` | boolean | Determines whether the input part will have outline appearance in the [Material theme](../themes/overview.md). |
-| `Prompt` | string | The prompt character used for unfilled parts of the input(s) mask. |
-| `ResourceStrings` | IgcDateRangePickerResourceStrings | Resource strings for localization of the date-range picker and the calendar. |
+| Name               | Type                              | Description                                                                                                    |
+| ------------------ | --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `Disabled`         | boolean                           | Disables the component.                                                                                        |
+| `NonEditable`      | boolean                           | Disables typing in the input field(s).                                                                         |
+| `Placeholder`      | string                            | Placeholder text for the single input mode.                                                                    |
+| `PlaceholderStart` | string                            | Placeholder text for the start date input (two inputs mode).                                                   |
+| `PlaceholderEnd`   | string                            | Placeholder text for the end date input (two inputs mode).                                                     |
+| `Outlined`         | boolean                           | Determines whether the input part will have outline appearance in the [Material theme](../themes/overview.md). |
+| `Prompt`           | string                            | The prompt character used for unfilled parts of the input(s) mask.                                             |
+| `ResourceStrings`  | IgcDateRangePickerResourceStrings | Resource strings for localization of the date-range picker and the calendar.                                   |
 
 ### Slots
 
@@ -560,8 +572,8 @@ The `prefix` and `suffix` slots allow you to insert custom content before or aft
 
 ```tsx
 <IgrDateRangePicker>
-  <IgrIcon slot='prefix' name='down_arrow_icon'></IgrIcon>
-  <IgrIcon slot='suffix' name='upload_icon'></IgrIcon>
+  <IgrIcon slot="prefix" name="down_arrow_icon"></IgrIcon>
+  <IgrIcon slot="suffix" name="upload_icon"></IgrIcon>
 </IgrDateRangePicker>
 ```
 
@@ -607,7 +619,7 @@ In two inputs mode, you can also customize the default “to” text between the
 
 ```tsx
 <IgrDateRangePicker useTwoInputs>
-  <span slot='separator'>till</span>
+  <span slot="separator">till</span>
 </IgrDateRangePicker>
 ```
 
@@ -621,7 +633,9 @@ The `actions` slot allows you to insert a custom action button with your own log
 
 ```html
 <igc-date-range-picker id="DateRange">
-  <igc-button slot="actions" onclick="DateRange.showWeekNumbers = true">Toggle Week Numbers</igc-button>
+  <igc-button slot="actions" onclick="DateRange.showWeekNumbers = true"
+    >Toggle Week Numbers</igc-button
+  >
 </igc-date-range-picker>
 ```
 
@@ -633,7 +647,9 @@ const toggleWeekNumbers = () => {
 
 return (
   <IgrDateRangePicker ref={dateRangeRef}>
-    <IgrButton slot="actions" onClick={toggleWeekNumbers}>Toggle Week Numbers</IgrButton>
+    <IgrButton slot="actions" onClick={toggleWeekNumbers}>
+      Toggle Week Numbers
+    </IgrButton>
   </IgrDateRangePicker>
 );
 ```
@@ -646,18 +662,18 @@ return (
 
 In addition to the slots we've already covered, the following slots are also available in the `DateRangePicker` component:
 
-|Name|Description|
-|--|--|
-| `title` | Renders content for the calendar title. Applicable only in dialog mode. |
-| `helper-text` | Renders content below the input field(s). |
-| `header-date` | Replaces the default current date/range text in the calendar header. Applicable only in dialog mode. |
-| `clear-icon-start` | Custom clear icon for the start input (two inputs mode). |
-| `clear-icon-end` | Custom clear icon for the end input (two inputs mode). |
-| `calendar-icon-start` | Custom calendar icon for the start input (two inputs mode). |
-| `calendar-icon-end` | Custom calendar icon for the end input (two inputs mode). |
-| `calendar-icon-open` | Icon or content shown when the picker is open (applies to both inputs in two inputs mode). |
-| `calendar-icon-open-start` | Icon or content for the open state of the start input (two inputs mode).|
-| `calendar-icon-open-end` | Icon or content for the open state of the end input (two inputs mode). |
+| Name                       | Description                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `title`                    | Renders content for the calendar title. Applicable only in dialog mode.                              |
+| `helper-text`              | Renders content below the input field(s).                                                            |
+| `header-date`              | Replaces the default current date/range text in the calendar header. Applicable only in dialog mode. |
+| `clear-icon-start`         | Custom clear icon for the start input (two inputs mode).                                             |
+| `clear-icon-end`           | Custom clear icon for the end input (two inputs mode).                                               |
+| `calendar-icon-start`      | Custom calendar icon for the start input (two inputs mode).                                          |
+| `calendar-icon-end`        | Custom calendar icon for the end input (two inputs mode).                                            |
+| `calendar-icon-open`       | Icon or content shown when the picker is open (applies to both inputs in two inputs mode).           |
+| `calendar-icon-open-start` | Icon or content for the open state of the start input (two inputs mode).                             |
+| `calendar-icon-open-end`   | Icon or content for the open state of the end input (two inputs mode).                               |
 
 `sample="/scheduling/date-range-picker/slots", height="500", alt="{Platform} Date Range Picker Slots Example"`
 
@@ -665,39 +681,39 @@ In addition to the slots we've already covered, the following slots are also ava
 
 In addition to the properties and slots, the `DateRangePicker` also exposes few methods that you can use:
 
-|Name|Description|
-|--|--|
-| `Show` | Displays the calendar picker component. |
-| `Hide` | Hides the calendar picker component. |
-| `Toggle` | Toggles the calendar picker between the shown and hidden states. |
-| `Clear` | Clears the input fields, removing any user input. |
-| `Select` | Selects a date range value in the picker. |
+| Name                | Description                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `Show`              | Displays the calendar picker component.                                                                      |
+| `Hide`              | Hides the calendar picker component.                                                                         |
+| `Toggle`            | Toggles the calendar picker between the shown and hidden states.                                             |
+| `Clear`             | Clears the input fields, removing any user input.                                                            |
+| `Select`            | Selects a date range value in the picker.                                                                    |
 | `SetCustomValidity` | Sets a custom validation message. If the provided message is not empty, the input will be marked as invalid. |
 
 ## Styling
 
 Since the `DateRangePicker` component uses the `Calendar` component, it also inherits the Calendar's CSS parts, allowing you to style both components seamlessly. You can find the full list of exposed Calendar CSS parts here: [Calendar Styling](calendar.md#styling). In addition to the Calendar's CSS parts, the `DateRangePicker` also exposes some unique CSS parts that you can use to customize its appearance:
 
-|Name|Description|
-|--|--|
-| `separator` | The separator element between the two inputs. |
-| `ranges` | The wrapper that renders the custom and predefined ranges. |
-| `label` | The label wrapper that renders content above the target input. |
-| `container` | The main wrapper that holds all main input elements. |
-| `input` | The native input element. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
-| `calendar-icon` | The calendar icon wrapper for the closed state. |
-| `calendar-icon-start` | The calendar icon wrapper for the closed state of the start input (two inputs). |
-| `calendar-icon-end` | The calendar icon wrapper for the closed state of the end input (two inputs). |
-| `calendar-icon-open` | The calendar icon wrapper for the open state. |
-| `calendar-icon-open-start` | The calendar icon wrapper for the open state of the start input (two inputs). |
-| `calendar-icon-open-end` | The calendar icon wrapper for the open state of the end input (two inputs). |
-| `clear-icon` | The clear icon wrapper (single input). |
-| `clear-icon-start` | The clear icon wrapper for the start input (two inputs). |
-| `clear-icon-end` | The clear icon wrapper for the end input (two inputs). |
-| `actions` | The actions wrapper. |
-| `helper-text` | The helper-text wrapper that renders content below the target input. |
+| Name                       | Description                                                                     |
+| -------------------------- | ------------------------------------------------------------------------------- |
+| `separator`                | The separator element between the two inputs.                                   |
+| `ranges`                   | The wrapper that renders the custom and predefined ranges.                      |
+| `label`                    | The label wrapper that renders content above the target input.                  |
+| `container`                | The main wrapper that holds all main input elements.                            |
+| `input`                    | The native input element.                                                       |
+| `prefix`                   | The prefix wrapper.                                                             |
+| `suffix`                   | The suffix wrapper.                                                             |
+| `calendar-icon`            | The calendar icon wrapper for the closed state.                                 |
+| `calendar-icon-start`      | The calendar icon wrapper for the closed state of the start input (two inputs). |
+| `calendar-icon-end`        | The calendar icon wrapper for the closed state of the end input (two inputs).   |
+| `calendar-icon-open`       | The calendar icon wrapper for the open state.                                   |
+| `calendar-icon-open-start` | The calendar icon wrapper for the open state of the start input (two inputs).   |
+| `calendar-icon-open-end`   | The calendar icon wrapper for the open state of the end input (two inputs).     |
+| `clear-icon`               | The clear icon wrapper (single input).                                          |
+| `clear-icon-start`         | The clear icon wrapper for the start input (two inputs).                        |
+| `clear-icon-end`           | The clear icon wrapper for the end input (two inputs).                          |
+| `actions`                  | The actions wrapper.                                                            |
+| `helper-text`              | The helper-text wrapper that renders content below the target input.            |
 
 ```css
 igc-date-range-picker::part(label) {
@@ -727,13 +743,12 @@ igc-date-range-picker::part(clear-icon-end) {
 
 ## API References
 
- - `Input`
- - `Calendar`
- - `DateRangePicker`
- - `DateTimeInput`
- - `Dialog`
- - [`Styling & Themes`](../themes/overview.md)
-
+- `Input`
+- `Calendar`
+- `DateRangePicker`
+- `DateTimeInput`
+- `Dialog`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

@@ -10,22 +10,19 @@ _canonicalLink: {CanonicalLinkToGridColumnTypes}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Column Types
 
-The {ProductName} Data Table / Data Grid supports 5 column types, plus a Template Column type, giving you complete flexibility over the way your data is displayed in the {Platform} data grid.  Column types supported are Text column, Numeric column, DateTime column, Image column, ComboBox and Template.
+The {ProductName} Data Table / Data Grid supports 5 column types, plus a Template Column type, giving you complete flexibility over the way your data is displayed in the {Platform} data grid. Column types supported are Text column, Numeric column, DateTime column, Image column, ComboBox and Template.
 
 Each column binds to data by setting the `Field` property to the name of the corresponding property on the items of your underlying data source bound to the {Platform} data grid.
 
 ## {Platform} Column Types Example
 
-
 `sample="/grids/data-grid/column-types", height="600", alt="{Platform} Column Types Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -76,20 +73,32 @@ The following demonstrates the implementation of each of the columns described i
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    defaultColumnMinWidth="120"
-    autoGenerateColumns="false"
-    dataSource={this.data}>
-    <IgrTextColumn field="FirstName" headerText="First Name" />
-    <IgrTextColumn field="LastName" headerText="Last Name" />
-    <IgrComboBoxColumn field="City" headerText="City" dataSource={this.cityList} textField="name"/>
-    <IgrTemplateColumn field="Address" headerText="Address"
-                       cellUpdating={this.onAddressCellUpdating} />
-    <IgrImageColumn field="Photo" headerText="Photo"
-                    imageResourceType="LocalAsset" />
-    <IgrNumericColumn field="Age" headerText="Age"  />
-    <IgrDateTimeColumn field="Birthday" headerText="Date of Birth"  />
+  height="100%"
+  width="100%"
+  defaultColumnMinWidth="120"
+  autoGenerateColumns="false"
+  dataSource={this.data}
+>
+  <IgrTextColumn field="FirstName" headerText="First Name" />
+  <IgrTextColumn field="LastName" headerText="Last Name" />
+  <IgrComboBoxColumn
+    field="City"
+    headerText="City"
+    dataSource={this.cityList}
+    textField="name"
+  />
+  <IgrTemplateColumn
+    field="Address"
+    headerText="Address"
+    cellUpdating={this.onAddressCellUpdating}
+  />
+  <IgrImageColumn
+    field="Photo"
+    headerText="Photo"
+    imageResourceType="LocalAsset"
+  />
+  <IgrNumericColumn field="Age" headerText="Age" />
+  <IgrDateTimeColumn field="Birthday" headerText="Date of Birth" />
 </IgrDataGrid>
 ```
 

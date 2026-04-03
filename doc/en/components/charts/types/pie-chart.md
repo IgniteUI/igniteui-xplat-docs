@@ -6,6 +6,7 @@ _license: commercial
 mentionedTypes: ["XamPieChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {Platform} Pie Chart
 
 The {ProductName} Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
@@ -15,8 +16,6 @@ The {ProductName} Pie Chart, or Pie Graph, is a part-to-whole chart that shows h
 You can create the {Platform} Pie Chart in the `XamPieChart` by binding your data items with a string and a numeric data value. These data values will add up to a value of 100% of visualization. In this case, the example shows the overall breakdown of budget spend by department.
 
 `sample="/charts/pie-chart/overview", height="600", alt="{Platform} Pie Chart Overview"`
-
-
 
 <div class="divider--half"></div>
 
@@ -71,8 +70,6 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 
 `sample="/charts/pie-chart/legend", height="600", alt="{Platform} Pie Chart Legend"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Pie Chart Others Category
@@ -85,8 +82,6 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 
 `sample="/charts/pie-chart/others", height="600", alt="{Platform} Pie Chart Others"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Pie Chart Explosion
@@ -95,11 +90,10 @@ The pie chart supports explosion of individual pie slices as well as a `SliceCli
 
 `sample="/charts/pie-chart/explosion", height="600", alt="{Platform} Pie Chart Explosion"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Pie Chart Selection
+
 The pie chart supports slice selection by mouse click as the default behavior. You can determine the selected slices by using the `SelectedItems` property. The selected slices are then highlighted.
 
 There is a property called `SelectionMode` which is how you set what mode you want the pie chart to use. The default value is `Single`. In order to disable selection, set the property to `Manual`.
@@ -111,6 +105,7 @@ The pie chart supports three different selection modes.
 - Manual - When the mode is set to Manual, selection is disabled.
 
 The pie chart has 4 events associated with selection:
+
 - SelectedItemChanging
 - SelectedItemChanged
 - SelectedItemsChanging
@@ -122,8 +117,6 @@ For scenarios where you click on the Others slice, the pie chart will return an 
 
 `sample="/charts/pie-chart/selection", height="600", alt="{Platform} Pie Chart Selection"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Pie Chart Animation
@@ -134,17 +127,13 @@ In the code below, the radiusFactor is increasing the chart by 0.25% of the size
 
 `sample="/charts/pie-chart/animation", height="600", alt="{Platform} Pie Chart Animation"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Pie Chart Styling
 
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
-
 `sample="/charts/pie-chart/styling", height="600", alt="{Platform} Pie Chart Styling"`
-
 
 <div class="divider--half"></div>
 
@@ -152,9 +141,7 @@ Once our pie chart is created, we may want to make some further styling customiz
 
 The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
-
 `sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} Radial Pie Chart"`
-
 
 <div class="divider--half"></div>
 
@@ -165,6 +152,7 @@ The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a g
 - [Radial Chart](radial-chart.md)
 
 ## API References
+
 The following table lists API members mentioned in the above sections:
 
 - `LegendItemBadgeTemplate`
@@ -174,8 +162,7 @@ The following table lists API members mentioned in the above sections:
 - `OthersCategoryType`
 - `SelectionMode`
 
- |Chart Type       | Control Name   | API Members |
- |-----------------|----------------|------------ |
- |Pie Chart      | `XamPieChart`     | `PieChart` |
- |Radial Pie Chart | `XamDataChart` | `RadialPieSeries` |
-
+| Chart Type       | Control Name   | API Members       |
+| ---------------- | -------------- | ----------------- |
+| Pie Chart        | `XamPieChart`  | `PieChart`        |
+| Radial Pie Chart | `XamDataChart` | `RadialPieSeries` |

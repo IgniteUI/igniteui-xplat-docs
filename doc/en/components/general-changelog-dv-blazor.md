@@ -6,6 +6,7 @@ mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Tool
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {ProductName} Changelog
 
 <!-- markdownlint-disable MD003 MD007 MD031 MD046 -->
@@ -19,23 +20,27 @@ All notable changes for each version of {ProductName} are documented on this pag
 ## **{PackageVerLatest}**
 
 ### Bug Fixes
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-| 3229  | Grids | Latest version of Blazor Grids shows Trial watermark for Licensed version |
-| 2754  | IgbTabs | Changing the check state for IgbSwitch inside the tab causes the tab content to disappear |
+
+| Bug Number | Control | Description                                                                               |
+| ---------- | ------- | ----------------------------------------------------------------------------------------- |
+| 3229       | Grids   | Latest version of Blazor Grids shows Trial watermark for Licensed version                 |
+| 2754       | IgbTabs | Changing the check state for IgbSwitch inside the tab causes the tab content to disappear |
 
 ## **{PackageVerChanges-25-2-MAR}**
 
 ### {PackageGrids} (Grids)
 
 #### IgbQueryBuilder
+
 - Added new component - IgbQueryBuilder - a UI component that allows users to build complex filtering conditions through an intuitive visual interface.
 
 #### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
-  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+- Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
 
 #### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid
-  - Added PDF export functionality to grid components. Grids can now be exported to PDF format alongside the existing Excel and CSV export options.
+
+- Added PDF export functionality to grid components. Grids can now be exported to PDF format alongside the existing Excel and CSV export options.
 
 #### Breaking Changes
 
@@ -45,77 +50,82 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### General
 
 #### IgbThemeProvider
+
 - Added new component - IgbThemeProvider - allows scoping themes to specific page sections using Lit's context API, enabling multiple themes on a single page. Works in both Shadow and Light DOM.
 
 #### Badge
- - New dot type, improved outline implementation following WCAG AA accessibility standards and theme based sizing. [#1889](https://github.com/IgniteUI/igniteui-webcomponents/pull/1889)
+
+- New dot type, improved outline implementation following WCAG AA accessibility standards and theme based sizing. [#1889](https://github.com/IgniteUI/igniteui-webcomponents/pull/1889)
 
 #### Checkbox
-  - New --tick-width CSS property. [#1897](https://github.com/IgniteUI/igniteui-webcomponents/pull/1897)
-#### Combo
-  - New disableClear property which disables the clear button of the combo component. [#1896](https://github.com/IgniteUI/igniteui-webcomponents/pull/1896)
-#### Mask input
-  - Transform unicode digit code points to ASCII numbers for numeric patterns. [#1907](https://github.com/IgniteUI/igniteui-webcomponents/pull/1907)
 
+- New --tick-width CSS property. [#1897](https://github.com/IgniteUI/igniteui-webcomponents/pull/1897)
+
+#### Combo
+
+- New disableClear property which disables the clear button of the combo component. [#1896](https://github.com/IgniteUI/igniteui-webcomponents/pull/1896)
+
+#### Mask input
+
+- Transform unicode digit code points to ASCII numbers for numeric patterns. [#1907](https://github.com/IgniteUI/igniteui-webcomponents/pull/1907)
 
 #### Enhancements
- - Accessibility color adjustments for Button, Button group, Calendar, Checkbox, Date picker, date range picker, Nav drawer, Radio group, Stepper. [#1959](https://github.com/IgniteUI/igniteui-webcomponents/pull/1959)
- - Updated and aligned styles with the design kit for Button, Calendar, Carousel, Combo, Date picker, Date range picker, input, Select, Textarea.
- - Improved keyboard navigation experience and grouping(now using native Math.groupBy) for Combo.
 
+- Accessibility color adjustments for Button, Button group, Calendar, Checkbox, Date picker, date range picker, Nav drawer, Radio group, Stepper. [#1959](https://github.com/IgniteUI/igniteui-webcomponents/pull/1959)
+- Updated and aligned styles with the design kit for Button, Calendar, Carousel, Combo, Date picker, Date range picker, input, Select, Textarea.
+- Improved keyboard navigation experience and grouping(now using native Math.groupBy) for Combo.
 
 ### Bug Fixes
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-| 2189  | IgbDataChart | DataChart skips rendering axis when there are no labels |
-| 2317  | IgbGrid | Improve IgbGrid BodyTemplate Performance (C#/.NET templating) |
-| 2326  | IgbDataPieChart | Added OthersCategory styling properties to DataPieChart |
-| 2907  | IgbDateTimeInput  | IgbDateTimeInput Prompt parameter is not propagated to the underlying Web Component prompt property |
-| 2908  | IgbMaskInput | IgbMaskInput Prompt parameter is not propagated to the underlying Web Component prompt property |
-| 2909  | IgbPivotGrid  | IgbPivotGrid exposes SnackbarDisplayTime, but the property is not applicable and causes false test failures |
-| 38668 | IgbDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used |
-| 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
-| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
-| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
-| 41594 | IgbDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series |
-| 41598 | IgbDataChart | Exception editing a doughnut chart – DivideByZeroException  |
-| [#2079](https://github.com/IgniteUI/igniteui-webcomponents/pull/2079) | Calendar | `aria-hidden` state for weeks outside of the current month |
-| [#2078](https://github.com/IgniteUI/igniteui-webcomponents/pull/2078) | Date Picker | CSS border for slotted actions in dialog mode |
-| [#2068](https://github.com/IgniteUI/igniteui-webcomponents/pull/2068) | Input | Placeholder color on focus |
-| [#2073](https://github.com/IgniteUI/igniteui-webcomponents/pull/2073) | Input | CSS border when suffix slot content is present |
-| [#2069](https://github.com/IgniteUI/igniteui-webcomponents/pull/2069) | Textarea | Align bottom padding to the design system |
-| [#2063](https://github.com/IgniteUI/igniteui-webcomponents/pull/2063) | Validation | Slotted validation text follows the current theme |
-| [#2059](https://github.com/IgniteUI/igniteui-webcomponents/pull/2059) | Tile Manager | Header is hidden only when there is no content and maximize/fullscreen are disabled |
-| [#2061](https://github.com/IgniteUI/igniteui-webcomponents/pull/2061) | Theming | Resolve initial theme based on document computed styles rather than stylesheets |
-| [#1909](https://github.com/IgniteUI/igniteui-webcomponents/pull/1909) | Sass Theme Support | Checkbox — styled using Sass tools from the theming package |
-| [#1926](https://github.com/IgniteUI/igniteui-webcomponents/pull/1926) | Sass Theme Support | Chip — styled using Sass tools from the theming package |
-| [#1920](https://github.com/IgniteUI/igniteui-webcomponents/pull/1920) | Sass Theme Support | Combo — styled using Sass tools from the theming package |
-| [#1933](https://github.com/IgniteUI/igniteui-webcomponents/pull/1933) | Sass Theme Support | Select — styled using Sass tools from the theming package |
-| [#1966](https://github.com/IgniteUI/igniteui-webcomponents/pull/1966) | Sass Theme Support | Snackbar — styled using Sass tools from the theming package |
-| [#1972](https://github.com/IgniteUI/igniteui-webcomponents/pull/1972) | Sass Theme Support | Added missing shadows to components |
-| [#1929](https://github.com/IgniteUI/igniteui-webcomponents/pull/1929) | Sass Theme Support | Tabs — fixed non-working Sass theme parameters |
-| [#1935](https://github.com/IgniteUI/igniteui-webcomponents/pull/1935) | Sass Theme Support | Textarea — updated Sass themes |
-| [#1980](https://github.com/IgniteUI/igniteui-webcomponents/pull/1980) | Sass Theme Support | Radio — styled using Sass tools from the theming package |
-| [#1991](https://github.com/IgniteUI/igniteui-webcomponents/pull/1991) | Sass Theme Support | Switch — styled using Sass tools from the theming package |
-| [#2015](https://github.com/IgniteUI/igniteui-webcomponents/pull/2015) | Sass Theme Support | List — styled using Sass tools from the theming package |
-| [#2030](https://github.com/IgniteUI/igniteui-webcomponents/pull/2030) | Calendar | Focus styles for month/year views |
-| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965) | Combo | Notch border styles |
-| [#1964](https://github.com/IgniteUI/igniteui-webcomponents/pull/1964) | Checkbox & Switch | Internal ripple opacity when hovering over slotted content in the `helper-text` slot |
-| [#1947](https://github.com/IgniteUI/igniteui-webcomponents/pull/1947) | Dialog | Underlying dialog element now has `display: contents` and won't participate in DOM layout |
-| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986) | Dialog | `keepOpenOnEscape` not preventing the dialog from closing when Escape is pressed |
-| [#1997](https://github.com/IgniteUI/igniteui-webcomponents/pull/1997) | Dialog | Base styles and theming |
-| [#1985](https://github.com/IgniteUI/igniteui-webcomponents/pull/1985) | List & List Item | Added missing styles for slotted `igc-icon` in the list item |
-| [#2010](https://github.com/IgniteUI/igniteui-webcomponents/pull/2010) | List & List Item | Icon and icon button sizes for the Indigo theme |
-| [#2006](https://github.com/IgniteUI/igniteui-webcomponents/pull/2006) | Mask Input | Auto-fill behavior for mask patterns with literals |
-| [#1956](https://github.com/IgniteUI/igniteui-webcomponents/pull/1956) | Navbar | Icon and icon button sizes |
-| [#1957](https://github.com/IgniteUI/igniteui-webcomponents/pull/1957) | Select | Color for outlined type |
-| [#1998](https://github.com/IgniteUI/igniteui-webcomponents/pull/1998) | Tabs | Add active pseudo-elements backgrounds for the active tab in Material theme |
-| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008) | Tabs | Take scale factor when positioning the active tab indicator |
-| [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028) | Tabs | Selected indicator alignment |
-| [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip | Do not show the tooltip when the tooltip target is clicked |
-| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | Removed the max-width constraint for slotted content |
 
-
+| Bug Number                                                              | Control             | Description                                                                                                 |
+| ----------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 2189                                                                    | IgbDataChart        | DataChart skips rendering axis when there are no labels                                                     |
+| 2317                                                                    | IgbGrid             | Improve IgbGrid BodyTemplate Performance (C#/.NET templating)                                               |
+| 2326                                                                    | IgbDataPieChart     | Added OthersCategory styling properties to DataPieChart                                                     |
+| 2907                                                                    | IgbDateTimeInput    | IgbDateTimeInput Prompt parameter is not propagated to the underlying Web Component prompt property         |
+| 2908                                                                    | IgbMaskInput        | IgbMaskInput Prompt parameter is not propagated to the underlying Web Component prompt property             |
+| 2909                                                                    | IgbPivotGrid        | IgbPivotGrid exposes SnackbarDisplayTime, but the property is not applicable and causes false test failures |
+| 38668                                                                   | IgbDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used                                            |
+| 40238                                                                   | Excel               | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException                         |
+| 41167                                                                   | Excel               | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool            |
+| 41419                                                                   | Excel               | Saving a VBA Signed Excel file does not keep a signature/certificate.                                       |
+| 41594                                                                   | IgbDataChart        | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series          |
+| 41598                                                                   | IgbDataChart        | Exception editing a doughnut chart – DivideByZeroException                                                  |
+| [#2079](https://github.com/IgniteUI/igniteui-webcomponents/pull/2079)   | Calendar            | `aria-hidden` state for weeks outside of the current month                                                  |
+| [#2078](https://github.com/IgniteUI/igniteui-webcomponents/pull/2078)   | Date Picker         | CSS border for slotted actions in dialog mode                                                               |
+| [#2068](https://github.com/IgniteUI/igniteui-webcomponents/pull/2068)   | Input               | Placeholder color on focus                                                                                  |
+| [#2073](https://github.com/IgniteUI/igniteui-webcomponents/pull/2073)   | Input               | CSS border when suffix slot content is present                                                              |
+| [#2069](https://github.com/IgniteUI/igniteui-webcomponents/pull/2069)   | Textarea            | Align bottom padding to the design system                                                                   |
+| [#2063](https://github.com/IgniteUI/igniteui-webcomponents/pull/2063)   | Validation          | Slotted validation text follows the current theme                                                           |
+| [#2059](https://github.com/IgniteUI/igniteui-webcomponents/pull/2059)   | Tile Manager        | Header is hidden only when there is no content and maximize/fullscreen are disabled                         |
+| [#2061](https://github.com/IgniteUI/igniteui-webcomponents/pull/2061)   | Theming             | Resolve initial theme based on document computed styles rather than stylesheets                             |
+| [#1909](https://github.com/IgniteUI/igniteui-webcomponents/pull/1909)   | Sass Theme Support  | Checkbox — styled using Sass tools from the theming package                                                 |
+| [#1926](https://github.com/IgniteUI/igniteui-webcomponents/pull/1926)   | Sass Theme Support  | Chip — styled using Sass tools from the theming package                                                     |
+| [#1920](https://github.com/IgniteUI/igniteui-webcomponents/pull/1920)   | Sass Theme Support  | Combo — styled using Sass tools from the theming package                                                    |
+| [#1933](https://github.com/IgniteUI/igniteui-webcomponents/pull/1933)   | Sass Theme Support  | Select — styled using Sass tools from the theming package                                                   |
+| [#1966](https://github.com/IgniteUI/igniteui-webcomponents/pull/1966)   | Sass Theme Support  | Snackbar — styled using Sass tools from the theming package                                                 |
+| [#1972](https://github.com/IgniteUI/igniteui-webcomponents/pull/1972)   | Sass Theme Support  | Added missing shadows to components                                                                         |
+| [#1929](https://github.com/IgniteUI/igniteui-webcomponents/pull/1929)   | Sass Theme Support  | Tabs — fixed non-working Sass theme parameters                                                              |
+| [#1935](https://github.com/IgniteUI/igniteui-webcomponents/pull/1935)   | Sass Theme Support  | Textarea — updated Sass themes                                                                              |
+| [#1980](https://github.com/IgniteUI/igniteui-webcomponents/pull/1980)   | Sass Theme Support  | Radio — styled using Sass tools from the theming package                                                    |
+| [#1991](https://github.com/IgniteUI/igniteui-webcomponents/pull/1991)   | Sass Theme Support  | Switch — styled using Sass tools from the theming package                                                   |
+| [#2015](https://github.com/IgniteUI/igniteui-webcomponents/pull/2015)   | Sass Theme Support  | List — styled using Sass tools from the theming package                                                     |
+| [#2030](https://github.com/IgniteUI/igniteui-webcomponents/pull/2030)   | Calendar            | Focus styles for month/year views                                                                           |
+| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965)   | Combo               | Notch border styles                                                                                         |
+| [#1964](https://github.com/IgniteUI/igniteui-webcomponents/pull/1964)   | Checkbox & Switch   | Internal ripple opacity when hovering over slotted content in the `helper-text` slot                        |
+| [#1947](https://github.com/IgniteUI/igniteui-webcomponents/pull/1947)   | Dialog              | Underlying dialog element now has `display: contents` and won't participate in DOM layout                   |
+| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986)   | Dialog              | `keepOpenOnEscape` not preventing the dialog from closing when Escape is pressed                            |
+| [#1997](https://github.com/IgniteUI/igniteui-webcomponents/pull/1997)   | Dialog              | Base styles and theming                                                                                     |
+| [#1985](https://github.com/IgniteUI/igniteui-webcomponents/pull/1985)   | List & List Item    | Added missing styles for slotted `igc-icon` in the list item                                                |
+| [#2010](https://github.com/IgniteUI/igniteui-webcomponents/pull/2010)   | List & List Item    | Icon and icon button sizes for the Indigo theme                                                             |
+| [#2006](https://github.com/IgniteUI/igniteui-webcomponents/pull/2006)   | Mask Input          | Auto-fill behavior for mask patterns with literals                                                          |
+| [#1956](https://github.com/IgniteUI/igniteui-webcomponents/pull/1956)   | Navbar              | Icon and icon button sizes                                                                                  |
+| [#1957](https://github.com/IgniteUI/igniteui-webcomponents/pull/1957)   | Select              | Color for outlined type                                                                                     |
+| [#1998](https://github.com/IgniteUI/igniteui-webcomponents/pull/1998)   | Tabs                | Add active pseudo-elements backgrounds for the active tab in Material theme                                 |
+| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008)   | Tabs                | Take scale factor when positioning the active tab indicator                                                 |
+| [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028)   | Tabs                | Selected indicator alignment                                                                                |
+| [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip             | Do not show the tooltip when the tooltip target is clicked                                                  |
+| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936)   | Tooltip             | Removed the max-width constraint for slotted content                                                        |
 
 ## **{PackageVerChanges-25-2-DEC}**
 
@@ -127,12 +137,12 @@ Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and Proporti
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|33808|IgbDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
-|34255|IgbDataChart|0.00001 scale tick marks are displayed overlapping each other|
-|38510|IgbDataChart|AssigningCategoryStyle event support for Stacked Series|
-|41050|IgbDataChart|Axis is not being populated in IgbAxisMouseEventArgs|
+| Bug Number | Control      | Description                                                               |
+| ---------- | ------------ | ------------------------------------------------------------------------- |
+| 33808      | IgbDataChart | The scale set for IntervalType Ticks in TimeAxisInterval is not displayed |
+| 34255      | IgbDataChart | 0.00001 scale tick marks are displayed overlapping each other             |
+| 38510      | IgbDataChart | AssigningCategoryStyle event support for Stacked Series                   |
+| 41050      | IgbDataChart | Axis is not being populated in IgbAxisMouseEventArgs                      |
 
 ### Enhancements
 
@@ -182,9 +192,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 ```
 
 - The merging can be configured on the grid level to apply either:
-    - `OnSort` - only when the column is sorted.
-    - `Always` - always, regardless of data operations.
-  The default `CellMergeMode` is `OnSort`.
+  - `OnSort` - only when the column is sorted.
+  - `Always` - always, regardless of data operations.
+    The default `CellMergeMode` is `OnSort`.
+
 ```razor
 <IgbGrid CellMergeMode="GridCellMergeMode.Always">
 </IgbGrid>
@@ -192,11 +203,14 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 - **Column Pinning**
   - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `PinningPosition` property on the column:
+
 ```razor
 <IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
 </IgbColumn>
 ```
-  - Or:
+
+- Or:
+
 ```razor
 col.PinningPosition = ColumnPinningPosition.End;
 col.Pinned = true;
@@ -204,7 +218,8 @@ col.Pinned = true;
 col.PinningPosition = ColumnPinningPosition.Start;
 col.Pinned = true;
 ```
-  - If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
+
+- If property `PinningPosition` is not set on a column, the column will default to the position specified on the grid's pinning options for columns.
 
 - **Sorting and Grouping Improvements**
   - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
@@ -212,16 +227,18 @@ col.Pinned = true;
   - Refactored grouping algorithm from recursive to iterative.
   - Optimized grouping operations.
 
-- **Other Improvements**   
+- **Other Improvements**
   - A column's `MinWidth` and `MaxWidth` constrain the user-specified width so that it cannot go outside their bounds.
   - The `PagingMode` property can now be set as simple strings "local" and "remote" and does not require importing the `GridPagingMode` enum.
 
 ### General
 
 #### Added
+
 - `DateRangePicker`
 
 #### Changed
+
 - Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
 - `Tooltip`
   - Behavioral change: `Tooltip` default placement is "bottom" now.
@@ -229,15 +246,16 @@ col.Pinned = true;
   - Breaking change: `Tooltip` events will no longer return its anchor target in its detail property. You can still access it at event.target.anchor.
 
 #### Deprecated
+
 - `Tooltip` - `DisableArrow` is deprecated. Use `WithArrow` to render an arrow indicator.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|34960|IgbGrid|Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40490|IgbDatePicker|Inputs by Autofill won't give any effects for a date picker|
+| Bug Number | Control       | Description                                                                                   |
+| ---------- | ------------- | --------------------------------------------------------------------------------------------- |
+| 34960      | IgbGrid       | Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog |
+| 40136      | Excel Library | FormulaParseException exception when loading an Excel workbook                                |
+| 40490      | IgbDatePicker | Inputs by Autofill won't give any effects for a date picker                                   |
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -309,15 +327,15 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|31624 | `IgbCategoryChart` | Resizing the containing window of the `IgbCategoryChart` causes the chart to fail to render the series|
-|37307 | `IgbCheckBox` | JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
-|37930 | `IgbDataChart` | Data Annotation Overlay Text Color not working|
-|27304 | `IgbDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
-|30600 | `IgbDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
-|38231 | `IgbGrid` | Unpinned column does not return to the original position if hidden columns exist|
-|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
+| Bug Number | Control            | Description                                                                                            |
+| ---------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| 31624      | `IgbCategoryChart` | Resizing the containing window of the `IgbCategoryChart` causes the chart to fail to render the series |
+| 37307      | `IgbCheckBox`      | JS Heap, Nodes, and Listeners leakage on IgbCheckBox                                                   |
+| 37930      | `IgbDataChart`     | Data Annotation Overlay Text Color not working                                                         |
+| 27304      | `IgbDataChart`     | Zoom rectangle is not positioned the same as the background rectangle                                  |
+| 30600      | `IgbDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)                              |
+| 38231      | `IgbGrid`          | Unpinned column does not return to the original position if hidden columns exist                       |
+| 33861      | Excel Library      | Adding line chart corrupts excel File for German culture                                               |
 
 ### Enhancements
 
@@ -343,7 +361,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 - <label>PREVIEW</label> Added new `LabelsVisible` property
 
-
 ## **{PackageVerChanges-25-1-AUG}**
 
 ### {PackageMaps} (Geographic Map)
@@ -356,20 +373,21 @@ Note: Support for Bing Maps imagery is being phased out. Existing enterprise key
 
 Explore some of the publicly available [Azure maps here](https://azure.microsoft.com/en-us/products/azure-maps).
 
-
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|26952 | `IgbTabs` | e.Detail is null in Change event in Razor/JS|
-|26953 | `IgbTabs` | Marking a tab selected won't apply on subsequent attempts|
-|31910 | `IgbXDatePicker` | An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
-|31323 | `IgbDataChart`, `IgbGrid`, `IgbCombo` | A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
-|38903 | `IgbTabs` | Dropdown list is not displaying in the correct location for components inside the tab|
-|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput` | Date picker and data time input do not support nullable values|
+| Bug Number                                                    | Control                               | Description                                                                                                                        |
+| ------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 26952                                                         | `IgbTabs`                             | e.Detail is null in Change event in Razor/JS                                                                                       |
+| 26953                                                         | `IgbTabs`                             | Marking a tab selected won't apply on subsequent attempts                                                                          |
+| 31910                                                         | `IgbXDatePicker`                      | An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button                                 |
+| 31323                                                         | `IgbDataChart`, `IgbGrid`, `IgbCombo` | A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null |
+| 38903                                                         | `IgbTabs`                             | Dropdown list is not displaying in the correct location for components inside the tab                                              |
+| [139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput`   | Date picker and data time input do not support nullable values                                                                     |
 
 ### General
+
 The following properties of these components are now nullable:
+
 - `Button`: `Form`
 - `Calendar`: `SpecialDates`, `DisabledDates`
 - `Combo`: `ValueKey`, `DisplayKey`, `GroupKey`
@@ -385,11 +403,11 @@ The following properties of these components are now nullable:
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|36448 | `IgbRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
-|37718 | `IgbTab` | Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
-|37855 | `IgbGrid` | Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
+| Bug Number | Control          | Description                                                                                                                          |
+| ---------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 36448      | `IgbRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)                                                                   |
+| 37718      | `IgbTab`         | Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel                                              |
+| 37855      | `IgbGrid`        | Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol |
 
 ### {PackageCharts} (Charts)
 
@@ -423,14 +441,15 @@ The following properties of these components are now nullable:
 - <label>NEW</label> [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
 ### General
+
 - <label>NEW</label> `Tooltip` component provides a way to display a tooltip for a specific element. To use, set content as desired and link via the `Anchor` property to the target element's id:
-    ```razor
-    <IgbButton id="target-button">Hover me</IgbButton>
-    <IgbTooltip Anchor="target-button">
-        You've hovered the button! 🎉
-    </IgbTooltip>
-    ```
-    The tooltip can be further customized with `Show/HideDelay`, `Placement` around the target and customizable `Show/HideTriggers` events.
+  ```razor
+  <IgbButton id="target-button">Hover me</IgbButton>
+  <IgbTooltip Anchor="target-button">
+      You've hovered the button! 🎉
+  </IgbTooltip>
+  ```
+  The tooltip can be further customized with `Show/HideDelay`, `Placement` around the target and customizable `Show/HideTriggers` events.
 
 ### Changes
 
@@ -449,39 +468,43 @@ The following properties of these components are now nullable:
 - `Tabs`
 
   Simplified configuration by removing the need to define separate panel and linking the panel and tab header. The `Panel` property and the `IgbTabPanel` itself have been removed. Content can be now assigned directly to the `Tab` and header text can be set conveniently via the new `Label` property or by projecting an element to `slot="label"` for more involved customization.
-    Before:
-    ```razor
-    <IgbTabs Alignment=@TabAlignment>
-        <IgbTab Panel="basics">Basics</IgbTab>
-        <IgbTab Panel="details">Details</IgbTab>
-        <IgbTab Panel="favorite">
-            <IgbIcon IconName="favorite" Collection="material"/>
-        </IgbTab>
-        <IgbTab Panel="disabled" Disabled=true>Disabled</IgbTab>
-        <IgbTabPanel id="basics">Basics tab content</IgbTabPanel>
-        <IgbTabPanel id="details">Details tab content</IgbTabPanel>
-        <IgbTabPanel id="favorite">Favorite tab content</IgbTabPanel>
-        <IgbTabPanel id="disabled">Disabled tab content will not be displayed</IgbTabPanel>
-    </IgbTabs>
-    ```
-    After:
-    ```razor
-    <IgbTabs Alignment=@TabAlignment>
-        <IgbTab Label="Basics">
-            Basics tab content
-        </IgbTab>
-        <IgbTab Label="Details">
-            Details tab content
-        </IgbTab>
-        <IgbTab>
-            <IgbIcon slot="label" IconName="favorite" Collection="material"/>
-            Favorite tab content
-        </IgbTab>
-        <IgbTab Disabled="true" Label="Disabled">
-            Disabled tab content will not be displayed
-        </IgbTab>
-    </IgbTabs>
-    ```
+  Before:
+
+  ```razor
+  <IgbTabs Alignment=@TabAlignment>
+      <IgbTab Panel="basics">Basics</IgbTab>
+      <IgbTab Panel="details">Details</IgbTab>
+      <IgbTab Panel="favorite">
+          <IgbIcon IconName="favorite" Collection="material"/>
+      </IgbTab>
+      <IgbTab Panel="disabled" Disabled=true>Disabled</IgbTab>
+      <IgbTabPanel id="basics">Basics tab content</IgbTabPanel>
+      <IgbTabPanel id="details">Details tab content</IgbTabPanel>
+      <IgbTabPanel id="favorite">Favorite tab content</IgbTabPanel>
+      <IgbTabPanel id="disabled">Disabled tab content will not be displayed</IgbTabPanel>
+  </IgbTabs>
+  ```
+
+  After:
+
+  ```razor
+  <IgbTabs Alignment=@TabAlignment>
+      <IgbTab Label="Basics">
+          Basics tab content
+      </IgbTab>
+      <IgbTab Label="Details">
+          Details tab content
+      </IgbTab>
+      <IgbTab>
+          <IgbIcon slot="label" IconName="favorite" Collection="material"/>
+          Favorite tab content
+      </IgbTab>
+      <IgbTab Disabled="true" Label="Disabled">
+          Disabled tab content will not be displayed
+      </IgbTab>
+  </IgbTabs>
+  ```
+
 - `Input`
   - `Min` & `Max` are now `double` instead of `string`
 - `Stepper`
@@ -517,29 +540,31 @@ The following properties of these components are now nullable:
 ### Enhancements
 
 #### Toolbar
+
 - Value layers added from the toolbar now appear on the legend.
 - The zoom reset tool has been moved to the zoom drop-down.
 
 #### Data Pie Chart
+
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|25997 | `IgbDataGrid` | Summaries are only showing for first grouped child row|
-|37023 | `IgbDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37244 | Excel Library | Custom Data Validation is not working|
+| Bug Number | Control        | Description                                               |
+| ---------- | -------------- | --------------------------------------------------------- |
+| 25997      | `IgbDataGrid`  | Summaries are only showing for first grouped child row    |
+| 37023      | `IgbDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set. |
+| 37244      | Excel Library  | Custom Data Validation is not working                     |
 
 ## **{PackageVerChanges-24-2-MAY}**
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|37271 | `IgbHierarchicalGrid` | ParentRowData included to IGridCreatedEventArgs|
-|37681 | `IgbDataChart` | Category Chart - values labels are should appear above columns when there is adequate space|
-|37244 | Excel Library | Custom Data Validation is not working|
+| Bug Number | Control               | Description                                                                                 |
+| ---------- | --------------------- | ------------------------------------------------------------------------------------------- |
+| 37271      | `IgbHierarchicalGrid` | ParentRowData included to IGridCreatedEventArgs                                             |
+| 37681      | `IgbDataChart`        | Category Chart - values labels are should appear above columns when there is adequate space |
+| 37244      | Excel Library         | Custom Data Validation is not working                                                       |
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -550,9 +575,11 @@ The following properties of these components are now nullable:
 ### Enhancements
 
 #### List
+
 - Added new property on `ListItem` called `Selected`
 
 #### Accordion
+
 - Added new events `Open` and `Close`
 
 ### {PackageGrids}
@@ -562,13 +589,13 @@ The following properties of these components are now nullable:
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|25602 | `IgbDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-|28480 | `IgbCombo` | Undefined reference error is thrown when a datasource is replaced|
-|32598 | `IgbDataGrid` | Multi-selection is not working correctly
-|36374 | `IgbInput` | A previous value was bound when a form was submitted on any touch device|
-|37214|General|Intermittent error in Blazor's WebCallback.Register()
+| Bug Number | Control       | Description                                                                                          |
+| ---------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| 25602      | `IgbDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error |
+| 28480      | `IgbCombo`    | Undefined reference error is thrown when a datasource is replaced                                    |
+| 32598      | `IgbDataGrid` | Multi-selection is not working correctly                                                             |
+| 36374      | `IgbInput`    | A previous value was bound when a form was submitted on any touch device                             |
+| 37214      | General       | Intermittent error in Blazor's WebCallback.Register()                                                |
 
 ## **{PackageVerChanges-24-2-MAR}**
 
@@ -580,9 +607,9 @@ The following properties of these components are now nullable:
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|35497 | `IgbDialog` | When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
+| Bug Number | Control     | Description                                                                  |
+| ---------- | ----------- | ---------------------------------------------------------------------------- |
+| 35497      | `IgbDialog` | When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed |
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -598,27 +625,26 @@ The following properties of these components are now nullable:
 
 The following table lists the bug fixes made for the {ProductName} toolset for this release:
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|29998 | `IgbCombo` | The Change event callback was fired multiple times in .NET 8|
-|30286 | `IgbDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|34776 | `IgbDataChart` | Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
-|32906 | `IgbDataChart` | IgbDataChart is showing two xAxis on the top|
-|33605 | `IgbDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
-|35498 | `IgbDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
-|31344 | `IgbGrid` | Two way binding for the SelectedRows doesn't work|
-|34149 | `IgbGrid` | Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
-|34224 | `IgbGrid` | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the render mode|
-|34654 | `IgbGrid` | NullReferenceException is thrown if a data contains an empty list|
-|35439 | `IgbGrid` | CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
-|36024 | `IgbGrid` | The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
-|34053 | `IgbRadialGauge` | The position of the scale label is shifted|
-|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
-|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
-|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
-
+| Bug Number | Control          | Description                                                                                                                                                           |
+| ---------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 29998      | `IgbCombo`       | The Change event callback was fired multiple times in .NET 8                                                                                                          |
+| 30286      | `IgbDataChart`   | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble                                                                          |
+| 34776      | `IgbDataChart`   | Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap                                                                                       |
+| 32906      | `IgbDataChart`   | IgbDataChart is showing two xAxis on the top                                                                                                                          |
+| 33605      | `IgbDataChart`   | ScatterLineSeries is not showing the color of the line correctly in the legend                                                                                        |
+| 35498      | `IgbDataChart`   | Tooltips for the series specified in IncludedSeries are not displayed                                                                                                 |
+| 31344      | `IgbGrid`        | Two way binding for the SelectedRows doesn't work                                                                                                                     |
+| 34149      | `IgbGrid`        | Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap                                                                                            |
+| 34224      | `IgbGrid`        | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the render mode |
+| 34654      | `IgbGrid`        | NullReferenceException is thrown if a data contains an empty list                                                                                                     |
+| 35439      | `IgbGrid`        | CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs                                                                          |
+| 36024      | `IgbGrid`        | The JS heap size never reduced when moving back and forth between two pages with IgbGrid component                                                                    |
+| 34053      | `IgbRadialGauge` | The position of the scale label is shifted                                                                                                                            |
+| 36176      | Excel Library    | Exception occurs when loading an Excel workbook that has a LET function                                                                                               |
+| 36379      | Excel Library    | Colors with any alpha channel in an excel workbook fail to load                                                                                                       |
+| 26218      | Excel Library    | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file                                           |
+| 34083      | Excel Library    | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file                                                          |
+| 35495      | Excel Library    | Pictures in cells are lost when a template file is loaded                                                                                                             |
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -642,9 +668,11 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 **Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
+
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### General
+
 - New [Carousel](layouts/carousel.md) component.
 - `Input`
   - Changed `change` event argument type from `ComponentDataValueChangedEventArgs` to `ComponentValueChangedEventArgs`
@@ -658,17 +686,16 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - New [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to plot slices similar to a pie chart, a type of data visualization where data points are represented as segments within a circular graph.
 
 - `Toolbar`
-
   - New ToolActionCheckboxList
-        A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
-        Requires IgbCheckboxListModule to be registered.
+    A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
+    Requires IgbCheckboxListModule to be registered.
 
   - New Filtering Support
 
   - Axis Field Changes
-        New default IconMenu in Toolbar when targeting CategoryChart.
-        Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
-        Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
+    New default IconMenu in Toolbar when targeting CategoryChart.
+    Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
+    Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
 
 ### General
 
@@ -678,7 +705,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - `Icon`
   - Added `SetIconRef` method. This allows to register and replace icons by SVG files.
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
-- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgbSelectComponent**
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`, `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgbSelectComponent**
   - Toggle methods `Show`, `Hide`, `Toggle` methods return **true** now on success. Otherwise **false**.
 - `RadioGroup`
   - Added `Name` and `Value` properties. `Value` also supports two-way binding.
@@ -730,13 +757,14 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **Breaking Changes**
+
 - **All Grids**
   - `RowIsland`
   - Removed `DisplayDensity` deprecated property.
   - Renamed `Columns`, `ActualColumns`, `ContentColumns` properties to `ColumnList`, `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method instead.
   - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
-  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
+  - Removed `GridEditEventArgs`, `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
 - `PivotGrid`
   - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
 - `Column`
@@ -750,11 +778,13 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### General
+
 - `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
 - `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
 - `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
 
 ### {PackageGrids}
+
 - `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
 - `PivotGrid` - The type of Columns, Rows, Filters from `PivotConfiguration` option is now array of IgbPivotDimension - `IgbPivotDimension[]`, it was `IgbPivotDimensionCollection` previously.
 
@@ -764,10 +794,9 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
-
 
 - [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
 
@@ -823,7 +852,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamRadialChart`
   - New Label Mode
-        The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
+    The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### General
 
@@ -836,11 +865,11 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 ### Deprecations
 
 - The `size` property and attribute have been deprecated for all components. Use the `--ig-size` CSS custom property instead. The following example sets the size of the avatar component to small:
-    ```css
-    .avatar {
-        --ig-size: var(--ig-size-small);
-    }
-    ```
+  ```css
+  .avatar {
+    --ig-size: var(--ig-size-small);
+  }
+  ```
 - `DateTimeInput`
   - `MinValue` and `MaxValue` properties have been deprecated. Please, use `Min` and `Max` instead.
 - `RangeSlider`
@@ -889,6 +918,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 - It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
 ## **{PackageVerChanges-22-2.65}**
+
 ### New Components
 
 - [Stepper](layouts/stepper.md)
@@ -966,7 +996,7 @@ Added significant improvements to default behaviors, and refined the Category Ch
   - GroupSortDescriptions
 
 > [!Note]
-[Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
+> [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render. The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ### {PackageGrids} (Data Grid)
 
@@ -1026,9 +1056,11 @@ Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to
 - A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without data binding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
 #### Date Picker
+
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox
+
 - Changed `TextChanged` event to `TextValueChanged`.
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
@@ -1037,7 +1069,7 @@ Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to
 > [!Note]
 > The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
-> For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
+> For example, `<IgbCategoryChart/>` instead of `<CategoryChart/>`
 
 ### New Components
 
@@ -1084,8 +1116,8 @@ This release introduces a few improvements and simplifications to visual design 
 - Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
 - Changed color palette of series and markers displayed in all charts to improve accessibility
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 ### {PackageGrids} (Data Grid)
@@ -1097,12 +1129,13 @@ This release introduces a few improvements and simplifications to visual design 
   - [Cell Merging](grids/data-grid/cell-merging.md)
 - New API:
   - Added `SelectionChanged` event. Used to detect changes on selection interactions
-     e.g. Multiple row selection.
+    e.g. Multiple row selection.
 - Breaking Changes:
   - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
   - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 ## **{PackageVerChanges-21-1}**
+
 ### New Visual Designs
 
 #### Charts & Maps
@@ -1140,14 +1173,14 @@ This release introduces several new and improved visual design and configuration
 - Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
 - Redesigned color palette of series and markers:
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 for example:
 
-|   |   |
-|---|---|
+|                                                                                        |                                                                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | <img class="responsive-img" src="../images/chartDefaults1.png" alt="chartDefaults1" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="chartDefaults2" /> |
 | <img class="responsive-img" src="../images/chartDefaults3.png" alt="chartDefaults3" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="chartDefaults4" /> |
 

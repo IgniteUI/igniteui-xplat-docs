@@ -5,34 +5,31 @@ _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile
 _license: commercial
 mentionedTypes: ["XamGeographicMap", "AzureMapsImagery", "GeographicTileSeries"]
 ---
+
 # {Platform} Imagery from Azure Maps <label>PREVIEW</label>
 
 The {Platform} `AzureMapsImagery` is geographic imagery mapping service provided by Microsoft®. It provides several styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">www.azure.microsoft.com</a> web site. The {ProductName} map component can display geographic imagery from Azure Maps in the map’s background content using the `AzureMapsImagery` class.
 
 ## {Platform} Displaying Imagery from Azure Maps - Overview
 
-
 <img src="../images/general/AzureMapsImagery.png" alt="AzureMapsImagery" />
-
 
 <div class="divider--half"></div>
 
 `sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
 ## {Platform} Displaying Imagery from Azure Maps - Code Example
+
 The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapsImagery` class.
 
 ```html
-<igx-geographic-map #map
-    width="100%"
-    height="100%"
-    zoomable="true" >
+<igx-geographic-map #map width="100%" height="100%" zoomable="true">
 </igx-geographic-map>
 ```
 
 ```ts
-import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
-import { IgxAzureMapsImagery } from 'igniteui-angular-maps';
+import { IgxGeographicMapComponent } from "igniteui-angular-maps";
+import { IgxAzureMapsImagery } from "igniteui-angular-maps";
 // ...
 const tileSource = new IgxAzureMapsImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
@@ -44,9 +41,9 @@ this.map.backgroundContent = tileSource;
 ```
 
 ```ts
-import { IgrGeographicMap } from 'igniteui-react-maps';
-import { IgrAzureMapsImagery } from 'igniteui-react-maps';
-import { AzureMapsImageryStyle } from 'igniteui-react-maps';
+import { IgrGeographicMap } from "igniteui-react-maps";
+import { IgrAzureMapsImagery } from "igniteui-react-maps";
+import { AzureMapsImageryStyle } from "igniteui-react-maps";
 // ...
 const tileSource = new IgrAzureMapsImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
@@ -105,6 +102,7 @@ When working with the `GeographicTileSeries`, you can combine **overlays** (traf
 - **Hybrid Styles**: Variants like `HybridRoadOverlay` and `HybridDarkGreyOverlay` already combine a base style with overlays (labels, roads, etc.), so you don’t need to manage multiple layers manually.
 
 This design allows you to build richer maps, for example:
+
 - Displaying **Satellite imagery** with a **TrafficOverlay** to highlight congestion on real-world images.
 - Using **Terra** with **WeatherRadarOverlay** to visualize terrain with precipitation.
 - Applying **DarkGrey** with **LabelsRoadOverlay** for a dashboard-friendly, contrast-heavy view.
@@ -114,6 +112,7 @@ This design allows you to build richer maps, for example:
 <div class="divider--half"></div>
 
 ## {Platform} Overlaying Imagery from Azure Maps - Code Example
+
 The following code snippet shows how to display geographic imagery tiles on top of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapsImagery` and `GeographicTileSeries` classes.
 
 ```html
@@ -124,8 +123,9 @@ The following code snippet shows how to display geographic imagery tiles on top 
 
 ```ts
 export class AppComponent implements AfterViewInit {
-  @ViewChild('map', { static: true }) public map!: IgxGeographicMapComponent;
-  @ViewChild('tileSeries', { static: true }) public tileSeries!: IgxGeographicTileSeriesComponent;
+  @ViewChild("map", { static: true }) public map!: IgxGeographicMapComponent;
+  @ViewChild("tileSeries", { static: true })
+  public tileSeries!: IgxGeographicTileSeriesComponent;
 
   public azureImagery!: IgxAzureMapsImagery;
   public azureKey: string = "<YOUR_KEY_HERE>";
@@ -213,9 +213,9 @@ import {
   IgcGeographicTileSeriesComponent,
   IgcAzureMapsImagery,
   AzureMapsImageryStyle,
-  IgcGeographicMapModule
-} from 'igniteui-webcomponents-maps';
-import { ModuleManager } from 'igniteui-webcomponents-core';
+  IgcGeographicMapModule,
+} from "igniteui-webcomponents-maps";
+import { ModuleManager } from "igniteui-webcomponents-core";
 
 ModuleManager.register(IgcGeographicMapModule);
 
@@ -223,7 +223,9 @@ const azureKey = "<YOUR_KEY_HERE>";
 
 window.addEventListener("load", () => {
   const map = document.getElementById("map") as IgcGeographicMapComponent;
-  const tileSeries = document.getElementById("tileSeries") as IgcGeographicTileSeriesComponent;
+  const tileSeries = document.getElementById(
+    "tileSeries",
+  ) as IgcGeographicTileSeriesComponent;
 
   // Update TileSeries
   const overlay = new IgcAzureMapsImagery();
@@ -279,12 +281,13 @@ window.addEventListener("load", () => {
 ```
 
 ## Properties
+
 The following table summarizes properties of the `AzureMapsImagery` class:
 
-| Property Name  | Property Type   | Description   |
-|----------------|-----------------|---------------|
-|`ApiKey`|string|Represents the property for setting an API key required for the Azure Maps imagery service. You must obtain this key from the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">azure.microsoft.com</a> website.|
-|`ImageryStyle`|`AzureMapsImageryStyle`|Represents the property for setting the Azure Maps imagery tiles map style. This property can be set to the following `AzureMapsImageryStyle` enumeration values:<ul><li>Satellite - Specifies the Satellite map style without road or labels overlay</li><li>Road - Specifies the Aerial map style with road and labels overlay</li><li>DarkGrey - Specifies a dark grey basemap style for contrast and highlighting overlays</li><li>TerraOverlay - Specifies a terrain map style with shaded relief to highlight elevation and landscape features</li><li>LabelsRoadOverlay - One of several overlays of city labels without an aerial overlay</li><li>HybridRoadOverlay - Satellite background combined with road and label overlays</li><li>HybridDarkGreyOverlay - Satellite background combined with dark grey label overlays</li><li>LabelsDarkGreyOverlay - One of several overlays of city labels over a dark grey basemap</li><li>TrafficDelayOverlay - Displays traffic delays and congestion areas in real time</li><li>TrafficAbsoluteOverlay - Displays current traffic speeds as absolute values</li><li>TrafficReducedOverlay - Displays reduced traffic flow with light-based visualization</li><li>TrafficRelativeOverlay - Displays traffic speeds relative to normal conditions</li><li>TrafficRelativeDarkOverlay - Displays traffic speeds relative to normal conditions over a dark basemap for enhanced contrast</li><li>WeatherRadarOverlay - Displays near real-time radar imagery of precipitation</li><li>WeatherInfraredOverlay - Displays infrared satellite imagery of cloud cover</li></ul> |
+| Property Name  | Property Type           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ApiKey`       | string                  | Represents the property for setting an API key required for the Azure Maps imagery service. You must obtain this key from the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">azure.microsoft.com</a> website.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `ImageryStyle` | `AzureMapsImageryStyle` | Represents the property for setting the Azure Maps imagery tiles map style. This property can be set to the following `AzureMapsImageryStyle` enumeration values:<ul><li>Satellite - Specifies the Satellite map style without road or labels overlay</li><li>Road - Specifies the Aerial map style with road and labels overlay</li><li>DarkGrey - Specifies a dark grey basemap style for contrast and highlighting overlays</li><li>TerraOverlay - Specifies a terrain map style with shaded relief to highlight elevation and landscape features</li><li>LabelsRoadOverlay - One of several overlays of city labels without an aerial overlay</li><li>HybridRoadOverlay - Satellite background combined with road and label overlays</li><li>HybridDarkGreyOverlay - Satellite background combined with dark grey label overlays</li><li>LabelsDarkGreyOverlay - One of several overlays of city labels over a dark grey basemap</li><li>TrafficDelayOverlay - Displays traffic delays and congestion areas in real time</li><li>TrafficAbsoluteOverlay - Displays current traffic speeds as absolute values</li><li>TrafficReducedOverlay - Displays reduced traffic flow with light-based visualization</li><li>TrafficRelativeOverlay - Displays traffic speeds relative to normal conditions</li><li>TrafficRelativeDarkOverlay - Displays traffic speeds relative to normal conditions over a dark basemap for enhanced contrast</li><li>WeatherRadarOverlay - Displays near real-time radar imagery of precipitation</li><li>WeatherInfraredOverlay - Displays infrared satellite imagery of cloud cover</li></ul> |
 
 ## API References
 

@@ -68,14 +68,13 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-
-| `CategoryChart` Properties                    | `XamDataChart` Properties |
-| ----------------------------------------------|---------------------------|
-| `CategoryChart.HighlightedItemsSource`        | `Series.HighlightedItemsSource`  |
-| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  |
-| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     |
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
-| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   |
-| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   |
-| `CategoryChart.InitialHighlightFilter`        |  |
-| `CategoryChart.InitialGroups`                 |  |
+| `CategoryChart` Properties                   | `XamDataChart` Properties             |
+| -------------------------------------------- | ------------------------------------- |
+| `CategoryChart.HighlightedItemsSource`       | `Series.HighlightedItemsSource`       |
+| `CategoryChart.HighlightedTitleSuffix`       | `Series.HighlightedTitleSuffix`       |
+| `CategoryChart.HighlightedValueMemberPath`   | `Series.HighlightedValueMemberPath`   |
+| `CategoryChart.HighlightedValuesDisplayMode` | `Series.HighlightedValuesDisplayMode` |
+| `CategoryChart.HighlightedValuesFadeOpacity` | `Series.HighlightedValuesFadeOpacity` |
+| `CategoryChart.HighlightedValuesDisplayMode` | `Series.HighlightedValuesDisplayMode` |
+| `CategoryChart.InitialHighlightFilter`       |                                       |
+| `CategoryChart.InitialGroups`                |                                       |

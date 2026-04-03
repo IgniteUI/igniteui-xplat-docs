@@ -127,6 +127,7 @@ Or via .NET CLI:
 ```cmd
 dotnet add package IgniteUI.Blazor.GridLite
 ```
+
 ### Using Grid Lite
 
 1 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:

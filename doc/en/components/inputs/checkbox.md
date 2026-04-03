@@ -21,6 +21,7 @@ The {Platform} Checkbox is a component that lets you add checkboxes to your {Pla
 At its core, the `Checkbox` allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -31,7 +32,7 @@ You will then need to import the `Checkbox`, its necessary CSS, and register its
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcCheckboxComponent);
 ```
@@ -41,6 +42,7 @@ For a complete introduction to the {ProductName}, read the [**Getting Started**]
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
@@ -50,9 +52,10 @@ npm install igniteui-react
 You will then need to import the `Checkbox` and its necessary CSS, like so:
 
 ```tsx
-import { IgrCheckbox } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrCheckbox } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -65,7 +68,7 @@ Before using the `Checkbox`, you need to register it as follows:
 builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Checkbox` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Checkbox` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -89,9 +92,8 @@ The simplest way to start using the `Checkbox` is as follows:
 <IgbCheckbox />
 ```
 
->[!WARNING]
+> [!WARNING]
 > The `Checkbox` component doesn't work with the standard `<form>` element. Use `Form` instead.
-
 
 ## Examples
 
@@ -100,7 +102,9 @@ The simplest way to start using the `Checkbox` is as follows:
 To provide a meaningful label for the checkbox, simply place some text between the opening and closing tags:
 
 ```tsx
-<IgrCheckbox><span>Label</span></IgrCheckbox>
+<IgrCheckbox>
+  <span>Label</span>
+</IgrCheckbox>
 ```
 
 ```html
@@ -144,8 +148,6 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 
 `sample="/inputs/checkbox/label", height="100", alt="{Platform} Checkbox Example"`
 
-
-
 ### Checked
 
 You can use the `Checked` attribute of the component to determine whether the checkbox should be toggled on or off by default.
@@ -164,8 +166,6 @@ You can use the `Checked` attribute of the component to determine whether the ch
 
 `sample="/inputs/checkbox/checking", height="100", alt="{Platform} Checkbox Example"`
 
-
-
 ### Indeterminate
 
 You can use the `Indeterminate` property of the component to set the checkbox's value to neither **true** nor **false**.
@@ -183,8 +183,6 @@ You can use the `Indeterminate` property of the component to set the checkbox's 
 ```
 
 `sample="/inputs/checkbox/indeterminate", height="100", alt="{Platform} Checkbox Example"`
-
-
 
 ### Required
 
@@ -236,8 +234,6 @@ You can use the `Disabled` attribute to disable the checkbox.
 
 `sample="/inputs/checkbox/disabled", height="100", alt="{Platform} Checkbox Example"`
 
-
-
 ### Forms
 
 You can use the `Name` and `Value` attributes when using the checkbox with `Form`.
@@ -258,12 +254,12 @@ You can use the `Name` and `Value` attributes when using the checkbox with `Form
 
 The `Checkbox` component exposes four CSS parts which we can use for styling:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the checkbox. |
-| `control` | The checkbox input element. |
-| `indicator` | The checkbox indicator icon. |
-| `label` | The checkbox label. |
+| Name        | Description                       |
+| ----------- | --------------------------------- |
+| `base`      | The base wrapper of the checkbox. |
+| `control`   | The checkbox input element.       |
+| `indicator` | The checkbox indicator icon.      |
+| `label`     | The checkbox label.               |
 
 With this four CSS parts we have full control over the Checkbox styling.
 
@@ -285,7 +281,6 @@ igc-checkbox::part(control checked)::after {
 - `Checked`
 - `Disabled`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 

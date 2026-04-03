@@ -10,20 +10,17 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Grid Binding Virtual Data
 
-The {ProductName} Data Table / Data Grid supports data binding to remote datasources with one line of code.  With the {Platform} data table’s Virtual Data Source, you simply configure the {Platform} grid with your remote URI and which OData Entity you’d like returned, and the {Platform} grid does the rest of the work for you.
+The {ProductName} Data Table / Data Grid supports data binding to remote datasources with one line of code. With the {Platform} data table’s Virtual Data Source, you simply configure the {Platform} grid with your remote URI and which OData Entity you’d like returned, and the {Platform} grid does the rest of the work for you.
 
 ## {Platform} Grid Binding Virtual Data Example
 
-
 `sample="/grids/data-grid/binding-remote-data", height="600", alt="{Platform} Grid Binding Virtual Data Example"`
-
-
 
 <div class="divider--half"></div>
 <!-- Angular, React, WebComponents -->
@@ -47,20 +44,20 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 
 ```ts
-import './odatajs-4.0.0';
-import { IgrDataGridModule } from 'igniteui-react-data-grids';
-import { IgrDataGrid } from 'igniteui-react-data-grids';
-import { ODataVirtualDataSource } from 'igniteui-react-datasources';
+import "./odatajs-4.0.0";
+import { IgrDataGridModule } from "igniteui-react-data-grids";
+import { IgrDataGrid } from "igniteui-react-data-grids";
+import { ODataVirtualDataSource } from "igniteui-react-datasources";
 
 IgrDataGridModule.register();
 ```
 
 ```ts
-import './odatajs-4.0.0';
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
-import { ODataVirtualDataSource } from 'igniteui-webcomponents-dataSource';
+import "./odatajs-4.0.0";
+import { ModuleManager } from "igniteui-webcomponents-core";
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
+import { ODataVirtualDataSource } from "igniteui-webcomponents-dataSource";
 
 ModuleManager.register(IgcDataGridModule);
 ```
@@ -73,17 +70,20 @@ Now that the {Platform} data grid module is imported, the next step is the basic
 
 ```tsx
 <IgrDataGrid
-    width="100%"
-    height="100%"
-    defaultColumnMinWidth={120}
-    dataSource={this.virtualData}/>
+  width="100%"
+  height="100%"
+  defaultColumnMinWidth={120}
+  dataSource={this.virtualData}
+/>
 ```
 
 ```html
-<igc-data-grid id="grid"
-    width="100%"
-    height="100%"
-    default-column-min-width=200>
+<igc-data-grid
+  id="grid"
+  width="100%"
+  height="100%"
+  default-column-min-width="200"
+>
 </igc-data-grid>
 ```
 
@@ -100,10 +100,10 @@ this.virtualData = vds;
 
 ```ts
 const vds = new ODataVirtualDataSource();
-vds.baseUri = ("https://services.odata.org/V4/Northwind/Northwind.svc");
-vds.entitySet = ("Orders");
+vds.baseUri = "https://services.odata.org/V4/Northwind/Northwind.svc";
+vds.entitySet = "Orders";
 
-let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
+let grid1 = document.getElementById("grid") as IgcDataGridComponent;
 grid1.dataSource = vds;
 ```
 

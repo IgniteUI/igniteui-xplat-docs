@@ -6,6 +6,7 @@ _license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", "Series", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {Platform} Line Chart
 
 The {ProductName} Line Chart or Line Graph is a type of category charts that show the continuous data values represented by points connected by straight line segments of one or more quantities over a period of time. It’s often used to show trends and perform comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
@@ -15,8 +16,6 @@ The {ProductName} Line Chart or Line Graph is a type of category charts that sho
 You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `CategoryChart.ChartType` property to `Line` enum, as shown in the example below.
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart Multiple Sources"`
-
-
 
 <div class="divider--half"></div>
 
@@ -49,7 +48,7 @@ There are several common use cases for choosing a Line Chart:
 ### Line Chart Best Practices
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
-- Order time-series data  from left to right.
+- Order time-series data from left to right.
 - Use visual attributes like solid lines to show a series of data.
 
 ### When Not to Use Line Chart
@@ -73,8 +72,6 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 `sample="/charts/category-chart/line-chart-single-source", height="600", alt="{Platform} Line Chart with Single Source"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Line Chart with Multiple Series
@@ -84,8 +81,6 @@ Since the {Platform} Line Chart allows you to combine multiple series and compar
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart with Multiple Sources"`
-
-
 
 <div class="divider--half"></div>
 
@@ -98,8 +93,6 @@ In this example, we are streaming live data into the {Platform} Line Chart at an
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/high-frequency", height="600", alt="{Platform} Line Chart Live Data Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -117,7 +110,6 @@ The following example demonstrates usage of the `DashArray` in a `LineSeries` in
 
 `sample="/charts/data-chart/dash-array-series", height="600", alt="{Platform} Line Chart Dash Array"`
 
-
 <div class="divider--half"></div>
 
 ## Advanced Types of Line Charts
@@ -130,8 +122,6 @@ The Stacked Line Chart is often used to show the change of value over time such 
 
 `sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} Stacked Line Chart"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Stacked 100% Line Chart
@@ -141,8 +131,6 @@ The Stacked 100% Line Chart is identical to the Stacked Line Chart in all aspect
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100LineSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} Stacked 100 Line Chart"`
-
-
 
 <div class="divider--half"></div>
 
@@ -154,8 +142,6 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 `sample="/charts/data-chart/radial-line-chart", height="600", alt="{Platform} Radial Line Chart"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Polar Line Chart
@@ -165,8 +151,6 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} Polar Line Chart"`
-
-
 
 <div class="divider--half"></div>
 
@@ -185,10 +169,10 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-| Chart Type        | Control Name       | API Members |
-| ------------------|--------------------|----------------------- |
-| Line              | `CategoryChart`    | `CategoryChart.ChartType` = `Line` |
-| Polar Line        | `XamDataChart`     | `PolarLineSeries` |
-| Radial Line       | `XamDataChart`     | `RadialLineSeries` |
-| Stacked Line      | `XamDataChart`     | `StackedLineSeries` |
-| Stacked 100% Line | `XamDataChart`     | `Stacked100LineSeries` |
+| Chart Type        | Control Name    | API Members                        |
+| ----------------- | --------------- | ---------------------------------- |
+| Line              | `CategoryChart` | `CategoryChart.ChartType` = `Line` |
+| Polar Line        | `XamDataChart`  | `PolarLineSeries`                  |
+| Radial Line       | `XamDataChart`  | `RadialLineSeries`                 |
+| Stacked Line      | `XamDataChart`  | `StackedLineSeries`                |
+| Stacked 100% Line | `XamDataChart`  | `Stacked100LineSeries`             |

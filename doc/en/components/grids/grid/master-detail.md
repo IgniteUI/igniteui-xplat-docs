@@ -14,14 +14,11 @@ This mode is useful when you need to display master-detail style data in a hiera
 
 ## {Platform} Grid Master-Detail Example
 
-
 `sample="/{GridSample}/master-detail", height="600", alt="{Platform} {ComponentTitle} Master Detail Example"`
-
 
 ## Configuration
 
 To configure the `Grid` to display in master-detail mode you need to specify a template for the grid:
-
 
 ```html
 <{ComponentSelector}>
@@ -114,6 +111,7 @@ The expansion states can be controlled via the `ExpansionStates` input of the `G
 <!-- end: Angular -->
 
 Additional API methods for controlling the expansion states are also exposed:
+
 - `ExpandAll`
 - `CollapseAll`
 - `ToggleRow`
@@ -123,7 +121,6 @@ Additional API methods for controlling the expansion states are also exposed:
 ## Keyboard navigation
 
 - When focus is on a detail row:
-
   - <kbd>🡑</kbd> - navigates one row up, focusing a cell from the previous row.
   - <kbd>🡓</kbd> - navigates one row down, focusing a cell from the next row.
   - <kbd>TAB</kbd> - Allows focus to move to the next focusable element inside the template if there are focusable elements, otherwise moves to the next grid row.
@@ -135,12 +132,11 @@ Additional API methods for controlling the expansion states are also exposed:
 
 ## Known Issues and Limitations
 
-
-|Known Limitations| Description|
-| --- | --- |
-| Tab navigation inside the custom detail template may not update the master grid scroll position in case the next focused element is outside the visible view port.| Tab navigation inside the custom detail template is left up to the browser. |
-| Details template will not be exported to Excel.| As the details template can contain any type of content we cannot export it to excel out of the box.|
-| The search feature will not highlight elements from the details template. | |
+| Known Limitations                                                                                                                                                  | Description                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Tab navigation inside the custom detail template may not update the master grid scroll position in case the next focused element is outside the visible view port. | Tab navigation inside the custom detail template is left up to the browser.                          |
+| Details template will not be exported to Excel.                                                                                                                    | As the details template can contain any type of content we cannot export it to excel out of the box. |
+| The search feature will not highlight elements from the details template.                                                                                          |                                                                                                      |
 
 ## API References
 

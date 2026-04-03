@@ -22,24 +22,30 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 `sample="/{PivotGridSample}/data-selector", height="700", alt="{Platform} Pivot Grid with Pivot Selector Example"`
 
-
-
 ## Getting Started With {Platform} Pivot Grid
 
 The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` property.
 
 <!--Angular -->
+
 ```html
-<igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfigHierarchy">
+<igx-pivot-grid
+  #grid1
+  [data]="data"
+  [pivotConfiguration]="pivotConfigHierarchy"
+>
 </igx-pivot-grid>
 ```
+
 <!-- end: Angular -->
 
 <!--WebComponents -->
+
 ```html
 <igc-pivot-grid #grid1 data="data" pivot-configuration="pivotConfigHierarchy">
 </igc-pivot-grid>
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -48,10 +54,14 @@ The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` pr
 ```
 
 <!--React -->
+
 ```tsx
-<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration}>
-</IgrPivotGrid>
+<IgrPivotGrid
+  data={pivotData}
+  pivotConfiguration={pivotConfiguration}
+></IgrPivotGrid>
 ```
+
 <!-- end: React -->
 
 It is defined by three main dimensions: **rows**, **columns** and **values**. The **rows** and **columns** define the grouped structure that is displayed in the rows and columns of the grid. The **values** define the aggregation fields and the aggregation that will be used to calculate and display the related values of the groups.
@@ -62,30 +72,29 @@ A filter can also be defined via the **filters** configuration property. It can 
 
 Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**.
 
-
 Multiple sibling dimensions can be defined, which creates a more complex nested group in the related row or column dimension area.
 
 The dimensions can be reordered or moved from one area to another via their corresponding chips using drag & drop.
 
 A dimension can also describe an expandable hierarchy via the `ChildLevel` property, for example:
 
-
 <!-- React -->
 
 ```tsx
 const dimension: IgrPivotDimension = {
-    memberName: "AllProducts",
+  memberName: "AllProducts",
+  enabled: true,
+  childLevel: {
+    memberName: "ProductCategory",
     enabled: true,
-    childLevel: {
-        memberName: "ProductCategory",
-        enabled: true
-    }
+  },
 };
-
 ```
+
 <!-- end: React -->
 
 <!-- WebComponents -->
+
 ```typescript
    {
             memberFunction: () => 'All',
@@ -98,9 +107,11 @@ const dimension: IgrPivotDimension = {
             }
     }
 ```
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 ```razor
 @code {
     var pivotConfiguration = new IgbPivotConfiguration();
@@ -113,6 +124,7 @@ const dimension: IgrPivotDimension = {
         });
 }
 ```
+
 <!-- end: Blazor -->
 
 In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the Pivot Grid.
@@ -120,8 +132,9 @@ In this case the dimension renders an expander in the related section of the gri
 ### Predefined Dimensions
 
 As part of the Pivot Grid some additional predefined dimensions are exposed for easier configuration:
+
 - `PivotDateDimension`
-    Can be used for date fields. Describes the following hierarchy by default:
+  Can be used for date fields. Describes the following hierarchy by default:
   - All Periods
   - Years
   - Quarters
@@ -131,20 +144,22 @@ As part of the Pivot Grid some additional predefined dimensions are exposed for 
 It can be set for rows or columns, for example:
 
 <!-- React -->
-```ts
 
+```ts
 const pivotConfiguration: IgrPivotConfiguration = {
-    columns: [
-        new IgrPivotDateDimension({
-            enabled: true,
-            memberName: "Date",
-        })
-    ]
+  columns: [
+    new IgrPivotDateDimension({
+      enabled: true,
+      memberName: "Date",
+    }),
+  ],
 };
 ```
+
 <!-- end: React -->
 
 <!-- Angular -->
+
 ```typescript
 public pivotConfigHierarchy: IPivotConfiguration = {
     rows: [
@@ -152,9 +167,11 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     ]
 }
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```typescript
 public pivotConfigHierarchy: IgcPivotConfiguration = {
     rows: [
@@ -162,6 +179,7 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
     ]
 }
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -179,43 +197,57 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 It also allows for further customization via the second option parameter in order to enable or disable a particular part of the hierarchy, for example:
 
 <!-- Angular -->
+
 ```typescript
- new IgxPivotDateDimension({ memberName: 'Date', enabled: true }, {
+new IgxPivotDateDimension(
+  { memberName: "Date", enabled: true },
+  {
     total: true,
     years: true,
     months: true,
     fullDate: true,
-    quarters: false
-});
+    quarters: false,
+  },
+);
 ```
+
 <!-- end: Angular -->
 
-
 <!-- React -->
+
 ```tsx
- new IgrPivotDateDimension({
+new IgrPivotDateDimension(
+  {
     enabled: true,
     memberName: "Date",
-}, {
+  },
+  {
     total: true,
     years: true,
     months: true,
     fullDate: true,
-    quarters: false
-});
+    quarters: false,
+  },
+);
 ```
+
 <!-- end: React -->
 
 <!-- WebComponents -->
+
 ```typescript
- new IgcPivotDateDimension({ memberName: 'Date', enabled: true }, {
+new IgcPivotDateDimension(
+  { memberName: "Date", enabled: true },
+  {
     total: true,
     years: true,
     months: true,
     fullDate: true,
-    quarters: false
-});
+    quarters: false,
+  },
+);
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -237,65 +269,80 @@ It also allows for further customization via the second option parameter in orde
 }
 ```
 
-
 ### Values Configuration
 
 A value configuration requires a **member** that matches a field from the provided **data**, or it can define a custom **aggregator** function for more complex custom scenarios. Out of the box, there are 4 predefined aggregations that can be used depending on the data type of the data field:
 
 - `PivotNumericAggregate` - for numeric fields.
-    Contains the following aggregation functions: `SUM`, `AVG`, `MIN`, `MAX`, `COUNT`.
+  Contains the following aggregation functions: `SUM`, `AVG`, `MIN`, `MAX`, `COUNT`.
 - `PivotDateAggregate` - for date fields.
-    Contains the following aggregation functions: `LATEST`, `EARLIEST`, `COUNT`.
+  Contains the following aggregation functions: `LATEST`, `EARLIEST`, `COUNT`.
 - `PivotTimeAggregate` - for time fields.
-    Contains the following aggregation functions: `LATEST`, `EARLIEST`, `COUNT`.
+  Contains the following aggregation functions: `LATEST`, `EARLIEST`, `COUNT`.
 - `PivotAggregate` - for any other data types. This is the base aggregation.
-    Contains the following aggregation functions: `COUNT`.
+  Contains the following aggregation functions: `COUNT`.
 
 The current aggregation function can be changed at runtime using the value chip's drop-down. By default, it displays a list of available aggregations based on the field's data type. A custom list of aggregations can also be set via the `AggregateList` property, for example:
 
 <!-- React -->
+
 ```typescript
-const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
+const totalSale = (members: any, data: any) =>
+  data.reduce(
+    (accumulator: any, value: any) =>
+      accumulator + value.UnitPrice * value.UnitsSold,
+    0,
+  );
 
 const totalMin = (members: any, data: any) => {
-    return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
+  return data
+    .map((x: any) => x.UnitPrice * x.UnitsSold)
+    .reduce((a: number, b: number) => Math.min(a, b));
 };
 
 const totalMax = (members: any, data: any) => {
-    return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
+  return data
+    .map((x: any) => x.UnitPrice * x.UnitsSold)
+    .reduce((a: number, b: number) => Math.max(a, b));
 };
 
 const pivotConfiguration: IgrPivotConfiguration = {
-      values: [
-            {
-                enabled: true,
-                member: "AmountofSale",
-                displayName: "Amount of Sale",
-                aggregate: {
-                    aggregatorName: "SUM",
-                    key: "SUM",
-                    label: "Sum of Sale",
-                },
-                aggregateList: [{
-                    key: 'SUM',
-                    aggregator: totalSale,
-                    label: 'Sum of Sale'
-                }, {
-                    key: 'MIN',
-                    aggregator: totalMin,
-                    label: 'Minimum of Sale'
-                }, {
-                    key: 'MAX',
-                    aggregator: totalMax,
-                    label: 'Maximum of Sale'
-                }]
-            }
-      ]
+  values: [
+    {
+      enabled: true,
+      member: "AmountofSale",
+      displayName: "Amount of Sale",
+      aggregate: {
+        aggregatorName: "SUM",
+        key: "SUM",
+        label: "Sum of Sale",
+      },
+      aggregateList: [
+        {
+          key: "SUM",
+          aggregator: totalSale,
+          label: "Sum of Sale",
+        },
+        {
+          key: "MIN",
+          aggregator: totalMin,
+          label: "Minimum of Sale",
+        },
+        {
+          key: "MAX",
+          aggregator: totalMax,
+          label: "Maximum of Sale",
+        },
+      ],
+    },
+  ],
 };
 ```
+
 <!-- end: React -->
 
 <!-- Angular -->
+
 ```typescript
 public pivotConfigHierarchy: IPivotConfiguration = {
     values: [
@@ -335,9 +382,11 @@ public static totalMax: PivotAggregation = (members, data: any) => {
     return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.max(a,b));
 };
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```typescript
 public pivotConfigHierarchy: IgcPivotConfiguration = {
     values: [
@@ -377,6 +426,7 @@ public static totalMax: PivotAggregation = (members, data: any) => {
     return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.max(a,b));
 };
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -411,47 +461,48 @@ Let's take a look at a basic pivot configuration:
 
 ```tsx
 const pivotConfiguration1: IgrPivotConfiguration = {
-    columns: [
-        new IgrPivotDateDimension({
-            enabled: true,
-            memberName: "Date",
-        })
-    ],
-    rows: [
-        {
-            enabled: true,
-            memberName: "SellerCity"
-        },
-        {
-            enabled: true,
-            memberName: "ProductName"
-        }
-    ],
-    filters: [
-        {
-            enabled: true,
-            memberName: "SellerName"
-        }
-    ],
-    values: [
-        {
-            member: "ProductUnitPrice",
-            displayName: "Amount of Sale",
-            dataType: "currency",
-            enabled: true,
-            aggregate: {
-                    aggregatorName: "SUM",
-                    key: "SUM",
-                    label: "Sum of Sale",
-                }
-        }
-    ]
+  columns: [
+    new IgrPivotDateDimension({
+      enabled: true,
+      memberName: "Date",
+    }),
+  ],
+  rows: [
+    {
+      enabled: true,
+      memberName: "SellerCity",
+    },
+    {
+      enabled: true,
+      memberName: "ProductName",
+    },
+  ],
+  filters: [
+    {
+      enabled: true,
+      memberName: "SellerName",
+    },
+  ],
+  values: [
+    {
+      member: "ProductUnitPrice",
+      displayName: "Amount of Sale",
+      dataType: "currency",
+      enabled: true,
+      aggregate: {
+        aggregatorName: "SUM",
+        key: "SUM",
+        label: "Sum of Sale",
+      },
+    },
+  ],
 };
 ```
 
 <!-- end: React -->
 
 <!-- Angular -->
+
 ```typescript
       public pivotConfigHierarchy: IPivotConfiguration = {
         columns: [
@@ -484,9 +535,11 @@ const pivotConfiguration1: IgrPivotConfiguration = {
         ]
     };
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```typescript
       public pivotConfigHierarchy: IgcPivotConfiguration = {
         columns: [
@@ -527,6 +580,7 @@ const pivotConfiguration1: IgrPivotConfiguration = {
         ]
     };
 ```
+
 <!-- end: WebComponents -->
 
 ```razor
@@ -599,6 +653,7 @@ Using above code will result in the following example which groups the Date uniq
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
 
 ### Auto generate configuration
+
 The `AutoGenerateConfig` property automatically generates dimensions and values based on the data source fields:
 
 - Numeric Fields:
@@ -637,6 +692,7 @@ A more detailed view of how they are used can be seen bellow in example data, wh
 ```
 
 All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys.
+
 - **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
 - **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
 - **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
@@ -674,6 +730,7 @@ The default values are:
 > If you have data field values that contain the default keys, make sure to change the separators that match to any other symbols that you are not currently using. Otherwise could lead to unexpected behavior in calculating and showing the aggregated values.
 
 <!-- Blazor -->
+
 When overriding the `PivotKeys` in Blazor, currently you will need to define all other keys, since assigning a new PivotKeys object, it replaces completely the default ones:
 
 ```razor
@@ -690,17 +747,21 @@ When overriding the `PivotKeys` in Blazor, currently you will need to define all
     };
 }
 ```
+
 <!-- end: Blazor -->
 
 ## Known Issues and Limitations
 
-|Limitation|Description|
-|--- |--- |
-| Setting columns declaratively is not supported. | The Pivot grid generates its columns based on the `Columns` configuration, so setting them declaratively, like in the base grid, is not supported. Such columns are disregarded. |
-| Setting duplicate `MemberName` or `Member` property values for dimensions/values. | These properties should be unique for each dimension/value. Duplication may result in loss of data from the final result. |
-| Row Selection is only supported in **Single** mode. | Multiple selection is currently not supported. |
+| Limitation                                                                        | Description                                                                                                                                                                      |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Setting columns declaratively is not supported.                                   | The Pivot grid generates its columns based on the `Columns` configuration, so setting them declaratively, like in the base grid, is not supported. Such columns are disregarded. |
+| Setting duplicate `MemberName` or `Member` property values for dimensions/values. | These properties should be unique for each dimension/value. Duplication may result in loss of data from the final result.                                                        |
+| Row Selection is only supported in **Single** mode.                               | Multiple selection is currently not supported.                                                                                                                                   |
+
 <!--Angular -->
+
 | Merging the dimension members is case sensitive| The Pivot Grid creates groups and merges the same (case sensitive) values. But the dimensions provide `MemberFunction` and this can be changed there, the result of the `MemberFunction` are compared and used as display value.|
+
 <!-- end: Angular -->
 
 ## API References
@@ -723,5 +784,3 @@ Our community is active and always welcoming to new ideas.
 
 - [{ProductName} **Forums**]({ForumsLink})
 - [{ProductName} **GitHub**]({GithubLink})
-
-

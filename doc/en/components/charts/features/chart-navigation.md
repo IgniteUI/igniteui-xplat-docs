@@ -6,6 +6,7 @@ _license: commercial
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 namespace: Infragistics.Controls.Charts
 ---
+
 # {Platform} Chart Navigation
 
 The {ProductName} charts allows for interactive panning and zooming via the mouse, keyboard and touch.
@@ -15,8 +16,6 @@ The {ProductName} charts allows for interactive panning and zooming via the mous
 The following example shows all of the available panning and zooming options that are available. You can interact with the example by using the buttons, or select your desired options using the dropdowns or checkboxes.
 
 `sample="/charts/data-chart/chart-navigation", height="600", alt="{Platform} Navigation Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -41,12 +40,12 @@ Navigation in the {Platform} data chart can happen with either touch, the mouse 
 The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed:
 
 | Modifier Value | Corresponding Key |
-| ---------------|------------------ |
-| `Shift`        | <kbd>SHIFT</kbd> |
-| `Control`      | <kbd>CTRL</kbd> |
-| `Windows`      | <kbd>WIN</kbd> |
-| `Apple`        | <kbd>APPLE</kbd> |
-| `None`         | no keys |
+| -------------- | ----------------- |
+| `Shift`        | <kbd>SHIFT</kbd>  |
+| `Control`      | <kbd>CTRL</kbd>   |
+| `Windows`      | <kbd>WIN</kbd>    |
+| `Apple`        | <kbd>APPLE</kbd>  |
+| `None`         | no keys           |
 
 ## Chart Navigation with Scrollbars
 

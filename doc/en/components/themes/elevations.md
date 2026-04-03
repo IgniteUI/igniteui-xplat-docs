@@ -16,12 +16,12 @@ The implementation of the Elevations in {ProductName} is modeled after the [Elev
 
 Here's a list of resting elevations as used in various components in {ProductName} in the Bootstrap Theme and their corresponding CSS variable names:
 
-| Component                                       | Default Elevation Level | CSS Variable       |
-| ----------------------------------------------- | ----------------------- | ------------------ |
-| Button                                          | 0                       | --ig-elevation-0  |
-| Elevated Card                                   | 2                       | --ig-elevation-2  |
-| Toast, Snackbar                                 | 10                      | --ig-elevation-10 |
-| Navdrawer                                       | 16                      | --ig-elevation-16 |
+| Component       | Default Elevation Level | CSS Variable      |
+| --------------- | ----------------------- | ----------------- |
+| Button          | 0                       | --ig-elevation-0  |
+| Elevated Card   | 2                       | --ig-elevation-2  |
+| Toast, Snackbar | 10                      | --ig-elevation-10 |
+| Navdrawer       | 16                      | --ig-elevation-16 |
 
 As you can see from the **CSS Variable** column, all elevations are defined in the following format `--ig-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
 
@@ -51,8 +51,8 @@ Example:
 
 ```css
 :root {
-  --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
-  --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.18);
+  --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, 0.24);
 }
 ```
 
@@ -65,7 +65,7 @@ You can shadow the globally set elevations for a specific scope only. We already
 ```css
 igc-snackbar,
 igc-toast {
-  --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, 0.24);
 }
 ```
 

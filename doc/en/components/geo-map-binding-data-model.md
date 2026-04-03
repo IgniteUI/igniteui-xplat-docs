@@ -6,61 +6,53 @@ _license: commercial
 mentionedTypes: ["XamGeographicMap", "GeographicScatterAreaSeries", "GeographicHighDensityScatterSeries", "GeographicProportionalSymbolSeries", "GeographicScatterAreaSeries", "GeographicContourLineSeries", "GeographicShapeSeries", "GeographicPolylineSeries", "Series", "GeographicShapeSeriesBase"]
 namespace: Infragistics.Controls.Maps
 ---
+
 # {Platform} Binding Geographic Data Models
 
 The {ProductName} map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.
 
 ## {Platform} Binding Geographic Data Models Example
 
-
 `sample="/maps/geo-map/binding-data-model", height="500", alt="{Platform} Binding Geographic Data Models Example"`
-
-
 
 <div class="divider--half"></div>
 
 The following table summarized data structures required for each type of geographic series:
 
-| Geographic Series  | Properties   | Description   |
-|--------------|---------------| ---------------|
-| `GeographicSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | Specifies names of 2 numeric longitude and latitude coordinates |
-| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | Specifies names of 2 numeric longitude and latitude coordinates |
-| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `RadiusMemberPath`   | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for size/radius of symbols |
-| `GeographicScatterAreaSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ColorMemberPath`   | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for triangulation of values |
-| `GeographicContourLineSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ValueMemberPath`   | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for triangulation of values |
-|`GeographicShapeSeries`|`ShapeMemberPath`|Specifies the name of data column of `ItemsSource` items that contains the geographic points of shapes. This property must be mapped to an array of arrays of objects with x and y properties. |
-|`GeographicPolylineSeries`|`ShapeMemberPath`|Specifies the name of data column of `ItemsSource` items that contains the geographic coordinates of lines. This property must be mapped to an array of arrays of objects with x and y properties. |
+| Geographic Series                    | Properties                                                      | Description                                                                                                                                                                                        |
+| ------------------------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GeographicSymbolSeries`             | `LongitudeMemberPath`, `LatitudeMemberPath`                     | Specifies names of 2 numeric longitude and latitude coordinates                                                                                                                                    |
+| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`                     | Specifies names of 2 numeric longitude and latitude coordinates                                                                                                                                    |
+| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `RadiusMemberPath` | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for size/radius of symbols                                                                                    |
+| `GeographicScatterAreaSeries`        | `LongitudeMemberPath`, `LatitudeMemberPath`, `ColorMemberPath`  | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for triangulation of values                                                                                   |
+| `GeographicContourLineSeries`        | `LongitudeMemberPath`, `LatitudeMemberPath`, `ValueMemberPath`  | Specifies names of 2 numeric longitude and latitude coordinates and 1 numeric column for triangulation of values                                                                                   |
+| `GeographicShapeSeries`              | `ShapeMemberPath`                                               | Specifies the name of data column of `ItemsSource` items that contains the geographic points of shapes. This property must be mapped to an array of arrays of objects with x and y properties.     |
+| `GeographicPolylineSeries`           | `ShapeMemberPath`                                               | Specifies the name of data column of `ItemsSource` items that contains the geographic coordinates of lines. This property must be mapped to an array of arrays of objects with x and y properties. |
 
 ## Code Snippet
+
 The following code shows how to bind the `GeographicSymbolSeries` to a custom data model that contains geographic locations of some cities of the world stored using longitude and latitude coordinates. Also, we use the `GeographicPolylineSeries` to plot shortest geographic path between these locations using the [WorldUtility](geo-map-resources-world-util.md)
 
 ```html
-<div className="sampleRoot" >
-    <igx-geographic-map #map
-        width="700px"
-        height="500px"
-        zoomable="true" >
-    </igx-geographic-map>
+<div className="sampleRoot">
+  <igx-geographic-map #map width="700px" height="500px" zoomable="true">
+  </igx-geographic-map>
 </div>
 
 <ng-template let-series="series" let-item="item" #pointSeriesTemplate>
-        <div>
-            <span [style.color]="series.brush">
-                {{item.country}}
-            </span>
-        </div>
+  <div>
+    <span [style.color]="series.brush"> {{item.country}} </span>
+  </div>
 </ng-template>
 
 <ng-template let-series="series" let-item="item" #polylineSeriesTooltipTemplate>
-    <div>
-        <span [style.color]="series.brush">
-            Departure: {{item.origin.country}}
-        </span>
-        <br/>
-        <span [style.color]="series.brush">
-            Arrival: {{item.dest.country}}
-        </span>
-    </div>
+  <div>
+    <span [style.color]="series.brush">
+      Departure: {{item.origin.country}}
+    </span>
+    <br />
+    <span [style.color]="series.brush"> Arrival: {{item.dest.country}} </span>
+  </div>
 </ng-template>
 ```
 
@@ -122,108 +114,174 @@ public createPolylineSeries(flight: any)
 ```
 
 ```ts
-import { AfterViewInit, Component, TemplateRef, ViewChild } from "@angular/core";
-import { MarkerType } from 'igniteui-angular-charts';
-import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
+import {
+  AfterViewInit,
+  Component,
+  TemplateRef,
+  ViewChild,
+} from "@angular/core";
+import { MarkerType } from "igniteui-angular-charts";
+import { IgxGeographicMapComponent } from "igniteui-angular-maps";
 import { IgxGeographicPolylineSeriesComponent } from "igniteui-angular-maps";
-import { IgxGeographicSymbolSeriesComponent } from 'igniteui-angular-maps';
+import { IgxGeographicSymbolSeriesComponent } from "igniteui-angular-maps";
 import { WorldUtils } from "../../utilities/WorldUtils";
 
 @Component({
   selector: "app-map-binding-geographic-data-models",
   styleUrls: ["./map-binding-geographic-data-models.component.scss"],
-  templateUrl: "./map-binding-geographic-data-models.component.html"
+  templateUrl: "./map-binding-geographic-data-models.component.html",
 })
-
 export class MapBindingDataModelComponent implements AfterViewInit {
+  @ViewChild("map")
+  public map: IgxGeographicMapComponent;
+  @ViewChild("pointSeriesTemplate")
+  public pointSeriesTemplate: TemplateRef<object>;
+  @ViewChild("polylineSeriesTooltipTemplate")
+  public polylineSeriesTooltipTemplate: TemplateRef<object>;
+  public flights: any[];
+  constructor() {}
 
-    @ViewChild ("map")
-    public map: IgxGeographicMapComponent;
-    @ViewChild("pointSeriesTemplate")
-    public pointSeriesTemplate: TemplateRef<object>;
-    @ViewChild("polylineSeriesTooltipTemplate")
-    public polylineSeriesTooltipTemplate: TemplateRef<object>;
-    public flights: any[];
-    constructor() {
+  public ngAfterViewInit(): void {
+    const cityDAL = {
+      lat: 32.763,
+      lon: -96.663,
+      country: "US",
+      name: "Dallas",
+    };
+    const citySYD = {
+      lat: -33.889,
+      lon: 151.028,
+      country: "Australia",
+      name: "Sydney",
+    };
+    const cityNZL = {
+      lat: -36.848,
+      lon: 174.763,
+      country: "New Zealand",
+      name: "Auckland",
+    };
+    const cityQTR = {
+      lat: 25.285,
+      lon: 51.531,
+      country: "Qatar",
+      name: "Doha",
+    };
+    const cityPAN = {
+      lat: 8.949,
+      lon: -79.4,
+      country: "Panama",
+      name: "Panama",
+    };
+    const cityCHL = {
+      lat: -33.475,
+      lon: -70.647,
+      country: "Chile",
+      name: "Santiago",
+    };
+    const cityJAP = {
+      lat: 35.683,
+      lon: 139.809,
+      country: "Japan",
+      name: "Tokyo",
+    };
+    const cityALT = {
+      lat: 33.795,
+      lon: -84.349,
+      country: "US",
+      name: "Atlanta",
+    };
+    const cityJOH = {
+      lat: -26.178,
+      lon: 28.004,
+      country: "South Africa",
+      name: "Johannesburg",
+    };
+    const cityNYC = {
+      lat: 40.75,
+      lon: -74.0999,
+      country: "US",
+      name: "New York",
+    };
+    const citySNG = {
+      lat: 1.229,
+      lon: 104.177,
+      country: "Singapore",
+      name: "Singapore",
+    };
+    const cityMOS = {
+      lat: 55.75,
+      lon: 37.7,
+      country: "Russia",
+      name: "Moscow",
+    };
+    const cityROM = { lat: 41.88, lon: 12.52, country: "Italy", name: "Roma" };
+    const cityLAX = {
+      lat: 34.0,
+      lon: -118.25,
+      country: "US",
+      name: "Los Angeles",
+    };
+
+    this.flights = [
+      { origin: cityDAL, dest: citySNG, color: "Green" },
+      { origin: cityMOS, dest: cityNZL, color: "Red" },
+      { origin: cityCHL, dest: cityJAP, color: "Blue" },
+      { origin: cityPAN, dest: cityROM, color: "Orange" },
+      { origin: cityALT, dest: cityJOH, color: "Black" },
+      { origin: cityNYC, dest: cityQTR, color: "Purple" },
+      { origin: cityLAX, dest: citySYD, color: "Gray" },
+    ];
+
+    for (const flight of this.flights) {
+      this.createPolylineSeries(flight);
+      this.createSymbolSeries(flight);
     }
+  }
 
-    public ngAfterViewInit(): void {
-        const cityDAL = { lat:  32.763, lon: -96.663, country: "US", name: "Dallas" };
-        const citySYD = { lat: -33.889, lon: 151.028, country: "Australia", name: "Sydney" };
-        const cityNZL = { lat: -36.848, lon: 174.763, country: "New Zealand", name: "Auckland" };
-        const cityQTR = { lat: 25.285, lon:  51.531,  country: "Qatar", name: "Doha" };
-        const cityPAN = { lat:  8.949, lon: -79.400,  country: "Panama", name: "Panama" };
-        const cityCHL = { lat: -33.475, lon: -70.647, country: "Chile", name: "Santiago" };
-        const cityJAP = { lat:  35.683, lon: 139.809, country: "Japan", name: "Tokyo" };
-        const cityALT = { lat: 33.795,  lon: -84.349, country: "US", name: "Atlanta" };
-        const cityJOH = { lat: -26.178, lon: 28.004,  country: "South Africa", name: "Johannesburg" };
-        const cityNYC = { lat: 40.750, lon: -74.0999, country: "US", name: "New York" };
-        const citySNG = { lat:  1.229, lon: 104.177,  country: "Singapore", name: "Singapore" };
-        const cityMOS = { lat: 55.750, lon:  37.700,  country: "Russia", name: "Moscow" };
-        const cityROM = { lat:  41.880, lon: 12.520,  country: "Italy", name: "Roma" };
-        const cityLAX = { lat: 34.000, lon: -118.25,  country: "US", name: "Los Angeles" };
+  public createSymbolSeries(flight: any) {
+    const geoLocations = [flight.origin, flight.dest];
+    const symbolSeries = new IgxGeographicSymbolSeriesComponent();
+    symbolSeries.dataSource = geoLocations;
+    symbolSeries.markerType = MarkerType.Circle;
+    symbolSeries.latitudeMemberPath = "lat";
+    symbolSeries.longitudeMemberPath = "lon";
+    symbolSeries.markerBrush = "White";
+    symbolSeries.markerOutline = flight.color;
+    symbolSeries.thickness = 1;
+    symbolSeries.tooltipTemplate = this.pointSeriesTemplate;
 
-        this.flights = [
-            { origin: cityDAL, dest: citySNG, color: "Green" },
-            { origin: cityMOS, dest: cityNZL, color: "Red" },
-            { origin: cityCHL, dest: cityJAP, color: "Blue" },
-            { origin: cityPAN, dest: cityROM, color: "Orange" },
-            { origin: cityALT, dest: cityJOH, color: "Black" },
-            { origin: cityNYC, dest: cityQTR, color: "Purple" },
-            { origin: cityLAX, dest: citySYD, color: "Gray" }
-        ];
+    this.map.series.add(symbolSeries);
+  }
 
-        for (const flight of this.flights) {
-            this.createPolylineSeries(flight);
-            this.createSymbolSeries(flight);
-        }
-    }
+  public createPolylineSeries(flight: any) {
+    const geoPath = WorldUtils.calcPaths(flight.origin, flight.dest);
+    const geoDistance = WorldUtils.calcDistance(flight.origin, flight.dest);
+    const geoRoutes = [
+      {
+        dest: flight.dest,
+        distance: geoDistance,
+        origin: flight.origin,
+        points: geoPath,
+        time: geoDistance / 850,
+      },
+    ];
 
-    public createSymbolSeries(flight: any) {
-        const geoLocations = [flight.origin, flight.dest ];
-        const symbolSeries = new IgxGeographicSymbolSeriesComponent ();
-        symbolSeries.dataSource = geoLocations;
-        symbolSeries.markerType = MarkerType.Circle;
-        symbolSeries.latitudeMemberPath = "lat";
-        symbolSeries.longitudeMemberPath = "lon";
-        symbolSeries.markerBrush  = "White";
-        symbolSeries.markerOutline = flight.color;
-        symbolSeries.thickness = 1;
-        symbolSeries.tooltipTemplate = this.pointSeriesTemplate;
-
-        this.map.series.add(symbolSeries);
-    }
-
-    public createPolylineSeries(flight: any) {
-        const geoPath = WorldUtils.calcPaths(flight.origin, flight.dest);
-        const geoDistance = WorldUtils.calcDistance(flight.origin, flight.dest);
-        const geoRoutes = [
-            {
-              dest: flight.dest,
-              distance: geoDistance,
-              origin: flight.origin,
-              points: geoPath,
-              time: geoDistance / 850
-        }];
-
-        const lineSeries = new IgxGeographicPolylineSeriesComponent ();
-        lineSeries.dataSource = geoRoutes;
-        lineSeries.shapeMemberPath = "points";
-        lineSeries.shapeStrokeThickness = 9;
-        lineSeries.shapeOpacity = 0.5;
-        lineSeries.shapeStroke = flight.color;
-        lineSeries.tooltipTemplate = this.polylineSeriesTooltipTemplate;
-        this.map.series.add(lineSeries);
-    }
+    const lineSeries = new IgxGeographicPolylineSeriesComponent();
+    lineSeries.dataSource = geoRoutes;
+    lineSeries.shapeMemberPath = "points";
+    lineSeries.shapeStrokeThickness = 9;
+    lineSeries.shapeOpacity = 0.5;
+    lineSeries.shapeStroke = flight.color;
+    lineSeries.tooltipTemplate = this.polylineSeriesTooltipTemplate;
+    this.map.series.add(lineSeries);
+  }
 }
 ```
 
 ```html
 <igc-geographic-map id="geoMap" width="100%" height="100%">
-
 </igc-geographic-map>
 ```
-
 
 ```ts
 public flights: any[];

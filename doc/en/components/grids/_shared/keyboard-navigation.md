@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Keyboard Navigation
 
- The {ProductName} Keyboard Navigation feature in {Platform} {ComponentTitle} provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentName}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
+The {ProductName} Keyboard Navigation feature in {Platform} {ComponentTitle} provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentName}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
 
 The tabulations of the `{ComponentName}` has been reduced so that the navigation is compliant with W3C accessibility standards and convenient to use.
 
@@ -42,7 +42,7 @@ When the `{ComponentName}` header container is focused, the following key combin
 - <kbd>←</kbd> navigates one cell left (no looping).
 - <kbd>→</kbd> navigates one cell right (no wrapping between lines).
 - <kbd>CTRL</kbd> + <kbd>←</kbd> navigates to the leftmost cell in the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
-- <kbd>HOME</kbd> navigates to the leftmost cell in  the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
+- <kbd>HOME</kbd> navigates to the leftmost cell in the row; if MRL or MCH are enabled, navigates to the leftmost cell at the same level.
 - <kbd>CTRL</kbd> + <kbd>→</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
 - <kbd>END</kbd> navigates to the rightmost cell in row; if MRL or MCH are enabled, navigates to the rightmost cell at the same level.
 - <kbd>ALT</kbd> + <kbd>L</kbd> opens Advanced Filtering dialog if Advanced Filtering is enabled.
@@ -50,9 +50,9 @@ When the `{ComponentName}` header container is focused, the following key combin
 - <kbd>CTRL</kbd> + <kbd>↑</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared.
 - <kbd>CTRL</kbd> + <kbd>↓</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared.
 - <kbd>SPACE</kbd> selects the column. If the column is already selected, selection is cleared.
- <!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid -->
 - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd> groups the column, if the column is marked as groupable.
- <!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid -->
 - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd> ungroups the column, if the column is marked as groupable.
 - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> collapses the column group header, if the header is not already collapsed.
 - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> expands the column group header, if the header is not already expanded.
@@ -96,38 +96,35 @@ When the `{ComponentName}` body is focused, the following key combinations are a
 - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - available only if there is a cell in edit mode; moves the focus to the previous editable cell in the row; after reaching the first cell in the row, moves the focus to the last editable cell in the previous row. When [Row Editing](row-editing.md) is enabled, moves the focus from the right-most editable cell to **CANCEL** and **DONE** buttons, and from **DONE** button to the right-most editable cell in the row.
 - <kbd>SPACE</kbd> - selects the row, if [Row Selection](row-selection.md) is enabled.
 - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> -
- <!-- ComponentStart: Grid -->
+  <!-- ComponentStart: Grid -->
   over Group Row - collapses the group.
- <!-- ComponentEnd: Grid -->
- <!-- ComponentStart: HierarchicalGrid -->
+  <!-- ComponentEnd: Grid -->
+  <!-- ComponentStart: HierarchicalGrid -->
   collapses the row island.
- <!-- ComponentEnd: HierarchicalGrid -->
- <!-- ComponentStart: TreeGrid -->
+  <!-- ComponentEnd: HierarchicalGrid -->
+  <!-- ComponentStart: TreeGrid -->
   collapses the current node.
- <!-- ComponentEnd: TreeGrid -->
+  <!-- ComponentEnd: TreeGrid -->
 - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> - <!-- ComponentStart: Grid -->
   over Group Row - expands the group.
- <!-- ComponentEnd: Grid -->
- <!-- ComponentStart: HierarchicalGrid -->
+  <!-- ComponentEnd: Grid -->
+  <!-- ComponentStart: HierarchicalGrid -->
   expands the row island.
- <!-- ComponentEnd: HierarchicalGrid -->
- <!-- ComponentStart: TreeGrid -->
+  <!-- ComponentEnd: HierarchicalGrid -->
+  <!-- ComponentStart: TreeGrid -->
   expands the current node.
- <!-- ComponentEnd: TreeGrid -->
- <!-- ComponentStart: Grid -->
+  <!-- ComponentEnd: TreeGrid -->
+  <!-- ComponentStart: Grid -->
 - <kbd>ALT</kbd> + <kbd>←</kbd> or <kbd>ALT</kbd> + <kbd>↑</kbd> - over Master Detail Row - collapses the details view.
 - <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> - over Master Detail Row - expands the details view.
 - <kbd>SPACE</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
- <!-- ComponentEnd: Grid -->
-
-
+<!-- ComponentEnd: Grid -->
 
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
 <!-- Angular, WebComponents, React -->
 
 ## Demo
-
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
@@ -138,36 +135,48 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 Overriding the default behavior for a certain key or keys combination is one of the benefits that the **Keyboard Navigation** feature provides. For example: press the <kbd>ENTER</kbd> or <kbd>TAB</kbd> key to navigate to the next cell or the cell below. This or any other navigation scenario is easily achieved by the **Keyboard Navigation** API:
 
 <!-- Blazor -->
-| API | Description | Arguments |
-|---------|-------------|-----------|
-| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs` |
-| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `ActiveNodeChangeEventArgs` |
+
+| API                | Description                                                                                                                                                                        | Arguments                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| `GridKeydown`      | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs`      |
+| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level.     | `ActiveNodeChangeEventArgs` |
+
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-| API | Description | Arguments |
-|---------|-------------|-----------|
-| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs` |
-| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `ActiveNodeChangeEventArgs` |
-| `NavigateTo` | Navigates to a position in the grid, based on provided `Rowindex` and `VisibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type ```{ targetType: GridKeydownTargetType, target: Object }``` . Usage: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }```) => {} |
-| `GetNextCell`| returns `ICellPosition` object, which defines the next cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetNextCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```currentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
-| `GetPreviousCell` | returns `ICellPosition` object, which defines the previous cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetPreviousCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ``` CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column) => boolean ``` |
+
+| API                | Description                                                                                                                                                                                                                                                                                                                                                                                            | Arguments                                                                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| `GridKeydown`      | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event.                                                                                                                                                                                                                     | `GridKeydownEventArgs`                                                                                                  |
+| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level.                                                                                                                                                                                                                         | `ActiveNodeChangeEventArgs`                                                                                             |
+| `NavigateTo`       | Navigates to a position in the grid, based on provided `Rowindex` and `VisibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: GridKeydownTargetType, target: Object }` . Usage: <br />`grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });`                                      | `RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }`) => {} |
+| `GetNextCell`      | returns `ICellPosition` object, which defines the next cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetNextCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />`const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);`             | `currentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean`                             |
+| `GetPreviousCell`  | returns `ICellPosition` object, which defines the previous cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetPreviousCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />`const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);` | `CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column) => boolean`                             |
+
 <!-- end: Angular, WebComponents -->
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
+
 > [!Note]
 > Both `GetNextCell` and `GetPreviousCell` are
 > available for the current level and cannot access cells from upper or lower level.
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the `GridKeydown` event:
 
-
 <!-- Angular -->
+
 ```html
-<igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
+<igx-grid
+  #grid1
+  [data]="data"
+  [primaryKey]="'ProductID'"
+  (gridKeydown)="customKeydown($event)"
+></igx-grid>
 ```
+
 <!-- end: Angular -->
 
 ```html
@@ -202,7 +211,9 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 <{ComponentSelector} id="grid1" primaryKey="ProductID" onGridKeydown={customKeydown}>
 </{ComponentSelector}>
 ```
+
 <!-- WebComponents -->
+
 ```ts
 constructor() {
         const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
@@ -210,6 +221,7 @@ constructor() {
         grid.addEventListener("gridKeydown", this.customKeydown);
     }
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -217,18 +229,21 @@ constructor() {
 ```tsx
 const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
   const args = eventArgs.detail;
-  const target= args.target;
+  const target = args.target;
   const evt = args.event;
   const type = args.targetType;
 
-  if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
-      // 1. USER INPUT VALIDATION ON TAB
-
+  if (
+    type === "dataCell" &&
+    target.editMode &&
+    evt.key.toLowerCase() === "tab"
+  ) {
+    // 1. USER INPUT VALIDATION ON TAB
   }
-  if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
-      // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+  if (type === "dataCell" && evt.key.toLowerCase() === "enter") {
+    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
   }
-}
+};
 ```
 
 <!-- end: React -->
@@ -260,17 +275,23 @@ Based on the event arg values we identified two cases, where to provide our own 
 <!-- end: Angular, WebComponents, Blazor -->
 
 <!-- Angular, WebComponents -->
+
 ```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 10) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    this.grid1.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
-            obj.target.activate();
-        });
+// 1. USER INPUT VALIDATION ON TAB
+if (target.column.dataType === "number" && target.editValue < 10) {
+  // alert the user that the input is invalid
+  return;
+}
+// 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+this.grid1.navigateTo(
+  target.row.index + 1,
+  target.column.visibleIndex,
+  (obj) => {
+    obj.target.activate();
+  },
+);
 ```
+
 <!-- end: Angular, WebComponents -->
 
 <!-- React -->
@@ -278,12 +299,13 @@ Based on the event arg values we identified two cases, where to provide our own 
 Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>TAB</kbd> key over a cell in edit mode, we will perform validation on the input:
 
 ```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 10) {
-        // alert the user that the input is invalid
-        return;
-    }
+// 1. USER INPUT VALIDATION ON TAB
+if (target.column.dataType === "number" && target.editValue < 10) {
+  // alert the user that the input is invalid
+  return;
+}
 ```
+
 <!-- end: React -->
 
 ```razor
@@ -314,20 +336,19 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 > Please refer to the sample code for full implementation details.
 
 Use the demo below to try out the custom scenarios that we just implemented:
+
 - Double click or press <kbd>F2</kbd> key on a cell in a numeric column, change the value to **7** and press <kbd>TAB</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>ENTER</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 ### Demo
 
-
 `sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
-
 
 ## Known Limitations
 
-|Limitation|Description|
-|--- |--- |
-| Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled.|
+| Limitation                                                 | Description                                                                                                                                                      |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled. |
 
 <!-- Angular -->
 
@@ -341,6 +362,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
+
 - [Virtualization and Performance](virtualization.md)
 - [Filtering](filtering.md)
 - [Sorting](sorting.md)

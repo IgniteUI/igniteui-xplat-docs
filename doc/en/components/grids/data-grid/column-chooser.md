@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,13 +20,9 @@ The {ProductName} Data Grid supports the ability show and hide columns with the 
 
 ## {Platform} Grid Column Chooser Example
 
-
 `sample="/grids/data-grid/column-chooser-toolbar", height="600", alt="{Platform} Grid Column Chooser Example"`
 
-
-
 <div class="divider--half"></div>
-
 
 ## Toolbar's Column Chooser UI
 
@@ -92,19 +88,21 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 
 ```html
 <igc-dataGrid-toolbar
-    toolbar-title="Grid Title"
-    column-chooser="true"
-    column-chooser-text="Columns"
-    column-chooser-title="Column Chooser">
+  toolbar-title="Grid Title"
+  column-chooser="true"
+  column-chooser-text="Columns"
+  column-chooser-title="Column Chooser"
+>
 </igc-dataGrid-toolbar>
 <igc-data-grid
-    id="grid"
-    height="calc(100% - 40px)"
-    width="100%"
-    auto-generate-columns="false"
-    default-column-min-width="120px"
-    scrollbar-style = "thin"
-    column-hiding-animation-mode="SlideOver">
+  id="grid"
+  height="calc(100% - 40px)"
+  width="100%"
+  auto-generate-columns="false"
+  default-column-min-width="120px"
+  scrollbar-style="thin"
+  column-hiding-animation-mode="SlideOver"
+>
 </igc-data-grid>
 ```
 
@@ -164,9 +162,7 @@ Let's say we want to manually display the `ColumnChooser` UI without the toolbar
 
 ## Demo
 
-
 `sample="/grids/data-grid/column-chooser-picker", height="600", alt="{Platform} data grid column chooser picker"`
-
 
 <div class="divider--half"></div>
 

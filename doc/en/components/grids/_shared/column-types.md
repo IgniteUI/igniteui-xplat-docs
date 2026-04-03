@@ -19,7 +19,6 @@ The {Platform} {ComponentTitle} provides a default handling of **number**, **str
 
 `sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
 
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} Default Template
@@ -51,8 +50,7 @@ public formatOptions = this.options;
 <!-- end: Angular -->
 
 ```html
-<igx-column [pipeArgs]="formatOptions" [dataType]="'number'">
-</igx-column>
+<igx-column [pipeArgs]="formatOptions" [dataType]="'number'"> </igx-column>
 ```
 
 ```razor
@@ -64,8 +62,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" data-type="number">
-</igc-column>
+<igc-column id="column" data-type="number"> </igc-column>
 ```
 
 ```ts
@@ -82,11 +79,11 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions : IgrColumnPipeArgs = {
-    digitsInfo: "1.4-4"
+const formatOptions: IgrColumnPipeArgs = {
+  digitsInfo: "1.4-4",
 };
 
-<IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>
+<IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>;
 ```
 
 ### DateTime, Date and Time
@@ -112,8 +109,7 @@ public formatOptions = this.options;
 <!-- end: Angular -->
 
 ```html
-<igx-column [pipeArgs]="formatDateOptions" [dataType]="'date'">
-</igx-column>
+<igx-column [pipeArgs]="formatDateOptions" [dataType]="'date'"> </igx-column>
 ```
 
 ```razor
@@ -132,8 +128,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" data-type="date">
-</igc-column>
+<igc-column id="column" data-type="date"> </igc-column>
 ```
 
 ```ts
@@ -151,29 +146,28 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions : IgrColumnPipeArgs = {
-    format: "long",
-    timezone: "UTC+0"
+const formatOptions: IgrColumnPipeArgs = {
+  format: "long",
+  timezone: "UTC+0",
 };
 
-<IgrColumn pipeArgs={formatOptions} dataType="date"></IgrColumn>
+<IgrColumn pipeArgs={formatOptions} dataType="date"></IgrColumn>;
 ```
 
 Available timezones:
 
-| Timezone                  | Value                     |
-|---------------------------| ------------------------- |
-| Alpha Time Zone           |‘UTC+1’                    |
-| Australian Central Time   |‘UTC+9:30/ +10:30’         |
-| Arabia Standard Time      |‘UTC+3’                    |
-| Central Standard Time     |‘UTC-6’                    |
-| China Standard Time       |‘UTC+8’                    |
-| Delta Time Zone           |‘UTC+4’                    |
-| Greenwich Mean Time       |‘UTC+0’                    |
-| Gulf Standard Time        |‘UTC+4’                    |
-| Hawaii Standard Time      |‘UTC-10’                   |
-| India Standard Time       |‘UTC+4’                    |
-
+| Timezone                | Value              |
+| ----------------------- | ------------------ |
+| Alpha Time Zone         | ‘UTC+1’            |
+| Australian Central Time | ‘UTC+9:30/ +10:30’ |
+| Arabia Standard Time    | ‘UTC+3’            |
+| Central Standard Time   | ‘UTC-6’            |
+| China Standard Time     | ‘UTC+8’            |
+| Delta Time Zone         | ‘UTC+4’            |
+| Greenwich Mean Time     | ‘UTC+0’            |
+| Gulf Standard Time      | ‘UTC+4’            |
+| Hawaii Standard Time    | ‘UTC-10’           |
+| India Standard Time     | ‘UTC+4’            |
 
 The `{ComponentName}` accepts date values of type **Date object**, **Number (milliseconds)**, **An ISO date-time string**. This section shows [how to configure a custom display format](../data-grid.md#custom-display-format).
 
@@ -190,6 +184,7 @@ public timeFormats = [
     { format: 'fullTime', eq: 'h:mm:ss a zzzz' },
 ];
 ```
+
 <!-- end: Angular, WebComponents -->
 
 ```razor
@@ -206,16 +201,17 @@ public timeFormats = [
 
 ```tsx
 const timeFormats = [
-    { format: 'shortTime', eq: 'h:mm a' },
-    { format: 'mediumTime', eq: 'h:mm:ss a' },
-    { format: 'longTime', eq: 'h:mm:ss a z' },
-    { format: 'fullTime', eq: 'h:mm:ss a zzzz' },
+  { format: "shortTime", eq: "h:mm a" },
+  { format: "mediumTime", eq: "h:mm:ss a" },
+  { format: "longTime", eq: "h:mm:ss a z" },
+  { format: "fullTime", eq: "h:mm:ss a zzzz" },
 ];
 ```
 
 #### Cell Editing
 
 When it comes to cell editing based on the column type a different editor will appear:
+
 - `DateTime` - `DateTimeEditor` will be used. This editor will give you a mask directions for the input elements part of the `DateTime` object.
 - `Date` - `DatePicker` will be used.
 - `Time` - `TimePicker` will be used.
@@ -223,6 +219,7 @@ When it comes to cell editing based on the column type a different editor will a
 #### Filtering
 
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:
+
 - `DateTime` and `Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
 - `Time` - At, Not At, Before, After, At or Before, At or After, Empty, Not Empty, Null, Not Null;
 
@@ -241,8 +238,7 @@ The available Summary operands will be **Count**, **Earliest** (date/time) and *
 The default template is using material icons for visualization of boolean values - 'clear' icon for **false** values and 'check' icon for **true** values. As for the editing template, it is using `Checkbox` component.
 
 ```html
-<igx-column [dataType]="'boolean'">
-</igx-column>
+<igx-column [dataType]="'boolean'"> </igx-column>
 ```
 
 ```razor
@@ -250,8 +246,7 @@ The default template is using material icons for visualization of boolean values
 ```
 
 ```html
-<igc-column data-type="boolean">
-</igc-column>
+<igc-column data-type="boolean"> </igc-column>
 ```
 
 ```tsx
@@ -263,12 +258,14 @@ The default template is using material icons for visualization of boolean values
 Default template is using the value coming from the data as an image source to a default image template. The default image template will extract the name of the image file and set it as `alt` attribute of the image to meet the accessibility requirement. The displayed cell size is adjusted to the sizes of the images rendered, so keep in mind that large images will still be rendered and the grid rows will become as large as the images in the image column. Filtering, sorting and grouping will be turned off by default for image type columns. If you want to enable them, you need to provide custom strategies which perform the data operations.
 
 <!-- Angular -->
+
 ```html
 <igx-grid>
-    <igx-column [dataType]="'image'">
-    </igx-column>
-<igx-grid>
+  <igx-column [dataType]="'image'"> </igx-column>
+  <igx-grid></igx-grid
+></igx-grid>
 ```
+
 <!-- end: Angular -->
 
 ```razor
@@ -276,8 +273,7 @@ Default template is using the value coming from the data as an image source to a
 ```
 
 ```html
-<igc-column field="Image" data-type="image">
-</igc-column>
+<igc-column field="Image" data-type="image"> </igc-column>
 ```
 
 ```tsx
@@ -335,9 +331,11 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igx-column field="UnitsInStock"
-    [pipeArgs]="formatOptions"
-    [dataType]="'currency'">
+<igx-column
+  field="UnitsInStock"
+  [pipeArgs]="formatOptions"
+  [dataType]="'currency'"
+>
 </igx-column>
 ```
 
@@ -356,8 +354,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock" data-type="currency">
-</igc-column>
+<igc-column id="column" field="UnitsInStock" data-type="currency"> </igc-column>
 ```
 
 ```ts
@@ -375,30 +372,38 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions : IgrColumnPipeArgs = {
-    digitsInfo: "1.4-4",
-    display: "symbol-narrow"
+const formatOptions: IgrColumnPipeArgs = {
+  digitsInfo: "1.4-4",
+  display: "symbol-narrow",
 };
 
-<IgrColumn pipeArgs={formatOptions} dataType="currency" field="UnitsInStock"></IgrColumn>
+<IgrColumn
+  pipeArgs={formatOptions}
+  dataType="currency"
+  field="UnitsInStock"
+></IgrColumn>;
 ```
 
-| Parameter                 | Description                                                |
-|---------------------------| -------------------------|
-| digitsInfo                | Represents Decimal representation of currency value        |
-| display*                  | Displays the value by narrow or wide symbol                |
+| Parameter  | Description                                         |
+| ---------- | --------------------------------------------------- |
+| digitsInfo | Represents Decimal representation of currency value |
+| display\*  | Displays the value by narrow or wide symbol         |
+
 <!-- Angular -->
-| currencyCode              | ISO 4217 currency code                                     |
+
+| currencyCode | ISO 4217 currency code |
+
 <!-- end: Angular -->
 
-*display - for the default en-US locale, the code USD can be represented by the narrow symbol $ or the wide symbol US$.
+\*display - for the default en-US locale, the code USD can be represented by the narrow symbol $ or the wide symbol US$.
 
 <!-- ComponentStart: Grid -->
+
 Upon editing of cell's value the **currency symbol** will be visible as suffix or prefix. More about that could be found in the official [Cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example).
+
 <!-- ComponentEnd: Grid -->
 
 > When using <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
-
 
 ### Percent
 
@@ -425,9 +430,11 @@ public formatPercentOptions = this.options;
 <!-- end: Angular -->
 
 ```html
-<igx-column field="UnitsInStock"
-    [pipeArgs]="formatPercentOptions"
-    [dataType]="'percent'">
+<igx-column
+  field="UnitsInStock"
+  [pipeArgs]="formatPercentOptions"
+  [dataType]="'percent'"
+>
 </igx-column>
 ```
 
@@ -450,8 +457,7 @@ public formatPercentOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock" data-type="percent">
-</igc-column>
+<igc-column id="column" field="UnitsInStock" data-type="percent"> </igc-column>
 ```
 
 ```ts
@@ -482,11 +488,11 @@ constructor() {
 - `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
 - `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
-const formatOptions : IgrColumnPipeArgs = {
-    digitsInfo: "2.2-3"
+const formatOptions: IgrColumnPipeArgs = {
+  digitsInfo: "2.2-3",
 };
 
-<IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>
+<IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>;
 ```
 
 > [!Note]
@@ -501,7 +507,9 @@ See the editing templates part of [{ComponentTitle} Editing topic](editing.md#ed
 Custom template and column formatter definition will always take precedence over the column data type set:
 
 ### Custom Template
+
 <!-- Angular -->
+
 ```html
 <{ComponentSelector} #grid1 [data]="data | async" [autoGenerate]="false">
     <igx-column [field]="'UnitsInStock'" [dataType]="'currency'" [pipeArgs]="formatOptions" [editable]="true">
@@ -511,6 +519,7 @@ Custom template and column formatter definition will always take precedence over
     </igx-column>
 </{ComponentSelector}>
 ```
+
 <!-- end: Angular -->
 
 ```html
@@ -600,6 +609,7 @@ igRegisterScript("CurrencyFormatter", (value) => {
 ```
 
 <!-- Angular -->
+
 ```ts
  // Through column formatter property
 public formatCurrency(value: number) {
@@ -615,8 +625,8 @@ public init(column: IgxColumnComponent) {
             return;
 }
 ```
-<!-- end: Angular -->
 
+<!-- end: Angular -->
 
 ## API References
 

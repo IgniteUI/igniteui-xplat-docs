@@ -19,7 +19,7 @@ The open-source libraries include:
 
 ## Create a New Blazor Project
 
- - Start Visual Studio and click **Create a new project** on the start page, select a Blazor template such as **Blazor Server App**, **Blazor WebAssembly App**, or **Blazor Web App**, and click **Next**.
+- Start Visual Studio and click **Create a new project** on the start page, select a Blazor template such as **Blazor Server App**, **Blazor WebAssembly App**, or **Blazor Web App**, and click **Next**.
 
 > [!Note]
 > When using **Blazor Server App**, ensure you add `@rendermode InteractiveServer` in the pages where the components are used.

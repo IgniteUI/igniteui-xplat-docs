@@ -14,28 +14,29 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
-#### Bug Fixes
+### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-| 3055 | IgcDataPieChart | DataPieChart - missing styling properties for the Others Slice |
-| 38668 | IgcDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used |
-| 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
-| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
-| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+| Bug Number | Control             | Description                                                                                      |
+| ---------- | ------------------- | ------------------------------------------------------------------------------------------------ |
+| 3055       | IgcDataPieChart     | DataPieChart - missing styling properties for the Others Slice                                   |
+| 38668      | IgcDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used                                 |
+| 40238      | Excel               | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException              |
+| 41167      | Excel               | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
+| 41419      | Excel               | Saving a VBA Signed Excel file does not keep a signature/certificate.                            |
 
 ## **{PackageVerChanges-26-1-FEB}**
 
 ### {PackageCharts}
+
 #### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|2327|IgcToolbar|SubPanel sample not working in WebComponents|
-|2638|IgcDataChart|Improve mouse hot detection for rotated labels|
-|2959|IgcLinearGauge|Gauges should not call View functions|
-|2326|IgcDataChart|Add property to set others color|
-|41594|IgcDataChart|AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series|
+| Bug Number | Control        | Description                                                                                        |
+| ---------- | -------------- | -------------------------------------------------------------------------------------------------- |
+| 2327       | IgcToolbar     | SubPanel sample not working in WebComponents                                                       |
+| 2638       | IgcDataChart   | Improve mouse hot detection for rotated labels                                                     |
+| 2959       | IgcLinearGauge | Gauges should not call View functions                                                              |
+| 2326       | IgcDataChart   | Add property to set others color                                                                   |
+| 41594      | IgcDataChart   | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series |
 
 ### {PackageCommon}
 
@@ -50,7 +51,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - #### Chat
   - `adoptRootStyles` can now be toggled on/off at runtime.
-
 
 #### Breaking Changes
 
@@ -68,11 +68,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 #### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Context instantiation in Blazor|
-|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|Correct cursor style over non input parts|
-|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|Correct cursor style over non input parts|
+| Bug Number                                                           | Control  | Description                               |
+| -------------------------------------------------------------------- | -------- | ----------------------------------------- |
+| [2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033) | Carousel | Context instantiation in Blazor           |
+| [2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085) | Combo    | Correct cursor style over non input parts |
+| [2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085) | Textarea | Correct cursor style over non input parts |
 
 ### {PackageGrids} (Grids)
 
@@ -90,7 +90,7 @@ All notable changes for each version of {ProductName} are documented on this pag
   - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgcCalendar`, `IgcDatePicker`, and `IgcDateRangePicker` that previously used it in `igniteui-webcomponents`.
   - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
   - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
-**PDF export**
+    **PDF export**
 - Added PDF export functionality allowing users to export grid data to PDF format.
 
 **Popover API**
@@ -106,11 +106,11 @@ Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and Proporti
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|33808|IgcDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
-|34255|IgcDataChart|0.00001 scale tick marks are displayed overlapping each other|
-|38510|IgcDataChart|AssigningCategoryStyle event support for Stacked Series|
+| Bug Number | Control      | Description                                                               |
+| ---------- | ------------ | ------------------------------------------------------------------------- |
+| 33808      | IgcDataChart | The scale set for IntervalType Ticks in TimeAxisInterval is not displayed |
+| 34255      | IgcDataChart | 0.00001 scale tick marks are displayed overlapping each other             |
+| 38510      | IgcDataChart | AssigningCategoryStyle event support for Stacked Series                   |
 
 ### Enhancements
 
@@ -140,21 +140,18 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - `ShouldAvoidAnnotationCollisions`
 - `ShouldAutoTruncateAnnotations`
 
-
 ### {PackageMaps} (Geographic Map)
 
 - Azure Map Imagery is now RTM.
 
-
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker
-
+| Bug Number | Control        | Description                                                                                                |
+| ---------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| 40136      | Excel Library  | FormulaParseException exception when loading an Excel workbook                                             |
+| 40262      | IgcSpreadsheet | #Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead |
+| 40458      | IgcSpreadsheet | When using Arial font, the igx-spreadsheet cuts off text in the cells                                      |
+| 40490      | IgcDatePicker  | Inputs by Autofill won't give any effects for a date picker                                                |
 
 ## **{PackageCommonVerChanges-6.3.6}**
 
@@ -163,6 +160,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - Added `IgrChat` component
 
 ### {PackageGrids} (Grids)
+
 - `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`
   - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
 
@@ -172,19 +170,19 @@ Ability for axis annotations to automatically detect collisions and truncate to 
         <igc-column field="field" merge="true"></igc-column>
         ```
         The merging can be configured on the grid level to apply either:
-     - `onSort` - only when the column is sorted.
-     - `always` - always, regardless of data operations.
 
-        ```html
-        <igc-grid cellMergeMode="always">
-        </igc-grid>
-        ```
+    - `onSort` - only when the column is sorted.
+    - `always` - always, regardless of data operations.
 
-        The default `cellMergeMode` is `onSort`.
+      ```html
+      <igc-grid cellMergeMode="always"> </igc-grid>
+      ```
 
-        The functionality can be modified by setting a custom `mergeStrategy` on the grid, in case some other merge conditions or logic is needed for a custom scenario.
+      The default `cellMergeMode` is `onSort`.
 
-        It's possible also to set a `mergeComparer` on the individual columns, in case some custom handling is needed for a particular data field.
+      The functionality can be modified by setting a custom `mergeStrategy` on the grid, in case some other merge conditions or logic is needed for a custom scenario.
+
+      It's possible also to set a `mergeComparer` on the individual columns, in case some custom handling is needed for a particular data field.
 
   - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `pinningPosition` property on the column:
 
@@ -207,29 +205,26 @@ Ability for axis annotations to automatically detect collisions and truncate to 
         If property `pinningPosition` is not set on a column, the column will default to the position specified on the grid's `pinning` options for `columns`.
 
   - **Sorting improvements**
-     - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-     - Refactored sorting algorithms from recursive to iterative.
+    - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
+    - Refactored sorting algorithms from recursive to iterative.
   - **Groupby improvements**
-     - Refactored grouping algorithm from recursive to iterative.
-     - Optimized grouping operations.
-
-
-
+    - Refactored grouping algorithm from recursive to iterative.
+    - Optimized grouping operations.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |removed duplicated CSS variables across list components and themes|
-|[1871](https://github.com/IgniteUI/igniteui-webcomponents/pull/1871)| Card |Consume colors from themes|
-|[1873](https://github.com/IgniteUI/igniteui-webcomponents/pull/1873)| Card |Avatar size in card header|
-|[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |Message actions not rendered after last message|
-|[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |Change event not emitted for non-editable input configuration|
-|[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Issues when clearing the value and notch border in Material theme|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker|
+| Bug Number                                                           | Control        | Description                                                                                                |
+| -------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| [1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853) | List           | removed duplicated CSS variables across list components and themes                                         |
+| [1871](https://github.com/IgniteUI/igniteui-webcomponents/pull/1871) | Card           | Consume colors from themes                                                                                 |
+| [1873](https://github.com/IgniteUI/igniteui-webcomponents/pull/1873) | Card           | Avatar size in card header                                                                                 |
+| [1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882) | Chat           | Message actions not rendered after last message                                                            |
+| [1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885) | Date Picker    | Change event not emitted for non-editable input configuration                                              |
+| [1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894) | Date Picker    | Issues when clearing the value and notch border in Material theme                                          |
+| 40136                                                                | Excel Library  | FormulaParseException exception when loading an Excel workbook                                             |
+| 40262                                                                | IgcSpreadsheet | #Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead |
+| 40458                                                                | IgcSpreadsheet | When using Arial font, the igx-spreadsheet cuts off text in the cells                                      |
+| 40490                                                                | IgcDatePicker  | Inputs by Autofill won't give any effects for a date picker                                                |
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -289,17 +284,16 @@ Added support for suffix content within the cells that allows you to add additio
 
 Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
 
-
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|27304| `IgcDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
-|37930| `IgcDataChart` | Data Annotation Overlay Text Color not working|
-|30600| `IgcDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
-|31624| `IgcCategoryChart` | Resizing the containing window of the Category Chart causes the chart to fail to render the series|
-|38231| `IgcGrid` | Unpinned column does not return to the original position if hidden columns exist|
-|33861| Excel Library | Adding line chart corrupts excel File for German culture|
+| Bug Number | Control            | Description                                                                                        |
+| ---------- | ------------------ | -------------------------------------------------------------------------------------------------- |
+| 27304      | `IgcDataChart`     | Zoom rectangle is not positioned the same as the background rectangle                              |
+| 37930      | `IgcDataChart`     | Data Annotation Overlay Text Color not working                                                     |
+| 30600      | `IgcDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)                          |
+| 31624      | `IgcCategoryChart` | Resizing the containing window of the Category Chart causes the chart to fail to render the series |
+| 38231      | `IgcGrid`          | Unpinned column does not return to the original position if hidden columns exist                   |
+| 33861      | Excel Library      | Adding line chart corrupts excel File for German culture                                           |
 
 ### Enhancements
 
@@ -330,6 +324,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ## **{PackageVerChanges-25-1-AUG}**
 
 ### Enhancements
+
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
   [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
 - Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid
@@ -337,29 +332,29 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|Invalid state in **readonly** mode|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|Cannot style **helper-text**|
-|[1795](https://github.com/IgniteUI/igniteui-webcomponents/pull/1795)|Card|Slotted igc-avatar in Indigo theme|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Combo|Border overlaps label text in invalid state|
-|[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo elevation styles|
-|[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date range picker|Return focus to main input on keyboard interactions|
-|[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Placeholder and label alignment in Material theme|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation drawer|Update **relative** positions styles and animation|
-|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|Invalid state theming issues|
-|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material theme interaction issues|
-|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Resizing behavior with suffix part|
-|[1775](https://github.com/IgniteUI/igniteui-webcomponents/pull/1775)|Calendar|Vertical mode container paddings|
-|[1731](https://github.com/IgniteUI/igniteui-webcomponents/issues/1731)|Carousel|Pause automatic rotation on pointer-initiated focus|
-|[1772](https://github.com/IgniteUI/igniteui-webcomponents/issues/1772)|Carousel|Ensure `igcSlideChanged` event is emitted when a slide is changed|
-|[1765](https://github.com/IgniteUI/igniteui-webcomponents/pull/1765)|Date picker|Styling issues|
-|[1764](https://github.com/IgniteUI/igniteui-webcomponents/pull/1764)|Date range picker|CSS borders and elevation|
-|[1747](https://github.com/IgniteUI/igniteui-webcomponents/pull/1747)|File input|Bootstrap invalid box-shadow styles|
-|[1672](https://github.com/IgniteUI/igniteui-webcomponents/pull/1672)|Stepper|Error when setting linear property in deferred rendering scenarios|
-|[1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)|Textarea|Readonly state styles|
-|[1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)|Dropdown|Icon size in Bootstrap theme|
-|[1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)|Inputs|Label positioning and transition logic in Material theme|
+| Bug Number                                                             | Control           | Description                                                        |
+| ---------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------ |
+| [1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)   | Input             | Invalid state in **readonly** mode                                 |
+| [1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)   | Input             | Cannot style **helper-text**                                       |
+| [1795](https://github.com/IgniteUI/igniteui-webcomponents/pull/1795)   | Card              | Slotted igc-avatar in Indigo theme                                 |
+| [1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)   | Combo             | Border overlaps label text in invalid state                        |
+| [1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)   | Date Picker       | Indigo elevation styles                                            |
+| [1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)   | Date range picker | Return focus to main input on keyboard interactions                |
+| [1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)   | Input             | Placeholder and label alignment in Material theme                  |
+| [1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)   | Navigation drawer | Update **relative** positions styles and animation                 |
+| [1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)   | Select            | Invalid state theming issues                                       |
+| [1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)   | Textarea          | Material theme interaction issues                                  |
+| [1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)   | Textarea          | Resizing behavior with suffix part                                 |
+| [1775](https://github.com/IgniteUI/igniteui-webcomponents/pull/1775)   | Calendar          | Vertical mode container paddings                                   |
+| [1731](https://github.com/IgniteUI/igniteui-webcomponents/issues/1731) | Carousel          | Pause automatic rotation on pointer-initiated focus                |
+| [1772](https://github.com/IgniteUI/igniteui-webcomponents/issues/1772) | Carousel          | Ensure `igcSlideChanged` event is emitted when a slide is changed  |
+| [1765](https://github.com/IgniteUI/igniteui-webcomponents/pull/1765)   | Date picker       | Styling issues                                                     |
+| [1764](https://github.com/IgniteUI/igniteui-webcomponents/pull/1764)   | Date range picker | CSS borders and elevation                                          |
+| [1747](https://github.com/IgniteUI/igniteui-webcomponents/pull/1747)   | File input        | Bootstrap invalid box-shadow styles                                |
+| [1672](https://github.com/IgniteUI/igniteui-webcomponents/pull/1672)   | Stepper           | Error when setting linear property in deferred rendering scenarios |
+| [1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)   | Textarea          | Readonly state styles                                              |
+| [1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)   | Dropdown          | Icon size in Bootstrap theme                                       |
+| [1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)   | Inputs            | Label positioning and transition logic in Material theme           |
 
 ## **{PackageVerChanges-25-1-JUL-2}**
 
@@ -368,9 +363,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### Breaking Changes
 
 #### File Input
+
 - `igcChange` & `igcCancel` events detail now returns the underlying component `files` property.
 
 #### Tooltip
+
 - Tooltip events will no longer return its `anchor` target in its `detail` property
 
 ### Behavioral Changes
@@ -381,26 +378,26 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - **Behavioral change**: Tooltip will not render an arrow indicator by default unless `with-arrow` is set.
 
 ### Enhancements
+
 - Updated the readonly styles of most form associated components across all themes to better signify when a component is in a readonly state.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description |
-|------------|---------|-------------|
-|[1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710)|Calendar and Date Picker|Incorrect date rollover for in certain scenarios
-|[1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)|Combo|Case insensitive icon styles in themes
-|[1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)|Input|Replace border in fluent theme with a box-shadow
-|[1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)|Input|Focused state background color in Indigo theme
-|[1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)|Text Area|Label height and component height override
+| Bug Number                                                             | Control                  | Description                                      |
+| ---------------------------------------------------------------------- | ------------------------ | ------------------------------------------------ |
+| [1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710) | Calendar and Date Picker | Incorrect date rollover for in certain scenarios |
+| [1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)   | Combo                    | Case insensitive icon styles in themes           |
+| [1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)   | Input                    | Replace border in fluent theme with a box-shadow |
+| [1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)   | Input                    | Focused state background color in Indigo theme   |
+| [1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)   | Text Area                | Label height and component height override       |
 
 ## **{PackageVerChanges-25-1-JUL}**
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|36448 | `IgcRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
-
+| Bug Number | Control          | Description                                                        |
+| ---------- | ---------------- | ------------------------------------------------------------------ |
+| 36448      | `IgcRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles) |
 
 ### {PackageCharts}
 
@@ -425,7 +422,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
   - Data Annotation Slice Layer
   - Data Annotation Strip Layer
 
-
 - The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure.
 
 - <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within.
@@ -447,20 +443,22 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 ### Enhancements
 
 #### Toolbar
+
 - Value layers added from the toolbar now appear on the legend.
 - The zoom reset tool has been moved to the zoom drop-down.
 
 #### Data Pie Chart
+
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-|25997 | `IgcDataGrid` | Summaries are only showing for first grouped child row|
-|37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
-|37244 | Excel Library | Custom Data Validation is not working.|
+| Bug Number | Control          | Description                                               |
+| ---------- | ---------------- | --------------------------------------------------------- |
+| 25997      | `IgcDataGrid`    | Summaries are only showing for first grouped child row    |
+| 37023      | `IgcDataChart`   | Tooltips are cut-off/offscreen if overflow hidden is set. |
+| 37685      | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.      |
+| 37244      | Excel Library    | Custom Data Validation is not working.                    |
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -471,13 +469,13 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 ### Bug Fixes
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-| 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced|
-| 25602 | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-| 30319 | `IgcDataGrid` | Records are sorted despite no value changed|
-| 32598 | `IgcDataGrid` | Multi-selection is not working correctly
-| 36374 | `IgcInput` | A previous value was bound when a form was submitted on any touch device|
+| Bug Number | Control       | Description                                                                                          |
+| ---------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| 28480      | `IgcCombo`    | Undefined reference error is thrown when a datasource is replaced                                    |
+| 25602      | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error |
+| 30319      | `IgcDataGrid` | Records are sorted despite no value changed                                                          |
+| 32598      | `IgcDataGrid` | Multi-selection is not working correctly                                                             |
+| 36374      | `IgcInput`    | A previous value was bound when a form was submitted on any touch device                             |
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -493,20 +491,20 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 The following table lists the bug fixes made for the {ProductName} toolset for this release:
 
-| Bug Number | Control | Description      |
-|------------|---------|------------------|
-| 30286 | `IgcDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-| 32906 | `IgcDataChart` | `IgcDataChart` is showing two xAxis on the top|
-| 33605 | `IgcDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
-| 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap|
-| 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
-| 34053 | `IgcRadialGauge` | The position of the scale label is shifted|
-| 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images|
-| 26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-| 34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-| 35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
-| 36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
-| 36379 | Excel Library |Colors with any alpha channel in an excel workbook fail to load|
+| Bug Number | Control          | Description                                                                                                                 |
+| ---------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 30286      | `IgcDataChart`   | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble                                |
+| 32906      | `IgcDataChart`   | `IgcDataChart` is showing two xAxis on the top                                                                              |
+| 33605      | `IgcDataChart`   | ScatterLineSeries is not showing the color of the line correctly in the legend                                              |
+| 34776      | `IgcDataChart`   | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap                                           |
+| 35498      | `IgcDataChart`   | Tooltips for the series specified in IncludedSeries are not displayed                                                       |
+| 34053      | `IgcRadialGauge` | The position of the scale label is shifted                                                                                  |
+| 35496      | `IgcSpreadsheet` | Error when setting styles in Excel with images                                                                              |
+| 26218      | Excel Library    | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file |
+| 34083      | Excel Library    | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file                |
+| 35495      | Excel Library    | Pictures in cells are lost when a template file is loaded                                                                   |
+| 36176      | Excel Library    | Exception occurs when loading an Excel workbook that has a LET function                                                     |
+| 36379      | Excel Library    | Colors with any alpha channel in an excel workbook fail to load                                                             |
 
 ## **{PackageVerChanges-24-2-JAN}**
 
@@ -536,17 +534,16 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - New [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to plot slices similar to a pie chart, a type of data visualization where data points are represented as segments within a circular graph.
 
 - `Toolbar`
-
   - New ToolActionCheckboxList
-        A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
-        Requires IgcCheckboxListModule to be registered.
+    A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
+    Requires IgcCheckboxListModule to be registered.
 
   - New Filtering Support
 
   - Axis Field Changes
-        New default IconMenu in Toolbar when targeting CategoryChart.
-        Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
-        Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
+    New default IconMenu in Toolbar when targeting CategoryChart.
+    Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
+    Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
 
 ### {PackageGrids}
 
@@ -562,13 +559,14 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **Breaking Changes**
+
 - **All Grids**
   - `RowIsland`
   - Removed `displayDensity` deprecated property.
   - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
   - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `contextMenu` event argument type to `GridContextMenuEventArgs`.
-  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.
+  - Removed `GridEditEventArgs`, `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.
 - `PivotGrid`
   - removed `showPivotConfigurationUI` property. Use `pivotUI` and set inside it the new `showConfiguration` option.
 - `Column`
@@ -579,21 +577,23 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - `Paginator`
   - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
 
-
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
+
 - `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
 - `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
 - `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
 
 ### {PackageGrids}
+
 - `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more regarding the Grid.
+
 ### {PackageCharts}
 
 - [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
@@ -610,11 +610,9 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 ## **{PackageVerChanges-23-2-MAR}**
 
-
 ### {PackageGrids}
 
 - New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component.
-
 
 ### {PackageCharts}
 
@@ -622,7 +620,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - `XamRadialChart`
   - New Label Mode
-        The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
+    The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### {PackageGauges}
 
@@ -634,7 +632,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamBulletGraph`
   - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
-
 
 ## **{PackageVerChanges-23-2-JAN}**
 
@@ -648,7 +645,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - Added New Features (Grid) - [State Persistence](grids/grid/state-persistence.md).
 
-
 ## **{PackageVerChanges-23-2}**
 
 ### {PackageLayouts}
@@ -657,7 +653,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - Save tool action has been added to save the chart to an image via the clipboard.
   - Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully.
   - Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
-
 
 ## **{PackageVerChanges-23-1}**
 
@@ -671,9 +666,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
-
 ## **{PackageVerChanges-22-2.2}**
-
 
 ### {PackageGrids}
 
@@ -686,7 +679,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - `PivotGrid`: The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
 
-
 ### {PackageInputs}
 
 - `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
@@ -694,7 +686,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 - `IgcMask`, added the capability to escape mask pattern literals.
 - `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
 - `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
-
 
 ## **{PackageVerChanges-22-2.1}**
 
@@ -742,8 +733,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - GroupSortDescriptions
 
 > [!Note]
-[Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
-
+> [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render. The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ## **{PackageVerChanges-22-1}**
 
@@ -803,7 +793,6 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
     - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
     - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
-
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
@@ -836,10 +825,9 @@ This release introduces a few improvements and simplifications to visual design 
 - Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
 - Changed color palette of series and markers displayed in all charts to improve accessibility
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
-
 
 ## **{PackageVerChanges-21-1}**
 
@@ -872,7 +860,6 @@ This release introduces a few improvements and simplifications to visual design 
   - `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
   - Added Accessibility
 
-
 ### {PackageMaps}
 
 > [!Note]
@@ -882,7 +869,6 @@ This release introduces a few improvements and simplifications to visual design 
 - Added support for shifting display of some map series while wrapping around the coordinate origin
 - Added support for highlighting of the shape series
 - Added support for some annotation layers for the shape series
-
 
 ### {PackageCharts}
 
@@ -919,14 +905,14 @@ This release introduces several new and improved visual design and configuration
 - Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
 - Redesigned color palette of series and markers:
 
-| Old brushes/outlines | New outline/brushes |
-| -------------------- | ------------------- |
+| Old brushes/outlines                                                                                                                                                                                                                                                                                                                                                                                                                                                              | New outline/brushes                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 for example:
 
-|   |   |
-|---|---|
+|                                                                                        |                                                                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | <img class="responsive-img" src="../images/chartDefaults1.png" alt="chartDefaults1" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="chartDefaults2" /> |
 | <img class="responsive-img" src="../images/chartDefaults3.png" alt="chartDefaults3" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="chartDefaults4" /> |
 
@@ -953,7 +939,11 @@ The data grid component property `propertyPath` has been renamed to `field`. Thi
 ```
 
 ```ts
-import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-data-grids'
+import {
+  IgcColumnSummaryDescription,
+  IgcColumnSortDescription,
+  IgcColumnGroupDescription,
+} from "igniteui-webcomponents-data-grids";
 const productCount = new IgcColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgcColumnSortDescription();
@@ -977,7 +967,7 @@ The new code for importing the grid and it's corresponding module is:
 
 ```ts
 import { IgcDataGrid } from "igniteui-webcomponents-data-grids";
-import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
 ```
 
 - Required Peer Dependency for `DataGrid`
@@ -999,15 +989,15 @@ Import statements have been simplified to use just package names instead of full
 > [!Note]
 > These breaking changes were introduce in these packages and components only:
 
-| Affected Packages | Affected Components |
-| ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
-| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)  |
-| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
-| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid/overview.md) |
+| Affected Packages                                                                                                    | Affected Components                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a>             | [Excel Library](excel-library.md)                                                                           |
+| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md)                                                                      |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a>               | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)                                             |
+| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a>           | [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)           |
+| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>           | Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md) |
+| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a>               | all classes and enums                                                                                       |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a>             | [Data Grid](grids/data-grid/overview.md)                                                                    |
 
 - Code After Changes
 
@@ -1020,10 +1010,10 @@ Please also note that the name of the Data Grid component and its corresponding 
 import { IgcLinearGaugeComponent } from "igniteui-webcomponents-gauges";
 import { IgcLinearGaugeModule } from "igniteui-webcomponents-gauges";
 import { IgcLinearGraphRange } from "igniteui-webcomponents-gauges";
-import { IgcRadialGaugeComponent } from 'igniteui-webcomponents-gauges';
-import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcRadialGaugeRange } from 'igniteui-webcomponents-gauges';
-import { SweepDirection } from 'igniteui-webcomponents-core';
+import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges";
+import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges";
+import { IgcRadialGaugeRange } from "igniteui-webcomponents-gauges";
+import { SweepDirection } from "igniteui-webcomponents-core";
 // charts:
 import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts";
 import { IgcFinancialChartModule } from "igniteui-webcomponents-charts";
@@ -1043,9 +1033,9 @@ Before, you had to import using full paths to API classes and enums:
 
 ```ts
 // gauges:
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component';
-import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module';
-import { IgcLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igc-linear-graph-range';
+import { IgcLinearGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component";
+import { IgcLinearGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module";
+import { IgcLinearGraphRange } from "igniteui-webcomponents-gauges/ES5/igc-linear-graph-range";
 
 import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-component";
 import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-module";
@@ -1063,8 +1053,8 @@ import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-g
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
 
 // grids:
-import { IgcLiveGridModule } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-module';
-import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-component';
+import { IgcLiveGridModule } from "igniteui-webcomponents-data-grids/ES5/igc-live-grid-module";
+import { IgcLiveGridComponent } from "igniteui-webcomponents-data-grids/ES5/igc-live-grid-component";
 ```
 
 ## {PackageCommon}
@@ -1072,6 +1062,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-5.1.0}**
 
 #### Added
+
 - New [Carousel](layouts/carousel.md) component.
 
 ### **{PackageCommonVerChanges-5.0.0}**
@@ -1108,25 +1099,30 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.11.1}**
 
 #### Changed
+
 - `Stepper` - Design changes in vertical mode.
 
 ### **{PackageCommonVerChanges-4.11.0}**
 
 #### Changed
+
 - `Toast`, `Rating`, `Stepper` - Styling changes in Indigo Theme.
 
 ### **{PackageCommonVerChanges-4.10.0}**
 
 #### Added
+
 - New [Banner](notifications/banner.md) component
 - New [Divider](layouts/divider.md) component
 - New [DatePicker](scheduling/date-picker.md) component
 - `RadioGroup` - Bind underlying radio components name and checked state through the radio group.
 
 #### Deprecated
+
 - `Input` `Inputmode` property. Aligned with the native `inputMode` DOM property instead.
 
 #### Fixed
+
 - `Input`, `Textarea` - passing `undefined` to value sets the underlying input value to undefined.
 - `MaskInput` - after a form `reset` call correctly update underlying input value and placeholder state.
 - `Tree` - setting `--ig-size` on the item `indicator` CSS Part will now change the size of the icon.
@@ -1140,21 +1136,26 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.9.0}**
 
 #### Added
+
 - `ButtonGroup` - now allows resetting the selection state via the `SelectedItems` property.
 - `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
 
 #### Changed
+
 - `Combo`, `Select` and `Dropdown` - now use the native `Popover` API.
 
 #### Deprecated
+
 - `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
 
 #### Fixed
+
 - `DateTimeInput` - Label in Material theme is broken when component is in read-only mode.
 
 ### **{PackageCommonVerChanges-4.8.2}**
 
 #### Fixed
+
 - `Textarea` - resize handle position for non-suffixed textarea.
 - `Tabs` - error when dynamically creating and adding a tab group and tabs in a single call stack.
 - `Checkbox`/`Switch` - participate in form submission when initially checked.
@@ -1163,6 +1164,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.8.1}**
 
 #### Fixed
+
 - `DateTimeInput` - `InputFormat` is not applied to an already set value.
 - `Checkbox`, `Radio`, `Switch` - apply form validation synchronously.
 - `Select`, `Dropdown` - Unable to select item when clicking on a wrapping element inside the dropdown/select item slot.
@@ -1171,17 +1173,21 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.8.0}**
 
 #### Added
+
 - `Combo` can now set `GroupSorting` to none which shows the groups in the order of the provided data.
 - `Button`/`IconButton` - updated visual looks across themes, new states.
 - `NavBar` - added border in Bootstrap theme.
 
 #### Changed
+
 - Grouping in `Combo` no longer sorts the data. `GroupSorting` property now affects the sorting direction only of the groups. **Behavioral change**: In previous release the sorting directions of the groups sorted the items as well. If you want to achieve this behavior you can pass already sorted data to the `Combo`.
 
 #### Deprecated
+
 - `Slider` - `aria-label-upper` and `aria-label-lower` are deprecated and will be removed in the next major release. Use `thumb-label-upper` and `thumb-label-lower` instead.
 
 #### Fixed
+
 - `Button` - Slotted icon size.
 - `ButtonGroup`
   - Updated Fluent theme look.
@@ -1200,25 +1206,31 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 ### **{PackageCommonVerChanges-4.7.0}**
 
 #### Added
+
 - `Tree` - Added `ToggleNodeOnClick` property that determines whether clicking over a node will change its expanded state or not. Defaults to `false`.
 
 - `Rating` - `AllowReset` added. When enabled selecting the same value will reset the component. **Behavioral change**: In previous releases this was the default behavior of the rating component. Make sure to set `allowReset` if you need to keep this behavior in your application.
 
 #### Changed
+
 - Improved WAI-ARIA compliance for `Avatar`, `Badge` and `Combo`.
+
 #### Fixed
+
 - Active item visual styles for `Dropdown`, `Select` and `Combo`.
 - `NavDrawer` - mini variant broken visual style.
 
 ### **{PackageCommonVerChanges-4.6.0}**
 
 #### Added
+
 - `action` slot added to `Snackbar`.
 - `indicator-expanded` slot added to `ExpansionPanel`.
 - `toggle-icon-expanded` slot added to `Select`.
 - `Select`, `Dropdown` - exposed `selectedItem`, `items` and `groups` getters.
 
 #### Changed
+
 - Updated the package to Lit v3.
 - Components dark variants are now bound to their shadow root.
 - Components implement default sizes based on current theme.
@@ -1227,6 +1239,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 - WAI-ARIA improvements for `Icon`, `Select`, `Dropdown` and `List`.
 
 #### Fixed
+
 - `Textarea` missing styling parts.
 - `TreeItem` disabled styles.
 - `Snackbar` removed unnecessary styles.
@@ -1254,6 +1267,7 @@ igc-avatar {
 ```
 
 #### Fixed
+
 - Combo items position in Safari.
 - Calendar navigation buttons in RTL context.
 - Export `IgcComboChangeEventArgs` type.
@@ -1263,6 +1277,7 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.4.0}**
 
 #### Added
+
 - The following components are now Form Associated Custom Elements. They are automatically associated with a parent `<form>`
   and behave like a browser-provided control:
   - `Button` & `IconButton`
@@ -1279,10 +1294,12 @@ igc-avatar {
 - `Stepper` now supports animations.
 
 #### Changed
+
 - `Rating` fluent theme colors.
 - `Stepper` indicator styles and color schemas.
 
 #### Deprecated
+
 - `IgcForm` component is deprecated.
 - `Input`:
   - `minlength` property is deprecated and will be removed in the next major version. Use `minLength` instead.
@@ -1298,6 +1315,7 @@ igc-avatar {
   - `readonly` property is deprecated and will be removed in the next major version. Use `readOnly` instead.
 
 #### Removed
+
 - Removed our own `dir` attribute which shadowed the default one. This is a **non-breaking change**.
 - `Slider` - `ariaLabel` shadowed property. This is a **non-breaking change**.
 - `Checkbox` - `ariaLabelledBy` shadowed attribute. This is a **non-breaking change**.
@@ -1305,6 +1323,7 @@ igc-avatar {
 - `Radio` - `ariaLabelledBy` shadowed attribute. This is a **non-breaking change**.
 
 #### Fixed
+
 - `Input` - outlined variant styling issues and indigo theme issues.
 - `Select` - outlined variant styling issues
 - `DateTimeInput` - `spinUp/spinDown` calls moving the caret when the input is focused.
@@ -1312,15 +1331,18 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.3.1}**
 
 #### Added
+
 - `Tree` - component animations.
 - Components border radius is consumed from their schemas.
 
 #### Changed
+
 - `Combo`, `Input`, `Select` - schema colors.
 - `Dropdown` - schema colors.
 - `Icon` - updated theming styles and size.
 
 #### Fixed
+
 - `Combo` - single selection not working in certain scenarios.
 - `Dropdown` - various styling fixes.
 - `IconButton` - border radius with ripple.
@@ -1332,6 +1354,7 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.3.0}**
 
 #### Added
+
 - `Combo`:
   - `matchDiacritics` to the filtering options property. Defaults to **false**. If set to **true** the filter distinguishes between accented letters and their base letters. Otherwise strings are normalized and then matched.
   - `selection` property which returns the current selection as an array of data objects.
@@ -1341,13 +1364,15 @@ igc-avatar {
 - `Toast`: Added animations
 
 #### Changed
+
 - `Combo`:
   - `value` is no longer readonly and can be explicitly set. The value attribute also supports declarative binding,
-  accepting a valid JSON stringified array.
+    accepting a valid JSON stringified array.
   - `value` type changed from `string[]` to `ComboValue<T>[]` where
   ```ts
   ComboValue<T> = T | T[keyof T]
   ```
+
   - `igcChange` event object properties are also changed to reflect the new `value` type:
   ```typescript
   interface IgcComboChangeEventArgs<T> {
@@ -1358,9 +1383,11 @@ igc-avatar {
   ```
 
 #### Deprecated
+
 - `Select`: Deprecated `sameWidth`, `positionStrategy` and `flip`. They will be removed in the next major release.
 
 #### Fixed
+
 - `Select`: `prefix`/`suffix`/`helper-text` slots not being rendered.
 - `Tabs`: Nested tabs selection.
 - `Dialog`: Backdrop doesn't overlay elements.
@@ -1373,9 +1400,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.3}**
 
 #### Deprecated
+
 - `Dialog` - Property `closeOnEscape` is deprecated in favor of new property `keepOpenOnEscape`.
 
 #### Fixed
+
 - `Radio`- colors in selected focus state.
 - `IconButton` - set icon size to match other design system products.
 - `Chip` - removed outline styles for Fluent and Material themes.
@@ -1385,9 +1414,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.2}**
 
 #### Deprecated
+
 - `Button` - The `prefix`/`suffix` slots are no longer needed and will be removed in the next major release.
 
 #### Fixed
+
 - `Button` - UI inconsistencies.
 - `Calendar` - Fluent theme inconsistencies.
 - `Combo` - Selection via API doesn't work on a searched list.
@@ -1400,14 +1431,17 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.2.1}**
 
 #### Fixed
+
 - `Combo` - Matching item not activated on filtering in single selection mode.
 
 ### **{PackageCommonVerChanges-4.2.0}**
 
 #### Added
+
 - `Combo` - Single Selection mode via the `single-select` attribute.
 
 #### Fixed
+
 - `Input` - UI inconsistencies.
 - `Badge` - Doesn't correctly render `igc-icon` and font icons.
 - `Radio` - UI inconsistencies.
@@ -1416,6 +1450,7 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.1.1}**
 
 #### Fixed
+
 - `Input`
   - position label based on component size.
   - material themes don't match design.
@@ -1427,16 +1462,19 @@ igc-avatar {
 ### **{PackageCommonVerChanges-4.1.0}**
 
 #### Added
+
 - New [Stepper](layouts/stepper.md) component.
 - New [Combo](inputs/combo/overview.md) component.
 - `MaskInput` - Skip literal positions when deleting symbols in the component
 
 #### Fixed
+
 - `MaskInput` - Validation state on user input.
 
 ### **{PackageCommonVerChanges-4.0.0}**
 
 #### Changed
+
 - Themes
   - Build - Utilize [Ignite UI Theming](https://github.com/IgniteUI/igniteui-theming) package when building themes.
   - Sizing - Introduced CSS variables that allow runtime CSS configuration of the size for all or individual components.
@@ -1446,24 +1484,29 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.4.2}**
 
 #### Fixed
+
 - Resolved importing error for `DateRangeType`.
 
 ### **{PackageCommonVerChanges-3.4.1}**
 
 #### Changed
+
 - `Slider` - updated theme with the latest fluent spec.
 - `Calendar` - updated weekend days color.
 
 #### Fixed
+
 - `Tabs` `selected` attribute breaks content visibility on init.
 
 ### **{PackageCommonVerChanges-3.4.0}**
 
 #### Added
+
 - New [Dialog](notifications/dialog.md) component.
 - New [Select](inputs/select.md) component.
 
 #### Fixed
+
 - `Calendar` - range selection a11y improvements.
 - `RangeSlider` - a11y improvements for choosing range values.
 - `Rating` - improved a11y with assistive software now reading the total number of items.
@@ -1474,9 +1517,11 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.3.1}**
 
 #### Changed
+
 - `Tree` - Removed theme-specified height.
 
 #### Fixed
+
 - `Dropdown` - Dispose of top-level event listeners.
 - `LinearProgress` - Indeterminate animation in Safari.
 - `RadioGroup` - Child radio components auto-registration.
@@ -1484,18 +1529,20 @@ igc-avatar {
 ### **{PackageCommonVerChanges-3.3.0}**
 
 #### Added
+
 - New [DateTimeInput](inputs/date-time-input.md) component.
 - New [Tabs](layouts/tabs.md) component.
 - New [Accordion](layouts/accordion.md) component.
 - Typography styles in themes.
 
 #### Changed
+
 - `Rating` - Added support for single selection and empty symbols.
 - `Slider` - Improved slider steps rendering.
 - Components will now auto register their dependencies when they are registered in `defineComponents`
 
 ```typescript
-import { IgcDropdownComponent, defineComponents } from 'igniteui-webcomponents';
+import { IgcDropdownComponent, defineComponents } from "igniteui-webcomponents";
 // will automatically register the dropdown item & group elements
 // as well as their dependencies if any
 defineComponents(IgcDropdownComponent);
@@ -1504,6 +1551,7 @@ defineComponents(IgcDropdownComponent);
 Check the official [documentation](https://www.infragistics.com/products/ignite-ui-web-components/web-components/componentsgeneral-getting-started) for more information.
 
 #### Fixed
+
 - Remove input helper text container when it is empty.
 - `Icon` not showing in Safari.
 - `Checkbox` not showing in Safari.
@@ -1514,6 +1562,7 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 ### **{PackageCommonVerChanges-3.2.0}**
 
 #### Added
+
 - New [MaskInput](inputs/mask-input.md) component.
 - New [ExpansionPanel](layouts/expansion-panel.md) component.
 - New [Tree](grids/tree.md) component.
@@ -1521,6 +1570,7 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 - `IconButton` - Allow slotted content.
 
 #### Fixed
+
 - `NavDrawer` - Various styles fixes.
 - Buttons - Vertical align and focus management.
 - `Input` - Overflow for `suffix`/`prefix`.
@@ -1530,13 +1580,16 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 ### **{PackageCommonVerChanges-3.1.0}**
 
 #### Added
+
 - `Chip`: Added `prefix` and `suffix` slots.
 - `Snackbar`: Added `toggle` method.
 
 #### Deprecated
+
 - `Chip`: Previously exposed `start` and `end` slots are replaced by `prefix` and `suffix`. They remain active, but are now deprecated and will be removed in a future version.
 
 #### Fixed
+
 - `Chip`:
   - Auto load internal icons.
   - Selected chip is misaligned.
@@ -1545,17 +1598,20 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 ### **{PackageCommonVerChanges-3.0.0}**
 
 #### Changed
+
 - **Breaking Change**: All dropdown related classes renamed from `IgcDropDown*` to `IgcDropdown*`
 
 ### **{PackageCommonVerChanges-2.2.0}**
 
 #### Added
+
 - New [DropDown](inputs/dropdown.md) component.
 - `Calendar`: Active date can be set via an attribute.
 
 ### **{PackageCommonVerChanges-2.1.1}**
 
 #### Added
+
 - Control border radius and elevation from `--igc-radius-factor` and `--igc-elevation-factor`:
 
 Example:
@@ -1571,6 +1627,7 @@ Example:
 ### **{PackageCommonVerChanges-2.1.0}**
 
 #### Added
+
 - New [LinearProgress](inputs/linear-progress.md) component.
 - New [CircularProgress](inputs/circular-progress.md) component.
 - New [Chip](inputs/chip.md) component.
@@ -1582,18 +1639,21 @@ Example:
 ### **{PackageCommonVerChanges-2.0.0}**
 
 #### Added
+
 - Dark Themes
 - New [Slider](inputs/slider.md) component.
 - New [RangeSlider](inputs/slider.md) component.
 - Support `required` property in `Radio` component.
 
 #### Changed
+
 - Fix checkbox/switch validity status
 - Split `Calendar`'s `value: Date | Date[]` property into two properties - `value: Date` and `values: Date[]`
 - Replaced `Calendar`'s `hasHeader` property & `has-header` attribute with `hideHeader` & `hide-header` respectively.
 - Replaced `Card`'s `outlined` property with `elevated`.
 
 #### Removed
+
 - Removed `igcOpening`, `igcOpened`, `igcClosing` and `igcClosed` events from `NavDrawer` component.
 
 ### **{PackageCommonVerChanges-1.0.0}**
@@ -1601,6 +1661,7 @@ Example:
 Initial release of Ignite UI Web Components
 
 #### Added
+
 - [Avatar](layouts/avatar.md) component
 - [Badge](inputs/badge.md) component
 - [Button](inputs/button.md) component
@@ -1619,30 +1680,31 @@ Initial release of Ignite UI Web Components
 - [Ripple](inputs/ripple.md) component
 - [Switch](inputs/switch.md) component
 
-
-
-
 ## {PackageDockManager}
 
 ### **{PackageDockManagerVerChanges-1.14.4}**
 
 #### Deprecated
+
 - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
 
 ### **{PackageDockManagerVerChanges-1.14.3}**
 
 #### Fixed
+
 - Dock manager throws errors with Vite-based builds.
 - Docking to edge in an empty root split pane throws errors.
 
 ### **{PackageDockManagerVerChanges-1.14.2}**
 
 #### Fixed
+
 - Constraining panels inside the dock manager boundaries with quick drags.
 
 ### **{PackageDockManagerVerChanges-1.14.1}**
 
 #### Fixed
+
 - Proximity dock rtl check
 
 ### **{PackageDockManagerVerChanges-1.14.0}**
@@ -1654,30 +1716,37 @@ Initial release of Ignite UI Web Components
 - Add `containedInBoundaries` property.
 
 #### Enhancements
+
 - Add `contentId` of elements as CSS parts.
 
 #### Fixed
+
 - Maximizing and unpinning panes leads to unclickable panes.
 - Center dock is possible in a pane that has `AcceptsInnerDock` set to **true** if the `AllowInnerDock` of `DockManager` is set to **false**.
 
 ### **{PackageDockManagerVerChanges-1.13.0}**
 
 #### New features
+
 - Add `FocusPane` method.
 - Add `AllowInnerDock` and `AcceptsInnerDock` properties.
 
 #### Enhancements
+
 - Save pane maximized state in layout.
 
 #### Fixed
+
 - Tab selection order is not preserved.
 
 #### **{PackageDockManagerVerChanges-1.12.5}**
 
 #### New features
+
 - Add `paneScroll` event.
 
 #### Fixed
+
 - ТabGroupPane: Pinning one of several unpinned panes results in all the panes getting pinned.
 - Context menu not positioning correctly in RTL mode.
 - Active pane is not retained when docking with keyboard.
@@ -1685,19 +1754,23 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.12.4}**
 
 #### Fixed
+
 - Active pane incorrectly set when more than one Tab Group Pane is within a Floating Pane.
 
 ### **{PackageDockManagerVerChanges-1.12.3}**
 
 #### Fixed
+
 - Error is thrown when dropping pane in a separate window.
 
 ### **{PackageDockManagerVerChanges-1.12.2}**
 
 #### Enhancements
+
 - Add `tabs-more-menu-content` and `tabs-more-menu-item` CSS parts.
 
 #### Fixed
+
 - Docking indicator left/right arrows positions are reversed in RTL mode.
 - Context menu not positioning correctly.
 - Missing overloads for `addEventListener` and `removeEventListener`.
@@ -1705,15 +1778,18 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.12.1}**
 
 #### Enhancements
+
 - Include pane information in `splitterResizeStart` and `splitterResizeEnd` events.
 - `DockManager` is now exported as class.
 
 #### Fixed
+
 - Contents in slots with `unpinnedHeaderId` are not updated correctly.
 
 ### **{PackageDockManagerVerChanges-1.12.0}**
 
 #### Fixed
+
 - Docking not working with `allowFloating: false`.
 - Flyout pane closing while active.
 - Focusable elements does not receive focus.
@@ -1724,22 +1800,26 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.11.3}**
 
 #### New features
+
 - Add `contextMenuPosition` property
 - Add `selected` option for `tab-header-close-button` CSS part
 
 ### **{PackageDockManagerVerChanges-1.11.2}**
 
 #### New features
+
 - Add `hovered` option for `tab-header-close-button` CSS part
 
 ### **{PackageDockManagerVerChanges-1.11.1}**
 
 #### Fixed
+
 - CSS part fixes for `tab-header`
 
 ### **{PackageDockManagerVerChanges-1.11.0}**
 
 #### New features
+
 - Add options for `ShowHeaderIconOnHover` property for different buttons
 - Add `horizontal` and `vertical` options for `splitter-handle` CSS part
 - Add `header-title` CSS part
@@ -1749,9 +1829,11 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.10.0}**
 
 #### New features
+
 - Add `ShowHeaderIconOnHover` property.
 
 #### Fixed
+
 - Active pane is not retained on float/dock.
 - Splitter styles are not applied.
 - `click` event on customized header buttons is not working.
@@ -1760,18 +1842,21 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.9.0}**
 
 #### Fixed
+
 - Styles not applied.
 - Resize in RTL mode.
 
 ### **{PackageDockManagerVerChanges-1.8.0}**
 
 #### New features
+
 - Customize dock manager buttons.
 - `LayoutChange` event which fires when the layout updates.
 
 ### **{PackageDockManagerVerChanges-1.7.0}**
 
 #### New features
+
 - Customizable floating pane header.
 - `Disabled` property per pane.
 - `DocumentOnly` property which allows content pane to be docked only inside a document host.
@@ -1779,34 +1864,41 @@ Initial release of Ignite UI Web Components
 - `DisableKeyboardNavigation` property on the dock manager.
 
 #### Fixed
+
 - Docking indicators appear over the currently dragged floating pane.
 
 ### **{PackageDockManagerVerChanges-1.6.0}**
 
 #### New features
+
 - Customize dock manager panes and tabs.
 
 #### Fixed
+
 - A floating pane is draggable outside of the page.
 
 ### **{PackageDockManagerVerChanges-1.5.0}**
 
 #### New features
+
 - `AllowMaximize` property per pane.
 
 #### Fixed
+
 - Unpinned pane is closing automatically upon clicking on its content.
 - Panes selected from the overflow menu are not activated if there is an unpinned pane from the same tab group.
 
 ### **{PackageDockManagerVerChanges-1.4.1}**
 
 #### Fixed
+
 - Pane with `allowPinning: false` placed inside tab group can be unpinned.
 - Normalize a maximized pane when navigating away from it via the keyboard.
 
 ### **{PackageDockManagerVerChanges-1.4.0}**
 
 #### New features
+
 - Reorder tabs without creating floating pane.
 - Keyboard navigation.
 - Pane navigator.
@@ -1814,6 +1906,7 @@ Initial release of Ignite UI Web Components
 - Events for floating pane resizing.
 
 #### Fixed
+
 - Select pane when activated.
 - Flyout unpinned pane when activated.
 - Error thrown when hosting external popup inside pane.
@@ -1824,6 +1917,7 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.3.0}**
 
 #### New features
+
 - More tabs menu appears when there is not enough space to display all tab headers.
 - Hide pane without removing it from the layout using its `hidden` property.
 - Header slot properties for tab and unpinned pane - `tabHeaderId` and `unpinnedHeaderId`.
@@ -1831,10 +1925,12 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.2.0}**
 
 #### New features
+
 - Active pane.
 - Localization support.
 
 #### Fixed
+
 - Errors thrown when dragging the last document host tab and there is unpinned pane.
 - Tabs content disappears after docking a pane with `allowFloating: false`.
 - Exception thrown when quickly switching between docking indicators.
@@ -1842,6 +1938,7 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.1.0}**
 
 #### New features
+
 - Maximizing panes.
 - Docking preview shadow.
 - ARIA support.
@@ -1852,20 +1949,24 @@ Initial release of Ignite UI Web Components
 ### **{PackageDockManagerVerChanges-1.0.3}**
 
 #### Enhancements
+
 - Resize splitter using the keyboard.
 
 ### **{PackageDockManagerVerChanges-1.0.2}**
 
 #### Fixed
+
 - Pane goes out of view when resized to its minimum size.
 
 ### **{PackageDockManagerVerChanges-1.0.1}**
 
 #### Enhancements
+
 - Add active color css variable.
 - Add keyboard support for context menu.
 
 #### Fixed
+
 - Selection is not working on first click when context menu is opened.
 - Single tab is not rendered correctly after pinning/unpinning its sibling.
 

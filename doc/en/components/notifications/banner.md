@@ -17,6 +17,7 @@ The {ProductName} Banner component provides a way to easily display a prominent 
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -27,13 +28,15 @@ You will then need to import the `Banner`, its necessary CSS, and register its m
 
 ```ts
 import { defineComponents, IgcBannerComponent } from "igniteui-webcomponents";
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 
 defineComponents(IgcBannerComponent);
 ```
+
 <!-- end: WebComponents -->
 
 <!-- React -->
+
 First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
@@ -43,12 +46,14 @@ npm install igniteui-react
 You will then need to import the `Banner` and its necessary CSS, like so:
 
 ```tsx
-import { IgrBanner } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrBanner } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
+
 <!-- end: React -->
 
 <!-- Blazor -->
+
 Before using the `Banner`, you need to register it as follows:
 
 ```razor
@@ -57,11 +62,12 @@ Before using the `Banner`, you need to register it as follows:
 builder.Services.AddIgniteUIBlazor(typeof(IgbBannerModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Banner` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Banner` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
@@ -73,9 +79,7 @@ In order to display the banner component, use its `Show` method and call it on a
 ```html
 <igc-button onclick="banner.show()">Show Banner</igc-button>
 
-<igc-banner id="banner">
-    You are currently offline.
-</igc-banner>
+<igc-banner id="banner"> You are currently offline. </igc-banner>
 ```
 
 ```tsx
@@ -108,7 +112,6 @@ In order to display the banner component, use its `Show` method and call it on a
 > [!NOTE]
 > The `Banner` includes a default action button `OK`, which closes the banner.
 
-
 ## Examples
 
 The `Banner` component allows templating of its content while still sticking as closely as possible to the material design banner guidelines.
@@ -119,13 +122,13 @@ Configuring the message displayed in the banner is easy - just change the conten
 
 ```html
 <igc-banner id="banner">
-    You have lost connection to the internet. This app is offline.
+  You have lost connection to the internet. This app is offline.
 </igc-banner>
 ```
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <span>You have lost connection to the internet. This app is offline.</span>
+  <span>You have lost connection to the internet. This app is offline.</span>
 </IgrBanner>
 ```
 
@@ -146,15 +149,15 @@ To pass an `Icon` to your banner, use the `prefix` slot:
 
 ```html
 <igc-banner id="banner">
-    <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
-    You have lost connection to the internet. This app is offline.
+  <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
+  You have lost connection to the internet. This app is offline.
 </igc-banner>
 ```
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span>You have lost connection to the internet. This app is offline.</span>
+  <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+  <span>You have lost connection to the internet. This app is offline.</span>
 </IgrBanner>
 ```
 
@@ -169,15 +172,15 @@ If you want to use an `Icon` in your banner message, simply insert it in the ban
 
 ```html
 <igc-banner id="banner">
-    You have lost connection to the internet. This app is offline.
-    <igc-icon name="signal_wifi_off"></igc-icon>
+  You have lost connection to the internet. This app is offline.
+  <igc-icon name="signal_wifi_off"></igc-icon>
 </igc-banner>
 ```
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <span>You have lost connection to the internet. This app is offline.</span>
-    <IgrIcon name="signal_wifi_off"></IgrIcon>
+  <span>You have lost connection to the internet. This app is offline.</span>
+  <IgrIcon name="signal_wifi_off"></IgrIcon>
 </IgrBanner>
 ```
 
@@ -194,27 +197,27 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
 
 ```html
 <igc-banner id="banner">
-    <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
-    You have lost connection to the internet. This app is offline.
-    <div slot="actions">
-        <igc-button onclick="banner.toggle()">
-            <igc-ripple></igc-ripple>
-            Toggle Banner
-        </igc-button>
-    </div>
+  <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
+  You have lost connection to the internet. This app is offline.
+  <div slot="actions">
+    <igc-button onclick="banner.toggle()">
+      <igc-ripple></igc-ripple>
+      Toggle Banner
+    </igc-button>
+  </div>
 </igc-banner>
 ```
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span>You have lost connection to the internet. This app is offline.</span>
-    <div slot="actions">
-        <IgrButton variant="flat" onClick={() => bannerRef.current.toggle()}>
-            <IgrRipple />
-            <span>Toggle Banner</span>
-        </IgrButton>
-    </div>
+  <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+  <span>You have lost connection to the internet. This app is offline.</span>
+  <div slot="actions">
+    <IgrButton variant="flat" onClick={() => bannerRef.current.toggle()}>
+      <IgrRipple />
+      <span>Toggle Banner</span>
+    </IgrButton>
+  </div>
 </IgrBanner>
 ```
 
@@ -249,23 +252,19 @@ The banner component emits the `Closing` and `Closed` events when being closed. 
 To cancel the closing event, call the [`preventDefault`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) method.
 
 ```html
-<igc-banner id="banner">
-    ...
-</igc-banner>
+<igc-banner id="banner"> ... </igc-banner>
 ```
 
 ```ts
-const banner = document.getElementById('banner') as IgcBannerComponent;
+const banner = document.getElementById("banner") as IgcBannerComponent;
 
-banner.addEventListener('igcClosing', (event) => {
+banner.addEventListener("igcClosing", (event) => {
   event.preventDefault();
 });
 ```
 
 ```tsx
-<IgrBanner onClosing={(event) => event.preventDefault()}>
-    ...
-</IgrBanner>
+<IgrBanner onClosing={(event) => event.preventDefault()}>...</IgrBanner>
 ```
 
 ```razor
@@ -304,35 +303,35 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
 
 ```html
 <igc-banner id="banner">
-    <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
-    You have lost connection to the internet. This app is offline.
-    <div slot="actions">
-        <igc-button onclick="banner.hide()">
-            <igc-ripple></igc-ripple>
-            Continue Offline
-        </igc-button>
-        <igc-button id="button">
-            <igc-ripple></igc-ripple>
-            Turn On Wifi
-        </igc-button>
-    </div>
+  <igc-icon slot="prefix" name="signal_wifi_off"></igc-icon>
+  You have lost connection to the internet. This app is offline.
+  <div slot="actions">
+    <igc-button onclick="banner.hide()">
+      <igc-ripple></igc-ripple>
+      Continue Offline
+    </igc-button>
+    <igc-button id="button">
+      <igc-ripple></igc-ripple>
+      Turn On Wifi
+    </igc-button>
+  </div>
 </igc-banner>
 ```
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span>You have lost connection to the internet. This app is offline.</span>
-    <div slot="actions">
-        <IgrButton variant="flat" onClick={() => bannerRef.current.hide()}>
-            <IgrRipple />
-            <span>Continue Offline</span>
-        </IgrButton>
-        <IgrButton variant="flat" onClick={refreshBanner}>
-            <IgrRipple />
-            <span>Turn On Wifi</span>
-        </IgrButton>
-    </div>
+  <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+  <span>You have lost connection to the internet. This app is offline.</span>
+  <div slot="actions">
+    <IgrButton variant="flat" onClick={() => bannerRef.current.hide()}>
+      <IgrRipple />
+      <span>Continue Offline</span>
+    </IgrButton>
+    <IgrButton variant="flat" onClick={refreshBanner}>
+      <IgrRipple />
+      <span>Turn On Wifi</span>
+    </IgrButton>
+  </div>
 </IgrBanner>
 ```
 
@@ -364,7 +363,6 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
 
 > According to Google's [Material Design](https://material.io/design/components/banners.html#anatomy) guidelines, a banner should have a maximum of 2 buttons present. The `Banner` does not explicitly limit the number of elements under the `actions` slot, but it is strongly recommended to use up to 2 if you want to adhere to the material design guidelines.
 
-
 The dismiss option (**Continue Offline**) doesn't need any further logic, so it can just call the `Hide` method. The confirm action (**Turn On Wifi**), however, requires some additional logic, so we have to define it in the component. Then, we will add an event listener for the `click` event. The last step is to call the `refreshBanner()` method on each change, which will toggle the banner depending on the `wifiState`.
 
 The navbar will have a Wifi icon and we will add an event listener for its `click` event as well. As the `refreshBanner()` method is called on each change, the icon will not only toggle the banner, but change according to the state of the connection:
@@ -376,14 +374,14 @@ The navbar will have a Wifi icon and we will add an event listener for its `clic
 </igc-navbar>
 
 <igc-banner id="banner">
+  ...
+  <div slot="actions">
     ...
-    <div slot="actions">
-        ...
-        <igc-button id="button">
-            <igc-ripple></igc-ripple>
-            Turn On Wifi
-        </igc-button>
-    </div>
+    <igc-button id="button">
+      <igc-ripple></igc-ripple>
+      Turn On Wifi
+    </igc-button>
+  </div>
 </igc-banner>
 ```
 
@@ -423,35 +421,40 @@ const [wifiState, setWifiState] = useState(false);
 const [iconName, setIconName] = useState("signal_wifi_off");
 
 const refreshBanner = () => {
-    const nextWifiState = !wifiState;
-    setWifiState(nextWifiState);
-    setIconName(nextWifiState ? "signal_wifi_4_bar" : "signal_wifi_off");
+  const nextWifiState = !wifiState;
+  setWifiState(nextWifiState);
+  setIconName(nextWifiState ? "signal_wifi_4_bar" : "signal_wifi_off");
 
-    if (nextWifiState) {
-        bannerRef.current.hide();
-    } else {
-        bannerRef.current.show();
-    }
-}
+  if (nextWifiState) {
+    bannerRef.current.hide();
+  } else {
+    bannerRef.current.show();
+  }
+};
 
-return(
-    <>
-        <IgrNavbar>
-            <h1>Gallery</h1>
-            <IgrIcon ref={iconRef} name={iconName} slot="end" onClick={refreshBanner}></IgrIcon>
-        </IgrNavbar>
+return (
+  <>
+    <IgrNavbar>
+      <h1>Gallery</h1>
+      <IgrIcon
+        ref={iconRef}
+        name={iconName}
+        slot="end"
+        onClick={refreshBanner}
+      ></IgrIcon>
+    </IgrNavbar>
 
-        <IgrBanner ref={bannerRef}>
-            ...
-            <div slot="actions">
-                ...
-                <IgrButton variant="flat" onClick={refreshBanner}>
-                    <IgrRipple />
-                    <span>Turn On Wifi</span>
-                </IgrButton>
-            </div>
-        </IgrBanner>
-    </>
+    <IgrBanner ref={bannerRef}>
+      ...
+      <div slot="actions">
+        ...
+        <IgrButton variant="flat" onClick={refreshBanner}>
+          <IgrRipple />
+          <span>Turn On Wifi</span>
+        </IgrButton>
+      </div>
+    </IgrBanner>
+  </>
 );
 ```
 
@@ -502,14 +505,14 @@ Finally, we will add a `Toast`, displaying a message about the WiFi state. The r
 
 The `Banner` component exposes several CSS parts which give you full control over its style:
 
-|Name|Description|
-|--|--|
-| `base` | The base wrapper of the banner component. |
-| `spacer` | The inner wrapper that sets the space around the banner. |
-| `message` | The part that holds the text and the illustration. |
-| `illustration` | The part that holds the banner icon/illustration. |
-| `content` | The part that holds the banner text content. |
-| `actions` | The part that holds the banner action buttons. |
+| Name           | Description                                              |
+| -------------- | -------------------------------------------------------- |
+| `base`         | The base wrapper of the banner component.                |
+| `spacer`       | The inner wrapper that sets the space around the banner. |
+| `message`      | The part that holds the text and the illustration.       |
+| `illustration` | The part that holds the banner icon/illustration.        |
+| `content`      | The part that holds the banner text content.             |
+| `actions`      | The part that holds the banner action buttons.           |
 
 ```css
 igc-banner::part(spacer) {

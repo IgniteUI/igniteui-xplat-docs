@@ -17,18 +17,16 @@ In {Platform} charts, tooltips provide details about bound data and they are ren
 
 `sample="/charts/category-chart/column-chart-with-tooltips", height="500", alt="{Platform} Tooltip Types Example"`
 
-
-
 <div class="divider--half"></div>
 
 The `ToolTipType` property is configurable and can be set to one of the following options:
 
-| Property Value     | Description  |
-| -------------------|----------------|
-| `Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.  |
-| `Data` Tooltip | Display the data tooltips for all series in the chart.  |
-| `Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.  |
-| `Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.  |
+| Property Value     | Description                                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------- |
+| `Default` Tooltip  | Display a tooltip for a single item when the pointer is positioned over it.                        |
+| `Data` Tooltip     | Display the data tooltips for all series in the chart.                                             |
+| `Item` Tooltip     | Display a tooltip for each data item in the category that the pointer is positioned over.          |
+| `Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over. |
 
 <div class="divider--half"></div>
 
@@ -43,7 +41,6 @@ This example shows how to create custom tooltips for all series in {Platform} `C
 `sample="/charts/category-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
 
 <div class="divider--half"></div>
-
 
 ## Custom Tooltips in Data Chart
 

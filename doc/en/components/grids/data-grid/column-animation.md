@@ -10,20 +10,17 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Grid Column Animations
 
-The {ProductName} Data Table / Data Grid supports Column Animation during events like Column Hiding or Column Moving.  When Column Animation on the {Platform} data grid is set, the corresponding animation will fire for all of the cells in that column.
+The {ProductName} Data Table / Data Grid supports Column Animation during events like Column Hiding or Column Moving. When Column Animation on the {Platform} data grid is set, the corresponding animation will fire for all of the cells in that column.
 
 ## {Platform} Grid Column Animations Example
 
-
 `sample="/grids/data-grid/column-animation", height="600", alt="{Platform} Grid Column Animations Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -44,27 +41,30 @@ The following demonstrates the implementation of each of the column animations d
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    columnAddingAnimationMode="SlideToLeft"
-    columnExchangingAnimationMode="SlideToRight"
-    columnHidingAnimationMode="SlideToTopAndFadeOut"
-    columnMovingAnimationMode="SlideOver"
-    columnPropertyUpdatingAnimationMode="Interpolate"
-    columnShowingAnimationMode="SlideFromBottomAndFadeIn" />
+  height="100%"
+  width="100%"
+  dataSource={this.data}
+  columnAddingAnimationMode="SlideToLeft"
+  columnExchangingAnimationMode="SlideToRight"
+  columnHidingAnimationMode="SlideToTopAndFadeOut"
+  columnMovingAnimationMode="SlideOver"
+  columnPropertyUpdatingAnimationMode="Interpolate"
+  columnShowingAnimationMode="SlideFromBottomAndFadeIn"
+/>
 ```
 
 ```html
-<igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      column-addingAnimation-mode="SlideToLeft"
-      column-exchanging-animation-mode="SlideToRight"
-      column-hiding-animation-mode="SlideToTopAndFadeOut"
-      column-moving-animation-mode="SlideOver"
-      column-property-updating-animation-mode="Interpolate"
-      column-showing-animation-mode="SlideFromBottomAndFadeIn">
+<igc-data-grid
+  id="grid"
+  height="100%"
+  width="100%"
+  column-addingAnimation-mode="SlideToLeft"
+  column-exchanging-animation-mode="SlideToRight"
+  column-hiding-animation-mode="SlideToTopAndFadeOut"
+  column-moving-animation-mode="SlideOver"
+  column-property-updating-animation-mode="Interpolate"
+  column-showing-animation-mode="SlideFromBottomAndFadeIn"
+>
 </igc-data-grid>
 ```
 

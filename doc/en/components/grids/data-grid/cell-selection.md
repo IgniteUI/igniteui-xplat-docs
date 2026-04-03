@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridCellSelection}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,10 +20,7 @@ The {ProductName} Data Table / Data Grid supports single or multiple row and cel
 
 ## {Platform} Grid Selection Example
 
-
 `sample="/grids/data-grid/cell-selection", height="600", alt="{Platform} Grid Selection Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -41,6 +38,7 @@ Selection in the {Platform} data grid is enabled on a row and cell level and can
 `SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only.
 
 `MultipleRow` includes the following functionality:
+
 - Click and drag to select rows
 - <kbd>SHIFT</kbd> and click to select multiple rows.
 - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
@@ -52,8 +50,6 @@ Pressing the space bar toggles selection of active row via `MultipleRow` or `Sin
 The following example demonstrates how to selected or deselected all rows in the grid. Note, `SelectionMode` must be set to MultipleRow.
 
 `sample="/grids/data-grid/row-selection", height="600", alt="{Platform} Grid Selection Example"`
-
-
 
 <div class="divider--half"></div>
 

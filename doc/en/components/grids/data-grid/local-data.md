@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -20,37 +20,75 @@ The following sample demonstrates the {ProductName} Data Table / Data Grid data 
 
 ## {Platform} Binding Local Data Example
 
-
 `sample="/grids/data-grid/binding-local-data", height="600", alt="{Platform} Binding Local Data Example"`
-
-
 
 ## Code Snippet
 
 ```tsx
 <IgrDataGrid
-    height="100%"
-    width="100%"
-    rowHeight="45"
-    autoGenerateColumns="false"
-    dataSource={this.data}>
-        <IgrTextColumn field="ProductID" headerText="Order ID" width="*>70" horizontalAlignment="center"/>
-        <IgrTextColumn field="ProductName" headerText="Product Name"   />
-        <IgrNumericColumn field="ProductPrice" headerText="Price" width="*>90"
-        positivePrefix="$" showGroupingSeparator="true" minFractionDigits={2}/>
-        <IgrNumericColumn field="OrderItems" headerText="Orders" width="*>70"/>
-        <IgrNumericColumn field="OrderValue" headerText="Order Value" width="*>100"
-        positivePrefix="$" showGroupingSeparator="true" />
-        <IgrDateTimeColumn field="OrderDate" headerText="Order Date" width="*>100"
-        horizontalAlignment="right" dateTimeFormat="DateShort" />
-        <IgrImageColumn field="CountryFlag" headerText="Country" width="*>100"
-        contentOpacity="1" horizontalAlignment="center"/>
-        <IgrNumericColumn field="Margin" headerText="Margin" width="90"
-        positiveSuffix="%" horizontalAlignment="center" />
-        <IgrNumericColumn field="Profit" headerText="Profit" width="70"
-        positivePrefix="$" showGroupingSeparator="true" />
-        <IgrTextColumn field="Status" headerText="Status" width="110"
-        horizontalAlignment="center"   />
+  height="100%"
+  width="100%"
+  rowHeight="45"
+  autoGenerateColumns="false"
+  dataSource={this.data}
+>
+  <IgrTextColumn
+    field="ProductID"
+    headerText="Order ID"
+    width="*>70"
+    horizontalAlignment="center"
+  />
+  <IgrTextColumn field="ProductName" headerText="Product Name" />
+  <IgrNumericColumn
+    field="ProductPrice"
+    headerText="Price"
+    width="*>90"
+    positivePrefix="$"
+    showGroupingSeparator="true"
+    minFractionDigits={2}
+  />
+  <IgrNumericColumn field="OrderItems" headerText="Orders" width="*>70" />
+  <IgrNumericColumn
+    field="OrderValue"
+    headerText="Order Value"
+    width="*>100"
+    positivePrefix="$"
+    showGroupingSeparator="true"
+  />
+  <IgrDateTimeColumn
+    field="OrderDate"
+    headerText="Order Date"
+    width="*>100"
+    horizontalAlignment="right"
+    dateTimeFormat="DateShort"
+  />
+  <IgrImageColumn
+    field="CountryFlag"
+    headerText="Country"
+    width="*>100"
+    contentOpacity="1"
+    horizontalAlignment="center"
+  />
+  <IgrNumericColumn
+    field="Margin"
+    headerText="Margin"
+    width="90"
+    positiveSuffix="%"
+    horizontalAlignment="center"
+  />
+  <IgrNumericColumn
+    field="Profit"
+    headerText="Profit"
+    width="70"
+    positivePrefix="$"
+    showGroupingSeparator="true"
+  />
+  <IgrTextColumn
+    field="Status"
+    headerText="Status"
+    width="110"
+    horizontalAlignment="center"
+  />
 </IgrDataGrid>
 ```
 

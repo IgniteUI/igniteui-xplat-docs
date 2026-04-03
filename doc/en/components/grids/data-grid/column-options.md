@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridMain}
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
+> Please note that this control has been deprecated and replaced with the [Grid](../data-grid.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support.
 
 <!-- end: Blazor, WebComponents -->
 
@@ -22,10 +22,7 @@ To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` 
 
 ## {Platform} Grid Column Options Example
 
-
 `sample="/grids/data-grid/column-options", height="600", alt="{Platform} Grid Column Options Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -41,39 +38,42 @@ The following code demonstrates how to programmatically enable the column option
 
 ```tsx
 <IgrDataGrid
-height="1-00%"
-width="100%"
-headerClickAction="SortByOneColumnOnly"
-isColumnOptionsEnabled="true">
-    <IgrTextColumn field="ID" isFilteringEnabled="false"/>
+  height="1-00%"
+  width="100%"
+  headerClickAction="SortByOneColumnOnly"
+  isColumnOptionsEnabled="true"
+>
+  <IgrTextColumn field="ID" isFilteringEnabled="false" />
 </IgrDataGrid>
 ```
 
 <!--React-->
+
 ```ts
-import { HeaderClickAction } from 'igniteui-react-data-grids';
+import { HeaderClickAction } from "igniteui-react-data-grids";
 
 //enable column options
-this.grid.isColumnOptionsEnabled="true";
+this.grid.isColumnOptionsEnabled = "true";
 
 //adjust filtering for column
 let idColumn = this.grid.actualColumns.item(0);
-idColumn.isFilteringEnabled="false";
+idColumn.isFilteringEnabled = "false";
 
 //adjust sorting
 this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 ```
 
 <!--WebComponents-->
+
 ```ts
-import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
+import { HeaderClickAction } from "igniteui-webcomponents-data-grids";
 
 //enable column options
-this.grid.isColumnOptionsEnabled="true";
+this.grid.isColumnOptionsEnabled = "true";
 
 //adjust filtering for column
 let idColumn = this.grid.actualColumns.item(0);
-idColumn.isFilteringEnabled="false";
+idColumn.isFilteringEnabled = "false";
 
 //adjust sorting
 this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
@@ -81,12 +81,13 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 
 ```html
 <igc-data-grid
-     id="grid"
-     height="calc(100% - 40px)"
-     width="100%"
-     header-click-action="SortByOneColumnOnly"
-     is-column-options-enabled="true">
-    <igc-text-column field="ID" is-filtering-enabled="false"></igc-text-column>
+  id="grid"
+  height="calc(100% - 40px)"
+  width="100%"
+  header-click-action="SortByOneColumnOnly"
+  is-column-options-enabled="true"
+>
+  <igc-text-column field="ID" is-filtering-enabled="false"></igc-text-column>
 </igc-data-grid>
 ```
 

@@ -14,14 +14,11 @@ For end-users this means they can easily navigate across different app pages, us
 
 The {ProductName} Tree component allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
-
 ## {Platform} Tree Example
 
 In this basic {ProductName} Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
 
 `sample="/grids/tree/basic-example", height="400", alt="{Platform} Tree Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -38,7 +35,7 @@ npm install {PackageWebComponents}
 Before using the `Tree`, you need to register it as follows:
 
 ```ts
-import { defineComponents, IgcTreeComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcTreeComponent } from "igniteui-webcomponents";
 defineComponents(IgcTreeComponent);
 ```
 
@@ -57,19 +54,20 @@ npm install igniteui-react
 You will then need to import the `Tree`and its necessary CSS, like so:
 
 ```tsx
-import { IgrTree, IgrTreeItem } from 'igniteui-react';
-import 'igniteui-webcomponents/themes/light/bootstrap.css';
+import { IgrTree, IgrTreeItem } from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
 ```
 
 <!-- end: React -->
 
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the `Tree` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Tree` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/\_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 ```razor
@@ -84,6 +82,7 @@ builder.Services.AddIgniteUIBlazor(
 The simplest way to start using the `Tree` is as follows:
 
 ### Declaring a tree
+
 `TreeItem` is the representation of every item that belongs to the `Tree`.
 Items provide `Disabled`, `Active`, `Selected` and `Expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
 The `Value` property can be used to add a reference to the data entry the item represents.
@@ -128,23 +127,21 @@ In order to render a tree you do not necessarily need a data set - individual it
 
 ```html
 <igc-tree>
-    <igc-tree-item>
-        <div slot="label">
-            I am a parent item 1
-            <img src="hard_coded_src.webb" alt="Alt Text">
-        </div>
-        <igc-tree-item label="I am a child item 1">
-        </igc-tree-item>
-    </igc-tree-item>
+  <igc-tree-item>
+    <div slot="label">
+      I am a parent item 1
+      <img src="hard_coded_src.webb" alt="Alt Text" />
+    </div>
+    <igc-tree-item label="I am a child item 1"> </igc-tree-item>
+  </igc-tree-item>
 
-    <igc-tree-item>
-        <div slot="label">
-            I am a parent item 2
-            <img src="hard_coded_src.webb" alt="Alt Text">
-        </div>
-        <igc-tree-item label="I am a child item 1">
-        </igc-tree-item>
-    </igc-tree-item>
+  <igc-tree-item>
+    <div slot="label">
+      I am a parent item 2
+      <img src="hard_coded_src.webb" alt="Alt Text" />
+    </div>
+    <igc-tree-item label="I am a child item 1"> </igc-tree-item>
+  </igc-tree-item>
 </igc-tree>
 ```
 
@@ -169,20 +166,20 @@ In order to render a tree you do not necessarily need a data set - individual it
 
 ```tsx
 <IgrTree>
-    <IgrTreeItem label='North America'>
-        <IgrTreeItem label='United States' />
-        <IgrTreeItem label='Canada' />
-        <IgrTreeItem label='Mexico' />
-    </IgrTreeItem>
-    <IgrTreeItem label='South America'>
-        <IgrTreeItem label='Brazil' />
-        <IgrTreeItem label='Uruguay' />
-    </IgrTreeItem>
-    <IgrTreeItem label='Europe'>
-        <IgrTreeItem label='United Kingdom' />
-        <IgrTreeItem label='Germany' />
-        <IgrTreeItem label='Bulgaria' />
-    </IgrTreeItem>
+  <IgrTreeItem label="North America">
+    <IgrTreeItem label="United States" />
+    <IgrTreeItem label="Canada" />
+    <IgrTreeItem label="Mexico" />
+  </IgrTreeItem>
+  <IgrTreeItem label="South America">
+    <IgrTreeItem label="Brazil" />
+    <IgrTreeItem label="Uruguay" />
+  </IgrTreeItem>
+  <IgrTreeItem label="Europe">
+    <IgrTreeItem label="United Kingdom" />
+    <IgrTreeItem label="Germany" />
+    <IgrTreeItem label="Bulgaria" />
+  </IgrTreeItem>
 </IgrTree>
 ```
 
@@ -192,19 +189,20 @@ In order to render a tree you do not necessarily need a data set - individual it
 ### Item Interactions
 
 `TreeItem` could be expanded or collapsed:
+
 - by clicking on the item expand indicator (default behavior).
 - by clicking on the item if the `Tree` `ToggleNodeOnClick` property is set to `true`.
 
 ```html
 <igc-tree toggle-node-on-click="true">
-    <igc-tree-item label="North America">
-        <igc-tree-item label="United States"></igc-tree-item>
-        <igc-tree-item label="Canada"></igc-tree-item>
-        <igc-tree-item label="Mexico"></igc-tree-item>
-    </igc-tree-item>
-    <igc-tree-item label="South America">
-        <igc-tree-item label="Brazil"></igc-tree-item>
-    </igc-tree-item>
+  <igc-tree-item label="North America">
+    <igc-tree-item label="United States"></igc-tree-item>
+    <igc-tree-item label="Canada"></igc-tree-item>
+    <igc-tree-item label="Mexico"></igc-tree-item>
+  </igc-tree-item>
+  <igc-tree-item label="South America">
+    <igc-tree-item label="Brazil"></igc-tree-item>
+  </igc-tree-item>
 </igc-tree>
 ```
 
@@ -212,17 +210,19 @@ By default, multiple items could be expanded at the same time. In order to chang
 
 ```html
 <igc-tree single-branch-expand="true">
-    <igc-tree-item label="North America">
-        <igc-tree-item label="United States"></igc-tree-item>
-        <igc-tree-item label="Canada"></igc-tree-item>
-        <igc-tree-item label="Mexico"></igc-tree-item>
-    </igc-tree-item>
-    <igc-tree-item label="South America">
-        <igc-tree-item label="Brazil"></igc-tree-item>
-    </igc-tree-item>
+  <igc-tree-item label="North America">
+    <igc-tree-item label="United States"></igc-tree-item>
+    <igc-tree-item label="Canada"></igc-tree-item>
+    <igc-tree-item label="Mexico"></igc-tree-item>
+  </igc-tree-item>
+  <igc-tree-item label="South America">
+    <igc-tree-item label="Brazil"></igc-tree-item>
+  </igc-tree-item>
 </igc-tree>
 ```
+
 <!-- WebComponents -->
+
 In addition, the `Tree` provides the following API methods for item interactions:
 
 - `Tree.Expand` - expands all items. If an items array is passed, expands only the specified items.
@@ -244,8 +244,7 @@ In the `Tree` by default item selection is disabled. Users cannot select or dese
 To enable multiple item selection in the `Tree` just set the `Selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
 
 ```html
-<igc-tree selection="multiple">
-</igc-tree>
+<igc-tree selection="multiple"> </igc-tree>
 ```
 
 ```razor
@@ -258,11 +257,11 @@ To enable multiple item selection in the `Tree` just set the `Selection` propert
 ```
 
 ### Cascade
+
 To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item.
 
 ```html
-<igc-tree selection="Cascade">
-</igc-tree>
+<igc-tree selection="Cascade"> </igc-tree>
 ```
 
 ```razor
@@ -277,6 +276,7 @@ To enable cascade item selection in the `Tree`, just set the selection property 
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
 ## Keyboard Navigation
+
 Keyboard navigation in `Tree` provides a rich variety of keyboard interactions for the user. This functionality is enabled by default and allows users to navigate through the items.
 
 The `Tree` navigation is compliant with W3C accessibility standards and convenient to use.
@@ -296,7 +296,7 @@ The `Tree` navigation is compliant with W3C accessibility standards and convenie
 - <kbd>SPACE</kbd> - toggles selection of the current item. Marks the node as active.
 - <kbd>SHIFT</kbd> + <kbd>SPACE</kbd> - toggles selection of all items between the active one and the one pressed Space while holding <kbd>SHIFT</kbd> if selection is enabled.
 - <kbd>ENTER</kbd> - activates the focused item. If the item has link in it, opens the link.
-- <kbd>*</kbd> - expands the item and all sibling items on the same level.
+- <kbd>\*</kbd> - expands the item and all sibling items on the same level.
 
 When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse and keyboard interactions are available:
 
@@ -310,8 +310,6 @@ When selection is enabled, end-user selection of items is only allowed through t
 The {ProductName} Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
 
 `sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree Load On Demand Example"`
-
-
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded.
 
@@ -334,23 +332,23 @@ Loading a greater number of children on demand in the {ProductName} Tree might n
 
 You can change the appearance of the `TreeItem`, by using some of the exposed CSS parts listed below:
 
-| Part name | Description |
-| ---------|------------ |
-| `wrapper` | The wrapper for the tree item. |
-| `selected`  | Indicates selected state. Applies to `wrapper`. |
-| `focused` | Indicates focused state. Applies to `wrapper`. |
-| `active` | Indicates an active state. Applies to `wrapper`. |
-| `indicator` | The expand indicator of the tree item. |
-| `label` | The tree item content. |
-| `text` | The tree item displayed text. |
-| `select` | The checkbox of the tree item when selection is enabled. |
+| Part name   | Description                                              |
+| ----------- | -------------------------------------------------------- |
+| `wrapper`   | The wrapper for the tree item.                           |
+| `selected`  | Indicates selected state. Applies to `wrapper`.          |
+| `focused`   | Indicates focused state. Applies to `wrapper`.           |
+| `active`    | Indicates an active state. Applies to `wrapper`.         |
+| `indicator` | The expand indicator of the tree item.                   |
+| `label`     | The tree item content.                                   |
+| `text`      | The tree item displayed text.                            |
+| `select`    | The checkbox of the tree item when selection is enabled. |
 
 Using these CSS parts we can customize thе appearance of the `Tree` component like this:
 
 ```css
 igc-tree-item {
-    --background-active: var(--ig-secondary-500);
-    --foreground-active: var(--ig-secondary-500-contrast);
+  --background-active: var(--ig-secondary-500);
+  --foreground-active: var(--ig-secondary-500-contrast);
 }
 ```
 
