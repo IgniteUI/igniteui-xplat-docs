@@ -125,12 +125,12 @@ By default, each pane in a split layout receives a relative size compared to its
 
 If, for certain panes, you want explicit pixel-based sizing instead of relative sizing, you can turn on fixed size mode by setting the `useFixedSize` property of the parent split pane to **true**. When this property is enabled, all children are sized in pixels based on their `size` property. In the previous example, the first pane will span 400 pixels and the second pane 200 pixels. Resizing via the splitter changes only the size of the pane you are interacting with, without redistributing space across its siblings.
 
-As soon as the sum of the child panes' sizes exceeds the available size of the parent, the split pane becomes scrollable. The dock manager now also provides built-in autoscrolling to keep the user focused on their content:
+As soon as the sum of the child panes' sizes exceeds the available size of the parent, the split pane becomes scrollable. The dock manager now also provides built-in auto-scrolling to keep the user focused on their content:
 
 - When users **drag panes toward the edges** of a fixed-size root pane, the container scrolls in the direction of the drag so they can easily reach off-screen areas.
 - When users **resize panes via the splitter**, the container scrolls as needed to reveal newly expanded content.
 
-For a **horizontal** split pane, autoscrolling happens to the **left** or **right**; for a **vertical** split pane, it happens to the **top** or **bottom**, depending on the direction of the drag or resize.
+For a **horizontal** split pane, auto-scrolling happens to the **left** or **right**; for a **vertical** split pane, it happens to the **top** or **bottom**, depending on the direction of the drag or resize.
 
 
 ```ts

@@ -37,7 +37,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 | Bug Number | Control | Description |
 |------------|---------|-------------|
 | 3055 | IgrDataPieChart | missing styling properties for the Others Slice |
-| 38668 | IgrDataTooltipLayer | TitleTextColor is overriden when chart's TitleTextColor is used |
+| 38668 | IgrDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used |
 | 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
 | 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
 | 41594 | IgrDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
@@ -118,6 +118,7 @@ Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and Proporti
 |2270|IgrDataChart|Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis |
 |2251|igniteui-react-layouts|Skip resolving property editor props containing @constantValues |
 |2353|IgrDataChart|syntax error while building infragistics.dvcommonwidget.js |
+<!-- cspell:disable-next-line -->
 |2354|IgrDataChart|infragistics.dvcommonwidget.js has "unser" typo instead of "unset" in case names |
 |2338|IgrDataPieChart|SeriesPointerMove event doesn't fire correctly when StartAngle is set |
 |2235|Excel|Workbook.Load() throwing a Excel.FormulaParseException. |
