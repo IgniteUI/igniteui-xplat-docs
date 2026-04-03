@@ -1,0 +1,59 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build CI
+
+on:
+  pull_request:
+    branches: [ master, vnext ]
+
+jobs:
+
+  spellcheck-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 22.x
+    - name: Install packages
+      run: npm ci
+    - name: Spellcheck
+      run: npm run spellcheck
+    - name: Lint
+      run: npm run lint-en
+
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include:
+          - platform: Angular
+            build_script: build-docfx-angular
+          - platform: Blazor
+            build_script: build-docfx-blazor
+          - platform: React
+            build_script: build-docfx-react
+          - platform: WebComponents
+            build_script: build-docfx-wc
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 22.x
+    - name: Install packages
+      run: npm ci
+    - name: DotNet tool restore
+      run: dotnet tool restore
+    - name: Build ${{ matrix.platform }}
+      run: npm run ${{ matrix.build_script }}
+    - name: Test ${{ matrix.platform }}
+      run: npm run test --testPlatform=${{ matrix.platform }}
+    - name: Lint Angular output
+      if: matrix.platform == 'Angular'
+      run: npm run lint-en:angular
