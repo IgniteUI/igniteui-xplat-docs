@@ -16,7 +16,7 @@ mentionedTypes: []
 
 The CLI-first setup for Ignite UI for {Platform} uses Ignite UI CLI to scaffold the {Platform} project first, then connects Ignite UI CLI MCP and Ignite UI Theming MCP to the generated project so an AI assistant can continue building through chat. Ignite UI CLI generates the project structure, installs dependencies, and writes the initial MCP configuration. After that, Ignite UI CLI MCP and Ignite UI Theming MCP are available to the AI client through the generated configuration.
 
- Neither server modifies project files autonomously; it exposes Ignite UI CLI tools to the active AI agent session. If you want the AI assistant to create the project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
+Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes Ignite UI CLI tools to the active AI agent session. If you want the AI assistant to create the project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
 
 ## Prerequisites
 
