@@ -9,14 +9,11 @@ namespace: Infragistics.Controls
 mentionedTypes: []
 ---
 
-<!-- schema: HowTo, Article -->
-<!-- cspell:words igniteui mcpservers npx -->
-
 # Use Ignite UI CLI MCP in an Existing {Platform} Project
 
 Ignite UI CLI MCP and Ignite UI Theming MCP connect to an existing {Platform} project by adding MCP configuration for your AI client in the project root. Once connected, Ignite UI CLI MCP exposes Ignite UI for {Platform} CLI tools to the AI assistant — enabling the assistant to add and modify Ignite UI for {Platform} components, answer documentation questions about component properties, events, and methods, and assist with theming through Ignite UI Theming MCP. No project regeneration or CLI scaffolding is required.
 
-Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure — Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
+Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure — Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
 
 ## Prerequisites
 
@@ -36,15 +33,15 @@ Work from the project root throughout this guide.
 
 Create the MCP configuration file in the location that matches your AI client:
 
-| Client | Configuration location |
-| --- | --- |
-| VS Code | `.vscode/mcp.json` |
-| Cursor | `.cursor/mcp.json` |
-| Claude Desktop (macOS) | `~/Library/Application Support/Claude/claude_desktop_config.json` |
-| Claude Desktop (Windows) | `%APPDATA%\Claude\claude_desktop_config.json` |
-| Claude Code | `.mcp.json` |
-| JetBrains IDEs | **Tools → AI Assistant → Model Context Protocol (MCP)** |
-| Other MCP clients | Use the same command and arguments through STDIO configuration |
+| Client                   | Configuration location                                                   |
+| ------------------------ | ------------------------------------------------------------------------ |
+| VS Code                  | `.vscode/mcp.json`                                                       |
+| Cursor                   | `.cursor/mcp.json`                                                       |
+| Claude Desktop (macOS)   | `~/Library/Application Support/Claude/claude_desktop_config.json`        |
+| Claude Desktop (Windows) | `%APPDATA%\Claude\claude_desktop_config.json`                            |
+| Claude Code              | `.mcp.json`                                                              |
+| JetBrains IDEs           | **Tools → AI Assistant → Model Context Protocol (MCP)**                  |
+| Other MCP clients        | Use the same command and arguments through STDIO configuration           |
 
 ## Step 3: Add the MCP Server Configuration
 
