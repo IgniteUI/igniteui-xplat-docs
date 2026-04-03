@@ -3,7 +3,7 @@ title: Start from an Empty Folder with Ignite UI CLI MCP for {Platform} - {Produ
 _description: Set up Ignite UI CLI MCP and Ignite UI Theming MCP in a new empty folder and use an AI assistant to create a {Platform} project through chat. Covers VS Code, Cursor, Claude Desktop, Claude Code, and JetBrains.
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, agent
 _language: en
-_license: MIT
+_license: commercial
 _canonicalLink: {environment:dvUrl}/components/general-how-to-start-mcp
 namespace: Infragistics.Controls
 mentionedTypes: []
