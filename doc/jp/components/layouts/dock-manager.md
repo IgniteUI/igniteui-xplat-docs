@@ -938,7 +938,7 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 <!-- end: WebComponents -->
 
-ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+ドック マネージャーは、個々の文字列を直接変更するために使用できる `ResourceStrings` プロパティも公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはページの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性に関係なく、指定された文字列を使用します。
 
 <!-- end: React, WebComponents -->
 
