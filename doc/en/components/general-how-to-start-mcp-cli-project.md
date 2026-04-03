@@ -4,7 +4,7 @@ _description: Scaffold a {Platform} project with Ignite UI CLI, review the gener
 _keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, agent
 _language: en
 _license: MIT
-_canonicalLink: {environment:dvUrl}/components/general-how-to-start-mcp-cli-project
+_canonicalLink: "{environment:dvUrl}/components/general-how-to-start-mcp-cli-project"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
