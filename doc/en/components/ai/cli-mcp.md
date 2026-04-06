@@ -6,6 +6,9 @@ _language: en
 mentionedTypes: []
 ---
 
+<!-- schema: Article -->
+<!-- cspell:words igniteui mcpservers npx -->
+
 # Ignite UI CLI MCP Overview
 
 This topic is the quick entry point for Ignite UI MCP for {Platform}.
@@ -104,9 +107,9 @@ Use the short guide below to choose the best starting point:
 
 > **Use MCP in an Existing {Platform} Project**: use this when you already have an {Platform} project and want to connect MCP, continue working in the current codebase, and ask documentation or API questions.
 
-- [Start from an Empty Folder with MCP for {Platform}](general-how-to-start-mcp.md)
+- [Start from an Empty Folder with MCP for {Platform}](cli-mcp-start-empty.md)
   Use this when you want to begin with an empty workspace, add the MCP configuration for your AI client, and let the assistant help create the {Platform} project from the beginning.
-- [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](general-how-to-start-mcp-cli-project.md)
+- [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](cli-mcp-start-cli.md)
   Use this when you want to create the {Platform} project with Ignite UI CLI first and continue with the generated MCP setup after that.
-- [Use MCP in an Existing {Platform} Project](general-how-to-use-mcp-existing-project.md)
+- [Use MCP in an Existing {Platform} Project](cli-mcp-existing.md)
   Use this when you want to connect MCP to an existing {Platform} project, continue working in the current codebase, and ask documentation or API questions in chat.

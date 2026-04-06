@@ -4,7 +4,7 @@ _description: Set up Ignite UI CLI MCP and Ignite UI Theming MCP in a new empty 
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, agent
 _language: en
 _license: MIT
-_canonicalLink: "{environment:dvUrl}/components/general-how-to-start-mcp"
+_canonicalLink: "{environment:dvUrl}/components/cli-mcp-start-empty"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
@@ -16,7 +16,7 @@ mentionedTypes: []
 
 The MCP-first setup for Ignite UI for {Platform} starts with an empty workspace folder, adds the MCP configuration for your AI client, and then uses chat or agent mode to create the {Platform} project from the beginning. No manual CLI steps are required before the first prompt — Ignite UI CLI MCP exposes Ignite UI CLI scaffolding tools to the AI assistant, which invokes them on your behalf.
 
-The two servers do not create the project autonomously. The AI assistant invokes Ignite UI CLI MCP tools in response to your prompts. If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](general-how-to-use-mcp-existing-project.md) instead of this guide.
+The two servers do not create the project autonomously. The AI assistant invokes Ignite UI CLI MCP tools in response to your prompts. If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](cli-mcp-existing.md) instead of this guide.
 
 ## Prerequisites
 
@@ -137,7 +137,7 @@ Reload the workspace, reopen the editor, or restart the AI client. Some clients 
 Verify that the configuration content matches the examples exactly, including key names and argument order. A typo in `args` is the most common cause.
 
 **The folder already has project files**
-This guide assumes an empty workspace. If the folder contains existing project files, use [Use Ignite UI CLI MCP in an Existing {Platform} Project](general-how-to-use-mcp-existing-project.md) instead.
+This guide assumes an empty workspace. If the folder contains existing project files, use [Use Ignite UI CLI MCP in an Existing {Platform} Project](cli-mcp-existing.md) instead.
 
 ## Next Steps
 
@@ -150,10 +150,10 @@ With both MCP servers running and the {Platform} project created, continue in ch
 
 ## Related Topics
 
-For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](general-how-to-mcp-overview.md).
+For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](cli-mcp.md).
 
-If you prefer to scaffold the {Platform} project with Ignite UI CLI before connecting MCP, see [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](general-how-to-start-mcp-cli-project.md).
+If you prefer to scaffold the {Platform} project with Ignite UI CLI before connecting MCP, see [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](cli-mcp-start-cli.md).
 
-If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](general-how-to-use-mcp-existing-project.md).
+If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](cli-mcp-existing.md).
 
-For more information about AI skills and theming workflows, see [{Platform} Agent Skills](ai/skills.md) and [Ignite UI Theming MCP](ai/theming-mcp.md).
+For more information about AI skills and theming workflows, see [{Platform} Agent Skills](skills.md) and [Ignite UI Theming MCP](theming-mcp.md).

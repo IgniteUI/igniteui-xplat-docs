@@ -4,16 +4,19 @@ _description: Connect Ignite UI CLI MCP and Ignite UI Theming MCP to an existing
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, documentation, API, agent
 _language: en
 _license: MIT
-_canonicalLink: "{environment:dvUrl}/components/general-how-to-use-mcp-existing-project"
+_canonicalLink: "{environment:dvUrl}/components/cli-mcp-existing"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
+
+<!-- schema: HowTo, Article -->
+<!-- cspell:words igniteui mcpservers npx -->
 
 # Use Ignite UI CLI MCP in an Existing {Platform} Project
 
 Ignite UI CLI MCP and Ignite UI Theming MCP connect to an existing {Platform} project by adding MCP configuration for your AI client in the project root. Once connected, Ignite UI CLI MCP exposes Ignite UI for {Platform} CLI tools to the AI assistant — enabling the assistant to add and modify Ignite UI for {Platform} components, answer documentation questions about component properties, events, and methods, and assist with theming through Ignite UI Theming MCP. No project regeneration or CLI scaffolding is required.
 
-Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure — Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
+Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure — Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start-empty.md) instead.
 
 ## Prerequisites
 
@@ -163,10 +166,10 @@ With Ignite UI CLI MCP and Ignite UI Theming MCP connected to the existing Ignit
 
 ## Related Topics
 
-For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](general-how-to-mcp-overview.md).
+For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](cli-mcp.md).
 
-If you want to start from an empty folder instead, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md).
+If you want to start from an empty folder instead, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start-empty.md).
 
-If you want to scaffold the {Platform} project with Ignite UI CLI first and connect MCP after that, see [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](general-how-to-start-mcp-cli-project.md).
+If you want to scaffold the {Platform} project with Ignite UI CLI first and connect MCP after that, see [Create a {Platform} Project with Ignite UI CLI, then Continue with MCP](cli-mcp-start-cli.md).
 
-For more information about AI skills and theming workflows, see [{Platform} Agent Skills](ai/skills.md) and [Ignite UI Theming MCP](ai/theming-mcp.md).
+For more information about AI skills and theming workflows, see [{Platform} Agent Skills](skills.md) and [Ignite UI Theming MCP](theming-mcp.md).

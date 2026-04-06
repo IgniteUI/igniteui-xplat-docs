@@ -4,7 +4,7 @@ _description: Scaffold a {Platform} project with Ignite UI CLI, review the gener
 _keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, AI, agent
 _language: en
 _license: MIT
-_canonicalLink: "{environment:dvUrl}/components/general-how-to-start-mcp-cli-project"
+_canonicalLink: "{environment:dvUrl}/components/cli-start-mcp-cli-project"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
@@ -13,7 +13,7 @@ mentionedTypes: []
 
 The CLI-first setup for Ignite UI for {Platform} uses Ignite UI CLI to scaffold the {Platform} project first, then connects Ignite UI CLI MCP and Ignite UI Theming MCP to the generated project so an AI assistant can continue building through chat. Ignite UI CLI generates the project structure, installs dependencies, and writes the initial MCP configuration. After that, Ignite UI CLI MCP and Ignite UI Theming MCP are available to the AI client through the generated configuration.
 
-Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes Ignite UI CLI tools to the active AI agent session. If you want the AI assistant to create the project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md) instead.
+Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows - Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes Ignite UI CLI tools to the active AI agent session. If you want the AI assistant to create the project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start.md) instead.
 
 ## Prerequisites
 
@@ -88,9 +88,9 @@ ig new my-app --framework=react --template=base
 
 Common template options for React:
 
-- `--template=base` — project structure with routing
-- `--template=empty` — empty project structure with routing and home page
-- `--template=side-nav` — project with side navigation
+- `--template=base` - project structure with routing
+- `--template=empty` - empty project structure with routing and home page
+- `--template=side-nav` - project with side navigation
 
 <!-- end: React -->
 
@@ -104,13 +104,13 @@ ig new my-app --framework=webcomponents --template=base
 
 Common template options for Web Components:
 
-- `--template=base` — project structure with routing
-- `--template=empty` — empty project structure with routing and home page
-- `--template=side-nav` — project with side navigation
+- `--template=base` - project structure with routing
+- `--template=empty` - empty project structure with routing and home page
+- `--template=side-nav` - project with side navigation
 
 <!-- end: WebComponents -->
 
-For the full list of templates and CLI command options, see the [Ignite UI CLI](general-cli-overview.md) topic.
+For the full list of templates and CLI command options, see the [Ignite UI CLI](cli-mcp.md) topic.
 
 ## Step 4: Complete the Guided CLI Prompts
 
@@ -142,7 +142,7 @@ For VS Code, the generated file is `.vscode/mcp.json`. For other clients, add th
 | JetBrains IDEs           | **Tools → AI Assistant → Model Context Protocol (MCP)**                  |
 | Other MCP clients        | Use the same command and arguments through STDIO configuration           |
 
-### VS Code — expected `.vscode/mcp.json` content
+### VS Code - expected `.vscode/mcp.json` content
 
 ```json
 {
@@ -235,10 +235,10 @@ With the Ignite UI for {Platform} project scaffolded and both MCP servers runnin
 
 ## Related Topics
 
-For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](general-how-to-mcp-overview.md).
+For an overview of all available MCP setup paths for {Platform}, see [{Platform} Ignite UI CLI MCP Overview](cli-mcp.md).
 
-If you want the AI assistant to create the {Platform} project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](general-how-to-start-mcp.md).
+If you want the AI assistant to create the {Platform} project without running the CLI yourself, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start.md).
 
-If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](general-how-to-use-mcp-existing-project.md).
+If you already have a {Platform} project, see [Use Ignite UI CLI MCP in an Existing {Platform} Project](cli-mcp-existing.md).
 
 For more information about AI skills and theming workflows, see [{Platform} Agent Skills](ai/skills.md) and [Ignite UI Theming MCP](ai/theming-mcp.md).
