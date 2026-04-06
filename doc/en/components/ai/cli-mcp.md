@@ -386,7 +386,7 @@ For the main hands-on workflow, see [Build an App End-to-End with Ignite UI CLI 
 For the main hands-on workflow, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
 <!-- end: WebComponents -->
 
-## Example Scenarios
+## Common Workflows
 
 The following setup scenarios show when to use each starting point.
 
