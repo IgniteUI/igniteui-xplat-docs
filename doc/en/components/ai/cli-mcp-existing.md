@@ -14,9 +14,9 @@ mentionedTypes: []
 
 # Use Ignite UI CLI MCP in an Existing {Platform} Project
 
-Ignite UI CLI MCP and Ignite UI Theming MCP connect to an existing {Platform} project by adding MCP configuration for your AI client in the project root. Once connected, Ignite UI CLI MCP exposes Ignite UI for {Platform} CLI tools to the AI assistant — enabling the assistant to add and modify Ignite UI for {Platform} components, answer documentation questions about component properties, events, and methods, and assist with theming through Ignite UI Theming MCP. No project regeneration or CLI scaffolding is required.
+Ignite UI CLI MCP and Ignite UI Theming MCP connect to an existing {Platform} project by adding MCP configuration for your AI client in the project root. Once connected, Ignite UI CLI MCP exposes Ignite UI for {Platform} CLI tools to the AI assistant - enabling the assistant to add and modify Ignite UI for {Platform} components, answer documentation questions about component properties, events, and methods, and assist with theming through Ignite UI Theming MCP. No project regeneration or CLI scaffolding is required.
 
-Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows — Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure — Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start-empty.md) instead.
+Ignite UI CLI MCP and Ignite UI Theming MCP do not currently support Blazor in the current setup flows - Angular, React, and Web Components are supported. Neither server modifies project files autonomously; it exposes tools to the active AI agent session in a supported client. It does not replace or remove existing project structure - Ignite UI CLI MCP works with the current codebase. If you do not have an existing project, see [Start from an Empty Folder with Ignite UI CLI MCP for {Platform}](cli-mcp-start-empty.md) instead.
 
 ## Prerequisites
 
