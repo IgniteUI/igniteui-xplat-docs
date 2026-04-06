@@ -1,4 +1,4 @@
----
+﻿---
 title: AI-Assisted Development with Ignite UI - {ProductName}
 _description: Ignite UI provides Agent Skills, the Ignite UI CLI MCP server, and the Theming MCP server to ground AI coding assistants in correct component APIs, import paths, and design tokens across Angular, React, and Web Components.
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, Agent Skills, AI, agent, Copilot, Cursor
@@ -54,7 +54,7 @@ The Ignite UI CLI MCP server (`igniteui-cli`) is an MCP server maintained by Inf
 The CLI MCP server starts via `npx` without a global install:
 
 ```bash
-npx -y igniteui-cli@next mcp
+npx -y igniteui-cli mcp
 ```
 
 The server connects to VS Code with GitHub Copilot, Cursor, Claude Desktop, Claude Code, JetBrains AI Assistant, and any other MCP-compatible client that supports STDIO transport. The exact configuration format differs by client - see the CLI MCP setup guides below.
@@ -85,7 +85,7 @@ The CLI MCP server and Theming MCP server work with any editor or AI client that
 | Cursor | `.cursor/mcp.json` |
 | Claude Desktop (macOS) | `~/Library/Application Support/Claude/claude_desktop_config.json` |
 | Claude Desktop (Windows) | `%APPDATA%\Claude\claude_desktop_config.json` |
-| Claude Code | `.mcp.json` or `claude mcp` command |
+| Claude Code | `.mcp.json` or the Claude Code MCP CLI command |
 | JetBrains AI Assistant | **Tools → AI Assistant → Model Context Protocol (MCP)** |
 
 Agent Skills are compatible with GitHub Copilot via `.github/copilot-instructions.md`, Cursor via `.cursorrules` or `.cursor/rules/`, Windsurf via `.windsurfrules`, and JetBrains AI Assistant via project-level prompt settings.
@@ -111,7 +111,7 @@ Add the `igniteui-cli` MCP server entry to the configuration file for your AI cl
   "servers": {
     "igniteui-cli": {
       "command": "npx",
-      "args": ["-y", "igniteui-cli@next", "mcp"]
+      "args": ["-y", "igniteui-cli", "mcp"]
     }
   }
 }
@@ -124,13 +124,13 @@ Add the `igniteui-cli` MCP server entry to the configuration file for your AI cl
   "mcpServers": {
     "igniteui-cli": {
       "command": "npx",
-      "args": ["-y", "igniteui-cli@next", "mcp"]
+      "args": ["-y", "igniteui-cli", "mcp"]
     }
   }
 }
 ```
 
-For step-by-step setup guides organized by starting point, see [CLI MCP](cli-mcp.md).
+For the full setup guide, including VS Code, GitHub, Cursor, Claude Desktop, Claude Code, JetBrains, and other MCP-compatible clients, see [CLI MCP](cli-mcp.md).
 
 ### Step 3 - Connect the Theming MCP Server (optional)
 
@@ -149,8 +149,21 @@ Add the `igniteui-theming` entry to the same MCP configuration file, alongside `
 
 For configuration details and theming workflows, see [Theming MCP](theming-mcp.md).
 
+<!-- React -->
+For a single end-to-end example that combines project work, documentation questions, and theming in one conversation, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: React -->
+<!-- WebComponents -->
+For a single end-to-end example that combines project work, documentation questions, and theming in one conversation, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: WebComponents -->
+
 ## Related Topics
 
 - [Agent Skills](skills.md) - Full setup guide for loading and wiring Skill packages in VS Code, Cursor, Windsurf, and JetBrains
-- [CLI MCP](cli-mcp.md) - Three setup paths for the Ignite UI CLI MCP server: empty folder, CLI-first, and existing project
+- [CLI MCP](cli-mcp.md) - Full setup guide for Ignite UI CLI MCP, including recommended CLI-first setup and client-specific configuration
+<!-- React -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md) - A concrete combined workflow from project work to documentation questions to theming in one chat session
+<!-- end: React -->
+<!-- WebComponents -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md) - A concrete combined workflow from project work to documentation questions to theming in one chat session
+<!-- end: WebComponents -->
 - [Theming MCP](theming-mcp.md) - Theming MCP server setup and theming workflow examples

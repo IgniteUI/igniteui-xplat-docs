@@ -3,51 +3,31 @@
   "exclude": ["Blazor"],
   "name": "AI-Assisted Development",
   "header": true
-},
-{
-  "exclude": ["Blazor"],
-  "name": "Agent Workflow",
-  "href": "ai/ai-assisted-development-overview.md",
-  "status": "planned"
-},
-{
-  "exclude": ["Blazor"],
-  "name": "Agent Skills",
-  "href": "ai/skills.md",
-  "status": "new"
-},
-{
-  "exclude": ["Blazor"],
-  "name": "CLI MCP",
-  "href": "ai/cli-mcp.md",
-  "status": "new",
-  "items": [
-    {
-      "exclude": ["Blazor"],
-      "name": "Start from an empty folder",
-      "href": "ai/cli-mcp-start-empty.md",
-      "status": "new"
-    },
-    {
-      "exclude": ["Blazor"],
-      "name": "Create with Ignite UI CLI, then connect MCP",
-      "href": "ai/cli-mcp-start-cli.md",
-      "status": "new"
-    },
-    {
-      "exclude": ["Blazor"],
-      "name": "Use MCP in an existing project",
-      "href": "ai/cli-mcp-existing.md",
-      "status": "new"
-    }
-  ]
-},
-{
-  "exclude": ["Blazor"],
-  "name": "Theming MCP",
-  "href": "ai/theming-mcp.md",
-  "status": "new"
-},
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "Agent Workflow",
+    "href": "ai/ai-assisted-development-overview.md",
+    "status": "planned"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "Agent Skills",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "CLI MCP",
+    "href": "ai/cli-mcp.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
   {
     "name": "General",
     "header": true
@@ -136,7 +116,7 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "How to",
       "status": "NEW",
       "items": [
@@ -157,6 +137,12 @@
           "name": "How To Customize Marker Display in Blazor Charts",
           "href": "customize-marker-display-in-blazor-charts.md",
           "status": ""
+        },
+        {
+          "exclude": ["Angular", "Blazor"],
+          "name": "Build App with CLI MCP and Theming MCP",
+          "href": "general-how-to-mcp-e2e.md",
+          "status": "new"
         }
       ]
   },
