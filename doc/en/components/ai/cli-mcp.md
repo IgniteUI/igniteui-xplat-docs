@@ -17,7 +17,7 @@ mentionedTypes: []
 
 ## Overview
 
-Instead of manually switching between CLI commands, documentation pages, and project files, you can describe the task in plain language and let the AI assistant use Ignite UI CLI MCP tools on your behalf. The server gives the AI access to project scaffolding, component generation, project modification, and documentation-aware workflows through chat or agent mode.
+Ignite UI CLI MCP gives AI assistants direct access to Ignite UI CLI project scaffolding, component generation, project modification, and documentation-aware workflows through chat or agent mode. The server works alongside Ignite UI Theming MCP — CLI MCP handles project and component workflows while Theming MCP handles palettes, themes, tokens, and styling. Most teams connect both servers in the same AI client session.
 
 The Ignite UI CLI MCP works alongside the Ignite UI Theming MCP. In practice, the CLI MCP handles project and component workflows, while the Theming MCP handles palettes, themes, tokens, and styling workflows. Most teams will want both servers connected.
 
