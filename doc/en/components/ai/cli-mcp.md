@@ -58,7 +58,7 @@ If you want theming tools in the same client session and `igniteui-theming` is n
 npm install igniteui-theming
 ```
 
-## Setup
+## Configure Ignite UI CLI MCP for Your AI Client
 
 The MCP server is launched through `npx`. No separate installation is required beyond Node.js and access to the `igniteui-cli` package.
 
