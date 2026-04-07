@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 815,
+  "samplesCount": 821,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1085,6 +1085,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/layout-display-density": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/size"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/localization": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/localization"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/master-detail": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/master-detail"
     ],
@@ -2139,6 +2142,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/template": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion"
     ],
@@ -2261,6 +2270,15 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/icon/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/icon"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/base": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/nested": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/splitter"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/stepper/animations": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/stepper"
@@ -2514,7 +2532,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 338,
+  "topicsCount": 346,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3740,6 +3758,10 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/mask-input/styling",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/mask-input/value-modes"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/query-builder": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/overview",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/query-builder/template"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/radio": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/radio/alignment",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/radio/disabled",
@@ -3868,6 +3890,11 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/icon/sizing",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/icon/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/splitter": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/base",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/nested",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/splitter/styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/stepper": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/stepper/animations",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/stepper/linear",
@@ -3900,6 +3927,9 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/gauges/linear-gauge/ranges",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/gauges/linear-gauge/scale",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/gauges/linear-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/localization": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/localization"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/menus/navbar": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/menus/nav-bar/overview",
