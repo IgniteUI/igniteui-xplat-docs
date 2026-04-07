@@ -1,13 +1,25 @@
 [
+ {
+  "exclude": ["Blazor"],
+  "name": "AI-Assisted Development",
+  "header": true
+  },
   {
     "exclude": ["Blazor"],
-    "name": "AI-Assisted Development",
-    "header": true
+    "name": "Agent Workflow",
+    "href": "ai/ai-assisted-development-overview.md",
+    "status": "new"
   },
   {
     "exclude": ["Blazor"],
     "name": "Agent Skills",
     "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "CLI MCP",
+    "href": "ai/cli-mcp.md",
     "status": "new"
   },
   {
@@ -104,27 +116,33 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor", "React", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "How to",
-      "status": "",
+      "status": "NEW",
       "items": [
         {
-          "exclude": ["Angular", "React", "WebComponents"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "Blazor Excel Library",
           "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
           "status": ""
         },
         {
-          "exclude": ["Angular", "React", "WebComponents"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "How To Read & Write Excel Files To Reduce Server Load",
           "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
           "status": ""
         },
         {
-          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "How To Customize Marker Display in Blazor Charts",
           "href": "customize-marker-display-in-blazor-charts.md",
           "status": ""
+        },
+        {
+          "exclude": ["Angular", "Blazor"],
+          "name": "Build App with CLI MCP and Theming MCP",
+          "href": "general-how-to-mcp-e2e.md",
+          "status": "new"
         }
       ]
   },
