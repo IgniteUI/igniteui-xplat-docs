@@ -265,9 +265,10 @@ In practice, the most effective pattern is to use CLI MCP for project and compon
 
 ## Related Topics
 
+- [AI-Assisted Development with Ignite UI](ai/ai-assisted-development-overview.md)
+- [{ProductName} Skills](ai/skills.md)
 - [Ignite UI CLI MCP](ai/cli-mcp.md)
 - [Ignite UI Theming MCP](ai/theming-mcp.md)
-- [AI-Assisted Development with Ignite UI](ai/ai-assisted-development-overview.md)
 
 <div class="divider--half"></div>
 
