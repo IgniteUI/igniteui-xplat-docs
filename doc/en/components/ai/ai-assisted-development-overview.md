@@ -9,18 +9,6 @@ namespace: Infragistics.Controls
 mentionedTypes: []
 ---
 
-<!-- schema: Article -->
-<!-- cspell:words igniteui mcpservers npx theming -->
-
-<!-- feature-meta
-name: AI-Assisted Development
-category: toolchain
-tools: [agent-skills, cli-mcp, theming-mcp, design-to-code]
-frameworks: [Angular, React, WebComponents]
-clients: [VS Code with GitHub Copilot, Cursor, Claude Desktop, Claude Code, JetBrains AI Assistant]
-mcp-transport: STDIO
--->
-
 # AI-Assisted Development with Ignite UI
 
 Ignite UI for Angular, React, and Web Components provides a three-part AI toolchain - Agent Skills, the Ignite UI CLI MCP server, and the Ignite UI Theming MCP server - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Agent Skills are developer-owned instruction packages that define how AI agents use Ignite UI in a specific project. The CLI MCP server exposes Ignite UI CLI scaffolding, component management, and documentation tools to the active AI agent session via the Model Context Protocol. The Theming MCP server exposes the Ignite UI Theming Engine as queryable agent context. All three components work with GitHub Copilot, Cursor, Claude Desktop, Claude Code, and JetBrains AI Assistant.
@@ -149,9 +137,21 @@ Add the `igniteui-theming` entry to the same MCP configuration file, alongside `
 
 For configuration details and theming workflows, see [Theming MCP](theming-mcp.md).
 
-## Related Topics
+## Additional Resources
 
-- [Agent Skills](skills.md) - Full setup guide for loading and wiring Skill packages in VS Code, Cursor, Windsurf, and JetBrains
-- [CLI MCP](cli-mcp.md) - Full setup guide for Ignite UI CLI MCP, including recommended CLI-first setup and client-specific configuration
-- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md) - A concrete combined workflow from project work to documentation questions to theming in one chat session
-- [Theming MCP](theming-mcp.md) - Theming MCP server setup and theming workflow examples
+<!-- React -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
+<!-- end: React -->
+<!-- WebComponents -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
+<!-- end: WebComponents -->
+- [Agent Skills](./skills.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+- [Ignite UI Theming MCP](./theming-mcp.md)
+
+<div class="divider--half"></div>
+
+Our community is active and always welcoming to new ideas.
+
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

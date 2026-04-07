@@ -453,13 +453,13 @@ Validate that the JSON uses the `mcpServers` structure and that each local serve
 
 ## Additional Resources
 
-- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 <!-- React -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: React -->
 <!-- WebComponents -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: WebComponents -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
 - [Ignite UI Theming MCP](./theming-mcp.md)
 

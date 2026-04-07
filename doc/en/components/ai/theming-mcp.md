@@ -380,7 +380,9 @@ Also confirm that `core()` is called before any other theming mixin in your `sty
 <!-- WebComponents -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: WebComponents -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
 
 <!-- Ideally these should be included once documentation is combined
 - [Theming Overview](../themes/index.md)
