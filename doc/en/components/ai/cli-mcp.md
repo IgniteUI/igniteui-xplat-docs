@@ -1,7 +1,7 @@
 ﻿---
-title: "{Platform} Ignite UI CLI MCP | Infragistics"
-_description: "Connect Ignite UI CLI MCP to your AI client to scaffold projects, modify existing apps, create and update components, and ask documentation questions for {ProductName}. Learn the setup options for VS Code, GitHub, Cursor, Claude Desktop, Claude Code, JetBrains, and other MCP clients."
-_keywords: "{Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, agent, GitHub Copilot, Cursor, Claude, JetBrains"
+title: {Platform} Ignite UI CLI MCP | Infragistics
+_description: Connect Ignite UI CLI MCP to your AI client to scaffold projects, modify existing apps, create and update components, and ask documentation questions for {ProductName}. Learn the setup options for VS Code, GitHub, Cursor, Claude Desktop, Claude Code, JetBrains, and other MCP clients.
+_keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, agent, GitHub Copilot, Cursor, Claude, JetBrains
 _language: en
 _license: MIT
 _canonicalLink: "{environment:dvUrl}/components/ai/cli-mcp"

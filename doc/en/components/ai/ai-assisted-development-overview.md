@@ -149,21 +149,9 @@ Add the `igniteui-theming` entry to the same MCP configuration file, alongside `
 
 For configuration details and theming workflows, see [Theming MCP](theming-mcp.md).
 
-<!-- React -->
-For a single end-to-end example that combines project work, documentation questions, and theming in one conversation, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
-<!-- end: React -->
-<!-- WebComponents -->
-For a single end-to-end example that combines project work, documentation questions, and theming in one conversation, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
-<!-- end: WebComponents -->
-
 ## Related Topics
 
 - [Agent Skills](skills.md) - Full setup guide for loading and wiring Skill packages in VS Code, Cursor, Windsurf, and JetBrains
 - [CLI MCP](cli-mcp.md) - Full setup guide for Ignite UI CLI MCP, including recommended CLI-first setup and client-specific configuration
-<!-- React -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md) - A concrete combined workflow from project work to documentation questions to theming in one chat session
-<!-- end: React -->
-<!-- WebComponents -->
-- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md) - A concrete combined workflow from project work to documentation questions to theming in one chat session
-<!-- end: WebComponents -->
 - [Theming MCP](theming-mcp.md) - Theming MCP server setup and theming workflow examples
