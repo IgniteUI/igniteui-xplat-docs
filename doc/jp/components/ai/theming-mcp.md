@@ -21,6 +21,15 @@ _language: ja
 
 ほとんどのツールは、**Sass** または **CSS** 出力のいずれかを生成できます。Sass 出力がデフォルトで、`igniteui-theming` Sass モジュールと統合されます。CSS 出力は、すぐに使用できる CSS カスタム プロパティを生成し、**ローカル Sass ツールチェーンなしで**使用できます。サーバーがコンパイルを行います。
 
+Ignite UI Theming MCP は Ignite UI CLI MCP と連携します。実際には、Theming MCP はパレット、テーマ、トークン、タイポグラフィ、エレベーション、スタイリング ワークフローを処理し、CLI MCP はプロジェクト作成、プロジェクト変更、コンポーネント ワークフロー、ドキュメント指向のタスクを処理します。ほとんどのチームは、両方のサーバーを同じ AI クライアントに接続させます。
+
+<!-- React -->
+セットアップ後の具体的な組み合わせワークフローについては、[Ignite UI CLI MCP と Ignite UI Theming MCP を使用したアプリのエンドツーエンドのビルド](../general-how-to-mcp-e2e.md)を参照してください。
+<!-- end: React -->
+<!-- WebComponents -->
+セットアップ後の具体的な組み合わせワークフローについては、[Ignite UI CLI MCP と Ignite UI Theming MCP を使用したアプリのエンドツーエンドのビルド](../general-how-to-mcp-e2e.md)を参照してください。
+<!-- end: WebComponents -->
+
 **接続後に試すプロンプトの例:**
 
 > 「プライマリ #2563eb とコーラル セカンダリ #f97316 を使用して、{Platform} アプリ用の完全な Material Design ダーク テーマを作成して」
@@ -382,6 +391,29 @@ ng add igniteui-angular
 
 ## その他のリソース
 
+<!-- React -->
+- [Ignite UI CLI MCP と Ignite UI Theming MCP を使用したアプリのエンドツーエンドのビルド](../general-how-to-mcp-e2e.md)
+<!-- end: React -->
+<!-- WebComponents -->
+- [Ignite UI CLI MCP と Ignite UI Theming MCP を使用したアプリのエンドツーエンドのビルド](../general-how-to-mcp-e2e.md)
+<!-- end: WebComponents -->
+- [Ignite UI を使った AI 支援開発](./ai-assisted-development-overview.md)
 - [{ProductName} スキル](./skills.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+
+<!-- Ideally these should be included once documentation is combined
+- [Theming Overview](../themes/index.md)
+- [Palettes](../themes/palettes.md)
+- [Typography](../themes/typography.md)
+- [Elevations](../themes/elevations.md)
+- [Spacing](../themes/spacing.md)
+- [Roundness](../themes/roundness.md)
+- [Theming with Sass](../themes/sass/index.md)
+-->
+
+<div class="divider--half"></div>
+
+コミュニティに参加して新しいアイデアをご提案ください。
+
 - [{ProductName} **フォーラム** (英語)]({ForumsLink})
 - [{ProductName} **GitHub** (英語)]({GithubLink})
