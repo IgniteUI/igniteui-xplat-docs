@@ -64,7 +64,7 @@ Or create a project directly in one command, for example:
 ig new <project name> --framework=react --type=igr-ts --template=top-nav
 ```
 
-For more information about the Ignite UI CLI, see the [CLI overview](general-cli-overview.md).
+For a step-by-step walkthrough of the wizard, see [Step-by-Step Guide Using Ignite UI CLI](general-step-by-step-guide-using-cli.md). For a full reference of all CLI commands and options, see the [CLI Overview](general-cli-overview.md).
 
 If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
 
@@ -77,9 +77,9 @@ Alternatively, you can use popular frameworks such as Next.js, Vite, or Expo as 
 
 ## AI-Assisted Development
 
-The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+Ignite UI provides a three-part AI toolchain — **Agent Skills**, the **Ignite UI CLI MCP server**, and the **Ignite UI Theming MCP server** — that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Once connected, your AI assistant can scaffold projects, add and modify components, answer documentation questions, and generate accurate {ProductName} code without leaving your editor.
 
-Learn more in the Ignite UI MCP Server topic.
+For an overview of all three layers and setup instructions, see [AI-Assisted Development with Ignite UI](./ai/ai-assisted-development-overview.md). For the full CLI MCP client setup guide, see [Ignite UI CLI MCP](./ai/cli-mcp.md). For an end-to-end walkthrough using both MCP servers, see [Build an App End-to-End with CLI MCP and Theming MCP](./general-how-to-mcp-e2e.md).
 
 ## Using Vite CLI
 
@@ -188,13 +188,13 @@ Or create a project directly in one command, for example:
 ig new <project name> --framework=webcomponents --type=igc-ts --template=side-nav
 ```
 
-Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
+For a step-by-step walkthrough of the wizard, see [Step-by-Step Guide Using Ignite UI CLI](general-step-by-step-guide-using-cli.md). For a full reference of all CLI commands and options, see the [CLI Overview](general-cli-overview.md).
 
 ## AI-Assisted Development
 
-The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+Ignite UI provides a three-part AI toolchain — **Agent Skills**, the **Ignite UI CLI MCP server**, and the **Ignite UI Theming MCP server** — that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Once connected, your AI assistant can scaffold projects, add and modify components, answer documentation questions, and generate accurate {ProductName} code without leaving your editor.
 
-Learn more in the Ignite UI MCP Server topic.
+For an overview of all three layers and setup instructions, see [AI-Assisted Development with Ignite UI](./ai/ai-assisted-development-overview.md). For the full CLI MCP client setup guide, see [Ignite UI CLI MCP](./ai/cli-mcp.md). For an end-to-end walkthrough using both MCP servers, see [Build an App End-to-End with CLI MCP and Theming MCP](./general-how-to-mcp-e2e.md).
 
 ## Install Polyfills
 
@@ -451,9 +451,9 @@ This will automatically install packages for {ProductName}, along with all of th
 
 ## AI-Assisted Development
 
-The **Ignite UI CLI** includes a built-in **MCP (Model Context Protocol) server** that gives AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) live access to {ProductName} component documentation and API references directly inside your editor. The MCP server lets your assistant query up-to-date docs, search APIs, and retrieve setup guides on demand.
+Ignite UI provides a three-part AI toolchain — **Agent Skills**, the **Ignite UI CLI MCP server**, and the **Ignite UI Theming MCP server** — that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Once connected, your AI assistant can scaffold projects, add and modify components, answer documentation questions, and generate accurate {ProductName} code without leaving your editor.
 
-Learn more in the Ignite UI MCP Server topic.
+For an overview of all three layers and setup instructions, see [AI-Assisted Development with Ignite UI](./ai/ai-assisted-development-overview.md). For the full CLI MCP client setup guide, see [Ignite UI CLI MCP](./ai/cli-mcp.md). For an end-to-end walkthrough using both MCP servers, see [Build an App End-to-End with CLI MCP and Theming MCP](./general-how-to-mcp-e2e.md).
 
 <!-- end: React, WebComponents -->
 
