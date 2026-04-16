@@ -1,7 +1,7 @@
 ﻿---
-title: "Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP - {ProductName}"
-_description: "Follow an end-to-end {ProductName} workflow with Ignite UI CLI MCP and Ignite UI Theming MCP: start CLI-first, connect both MCP servers, create or extend the app through chat, ask documentation questions, and apply a custom theme."
-_keywords: "{Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, workflow, theming, prompt"
+title: Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP - {ProductName}
+_description: Follow an end-to-end {ProductName} workflow with Ignite UI CLI MCP and Ignite UI Theming MCP start CLI-first, connect both MCP servers, create or extend the app through chat, ask documentation questions, and apply a custom theme.
+_keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, workflow, theming, prompt
 _language: en
 _license: MIT
 _canonicalLink: "{environment:dvUrl}/components/general-how-to-mcp-e2e"
@@ -265,9 +265,10 @@ In practice, the most effective pattern is to use CLI MCP for project and compon
 
 ## Related Topics
 
+- [AI-Assisted Development with Ignite UI](ai/ai-assisted-development-overview.md)
+- [{ProductName} Skills](ai/skills.md)
 - [Ignite UI CLI MCP](ai/cli-mcp.md)
 - [Ignite UI Theming MCP](ai/theming-mcp.md)
-- [AI-Assisted Development with Ignite UI](ai/ai-assisted-development-overview.md)
 
 <div class="divider--half"></div>
 

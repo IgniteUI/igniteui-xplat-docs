@@ -8,7 +8,7 @@
     "exclude": ["Blazor"],
     "name": "Agent Workflow",
     "href": "ai/ai-assisted-development-overview.md",
-    "status": "planned"
+    "status": "new"
   },
   {
     "exclude": ["Blazor"],

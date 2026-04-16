@@ -18,6 +18,20 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+| 2189 | IgxDataChart | ラベルがない場合に DataChart が軸のレンダリングをスキップする。 |
+| 3055 | IgxDataPieChart | Others スライスのスタイル プロパティが不足している。 |
+| 38668 | IgxDataTooltipLayer | チャートの TitleTextColor を使用すると TitleTextColor がオーバーライドされる。 |
+| 40238 | Excel | Excel 数式パーサーを修正 - Workbook.Load() が Excel.FormulaParseException をスローする。 |
+| 41167 | Excel | オブジェクトの数式がラウンドトリップされない - カメラ ツールのラウンドトリップの Excel サポートを追加。 |
+| 41419 | Excel | VBA 署名付き Excel ファイルの保存時に署名/証明書が保持されない。 |
+| 41594 | IgxDataChart | AssigningCategoryStyle の args.GetItems が null であるか、フラグメント シリーズのアイテム更新に機能しない。 |
+
+## **{PackageVerChanges-26-1-JAN}**
+
 ### 機能拡張
 
 ### {PackageCharts}
