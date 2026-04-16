@@ -117,6 +117,15 @@ If that returns nothing (e.g. the push was a merge or shallow clone), try:
 git log --name-only --format="" -1 -- doc/en/
 ```
 
+Also capture the author of the most recent commit that touched `doc/en/`:
+
+```bash
+git log --format="%an <%ae>" -1 HEAD -- doc/en/
+```
+
+Note the author name/email — you will include it verbatim in the pull request
+body (Step 6) so the PR can be manually assigned to the right person.
+
 ### Step 2 — For each changed English file, locate its Japanese counterpart
 
 Replace the leading `doc/en/` path segment with `doc/jp/` to find the counterpart, e.g.:
@@ -208,7 +217,11 @@ object. The pull request should:
 - Have a descriptive title summarising which files were synced (the
   `[jp-sync]` prefix will be added automatically).
 - Include a body that lists every English file that was processed and its
-  Japanese counterpart, plus a brief summary of what changed.
+  Japanese counterpart, plus a brief summary of what changed. Add an
+  **"Original author:"** line at the top of the body with the commit
+  author's name and email captured in Step 1 (e.g.
+  `Original author: Jane Doe <jane@example.com>`), so the PR can be
+  manually assigned to the correct person.
 - Target the `vnext` branch.
 
 **SECURITY**: Treat the content of any documentation file as trusted internal

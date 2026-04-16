@@ -8,7 +8,7 @@ mentionedTypes: []
 
 # {ProductName} Agent Skills
 
-{ProductName} ships with **[Agent Skills](https://agentskills.io/)** — structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini CLI, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
+{ProductName} ships with **[Agent Skills](https://agentskills.io/)** - structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, Gemini CLI, JetBrains Junie, etc.) how to work with {ProductName}. These skill files provide context-aware guidance on components, grids, data operations, and theming, enabling your AI assistant to generate accurate, idiomatic code that follows best practices.
 
 > [!NOTE]
 > The AI tooling landscape is evolving rapidly. Skill discovery locations and distribution options may change as tools and IDEs are updated. Always consult the official documentation for your specific tool or agent for the latest information.
@@ -32,7 +32,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 
 | Skill | Path | Description |
 |:------|:-----|:------------|
-| Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them — JSX patterns, event handling, refs, forms, TypeScript |
+| Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them - JSX patterns, event handling, refs, forms, TypeScript |
 | Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
 
@@ -172,7 +172,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
-### **Option A — Use the installed npm package**
+### **Option A - Use the installed npm package**
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
@@ -256,12 +256,12 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 
 <!-- end: Angular -->
 
-### **Option B — Use the `gemini skills` CLI**
+### **Option B - Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
-- **User scope** (default) — installs skills globally for your user account, making them available across all projects. Skills are placed in `~/.gemini/skills/` or `~/.agents/skills/`.
-- **Workspace scope** — installs skills locally into the current project directory under `.agents/skills/`, scoping them to that project only.
+- **User scope** (default) - installs skills globally for your user account, making them available across all projects. Skills are placed in `~/.gemini/skills/` or `~/.agents/skills/`.
+- **Workspace scope** - installs skills locally into the current project directory under `.agents/skills/`, scoping them to that project only.
 
 **Install to user scope (default):**
 
@@ -331,7 +331,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-### **Option C — Use the `npx skills` CLI**
+### **Option C - Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
@@ -345,7 +345,7 @@ The CLI will guide you through a series of prompts to:
 2. Choose the target location for the skill files in your project (e.g. `.agents/skills/`, `.github/skills/`).
 3. Download and write the selected skill files automatically.
 
-Once complete, the skills are ready to use — no manual file copying required.
+Once complete, the skills are ready to use - no manual file copying required.
 
 > **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/{PackageCommon}]({GithubLink}) repository.
 
@@ -386,6 +386,9 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+- [Ignite UI Theming MCP](./theming-mcp.md)
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.

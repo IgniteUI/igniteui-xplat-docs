@@ -20,6 +20,15 @@ The server supports all four Ignite UI design systems — **Material**, **Bootst
 
 Most tools can produce either **Sass** or **CSS** output. Sass output is the default and integrates with the `igniteui-theming` Sass module. CSS output generates ready-to-use CSS custom properties and can be used **without a local Sass toolchain** — the server compiles it for you.
 
+The Ignite UI Theming MCP works alongside the Ignite UI CLI MCP. In practice, the Theming MCP handles palettes, themes, tokens, typography, elevations, and styling workflows, while the CLI MCP handles project creation, project modification, component workflows, and documentation-oriented tasks. Most teams will want both servers connected in the same AI client.
+
+<!-- React -->
+For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: React -->
+<!-- WebComponents -->
+For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: WebComponents -->
+
 **Example prompts to try once connected:**
 
 > _"Create a complete Material Design dark theme for my {Platform} app with primary #2563eb and coral secondary #f97316."_
@@ -177,10 +186,11 @@ JetBrains AI Assistant supports MCP servers through the IDE settings:
 
 ### Other MCP Clients
 
-For any other MCP-compatible client, use the STDIO transport with the following command and arguments:
+For any other MCP-compatible client, use the STDIO transport with this launch command:
 
-- **Command**: `npx`
-- **Arguments**: `-y`, `igniteui-theming`, `igniteui-theming-mcp`
+```bash
+npx -y igniteui-theming igniteui-theming-mcp
+```
 
 ## Customizing AI Behavior with Project Rules
 
@@ -364,7 +374,15 @@ Also confirm that `core()` is called before any other theming mixin in your `sty
 
 ## Additional Resources
 
+<!-- React -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
+<!-- end: React -->
+<!-- WebComponents -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
+<!-- end: WebComponents -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
 
 <!-- Ideally these should be included once documentation is combined
 - [Theming Overview](../themes/index.md)
