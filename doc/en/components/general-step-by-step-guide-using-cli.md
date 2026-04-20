@@ -1,7 +1,7 @@
 ---
 title: Step-by-Step Guide Using Ignite UI CLI | {ProductName} | Infragistics
 _description: Walk through the Ignite UI CLI interactive wizard to create a new {Platform} project, choose a template and theme, and add {ProductName} component views.
-_keywords: {Platform} cli, ignite ui cli, {ProductName}, scaffolding, step-by-step, infragistics
+_keywords: {Platform} cli, ignite ui cli, {ProductName}, scaffolding, step-by-step, Infragistics
 mentionedTypes: []
 last_updated: "2025-04-08"
 ---
