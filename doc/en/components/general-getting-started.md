@@ -63,7 +63,7 @@ Then choose `React` as the framework and `Ignite UI for React TS` as the project
 Or create a project directly in one command, for example:
 
 ```cmd
-ig new <project name> --framework=react --type=igr-ts --template=top-nav
+ig new <project-name> --framework=react --type=igr-ts --template=top-nav
 ```
 
 For a step-by-step walkthrough of the wizard, see [Step-by-Step Guide Using Ignite UI CLI](general-step-by-step-guide-using-cli.md). For a full reference of all CLI commands and options, see the [CLI Overview](general-cli-overview.md).
