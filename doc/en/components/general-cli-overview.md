@@ -1,7 +1,8 @@
 ---
 title: {Platform} CLI - {ProductName}
 _description: The {ProductName} CLI scaffolds {Platform} projects, adds pre-configured component views, and connects AI coding assistants via a built-in MCP server.
-_keywords: {Platform} cli, command line interface, {ProductName}, Infragistics
+_keywords: {Platform} cli, command line interface, {ProductName}, Infragistics,
+mentionedTypes: []
 ---
 <!-- component-meta
 name: igniteui-cli
