@@ -349,7 +349,7 @@ $my-palette: palette(
 
 > 「デザイン システムでは、プライマリ グリーンの 14 個すべてのシェードに正確な 16 進数値が指定されています。値を貼り付けます — カスタム パレットを作成して。」
 
-AI は、プライマリ カラーに `mode: "explicit"` を使用して `create_custom_palette` を呼び出し、残りは自動生成します。
+AI は、プライマリ カラーに `mode: "explicit"` を使用して `create_custom_palette` を呼び出し、残りは自動生成します。<!-- Angular --> シェード生成の詳細については、[パレット](https://www.infragistics.com/products/ignite-ui-angular/angular/components/themes/sass/palettes)を参照してください。<!-- end: Angular-->
 
 ### コンポーネント レベルのカスタマイズ
 
@@ -367,7 +367,7 @@ AI は、カレンダー コンポーネントにスコープされた `set_spac
 
 **プラットフォームが検出されない**
 
-`detect_platform` が `null` または `generic` を返す場合は、`package.json` に Ignite UI パッケージ (例: `igniteui-react`) が依存関係としてリストされていることを確認してください。AI に明示的に伝えることもできます: 「{ProductName} を使用して。」
+`detect_platform` が `null` または `generic` を返す場合は、`package.json` に Ignite UI パッケージ (例: `{PackageCommon}`) が依存関係としてリストされていることを確認してください。AI に明示的に伝えることもできます: 「{Platform} プラットフォームを使用して。」
 
 **カラーの輝度警告**
 
@@ -386,7 +386,7 @@ AI がカラーの輝度について警告した場合、選択したカラー�
 ng add igniteui-angular
 ```
 
-また、`styles.scss` で他のテーマ mixin の前に `core()` が呼び出されていることを確認してください。
+また、`styles.scss` で他のテーマ mixin の前に `core()` が呼び出されていることを確認してください。正しいファイルのセットアップについては、「[Sass を使用したテーマ設定](<a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/themes/sass/index">)」を参照してください。
 <!-- end: Angular -->
 
 ## その他のリソース
@@ -413,7 +413,7 @@ ng add igniteui-angular
 
 <div class="divider--half"></div>
 
-コミュニティに参加して新しいアイデアをご提案ください。
+コミュニティは常に活気があり、新しいアイデアを歓迎しています。
 
 - [{ProductName} **フォーラム** (英語)]({ForumsLink})
 - [{ProductName} **GitHub** (英語)]({GithubLink})
