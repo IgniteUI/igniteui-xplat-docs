@@ -83,7 +83,7 @@ Choose one of the available project templates. Navigate through the options usin
 Choose a theme for your application:
 
 - The **default** option includes a pre-compiled CSS file with the default {ProductName} theme.
-- The **custom** option generates a Sass-based color palette and theme configuration using the [Theming API](./general-theming.md).
+- The **custom** option generates a Sass-based color palette and theme configuration using the [Theming API](./themes/overview.md).
 
 ### Complete or continue
 
