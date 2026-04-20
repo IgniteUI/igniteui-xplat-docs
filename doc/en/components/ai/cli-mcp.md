@@ -1,7 +1,7 @@
 ﻿---
-title: "{Platform} Ignite UI CLI MCP | Infragistics"
-_description: "Connect Ignite UI CLI MCP to your AI client to scaffold projects, modify existing apps, create and update components, and ask documentation questions for {ProductName}. Learn the setup options for VS Code, GitHub, Cursor, Claude Desktop, Claude Code, JetBrains, and other MCP clients."
-_keywords: "{Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, agent, GitHub Copilot, Cursor, Claude, JetBrains"
+title: {Platform} Ignite UI CLI MCP | Infragistics
+_description: Connect Ignite UI CLI MCP to your AI client to scaffold projects, modify existing apps, create and update components, and ask documentation questions for {ProductName}. Learn the setup options for VS Code, GitHub, Cursor, Claude Desktop, Claude Code, JetBrains, and other MCP clients.
+_keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, agent, GitHub Copilot, Cursor, Claude, JetBrains
 _language: en
 _license: MIT
 _canonicalLink: "{environment:dvUrl}/components/ai/cli-mcp"
@@ -453,13 +453,13 @@ Validate that the JSON uses the `mcpServers` structure and that each local serve
 
 ## Additional Resources
 
-- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 <!-- React -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: React -->
 <!-- WebComponents -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: WebComponents -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
 - [Ignite UI Theming MCP](./theming-mcp.md)
 

@@ -386,6 +386,9 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+- [Ignite UI Theming MCP](./theming-mcp.md)
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
