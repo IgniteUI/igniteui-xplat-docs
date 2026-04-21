@@ -1,5 +1,5 @@
 ﻿---
-title: AI-Assisted Development with Ignite UI - Ignite UI for Angular
+title: AI-Assisted Development with Ignite UI - {ProductName}
 _description: Ignite UI provides Agent Skills, the Ignite UI CLI MCP server, and the Theming MCP server to ground AI coding assistants in correct component APIs, import paths, and design tokens across Angular, React, and Web Components.
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, Agent Skills, AI, agent, Copilot, Cursor
 _language: en
