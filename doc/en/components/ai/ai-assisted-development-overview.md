@@ -180,5 +180,5 @@ For configuration details and theming workflows, see [Theming MCP](theming-mcp.m
 
 Our community is active and always welcoming to new ideas.
 
-- [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
+ [{ProductName} **Forums**]({ForumsLink})
 - [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
