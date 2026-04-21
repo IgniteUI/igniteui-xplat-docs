@@ -1,6 +1,5 @@
 [
  {
-  "exclude": ["Blazor"],
   "name": "AI-Assisted Development",
   "header": true
   },
