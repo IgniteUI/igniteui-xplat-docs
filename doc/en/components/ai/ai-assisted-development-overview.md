@@ -180,5 +180,5 @@ For configuration details and theming workflows, see [Theming MCP](theming-mcp.m
 
 Our community is active and always welcoming to new ideas.
 
- - [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **Forums**]({ForumsLink})
 - [{ProductName} **GitHub**]({GithubLink})
