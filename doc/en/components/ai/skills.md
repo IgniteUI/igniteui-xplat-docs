@@ -174,7 +174,9 @@ Use one of the options below to download and place the skill files into the appr
 
 ### **Option A - Use the Ignite UI CLI**
 
-The fastest way to set up skills and MCP servers in one step. The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and configures the Ignite UI MCP servers in `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+<!-- Angular -->
 
 **Using Angular Schematics:**
 
@@ -182,13 +184,28 @@ The fastest way to set up skills and MCP servers in one step. The `ai-config` co
 ng generate @igniteui/angular-schematics:ai-config
 ```
 
-This also adds the `@angular/cli` MCP server alongside the Ignite UI servers.
+This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
 
-**Using the Ignite UI CLI directly:**
+<!-- end: Angular -->
+
+**Using the Ignite UI CLI:**
 
 ```bash
 npx igniteui-cli ai-config
 ```
+
+If you have the Ignite UI CLI installed globally, use the shorter form:
+
+```bash
+ig ai-config
+```
+
+<!-- Angular -->
+
+> [!NOTE]
+> The `npx igniteui-cli` and `ig` forms do not register the `@angular/cli` MCP server. Use the Angular Schematics command above if you want all three servers configured in a single step.
+
+<!-- end: Angular -->
 
 > [!NOTE]
 > The command requires {ProductName} packages to be installed in your project (`npm install`). If no skill files are found, make sure your packages are up-to-date.
