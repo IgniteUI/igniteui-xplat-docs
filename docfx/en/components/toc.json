@@ -22,7 +22,6 @@
     "status": "new"
   },
   {
-    "exclude": ["Blazor"],
     "name": "Theming MCP",
     "href": "ai/theming-mcp.md",
     "status": "new"
