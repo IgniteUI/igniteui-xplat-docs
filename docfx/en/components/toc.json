@@ -28,6 +28,11 @@
     "href": "ai/theming-mcp.md",
     "status": "new"
   },
+    {
+    "name": "Maker Framework",
+    "href": "ai/maker-framework.md",
+    "status": "new"
+  },
   {
     "name": "General",
     "header": true
