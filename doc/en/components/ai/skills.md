@@ -172,7 +172,28 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
-### **Option A - Use the installed npm package**
+### **Option A - Use the Ignite UI CLI**
+
+The fastest way to set up skills and MCP servers in one step. The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and configures the Ignite UI MCP servers in `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+**Using Angular Schematics:**
+
+```bash
+ng generate @igniteui/angular-schematics:ai-config
+```
+
+This also adds the `@angular/cli` MCP server alongside the Ignite UI servers.
+
+**Using the Ignite UI CLI directly:**
+
+```bash
+npx igniteui-cli ai-config
+```
+
+> [!NOTE]
+> The command requires {ProductName} packages to be installed in your project (`npm install`). If no skill files are found, make sure your packages are up-to-date.
+
+### **Option B - Use the installed npm package**
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
@@ -256,7 +277,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 
 <!-- end: Angular -->
 
-### **Option B - Use the `gemini skills` CLI**
+### **Option C - Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -331,7 +352,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-### **Option C - Use the `npx skills` CLI**
+### **Option D - Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
