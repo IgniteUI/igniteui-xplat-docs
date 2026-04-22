@@ -249,7 +249,7 @@ If you have the CLI installed globally:
 ig ai-config
 ```
 
-This copies {ProductName} Agent Skills into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op. For AI clients other than VS Code, use the manual configuration below.
+This copies {ProductName} Agent Skills into `.claude/skills/` and rites the full Ignite UI MCP server configuration, including the CLI and Theming servers, to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op. For AI clients other than VS Code, use the manual configuration below.
 
 For full setup instructions across all AI clients and Agent Skills wiring, see [Agent Skills](./ai/skills.md) and [Ignite UI CLI MCP](./ai/cli-mcp.md).
 
