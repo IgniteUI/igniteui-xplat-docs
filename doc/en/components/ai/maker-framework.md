@@ -16,7 +16,11 @@ mentionedTypes: []
 
 The MAKER Framework (`@igniteui/maker-mcp`) is a multi-agent AI orchestration MCP server from Infragistics that decomposes complex tasks into validated, executable step plans using a consensus-based voting algorithm across multiple AI agents. MAKER stands for Maximal Agentic decomposition, first-to-ahead-by-K Error correction, and Red-flagging. The framework is based on the research paper _Solving a million-step LLM task with zero errors_ by Cognizant AI Lab. It runs as an MCP server via `npx` from the `@igniteui` GitHub Packages registry and connects to any MCP-compatible AI client through STDIO transport. Once connected, the AI assistant can invoke three tools - `plan`, `execute`, and `plan_and_execute` - to run long-horizon tasks with automatic error detection and correction.
 
+<!-- React, WebComponents, Angular -->
+
 The MAKER Framework is not an Ignite UI component scaffolding tool. For Ignite UI project creation, component generation, and documentation queries, use the [CLI MCP server](cli-mcp.md). MAKER is framework-agnostic - it does not target Angular, React, or Web Components specifically, and it does not read or modify project source files on its own. It requires at least one AI provider API key (OpenAI, Anthropic, or Google AI) and a GitHub Personal Access Token with `read:packages` scope for the `@igniteui` registry.
+
+<!-- end: React, WebComponents, Angular -->
 
 ## How MAKER Works
 
@@ -228,9 +232,10 @@ The binary cache location can be overridden with the `MAKER_MCP_CACHE` environme
 
 ## Additional Resources
 
+<!-- React, WebComponents, Angular -->
 - [AI-Assisted Development Overview](ai-assisted-development-overview.md)
 - [Agent Skills](./skills.md)
-- [Ignite UI CLI MCP](./cli-mcp.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)<!-- end: React, WebComponents, Angular -->
 - [Ignite UI Theming MCP](./theming-mcp.md)
 
 <div class="divider--half"></div>
