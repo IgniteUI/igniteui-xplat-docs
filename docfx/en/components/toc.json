@@ -1,6 +1,5 @@
 [
  {
-  "exclude": ["Blazor"],
   "name": "AI-Assisted Development",
   "header": true
   },
@@ -23,9 +22,13 @@
     "status": "new"
   },
   {
-    "exclude": ["Blazor"],
     "name": "Theming MCP",
     "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+    {
+    "name": "Maker Framework",
+    "href": "ai/maker-framework.md",
     "status": "new"
   },
   {
