@@ -3,6 +3,8 @@ title: {Platform} CLI - {ProductName}
 _description: The {ProductName} CLI scaffolds {Platform} projects, adds pre-configured component views, and connects AI coding assistants via a built-in MCP server.
 _keywords: {Platform} cli, command line interface, {ProductName}, Infragistics,
 mentionedTypes: []
+_license: MIT
+last_updated: "2026-04-21"
 ---
 <!-- component-meta
 name: igniteui-cli
@@ -231,7 +233,29 @@ Or, if you have Ignite UI CLI installed globally:
 ig mcp
 ```
 
-Configure your AI client to use the CLI MCP server. Most teams connect both the CLI MCP and the Theming MCP together - CLI MCP handles project and component workflows while Theming MCP handles palettes, themes, and design tokens.
+<!-- React, WebComponents -->
+
+### Quick Setup with `ig ai-config`
+
+To configure {ProductName} Agent Skills and both MCP servers in a single step, run the following from your project root after installing {ProductName} packages:
+
+```cmd
+npx igniteui-cli ai-config
+```
+
+If you have the CLI installed globally:
+
+```cmd
+ig ai-config
+```
+
+This copies {ProductName} Agent Skills into `.claude/skills/` and rites the full Ignite UI MCP server configuration, including the CLI and Theming servers, to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op. For AI clients other than VS Code, use the manual configuration below.
+
+For full setup instructions across all AI clients and Agent Skills wiring, see [Agent Skills](./ai/skills.md) and [Ignite UI CLI MCP](./ai/cli-mcp.md).
+
+<!-- end: React, WebComponents -->
+
+Configure your AI client to use the CLI MCP server manually. Most teams connect both the CLI MCP and the Theming MCP together - CLI MCP handles project and component workflows while Theming MCP handles palettes, themes, and design tokens.
 
 **VS Code** - create or edit `.vscode/mcp.json` in your project root:
 
@@ -287,4 +311,5 @@ A full list of available Ignite UI CLI commands is maintained on the [Ignite UI 
 | [ig test](https://github.com/IgniteUI/igniteui-cli/wiki/test)         |       | Executes the tests for the current project.                                                                                                                               |
 | ig upgrade-packages                                                   |       | Upgrades Ignite UI packages in the project from Trial to Licensed.                                                                                                        |
 | ig mcp                                                                |       | Starts the built-in MCP server for connecting AI coding assistants to {ProductName} component documentation.                                                              |
+| ig ai-config                                                          |       | Copies {ProductName} Agent Skills into `.claude/skills/` and writes Ignite UI MCP server configuration to `.vscode/mcp.json`. Run once per project.                       |
 | ig version                                                            | -v    | Shows the Ignite UI CLI version installed locally, or globally if no local installation is found.                                                                         |
