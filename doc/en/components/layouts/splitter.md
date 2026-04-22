@@ -3,7 +3,7 @@ title: {Platform} Splitter Component | Layout Controls | Infragistics
 _description: Use the {ProductName} Splitter component to create two resizable panes with horizontal or vertical layouts, collapse and expand behavior, keyboard support, and nested split views.
 _keywords: splitter, split panes, resizable panes, web components splitter, {Platform} splitter, {ProductName}
 _license: MIT
-mentionedTypes: ["Splitter"]
+mentionedTypes: ["Splitter", "SplitterResizeEventArgs"]
 ---
 
 # {Platform} Splitter Overview
@@ -16,7 +16,9 @@ The {ProductName} Splitter provides a resizable split-pane layout that divides c
 
 <div class="divider--half"></div>
 
-## Usage
+## Getting Started with {Platform} Splitter
+
+<!-- WebComponents -->
 
 First, you need to install the {ProductName} by running the following command:
 
@@ -34,7 +36,30 @@ defineComponents(IgcSplitterComponent);
 
 For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Splitter` and its necessary CSS, like so:
+
+```tsx
+import { IgrSplitter } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+
+<!-- end: React -->
+
+## Using {Platform} Splitter
+
 Use the `start` and `end` slots to place pane content:
+
+<!-- WebComponents -->
 
 ```html
 <igc-splitter style="height: 400px;">
@@ -43,12 +68,27 @@ Use the `start` and `end` slots to place pane content:
 </igc-splitter>
 ```
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+<IgrSplitter>
+  <div slot="start">Start pane content</div>
+  <div slot="end">End pane content</div>
+</IgrSplitter>
+```
+
+<!-- end: React -->
+
 ### Orientation
 
-Set the `orientation` property to control pane direction:
+Set the `Orientation` property to control pane direction:
 
 - `horizontal` (default): start and end panes are rendered left and right.
 - `vertical`: start and end panes are rendered top and bottom.
+
+<!-- WebComponents -->
 
 ```html
 <igc-splitter orientation="vertical" style="height: 400px;">
@@ -57,15 +97,30 @@ Set the `orientation` property to control pane direction:
 </igc-splitter>
 ```
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+<IgrSplitter orientation="vertical">
+  <div slot="start">Top pane</div>
+  <div slot="end">Bottom pane</div>
+</IgrSplitter>
+```
+
+<!-- end: React -->
+
 ### Pane Size and Constraints
 
 Use size properties to set initial and constrained pane sizes:
 
-- `start-size`, `end-size`
-- `start-min-size`, `end-min-size`
-- `start-max-size`, `end-max-size`
+- `StartSize`, `EndSize`
+- `StartMinSize`, `EndMinSize`
+- `StartMaxSize`, `EndMaxSize`
 
 Values accept CSS length values such as `px` and `%`.
+
+<!-- WebComponents -->
 
 ```html
 <igc-splitter
@@ -80,16 +135,36 @@ Values accept CSS length values such as `px` and `%`.
 </igc-splitter>
 ```
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+<IgrSplitter
+  startSize="35%"
+  endSize="65%"
+  startMinSize="200px"
+  endMinSize="180px"
+>
+  <div slot="start">Navigation</div>
+  <div slot="end">Main content</div>
+</IgrSplitter>
+```
+
+<!-- end: React -->
+
 ### Collapsing and Resizing
 
 Use these properties to control interactions:
 
-- `disable-resize`: disables pane resizing.
-- `disable-collapse`: disables pane collapsing.
-- `hide-drag-handle`: hides the drag handle.
-- `hide-collapse-buttons`: hides collapse and expand buttons.
+- `DisableResize`: disables pane resizing.
+- `DisableCollapse`: disables pane collapsing.
+- `HideDragHandle`: hides the drag handle.
+- `HideCollapseButtons`: hides collapse and expand buttons.
 
 You can also collapse or expand panes programmatically:
+
+<!-- WebComponents -->
 
 ```ts
 const splitter = document.querySelector('igc-splitter') as IgcSplitterComponent;
@@ -97,6 +172,22 @@ const splitter = document.querySelector('igc-splitter') as IgcSplitterComponent;
 splitter.toggle('start'); // collapse start pane
 splitter.toggle('start'); // expand start pane
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+import { useRef } from 'react';
+
+const splitterRef = useRef<IgrSplitterComponent>(null);
+
+const toggleStartPane = () => {
+  splitterRef.current?.toggle('start');
+};
+```
+
+<!-- end: React -->
 
 ### Nested Splitters
 
@@ -108,11 +199,27 @@ Splitters can be nested to create multi-region layouts.
 
 The Splitter emits the following events during resize operations:
 
+<!-- WebComponents -->
+
 - `igcResizeStart`: fired once when resizing starts.
 - `igcResizing`: fired continuously while resizing.
 - `igcResizeEnd`: fired once when resizing ends.
 
 The event detail includes current `startPanelSize`, `endPanelSize`, and `delta` for ongoing and end events.
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+- `ResizeStart`: fired once when resizing starts.
+- `Resizing`: fired continuously while resizing.
+- `ResizeEnd`: fired once when resizing ends.
+
+The event detail includes current `StartPanelSize`, `EndPanelSize`, and `Delta` for ongoing and end events.
+
+<!-- end: React -->
+
+<!-- WebComponents -->
 
 ```ts
 const splitter = document.querySelector('igc-splitter');
@@ -121,6 +228,23 @@ splitter?.addEventListener('igcResizeEnd', (event: CustomEvent) => {
   console.log(event.detail.startPanelSize, event.detail.endPanelSize, event.detail.delta);
 });
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```tsx
+const handleResizeEnd = (event: CustomEvent<IgcSplitterResizeEventArgs>) => {
+  console.log(event.detail.startPanelSize, event.detail.endPanelSize, event.detail.delta);
+};
+
+<IgrSplitter onResizeEnd={handleResizeEnd}>
+  <div slot="start">Start pane</div>
+  <div slot="end">End pane</div>
+</IgrSplitter>
+```
+
+<!-- end: React -->
 
 ## Keyboard Navigation
 

@@ -1935,7 +1935,7 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Splitter",
     "href": "layouts/splitter.md",
     "status": "new"

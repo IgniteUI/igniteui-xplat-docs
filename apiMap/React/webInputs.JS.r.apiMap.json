@@ -530,15 +530,39 @@
       {"names":[{"platform": "React", "mappedType": "IgrRadioChangeEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "SplitterResizeEventArgs",
+    "originalName": "SplitterResizeEventArgsDetail",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-splitter-resize-event-args.ts","mappedName": "IgrSplitterResizeEventArgs"}],
+    "names":[{"platform": "React","fileName": "igr-splitter-resize-event-args-detail.ts","mappedName": "IgrSplitterResizeEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "SplitPaneOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
-      {"names":[{"platform": "React", "mappedType": "IgrDockManagerPane","mappedName": "pane"}], "originalName": "Pane"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paneHeight"}], "originalName": "PaneHeight"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paneWidth"}], "originalName": "PaneWidth"} ]
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "delta"}], "originalName": "Delta"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "endPanelSize"}], "originalName": "EndPanelSize"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startPanelSize"}], "originalName": "StartPanelSize"} ]
+  },
+  {
+    "originalName": "Splitter",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-splitter.ts","mappedName": "IgrSplitter"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableCollapse"}], "originalName": "DisableCollapse"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableResize"}], "originalName": "DisableResize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "endMaxSize"}], "originalName": "EndMaxSize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "endMinSize"}], "originalName": "EndMinSize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "endSize"}], "originalName": "EndSize"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideCollapseButtons"}], "originalName": "HideCollapseButtons"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideDragHandle"}], "originalName": "HideDragHandle"},
+      {"names":[{"platform": "React", "mappedType": "SplitterOrientation", "mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "IgrSplitterResizeEventArgsDetail", "mappedName": "onResizeEnd"}], "originalName": "ResizeEnd"},
+      {"names":[{"platform": "React", "mappedType": "IgrSplitterResizeEventArgsDetail", "mappedName": "onResizeStart"}], "originalName": "ResizeStart"},
+      {"names":[{"platform": "React", "mappedType": "IgrSplitterResizeEventArgsDetail", "mappedName": "onResizing"}], "originalName": "Resizing"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "startMaxSize"}], "originalName": "StartMaxSize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "startMinSize"}], "originalName": "StartMinSize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "startSize"}], "originalName": "StartSize"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "IconMeta",
