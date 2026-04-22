@@ -235,7 +235,8 @@ The binary cache location can be overridden with the `MAKER_MCP_CACHE` environme
 <!-- React, WebComponents, Angular -->
 - [AI-Assisted Development Overview](ai-assisted-development-overview.md)
 - [Agent Skills](./skills.md)
-- [Ignite UI CLI MCP](./cli-mcp.md)<!-- end: React, WebComponents, Angular -->
+- [Ignite UI CLI MCP](./cli-mcp.md)
+<!-- end: React, WebComponents, Angular -->
 - [Ignite UI Theming MCP](./theming-mcp.md)
 
 <div class="divider--half"></div>

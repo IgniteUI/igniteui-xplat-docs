@@ -378,7 +378,8 @@ Also confirm that `core()` is called before any other theming mixin in your `sty
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 - [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
-- [Ignite UI CLI MCP](./cli-mcp.md)<!-- end: React, Angular, WebComponents -->
+- [Ignite UI CLI MCP](./cli-mcp.md)
+<!-- end: React, Angular, WebComponents -->
 - [MAKER Framework](./maker-framework.md)
 
 <!-- Ideally these should be included once documentation is combined
