@@ -455,6 +455,9 @@ You will be prompted to log in to the Infragistics private npm registry if not a
 
 Ignite UI provides a three-part AI toolchain - **Agent Skills**, the **Ignite UI CLI MCP server**, and the **Ignite UI Theming MCP server** - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Once connected, your AI assistant can scaffold projects, add and modify components, answer documentation questions, and generate accurate {ProductName} code without leaving your editor.
 
+Run `ig ai-config` from your project root to copy {ProductName} Agent Skills and write the Ignite
+UI MCP server configuration to `.vscode/mcp.json` in a single step.
+
 For an overview of all three layers and setup instructions, see [AI-Assisted Development with Ignite UI](./ai/ai-assisted-development-overview.md). For the full CLI MCP client setup guide, see [Ignite UI CLI MCP](./ai/cli-mcp.md). For an end-to-end walkthrough using both MCP servers, see [Build an App End-to-End with CLI MCP and Theming MCP](./general-how-to-mcp-e2e.md).
 
 <!-- end: React, WebComponents -->
