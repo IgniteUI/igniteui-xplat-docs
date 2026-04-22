@@ -61,7 +61,7 @@ This gives you the `ig` command in any terminal session.
 ### Without a global install
 
 ```bash
-npx --package igniteui-cli igniteui new
+npx ig new
 ```
 
 This runs the CLI through `npx` instead of a global `ig` command.
@@ -75,7 +75,7 @@ ig new
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new
+npx ig new
 ```
 
 You can also use a direct command when you already know the project settings.
@@ -90,7 +90,7 @@ ig new my-app --framework=react
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new my-app --framework=react
+npx ig new my-app --framework=react
 ```
 <!-- end: React -->
 
@@ -104,7 +104,7 @@ ig new my-app --framework=webcomponents
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new my-app --framework=webcomponents
+npx ig new my-app --framework=webcomponents
 ```
 <!-- end: WebComponents -->
 

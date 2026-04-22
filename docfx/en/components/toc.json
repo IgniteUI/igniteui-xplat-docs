@@ -110,7 +110,15 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
-    "status": ""
+    "status": "UPDATED",
+    "items": [
+      {
+        "exclude": ["Angular", "Blazor"],
+        "name": "Step-by-Step Guide Using Ignite UI CLI",
+        "href": "general-step-by-step-guide-using-cli.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Blazor", "Angular"],
