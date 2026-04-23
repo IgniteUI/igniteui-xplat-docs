@@ -12,6 +12,79 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+| 3055 | IgrDataPieChart | Others スライスのスタイル プロパティが不足している。 |
+| 38668 | IgrDataTooltipLayer | チャートの TitleTextColor を使用すると TitleTextColor がオーバーライドされる。 |
+| 41167 | Excel | オブジェクトの数式がラウンドトリップされない - カメラ ツールのラウンドトリップの Excel サポートを追加。 |
+| 41419 | Excel | VBA 署名付き Excel ファイルの保存時に署名/証明書が保持されない。 |
+| 41594 | IgrDataChart | AssigningCategoryStyle の args.GetItems が null であるか、フラグメント シリーズのアイテム更新に機能しない。 |
+
+## **{PackageVerChanges-26-2-FEB}**
+### {PackageCommon}
+
+#### 新機能
+
+- #### AI 支援開発 - Copilot スキル
+  - `{PackageCommon}` パッケージの `skills/` ディレクトリに 4 つのエンドユーザー スキルが同梱されるようになりました。GitHub Copilot やその他の LLM エージェントに一般的なタスクのステップバイステップのガイダンスを提供します:
+    - **igniteui-wc-choose-components** - 特定の UI パターンに適したコンポーネントを識別する。
+    - **igniteui-wc-integrate-with-framework** - React、Angular、Vue、またはバニラ JS でコンポーネントをセットアップして使用する。
+    - **igniteui-wc-customize-component-theme** - CSS カスタム プロパティ、パーツ、テーマ システムを使用してカスタム スタイルを適用する。
+    - **igniteui-wc-optimize-bundle-size** - 選択的インポートと遅延読み込みを使用して本番バンドル サイズを削減する。
+- #### チャット
+  - `adoptRootStyles` を実行時にオン/オフ切り替えできるようになりました。
+
+
+#### 重大な変更
+
+- #### テーマ
+  - 他の Ignite UI コンポーネント ライブラリに合わせるため、コンポーネント テーマの CSS カスタム プロパティのグローバル プレフィックスを変更しました。
+
+- #### チャット
+  - `typingIndicator` テンプレート レンダラーを削除しました。代わりに `typing-indicator` スロットを使用してください。
+
+- #### ツールチップ
+  - 非推奨の `disableArrow` プロパティを削除しました。
+
+- #### ライブラリ
+  - 必要な最小 Node バージョンが >= 22 になりました。
+
+  #### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Blazor でのコンテキスト インスタンス化|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|非入力部分のカーソル スタイルを修正|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|非入力部分のカーソル スタイルを修正|
+
+### {PackageGrids} (グリッド)
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`
+  - グリッドに表示されるデータに基づいてスクロール スロットルを動的に調整することでパフォーマンスを改善しました。
+
+**重大な変更**
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`
+  - 元の `data` 配列の変更 (元の配列へのレコードの追加/削除/移動など) は自動的に検出されなくなりました。変更を検出するには、コンポーネントに配列参照の変更が必要です。
+
+**ローカライゼーション (i18n)**
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`、`IgrCombo`、`IgrDatePicker`、`IgrDateRangePicker`、`IgrCalendar`、`IgrCarousel`、`IgrChip`、`IgrInput`、`IgrTree`
+  - グリッド コンポーネントで日付や数値などのデータをフォーマットおよびレンダリングするための新しい `Intl` 実装。`IgrCalendar`、`IgrDatePicker`、`IgrDateRangePicker` の `Intl` 実装を更新しました。
+  - 現在サポートされているすべての言語のリソース文字列を持つすべてのコンポーネントに対する新しいローカライゼーション実装。
+  - 新しいパブリック ローカライゼーション API と、新しいリソースを含む `igniteui-i18n-resources` という名前のパッケージ。
+
+**PDF エクスポート**
+- グリッド データを PDF 形式にエクスポートできる PDF エクスポート機能を追加しました。
+
+**Popover API**
+
+- ドロップダウン メニューとダイアログが HTML Popover API を使用するようになり、より優れた配置とアクセシビリティを提供します。
+
+## **{PackageVerChanges-25-2-FEB}**
+
 ### 機能拡張
 
 ### {PackageCharts}
@@ -408,7 +481,8 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 ## **{PackageVerChanges-24-2-APR2}**
 
-> [!Note] バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
+> [!Note]
+> バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
 
 [アップデート ガイド](update-guide.md)
 

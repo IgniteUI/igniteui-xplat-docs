@@ -10,7 +10,7 @@ on:
     branches: [ master, vnext ]
 
 jobs:
-  build:
+  build-angular:
 
     runs-on: ubuntu-latest
 

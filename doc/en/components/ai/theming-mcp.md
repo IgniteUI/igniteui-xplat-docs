@@ -20,6 +20,15 @@ The server supports all four Ignite UI design systems — **Material**, **Bootst
 
 Most tools can produce either **Sass** or **CSS** output. Sass output is the default and integrates with the `igniteui-theming` Sass module. CSS output generates ready-to-use CSS custom properties and can be used **without a local Sass toolchain** — the server compiles it for you.
 
+The Ignite UI Theming MCP works alongside the Ignite UI CLI MCP. In practice, the Theming MCP handles palettes, themes, tokens, typography, elevations, and styling workflows, while the CLI MCP handles project creation, project modification, component workflows, and documentation-oriented tasks. Most teams will want both servers connected in the same AI client.
+
+<!-- React -->
+For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: React -->
+<!-- WebComponents -->
+For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
+<!-- end: WebComponents -->
+
 **Example prompts to try once connected:**
 
 > _"Create a complete Material Design dark theme for my {Platform} app with primary #2563eb and coral secondary #f97316."_
@@ -56,6 +65,16 @@ npx -y igniteui-theming igniteui-theming-mcp
 
 > [!NOTE]
 > The `-y` flag tells `npx` to auto-confirm the package download prompt so the server can start without manual intervention.
+
+<!-- Angular -->
+### How version resolution works
+
+Because `igniteui-theming` is a dependency of `igniteui-angular`, it is already present in your `node_modules` after `npm install`. When you run the launch command above, `npx` detects the locally installed copy and runs it directly — no network request is made. This means the MCP server version always stays in sync with the rest of your Ignite UI packages.
+
+If you run the command outside a project (or before running `npm install`), `npx -y` downloads the **latest** version from npm into a temporary cache instead. The server will still start, but `detect_platform` will return `generic` since there is no `package.json` to inspect.
+
+Choose your AI client below for the specific configuration steps.
+<!-- end: Angular -->
 
 ### VS Code
 
@@ -167,10 +186,11 @@ JetBrains AI Assistant supports MCP servers through the IDE settings:
 
 ### Other MCP Clients
 
-For any other MCP-compatible client, use the STDIO transport with the following command and arguments:
+For any other MCP-compatible client, use the STDIO transport with this launch command:
 
-- **Command**: `npx`
-- **Arguments**: `-y`, `igniteui-theming`, `igniteui-theming-mcp`
+```bash
+npx -y igniteui-theming igniteui-theming-mcp
+```
 
 ## Customizing AI Behavior with Project Rules
 
@@ -245,6 +265,11 @@ Here is a brief overview of each tool:
 > [!NOTE]
 > For compound components (e.g., `combo`, `select`, `grid`), `get_component_design_tokens` returns a list of related child themes instead of a flat token list. For example, querying `grid` may return child themes such as `grid`, `grid-toolbar`, `grid-filtering`, and `paginator`. The AI will generate a separate `create_component_theme` call for each child theme using the appropriate scoped selector.
 
+<!-- Angular -->
+> [!NOTE]
+> If your project uses the licensed `@infragistics/igniteui-angular` package, tell the AI so it can set the `licensed` parameter on palette, theme, and component tools. This adjusts the generated import paths accordingly.
+<!-- end: Angular -->
+
 ## Example Scenarios
 
 The following scenarios show what you can ask the AI to do once the MCP server is connected.
@@ -255,6 +280,29 @@ The following scenarios show what you can ask the AI to do once the MCP server i
 
 The AI will call `create_theme` and return a ready-to-use `styles.scss` file. The generated output will look similar to this:
 
+<!-- Angular -->
+```scss
+/* styles.scss */
+@use 'igniteui-angular/theming' as *;
+
+$my-palette: palette(
+  $primary: #2563eb,
+  $secondary: #f97316,
+  $surface: #fff,
+  $gray: #9e9e9e,
+);
+
+$my-typography: typography(
+  $font-family: 'Roboto, sans-serif',
+);
+
+@include core();
+@include typography($my-typography);
+@include theme($my-palette, $schema: $light-material-schema);
+```
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
 ```scss
 /* styles.scss */
 @use 'igniteui-theming' as *;
@@ -274,6 +322,7 @@ $my-palette: palette(
   $type-scale: $material-type-scale
 );
 ```
+<!-- end: React, WebComponents -->
 
 ### Dark Mode Variant
 
@@ -283,7 +332,7 @@ $my-palette: palette(
 
 > _"Our design system specifies exact hex values for all 14 shades of our primary green. I'll paste the values — create a custom palette."_
 
-The AI will call `create_custom_palette` with `mode: "explicit"` for the primary color and auto-generate the rest.
+The AI will call `create_custom_palette` with `mode: "explicit"` for the primary color and auto-generate the rest.<!-- Angular --> See [Palettes](https://www.infragistics.com/products/ignite-ui-angular/angular/components/themes/sass/palettes) for more detail on shade generation.<!-- end: Angular-->
 
 ### Component-Level Customization
 
@@ -301,7 +350,7 @@ The AI will call `set_spacing` scoped to the calendar component and `set_size` a
 
 **Platform not detected**
 
-If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `igniteui-react`) as a dependency. You can also tell the AI explicitly: _"Use {ProductName}."_
+If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `{PackageCommon}`) as a dependency. You can also tell the AI explicitly: _"Use the {Platform} platform."_
 
 **Luminance warning on colors**
 
@@ -311,9 +360,44 @@ If the AI warns about color luminance, it means the chosen color is too light or
 
 For light themes use a light surface (e.g., `#fafafa`). For dark themes use a dark surface (e.g., `#121212`). Mismatched surface colors cause the AI to emit a warning.
 
+<!-- Angular -->
+**Generated Sass does not compile**
+
+Ensure `igniteui-angular` and `igniteui-theming` are installed:
+
+```bash
+ng add igniteui-angular
+```
+
+Also confirm that `core()` is called before any other theming mixin in your `styles.scss`. See [Theming with Sass](<a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/themes/sass/index">) for the correct file setup.
+<!-- end: Angular -->
+
 ## Additional Resources
 
+<!-- React, WebComponents -->
+- [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
+<!-- end: React, WebComponents -->
+<!-- React, WebComponents, Angular -->
+- [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+<!-- end: React, WebComponents, Angular -->
+- [MAKER Framework](./maker-framework.md)
+
+<!-- Ideally these should be included once documentation is combined
+- [Theming Overview](../themes/index.md)
+- [Palettes](../themes/palettes.md)
+- [Typography](../themes/typography.md)
+- [Elevations](../themes/elevations.md)
+- [Spacing](../themes/spacing.md)
+- [Roundness](../themes/roundness.md)
+- [Theming with Sass](../themes/sass/index.md)
+-->
+
+<div class="divider--half"></div>
+
+Our community is active and always welcoming to new ideas.
+
 - [{ProductName} **Forums**]({ForumsLink})
 - [{ProductName} **GitHub**]({GithubLink})
 

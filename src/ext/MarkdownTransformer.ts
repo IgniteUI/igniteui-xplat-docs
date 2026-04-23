@@ -1000,6 +1000,10 @@ function getComponentsFromComment(node: any) : string[] {
     return getComponentsFromString(node.value);
 }
 
+function shouldDeleteHtmlNode(value: string): boolean {
+    return value.trim().length === 0;
+}
+
 function finishRemove(options: any) {
     function removeNodes(node: any, index: number, parent: any) {
         if (options.toDelete.has(node)) {
@@ -1255,11 +1259,22 @@ function omitPlatformSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
+                                    options.toDelete.add(parent.children[index]);
+                                }
+                                break;
+                            } else if (platformsEqual(currPlats, segment.platforms) && segment.platforms.indexOf(options.platform) != -1) {
+                                // platform matches: keep content but remove the comment markers
+                                parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
+                                    options.toDelete.add(parent.children[checkIndex]);
+                                }
+                                parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1303,11 +1318,11 @@ function omitComponentSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1809,7 +1824,7 @@ export class MarkdownTransformer {
             .use(finishRemoveBlocks, options)
             .use(transformNotes, options)
             .use(finishRemoveNotes, options)
-            .use(stringify)
+            .use(stringify, { rule: '-', ruleRepetition: 3, ruleSpaces: false, emphasis: '_', fences: true })
             .process(fileContent, function(err: any, vfile: any) {
                 if (err) {
                     callback(err, null);
@@ -1821,6 +1836,9 @@ export class MarkdownTransformer {
                 fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
                 fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
                 fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+                fileContent = fileContent.split("\\[!").join("[!"); // note blocks: remark-stringify escapes "[" in "[!NOTE]" as "\[!NOTE]"
+                fileContent = fileContent.replace(/\n*<!---->\n*/g, "\n"); // remark-stringify inserts empty comments as list separators
+                fileContent = fileContent.replace(/\n{3,}/g, "\n\n"); // collapse excessive blank lines left after marker removal
 
                 output.push({ content: fileContent, componentOutput: componentOutput });
 
