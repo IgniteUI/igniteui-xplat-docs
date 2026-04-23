@@ -172,7 +172,33 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
-### **Option A - Use the installed npm package**
+### **Option A - Use the Ignite UI CLI**
+
+The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+<!-- Angular -->
+
+**Using Angular Schematics:**
+
+```bash
+ng generate @igniteui/angular-schematics:ai-config
+```
+
+This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
+
+<!-- end: Angular -->
+
+**Using the Ignite UI CLI:**
+### **Option A - Use the Ignite UI CLI**
+
+The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+<!-- Angular -->
+
+**Using Angular Schematics:**
+
+```bash
+ng generate @igniteui/angular-schematics:ai-config
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
@@ -256,7 +282,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 
 <!-- end: Angular -->
 
-### **Option B - Use the `gemini skills` CLI**
+### **Option C - Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -331,7 +357,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-### **Option C - Use the `npx skills` CLI**
+### **Option D - Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
