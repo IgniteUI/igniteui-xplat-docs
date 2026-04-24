@@ -143,7 +143,7 @@ ig new my-app --framework=react --type=igr-ts --template=top-nav
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new my-app --framework=react --type=igr-ts --template=top-nav
+npx ig new my-app --framework=react --template=top-nav
 ```
 
 <!-- end: React -->
