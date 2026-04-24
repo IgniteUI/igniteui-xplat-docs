@@ -1,5 +1,5 @@
 ﻿---
-title: {Platform} Ignite UI CLI MCP | Infragistics
+title: Ignite UI CLI MCP | Infragistics
 _description: Use the Ignite UI CLI MCP server to scaffold {ProductName} projects, add components, and answer API questions through your AI assistant.
 _keywords: {Platform}, {ProductName}, Infragistics, Ignite UI CLI MCP, Ignite UI Theming MCP, MCP, Model Context Protocol, AI, agent, GitHub Copilot, Cursor, Claude, JetBrains
 _language: en
