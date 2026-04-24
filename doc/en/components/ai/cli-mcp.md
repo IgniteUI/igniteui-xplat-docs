@@ -157,7 +157,7 @@ ig new my-app --framework=webcomponents --template=side-nav
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new my-app --framework=webcomponents --type=igc-ts --template=side-nav
+npx ig new my-app --framework=webcomponents --template=side-nav
 ```
 
 <!-- end: WebComponents -->
