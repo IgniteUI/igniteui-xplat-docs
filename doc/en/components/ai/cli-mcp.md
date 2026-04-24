@@ -129,7 +129,7 @@ ig new my-app --framework=angular --type=igx-ts --template=empty
 Matching `npx` form:
 
 ```bash
-npx --package igniteui-cli igniteui new my-app --framework=angular --type=igx-ts --template=empty
+npx ig new my-app --framework=angular --type=igx-ts --template=empty
 ```
 
 <!-- end: Angular -->
