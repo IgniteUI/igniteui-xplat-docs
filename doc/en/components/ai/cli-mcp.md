@@ -151,7 +151,7 @@ npx ig new my-app --framework=react --template=top-nav
 <!-- WebComponents -->
 
 ```bash
-ig new my-app --framework=webcomponents --type=igc-ts --template=side-nav
+ig new my-app --framework=webcomponents --template=side-nav
 ```
 
 Matching `npx` form:
