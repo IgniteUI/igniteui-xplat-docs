@@ -164,7 +164,9 @@ npx ig new my-app --framework=webcomponents --template=side-nav
 
 In guided mode, Ignite UI CLI prompts for the project name, framework, template, theme, and whether to add a component or complete the setup. In direct mode, you provide the framework and any supported options in the command itself.
 
+<!-- React, WebComponents -->
 For more details about project templates, CLI command options, and component scaffolding commands such as `ig add`, see the [Ignite UI CLI documentation](../general-cli-overview.md).
+<!-- end: React, WebComponents -->
 
 ### VS Code
 
