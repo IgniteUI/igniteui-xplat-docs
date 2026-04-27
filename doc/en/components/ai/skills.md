@@ -4,7 +4,10 @@ _description: Learn how to use Agent Skills to supercharge AI-assisted developme
 _keywords: {ProductName}, agent skills, ai assisted development, github copilot, cursor, windsurf, claude, gemini cli, junie
 _license: MIT
 mentionedTypes: []
+last_updated: "2026-04-24"
 ---
+
+<!-- schema: Article, HowTo -->
 
 # {ProductName} Agent Skills
 
@@ -24,7 +27,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components & Layout | [`skills/igniteui-wc-choose-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-choose-components/SKILL.md) | Standalone components, form controls, overlays, layout |
 | Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
 | Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
-| Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
+| Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
 
 <!-- end: WebComponents -->
 
@@ -34,7 +37,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 |:------|:-----|:------------|
 | Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them - JSX patterns, event handling, refs, forms, TypeScript |
 | Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
-| Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size
+| Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
 
 <!-- end: React -->
 
@@ -117,7 +120,7 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 | Project | `.github/skills/`, `.claude/skills/` |
 | Personal | `~/.copilot/skills/`, `~/.claude/skills/` (Copilot coding agent and GitHub Copilot CLI only) |
 
-> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general  `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
+> **Tip:** In [VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), these locations also include the general `.agents/skills/` and `~/.agents/skills/` and you can configure additional skill locations using the `chat.agentSkillsLocations` setting.
 
 ### Claude
 
@@ -172,7 +175,35 @@ For user-level (global) skills available across all projects, use `~/.agents/ski
 
 Use one of the options below to download and place the skill files into the appropriate [skill location](#skill-locations) for your AI assistant.
 
-### **Option A - Use the installed npm package**
+### **Option A - Use the Ignite UI CLI**
+
+The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI CLI MCP and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+<!-- Angular -->
+
+**Using Angular Schematics:**
+
+```bash
+ng generate @igniteui/angular-schematics:ai-config
+```
+
+This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
+
+<!-- end: Angular -->
+
+**Using the Ignite UI CLI:**
+
+```bash
+npx igniteui-cli ai-config
+```
+
+If you have the Ignite UI CLI installed globally, use the shorter form:
+
+```bash
+ig ai-config
+```
+
+### **Option B - Manual Copy from `node_modules`**
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
@@ -256,7 +287,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 
 <!-- end: Angular -->
 
-### **Option B - Use the `gemini skills` CLI**
+### **Option C - Use the `gemini skills` CLI**
 
 The `gemini skills install` command installs skills directly from a Git repository. It supports two scopes:
 
@@ -331,11 +362,11 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
-### **Option C - Use the `npx skills` CLI**
+### **Option D - Use the `npx skills` CLI**
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
-```shell
+```bash
 npx skills add IgniteUI/{PackageCommon}
 ```
 
@@ -382,7 +413,6 @@ For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./
 - [Ignite UI CLI](../general-cli-overview.md)
 <!-- end: React, WebComponents -->
 <!-- Angular -->
-<!-- TODO: Not in xplat, can't link to md directly + docfx is aggressively and annoyingly treating all forms of relative links as such.. -->
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">Getting Started with {ProductName}</a>
 - <a href="https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->
