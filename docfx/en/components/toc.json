@@ -2207,7 +2207,7 @@
     "status": ""
   },
     {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Query Builder",
     "href": "inputs/query-builder.md",
     "status": "new"

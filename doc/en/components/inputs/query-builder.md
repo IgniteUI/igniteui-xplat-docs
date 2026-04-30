@@ -22,6 +22,19 @@ npm install {PackageWebComponents} {PackageGrids}
 ```
 <!-- end: WebComponents -->
 
+<!-- Blazor -->
+
+```cmd
+dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+```
+
+Register the Query Builder module in the **Program.cs** file:
+
+```razor
+builder.Services.AddIgniteUIBlazor(typeof(IgbQueryBuilderModule));
+```
+<!-- end: Blazor -->
+
 <!-- React -->
 ```cmd
 npm install igniteui-react {PackageGrids}
@@ -30,9 +43,17 @@ npm install igniteui-react {PackageGrids}
 
 You also need to reference the corresponding styles based on your project configuration.
 
+<!-- React, WebComponents -->
 ```ts
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
 
 # Using the {Platform} Query Builder
 
@@ -94,6 +115,49 @@ this.queryBuilder.addEventListener('expressionTreeChange', (e: CustomEvent<IgcEx
 });
 ```
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbQueryBuilder @ref="queryBuilder"
+    Entities="Entities"
+    ExpressionTree="ExpressionTree"
+    ExpressionTreeChangeScript="WebQueryBuilderExpressionTreeChange">
+</IgbQueryBuilder>
+
+@code {
+    private static readonly IgbFieldType[] OrderFields =
+    [
+        new() { Field = "orderId", DataType = GridColumnDataType.Number },
+        new() { Field = "customerId", DataType = GridColumnDataType.String },
+        new() { Field = "orderDate", DataType = GridColumnDataType.Date }
+    ];
+
+    private static readonly IgbEntityType[] Entities =
+    [
+        new() { Name = "Orders", Fields = OrderFields }
+    ];
+
+    private static readonly IgbExpressionTree ExpressionTree = new()
+    {
+        FilteringOperands = [],
+        Operator = FilteringLogic.And,
+        Entity = "Orders"
+    };
+
+    private IgbQueryBuilder queryBuilder;
+}
+```
+
+The `ExpressionTree` is a bindable property which means you can use `ExpressionTreeChangeScript` to receive notifications when the end-user changes the UI by creating, editing or removing conditions.
+
+```razor
+// In JavaScript
+igRegisterScript("WebQueryBuilderExpressionTreeChange", (evtArgs) => {
+    const expressionTree = evtArgs.detail;
+    console.log("Expression tree changed:", expressionTree);
+}, false);
+```
+<!-- end: Blazor -->
 
 <!-- React -->
 
@@ -204,22 +268,47 @@ The {ProductName} Query Builder allows defining templates for the component's he
 
 ### Header Template
 
-By default the `{ComponentName}` header would not be displayed. In order to define such, the `igc-query-builder-header` component should be added inside `igc-query-builder`.
+By default the `{ComponentName}` header would not be displayed. In order to define one, add the query builder header component inside the query builder.
 
+<!-- WebComponents -->
 ```html
 <igc-query-builder id="queryBuilder">
   <igc-query-builder-header title="My Query Builder">
   </igc-query-builder-header>
 </igc-query-builder>
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbQueryBuilder Entities="Entities" ExpressionTree="ExpressionTree">
+    <IgbQueryBuilderHeader Title="My Query Builder"></IgbQueryBuilderHeader>
+</IgbQueryBuilder>
+```
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrQueryBuilder ref={this.queryBuilderRef}>
+  <IgrQueryBuilderHeader title="My Query Builder"></IgrQueryBuilderHeader>
+</IgrQueryBuilder>
+```
+<!-- end: React -->
 
 ### Search Value Template
 
-The search value of a condition can be templated by setting the `SearchValueTemplate` property to a function that returns a lit-html template.
+The search value of a condition can be templated by setting the `SearchValueTemplate` property.
+
+<!-- React, WebComponents -->
+For Web Components and React, the property accepts a function that returns a template.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+For Blazor, use the `SearchValueTemplateScript` property to reference a client-side function registered with `igRegisterScript`.
+<!-- end: Blazor -->
 
 > [!Note]
-> When using `SearchValueTemplate`, you must provide templates for all field types in your entity, or the query builder will not function correctly. It is mandatory to implement a default/fallback template that handles any fields or conditions not covered by specific custom templates. Without this, users will not be able to edit 
-conditions for those fields.
+> When using a search value template, you must provide templates for all field types in your entity, or the query builder will not function correctly. It is mandatory to implement a default/fallback template that handles any fields or conditions not covered by specific custom templates. Without this, users will not be able to edit conditions for those fields.
 
 <!-- WebComponents -->
 ```ts
@@ -263,6 +352,49 @@ private buildSearchValueTemplate(ctx: IgcQueryBuilderSearchValueContext) {
 }
 ```
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbQueryBuilder @ref="queryBuilder"
+    Entities="Entities"
+    ExpressionTree="ExpressionTree"
+    ExpressionTreeChangeScript="WebQueryBuilderExpressionTreeChange"
+    SearchValueTemplateScript="SearchValueTemplate">
+    <IgbQueryBuilderHeader Title="Query Builder Template Sample"></IgbQueryBuilderHeader>
+</IgbQueryBuilder>
+```
+
+```razor
+// In JavaScript
+igRegisterScript("SearchValueTemplate", (ctx) => {
+    const field = ctx.selectedField?.field;
+    const condition = ctx.selectedCondition;
+    const matchesEqualityCondition = condition === "equals" || condition === "doesNotEqual";
+
+    if (!ctx.implicit) {
+        ctx.implicit = { value: null };
+    }
+
+    if (field === "Region" && matchesEqualityCondition) {
+        return buildRegionSelect(ctx);
+    }
+
+    if (field === "OrderStatus" && matchesEqualityCondition) {
+        return buildStatusRadios(ctx);
+    }
+
+    if (ctx.selectedField?.dataType === "date") {
+        return buildDatePicker(ctx);
+    }
+
+    if (field === "RequiredTime") {
+        return buildTimeInput(ctx);
+    }
+
+    return buildDefaultInput(ctx, matchesEqualityCondition);
+}, false);
+```
+<!-- end: Blazor -->
 
 <!-- React -->
 ```tsx
@@ -464,6 +596,225 @@ private buildDefaultInput(ctx: IgcQueryBuilderSearchValueContext) {
 }
 ```
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+For the Region Select example:
+
+```razor
+// Field definition
+new() { Field = "Region", DataType = GridColumnDataType.String }
+```
+
+```razor
+// In JavaScript
+// Template
+function buildRegionSelect(ctx) {
+    const select = document.createElement("igc-select");
+    const implicitValue = ctx?.implicit?.value;
+    const currentValue = typeof implicitValue === "object" && implicitValue
+        ? implicitValue.value ?? ""
+        : implicitValue ?? "";
+
+    select.placeholder = "Region";
+    if (currentValue) {
+        select.value = currentValue;
+    }
+
+    for (const option of regionOptions) {
+        const item = document.createElement("igc-select-item");
+        item.setAttribute("value", option.value);
+        item.textContent = option.text;
+        select.appendChild(item);
+    }
+
+    select.addEventListener("igcChange", (event) => {
+        const value = event.detail?.value;
+        const currentImplicitValue = ctx?.implicit?.value;
+        const currentKey = typeof currentImplicitValue === "object" && currentImplicitValue
+            ? currentImplicitValue.value ?? ""
+            : currentImplicitValue ?? "";
+
+        if (!value || value === currentKey) {
+            return;
+        }
+
+        ctx.implicit.value = regionOptions.find((option) => option.value === value) ?? null;
+    });
+
+    return select;
+}
+```
+
+For the Status Radio Group example:
+
+```razor
+// Field definition
+new() { Field = "OrderStatus", DataType = GridColumnDataType.Number }
+```
+
+```razor
+// In JavaScript
+// Template
+function buildStatusRadios(ctx) {
+    const group = document.createElement("igc-radio-group");
+    const implicitValue = ctx.implicit?.value;
+    const currentValue = implicitValue == null ? "" : implicitValue.toString();
+
+    group.style.gap = "5px";
+    group.alignment = "horizontal";
+    group.value = currentValue;
+
+    for (const option of statusOptions) {
+        const radio = document.createElement("igc-radio");
+        radio.setAttribute("name", "status");
+        radio.setAttribute("value", option.value.toString());
+        radio.checked = option.value.toString() === currentValue;
+        radio.textContent = option.text;
+        group.appendChild(radio);
+    }
+
+    group.addEventListener("igcChange", (event) => {
+        const value = event.detail?.value;
+        if (value === undefined) {
+            return;
+        }
+
+        const numericValue = Number(value);
+        if (ctx.implicit.value === numericValue) {
+            return;
+        }
+
+        ctx.implicit.value = numericValue;
+    });
+
+    return group;
+}
+```
+
+For the Date Picker example:
+
+```razor
+// Field definition
+new() { Field = "OrderDate", DataType = GridColumnDataType.Date }
+```
+
+```razor
+// In JavaScript
+// Template
+function buildDatePicker(ctx) {
+    const picker = document.createElement("igc-date-picker");
+    const implicitValue = ctx.implicit?.value;
+    const currentValue = implicitValue instanceof Date
+        ? implicitValue
+        : implicitValue
+            ? new Date(implicitValue)
+            : null;
+
+    const allowedConditions = ["equals", "doesNotEqual", "before", "after"];
+    const isEnabled = allowedConditions.includes(ctx.selectedCondition ?? "");
+
+    picker.disabled = !isEnabled;
+    if (currentValue) {
+        picker.value = currentValue;
+    }
+
+    picker.addEventListener("click", () => picker.show?.());
+    picker.addEventListener("igcChange", (event) => {
+        ctx.implicit.value = event.detail;
+    });
+
+    return picker;
+}
+```
+
+For the Time Input example:
+
+```razor
+// Field definition
+new()
+{
+    Field = "RequiredTime",
+    DataType = GridColumnDataType.DateTime,
+    DefaultTimeFormat = "hh:mm tt"
+}
+```
+
+```razor
+// In JavaScript
+// Template
+function buildTimeInput(ctx) {
+    const input = document.createElement("igc-date-time-input");
+    const icon = document.createElement("igc-icon");
+    const currentValue = normalizeTimeValue(ctx.implicit?.value);
+    const allowedConditions = ["at", "not_at", "at_before", "at_after", "before", "after"];
+    const isDisabled = ctx.selectedField == null || !allowedConditions.includes(ctx.selectedCondition ?? "");
+
+    input.inputFormat = "hh:mm tt";
+    input.disabled = isDisabled;
+    if (currentValue) {
+        input.value = currentValue;
+    }
+
+    icon.slot = "prefix";
+    icon.setAttribute("name", "clock");
+    icon.setAttribute("collection", "material");
+    input.appendChild(icon);
+
+    input.addEventListener("igcChange", (event) => {
+        ctx.implicit.value = event.currentTarget?.value ?? null;
+    });
+
+    return input;
+}
+```
+
+For the Default Input template:
+
+```razor
+// Field definitions for string, number, and boolean types
+new() { Field = "ShipCountry", DataType = GridColumnDataType.String }
+new() { Field = "OrderID", DataType = GridColumnDataType.Number }
+new() { Field = "IsRushOrder", DataType = GridColumnDataType.Boolean }
+```
+
+```razor
+// In JavaScript
+// Template that handles all these types
+function buildDefaultInput(ctx, matchesEqualityCondition) {
+    const input = document.createElement("igc-input");
+    const selectedField = ctx.selectedField;
+    const dataType = selectedField?.dataType;
+    const isNumber = dataType === "number";
+    const isBoolean = dataType === "boolean";
+
+    const placeholder = ctx.selectedCondition === "inQuery" || ctx.selectedCondition === "notInQuery"
+        ? "Sub-query results"
+        : "Value";
+
+    const currentImplicitValue = ctx.implicit?.value;
+    const currentValue = typeof currentImplicitValue === "object" && currentImplicitValue && "text" in currentImplicitValue
+        ? matchesEqualityCondition ? currentImplicitValue.text : ""
+        : currentImplicitValue;
+
+    const disabledConditions = ["empty", "notEmpty", "null", "notNull", "inQuery", "notInQuery"];
+    const isDisabled = isBoolean || selectedField == null || disabledConditions.includes(ctx.selectedCondition ?? "");
+
+    input.value = currentValue == null ? "" : currentValue;
+    input.placeholder = placeholder;
+    input.disabled = isDisabled;
+    input.type = isNumber ? "number" : "text";
+
+    input.addEventListener("input", (event) => {
+        const value = event.target?.value ?? "";
+        ctx.implicit.value = isNumber
+            ? value === "" ? null : Number(value)
+            : value;
+    });
+
+    return input;
+}
+```
+<!-- end: Blazor -->
 
 <!-- React -->
 For the Region Select example:
@@ -687,6 +1038,23 @@ this.ordersFields = [
 ];
 ```
 <!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+```razor
+private static readonly IgbFieldType[] OrderFields =
+[
+    new() { Field = "OrderID", DataType = GridColumnDataType.Number },
+    new() { Field = "ShipCountry", DataType = GridColumnDataType.String },
+    new()
+    {
+        Field = "OrderDate",
+        DataType = GridColumnDataType.Date,
+        PipeArgs = new IgbFieldPipeArgs { Format = "MMM d, y" }
+    },
+    new() { Field = "Region", DataType = GridColumnDataType.String }
+];
+```
+<!-- end: Blazor -->
 
 ### Demo
 
