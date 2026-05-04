@@ -162,10 +162,6 @@ The CLI MCP server and Theming MCP server work with any editor or AI client that
 
 Agent Skills are compatible with GitHub Copilot via `.github/copilot-instructions.md`, Cursor via `.cursorrules` or `.cursor/rules/`, Windsurf via `.windsurfrules`, and JetBrains AI Assistant via project-level prompt settings.
 
-## Set Up the AI Toolchain
-
-Use `ig ai-config` to configure Agent Skills and both MCP servers in a single command. For individual control over each layer, or to configure only part of the toolchain in an existing project, follow the steps below. Running `ig ai-config` completes Steps 1, 2, and 3 in one operation.
-
 ### Quick Setup
 
 The `ai-config` command copies the Ignite UI Agent Skills into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
