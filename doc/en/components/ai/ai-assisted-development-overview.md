@@ -1,22 +1,53 @@
 ﻿---
 title: AI-Assisted Development with Ignite UI - {ProductName}
-_description: Ignite UI provides Agent Skills, the Ignite UI CLI MCP server, and the Theming MCP server to ground AI coding assistants in correct component APIs, import paths, and design tokens across Angular, React, and Web Components.
-_keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI CLI MCP, Ignite UI Theming MCP, Agent Skills, AI, agent, Copilot, Cursor
+_description: Configure Agent Skills, the Ignite UI MCP server, and the Theming MCP server in your Angular or React project with a single command — npx igniteui-cli ai-config. Grounds GitHub Copilot, Cursor, Claude Desktop, Claude Code, and JetBrains AI Assistant in correct Ignite UI APIs.
+_keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI MCP server, Ignite UI Theming MCP, Agent Skills, AI, agent, Copilot, Cursor, Claude Code, ai-config
 _language: en
 _license: MIT
 _canonicalLink: "{environment:dvUrl}/components/ai-assisted-development-overview"
-last_updated: "2026-04-21"
+last_updated: "2026-05-03"
 namespace: Infragistics.Controls
 mentionedTypes: []
 ---
-
+ 
 <!-- schema: Article, HowTo -->
 
 # AI-Assisted Development with Ignite UI
 
-Ignite UI for Angular, React, and Web Components provides a three-part AI toolchain - Agent Skills, the Ignite UI CLI MCP server, and the Ignite UI Theming MCP server - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Agent Skills are developer-owned instruction packages that define how AI agents use Ignite UI in a specific project. The CLI MCP server exposes Ignite UI CLI scaffolding, component management, and documentation tools to the active AI agent session via the Model Context Protocol. The Theming MCP server exposes the Ignite UI Theming Engine as queryable agent context. All three components work with GitHub Copilot, Cursor, Claude Desktop, Claude Code, and JetBrains AI Assistant.
+Ignite UI for Angular, React, and Web Components provides a complete AI toolchain - Agent Skills, the Ignite UI CLI MCP server, the Ignite UI Theming MCP server and the MAKER MCP server - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Agent Skills are developer-owned instruction packages that define how AI agents use Ignite UI in a specific project. The CLI MCP server (`@igniteui/mcp-server`) exposes Ignite UI CLI scaffolding, component management, and documentation tools to the active AI agent session via the Model Context Protocol. The Theming MCP server (`igniteui-theming`) exposes the Ignite UI Theming Engine as queryable agent context. The MAKER MCP (`@igniteui/maker-mcp`) is a multi-agent AI orchestration MCP server from Infragistics that decomposes complex tasks into validated, executable step plans using a consensus-based voting algorithm across multiple AI agents. Skills, CLI MCP and Theming MCP - all three are configured by a single command: `npx igniteui-cli ai-config`
 
 The AI toolchain does not currently support Blazor in the CLI MCP and Agent Skills layers - Blazor coverage is provided by the Theming MCP only. The CLI MCP server requires STDIO transport; HTTP-based MCP clients are not supported. Agent Skills and the CLI MCP server do not modify project files autonomously - they expose tools and instructions to the active AI agent, which acts on developer prompts.
+
+## Configure the AI Toolchain
+
+Run this command from the root of your existing Angular ,React or WebComponents project. It copies Agent Skills into the agent discovery path and writes the Ignite UI MCP server and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+
+```bash
+npx igniteui-cli ai-config
+```
+After the command finishes, start the MCP servers in your AI client. The servers are configured but not yet running — the client needs to launch each server before its tools are available to the agent.
+
+### Start the Servers
+
+**VS Code with GitHub Copilot:**
+
+Open `.vscode/mcp.json`. VS Code displays an inline **Start** button above each server entry. Click **Start** for both `igniteui` and `igniteui-theming`. Once started, VS Code shows the available tool count next to each server (for example, _"13 tools | 1 prompt"_). Alternatively, run **MCP: List Servers** from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`), select each server, and choose **Start**.
+
+**Cursor:**
+
+Open **Settings → MCP**, locate the `igniteui` and `igniteui-theming` entries, and toggle each one on. Cursor starts each server immediately and displays its tool count.
+
+**Claude Code:**
+
+Run `claude mcp list` to confirm both servers are registered. Claude Code starts MCP servers automatically when their tools are first invoked — no manual start step is required.
+
+**JetBrains AI Assistant:**
+
+Open **Settings → Tools → AI Assistant → Model Context Protocol (MCP)**. Click the play icon next to each server entry to start it.
+
+**Claude Desktop:**
+
+Quit and relaunch Claude Desktop. The servers start automatically on launch.
 
 ## The AI Toolchain at a Glance
 
@@ -42,10 +73,10 @@ For full setup instructions and IDE wiring, see [Agent Skills](skills.md).
 
 The Ignite UI CLI MCP server (`igniteui-cli`) is an MCP server maintained by Infragistics that exposes Ignite UI CLI scaffolding and documentation tools to the active AI agent session. Once connected, the AI assistant can create Angular, React, or Web Components projects, add and modify Ignite UI components, and answer documentation and API questions - all through natural-language prompts in the chat session.
 
-The CLI MCP server starts via `npx` without a global install:
+The CLI MCP server is configured via `npx` without a global install:
 
 ```bash
-npx -y igniteui-cli mcp
+npx igniteui-cli ai-config
 ```
 
 The server connects to VS Code with GitHub Copilot, Cursor, Claude Desktop, Claude Code, JetBrains AI Assistant, and any other MCP-compatible client that supports STDIO transport. The exact configuration format differs by client - see the CLI MCP setup guides below.
