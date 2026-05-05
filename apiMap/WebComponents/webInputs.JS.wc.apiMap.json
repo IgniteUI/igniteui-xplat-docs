@@ -536,15 +536,36 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcRadioChangeEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "SplitterResizeEventArgs",
+    "originalName": "SplitterResizeEventArgsDetail",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "WebComponents","fileName": "igc-splitter-resize-event-args.ts","mappedName": "IgcSplitterResizeEventArgs"}],
+    "names":[{"platform": "WebComponents","fileName": "igc-splitter-resize-event-args-detail.ts","mappedName": "IgcSplitterResizeEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "SplitPaneOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcDockManagerPaneComponent","mappedName": "pane"}], "originalName": "Pane"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "paneHeight"}], "originalName": "PaneHeight"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "paneWidth"}], "originalName": "PaneWidth"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "delta"}], "originalName": "Delta"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "endPanelSize"}], "originalName": "EndPanelSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "startPanelSize"}], "originalName": "StartPanelSize"} ]
+  },
+  {
+    "originalName": "Splitter",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-splitter-component.ts","mappedName": "IgcSplitterComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "disableCollapse"}], "originalName": "DisableCollapse"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "disableResize"}], "originalName": "DisableResize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "endMaxSize"}], "originalName": "EndMaxSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "endMinSize"}], "originalName": "EndMinSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "endSize"}], "originalName": "EndSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hideCollapseButtons"}], "originalName": "HideCollapseButtons"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hideDragHandle"}], "originalName": "HideDragHandle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SplitterOrientation", "mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "startMaxSize"}], "originalName": "StartMaxSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "startMinSize"}], "originalName": "StartMinSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "startSize"}], "originalName": "StartSize"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "IconMeta",
