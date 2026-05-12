@@ -10,7 +10,7 @@ _language: ja
 
 # {ProductName} を使用した作業の開始
 
-[`{ProductName}`]({GithubLink}) は、Infragistics による {Platform} 向けの UI ウィジェット、コンポーネント、および Sketch UI キットの完全なセットです。開発者は、デスクトップ ブラウザー、モバイル エクスペリエンス、およびプログレッシブ Web アプリ (PWA) 向けのモダンで高パフォーマンスな HTML5 および JavaScript アプリを構築できます。
+[`{ProductName}`]({GithubLink}) は、Infragistics による {Platform} 向けの UI ウィジェット、コンポーネント、および Figma UI キットの完全なセットです。開発者は、デスクトップ ブラウザー、モバイル エクスペリエンス、およびプログレッシブ Web アプリ (PWA) 向けのモダンで高パフォーマンスな HTML5 および JavaScript アプリを構築できます。
 
 {ProductName} は、含まれるコンポーネントとサービスに応じて、MIT または商用ライセンスで利用可能な複数のパッケージで構成されています。コンポーネントとそのライセンスの詳細なリストについては、[ライセンス FAQ とインストール](./general-licensing.md)および[オープン ソースとプレミアム](./general-open-source-vs-premium.md) トピックを参照してください。
 
@@ -456,7 +456,7 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 ## ボタン、入力、レイアウト、メニュー
 
-{ProductName} は、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築できるようにするさまざまなタイプの[ボタン](inputs/button.md)、[入力](inputs/input.md)、[メニュー](menus/navbar.md)、[レイアウト](layouts/tabs.md)を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧くださ。これらのコンポーネントは [Indigo Design System](https://jp.infragistics.com/products/appbuilder/ui-toolkit) に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
+{ProductName} は、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築できるようにするさまざまなタイプの[ボタン](inputs/button.md)、[入力](inputs/input.md)、[メニュー](menus/navbar.md)、[レイアウト](layouts/tabs.md)を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧くださ。これらのコンポーネントは [Indigo Design System](https://jp.infragistics.com/products/appbuilder/ui-toolkit) に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Figma 用のすぐに使用できる UI キットによって支えられています。
 
 <!-- end: WebComponents, React -->
 
