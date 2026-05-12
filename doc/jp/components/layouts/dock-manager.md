@@ -30,12 +30,12 @@ npm install --save {PackageDockManager}
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, WebComponents -->
-次に **defineCustomElements()** 関数をインポートして呼び出します。
+次に **defineComponents()** 関数をインポートして呼び出します。
 
 ```ts
-import { defineCustomElements } from 'igniteui-dockmanager/loader';
+import { defineComponents, IgcDockManagerComponent } from 'igniteui-dockmanager';
 
-defineCustomElements();
+defineComponents(IgcDockManagerComponent);
 ```
 <!-- end: Angular, React, WebComponents -->
 
@@ -912,10 +912,19 @@ igc-dockmanager::part(content-pane) {
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。
+ドック マネージャーは、コンテキスト メニュー、ツールチップ、および ARIA 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ルートの `<html>` 要素の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を読み取って使用する言語を決定します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、サポートされていない値に設定されている場合、ドック マネージャーは [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) を使用します。
 
 <!-- WebComponents -->
-その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
+スペイン語 (`es`)、日本語 (`ja`)、韓国語 (`ko`) の既製のドック マネージャー リソース文字列は、`igniteui-i18n-resources` ピア依存関係を通じて提供されます。これらの言語のいずれかを使用するには、`igniteui-i18n-resources` をインストールし、対応するバンドルを `igniteui-i18n-core` に登録します:
+
+```ts
+import { registerI18n } from 'igniteui-i18n-core';
+import { DockManagerResourceStringsES } from 'igniteui-i18n-resources';
+
+registerI18n(DockManagerResourceStringsES, 'es');
+```
+
+別の言語をサポートする必要がある場合は、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用して独自の翻訳済み文字列を提供します:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -929,7 +938,7 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 <!-- end: WebComponents -->
 
-ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+ドック マネージャーは、個々の文字列を直接変更するために使用できる `ResourceStrings` プロパティも公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはページの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性に関係なく、指定された文字列を使用します。
 
 <!-- end: React, WebComponents -->
 
