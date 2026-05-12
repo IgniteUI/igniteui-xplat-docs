@@ -140,6 +140,24 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 `sample="/inputs/badge/shape", height="60", alt="{Platform} Badge Example"`
 
 
+### Dot
+
+The {ProductName} badge component can also render as a minimal dot indicator for notifications by setting its `dot` attribute. Dot badges do not support content, but they can be outlined and can use any of the available dot types (e.g., primary, success, info, etc.).
+
+```tsx
+<IgrBadge dot={true} ></IgrBadge>
+```
+
+```html
+<igc-badge dot></igc-badge>
+```
+
+```razor
+<IgbBadge Dot="true" />
+```
+
+`sample="/inputs/badge/dot", height="60", alt="{Platform} Badge Example"`
+
 
 ## Styling
 
@@ -147,9 +165,8 @@ The `Badge` component exposes a `base` CSS part that can be used to change all o
 
 ```css
 igc-badge::part(base) {
-  background: var(--ig-primary-500);
-  color: var(--ig-primary-500-contrast);
-  border-radius: 2px;
+    --background-color: var(--ig-error-A100);
+    --border-radius: 2px;
 }
 ```
 

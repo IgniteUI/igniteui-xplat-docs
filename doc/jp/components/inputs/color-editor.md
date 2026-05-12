@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} Color Editor の例
 
-`sample="/inputs/color-editor/overview", height="320", alt="{Platform} Color Editor の例"`
+`sample="/inputs/color-editor/overview", height="340", alt="{Platform} Color Editor の例"`
 
 <div class="divider--half"></div>
 

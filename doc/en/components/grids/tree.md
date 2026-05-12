@@ -348,9 +348,9 @@ You can change the appearance of the `TreeItem`, by using some of the exposed CS
 Using these CSS parts we can customize thе appearance of the `Tree` component like this:
 
 ```css
-igc-tree-item::part(active) {
-  background: var(--ig-secondary-500);
-  color: var(--ig-secondary-500-contrast);
+igc-tree-item {
+    --background-active: var(--ig-secondary-500);
+    --foreground-active: var(--ig-secondary-500-contrast);
 }
 ```
 
