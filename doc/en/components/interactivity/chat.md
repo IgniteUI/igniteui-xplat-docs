@@ -586,7 +586,7 @@ igc-chat::part(message-header) {
 
 This allows you to style the `Chat` to match your brand without replacing its functionality.
 
-`sample="/interactions/chat/styling", height="900", alt="Web Components Chat Styling Example"`
+`sample="/interactions/chat/styling", height="900", alt="{Platform} Chat Styling Example"`
 
 ## API Reference
 
