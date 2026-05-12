@@ -208,12 +208,39 @@ defineComponents(IgcTabsComponent);
 | `tab-body` | 単一のタブの本体コンテンツを保持します。選択したタブの本体のみが表示されます。 |
 
 ```css
-igc-tab::part(tab-header) {
-  background-color: var(--ig-gray-200);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: WebComponents, React -->
@@ -226,12 +253,39 @@ igc-tab::part(content) {
 | `suffix` | サフィックス ラッパー。 |
 
 ```css
-igc-tabs::part(headers-content) {
-  background-color: var(--ig-gray-200);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: Blazor -->
@@ -245,7 +299,6 @@ igc-tab::part(content) {
 - `IconButton`
 - `RadioGroup`
 - [スタイル設定 & テーマ](../themes/overview.md)
-
 
 ## その他のリソース
 

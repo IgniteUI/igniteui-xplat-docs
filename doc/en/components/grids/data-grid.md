@@ -200,7 +200,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid id="grid1" data={localData} autoGenerate={true}></IgrGrid>
+<IgrGrid id="grid1" autoGenerate={true} data={localData}></IgrGrid>
 ```
 
 The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.

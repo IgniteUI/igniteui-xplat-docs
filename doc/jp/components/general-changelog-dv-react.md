@@ -12,6 +12,118 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+| 3055 | IgrDataPieChart | Others スライスのスタイル プロパティが不足している。 |
+| 38668 | IgrDataTooltipLayer | チャートの TitleTextColor を使用すると TitleTextColor がオーバーライドされる。 |
+| 41167 | Excel | オブジェクトの数式がラウンドトリップされない - カメラ ツールのラウンドトリップの Excel サポートを追加。 |
+| 41419 | Excel | VBA 署名付き Excel ファイルの保存時に署名/証明書が保持されない。 |
+| 41594 | IgrDataChart | AssigningCategoryStyle の args.GetItems が null であるか、フラグメント シリーズのアイテム更新に機能しない。 |
+
+## **{PackageVerChanges-26-2-FEB}**
+### {PackageCommon}
+
+#### 新機能
+
+- #### AI 支援開発 - Copilot スキル
+  - `{PackageCommon}` パッケージの `skills/` ディレクトリに 4 つのエンドユーザー スキルが同梱されるようになりました。GitHub Copilot やその他の LLM エージェントに一般的なタスクのステップバイステップのガイダンスを提供します:
+    - **igniteui-wc-choose-components** - 特定の UI パターンに適したコンポーネントを識別する。
+    - **igniteui-wc-integrate-with-framework** - React、Angular、Vue、またはバニラ JS でコンポーネントをセットアップして使用する。
+    - **igniteui-wc-customize-component-theme** - CSS カスタム プロパティ、パーツ、テーマ システムを使用してカスタム スタイルを適用する。
+    - **igniteui-wc-optimize-bundle-size** - 選択的インポートと遅延読み込みを使用して本番バンドル サイズを削減する。
+- #### チャット
+  - `adoptRootStyles` を実行時にオン/オフ切り替えできるようになりました。
+
+
+#### 重大な変更
+
+- #### テーマ
+  - 他の Ignite UI コンポーネント ライブラリに合わせるため、コンポーネント テーマの CSS カスタム プロパティのグローバル プレフィックスを変更しました。
+
+- #### チャット
+  - `typingIndicator` テンプレート レンダラーを削除しました。代わりに `typing-indicator` スロットを使用してください。
+
+- #### ツールチップ
+  - 非推奨の `disableArrow` プロパティを削除しました。
+
+- #### ライブラリ
+  - 必要な最小 Node バージョンが >= 22 になりました。
+
+  #### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Blazor でのコンテキスト インスタンス化|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|非入力部分のカーソル スタイルを修正|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|非入力部分のカーソル スタイルを修正|
+
+### {PackageGrids} (グリッド)
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`
+  - グリッドに表示されるデータに基づいてスクロール スロットルを動的に調整することでパフォーマンスを改善しました。
+
+**重大な変更**
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`
+  - 元の `data` 配列の変更 (元の配列へのレコードの追加/削除/移動など) は自動的に検出されなくなりました。変更を検出するには、コンポーネントに配列参照の変更が必要です。
+
+**ローカライゼーション (i18n)**
+
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`、`IgrPivotGrid`、`IgrCombo`、`IgrDatePicker`、`IgrDateRangePicker`、`IgrCalendar`、`IgrCarousel`、`IgrChip`、`IgrInput`、`IgrTree`
+  - グリッド コンポーネントで日付や数値などのデータをフォーマットおよびレンダリングするための新しい `Intl` 実装。`IgrCalendar`、`IgrDatePicker`、`IgrDateRangePicker` の `Intl` 実装を更新しました。
+  - 現在サポートされているすべての言語のリソース文字列を持つすべてのコンポーネントに対する新しいローカライゼーション実装。
+  - 新しいパブリック ローカライゼーション API と、新しいリソースを含む `igniteui-i18n-resources` という名前のパッケージ。
+
+**PDF エクスポート**
+- グリッド データを PDF 形式にエクスポートできる PDF エクスポート機能を追加しました。
+
+**Popover API**
+
+- ドロップダウン メニューとダイアログが HTML Popover API を使用するようになり、より優れた配置とアクセシビリティを提供します。
+
+## **{PackageVerChanges-25-2-FEB}**
+
+### 機能拡張
+
+### {PackageCharts}
+
+DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加しました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|2270|IgrDataChart|DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加。 |
+|2251|igniteui-react-layouts|@constantValues を含むプロパティ エディターのプロパティを解決しないように修正。 |
+|2353|IgrDataChart|infragistics.dvcommonwidget.js のビルド時に発生する構文エラーを修正。 |
+|2354|IgrDataChart|infragistics.dvcommonwidget.js の case 名で "unset" の代わりに "unser" となっていたタイポを修正。 |
+|2338|IgrDataPieChart|StartAngle が設定されている場合に SeriesPointerMove イベントが正しく発火しない問題を修正。 |
+|2235|Excel|Workbook.Load() が Excel.FormulaParseException をスローする問題を修正。 |
+|2234|IgrRadialChart|バケット サイズが 0 に等しい場合のチェックを追加。 |
+|2234|IgrDataChart|注釈レイヤーにおける GetCategoryIndexAxis() を修正。 |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgrDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgrDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgrDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
 ### {PackageCharts} (チャート)
 
 #### <label>PREVIEW</label> ユーザー注釈
@@ -50,6 +162,7 @@ alt="{Platform} user-annotation-create"/>
 - `IgrChat` コンポーネントを追加しました。
 
 ### {PackageGrids} (グリッド)
+
 - `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`
   - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
 
@@ -59,8 +172,8 @@ alt="{Platform} user-annotation-create"/>
         <IgrColumn field="field" merge={true}></IgrColumn>
         ```
         グリッド レベルで以下のいずれかの設定が可能です:
-     - `onSort` - 列がソートされたときのみ結合。
-     - `always` - データ操作に関わらず常に結合。
+    - `onSort` - 列がソートされたときのみ結合。
+    - `always` - データ操作に関わらず常に結合。
 
         ```tsx
         <IgrGrid cellMergeMode="always">
@@ -94,11 +207,12 @@ alt="{Platform} user-annotation-create"/>
         列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
 
   - **ソートの改善**
-     - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
-     - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+    - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+
   - **グループ化の改善**
-     - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
-     - グループ化処理を最適化しました。
+    - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - グループ化処理を最適化しました。
 
 
 ### バグ修正
@@ -246,7 +360,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 |[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo のエレベーション スタイルを修正。|
 |[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date Range Picker|キーボード操作時にメイン入力へフォーカスを戻す。|
 |[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Material テーマでのプレースホルダーとラベルの整列を修正。|
-|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|*relative* 位置スタイルとアニメーションを更新。|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|_relative_ 位置スタイルとアニメーションを更新。|
 |[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|無効状態のテーマ適用問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material テーマでのインタラクション問題。|
 |[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|サフィックス部分でのリサイズの動作を修正。|
@@ -268,18 +382,22 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 重大な変更
 
 #### File Input
-  - `onChange` および `onCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
+
+- `onChange` および `onCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
 
 #### Tooltip
-  - Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
+
+- Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
 
 ### 動作変更
 
 #### Tooltip
-  - **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
-  - **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
+
+- **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
+- **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
 
 ### 機能拡張
+
 - すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
 
 ### バグ修正
@@ -344,10 +462,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -361,11 +481,13 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 ## **{PackageVerChanges-24-2-APR2}**
 
-> [!Note] バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
+> [!Note]
+> バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
 
 [アップデート ガイド](update-guide.md)
 
 ### 削除済
+
 - `CheckboxChangeEventArgs` は削除されました。代わりに `IgrCheckboxChangeEventArgs` を使用してください。
 - `RadioChangeEventArgs` は削除されました。代わりに `IgrRadioChangeEventArgs` を使用してください。
 - `IgrRangeSliderValue` は削除されました。代わりに `IgrRangeSliderValueEventArgs` を使用してください。
@@ -376,9 +498,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Stepper
+
 Stepper Step の `titlePosition` は、同じ動作を持つ undefined ではなく、デフォルトで `auto` に設定されるようになりました。
 
 #### Tabs
+
 `igr-tab` パネル プロパティは削除されました。
 
 igr-tab-panel コンポーネントは削除されました。igr-tab では、タブ ヘッダーとタブ コンテンツの両方が 1 つのコンポーネントに含まれるようになりました。
@@ -419,6 +543,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 ## **{PackageVerChanges-24-2-MAR1}**
 
 ### {PackageGrids}
+
 次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
 
 | バグ番号 | コントロール | 説明      |
@@ -434,6 +559,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
   - 内部グリッド アクション ボタンをカプセル化しました。
 
 ### {PackageCommon}
+
 - `Dockmanager` に、分割内で直接ドッキングできる新しい `allowSplitterDock` プロパティが追加されました。
 - `Dockmanager` の `SplitPane` に新しい `useFixedSize` プロパティが追加され、新しいサイズ変更動作が可能になりました。
 
@@ -491,6 +617,7 @@ DashboardTile <label>PREVIEW</label>
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般
+
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 - `Input`
   - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
@@ -596,6 +723,7 @@ DashboardTile <label>PREVIEW</label>
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
+
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
@@ -675,11 +803,13 @@ DashboardTile <label>PREVIEW</label>
 
 - `Form` コンポーネントは非推奨になりました。代わりにネイティブのフォーム要素を使用してください。
 - `size` プロパティと属性は、すべてのコンポーネントで非推奨になりました。代わりに `--ig-size` CSS カスタム プロパティを使用してください。次の例では、Avatar コンポーネントのサイズを小さく設定します:
+
     ```css
     .avatar {
         --ig-size: var(--ig-size-small);
     }
     ```
+
 - `DateTimeInput`
   - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
 - `RangeSlider`
@@ -770,6 +900,7 @@ DashboardTile <label>PREVIEW</label>
 - **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
+
 ### {PackageCharts} (チャート)
 
 - 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
@@ -796,6 +927,7 @@ DashboardTile <label>PREVIEW</label>
 ### {PackageGrids} (データ グリッド)
 
 #### データ グリッド
+
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
 > [!Note]
@@ -806,9 +938,11 @@ DashboardTile <label>PREVIEW</label>
 ### {PackageInputs} (入力)
 
 #### 日付ピッカー
+
 - ValueChanged イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス
+
 - `TextChanged` イベントを `TextValueChanged` に変更しました。
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
@@ -870,6 +1004,7 @@ DashboardTile <label>PREVIEW</label>
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
+
 ### {PackageCharts} (チャート)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。

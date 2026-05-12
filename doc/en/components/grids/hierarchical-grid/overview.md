@@ -227,7 +227,7 @@ Each **{RowIslandSelector}** should specify the key of the property that holds t
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={singers} autoGenerate={true}>
+<IgrHierarchicalGrid autoGenerate={true} data={singers}>
     <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
         <IgrRowIsland childDataKey="Songs" autoGenerate={true}>
         </IgrRowIsland>
