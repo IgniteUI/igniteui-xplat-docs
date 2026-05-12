@@ -194,31 +194,10 @@ These components expose templates giving flexibility for customization. For inst
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
-        </IgbActionStrip>
-    </{ComponentSelector}>
-</div>
-```
-<!-- ComponentEnd: Grid, TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```razor
-<div class="grid__wrapper">
-    <IgbHierarchicalGrid Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
             <IgbGridEditingActions
@@ -227,10 +206,10 @@ These components expose templates giving flexibility for customization. For inst
                 AddRow="true">
             </IgbGridEditingActions>
         </IgbActionStrip>
-    </IgbHierarchicalGrid>
+    </{ComponentSelector}>
 </div>
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- WebComponents -->
 <!-- ComponentStart: Grid, TreeGrid -->
