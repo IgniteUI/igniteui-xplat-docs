@@ -66,9 +66,9 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 <div class="divider--half"></div>
 
-## {Platform} 円チャートのその他カテゴリ
+## {Platform} 円チャートの Others (その他) カテゴリ
 
-円チャートの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
+円チャートの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、「その他」カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
 
 `DataPieChart` の「その他」カテゴリには、`OthersCategoryType`、`OthersCategoryThreshold`、`OthersCategoryText` という 3 つの主要な構成可能なプロパティがあり、これらを使用して、チャート内の「その他」スライスの表示方法を構成できます。これらについては、それぞれ以下で説明します。
 
@@ -78,9 +78,24 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 デフォルトでは、「その他」スライスは「その他」というラベルで表されます。チャートの `OthersCategoryText` プロパティを変更することでこれを変更できます。
 
+### {Platform} Others (その他) のスライスのスタイル設定
+
+集約されたその他のスライスを他のスライスとは別にスタイル設定するには、次のプロパティを使用します。
+
+- `OthersCategoryBrush`  
+  「その他」のスライスに使用される塗りつぶし (ブラシ) を設定します。
+
+- `OthersCategoryOutline`  
+  「その他」のスライスに使用されるアウトライン (ストローク) を設定します。
+
+これらのプロパティは、「その他」のスライス (存在する場合) にのみ影響します。他のすべてのスライスは、通常のパレットと項目ごとの色付け動作を引き続き使用します。
+
+> [!NOTE]
+> 「その他」のスライスは、チャートがそれを作成するように構成されている場合にのみレンダリングされます (たとえば、`OthersCategoryThreshold` が 0 より大きく、適切な `OthersCategoryType` が設定されている場合)。「その他」のスライスが存在しない場合、`OthersCategoryBrush` と `OthersCategoryOutline` は表示上の効果はありません。
+
 `DataPieChart` に「その他」カテゴリが表示されないようにするには、`OthersCategoryThreshold` を 0 に設定します。
 
-以下のサンプルは、`DataPieChart` 内の Others スライスの使用方法を示しています。
+以下のサンプルは、`DataPieChart` 内の「その他」スライスの使用方法を示しています。
 
 `sample="/charts/data-pie-chart/others", height="600", alt="{Platform} 円チャートのその他"`
 
@@ -181,4 +196,3 @@ ItemLegend バッジを変更することもできます。デフォルトでは
  |-----------------|----------------|------------ |
  |データ円チャート      | `DataPieChart`     | `DataPieChart` |
  |項目凡例 | `ItemLegend` | `ItemLegend` |
-

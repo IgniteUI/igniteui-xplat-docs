@@ -235,6 +235,13 @@ igc-icon {
 
 `sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon Sizing"`
 
+You can also set a custom size for the icon component. The best way to do this is by using the `--size` CSS variable.
+
+```css
+igc-icon {
+  --size: 32px;
+}
+```
 
 ### Mirrored
 
