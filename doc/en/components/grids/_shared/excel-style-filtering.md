@@ -236,7 +236,7 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
     Height="650px" Width="100%" Id="hierarchicalGrid">
     <IgbColumn Field="Artist" Filterable="true" Sortable="true"></IgbColumn>
     <IgbColumn Field="Photo" Filterable="false"></IgbColumn>
-    <IgbColumn Field="Debut" Filterable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="Debut" Filterable="false"></IgbColumn>
     <IgbColumn Field="GrammyNominations" Header="Grammy Nominations" DataType="GridColumnDataType.Number" Filterable="true" Sortable="true" ></IgbColumn>
     <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number" Filterable="true"></IgbColumn>
     @* ... *@

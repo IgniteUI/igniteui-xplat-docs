@@ -197,7 +197,6 @@ The `Tabs` component exposes several CSS parts, giving you full control over its
 
 The `Tab` component exposes the following CSS parts:
 
-<!-- WebComponents, React -->
 |Name|Description|
 |--|--|
 | `content` | Tab header's label slot container. |
@@ -207,56 +206,42 @@ The `Tab` component exposes the following CSS parts:
 | `tab-body` | Holds the body content of a single tab, only the body of the selected tab is visible. |
 
 ```css
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
+}
+
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
 igc-tab::part(tab-header) {
-  background-color: var(--ig-surface-600);
+    --item-hover-color: var(--ig-success-500);
 }
 
-igc-tab::part(tab-body) {
-  color: var(--ig-success-300);
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
-<!-- end: WebComponents, React -->
 
-<!-- Blazor -->
-|Name|Description|
-|--|--|
-| `content` | The content wrapper. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
-
-```css
-
-/* Tabs header background */
-igc-tabs::part(headers-content) {
-    background-color: var(--ig-gray-200);
-    border-bottom: 1px solid var(--ig-success-400);
-}
-
-/* Default tab header text */
-igc-tab::part(content) {
-    color: var(--ig-gray-800);
-    font-weight: 600;
-}
-
-/* Selected tab header */
-igc-tab[selected]::part(tab-header) {
-    background-color: var(--ig-success-100);
-    border-bottom: 2px solid var(--ig-success-600);
-}
-
-/* Selected tab label text */
-igc-tab[selected]::part(content) {
-    color: var(--ig-success-800);
-    font-weight: 700;
-}
-
-/* Tab panel content */
-igc-tab[selected] {
-    color: var(--ig-error-700);
-}
-
-```
-<!-- end: Blazor -->
 `sample="/layouts/tabs/styling", height="150", alt="Tabs Styling Example"`
 
 ## API Reference

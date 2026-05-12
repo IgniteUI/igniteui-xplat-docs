@@ -140,7 +140,23 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 `sample="/inputs/badge/shape", height="60", alt="{Platform} Badge の例"`
 
+### Dot
 
+{ProductName} Badge コンポーネントは、`dot` 属性を設定することで、通知用の最小限のドット インジケーターとして表示することもできます。ドット バッジはコンテンツをサポートしませんが、アウトライン表示が可能で、利用可能なすべてのドット タイプ (例: primary、success、info など) を使用できます。
+
+```tsx
+<IgrBadge dot={true} ></IgrBadge>
+```
+
+```html
+<igc-badge dot></igc-badge>
+```
+
+```razor
+<IgbBadge Dot="true" />
+```
+
+`sample="/inputs/badge/dot", height="60", alt="{Platform} Badge の例"`
 
 ## スタイル設定
 
@@ -148,9 +164,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ```css
 igc-badge::part(base) {
-  background: var(--ig-primary-500);
-  color: var(--ig-primary-500-contrast);
-  border-radius: 2px;
+    --background-color: var(--ig-error-A100);
+    --border-radius: 2px;
 }
 ```
 

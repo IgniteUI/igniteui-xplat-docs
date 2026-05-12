@@ -30,12 +30,12 @@ npm install --save {PackageDockManager}
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, WebComponents -->
-次に **defineCustomElements()** 関数をインポートして呼び出します。
+次に **defineComponents()** 関数をインポートして呼び出します。
 
 ```ts
-import { defineCustomElements } from 'igniteui-dockmanager/loader';
+import { defineComponents, IgcDockManagerComponent } from 'igniteui-dockmanager';
 
-defineCustomElements();
+defineComponents(IgcDockManagerComponent);
 ```
 <!-- end: Angular, React, WebComponents -->
 
@@ -473,7 +473,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### ドッキング
 
-フローティング ペインのドラッグを開始すると、ドラッグしたペインの位置に応じて異なるドッキング インジケーターが表示されます。ドッキングには、ルート ドッキング、ペイン ドッキング、ドキュメント ホスト ドッキング、スプリッター ドッキングの 4 つの主なタイプがあります。
+フローティング ペインのドラッグを開始すると、ドラッグしたペインの位置に応じて異なるドッキング インジケーターが表示されます。ドッキングには、ルート ドッキング、ペイン ドッキング、ドキュメント ホスト ドッキング、スプリッター ドッキングの 4 つの主なタイプがあります。ルート ドッキングが無効になっている場合、エッジ ドッキングは追加の動作として使用でき、ルート分割ペインの方向に沿って動作します。
 
 #### ルート ドッキング
 
@@ -495,9 +495,26 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 #### スプリッター ドッキング
 
-フローティング ペインをドラッグしているときに、マウス カーソルがスプリッターに近づくと、その上にドッキング インジケーターが表示されます。ドラッグしたペインがドッキングされている場合、そのペインは対象のスプリッターを持つ分割ペインの子要素になります。スプリッター ドッキングは、Dock Manager の `allowSplitterDock` プロパティを **false** に設定することで無効にできます。
+スプリッター ドッキングを使用すると、エンド ユーザーは既存の分割レイアウト内にペインを正確に配置できます。フローティング ペインをドラッグしているときに、カーソルが 2 つのペイン間のスプリッターの近くに移動すると、そのスプリッターの上にドッキング インジケーターが表示されます。
+
+ユーザーがこのインジケーター上にペインをドロップすると、Dock Manager は、ターゲットとなるスプリッターを所有する分割ペインにペインを挿入し、隣接するペインを調整してスペースを確保します。これにより、レイアウト全体を再構築することなく、2 つの既存のペインのちょうど間に新しいツールやビューを挿入して、複雑なレイアウトを簡単に調整できます。
+
+このレベルの精度を必要としないシンプルなエクスペリエンスが必要な場合は、Dock Manager の `allowSplitterDock` プロパティを **false** に設定することで、スプリッター ドッキングを無効にできます。
 
 <img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking" />
+
+#### エッジ ドッキング
+
+エッジ ドッキングにより、エンド ユーザーは、特定のスプリッターやペインを慎重にターゲットにすることなく、メイン レイアウトの最初または最後に重要なペインを追加する簡単な方法が提供されます。`allowRootDock` プロパティを **false** に設定してルート ドッキングを無効にすると、Dock Manager はルート分割ペインの最初と最後の位置に沿ってエッジ ドッキング インジケーターを自動的に有効にします。ルート分割ペインは水平または垂直のいずれかであるため、エッジ ドッキングはその単一方向 (水平ルートの場合は左/右、垂直ルートの場合は上/下) でのみ使用できます。
+
+この動作は、ルート ペインがスクロール可能な場合 (`useFixedSize` プロパティが **true** に設定されており、コンテンツが表示領域を超えている場合) に特に便利です。これらのシナリオでは、ユーザーは次のことができます。
+
+- **水平**ルート分割ペインの場合、任意のペインを **左**端に向かってドラッグして最初の項目としてドッキングするか、**右**端に向かってドラッグして最後の項目としてドッキングします。
+- **垂直**ルート分割ペインの場合、任意のペインを**上**端に向かってドラッグして最初の項目としてドッキングするか、**下**端に向かってドラッグして最後の項目としてドッキングします。
+
+ユーザーがエッジ ドッキング インジケーター上にペインをドロップすると、Dock Manager は選択した端にペインを挿入し、自動的にビューにスクロールします。これにより、複雑でスクロール可能なレイアウトでも、新しく追加されたツール ウィンドウやダッシュボードがすぐに表示されるようになります。
+
+<img class="responsive-img" src="../../images/dockmanager-edge-docking.jpg" alt="dockmanager-edge-docking"/>
 
 ### レイアウトの編集
 
@@ -895,10 +912,19 @@ igc-dockmanager::part(content-pane) {
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。
+ドック マネージャーは、コンテキスト メニュー、ツールチップ、および ARIA 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ルートの `<html>` 要素の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を読み取って使用する言語を決定します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、サポートされていない値に設定されている場合、ドック マネージャーは [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) を使用します。
 
 <!-- WebComponents -->
-その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
+スペイン語 (`es`)、日本語 (`ja`)、韓国語 (`ko`) の既製のドック マネージャー リソース文字列は、`igniteui-i18n-resources` ピア依存関係を通じて提供されます。これらの言語のいずれかを使用するには、`igniteui-i18n-resources` をインストールし、対応するバンドルを `igniteui-i18n-core` に登録します:
+
+```ts
+import { registerI18n } from 'igniteui-i18n-core';
+import { DockManagerResourceStringsES } from 'igniteui-i18n-resources';
+
+registerI18n(DockManagerResourceStringsES, 'es');
+```
+
+別の言語をサポートする必要がある場合は、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用して独自の翻訳済み文字列を提供します:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -912,7 +938,7 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 <!-- end: WebComponents -->
 
-ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+ドック マネージャーは、個々の文字列を直接変更するために使用できる `ResourceStrings` プロパティも公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはページの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性に関係なく、指定された文字列を使用します。
 
 <!-- end: React, WebComponents -->
 
