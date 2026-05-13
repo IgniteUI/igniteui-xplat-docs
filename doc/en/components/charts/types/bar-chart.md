@@ -128,7 +128,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 The {Platform} Range Bar Chart belongs to a group of range charts and is rendered using horizontal rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the left like the traditional [Category Bar Chart](bar-chart.md#{PlatformLower}-bar-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
-The Range Bar Chart is identical to the [Range Area Chart](area-chart.md#{PlatformLower}-range-area-chart) in all aspects except that the ranges are represented as a set of horizontal bars rather than a filled area.
+The Range Bar Chart is identical to the [Range Column Chart](column-chart.md#{PlatformLower}-range-column-chart) in all aspects except that the ranges are represented as a set of horizontal bars rather than vertical columns.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RangeBarSeries`, as shown in the example below:
 
