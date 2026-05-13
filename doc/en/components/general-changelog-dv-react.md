@@ -13,6 +13,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageCharts}
+
+#### New Features
+
+- Added `Checkmark` option to the `MarkerType` enum. Use `MarkerType.Checkmark` on a series to display a V-shaped checkmark icon inside a circle. The new `MarkerAutomaticBehavior.Checkmark` enum value allows applying the checkmark shape to all series in the chart, and the `SeriesViewer.CheckmarkMarkerTemplate` property can be used to customize its template.
+
 ### {PackageCommon}
 
 #### Changed

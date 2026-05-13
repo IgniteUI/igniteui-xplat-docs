@@ -3,7 +3,7 @@ title: {Platform} チャート マーカー | データ可視化 | インフラ�
 _description: インフラジスティックスの {Platform} チャート マーカー
 _keywords: {Platform} Charts, Markers, Infragistics, {Platform} チャート, マーカー, インフラジスティックス
 _license: commercial
-mentionedTypes: ["CategoryChart", "CategoryChartType", "MarkerType"]
+mentionedTypes: ["CategoryChart", "CategoryChartType", "MarkerType", "MarkerAutomaticBehavior", "SeriesViewer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -21,6 +21,16 @@ _language: ja
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} 構成オプションの例"`
 
 
+
+<div class="divider--half"></div>
+
+## {Platform} チャート チェックマーク マーカー タイプ
+
+{ProductName} チャートは、`MarkerType` 列挙型に `Checkmark` オプションを含んでいます。このマーカーは、チャートのデータ ポイントに円の中に V 字型のチェックマーク アイコンを描画します。
+
+`Checkmark` マーカー タイプを個々のシリーズに適用するには、シリーズの `MarkerType` プロパティを `MarkerType.Checkmark` に設定します。チャート内のすべてのシリーズに同時にチェックマーク形状を使用するには、チャートの `MarkerAutomaticBehavior` プロパティを `MarkerAutomaticBehavior.Checkmark` に設定します。
+
+`SeriesViewer.CheckmarkMarkerTemplate` プロパティは、チェックマーク マーカー タイプを持つシリーズに使用されるマーカー テンプレートを定義し、チャート全体の外観をカスタマイズするために使用できます。
 
 <div class="divider--half"></div>
 
@@ -48,4 +58,6 @@ _language: ja
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`
+- `MarkerAutomaticBehavior`
+- `SeriesViewer.CheckmarkMarkerTemplate`
 - `CategoryChart`
