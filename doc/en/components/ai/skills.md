@@ -202,31 +202,35 @@ Use one of the options below to download and place the skill files into the appr
 
 ### **Option A - Use the Ignite UI CLI**
 
-The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI CLI MCP and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files — all in a single step. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. Existing files are only updated if their content has changed. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents. For available options, refer to the table below.
+
+```bash
+ig ai-config --assistants generic --agents claude
+```
+
+Use `--agents` with multiple values to target several agents at once:
+
+```bash
+ig ai-config --assistants generic vscode --agents claude copilot cursor
+```
+
+| Flag | Values | Default |
+|------|--------|---------|
+| `--assistants` | `generic`, `vscode`, `cursor`, `gemini`, `junie`, `none` | Prompted interactively |
+| `--agents` | `generic`, `claude`, `copilot`, `cursor`, `codex`, `windsurf`, `gemini`, `junie`, `none` | Prompted interactively |
 
 <!-- Angular -->
 
 **Using Angular Schematics:**
 
 ```bash
-ng generate @igniteui/angular-schematics:ai-config
+ng generate @igniteui/angular-schematics:ai-config --assistants cursor --agents claude copilot
 ```
 
-This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
+This also registers the `@angular/cli` MCP server alongside the Ignite UI servers.
 
 <!-- end: Angular -->
 
-**Using the Ignite UI CLI:**
-
-```bash
-npx igniteui-cli ai-config
-```
-
-If you have the Ignite UI CLI installed globally, use the shorter form:
-
-```bash
-ig ai-config
-```
 
 ### **Option B - Use the `GitHub CLI`**
 
