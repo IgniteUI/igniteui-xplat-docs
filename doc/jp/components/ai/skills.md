@@ -387,6 +387,9 @@ Theming MCP の詳細については、[Ignite UI Theming MCP](./theming-mcp.md)
 - <a href="https://jp.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started">{ProductName} で作業を開始</a>
 - <a href="https://jp.infragistics.com/products/ignite-ui-angular/angular/components/general/cli-overview">Angular Schematics & Ignite UI CLI</a>
 <!-- end: Angular -->
+- [Ignite UI を使った AI 支援開発](./ai-assisted-development-overview.md)
+- [Ignite UI CLI MCP](./cli-mcp.md)
+- [Ignite UI Theming MCP](./theming-mcp.md)
 
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。

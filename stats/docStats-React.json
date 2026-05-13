@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 783,
+  "samplesCount": 786,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -2173,6 +2173,15 @@
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/base": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/nested": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/stepper/animations": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/stepper"
     ],
@@ -2418,7 +2427,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 333,
+  "topicsCount": 335,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3725,6 +3734,11 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/sizing",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/base",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/nested",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/stepper": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/stepper/animations",
