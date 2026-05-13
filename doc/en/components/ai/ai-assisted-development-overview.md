@@ -30,7 +30,7 @@ The CLI MCP server requires STDIO transport; HTTP-based MCP clients are not supp
 
 ## Configure the AI Toolchain
 
-Run this command from the root of your existing Angular, React, Blazor or WebComponents project. It copies Agent Skills into the agent discovery path and writes the Ignite UI MCP server and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+Run this command from the root of your existing Angular, React or WebComponents project. It configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents. Existing files are only updated if their content has changed.
 
 ```bash
 npx igniteui-cli ai-config
@@ -192,7 +192,7 @@ Agent Skills are compatible with GitHub Copilot via `.github/copilot-instruction
 
 ### Quick Setup
 
-The `ai-config` command copies the Ignite UI Agent Skills into `.claude/skills/` and writes the Ignite UI MCP server configuration to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents.
 
 <!-- Angular -->
 **Using Angular Schematics:**
