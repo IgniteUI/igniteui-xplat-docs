@@ -28,6 +28,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
 | Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
+| Generate From Image Design | [`skills/igniteui-wc-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-generate-from-image-design/SKILL.md) | Build Web Components apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 <!-- end: WebComponents -->
 
@@ -38,6 +39,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them - JSX patterns, event handling, refs, forms, TypeScript |
 | Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
+| Generate From Image Design | [`skills/igniteui-react-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-generate-from-image-design/SKILL.md) | Build React apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 <!-- end: React -->
 
@@ -48,6 +50,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout |
 | Data Grids | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
 | Theming & Styling | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Generate From Image Design | [`skills/igniteui-angular-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-generate-from-image-design/SKILL.md) | Build Angular apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 > [!NOTE]
 > Starting with {ProductName} **21.1.0**, these skills are automatically discovered when placed in your agent's skills path (e.g., `.claude/skills`, `.agents/skills`, `.cursor/rules/`). This release ships with an optional migration to add these skills to your project automatically.
@@ -61,6 +64,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components & Layout | [`skills/igniteui-blazor-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-components/SKILL.md) | Components, form controls, overlays, layout |
 | Data Grids | [`skills/igniteui-blazor-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Grid Lite, sorting, filtering, grouping, paging, remote data |
 | Theming & Styling | [`skills/igniteui-blazor-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Generate From Image Design | [`skills/igniteui-blazor-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-generate-from-image-design/SKILL.md) | Build Blazor apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 <!-- end: Blazor -->
 
@@ -85,6 +89,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
       SKILL.md
     igniteui-wc-optimize-bundle-size/
       SKILL.md
+    igniteui-wc-generate-from-image-design/
+      SKILL.md
 ```
 
 <!-- end: WebComponents -->
@@ -99,6 +105,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
     igniteui-react-customize-theme/
       SKILL.md
     igniteui-react-optimize-bundle-size/
+      SKILL.md
+    igniteui-react-generate-from-image-design/
       SKILL.md
 ```
 
@@ -115,6 +123,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
       SKILL.md
     igniteui-angular-theming/
       SKILL.md
+    igniteui-angular-generate-from-image-design/
+      SKILL.md
 ```
 
 <!-- end: Angular -->
@@ -129,6 +139,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
     igniteui-blazor-grids/
       SKILL.md
     igniteui-blazor-theming/
+      SKILL.md
+    igniteui-blazor-generate-from-image-design/
       SKILL.md
 ```
 
@@ -268,7 +280,7 @@ gh skill install IgniteUI/igniteui-blazor
 
 <!-- end: Blazor -->
 
-You will be asked to select which skills to install (components, grids, theming) and the target Agents for the skill files in your project. The CLI will then download and place the selected skill according to the chosen Agents.
+You will be asked to select which skills to install and the target Agents for the skill files in your project. The CLI will then download and place the selected skill according to the chosen Agents.
 
 To update skills later, run the following command:
 
@@ -329,6 +341,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-wc-choose-components .agents/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-customize-component-theme .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-optimize-bundle-size .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: WebComponents -->
@@ -339,6 +352,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-components .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-customize-theme .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: React -->
@@ -349,6 +363,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .a
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-components .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-grids .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: Angular -->
@@ -359,6 +374,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skill
 cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-components .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-grids .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-theming .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: Blazor -->
@@ -372,6 +388,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agen
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\igniteui-wc-customize-component-theme /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\igniteui-wc-optimize-bundle-size /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\igniteui-wc-integrate-with-framework /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-generate-from-image-design .agents\skills\igniteui-wc-generate-from-image-design /E
 ```
 
 <!-- end: WebComponents -->
@@ -382,6 +399,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framewor
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-generate-from-image-design .agents\skills\igniteui-react-generate-from-image-design /E
 ```
 
 <!-- end: React -->
@@ -392,6 +410,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-components .agents\skills\igniteui-angular-components /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-grids .agents\skills\igniteui-angular-grids /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\skills\igniteui-angular-theming /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-generate-from-image-design .agents\skills\igniteui-angular-generate-from-image-design /E
 ```
 
 <!-- end: Angular -->
@@ -402,6 +421,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-components .agents\skills\igniteui-blazor-components /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-grids .agents\skills\igniteui-blazor-grids /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-theming .agents\skills\igniteui-blazor-theming /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-generate-from-image-design .agents\skills\igniteui-blazor-generate-from-image-design /E
 ```
 
 <!-- end: Blazor -->
@@ -422,6 +442,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-wc-choose-componen
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-generate-from-image-design
 ```
 
 <!-- end: WebComponents -->
@@ -432,6 +453,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-wc-integrate-with-
 gemini skills install {GithubLink}.git --path skills/igniteui-react-components
 gemini skills install {GithubLink}.git --path skills/igniteui-react-customize-theme
 gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+gemini skills install {GithubLink}.git --path skills/igniteui-react-generate-from-image-design
 ```
 
 <!-- end: React -->
@@ -442,6 +464,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bun
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-components
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-grids
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-generate-from-image-design
 ```
 
 <!-- end: Angular -->
@@ -452,6 +475,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
 gemini skills install {GithubLink}.git --path skills/igniteui-blazor-components
 gemini skills install {GithubLink}.git --path skills/igniteui-blazor-grids
 gemini skills install {GithubLink}.git --path skills/igniteui-blazor-theming
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-generate-from-image-design
 ```
 
 <!-- end: Blazor -->
@@ -465,6 +489,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-generate-from-image-design
 ```
 
 <!-- end: WebComponents -->
@@ -475,6 +500,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-components
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-customize-theme
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-generate-from-image-design
 ```
 
 <!-- end: React -->
@@ -485,6 +511,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-components
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-grids
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-theming
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-generate-from-image-design
 ```
 
 <!-- end: Angular -->
@@ -495,6 +522,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-components
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-grids
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-theming
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-generate-from-image-design
 ```
 
 <!-- end: Blazor -->
