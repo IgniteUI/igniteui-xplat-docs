@@ -54,6 +54,16 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+| Skill | Path | Description |
+|:------|:-----|:------------|
+| Components & Layout | [`skills/igniteui-blazor-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-components/SKILL.md) | Components, form controls, overlays, layout |
+| Data Grids | [`skills/igniteui-blazor-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Grid Lite, sorting, filtering, grouping, paging, remote data |
+| Theming & Styling | [`skills/igniteui-blazor-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+
+<!-- end: Blazor -->
+
 ## Skill Locations
 
 Each AI coding tool discovers skills from specific directories. Place your skill files in the appropriate location so your AI assistant can find and use them automatically. The general `.agents/skills/` convention is supported across multiple tools, while each tool also has its own specific directories.
@@ -108,6 +118,21 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```
+.agents/
+  skills/
+    igniteui-blazor-components/
+      SKILL.md
+    igniteui-blazor-grids/
+      SKILL.md
+    igniteui-blazor-theming/
+      SKILL.md
+```
+
+<!-- end: Blazor -->
 
 For user-level (global) skills available across all projects, use `~/.agents/skills/` instead.
 
@@ -324,6 +349,16 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skill
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+```bash
+cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-components .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-grids .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-blazor-theming .agents/skills/
+```
+
+<!-- end: Blazor -->
+
 **Windows (Command Prompt)**
 
 <!-- WebComponents -->
@@ -356,6 +391,16 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\sk
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```cmd
+robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-components .agents\skills\igniteui-blazor-components /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-grids .agents\skills\igniteui-blazor-grids /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-blazor-theming .agents\skills\igniteui-blazor-theming /E
+```
+
+<!-- end: Blazor -->
 
 ### **Option C - Use the `gemini skills` CLI**
 
@@ -397,6 +442,16 @@ gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+```bash
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-components
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-grids
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-theming
+```
+
+<!-- end: Blazor -->
+
 **Install to workspace scope:**
 
 <!-- WebComponents -->
@@ -429,6 +484,16 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```bash
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-grids
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-theming
+```
+
+<!-- end: Blazor -->
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
@@ -472,14 +537,22 @@ The **Theming skill** includes setup instructions for the `igniteui-theming` MCP
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-blazor-theming/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: Blazor -->
+
 For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./theming-mcp.md) documentation.
 
 ## Additional Resources
 
 <div class="divider--half"></div>
 
-<!-- React, WebComponents -->
+<!-- React, WebComponents, Blazor -->
 - [Getting Started with {ProductName}](../general-getting-started.md)
+<!-- end: React, WebComponents, Blazor -->
+<!-- React, WebComponents -->
 - [Ignite UI CLI](../general-cli-overview.md)
 <!-- end: React, WebComponents -->
 <!-- Angular -->

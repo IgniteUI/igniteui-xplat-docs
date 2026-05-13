@@ -30,7 +30,6 @@ For a concrete combined workflow after setup, see [Build an App End-to-End with 
 <!-- WebComponents -->
 For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
 <!-- end: WebComponents -->
-
 **Example prompts to try once connected:**
 
 > _"Create a complete Material Design dark theme for my {Platform} app with primary #2563eb and coral secondary #f97316."_
@@ -379,11 +378,11 @@ Also confirm that `core()` is called before any other theming mixin in your `sty
 <!-- React, WebComponents -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: React, WebComponents -->
-<!-- React, WebComponents, Angular -->
+<!-- React, WebComponents, Angular, Blazor -->
 - [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
 - [Ignite UI CLI MCP](./cli-mcp.md)
-<!-- end: React, WebComponents, Angular -->
+<!-- end: React, WebComponents, Angular, Blazor -->
 - [MAKER Framework](./maker-framework.md)
 
 <!-- Ideally these should be included once documentation is combined
