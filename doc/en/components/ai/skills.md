@@ -203,7 +203,77 @@ If you have the Ignite UI CLI installed globally, use the shorter form:
 ig ai-config
 ```
 
-### **Option B - Manual Copy from `node_modules`**
+### **Option B - Use the `GitHub CLI`**
+
+The GitHub CLI can be used to download skill files directly from the {ProductName} repository. Run the following commands in your project root to start the installation process:
+
+<!-- Angular -->
+
+```bash
+gh skill install IgniteUI/igniteui-angular
+```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```bash
+gh skill install IgniteUI/igniteui-webcomponents
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gh skill install IgniteUI/igniteui-react
+```
+
+<!-- end: React -->
+
+<!-- Blazor -->
+
+```bash
+gh skill install IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
+
+You will be asked to select which skills to install (components, grids, theming) and the target Agents for the skill files in your project. The CLI will then download and place the selected skill files into the chosen location.
+
+To update skills later, run the following command:
+
+<!-- Angular -->
+
+```bash
+gh skill update IgniteUI/igniteui-angular
+```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```bash
+gh skill update IgniteUI/igniteui-webcomponents
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gh skill update IgniteUI/igniteui-react
+```
+
+<!-- end: React -->
+
+<!-- Blazor -->
+
+```bash
+gh skill update IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
 
 If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
