@@ -115,7 +115,7 @@ npx igniteui-cli@latest ai-config
 <!-- Blazor -->
 
 > [!Note]
-> For Blazor, the `ai-config` command is not currently available. Install the skills using the GitHub CLI:
+> For Blazor, the `ai-config` command is currently not available. Install the skills using the GitHub CLI:
 
 ```bash
 gh skill install IgniteUI/igniteui-blazor
