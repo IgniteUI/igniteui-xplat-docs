@@ -30,7 +30,7 @@ The CLI MCP server requires STDIO transport; HTTP-based MCP clients are not supp
 
 ## Configure the AI Toolchain
 
-Run this command from the root of your existing Angular, React or WebComponents project. It configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents. Existing files are only updated if their content has changed.
+Run this command from the root of your existing Angular, React, Blazor, or Web Components project. It configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents. Existing files are only updated if their content has changed.
 
 ```bash
 npx igniteui-cli ai-config
