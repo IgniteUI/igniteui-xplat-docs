@@ -126,11 +126,13 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## {Platform} Range Bar Chart
 
-The {Platform} Range Bar Chart belongs to a group of range charts and is rendered using horizontal rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the left like the traditional [Category Bar Chart](bar-chart.md#{PlatformLower}-bar-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the X-Axis and categories are displayed on the Y-Axis.
+The {Platform} Range Bar Chart belongs to a group of range charts and is rendered using horizontal rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the left like the traditional [Category Bar Chart](bar-chart.md#{PlatformLower}-bar-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items.
+
+Range values are represented on the X-Axis and categories are displayed on the Y-Axis. Because each bar visualizes both a low value and a high value, this chart is useful for scenarios such as showing daily temperature ranges, minimum and maximum prices, or any bounded measurements where a single value is not sufficient.
 
 The Range Bar Chart is identical to the [Range Column Chart](column-chart.md#{PlatformLower}-range-column-chart) in all aspects except that the ranges are represented as a set of horizontal bars rather than vertical columns.
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `RangeBarSeries`, as shown in the example below:
+You can create this type of chart in the `XamDataChart` control by binding your data to a `RangeBarSeries`. The series reads low and high values from `LowMemberPath` and `HighMemberPath`, and it typically uses a `NumericXAxis` with a `CategoryYAxis`, as shown in the example below:
 
 `sample="/charts/data-chart/range-bar-chart", height="600", alt="{Platform} Range Bar Chart"`
 
