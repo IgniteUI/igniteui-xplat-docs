@@ -14,7 +14,7 @@ mentionedTypes: []
 
 # AI-Assisted Development with Ignite UI
 
-Ignite UI for Angular, React, and Web Components provides a complete AI toolchain - Agent Skills, the Ignite UI CLI MCP server, the Ignite UI Theming MCP server and the MAKER MCP server - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Agent Skills are developer-owned instruction packages that define how AI agents use Ignite UI in a specific project. The CLI MCP server (`@igniteui/mcp-server`) exposes Ignite UI CLI scaffolding, component management, and documentation tools to the active AI agent session via the Model Context Protocol. The Theming MCP server (`igniteui-theming`) exposes the Ignite UI Theming Engine as queryable agent context. The MAKER MCP (`@igniteui/maker-mcp`) is a multi-agent AI orchestration MCP server from Infragistics that decomposes complex tasks into validated, executable step plans using a consensus-based voting algorithm across multiple AI agents. Skills, CLI MCP and Theming MCP - all three are configured by a single command: `npx igniteui-cli ai-config`
+{ProductName} provides a complete AI toolchain - Agent Skills, the Ignite UI CLI MCP server, the Ignite UI Theming MCP server and the MAKER MCP server - that grounds AI coding assistants in correct component APIs, import paths, and design tokens. Agent Skills are developer-owned instruction packages that define how AI agents use Ignite UI in a specific project. The CLI MCP server (`@igniteui/mcp-server`) exposes Ignite UI CLI scaffolding, component management, and documentation tools to the active AI agent session via the Model Context Protocol. The Theming MCP server (`igniteui-theming`) exposes the Ignite UI Theming Engine as queryable agent context. The MAKER MCP (`@igniteui/maker-mcp`) is a multi-agent AI orchestration MCP server from Infragistics that decomposes complex tasks into validated, executable step plans using a consensus-based voting algorithm across multiple AI agents. Skills, CLI MCP and Theming MCP - all three are configured by a single command: `npx igniteui-cli ai-config`
 
 The MCP servers and Agent Skills serve different purposes and have different prerequisites:
  
@@ -26,11 +26,9 @@ The MCP servers and Agent Skills serve different purposes and have different pre
  
 You can start evaluating Ignite UI AI assistance with the MCP servers alone - Ignite UI does not need to be installed in your project. Agent Skills become available once you install Ignite UI packages.
 
-The AI toolchain does not currently support Blazor in the CLI MCP and Agent Skills layers - Blazor coverage is provided by the Theming MCP only. The CLI MCP server requires STDIO transport; HTTP-based MCP clients are not supported. Agent Skills and the CLI MCP server do not modify project files autonomously - they expose tools and instructions to the active AI agent, which acts on developer prompts.
-
 ## Configure the AI Toolchain
 
-Run this command from the root of your existing Angular ,React or WebComponents project. It copies Agent Skills into the agent discovery path and writes the Ignite UI MCP server and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+Run this command from the root of your project. It copies Agent Skills into the agent discovery path and writes the Ignite UI MCP server and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
 
 ```bash
 npx igniteui-cli ai-config
@@ -87,16 +85,44 @@ Quit and relaunch Claude Desktop. The servers start automatically on launch.
  
 If you ran `ai-config` without Ignite UI installed and want to add Skills, install the Ignite UI package for your framework and re-run the command:
  
+<!-- Angular -->
+
 ```bash
-# Angular
 npm install igniteui-angular
 npx igniteui-cli@latest ai-config
- 
-# React
-npm install @infragistics/igniteui-react
+```
+
+<!-- end: Angular -->
+
+<!-- React -->
+
+```bash
+npm install igniteui-react
 npx igniteui-cli@latest ai-config
 ```
- 
+
+<!-- end: React -->
+
+<!-- WebComponents -->
+
+```bash
+npm install igniteui-webcomponents
+npx igniteui-cli@latest ai-config
+```
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+> [!Note]
+> For Blazor, the `ai-config` command is not currently available. Install the skills using the GitHub CLI:
+
+```bash
+gh skill install IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
+
 The command detects that Skills are now available and copies them. The MCP server entries in `.vscode/mcp.json` are left unchanged (already up-to-date)
 
 ## The AI Toolchain at a Glance
