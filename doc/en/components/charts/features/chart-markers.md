@@ -23,13 +23,13 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 
 ## {Platform} Chart Marker Size
 
-You can control the exact pixel dimensions of data point markers by setting the `MarkerSize` property on any series that supports markers. This gives you precise control over how large markers appear on screen, regardless of the marker template or style being used.
+You can control the exact device-independent pixel dimensions of data point markers by setting the `MarkerSize` property on any series that supports markers. This gives you precise control over how large markers appear on screen, regardless of the marker template or style being used.
 
-By default, marker sizing is determined by the series marker template. When you set `MarkerSize` to a specific numeric value, all markers in that series render at that exact pixel width and height. Setting `MarkerSize` back to `NaN` restores the default template-driven sizing.
+By default, marker sizing is determined by the series marker template. When you set `MarkerSize` to a specific numeric value, all markers in that series render at that exact device-independent pixel width and height. Setting `MarkerSize` back to `NaN` restores the default template-driven sizing.
 
 The `MarkerSize` property is available on all series types that derive from `MarkerSeries`, including `LineSeries`, `SplineSeries`, `AreaSeries`, `ColumnSeries`, `ScatterSeries`, `ScatterLineSeries`, `ScatterSplineSeries`, and polar/radial series types.
 
-The following code examples show how to set `MarkerSize` to 30 pixels on a `ScatterLineSeries` in the `XamDataChart` control:
+The following code examples show how to set `MarkerSize` to 30 device-independent pixels on a `ScatterLineSeries` in the `XamDataChart` control:
 
 ```razor
 <IgbDataChart>
