@@ -29,6 +29,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 | 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
 | 41594 | IgxDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
 
+### Enhancements
+
+### {PackageCharts}
+
+- Added `RangeBarSeries` support for horizontal range rendering in `IgxDataChart`.
+
 ## **{PackageVerChanges-26-1-JAN}**
 
 ### Enhancements

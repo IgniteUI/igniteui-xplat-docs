@@ -24,6 +24,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 | 3229  | Grids | Latest version of Blazor Grids shows Trial watermark for Licensed version |
 | 2754  | IgbTabs | Changing the check state for IgbSwitch inside the tab causes the tab content to disappear |
 
+### Enhancements
+
+### {PackageCharts}
+
+- Added `RangeBarSeries` support for horizontal range rendering in `IgbDataChart`.
+
 ## **{PackageVerChanges-25-2-MAR}**
 
 ### {PackageGrids} (Grids)

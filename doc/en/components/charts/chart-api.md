@@ -39,7 +39,7 @@ The {Platform} `XamDataChart` can use the following type of series that inherit 
 
 | Category Series  | Stacked Series |
 |------------------|----------------|
-| - `AreaSeries` <br> - `BarSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> - `PointSeries`  <br> - `SplineSeries` <br>  - `SplineAreaSeries` <br> - `StepLineSeries` <br> - `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | - `StackedAreaSeries` <br> - `StackedBarSeries` <br> - `StackedColumnSeries` <br> - `StackedLineSeries` <br> - `StackedSplineSeries` <br> - `Stacked100AreaSeries` <br> - `Stacked100BarSeries` <br> - `Stacked100ColumnSeries` <br> - `Stacked100LineSeries` <br> - `Stacked100SplineSeries` <br> <br> <br> |
+| - `AreaSeries` <br> - `BarSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> - `PointSeries`  <br> - `SplineSeries` <br>  - `SplineAreaSeries` <br> - `StepLineSeries` <br> - `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `RangeBarSeries` <br> - `WaterfallSeries` <br> | - `StackedAreaSeries` <br> - `StackedBarSeries` <br> - `StackedColumnSeries` <br> - `StackedLineSeries` <br> - `StackedSplineSeries` <br> - `Stacked100AreaSeries` <br> - `Stacked100BarSeries` <br> - `Stacked100ColumnSeries` <br> - `Stacked100LineSeries` <br> - `Stacked100SplineSeries` <br> <br> <br> |
 
 
 | Scatter Series | Financial Series |
@@ -122,6 +122,5 @@ You can find more information about charts in these topics:
 
 - [Chart Overview](chart-overview.md)
 - [Chart Features](chart-features.md)
-
 
 
