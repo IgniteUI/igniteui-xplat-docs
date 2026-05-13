@@ -239,7 +239,7 @@ gh skill install IgniteUI/igniteui-blazor
 
 <!-- end: Blazor -->
 
-You will be asked to select which skills to install (components, grids, theming) and the target Agents for the skill files in your project. The CLI will then download and place the selected skill files into the chosen location.
+You will be asked to select which skills to install (components, grids, theming) and the target Agents for the skill files in your project. The CLI will then download and place the selected skill according to the chosen Agents.
 
 To update skills later, run the following command:
 
