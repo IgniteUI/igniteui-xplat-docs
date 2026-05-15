@@ -78,6 +78,10 @@ To reset markers to their default template-driven size, set `MarkerSize` to `NaN
 <IgrLineSeries markerSize={NaN} markerType="Circle" ... />
 ```
 
+The following sample demonstrates `MarkerSize` on scatter series with an interactive editor:
+
+`sample="/charts/data-chart/scatter-marker-options", height="500", alt="{Platform} Chart Marker Size Example"`
+
 > [!NOTE]
 > For `BubbleSeries`, the `MarkerSize` property does not override the bubble radius, which is controlled by the radius data column and the `RadiusScale`. Bubble sizes remain entirely driven by the data and scale configuration.
 

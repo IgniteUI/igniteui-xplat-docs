@@ -81,6 +81,10 @@ _language: ja
 <IgrLineSeries markerSize={NaN} markerType="Circle" ... />
 ```
 
+次のサンプルは、インタラクティブなエディターを使用して散布図シリーズで `MarkerSize` を示しています。
+
+`sample="/charts/data-chart/scatter-marker-options", height="500", alt="{Platform} チャート マーカー サイズの例"`
+
 > [!NOTE]
 > `BubbleSeries` の場合、`MarkerSize` プロパティはバブルの半径をオーバーライドしません。バブルの半径は、半径データ列と `RadiusScale` によって制御されます。バブルのサイズは、データとスケールの構成によって完全に決まります。
 
