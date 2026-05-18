@@ -336,7 +336,20 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 `sample="/layouts/stepper/steptypes", height="300", alt="{Platform} Step Types Example"`
 
-<div class="divider--half"></div>
+
+### Dynamic Step Height
+
+When the `Stepper` is horizontally oriented, the content area height is determined by the step with the most content. All other steps share this fixed height, which may result in visible empty space in steps with less content.
+
+To override the fixed height and have the content area adapt to the active step's content, set the `--body-grid-rows` CSS variable to `0fr` (the default is `1fr`):
+
+```css
+igc-stepper {
+  --body-grid-rows: 0fr;
+}
+```
+
+`sample="/layouts/stepper/step-height", height="490", alt="{Platform} Content Height Example"`
 
 ### Stepper Animations
 
