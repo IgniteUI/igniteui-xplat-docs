@@ -133,7 +133,7 @@ When `--agents` and `--assistants` flags are not provided, `ig new` prompts you 
  ◯ None
 ```
 
-```
+```bash
 ? Which AI agents should receive skill files? (Press <space> to select)
 ❯◉ GitHub Copilot (.agents/skills/)
  ◉ Claude (.claude/skills/)
