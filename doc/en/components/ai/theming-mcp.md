@@ -47,11 +47,11 @@ Before configuring the MCP server, make sure you have:
 - **Node.js** (v18 or later) installed. This provides the `npx` command used to launch the server.
 
 <!-- Angular, React, WebComponents -->
-A project with an **Ignite UI package** listed as a dependency in `package.json`.
+- A project with an **Ignite UI package** listed as a dependency in `package.json`.
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
-A project with the **`IgniteUI.Blazor`** NuGet package installed.
+- A project with the **`IgniteUI.Blazor`** NuGet package installed.
 <!-- end: Blazor -->
 
 - An **AI client with MCP support** - for example, VS Code with GitHub Copilot, Cursor, Claude Desktop, Claude Code, or a JetBrains IDE with the AI Assistant plugin.

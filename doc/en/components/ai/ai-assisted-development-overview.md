@@ -1,6 +1,6 @@
 ﻿---
 title: AI-Assisted Development with Ignite UI - {ProductName}
-_description: Configure Agent Skills, the Ignite UI MCP server, and the Theming MCP server in your Angular, React, Blazor, or Web Components project with a single command - npx igniteui-cli ai-config. Grounds GitHub Copilot, Cursor, Claude Desktop, Claude Code, and JetBrains AI Assistant in correct Ignite UI APIs.
+_description: Configure Agent Skills, the Ignite UI MCP server, and the Theming MCP server in your Angular, React, Blazor, or Web Components project with a single command - npx igniteui-cli@latest ai-config. Grounds GitHub Copilot, Cursor, Claude Desktop, Claude Code, and JetBrains AI Assistant in correct Ignite UI APIs.
 _keywords: {Platform}, {ProductName}, Infragistics, MCP, Model Context Protocol, Ignite UI MCP server, Ignite UI Theming MCP, Agent Skills, AI, agent, Copilot, Cursor, Claude Code, ai-config
 _language: en
 _license: MIT
