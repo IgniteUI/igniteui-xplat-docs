@@ -101,7 +101,7 @@ After theming, the wizard prompts you to configure AI coding assistants. First, 
 
 Next, select which AI agents should receive skill files:
 
-```
+```bash
 ? Which AI agents should receive skill files? (Press <space> to select)
 ❯◉ GitHub Copilot (.agents/skills/)
  ◉ Claude (.claude/skills/)
