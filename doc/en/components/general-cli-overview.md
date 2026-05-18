@@ -283,7 +283,7 @@ ig mcp
 
 ### Quick Setup with `ig ai-config`
 
-The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files — all in a single step. Run it from your project root:
+The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files - all in a single step. Run it from your project root:
 
 ```bash
 npx igniteui-cli ai-config
@@ -349,7 +349,7 @@ ig ai-config --assistants generic vscode --agents claude copilot cursor
 
 #### Start the Servers
 
-After the command finishes, start the MCP servers in your AI client. The servers are configured but not yet running — the client needs to launch each server before its tools are available to the agent.
+After the command finishes, start the MCP servers in your AI client. The servers are configured but not yet running - the client needs to launch each server before its tools are available to the agent.
 
 **VS Code with GitHub Copilot:** Open `.vscode/mcp.json`. VS Code displays an inline **Start** button above each server entry. Click **Start** for both `igniteui` and `igniteui-theming`. Once started, VS Code shows the available tool count next to each server (for example, _"13 tools | 1 prompt"_). Alternatively, run **MCP: List Servers** from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`), select each server, and choose **Start**.
 
