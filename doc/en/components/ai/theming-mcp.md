@@ -46,7 +46,7 @@ Before configuring the MCP server, make sure you have:
 
 - **Node.js** (v18 or later) installed. This provides the `npx` command used to launch the server.
 
-- <!-- Angular, React, WebComponents -->
+<!-- Angular, React, WebComponents -->
 A project with an **Ignite UI package** listed as a dependency in `package.json`.
 <!-- end: Angular, React, WebComponents -->
 

@@ -54,13 +54,13 @@ If Ignite UI is **not** installed in the project:
 
 <!-- Angular, React, WebComponents -->
 > [!NOTE]
-> Ignite UI MCP servers configured in `.vscode/mcp.json`
+> Ignite UI MCP servers configured for your selected clients
 > No AI skill files found. Make sure packages are installed (`npm install`) and your Ignite UI packages are up-to-date.
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
 > [!NOTE]
-> Ignite UI MCP servers configured in `.vscode/mcp.json`
+> Ignite UI MCP servers configured for your selected clients
 <!-- end: Blazor -->
  
 The MCP servers are ready to use. Skills will be added automatically the next time you run `ai-config` after installing Ignite UI.
@@ -68,8 +68,8 @@ The MCP servers are ready to use. Skills will be added automatically the next ti
 If Ignite UI **is** installed in the project:
  
 > [!NOTE]
-> Ignite UI MCP servers configured in `.vscode/mcp.json`
-> Agent Skills copied to `.claude/skills/`
+> Ignite UI MCP servers configured for your selected clients
+> Agent Skills copied to your selected agents' skills directories
  
 Both the MCP servers and Skills are configured.
 
@@ -134,7 +134,7 @@ npx igniteui-cli@latest ai-config
 
 <!-- end: Blazor -->
 
-The command detects that Skills are now available and copies them. The MCP server entries in `.vscode/mcp.json` are left unchanged (already up-to-date).
+The command detects that Skills are now available and copies them. The MCP configuration files for your selected clients are left unchanged (already up-to-date).
 
 ## The AI Toolchain at a Glance
 
@@ -210,7 +210,7 @@ The `ai-config` command configures MCP servers, copies framework-specific skill 
 ng generate @igniteui/angular-schematics:ai-config
 ```
 
-This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
+This also registers the `@angular/cli` MCP server alongside the Ignite UI servers for your selected clients.
 <!-- end: Angular -->
 
 **Using the Ignite UI CLI:**
