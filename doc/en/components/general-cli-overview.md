@@ -123,7 +123,7 @@ The following arguments are available when creating a project:
 
 When `--agents` and `--assistants` flags are not provided, `ig new` prompts you to configure AI tooling as part of the project creation flow. After scaffolding the project, the wizard displays the following prompts:
 
-```
+```bash
 ? Which AI coding assistants do you want to configure MCP servers for? (Press <space> to select)
 ❯◉ VS Code (GitHub Copilot)
  ◉ Cursor
