@@ -341,7 +341,7 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 When the `Stepper` is horizontally oriented, the content area height is determined by the step with the most content. All other steps share this fixed height, which may result in visible empty space in steps with less content.
 
-To override the fixed height and have the content area adapt to the active step's content, set the `--body-grid-rows` CSS variable to `0fr` (the default is `1fr`):
+To override the fixed height and have the content area adapt to the active step's content, set the **--body-grid-rows** CSS variable to **0fr** (the default is **1fr**):
 
 ```css
 igc-stepper {
