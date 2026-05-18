@@ -89,7 +89,7 @@ Choose a theme for your application:
 
 After theming, the wizard prompts you to configure AI coding assistants. First, select which assistants should receive MCP server configuration:
 
-```
+```bash
 ? Which AI coding assistants do you want to configure MCP servers for? (Press <space> to select)
 ❯◉ VS Code (GitHub Copilot)
  ◉ Cursor
