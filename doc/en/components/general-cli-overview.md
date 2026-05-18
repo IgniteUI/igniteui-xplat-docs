@@ -1,4 +1,4 @@
----
+﻿---
 title: {Platform} CLI - {ProductName}
 _description: The {ProductName} CLI scaffolds {Platform} projects, adds pre-configured component views, and connects AI coding assistants via a built-in MCP server.
 _keywords: {Platform} cli, command line interface, {ProductName}, Infragistics,
@@ -30,19 +30,19 @@ The Ignite UI CLI does not replace Vite or other React tooling - projects create
 
 Install the Ignite UI CLI globally using npm:
 
-```cmd
+```bash
 npm install -g igniteui-cli
 ```
 
 Or, using yarn:
 
-```cmd
+```bash
 yarn global add igniteui-cli
 ```
 
 Verify the installation:
 
-```cmd
+```bash
 ig version
 ```
 
@@ -56,13 +56,13 @@ The guided wizard is the recommended starting point for new projects. It prompts
 
 To activate the wizard, run:
 
-```cmd
+```bash
 ig
 ```
 
 or:
 
-```cmd
+```bash
 ig new
 ```
 
@@ -73,7 +73,7 @@ For a step-by-step walkthrough of the wizard options, see [Step-by-Step Guide Us
 <!-- React -->
 To create a React project non-interactively, provide `react` as the framework and `igr-ts` as the project type:
 
-```cmd
+```bash
 ig new <project-name> --framework=react --type=igr-ts --template=top-nav
 ```
 
@@ -90,7 +90,7 @@ The following project templates are available for React:
 <!-- WebComponents -->
 To create a Web Components project non-interactively, provide `webcomponents` as the framework and `igc-ts` as the project type:
 
-```cmd
+```bash
 ig new <project-name> --framework=webcomponents --type=igc-ts --template=side-nav
 ```
 
@@ -149,13 +149,13 @@ Navigate through the options using the arrow keys, toggle selections with SPACE,
 
 To skip the AI configuration prompts entirely during project creation, pass `--assistants none --agents none`:
 
-```cmd
+```bash
 ig new my-app --framework=react --type=igr-ts --template=top-nav --assistants none --agents none
 ```
 
 To auto-configure AI tools without prompting, specify the desired values:
 
-```cmd
+```bash
 ig new my-app --framework=react --type=igr-ts --template=top-nav --assistants vscode --agents copilot claude
 ```
 
@@ -165,25 +165,25 @@ ig new my-app --framework=react --type=igr-ts --template=top-nav --assistants vs
 
 Once you have created a project, you can add additional component views at any point. Running `ig add` without arguments launches an interactive template browser:
 
-```cmd
+```bash
 ig add
 ```
 
 To add a specific component template directly, provide the template ID and a name for the new component:
 
-```cmd
+```bash
 ig add [component-template] [component-name]
 ```
 
 For example, to add a data grid component named `MyGrid`:
 
-```cmd
+```bash
 ig add grid MyGrid
 ```
 
 To list all available templates in the current project:
 
-```cmd
+```bash
 ig list
 ```
 
@@ -245,7 +245,7 @@ The following component templates are available for Web Components:
 
 The `start` command builds the application, starts a local web server, and opens it in your default browser:
 
-```cmd
+```bash
 ig start
 ```
 
@@ -285,13 +285,13 @@ ig mcp
 
 The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files — all in a single step. Run it from your project root:
 
-```cmd
+```bash
 npx igniteui-cli ai-config
 ```
 
 If you have the CLI installed globally:
 
-```cmd
+```bash
 ig ai-config
 ```
 
@@ -302,27 +302,27 @@ ig ai-config
 
 If no parameters are provided, the command enters interactive mode. You are first prompted to select which AI coding assistants should receive MCP server configuration:
 
-```
+```bash
 ? Which AI coding assistants do you want to configure MCP servers for? (Press <space> to select)
-❯◉ VS Code (GitHub Copilot)       → writes .vscode/mcp.json
- ◉ Cursor                          → writes .cursor/mcp.json
- ◯ Generic (.mcp.json)             → writes .mcp.json
- ◯ Gemini CLI                      → writes .gemini/settings.json
- ◯ JetBrains (AI Assistant)        → writes .junie/mcp.json
+❯◉ VS Code (GitHub Copilot)       - writes .vscode/mcp.json
+ ◉ Cursor                          - writes .cursor/mcp.json
+ ◯ Generic (.mcp.json)             - writes .mcp.json
+ ◯ Gemini CLI                      - writes .gemini/settings.json
+ ◯ JetBrains (AI Assistant)        - writes .junie/mcp.json
  ◯ None
 ```
 
 Next, you are prompted to select which AI agents should receive skill files:
 
-```
+```bash
 ? Which AI agents should receive skill files? (Press <space> to select)
-❯◉ GitHub Copilot (.agents/skills/) → copies skills to .agents/skills/
- ◉ Claude (.claude/skills/)          → copies skills to .claude/skills/
- ◉ Cursor (.cursor/rules/)           → copies skills to .cursor/rules/
- ◯ Codex (.codex/)                   → copies skills to .codex/
- ◯ Windsurf (.windsurfrules)         → copies skills to .windsurfrules/
- ◯ Gemini CLI (.gemini/)             → copies skills to .gemini/
- ◯ JetBrains Junie (.junie/)         → copies skills to .junie/guidelines/
+❯◉ GitHub Copilot (.agents/skills/) - copies skills to .agents/skills/
+ ◉ Claude (.claude/skills/)          - copies skills to .claude/skills/
+ ◉ Cursor (.cursor/rules/)           - copies skills to .cursor/rules/
+ ◯ Codex (.codex/)                   - copies skills to .codex/
+ ◯ Windsurf (.windsurfrules)         - copies skills to .windsurfrules/
+ ◯ Gemini CLI (.gemini/)             - copies skills to .gemini/
+ ◯ JetBrains Junie (.junie/)         - copies skills to .junie/guidelines/
  ◯ None
 ```
 
@@ -332,13 +332,13 @@ Navigate through the options using the arrow keys, toggle selections with SPACE,
 
 Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files:
 
-```cmd
+```bash
 ig ai-config --assistants vscode --agents copilot
 ```
 
 Target multiple assistants and agents in a single run:
 
-```cmd
+```bash
 ig ai-config --assistants generic vscode --agents claude copilot cursor
 ```
 
