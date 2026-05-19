@@ -558,30 +558,35 @@ However, it comes with trade-offs:
 
 We highly recommend using the standard Web Component styling approaches before resorting to this property:
 - CSS Variables and ::part API – Prefer customizing via exposed parts and variables.
-- "<link>" elements – For larger stylesheets, inject them inside the Shadow DOM.
-- Inline "<style>" tags – For small, scoped style overrides.
+- `<link>` elements – For larger stylesheets, inject them inside the Shadow DOM.
+- Inline `<style>` tags – For small, scoped style overrides.
 
 #### Example
 
 ```css
 igc-chat::part(header) {
-  background: var(--ig-primary-100);
+  background-color: var(--ig-gray-800);
+  color: var(--ig-warn-400);
 }
 
 igc-chat::part(message-container) {
-  border-radius: 12px;
-  padding: 0.5rem;
+  background: var(--ig-warn-200);
+  color: var(--ig-warn-200-contrast);
 }
 
-igc-chat::part(empty-state) {
-  font-style: italic;
-  color: var(--ig-gray-500);
+igc-chat::part(message-sent) {
+  background: var(--ig-warn-500);
+  color: var(--ig-warn-500-contrast);
+}
+
+igc-chat::part(message-header) {
+  color: var(--ig-warn-A700); 
 }
 ```
 
 This allows you to style the `Chat` to match your brand without replacing its functionality.
 
-`sample="/interactions/chat/styling", height="900", alt="Web Components Chat Styling Example"`
+`sample="/interactions/chat/styling", height="900", alt="{Platform} Chat Styling Example"`
 
 ## API Reference
 
