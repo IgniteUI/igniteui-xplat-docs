@@ -1,50 +1,61 @@
 ---
-title: オープンソース vs プレミアム | {ProductName} | インフラジスティックス
-_description: Ignite UI for Angular は、高速で機能が豊富なネイティブ Angular UI コンポーネントと、マテリアル デザインに基づく UI コントロールからなる完全なライブラリです。
+title: オープン ソース vs プレミアム | {ProductName} | インフラジスティックス
+_description: {ProductName} は、高速で機能が豊富なネイティブ Angular UI コンポーネントと、マテリアル デザインに基づく UI コントロールからなる完全なライブラリです。
 _keywords: {ProductName}, はじめに, angular コンポーネント
 _language: ja
 ---
 
-# Ignite UI for Angular におけるオープンソース版とプレミアム版
+# {ProductName} におけるオープン ソース版とプレミアム版
 
-{ProductName} では、モダンなデータ ドリブン アプリケーションを構築するために、オープンソース コンポーネントとプレミアム コンポーネントという 2 つのパスを提供しています。この二本立てのアプローチにより、開発者はプロジェクトのあらゆる段階で最適な選択が可能になります。
+{ProductName} では、モダンなデータ ドリブン アプリケーションを構築するために、オープン ソース コンポーネントとプレミアム コンポーネントという 2 つのパスを提供しています。この二本立てのアプローチにより、開発者はプロジェクトのあらゆる段階で最適な選択が可能になります。
 
-## オープンソース コンポーネント
- 
+## オープン ソース コンポーネント
+
 MIT ライセンスのもとで利用できる 40 以上の UI コンポーネントを提供しています。[グリッド ライト](../components/grid-lite/overview.md)、アコーディオン、アバター、バッジ、バナー、ボタン、カレンダー、カルーセル、チェックボックス、チップ、コンボボックス、日付ピッカー、ドロップダウン、入力、リスト ビュー、スナックバーなどが含まれます。([全コンポーネントの比較表](#全コンポーネントの比較表))。
 
-すべてのオープンソース コンポーネントは、トピックのヘッダーに次のようにマークされています。![alt text](/doc/jp/images/open-source-text.png)
- 
+すべてのオープン ソース コンポーネントは、トピックのヘッダーに次のようにマークされています。![alt text](../images/open-source-text.png)
+
 これらは、エンタープライズ向けの高度な機能までは必要としない、軽量なアプリケーションに最適です。プロダクション環境で自由に利用できるほか、カスタマイズやフォーク、GitHub を通じたコントリビュートも可能です。商用ライセンスは不要です。
 
 ## プレミアム コンポーネント
 
 Ignite UI のプレミアム コンポーネントは、高度なエンタープライズ機能を備え、高いパフォーマンスと豊富な機能を求める複雑なアプリケーション向けに設計されています。プレミアム コンポーネントには、次のようなものが含まれます。
- 
+
+### グリッドと高度なコンポーネント
+
+<!-- Blazor -->
 - [データ グリッド](../components/grids/data-grid.md)、[階層グリッド](../components/grids/hierarchical-grid/overview.md)、[ツリー グリッド](../components/grids/tree-grid/overview.md)、[ピボット グリッド](../components/grids/pivot-grid/overview.md)
 - [ドック マネージャー](../components/layouts/dock-manager.md)
 - [チャート ライブラリ](../components/charts/chart-overview.md)
 - [マップ ライブラリ](../components/geo-map.md)
-<!-- React, WebComponents -->
-- [スプレッドシート](../components/spreadsheet-overview.md)
-<!-- end: React, WebComponents -->
 - [Excel ライブラリ](../components/excel-library.md)
 - ゲージ - [ブレットグラフ](../components/bullet-graph.md)、[リニア ゲージ](../components/linear-gauge.md) および [ラジアル ゲージ](../components/radial-gauge.md)
 - [ツールバー](../components/menus/toolbar.md)
+<!-- end: Blazor -->
+<!-- React, WebComponents -->
+- [データ グリッド](../components/grids/data-grid.md)、[階層グリッド](../components/grids/hierarchical-grid/overview.md)、[ツリー グリッド](../components/grids/tree-grid/overview.md)、[ピボット グリッド](../components/grids/pivot-grid/overview.md)
+- [ドック マネージャー](../components/layouts/dock-manager.md)
+- [チャート ライブラリ](../components/charts/chart-overview.md)
+- [マップ ライブラリ](../components/geo-map.md)
+- [スプレッドシート](../components/spreadsheet-overview.md)
+- [Excel ライブラリ](../components/excel-library.md)
+- ゲージ - [ブレットグラフ](../components/bullet-graph.md)、[リニア ゲージ](../components/linear-gauge.md) および [ラジアル ゲージ](../components/radial-gauge.md)
+- [ツールバー](../components/menus/toolbar.md)
+<!-- end: React, WebComponents -->
 
-すべてのプレミアム コンポーネントは、トピックのヘッダーに次のようにマークされます。![alt text](/doc/jp/images/premium-text.png)
- 
+すべてのプレミアム コンポーネントは、トピックのヘッダーに次のようにマークされます。![alt text](../images/premium-text.png)
+
 すべてのプレミアム コンポーネントはローカル環境で評価できるほか、ウォーターマーク付きでプロダクション環境でもテスト可能です。ただし、顧客向けの本番デプロイや、高度なグリッドやチャートをはじめとする各種プレミアム コントロールのフル機能を利用するには、商用ライセンスが必要です。
 
-## アップグレードパス
- 
+## アップグレード パス
+
 まずは基本機能を提供する グリッド ライトから利用を開始し、アプリケーションの要件や複雑さが増すにつれて、フル機能のデータ グリッドへシームレスにアップグレードできます。これにより、リファクタリングを最小限に抑えながら、エンタープライ ズレベルの機能へスムーズに移行できます。
 
 ## 全コンポーネントの比較表
 
 <!-- WebComponents -->
 
-| コンポーネント                          | オープンソース | プレミアム |
+| コンポーネント                          | オープン ソース | プレミアム |
 |-----------------------------------|-------------|---------|
 | Accordion                         | ✅          | ✅      |
 | AI Chat                           | ✅          | ✅      |
@@ -138,7 +149,7 @@ Ignite UI のプレミアム コンポーネントは、高度なエンタープ
 | Tile Manager                      | ✅          | ✅      |
 | Toast                             | ✅          | ✅      |
 | Toggle Button                     | ✅          | ✅      |
-| Toolbar                           | ✅          | ✅      |
+| Toolbar                           | ❌          | ✅      |
 | Tooltip                           | ✅          | ✅      |
 | Tree                              | ✅          | ✅      |
 | Zoom Slider                       | ❌          | ✅      |
@@ -147,7 +158,7 @@ Ignite UI のプレミアム コンポーネントは、高度なエンタープ
 
 <!-- React -->
 
-| コンポーネント                          | オープンソース | プレミアム |
+| コンポーネント                          | オープン ソース | プレミアム |
 |-----------------------------------|-------------|---------|
 | Accordion                         | ✅          | ✅      |
 | AI Chat                           | ✅          | ✅      |
@@ -250,7 +261,7 @@ Ignite UI のプレミアム コンポーネントは、高度なエンタープ
 
 <!-- Blazor -->
 
-| コンポーネント                          | オープンソース | プレミアム |
+| コンポーネント                          | オープン ソース | プレミアム |
 |-----------------------------------|-------------|---------|
 | Accordion                         | ✅          | ✅      |
 | Avatar                            | ✅          | ✅      |

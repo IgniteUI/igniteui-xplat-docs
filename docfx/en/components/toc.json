@@ -1,4 +1,33 @@
 [
+ {
+  "name": "AI-Assisted Development",
+  "header": true
+  },
+  {
+    "name": "Agent Workflow",
+    "href": "ai/ai-assisted-development-overview.md",
+    "status": "new"
+  },
+  {
+    "name": "Agent Skills",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "name": "CLI MCP",
+    "href": "ai/cli-mcp.md",
+    "status": "new"
+  },
+  {
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+    {
+    "name": "Maker Framework",
+    "href": "ai/maker-framework.md",
+    "status": "new"
+  },
   {
     "name": "General",
     "header": true
@@ -27,9 +56,16 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular"],
+    "name": "Localization(i18n)",
+    "href": "localization.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Open-Source vs Premium",
-    "href": "general-open-source-vs-premium.md"
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -59,6 +95,11 @@
         "name": ".NET MAUI Blazor App",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+        "name": "Open-Source Libraries",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },
@@ -66,7 +107,15 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
-    "status": ""
+    "status": "UPDATED",
+    "items": [
+      {
+        "exclude": ["Angular", "Blazor"],
+        "name": "Step-by-Step Guide Using Ignite UI CLI",
+        "href": "general-step-by-step-guide-using-cli.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Blazor", "Angular"],
@@ -75,27 +124,33 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor", "React", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "How to",
-      "status": "",
+      "status": "NEW",
       "items": [
         {
-          "exclude": ["Angular", "React", "WebComponents"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "Blazor Excel Library",
           "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
           "status": ""
         },
         {
-          "exclude": ["Angular", "React", "WebComponents"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "How To Read & Write Excel Files To Reduce Server Load",
           "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
           "status": ""
         },
         {
-          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "exclude": ["Angular", "Blazor", "React", "WebComponents"],
           "name": "How To Customize Marker Display in Blazor Charts",
           "href": "customize-marker-display-in-blazor-charts.md",
           "status": ""
+        },
+        {
+          "exclude": ["Angular", "Blazor"],
+          "name": "Build App with CLI MCP and Theming MCP",
+          "href": "general-how-to-mcp-e2e.md",
+          "status": "new"
         }
       ]
   },
@@ -254,9 +309,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -526,9 +582,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -794,9 +851,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Export to Excel",
+        "name": "Exporting",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -1877,6 +1935,12 @@
     "status": "new"
   },
   {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Splitter",
+    "href": "layouts/splitter.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
@@ -2139,6 +2203,12 @@
     "href": "zoomslider-overview.md",
     "status": ""
   },
+    {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Query Builder",
+    "href": "inputs/query-builder.md",
+    "status": "new"
+  },
   {
     "exclude": ["Angular"],
     "name": "Notifications",
@@ -2181,7 +2251,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Date Range Picker",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"
@@ -2232,248 +2302,5 @@
     "name": "Custom Tailwind Classes",
     "href": "themes/tailwind.md",
     "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Deprecated Components",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Table / Grid",
-    "href": "grids/data-grid/overview.md",
-    "items": [
-      {
-        "exclude": ["Angular"],
-        "name": "Accessibility Compliance",
-        "href": "grids/data-grid/accessibility.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Binding Live Data",
-        "href": "grids/data-grid/live-data.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Binding Local Data",
-        "href": "grids/data-grid/local-data.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Localization",
-        "href": "grids/data-grid/localization.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular", "Blazor"],
-        "name": "Binding Comparison Data",
-        "href": "grids/data-grid/type-comparison-table.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular", "React", "Blazor"],
-        "name": "Binding Heatmap Data",
-        "href": "grids/data-grid/type-heatmap-table.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular", "React", "Blazor"],
-        "name": "Binding Matrix Data",
-        "href": "grids/data-grid/type-matrix-table.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular", "React", "Blazor"],
-        "name": "Binding Periodic Data",
-        "href": "grids/data-grid/type-periodic-table.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular", "React", "Blazor"],
-        "name": "Binding Virtual Data",
-        "href": "grids/data-grid/remote-data.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Cell Activation",
-        "href": "grids/data-grid/cell-activation.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Grid Editing",
-        "href": "grids/data-grid/cell-editing.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Cell Merging",
-        "href": "grids/data-grid/cell-merging.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Cell Selection",
-        "href": "grids/data-grid/cell-selection.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Animations",
-        "href": "grids/data-grid/column-animation.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Filtering",
-        "href": "grids/data-grid/column-filtering.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Moving",
-        "href": "grids/data-grid/column-moving.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Chooser",
-        "href": "grids/data-grid/column-chooser.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Options",
-        "href": "grids/data-grid/column-options.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Pinning",
-        "href": "grids/data-grid/column-pinning.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Resizing",
-        "href": "grids/data-grid/column-resizing.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Sorting",
-        "href": "grids/data-grid/column-sorting.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Sparkline",
-        "href": "grids/data-grid/type-sparkline-table.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Summaries",
-        "href": "grids/data-grid/column-summaries.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Column Types",
-        "href": "grids/data-grid/column-types.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "High Performance",
-        "href": "grids/data-grid/performance.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Horizontal Scrolling",
-        "href": "grids/data-grid/horizontal-scrolling.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Load & Save Grid Layout",
-        "href": "grids/data-grid/load-save-layout.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Row Grouping",
-        "href": "grids/data-grid/row-grouping.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Row Highlighting",
-        "href": "grids/data-grid/row-highlighting.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Row Paging",
-        "href": "grids/data-grid/row-paging.md",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Row Pinning",
-        "href": "grids/data-grid/row-pinning.md",
-        "status": "",
-        "premium": true
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Theming",
-        "href": "grids/theming.md",
-        "premium": true
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": "",
-    "premium": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "XDate Picker",
-    "href": "editors/xdate-picker.md",
-    "status": "",
-    "premium": true
   }
 ]

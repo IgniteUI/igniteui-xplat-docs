@@ -13,6 +13,137 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageCommon}
+
+#### Changed
+
+- `DockManager`: Updated to use the latest `igniteui-dockmanager@2.1.0` with new `minResizeWidth` and `minResizeHeight` properties, `paneFlyoutToggle` event; additional `layoutChange` event detail and fixes. See the [full changelog](https://github.com/IgniteUI/igniteui-dockmanager/blob/master/CHANGELOG.md#210).
+- Updated to use the latest `igniteui-webcomponents@7.1.0` including new `Splitter` and `Highlight` container components and fixes. See the [full changelog](https://github.com/IgniteUI/igniteui-webcomponents/blob/master/CHANGELOG.md#710---2026-03-19).
+
+#### New Features
+
+- #### AI-Assisted Development - Agent Skills
+  - Structured knowledge files that teach AI coding assistants (GitHub Copilot, Cursor, Windsurf, Claude, JetBrains AI, etc.) how to work with Ignite UI for React.
+  - The skill files are included in the `igniteui-react` package and also live in the [skills/](https://github.com/IgniteUI/igniteui-react/tree/master/skills) directory:
+    - **components** - Identify the right React components (`Igr*`) for a UI pattern, then install, import, and use them — JSX patterns, events, refs, forms, etc.
+    - **customize-theme** - Customize styling using CSS custom properties, Sass, and the theming system in React, including using Ignite UI Theming MCP server.
+    - **optimize-bundle-size** - Reduce bundle size with granular imports, tree-shaking, and lazy loading.
+  - These skills are automatically discovered when placed in the agent's skills path (e.g. `.agents/skills` or `.claude/skills`).
+
+## **{PackageVerChanges-26-2-MAR}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+| 3055 | IgrDataPieChart | missing styling properties for the Others Slice |
+| 38668 | IgrDataTooltipLayer | TitleTextColor is overriden when chart's TitleTextColor is used |
+| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
+| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+| 41594 | IgrDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series. |
+
+## **{PackageVerChanges-26-2-FEB}**
+### {PackageCommon}
+
+#### New Features
+
+- #### AI-Assisted Development - Copilot Skills
+  - Four end-user skills are now shipped with the `{PackageCommon}` package under the `skills/` directory providing step-by-step guidance to GitHub Copilot and other LLM agents for common tasks:
+    - **igniteui-wc-choose-components** - Identify the right component for a given UI pattern.
+    - **igniteui-wc-integrate-with-framework** - Set up and use components in React, Angular, Vue, or vanilla JS.
+    - **igniteui-wc-customize-component-theme** - Apply custom styles via CSS custom properties, parts, and the theming system.
+    - **igniteui-wc-optimize-bundle-size** - Reduce production bundle size through selective imports and lazy loading.
+- #### Chat
+  - `adoptRootStyles` can now be toggled on/off at runtime.
+
+
+#### Breaking Changes
+
+- #### Themes
+  - Changed global prefixes for CSS custom properties for component themes to align with other Ignite UI component libraries.
+
+- #### Chat
+  - Removed the `typingIndicator` template renderer. Use the `typing-indicator` slot instead.
+
+- #### Tooltip
+  - Removed the `disableArrow` deprecated property.
+
+- #### Library
+  - Minimum Node version required is now >= 22.
+
+  #### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|[2033](https://github.com/IgniteUI/igniteui-webcomponents/pull/2033)|Carousel|Context instantiation in Blazor|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Combo|Correct cursor style over non input parts|
+|[2085](https://github.com/IgniteUI/igniteui-webcomponents/pull/2085)|Textarea|Correct cursor style over non input parts|
+
+### {PackageGrids} (Grids)
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+**Breaking Changes**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`
+  - Original `data` array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array reference change for the change to be detected.
+
+**Localization(i18n)**
+
+- `IgrGrid`, `IgrTreeGrid`, `IgrHierarchicalGrid`, `IgrPivotGrid`, `IgrCombo`, `IgrDatePicker`, `IgrDateRangePicker`, `IgrCalendar`, `IgrCarousel`, `IgrChip`, `IgrInput`, `IgrTree`
+  - New `Intl` implementation for the grid components that format and render data like dates and numbers. Updated `Intl` implementation for `IgrCalendar`, `IgrDatePicker`, and `IgrDateRangePicker`.
+  - New localization implementation for the currently supported languages for all components that have resource strings in the currently supported languages.
+  - New public localization API and package named `igniteui-i18n-resources` containing the new resources that are used in conjunction.
+
+**PDF export**
+- Added PDF export functionality allowing users to export grid data to PDF format.
+
+**Popover API**
+
+- Dropdown menus and dialogs are now using HTML Popover API to provide better positioning and accessibility.
+
+## **{PackageVerChanges-25-2-FEB}**
+
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|2270|IgrDataChart|Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis |
+|2251|igniteui-react-layouts|Skip resolving property editor props containing @constantValues |
+|2353|IgrDataChart|syntax error while building infragistics.dvcommonwidget.js |
+|2354|IgrDataChart|infragistics.dvcommonwidget.js has "unser" typo instead of "unset" in case names |
+|2338|IgrDataPieChart|SeriesPointerMove event doesn't fire correctly when StartAngle is set |
+|2235|Excel|Workbook.Load() throwing a Excel.FormulaParseException. |
+|2234|IgrRadialChart|Added a check for bucket size equals to 0 |
+|2234|IgrDataChart|fix GetCategoryIndexAxis() for annotation layers |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|33808|IgrDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
+|34255|IgrDataChart|0.00001 scale tick marks are displayed overlapping each other|
+|38510|IgrDataChart|AssigningCategoryStyle event support for Stacked Series|
+
+### Enhancements
+
+#### Charts
+
+- Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
+
+- Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
+
+## **{PackageVerChanges-25-2-NOV}**
+
 ### {PackageCharts} (Charts)
 
 #### <label>PREVIEW</label> User Annotations
@@ -364,7 +495,8 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-APR2}**
-> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
+> [!Note]
+> With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
 
 [Update Guide](update-guide.md)
 
@@ -720,7 +852,7 @@ DashboardTile <label>PREVIEW</label>
 
 ### Deprecated Components
 
-> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](grids/data-grid.md)
+> `DataGrid` - The DataGrid is deprecated, please use [Grid](grids/data-grid.md)
 
 ## **{PackageVerChanges-23-1}**
 
@@ -791,7 +923,7 @@ Added significant improvements to default behaviors, and refined the Category Ch
 
 ### {PackageGrids} (Data Grid)
 
-Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+Added New Feature - `Row Paging` which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -859,10 +991,10 @@ This release introduces a few improvements and simplifications to visual design 
 ### {PackageGrids} (Data Grid)
 
 - New Features Added:
-  - [Filter Row](grids/data-grid/column-filtering.md)
-  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-  - [Cell Merging](grids/data-grid/cell-merging.md)
+  - `Filter Row`
+  - `Load/Save Layout Customizations`
+  - `GroupBy Area for column grouping`
+  - `Cell Merging`
 - New API:
   - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
@@ -1037,7 +1169,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid/overview.md) |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | `Data Grid` |
 
 - Code After Changes
 

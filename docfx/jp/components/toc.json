@@ -1,5 +1,22 @@
 [
   {
+    "exclude": ["Blazor"],
+    "name": "AI 支援開発",
+    "header": true
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "エージェント スキル",
+    "href": "ai/skills.md",
+    "status": "new"
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "Theming MCP",
+    "href": "ai/theming-mcp.md",
+    "status": "new"
+  },
+  {
     "name": "概要",
     "header": true
   },
@@ -28,8 +45,9 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "オープンソース vs プレミアム",
-    "href": "general-open-source-vs-premium.md"
+    "name": "オープン ソース vs プレミアム",
+    "href": "general-open-source-vs-premium.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -59,6 +77,11 @@
         "name": ".NET MAUI Blazor のアプリケーション",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
+      },
+      {
+        "name": "オープン ソース ライブラリ",
+        "href": "general-getting-started-oss.md",
+        "status": "NEW"
       }
     ]
   },
@@ -252,9 +275,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -524,9 +548,10 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/hierarchical-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -774,27 +799,28 @@
             "exclude": ["Angular"],
             "name": "セルの編集",
             "href": "grids/tree-grid/cell-editing.md",
-        "premium": true
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "行の追加",
             "href": "grids/tree-grid/row-adding.md",
-        "premium": true
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "行の編集",
             "href": "grids/tree-grid/row-editing.md",
-        "premium": true
+            "premium": true
           }
         ]
       },
       {
         "exclude": ["Angular"],
-        "name": "Excel へのエクスポート",
+        "name": "エクスポート",
         "href": "grids/tree-grid/export-excel.md",
-        "premium": true
+        "premium": true,
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -2179,7 +2205,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "日付範囲ピッカー",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"

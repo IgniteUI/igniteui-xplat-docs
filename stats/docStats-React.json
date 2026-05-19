@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 775,
+  "samplesCount": 786,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1067,6 +1067,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/layout-display-density": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/size"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/localization": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/localization"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/master-detail": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/master-detail"
     ],
@@ -1720,6 +1723,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/dot": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/outlined": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge"
     ],
@@ -2062,6 +2068,12 @@
     "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/query-builder/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/query-builder"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/query-builder/template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/query-builder"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
     ],
@@ -2160,6 +2172,15 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/base": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/nested": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/stepper/animations": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/stepper"
@@ -2333,6 +2354,15 @@
     "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/disabled-dates": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/formatting": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/header": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
@@ -2346,6 +2376,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/special-dates": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling": [
@@ -2394,7 +2427,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 326,
+  "topicsCount": 335,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3479,6 +3512,7 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/dot",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/outlined",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/shape",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/styling",
@@ -3579,6 +3613,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/value-modes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/query-builder": [
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/query-builder/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/query-builder/template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/alignment",
@@ -3697,6 +3735,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/sizing",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/splitter": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/base",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/nested",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/splitter/styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/stepper": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/stepper/animations",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/stepper/linear",
@@ -3729,6 +3772,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/ranges",
       "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/scale",
       "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/localization": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/localization"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-bar/overview",
@@ -3781,11 +3827,15 @@
       "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/tickmarks"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/disabled-dates",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/formatting",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/header",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-selection",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/range-selection",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/special-dates",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers"
     ],

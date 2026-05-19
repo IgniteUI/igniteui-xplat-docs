@@ -227,7 +227,7 @@ public class SingersData : List<SingersDataItem>
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={singers} autoGenerate={true}>
+<IgrHierarchicalGrid autoGenerate={true} data={singers}>
     <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
         <IgrRowIsland childDataKey="Songs" autoGenerate={true}>
         </IgrRowIsland>

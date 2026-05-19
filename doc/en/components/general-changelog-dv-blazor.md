@@ -18,6 +18,132 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+| 3229  | Grids | Latest version of Blazor Grids shows Trial watermark for Licensed version |
+| 2754  | IgbTabs | Changing the check state for IgbSwitch inside the tab causes the tab content to disappear |
+
+## **{PackageVerChanges-25-2-MAR}**
+
+### {PackageGrids} (Grids)
+
+#### IgbQueryBuilder
+- Added new component - IgbQueryBuilder - a UI component that allows users to build complex filtering conditions through an intuitive visual interface.
+
+#### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
+  - Improved performance by dynamically adjusting the scroll throttle based on the data displayed in grid.
+
+#### IgbGrid, IgbTreeGrid, IgbHierarchicalGrid
+  - Added PDF export functionality to grid components. Grids can now be exported to PDF format alongside the existing Excel and CSV export options.
+
+#### Breaking Changes
+
+- IgbGrid, IgbTreeGrid, IgbHierarchicalGrid, IgbPivotGrid
+  - Original data array mutations (like adding/removing/moving records in the original array) are no longer detected automatically. Components need an array ref change for the change to be detected.
+
+### General
+
+#### IgbThemeProvider
+- Added new component - IgbThemeProvider - allows scoping themes to specific page sections using Lit's context API, enabling multiple themes on a single page. Works in both Shadow and Light DOM.
+
+#### Badge
+ - New dot type, improved outline implementation following WCAG AA accessibility standards and theme based sizing. [#1889](https://github.com/IgniteUI/igniteui-webcomponents/pull/1889)
+
+#### Checkbox
+  - New --tick-width CSS property. [#1897](https://github.com/IgniteUI/igniteui-webcomponents/pull/1897)
+#### Combo
+  - New disableClear property which disables the clear button of the combo component. [#1896](https://github.com/IgniteUI/igniteui-webcomponents/pull/1896)
+#### Mask input
+  - Transform unicode digit code points to ASCII numbers for numeric patterns. [#1907](https://github.com/IgniteUI/igniteui-webcomponents/pull/1907)
+
+
+#### Enhancements
+ - Accessibility color adjustments for Button, Button group, Calendar, Checkbox, Date picker, date range picker, Nav drawer, Radio group, Stepper. [#1959](https://github.com/IgniteUI/igniteui-webcomponents/pull/1959)
+ - Updated and aligned styles with the design kit for Button, Calendar, Carousel, Combo, Date picker, Date range picker, input, Select, Textarea.
+ - Improved keyboard navigation experience and grouping(now using native Math.groupBy) for Combo.
+
+
+### Bug Fixes
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+| 2189  | IgbDataChart | DataChart skips rendering axis when there are no labels |
+| 2317  | IgbGrid | Improve IgbGrid BodyTemplate Performance (C#/.NET templating) |
+| 2326  | IgbDataPieChart | Added OthersCategory styling properties to DataPieChart |
+| 2907  | IgbDateTimeInput  | IgbDateTimeInput Prompt parameter is not propagated to the underlying Web Component prompt property |
+| 2908  | IgbMaskInput | IgbMaskInput Prompt parameter is not propagated to the underlying Web Component prompt property |
+| 2909  | IgbPivotGrid  | IgbPivotGrid exposes SnackbarDisplayTime, but the property is not applicable and causes false test failures |
+| 38668 | IgbDataTooltipLayer | TitleTextColor is overridden when chart's TitleTextColor is used |
+| 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
+| 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
+| 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+| 41594 | IgbDataChart | AssigningCategoryStyle args.GetItems is null or not working to update items in the fragment series |
+| 41598 | IgbDataChart | Exception editing a doughnut chart – DivideByZeroException  |
+| [#2079](https://github.com/IgniteUI/igniteui-webcomponents/pull/2079) | Calendar | `aria-hidden` state for weeks outside of the current month |
+| [#2078](https://github.com/IgniteUI/igniteui-webcomponents/pull/2078) | Date Picker | CSS border for slotted actions in dialog mode |
+| [#2068](https://github.com/IgniteUI/igniteui-webcomponents/pull/2068) | Input | Placeholder color on focus |
+| [#2073](https://github.com/IgniteUI/igniteui-webcomponents/pull/2073) | Input | CSS border when suffix slot content is present |
+| [#2069](https://github.com/IgniteUI/igniteui-webcomponents/pull/2069) | Textarea | Align bottom padding to the design system |
+| [#2063](https://github.com/IgniteUI/igniteui-webcomponents/pull/2063) | Validation | Slotted validation text follows the current theme |
+| [#2059](https://github.com/IgniteUI/igniteui-webcomponents/pull/2059) | Tile Manager | Header is hidden only when there is no content and maximize/fullscreen are disabled |
+| [#2061](https://github.com/IgniteUI/igniteui-webcomponents/pull/2061) | Theming | Resolve initial theme based on document computed styles rather than stylesheets |
+| [#1909](https://github.com/IgniteUI/igniteui-webcomponents/pull/1909) | Sass Theme Support | Checkbox — styled using Sass tools from the theming package |
+| [#1926](https://github.com/IgniteUI/igniteui-webcomponents/pull/1926) | Sass Theme Support | Chip — styled using Sass tools from the theming package |
+| [#1920](https://github.com/IgniteUI/igniteui-webcomponents/pull/1920) | Sass Theme Support | Combo — styled using Sass tools from the theming package |
+| [#1933](https://github.com/IgniteUI/igniteui-webcomponents/pull/1933) | Sass Theme Support | Select — styled using Sass tools from the theming package |
+| [#1966](https://github.com/IgniteUI/igniteui-webcomponents/pull/1966) | Sass Theme Support | Snackbar — styled using Sass tools from the theming package |
+| [#1972](https://github.com/IgniteUI/igniteui-webcomponents/pull/1972) | Sass Theme Support | Added missing shadows to components |
+| [#1929](https://github.com/IgniteUI/igniteui-webcomponents/pull/1929) | Sass Theme Support | Tabs — fixed non-working Sass theme parameters |
+| [#1935](https://github.com/IgniteUI/igniteui-webcomponents/pull/1935) | Sass Theme Support | Textarea — updated Sass themes |
+| [#1980](https://github.com/IgniteUI/igniteui-webcomponents/pull/1980) | Sass Theme Support | Radio — styled using Sass tools from the theming package |
+| [#1991](https://github.com/IgniteUI/igniteui-webcomponents/pull/1991) | Sass Theme Support | Switch — styled using Sass tools from the theming package |
+| [#2015](https://github.com/IgniteUI/igniteui-webcomponents/pull/2015) | Sass Theme Support | List — styled using Sass tools from the theming package |
+| [#2030](https://github.com/IgniteUI/igniteui-webcomponents/pull/2030) | Calendar | Focus styles for month/year views |
+| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965) | Combo | Notch border styles |
+| [#1964](https://github.com/IgniteUI/igniteui-webcomponents/pull/1964) | Checkbox & Switch | Internal ripple opacity when hovering over slotted content in the `helper-text` slot |
+| [#1947](https://github.com/IgniteUI/igniteui-webcomponents/pull/1947) | Dialog | Underlying dialog element now has `display: contents` and won't participate in DOM layout |
+| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986) | Dialog | `keepOpenOnEscape` not preventing the dialog from closing when Escape is pressed |
+| [#1997](https://github.com/IgniteUI/igniteui-webcomponents/pull/1997) | Dialog | Base styles and theming |
+| [#1985](https://github.com/IgniteUI/igniteui-webcomponents/pull/1985) | List & List Item | Added missing styles for slotted `igc-icon` in the list item |
+| [#2010](https://github.com/IgniteUI/igniteui-webcomponents/pull/2010) | List & List Item | Icon and icon button sizes for the Indigo theme |
+| [#2006](https://github.com/IgniteUI/igniteui-webcomponents/pull/2006) | Mask Input | Auto-fill behavior for mask patterns with literals |
+| [#1956](https://github.com/IgniteUI/igniteui-webcomponents/pull/1956) | Navbar | Icon and icon button sizes |
+| [#1957](https://github.com/IgniteUI/igniteui-webcomponents/pull/1957) | Select | Color for outlined type |
+| [#1998](https://github.com/IgniteUI/igniteui-webcomponents/pull/1998) | Tabs | Add active pseudo-elements backgrounds for the active tab in Material theme |
+| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008) | Tabs | Take scale factor when positioning the active tab indicator |
+| [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028) | Tabs | Selected indicator alignment |
+| [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip | Do not show the tooltip when the tooltip target is clicked |
+| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | Removed the max-width constraint for slotted content |
+
+
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### Enhancements
+
+### {PackageCharts}
+
+Added OthersCategoryBrush and OthersCategoryOutline to DataPieChart and ProportionalCategoryAngleAxis
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|33808|IgbDataChart|The scale set for IntervalType Ticks in TimeAxisInterval is not displayed|
+|34255|IgbDataChart|0.00001 scale tick marks are displayed overlapping each other|
+|38510|IgbDataChart|AssigningCategoryStyle event support for Stacked Series|
+|41050|IgbDataChart|Axis is not being populated in IgbAxisMouseEventArgs|
+
+### Enhancements
+
+#### Charts
+
+- Added LabelFormatOverride event to TimeXAxisLabelFormat so you can now override the formatting with an event at all time-formatting levels on the TimeXAxis.
+
+- Adjusted the schema generation to account for more items to make it more likely to find valid values for properties.
+
+## **{PackageVerChanges-25-2-NOV}**
+
 **Breaking Changes**
 
 As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
@@ -870,7 +996,7 @@ Added significant improvements to default behaviors, and refined the Category Ch
 
 ### {PackageGrids} (Data Grid)
 
-Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+Added New Feature - `Row Paging` which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
 ### {PackageDockManager} (Dock Manager)
 
@@ -965,10 +1091,10 @@ This release introduces a few improvements and simplifications to visual design 
 ### {PackageGrids} (Data Grid)
 
 - New Features Added:
-  - [Filter Row](grids/data-grid/column-filtering.md)
-  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-  - [Cell Merging](grids/data-grid/cell-merging.md)
+  - `Filter Row`
+  - `Load/Save Layout Customizations`
+  - `GroupBy Area for column grouping`
+  - `Cell Merging`
 - New API:
   - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.

@@ -320,16 +320,44 @@ function transformCodeRefs(options: any) {
 
         if (resolvedName == null && options.mentionedTypes &&
             options.mentionedTypes.length > 0) {
+            // Walk the inheritance chain of each originally-mentioned type.
+            // When the member is found on a base class, keep apiTypeName
+            // anchored on the derived (originally-mentioned) type so the URL
+            // points at the public class page rather than an internal base.
+            const skipBaseTypes: { [key: string]: boolean } = {
+                "Object": true,
+                "Control": true,
+                "DependencyObject": true,
+                "EventArgs": true
+            };
+
             for (var i = 0; i < options.mentionedTypes.length; i++) {
-                let type = options.mentionedTypes[i];
-                resolvedName = mappings.getPlatformMemberName(
-                    <string>type,
-                    <APIPlatform>options.platform,
-                    <string>memberName, options.filePath);
-                if (resolvedName !== null) {
-                    apiTypeName = type;
-                    break;
+                let originallyMentioned: string = options.mentionedTypes[i];
+                let currentType: string | null = originallyMentioned;
+                let visited: { [key: string]: boolean } = {};
+
+                while (currentType && !visited[currentType]) {
+                    visited[currentType] = true;
+
+                    let hit = mappings.getPlatformMemberName(
+                        <string>currentType,
+                        <APIPlatform>options.platform,
+                        <string>memberName, options.filePath);
+                    if (hit !== null) {
+                        resolvedName = hit;
+                        apiTypeName = originallyMentioned;
+                        break;
+                    }
+
+                    let typeInfo = mappings.getType(currentType, options.filePath);
+                    if (!typeInfo || !typeInfo.originalBaseTypeName) break;
+                    if (skipBaseTypes[typeInfo.originalBaseTypeName]) break;
+
+                    currentType = typeInfo.originalBaseTypeNamespace
+                        ? typeInfo.originalBaseTypeNamespace + "." + typeInfo.originalBaseTypeName
+                        : typeInfo.originalBaseTypeName;
                 }
+                if (resolvedName !== null) break;
             }
         }
 
@@ -543,24 +571,9 @@ function getFrontMatterTypes(options: any, filePath: string) {
                 if (currTypeInfo?.originalNamespace) {
                     mentionedNamespace = currTypeInfo.originalNamespace;
                 }
-                if (currTypeInfo) {
-                    if (currTypeInfo.originalBaseTypeName) {
-                        let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
-                        currTypeInfo.originalBaseTypeName;
-
-                        if (currTypeInfo.originalBaseTypeName == "Object" ||
-                        currTypeInfo.originalBaseTypeName == "Control" ||
-                        currTypeInfo.originalBaseTypeName == "DependencyObject" ||
-                        currTypeInfo.originalBaseTypeName == "EventArgs") {
-                            continue;
-                        }
-
-                        if (options.mentionedTypes.indexOf(currTypeInfo.originalBaseTypeName) < 0 &&
-                        options.mentionedTypes.indexOf(fullName) < 0) {
-                            options.mentionedTypes.splice(i + 1, 0, fullName);
-                        }
-                    }
-                }
+                // Base-class injection was removed — transformRef walks the
+                // inheritance chain at resolution time so URLs stay anchored
+                // on the originally-mentioned (derived) type.
             }
         }
         if (ym.namespace) {
@@ -591,7 +604,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
-        let reference = node.url;
+        let reference: string = node.url;
 
         // allows usage of $Platform$ in links to topics/sections
         if (reference.indexOf("$Platform$") > 0) {
@@ -607,7 +620,8 @@ function transformDocLinks(options: any) {
         var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
                            reference.indexOf("{environment:demo") > 0;
 
-        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        var isExternalLink = reference.startsWith("http://") || reference.startsWith("https://");
+        var isTopicLink = !isApiDocLink && !isExternalLink && reference.indexOf(".md") > 0;
         if (isTopicLink) {
             // ensuring link to topics/section using lower-case per DocFX requirement
             node.url = reference.toLowerCase();
@@ -999,6 +1013,10 @@ function getComponentsFromComment(node: any) : string[] {
     return getComponentsFromString(node.value);
 }
 
+function shouldDeleteHtmlNode(value: string): boolean {
+    return value.trim().length === 0;
+}
+
 function finishRemove(options: any) {
     function removeNodes(node: any, index: number, parent: any) {
         if (options.toDelete.has(node)) {
@@ -1254,11 +1272,22 @@ function omitPlatformSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
+                                    options.toDelete.add(parent.children[index]);
+                                }
+                                break;
+                            } else if (platformsEqual(currPlats, segment.platforms) && segment.platforms.indexOf(options.platform) != -1) {
+                                // platform matches: keep content but remove the comment markers
+                                parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
+                                    options.toDelete.add(parent.children[checkIndex]);
+                                }
+                                parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1302,11 +1331,11 @@ function omitComponentSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1491,7 +1520,8 @@ export class MarkdownTransformer {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
         if (language === "json" || language === "cmd" ||
-            language === "css" || language === "scss") {
+            language === "css" || language === "scss" ||
+            language === "shell" || language === "bash" || language === "powershell" || language === "markdown") {
             return false;
         }
 
@@ -1807,7 +1837,7 @@ export class MarkdownTransformer {
             .use(finishRemoveBlocks, options)
             .use(transformNotes, options)
             .use(finishRemoveNotes, options)
-            .use(stringify)
+            .use(stringify, { rule: '-', ruleRepetition: 3, ruleSpaces: false, emphasis: '_', fences: true })
             .process(fileContent, function(err: any, vfile: any) {
                 if (err) {
                     callback(err, null);
@@ -1819,6 +1849,9 @@ export class MarkdownTransformer {
                 fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
                 fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
                 fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+                fileContent = fileContent.split("\\[!").join("[!"); // note blocks: remark-stringify escapes "[" in "[!NOTE]" as "\[!NOTE]"
+                fileContent = fileContent.replace(/\n*<!---->\n*/g, "\n"); // remark-stringify inserts empty comments as list separators
+                fileContent = fileContent.replace(/\n{3,}/g, "\n\n"); // collapse excessive blank lines left after marker removal
 
                 output.push({ content: fileContent, componentOutput: componentOutput });
 

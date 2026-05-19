@@ -17,6 +17,131 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+| 3229 | IgbGrid | グリッドにライセンス版にもかかわらず Trial の透かしが表示される。 |
+| 2754 | IgbTabs | 	IgbTabs	タブ内の IgbSwitch のチェック状態を変更すると、タブのコンテンツが消える。 |
+
+## **{PackageVerChanges-25-2-MAR}**
+
+### {PackageGrids} (グリッド)
+
+#### IgbQueryBuilder
+- 新しいコンポーネント IgbQueryBuilder を追加しました。直感的なビジュアル インターフェイスを通じて複雑なフィルタリング条件を構築できる UI コンポーネントです。
+
+#### IgbGrid、IgbTreeGrid、IgbHierarchicalGrid、IgbPivotGrid
+  - グリッドに表示されるデータに基づいてスクロール スロットルを動的に調整することでパフォーマンスを改善しました。
+
+#### IgbGrid、IgbTreeGrid、IgbHierarchicalGrid
+  - グリッド コンポーネントに PDF エクスポート機能を追加しました。既存の Excel および CSV エクスポート オプションに加えて、グリッドを PDF 形式にエクスポートできるようになりました。
+
+#### 重大な変更
+
+- IgbGrid、IgbTreeGrid、IgbHierarchicalGrid、IgbPivotGrid
+  - 元の `data` 配列の変更 (元の配列へのレコードの追加/削除/移動など) は自動的に検出されなくなりました。変更を検出するには、コンポーネントに配列参照の変更が必要です。
+
+### 一般
+
+#### IgbThemeProvider
+- 新しいコンポーネント IgbThemeProvider を追加しました。Lit のコンテキスト API を使用して特定のページ セクションにテーマをスコープでき、1 つのページで複数のテーマを有効にします。Shadow DOM と Light DOM の両方で動作します。
+
+#### Badge
+ - 新しいドット タイプ、WCAG AA アクセシビリティ標準に準拠した改善されたアウトライン実装、テーマ ベースのサイズ調整。[#1889](https://github.com/IgniteUI/igniteui-webcomponents/pull/1889)
+
+#### Checkbox
+  - 新しい --tick-width CSS プロパティ。[#1897](https://github.com/IgniteUI/igniteui-webcomponents/pull/1897)
+#### Combo
+  - コンボ コンポーネントのクリア ボタンを無効にする新しい disableClear プロパティ。[#1896](https://github.com/IgniteUI/igniteui-webcomponents/pull/1896)
+#### Mask input
+  - 数値パターン用の Unicode 数字コード ポイントを ASCII 数字に変換します。[#1907](https://github.com/IgniteUI/igniteui-webcomponents/pull/1907)
+
+
+#### 機能拡張
+ - Button、Button group、Calendar、Checkbox、Date picker、date range picker、Nav drawer、Radio group、Stepper のアクセシビリティ カラー調整。[#1959](https://github.com/IgniteUI/igniteui-webcomponents/pull/1959)
+ - Button、Calendar、Carousel、Combo、Date picker、Date range picker、input、Select、Textarea のスタイルを更新してデザイン キットと合わせました。
+ - Combo のキーボード ナビゲーション エクスペリエンスとグループ化 (ネイティブの Math.groupBy を使用) を改善しました。
+
+
+### バグ修正
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+| 2189  | IgbDataChart | ラベルがない場合に DataChart が軸のレンダリングをスキップする |
+| 2317  | IgbGrid | IgbGrid BodyTemplate パフォーマンスの改善 (C#/.NET テンプレート) |
+| 2326  | IgbDataPieChart | DataPieChart に OthersCategory スタイリング プロパティを追加 |
+| 2907  | IgbDateTimeInput  | IgbDateTimeInput の Prompt パラメーターが基盤となる Web Component の prompt プロパティに伝播されない |
+| 2908  | IgbMaskInput | IgbMaskInput の Prompt パラメーターが基盤となる Web Component の prompt プロパティに伝播されない |
+| 2909  | IgbPivotGrid  | IgbPivotGrid は SnackbarDisplayTime を公開しているが、このプロパティは適用されず、誤ったテスト失敗を引き起こす |
+| 38668 | IgbDataTooltipLayer | チャートの TitleTextColor を使用すると TitleTextColor がオーバーライドされる |
+| 40238 | Excel | Excel 数式パーサーを修正 - Workbook.Load() が Excel.FormulaParseException をスローする |
+| 41167 | Excel | オブジェクトの数式がラウンドトリップされない - カメラ ツールのラウンドトリップの Excel サポートを追加 |
+| 41419 | Excel | VBA 署名付き Excel ファイルの保存時に署名/証明書が保持されない |
+| 41594 | IgbDataChart | AssigningCategoryStyle の args.GetItems が null であるか、フラグメント シリーズのアイテム更新に機能しない |
+| 41598 | IgbDataChart | ドーナツ チャートの編集時に例外が発生 – DivideByZeroException  |
+| [#2079](https://github.com/IgniteUI/igniteui-webcomponents/pull/2079) | Calendar | 当月以外の週の `aria-hidden` 状態 |
+| [#2078](https://github.com/IgniteUI/igniteui-webcomponents/pull/2078) | Date Picker | ダイアログ モードでのスロット付きアクションの CSS ボーダー |
+| [#2068](https://github.com/IgniteUI/igniteui-webcomponents/pull/2068) | Input | フォーカス時のプレースホルダー カラー |
+| [#2073](https://github.com/IgniteUI/igniteui-webcomponents/pull/2073) | Input | サフィックス スロット コンテンツが存在する場合の CSS ボーダー |
+| [#2069](https://github.com/IgniteUI/igniteui-webcomponents/pull/2069) | Textarea | 下部パディングをデザイン システムに合わせて調整 |
+| [#2063](https://github.com/IgniteUI/igniteui-webcomponents/pull/2063) | Validation | スロット付き検証テキストが現在のテーマに従う |
+| [#2059](https://github.com/IgniteUI/igniteui-webcomponents/pull/2059) | Tile Manager | コンテンツがなく、最大化/フルスクリーンが無効の場合のみヘッダーを非表示にする |
+| [#2061](https://github.com/IgniteUI/igniteui-webcomponents/pull/2061) | Theming | スタイルシートではなくドキュメントの計算スタイルに基づいて初期テーマを解決する |
+| [#1909](https://github.com/IgniteUI/igniteui-webcomponents/pull/1909) | Sass Theme Support | Checkbox — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1926](https://github.com/IgniteUI/igniteui-webcomponents/pull/1926) | Sass Theme Support | Chip — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1920](https://github.com/IgniteUI/igniteui-webcomponents/pull/1920) | Sass Theme Support | Combo — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1933](https://github.com/IgniteUI/igniteui-webcomponents/pull/1933) | Sass Theme Support | Select — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1966](https://github.com/IgniteUI/igniteui-webcomponents/pull/1966) | Sass Theme Support | Snackbar — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1972](https://github.com/IgniteUI/igniteui-webcomponents/pull/1972) | Sass Theme Support | コンポーネントに不足していたシャドウを追加 |
+| [#1929](https://github.com/IgniteUI/igniteui-webcomponents/pull/1929) | Sass Theme Support | Tabs — 動作しない Sass テーマ パラメーターを修正 |
+| [#1935](https://github.com/IgniteUI/igniteui-webcomponents/pull/1935) | Sass Theme Support | Textarea — Sass テーマを更新 |
+| [#1980](https://github.com/IgniteUI/igniteui-webcomponents/pull/1980) | Sass Theme Support | Radio — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#1991](https://github.com/IgniteUI/igniteui-webcomponents/pull/1991) | Sass Theme Support | Switch — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#2015](https://github.com/IgniteUI/igniteui-webcomponents/pull/2015) | Sass Theme Support | List — テーマ パッケージの Sass ツールを使用してスタイル設定 |
+| [#2030](https://github.com/IgniteUI/igniteui-webcomponents/pull/2030) | Calendar | 月/年ビューのフォーカス スタイル |
+| [#1965](https://github.com/IgniteUI/igniteui-webcomponents/pull/1965) | Combo | Notch ボーダー スタイル |
+| [#1964](https://github.com/IgniteUI/igniteui-webcomponents/pull/1964) | Checkbox & Switch | `helper-text` スロットのスロット付きコンテンツにカーソルを合わせたときの内部リップルの不透明度 |
+| [#1947](https://github.com/IgniteUI/igniteui-webcomponents/pull/1947) | Dialog | 基盤となるダイアログ要素が `display: contents` を持つようになり、DOM レイアウトに参加しない |
+| [#1986](https://github.com/IgniteUI/igniteui-webcomponents/pull/1986) | Dialog | `keepOpenOnEscape` が Escape キー押下時にダイアログが閉じるのを防げていない |
+| [#1997](https://github.com/IgniteUI/igniteui-webcomponents/pull/1997) | Dialog | 基本スタイルとテーマ |
+| [#1985](https://github.com/IgniteUI/igniteui-webcomponents/pull/1985) | List & List Item | リスト アイテムのスロット付き `igc-icon` に不足していたスタイルを追加 |
+| [#2010](https://github.com/IgniteUI/igniteui-webcomponents/pull/2010) | List & List Item | Indigo テーマのアイコンとアイコン ボタンのサイズ |
+| [#2006](https://github.com/IgniteUI/igniteui-webcomponents/pull/2006) | Mask Input | リテラルを含むマスク パターンの自動入力動作 |
+| [#1956](https://github.com/IgniteUI/igniteui-webcomponents/pull/1956) | Navbar | アイコンとアイコン ボタンのサイズ |
+| [#1957](https://github.com/IgniteUI/igniteui-webcomponents/pull/1957) | Select | アウトライン タイプのカラー |
+| [#1998](https://github.com/IgniteUI/igniteui-webcomponents/pull/1998) | Tabs | Material テーマでアクティブ タブの疑似要素の背景を追加 |
+| [#2008](https://github.com/IgniteUI/igniteui-webcomponents/pull/2008) | Tabs | アクティブ タブ インジケーターの配置時にスケール係数を考慮 |
+| [#2028](https://github.com/IgniteUI/igniteui-webcomponents/pull/2028) | Tabs | 選択されたインジケーターの配置 |
+| [#1828](https://github.com/IgniteUI/igniteui-webcomponents/issues/1828) | Tooltip | ツールチップ ターゲットがクリックされたときにツールチップを表示しない |
+| [#1936](https://github.com/IgniteUI/igniteui-webcomponents/pull/1936) | Tooltip | スロット付きコンテンツの max-width 制限を削除 |
+
+## **{PackageVerChanges-25-2-DEC}**
+
+### 機能拡張
+
+### {PackageCharts}
+
+DataPieChart および ProportionalCategoryAngleAxis に OthersCategoryBrush と OthersCategoryOutline を追加しました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|-------------|
+|33808|IgbDataChart|TimeAxisInterval の IntervalType Ticks に設定されたスケールが表示されない。|
+|34255|IgbDataChart|0.00001 スケールの目盛りが重なって表示される。|
+|38510|IgbDataChart|Stacked シリーズの AssigningCategoryStyle イベント サポート。|
+|41050|IgbDataChart|gbAxisMouseEventArgs で軸が設定されていない。|
+
+### 機能拡張
+
+#### チャート
+
+- TimeXAxisLabelFormat に LabelFormatOverride イベントが追加され、TimeXAxis のすべての時間形式レベルでイベントを使用して書式設定をオーバーライドできるようになりました。
+
+- プロパティの有効な値を見つけやすくするために、より多くの項目を考慮するようにスキーマ生成を調整しました。
+
+## **{PackageVerChanges-25-2-NOV}**
+
 **重大な変更**
 
 2025.2 リリース以降、.NET 6 のサポートは終了しました。これは、[Microsoft .NET ライフサイクル](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)に対応しています。
@@ -55,9 +180,12 @@ alt="{Platform} user-annotation-create"/>
 ```
 
 - グリッド レベルで以下のいずれかの設定が可能です:
-    - `OnSort` - 列がソートされたときのみ結合。
-    - `Always` - データ操作に関わらず常に結合。
+
+  - `OnSort` - 列がソートされたときのみ結合。
+  - `Always` - データ操作に関わらず常に結合。
+
   デフォルトの `CellMergeMode` は `OnSort` です。
+
 ```razor
 <IgbGrid CellMergeMode="GridCellMergeMode.Always">
 </IgbGrid>
@@ -65,11 +193,14 @@ alt="{Platform} user-annotation-create"/>
 
 - **列のピン固定**
   - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `PinningPosition` プロパティを宣言的に設定することで実行できます。
+
 ```razor
 <IgbColumn Field="Col1" Pinned="true" PinningPosition="ColumnPinningPosition.End">
 </IgbColumn>
 ```
-  - または:
+
+- または:
+
 ```razor
 col.PinningPosition = ColumnPinningPosition.End;
 col.Pinned = true;
@@ -77,7 +208,8 @@ col.Pinned = true;
 col.PinningPosition = ColumnPinningPosition.Start;
 col.Pinned = true;
 ```
-  - 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
+
+- 列にプロパティ `PinningPosition` が設定されていない場合、列はグリッドの columns の pinning オプションで指定された位置にデフォルト設定されます。
 
 - **ソートとグループ化の改善**
   - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
@@ -93,9 +225,11 @@ col.Pinned = true;
 ### 一般
 
 #### 追加
+
 - `DateRangePicker`
 
 #### 変更
+
 - すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
 - `Tooltip`
   - 動作変更: `Tooltip` のデフォルトの placement は 「bottom」 になりました。
@@ -103,6 +237,7 @@ col.Pinned = true;
   - 重大な変更: `Tooltip` イベントは、detail プロパティに anchor ターゲットを返さなくなりました。引き続き event.target.anchor でアクセスできます。
 
 #### 非推奨
+
 - `Tooltip` - `DisableArrow` は非推奨です。矢印インジケーターをレンダリングするには、`WithArrow` を使用してください。
 
 ### バグ修正
@@ -399,10 +534,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### Toolbar
+
 - ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
 - ズーム リセット ツールはズーム ドロップダウンに移動されました。
 
 #### Data Pie Chart
+
 - チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
 
 ### バグ修正
@@ -432,9 +569,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 機能拡張
 
 #### List
+
 - `ListItem` に新しいプロパティ `Selected` を追加しました。
 
 #### Accordion
+
 - 新しいイベント `Open` および `Close` を追加しました。
 
 ### {PackageGrids}
@@ -461,6 +600,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - 内部グリッド アクション ボタンをカプセル化しました。
 
 ### バグ修正
+
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
 |35497 | `IgbDialog` | ShowAsync と HideAsync が呼び出されると、後続のコードは実行されない。|
@@ -527,6 +667,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般
+
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 - `Input`
   - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
@@ -708,11 +849,11 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamRadialChart`
   - 新しいラベル モード
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。 
+    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
     - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[このトピック](radial-gauge.md#オプティカル-スケーリング)を参照してください。
     - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
-- `XamRadialChart` 
-    - 新しいラベル モード
+- `XamRadialChart`
+  - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 
 ### 一般
@@ -726,11 +867,13 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### 非推奨
 
 - `size` プロパティと属性は、すべてのコンポーネントで非推奨になりました。代わりに `--ig-size` CSS カスタム プロパティを使用してください。次の例では、Avatar コンポーネントのサイズを小さく設定します:
+
     ```css
     .avatar {
         --ig-size: var(--ig-size-small);
     }
     ```
+
 - `DateTimeInput`
   - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
 - `RangeSlider`
@@ -993,6 +1136,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
   - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 ## **{PackageVerChanges-21-1}**
+
 ### 新しいビジュアル デザイン
 
 #### チャートとマップ

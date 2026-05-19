@@ -65,12 +65,10 @@ Simple `Tabs` declaration is done as follows:
 
 ```html
 <igc-tabs>
-    <igc-tab>
-      <div slot="label">Tab 1</div>
+    <igc-tab label="Tab 1">
       <span>Content for tab 1</span>
     </igc-tab>
-    <igc-tab>
-      <div slot="label">Tab 2</div>
+    <igc-tab label="Tab 2">
       <span>Content for tab 2</span>
     </igc-tab>
     <igc-tab>
@@ -82,28 +80,35 @@ Simple `Tabs` declaration is done as follows:
 
 ```razor
 <IgbTabs>
-    <IgbTab Panel="first">Tab 1</IgbTab>
-    <IgbTab Panel="second">Tab 2</IgbTab>
-    <IgbTab Panel="third">Tab 3</IgbTab>
-    <IgbTabPanel Id="first">Panel 1</IgbTabPanel>
-    <IgbTabPanel Id="second">Panel 2</IgbTabPanel>
-    <IgbTabPanel Id="third">Panel 3</IgbTabPanel>
+    <IgbTab Label="Tab 1">
+      <span>Content for tab 1</span>
+    </IgbTab>
+    <IgbTab Label="Tab 2">
+      <span>Content for tab 2</span>
+    </IgbTab>
+    <IgbTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
+    </IgbTab>
 </IgbTabs>
 ```
 
 ```tsx
 <IgrTabs>
     <IgrTab label="Tab 1">
-      <span>Panel 1</span>
+      <span>Content for tab 1</span>
     </IgrTab>
     <IgrTab label="Tab 2">
-      <span>Panel 2</span>
+      <span>Content for tab 2</span>
     </IgrTab>
-    <IgrTab label="Tab 3">
-      <span>Panel 3</span>
+    <IgrTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
     </IgrTab>
 </IgrTabs>
 ```
+
+Tab text can be set either as simple string using the `Label` property or by assigning children to the `label` slot. Any remaining children in the default slot are rendered as the tab content.
 
 ### Selection
 
@@ -118,15 +123,15 @@ The default behavior, which selects a tab when the user is navigating with the a
 A tab is disabled by setting the `Disabled` attribute:
 
 ```html
-<igc-tab disabled>Tab 1</igc-tab>
+<igc-tab label="Tab 1" disabled></igc-tab>
 ```
 
 ```razor
-<IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+<IgbTab Label="Tab 1" Disabled></IgbTab>
 ```
 
 ```tsx
-<IgrTab disabled={true}>Tab 1</IgrTab>
+<IgrTab label="Tab 1" disabled={true}></IgrTab>
 ```
 
 ### Alignment
@@ -164,7 +169,7 @@ Scroll buttons are shown when the available space is not enough to render all {P
 
 ### Prefix / Suffix
 
-Each tab has default slot to display information - icon, text or both and `prefix` and `suffix` slots to show additional content in the beginning and/or in the end.
+Besides the `label` slot to display information - icon, text or both, each tab also has `prefix` and `suffix` slots to show additional content in the beginning and/or in the end.
 
 `sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} Tabs Example"`
 
@@ -197,7 +202,6 @@ The `Tabs` component exposes several CSS parts, giving you full control over its
 
 The `Tab` component exposes the following CSS parts:
 
-<!-- WebComponents, React -->
 |Name|Description|
 |--|--|
 | `content` | Tab header's label slot container. |
@@ -207,33 +211,42 @@ The `Tab` component exposes the following CSS parts:
 | `tab-body` | Holds the body content of a single tab, only the body of the selected tab is visible. |
 
 ```css
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
+}
+
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
 igc-tab::part(tab-header) {
-  background-color: var(--ig-gray-200);
+    --item-hover-color: var(--ig-success-500);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
-}
-```
-<!-- end: WebComponents, React -->
-
-<!-- Blazor -->
-|Name|Description|
-|--|--|
-| `content` | The content wrapper. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
-
-```css
-igc-tabs::part(headers-content) {
-  background-color: var(--ig-gray-200);
-}
-
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
-<!-- end: Blazor -->
+
 `sample="/layouts/tabs/styling", height="150", alt="Tabs Styling Example"`
 
 ## API Reference
@@ -244,7 +257,6 @@ igc-tab::part(content) {
 - `IconButton`
 - `RadioGroup`
 - [`Styling & Themes`](../themes/overview.md)
-
 
 ## Additional Resources
 

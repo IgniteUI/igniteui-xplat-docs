@@ -349,9 +349,9 @@ builder.Services.AddIgniteUIBlazor(
 これらの CSS パーツを使用して、次のように `Tree` コンポーネントの外観をカスタマイズできます:
 
 ```css
-igc-tree-item::part(active) {
-  background: var(--ig-secondary-500);
-  color: var(--ig-secondary-500-contrast);
+igc-tree-item {
+    --background-active: var(--ig-secondary-500);
+    --foreground-active: var(--ig-secondary-500-contrast);
 }
 ```
 

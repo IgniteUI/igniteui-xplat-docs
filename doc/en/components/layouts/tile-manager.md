@@ -16,7 +16,8 @@ The following {ProductName} Tile Manager Example shows the component in action.
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager Example"`
 
-> [!Warning] Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
+> [!Warning]
+> Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
 
 ## Usage
 
@@ -418,7 +419,7 @@ If you want to display just one of the two buttons, you can set either `DisableM
 
 You also have the option to disable both action buttons and create custom ones according to your preferences.
 
-`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager Actions Example"`
+`sample="/layouts/tile-manager/actions", height="730", alt="{Platform} Tile Manager Actions Example"`
 
 In this example, we created custom action buttons using the Ignite UI Icon Button component.
 
@@ -432,7 +433,8 @@ Resizing in the Tile Manager is a functionality that allows tiles to be resized 
 
 To ensure smooth resizing, a ghost element is used instead of directly modifying the tile’s dimensions. This element appears on top of the original tile, displaying its current dimensions when resizing begins, and it updates in real time as the user drags any of the resize handles.
 
-> [!Note] If the ghost element exceeds the available grid space, it will automatically adjust to the largest possible span within the grid's limits.
+> [!Note]
+> If the ghost element exceeds the available grid space, it will automatically adjust to the largest possible span within the grid's limits.
 
 The Tile Manager automatically rearranges itself when a tile changes size, ensuring that there is minimal empty space. That's why expanding a tile may push adjacent tiles into new positions, while shrinking creates gaps that other tiles may fill dynamically. This ensures that the Tile Manager stays as compact as possible, without any overlapping tiles, and that all movements remain within the defined grid structure.
 
@@ -499,7 +501,8 @@ You can reorder tiles in the Tile Manager using the drag-and-drop feature. By de
 - With the `tile` option, you can click and hold anywhere on an individual tile to start dragging it.
 - With the `tile-header` option, you can only click and hold in the tile's header section to start the dragging process.
 
-> [!Note] While the tile is in maximized or fullscreen state, the tile cannot be dragged.
+> [!Note]
+> While the tile is in maximized or fullscreen state, the tile cannot be dragged.
 
 Similar to resizing, when you initiate the drag-and-drop process, a ghost element appears beneath the tile you’ve grabbed. As you drag the tile, the ghost element moves with it, dynamically reordering the other tiles in real time. This allows you to preview how the tile grid will look when you drop the tile.
 
@@ -546,7 +549,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager Drag and drop Example"`
+`sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager Drag and drop Example"`
 
 ## Serialization
 
@@ -555,7 +558,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 - The `SaveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
 - The `LoadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
-`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
+`sample="/layouts/tile-manager/layout", height="560", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
@@ -636,7 +639,7 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager Styling Example"`
+`sample="/layouts/tile-manager/styling", height="520", alt="{Platform} Tile Manager Styling Example"`
 
 ## API Reference
 

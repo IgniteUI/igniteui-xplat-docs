@@ -1,6 +1,6 @@
 ---
 title: {Platform} {GridLiteTitle} ヘッダー テンプレート | {ProductName} | MIT ライセンス
-_description: カスタム {GridLiteTitle} 列ヘッダー レンダラーを構成およびカスタマイズします。オープンソースの {Platform} {GridLiteTitle} を使用してアプリケーションを構築できます。今すぐお試しください。
+_description: カスタム {GridLiteTitle} 列ヘッダー レンダラーを構成およびカスタマイズします。オープン ソースの {Platform} {GridLiteTitle} を使用してアプリケーションを構築できます。今すぐお試しください。
 _keywords: header template, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, ヘッダー テンプレート, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -10,25 +10,39 @@ _language: ja
 
 # 列ヘッダーのカスタマイズ
 
-セル テンプレートと同様に、列ヘッダーも目的のユース ケースに合わせてカスタマイズできます。`headerText` プロパティを通じてテキスト ラベルを渡したり、本格的なカスタム テンプレートを提供したりできます。
+セル テンプレートと同様に、列ヘッダーも目的のユース ケースに合わせてカスタマイズできます。`header` プロパティを通じてテキスト ラベルを渡したり、本格的なカスタム テンプレートを提供したりできます。
 
 ## ヘッダー テキストによるカスタマイズ
 
-デフォルトでは、列はラベル テキストに `key` 構成プロパティを使用します。ラベルをカスタマイズするには、`headerText` プロパティをより人間に読みやすい形式に設定します。
-
 <!-- React, WebComponents -->
-
-```typescript
-{
-  key: 'price',
-  headerText: 'Price per item'
-}
-```
-
+デフォルトでは、列はラベル テキストに `field` プロパティを使用します。ラベルをカスタマイズするには、`header` プロパティをより人間が読みやすい形式に設定します。
 <!-- End: React, WebComponents -->
 
+<!-- WebComponents -->
+```html
+<igc-grid-lite-column field="price" header="Price per item"></igc-grid-lite-column>
+```
+<!-- End: WebComponents -->
+
+```tsx
+return (
+  <igc-grid-lite>
+    <igc-grid-lite-column field="price" header="Price per item"></igc-grid-lite-column>
+  </igc-grid-lite>
+);
+```
+
+<!-- Blazor -->
+デフォルトでは、列はラベル テキストに `Field` プロパティを使用します。ラベルをカスタマイズするには、`Header` プロパティをより人間が読みやすい形式に設定します。
+
+```razor
+<IgbGridLiteColumn Field="Price" Header="Price per item" />
+```
+
+<!-- End: Blazor -->
+
 >[!NOTE]
->`headerTemplate` が指定されている場合、`headerText` は無視されます。
+>`headerTemplate` が指定されている場合、`header` は無視されます。
 
 ## ヘッダー テンプレートによるカスタマイズ
 
@@ -40,12 +54,18 @@ _language: ja
 import { html } from 'lit';
 
 
-{
-  key: 'rating',
-  headerTemplate: () => html`<h3>⭐ Rating ⭐</h3>`,
-}
+const column = document.querySelector('igc-grid-lite-column');
+column.headerTemplate = () => html`<h3>⭐ Rating ⭐</h3>`;
 ```
 <!-- End: React, WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<!-- Templates TBD in Blazor -->
+<IgbGridLiteColumn Field="Rating"></IgbGridLiteColumn>
+```
+<!-- End: Blazor -->
 
 `sample="/{GridLiteSample}/column-config-headers", height="600", alt="{Platform} {GridLiteTitle} 列設定ヘッダー"`
 

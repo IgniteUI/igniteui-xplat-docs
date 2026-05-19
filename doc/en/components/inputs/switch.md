@@ -241,18 +241,13 @@ The `Switch` component exposes several CSS parts to give you full control over i
 | `label` | The switch label. |
 
 ```css
-igc-switch::part(thumb) {
-  background-color: var(--ig-success-500);
-  box-shadow: none;
-}
-
-igc-switch::part(thumb checked) {
-  background-color: var(--ig-gray-50);
-}
-
-igc-switch::part(control checked) {
-  background-color: var(--ig-success-500);
-}
+  igc-switch {
+    --thumb-on-color: white;
+    --thumb-off-color: var(--ig-success-500);
+    --track-on-color: var(--ig-success-500); /* Background color when checked */
+    --track-off-color: white; /* Background color when unchecked */
+    --track-on-hover-color: var(--ig-success-500); /* Background hover color when checked */
+  }
 ```
 
 `sample="/inputs/switches/styling", height="100", alt="{Platform} Switch Styling"`
