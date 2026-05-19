@@ -66,12 +66,10 @@ defineComponents(IgcTabsComponent);
 
 ```html
 <igc-tabs>
-    <igc-tab>
-      <div slot="label">Tab 1</div>
+    <igc-tab label="Tab 1">
       <span>Content for tab 1</span>
     </igc-tab>
-    <igc-tab>
-      <div slot="label">Tab 2</div>
+    <igc-tab label="Tab 2">
       <span>Content for tab 2</span>
     </igc-tab>
     <igc-tab>
@@ -83,28 +81,35 @@ defineComponents(IgcTabsComponent);
 
 ```razor
 <IgbTabs>
-    <IgbTab Panel="first">Tab 1</IgbTab>
-    <IgbTab Panel="second">Tab 2</IgbTab>
-    <IgbTab Panel="third">Tab 3</IgbTab>
-    <IgbTabPanel Id="first">Panel 1</IgbTabPanel>
-    <IgbTabPanel Id="second">Panel 2</IgbTabPanel>
-    <IgbTabPanel Id="third">Panel 3</IgbTabPanel>
+    <IgbTab Label="Tab 1">
+      <span>Content for tab 1</span>
+    </IgbTab>
+    <IgbTab Label="Tab 2">
+      <span>Content for tab 2</span>
+    </IgbTab>
+    <IgbTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
+    </IgbTab>
 </IgbTabs>
 ```
 
 ```tsx
 <IgrTabs>
     <IgrTab label="Tab 1">
-      <span>Panel 1</span>
+      <span>Content for tab 1</span>
     </IgrTab>
     <IgrTab label="Tab 2">
-      <span>Panel 2</span>
+      <span>Content for tab 2</span>
     </IgrTab>
-    <IgrTab label="Tab 3">
-      <span>Panel 3</span>
+    <IgrTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
     </IgrTab>
 </IgrTabs>
 ```
+
+タブ テキストは、`Label` プロパティを使用して単純な文字列として設定することも、`label` スロットに子要素を割り当てることで設定することもできます。デフォルト スロットの残りの子要素は、タブ コンテンツとしてレンダリングされます。
 
 ### 選択
 
@@ -119,15 +124,15 @@ defineComponents(IgcTabsComponent);
 `Disabled` 属性を設定すると、タブが無効になります:
 
 ```html
-<igc-tab disabled>Tab 1</igc-tab>
+<igc-tab label="Tab 1" disabled></igc-tab>
 ```
 
 ```razor
-<IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+<IgbTab Label="Tab 1" Disabled></IgbTab>
 ```
 
 ```tsx
-<IgrTab disabled={true}>Tab 1</IgrTab>
+<IgrTab label="Tab 1" disabled={true}></IgrTab>
 ```
 
 ### 配置
@@ -165,7 +170,7 @@ defineComponents(IgcTabsComponent);
 
 ### Prefix / Suffix (プレフィックス / サフィックス)
 
-各タブには、情報を表示するためのデフォルト スロットがあります。アイコン、テキスト、またはその両方と、開始および / または終了に追加のコンテンツを表示するための `prefix` と `suffix` のスロットです。
+各タブは `label` スロットでアイコン、テキスト、またはその両方などの情報を表示できるほか、`prefix` と `suffix` スロットで開始および / または終了に追加のコンテンツを表示することもできます。
 
 `sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} タブの例"`
 

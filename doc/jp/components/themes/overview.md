@@ -30,6 +30,19 @@ _language: ja
 | **Indigo**      | ダーク    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
 
+<!-- Blazor -->
+| 名前        | バリアント | 場所                                          |
+| ----------- | ------- | ------------------------------------------------- |
+| **Bootstrap**   | ライト   | _content/IgniteUI.Blazor/themes/light/bootstrap.css |
+| **Material**    | ライト   | _content/IgniteUI.Blazor/themes/light/material.css  |
+| **Fluent**      | ライト   | _content/IgniteUI.Blazor/themes/light/fluent.css    |
+| **Indigo**      | ライト   | _content/IgniteUI.Blazor/themes/light/indigo.css    |
+| **Bootstrap**   | ダーク    | _content/IgniteUI.Blazor/themes/dark/bootstrap.css  |
+| **Material**    | ダーク    | _content/IgniteUI.Blazor/themes/dark/material.css   |
+| **Fluent**      | ダーク    | _content/IgniteUI.Blazor/themes/dark/fluent.css     |
+| **Indigo**      | ダーク    | _content/IgniteUI.Blazor/themes/dark/indigo.css     |
+<!-- end: Blazor -->
+
 
 <!-- WebComponents -->
 | 名前        | バリアント | 場所                                        |
@@ -64,6 +77,8 @@ configureTheme("material");
 
 <!-- end: WebComponents -->
 
+<!-- React, WebComponents -->
 ## API リファレンス
 
 - `ConfigureTheme`
+<!-- end: React, WebComponents -->
