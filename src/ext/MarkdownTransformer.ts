@@ -320,16 +320,44 @@ function transformCodeRefs(options: any) {
 
         if (resolvedName == null && options.mentionedTypes &&
             options.mentionedTypes.length > 0) {
+            // Walk the inheritance chain of each originally-mentioned type.
+            // When the member is found on a base class, keep apiTypeName
+            // anchored on the derived (originally-mentioned) type so the URL
+            // points at the public class page rather than an internal base.
+            const skipBaseTypes: { [key: string]: boolean } = {
+                "Object": true,
+                "Control": true,
+                "DependencyObject": true,
+                "EventArgs": true
+            };
+
             for (var i = 0; i < options.mentionedTypes.length; i++) {
-                let type = options.mentionedTypes[i];
-                resolvedName = mappings.getPlatformMemberName(
-                    <string>type,
-                    <APIPlatform>options.platform,
-                    <string>memberName, options.filePath);
-                if (resolvedName !== null) {
-                    apiTypeName = type;
-                    break;
+                let originallyMentioned: string = options.mentionedTypes[i];
+                let currentType: string | null = originallyMentioned;
+                let visited: { [key: string]: boolean } = {};
+
+                while (currentType && !visited[currentType]) {
+                    visited[currentType] = true;
+
+                    let hit = mappings.getPlatformMemberName(
+                        <string>currentType,
+                        <APIPlatform>options.platform,
+                        <string>memberName, options.filePath);
+                    if (hit !== null) {
+                        resolvedName = hit;
+                        apiTypeName = originallyMentioned;
+                        break;
+                    }
+
+                    let typeInfo = mappings.getType(currentType, options.filePath);
+                    if (!typeInfo || !typeInfo.originalBaseTypeName) break;
+                    if (skipBaseTypes[typeInfo.originalBaseTypeName]) break;
+
+                    currentType = typeInfo.originalBaseTypeNamespace
+                        ? typeInfo.originalBaseTypeNamespace + "." + typeInfo.originalBaseTypeName
+                        : typeInfo.originalBaseTypeName;
                 }
+                if (resolvedName !== null) break;
             }
         }
 
@@ -543,24 +571,9 @@ function getFrontMatterTypes(options: any, filePath: string) {
                 if (currTypeInfo?.originalNamespace) {
                     mentionedNamespace = currTypeInfo.originalNamespace;
                 }
-                if (currTypeInfo) {
-                    if (currTypeInfo.originalBaseTypeName) {
-                        let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
-                        currTypeInfo.originalBaseTypeName;
-
-                        if (currTypeInfo.originalBaseTypeName == "Object" ||
-                        currTypeInfo.originalBaseTypeName == "Control" ||
-                        currTypeInfo.originalBaseTypeName == "DependencyObject" ||
-                        currTypeInfo.originalBaseTypeName == "EventArgs") {
-                            continue;
-                        }
-
-                        if (options.mentionedTypes.indexOf(currTypeInfo.originalBaseTypeName) < 0 &&
-                        options.mentionedTypes.indexOf(fullName) < 0) {
-                            options.mentionedTypes.splice(i + 1, 0, fullName);
-                        }
-                    }
-                }
+                // Base-class injection was removed — transformRef walks the
+                // inheritance chain at resolution time so URLs stay anchored
+                // on the originally-mentioned (derived) type.
             }
         }
         if (ym.namespace) {
