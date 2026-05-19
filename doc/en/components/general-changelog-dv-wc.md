@@ -14,6 +14,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Enhancements
+
+#### {PackageCharts}
+
+- Added `Checkmark` option to the `MarkerType` enum. Use `MarkerType.Checkmark` on a series to display a V-shaped checkmark icon inside a circle. The new `MarkerAutomaticBehavior.Checkmark` enum value allows applying the checkmark shape to all series in the chart, and the `SeriesViewer.CheckmarkMarkerTemplate` property can be used to customize its template.
+
 #### Bug Fixes
 
 | Bug Number | Control | Description |
@@ -23,6 +29,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 | 40238 | Excel | fixed Excel Formula parser - Workbook.Load() throwing a Excel.FormulaParseException|
 | 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
 | 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
+
+### Enhancements
+
+### {PackageCharts}
+
+- Added `RangeBarSeries` support for horizontal range rendering in `IgcDataChart`.
 
 ## **{PackageVerChanges-26-1-FEB}**
 
