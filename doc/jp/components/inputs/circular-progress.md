@@ -2,7 +2,9 @@
 title: {Platform} Circular Progress | Circular Progress | インフラジスティックス
 _description: Circular Progress Indicator コンポーネントを使用すると、開発者は無限のカスタマイズ オプションを使用して進行状況を円で表示できます。
 _keywords: {Platform} Circular Progress, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["CircularProgress", "CircularGradient"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -86,7 +88,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 ### 進行状況タイプ
 
-`variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
+`Variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
 
 ```tsx
 <IgrCircularProgress value="100" variant="success"></IgrCircularProgress>
@@ -102,7 +104,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 ### 不確定のプログレス
 
-正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。また、`hideLabel` プロパティを設定することで、{ProductName} `CircularProgress` のデフォルトのラベルを非表示にし、公開された `labelFormat` プロパティを介して進行状況インジケーターのデフォルトのラベルをカスタマイズできます。
+正確に決定されていないプロセスをトラックしたい場合、`Indeterminate` プロパティを設定できます。また、`HideLabel` プロパティを設定することで、{ProductName} `CircularProgress` のデフォルトのラベルを非表示にし、公開された `LabelFormat` プロパティを介して進行状況インジケーターのデフォルトのラベルをカスタマイズできます。
 
 ```tsx
 <IgrCircularProgress value="100" indeterminate="true"></IgrCircularProgress>
@@ -126,7 +128,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 ### アニメーション期間
 
-`CircularProgress` コンポーネントの `animationDuration` プロパティを使用して、アニメーション サイクルにかかる時間をミリ秒単位で指定できます。
+`CircularProgress` コンポーネントの `AnimationDuration` プロパティを使用して、アニメーション サイクルにかかる時間をミリ秒単位で指定できます。
 
 ```tsx
 <IgrCircularProgress animationDuration="5000" indeterminate="true"></IgrCircularProgress>
@@ -224,14 +226,14 @@ igc-circular-progress::part(track) {
 
 ## API リファレンス
 
- - `Button`
- - `Calendar`
- - `CircularGradient`
- - `CircularProgress`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `CircularGradient`
+- `CircularProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | リモート データ | インフラジスティックス
 _description: インフラジスティックスの {Platform} グリッド コンポーネントの仮想データ ソースを使用してリモート データをバインドします。{ProductName} テーブル チュートリアルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
@@ -110,4 +110,4 @@ grid1.dataSource = vds;
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

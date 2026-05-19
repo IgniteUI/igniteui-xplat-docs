@@ -2,7 +2,8 @@
 title: {Platform} {ComponentTitle} 集計 - {ProductName}
 _description: 列のグループ フッターで {Platform} {ComponentTitle} 集計を構成し、オプションを使用して {ProductName} Material テーブルにカスタム {Platform} テンプレートを設定します。
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics, {Platform} {ComponentTitle} 集計, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+_license: commercial
+mentionedTypes: ["GridBaseDirective", "Column", "SummaryOperand"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridSummaries}
@@ -25,20 +26,20 @@ _language: ja
 
 
 `string` および `boolean` `DataType`の場合、以下の関数が利用できます:
- - Count
+- Count
 
 `number`、`currency`、および `percent` データ型の場合、以下の関数を使用できます。
 
- - Count
- - Min
- - Max
- - Average
- - Sum
+- Count
+- Min
+- Max
+- Average
+- Sum
 
 `date` データ型の場合、以下の関数が利用できます:
- - Count
- - Earliest
- - Latest
+- Count
+- Earliest
+- Latest
 
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
 
@@ -235,6 +236,7 @@ _language: ja
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -331,6 +333,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -427,6 +430,7 @@ const disableSummary = () => {
 <button id="enableBtn">Enable Summary</button>
 <button id="disableBtn">Disable Summary </button>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -671,6 +675,7 @@ interface IgcSummaryResult {
     </igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -688,7 +693,7 @@ export class GridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="grid"
         @ref="grid"
@@ -730,6 +735,7 @@ igRegisterScript("WebGridCustomSummary", (event) => {
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number" has-summary="true" id="grammyAwards"> </igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
@@ -747,7 +753,7 @@ export class HierarchicalGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="hierarchicalGrid"
         @ref="hierarchicalGrid"
@@ -787,6 +793,7 @@ igRegisterScript("WebHierarchicalGridCustomSummary", (event) => {
     <igc-column field="Title" data-type="string" has-summary="true" id="column1"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as {ComponentName};
@@ -804,7 +811,7 @@ export class TreeGridComponent implements OnInit {
 ```
 
 ```razor
-<{ComponentSelector} 
+<{ComponentSelector}
         AutoGenerate="true"
         Name="treeGrid"
         @ref="treeGrid"
@@ -945,7 +952,8 @@ class PtoSummary {
 
 
 ### 集計テンプレート
-`Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
+
+`SummaryTemplate` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
 
 ```html
 <igx-column [hasSummary]="true">
@@ -960,6 +968,7 @@ class PtoSummary {
 <igc-column id="column" has-summary="true">
 </igc-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
@@ -1013,15 +1022,15 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 ## 無効な集計
 
 <!-- WebComponents -->
-`disabled-summaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`disabled-summaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: WebComponents -->
 
 <!-- React -->
-`disabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: React -->
 
 <!-- Blazor -->
-`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の要約機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の要約機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: Blazor -->
 
 <!-- WebComponents, React, Blazor -->
@@ -1091,20 +1100,20 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- Blazor -->
 ```razor
 <!-- Disable default summaries -->
-<IgbColumn 
-    Field="UnitPrice" 
-    Header="Unit Price" 
+<IgbColumn
+    Field="UnitPrice"
+    Header="Unit Price"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
+    HasSummary="true"
     DisabledSummaries="['count', 'sum', 'average']" />
 
 <!-- Disable custom summaries -->
-<IgbColumn 
-    Field="UnitsInStock" 
-    Header="Units In Stock" 
+<IgbColumn
+    Field="UnitsInStock"
+    Header="Units In Stock"
     DataType="GridColumnDataType.Number"
-    HasSummary="true" 
-    Summaries="discontinuedSummary" 
+    HasSummary="true"
+    Summaries="discontinuedSummary"
     DisabledSummaries="['discontinued', 'totalDiscontinued']" />
 ```
 <!-- end: Blazor -->
@@ -1115,13 +1124,13 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- WebComponents -->
 `UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabled-summaries` プロパティを使用して除外されます。
 
-実行時に、`disabled-summaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+実行時に、`DisabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
 <!-- end: WebComponents -->
 
 <!-- React -->
-`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabledSummaries` プロパティを使用して除外されます。
+`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `DisabledSummaries` プロパティを使用して除外されます。
 
-実行時に、`disabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+実行時に、`DisabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -1166,6 +1175,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```html
 <igc-column id="column"></igx-column>
 ```
+
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
@@ -1195,7 +1205,7 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
     }
     return result;
   }
-  
+
 <IgrColumn hasSummary={true} summaryFormatter={summaryFormatter}></IgrColumn>
 ```
 
@@ -1211,14 +1221,14 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
 
 以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - ルート レベルのみ集計が計算されます。
- - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
- - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+- `RootLevelOnly` - ルート レベルのみ集計が計算されます。
+- `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+- `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
 以下は使用できる `SummaryPosition` プロパティの値です。
 
- - `Top` - 集計行はグループ列の子の前に表示されます。
- - `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
+- `Top` - 集計行はグループ列の子の前に表示されます。
+- `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
@@ -1242,14 +1252,14 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
 
 以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
- - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
- - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+- `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
+- `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+- `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
 以下は使用できる `SummaryPosition` プロパティの値です。
 
- - `Top` - 集計行は子行のリストの前に表示されます。
- - `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
+- `Top` - 集計行は子行のリストの前に表示されます。
+- `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
 
@@ -1469,30 +1479,30 @@ $custom-theme: grid-summary-theme(
 
 ## API リファレンス
 
-* `SummaryOperand`
-* `NumberSummaryOperand`
-* `DateSummaryOperand`
-* `ColumnGroup`
-* `Column`
+- `SummaryOperand`
+- `NumberSummaryOperand`
+- `DateSummaryOperand`
+- `ColumnGroup`
+- `Column`
 
 ## その他のリソース
 
 <!-- Angular -->
 
 
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 <!-- ComponentStart: Grid -->
 
-* [選択に基づいた集計](selection-based-aggregates.md)
+- [選択に基づいた集計](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
 
@@ -1501,20 +1511,20 @@ $custom-theme: grid-summary-theme(
 <!-- Blazor -->
 
 <!-- ComponentStart: Grid -->
-* [列のデータ型](column-types.md#デフォルトのテンプレート)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [列のデータ型](column-types.md#デフォルトのテンプレート)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

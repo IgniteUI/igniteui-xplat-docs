@@ -42,6 +42,7 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "labelInterval"}], "originalName": "LabelInterval"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "labelsPostInitial"}], "originalName": "LabelsPostInitial"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "labelsPreTerminal"}], "originalName": "LabelsPreTerminal"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "labelsVisible"}], "originalName": "LabelsVisible"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maximumValue"}], "originalName": "MaximumValue"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "mergeViewports"}], "originalName": "MergeViewports"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minimumValue"}], "originalName": "MinimumValue"},

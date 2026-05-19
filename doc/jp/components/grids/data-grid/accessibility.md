@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | アクセシビリティの遵守 | インフラジスティックス
 _description: インフラジスティックスの {ProductName} データ テーブルとグリッドを使用して、スクリーン リーダーがグリッドのセルと列を介して「話す」キーボード ナビゲーションのインタラクションを読み取ることができるアクセシビリティ機能をサポートします。{ProductName} テーブルのチュートリアルをご覧ください!
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクセシビリティ, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
@@ -20,7 +20,7 @@ _language: ja
 {ProductName} データ テーブル / データ グリッドは、グリッドのセルと列を介したキーボード ナビゲーションのインタラクションを解釈するアクセシビリティとスクリーン リーダーをサポートしています。
 
 <!-- React, WebComponents -->
-これは、グリッドの `useAccessibility` プロパティを **true** に設定することによってアクティブになります。
+これは、グリッドの `UseAccessibility` プロパティを **true** に設定することによってアクティブになります。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
@@ -68,30 +68,30 @@ ARIA 属性
 
 ## キーボード ナビゲーション
 
-`useAccessibility` プロパティを **true** に設定すると、スクリーン リーダーが認識できるデータ グリッド内のさまざまなキーボード ナビゲーション オプションが有効になります。以下は、現在押下されているセルに対する各キーの押下 / 組み合わせとそれらが持つ効果についての説明です。
+`UseAccessibility` プロパティを **true** に設定すると、スクリーン リーダーが認識できるデータ グリッド内のさまざまなキーボード ナビゲーション オプションが有効になります。以下は、現在押下されているセルに対する各キーの押下 / 組み合わせとそれらが持つ効果についての説明です。
 
 グリッド内の移動
 
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>: 1 つ上のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd>: 左のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>: 1 つ下のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>: 1 つ上のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Home</kbd>: 最初の列ヘッダーに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>End</kbd>: 最後に表示されているセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> 現在の列ヘッダーに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> 現在の列の最後のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> 現在の行の最初のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> 現在の行の最後のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd>: 1 つ上のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd>: 左のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd>: 1 つ下のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd>: 1 つ上のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>HOME</kbd>: 最初の列ヘッダーに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>END</kbd>: 最後に表示されているセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> 現在の列ヘッダーに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd> 現在の列の最後のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd> 現在の行の最初のセルに移動します。
+- <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd> 現在の行の最後のセルに移動します。
 
 スクリーン リーダー コマンド
 
-- <kbd>Ctrl または Alt</kbd> + <kbd>Num Pad 5</kbd>: 現在のセルを読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>: 現在の行を読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd>: 行の始まりから読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Up</kbd>: 現在のセルから行の終わりまで読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Num Pad 5</kbd>: 現在の列を読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd>: 列の先頭から読み上げます。
-- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Down</kbd>: 列の下部まで読み上げます。
+- <kbd>CTRL</kbd> または <kbd>ALT</kbd> + <kbd>Num Pad 5</kbd>: 現在のセルを読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd>: 現在の行を読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>HOME</kbd>: 行の始まりから読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd>: 現在のセルから行の終わりまで読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>Num Pad 5</kbd>: 現在の列を読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>END</kbd>: 列の先頭から読み上げます。
+- <kbd>INSERT</kbd> + <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd>: 列の下部まで読み上げます。
 
 ## コード スニペット
 
@@ -125,5 +125,5 @@ ARIA 属性
 
 ## API リファレンス
 
- - `Grid`
- - `UseAccessibility`
+- `Grid`
+- `UseAccessibility`

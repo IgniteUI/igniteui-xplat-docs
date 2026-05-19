@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Row Grouping | Infragistics
 _description: Use Infragistics' {Platform} grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, row grouping, groupby area,  {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridGroupBy}
 ---
 
@@ -70,7 +70,7 @@ public connectedCallback() {
     GroupHeaderDisplayMode="GroupHeaderDisplayMode.Split" />
 ```
 
-## Collapsable Groups
+## Collapsible Groups
 
 Also, the `Grid` can display a toggle on each group section to allow the end user to expand or collapse the grouped data via the `IsGroupCollapsable` property.
 
@@ -195,8 +195,8 @@ public connectedCallback() {
 
 ## API References
 
- - `Grid`
- - `GroupDescriptions`
- - `GroupHeaderDisplayMode`
- - `IsGroupByAreaVisible`
- - `IsGroupCollapsable`
+- `Grid`
+- `GroupDescriptions`
+- `GroupHeaderDisplayMode`
+- `IsGroupByAreaVisible`
+- `IsGroupCollapsable`

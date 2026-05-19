@@ -59,6 +59,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "RadialLabelMode","mappedName": "autoCalloutRadialLabelMode"}], "originalName": "AutoCalloutRadialLabelMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "canUseAsAngleAxis"}], "originalName": "CanUseAsAngleAxis"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "canUseAsValueAxis"}], "originalName": "CanUseAsValueAxis"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "clipSeriesToBounds"}], "originalName": "ClipSeriesToBounds"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getAngleFromWorld"}], "originalName": "GetAngleFromWorld"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"},
@@ -66,6 +67,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getUnscaledPosition"}], "originalName": "GetUnscaledPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomRadialMarkerStyleAllowed"}], "originalName": "IsCustomRadialMarkerStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomRadialStyleAllowed"}], "originalName": "IsCustomRadialStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isRadial"}], "originalName": "IsRadial"},
@@ -137,6 +139,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "legendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusX"}], "originalName": "RadiusX"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusY"}], "originalName": "RadiusY"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusY"}], "originalName": "RadiusY"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useInsetOutlines"}], "originalName": "UseInsetOutlines"} ]
   }]
 }

@@ -2,6 +2,7 @@
 title:  Row actions in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentName} provides the ability to use ActionStrip and utilize CRUD for row/cell components and row pinning.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -193,47 +194,22 @@ These components expose templates giving flexibility for customization. For inst
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
+            <IgbGridEditingActions
+                EditRow="true"
+                DeleteRow="true"
+                AddRow="true">
+            </IgbGridEditingActions>
         </IgbActionStrip>
     </{ComponentSelector}>
 </div>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```razor
-<div class="grid__wrapper">
-    <IgbHierarchicalGrid Data=northwindEmployees>
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
-        </IgbActionStrip>
-    </IgbHierarchicalGrid>
-</div>
-```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- WebComponents -->
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -299,19 +275,19 @@ These components expose templates giving flexibility for customization. For inst
 
 For more detailed information regarding the Action Strip API, refer to the following links:
 
-* `ActionStrip`
+- `ActionStrip`
 
 Additional components and/or directives that can be used within the Action Strip:
 
-* `GridActionsBaseDirective`
-* `DividerDirective`
+- `GridActionsBaseDirective`
+- `DividerDirective`
 
 <!-- end: Angular -->
 
-* `GridPinningActions`
-* `GridEditingActions`
+- `GridPinningActions`
+- `GridEditingActions`
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

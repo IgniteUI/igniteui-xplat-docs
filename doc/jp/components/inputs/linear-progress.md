@@ -2,6 +2,7 @@
 title: {Platform} Linear Progress | Linear Progress | インフラジスティックス
 _description: プログレス バーを表示し、Linear Progress Indicator コンポーネントを使用して、無限の色とストライプ オプションで外観をカスタマイズします。
 _keywords: {Platform} Linear Progress, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["LinearProgress"]
 _language: ja
 ---
@@ -87,7 +88,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 ### 進行状況タイプ
 
-`variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
+`Variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
 
 ```tsx
 <IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
@@ -113,11 +114,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 ### 不確定のプログレス
 
-正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。
+正確に決定されていないプロセスをトラックしたい場合、`Indeterminate` プロパティを設定できます。
 
 ### アニメーション期間
 
-`animationDuration` プロパティは、アニメーション サイクルにかかる時間を指定するために使用されます。値として、アニメーションの継続時間をミリ秒単位で表す数値を取ります。
+`AnimationDuration` プロパティは、アニメーション サイクルにかかる時間を指定するために使用されます。値として、アニメーションの継続時間をミリ秒単位で表す数値を取ります。
 
 ```tsx
 <IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
@@ -133,11 +134,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 ### Text プロパティ
 
-`labelAlign` プロパティを使用して、デフォルト値を調整できます。許可される値は、**top**、**bottom**、**top-start**、**top-end**、**bottom-start**、および **bottom-end** です。
+`LabelAlign` プロパティを使用して、デフォルト値を調整できます。許可される値は、**top**、**bottom**、**top-start**、**top-end**、**bottom-start**、および **bottom-end** です。
 
-進行状況インジケーターのデフォルトのラベルを非表示にするには、`hideLabel` 属性を使用します。
+進行状況インジケーターのデフォルトのラベルを非表示にするには、`HideLabel` 属性を使用します。
 
-`labelFormat` プロパティを使用して、`LinearProgress` のデフォルト ラベルをカスタマイズできます。
+`LabelFormat` プロパティを使用して、`LinearProgress` のデフォルト ラベルをカスタマイズできます。
 
 次のサンプルは、上記の構成を示しています:
 
@@ -198,13 +199,13 @@ igc-linear-progress::part(label){
 
 ## API リファレンス
 
- - `Button`
- - `Calendar`
- - `LinearProgress`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `LinearProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

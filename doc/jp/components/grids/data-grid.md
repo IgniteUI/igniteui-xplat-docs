@@ -1,7 +1,8 @@
 ---
-title: {Platform} Data Grid コンポーネント (Data Table) - インフラジスティックス
+title: {Platform} Data Grid コンポーネント - インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
 namespace: Infragistics.Controls
 _language: ja
@@ -39,8 +40,9 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行の固定、および移動可能な列が含まれます。</p>
-            <p>{Platform} テーブルは、ライブのストリーミング データ用に最適化されており、多数の行または列で無制限のデータ セット サイズを処理できます。</p>
+            <p>{Platform} Data Grid コンポーネントは、大量のデータを表示するために使用されます。モダンで複雑なグリッドは、滑らかな UX を提供し、表形式データ操作のための多彩な機能を備えています。直感的な API、テーマ設定、ブランディング、フィルタリング、ソート、データ選択、Excel スタイルのフィルタリングなどが利用可能です。</p>
+            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。当ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行のピン固定、列の移動、仮想化、マスター詳細表示などが含まれます。</p>
+            <p>{Platform} テーブルは、数百万行・列の処理やリアルタイム更新を瞬時に行えるように最適化されており、{ProductName} Data Grid は市場で最も優れた {Platform} Data Grid です。</p>
         </div>
     </article>
     <article class="sample-column">
@@ -51,7 +53,7 @@ _language: ja
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
                     alt="{Platform} Data Grid"
-                    title="{Platform} Data Grid">
+                    title="{Platform} Data Grid コンポーネント - インフラジスティックス">
             </div>
         </div>
     </article>
@@ -134,6 +136,7 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 
 <!-- WebComponents -->
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -198,7 +201,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid id="grid1" data={localData} autoGenerate={true}></IgrGrid>
+<IgrGrid id="grid1" autoGenerate={true} data={localData}></IgrGrid>
 ```
 
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。
@@ -624,7 +627,7 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.cell.value} 
+            <input name="price" type="number" value={ctx.cell.value}
                 onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
@@ -698,6 +701,7 @@ column.bodyTemplate = this.smallView;
     <!-- Column declarations -->
 </igc-grid>
 ```
+
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some condition.
@@ -788,6 +792,7 @@ public initColumns(column: IgxGridColumn) {
     }
 }
 ```
+
 ```typescript
 public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
@@ -939,7 +944,9 @@ const POJO = [{
 <!-- Angular, WebComponents, React -->
 ## グリッドのデータ バインディング
 
-はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。
+当社の {Platform} Data Grid は、比類のないデータ バインディング オプションを提供し、リアルタイム更新とスムーズなスクロールに最適化されています。低遅延レンダリングにより、ライブ データや大規模データセットを含む UI 変更を瞬時に表示できます。
+
+{Platform} Data Grid の詳細に進む前に、グリッドをリモート データ サービスにバインドする設定に変更したいと思います。これは、大規模アプリケーションで一般的なシナリオです。
 
 <!-- WebComponents -->
 これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
@@ -1110,9 +1117,10 @@ export class MyComponent implements OnInit {
 <!-- end: Angular, WebComponents, React -->
 ## 複雑なデータ バインディング
 
-`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+複雑なデータ バインディングにより、多階層データや複雑な実務データセット、オブジェクト指向のデータ モジュールなどとシームレスに連携できます。{Platform} Data Grid を使用することで、複雑なオブジェクト (1 階層以上にネストされたデータ構造を含む) に簡単にバインド可能です。これは、データ レコード内のプロパティ パスを介して実現されます。
 
 次のデータ モデルを見てください。
+
 ```typescript
 interface AminoAcid {
     name: string;
@@ -1244,7 +1252,7 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getName(ctx.cell.id.rowIndex)}
                     ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1275,7 +1283,7 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
             <div>
             <div>
                 { ctx.cell.value }
-                    {getName(ctx.cell.id.rowIndex)} 
+                    {getName(ctx.cell.id.rowIndex)}
                     {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
@@ -1881,10 +1889,10 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 詳細については、これらのリソースを参照してください。
 
- - [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
- - [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
- - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+- [Grid キーボード ナビゲーション](grid/keyboard-navigation.md)
+- [TreeGrid キーボード ナビゲーション](tree-grid/keyboard-navigation.md)
+- [Hierarchical Grid キーボード ナビゲーション](hierarchical-grid/keyboard-navigation.md)
+- [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
  <!-- end: Angular -->
 
@@ -1986,28 +1994,28 @@ platformBrowserDynamic()
 
 ## API リファレンス
 
-* `Grid`
-* `Column`
-* `Cell`
-* `CellTemplateContext`
-* `GridRow`
-* `GridToolbar`
-* `Paginator`
+- `Grid`
+- `Column`
+- `Cell`
+- `CellTemplateContext`
+- `GridRow`
+- `GridToolbar`
+- `Paginator`
 
 <!-- Angular -->
 
 ## テーマの依存関係
 
-* **Icon Theme**
-* **InputGroup Theme**
-* **Chip Theme**
-* **Ripple Theme**
-* **Button Theme**
-* **Overlay Theme**
-* **DropDown Theme**
-* **Calendar Theme**
-* **SnackBar Theme**
-* **Badge Theme**
+- **Icon Theme**
+- **InputGroup Theme**
+- **Chip Theme**
+- **Ripple Theme**
+- **Button Theme**
+- **Overlay Theme**
+- **DropDown Theme**
+- **Calendar Theme**
+- **SnackBar Theme**
+- **Badge Theme**
 
 ## チュートリアル ビデオ
 
@@ -2021,38 +2029,38 @@ platformBrowserDynamic()
 
 <!-- Angular -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 <!-- * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md) -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-* [Grid サイズ変更](grid/sizing.md)
-* [仮想化とパフォーマンス](grid/virtualization.md)
-* [ページング](grid/paging.md)
-* [フィルタリング](grid/filtering.md)
-* [ソート](grid/sorting.md)
-* [集計](grid/summaries.md)
-* [列の移動](grid/column-moving.md)
-* [列のピン固定](grid/column-pinning.md)
-* [列のサイズ変更](grid/column-resizing.md)
-* [選択](grid/selection.md)
-* [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
+- [Grid サイズ変更](grid/sizing.md)
+- [仮想化とパフォーマンス](grid/virtualization.md)
+- [ページング](grid/paging.md)
+- [フィルタリング](grid/filtering.md)
+- [ソート](grid/sorting.md)
+- [集計](grid/summaries.md)
+- [列の移動](grid/column-moving.md)
+- [列のピン固定](grid/column-pinning.md)
+- [列のサイズ変更](grid/column-resizing.md)
+- [選択](grid/selection.md)
+- [列のデータ型](grid/column-types.md#デフォルトのテンプレート)
 
 <!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

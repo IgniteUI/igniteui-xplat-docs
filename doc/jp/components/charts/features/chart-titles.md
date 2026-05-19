@@ -2,6 +2,7 @@
 title: {Platform} チャート タイトル | データ可視化ツール | インフラジスティックス
 _description: タイトル付きの Infragistics {ProductName} チャートをお試しください!
 _keywords: {Platform} charts, chart titles, titles, {ProductName}, Infragistics, {Platform} チャート, チャート タイトル, タイトル, インフラジスティックス
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja

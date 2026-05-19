@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 列の並べ替えと移動 - {ProductName}
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -202,6 +203,7 @@ constructor() {
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 }
 ```
+
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -395,6 +397,7 @@ $dark-grid-column-moving-theme: grid-theme(
     --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
@@ -403,24 +406,24 @@ $dark-grid-column-moving-theme: grid-theme(
 
 ## API リファレンス
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [検索](search.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [検索](search.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} Input | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Input", "Icon", "Radio"]
 _language: ja
 ---
@@ -165,13 +166,13 @@ igc-input::part(suffix) {
 
 ## API リファレンス
 
- - `Icon`
- - `Input`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Icon`
+- `Input`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

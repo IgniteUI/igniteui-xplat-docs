@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid to support the cell activation feature that will enable keyboard navigation through the cells of the grid. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.GridActivationMode"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "GridActivationMode"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -39,18 +39,18 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 - <kbd>↓</kbd>: Navigate one cell down.
 - <kbd>←</kbd>: Navigate one cell to the left on the current row only.
 - <kbd>→</kbd>: Navigate one cell to the right on the current row only.
-- <kbd>Page Up</kbd>: Scroll the grid one viewport page up.
-- <kbd>Page Down</kbd>: Scroll the grid one viewport page down.
-- <kbd>Tab</kbd>: Move the active cell to the next cell to the right, or the left-most cell of the next row if the last cell of that row is reached.
-- <kbd>Shift</kbd> + <kbd>Tab</kbd>: Move the active cell to the next cell to the left, or the right-most cell of the previous row if the first cell of that row is reached.
-- <kbd>Ctrl</kbd> + <kbd>↑</kbd>: Move to the top cell in the column.
-- <kbd>Ctrl</kbd> + <kbd>↓</kbd>: Move to the bottom cell in the column.
-- <kbd>Ctrl</kbd> + <kbd>←</kbd>: Move to the left-most cell in the row.
-- <kbd>Ctrl</kbd> + <kbd>→</kbd>: Move to the right-most cell in the row.
-- <kbd>Ctrl</kbd> + <kbd>Home</kbd>: Move to the top-left cell in the grid.
-- <kbd>Ctrl</kbd> + <kbd>End</kbd>: Move to the bottom-right cell in the grid.
+- <kbd>PAGE UP</kbd>: Scroll the grid one viewport page up.
+- <kbd>PAGE DOWN</kbd>: Scroll the grid one viewport page down.
+- <kbd>TAB</kbd>: Move the active cell to the next cell to the right, or the left-most cell of the next row if the last cell of that row is reached.
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd>: Move the active cell to the next cell to the left, or the right-most cell of the previous row if the first cell of that row is reached.
+- <kbd>CTRL</kbd> + <kbd>↑</kbd>: Move to the top cell in the column.
+- <kbd>CTRL</kbd> + <kbd>↓</kbd>: Move to the bottom cell in the column.
+- <kbd>CTRL</kbd> + <kbd>←</kbd>: Move to the left-most cell in the row.
+- <kbd>CTRL</kbd> + <kbd>→</kbd>: Move to the right-most cell in the row.
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd>: Move to the top-left cell in the grid.
+- <kbd>CTRL</kbd> + <kbd>END</kbd>: Move to the bottom-right cell in the grid.
 
 ## API References
 
- - `ActivationMode`
- - `Cell`
+- `ActivationMode`
+- `Cell`

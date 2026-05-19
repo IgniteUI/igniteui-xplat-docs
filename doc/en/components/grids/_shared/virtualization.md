@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Virtualization and Performance - {ProductName}
 _description: The {ProductName} Virtualization is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -28,8 +29,8 @@ However, it is also possible to explicitly set the `{ComponentName}`'s `Width` a
 
 The size of the data chunks is determined by:
 
-*   The row height for the vertical (row) virtualization. This is determined by the `RowHeight` option and is 50(px) by default.
-*   The individual column widths in pixels for the horizontal (column) virtualization. They can be determined by either setting explicit width for each column component or setting the `{ComponentName}`'s `ColumnWidth` option, which will be applied to all columns that don't have explicit width set.
+- The row height for the vertical (row) virtualization. This is determined by the `RowHeight` option and is 50(px) by default.
+- The individual column widths in pixels for the horizontal (column) virtualization. They can be determined by either setting explicit width for each column component or setting the `{ComponentName}`'s `ColumnWidth` option, which will be applied to all columns that don't have explicit width set.
 
 In most cases, letting the grid apply its default behavior by leaving dimensions unset will produce the desired layout. For column widths it is determined by the column count, the columns with set width, and the calculated width of the `{ComponentName}`'s container. The grid will try to fit all columns inside the available space as long as the width it attempts to assign is not under 136(px). In such cases, columns with unassigned width will receive the minimum width of 136(px) and a horizontal scrollbar will be shown. The grid will be horizontally virtualized.
 
@@ -43,9 +44,49 @@ The `{ComponentName}` supports remote virtualization, which is demonstrated in t
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+## Templating
+
+When needing to customize one of the existing templates in the grid, Blazor provides two possible ways to define a template:
+
+- via a server-side template, using the related component property (i.e. `BodyTemplate` property) or declaratively with the template name. For example:
+
+```razor
+<IgbColumn>
+    <BodyTemplate>
+        Template content here
+    </BodyTemplate>
+</IgbColumn>
+```
+
+This will render the template after first requesting and resolving it from the server.
+
+- via a client-template using the `Script` equivalent of the property (i.e. `BodyTemplateScript`) to set it to the name of the client-side function handler, for example:
+
+```razor
+<IgbColumn BodyTemplateScript="CellTemplate">
+</IgbColumn>
+```
+
+```
+igRegisterScript("CellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`Template content here`;
+}, false);
+
+```
+
+The handler then renders the provided lit template directly in the DOM as needed.
+
+> [!Note]
+> While both approaches are valid, the server-side templates do require a round-trip request to the server to retrieve and resolve the custom template before rendering it on the client. As such the client-template approach is more optimized and recommended, especially in scenarios with many templates that need frequent updates as there may be a noticeable delay between the related user-interaction and the template updates.
+
+<!-- end: Blazor -->
+
 ## Virtualization Limitations
 
-*   On Mac OS horizontal scrollbar is not visible when "Show scrollbars only when scrolling" system option is set to true (which is the default value). This is because the `{ComponentName}`’s row container has an overflow set to hidden. Change the option to "Always" and the scrollbar will appear.
+On Mac OS horizontal scrollbar is not visible when "Show scrollbars only when scrolling" system option is set to true (which is the default value). This is because the `{ComponentName}`’s row container has an overflow set to hidden. Change the option to "Always" and the scrollbar will appear.
 
 ## FAQ
 
@@ -55,21 +96,21 @@ Without information about the sizes of the container and the items before render
 
 ## API References
 
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## Additional Resources
 
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

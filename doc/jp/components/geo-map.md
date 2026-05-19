@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | マップ概要 | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics, {Platform} マップ, 地理マップ, 画像タイル, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series"]
 _language: ja
 ---
@@ -9,7 +10,7 @@ _language: ja
 
 {ProductName} Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-# {Platform} マップの例
+## {Platform} マップの例
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 
@@ -23,6 +24,12 @@ _language: ja
 マップの Series プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
 
 Map は、マウス、キーボード、またはコードビハインドを使用して、マップ コンテンツをナビゲーションするためのカスタマイズ可能なナビゲーション動作を提供します。
+
+注: 2025 年 6 月 30 日をもって、すべての Microsoft Bing Maps for Enterprise Basic (無料) アカウントはすべて廃止されます。無料の Basic アカウントおよびキーをご利用中の場合は、サービスの中断を回避するために今すぐ対応する必要があります。Bing Maps for Enterprise の有償ライセンスをお持ちの方は、2028 年 6 月 30 日までアプリケーション内で Bing Maps を引き続きご利用いただけます。
+
+詳細は以下をご覧ください:
+
+[Microsoft Bing ブログ](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
@@ -58,7 +65,7 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
     imports: [
         // ...
         IgxGeographicMapModule,
-		IgxDataChartInteractivityModule
+        IgxDataChartInteractivityModule
         // ...
     ]
 })

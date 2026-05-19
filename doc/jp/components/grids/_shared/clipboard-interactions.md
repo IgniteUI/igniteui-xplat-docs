@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} クリップボード操作 - {ProductName}
 _description: {Platform} {ComponentTitle} のクリップボード機能は、データを Excel、その他のプログラムにコピー、貼り付け、エクスポートするための高速で簡単、カスタマイズ可能な方法を提供します。今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -24,12 +25,12 @@ _language: ja
 コピー動作は、ブラウザーとオペレーティング システムで定義されているデフォルトのインタラクションで動作します。以下は、コピー＆ペースト動作の場合です。
 
 - Windows または Unix
-  - キーボード ショートカット: <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>Ctrl</kbd> + <kbd>Ins</kbd>
-  - キーボード ショートカット: <kbd>Ctrl</kbd> + <kbd>V</kbd> / <kbd>Shift</kbd> + <kbd>Ins</kbd>
+  - キーボード ショートカット: <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>Ins</kbd>
+  - キーボード ショートカット: <kbd>CTRL</kbd> + <kbd>V</kbd> / <kbd>SHIFT</kbd> + <kbd>Ins</kbd>
   - ブラウザー メニューからのコピー操作
 - macOS
-  - キーボード ショートカット: <kbd>⌘ Cmd</kbd> + <kbd>C</kbd>
-  - キーボード ショートカット: <kbd>⌘ Cmd</kbd> + <kbd>V</kbd>
+  - キーボード ショートカット: <kbd>CMD</kbd> + <kbd>C</kbd>
+  - キーボード ショートカット: <kbd>CMD</kbd> + <kbd>V</kbd>
   - ブラウザー メニューからのコピー操作
 
 
@@ -37,7 +38,7 @@ _language: ja
 
 - カットとコピーの両方のイベントは、Internet Explorer では本来サポートされていません。**paste** イベント (IE 11) は発生されますが、イベントの `ClipboardData` プロパティを公開しません。
 > [!Note]
-> IE 11のセルを**コピー**するためには、キーボード選択を使用できます。複数セルを選択するには **Shift キー** を押しながらコピーするには **Ctrl + C** を押します。
+> IE 11のセルを**コピー**するためには、キーボード選択を使用できます。複数セルを選択するには <kbd>SHIFT</kbd> キー を押しながらコピーするには <kbd>CTRL</kbd> + <kbd>C</kbd> を押します。
 
 - グリッドが編集モードの間、コピー動作は無効になります。
 - この機能の現在のバージョンは、グリッドからのコピー動作のみをカバーします。今後、グリッドの動作内で`貼り付け`を公開する予定です。
@@ -66,17 +67,17 @@ _language: ja
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のピン固定](column-pinning.md)
-* [選択](selection.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [複数列ヘッダー](multi-column-headers.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のピン固定](column-pinning.md)
+- [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [複数列ヘッダー](multi-column-headers.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

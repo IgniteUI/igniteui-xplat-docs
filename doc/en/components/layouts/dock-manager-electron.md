@@ -2,6 +2,7 @@
 title: {Platform} Dock Manager | Desktop Integration | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout of multi-window Electron desktop application. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
 
@@ -151,7 +152,7 @@ For the full source code please clone the [repository](https://github.com/Ignite
 
 ## API References
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`

@@ -88,6 +88,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
       {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
       {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},

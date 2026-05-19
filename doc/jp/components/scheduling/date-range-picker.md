@@ -1,7 +1,8 @@
 ---
-title: {Platform} Date Range Picker コンポーネント – {ProductName}
+title: {Platform} Date Range Picker コンポーネント - {ProductName}
 _description: インフラジスティックスの {Platform} Date Range Picker を使用すると、カレンダーから 2 つの日付の範囲を選択し、それを入力要素に設定できます。
 _keywords: {Platform} Date Range Picker, {ProductName}, Infragistics, {Platform} 日付範囲ピッカー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateRangePicker"]
 _language: ja
 ---
@@ -14,7 +15,7 @@ _language: ja
 
 以下は、カレンダーのポップアップを使用して開始日と終了日を選択できる `DateRangePicker` コンポーネントのサンプルです。
 
-`sample="/scheduling/date-range-picker/overview", height="500", alt="{Platform} Date Range Picker 概要の例"`
+`sample="/scheduling/date-range-picker/overview", height="440", alt="{Platform} Date Range Picker 概要の例"`
 
 ### 作業の開始
 
@@ -37,6 +38,38 @@ defineComponents(IgcDateRangePickerComponent);
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+`DateRangePicker` の使用を開始するには、最初に次のコマンドを実行して Ignite UI for React  をインストールする必要があります。
+
+```cmd
+npm install igniteui-react
+```
+
+その後、次のように `DateRangePicker`  をインポートする必要があります。
+
+```tsx
+import { IgrDateRangePicker } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+`DateRangePicker` コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDateRangePickerModule));
+```
+
+スタイルを `DateRangePicker` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 これで、{Platform} `DateRangePicker` の基本構成から始めることができます。
 
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
@@ -58,11 +91,27 @@ defineComponents(IgcDateRangePickerComponent);
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker/>
+```
+
+```razor
+<IgbDateRangePicker @ref="DateRangePicker"></IgbDateRangePicker>
+```
+
 `DateRangePicker` を 2 つの入力欄を使用するように切り替えるには、`UseTwoInputs` プロパティを **true** に設定します。
 
 ```html
 <igc-date-range-picker use-two-inputs="true">
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker useTwoInputs/>
+```
+
+```razor
+<IgbDateRangePicker UseTwoInputs="true"></IgbDateRangePicker>
 ```
 
 ### Value (値)
@@ -76,6 +125,34 @@ let endDate = new Date(2025, 4, 8);
 dateRange.value = { start: startDate, end: endDate }
 ```
 
+```tsx
+const dateRangeRef = useRef<IgrDateRangePicker>();
+let startDate = new Date(2025, 4, 6);
+let endDate = new Date(2025, 4, 8);
+useEffect (() => {
+  dateRangeRef.current.value = { start: startDate, end: endDate }
+}, [])
+
+return (
+  <IgrDateRangePicker ref={dateRangeRef} />
+);
+```
+
+```razor
+ <IgbDateRangePicker @ref="DateRangePicker" Value="@Range" Label="Date Range"/>
+
+ @code {
+    public IgbDateRangePicker DateRangePicker { get; set; }
+
+    public IgbDateRangeValue Range = new IgbDateRangeValue()
+    {
+        Start = DateTime.Today,
+        End = DateTime.Today.AddDays(3)
+    };
+}
+```
+<!-- WebComponents, React -->
+
 値は属性として設定することもできます。この場合、値は JSON として正しく解析可能なオブジェクトである必要があり、`start` と `end` フィールドには ISO 8601 形式の日付値を持たせる必要があります。
 
 ```html
@@ -83,13 +160,26 @@ dateRange.value = { start: startDate, end: endDate }
 <igc-date-range-picker/>
 ```
 
-### 読み取り専用および編集不可
+```tsx
+<IgrDateRangePicker value={{start: new Date('2025-01-01'), end: new Date('2025-01-02')}}/>
+```
+<!-- end: WebComponents, React -->
+
+### Read-only (読み取り専用) および Non-editable (編集不可)
 
 `DateRangePicker` を読み取り専用に設定すると、入力やカレンダーでの範囲変更が無効になり、キーボード ナビゲーションも無効になります。また、カレンダーやクリア アイコンも視覚的に無効状態になります。これは、value 属性で範囲を設定し、それを表示専用にしたい場合に便利です。この動作を有効にするには、`ReadOnly` プロパティを設定するだけです。
 
 ```html
 <igc-date-range-picker use-two-inputs="true" readonly>
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker useTwoInputs readOnly/>
+```
+
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" ReadOnly="true"/>
 ```
 
 あるいは、`NonEditable` プロパティを使用することもできます。これは `ReadOnly` とは異なり、入力欄のタイピングによる編集のみを禁止し、カレンダーからの選択やクリア アイコンでのリセットは可能です。
@@ -99,7 +189,15 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
-### ポップアップ モード 
+```tsx
+<IgrDateRangePicker useTwoInputs nonEditable/>
+```
+
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" NonEditable="true"/>
+```
+
+### ポップアップ モード
 
 デフォルトでは、`DateRangePicker` をクリックすると、カレンダーのポップアップが `dropdown` モードで表示されます。`Mode` プロパティを `dialog` に設定することで、カレンダーを `dialog` モードで開くこともできます。
 
@@ -108,45 +206,53 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker mode='dialog'/>
+```
+
+```razor
+ <IgbDateRangePicker Mode="PickerMode.Dialog"/>
+```
+
 ### キーボード ナビゲーション
 
-`DatePicker` は直感的なキーボード ナビゲーションに対応しており、マウスを使わずに値の増減や入力マスクのセクション間の移動が可能です。
+`DateRangePicker` は直感的なキーボード ナビゲーションに対応しており、マウスを使わずに値の増減や入力マスクのセクション間の移動が可能です。
 
 使用可能なキーボード ナビゲーション オプションは、コンポーネントがシングル インプット モードか 2 インプット モードかによって異なります。
 
-**2 インプット モード:** 
+**2 インプット モード:**
 
 |キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | カレットを 1 文字左に移動します |
-| <kbd>&rarr;</kbd> | カレットを 1 文字右に移動します |
-| <kbd>Ctrl + 左矢印</kbd> | カレットを現在の入力マスク セクションの先頭、またはすでに先頭にいる場合は前のセクションの先頭に移動します |
-| <kbd>Ctrl + 右矢印</kbd> | カレットを現在の入力マスク セクションの末尾、またはすでに末尾にいる場合は次のセクションの末尾に移動します |
-| <kbd>上矢印</kbd> | 現在フォーカスされている入力マスクのセクションの値を 1 ステップ増加させます |
-| <kbd>下矢印</kbd> | 現在フォーカスされている入力マスクのセクションの値を 1 ステップ減少させます |
-| <kbd>Home</kbd> | カレットを入力マスクの先頭に移動します |
-| <kbd>End</kbd> | カレットを入力マスクの末尾に移動します |
-| <kbd>Ctrl + ;</kbd> | 現在の日付をコンポーネントの値として設定します |
+| <kbd>←</kbd> | カレットを 1 文字左に移動します |
+| <kbd>→</kbd> | カレットを 1 文字右に移動します |
+| <kbd>CTRL</kbd> + <kbd>左矢印</kbd> | カレットを現在の入力マスク セクションの先頭、またはすでに先頭にいる場合は前のセクションの先頭に移動します |
+| <kbd>CTRL</kbd> + <kbd>右矢印</kbd> | カレットを現在の入力マスク セクションの末尾、またはすでに末尾にいる場合は次のセクションの末尾に移動します |
+| <kbd>↑</kbd> | 現在フォーカスされている入力マスクのセクションの値を 1 ステップ増加させます |
+| <kbd>↓</kbd | 現在フォーカスされている入力マスクのセクションの値を 1 ステップ減少させます |
+| <kbd>HOME</kbd> | カレットを入力マスクの先頭に移動します |
+| <kbd>END</kbd> | カレットを入力マスクの末尾に移動します |
+| <kbd>CTRL</kbd> + <kbd>;</kbd> | 現在の日付をコンポーネントの値として設定します |
 
 **シングル インプットおよび 2 インプット モードの両方:**
 
 |キー|説明|
 |----|-----------|
-| <kbd>Alt + 下矢印</kbd> | カレンダーのドロップダウンを開きます |
-| <kbd>Alt + 上矢印</kbd> | カレンダーのドロップダウンを閉じます |
+| <kbd>ALT</kbd> + <kbd>↓</kbd | カレンダーのドロップダウンを開きます |
+| <kbd>ALT</kbd> + <kbd>↑</kbd> | カレンダーのドロップダウンを閉じます |
 
 キーボードを使用してカレンダー ポップアップ内を移動することもできます。ナビゲーションは `Calendar` コンポーネントと同じです。
 
 |キー|説明|
 |----|-----------|
-| <kbd>&uarr;</kbd> / <kbd>&darr;</kbd> / <kbd>&larr;</kbd> / <kbd>&rarr;</kbd>| 月内の日付間を移動します |
+| <kbd>←</kbd> + <kbd>→</kbd> + <kbd>↓</kbd> + <kbd>↑</kbd> | 月内の日付間を移動します |
 | <kbd>ENTER</kbd> | 現在フォーカスされている日を選択します |
-| <kbd>PageUp</kbd> | 前の月に移動します |
-| <kbd>PageDown</kbd> | 次の月に移動します |
-| <kbd>SHIFT + PageUp</kbd> | 前年に移動します |
-| <kbd>SHIFT + PageDown</kbd> | 翌年に移動します |
-| <kbd>Home</kbd> | 表示されている月のうち、最も早い月の最初の日にフォーカスします (または 1 か月ビューの場合はその月の最初の日) |
-| <kbd>End</kbd> | 表示されている月のうち、最も遅い月の最後の日にフォーカスします (または 1 か月ビューの場合はその月の最後の日) |
+| <kbd>PAGE UP</kbd> | 前の月に移動します |
+| <kbd>PAGE DOWN</kbd> | 次の月に移動します |
+| <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> | 前年に移動します |
+| <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> | 翌年に移動します |
+| <kbd>HOME</kbd> | 表示されている月のうち、最も早い月の最初の日にフォーカスします (または 1 か月ビューの場合はその月の最初の日) |
+| <kbd>END</kbd> | 表示されている月のうち、最も遅い月の最後の日にフォーカスします (または 1 か月ビューの場合はその月の最後の日) |
 | <kbd>Escape</kbd> | カレンダーのポップアップを閉じます |
 
 ## レイアウト
@@ -160,20 +266,45 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker label='Date Range'/>
+```
+
+```razor
+ <IgbDateRangePicker Label="Date Range"/>
+```
+
 ```html
 <igc-date-range-picker use-two-inputs="true" label-start="Start Date" label-end="End Date">
 </igc-date-range-picker>
 ```
 
-### 形式
+```tsx
+<IgrDateRangePicker useTwoInputs labelStart='Start Date' labelEnd='End Date'/>
+```
+
+```razor
+ <IgbDateRangePicker UseTwoInputs="true" LabelStart="Start Date" LabelEnd="End Date"/>
+```
+
+### Format (形式)
 
 入力フィールドに表示される日付形式をカスタマイズすることも可能です。この目的のために使用できるプロパティは、`Locale`、`InputFormat`、および `DisplayFormat` の 3 つです。
 
 `Locale` プロパティでは、使用するロケール識別子を指定でき、地域の慣習に基づいて日付の表示形式が決定されます。
 たとえば、日付を日本形式で表示したい場合、locale プロパティを次のように設定します:
+
 ```html
 <igc-date-range-picker locale="ja-JP">
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker locale='ja-JP'/>
+```
+
+```razor
+ <IgbDateRangePicker Locale="ja-JP"/>
 ```
 
 日付形式を手動で定義したい場合は、カスタム形式の文字列を渡して `InputFormat` プロパティを使用できます。
@@ -183,11 +314,27 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker inputFormat='dd/MM/yy'/>
+```
+
+```razor
+ <IgbDateRangePicker InputFormat="dd/MM/yy"/>
+```
+
 `DisplayFormat` プロパティはカスタム形式文字列も受け入れますが、入力フィールドがアイドル状態 (つまり、フォーカスされていない状態) の場合にのみ適用されます。フィールドにフォーカスがある場合、形式はデフォルト、または `InputFormat` で定義された形式に戻ります (両方のプロパティが使用されている場合)。
 
 ```html
 <igc-date-range-picker input-format="dd/MM/yy" display-format="yy/MM/dd">
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker inputFormat='dd/MM/yy' displayFormat='yy/MM/dd'/>
+```
+
+```razor
+ <IgbDateRangePicker InputFormat="dd/MM/yy" DisplayFormat='yy/MM/dd'/>
 ```
 
 ### カレンダーのレイアウトと形式
@@ -213,6 +360,14 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker orientation='vertical' visibleMonths={1} showWeekNumbers/>
+```
+
+```razor
+ <IgbDateRangePicker Orientation="ContentOrientation.Vertical" VisibleMonths="1" ShowWeekNumbers="true"/>
+```
+
 ### Min (最小値) および Max (最大値)
 
 `Min` および `Max` プロパティを使用して、定義した範囲外の日付を無効にすることで、ユーザーの入力を制限することもできます。これらのプロパティはバリデーターとして機能するため、範囲外の日付が手動で入力された場合でも、`DateRangePicker` は無効になります。
@@ -222,34 +377,96 @@ dateRange.value = { start: startDate, end: endDate }
 </igc-date-range-picker>
 ```
 
-### カスタムおよび定義済みの日付範囲 
+```tsx
+<IgrDateRangePicker min={new Date('2025-05-06')} max={new Date('2025-05-10')}/>
+```
 
-`CustomRanges` プロパティを使用して、範囲選択を高速化するために、カレンダー ポップアップにカスタム日付範囲チップを追加することもできます。たとえば、現在の日付を終了日とし、過去 7 日間の範囲をすぐに選択できるカスタム日付範囲チップを作成できます。さらに、`UsePredefinedRanges` プロパティを設定すると、カスタム チップに加えて定義済みの範囲チップも表示されます。
+```razor
+ <IgbDateRangePicker Min="@MinDate" Max="@MaxDate"/>
+
+ @code {
+    public DateTime MinDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+    public DateTime MaxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 30);
+ }
+```
+
+### カスタムおよび定義済みの日付範囲
+
+`CustomRanges` プロパティを使用して、範囲選択を高速化するために、カレンダー ポップアップにカスタム日付範囲チップを追加することもできます。たとえば、現在の日付を終了日とし、今後 7 日間の範囲をすぐに選択できるカスタム日付範囲チップを作成できます。さらに、`UsePredefinedRanges` プロパティを設定すると、カスタム チップに加えて定義済みの範囲チップも表示されます。
 
 ```ts
 const today = new Date();
 
-const previousSeven = new Date(
+const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() - 7 
+  today.getDate() + 7
 );
-const lastWeek: CustomDateRange[] = [
+const nextWeek: CustomDateRange[] = [
   {
-    label: 'Previous 7 days',
+    label: 'Next 7 days',
     dateRange: {
-      start: previousSeven,
-      end: today,
-    },
+      start: today,
+      end: nextSeven
+    }
   }
 ]
 
 const dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
-dateRange.customRanges = lastWeek;
+dateRange.customRanges = nextWeek;
 dateRange.usePredefinedRanges = true;
 ```
 
-これで、カレンダーのポップアップ内に表示された `「過去 7 日間」` チップをクリックすると、7 日前から今日までの範囲が自動的に選択されます。
+```tsx
+const today = new Date();
+const nextSeven = new Date(
+  today.getFullYear(),
+  today.getMonth(),
+  today.getDate() + 7
+);
+const nextWeek: CustomDateRange[] = [
+  {
+    label: "Next 7 days",
+    dateRange: {
+      start: today,
+      end: nextSeven
+    }
+  }
+];
+
+return (
+  <IgrDateRangePicker usePredefinedRanges customRanges={nextWeek} />
+);
+```
+
+```razor
+<IgbDateRangePicker CustomRanges="@CustomRanges" UsePredefinedRanges="true" Label="Custom Ranges" />
+
+@code {
+    public IgbCustomDateRange[] CustomRanges = [
+            new IgbCustomDateRange()
+            {
+                Label = "Previous 7 Days",
+                DateRange = new IgbDateRangeValue()
+                {
+                    Start = DateTime.Today.AddDays(-7),
+                    End = DateTime.Today
+                }
+            },
+            new IgbCustomDateRange()
+            {
+                Label = "Next 7 Days",
+                DateRange = new IgbDateRangeValue()
+                {
+                    Start = DateTime.Today,
+                    End = DateTime.Today.AddDays(7)
+                }
+            }
+    ];
+}
+```
+
+これで、カレンダーのポップアップ内に表示された **「次の 7 日間」** チップをクリックすると、本日から次の 7 日間までの範囲が自動的に選択されます。
 
 `sample="/scheduling/date-range-picker/custom-ranges", height="500", alt="{Platform} Date Range Picker カスタム範囲の例"`
 
@@ -271,6 +488,37 @@ dateRange.disabledDates = [
 ] as DateRangeDescriptor[];
 ```
 
+```tsx
+const dateRangeRef = useRef<IgrDateRangePicker>();
+const minDate = new Date(2025, 4, 5);
+const maxDate = new Date(2025, 4, 15);
+useEffect (() => {
+  dateRangeRef.current.disabledDates = [
+    {
+      type: DateRangeType.Between,
+      dateRange: [minDate, maxDate]
+    }
+  ] as DateRangeDescriptor[];
+}, [])
+
+return (
+  <IgrDateRangePicker ref={dateRangeRef} />
+);
+```
+
+```razor
+<IgbDateRangePicker DisabledDates="@DisabledDates" />
+
+@code {
+    public IgbDateRangeDescriptor[] DisabledDates = [
+        new IgbDateRangeDescriptor
+    {
+        RangeType = DateRangeType.Between,
+        DateRange = new DateTime[] { new DateTime(DateTime.Today.Year, DateTime.Today.Month, 5), new DateTime(DateTime.Today.Year, DateTime.Today.Month, 8) },
+    }];
+}
+```
+
 `DisabledDates` プロパティが提供するすべての可能性に関する詳細情報は、以下で確認できます: [無効日](./calendar.md#日付の無効化)
 
 同様に、カレンダーに 1 日または複数の日付を特別な日として設定したい場合も可能です。この場合は `SpecialDates` プロパティを使用します。([特別な日](./calendar.md#特定の日付))
@@ -287,12 +535,10 @@ dateRange.disabledDates = [
 
 すでに紹介したプロパティに加えて、`DateRangePicker` コンポーネントには動作をさらに細かく設定できるさまざまなプロパティが用意されています。
 
-<!-- WebComponents -->
-
 |名前|タイプ|説明|
 |--|--|--|
 | `Disabled` | boolean | コンポーネントを無効にします。 |
-| `NonEditable` | boolean |	入力フィールドでの入力を無効にします。 |
+| `NonEditable` | boolean | 入力フィールドでの入力を無効にします。 |
 | `Placeholder` | string | シングル インプット モード時のプレースホルダー テキスト。 |
 | `PlaceholderStart` | string | 開始日入力 (2 インプット モード) のプレースホルダー テキスト。 |
 | `PlaceholderEnd` | string | 終了日入力 (2 インプット モード) のプレースホルダー テキスト。 |
@@ -300,11 +546,9 @@ dateRange.disabledDates = [
 | `Prompt` | string | 入力マスクで未入力部分に表示されるプロンプト文字。 |
 | `ResourceStrings` | IgcDateRangePickerResourceStrings | 日付範囲ピッカーとカレンダーをローカライズするためのリソース文字列。 |
 
-<!-- end: WebComponents -->
-
 ### スロット
 
-`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。 
+`DateRangePicker` コンポーネントでは、利用可能なスロットを使用して、カスタム コンテンツを追加したり、外観を変更したりすることも可能です。
 
 シングル インプット モードでは、`prefix` および `suffix` スロットを使って、入力フィールドの前後にカスタム コンテンツを挿入できます。
 
@@ -313,6 +557,20 @@ dateRange.disabledDates = [
   <igc-icon slot="prefix" name="down_arrow_icon"></igc-icon>
   <igc-icon slot="suffix" name="upload_icon"></igc-icon>
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker>
+  <IgrIcon slot='prefix' name='down_arrow_icon'></IgrIcon>
+  <IgrIcon slot='suffix' name='upload_icon'></IgrIcon>
+</IgrDateRangePicker>
+```
+
+```razor
+<IgbDateRangePicker>
+    <IgbIcon @ref="DropDownIcon" slot="prefix" IconName="dropdown" Collection="material"></IgbIcon>
+    <IgbIcon @ref="UploadIcon" slot="suffix" IconName="upload" Collection="material"></IgbIcon>
+</IgbDateRangePicker>
 ```
 
 2 インプット モードでは、`prefix-start`、`prefix-end`、`suffix-start`、`suffix-end` スロットを使用して、それぞれの入力に対してカスタム コンテンツを追加できます。
@@ -326,12 +584,38 @@ dateRange.disabledDates = [
 </igc-date-range-picker>
 ```
 
+```tsx
+<IgrDateRangePicker>
+  <IgrIcon slot="clear-icon" name="apps_icon"></IgrIcon>
+  <IgrIcon slot="calendar-icon" name="bin_icon"></IgrIcon>
+</IgrDateRangePicker>
+```
+
+```razor
+<IgbDateRangePicker>
+    <IgbIcon slot="clear-icon" @ref="ClearIcon" IconName="bin" Collection="material"></IgbIcon>
+    <IgbIcon slot="calendar-icon" @ref="CalendarIcon" IconName="apps" Collection="material"></IgbIcon>
+</IgbDateRangePicker>
+```
+
 2 インプット モードでは、`separator` スロットを使用して、開始日と終了日の入力欄の間に表示されるデフォルトの「～」テキストをカスタマイズできます。
 
 ```html
 <igc-date-range-picker use-two-inputs="true">
   <span slot="separator">till</span>
 </igc-date-range-picker>
+```
+
+```tsx
+<IgrDateRangePicker useTwoInputs>
+  <span slot='separator'>till</span>
+</IgrDateRangePicker>
+```
+
+```razor
+<IgbDateRangePicker UseTwoInputs="true">
+  <span slot="separator">till</span>
+</IgbDateRangePicker>
 ```
 
 `actions` スロットを使用すると、独自のロジックを持つカスタム アクション ボタンを挿入できます。たとえば、以下のボタンはカレンダーの週番号の列を切り替えます。
@@ -342,9 +626,26 @@ dateRange.disabledDates = [
 </igc-date-range-picker>
 ```
 
-これまでに説明したスロットに加えて、`DateRangePicker` コンポーネントでは次のスロットも使用できます。
+```tsx
+const dateRangeRef = useRef<IgrDateRangePicker>();
+const toggleWeekNumbers = () => {
+  dateRangeRef.current.showWeekNumbers = !dateRangeRef.current.showWeekNumbers;
+};
 
-<!-- WebComponents -->
+return (
+  <IgrDateRangePicker ref={dateRangeRef}>
+    <IgrButton slot="actions" onClick={toggleWeekNumbers}>Toggle Week Numbers</IgrButton>
+  </IgrDateRangePicker>
+);
+```
+
+```razor
+<IgbDateRangePicker Mode="PickerMode.Dialog" @ref="ActionsDateRange">
+    <IgbButton slot="actions" @onclick="() => ActionsDateRange.ShowWeekNumbers = !ActionsDateRange.ShowWeekNumbers">Toggle week numbers</IgbButton>
+</IgbDateRangePicker>
+```
+
+これまでに説明したスロットに加えて、`DateRangePicker` コンポーネントでは次のスロットも使用できます。
 
 |名前|説明|
 |--|--|
@@ -359,13 +660,9 @@ dateRange.disabledDates = [
 | `calendar-icon-open-start` | 開始入力 (2 インプット モード) の開いた状態で表示されるアイコンやコンテンツ。|
 | `calendar-icon-open-end` | 終了入力 (2 インプット モード) の開いた状態で表示されるアイコンやコンテンツ。 |
 
-<!-- end: WebComponents -->
-
 `sample="/scheduling/date-range-picker/slots", height="500", alt="{Platform} Date Range Picker スロットの例"`
 
 ### メソッド
-
-<!-- WebComponents -->
 
 `DateRangePicker` は、プロパティやスロットに加えて、次のメソッドも公開しています:
 
@@ -377,8 +674,6 @@ dateRange.disabledDates = [
 | `Clear` | 入力フィールドをクリアして、ユーザー入力を削除します。 |
 | `Select` | ピッカーで日付範囲の値を選択します。 |
 | `SetCustomValidity` | カスタム検証メッセージを設定します。提供されたメッセージが空でない場合、入力は無効 (invalid) としてマークされます。 |
-
-<!-- end: WebComponents -->
 
 ## スタイル設定
 
@@ -433,15 +728,15 @@ igc-date-range-picker::part(clear-icon-end) {
 
 ## API リファレンス
 
- - `Input`
- - `Calendar`
- - `DatePicker`
- - `DateTimeInput`
- - `Dialog`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `Calendar`
+- `DatePicker`
+- `DateTimeInput`
+- `Dialog`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

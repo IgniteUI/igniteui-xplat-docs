@@ -2,7 +2,7 @@
   {
     "originalName": "PropertyEditor",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "PropertyEditor.cs","mappedName": "IgbPropertyEditor"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPropertyEditorPropertyDescriptionCollection","mappedName": "ActualDataSource"}], "originalName": "ActualProperties"},

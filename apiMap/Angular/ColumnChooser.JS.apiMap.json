@@ -4,7 +4,7 @@
   {
     "originalName": "ColumnChooser",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-chooser-component.ts","mappedName": "IgxColumnChooserComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},

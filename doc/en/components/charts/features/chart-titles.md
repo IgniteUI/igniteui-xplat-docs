@@ -2,6 +2,7 @@
 title: {Platform} Chart Titles | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart with Titles
 _keywords: {Platform} charts, chart titles, titles, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -14,8 +15,6 @@ The title and subtitle feature of the chart control allows you to add informatio
 
 `sample="/charts/category-chart/line-chart-with-titles", height="600", alt="{Platform} Chart Synchronization Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## API References
@@ -23,7 +22,7 @@ The title and subtitle feature of the chart control allows you to add informatio
 When adding a title or subtitle to the chart control, the content of the chart automatically resizes allowing for the title and subtitle information.
 
 | Property Name         | Property Type   |     Description  |
-| ----------------------|------------------|------------  |
+| ----------------------|------------------|------------|
 | `ChartTitle`          | string |  Title’s text content.  |
 | `TitleTextColor`      | string |  Title’s text. color  |
 | `TitleAlignment`      | HorizontalAlignment |  Title’s horizontal alignment.  |

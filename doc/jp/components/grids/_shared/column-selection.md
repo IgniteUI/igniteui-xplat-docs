@@ -1,7 +1,8 @@
 ---
-title: 	{Platform} {ComponentTitle} 列の選択 - {ProductName}
+title: {Platform} {ComponentTitle} 列の選択 - {ProductName}
 _description: {ProductName} {ComponentTitle} で列選択を構成する方法を説明します。これにより、グリッドのインタラクションがより簡単かつ高速になります。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列選択
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -11,7 +12,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列選択の概要
 
-{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択してハイライト表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
+{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択してハイライト表示する、簡略化された Excel のような方法を提供します。これは `ColumnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
 
 ## {Platform} {ComponentTitle} 列選択の例
 
@@ -76,8 +77,8 @@ _language: ja
 > キーボードの組み合わせは、グリッドの `ColumnSelection` 入力が `multiple` に設定されている場合にのみ使用できます。
 
 **列の選択**機能のキーボード ナビゲーションには 2 つのオプションがあります。
-- 複数列選択 - <kbd>Ctrl</kbd> キーを押しながら、すべての**選択可能な**ヘッダー セルを <kbd>クリック</kbd>。
-- 範囲列の選択 - <kbd>Shift</kbd> キーを押しながら + <kbd>クリック</kbd>、間にあるすべての**選択可能な**列を選択します。
+- 複数列選択 - <kbd>CTRL</kbd> キーを押しながら、すべての**選択可能な**ヘッダー セルを <kbd>クリック</kbd>。
+- 範囲列の選択 - <kbd>SHIFT</kbd> キーを押しながら + <kbd>クリック</kbd>、間にあるすべての**選択可能な**列を選択します。
 
 ## API 操作
 
@@ -225,45 +226,45 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 以下は、列選択 UI のその他の API です。
 
-* `{ComponentName}`
-* `Column`
-* `ColumnGroup`
+- `{ComponentName}`
+- `Column`
+- `ColumnGroup`
 
 `{ComponentName}` プロパティ:
-* `ColumnSelection`
-* `SelectedColumns`
-* `SelectColumns`
-* `DeselectColumns`
-* `SelectAllColumns`
-* `DeselectAllColumns`
+- `ColumnSelection`
+- `SelectedColumns`
+- `SelectColumns`
+- `DeselectColumns`
+- `SelectAllColumns`
+- `DeselectAllColumns`
 
 `Column` プロパティ:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `ColumnGroup` プロパティ:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `{ComponentName}` イベント:
-* `OnColumnsSelectionChange`
+- `OnColumnsSelectionChange`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [選択](selection.md)
-* [セル選択](cell-selection.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
+- [選択](selection.md)
+- [セル選択](cell-selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

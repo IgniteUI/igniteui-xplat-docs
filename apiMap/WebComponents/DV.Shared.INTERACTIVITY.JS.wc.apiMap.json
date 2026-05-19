@@ -17,6 +17,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "defaultPrevented"}], "originalName": "DefaultPrevented"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "keyCode"}], "originalName": "KeyCode"},
       {"names":[{"platform": "WebComponents", "mappedType": "ModifierKeys","mappedName": "modifiers"}], "originalName": "Modifiers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "preventDefault"}], "originalName": "PreventDefault"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shift"}], "originalName": "Shift"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "stopPropagation"}], "originalName": "StopPropagation"} ]

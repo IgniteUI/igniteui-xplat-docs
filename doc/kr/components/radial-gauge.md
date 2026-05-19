@@ -232,6 +232,7 @@ The scale is visual element that highlights full range of values in the gauge wh
     maximumValue=80 interval=10>
 </igx-radial-gauge>
 ```
+
 ```tsx
 <IgrRadialGauge
     scaleStartAngle={135}

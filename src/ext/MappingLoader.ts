@@ -266,6 +266,8 @@ export interface APITypeInfo {
     members?: APIMemberInfo[];
     names: APIPlatformNameGroup[];
     isEnum: boolean;
+    isInterface: boolean;
+    isType: boolean;
 }
 
 export enum APIPlatform {

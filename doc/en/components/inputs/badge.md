@@ -2,6 +2,7 @@
 title: {Platform} Badge | Infragistics
 _description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
+_license: MIT
 mentionedTypes: ["Badge"]
 ---
 
@@ -33,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcBadgeComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -84,7 +85,7 @@ The simplest way to start using the `Badge` is as follows:
 <IgbBadge />
 ```
 
-To display a subtle border around the badge, you can set the `outlined` attribute of the badge.
+To display a subtle border around the badge, you can set the `Outlined` attribute of the badge.
 
 ```tsx
 <IgrBadge outlined={true} ></IgrBadge>
@@ -102,7 +103,7 @@ To display a subtle border around the badge, you can set the `outlined` attribut
 
 ### Variants
 
-The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `Variant` attribute.
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -122,7 +123,7 @@ The {ProductName} badge supports several pre-defined stylistic variants. You can
 
 ### Shape
 
-The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
+The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `Shape` attribute.
 
 ```tsx
 <IgrBadge shape="square" ></IgrBadge>
@@ -139,6 +140,24 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 `sample="/inputs/badge/shape", height="60", alt="{Platform} Badge Example"`
 
 
+### Dot
+
+The {ProductName} badge component can also render as a minimal dot indicator for notifications by setting its `dot` attribute. Dot badges do not support content, but they can be outlined and can use any of the available dot types (e.g., primary, success, info, etc.).
+
+```tsx
+<IgrBadge dot={true} ></IgrBadge>
+```
+
+```html
+<igc-badge dot></igc-badge>
+```
+
+```razor
+<IgbBadge Dot="true" />
+```
+
+`sample="/inputs/badge/dot", height="60", alt="{Platform} Badge Example"`
+
 
 ## Styling
 
@@ -146,9 +165,8 @@ The `Badge` component exposes a `base` CSS part that can be used to change all o
 
 ```css
 igc-badge::part(base) {
-  background: var(--ig-primary-500);
-  color: var(--ig-primary-500-contrast);
-  border-radius: 2px;
+    --background-color: var(--ig-error-A100);
+    --border-radius: 2px;
 }
 ```
 
@@ -159,10 +177,10 @@ igc-badge::part(base) {
 
 ## API References
 
- - `Badge`
- - [`Styling & Themes`](../themes/overview.md)
+- `Badge`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

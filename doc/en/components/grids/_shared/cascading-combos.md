@@ -2,9 +2,10 @@
 title: {Platform} {ComponentTitle} Cascading combos - {ProductName}
 _description: Perform updating via cascading combos in {ComponentTitle}, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 _language: en
-mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
+mentionedTypes: ["Column", "Combo"]
 namespace: Infragistics.Controls
 ---
 
@@ -13,6 +14,7 @@ namespace: Infragistics.Controls
 The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combobox components. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next {Platform} Combobox component.
 
 ## Angular {ComponentTitle} with Cascading Combos Sample Overview
+
 The sample below demonstrates how `{ComponentName}` works with nested Cascading `Combo` components.
 
 <!-- ComponentStart: Grid -->
@@ -26,9 +28,9 @@ The sample below demonstrates how `{ComponentName}` works with nested Cascading 
 
 ## Setup
 
-In order enable column editing, make sure `editable` property is set to `true`.
+In order enable column editing, make sure `Editable` property is set to `true`.
 
-Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
+Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `SingleSelect` property.
 
 
 <!-- WebComponents, Blazor, React -->
@@ -72,14 +74,14 @@ Then you should define the column template with the combo:
 
         return (
         <>
-            <IgrCombo 
-                data={countries} 
-                ref={getComboRef(comboId)} 
-                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }} 
-                placeholder="Choose Country..." 
-                valueKey="Country" 
-                displayKey="Country" 
-                singleSelect={true} 
+            <IgrCombo
+                data={countries}
+                ref={getComboRef(comboId)}
+                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }}
+                placeholder="Choose Country..."
+                valueKey="Country"
+                displayKey="Country"
+                singleSelect={true}
                 name={comboId}>
             </IgrCombo>
         </>
@@ -108,7 +110,7 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 }
 ```
 
-- `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the  combo will use the specified `valueKey` (if any).
+- `DisplayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `DisplayKey`, the  combo will use the specified `ValueKey` (if any).
 
 In order to handle the selection change, we need the `onChange` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
 
@@ -173,7 +175,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
         const cityCombo = getComboRef(`city_${rowId}`).current;
         const regions = regions;
         const newValue = event.detail.newValue[0];
-        
+
         if (newValue === undefined) {
             regionCombo.deselect(regionCombo.value);
             regionCombo.disabled = true;
@@ -245,6 +247,7 @@ public countryChanging(event: IComboSelectionChangeEventArgs) {
     }
 }
 ```
+
 And lastly, adding the `LinearProgress`, which is required while loading the list of data.
 The `id` is necessary to set the value of `id` attribute.
 

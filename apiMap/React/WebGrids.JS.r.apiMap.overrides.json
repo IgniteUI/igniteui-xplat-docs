@@ -1,0 +1,10 @@
+{
+  "types":[
+    {
+      "originalName": "GridRow",
+      "originalNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webgrids",
+      "names":[{"platform": "React","fileName": "igr-grid-row.ts","mappedName": "IgrGridRowComponent"}]
+    }
+  ]
+}

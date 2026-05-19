@@ -1,8 +1,9 @@
 ---
 title: {Platform} Excel ライブラリ | 数式の自動計算を一時的に停止して処理速度を上げる | インフラジスティックス
 _description: Infragistics Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
-_keywords: {Platform} excel ライブラリ, 計算, 処理の高速化, $ProductName$, インフラジスティックス
+_keywords: {Platform} excel ライブラリ, 計算, 処理の高速化, {ProductName}, インフラジスティックス
 _language: ja
+_license: commercial
 mentionedTypes: []
 ---
 
@@ -14,9 +15,9 @@ Excel シートを、[Blazor Excel ライブラリ](https://jp.infragistics.com/
 
 このトピックではその具体的な方法を解説し、以下の疑問に答えます。
 
-* Ignite UI の Blazor Excel ライブラリ とは
-* Ignite UI の Blazor ワークブックとは
-* Blazor Excel ライブラリ での処理の高速化
+- Ignite UI の Blazor Excel ライブラリ とは
+- Ignite UI の Blazor ワークブックとは
+- Blazor Excel ライブラリ での処理の高速化
 
 ## Ignite UI の Blazor Excel ライブラリ とは
 
@@ -67,12 +68,12 @@ workbook.DocumentProperties.Status = "Complete";
 
 Infragistics Blazor Excel Engine を使用することで、以下が可能になります。
 
-* Microsoft® Excel® へのデータ保存と読み込み。
-* ワークシートのコレクションの作成。
-* Blazor アプリケーションから Excel へのエクスポート・アプリケーションへのインポート。
-* 既定のスタイルの変更、ワークブックのスタイル コレクションへの新しいフォントの追加。
-* ドキュメントの整理と追跡に有用な情報を提供するワークブック・プロパティの設定。 利用可能なプロパティは次のとおりです: 著者、タイトル、件名、キーワード、カテゴリ、ステータス、コメント、会社、および管理者。
-* ワークブックの保護機能の設定。保護機能を使うことで、ワークブックの構造を保護することができます。
+- Microsoft® Excel® へのデータ保存と読み込み。
+- ワークシートのコレクションの作成。
+- Blazor アプリケーションから Excel へのエクスポート・アプリケーションへのインポート。
+- 既定のスタイルの変更、ワークブックのスタイル コレクションへの新しいフォントの追加。
+- ドキュメントの整理と追跡に有用な情報を提供するワークブック・プロパティの設定。 利用可能なプロパティは次のとおりです: 著者、タイトル、件名、キーワード、カテゴリ、ステータス、コメント、会社、および管理者。
+- ワークブックの保護機能の設定。保護機能を使うことで、ワークブックの構造を保護することができます。
 
 ## Blazor Excel ライブラリ での処理の高速化
 
@@ -103,23 +104,23 @@ workbook.ResumeCalculations();
 
 その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) プログラムにおいては、「AOT コンパイル」を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
 
-* 発行処理に長い時間がかかる
-* 出力されるアプリケーションコンテンツサイズが大きくなる
+- 発行処理に長い時間がかかる
+- 出力されるアプリケーションコンテンツサイズが大きくなる
 
 ## まとめ
 
 Excel ファイルの処理には、下記項目の状況によっては、かなりの時間がかかる場合があります。
 
-* 内容
-* 処理するデータの規模
-* セル数
+- 内容
+- 処理するデータの規模
+- セル数
 
 この記事では、Ignite UI の Blazor Excel ライブラリおよびワークブックを使用する際に、ドキュメントやデータの処理速度を向上させる、その容易に適用できる技法に焦点を置き、そのひとつとして数式の自動式計算を一時停止する方法を紹介しました。
 
 しかし、他にも試せる技法がいくつかあります。
 
-* AOT (Ahead-Of-Time) コンパイルを使用する。
-* サーバーサイドで実行する。
+- AOT (Ahead-Of-Time) コンパイルを使用する。
+- サーバーサイドで実行する。
 
 具体的な手順は、以前のブログ記事「Blazor WebAssemblyでExcelファイルを読み書きしてサーバーの負荷を軽減する方法」を参照してください。
 

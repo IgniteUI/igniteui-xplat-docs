@@ -2,16 +2,17 @@
 title: {Platform} Color Editor | Color Editor | Infragistics
 _description: Color Editor component provides an easily configurable option to change colors for any desirable component or aspect of your application.
 _keywords: {Platform} Color Editor, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["ColorEditor"]
 namespace: Infragistics.Controls
 ---
 
-# {Platform} Color Editor Overview (preview)
+# {Platform} Color Editor Overview <label>PREVIEW</label>
 The {ProductName} Color Editor is a lightweight color picker component. The Color Editor can pop open by clicking the brush icon. Both the rgba and hex values can be obtained from the desired color along the bottom. These values will update when the three sliders are modified. The center box is designed for adjusting the saturation and brightness along with two adjacent sliders for adjusting the rgb and luminance values. Rgb registers between (1-255). The lightness registers between(0-1).
 
 ## {Platform} Color Editor Example
 
-`sample="/inputs/color-editor/overview", height="320", alt="{Platform} Color Editor Example"`
+`sample="/inputs/color-editor/overview", height="340", alt="{Platform} Color Editor Example"`
 
 <div class="divider--half"></div>
 
@@ -123,8 +124,8 @@ The Color Editor component raises the following events:
 ```ts
 @ViewChild("colorEditor", { static: true } )
 private colorEditor: IgxColorEditorComponent
-public ngAfterViewInit(): void 
-{	
+public ngAfterViewInit(): void
+{
     this.colorEditor.valueChanged.subscribe(this.onValueChanged);
 }
 
@@ -169,9 +170,9 @@ public onValueChanged(calendar: IgrColorEditor, e: IgrColorEditorPanelSelectedVa
 
 ## API References
 
- - `ColorEditor`
+- `ColorEditor`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -55,11 +55,11 @@ igc-ripple {
 
 ## API Reference
 
-* `Ripple`
-* `Button`
+- `Ripple`
+- `Button`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

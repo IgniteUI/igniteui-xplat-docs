@@ -2,8 +2,9 @@
 title: {Platform} {ComponentTitle} for {ProductName}
 _description: 重要な UI 操作には {Platform} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_license: commercial
+mentionedTypes: ["GridToolbar"]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid", "GridToolbarActions"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridToolbar}
 _language: ja
@@ -11,12 +12,12 @@ _language: ja
 
 # {Platform} {ComponentTitle} ツールバー
 
-{ProductName} ツールバーは、{Platform} {ComponentTitle} の UI 操作用のコンテナーです。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナーは、任意のカスタム コンテンツまたは事前定義された UI コントロールのセットをホストできます。{Platform} {ComponentTitle} のデフォルト セットには次のものが含まれます。 
+{ProductName} ツールバーは、{Platform} {ComponentTitle} の UI 操作用のコンテナーです。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナーは、任意のカスタム コンテンツまたは事前定義された UI コントロールのセットをホストできます。{Platform} {ComponentTitle} のデフォルト セットには次のものが含まれます。
 
- - 列の非表示
- - 列のピン固定
- - Excel エクスポート
- - 高度なフィルタリング
+- 列の非表示
+- 列のピン固定
+- Excel エクスポート
+- 高度なフィルタリング
 
 ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
@@ -34,7 +35,7 @@ _language: ja
 <!-- end: Angular, WebComponents -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-事前定義された `Actions` および `Title` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
+事前定義された `GridToolbarActions` および `GridToolbarTitle` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -262,6 +263,7 @@ _language: ja
     </igx-grid-toolbar>
 </igx-grid>
 ```
+
 ```html
 <igc-grid auto-generate="true">
     <igc-grid-toolbar>
@@ -659,7 +661,7 @@ constructor() {
 }
 ```
 
-デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* (外側のクリックで閉じる) インタラクションが有効になっています。
+デフォルトの overlaySettings は、**ConnectedPositionStrategy** と **Absolute** スクロール方法を使用しています。**modal** は false に設定されており、**close on escape** ([Esc] キーを押して閉じる) インタラクションと **close on outside click** (外側のクリックで閉じる) インタラクションが有効になっています。
 
 <!-- end: Angular -->
 
@@ -958,6 +960,7 @@ export class AppModule { ... }
 ```html
 <{ComponentSelector} id="toolbarExporter"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
@@ -1046,6 +1049,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 ```html
 <{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -1101,6 +1105,7 @@ igRegisterScript("ConfigureExport", (evt) => {
 ```html
 <{ComponentSelector} id="hierarchicalGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
@@ -1437,21 +1442,22 @@ $dark-input-group-theme: input-group-theme(
 
 以下は、Grid Toolbar サービスのその他の API です。
 
-* `GridToolbarAdvancedFiltering`
-* `GridToolbar`
-* `GridToolbarExporter`
-* `GridToolbarHiding`
-* `GridToolbarPinning`
-* `GridToolbarTitle`
+- `GridToolbarAdvancedFiltering`
+- `GridToolbar`
+- `GridToolbarExporter`
+- `GridToolbarHiding`
+- `GridToolbarPinning`
+- `GridToolbarTitle`
 
-* `{ComponentName}` イベント:
-* `ToolbarExporting`
+`{ComponentName}` イベント:
+
+- `ToolbarExporting`
 
 <!-- Angular -->
 
 スタイル:
 
-* `{ComponentName}` スタイル
+- `{ComponentName}` スタイル
 
 <!-- end: Angular -->
 
@@ -1459,5 +1465,5 @@ $dark-input-group-theme: input-group-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

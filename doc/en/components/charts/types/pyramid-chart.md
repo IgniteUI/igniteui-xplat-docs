@@ -2,6 +2,7 @@
 title: {Platform} Pyramid Chart | Population Pyramid | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Pyramid Chart
 _keywords: {Platform} Charts, Pyramid Chart, Population Pyramid, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -20,12 +21,14 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 
 ## API References
+
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`

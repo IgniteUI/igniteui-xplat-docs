@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 列のピン固定 - {ProductName}
 _description: アプリの開発時に {ProductName} のピン固定機能を使用して、豊富な API で簡単に列をロックまたは列の順序を変更できます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -11,7 +12,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-{Platform} {ComponentTitle} の {ProductName} 列のピン固定機能を使用すると、開発者は特定の列を希望の順序でロックできるため、ユーザーが `Grid` を水平方向にスクロールしている場合でも、常に可視性を確保できます。
+{Platform} {ComponentTitle} の {ProductName} 列のピン固定機能を使用すると、開発者は特定の列を希望の順序でロックできるため、ユーザーが `{ComponentName}` を水平方向にスクロールしている場合でも、常に可視性を確保できます。
 列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者は、列のピン状態を変更するカスタム ユーザー インターフェイスを柔軟に構築できます。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
@@ -55,6 +56,7 @@ _language: ja
     </igc-paginator>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -81,6 +83,7 @@ constructor() {
     <igx-column [field]="ID"></igx-column>
 </igx-tree-grid>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
@@ -88,6 +91,15 @@ constructor() {
     <igc-column field="ID"></igc-column>
 </igc-tree-grid>
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
+    <IgrColumn field="Phone" pinned={true}></IgrColumn>
+    <IgrColumn field="Title"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -98,6 +110,7 @@ constructor() {
     <igx-column [field]="Debut" [width]="200px"></igx-column>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
         height="600px" width="800px" >
@@ -105,6 +118,15 @@ constructor() {
     <igc-column field="Debut" width="200px"></igc-column>
 </igc-hierarchical-grid>
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="CompanyName" pinned={true}></IgrColumn>
+    <IgrColumn field="ContactName"></IgrColumn>
+    <IgrColumn field="ContactTitle"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 `{ComponentName}` の `PinColumn` または `UnpinColumn` メソッドを使用してフィールド名によって列をピン固定またはピン固定解除できます。
@@ -135,16 +157,29 @@ gridRef.current.unpinColumn('Name');
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 this.treeGrid.pinColumn('Title');
 this.treeGrid.unpinColumn('Name');
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.pinColumn('Title');
+gridRef.current.unpinColumn('Name');
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 this.hierarchicalGrid.pinColumn('Artist');
 this.hierarchicalGrid.unpinColumn('Debut');
+```
+<!-- end: Angular, WebComponents -->
+```tsx
+gridRef.current.pinColumn('Artist');
+gridRef.current.unpinColumn('Debut');
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -252,7 +287,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate={true} pinning={pinningConfig}></IgrGrid>
+<{ComponentSelector} data={nwindData} autoGenerate={true} pinning={pinningConfig}></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -269,6 +304,16 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ### デモ
 
 `sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} 列を右側にピン固定"`
+
+<!-- React, WebComponents, Blazor -->
+### 両側の列のピン固定
+
+各列のピン固定位置を個別に指定できるため、グリッドの両側に列をピン固定して利便性を高め、データ セットの最適化を容易にすることができます。詳細については、以下のデモを参照してください。列をピン固定するには、ヘッダーをクリックして列を選択し、ツールバーに追加されたピン固定ボタンを使用するか、列を別のピン固定された列にドラッグします。
+
+### デモ
+
+`sample="/{ComponentSample}/column-pinning-both-sides", height="510", alt="{Platform} {ComponentTitle} 列を両側にピン固定"`
+<!-- end: React, WebComponents, Blazor -->
 
 
 ## カスタム列ピン固定 UI
@@ -293,6 +338,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     </igx-column>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -308,6 +354,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid1 = document.getElementById('grid1') as IgcGridComponent;
@@ -351,7 +398,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
     <IgbColumn Field="ID" Hidden="true"></IgbColumn>
 
-    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px"
     HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
 
     <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
@@ -382,7 +429,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 <IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
     <IgrColumn field="ID" hidden={true}></IgrColumn>
 
-    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    <IgrColumn field="CompanyName" header="Company" width="300px"
     headerTemplate={toggleColumnPin}></IgrColumn>
 
     <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
@@ -399,7 +446,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
-  
+
   const col = ctx.column;
 
   return(
@@ -440,6 +487,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     </igx-tree-grid>
 </div>
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
@@ -455,6 +503,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -501,19 +550,19 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
     <IgbColumn Field="Title" DataType="String" Pinned="true"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
-        
+
     <IgbColumn Field="Phone" DataType="String"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
-            
+
     <IgbColumn Field="Age" DataType="Number"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
-            
+
     <IgbColumn Field="HireDate" DataType="Date"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
-            
+
     <IgbColumn Field="OnPTO" DataType="Boolean"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
-</IgbTreeGrid> 
+</IgbTreeGrid>
 
 
 // In JavaScript
@@ -532,6 +581,40 @@ igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate={false} data={CustomersData} ref={grid}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
+
+    <IgrColumn field="Title" header="Title" width="300px" pinned={true}
+    headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="Phone" header="Phone" width="200px"
+    headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="Age" header="Age" width="200px"
+    headerTemplate={toggleColumnPin}></IgrColumn>
+</{ComponentSelector}>
+```
+
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -561,6 +644,7 @@ igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
+
 ```html
 <igc-hierarchical-grid id="hGrid" class="hierarchicalGrid" auto-generate="false"
     height="500px" width="100%">
@@ -580,6 +664,7 @@ igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
@@ -611,6 +696,40 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 ```
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate={false} data={HierarchicalCustomersData} ref={grid}>
+    <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
+
+    <IgrColumn field="Company" header="Company Name" width="300px"
+    headerTemplate={toggleColumnPin} pinned={true}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Contact Name" width="200px"
+    headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Contact Title" width="200px"
+    headerTemplate={toggleColumnPin}></IgrColumn>
+</{ComponentSelector}>
+```
+
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 カスタムアイコンをクリックすると、関連する列のピン状態は、列の API メソッドを使用して変更できます。
@@ -628,7 +747,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## ピン固定の制限
 
-*   列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
+-  列幅をパーセンテージ (%) で設定した場合にピン固定列があると `{ComponentName}` 本体およびヘッダー コンテンツが正しく配置されません。列のピン固定を正しく設定するには、列幅をピクセル (px) に設定するか、`{ComponentName}` によって自動的に割り当てる必要があります。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -735,6 +854,7 @@ $custom-theme: grid-theme(
     }
 }
 ```
+
 ### デモ
 
 <!-- NOTE this sample is differed -->
@@ -785,22 +905,22 @@ Then set the related CSS properties to this class:
 <!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
-* `{ComponentName}`
-* `Column`
+- `{ComponentName}`
+- `Column`
 
 ## その他のリソース
-<!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

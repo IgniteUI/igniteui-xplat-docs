@@ -2,6 +2,7 @@
 title: {Platform} Excel Library | Excel Utility | Infragistics
 _description: Use Infragistics' {Platform} excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using {ProductName} excel library!
 _keywords: excel library, {ProductName}, Infragistics, saving files, loading files, WorkbookFormat
+_license: commercial
 mentionedTypes: ["Workbook", "WorkbookFormat", "WorkbookSaveOptions"]
 ---
 # {Platform} Excel Utility
@@ -331,6 +332,6 @@ export class ExcelUtility {
 
 ## API References
 
- - `WorkbookFormat`
- - `WorkbookSaveOptions`
- - `Workbook`
+- `WorkbookFormat`
+- `WorkbookSaveOptions`
+- `Workbook`

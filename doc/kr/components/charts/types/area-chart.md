@@ -75,7 +75,7 @@ Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline C
 
 ## {Platform} Area Chart Styling
 
-Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly. 
+Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly.
 
 `sample="/charts/category-chart/area-chart-styling", height="600", alt="{Platform} Area Chart Styling"`
 

@@ -2,6 +2,7 @@
 title: {Platform} ComboBox Component – {ProductName}
 _description: {ProductName} ComboBox Component Features
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Features
+_license: MIT
 mentionedTypes: ["Combo", "ComboList", "ComboItem"]
 ---
 
@@ -10,7 +11,7 @@ mentionedTypes: ["Combo", "ComboList", "ComboItem"]
 The {ProductName} ComboBox component exposes several features such as filtering and grouping.
 
 ## Combobox Features Example
-The following demo shows some `ComboBox` features that are enabled/disabled at runtime:
+The following demo shows some `Combo` features that are enabled/disabled at runtime:
 
 `sample="/inputs/combo/features", height="400", alt="{Platform} Combo Features"`
 
@@ -109,11 +110,11 @@ switchDisable.addEventListener("igcChange", () => {
 ```
 
 ```razor
-<IgbCombo 
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+<IgbCombo
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name"
     DisableFiltering="@DisableFiltering"
     CaseSensitiveIcon="@CaseSensitiveIcon"
@@ -195,7 +196,7 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 #### Filtering Options
 
-The {ProductName} `ComboBox` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
+The {ProductName} `Combo` exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
 
 The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
 
@@ -355,10 +356,10 @@ You can disable the ComboBox using the `Disabled` property:
 <!-- WebComponents -->
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

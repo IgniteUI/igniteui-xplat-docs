@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Performance | Infragistics
 _description: Use the Infragistics' {Platform} table for high performance data scenarios. Scroll through an unlimited number of rows and columns with full virtualization. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, performance, {ProductName}, Infragistics, data binding
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -36,10 +36,10 @@ This sample demonstrates this performance by binding thousands of financial reco
 <!-- TODO fix build flagging list items -->
 <!-- - [Binding Virtual Data](remote-data.md) -->
 <!-- end: Angular, React, WebComponents -->
-- [Column Types ](column-types.md)
+- [Column Types](column-types.md)
 - [Row Grouping](row-grouping.md)
 
 
 ## API References
 
- - `Grid`
+- `Grid`

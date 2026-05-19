@@ -2,6 +2,7 @@
 title: {Platform} チャート オーバーレイ | データ可視化ツール | 値オーバーレイ | インフラジスティックス
 _description: {ProductName} チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。{ProductName} グラフ タイプについて説明します。
 _keywords: {Platform} charts, data chart, value overlay, {ProductName}, Infragistics, {Platform} チャート, データ チャート, 値オーバーレイ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "ValueOverlay", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -60,7 +61,7 @@ _language: ja
 
 {Platform} [株価チャート](../types/stock-chart.md)に組み込みのファイナンシャル オーバーレイとインジケーターをプロットすることもできます。
 
-## チャート オーバーレイ テキスト (ベータ版)
+## チャート オーバーレイ テキスト <label>PREVIEW</label>
 
 {Platform} `ValueOverlay`、`ValueLayer`、およびすべてのデータ注釈レイヤーは、XamDataChart コンポーネントのプロット領域内にカスタム オーバーレイ テキストを描画できます。このオーバーレイ テキストを使用すると、レイヤーとの関係において、x 軸上の重要なイベント (例: 企業の四半期決算) または y 軸上の重要な値に注釈を付けることができます。
 
@@ -79,7 +80,7 @@ public Series StylingOverlayText()
 {
     var annoLayer = new IgbDataAnnotationSliceLayer();
 
-    // styling optional overlay text 
+    // styling optional overlay text
     annoLayer.OverlayTextColor = Brushes.White;
     annoLayer.OverlayTextBackground = Brushes.Green;
     annoLayer.OverlayTextBorderColor = Brushes.Black;

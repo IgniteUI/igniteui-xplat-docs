@@ -2,6 +2,7 @@
 title: {Platform} スプレッドシート | コマンド | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロールのさまざまな機能をアクティブにするためのコマンドを実行できます。{ProductName} スプレッドシートで ZoomIn や ZoomOut などのコマンドを使用できます。
 _keywords: Spreadsheet, commands, {ProductName}, Infragistics, スプレッドシート, コマンド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Spreadsheet", "SpreadsheetAction"]
 _language: ja
 ---
@@ -87,5 +88,5 @@ function zoomOut(): void {
 
 ## API リファレンス
 
- - `ExecuteAction`
- - `SpreadsheetAction`
+- `ExecuteAction`
+- `SpreadsheetAction`

@@ -2,6 +2,7 @@
 title: {Platform} チャート トレンドライン | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート トレンドライン
 _keywords: {Platform} Charts, Trendlines, Infragistics, {Platform} チャート, トレンドライン, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -15,7 +16,7 @@ _language: ja
 
 トレンドラインを有効にすると、ダッシュ配列を適用することもできます。これを行うには、`TrendLineDashArray` プロパティを数値の配列に設定します。数値配列は、トレンドラインの破線の長さを表します。
 
-# {Platform} チャート トレンドラインの例
+## {Platform} チャート トレンドラインの例
 
 次のサンプルは、**QuinticFit** トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
@@ -24,7 +25,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-# {Platform} チャート トレンドラインのダッシュ配列の例
+## {Platform} チャート トレンドラインのダッシュ配列の例
 
 次のサンプルは、`TrendLineDashArray` プロパティを介して適用された **QuarticFit** 破線トレンドラインを持つ `FinancialPriceSeries` を示す `XamDataChart` を示しています。
 
@@ -33,17 +34,17 @@ _language: ja
 
 <div class="divider--half"></div>
 
-# {Platform} チャートト レンドライン レイヤー
+## {Platform} チャートト レンドライン レイヤー
 
 `TrendLineLayer` は、ターゲット シリーズに対して単一のトレンドライン タイプを表示するように設計されたシリーズ タイプです。これと既存のシリーズ タイプの既存のトレンド ライン機能との違いは、`TrendLineLayer` はシリーズ タイプであるため、チャートの `Series` コレクションに複数のトレンド ラインを追加して、同じシリーズに複数のトレンド ラインを添付できることです。また、これまでできなかったトレンドラインを凡例に表示する ことも可能です。
 
-### トレンドライン レイヤーの使用
+## トレンドライン レイヤーの使用
 
 `TrendLineLayer` が正しく動作するには、`TargetSeries` と `TrendLineType` を指定する必要があります。利用可能なさまざまなトレンドラインのタイプは、シリーズで利用可能なトレンドラインと同じです。
 
 凡例に `TrendLineLayer` を表示する場合は、`UseLegend` プロパティを **true** に設定します。
 
-### トレンドライン レイヤーのスタイル設定
+## トレンドライン レイヤーのスタイル設定
 
 デフォルトでは、`TrendLineLayer` は `TargetSeries` と同じ色の破線で描画されます。これは、`TrendLineLayer` のさまざまなスタイル設定プロパティを使用して構成できます。
 

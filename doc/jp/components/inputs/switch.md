@@ -2,6 +2,7 @@
 title: {Platform} Switch コンポーネント – {ProductName}
 _description: {ProductName} Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Switch コントロール
+_license: MIT
 mentionedTypes: ["Switch"]
 _language: ja
 ---
@@ -241,18 +242,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 | `label` | スイッチのラベル。 |
 
 ```css
-igc-switch::part(thumb) {
-  background-color: var(--ig-success-500);
-  box-shadow: none;
-}
-
-igc-switch::part(thumb checked) {
-  background-color: var(--ig-gray-50);
-}
-
-igc-switch::part(control checked) {
-  background-color: var(--ig-success-500);
-}
+  igc-switch {
+    --thumb-on-color: white;
+    --thumb-off-color: var(--ig-success-500);
+    --track-on-color: var(--ig-success-500); /* Background color when checked */
+    --track-off-color: white; /* Background color when unchecked */
+    --track-on-hover-color: var(--ig-success-500); /* Background hover color when checked */
+  }
 ```
 
 `sample="/inputs/switches/styling", height="100", alt="{Platform} Switch のスタイル設定"`
@@ -262,11 +258,11 @@ igc-switch::part(control checked) {
 
 ## API リファレンス
 
- - `LabelPosition`
- - `Switch`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `LabelPosition`
+- `Switch`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

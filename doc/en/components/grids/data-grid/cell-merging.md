@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Cell Merging | Merging | Infragistics
 _description: Use the cell merging feature of the Infragistics' {Platform} data grid to join cells with duplicate values.
 _keywords: {Platform} Table, Data Grid, cell merging, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.MergedCellMode", "Infragistics.Controls.Grid.Implementation.MergedCellEvaluationCriteria"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "MergedCellMode", "MergedCellEvaluationCriteria"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -45,7 +45,7 @@ Cell merging can be evaluated based on whether the data is formatted or not usin
 
 ## API References
 
- - `FormattedText`
- - `MergedCellEvaluationCriteria`
- - `MergedCellMode`
- - `OnlyWhenSorted`
+- `FormattedText`
+- `MergedCellEvaluationCriteria`
+- `MergedCellMode`
+- `OnlyWhenSorted`

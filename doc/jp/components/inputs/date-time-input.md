@@ -2,6 +2,7 @@
 title: {Platform} 日時入力 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateTimeInput"]
 _language: ja
 ---
@@ -114,15 +115,15 @@ input.value = date;
 
 |キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | 1 文字を先頭に移動 |
-| <kbd>&rarr;</kbd> | 1 文字を最後に移動 |
-| <kbd>Home</kbd> | 最初に移動 |
-| <kbd>End</kbd> | 最後に移動 |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
-| 日付 / 時刻のパーツにフォーカス + <kbd>&darr;</kbd> | 日付 / 時刻のパーツを減分 |
-| 日付 / 時刻のパーツにフォーカス + <kbd>&uarr;</kbd> | 日付 / 時刻のパーツを増分 |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
+| <kbd>←</kbd> | 1 文字を先頭に移動 |
+| <kbd>→</kbd> | 1 文字を最後に移動 |
+| <kbd>HOME</kbd> | 最初に移動 |
+| <kbd>END</kbd> | 最後に移動 |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>←</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
+| 日付 / 時刻のパーツにフォーカス + <kbd>↓</kbd> | 日付 / 時刻のパーツを減分 |
+| 日付 / 時刻のパーツにフォーカス + <kbd>↑</kbd> | 日付 / 時刻のパーツを増分 |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
 
 ## 書式の設定
 
@@ -292,17 +293,22 @@ input.spinDelta = spinDelta;
 | `helper-text` | ヘルパー テキスト ラッパー。 |
 
 ```css
-igc-date-time-input::part(input) {
-  background-color: var(--ig-primary-100);
-  border-color: var(--ig-secondary-500);
-  box-shadow: none;
-}
+igc-date-time-input {
+    --_background: var(--ig-primary-200);
+    --_foreground: var(--ig-gray-900);
 
-igc-date-time-input::part(prefix),
-igc-date-time-input::part(suffix) {
-  color: var(--ig-primary-600-contrast);
-  background-color: var(--ig-primary-500);
-  border-color: var(--ig-secondary-500);
+    --input-prefix-color: var(--_foreground);
+    --input-suffix-color: var(--_foreground);
+    --input-prefix-color--filled: var(--_foreground);
+    --input-suffix-color--filled: var(--_foreground);
+    --input-prefix-background: var(--_background);
+    --input-suffix-background: var(--_background);
+    --input-prefix-background--filled: var(--_background);
+    --input-suffix-background--filled: var(--_background);
+    --input-prefix-color--focused: var(--_foreground);
+    --input-suffix-color--focused: var(--_foreground);
+    --input-prefix-background--focused: var(--_background);
+    --input-suffix-background--focused: var(--_background);
 }
 ```
 
@@ -310,14 +316,14 @@ igc-date-time-input::part(suffix) {
 
 ## API リファレンス
 
- - `Input`
- - `MaskInput`
- - `Icon`
- - `DateTimeInput`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Input`
+- `MaskInput`
+- `Icon`
+- `DateTimeInput`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

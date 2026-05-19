@@ -2,6 +2,7 @@
 title: {Platform} Badge | インフラジスティックス
 _description: インフラジスティックスの {Platform} Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, {Platform} バッジ コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Badge"]
 _language: ja
 ---
@@ -85,7 +86,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 <IgbBadge />
 ```
 
-バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定できます。
+バッジの周囲に微妙な境界線を表示するには、バッジの `Outlined` 属性を設定できます。
 
 ```tsx
 <IgrBadge outlined={true} ></IgrBadge>
@@ -103,7 +104,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ### バリエーション
 
-{ProductName} バッジは、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリエーションを変更できます。
+{ProductName} バッジは、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `Variant` 属性に割り当てることにより、バリエーションを変更できます。
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -123,7 +124,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ### 形状
 
-バッジ コンポーネントは、`rounded` (デフォルト) 形状と `square` をサポートします。これらの値は、`shape` 属性に割り当てることができます。
+バッジ コンポーネントは、`rounded` (デフォルト) 形状と `square` をサポートします。これらの値は、`Shape` 属性に割り当てることができます。
 
 ```tsx
 <IgrBadge shape="square" ></IgrBadge>
@@ -139,7 +140,23 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 `sample="/inputs/badge/shape", height="60", alt="{Platform} Badge の例"`
 
+### Dot
 
+{ProductName} Badge コンポーネントは、`dot` 属性を設定することで、通知用の最小限のドット インジケーターとして表示することもできます。ドット バッジはコンテンツをサポートしませんが、アウトライン表示が可能で、利用可能なすべてのドット タイプ (例: primary、success、info など) を使用できます。
+
+```tsx
+<IgrBadge dot={true} ></IgrBadge>
+```
+
+```html
+<igc-badge dot></igc-badge>
+```
+
+```razor
+<IgbBadge Dot="true" />
+```
+
+`sample="/inputs/badge/dot", height="60", alt="{Platform} Badge の例"`
 
 ## スタイル設定
 
@@ -147,9 +164,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ```css
 igc-badge::part(base) {
-  background: var(--ig-primary-500);
-  color: var(--ig-primary-500-contrast);
-  border-radius: 2px;
+    --background-color: var(--ig-error-A100);
+    --border-radius: 2px;
 }
 ```
 
@@ -160,10 +176,10 @@ igc-badge::part(base) {
 
 ## API リファレンス
 
- - `Badge`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Badge`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

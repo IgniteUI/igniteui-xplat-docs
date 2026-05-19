@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Selection - {ProductName}
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -10,7 +11,7 @@ _canonicalLink: {CanonicalLinkToGridColumnSelection}
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `columnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
+The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `ColumnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
@@ -75,8 +76,8 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 > The keyboard combinations are available only when the grid `ColumnSelection` input is set to `multiple`.
 
 There are two scenarios for keyboard navigation of the **Column Selection** feature:
-- Multi-column selection - holding <kbd>ctrl</kbd> + <kbd>click</kbd> on every **selectable** header cell.
-- Range column selection - holding <kbd>shift</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
+- Multi-column selection - holding <kbd>CTRL</kbd> + <kbd>click</kbd> on every **selectable** header cell.
+- Range column selection - holding <kbd>SHIFT</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
 
 ## API Manipulations
 
@@ -225,45 +226,45 @@ In order to style components for Internet Explorer 11, we have to use a differen
 
 The column selection UI has a few more APIs to explore, which are listed below.
 
-* `{ComponentName}`
-* `Column`
-* `ColumnGroup`
+- `{ComponentName}`
+- `Column`
+- `ColumnGroup`
 
 `{ComponentName}` properties:
-* `ColumnSelection`
-* `SelectedColumns`
-* `SelectColumns`
-* `DeselectColumns`
-* `SelectAllColumns`
-* `DeselectAllColumns`
+- `ColumnSelection`
+- `SelectedColumns`
+- `SelectColumns`
+- `DeselectColumns`
+- `SelectAllColumns`
+- `DeselectAllColumns`
 
 `Column` properties:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `ColumnGroup` properties:
-* `Selectable`
-* `Selected`
+- `Selectable`
+- `Selected`
 
 `{ComponentName}` events:
-* `OnColumnsSelectionChange`
+- `OnColumnsSelectionChange`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Selection](selection.md)
-* [Cell Selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Virtualization and Performance](virtualization.md)
+- [Selection](selection.md)
+- [Cell Selection](cell-selection.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Virtualization and Performance](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

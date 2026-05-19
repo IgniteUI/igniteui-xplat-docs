@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} ソート - {ProductName}
 _description: {ProductName} {ComponentTitle} の {Platform} ソート機能を使用して、ソート可能な列の組み合わせを構成し、データ レコードの表示順序を変更します。
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics, {Platform} ソート, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -850,6 +851,7 @@ $custom-theme: grid-theme(
     --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} 列のソート スタイル"`
@@ -858,22 +860,22 @@ $custom-theme: grid-theme(
 
 ## API リファレンス
 
-* `SortingExpression`
+- `SortingExpression`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

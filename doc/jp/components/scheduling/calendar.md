@@ -2,6 +2,7 @@
 title: {Platform} Calendar コンポーネント - {ProductName}
 _description: {Platform} Calendar (カレンダー) コンポーネントを使用すると、ユーザーはアプリケーション用の直感的なカレンダーを作成し、3 つの異なる選択モードを使用して日付情報を表示できます。今すぐお試しください。
 _keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 _language: ja
 ---
@@ -135,7 +136,6 @@ defineComponents(IgcCalendarComponent);
 
 {ProductName} Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `ActiveView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`ActiveDate` プロパティを設定することで変更できます。`ActiveDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
 
-<!-- WebComponents -->
 
 ### ヘッダー オプション
 
@@ -155,15 +155,23 @@ defineComponents(IgcCalendarComponent);
 </igc-calendar>
 ```
 
+```tsx
+<IgrCalendar selection="range" headerOrientation="vertical">
+    <span slot="title">Trip dates</span>
+</IgrCalendar>
+```
+
+```razor
+ <IgbCalendar HeaderOrientation="@CalendarHeaderOrientation.Vertical" HasHeader="true">
+    <span slot="title">Trip dates</span>
+ </IgbCalendar>
+```
+
 次のサンプルは、上記の構成を示しています:
 
 `sample="/scheduling/calendar/header", height="370", alt="{Platform} Calendar ヘッダーの例"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ### ローカライズおよび書式設定
 
@@ -204,27 +212,66 @@ this.radios.forEach(radio => {
 })
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal" value={this.state.calendarLocale}>
+    <IgrRadio name="lang" value="en" checked={true} onChange={this.onRadioChange}>
+        <span>EN</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="de" onChange={this.onRadioChange}>
+        <span>DE</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="fr" onChange={this.onRadioChange}>
+        <span>FR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ar" onChange={this.onRadioChange}>
+        <span>AR</span>
+    </IgrRadio>
+    <IgrRadio name="lang" value="ja" onChange={this.onRadioChange}>
+        <span>JA</span>
+    </IgrRadio>                    
+</IgrRadioGroup>
+
+<IgrCalendar weekStart='monday' formatOptions={this.state.calendarFormat} 
+    locale={this.state.calendarLocale}
+    value={new Date()}/>
+```
+
+```tsx
+constructor(props: any) {
+    super(props);
+    this.onRadioChange = this.onRadioChange.bind(this);
+    const formatOptions: IgrCalendarFormatOptions = {
+        month: 'short',
+        weekday: 'short',
+    }
+    this.state = { calendarLocale: "en", calendarFormat: formatOptions };
+}
+
+public onRadioChange(e: any) {
+    if (e.detail.checked) {
+        this.setState({ calendarLocale: e.detail.value });
+    }
+}
+```
+
 すべて適切に設定できると、カスタマイズされた表示の Calendar ができあがります。これにより、ユーザーの選択に基づいてロケールの表現も変更されます。以下は結果です:
 
 `sample="/scheduling/calendar/formatting", height="520", alt="{Platform} Calendar 書式設定の例"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
+<!-- end: WebComponents, React -->
 
 ### 日付の無効化
 
 場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `Type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
 
 `Type` プロパティで使用できるオプションは次のとおりです:
-*  `After` - `DateRange` の最初の日付以降の日付を無効にします。
-*  `Before` - `DateRange` の最初の日付より前の日付を無効にします。
-*  `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
-*  `Specific` - `DateRange` 配列で指定された日付を無効にします。
-*  `Weekdays` - すべての平日を無効にします。
-*  `Weekends` - すべての週末を無効にします。
+
+- `After` - `DateRange` の最初の日付以降の日付を無効にします。
+- `Before` - `DateRange` の最初の日付より前の日付を無効にします。
+- `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
+- `Specific` - `DateRange` 配列で指定された日付を無効にします。
+- `Weekdays` - すべての平日を無効にします。
+- `Weekends` - すべての週末を無効にします。
 
 現在の月の 3 日から 8 日の日付を無効にするサンプルを作成します。
 
@@ -238,15 +285,47 @@ const range = [
 this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar disabledDates={this.state.disabledDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+];
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Specific,
+}
+const disabledDates = [desc];
+this.state = { disabledDates };
+```
+
+```razor
+    <IgbCalendar DisabledDates="@DisabledDateDescriptor" />
+
+    @code {
+    public IgbDateRangeDescriptor[] DisabledDateDescriptor { get; set; }
+
+    protected override void OnInitialized()
+    {
+        var today = DateTime.Today;
+
+        DateTime[] range = new DateTime[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) };
+
+        IgbDateRangeDescriptor dateDescriptor = new IgbDateRangeDescriptor() { DateRange = range, RangeType = DateRangeType.Specific };
+
+        this.DisabledDateDescriptor = new IgbDateRangeDescriptor[] { dateDescriptor };
+    }
+}
+```
+
 これらの構成では、次の結果が得られます:
 
 `sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar 無効な日付の例"`
 
-
-
-<!-- end: WebComponents -->
-
-<!-- WebComponents -->
 
 ### 特定の日付
 
@@ -264,13 +343,50 @@ const range = [
 this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
+```tsx
+<IgrCalendar specialDates={this.state.specialDates}/>
+```
+
+```tsx
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+]
+const desc: DateRangeDescriptor = {
+    dateRange: range,
+    type: DateRangeType.Between,
+}
+const specialDates = [desc]
+this.state = { specialDates };
+```
+
+```razor
+<IgbCalendar SpecialDates="@CalendarSpecialDates"/>
+
+@code {
+
+    private IgbDateRangeDescriptor[] CalendarSpecialDates { get; set; }
+
+    protected override void OnInitialized()
+    {
+        DateTime today = DateTime.Today;
+        IgbDateRangeDescriptor specialDates = new IgbDateRangeDescriptor()
+        {
+            DateRange = new[] { new DateTime(today.Year, today.Month, 3), new DateTime(today.Year, today.Month, 8) },
+            RangeType = DateRangeType.Between
+        };
+
+        this.CalendarSpecialDates = new IgbDateRangeDescriptor[] { specialDates };
+    }
+}
+
+```
+
 次のデモは、休暇申請オプション付きの Calendar を示しています。
 
 `sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar 特定の日付の例"`
 
-
-
-<!-- end: WebComponents -->
 
 ### 週番号
 
@@ -359,7 +475,7 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 
 ## キーボード ナビゲーション
 
-<kbd>Tab</kbd> キーを使用してページを移動する場合、`Calendar` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
+<kbd>TAB</kbd> キーを使用してページを移動する場合、`Calendar` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
 - [月の選択] ボタン
 - [年の選択] ボタン
 - [前へ] ボタン
@@ -367,31 +483,38 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 - アクティブな日付要素
 
 `Calendar` コンポーネントの**日/月/年**がフォーカスされている場合は、次を使用します:
-- <kbd>PageUp</kbd> キーを押すと、前の月/年のページに移動します。
-- <kbd>PageDown</kbd> キーを押すと、次の月/年のページに移動します。
-- <kbd>Home</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
-- <kbd>End</kbd> キーを押すと、当月/先月/昨年の最終日にフォーカスされます。
+
+- <kbd>PAGE UP</kbd> キーを押すと、前の月/年のページに移動します。
+- <kbd>PAGE DOWN</kbd> キーを押すと、次の月/年のページに移動します。
+- <kbd>HOME</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
+- <kbd>END</kbd> キーを押すと、当月/先月/昨年の最終日にフォーカスされます。
 - <kbd>矢印</kbd> キーを使用して、日/月/年をナビゲートします。最初の項目の前と最後の項目の後に移動すると、ビューが次/前の月/年のページに切り替わります。
 
 `days` ビュー内の**日**がフォーカスされている場合は、次を使用します:
-- <kbd>Shift</kbd> + <kbd>PageUp</kbd> キーで前年に移動します。
-- <kbd>Shift</kbd> + <kbd>PageDown</kbd> キーを押して翌年に移動します。
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、現在フォーカスされている日を選択します。
+
+- <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> キーで前年に移動します。
+- <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> キーを押して翌年に移動します。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、現在フォーカスされている日を選択します。
 
 `months` ビュー内の**月**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、`ActiveDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
+
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押すと、`ActiveDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
 
 `years` ビュー内の**年**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを使用して、`ActiveDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
+
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを使用して、`ActiveDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
 
 サブヘッダー内の**前**または**次**のボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、前/翌月/年のページに切り替わります。
+
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押すと、前/翌月/年のページに切り替わります。
 
 サブヘッダー内の**月**ボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`months` ビューに切り替えます。
+
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、`months` ビューに切り替えます。
 
 サブヘッダー内の**年**ボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`years` ビューに切り替えます。
+
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、`years` ビューに切り替えます。
 
 ## スタイル設定
 
@@ -487,5 +610,5 @@ igc-calendar::part(navigation-button):focus {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

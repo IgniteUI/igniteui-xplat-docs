@@ -2,6 +2,7 @@
 title: {Platform} Tile Manager コンポーネント – {ProductName}
 _description: {Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。
 _keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components, {Platform} タイル マネジャー, インフラジスティックス, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, レイアウト コンポーネント
+_license: MIT
 mentionedTypes: ["TileManager", "Tile"]
 _language: ja
 ---
@@ -12,15 +13,16 @@ _language: ja
 
 ## {Platform} Tile Manager の例
 
-次の {ProductName} タイル マネージャーの例では、コンポーネントの動作を示しています。 
+次の {ProductName} タイル マネージャーの例では、コンポーネントの動作を示しています。
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager の例"`
 
-> [!Warning] iframe の権限ポリシーにより、この例のフルスクリーン ボタンは、右上隅の Expand to fullscreen (フルスクリーンに展開) ボタンをクリックしてスタンドアロン モードで例を開いた場合にのみ機能します。
+> [!Warning]
+> iframe の権限ポリシーにより、この例のフルスクリーン ボタンは、右上隅の Expand to fullscreen (フルスクリーンに展開) ボタンをクリックしてスタンドアロン モードで例を開いた場合にのみ機能します。
 
 ## 使用方法
 
-`TileManager` は、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。 
+`TileManager` は、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。
 
 タイル マネージャーでは、使用できる 2 つのコンポーネントが提供されます。
 - `Tile` - このコンポーネントは、タイル マネージャー内に表示される個々のタイルを表します。
@@ -28,6 +30,7 @@ _language: ja
 
 ### 作業の開始
 
+<!-- WebComponents -->
 Tile Manager の使用を開始するには、最初に次のコマンドを実行して Ignite UI for Web Components をインストールする必要があります。
 
 <!-- WebComponents -->
@@ -38,6 +41,7 @@ npm install {PackageWebComponents}
 <!-- end: WebComponents -->
 
 <!-- React -->
+Tile Manager の使用を開始するには、最初に次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install igniteui-react
@@ -175,7 +179,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager ColumnCount={2}>
+<IgbTileManager ColumnCount="2">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -230,7 +234,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager gap="20px">
+<IgbTileManager Gap="20px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -281,7 +285,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
+<IgbTileManager MinColumnWidth="200px" MinRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -303,13 +307,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 
 Tile コンポーネントには、タイルごとに個別に設定できるプロパティがあります。これらのプロパティには以下のようなものがあります。
 
-- `col-span` プロパティは、レイアウト内でタイルが何列にまたがるかを指定し、タイルの水平サイズを制御できるようにします。
-- `row-span` プロパティは、タイルが垂直方向にまたがる行数を指定し、レイアウト内でタイルの高さを調整します。
-- `col-start` プロパティは、タイルが配置される開始列を指定します。
-- `row-start` プロパティは、タイルが配置される開始行を指定します。
-- `enable-fullscreen` プロパティは、デフォルトの全画面表示アクション ボタンを非表示にします。
-- `disable-maximize` プロパティは、デフォルトの最大化トグルアクション ボタンを非表示にします。
-- `disable-resize` プロパティは、ユーザーによるタイルのサイズ変更を禁止します。
+- `ColSpan` プロパティは、レイアウト内でタイルが何列にまたがるかを指定し、タイルの水平サイズを制御できるようにします。
+- `RowSpan` プロパティは、タイルが垂直方向にまたがる行数を指定し、レイアウト内でタイルの高さを調整します。
+- `ColStart` プロパティは、タイルが配置される開始列を指定します。
+- `RowStart` プロパティは、タイルが配置される開始行を指定します。
+- `DisableFullscreen` プロパティは、デフォルトの全画面表示アクション ボタンを非表示にします。
+- `DisableMaximize` プロパティは、デフォルトの最大化トグルアクション ボタンを非表示にします。
+- `DisableResize` プロパティは、ユーザーによるタイルのサイズ変更を禁止します。
 
 <!-- WebComponents -->
 ```html
@@ -344,7 +348,7 @@ Tile コンポーネントには、タイルごとに個別に設定できるプ
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile col-span="2" disable-resize>
+  <IgbTile ColSpan="2" DisableResize="true">
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -364,9 +368,9 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 | `title` | タイル ヘッダーのコンテンツ。 |
 | `fullscreen-action` | デフォルトの全画面表示アクション コンテンツを上書きします。 |
 | `maximize-action` | デフォルトの最大化アクションのコンテンツを上書きします。 |
-| `actions` | 	デフォルトのアクションの後にレンダリングされるカスタム コンテンツ。 |
+| `actions` | デフォルトのアクションの後にレンダリングされるカスタム コンテンツ。 |
 | `side-adorner` | デフォルトの水平リサイズ ハンドルを上書きします。 |
-| `corner-adorner` | 	デフォルトの対角リサイズ ハンドルを上書きします。 |
+| `corner-adorner` | デフォルトの対角リサイズ ハンドルを上書きします。 |
 | `bottom-adorner` | デフォルトの垂直リサイズ ハンドルを上書きします。 |
 
 
@@ -377,7 +381,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 - `maximize` ボタンを使用すると、タイルのコンテンツがタイル マネージャーの幅全体に拡大され、コンテンツの表示範囲が広がります。
 - `fullscreen` ボタンを使用すると、タイルがユーザーのブラウザでフルスクリーン モードで開きます。
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="tile-manager-actions" />
 
 2 つのボタンのうち 1 つだけを表示する場合は、`DisableMaximize` または `DisableFullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
 
@@ -406,8 +410,8 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile disable-fullscreen>
-    <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
+  <IgbTile DisableFullscreen="true">
+    <IgbIconButton slot="maximize-actions" IconName="north_east" Collection="material">
     </IgbIconButton>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -417,7 +421,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 両方のアクション ボタンを無効にしたり、好みに応じてカスタム ボタンを作成したりすることもできます。
 
-`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager アクションの例"`
+`sample="/layouts/tile-manager/actions", height="730", alt="{Platform} Tile Manager アクションの例"`
 
 この例では、Ignite UI Icon Button コンポーネントを使用してカスタム アクション ボタンを作成しました。
 
@@ -431,7 +435,8 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 スムーズなサイズ変更を実現するために、タイルの大きさを直接変更するのではなく、ゴースト要素が使用されます。この要素は元のタイルの上に表示され、サイズ変更の開始時に現在のサイズで表示され、ユーザーがリサイズ ハンドルのいずれかをドラッグするとリアルタイムで更新されます。
 
-> [!Note] ゴースト要素が利用可能なグリッド スペースを超える場合、グリッドの制限内で可能な最大範囲に自動的に調整されます。
+> [!Note]
+> ゴースト要素が利用可能なグリッド スペースを超える場合、グリッドの制限内で可能な最大範囲に自動的に調整されます。
 
 タイルのサイズが変更されると、タイル マネージャーは自動的に再配置し、空きスペースが最小限になるようにします。そのため、タイルを拡大すると隣接するタイルが新しい位置に押し出され、縮小すると隙間ができ、他のタイルが動的に埋められる可能性があります。これにより、タイル マネージャーはタイルが重なることなく可能な限りコンパクトに保たれ、すべての動きが定義されたグリッド構造内にとどまります。
 
@@ -463,7 +468,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager ResizeMode='hover'>
+<IgbTileManager ResizeMode="TileManagerResizeMode.Hover">
   <IgbTile>
     <p>Tile 1</p>
   </IgbTile>
@@ -498,7 +503,8 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 - `tile` オプションを使用すると、個々のタイルの任意の場所をクリックして押したままにすると、ドラッグを開始できます。
 - `tile-header` オプションを使用すると、タイルのヘッダー セクションをクリックして押したままにするだけで、ドラッグ プロセスを開始できます。
 
-> [!Note] タイルが最大化または全画面表示の状態では、タイルをドラッグすることはできません。
+> [!Note]
+> タイルが最大化または全画面表示の状態では、タイルをドラッグすることはできません。
 
 サイズ変更と同様に、ドラッグ アンド ドロップ プロセスを開始すると、取得したタイルの下にゴースト要素が表示されます。タイルをドラッグすると、ゴースト要素も一緒に移動し、他のタイルの順序がリアルタイムで動的に変更されます。これにより、タイルをドロップしたときにタイルのグリッドがどのように表示されるかをプレビューできます。
 
@@ -532,7 +538,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager DragMode="tile-header">
+<IgbTileManager DragMode="TileManagerDragMode.TileHeader">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -545,7 +551,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
+`sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
 
 ## シリアル化
 
@@ -558,7 +564,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 ## スタイル設定
 
-`TileManager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。 
+`TileManager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。
 `TileManager` は、Tile Manager のベース ラッパーのスタイル設定に使用できる CSS プロパティ `base` のみを公開します。
 `Tile` は、使用できるいくつかの CSS プロパティを公開します。
 
@@ -592,7 +598,7 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-side),
 igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
@@ -627,9 +633,9 @@ igc-tile:nth-child(n+2)::part(trigger) {
 <!-- Blazor -->
 ```razor
 <IgbTile>
-  <IgbIcon slot="side-adorner" class="side" name="indicator"></IgbIcon>
-  <IgbIcon slot="corner-adorner" class="corner" name="indicator"></IgbIcon>
-  <IgbIcon slot="bottom-adorner" class="bottom" name="indicator"></IgbIcon>
+  <IgbIcon slot="side-adorner" Class="side" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="corner-adorner" Class="corner" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="bottom-adorner" Class="bottom" IconName="indicator"></IgbIcon>
   <span slot="title">Tile header</span>
 </IgbTile>
 ```
@@ -645,6 +651,6 @@ igc-tile:nth-child(n+2)::part(trigger) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

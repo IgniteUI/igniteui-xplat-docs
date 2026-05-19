@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Column Types | Infragistics
 _description: Learn how Infragistics' {ProductName} data table & grid supports four column types to display your content such as Image, Text, Numeric, DataTime or a Template Column. View {ProductName} tutorials!
 _keywords: {Platform} Table, Data Grid, column types, {ProductName}, Infragistics
-mentionedTypes: [ "Infragistics.Controls.Grid.Implementation.Grid","Infragistics.Controls.Grid.Implementation.CellInfo", "Infragistics.Controls.Grid.Implementation.TemplateCellInfo", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: [ "Grid","CellInfo", "TemplateCellInfo", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridColumnTypes}
 ---
 
@@ -346,20 +346,20 @@ igRegisterScript("onUpdatingAddressColumn", onUpdatingAddressColumn, false);
 
 ## API References
 
- - `Grid`
- - `CellInfo`
- - `CellUpdating`
- - `ComboBoxColumn`
- - `Content`
- - `DataSource`
- - `DateTimeColumn`
- - `Field`
- - `ImageColumn`
- - `ImageResourceType`
- - `ImageStretchOption`
- - `NumericColumn`
- - `TemplateCellInfo`
- - `TemplateCellUpdatingEventArgs`
- - `TemplateColumn`
- - `TextField`
- - `ValueField`
+- `Grid`
+- `CellInfo`
+- `CellUpdating`
+- `ComboBoxColumn`
+- `Content`
+- `DataSource`
+- `DateTimeColumn`
+- `Field`
+- `ImageColumn`
+- `ImageResourceType`
+- `ImageStretchOption`
+- `NumericColumn`
+- `TemplateCellInfo`
+- `TemplateCellUpdatingEventArgs`
+- `TemplateColumn`
+- `TextField`
+- `ValueField`

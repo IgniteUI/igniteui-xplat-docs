@@ -1,13 +1,16 @@
 ---
-title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テーブル | インフラジスティックス
+title: {Platform} ツリー グリッド コンポーネント - インフラジスティックスの {ProductName}
 _description: {ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作するために使用されます。わずかなコーディングでデータをすばやくバインドできます。無料でお試しください。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+_license: commercial
+mentionedTypes: ["GridBaseDirective", "TreeGrid", "Column"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} ツリー グリッドの概要と構成
+# {Platform} Tree Grid (ツリー グリッド) の概要と構成
+
+{Platform} Tree Grid は、データ グリッド (テーブル) の機能とツリー ビューを組み合わせた UI コンポーネントで、階層データを表形式で簡単に表示できます。通常のグリッドとは異なり、ツリー グリッドでは行を展開または縮小することができ、親行の下にネストされた子行を表示可能です。そのため、ファイル エクスプローラー、組織図、プロジェクト タスク、製品カテゴリなどの構造化データを表現する際に便利です。
 
 {ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作できます。最小限のコードでデータをすばやくバインドするか、さまざまなイベントを使用してさまざまな動作をカスタマイズします。このコンポーネントは、データ選択、Excel スタイル フィルタリング、ソート、ページング、テンプレート、列移動などの豊富な機能を提供します。マテリアル テーブルをベースとした UI ツリー グリッドにより、表形式のデータの表示がさらに簡単できれいになりました。
 
@@ -23,6 +26,8 @@ _language: ja
 ## {ProductName} Tree Grid で作業を開始
 
 ### 依存関係
+
+{Platform} Grid ライブラリ、特に {Platform} Tree Grid の使用を開始することは、階層情報を明確かつインタラクティブに表示する強力なデータ駆動型アプリケーションを構築する最初のステップです。{Platform} Tree Grid を使用して、親子構造のデータを慣れ親しんだ表形式で表示でき、行の展開、ソート、フィルタリング、編集、大規模データセットに対応した仮想化などの機能を備えています。
 
 {Platform} ツリー グリッドを初期化するには、<!-- Blazor -->{PackageCommon} パッケージ<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` パッケージ<!-- end: WebComponents --><!-- React -->`{PackageCommon}` と `{PackageGrids}` パッケージ<!-- end: React -->をインストールする必要があります。
 
@@ -77,6 +82,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
 またはそれをリンクするには:
+
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
@@ -232,7 +238,7 @@ public class EmployeesItem
 ツリー グリッドで階層を構築するには、その `childDataKey` プロパティに、各データ オブジェクトで使用される子コレクションの名前を設定する必要があります。このサンプルでは **Employees** コレクションです。
 更に自動列生成を無効にしてデータ オブジェクトの実際のプロパティとの一致を手動で定義できます。**Employees** コレクションが階層で自動的に使用されるため、列定義に含める必要はありません。
 
-`rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にできるようになりました。
+ツリーグリッドにおいて、`RowSelection` を使用し、`Paginator` 要素を追加することで、行選択機能とページング機能を有効にできるようになりました。
 最初の列に集計機能、各列にはフィルタリング、ソート、編集、サイズ変更機能を有効にします。
 
 ```html
@@ -438,14 +444,14 @@ const data = [
 
 ## API リファレンス
 
-* `TreeGrid`
-* `Column`
-* `GridToolbar`
-* `TreeGridRecord`
+- `TreeGrid`
+- `Column`
+- `GridToolbar`
+- `TreeGridRecord`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

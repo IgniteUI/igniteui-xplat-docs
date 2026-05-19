@@ -2,6 +2,7 @@
 title: {Platform} Chart Highlighting | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Highlighting
 _keywords: {Platform} Charts, Highlighting, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---

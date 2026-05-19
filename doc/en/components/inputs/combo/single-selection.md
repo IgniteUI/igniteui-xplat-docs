@@ -2,6 +2,7 @@
 title: {Platform} ComboBox Component – {ProductName}
 _description: {Platform} Combo component provides a powerful input, combining features of the basic HTML input, select, filtering and custom drop-down lists. Try it for FREE
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox component
+_license: MIT
 mentionedTypes: ["Combo", "SingleSelect", "ComboItem", "ComboHeader", "ComboList"]
 ---
 
@@ -11,7 +12,7 @@ The {Platform} `ComboBox` supports single-selection mode and quick filtering of 
 
 ## {Platform} Single Selection Example
 
-To enable single-selection and quick filtering, set the `SingleSelect` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
+To enable single-selection and quick filtering, set the `SingleSelect` property on the `Combo`. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
 
 ```html
 <igc-combo single-select></igc-combo>
@@ -37,7 +38,7 @@ The main difference is that only one item can be selected at any time. For examp
 
 Here's how to select/deselect an item programmatically in a single selection combo.
 
-#### Selecting items:
+### Selecting items
 
 <!-- WebComponents -->
 ```ts
@@ -63,9 +64,9 @@ comboRef.current.select('BG01');
 ```
 <!-- end: React -->
 
-To deselect an item without making a new selection, call the `deselect` method.
+To deselect an item without making a new selection, call the `Deselect` method.
 
-#### Deselecting items:
+#### Deselecting items
 
 <!-- WebComponents -->
 ```ts
@@ -99,7 +100,7 @@ Naturally, some configuration options will have no effect in a single selection 
 
 Assigning a value to the `PlaceholderSearch` property will yield no result since the filtering input that usually is placed above the list of options will not be present in a single selection ComboBox.
 
-### Autofocusing the list of options
+### Auto-focusing the list of options
 
 Setting the `AutofocusList` option on a single selection ComboBox will also have no effect.
 
@@ -113,9 +114,9 @@ All other features will behave the same as in a non-single selection ComboBox co
 
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -1,7 +1,8 @@
 ---
 title: {Platform} Divider | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
+_description: Infragistics の {Platform} Divider コンポーネントを使用すると、コンテンツ間の区切りとして水平線または垂直線を簡単に作成でき、ページ上の情報をより整理して表示できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Divider コンポーネント, {Platform} Divider コントロール
+_license: MIT
 mentionedTypes: ["Divider"]
 _language: ja
 ---
@@ -84,6 +85,7 @@ defineComponents(IgcDividerComponent);
 ```razor
 <IgbDivider></IgbDivider>
 ```
+
 ## 使用方法
 ### 垂直デバイダー
 
@@ -136,7 +138,7 @@ defineComponents(IgcDividerComponent);
 ```html
 // Both side
 <igc-divider middle="true" class="withInset"></igc-divider>
-// Left side only 
+// Left side only
 <igc-divider></igc-divider>
 ```
 
@@ -144,14 +146,14 @@ defineComponents(IgcDividerComponent);
 ```tsx
 // Both side
 <IgrDivider middle="true" className="withInset"></IgrDivider>
-// Left side only 
+// Left side only
 <IgrDivider  className="withInset"></IgrDivider>
 ```
 
 ```razor
 // Both side
 <IgbDivider Middle="True" class="withInset"</igrDivider>
-// Left side only 
+// Left side only
 <IgbDivider class="withInset"</igrDivider>
 ```
 
@@ -182,12 +184,12 @@ defineComponents(IgcDividerComponent);
 ```
 
 ```razor
-<IgrSelect>
- <IgrSelectItem>Item 1</IgrSelectItem>
- <IgrSelectItem>Item 2</IgrSelectItem>
- <IgrDivider></IgrDivider>
- <IgrSelectItem>Item 2</IgrSelectItem>
-</IgrSelect>
+<IgbSelect>
+ <IgbSelectItem>Item 1</IgbSelectItem>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+ <IgbDivider></IgbDivider>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+</IgbSelect>
 ```
 
 `sample="/layouts/divider/select", height="330", alt="{Platform} Divider Select の例"`
@@ -204,9 +206,9 @@ defineComponents(IgcDividerComponent);
 
 ## API リファレンス
 
- - `Divider`
+- `Divider`
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

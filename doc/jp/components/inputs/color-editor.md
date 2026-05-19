@@ -2,18 +2,19 @@
 title: {Platform} Color Editor | カラー エディター | インフラジスティックス
 _description: Color Editor コンポーネントは、アプリケーションの任意のコンポーネントまたは側面の色を変更するための、簡単に構成可能なオプションを提供します。
 _keywords: {Platform} Color Editor, {ProductName}, {Platform} カラー エディター, インフラジスティックス
+_license: commercial
 mentionedTypes: ["ColorEditor"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} Color Editor (カラー エディター) の概要 (プレビュー)
+# {Platform} Color Editor (カラー エディター) の概要 <label>PREVIEW</label>
 
 {ProductName} Color Editor は軽量のカラー ピッカー コンポーネントです。Color Editor は、ブラッシ アイコンをクリックすると開きます。RGBA 値と 16 進値の両方を、下部にある目的の色から取得できます。これらの値は、3 つのスライダーが変更されると更新されます。中央のボックスは、彩度と明度を調整するために設計されており、隣接する 2つ のスライダーで rgb 値と輝度値を調整できます。RGB は (1～255) の範囲で登録されます。明度は (0～1) の範囲で登録されます。
 
 ## {Platform} Color Editor の例
 
-`sample="/inputs/color-editor/overview", height="320", alt="{Platform} Color Editor の例"`
+`sample="/inputs/color-editor/overview", height="340", alt="{Platform} Color Editor の例"`
 
 <div class="divider--half"></div>
 
@@ -125,8 +126,8 @@ Color Editor コンポーネントは、次のイベントを発生させます:
 ```ts
 @ViewChild("colorEditor", { static: true } )
 private colorEditor: IgxColorEditorComponent
-public ngAfterViewInit(): void 
-{	
+public ngAfterViewInit(): void
+{
     this.colorEditor.valueChanged.subscribe(this.onValueChanged);
 }
 
@@ -171,9 +172,9 @@ public onValueChanged(calendar: IgrColorEditor, e: IgrColorEditorPanelSelectedVa
 
 ## API リファレンス
 
- - `ColorEditor`
+- `ColorEditor`
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -67,7 +67,7 @@ NOTE: these commands generates JSON files with links to samples on **local serve
    gulp extractSampleLinks --server="local" --plat=wc
 ```
 
-Open generated JSON files in VS Code and then hold CTRL key and click a link to open it browser.
+Open generated JSON files in VS Code and then hold <kbd>CTRL</kbd> key and click a link to open it browser.
 
 NOTE: links to local samples will work when you run samples browser locally from these repos:
 

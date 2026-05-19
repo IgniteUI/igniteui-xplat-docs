@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Column Sorting | Infragistics
 _description: Use Infragistics' {Platform} grid component's sorting feature to configure a mix of sortable and non-sortable columns, with rich API and data sorting. View {ProductName} tutorials!
 _keywords: {Platform} Table, Data Grid, column, sorting, row, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.HeaderClickAction"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "HeaderClickAction"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridSorting}
 ---
 
@@ -15,6 +15,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 <!-- end: Blazor, WebComponents -->
 
 # {Platform} Grid Sorting Overview
+
 The {ProductName} Data Table / Data Grid supports ascending and descending column sorting with a Single Column, Multi-Column and Tri-State Column Sorting configuration.
 
 ## {Platform} Grid Sorting Example
@@ -70,6 +71,7 @@ import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
 ```
 
 ## Sorting through API
+
 ```ts
 import { IgrColumnSortDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';
@@ -130,7 +132,7 @@ grid1.sortDescriptions.add(colSortDesc);
 
 ## API References
 
- - `HeaderClickAction`
- - `SortByMultipleColumnsTriState`
- - `SortByMultipleColumns`
- - `SortByOneColumnOnlyTriState`
+- `HeaderClickAction`
+- `SortByMultipleColumnsTriState`
+- `SortByMultipleColumns`
+- `SortByOneColumnOnlyTriState`

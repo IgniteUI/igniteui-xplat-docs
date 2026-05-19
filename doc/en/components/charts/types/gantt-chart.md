@@ -2,6 +2,7 @@
 title: {Platform} Gantt Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Gantt Chart
 _keywords: {Platform} Charts, Gantt Chart, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -21,6 +22,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
@@ -28,6 +30,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 - [Shape Chart](shape-chart.md)
 
 ## API References
+
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`

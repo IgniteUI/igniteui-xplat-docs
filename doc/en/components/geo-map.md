@@ -2,13 +2,14 @@
 title: {Platform} Map | Data Visualization Tools | Map Overview | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the {ProductName} map demos!
 _keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "Series"]
 ---
 # {Platform} Map Overview
 
 The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# {Platform} Map Example
+## {Platform} Map Example
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
@@ -22,6 +23,12 @@ The map component allows you to render geographic imagery from Bing Maps™, and
 The map's Series property is used to support rendering an unlimited number of geographic series. This property is a collection of geographic series objects and any type of geographic series can be added to it. For example, `GeographicSymbolSeries` can be added for plotting geographic locations such as cities and the `GeographicPolylineSeries` for plotting connections (e.g. roads) between these geographic locations.
 
 The map provides customizable navigation behaviors for navigating map content using mouse, keyboard, or code-behind.
+
+NOTE: As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+
+For more details please visit:
+
+[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
@@ -57,7 +64,7 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
     imports: [
         // ...
         IgxGeographicMapModule,
-		IgxDataChartInteractivityModule
+        IgxDataChartInteractivityModule
         // ...
     ]
 })

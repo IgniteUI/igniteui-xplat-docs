@@ -1,19 +1,17 @@
 ---
-title: {Platform} Pivot Grid & Table – {ProductName}
+title: {Platform} Pivot Grid Component - {ProductName} by Infragistics
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.PivotGrid"]
+_license: commercial
+mentionedTypes: ["PivotGrid", "PivotDimension", "PivotValue"]
 namespace: Infragistics.Controls
 ---
 
 # {Platform} Pivot Grid Overview
 
-{ProductName} Pivot Grids are used for summing up and representing voluminous multidimensional data in a cross-tabular format. The data summery can be easily and quickly sorted, grouped, or filtered. Such data can include sums, averages, and other statistics. End-users are enabled to modify the pivot table layout through drag-and-drop operations, according to their needs.
+The {Platform} Pivot Grid is used for summing up and representing voluminous multidimensional data in a cross-tabular format. The data summery can be easily and quickly sorted, grouped, or filtered. Such data can include sums, averages, and other statistics. End-users are enabled to modify the pivot table layout through drag-and-drop operations, according to their needs.
 
-
-## What is {Platform} Pivot Grid?
-
-The {Platform} {PivotGridName} presents data in a pivot table and helps performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
+The {Platform} Pivot Grid presents data in a pivot table and helps users performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
 
 The `PivotGrid` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
 The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `PivotGrid` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
@@ -124,11 +122,11 @@ In this case the dimension renders an expander in the related section of the gri
 As part of the Pivot Grid some additional predefined dimensions are exposed for easier configuration:
 - `PivotDateDimension`
     Can be used for date fields. Describes the following hierarchy by default:
-    - All Periods
-    - Years
-    - Quarters
-    - Months
-    - Full Date
+  - All Periods
+  - Years
+  - Quarters
+  - Months
+  - Full Date
 
 It can be set for rows or columns, for example:
 
@@ -258,11 +256,11 @@ The current aggregation function can be changed at runtime using the value chip'
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-    
+
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-    
+
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };
@@ -601,7 +599,7 @@ Using above code will result in the following example which groups the Date uniq
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
 
 ### Auto generate configuration
-The `autoGenerateConfig` property automatically generates dimensions and values based on the data source fields:
+The `AutoGenerateConfig` property automatically generates dimensions and values based on the data source fields:
 
 - Numeric Fields:
   - Created as `PivotValue` using `PivotNumericAggregate.sum` aggregator.
@@ -621,8 +619,9 @@ This feature allows developers to quickly create a pivot view without manually s
 
 ### Pivot Value Calculation Keys
 
-The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.  
+The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.
 A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
+
 ```json
 [
     {
@@ -637,7 +636,7 @@ A more detailed view of how they are used can be seen bellow in example data, wh
 ];
 ```
 
-All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys. 
+All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys.
 - **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
 - **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
 - **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
@@ -646,6 +645,7 @@ All of these are stored in the **pivotKeys** property which is part of the `Pivo
 - **rowDimensionSeparator** - Separator used when generating the unique row field values. It's used when creating the **records** and **level** field.
 
 The default values are:
+
 ```typescript
 {
     aggregations: 'aggregations',
@@ -705,11 +705,11 @@ When overriding the `PivotKeys` in Blazor, currently you will need to define all
 
 ## API References
 
-* `PivotConfiguration`
-* `PivotGrid`
-* `PivotDataSelector`
-* `PivotDateDimension`
-* `Column`
+- `PivotConfiguration`
+- `PivotGrid`
+- `PivotDataSelector`
+- `PivotDateDimension`
+- `Column`
 
 <!-- ## Additional Resources -->
 
@@ -721,7 +721,7 @@ When overriding the `PivotKeys` in Blazor, currently you will need to define all
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 
 

@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Clipboard Interactions - {ProductName}
 _description: The {Platform} {ComponentTitle} Clipboard functionality provides fast, easy and customizable way to copy, paste and export data to Excel or other programs. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -23,12 +24,12 @@ Copy to clipboard operations are now available in the `{ComponentName}`. This fu
 Copy behavior is working with the default interaction defined by the browser and operating system. Thus for the copy and paste behaviors, these are:
 
 - Windows/Unix based
-  - <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>Ctrl</kbd> + <kbd>Ins</kbd> as a keyboard shortcut
-  - <kbd>Ctrl</kbd> + <kbd>V</kbd> / <kbd>Shift</kbd> + <kbd>Ins</kbd> as a keyboard shortcut
+  - <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>Ins</kbd> as a keyboard shortcut
+  - <kbd>CTRL</kbd> + <kbd>V</kbd> / <kbd>SHIFT</kbd> + <kbd>Ins</kbd> as a keyboard shortcut
   - Copy action through the browser menu
 - macOS
-  - <kbd>⌘ Cmd</kbd> + <kbd>C</kbd> as a keyboard shortcut
-  - <kbd>⌘ Cmd</kbd> + <kbd>V</kbd> as a keyboard shortcut
+  - <kbd>CMD</kbd> + <kbd>C</kbd> as a keyboard shortcut
+  - <kbd>CMD</kbd> + <kbd>V</kbd> as a keyboard shortcut
   - Copy action through the browser menu
 
 
@@ -37,7 +38,7 @@ Copy behavior is working with the default interaction defined by the browser and
 - Both the **cut** and **copy** events are not natively supported in Internet Explorer. The exception is the
 **paste** event (IE 11) which is emitted but does not expose the `ClipboardData` property in the event.
 > [!Note]
-> In order to **copy** cells in IE 11, you can use the keyboard selection. Hold the **shift key** in order to make a multi-cell selection, press **Ctrl + C** in order to copy.
+> In order to **copy** cells in IE 11, you can use the keyboard selection. Hold the <kbd>SHIFT</kbd> key in order to make a multi-cell selection, press <kbd>CTRL</kbd> + <kbd>C</kbd> in order to copy.
 
 - The copy behavior is disabled while the grid is in edit mode.
 - The current version of this feature covers only the **copy** from grid behavior. Later on we plan to expose `paste` within grid behavior.
@@ -66,18 +67,18 @@ We expose `ClipboardOptions` property, which handles the following options:
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Summaries](summaries.md)
-* [Column Pinning](column-pinning.md)
-* [Selection](selection.md)
-* [Virtualization and Performance](virtualization.md)
-* [Multi-column headers](multi-column-headers.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Summaries](summaries.md)
+- [Column Pinning](column-pinning.md)
+- [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Multi-column headers](multi-column-headers.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

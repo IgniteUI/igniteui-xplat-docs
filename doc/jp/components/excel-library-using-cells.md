@@ -2,6 +2,7 @@
 title: {Platform} Excel ライブラリ | セルの使用 | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。{ProductName} Excel のサンプルを是非お試しください!
 _keywords: Excel library,  cell operations, {ProductName}, Infragistics, Excel ライブラリ, セル操作, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Workbook", "Worksheet", "WorksheetCell", "WorkbookStyleCollection", "IWorksheetCellFormat", "WorkbookColorInfo", "DisplayOptions"]
 _language: ja
 ---
@@ -431,20 +432,20 @@ var cellText = worksheet.Rows[0].Cells[0].GetText();
 
 ## API リファレンス
 
- - `Add`
- - `CellFillLinearGradient`
- - `CellFillPattern`
- - `CellFillRectangularGradient`
- - `CellFill`
- - `CellFormat`
- - `DisplayOptions`'
- - `Formula`
- - `MergedCellsRegions`
- - `WorkbookColorInfo`
- - `WorkbookStyle`
- - `Workbook`
- - `WorksheetCell`
- - `WorksheetColumn`
- - `WorksheetRegion`
- - `WorksheetRow`
- - `Worksheet`
+- `Add`
+- `CellFillLinearGradient`
+- `CellFillPattern`
+- `CellFillRectangularGradient`
+- `CellFill`
+- `CellFormat`
+- `DisplayOptions`'
+- `Formula`
+- `MergedCellsRegions`
+- `WorkbookColorInfo`
+- `WorkbookStyle`
+- `Workbook`
+- `WorksheetCell`
+- `WorksheetColumn`
+- `WorksheetRegion`
+- `WorksheetRow`
+- `Worksheet`

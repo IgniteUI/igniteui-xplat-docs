@@ -9,6 +9,8 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualMinorInterval"}], "originalName": "ActualMinorInterval"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisInterval"}], "originalName": "CompanionAxisInterval"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisMinorInterval"}], "originalName": "CompanionAxisMinorInterval"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCategoryBoundingBox"}], "originalName": "GetCategoryBoundingBox"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetWindowZoomFromCategories"}], "originalName": "GetWindowZoomFromCategories"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetWindowZoomFromItemSpan"}], "originalName": "GetWindowZoomFromItemSpan"},

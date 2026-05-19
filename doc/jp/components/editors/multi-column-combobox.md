@@ -270,13 +270,13 @@ constructor() {
 
 ## API リファレンス
 
- - `DataSource`
- - `Fields`
- - `GetValueAsync`
- - `GetValue`
- - `MultiColumnComboBox`
- - `Placeholder`
- - `SortMode`
- - `TextField`
- - `ValueChanged`
- - `ValueField`
+- `DataSource`
+- `Fields`
+- `GetValueAsync`
+- `GetValue`
+- `MultiColumnComboBox`
+- `Placeholder`
+- `SortMode`
+- `TextField`
+- `ValueChanged`
+- `ValueField`

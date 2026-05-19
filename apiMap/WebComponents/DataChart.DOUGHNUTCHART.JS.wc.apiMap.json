@@ -88,6 +88,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
       {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
       {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},

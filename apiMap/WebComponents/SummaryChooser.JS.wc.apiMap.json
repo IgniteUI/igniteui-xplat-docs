@@ -3,8 +3,8 @@
   "types":[
   {
     "originalName": "SummaryChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "igc-summary-changed-event-args.ts","mappedName": "IgcSummaryChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "iD"}], "originalName": "ID"},

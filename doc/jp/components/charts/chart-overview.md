@@ -2,6 +2,7 @@
 title: {Platform} チャートとグラフ ライブラリー | {ProductName}
 _description: {ProductName} チャートおよびグラフは、データ視覚化の広範なライブラリであり、Web アプリやモバイル アプリの魅力的でインタラクティブなチャートを実現します。無料でお試しください。
 _keywords: {Platform} Charts, Chart, Infragistics, {Platform} チャート, チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 _language: ja
 ---
@@ -293,7 +294,7 @@ alt="{Platform} チャート マーカー、ツールチップ、およびテン
 - チャートの他に、{Platform} には多くの UI コントロールもあります。アプリケーション構築のための完全な {Platform} ソリューションを提供します!
 <!-- Angular -->
 - Ignite UI for Angular は、Angular 開発者向けの Angular 上に構築されており、サードパーティの依存関係はありません。Angular 用に 100% 最適化されています。
-- Sketch デザインからピクセル パーフェクトな Angular コントロールを生成する、UX デザイナー、ビジュアル デザイナー、開発者向けのコード プラットフォームに、世界初で唯一のエンドツーエンドの包括的なデザインを提供します。Indigo.Design を使用すると、Indigo Design System から Sketch で作成するすべてのものが Ignite UI for Angular コントロールと一致します。
+- Figma デザインからピクセル パーフェクトな Angular コントロールを生成する、UX デザイナー、ビジュアル デザイナー、開発者向けのコード プラットフォームに、世界初で唯一のエンドツーエンドの包括的なデザインを提供します。Indigo.Design を使用すると、Indigo Design System から Figma で作成するすべてのものが Ignite UI for Angular コントロールと一致します。
 <!-- end: Angular -->
 
 
@@ -301,7 +302,7 @@ alt="{Platform} チャート マーカー、ツールチップ、およびテン
 
 このトピックで言及されているすべてのチャート タイプは、次の API コンポーネントに実装されています:
 
- - `CategoryChart`
- - `XamDataChart`
- - `FinancialChart`
- - `Treemap`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `Treemap`

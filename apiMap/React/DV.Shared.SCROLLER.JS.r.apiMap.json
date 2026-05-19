@@ -9,6 +9,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "ScrollbarStyle","mappedName": "Default"}], "originalName": "Default"},
       {"names":[{"platform": "React", "mappedType": "ScrollbarStyle","mappedName": "Fading"}], "originalName": "Fading"},
+      {"names":[{"platform": "React", "mappedType": "ScrollbarStyle","mappedName": "Hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "React", "mappedType": "ScrollbarStyle","mappedName": "Thin"}], "originalName": "Thin"} ]
   }]
 }

@@ -2,6 +2,7 @@
 title: {Platform} スライダーと範囲スライダー コンポーネント | {ProductName}
 _description: {ProductName} の {Platform} スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} スライダー コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Slider", "SliderLabel", "RangeSlider"]
 _language: ja
 ---
@@ -183,22 +184,22 @@ builder.Services.AddIgniteUIBlazor(
 
 ## API リファレンス
 
- - `HidePrimaryLabels`
- - `HideSecondaryLabels`
- - `HideTooltip`
- - `PrimaryTicks`
- - `RangeSlider`
- - `SecondaryTicks`
- - `SliderLabel`
- - `Slider`
- - `SliderTickLabelRotation`
- - `TickOrientation`
- - `UpperBound`
- - `ValueFormatOptions`
- - `ValueFormat`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `HidePrimaryLabels`
+- `HideSecondaryLabels`
+- `HideTooltip`
+- `PrimaryTicks`
+- `RangeSlider`
+- `SecondaryTicks`
+- `SliderLabel`
+- `Slider`
+- `SliderTickLabelRotation`
+- `TickOrientation`
+- `UpperBound`
+- `ValueFormatOptions`
+- `ValueFormat`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

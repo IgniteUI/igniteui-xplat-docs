@@ -80,10 +80,10 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
+    let isType = false;
     let platformType = <APIPlatform>options.platform;
     let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
-    let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] ? "-" : "_";
 
     // console.log("getApiLink ");
     // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
@@ -105,10 +105,12 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                //TODO: uncomment when API mapping annotates interfaces
-                // } else if (typeInfo.isInterface) { 
-                //     isInterface = true;
-                } else { // if (!isEnum) {
+                } else if (typeInfo.isInterface) { 
+                    isInterface = true;
+                } else if(typeInfo.isType) {
+                    isType = true;
+                }
+                else { // if (!isEnum) {
                     isClass = true;
                 }
 
@@ -151,9 +153,15 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 
             let packageText = "";
             if (packageName) {
+                let apiDocOverridePackages: string[] = options.docs.apiDocOverridePackages;
+                let shouldOverrideJoinSymbol = apiDocOverridePackages && apiDocOverridePackages.indexOf(packageName) !== -1;
+                let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] && shouldOverrideJoinSymbol ? "-" : "_";
+
                 if (packageName == "igniteui-webgrids") {
-                    const packageSuffix = (platformType == APIPlatform.React ? "" : "grids") + "grids.";
-                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol + packageSuffix;
+                    const packageSuffix = (platformType == APIPlatform.React ? "" : urlNameJoinSymbol + "grids") + urlNameJoinSymbol + "grids.";
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + packageSuffix;
+                } else if (packageName == "igniteui-data-grids") {
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol +"grids.";
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platformType == APIPlatform.React) {
@@ -175,6 +183,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                 linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
                 linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
+            } else if (isType) {
+                linkText = apiRoot + "types/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
@@ -310,16 +320,44 @@ function transformCodeRefs(options: any) {
 
         if (resolvedName == null && options.mentionedTypes &&
             options.mentionedTypes.length > 0) {
+            // Walk the inheritance chain of each originally-mentioned type.
+            // When the member is found on a base class, keep apiTypeName
+            // anchored on the derived (originally-mentioned) type so the URL
+            // points at the public class page rather than an internal base.
+            const skipBaseTypes: { [key: string]: boolean } = {
+                "Object": true,
+                "Control": true,
+                "DependencyObject": true,
+                "EventArgs": true
+            };
+
             for (var i = 0; i < options.mentionedTypes.length; i++) {
-                let type = options.mentionedTypes[i];
-                resolvedName = mappings.getPlatformMemberName(
-                    <string>type,
-                    <APIPlatform>options.platform,
-                    <string>memberName, options.filePath);
-                if (resolvedName !== null) {
-                    apiTypeName = type;
-                    break;
+                let originallyMentioned: string = options.mentionedTypes[i];
+                let currentType: string | null = originallyMentioned;
+                let visited: { [key: string]: boolean } = {};
+
+                while (currentType && !visited[currentType]) {
+                    visited[currentType] = true;
+
+                    let hit = mappings.getPlatformMemberName(
+                        <string>currentType,
+                        <APIPlatform>options.platform,
+                        <string>memberName, options.filePath);
+                    if (hit !== null) {
+                        resolvedName = hit;
+                        apiTypeName = originallyMentioned;
+                        break;
+                    }
+
+                    let typeInfo = mappings.getType(currentType, options.filePath);
+                    if (!typeInfo || !typeInfo.originalBaseTypeName) break;
+                    if (skipBaseTypes[typeInfo.originalBaseTypeName]) break;
+
+                    currentType = typeInfo.originalBaseTypeNamespace
+                        ? typeInfo.originalBaseTypeNamespace + "." + typeInfo.originalBaseTypeName
+                        : typeInfo.originalBaseTypeName;
                 }
+                if (resolvedName !== null) break;
             }
         }
 
@@ -533,24 +571,9 @@ function getFrontMatterTypes(options: any, filePath: string) {
                 if (currTypeInfo?.originalNamespace) {
                     mentionedNamespace = currTypeInfo.originalNamespace;
                 }
-                if (currTypeInfo) {
-                    if (currTypeInfo.originalBaseTypeName) {
-                        let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
-                        currTypeInfo.originalBaseTypeName;
-
-                        if (currTypeInfo.originalBaseTypeName == "Object" ||
-                        currTypeInfo.originalBaseTypeName == "Control" ||
-                        currTypeInfo.originalBaseTypeName == "DependencyObject" ||
-                        currTypeInfo.originalBaseTypeName == "EventArgs") {
-                            continue;
-                        }
-
-                        if (options.mentionedTypes.indexOf(currTypeInfo.originalBaseTypeName) < 0 &&
-                        options.mentionedTypes.indexOf(fullName) < 0) {
-                            options.mentionedTypes.splice(i + 1, 0, fullName);
-                        }
-                    }
-                }
+                // Base-class injection was removed — transformRef walks the
+                // inheritance chain at resolution time so URLs stay anchored
+                // on the originally-mentioned (derived) type.
             }
         }
         if (ym.namespace) {
@@ -581,7 +604,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
-        let reference = node.url;
+        let reference: string = node.url;
 
         // allows usage of $Platform$ in links to topics/sections
         if (reference.indexOf("$Platform$") > 0) {
@@ -597,7 +620,8 @@ function transformDocLinks(options: any) {
         var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
                            reference.indexOf("{environment:demo") > 0;
 
-        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        var isExternalLink = reference.startsWith("http://") || reference.startsWith("https://");
+        var isTopicLink = !isApiDocLink && !isExternalLink && reference.indexOf(".md") > 0;
         if (isTopicLink) {
             // ensuring link to topics/section using lower-case per DocFX requirement
             node.url = reference.toLowerCase();
@@ -989,6 +1013,10 @@ function getComponentsFromComment(node: any) : string[] {
     return getComponentsFromString(node.value);
 }
 
+function shouldDeleteHtmlNode(value: string): boolean {
+    return value.trim().length === 0;
+}
+
 function finishRemove(options: any) {
     function removeNodes(node: any, index: number, parent: any) {
         if (options.toDelete.has(node)) {
@@ -1244,11 +1272,22 @@ function omitPlatformSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
+                                    options.toDelete.add(parent.children[index]);
+                                }
+                                break;
+                            } else if (platformsEqual(currPlats, segment.platforms) && segment.platforms.indexOf(options.platform) != -1) {
+                                // platform matches: keep content but remove the comment markers
+                                parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
+                                    options.toDelete.add(parent.children[checkIndex]);
+                                }
+                                parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1292,11 +1331,11 @@ function omitComponentSpecificSections(options: any) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
-                                if (parent.children[checkIndex].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[checkIndex].value)) {
                                     options.toDelete.add(parent.children[checkIndex])
                                 }
                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
-                                if (parent.children[index].value.length == 0) {
+                                if (shouldDeleteHtmlNode(parent.children[index].value)) {
                                     options.toDelete.add(parent.children[index]);
                                 }
                                 break;
@@ -1459,16 +1498,11 @@ function omitFencedCode(options: any) {
     }
 }
 
-let invalidApiMembers = [
-    " IgxFinancialChart ",
-    " IgcFinancialChart ",
-    " IgrFinancialChart ",
-    " IgxCategoryChart ",
-    " IgcCategoryChart ",
-    " IgrCategoryChart ",
-    " IgxDataChart ",
-    " IgcDataChart ",
-    " IgrDataChart ",
+let apiComponents = [
+    "FinancialChart",
+    "CategoryChart",
+    "DataChart",
+    "DataGrid",
 ];
 
 export class MarkdownTransformer {
@@ -1486,7 +1520,8 @@ export class MarkdownTransformer {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
         if (language === "json" || language === "cmd" ||
-            language === "css" || language === "scss") {
+            language === "css" || language === "scss" ||
+            language === "shell" || language === "bash" || language === "powershell" || language === "markdown") {
             return false;
         }
 
@@ -1585,18 +1620,13 @@ export class MarkdownTransformer {
         filePath: string,
         callback: (err: any, results: { content: string, componentOutput: string | null }[] | null) => void): void {
 
-        // check for strings that should be API links:
-        let fileLines = fileContent.toLowerCase().split("\n");
-        for (let i = 0; i < fileLines.length; i++) {
-            const line = fileLines[i];
-            for (const invalidString of invalidApiMembers) {
-                if (!line.includes("import") &&
-                     line.toLowerCase().includes(invalidString.toLowerCase())) {
-                     transformWarning("found string: \"" + invalidString + "\" without backticks on line #" + (i+1));
-                     break;
-                }
-            }
-        }
+        // injecting styles for NEW, PREVIEW, and UPDATED labels that match labels in navigation menu
+        fileContent = this.replaceAll(fileContent, "<label>UPDATED</label>", "<label class=\"badge badge--updated\">UPDATED</label>");
+        fileContent = this.replaceAll(fileContent, "<label>PREVIEW</label>", "<label class=\"badge badge--preview\">PREVIEW</label>");
+        fileContent = this.replaceAll(fileContent, "<label>NEW</label>", "<label class=\"badge badge--new\">NEW</label>");
+
+        // using better looking arrows between API links this way we do not mess markdown with custom symbols
+        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
 
         let deleteMap: Set<any> = new Set<any>();
 
@@ -1624,6 +1654,53 @@ export class MarkdownTransformer {
             platformPascalPrefix: null as string | null,
             platformSpinalPrefix: null as string | null
         };
+
+        switch (this._platform) {
+            case APIPlatform.Angular:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igx";
+                options.platformSpinalPrefix = "igx-";
+                break;
+            case APIPlatform.React:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igr";
+                options.platformSpinalPrefix = "igr-";
+                break;
+            case APIPlatform.WebComponents:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igc";
+                options.platformSpinalPrefix = "igc-";
+                break;
+            case APIPlatform.Blazor:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igb";
+                options.platformSpinalPrefix = "Igb";
+        }
+
+        // check for strings that should be API links:
+        let fileWarnings = 0;
+        let fileLines = fileContent.toLowerCase().split("\n");
+        for (let i = 0; i < fileLines.length; i++) {
+            const line = fileLines[i];
+            const lineID = "line #" + (i+1);
+            const lineLower = line.toLowerCase();
+            for (const component of apiComponents) {
+                if (!line.includes("import") && !line.includes("Module") && !line.includes(" as ")) {
+                    var apiWithoutBackticks = " " + options.platformPascalPrefix + component + " ";
+                    if (lineLower.includes(apiWithoutBackticks.toLowerCase())) {
+                        transformWarning("found string: \"" + apiWithoutBackticks + "\" without backticks on " + lineID);
+                        fileWarnings++;
+                    }
+                    if (fileWarnings > 5){
+                        break;
+                    }
+                }
+            }
+        }
 
         //TODO-MT remove
         if (this._platform === APIPlatform.Angular) {
@@ -1695,34 +1772,6 @@ export class MarkdownTransformer {
             // console.log("sampleHost " + sampleHost);
             // console.log(this._envBrowser);
 
-        // using better looking arrows between API links this way we do not mess markdown with custom symbols
-        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
-
-        switch (this._platform) {
-            case APIPlatform.Angular:
-                options.platformPascalSuffix = "Component";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igx";
-                options.platformSpinalPrefix = "igx-";
-                break;
-            case APIPlatform.React:
-                options.platformPascalSuffix = "";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igr";
-                options.platformSpinalPrefix = "igr-";
-                break;
-            case APIPlatform.WebComponents:
-                options.platformPascalSuffix = "Component";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igc";
-                options.platformSpinalPrefix = "igc-";
-                break;
-            case APIPlatform.Blazor:
-                options.platformPascalSuffix = "";
-                options.platformSpinalSuffix = "";
-                options.platformPascalPrefix = "Igb";
-                options.platformSpinalPrefix = "Igb";
-        }
 
         // initial parsing of metadata from topics to get 'sharedComponents' array
         remark().data('settings', {
@@ -1788,14 +1837,23 @@ export class MarkdownTransformer {
             .use(finishRemoveBlocks, options)
             .use(transformNotes, options)
             .use(finishRemoveNotes, options)
-            .use(stringify)
+            .use(stringify, { rule: '-', ruleRepetition: 3, ruleSpaces: false, emphasis: '_', fences: true })
             .process(fileContent, function(err: any, vfile: any) {
                 if (err) {
                     callback(err, null);
                     return;
                 }
 
-                output.push({ content: vfile.toString(), componentOutput: componentOutput });
+                // cleanup markup
+                let fileContent = vfile.toString();
+                fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
+                fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
+                fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+                fileContent = fileContent.split("\\[!").join("[!"); // note blocks: remark-stringify escapes "[" in "[!NOTE]" as "\[!NOTE]"
+                fileContent = fileContent.replace(/\n*<!---->\n*/g, "\n"); // remark-stringify inserts empty comments as list separators
+                fileContent = fileContent.replace(/\n{3,}/g, "\n\n"); // collapse excessive blank lines left after marker removal
+
+                output.push({ content: fileContent, componentOutput: componentOutput });
 
                 if (iteration == runFor.length - 1) {
                     callback(null, output);
@@ -2126,7 +2184,7 @@ export class MarkdownTransformer {
             }else if (node.preview) {
                 node.status = "PREVIEW";
             } else if (node.beta) {
-                node.status = "BETA";
+                node.status = "PREVIEW";
             }
              else {
                 node.status = "";
@@ -2145,6 +2203,7 @@ export class MarkdownTransformer {
             node.new = undefined;
             node.preview = undefined;
             node.beta = undefined;
+            node.premium = undefined;
 
             // recursively convert items nodes if they exist
             if (node.items !== undefined &&
@@ -2233,9 +2292,6 @@ export class MarkdownTransformer {
                         status = "";
                     }
 
-                    // if (node.name && node.name.indexOf("BETA") > 0) {
-                    //     yml += tab + "  beta: true" + "\n";
-                    // } else
                     if (status.toUpperCase() === "NEW") {
                         yml += tab + "  new: true" + "\n";
                     }
@@ -2246,7 +2302,7 @@ export class MarkdownTransformer {
                         yml += tab + "  preview: true" + "\n";
                     }
                     else if (status.toUpperCase() === "BETA") {
-                        yml += tab + "  beta: true" + "\n";
+                        yml += tab + "  preview: true" + "\n";
                     }
                     else { // status === ""
                         yml += tab + "  new: false" + "\n";
@@ -2254,6 +2310,9 @@ export class MarkdownTransformer {
 
                 } else { //if (node.header === undefined) {
                     yml += tab + "  new: false" + "\n";
+                }
+                if (node.premium) {
+                    yml += tab + "  premium: true" + "\n";
                 }
 
             }
@@ -2403,6 +2462,7 @@ export class TocNode {
     public updated?: boolean;
     public preview?: boolean;
     public beta?: boolean;
+    public premium?: boolean;
     public items?: TocNode[];
     public exclude?: string[];
 

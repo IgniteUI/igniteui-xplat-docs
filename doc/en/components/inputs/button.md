@@ -3,6 +3,7 @@ title: {Platform} Button Component | {ProductName}
 _description: Get started with the {Platform} Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the {Platform} Button OnClick event.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 mentionedTypes: ["Button", "ButtonBase"]
+_license: MIT
 ---
 
 # {Platform} Button Overview
@@ -32,7 +33,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcButtonComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -118,7 +119,7 @@ In the case when the button component uses an actual [`<button>`](https://develo
 
 ### Contained Button
 
-Use the `variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
+Use the `Variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>
@@ -136,7 +137,7 @@ Use the `variant` attribute to add a simple contained button in your component t
 
 ### Outlined Button
 
-All you have to do to create an `outlined` button is to change the value of the `variant` property:
+All you have to do to create an `outlined` button is to change the value of the `Variant` property:
 
 ```tsx
 <IgrButton variant="outlined"><span>Outlined</span></IgrButton>
@@ -172,7 +173,7 @@ Analogically, we can switch to `flat` variant.
 
 ### Floating Action Button
 
-We can create a floating action button by setting the `variant` property to `fab`:
+We can create a floating action button by setting the `Variant` property to `fab`:
 
 ```tsx
 <IgrButton variant="fab"><span>Fab</span></IgrButton>
@@ -190,7 +191,7 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ## Button Sizing
 
-Users can change the size of the `button` component using the `--ig-size` CSS variable. In the following example, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the button.
+Users can change the size of the `Button` using the `--ig-size` CSS variable. In the following example, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the button.
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -217,7 +218,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-}); 
+});
 ```
 
 ```tsx
@@ -296,7 +297,7 @@ The result of implementing the above code should look like the following:
 
 ### Download
 
-Setting the `download` property will prompt the user to save the linked URL instead of navigating to it.
+Setting the `Download` property will prompt the user to save the linked URL instead of navigating to it.
 
 ```tsx
 <IgrButton
@@ -328,7 +329,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 
 ## Styling
 
-The `Button` component exposes three CSS parts which we can use for styling:
+The `Button` exposes three CSS parts which we can use for styling:
 
 |Name|Description|
 |--|--|
@@ -352,16 +353,15 @@ igc-button::part(base) {
 
 ## API References
 
- - `ButtonBase`
- - `Button`
- - `DisplayType`
- - `Download`
- - `Href`
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `DisplayType`
+- `Download`
+- `Href`
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

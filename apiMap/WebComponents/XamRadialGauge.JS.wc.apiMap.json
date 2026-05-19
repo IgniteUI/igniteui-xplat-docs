@@ -124,7 +124,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "titleSnapsToNeedlePivot"}], "originalName": "TitleSnapsToNeedlePivot"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "titleText"}], "originalName": "TitleText"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "transitionDuration"}], "originalName": "TransitionDuration"},
-      {"names":[{"platform": "WebComponents", "mappedType": "(time: number) => number","mappedName": "transitionEasingFunction"}], "originalName": "TransitionEasingFunction"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "transitionProgress"}], "originalName": "TransitionProgress"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "unscaleValue"}], "originalName": "UnscaleValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]

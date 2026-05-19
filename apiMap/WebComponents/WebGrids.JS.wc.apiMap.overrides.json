@@ -1,0 +1,91 @@
+{
+  "types":[
+  {
+    "originalName": "GridRow",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-row.ts","mappedName": "IgcGridRowComponent"}]
+  },
+  {
+    "originalName": "Paginator",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-paginator.ts","dynamicModuleName": "igc-paginator-dynamic-module.ts","moduleName": "igc-paginator-module.ts","mappedName": "IgcPaginatorComponent"}]
+  },
+  {
+    "originalName": "GridToolbar",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar.ts","dynamicModuleName": "igc-grid-toolbar-dynamic-module.ts","moduleName": "igc-grid-toolbar-module.ts","mappedName": "IgcGridToolbarComponent"}]
+  },
+  {
+    "originalName": "GridToolbarActions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-actions.ts","dynamicModuleName": "igc-grid-toolbar-actions-dynamic-module.ts","moduleName": "igc-grid-toolbar-actions-module.ts","mappedName": "IgcGridToolbarActionsComponent"}]
+  },
+  {
+    "originalName": "GridToolbarExporter",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-exporter.ts","dynamicModuleName": "igc-grid-toolbar-exporter-dynamic-module.ts","moduleName": "igc-grid-toolbar-exporter-module.ts","mappedName": "IgcGridToolbarExporterComponent"}]
+  },
+  {
+    "originalName": "GridToolbarHiding",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-hiding.ts","dynamicModuleName": "igc-grid-toolbar-hiding-dynamic-module.ts","moduleName": "igc-grid-toolbar-hiding-module.ts","mappedName": "IgcGridToolbarHidingComponent"}]
+  },
+  {
+    "originalName": "GridToolbarPinning",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-pinning.ts","dynamicModuleName": "igc-grid-toolbar-pinning-dynamic-module.ts","moduleName": "igc-grid-toolbar-pinning-module.ts","mappedName": "IgcGridToolbarPinningComponent"}]
+  },
+  {
+    "originalName": "GridToolbarTitle",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-title.ts","dynamicModuleName": "igc-grid-toolbar-title-dynamic-module.ts","moduleName": "igc-grid-toolbar-title-module.ts","mappedName": "IgcGridToolbarTitleComponent"}]
+  },
+  {
+    "originalName": "RowIsland",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-row-island.ts","dynamicModuleName": "igc-row-island-dynamic-module.ts","moduleName": "igc-row-island-module.ts","mappedName": "IgcRowIslandComponent"}]
+  },
+  {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state.ts","dynamicModuleName": "igc-grid-state-dynamic-module.ts","moduleName": "igc-grid-state-module.ts","mappedName": "IgcGridStateComponent"}]
+  },
+  {
+    "originalName": "PivotDimension",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-pivot-dimension.ts","mappedName": "IgcPivotDimension"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "memberFunction"}], "originalName": "MemberFunction"}
+    ]
+  },
+  {
+    "originalName": "PivotValue",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-pivot-value.ts","mappedName": "IgcPivotValue"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "any", "mappedName": "formatter"}], "originalName": "Formatter"}
+    ]
+  },
+  {
+    "originalName": "TreeGrid",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-tree-grid-component.ts","mappedName": "IgcTreeGridComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "loadChildrenOnDemand"}], "originalName": "LoadChildrenOnDemand"}
+    ]
+  }
+  ]
+}

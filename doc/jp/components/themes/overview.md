@@ -2,6 +2,7 @@
 title: {Platform} スタイル設定およびテーマ | {Platform} テーマ化 | テーマの切り替え | インフラジスティックス
 _description: インフラジスティックスの {Platform} コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとストリーミングのファイナンシャルおよびビジネスと チャートを使用して、データの視覚化を改善します。
 _keywords: {ProductName}, インフラジスティックス, テーマ, スタイル設定
+_license: MIT
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
@@ -28,6 +29,19 @@ _language: ja
 | **Fluent**      | ダーク    | igniteui-react-grids/grids/themes/dark/fluent.css     |
 | **Indigo**      | ダーク    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
+
+<!-- Blazor -->
+| 名前        | バリアント | 場所                                          |
+| ----------- | ------- | ------------------------------------------------- |
+| **Bootstrap**   | ライト   | _content/IgniteUI.Blazor/themes/light/bootstrap.css |
+| **Material**    | ライト   | _content/IgniteUI.Blazor/themes/light/material.css  |
+| **Fluent**      | ライト   | _content/IgniteUI.Blazor/themes/light/fluent.css    |
+| **Indigo**      | ライト   | _content/IgniteUI.Blazor/themes/light/indigo.css    |
+| **Bootstrap**   | ダーク    | _content/IgniteUI.Blazor/themes/dark/bootstrap.css  |
+| **Material**    | ダーク    | _content/IgniteUI.Blazor/themes/dark/material.css   |
+| **Fluent**      | ダーク    | _content/IgniteUI.Blazor/themes/dark/fluent.css     |
+| **Indigo**      | ダーク    | _content/IgniteUI.Blazor/themes/dark/indigo.css     |
+<!-- end: Blazor -->
 
 
 <!-- WebComponents -->
@@ -63,6 +77,8 @@ configureTheme("material");
 
 <!-- end: WebComponents -->
 
+<!-- React, WebComponents -->
 ## API リファレンス
 
- - `ConfigureTheme`
+- `ConfigureTheme`
+<!-- end: React, WebComponents -->

@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet | Commands | Infragistics
 _description: Perform commands to activate different features of Infragistics' {Platform} spreadsheet control. Learn commands such as ZoomIn and ZoomOut with {ProductName} spreadsheet!
 _keywords: Spreadsheet, commands, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Spreadsheet", "SpreadsheetAction"]
 ---
 # {Platform} Working with Commands
@@ -18,6 +19,7 @@ The {Platform} Spreadsheet component allows you to perform commands for activati
 <div class="divider--half"></div>
 
 ## Dependencies
+
 Before making use of the commands you will want to import the `SpreadsheetAction`
 
 ```ts
@@ -39,6 +41,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## Usage
+
 The following snippet shows how you can setup the data validation rules
 
 ```ts
@@ -86,5 +89,5 @@ function zoomOut(): void {
 
 ## API References
 
- - `ExecuteAction`
- - `SpreadsheetAction`
+- `ExecuteAction`
+- `SpreadsheetAction`

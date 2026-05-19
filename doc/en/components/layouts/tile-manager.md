@@ -2,6 +2,7 @@
 title: {Platform} Tile Manager Component - {ProductName}
 _description: {Platform} Tile Manager component enables the display of content in individual tiles.
 _keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components
+_license: MIT
 mentionedTypes: ["TileManager", "Tile"]
 ---
 
@@ -11,25 +12,26 @@ The {ProductName} Tile Manager component enables the display of content in indiv
 
 ## {Platform} Tile Manager Example
 
-The following {ProductName} Tile Manager Example shows the component in action. 
+The following {ProductName} Tile Manager Example shows the component in action.
 
 `sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager Example"`
 
-> [!Warning] Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
+> [!Warning]
+> Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
 
 ## Usage
 
-The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
+The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience.
 
 The Tile Manager offers two components that we can use:
+
 - `Tile` - This component represents an individual tile displayed within the Tile Manager.
 - `TileManager` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
 
 ### Getting Started
 
-To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
-
 <!-- WebComponents -->
+To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -37,6 +39,7 @@ npm install {PackageWebComponents}
 <!-- end: WebComponents -->
 
 <!-- React -->
+To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -124,7 +127,7 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
 ```
 <!-- end: React -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Layout
 
@@ -174,7 +177,7 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager ColumnCount={2}>
+<IgbTileManager ColumnCount="2">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -229,7 +232,7 @@ Another property that can be used in the Tile Manager is the `Gap` property, whi
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager gap="20px">
+<IgbTileManager Gap="20px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -280,7 +283,7 @@ We also have properties for setting the minimum width of the columns (`MinColumn
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
+<IgbTileManager MinColumnWidth="200px" MinRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -302,13 +305,13 @@ We also have properties for setting the minimum width of the columns (`MinColumn
 
 The Tile component has properties that can be set individually for each tile. Some of these properties include:
 
-- The `col-span` property specifies how many columns the tile will span across in the layout, allowing you to control its horizontal size.
-- The `row-span` property determines how many rows the tile will span vertically, adjusting the tile's height within the layout.
-- The `col-start` property specifies the starting column where the tile is placed.
-- The `row-start` property specifies the starting row where the tile is placed.
-- The `disable-fullscreen` property hides the default fullscreen action button.
-- The `disable-maximize` property hides the default maximize toggle action button.
-- The `disable-resize` property prevents the tile from being resized by the user.
+- The `ColSpan` property specifies how many columns the tile will span across in the layout, allowing you to control its horizontal size.
+- The `RowSpan` property determines how many rows the tile will span vertically, adjusting the tile's height within the layout.
+- The `ColStart` property specifies the starting column where the tile is placed.
+- The `RowStart` property specifies the starting row where the tile is placed.
+- The `DisableFullscreen` property hides the default fullscreen action button.
+- The `DisableMaximize` property hides the default maximize toggle action button.
+- The `DisableResize` property prevents the tile from being resized by the user.
 
 <!-- WebComponents -->
 ```html
@@ -343,7 +346,7 @@ The Tile component has properties that can be set individually for each tile. So
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile col-span="2" disable-resize>
+  <IgbTile ColSpan="2" DisableResize="true">
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -363,9 +366,9 @@ The Tile component also exposes several slots which you can use:
 | `title` | Content for the tile header. |
 | `fullscreen-action` | Overwrite the default fullscreen action content. |
 | `maximize-action` | Overwrite the default maximize action content. |
-| `actions` | 	Custom content rendered after the default actions. |
+| `actions` | Custom content rendered after the default actions. |
 | `side-adorner` | Overwrite the default horizontal resize adorner. |
-| `corner-adorner` | 	Overwrite the default diagonal resize adorner. |
+| `corner-adorner` | Overwrite the default diagonal resize adorner. |
 | `bottom-adorner` | Overwrite the default vertical resize adorner. |
 
 
@@ -376,7 +379,7 @@ By default, the header section includes two action buttons:
 - The `maximize` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
 - The `fullscreen` button enables the tile to open in fullscreen mode in the user's browser.
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="tile-manager-actions"/>
 
 If you want to display just one of the two buttons, you can set either `DisableMaximize` or `DisableFullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 
@@ -405,8 +408,8 @@ If you want to display just one of the two buttons, you can set either `DisableM
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile disable-fullscreen>
-    <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
+  <IgbTile DisableFullscreen="true">
+    <IgbIconButton slot="maximize-actions" IconName="north_east" Collection="material">
     </IgbIconButton>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -416,7 +419,7 @@ If you want to display just one of the two buttons, you can set either `DisableM
 
 You also have the option to disable both action buttons and create custom ones according to your preferences.
 
-`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager Actions Example"`
+`sample="/layouts/tile-manager/actions", height="730", alt="{Platform} Tile Manager Actions Example"`
 
 In this example, we created custom action buttons using the Ignite UI Icon Button component.
 
@@ -430,7 +433,8 @@ Resizing in the Tile Manager is a functionality that allows tiles to be resized 
 
 To ensure smooth resizing, a ghost element is used instead of directly modifying the tile’s dimensions. This element appears on top of the original tile, displaying its current dimensions when resizing begins, and it updates in real time as the user drags any of the resize handles.
 
-> [!Note] If the ghost element exceeds the available grid space, it will automatically adjust to the largest possible span within the grid's limits.
+> [!Note]
+> If the ghost element exceeds the available grid space, it will automatically adjust to the largest possible span within the grid's limits.
 
 The Tile Manager automatically rearranges itself when a tile changes size, ensuring that there is minimal empty space. That's why expanding a tile may push adjacent tiles into new positions, while shrinking creates gaps that other tiles may fill dynamically. This ensures that the Tile Manager stays as compact as possible, without any overlapping tiles, and that all movements remain within the defined grid structure.
 
@@ -462,7 +466,7 @@ We can use the `ResizeMode` property to control how resizing is applied in the T
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager ResizeMode='hover'>
+<IgbTileManager ResizeMode="TileManagerResizeMode.Hover">
   <IgbTile>
     <p>Tile 1</p>
   </IgbTile>
@@ -497,7 +501,8 @@ You can reorder tiles in the Tile Manager using the drag-and-drop feature. By de
 - With the `tile` option, you can click and hold anywhere on an individual tile to start dragging it.
 - With the `tile-header` option, you can only click and hold in the tile's header section to start the dragging process.
 
-> [!Note] While the tile is in maximized or fullscreen state, the tile cannot be dragged.
+> [!Note]
+> While the tile is in maximized or fullscreen state, the tile cannot be dragged.
 
 Similar to resizing, when you initiate the drag-and-drop process, a ghost element appears beneath the tile you’ve grabbed. As you drag the tile, the ghost element moves with it, dynamically reordering the other tiles in real time. This allows you to preview how the tile grid will look when you drop the tile.
 
@@ -531,7 +536,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager DragMode="tile-header">
+<IgbTileManager DragMode="TileManagerDragMode.TileHeader">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -544,7 +549,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager Drag and drop Example"`
+`sample="/layouts/tile-manager/dragndrop", height="550", alt="{Platform} Tile Manager Drag and drop Example"`
 
 ## Serialization
 
@@ -553,11 +558,11 @@ The Tile Manager provides methods that help manage the layout of tiles:
 - The `SaveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
 - The `LoadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
-`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
+`sample="/layouts/tile-manager/layout", height="560", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
-You can also customize the appearance of the two components - `TileManager` and `Tile`. 
+You can also customize the appearance of the two components - `TileManager` and `Tile`.
 The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
 The `Tile` exposes several CSS properties we can use:
 
@@ -591,7 +596,7 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-side),
 igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
@@ -626,15 +631,15 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 <!-- Blazor -->
 ```razor
 <IgbTile>
-  <IgbIcon slot="side-adorner" class="side" name="indicator"></IgbIcon>
-  <IgbIcon slot="corner-adorner" class="corner" name="indicator"></IgbIcon>
-  <IgbIcon slot="bottom-adorner" class="bottom" name="indicator"></IgbIcon>
+  <IgbIcon slot="side-adorner" Class="side" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="corner-adorner" Class="corner" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="bottom-adorner" Class="bottom" IconName="indicator"></IgbIcon>
   <span slot="title">Tile header</span>
 </IgbTile>
 ```
 <!-- end: Blazor -->
 
-`sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager Styling Example"`
+`sample="/layouts/tile-manager/styling", height="520", alt="{Platform} Tile Manager Styling Example"`
 
 ## API Reference
 
@@ -644,8 +649,8 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 
 ## Additional Resources
 
-* `Tile`
-* `TileManager`
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- `Tile`
+- `TileManager`
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

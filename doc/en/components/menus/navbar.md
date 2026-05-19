@@ -2,6 +2,7 @@
 title: {Platform} Navbar | Infragistics
 _description: Infragistics' {Platform} navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  {Platform}!
 _keywords: {Platform} navbar, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Navbar"]
 ---
 
@@ -41,7 +42,7 @@ import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcNavbarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 
@@ -161,11 +162,11 @@ If all went well, you should see the following in your browser:
 
 ## API References
 
- - `Icon`
- - `Navbar`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `Navbar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

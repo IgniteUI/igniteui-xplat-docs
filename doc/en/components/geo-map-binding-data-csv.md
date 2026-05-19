@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Binding CSV Data | Infragistics
 _description: Learn how to use Infragistics' {Platform} map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View {ProductName} map demos!
 _keywords: {Platform} map, plot data, {ProductName}, Infragistics, data binding
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "GeographicHighDensityScatterSeries"]
 namespace: Infragistics.Controls.Maps
 ---
@@ -302,10 +303,10 @@ onDataLoaded(csvData: string) {
 
 ## API References
 
- - `GeographicHighDensityScatterSeries`
- - `DataSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `HeatMaximumColor`
- - `HeatMinimumColor`
- - `PointExtent`
+- `GeographicHighDensityScatterSeries`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `HeatMaximumColor`
+- `HeatMinimumColor`
+- `PointExtent`

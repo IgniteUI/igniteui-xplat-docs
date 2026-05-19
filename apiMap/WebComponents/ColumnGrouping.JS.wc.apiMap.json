@@ -4,7 +4,7 @@
   {
     "originalName": "ColumnGrouping",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "igc-column-grouping-component.ts","mappedName": "IgcColumnGroupingComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},

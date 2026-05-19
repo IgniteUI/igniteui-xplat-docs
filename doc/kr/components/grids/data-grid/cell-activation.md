@@ -26,16 +26,16 @@ mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid","Infragistics.
 - <kbd>아래 화살표 키</kbd>: 한 셀 아래로 이동합니다.
 - <kbd>왼쪽 화살표 키</kbd>: 현재 행에서 셀을 하나 왼쪽으로 이동합니다.
 - <kbd>오른쪽 화살표 키</kbd>: 현재 행에서 셀을 하나 오른쪽으로 이동합니다.
-- <kbd>Page Up</kbd>: 그리드를 한 뷰포트 페이지 위로 스크롤합니다.
-- <kbd>Page Down</kbd>: 그리드를 한 뷰포트 페이지 아래로 스크롤합니다.
-- <kbd>Tab</kbd>: 활성화 셀을 오른쪽의 다음 셀로 이동하거나 해당 행의 마지막 셀에 도달한 경우, 다음 행의 가장 왼쪽 셀로 이동합니다.
-- <kbd>Shift</kbd> + <kbd>Tab</kbd>: 활성화 셀을 왼쪽의 다음 셀로 이동하거나 이전 행의 첫 번째 셀에 도달한 경우, 이전 행의 가장 오른쪽 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>위 화살표 키</kbd>: 열의 가장 위 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>아래 화살표 키</kbd>: 열의 가장 아래 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>왼쪽 화살표 키</kbd>: 열의 가장 왼쪽 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>오른쪽 화살표 키</kbd>: 열의 가장 오른쪽 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>Home</kbd>: 그리드의 왼쪽 위 셀로 이동합니다.
-- <kbd>Ctrl</kbd> + <kbd>End</kbd>: 그리드의 오른쪽 아래 셀로 이동합니다.
+- <kbd>PAGE UP</kbd>: 그리드를 한 뷰포트 페이지 위로 스크롤합니다.
+- <kbd>PAGE DOWN</kbd>: 그리드를 한 뷰포트 페이지 아래로 스크롤합니다.
+- <kbd>TAB</kbd>: 활성화 셀을 오른쪽의 다음 셀로 이동하거나 해당 행의 마지막 셀에 도달한 경우, 다음 행의 가장 왼쪽 셀로 이동합니다.
+- <kbd>SHIFT</kbd> + <kbd>TAB</kbd>: 활성화 셀을 왼쪽의 다음 셀로 이동하거나 이전 행의 첫 번째 셀에 도달한 경우, 이전 행의 가장 오른쪽 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>위 화살표 키</kbd>: 열의 가장 위 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>아래 화살표 키</kbd>: 열의 가장 아래 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>왼쪽 화살표 키</kbd>: 열의 가장 왼쪽 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>오른쪽 화살표 키</kbd>: 열의 가장 오른쪽 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>HOME</kbd>: 그리드의 왼쪽 위 셀로 이동합니다.
+- <kbd>CTRL</kbd> + <kbd>END</kbd>: 그리드의 오른쪽 아래 셀로 이동합니다.
 
 ## 코드 조각
 

@@ -2,6 +2,7 @@
 title: {Platform} Toast Notifications | {ProductName}
 _description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications. Try it Now
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
+_license: MIT
 mentionedTypes: ["Toast"]
 ---
 
@@ -64,7 +65,7 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 
@@ -234,14 +235,14 @@ igc-toast {
 
 ## API References
 
- - `Calendar`
- - `DisplayTime`
- - `KeepOpen`
- - `Show`
- - `Toast`
- - [`Styling & Themes`](../themes/overview.md)
+- `Calendar`
+- `DisplayTime`
+- `KeepOpen`
+- `Show`
+- `Toast`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

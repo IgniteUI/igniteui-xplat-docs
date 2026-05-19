@@ -2,6 +2,7 @@
 title: {Platform} Excel ライブラリ | スパークラインの使用 | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリのスパークライン チャートを使用して、ワークシートのセル領域全体のデータ トレンドを視覚化します。{ProductName} Excel エンジン チュートリアルを是非お試しください!
 _keywords: Excel library, sparkline chart, {ProductName}, Infragistics, Excel ライブラリ, スパークライン チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Workbook"]
 _language: ja
 ---
@@ -14,16 +15,17 @@ Infragistics {Platform} Excel Library は、Excel ワークシートにスパー
 
 `sample="/excel/excel-library/working-with-sparklines", height="500", alt="{Platform} スパークラインを使用した作業の例"`
 
-
+> [!Note]
+> XLSX 形式は必要です。他の形式は現在サポートされていません。
 
 <div class="divider--half"></div>
 
 ## サポートされるスパークライン
 以下はサポートされる定義済スパークラインのタイプです。
 
--  折れ線チャート
--  列
--  積層 (Win/Loss)
+- 折れ線チャート
+- 列
+- 積層 (Win/Loss)
 
 以下のコードは、sparklineGroups コレクションを使用してスパークラインをワークシートへ追加する方法を示します。
 
@@ -47,4 +49,4 @@ sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A1
 
 ## API リファレンス
 
- - `Workbook`
+- `Workbook`

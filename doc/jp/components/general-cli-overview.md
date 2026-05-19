@@ -80,6 +80,8 @@ ig add [component_template] [component_name]
 ig add grid MyGridComponent
 ```
 
+> 注: ルーティング ファイルは、新しいコンポーネントを含むページへのパス (この場合は `/my-grid-component`) で更新されます。これを使用して、新しく生成されたページに手動で移動できます。
+
 <!-- WebComponents -->
 現在、CLI は次の Web コンポーネントで使用できます。
 

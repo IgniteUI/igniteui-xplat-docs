@@ -2,6 +2,7 @@
 title: {Platform} Dock Manager | Customization | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, customization, {ProductName}
+_license: commercial
 mentionedTypes: ["DockManager", "ContentPane"]
 ---
 
@@ -14,7 +15,7 @@ Let's dive in and explore how {Platform} DockManager empowers you to create exce
 
 ## Proximity Dock
 
-In this mode the joystick indicators are hidden and docking can be accomplished by dragging a pane close to the border of another pane. While dragging a pane, when the mouse cursor reaches the area corresponding to the dock position, a dock preview is shown. On mouse up the dragged pane is docked in the previewed location. To enable proximity docking, simply set the `proximityDock` property to ***true***.
+In this mode the joystick indicators are hidden and docking can be accomplished by dragging a pane close to the border of another pane. While dragging a pane, when the mouse cursor reaches the area corresponding to the dock position, a dock preview is shown. On mouse up the dragged pane is docked in the previewed location. To enable proximity docking, simply set the `proximityDock` property to **true**.
 
 ```ts
 this.dockManager.proximityDock = true;
@@ -61,7 +62,7 @@ Try it for yourself in the sample below:
 
 ## Auto-hide Pane Headers
 
-With the `showPaneHeaders` property of the DockManager, developers now have the flexibility to control the visibility of pane headers within the `layout`. By default, `showPaneHeaders` is set to `always` ensuring that pane headers are always visible. When set to `onHoverOnly`, all pane headers will be hidden until you hover your mouse over the top edge of a content pane. The corresponding pane header will appear and it will smoothly hide once your mouse moves away. Take a look at the example below: 
+With the `showPaneHeaders` property of the DockManager, developers now have the flexibility to control the visibility of pane headers within the `layout`. By default, `showPaneHeaders` is set to `always` ensuring that pane headers are always visible. When set to `onHoverOnly`, all pane headers will be hidden until you hover your mouse over the top edge of a content pane. The corresponding pane header will appear and it will smoothly hide once your mouse moves away. Take a look at the example below:
 
 `sample="/layouts/dock-manager/hide-pane-headers", height="600", alt="{Platform} Auto-hide pane headers in Dock Manager Example"`
 
@@ -89,7 +90,7 @@ this.dockManager.allowInnerDock = false;
 
 `sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager Toggle Inner Dock Example"`
 
-## Control Pane Dragging 
+## Control Pane Dragging
 
 With the `containedInBoundaries` property, developers can control whether the sides of floating panes are always contained within the DockManager. When set to **true**, pane dragging will stop once any of the sides attempt to move beyond the DockManager boundaries.
 
@@ -98,11 +99,38 @@ Try it in the example below:
 
 `sample="/layouts/dock-manager/contained-in-boundaries", height="600", alt="{Platform} Dock Manager Contained in Boundaries Example"`
 
+## Highlight Resizing Panes
+
+When users resize panes by dragging a splitter, it is not always obvious which panes are affected, especially in more complex layouts. To make this interaction clearer, the Dock Manager can draw a border around the panes that are currently being resized. This visual cue helps users immediately understand which parts of the layout will grow or shrink as they move the splitter.
+
+You can enable and style this behavior by configuring the following CSS custom properties on the Dock Manager host element (or a parent element):
+
+- `--igc-resize-target-border-color` – controls the color of the resize target border.
+- `--igc-resize-target-border-width` – controls the thickness of the border (for example, `2px`).
+- `--igc-resize-target-border-style` – controls the border style (for example, `solid`, `dashed`).
+
+```css
+igc-dockmanager {
+    --igc-resize-target-border-color: #0078d4;
+    --igc-resize-target-border-width: 2px;
+    --igc-resize-target-border-style: solid;
+}
+```
+
+Once these variables are set, any pane that is impacted by a splitter drag will be wrapped with the configured border for the duration of the resize operation, giving users clear, immediate feedback about which panes are being adjusted.
+
 ## Split Panes Fixed Size Mode
 
-By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 400 and the second one - to 200, the first will be twice the size of the second one and these two panes would fill up all the available space.
+By default, each pane in a split layout receives a relative size compared to its siblings and that size defaults to 100. For example, if you have two sibling panes where the first pane has its size set to 400 and the second one to 200, the first will be twice the size of the second and together they will fill all the available space.
 
-If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane. When this property is set to **true** all children are sized in pixels, based on their `size` property. With that modification, the first pane will span across 400 pixels and the second one - 200 pixels. Further resizing via the splitter would change only the size of the current content pane without affecting the sizes of its siblings. Once the sum of the child panes' sizes exceeds their parent's size, a scrollbar will appear making the parent split pane scrollable.
+If, for certain panes, you want explicit pixel-based sizing instead of relative sizing, you can turn on fixed size mode by setting the `useFixedSize` property of the parent split pane to **true**. When this property is enabled, all children are sized in pixels based on their `size` property. In the previous example, the first pane will span 400 pixels and the second pane 200 pixels. Resizing via the splitter changes only the size of the pane you are interacting with, without redistributing space across its siblings.
+
+As soon as the sum of the child panes' sizes exceeds the available size of the parent, the split pane becomes scrollable. The dock manager now also provides built-in autoscrolling to keep the user focused on their content:
+
+- When users **drag panes toward the edges** of a fixed-size root pane, the container scrolls in the direction of the drag so they can easily reach off-screen areas.
+- When users **resize panes via the splitter**, the container scrolls as needed to reveal newly expanded content.
+
+For a **horizontal** split pane, autoscrolling happens to the **left** or **right**; for a **vertical** split pane, it happens to the **top** or **bottom**, depending on the direction of the drag or resize.
 
 
 ```ts
@@ -154,5 +182,5 @@ Try it for yourself in the sample below:
 
 ## API References
 
- - `DockManager`
- - `ContentPane`
+- `DockManager`
+- `ContentPane`

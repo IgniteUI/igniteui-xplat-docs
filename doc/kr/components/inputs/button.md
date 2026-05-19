@@ -161,12 +161,12 @@ igc-button::part(base) {
 
 ## API Reference
 
-* `Button`
-* `RadioGroup`
-* `Radio`
+- `Button`
+- `RadioGroup`
+- `Radio`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

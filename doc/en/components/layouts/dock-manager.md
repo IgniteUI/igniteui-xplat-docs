@@ -2,6 +2,7 @@
 title: {Platform} Dock Manager | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
 
@@ -25,19 +26,21 @@ To install the Dock Manager package execute the following command:
 ```cmd
 npm install --save {PackageDockManager}
 ```
+<!-- end: Angular, React, WebComponents -->
 
-Then it is necessary to import and call the **defineCustomElements()** function:
+<!-- Angular, WebComponents -->
+Then it is necessary to import and call the **defineComponents()** function:
 
 ```ts
-import { defineCustomElements } from 'igniteui-dockmanager/loader';
+import { defineComponents, IgcDockManagerComponent } from 'igniteui-dockmanager';
 
-defineCustomElements();
+defineComponents(IgcDockManagerComponent);
 ```
 <!-- end: Angular, React, WebComponents -->
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 
 ## Usage
 
@@ -46,6 +49,11 @@ Once the Dock Manager is imported, you can add it on the page:
 ```html
 <igc-dockmanager id="dockManager">
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+</IgrDockManager>
 ```
 
 > [!Note]
@@ -74,6 +82,27 @@ this.dockManager.layout = {
 };
 ```
 
+```tsx
+import {  IgrDockManager, IgrDockManagerPaneType, IgrSplitPaneOrientation } from 'igniteui-react-dockmanager';
+
+// ...
+
+this.dockManager = document.getElementById("dockManager") as IgrDockManager;
+this.dockManager.layout = {
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.contentPane,
+                contentId: 'content1',
+                header: 'Pane 1'
+            }
+        ]
+    }
+};
+```
+
 To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the `ContentId` of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to **100%** for predictable response when the end-user is resizing panes.
 
 ```html
@@ -82,22 +111,32 @@ To load the content of the panes, the Dock Manager uses [slots](https://develope
 </igc-dockmanager>
 ```
 
-The Dock Manager defines several pane types:
-* `ContentPane`
-* `SplitPane`
-* `TabGroupPane`
-* `DocumentHost`
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+</IgrDockManager>
+```
 
-Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane. For more information on this refer to [Split Panes Fixed Size Mode](dock-manager-customization.md#split-panes-fixed-size-mode) topic.
+The Dock Manager defines several pane types:
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`
+- `DocumentHost`
+
+Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane.
+
+<!-- WebComponents -->
+ For more information on this refer to [Split Panes Fixed Size Mode](dock-manager-customization.md#split-panes-fixed-size-mode) topic.
+ <!-- end: WebComponents -->
 
 The end-user can perform the following actions to customize the layout at runtime:
-* Pin/unpin a pane
-* Resize a pane
-* Close a pane
-* Drag a pane to make it float
-* Move a floating pane
-* Dock a floating pane
-* Maximize a pane
+- Pin/unpin a pane
+- Resize a pane
+- Close a pane
+- Drag a pane to make it float
+- Move a floating pane
+- Dock a floating pane
+- Maximize a pane
 
 All of these are reflected in the `Layout` property of the Dock Manager.
 
@@ -108,6 +147,14 @@ The `ContentPane` represents a pane with header and content. It can be hosted in
 ```ts
 const contentPane: IgcContentPane = {
     type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1'
+}
+```
+
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
     contentId: 'content1',
     header: 'Pane 1'
 }
@@ -131,11 +178,36 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+    <span slot="tabHeader1">Pane 1 Tab</span>
+</IgrDockManager>
+```
+
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    tabHeaderId: 'tabHeader1'
+}
+```
+
 When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its `IsPinned` property to **false**.
 
 ```ts
 const contentPane = {
     type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    isPinned: false
+}
+```
+
+```tsx
+const contentPane = {
+    type: IgrDockManagerPaneType.contentPane,
     contentId: 'content1',
     header: 'Pane 1',
     isPinned: false
@@ -155,6 +227,15 @@ To restrict the user interaction with the content pane and its content, you can 
 By default, when you close a pane it gets removed from the `Layout` object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the `Layout` object you can use the `Hidden` property of the content pane. Setting the property to **true** will hide it from the UI, but it will remain in the `Layout` object. In order to override the default close behavior you can subscribe to the `PaneClose` event like this:
 
 ```ts
+this.dockManager.addEventListener('paneClose', ev => {
+    for (const pane of ev.detail.panes) {
+        pane.hidden = true;
+    }
+    ev.preventDefault();
+});
+```
+
+```tsx
 this.dockManager.addEventListener('paneClose', ev => {
     for (const pane of ev.detail.panes) {
         pane.hidden = true;
@@ -186,6 +267,25 @@ const splitPane: IgcSplitPane = {
 }
 ```
 
+```tsx
+const splitPane: IgrSplitPane = {
+    type: IgrDockManagerPaneType.splitPane,
+    orientation: IgrSplitPaneOrientation.horizontal,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
 The split pane may contain child panes of all pane types including other split panes.
 
 By default, if the split pane is empty it is not displayed. Yet if you would like to change that behavior you can set its `AllowEmpty` property to true and the split pane will be presented in the UI even when there is no panes inside it.
@@ -205,6 +305,24 @@ const tabGroupPane: IgcTabGroupPane = {
         },
         {
             type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
+```tsx
+const tabGroupPane: IgrTabGroupPane = {
+    type: IgrDockManagerPaneType.tabGroupPane,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
             contentId: 'content2',
             header: 'Pane 2'
         }
@@ -249,6 +367,33 @@ const docHost: IgcDocumentHost = {
 }
 ```
 
+```tsx
+const docHost: IgrDocumentHost = {
+    type: IgrDockManagerPaneType.documentHost,
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.tabGroupPane,
+                panes: [
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content1',
+                        header: 'Grid'
+                    },
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content4',
+                        header: "List"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
 ### Floating Pane
 
 The floating pane is a split pane rendered above all other ones in a floating window. The floating pane definitions are stored in the `FloatingPanes` property of the `Layout`. Here is how to add a floating pane with a single content pane inside:
@@ -278,6 +423,31 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
+```tsx
+const layout: IgrDockManagerLayout = {
+    rootPane: {
+        // ...
+    },
+    floatingPanes: [
+        {
+            type: IgrDockManagerPaneType.splitPane,
+            orientation: IgrSplitPaneOrientation.horizontal,
+            floatingLocation: { x: 80, y: 80 },
+            floatingWidth: 200,
+            floatingHeight: 150,
+            floatingResizable: true,
+            panes: [
+                {
+                    type: IgrDockManagerPaneType.contentPane,
+                    contentId: 'content1',
+                    header: 'Floating Pane 1'
+                }
+            ]
+        }
+    ]
+};
+```
+
 The `FloatingLocation`, `FloatingWidth` and `FloatingHeight` properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the `FloatingPanes` array.
 
 With the `FloatingResizable` and
@@ -294,33 +464,57 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+```tsx
+this.dockManager.addEventListener('activePaneChanged', ev => {
+    console.log(ev.detail.oldPane);
+    console.log(ev.detail.newPane);
+});
+```
+
 ### Docking
 
-When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
+When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking. Edge docking is available as an additional behavior when root docking is disabled and works along the orientation of the root split pane.
 
 #### Root Docking
 
 In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="dockmanager-root-docking" />
 
 #### Pane Docking
 
 Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="dockmanager-pane-docking" />
 
 #### Document Host Docking
 
 If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="dockmanager-document-host-docking" />
 
 #### Splitter Docking
 
-While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
+Splitter docking lets your end-users place panes with precision inside an existing split layout. While dragging a floating pane, if the cursor moves close to any splitter between two panes, a docking indicator will appear over that splitter.
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+When the user drops the pane over this indicator, the dock manager inserts the pane into the split pane that owns the targeted splitter, adjusting the neighboring panes to make room. This makes it easy to refine complex layouts by inserting new tools or views exactly between two existing panes, without having to restructure the entire layout.
+
+If your scenario requires a simpler experience without this level of precision, splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
+
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking"/>
+
+#### Edge Docking
+
+Edge docking gives your end-users a simple way to add important panes at the very beginning or at the very end of their main layout, without having to carefully target a specific splitter or pane. Once root docking is disabled by setting the `allowRootDock` property to **false**, the dock manager automatically enables edge docking indicators along the first and last positions of the root split pane. Since the root split pane is either horizontal or vertical, edge docking is available only in that single direction (left/right for a horizontal root or top/bottom for a vertical root).
+
+This behavior is especially useful when the root pane is scrollable (when its `useFixedSize` property is set to **true** and the content extends beyond the visible area). In these scenarios, users can:
+
+- For a **horizontal** root split pane, drag any pane towards the **left** edge to dock it as the first item, or towards the **right** edge to dock it as the last item.
+- For a **vertical** root split pane, drag any pane towards the **top** edge to dock it as the first item, or towards the **bottom** edge to dock it as the last item.
+
+When the user drops the pane over the edge docking indicator, the dock manager inserts the pane at the chosen edge and automatically scrolls it into view. This ensures that newly added tool windows or dashboards are immediately visible, even in complex, scrollable layouts.
+
+<img class="responsive-img" src="../../images/dockmanager-edge-docking.jpg" alt="dockmanager-edge-docking"/>
 
 ### Update Layout
 
@@ -332,9 +526,19 @@ const contentPane = splitPane.panes[0] as IgcContentPane;
 this.dockManager.removePane(contentPane);
 ```
 
+```tsx
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgrSplitPane;
+const contentPane = splitPane.panes[0] as IgrContentPane;
+this.dockManager.removePane(contentPane);
+```
+
 This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
 
 ```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
+```tsx
 this.dockManager.layout = { ...this.dockManager.layout };
 ```
 
@@ -354,6 +558,19 @@ private loadLayout() {
 }
 ```
 
+```tsx
+private savedLayout: string;
+
+private saveLayout() {
+    this.savedLayout = JSON.stringify(this.dockManager.layout);
+}
+
+private loadLayout() {
+    this.dockManager.layout = JSON.parse(this.savedLayout);
+}
+```
+
+<!-- WebComponents -->
 ### Adding Panes At Runtime
 
 Contents and panes can be added to the `Layout` at runtime. In the example below, you can see how you can add content, document and floating panes.
@@ -362,14 +579,14 @@ Contents and panes can be added to the `Layout` at runtime. In the example below
 `sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} Dock Manager Add Content Runtime Example"`
 
 
-
 <div class="divider--half"></div>
+<!-- end: WebComponents -->
 
 ### Events
 
-The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
+The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events in this [topic]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
 
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -407,21 +624,48 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
+    </button>
+</IgrDockManager>
 ```
 
 Then, we will use the exposed parts in our stylesheet. This way we have full control of the component's styling:
@@ -540,32 +784,32 @@ The shortcuts are as follows:
 
 ### Docking
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> Docks to global top
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> Docks to global bottom
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> Docks to global right
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> Docks to global left
-- <kbd>Shift</kbd> + <kbd>↑</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
-- <kbd>Shift</kbd> + <kbd>↓</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
-- <kbd>Shift</kbd> + <kbd>→</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
-- <kbd>Shift</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> Docks to global top
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd> Docks to global bottom
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd> Docks to global right
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd> Docks to global left
+- <kbd>SHIFT</kbd> + <kbd>↑</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>SHIFT</kbd> + <kbd>↓</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>SHIFT</kbd> + <kbd>→</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>SHIFT</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> Focuses next tab in document host
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> Focuses previous tab in document host
- - <kbd>Alt</kbd> + <kbd>F6</kbd> Focuses next content pane
- - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> Focuses previous content pane
+- <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> Focuses next tab in document host
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> Focuses previous tab in document host
+- <kbd>ALT</kbd> + <kbd>F6</kbd> Focuses next content pane
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
 Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  Starts from the first document forward
- - <kbd>Alt</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>F8</kbd> Starts from the first pane forward
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last document backwards
- - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
+- <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  Starts from the first document forward
+- <kbd>ALT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>F8</kbd> Starts from the first pane forward
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last document backwards
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
 
 ### Other
- - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
+- <kbd>ALT</kbd> + <kbd>F3</kbd> Closes the active pane
 
 Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
@@ -639,12 +883,13 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `horizontal` | Indicates a horizontal position. Applies to `splitter-handle`. |
 | `vertical` | Indicates a vertical position. Applies to `splitter-handle`. |
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 
 ### Themes
 
 The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the **igc.themes.css** file in your css and add the **dark-theme** class to the Dock Manager or any of its parents:
 
+<!-- WebComponents -->
 ```scss
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
 ```
@@ -652,10 +897,34 @@ The Dock Manager comes with a light and a dark theme. The light theme is the def
 ```html
 <igc-dockmanager class="dark-theme">
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```scss
+@import 'igniteui-dockmanager/dist/collection/styles/igc.themes';
+```
+
+```tsx
+<IgrDockManager class="dark-theme">
+```
+<!-- end: React -->
+
 
 ## Localization
 
-The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by searching for a [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on any of its parents. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN). The Dock Manager provides built-in localized strings for the following languages: [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN), [Japanese (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP), [Korean (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO) and [Spanish (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES). In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method:
+The Dock Manager lets you localize the strings used in context menus, tooltips, and ARIA attributes. By default, it reads the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute from the root `<html>` element to determine which language to use. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is missing or set to an unsupported value, the Dock Manager uses [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN).
+
+<!-- WebComponents -->
+Ready-to-use Dock Manager resource strings for Spanish (`es`), Japanese (`ja`), and Korean (`ko`) are provided via the `igniteui-i18n-resources` peer dependency. To use one of these languages, install `igniteui-i18n-resources` and register the corresponding bundle with `igniteui-i18n-core`:
+
+```ts
+import { registerI18n } from 'igniteui-i18n-core';
+import { DockManagerResourceStringsES } from 'igniteui-i18n-resources';
+
+registerI18n(DockManagerResourceStringsES, 'es');
+```
+
+If you need to support a different language, use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method to provide your own translated strings:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -667,16 +936,17 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 
 addResourceStrings('fr', dockManagerStringsFr);
 ```
-
-The Dock Manager exposes `ResourceStrings` property which allows you to modify the strings. If you set the `ResourceStrings` property, the Dock Manager will use your strings no matter what [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
-
 <!-- end: WebComponents -->
+
+The Dock Manager also exposes a `ResourceStrings` property that you can use to modify individual strings directly. When you set the `ResourceStrings` property, the Dock Manager uses the strings you provide regardless of the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on the page.
+
+<!-- end: React, WebComponents -->
 
 ## API References
 
- - `DockManager`
- - `DocumentHost`
- - `DockManagerLayout`
- - `ContentPane`
- - `SplitPane`
- - `TabGroupPane`
+- `DockManager`
+- `DocumentHost`
+- `DockManagerLayout`
+- `ContentPane`
+- `SplitPane`
+- `TabGroupPane`

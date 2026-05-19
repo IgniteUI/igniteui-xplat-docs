@@ -2,6 +2,7 @@
 title: {Platform} Grid Selection-Based Data Aggregation- {ProductName}
 _description: Learn how to aggregate selected data in a grid with Ignite UI. Get instant content aggregations in the virtualized data and rich API for your next project.
 _keywords: Data aggregation, selection, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 ---
 
@@ -12,7 +13,7 @@ With the sample, illustrated beyond, you may see how multiple selection is being
 ## Topic Overview
 
 To achieve the selection-based aggregates functionality, you can use our `Grid Selection` feature, together with the `Grid Summaries`.
-The Summaries are allowing for customization of the basic Summary feature functionality through extending one of the base classess, `SummaryOperand`, `NumberSummaryOperand`.html) or `DateSummaryOperand`, depending on the column data type and your needs.
+The Summaries are allowing for customization of the basic Summary feature functionality through extending one of the base classes, `SummaryOperand`, `NumberSummaryOperand`.html) or `DateSummaryOperand`, depending on the column data type and your needs.
 
 ## Selection
 To start working with the data in the selected grid range, you will have to subscribe to events that are notifying of changes in the grid selection. That can be done by subscribing to the `selected` event and to the `rangeSelected` event. You need to bind to both of them because the Selection feature differentiates between selecting a single cell and selecting a range of cells.
@@ -51,23 +52,23 @@ Change the selection to see summaries of the currently selected range.
 
 ## API References
 
-* `GridComponent`
-* `Cell`
+- `GridComponent`
+- `Cell`
 
 ## Additional Resources
 <div class="divider--half"></div>
 
-* [Grid overview](../data-grid.md)
-* [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
-* [Row Selection](row-selection.md)
-* [Cell Selection](cell-selection.md)
-* [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
-* [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
-* [Summaries](summaries.md)
-* [Paging](paging.md)
+- [Grid overview](../data-grid.md)
+- [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
+- [Row Selection](row-selection.md)
+- [Cell Selection](cell-selection.md)
+- [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
+- [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
+- [Summaries](summaries.md)
+- [Paging](paging.md)
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} Styling and Themes | {Platform} Theming | Theme Switching | Infragistics
 _description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
 _keywords: {ProductName}, Infragistics, Themes, Styling
+_license: MIT
 mentionedTypes: ["ConfigureTheme"]
 ---
 
@@ -28,6 +29,18 @@ Here's the complete list of all bundled themes and their path:
 | **Indigo**      | Dark    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
 
+<!-- Blazor -->
+| Name        | Variant | Location                                          |
+| ----------- | ------- | ------------------------------------------------- |
+| **Bootstrap**   | Light   | _content/IgniteUI.Blazor/themes/light/bootstrap.css |
+| **Material**    | Light   | _content/IgniteUI.Blazor/themes/light/material.css  |
+| **Fluent**      | Light   | _content/IgniteUI.Blazor/themes/light/fluent.css    |
+| **Indigo**      | Light   | _content/IgniteUI.Blazor/themes/light/indigo.css    |
+| **Bootstrap**   | Dark    | _content/IgniteUI.Blazor/themes/dark/bootstrap.css  |
+| **Material**    | Dark    | _content/IgniteUI.Blazor/themes/dark/material.css   |
+| **Fluent**      | Dark    | _content/IgniteUI.Blazor/themes/dark/fluent.css     |
+| **Indigo**      | Dark    | _content/IgniteUI.Blazor/themes/dark/indigo.css     |
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 | Name        | Variant | Location                                          |
@@ -62,6 +75,8 @@ This only tells components to switch their internal styles to the desired theme,
 
 <!-- end: WebComponents -->
 
+<!-- React, WebComponents -->
 ## API References
 
- - `ConfigureTheme`
+- `ConfigureTheme`
+<!-- end: React, WebComponents -->

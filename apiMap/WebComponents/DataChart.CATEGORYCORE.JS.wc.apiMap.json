@@ -37,6 +37,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "WebComponents","fileName": "igc-category-series-component.ts","mappedName": "IgcCategorySeriesComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},

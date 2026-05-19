@@ -2,6 +2,7 @@
 title: {Platform} ラジアル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ラジアル チャート
 _keywords: {Platform} Charts, Radial Chart, Infragistics, {Platform} チャート, ラジアル チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "RadialLineSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -52,9 +53,7 @@ _language: ja
 
 ## {Platform} ラジアル チャートのスタイル設定
 
-ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
-
-この例は、`XamDataChart` コントロールのスタイルをカスタマイズする方法を示しています。
+ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。この例は、`XamDataChart` コントロールのスタイルをカスタマイズする方法を示しています。
 
 `sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} ラジアル エリア チャートのスタイル設定"`
 

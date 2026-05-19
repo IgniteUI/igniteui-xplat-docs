@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Horizontal Scrolling | Infragistics
 _description: Use Infragistics' {Platform} grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -37,6 +37,7 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
     defaultColumnMinWidth={300}
     dataSource={this.data}/>
 ```
+
 ```html
  <igc-data-grid id="grid"
       height="100%"
@@ -103,4 +104,4 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 
 ## API References
 
- - `Grid`
+- `Grid`

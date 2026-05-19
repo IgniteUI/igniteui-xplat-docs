@@ -2,6 +2,7 @@
 title: {Platform} コンボボックス コンポーネント – {ProductName}
 _description: {ProductName} コンボボックス コンポーネントの機能
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントの機能
+_license: MIT
 mentionedTypes: ["Combo", "ComboList", "ComboItem"]
 _language: ja
 ---
@@ -11,7 +12,7 @@ _language: ja
 {ProductName} コンボボックス コンポーネントは、フィルタリングやグループ化などのいくつかの機能を公開しています。
 
 ## コンボボックス機能の例
-以下のデモは、ランタイムで有効または無効にできるいくつかの `ComboBox` 機能を示しています。
+以下のデモは、ランタイムで有効または無効にできるいくつかの `Combo` 機能を示しています。
 
 `sample="/inputs/combo/features", height="400", alt="{Platform} コンボ機能"`
 
@@ -110,11 +111,11 @@ switchDisable.addEventListener("igcChange", () => {
 ```
 
 ```razor
-<IgbCombo 
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+<IgbCombo
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name"
     DisableFiltering="@DisableFiltering"
     CaseSensitiveIcon="@CaseSensitiveIcon"
@@ -196,7 +197,7 @@ groupKey={groupingEnabled ? "country" : undefined}
 
 #### フィルタリング オプション
 
-{ProductName} `ComboBox` コンポーネントは、`FilterKey` オプションと `CaseSensitive` オプションの両方の構成を渡すことができるフィルター プロパティをもう 1 つ公開しています。`FilterKey` は、オプションのリストをフィルタリングするためにどのデータ ソース フィールドを使用する必要があるかを示します。`CaseSensitive` オプションは、フィルタリングで大文字と小文字を区別するかどうかを示します。
+{ProductName} `Combo` は、`FilterKey` オプションと `CaseSensitive` オプションの両方の構成を渡すことができるフィルター プロパティをもう 1 つ公開しています。`FilterKey` は、オプションのリストをフィルタリングするためにどのデータ ソース フィールドを使用する必要があるかを示します。`CaseSensitive` オプションは、フィルタリングで大文字と小文字を区別するかどうかを示します。
 
 次のコード スニペットは、名前ではなく国でデータ ソースから都市をフィルター処理する方法を示しています。また、デフォルトで大文字と小文字を区別するフィルタリングを行います。
 
@@ -356,10 +357,10 @@ required プロパティを設定することで、コンボボックスを必�
 <!-- WebComponents -->
 ## API リファレンス
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

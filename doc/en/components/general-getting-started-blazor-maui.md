@@ -8,23 +8,23 @@ mentionedTypes: []
 
 This topic provides step-by-step instructions for creating .NET MAUI Blazor applications with Ignite UI for Blazor using Visual Studio 2022.
 
-### What is Blazor Hybrid?
+## What is Blazor Hybrid?
 
 Blazor hybrid is something between Blazor Server and Blazor Web Assembly. It simplifies the development, the code, and the processes as it brings together the capabilities of desktop and mobile native client frameworks. This technology lets you apply your C# and .NET skills when creating native client applications.
 
 But in order to be able to use it for your apps, you need .NET MAUI.
 
-### What is .NET MAUI?
+## What is .NET MAUI?
 
 .NET MAUI (.NET Multi-platform App UI) is an open-source, cross-platform framework for building native desktop and mobile apps from a single shared code-base. With it, you can more easily develop Blazor applications that run on different devices and operating systems, including Android, iOS, macOS, and Windows using C# and XAML.
 
 
 ## Prerequisites
 
-* .NET SDK 7 or above
-* Visual Studio 2022 17.4 or above, with the following workloads:
-    - Mobile development with .NET
-    - ASP.NET and Web Development
+- .NET SDK 7 or above
+- Visual Studio 2022 17.4 or above, with the following workloads:
+  - Mobile development with .NET
+  - ASP.NET and Web Development
 
 ## Create and Run a Blazor Hybrid App with .Net Maui and Ignite UI for Blazor
 
@@ -32,11 +32,11 @@ The steps below describe how to create a new .NET MAUI Blazor project. If you wa
 
 Start Visual Studio 2022 and click **Create a new project** on the start page, select the **.NET MAUI Blazor App** template, and click **Next**.
 
-<img src="../images/general/new-blazor-project-maui.jpg" />
+<img src="../images/general/new-blazor-project-maui.jpg" alt="new-blazor-project-maui" />
 
 Provide a project name and location, and click **Create**
 
-<img src="../images/general/new-blazor-project-configure-maui.jpg" />
+<img src="../images/general/new-blazor-project-configure-maui.jpg" alt="new-blazor-project-configure-maui" />
 
 ## Install Ignite UI for Blazor
 
@@ -53,19 +53,19 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 ```cs
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
         // ...
-		builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddMauiBlazorWebView();
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
         //register IgniteUI for Blazor
-		builder.Services.AddIgniteUIBlazor();
-		return builder.Build();
-	}
+        builder.Services.AddIgniteUIBlazor();
+        return builder.Build();
+    }
 }
 ```
 
@@ -86,8 +86,8 @@ public static class MauiProgram
 4 - Add Script Reference to the **wwwroot/index.html** file:
 
 ```razor
-	<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-	<script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+    <script src="_framework/blazor.webview.js" autostart="false"></script>
 ```
 
 ## Add Ignite UI for Blazor Component
@@ -116,7 +116,7 @@ Add an Ignite UI for Blazor component to your razor page:
 
 Build and run the .NET MAUI Blazor app for Windows.
 
-<img src="../images/general/getting-started-blazor-card-windows.jpg" />
+<img src="../images/general/getting-started-blazor-card-windows.jpg" alt="getting-started-blazor-card-windows" />
 
 > [!Note]
-> For more information about building corss platform applications with .NET MAUI, visit the [Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-android).
+> For more information about building cross-platform applications with .NET MAUI, visit the [Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-android).

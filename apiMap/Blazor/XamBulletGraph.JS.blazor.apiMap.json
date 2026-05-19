@@ -34,6 +34,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelInterval"}], "originalName": "LabelInterval"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelsPostInitial"}], "originalName": "LabelsPostInitial"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelsPreTerminal"}], "originalName": "LabelsPreTerminal"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "LabelsVisible"}], "originalName": "LabelsVisible"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MaximumValue"}], "originalName": "MaximumValue"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "MergeViewports"}], "originalName": "MergeViewports"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MinimumValue"}], "originalName": "MinimumValue"},

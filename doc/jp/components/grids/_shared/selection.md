@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 選択 - {ProductName}
 _description: {ProductName} グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -15,20 +16,22 @@ _language: ja
 
 - 行の選択
 - セルの選択
-- 列の選択 
+- 列の選択
 
 `RowSelection` プロパティを使用すると、以下を指定できます。
 
 - None (なし)
-- Single (単一)  
-- Multiple Select (複数選択) 
+- Single (単一)
+- Multiple Select (複数選択)
 
 ## {Platform} {ComponentTitle} 選択の例
 
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。
 
 <!-- Angular -->
+
 スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
+
 <!-- end: Angular -->
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
@@ -47,11 +50,11 @@ _language: ja
 
 - `None` - `{ComponentName}` の行選択が無効になります。
 - `Single` - `{ComponentName}` 内の 1 行のみの選択が利用可能になります。
-- `Multiple` - 複数行の選択は、<kbd>Ctrl</kbd> + <kbd>クリック</kbd>、<kbd>Space キー</kbd> を押して行セレクターを使用することにより、複数行の選択が可能になります。
+- `Multiple` - 複数行の選択は、<kbd>CTRL</kbd> + <kbd>クリック</kbd>、<kbd>Space</kbd>  キーを押して行セレクターを使用することにより、複数行の選択が可能になります。
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-- `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
+- `MultipleCascade` - これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -78,8 +81,8 @@ _language: ja
 以下の 3 つのバリエーションがあります。
 
 - Single selection (単一選択) - 列セルを<kbd>マウス クリックします</kbd>。
-- Multi column selection (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
-- Range column selection (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
+- Multi column selection (複数列の選択) - <kbd>CTRL</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
+- Range column selection (列の範囲選択) - <kbd>SHIFT</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 
@@ -262,7 +265,7 @@ public copySelectedCells(event) {
         this.copyData(selectedData);
         const selectedDataArea = document.getElementById('selectedArea');
         selectedDataArea.innerText = JSON.stringify(selectedData);
-        
+
         this.toggleContextMenu();
     }
 

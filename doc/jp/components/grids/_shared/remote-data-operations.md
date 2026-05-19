@@ -1,8 +1,10 @@
 ---
 title: {Platform} {ComponentTitle} リモート データ操作 - {ProductName}
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
+_license: commercial
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+mentionedTypes: ["GridBaseDirective"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -545,7 +547,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-    
+
     private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
         let qS = "";
         if (baseUrl) {
@@ -667,7 +669,7 @@ export class RemotePagingService {
 export class RemotePagingService {
     public static BASE_URL = 'https://data-northwind.indigo.design/';
     public static CUSTOMERS_URL = `${RemotePagingService.BASE_URL}Customers/GetCustomersWithPage`;
-  
+
     constructor() {}
 
     public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
@@ -675,7 +677,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-    
+
     public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
         return fetch(`${RemotePagingService.BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
         .then((result) => result.json());
@@ -798,7 +800,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
   constructor() {
       this.grid = document.getElementById('grid') as IgcGridComponent;
       this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
-      
+
       this._bind = () => {
         window.addEventListener("load", () => {
           this.loadData(this.page,this.perPage);
@@ -817,12 +819,12 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 
       this._bind();
   }
-``` 
+```
 また、データを読み込む方法を設定し、それに応じて UI を更新する必要があります。
-```ts 
+```ts
   private loadData(pageIndex?: number, pageSize?: number): void {
     this.grid.isLoading = true;
-    
+
     RemotePagingService.getDataWithPaging(pageIndex,pageSize)
     .then((response: CustomersWithPageResponseModel) => {
       this.totalRecordsCount = response.totalRecordsCount;
@@ -851,7 +853,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 
 詳細については、以下のデモをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
 
@@ -911,7 +913,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 ```
 詳細については、以下の完全なデモをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
 
@@ -927,7 +929,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
           height="600px"
           isLoading={isLoading}
         >
-        <IgrPaginator 
+        <IgrPaginator
           perPage={perPage}
           ref={paginator}
           onPageChange={onPageNumberChange}
@@ -981,7 +983,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 
 詳細については、以下の完全なサンプルをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
 
@@ -1048,17 +1050,17 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
             ordersRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Customers");
             });
-    
+
             orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Orders");
             });
         }
-    
+
         this._bind();
     }
-``` 
+```
 また、データを読み込む方法を設定し、それに応じて UI を更新する必要があります。
-```ts 
+```ts
   private updateUI(): void {
         if (this.hierarchicalGrid && this.data) { // Check if grid and data are available
             this.hierarchicalGrid.data = this.data;
@@ -1067,7 +1069,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
     private loadCustomersData(pageIndex?: number, pageSize?: number): void {
         this.hierarchicalGrid.isLoading = true;
-        
+
         RemotePagingService.getDataWithPaging(pageIndex,pageSize)
         .then((response: CustomersWithPageResponseModel) => {
           this.totalRecordsCount = response.totalRecordsCount;
@@ -1111,7 +1113,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
     public webHierarchicalGridPaginatorTemplate = () => {
        return html `
-        <igc-paginator 
+        <igc-paginator
             id="islandPaginator">
         </igc-paginator>`
     }
@@ -1119,7 +1121,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
 詳細については、以下のデモをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} 階層グリッド リモート ページングの例"`
 
@@ -1179,7 +1181,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 ```
 詳細については、以下の完全なデモをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} 層グリッド リモート ページングの例"`
 
@@ -1194,7 +1196,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
           primaryKey="customerId"
           height="600px"
         >
-          <IgrPaginator 
+          <IgrPaginator
             perPage={perPage}
             ref={paginator}
             onPageChange={onPageNumberChange}
@@ -1295,7 +1297,7 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 
 詳細については、以下の完全なサンプルをご覧ください。
 
-### グリッド リモート ページングのデモ  
+### グリッド リモート ページングのデモ
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} 層グリッド リモート ページングの例"`
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1683,30 +1685,30 @@ BLAZOR CODE SNIPPET HERE
 
 - グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合)、データ要求が完了すると、行は次の状態を失います:
 
-* 行の選択
-* 行の展開/縮小
-* 行の編集
-* 行のピン固定
+- 行の選択
+- 行の展開/縮小
+- 行の編集
+- 行のピン固定
 
 ## API リファレンス
 
-* `Paginator`
-* `{ComponentName}`
+- `Paginator`
+- `{ComponentName}`
 
 ## その他のリソース
 <!-- ComponentStart: Grid -->
-* [ページング](paging.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [ページング](paging.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

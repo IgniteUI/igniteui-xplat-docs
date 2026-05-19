@@ -2,6 +2,7 @@
 title: {Platform} Pie Charts and Graphs | {ProductName}
 _description: The {ProductName} data pie chart is a specialized UI control that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, animation, highlighting, legend
+_license: commercial
 mentionedTypes: ["DataPieChart", "XamDataChart", "OthersCategoryType", "SeriesSelectionMode", "SeriesSelectionBehavior", "SeriesHighlightingBehavior"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -76,6 +77,21 @@ To get the underlying data items that are contained within the Others slice in t
 
 By default, the Others slice will be represented by a label of "Others." You can change this by modifying the `OthersCategoryText` property of the chart.
 
+### {Platform} Styling the Others Slice
+
+You can style the aggregated Others slice separately from other slices by using these properties:
+
+- `OthersCategoryBrush`  
+  Sets the fill (brush) used for the Others slice.
+
+- `OthersCategoryOutline`  
+  Sets the outline (stroke) used for the Others slice.
+
+These properties only affect the Others slice (when it exists). All other slices continue to use the normal palette and item-wise coloring behavior.
+
+> [!NOTE]
+> The Others slice is only rendered when the chart is configured to create it (for example, with `OthersCategoryThreshold` greater than `0` and an appropriate `OthersCategoryType`). If the Others slice is not present, `OthersCategoryBrush` and `OthersCategoryOutline` have no visible effect.
+
 If you want to ensure that the Others category does not show up in the `DataPieChart`, you can set the `OthersCategoryThreshold` to 0.
 
 The following sample demonstrates usage of the Others slice in the `DataPieChart`:
@@ -139,7 +155,7 @@ In addition to the mouse highlighting, the `DataPieChart` exposes a highlight fi
 
 When these conditions are met, the values of the subset will be highlighted, while the remainder of the full set of data will be faded - effectively creating a highlight for the subset and allowing easier visualization of a subset of your data within the same control.
 
-The following example demonstrates highlight filtering. 
+The following example demonstrates highlight filtering.
 
 `sample="/charts/data-pie-chart/highlight-filter", height="600", alt="{Platform} Data Pie Chart Highlight Filtering"`
 
@@ -179,4 +195,3 @@ The following table lists API members mentioned in the above sections:
  |-----------------|----------------|------------ |
  |Data Pie Chart      | `DataPieChart`     | `DataPieChart` |
  |Item Legend | `ItemLegend` | `ItemLegend` |
-

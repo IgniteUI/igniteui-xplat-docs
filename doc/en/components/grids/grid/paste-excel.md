@@ -2,6 +2,7 @@
 title: {Platform} Excel Like {ComponentTitle} - Infragistics
 _description: Configure the {Platform} Grid to paste data from excel, by using rich and performance API with less code, and use the rich API do export selected grid data easily.
 _keywords: export selected, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 ---
 
@@ -12,7 +13,7 @@ The {ProductName} `Grid` can read Excel data that is copied to the clipboard. In
 ## {Platform} Paste from Excel Example
 
 This sample demonstrates how to implement pasting from Excel into the `Grid` Material UI table.
-To work with the sample open up any Excel spreadsheet, copy some rows, and paste it into the grid using the keyboard (<kbd>Ctrl</kbd> + <kbd>V</kbd>, <kbd>Shift</kbd> + <kbd>Insert</kbd>,<kbd>Command</kbd> + <kbd>V</kbd>).
+To work with the sample open up any Excel spreadsheet, copy some rows, and paste it into the grid using the keyboard (<kbd>CTRL</kbd> + <kbd>V</kbd>, <kbd>SHIFT</kbd> + <kbd>INSERT</kbd>,<kbd>CMD</kbd> + <kbd>V</kbd>).
 
 On the top there is a dropdown button with 2 options:
 <ol>
@@ -627,13 +628,14 @@ export class PasteHandler {
 <!-- end:Angular -->
 
 ## API References
-* `Grid`
+
+- `Grid`
 
 ## Additional Resources
 
-* [Excel Exporter](export-excel.md) - Use the Excel Exporter service to export data to Excel from Grid. It also provides the option to only export the selected data from the Grid. The exporting functionality is encapsulated in the ExcelExporterService class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the ExcelExporterService's export method and pass the Grid component as first argument.
+- [Excel Exporter](export-excel.md) - Use the Excel Exporter service to export data to Excel from Grid. It also provides the option to only export the selected data from the Grid. The exporting functionality is encapsulated in the ExcelExporterService class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the ExcelExporterService's export method and pass the Grid component as first argument.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

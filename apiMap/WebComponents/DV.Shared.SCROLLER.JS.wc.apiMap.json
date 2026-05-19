@@ -9,6 +9,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScrollbarStyle","mappedName": "Default"}], "originalName": "Default"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScrollbarStyle","mappedName": "Fading"}], "originalName": "Fading"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ScrollbarStyle","mappedName": "Hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScrollbarStyle","mappedName": "Thin"}], "originalName": "Thin"} ]
   }]
 }

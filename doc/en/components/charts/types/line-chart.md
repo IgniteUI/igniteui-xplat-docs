@@ -2,6 +2,7 @@
 title: {Platform} Line Chart and Graph | {ProductName}
 _description: The {Platform} Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: {Platform} Charts, Line Chart, Line Graph, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", "Series", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -45,7 +46,7 @@ There are several common use cases for choosing a Line Chart:
 - Need to show data trends for one or more categories for comparative analysis.
 - Need to visualize detailed time-series data.
 
-### Line Chart Best Practices:
+### Line Chart Best Practices
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
 - Order time-series data  from left to right.
@@ -56,7 +57,7 @@ There are several common use cases for choosing a Line Chart:
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
 - Time-series data has similar values (data over the same period), it makes overlapped lines impossible to differentiate.
 
-### Line Chart Data Structure:
+### Line Chart Data Structure
 
 - The data source must be an array or a list of data items (for single series).
 - The data source must be an array of arrays or a list of lists (for multiple series).

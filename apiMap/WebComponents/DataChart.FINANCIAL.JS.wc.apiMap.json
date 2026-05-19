@@ -23,6 +23,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-financial-price-series-component.ts","dynamicModuleName": "igc-financial-price-series-dynamic-module.ts","moduleName": "igc-financial-price-series-module.ts","mappedName": "IgcFinancialPriceSeriesComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "closeMemberAsLegendLabel"}], "originalName": "CloseMemberAsLegendLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "closeMemberAsLegendUnit"}], "originalName": "CloseMemberAsLegendUnit"},
       {"names":[{"platform": "WebComponents", "mappedType": "PriceDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},

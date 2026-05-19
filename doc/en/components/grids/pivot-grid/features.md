@@ -2,6 +2,7 @@
 title: {Platform} {PivotGridTitle} Features | Pivot Tables | Infragistics
 _description: Create fast, responsive {Platform} {PivotGridTitle} and tables with {ProductName} and perform complex data analysis via pivot data.
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 namespace: Infragistics.Controls
 ---
@@ -242,12 +243,12 @@ Chips from these areas can not be moved to the `values` area and chips from the 
 
 ## API References
 
-* `PivotGrid`
-* `PivotDataSelector`
+- `PivotGrid`
+- `PivotDataSelector`
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

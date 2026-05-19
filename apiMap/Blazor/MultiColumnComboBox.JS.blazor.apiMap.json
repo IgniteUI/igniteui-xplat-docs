@@ -1,26 +1,26 @@
 {  "types":[
   {
     "originalName": "GotFocusEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GotFocusEventArgs.cs","mappedName": "IgbGotFocusEventArgs"}]
   },
   {
     "originalName": "LostFocusEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "LostFocusEventArgs.cs","mappedName": "IgbLostFocusEventArgs"}]
   },
   {
     "originalName": "MultiColumnComboBoxTextChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "MultiColumnComboBoxTextChangedEventArgs.cs","mappedName": "IgbMultiColumnComboBoxTextChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NewText"}], "originalName": "NewText"},
@@ -28,10 +28,10 @@
   },
   {
     "originalName": "MultiColumnComboBoxValueChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "MultiColumnComboBoxValueChangedEventArgs.cs","mappedName": "IgbMultiColumnComboBoxValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "NewValue"}], "originalName": "NewValue"},
@@ -39,8 +39,8 @@
   },
   {
     "originalName": "MultiColumnComboBox",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "MultiColumnComboBox.cs","mappedName": "IgbMultiColumnComboBox"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBackgroundColor"}], "originalName": "ActualBackgroundColor"},

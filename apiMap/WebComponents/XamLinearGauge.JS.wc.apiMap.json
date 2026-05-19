@@ -45,6 +45,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "labelInterval"}], "originalName": "LabelInterval"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "labelsPostInitial"}], "originalName": "LabelsPostInitial"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "labelsPreTerminal"}], "originalName": "LabelsPreTerminal"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "labelsVisible"}], "originalName": "LabelsVisible"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "maximumValue"}], "originalName": "MaximumValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "mergeViewports"}], "originalName": "MergeViewports"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "minimumValue"}], "originalName": "MinimumValue"},

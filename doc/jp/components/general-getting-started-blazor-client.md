@@ -14,15 +14,15 @@ mentionedTypes: []
 
 Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**Blazor WebAssembly アプリ** テンプレートを選択して、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-client.jpg" />
+<img src="../images/general/new-blazor-project-client.jpg" alt="new-blazor-project-client" />
 
 プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configure-client.jpg" />
+<img src="../images/general/new-blazor-project-configure-client.jpg" alt="new-blazor-project-configure-client" />
 
 追加のプロジェクト オプションを指定し、**[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-info-client.jpg" />
+<img src="../images/general/new-blazor-project-info-client.jpg" alt="new-blazor-project-info-client" />
 
 ## Ignite UI for Blazor のインストール
 
@@ -108,4 +108,4 @@ Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 Blazor アプリをビルドして実行します。
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />

@@ -2,6 +2,7 @@
 title: {Platform} Chip | Infragistics
 _description: Infragistics' {Platform} Chip component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Chip Components, Infragistics
+_license: MIT
 mentionedTypes: ["Chip"]
 ---
 
@@ -33,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcChipComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -227,10 +228,10 @@ igc-chip::part(suffix) {
 
 ## API References
 
- - `Chip`
- - [`Styling & Themes`](../themes/overview.md)
+- `Chip`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,6 +2,7 @@
 title: {Platform} ドック マネージャー | ペインの更新 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ドック マネージャー コントロールを使用して、操作に基づいて更新できるペインによってインタラクティブなコンテンツを作成します。{ProductName} ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, layout, updating panes, {ProductName}, ドック マネージャー, レイアウト, ペインの更新, インフラジスティックス
+_license: commercial
 _language: ja
 mentionedTypes: ["DockManager"]
 ---
@@ -62,4 +63,4 @@ this.dockManager.layout = {
 
 ## API リファレンス
 
- - `DockManager`
+- `DockManager`

@@ -2,8 +2,9 @@
 title: {Platform} {ComponentTitle} for {ProductName} for
 _description: Use {Platform} {ComponentTitle} for essential UI operations. Hosts different UI controls for the Grid’s features - column hiding, pinning, excel exporting, etc.
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_license: commercial
+mentionedTypes: ["GridToolbar"]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid", "GridToolbarActions"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridToolbar}
 ---
@@ -33,7 +34,7 @@ The toolbar and the predefined UI components support {Platform} events and expos
 <!-- end: Angular, WebComponents -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
+The predefined `GridToolbarActions` and `GridToolbarTitle` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -261,6 +262,7 @@ Of course, each of these UIs can be added independently of each other, or may no
     </igx-grid-toolbar>
 </igx-grid>
 ```
+
 ```html
 <igc-grid auto-generate="true">
     <igc-grid-toolbar>
@@ -659,7 +661,7 @@ constructor() {
 }
 ```
 
-The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
+The default overlaySettings are using **ConnectedPositionStrategy** with **Absolute** scroll strategy, **modal** set to false, with enabled **close on escape** and **close on outside click** interactions.
 
 <!-- end: Angular -->
 
@@ -960,6 +962,7 @@ The following code snippet demonstrates subscribing to the toolbar exporting eve
 ```html
 <{ComponentSelector} id="toolbarExporter"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
@@ -1048,6 +1051,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 ```html
 <{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
@@ -1103,6 +1107,7 @@ igRegisterScript("ConfigureExport", (evt) => {
 ```html
 <{ComponentSelector} id="hierarchicalGrid"></{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     var hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
@@ -1439,21 +1444,21 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarAdvancedFiltering`
-* `GridToolbar`
-* `GridToolbarExporter`
-* `GridToolbarHiding`
-* `GridToolbarPinning`
-* `GridToolbarTitle`
+- `GridToolbarAdvancedFiltering`
+- `GridToolbar`
+- `GridToolbarExporter`
+- `GridToolbarHiding`
+- `GridToolbarPinning`
+- `GridToolbarTitle`
 
-* `{ComponentName}` Events:
-* `ToolbarExporting`
+`{ComponentName}` Events:
+- `ToolbarExporting`
 
 <!-- Angular -->
 
 Styles:
 
-* `{ComponentName}` Styles
+- `{ComponentName}` Styles
 
 <!-- end: Angular -->
 
@@ -1461,5 +1466,5 @@ Styles:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

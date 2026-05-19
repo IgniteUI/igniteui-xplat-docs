@@ -2,7 +2,7 @@
   {
     "originalName": "ColumnGrouping",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnGrouping.cs","mappedName": "IgbColumnGrouping"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackgroundColor"}], "originalName": "BackgroundColor"},

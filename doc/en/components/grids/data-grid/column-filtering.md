@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Filtering | Infragistics
 _description: Use Infragistics' {ProductName} grid component to perform expressive sort conditions and return data easily. View {ProductName} table's demo for more information!
 _keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.FilterExpressions"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "FilterExpressions", "FilterLogicalOperator", "FilterOperand"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridFiltering}
 ---
 
@@ -63,10 +63,10 @@ Since the operands are applied to the column they can be added in several ways, 
 
 ## API References
 
- - `DisplayName`
- - `FilterExpressions`
- - `FilterFactory`
- - `FilterLogicalOperator`
- - `FilterOperand`
- - `FilterRequested`
- - `FilterUIType`
+- `DisplayName`
+- `FilterExpressions`
+- `FilterFactory`
+- `FilterLogicalOperator`
+- `FilterOperand`
+- `FilterRequested`
+- `FilterUIType`

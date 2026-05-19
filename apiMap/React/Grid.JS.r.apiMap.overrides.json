@@ -1,0 +1,14 @@
+{
+  "types":[
+  {
+    "originalName": "Grid",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "React","fileName": "igr-data-grid.ts","mappedName": "IgrDataGrid"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isGroupByAreaVisible"}], "originalName": "IsGroupByAreaVisible"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPagerVisible"}], "originalName": "IsPagerVisible"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "useAccessibility"}], "originalName": "UseAccessibility"} ]
+  }
+  ]
+}

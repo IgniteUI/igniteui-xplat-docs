@@ -2,6 +2,7 @@
 title: {Platform} Chart Data Filtering | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Data Filtering
 _keywords: {Platform} Charts, Filtering, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -24,7 +25,7 @@ The following example depicts a [Column Chart](../types/column-chart.md) of annu
 
 <div class="divider--half"></div>
 
-The `InitialFilter` property is a string that requires the following syntax in order to filter properly. The value requires sets of parenthesesthat include both the filter expression definition, column and value associated with the record(s) filtering in. 
+The `InitialFilter` property is a string that requires the following syntax in order to filter properly. The value requires sets of parentheses that include both the filter expression definition, column and value associated with the record(s) filtering in.
 
 eg. To show all countries that start with the letter B:
 

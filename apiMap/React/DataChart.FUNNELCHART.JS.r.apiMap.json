@@ -109,6 +109,7 @@
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "outlines"}], "originalName": "Outlines"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
+      {"names":[{"platform": "React", "mappedType": "IgrFunnelChartSelectedItemsCollection","mappedName": "selectedItems"}], "originalName": "SelectedItems"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggleSelection"}], "originalName": "ToggleSelection"},
@@ -125,5 +126,17 @@
       {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
       {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
       {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+  },
+  {
+    "originalName": "FunnelChartSelectedItemsChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "React","fileName": "igr-funnel-chart-selected-items-changed-event-args.ts","mappedName": "IgrFunnelChartSelectedItemsChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrFunnelChartSelectedItemsCollection","mappedName": "currentItems"}], "originalName": "CurrentItems"},
+      {"names":[{"platform": "React", "mappedType": "IgrFunnelChartSelectedItemsCollection","mappedName": "newItems"}], "originalName": "NewItems"},
+      {"names":[{"platform": "React", "mappedType": "IgrFunnelChartSelectedItemsCollection","mappedName": "oldItems"}], "originalName": "OldItems"} ]
   }]
 }

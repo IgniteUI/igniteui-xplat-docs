@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Column Animations | Infragistics
 _description: Learn how to display column animations through events when moving or hiding columns with Infragistics' {ProductName} data table & grid. Check out {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -81,8 +81,8 @@ The following demonstrates the implementation of each of the column animations d
 
 ## API References
 
- - `ColumnAddingAnimationMode`
- - `ColumnExchangingAnimationMode`
- - `ColumnHidingAnimationMode`
- - `ColumnMovingAnimationMode`
- - `ColumnPropertyUpdatingAnimation`
+- `ColumnAddingAnimationMode`
+- `ColumnExchangingAnimationMode`
+- `ColumnHidingAnimationMode`
+- `ColumnMovingAnimationMode`
+- `ColumnPropertyUpdatingAnimationMode`

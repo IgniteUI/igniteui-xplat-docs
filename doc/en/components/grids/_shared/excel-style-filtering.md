@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Excel Style Filtering - {ProductName}
 _description: Learn how to configure Excel filtering in {Platform} {ComponentTitle}. You can enable/disable various options and customize the Excel style filter menu the way you want.
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -48,9 +49,9 @@ To turn on the `{ComponentName}` component's Excel-style filtering, two inputs s
 
 ## Interactions
 
-In order to open the filter menu for a particular column, the {Platform} filter icon in the header should be clicked. Additionally, you can use the <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> combination on a selected header. If the column can be sorted, pinned, moved, selected or hidden along with the filtering functionality, there will be buttons available for the features that are turned on.
+In order to open the filter menu for a particular column, the {Platform} filter icon in the header should be clicked. Additionally, you can use the <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> combination on a selected header. If the column can be sorted, pinned, moved, selected or hidden along with the filtering functionality, there will be buttons available for the features that are turned on.
 
-If no filter is applied, all the items in the list will be selected. They can be filtered from the input above the list. In order to filter the data, you can select/deselect the items in the list and either click the Apply button, or press <kbd>Enter</kbd>. The filtering applied through the list items creates filter expressions with `equals` operator and the logic operator between the expressions is `OR`.
+If no filter is applied, all the items in the list will be selected. They can be filtered from the input above the list. In order to filter the data, you can select/deselect the items in the list and either click the Apply button, or press <kbd>ENTER</kbd>. The filtering applied through the list items creates filter expressions with `equals` operator and the logic operator between the expressions is `OR`.
 
 If you type something in the search box and apply the filter, only the items that match the search criteria will be selected. If you want to add items to the currently filtered ones, however, you should select the option **Add current selection to filter**.
 
@@ -116,8 +117,8 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
     <IgrColumn field="OrderDate" header="Order Date" sortable={false}  dataType="date">
     </IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" sortable={true} dataType="boolean">
-    </IgrColumn>      
-</IgrGrid>  
+    </IgrColumn>
+</IgrGrid>
 ```
 
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
@@ -227,7 +228,7 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
     <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable={true} sortable={false} dataType="number"></IgrColumn>
     <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable={true} dataType="number"></IgrColumn>
     {/* ... */}
-</IgrHierarchicalGrid>  
+</IgrHierarchicalGrid>
 ```
 
 ```razor
@@ -235,7 +236,7 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
     Height="650px" Width="100%" Id="hierarchicalGrid">
     <IgbColumn Field="Artist" Filterable="true" Sortable="true"></IgbColumn>
     <IgbColumn Field="Photo" Filterable="false"></IgbColumn>
-    <IgbColumn Field="Debut" Filterable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="Debut" Filterable="false"></IgbColumn>
     <IgbColumn Field="GrammyNominations" Header="Grammy Nominations" DataType="GridColumnDataType.Number" Filterable="true" Sortable="true" ></IgbColumn>
     <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number" Filterable="true"></IgbColumn>
     @* ... *@
@@ -271,13 +272,13 @@ The following code demonstrates how to customize the Excel style filter menu usi
 
 ```razor
 <{ComponentSelector}
-    Data="Data"    
+    Data="Data"
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
     ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
 </{ComponentSelector}>
 
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
     var html = window.igTemplating.html;
         return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
@@ -302,17 +303,17 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 ```tsx
 const webGridFilterAltIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
   return (
-    <img 
-      height="15px" 
-      width="15px" 
-      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
-      title="Continued" 
-      alt="Continued" 
+    <img
+      height="15px"
+      width="15px"
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg"
+      title="Continued"
+      alt="Continued"
     />
   );
 }
 
-<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter" 
+<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter"
     excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
 </{ComponentSelector}>
 ```
@@ -561,7 +562,7 @@ The list items inside the Excel Style Filtering dialog represent the unique valu
 
 <!-- Angular -->
 
- ## Formatted Values Filtering Strategy
+## Formatted Values Filtering Strategy
 
 By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values.
 
@@ -595,7 +596,7 @@ The following sample demonstrates how to format the numeric values of a column a
 
 ## Tree Filter View
 
-By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
+By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the specified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
 `sample="/{ComponentSample}/filter-view", height="650", alt="{Platform} {ComponentTitle} filter view"`
 
@@ -816,6 +817,7 @@ $black-color: #292826;
 
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
+
 And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
@@ -1045,6 +1047,7 @@ Then set the related CSS properties to this class:
     --ig-list-item-background: #ffcd0f;
 }
 ```
+
 ### Demo
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
@@ -1053,25 +1056,25 @@ Then set the related CSS properties to this class:
 
 ## API References
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+- [Virtualization and Performance](virtualization.md)
+- [Paging](paging.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Column Pinning](column-pinning.md)
+- [Column Resizing](column-resizing.md)
+- [Selection](selection.md)
 <!-- ComponentEnd: Grid -->
 
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

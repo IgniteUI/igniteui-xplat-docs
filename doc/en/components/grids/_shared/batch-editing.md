@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Batch Editing and Transactions - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing and {Platform} CRUD, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
@@ -106,6 +107,7 @@ After batch editing is enabled, define a `{ComponentName}` with bound data sourc
     }
 }
 ```
+
 ```html
 <igc-grid id="grid" batch-editing="true" primary-key="ProductID" width="100%" height="500px"
     row-editable="true">
@@ -115,6 +117,7 @@ After batch editing is enabled, define a `{ComponentName}` with bound data sourc
 <button id="redo">Redo</button>
 <button id="commit">Commit</button>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -190,6 +193,7 @@ private OnRedoClick() {
     }
 }
 ```
+
 ```html
 <igc-tree-grid id="treeGrid" batch-editing="true" primary-key="ProductID" foreign-key="PID"
     width="100%" height="500px" row-editable="true">
@@ -199,6 +203,7 @@ private OnRedoClick() {
 <button id="redo">Redo</button>
 <button id="commit">Commit</button>
 ```
+
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('grid') as IgcTreeGridComponent;
@@ -281,6 +286,7 @@ export class GridBatchEditingSampleComponent {
     }
 }
 ```
+
 ```ts
 export class GridBatchEditingSampleComponent {
     constructor() {
@@ -333,6 +339,7 @@ export class TreeGridBatchEditingSampleComponent {
     }
 }
 ```
+
 ```ts
 export class GridBatchEditingSampleComponent {
     constructor() {
@@ -414,42 +421,42 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 ## API References
 
 <!-- ComponentStart: Grid -->
-* `Transactions`
-* `TransactionService`
+- `Transactions`
+- `TransactionService`
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-* `HierarchicalTransactionService`
-* `RowEditable`
+- `HierarchicalTransactionService`
+- `RowEditable`
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* `HierarchicalTransactionServiceFactory`
+- `HierarchicalTransactionServiceFactory`
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ## Additional Resources
 
 <!-- Angular -->
 
-* [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+- [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
 
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Row Editing](row-editing.md)
-* [{ComponentTitle} Row Adding](row-adding.md)
+- [{ComponentTitle} Editing](editing.md)
+- [{ComponentTitle} Row Editing](row-editing.md)
+- [{ComponentTitle} Row Adding](row-adding.md)
 
 <!-- end: Blazor -->
 
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

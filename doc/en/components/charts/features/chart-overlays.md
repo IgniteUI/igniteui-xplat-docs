@@ -2,6 +2,7 @@
 title: {Platform} Chart Overlays | Data Visualization Tools | Value Overlay | Infragistics
 _description: Use Infragistics {ProductName} chart control's value overlay feature to place horizontal or vertical lines at a single numeric value. Learn about our {ProductName} graph types!
 _keywords: {Platform} charts, data chart, value overlay, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "ValueOverlay", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -59,7 +60,7 @@ The following sample demonstrates usage of the different `ValueLines` in the `Ca
 
 You can also plot built-in financial overlays and indicators in {Platform} [Stock Chart](../types/stock-chart.md).
 
-## Chart Overlay Text (Beta)
+## Chart Overlay Text <label>PREVIEW</label>
 
 The {Platform} `ValueOverlay`, `ValueLayer`, and all Data Annotation Layers can render custom overlay text inside plot area of the XamDataChart component. You can use this overlay text to annotate important events (e.g. company quarter reports) on x-axis or important values on y-axis in relationship to the layers.
 
@@ -79,7 +80,7 @@ public Series StylingOverlayText()
 {
     var annoLayer = new IgbDataAnnotationSliceLayer();
 
-    // styling optional overlay text 
+    // styling optional overlay text
     annoLayer.OverlayTextColor = Brushes.White;
     annoLayer.OverlayTextBackground = Brushes.Green;
     annoLayer.OverlayTextBorderColor = Brushes.Black;

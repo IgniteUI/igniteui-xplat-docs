@@ -2,6 +2,7 @@
 title: {Platform} File Input | Data Visualization Tools | Infragistics
 _description: Infragistics' {Platform} File input is a component where the user can select and upload files. Improve your application with {ProductName}!
 _keywords: {Platform} File input, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Input", "Icon", "Button"]
 ---
 # {Platform} File Input Overview
@@ -44,7 +45,7 @@ Now you can start with a basic configuration of the {Platform} `FileInput`.
 <igc-file-input label="File Input" required=true></igc-file-input>
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ## Configuration
 
@@ -52,19 +53,19 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 The `FileInput` component offers a variety of properties that allow you to configure its behavior based on specific requirements. These properties give you control over the input’s functionality, appearance, and validation.
 
-* `Value` - Sets the current value of the file input field.
-* `Disabled` - Disables the file input, preventing user interaction.
-* `Required` - Marks the input as mandatory. Form submission will be blocked unless a file is selected.
-* `Invalid` - Indicates that the input value is invalid, used to trigger visual error states.
-* `Multiple` - Allows the selection of multiple files.
-* `Accept` - Defines the types of files that can be selected. The value for this property needs to be a comma-separated list of file formats (e.g., .jpg, .png, .gif).
-* `Autofocus` - Automatically focuses the file input field when the page loads.
-* `Label` - Sets the label text associated with the file input element.
-* `Placeholder` - Provides placeholder text displayed when no file is selected.
+- `Value` - Sets the current value of the file input field.
+- `Disabled` - Disables the file input, preventing user interaction.
+- `Required` - Marks the input as mandatory. Form submission will be blocked unless a file is selected.
+- `Invalid` - Indicates that the input value is invalid, used to trigger visual error states.
+- `Multiple` - Allows the selection of multiple files.
+- `Accept` - Defines the types of files that can be selected. The value for this property needs to be a comma-separated list of file formats (e.g., .jpg, .png, .gif).
+- `Autofocus` - Automatically focuses the file input field when the page loads.
+- `Label` - Sets the label text associated with the file input element.
+- `Placeholder` - Provides placeholder text displayed when no file is selected.
 
 ```html
-<igc-file-input 
-  label="Files Input" 
+<igc-file-input
+  label="Files Input"
   accept=".jpg, .png, .gif"
   placeholder="Files missing"
   required
@@ -72,26 +73,26 @@ The `FileInput` component offers a variety of properties that allow you to confi
 </igc-file-input>
 ```
 
-### Methods 
+### Methods
 
-In addition to its configurable properties, there are four useful methods inherited from the `Input` component that you can use in the `FileInput` component: 
+In addition to its configurable properties, there are four useful methods inherited from the `Input` component that you can use in the `FileInput` component:
 
-* `Focus` - Sets the focus on the file input element.
-* `Blur` - Removes the focus from the file input element.
-* `ReportValidity` - Checks the validity of the input and displays a validation message if the input is invalid.
-* `SetCustomValidity` - Sets a custom validation message. If the provided message is not empty, the input will be marked as invalid.
+- `Focus` - Sets the focus on the file input element.
+- `Blur` - Removes the focus from the file input element.
+- `ReportValidity` - Checks the validity of the input and displays a validation message if the input is invalid.
+- `SetCustomValidity` - Sets a custom validation message. If the provided message is not empty, the input will be marked as invalid.
 
 ### Slots
 
 The `FileInput` component also exposes several slots that can be used to customize its appearance and behavior.
 
-* `prefix` & `suffix` - Allow you to insert content before or after the main input area. 
-* `helper-text` - Displays a hint or instructional message below the input. Useful for providing additional guidance, such as formatting tips or field requirements.
-* `file-selector-text` - Allow you to customizes the text displayed on the file selection button.
-* `file-missing-text` - Sets the text shown in the input field when no file has been selected.
-* `value-missing` -  Renders custom content when the required field validation fails. (i.e., when a file is required but not provided).
-* `invalid` – Allows you to render custom content when the input is in an invalid state.
-* `custom-error` - Displays content when a custom validation message is set using the `setCustomValidity()` method.
+- `prefix` & `suffix` - Allow you to insert content before or after the main input area.
+- `helper-text` - Displays a hint or instructional message below the input. Useful for providing additional guidance, such as formatting tips or field requirements.
+- `file-selector-text` - Allow you to customizes the text displayed on the file selection button.
+- `file-missing-text` - Sets the text shown in the input field when no file has been selected.
+- `value-missing` - Renders custom content when the required field validation fails. (i.e., when a file is required but not provided).
+- `invalid` – Allows you to render custom content when the input is in an invalid state.
+- `custom-error` - Displays content when a custom validation message is set using the `setCustomValidity()` method.
 
 `sample="/inputs/file-input/prefix-suffix", height="120", alt="{Platform} File Input Slots Example"`
 
@@ -113,8 +114,8 @@ The `FileInput` component is both focusable and interactive, ensuring full keybo
 
 To support accessibility best practices, the component also applies relevant ARIA attributes:
 
-* `aria-invalid` - Set to "true" when the input is in an invalid state.
-* `aria-describedby` - Automatically linked to the helper text element when present, allowing assistive technologies to announce the additional information.
+- `aria-invalid` - Set to "true" when the input is in an invalid state.
+- `aria-describedby` - Automatically linked to the helper text element when present, allowing assistive technologies to announce the additional information.
 
 ## Styling
 
@@ -155,13 +156,13 @@ igc-file-input::part(label) {
 
 ## API References
 
- - `FileInput`
- - `Icon`
- - `Input`
- - `Button`
- - [`Styling & Themes`](../themes/overview.md)
+- `FileInput`
+- `Icon`
+- `Input`
+- `Button`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -35,6 +35,45 @@
       {"names":[{"platform": "React", "mappedType": "IgrGeographicMapImagery","mappedName": "tileImagery"}], "originalName": "TileImagery"} ]
   },
   {
+    "originalName": "AzureMapsImageryStyle",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "isEnum":true,
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "React","fileName": "AzureMapsImageryStyle.ts","mappedName": "AzureMapsImageryStyle"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "DarkGrey"}], "originalName": "DarkGrey"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridDarkGreyOverlay"}], "originalName": "HybridDarkGreyOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridRoadOverlay"}], "originalName": "HybridRoadOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsDarkGreyOverlay"}], "originalName": "LabelsDarkGreyOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsRoadOverlay"}], "originalName": "LabelsRoadOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "Road"}], "originalName": "Road"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "Satellite"}], "originalName": "Satellite"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TerraOverlay"}], "originalName": "TerraOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficAbsoluteOverlay"}], "originalName": "TrafficAbsoluteOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficDelayOverlay"}], "originalName": "TrafficDelayOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficReducedOverlay"}], "originalName": "TrafficReducedOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeDarkOverlay"}], "originalName": "TrafficRelativeDarkOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeOverlay"}], "originalName": "TrafficRelativeOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherInfraredOverlay"}], "originalName": "WeatherInfraredOverlay"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherRadarOverlay"}], "originalName": "WeatherRadarOverlay"} ]
+  },
+  {
+    "originalName": "AzureMapsImagery",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeName": "GeographicMapImagery",
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "React","fileName": "igr-azure-maps-imagery.ts","dynamicModuleName": "igr-azure-maps-imagery-dynamic-module.ts","moduleName": "igr-azure-maps-imagery-module.ts","mappedName": "IgrAzureMapsImagery"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "apiKey"}], "originalName": "ApiKey"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "apiVersion"}], "originalName": "ApiVersion"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "cultureName"}], "originalName": "CultureName"},
+      {"names":[{"platform": "React", "mappedType": "AzureMapsImageryStyle","mappedName": "imageryStyle"}], "originalName": "ImageryStyle"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "localizedView"}], "originalName": "LocalizedView"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "timestamp"}], "originalName": "Timestamp"} ]
+  },
+  {
     "originalName": "BingMapsImageryStyle",
     "originalNamespace": "Infragistics.Controls.Maps",
     "isEnum":true,
@@ -234,6 +273,9 @@
     "packageName": "igniteui-maps",
     "names":[{"platform": "React","fileName": "igr-geographic-shape-series-base.ts","mappedName": "IgrGeographicShapeSeriesBase"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fillMemberPath"}], "originalName": "FillMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "IgrBrushScale","mappedName": "fillScale"}], "originalName": "FillScale"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}], "originalName": "FillScaleUseGlobalValues"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "ShapeItemSearchMode","mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"},

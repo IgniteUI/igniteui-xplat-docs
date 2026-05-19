@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | 列アニメーション | インフラジスティックス
 _description: Infragistics {ProductName} データ テーブルとグリッドを使用して、列を移動または非表示にするときに、イベントで列アニメーションを表示する方法を説明します。{ProductName} テーブル チュートリアルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列アニメーション, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
@@ -82,8 +82,8 @@ _language: ja
 
 ## API リファレンス
 
- - `ColumnAddingAnimationMode`
- - `ColumnExchangingAnimationMode`
- - `ColumnHidingAnimationMode`
- - `ColumnMovingAnimationMode`
- - `ColumnPropertyUpdatingAnimation`
+- `ColumnAddingAnimationMode`
+- `ColumnExchangingAnimationMode`
+- `ColumnHidingAnimationMode`
+- `ColumnMovingAnimationMode`
+- `ColumnPropertyUpdatingAnimationMode`

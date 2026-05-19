@@ -2,6 +2,7 @@
 title: {Platform} Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Markers
 _keywords: {Platform} Charts, Markers, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart", "CategoryChartType", "MarkerType"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -10,7 +11,7 @@ namespace: Infragistics.Controls.Charts
 
 In {ProductName}, markers are visual elements that display the values of data points in the chart's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
 
-# {Platform} Chart Marker Example
+## {Platform} Chart Marker Example
 
 In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to `Circle` enum value.
 
@@ -18,11 +19,9 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} Configuration Options Example"`
 
-
-
 <div class="divider--half"></div>
 
-# {Platform} Chart Marker Templates
+## {Platform} Chart Marker Templates
 
 In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `CategoryChart` control as it is demonstrated in example below.
 

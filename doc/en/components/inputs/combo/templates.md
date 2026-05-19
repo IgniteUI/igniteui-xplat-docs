@@ -2,6 +2,7 @@
 title: {Platform} ComboBox Component Templates – {ProductName}
 _description: {ProductName} ComboBox component templates
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Templates
+_license: MIT
 mentionedTypes: ["Combo"]
 ---
 
@@ -19,7 +20,7 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 ### Item Template
 
-The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
+The `ItemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
 <!-- WebComponents -->
 ```ts
@@ -96,7 +97,7 @@ const renderItemTemplate = (args: ComboTemplateProps<City>) => {
 
 ### Group Header Template
 
-The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
+The `GroupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
 <!-- WebComponents -->
 ```ts
@@ -161,7 +162,7 @@ To render a custom header above the list of options pass content to the `header`
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <header slot="header">
         Header content goes here
     </header>
@@ -186,7 +187,7 @@ To render a custom footer below the list of options pass content to the `footer`
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <footer slot="footer">
         Footer content goes here
     </footer>
@@ -211,7 +212,7 @@ To render a custom content when the filtering operation returns no result, use t
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
 ```
@@ -232,7 +233,7 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="down" slot="toggle-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -255,7 +256,7 @@ The clear icon can be changed via the `clear-icon` slot:
 ```
 
 ```razor
-<IgbCombo> 
+<IgbCombo>
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
 ```
@@ -271,11 +272,11 @@ The clear icon can be changed via the `clear-icon` slot:
 <!-- WebComponents -->
 ## API Reference
 
-* `Combo`
+- `Combo`
 
 <!-- end: WebComponents -->
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

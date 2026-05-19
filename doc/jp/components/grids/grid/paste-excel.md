@@ -2,6 +2,7 @@
 title: {Platform} Excel スタイルの {ComponentTitle} - インフラジスティックス
 _description: API を使用して最小限のコードで Excel からのデータ貼り付けや選択した {Platform} グリッド データを簡単にエクスポートできます。
 _keywords: export selected, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 ---
@@ -13,7 +14,7 @@ _language: ja
 ## {Platform} Excel から貼り付けの例
 
 このサンプルでは、Excel から `Grid` の貼り付けを実装する方法を紹介します。
-サンプルは、Excel スプレッドシートを開いて行をコピーし、キーボード (<kbd>Ctrl</kbd> + <kbd>V</kbd>、<kbd>Shift</kbd> + <kbd>Insert</kbd>、<kbd>Command</kbd> + <kbd>V</kbd>) を使用してグリッドに貼り付けます。
+サンプルは、Excel スプレッドシートを開いて行をコピーし、キーボード (<kbd>CTRL</kbd> + <kbd>V</kbd>、<kbd>SHIFT</kbd> + <kbd>INSERT</kbd>、<kbd>CMD</kbd> + <kbd>V</kbd>) を使用してグリッドに貼り付けます。
 
 上部に2 つのオプションとドロップダウン ボタンがあります。
 <ol>
@@ -628,13 +629,13 @@ export class PasteHandler {
 <!-- end:Angular -->
 
 ## API リファレンス
-* `Grid`
+- `Grid`
 
 ## その他のリソース
 
-* [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングやソートなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
+- [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングやソートなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

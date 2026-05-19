@@ -2,6 +2,7 @@
 title: {Platform} Data Chart | Data Visualization Tools | Navigation | Infragistics
 _description: Navigate Infragistics' {Platform} charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about {ProductName} graph navigation capabilities!
 _keywords: {Platform} charts, data chart, navigation, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -31,20 +32,20 @@ It is also possible to zoom or pan simply by clicking the mouse or using touch. 
 
 Navigation in the {Platform} data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default:
 
-- **Panning**: Using <kbd>🡐</kbd> <kbd>🡒</kbd> <kbd>🡑</kbd> <kbd>🡓</kbd> arrow keys on the keyboard or holding the <kbd>Shift</kbd> key, clicking and dragging with the mouse or pressing and moving your finger via touch.
-- **Zoom In**: Using the <kbd>Page Up</kbd> key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
-- **Zoom Out**: Using the <kbd>Page Down</kbd> key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
-- **Fit to Chart Plot Area**: Using the <kbd>Home</kbd> key on the keyboard. There is no mouse or touch operation for this.
+- **Panning**: Using <kbd>🡐</kbd> <kbd>🡒</kbd> <kbd>🡑</kbd> <kbd>🡓</kbd> arrow keys on the keyboard or holding the <kbd>SHIFT</kbd> key, clicking and dragging with the mouse or pressing and moving your finger via touch.
+- **Zoom In**: Using the <kbd>PAGE UP</kbd> key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
+- **Zoom Out**: Using the <kbd>PAGE DOWN</kbd> key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
+- **Fit to Chart Plot Area**: Using the <kbd>HOME</kbd> key on the keyboard. There is no mouse or touch operation for this.
 - **Area Zoom**: Click and drag the mouse within the plot area with the `DefaultInteraction` property set to its default - `DragZoom`.
 
 The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed:
 
 | Modifier Value | Corresponding Key |
 | ---------------|------------------ |
-| `Shift`        | <kbd>Shift</kbd> |
-| `Control`      | <kbd>Ctrl</kbd> |
-| `Windows`      | <kbd>Win</kbd> |
-| `Apple`        | <kbd>Apple</kbd> |
+| `Shift`        | <kbd>SHIFT</kbd> |
+| `Control`      | <kbd>CTRL</kbd> |
+| `Windows`      | <kbd>WIN</kbd> |
+| `Apple`        | <kbd>APPLE</kbd> |
 | `None`         | no keys |
 
 ## Chart Navigation with Scrollbars
@@ -61,8 +62,6 @@ These can be configured to the following options
 The following example demonstrates enabling scrollbars.
 
 `sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} Navigation Example"`
-
-
 
 <div class="divider--half"></div>
 

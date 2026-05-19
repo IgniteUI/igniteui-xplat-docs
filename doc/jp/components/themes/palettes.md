@@ -2,6 +2,7 @@
 title: {Platform} スタイル設定およびテーマ | {Platform} パレット | インフラジスティックス
 _description:
 _keywords: {ProductName}, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
+_license: MIT
 mentionedTypes: ["Palettes"]
 _language: ja
 ---
@@ -130,7 +131,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 ライト テーマとダーク テーマの両方について、`gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
 
-*Bootstrap Light:*
+**Bootstrap Light:**
 ```css
 :root {
   //...
@@ -143,7 +144,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 }
 ```
 
-*Bootstrap Dark:*
+**Bootstrap Dark:**
 ```css
 :root {
   //...
@@ -173,4 +174,4 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 ## API リファレンス
 
- - `Palettes`
+- `Palettes`

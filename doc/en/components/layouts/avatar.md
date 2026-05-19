@@ -2,6 +2,7 @@
 title: {Platform} Avatar | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} avatar component to display an image, icon, or initials.
 _keywords: avatar, layout, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Avatar"]
 ---
 
@@ -66,7 +67,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 The `Avatar` is capable of displaying images, initials, or any other content, including icons. Declaring an `Avatar` is as simple as:
 
@@ -104,7 +105,7 @@ The avatar has several attributes that allow rendering different content based o
 
 ### Initials
 
-If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+If the `Initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 ```html
 <!-- Initials("AZ") will be displayed instead of the icon. -->
@@ -134,7 +135,7 @@ If the `initials` attribute is set all children elements of the avatar will be i
 
 ### Image
 
-The avatar can also display an image when the `src` attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
+The avatar can also display an image when the `Src` attribute is assigned a valid URL to a static asset. In that case the `Initials` value will be ignored and children elements will not be rendered.
 
 ```html
 <igc-avatar
@@ -175,7 +176,7 @@ The avatar supports three shapes - `circle`, `rounded`, and `square`. The defaul
 
 ### Size
 
-Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size: 
+Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size:
 
 ```css
 igc-avatar {
@@ -214,10 +215,10 @@ igc-avatar::part(base) {
 
 ## API References
 
- - `Avatar`
- - [`Styling & Themes`](../themes/overview.md)
+- `Avatar`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

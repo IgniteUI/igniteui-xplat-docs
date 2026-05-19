@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Blazor documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Blazor",
-  "samplesCount": 676,
+  "samplesCount": 754,
   "samplesHost": "https://staging.infragistics.com/blazor-client/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -175,7 +175,16 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/category-chart/value-lines": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-overlays"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/overview": [
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/gauge-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/local-data-source-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/map-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/pie-dashboard": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/dashboard-tile"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/axis-crossing": [
@@ -224,6 +233,27 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/dash-array-trendline": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-trendlines"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-band-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-line-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-multiple-with-overlay-text": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-overlays"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-multiple-with-stocks": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-rect-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-slice-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-strip-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-legend-grouping": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-legend"
@@ -400,10 +430,16 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/type-scatter-polyline-series": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/shape-chart"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/user-annotation-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-user-annotations"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/waterfall-chart": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/column-chart"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/animation": [
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/animation-replay": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/data-pie-chart"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/highlight-filter": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/data-pie-chart"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/highlighting": [
@@ -545,23 +581,23 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/charts/tree-map/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/treemap-chart"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/date-limits": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/editing": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/format": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/overview": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/range": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
-    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/editors/multi-column-combobox/overview": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/date-limits": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/editing": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/format": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/range": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/excel/excel-library/operations-on-workbooks": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library-using-workbooks"
@@ -752,8 +788,35 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/data-grid/row-selection": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/data-grid/cell-selection"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-cascading-combo": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cascading-combos"
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/column-config-dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/column-configuration"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/data-binding": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/binding"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/filtering-config": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/filtering-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/styling-config-themes": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/theming"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/styling-custom-theme": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/theming"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/row-actions"
@@ -770,11 +833,17 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/binding-nested-data-1": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/data-grid"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cascading-combo": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cascading-combos"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-editing-sample": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-editing"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-merging"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-selection",
@@ -811,6 +880,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/column-moving"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/column-pinning"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-options": [
@@ -871,6 +943,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/data-summary-template": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/summaries"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/disabled-summaries": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/editing-columns": [
@@ -970,6 +1045,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/paste": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/paste-excel"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/remote-paging-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/remote-data-operations"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/row-adding": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/row-adding"
     ],
@@ -1048,6 +1126,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/selection"
@@ -1077,6 +1158,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/column-moving"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/column-pinning"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-options": [
@@ -1135,6 +1219,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-summary-template": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/summaries"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/disabled-summaries": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/editing-columns": [
@@ -1199,6 +1286,9 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/overview": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/overview"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/remote-paging-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/remote-data-operations"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/row-adding": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/row-adding"
@@ -1324,6 +1414,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/selection"
@@ -1356,6 +1449,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/column-moving"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/column-pinning"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-options": [
@@ -1419,6 +1515,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-template": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/summaries"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/disabled-summaries": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/editing-columns": [
@@ -1559,10 +1658,19 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree/basic-example": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/dot": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/badge"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/outlined": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/badge"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/shape": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/badge"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/badge"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/variants": [
@@ -1622,6 +1730,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/overview": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/checkbox"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/checkbox"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/chip/multiple": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/chip"
     ],
@@ -1648,6 +1759,9 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/circular-progress-indicator/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/circular-progress"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/color-editor/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/color-editor"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/combo/features": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/combo/features"
@@ -1677,6 +1791,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/date-time-input"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/step-up-down": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/date-time-input"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/date-time-input"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/dropdown/group": [
@@ -1738,6 +1855,18 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/linear-progress-indicator/types": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/linear-progress"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/applying-mask": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/mask-input"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/mask-input"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/mask-input"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/value-modes": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/mask-input"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/radio/alignment": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/radio"
@@ -1832,6 +1961,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/overview": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/switch"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/switch"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/form-integration": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/text-area"
     ],
@@ -1846,6 +1978,24 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/text-area"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/advanced": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/placement": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/rich": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/triggers": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/accordion"
@@ -1871,6 +2021,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/size": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/avatar"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/avatar"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/card/horizontal": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/card"
     ],
@@ -1894,6 +2047,21 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/carousel/thumbnail": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/carousel"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/dashed": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/middle": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/select": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/vertical": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/customize-buttons": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager"
@@ -1940,6 +2108,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/steptypes": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/stepper"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/stepper"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/alignment": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tabs"
     ],
@@ -1951,6 +2122,30 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/scrolling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tabs"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tabs"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/actions": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/columngap": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/dragndrop": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/layout": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/resize": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/binding-data-csv": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-binding-data-csv"
@@ -1969,6 +2164,9 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-binding-shp-file"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-azure-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-azure-imagery"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-esri-imagery"
@@ -2061,6 +2259,12 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/notifications/toast/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/notifications/toast"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/disabled-dates": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/header": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/multiple-months": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
     ],
@@ -2074,6 +2278,9 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/size": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/special-dates": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/styling": [
@@ -2096,9 +2303,36 @@
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-picker/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/custom-ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/form": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/slots": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/data-exporting-indicator": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-sample-3": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-sample-4": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-style": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 286,
+  "topicsCount": 309,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2185,6 +2419,14 @@
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-aggregations": [
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/category-chart/data-aggregations"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-annotations": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-band-layer",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-line-layer",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-multiple-with-stocks",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-rect-layer",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-slice-layer",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-strip-layer"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-data-filtering": [
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/category-chart/data-filter"
     ],
@@ -2236,6 +2478,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-overlays": [
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/category-chart/value-lines",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/data-annotation-multiple-with-overlay-text",
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/series-value-overlay"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-performance": [
@@ -2250,6 +2493,9 @@
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-trendlines": [
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/dash-array-trendline",
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/features/chart-user-annotations": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/user-annotation-layer"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/area-chart": [
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/category-chart/area-chart-multiple-sources",
@@ -2291,7 +2537,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-chart/composite-chart"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/data-pie-chart": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/animation",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/animation-replay",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/highlight-filter",
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/highlighting",
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/legend",
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/data-pie-chart/others",
@@ -2406,17 +2653,20 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/charts/tree-map/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/dashboard-tile": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/overview"
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/gauge-dashboard",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/local-data-source-dashboard",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/map-dashboard",
+      "https://staging.infragistics.com/blazor-client/samples/samples/charts/dashboard-tile/pie-dashboard"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox": [
       "https://staging.infragistics.com/blazor-client/samples/samples/editors/multi-column-combobox/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/xdate-picker": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/date-limits",
-      "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/editing",
-      "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/format",
-      "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/overview",
-      "https://staging.infragistics.com/blazor-client/samples/samples/editors/date-picker/range"
+      "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/date-limits",
+      "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/editing",
+      "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/format",
+      "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/editors/x-date-picker/range"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library": [
       "https://staging.infragistics.com/blazor-client/samples/samples/excel/excel-library/overview"
@@ -2457,6 +2707,9 @@
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/binding-shp-polylines"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-azure-imagery": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-azure-imagery"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-esri-imagery"
     ],
@@ -2486,6 +2739,34 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/binding": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/data-binding"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/column-configuration": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/column-config-dynamic"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/filtering": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/filtering-config",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/filtering-config-events"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/overview": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/sorting": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-events",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-grid",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/sort-config-sample"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grid-lite/theming": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/styling-config-themes",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-lite/styling-custom-theme"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/data-exporting-indicator",
+      "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-sample-3",
+      "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-sample-4",
+      "https://staging.infragistics.com/blazor-client/samples/samples/{ComponentSample}/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/data-grid": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/binding-composite-data",
@@ -2584,7 +2865,7 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/advanced-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cascading-combos": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid-cascading-combo"
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cascading-combo"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-editing": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-editing-sample",
@@ -2592,6 +2873,9 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/editing-columns",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/editing-events",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/editing-excel-style-custom"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-merging": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-merge"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/cell-selection-mode",
@@ -2614,6 +2898,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/column-pinning": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-both-sides",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-right-side",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/column-pinning-styles"
@@ -2689,7 +2974,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/paste"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/remote-data-operations": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/infinite-scroll"
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/infinite-scroll",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/remote-paging-grid"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/row-actions": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/action-strip"
@@ -2737,6 +3023,7 @@
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grid/summaries": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/data-summary-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/data-summary-template",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/disabled-summaries",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/groupby-summary-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/groupby-summary-styling"
     ],
@@ -2764,6 +3051,9 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/editing-columns",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/editing-events"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/cell-merging": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-merge"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/cell-selection": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-selection-mode",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/cell-selection-style"
@@ -2784,6 +3074,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/column-pinning": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-right-side",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/column-pinning-styles"
@@ -2845,6 +3136,9 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/row-paging-basic",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/row-paging-options"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/remote-data-operations": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/remote-paging-grid"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/row-actions": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/action-strip"
     ],
@@ -2886,7 +3180,8 @@
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/summaries": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-summary-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-summary-options-styling",
-      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-summary-template"
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-summary-template",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/disabled-summaries"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/hierarchical-grid/toolbar": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/hierarchical-grid/data-exporting-indicator",
@@ -2938,7 +3233,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/grid/overview-dark"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree/basic-example"
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree/basic-example",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/advanced-filtering": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/advanced-filtering-options",
@@ -2949,6 +3245,9 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-editing-styling",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/editing-columns",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/editing-events"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/cell-merging": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-merge"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/cell-selection": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/cell-selection-mode",
@@ -2971,6 +3270,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/column-pinning": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-right-side",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/column-pinning-styles"
@@ -3083,7 +3383,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-children",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-options",
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-options-styling",
-      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-template"
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-summary-template",
+      "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/disabled-summaries"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/tree-grid/toolbar": [
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/data-exporting-indicator",
@@ -3094,8 +3395,10 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/grids/tree-grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/badge": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/dot",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/outlined",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/shape",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/styling",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/badge/variants"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/button": [
@@ -3120,7 +3423,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/disabled",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/indeterminate",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/label",
-      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/overview"
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/checkbox/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/chip": [
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/chip/multiple",
@@ -3134,6 +3438,9 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/circular-progress-indicator/indeterminate",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/circular-progress-indicator/simple",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/circular-progress-indicator/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/color-editor": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/color-editor/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/combo/features": [
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/combo/features"
@@ -3153,7 +3460,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/input-format-display-format",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/min-max-value",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/overview",
-      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/step-up-down"
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/step-up-down",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/date-time-input/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/dropdown": [
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/dropdown/group",
@@ -3182,6 +3490,12 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/linear-progress-indicator/striped",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/linear-progress-indicator/styling",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/linear-progress-indicator/types"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/mask-input": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/applying-mask",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/styling",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/mask-input/value-modes"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/radio": [
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/radio/alignment",
@@ -3224,7 +3538,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/checking",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/disabled",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/label",
-      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/overview"
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/switches/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/text-area": [
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/form-integration",
@@ -3232,6 +3547,14 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/resize",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/slots",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/textarea/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/tooltip": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/advanced",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/placement",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/rich",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/styling",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/tooltip/triggers"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/accordion": [
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/accordion/customization",
@@ -3243,7 +3566,8 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/image",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/initials",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/shape",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/size"
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/size",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/avatar/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/card": [
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/card/horizontal",
@@ -3256,6 +3580,13 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/carousel/components",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/carousel/overview",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/carousel/thumbnail"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/divider": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/dashed",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/middle",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/select",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/divider/vertical"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager": [
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/customize-buttons",
@@ -3282,13 +3613,24 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/animations",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/linear",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/orientation",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/steptypes"
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/steptypes",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/stepper/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tabs": [
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/alignment",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/overview",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/prefix-suffix",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/scrolling"
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/scrolling",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tabs/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/tile-manager": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/actions",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/columngap",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/dragndrop",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/layout",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/resize",
+      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/tile-manager/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/linear-gauge": [
       "https://staging.infragistics.com/blazor-client/samples/samples/gauges/linear-gauge/animation",
@@ -3350,11 +3692,14 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/gauges/radial-gauge/tickmarks"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/disabled-dates",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/header",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/multiple-months",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/multiple-selection",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/overview",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/range-selection",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/size",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/special-dates",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/styling",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/calendar/week-numbers"
     ],
@@ -3364,6 +3709,13 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-picker/format",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-picker/overview",
       "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-picker/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/date-range-picker": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/custom-ranges",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/form",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/overview",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/slots",
+      "https://staging.infragistics.com/blazor-client/samples/samples/scheduling/date-range-picker/styling"
     ]
   }
 }

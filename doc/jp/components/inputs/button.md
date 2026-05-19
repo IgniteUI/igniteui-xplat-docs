@@ -2,6 +2,7 @@
 title: {Platform} Button コンポーネント | {ProductName}
 _description: {Platform} Button コンポーネントの使用を開始します。{Platform} Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} Button コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Button", "ButtonBase"]
 _language: ja
 ---
@@ -118,7 +119,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Contained ボタン
 
-`variant` を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
+`Variant` 属性を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>
@@ -136,7 +137,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Outlined ボタン
 
-`outlined` ボタンを作成するために必要なのは、`variant` プロパティの値を変更することだけです。
+`outlined` ボタンを作成するために必要なのは、`Variant` プロパティの値を変更することだけです。
 
 ```tsx
 <IgrButton variant="outlined"><span>Outlined</span></IgrButton>
@@ -172,7 +173,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Floating Action ボタン
 
-`variant` プロパティを `fab` に設定することで、フローティング アクション ボタンを作成できます。
+`Variant` プロパティを `fab` に設定することで、フローティング アクション ボタンを作成できます。
 
 ```tsx
 <IgrButton variant="fab"><span>Fab</span></IgrButton>
@@ -190,7 +191,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ## ボタンのサイズ設定
 
-ユーザーは、CSS 変数 `--ig-size` を使用して `button` コンポーネントのサイズを変更できます。次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+ユーザーは、CSS 変数 `--ig-size` を使用して `Button` のサイズを変更できます。次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -217,7 +218,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
     this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
-}); 
+});
 ```
 
 ```tsx
@@ -296,7 +297,7 @@ const onRadioChange = (e: IgrRadioChangeEventArgs) => {
 
 ### ダウンロード
 
-`download` プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
+`Download` プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
 
 ```tsx
 <IgrButton
@@ -328,7 +329,7 @@ const onRadioChange = (e: IgrRadioChangeEventArgs) => {
 
 ## スタイル設定
 
-`Button` コンポーネントは、スタイル設定に使用できる 3 つの CSS パーツを公開します。
+`Button` は、スタイル設定に使用できる 3 つの CSS パーツを公開します。
 
 |名前|説明|
 |--|--|
@@ -352,16 +353,15 @@ igc-button::part(base) {
 
 ## API リファレンス
 
- - `ButtonBase`
- - `Button`
- - `DisplayType`
- - `Download`
- - `Href`
- - `RadioGroup`
- - `Radio`
- - [スタイル設定 & テーマ](../themes/overview.md)
+- `Button`
+- `DisplayType`
+- `Download`
+- `Href`
+- `RadioGroup`
+- `Radio`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

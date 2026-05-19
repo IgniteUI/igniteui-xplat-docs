@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Cell Selection | Selection | Infragistics
 _description: Use cell and row selection of the Infragistics' {Platform} data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the {ProductName} table.
 _keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.GridSelectionMode"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridSelectionMode"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridCellSelection}
 ---
 
@@ -42,8 +42,8 @@ Selection in the {Platform} data grid is enabled on a row and cell level and can
 
 `MultipleRow` includes the following functionality:
 - Click and drag to select rows
-- Shift and click to select multiple rows.
-- Shift and press the up/down arrow keys to select multiple rows.
+- <kbd>SHIFT</kbd> and click to select multiple rows.
+- <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 
 Pressing the space bar toggles selection of active row via `MultipleRow` or `SingleRow`.
 
@@ -59,11 +59,11 @@ The following example demonstrates how to selected or deselected all rows in the
 
 ## API References
 
- - `ModifierBased`
- - `MultipleCell`
- - `MultipleRow`
- - `RangeCell`
- - `SelectionBehavior`
- - `SelectionMode`
- - `SingleCell`
- - `SingleRow`
+- `ModifierBased`
+- `MultipleCell`
+- `MultipleRow`
+- `RangeCell`
+- `SelectionBehavior`
+- `SelectionMode`
+- `SingleCell`
+- `SingleRow`

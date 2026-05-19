@@ -7,6 +7,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "CategorySeries.cs","mappedName": "IgbCategorySeries"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "CategoryCollisionMode","mappedName": "CategoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCategoryWidth"}], "originalName": "GetCategoryWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetExactItemIndex"}], "originalName": "GetExactItemIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},

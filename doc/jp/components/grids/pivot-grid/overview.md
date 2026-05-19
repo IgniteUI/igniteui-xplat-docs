@@ -1,20 +1,18 @@
 ---
-title: {Platform} ピボット グリッドとテーブル – {ProductName}
+title: {Platform} ピボット グリッド コンポーネント - インフラジスティックスの {ProductName}
 _description: {ProductName} を使用して、高速でレスポンシブな {Platform} ピボット グリッドとテーブルを作成します。複雑な分析を実行し、データのソート、グループ化、またはフィルター処理を適用します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, Infragistics, {Platform} ピボット グリッド, {Platform} マテリアル ピボット テーブル, {ProductName}, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.PivotGrid"]
+_license: commercial
+mentionedTypes: ["PivotGrid", "PivotDimension", "PivotValue"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} ピボット グリッドの概要
+# {Platform} Pivot Grid (ピボット グリッド) の概要
 
-{ProductName} ピボット グリッドは、クロス集計形式で大量の多次元データを合計して表すために使用されます。データの概要は、簡単かつ迅速にソート、グループ化、またはフィルタリングできます。このようなデータには、合計、平均、およびその他の統計が含まれる場合があります。エンドユーザーは、必要に応じて、ドラッグアンドドロップ操作でピボット テーブルのレイアウトを変更できます。
+{Platform} ピボット グリッドは、クロス集計形式で大量の多次元データを合計して表すために使用されます。データの概要は、簡単かつ迅速にソート、グループ化、またはフィルタリングできます。このようなデータには、合計、平均、およびその他の統計が含まれる場合があります。エンドユーザーは、必要に応じて、ドラッグアンドドロップ操作でピボット テーブルのレイアウトを変更できます。
 
-
-## {Platform} ピボット グリッドとは
-
-{Platform} {PivotGridName} は、ピボット テーブルにデータを表示し、提供されたデータ セットで複雑な分析を実行するのに役立ちます。この洗練されたピボット グリッド コントロールは、後でクロス集計形式で表示される大量のデータを整理、集計、およびフィルタリングするために使用されます。{Platform} ピボット グリッドの主な機能は、行のディメンション、列のディメンション、集計、およびフィルターです。
+{Platform} ピボット グリッドは、ピボット テーブルにデータを表示し、提供されたデータ セットで複雑な分析を実行するのに役立ちます。この洗練されたピボット グリッド コントロールは、後でクロス集計形式で表示される大量のデータを整理、集計、およびフィルタリングするために使用されます。{Platform} ピボット グリッドの主な機能は、行のディメンション、列のディメンション、集計、およびフィルターです。
 
 `PivotGrid` を使用すると、ユーザーはデータを多次元のピボット テーブル構造で構成および表示できます。
 行と列は個別のデータ グループを表し、データ セルの値は集計を表します。これにより、単純なフラット データセットに基づく複雑なデータ分析が可能になります。`PivotGrid` は機能豊富なピボット テーブルで、さまざまなディメンションと値を簡単に構成できるだけでなく、フィルタリングやソートなどの追加のデータ操作も提供します。
@@ -125,11 +123,11 @@ const dimension: IgrPivotDimension = {
 ピボット グリッドの一部として、構成を容易にするために、いくつかの追加の事前定義されたディメンションが公開されています:
 - `PivotDateDimension`
     日付フィールドに使用できます。デフォルトで次の階層を記述します:
-    - すべての期間
-    - 年
-    - 四半期
-    - 月
-    - 完全な日付
+  - すべての期間
+  - 年
+  - 四半期
+  - 月
+  - 完全な日付
 
 次のように、行または列に設定できます:
 
@@ -259,11 +257,11 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-    
+
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-    
+
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };
@@ -602,7 +600,7 @@ public PivotDataFlat()
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} ピボット グリッドの例"`
 
 ### 設定の自動生成
-`autoGenerateConfig` プロパティは、データ ソース フィールドに基づいてディメンションと値を自動的に生成します。
+`AutoGenerateConfig` プロパティは、データ ソース フィールドに基づいてディメンションと値を自動的に生成します。
 
 - 数値フィールド:
   - `PivotNumericAggregate.sum` アグリゲーターを使用して `PivotValue` として作成されます。
@@ -708,11 +706,11 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 ## API リファレンス
 
-* `PivotConfiguration`
-* `PivotGrid`
-* `PivotDataSelector`
-* `PivotDateDimension`
-* `Column`
+- `PivotConfiguration`
+- `PivotGrid`
+- `PivotDataSelector`
+- `PivotDateDimension`
+- `Column`
 
 <!-- ## その他のリソース -->
 
@@ -723,7 +721,7 @@ Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKey
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 
 

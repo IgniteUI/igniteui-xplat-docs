@@ -109,6 +109,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "outlines"}], "originalName": "Outlines"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFunnelChartSelectedItemsCollection","mappedName": "selectedItems"}], "originalName": "SelectedItems"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggleSelection"}], "originalName": "ToggleSelection"},
@@ -125,5 +126,17 @@
       {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
       {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
       {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+  },
+  {
+    "originalName": "FunnelChartSelectedItemsChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-funnel-chart-selected-items-changed-event-args.ts","mappedName": "IgcFunnelChartSelectedItemsChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFunnelChartSelectedItemsCollection","mappedName": "currentItems"}], "originalName": "CurrentItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFunnelChartSelectedItemsCollection","mappedName": "newItems"}], "originalName": "NewItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFunnelChartSelectedItemsCollection","mappedName": "oldItems"}], "originalName": "OldItems"} ]
   }]
 }

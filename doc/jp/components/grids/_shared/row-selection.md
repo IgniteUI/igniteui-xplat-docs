@@ -2,7 +2,8 @@
 title: {Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+_license: commercial
+mentionedTypes: ["GridBaseDirective", "RowSelectorTemplateDetails", "HeadSelectorTemplateDetails", "Checkbox"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridRowSelection}
@@ -56,7 +57,7 @@ _language: ja
 
 ### 単一選択
 
-単一行の選択は、`RowSelection` プロパティ を `Single` に設定することのみで簡単に設定できるようになりました。これにより、**グリッド内の 1 行のみを選択できます**。行のセルにフォーカスするときにセルをクリックするかスペース キーを押すと行を選択できます。もちろん、行セレクターフィールドをクリックして行を選択できます。行が選択または選択解除されると、`RowSelectionChanging` イベントが生成されます。
+単一行の選択は、`RowSelection` プロパティ を `Single` に設定することのみで簡単に設定できるようになりました。これにより、**グリッド内の 1 行のみを選択できます**。行のセルにフォーカスするときにセルをクリックするか <kbd>SPACE</kbd> キーを押すと行を選択できます。もちろん、行セレクターフィールドをクリックして行を選択できます。行が選択または選択解除されると、`RowSelectionChanging` イベントが生成されます。
 
 <!-- Angular -->
 ```html
@@ -72,6 +73,7 @@ _language: ja
         allow-filtering="true">
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -79,6 +81,7 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
+
 ```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
@@ -120,7 +123,7 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 
 ### 複数選択
 
-`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `Multiple` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用して複数行を選択できます。選択はスクロール、ページング、およびソートとフィルター、などのデータ操作で保持されます。行を選択するには、セルをクリックするか、セルにフォーカスがあるときにスペース キーを押します。1 つの行を選択し、*Shift* キーを押しながら別の行をクリックすると、行の範囲全体が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。*Ctrl* キーを押しながらクリックすると、行が切り替わり、前の選択が保持されます。
+`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `Multiple` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用して複数行を選択できます。選択はスクロール、ページング、およびソートとフィルター、などのデータ操作で保持されます。行を選択するには、セルをクリックするか、セルにフォーカスがあるときに <kbd>SPACE</kbd> キーを押します。1 つの行を選択し、<kbd>SHIFT</kbd> キーを押しながら別の行をクリックすると、行の範囲全体が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。<kbd>CTRL</kbd> キーを押しながらクリックすると、行が切り替わり、前の選択が保持されます。
 
 <!-- Angular -->
 ```html
@@ -160,7 +163,7 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 
 ### カスケード選択
 
-`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `MultipleCascade` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用すると、ユーザーは複数の行を選択して、下のツリーのすべての子を選択できます。選択は、スクロール、ページング、およびソートやフィルタリングなどのデータ操作を通じて保持されます。行は、セルをクリックするか、セルがフォーカスされているときにスペース キーを押すことによっても選択できます。1 つの行を選択し、*Shift* キーを押しながら別の行をクリックすると、親レコードの選択を通じて選択した範囲内にない場合でも、そのすべての子が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。*Ctrl* キーを押しながらクリックすると、行とその子が切り替えられ、前の選択が保持されます。
+`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `MultipleCascade` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用すると、ユーザーは複数の行を選択して、下のツリーのすべての子を選択できます。選択は、スクロール、ページング、およびソートやフィルタリングなどのデータ操作を通じて保持されます。行は、セルをクリックするか、セルがフォーカスされているときに <kbd>SPACE</kbd> キーを押すことによっても選択できます。1 つの行を選択し、<kbd>SHIFT</kbd> キーを押しながら別の行をクリックすると、親レコードの選択を通じて選択した範囲内にない場合でも、そのすべての子が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。<kbd>CTRL</kbd> キーを押しながらクリックすると、行とその子が切り替えられ、前の選択が保持されます。
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
@@ -201,15 +204,15 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 <!-- Angular -->
-* 行選択およびセル選択を正しく実行するには、`{ComponentName}` にリモート仮想化がある場合、`PrimaryKey` を設定します。
-* `{ComponentName}` でリモート仮想化を使用した場合、ヘッダーのチェックボックスをクリックすると、現在グリッドにあるすべてのレコードが選択/選択解除されます。新しいデータがオンデマンドで `{ComponentName}` にロードされると、新、しく追加された行は選択されない制限があるため、これらの行を選択するには API メソッドを使用して動作を処理する必要があります。
+- 行選択およびセル選択を正しく実行するには、`{ComponentName}` にリモート仮想化がある場合、`PrimaryKey` を設定します。
+- `{ComponentName}` でリモート仮想化を使用した場合、ヘッダーのチェックボックスをクリックすると、現在グリッドにあるすべてのレコードが選択/選択解除されます。新しいデータがオンデマンドで `{ComponentName}` にロードされると、新、しく追加された行は選択されない制限があるため、これらの行を選択するには API メソッドを使用して動作を処理する必要があります。
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-* 行を選択すると、`RowSelectionChanging` イベントがトリガーされます。このイベントは、新しい選択、古い選択、古い選択に対して追加および削除された行に関する情報を提供します。また、イベントはキャンセル可能であるため、選択を防ぐことができます。
-* 行選択が有効になっている場合、行セレクターが表示されますが、表示しない場合は、`HideRowSelectors` を **true** に設定できます。
-* 行選択モードのランタイムを切り替えると、優先行選択状態がクリアされます。
+- 行を選択すると、`RowSelectionChanging` イベントがトリガーされます。このイベントは、新しい選択、古い選択、古い選択に対して追加および削除された行に関する情報を提供します。また、イベントはキャンセル可能であるため、選択を防ぐことができます。
+- 行選択が有効になっている場合、行セレクターが表示されますが、表示しない場合は、`HideRowSelectors` を **true** に設定できます。
+- 行選択モードのランタイムを切り替えると、優先行選択状態がクリアされます。
 
 
 ## API の使用
@@ -334,6 +337,7 @@ auto-generate="true">
 
 <button id='deselect'>DeSelect</button>
 ```
+
 ```ts
 constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
@@ -538,7 +542,7 @@ const mySelectedRows = [1,2,3];
 
 カスタム行セレクター テンプレートを作成するには、`{ComponentSelector}` 内で `RowSelectorTemplate` プロパティを使用できます。テンプレートから、行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-`selected` プロパティは現在の行が選択されているかどうかを示し、`index` プロパティは行インデックスにアクセスするために使用できます。
+`Selected` プロパティは現在の行が選択されているかどうかを示し、`Index` プロパティは行インデックスにアクセスするために使用できます。
 
 ```html
 <ng-template igxRowSelector let-rowContext>
@@ -610,7 +614,8 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 </{ComponentSelector}>
 ```
 
-`rowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
+`RowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
+
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
@@ -639,7 +644,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     );
 }
 ```
-上の例では、`Checkbox` を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
+上の例では、`Checkbox` を使用しており、`rowContext.selected` をその `Checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -652,7 +657,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 
 カスタム行ヘッダー セレクター テンプレートを作成するには、`{ComponentName}` 内で `HeadSelectorTemplate` プロパティを使用します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-`SelectedCount` プロパティは現在選択されている行数を示し、`totalCount` は `{ComponentName}` に合計の行数を示します。
+`SelectedCount` プロパティは現在選択されている行数を示し、`TotalCount` は `{ComponentName}` に合計の行数を示します。
 
 ```html
 <ng-template igxHeadSelector let-headContext>
@@ -794,26 +799,25 @@ const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `{ComponentName}Row`
-* `Cell`
+- `{ComponentName}`
+- `{ComponentName}Row`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid, TreeGrid -->
-* [選択](selection.md)
-* [セル選択](cell-selection.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [仮想化とパフォーマンス](virtualization.md)
+- [選択](selection.md)
+- [セル選択](cell-selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

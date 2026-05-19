@@ -2,6 +2,7 @@
 title: {Platform} Tabs コントロール | レイアウト コントロール | {ProductName}
 _description: {Platform} タブ コンポーネントを使用すると、ユーザーはタブを上部に配置して、同様のデータ セットを切り替えることができます。今すぐお試しください。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 _language: ja
 ---
@@ -65,12 +66,10 @@ defineComponents(IgcTabsComponent);
 
 ```html
 <igc-tabs>
-    <igc-tab>
-      <div slot="label">Tab 1</div>
+    <igc-tab label="Tab 1">
       <span>Content for tab 1</span>
     </igc-tab>
-    <igc-tab>
-      <div slot="label">Tab 2</div>
+    <igc-tab label="Tab 2">
       <span>Content for tab 2</span>
     </igc-tab>
     <igc-tab>
@@ -82,28 +81,35 @@ defineComponents(IgcTabsComponent);
 
 ```razor
 <IgbTabs>
-    <IgbTab Panel="first">Tab 1</IgbTab>
-    <IgbTab Panel="second">Tab 2</IgbTab>
-    <IgbTab Panel="third">Tab 3</IgbTab>
-    <IgbTabPanel Id="first">Panel 1</IgbTabPanel>
-    <IgbTabPanel Id="second">Panel 2</IgbTabPanel>
-    <IgbTabPanel Id="third">Panel 3</IgbTabPanel>
+    <IgbTab Label="Tab 1">
+      <span>Content for tab 1</span>
+    </IgbTab>
+    <IgbTab Label="Tab 2">
+      <span>Content for tab 2</span>
+    </IgbTab>
+    <IgbTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
+    </IgbTab>
 </IgbTabs>
 ```
 
 ```tsx
 <IgrTabs>
     <IgrTab label="Tab 1">
-      <span>Panel 1</span>
+      <span>Content for tab 1</span>
     </IgrTab>
     <IgrTab label="Tab 2">
-      <span>Panel 2</span>
+      <span>Content for tab 2</span>
     </IgrTab>
-    <IgrTab label="Tab 3">
-      <span>Panel 3</span>
+    <IgrTab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
     </IgrTab>
 </IgrTabs>
 ```
+
+タブ テキストは、`Label` プロパティを使用して単純な文字列として設定することも、`label` スロットに子要素を割り当てることで設定することもできます。デフォルト スロットの残りの子要素は、タブ コンテンツとしてレンダリングされます。
 
 ### 選択
 
@@ -111,22 +117,22 @@ defineComponents(IgcTabsComponent);
 
 選択したタブが初期の読み込み時に指定されていない場合、無効になっていない最初のタブが選択されます。
 
-ユーザーが矢印キーでナビゲートしているときにタブを選択するデフォルトの動作は、`Activation` プロパティによって変更できます。`Manual` に設定すると、矢印キーを押すと次 / 前のタブにフォーカスしますが、タブは <kbd>Space</kbd> または <kbd>Enter</kbd> を押した後にのみ選択されます。
+ユーザーが矢印キーでナビゲートしているときにタブを選択するデフォルトの動作は、`Activation` プロパティによって変更できます。`Manual` に設定すると、矢印キーを押すと次 / 前のタブにフォーカスしますが、タブは <kbd>SPACE</kbd> または <kbd>ENTER</kbd> を押した後にのみ選択されます。
 
 ### 無効化されたタブ
 
 `Disabled` 属性を設定すると、タブが無効になります:
 
 ```html
-<igc-tab disabled>Tab 1</igc-tab>
+<igc-tab label="Tab 1" disabled></igc-tab>
 ```
 
 ```razor
-<IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+<IgbTab Label="Tab 1" Disabled></IgbTab>
 ```
 
 ```tsx
-<IgrTab disabled={true}>Tab 1</IgrTab>
+<IgrTab label="Tab 1" disabled={true}></IgrTab>
 ```
 
 ### 配置
@@ -156,15 +162,15 @@ defineComponents(IgcTabsComponent);
 
 |キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | 前 (右から左モードでは次) のタブを選択します。`Activation` が `Manual` に設定されている場合は、タブのみがフォーカスされます。最初のタブにある場合は最後までスクロールします。 |
-| <kbd>&rarr;</kbd> | 次へ (右から左モードでは前へ) タブを選択します。`Activation` が `Manual` に設定されている場合は、タブのみがフォーカスされます。最後のタブにある場合は、スクロールして開始します。 |
-| <kbd>Home</kbd> | 最初のタブを選択します。 |
-| <kbd>End</kbd> | 最後のタブを選択します。 |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | `Activation` が `Manual` の場合、フォーカスされたタブを選択します。 |
+| <kbd>←</kbd> | 前 (右から左モードでは次) のタブを選択します。`Activation` が `Manual` に設定されている場合は、タブのみがフォーカスされます。最初のタブにある場合は最後までスクロールします。 |
+| <kbd>→</kbd> | 次へ (右から左モードでは前へ) タブを選択します。`Activation` が `Manual` に設定されている場合は、タブのみがフォーカスされます。最後のタブにある場合は、スクロールして開始します。 |
+| <kbd>HOME</kbd> | 最初のタブを選択します。 |
+| <kbd>END</kbd> | 最後のタブを選択します。 |
+| <kbd>ENTER</kbd> / <kbd>SPACE</kbd> | `Activation` が `Manual` の場合、フォーカスされたタブを選択します。 |
 
 ### Prefix / Suffix (プレフィックス / サフィックス)
 
-各タブには、情報を表示するためのデフォルト スロットがあります。アイコン、テキスト、またはその両方と、開始および / または終了に追加のコンテンツを表示するための `prefix` と `suffix` のスロットです。
+各タブは `label` スロットでアイコン、テキスト、またはその両方などの情報を表示できるほか、`prefix` と `suffix` スロットで開始および / または終了に追加のコンテンツを表示することもできます。
 
 `sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} タブの例"`
 
@@ -207,12 +213,39 @@ defineComponents(IgcTabsComponent);
 | `tab-body` | 単一のタブの本体コンテンツを保持します。選択したタブの本体のみが表示されます。 |
 
 ```css
-igc-tab::part(tab-header) {
-  background-color: var(--ig-gray-200);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: WebComponents, React -->
@@ -225,12 +258,39 @@ igc-tab::part(content) {
 | `suffix` | サフィックス ラッパー。 |
 
 ```css
-igc-tabs::part(headers-content) {
-  background-color: var(--ig-gray-200);
+igc-tab::part(tab-header),
+igc-tabs::part(inner)::after {
+    --item-background: var(--ig-surface-600);
+    --border-color: var(--ig-success-300);
 }
 
-igc-tab::part(content) {
-  color: var(--ig-success-500);
+igc-tab::part(tab-body),
+igc-tab[selected] igc-icon {
+    --item-active-icon-color: var(--ig-success-300);
+}
+
+igc-tab:not([selected]) igc-icon {
+    --item-icon-color: var(--ig-gray-500);
+}
+
+igc-tabs::part(start-scroll-button),
+igc-tabs::part(end-scroll-button) {
+    --background: var(--ig-surface-600);
+    --hover-background: var(--ig-surface-700);
+    --active-background: var(--ig-surface-700);
+    --disabled-background: var(--ig-gray-100);
+    --button-color: var(--ig-gray-700);
+    --button-hover-color: var(--ig-gray-800);
+    --button-disabled-color: var(--ig-gray-300);
+    --border-color: var(--ig-surface-600);
+}
+
+igc-tab::part(tab-header) {
+    --item-hover-color: var(--ig-success-500);
+}
+
+igc-tab::part(tab-header)::before {
+    --border-color--hover: var(--ig-gray-500);
 }
 ```
 <!-- end: Blazor -->
@@ -245,8 +305,7 @@ igc-tab::part(content) {
 - `RadioGroup`
 - [スタイル設定 & テーマ](../themes/overview.md)
 
-
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

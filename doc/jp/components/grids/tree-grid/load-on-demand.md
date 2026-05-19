@@ -2,6 +2,7 @@
 title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テーブル | インフラジスティックス
 _description: {ProductName} ツリー Tree Grid は、親行が展開されたときに必要な子データのみを読み込むことにより、取得およびレンダリングするデータ量が大幅に軽減されます。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
+_license: commercial
 _language: ja
 mentionedTypes: ["TreeGrid"]
 namespace: Infragistics.Controls
@@ -15,7 +16,7 @@ Ignite UI for {Platform} ツリー グリッド は、サーバーから最小�
 
 `sample="/{TreeGridSample}/load-on-demand", height="700", alt="{Platform} Tree Grid ロードオンデマンド例"`
 
-### 使用方法
+## 使用方法
 
 ロードオンデマンド機能は、ツリーグリッド データソースの両方のタイプ (主キーと外部キー、または子コレクション) と互換性があります。ツリー グリッドにルート レベルのデータをロードし、いずれかのデータソース タイプに必要なキーを指定するだけです。ツリーグリッドは、ユーザーが行を展開したときに子行をロードするためのコールバック入力プロパティ `LoadChildrenOnDemand` を提供します。
 
@@ -58,9 +59,11 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
 
 <!-- end: WebComponents -->
 
-ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。done コールバックが呼び出されると、読み込みインジケーターが消え、子が読み込まれます。ツリーグリッドは子を基になるデータソースに追加し、必要なキーを自動的に設定します。 
+ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。done コールバックが呼び出されると、読み込みインジケーターが消え、子が読み込まれます。ツリーグリッドは子を基になるデータソースに追加し、必要なキーを自動的に設定します。
 
-行がその展開前に子を持つかどうかについての情報を提供する方法がある場合は、HasChildrenKey 入力プロパティを使用できます。このようにして、展開インジケータを表示するかどうかを示すデータオブジェクトからブール値プロパティを提供できます。
+### 展開インジケーターの表示
+
+行がその展開前に子を持つかどうかについての情報を提供する方法がある場合は、`HasChildrenKey` 入力プロパティを使用できます。このようにして、展開インジケータを表示するかどうかを示すデータオブジェクトからブール値プロパティを提供できます。
 
 <!-- Angular -->
 
@@ -77,11 +80,12 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" has-children-key="hasEmployees"></igc-tree-grid>
 ```
 
-HasChildrenKey プロパティを設定する必要はありません。指定しなかった場合は、各行に展開インジケーターが表示されます。子を持たない行を展開した後も、未定義または空の配列で done コールバックを呼び出す必要があります。この場合、ロード インジケーターが消えた後に展開ンジケータは表示されません。
+`HasChildrenKey` プロパティを設定する必要はありません。指定しなかった場合は、各行に展開インジケーターが表示されます。子を持たない行を展開した後も、未定義または空の配列で done コールバックを呼び出す必要があります。この場合、ロード インジケーターが消えた後に展開ンジケータは表示されません。
 
+### カスタム ロード インジケーター
 
 <!-- WebComponents -->
-独自のカスタム ロード インジケーターを提供する場合は、RowLoadingIndicatorTemplate オプションを使用してカスタム テンプレートを設定できます。以下のコードは設定方法を示します:
+独自のカスタム ロード インジケーターを提供する場合は、`RowLoadingIndicatorTemplate` オプションを使用してカスタム テンプレートを設定できます。以下のコードは設定方法を示します:
 
 ```ts
 constructor() {
@@ -115,11 +119,11 @@ public rowLoadingTemplate() {
 
 ## API リファレンス
 
-* `TreeGrid`
+- `TreeGrid`
 
 ## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

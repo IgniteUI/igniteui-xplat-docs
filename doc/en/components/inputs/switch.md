@@ -3,6 +3,7 @@ title: {Platform} Switch Component – {ProductName}
 _description: {ProductName} Switch component enables developers to use binary on/off or true/false data input functions within their applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls
 mentionedTypes: ["Switch"]
+_license: MIT
 ---
 
 # {Platform} Switch
@@ -36,7 +37,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSwitchComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -240,18 +241,13 @@ The `Switch` component exposes several CSS parts to give you full control over i
 | `label` | The switch label. |
 
 ```css
-igc-switch::part(thumb) {
-  background-color: var(--ig-success-500);
-  box-shadow: none;
-}
-
-igc-switch::part(thumb checked) {
-  background-color: var(--ig-gray-50);
-}
-
-igc-switch::part(control checked) {
-  background-color: var(--ig-success-500);
-}
+  igc-switch {
+    --thumb-on-color: white;
+    --thumb-off-color: var(--ig-success-500);
+    --track-on-color: var(--ig-success-500); /* Background color when checked */
+    --track-off-color: white; /* Background color when unchecked */
+    --track-on-hover-color: var(--ig-success-500); /* Background hover color when checked */
+  }
 ```
 
 `sample="/inputs/switches/styling", height="100", alt="{Platform} Switch Styling"`
@@ -261,11 +257,11 @@ igc-switch::part(control checked) {
 
 ## API References
 
- - `LabelPosition`
- - `Switch`
- - [`Styling & Themes`](../themes/overview.md)
+- `LabelPosition`
+- `Switch`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

@@ -2,10 +2,12 @@
 title: {Platform} Linear Progress | Linear Progress | Infragistics
 _description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
 _keywords: {Platform} Linear Progress, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["LinearProgress"]
 ---
 
 # {Platform} Linear Progress Overview
+
 The {ProductName} Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
 
 ## {Platform} Linear Progress Example
@@ -32,7 +34,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcLinearProgressComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -86,7 +88,7 @@ The simplest way to start using the `LinearProgress` is as follows:
 
 ### Progress Types
 
-You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+You can set the type of your indicator, using  the `Variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
 ```tsx
 <IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
@@ -102,7 +104,7 @@ You can set the type of your indicator, using  the `variant` attribute. There ar
 
 ### Striped Progress
 
-You can make the indicator striped, using the `striped` property:
+You can make the indicator striped, using the `Striped` property:
 
 `sample="/inputs/linear-progress-indicator/types", height="200", alt="{Platform} Linear Progress Striped Example"`
 
@@ -112,11 +114,11 @@ You can make the indicator striped, using the `striped` property:
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
+If you want to track a process that is not determined precisely, you can set the `Indeterminate` property.
 
 ### Animation Duration
 
-The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+The `AnimationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
 
 ```tsx
 <IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
@@ -132,11 +134,11 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ### Text Properties
 
-You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
+You can align the default value, using the `LabelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
 
-To hide the default label of the progress indicator, use the `hideLabel` attribute.
+To hide the default label of the progress indicator, use the `HideLabel` attribute.
 
-The `labelFormat` property can be used to customize the `LinearProgress` default label.
+The `LabelFormat` property can be used to customize the `LinearProgress` default label.
 
 The following sample demonstrates the above configuration:
 
@@ -194,13 +196,13 @@ igc-linear-progress::part(label){
 
 ## API References
 
- - `Button`
- - `Calendar`
- - `LinearProgress`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `LinearProgress`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

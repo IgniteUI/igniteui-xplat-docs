@@ -2,6 +2,7 @@
 title: {Platform} Checkbox Component | {ProductName}
 _description: Learn how to use the {Platform} Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
+_license: MIT
 mentionedTypes: ["Checkbox", "Form"]
 ---
 
@@ -35,7 +36,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcCheckboxComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -239,7 +240,7 @@ You can use the `Disabled` attribute to disable the checkbox.
 
 ### Forms
 
-You can use the `name` and `value` attributes when using the checkbox with `Form`.
+You can use the `Name` and `Value` attributes when using the checkbox with `Form`.
 
 ```tsx
 <IgrCheckbox name="wifi" value="enabled"></IgrCheckbox>
@@ -268,12 +269,11 @@ With this four CSS parts we have full control over the Checkbox styling.
 
 ```css
 igc-checkbox::part(indicator) {
-  stroke: var(--ig-secondary-500-contrast);
+  --tick-color: var(--ig-secondary-500-contrast); /* check icon color */
 }
 
 igc-checkbox::part(control checked)::after {
-  border-radius: 4px;
-  background: var(--ig-secondary-500);
+  --fill-color: var(--ig-secondary-500); /* checkbox background color */
 }
 ```
 
@@ -281,13 +281,13 @@ igc-checkbox::part(control checked)::after {
 
 ## API References
 
- - `Checkbox`
- - `Checked`
- - `Disabled`
- - [`Styling & Themes`](../themes/overview.md)
+- `Checkbox`
+- `Checked`
+- `Disabled`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

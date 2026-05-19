@@ -2,10 +2,13 @@
 title: {Platform} Circular Progress | Circular Progress | Infragistics
 _description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
 _keywords: {Platform} Circular Progress, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["CircularProgress", "CircularGradient"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Circular Progress Overview
+
 The {ProductName} Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
 
 ## {Platform} Circular Progress Example
@@ -32,7 +35,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcCircularProgressComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -85,7 +88,7 @@ The simplest way to start using the `CircularProgress` is as follows:
 
 ### Progress Types
 
-You can set the type of your indicator, using the  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+You can set the type of your indicator, using the `Variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
 ```tsx
 <IgrCircularProgress value="100" variant="success"></IgrCircularProgress>
@@ -101,7 +104,7 @@ You can set the type of your indicator, using the  `variant` attribute. There ar
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the {ProductName} `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
+If you want to track a process that is not determined precisely, you can set the `Indeterminate` property. Also, you can hide the default label of the {ProductName} `CircularProgress` by setting the `HideLabel` property and customize the progress indicator default label via the exposed `LabelFormat` property.
 
 ```tsx
 <IgrCircularProgress value="100" indeterminate="true"></IgrCircularProgress>
@@ -125,7 +128,7 @@ The following sample demonstrates the above configuration:
 
 ### Animation Duration
 
-You can use the `animationDuration` property on the `CircularProgress` component to specify how long the animation cycle should take in milliseconds.
+You can use the `AnimationDuration` property on the `CircularProgress` component to specify how long the animation cycle should take in milliseconds.
 
 ```tsx
 <IgrCircularProgress animationDuration="5000" indeterminate="true"></IgrCircularProgress>
@@ -224,14 +227,14 @@ igc-circular-progress::part(track) {
 
 ## API References
 
- - `Button`
- - `Calendar`
- - `CircularGradient`
- - `CircularProgress`
- - [`Styling & Themes`](../themes/overview.md)
+- `Button`
+- `Calendar`
+- `CircularGradient`
+- `CircularProgress`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

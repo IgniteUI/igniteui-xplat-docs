@@ -2,6 +2,7 @@
 title: {Platform} DateTimeInput | Infragistics
 _description: Infragistics' {Platform} DateTimeInput allows the user to edit date and time in an input element
 _keywords: {Platform} input, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["DateTimeInput"]
 ---
 
@@ -29,7 +30,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcDateTimeInput);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -94,13 +95,13 @@ The `DateTimeInput` also accepts [ISO 8601](https://tc39.es/ecma262/#sec-date-ti
 
 The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
 
-##### Date-only
+#### Date-only
 If a date-only string is bound to the `Value` property of the component, it needs to be in the format `YYYY-MM-DD`. The `InputFormat` is still used when typing values in the input and it does not have to be in the same format. Additionally, when binding a date-only string, the directive will prevent time shifts by coercing the time to be `T00:00:00`.
 
-##### Time-only
+#### Time-only
 Time-only strings are normally not defined in the `ECMA` specification, however to allow the directive to be integrated in scenarios which require time-only solutions, it supports the 24 hour format - `HH:mm:ss`. The 12 hour format is not supported.
 
-##### Full ISO string
+#### Full ISO string
 If a full `ISO` string is bound, the directive will parse it only if all elements required by [Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) are provided.
 
 All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete date-only, time-only, or full `ISO` strings will be parsed as `InvalidDate`.
@@ -113,15 +114,15 @@ The `DateTimeInput` has intuitive keyboard navigation that makes it easy to incr
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Move one character to the beginning |
-| <kbd>&rarr;</kbd> | Move one character to the end |
-| <kbd>Home</kbd> | Move to the beginning |
-| <kbd>End</kbd> | Move to the end |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | Move to the beginning of the date/time section - current one or left one |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | Move to the end of the date/time section - current on or right one |
-| Focus on a date/time part + <kbd>&darr;</kbd> | Decrements a date/time part |
-| Focus on a date/time part + <kbd>&uarr;</kbd> | Increments a date/time part |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
+| <kbd>←</kbd> | Move one character to the beginning |
+| <kbd>→</kbd> | Move one character to the end |
+| <kbd>HOME</kbd> | Move to the beginning |
+| <kbd>END</kbd> | Move to the end |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>←</kbd> | Move to the beginning of the date/time section - current one or left one |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | Move to the end of the date/time section - current on or right one |
+| Focus on a date/time part + <kbd>↓</kbd> | Decrements a date/time part |
+| Focus on a date/time part + <kbd>↑</kbd> | Increments a date/time part |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
 
 ## Setting formats
 
@@ -291,17 +292,22 @@ The `DateTimeInput` component exposes CSS parts for almost all of its inner elem
 | `helper-text` | The helper text wrapper. |
 
 ```css
-igc-date-time-input::part(input) {
-  background-color: var(--ig-primary-100);
-  border-color: var(--ig-secondary-500);
-  box-shadow: none;
-}
+igc-date-time-input {
+    --_background: var(--ig-primary-200);
+    --_foreground: var(--ig-gray-900);
 
-igc-date-time-input::part(prefix),
-igc-date-time-input::part(suffix) {
-  color: var(--ig-primary-600-contrast);
-  background-color: var(--ig-primary-500);
-  border-color: var(--ig-secondary-500);
+    --input-prefix-color: var(--_foreground);
+    --input-suffix-color: var(--_foreground);
+    --input-prefix-color--filled: var(--_foreground);
+    --input-suffix-color--filled: var(--_foreground);
+    --input-prefix-background: var(--_background);
+    --input-suffix-background: var(--_background);
+    --input-prefix-background--filled: var(--_background);
+    --input-suffix-background--filled: var(--_background);
+    --input-prefix-color--focused: var(--_foreground);
+    --input-suffix-color--focused: var(--_foreground);
+    --input-prefix-background--focused: var(--_background);
+    --input-suffix-background--focused: var(--_background);
 }
 ```
 
@@ -309,14 +315,14 @@ igc-date-time-input::part(suffix) {
 
 ## API References
 
- - `Input`
- - `MaskInput`
- - `Icon`
- - `DateTimeInput`
- - [`Styling & Themes`](../themes/overview.md)
+- `Input`
+- `MaskInput`
+- `Icon`
+- `DateTimeInput`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

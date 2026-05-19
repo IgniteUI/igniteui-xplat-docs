@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Using Workbooks| Infragistics
 _description: Use Infragistics' {Platform} excel library to create workbooks and worksheets, input data and export the date to Microsoft® Excel. View {ProductName} excel tutorials for more information!
 _keywords: Excel library, workbooks, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook"]
 ---
 # {Platform} Using Workbooks
@@ -122,7 +123,7 @@ var protect = workbook.Protection;
 
 ## API References
 
- - `DocumentProperties`
- - `WorkbookProtection`
- - `Workbook`
- - `Workbook`
+- `DocumentProperties`
+- `WorkbookProtection`
+- `Workbook`
+- `Workbook`
