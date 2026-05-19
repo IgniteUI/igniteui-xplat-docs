@@ -3,7 +3,7 @@ title: {Platform} Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Markers
 _keywords: {Platform} Charts, Markers, Infragistics
 _language: kr
-mentionedTypes: ["CategoryChart"]
+mentionedTypes: ["CategoryChart", "MarkerType", "MarkerAutomaticBehavior", "SeriesViewer"]
 ---
 
 # {Platform} Chart Markers
@@ -19,6 +19,16 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} Configuration Options Example"`
 
 
+
+<div class="divider--half"></div>
+
+## {Platform} Chart Checkmark Marker Type
+
+The {ProductName} charts include a `Checkmark` option in the `MarkerType` enum. This marker renders a V-shaped checkmark icon inside a circle on data points in your chart.
+
+You can apply the `Checkmark` marker type to an individual series by setting its `MarkerType` property to `MarkerType.Checkmark`. To use the checkmark shape for all series in the chart simultaneously, set the chart's `MarkerAutomaticBehavior` property to `MarkerAutomaticBehavior.Checkmark`.
+
+The `SeriesViewer.CheckmarkMarkerTemplate` property defines the marker template used for series with a checkmark marker type, and can be used to customize its appearance across the chart.
 
 <div class="divider--half"></div>
 
@@ -46,4 +56,6 @@ The following is a list of API members mentioned in the above sections:
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`
+- `MarkerAutomaticBehavior`
+- `SeriesViewer.CheckmarkMarkerTemplate`
 - `CategoryChart`
