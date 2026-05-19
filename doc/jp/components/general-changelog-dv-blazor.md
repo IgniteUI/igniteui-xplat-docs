@@ -17,6 +17,12 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### 機能拡張
+
+#### {PackageCharts}
+
+- `MarkerType` 列挙型に `Checkmark` オプションが追加されました。シリーズで `MarkerType.Checkmark` を使用すると、円の中に V 字型のチェックマーク アイコンを表示できます。新しい `MarkerAutomaticBehavior.Checkmark` 列挙値でチャート内のすべてのシリーズにチェックマーク形状を適用でき、`SeriesViewer.CheckmarkMarkerTemplate` プロパティでテンプレートをカスタマイズできます。
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明 |
