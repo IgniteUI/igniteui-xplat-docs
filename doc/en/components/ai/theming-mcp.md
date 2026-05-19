@@ -18,7 +18,7 @@ mentionedTypes: []
 
 The Ignite UI Theming MCP server gives AI assistants the knowledge and tools to produce accurate theming code, including palettes with proper shade generation, typography, elevations, component design token overrides, and more.
 
-The server supports all four Ignite UI design systems (**Material**, **Bootstrap**, **Fluent**, and **Indigo**) in both light and dark variants. While this guide focuses on {Platform}, the MCP server also works with all Ignite UI component libraries from Infragistics. The `detect_platform` tool reads your `package.json` and selects the correct import paths and selectors automatically.
+The server supports all four Ignite UI design systems (**Material**, **Bootstrap**, **Fluent**, and **Indigo**) in both light and dark variants. While this guide focuses on {Platform}, the MCP server also works with all Ignite UI component libraries from Infragistics. The `detect_platform` tool identifies the project framework and selects the correct import paths and selectors automatically. For Blazor projects, which have no `package.json`, it returns `generic` - tell the AI explicitly: _"Use the Blazor platform."_
 
 Most tools can produce either **Sass** or **CSS** output. Sass output is the default and integrates with the `igniteui-theming` Sass module. CSS output generates ready-to-use CSS custom properties and can be used **without a local Sass toolchain** - the server compiles it for you.
 
@@ -30,7 +30,6 @@ For a concrete combined workflow after setup, see [Build an App End-to-End with 
 <!-- WebComponents -->
 For a concrete combined workflow after setup, see [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md).
 <!-- end: WebComponents -->
-
 **Example prompts to try once connected:**
 
 > _"Create a complete Material Design dark theme for my {Platform} app with primary #2563eb and coral secondary #f97316."_
@@ -46,18 +45,39 @@ For a concrete combined workflow after setup, see [Build an App End-to-End with 
 Before configuring the MCP server, make sure you have:
 
 - **Node.js** (v18 or later) installed. This provides the `npx` command used to launch the server.
+
+<!-- Angular, React, WebComponents -->
 - A project with an **Ignite UI package** listed as a dependency in `package.json`.
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+- A project with the **`IgniteUI.Blazor`** NuGet package installed.
+<!-- end: Blazor -->
+
 - An **AI client with MCP support** - for example, VS Code with GitHub Copilot, Cursor, Claude Desktop, Claude Code, or a JetBrains IDE with the AI Assistant plugin.
 
+<!-- Angular, React, WebComponents -->
 If you do not have Ignite UI Theming installed yet, run:
 
 ```bash
 npm install igniteui-theming
 ```
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+> [!NOTE]
+> The Theming MCP server is an npm package launched directly via `npx` - no local npm install is required in your Blazor project. `npx -y` fetches it from the npm registry on first use and caches it automatically.
+<!-- end: Blazor -->
 
 ## Setup
 
-The MCP server is bundled with the `igniteui-theming` package and launched via `npx`. No separate installation is needed beyond having an Ignite UI package already in your project.
+<!-- Angular, React, WebComponents -->
+The MCP server is bundled with the `igniteui-theming` npm package and launched via `npx`. No separate installation is needed beyond having an Ignite UI package already in your project.
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+The MCP server is launched via `npx` directly from the npm registry. It is not bundled with the `IgniteUI.Blazor` NuGet package - `npx -y` fetches and caches it automatically on first use.
+<!-- end: Blazor -->
 
 The canonical launch command is:
 
@@ -250,7 +270,7 @@ Here is a brief overview of each tool:
 
 | Tool | Description |
 |------|-------------|
-| `detect_platform` | Reads `package.json` and identifies whether the project uses Ignite UI for Angular, Web Components, React, or Blazor. Selects the correct import paths and component selectors for all subsequent tools. |
+| `detect_platform` | Identifies the project framework and selects the correct import paths and selectors. For Angular, React, and Web Components projects, reads `package.json`. For Blazor projects, which do not have a `package.json`, returns `generic` - tell the AI explicitly: _"Use the Blazor platform."_ |
 | `create_palette` | Generates a color palette with automatic shade variants (50-900, A100-A700) from your base brand colors. Accepts an `output` parameter (`sass` or `css`) and a `designSystem` to select the schema. |
 | `create_custom_palette` | Fine-grained palette creation. Specify exact hex values for every shade when automatic generation is not suitable. |
 | `create_typography` | Sets up a font family and type scale for a given design system. |
@@ -326,6 +346,14 @@ $my-palette: palette(
 ```
 <!-- end: React, WebComponents -->
 
+<!-- Blazor -->
+The Theming MCP generates **CSS custom properties** for Blazor projects. Tell the AI explicitly to use the Blazor platform and request CSS output:
+
+> _"Create a complete Material Design light theme for my Blazor app with primary #2563eb and secondary #f97316. Use the Blazor platform and generate CSS output."_
+
+Apply the generated CSS in your `wwwroot/css/app.css`.
+<!-- end: Blazor -->
+
 ### Dark Mode Variant
 
 > _"I need a dark mode version of my existing theme. Keep the same primary blue but use a dark surface #121212."_
@@ -352,7 +380,17 @@ The AI will call `set_spacing` scoped to the calendar component and `set_size` a
 
 **Platform not detected**
 
-If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `{PackageCommon}`) as a dependency. You can also tell the AI explicitly: _"Use the {Platform} platform."_
+<!-- Angular, React, WebComponents -->
+If `detect_platform` returns `null` or `generic`, make sure your `package.json` lists an Ignite UI package (e.g., `{PackageCommon}`) as a dependency.
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+Blazor projects do not have a `package.json`, so `detect_platform` will always return `generic`. Tell the AI explicitly: _"Use the Blazor platform."_
+<!-- end: Blazor --> 
+
+<!-- Angular, React, WebComponents -->
+You can also tell the AI explicitly: _"Use the {Platform} platform."_
+<!-- end: Angular, React, WebComponents -->
 
 **Luminance warning on colors**
 
@@ -379,11 +417,9 @@ Also confirm that `core()` is called before any other theming mixin in your `sty
 <!-- React, WebComponents -->
 - [Build an App End-to-End with Ignite UI CLI MCP and Ignite UI Theming MCP](../general-how-to-mcp-e2e.md)
 <!-- end: React, WebComponents -->
-<!-- React, WebComponents, Angular -->
 - [AI-Assisted Development with Ignite UI](./ai-assisted-development-overview.md)
 - [{ProductName} Skills](./skills.md)
 - [Ignite UI CLI MCP](./cli-mcp.md)
-<!-- end: React, WebComponents, Angular -->
 - [MAKER Framework](./maker-framework.md)
 
 <!-- Ideally these should be included once documentation is combined
