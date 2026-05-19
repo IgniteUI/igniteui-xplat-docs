@@ -194,47 +194,22 @@ These components expose templates giving flexibility for customization. For inst
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
+            <IgbGridEditingActions
+                EditRow="true"
+                DeleteRow="true"
+                AddRow="true">
+            </IgbGridEditingActions>
         </IgbActionStrip>
     </{ComponentSelector}>
 </div>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```razor
-<div class="grid__wrapper">
-    <IgbHierarchicalGrid Data=northwindEmployees>
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
-                <IgbIcon>edit</IgbIcon>
-            </IgbButton>
-            @if (!IsDeleted(actionstrip.Context))
-            {
-                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
-                    <IgbIcon>delete</IgbIcon>
-                </IgbButton>
-            }
-        </IgbActionStrip>
-    </IgbHierarchicalGrid>
-</div>
-```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- WebComponents -->
 <!-- ComponentStart: Grid, TreeGrid -->

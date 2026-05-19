@@ -28,6 +28,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Platform Integration | [`skills/igniteui-wc-integrate-with-framework/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-integrate-with-framework/SKILL.md) | Helps with integrating components to the user's platform of choice |
 | Theming & Styling | [`skills/igniteui-wc-customize-component-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-customize-component-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-wc-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
+| Generate From Image Design | [`skills/igniteui-wc-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-wc-generate-from-image-design/SKILL.md) | Build Web Components apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 <!-- end: WebComponents -->
 
@@ -38,6 +39,7 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components | [`skills/igniteui-react-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-components/SKILL.md) | Identify the right components, install, import, and use them - JSX patterns, event handling, refs, forms, TypeScript |
 | Theming & Styling | [`skills/igniteui-react-customize-theme/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-customize-theme/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
 | Optimization | [`skills/igniteui-react-optimize-bundle-size/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-optimize-bundle-size/SKILL.md) | Ensuring best practices for tree shaking to optimize bundle size |
+| Generate From Image Design | [`skills/igniteui-react-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-react-generate-from-image-design/SKILL.md) | Build React apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 <!-- end: React -->
 
@@ -48,11 +50,23 @@ The skill files live in the [`skills/`]({GithubLink}/tree/master/skills) directo
 | Components & Layout | [`skills/igniteui-angular-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-components/SKILL.md) | Standalone components, form controls, overlays, layout |
 | Data Grids | [`skills/igniteui-angular-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Pivot Grid, sorting, filtering, grouping, paging, remote data |
 | Theming & Styling | [`skills/igniteui-angular-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Generate From Image Design | [`skills/igniteui-angular-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-angular-generate-from-image-design/SKILL.md) | Build Angular apps from screenshots, mockups, and wireframes using Ignite UI components |
 
 > [!NOTE]
 > Starting with {ProductName} **21.1.0**, these skills are automatically discovered when placed in your agent's skills path (e.g., `.claude/skills`, `.agents/skills`, `.cursor/rules/`). This release ships with an optional migration to add these skills to your project automatically.
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+| Skill | Path | Description |
+|:------|:-----|:------------|
+| Components & Layout | [`skills/igniteui-blazor-components/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-components/SKILL.md) | Components, form controls, overlays, layout |
+| Data Grids | [`skills/igniteui-blazor-grids/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-grids/SKILL.md) | Grid, Tree Grid, Hierarchical Grid, Grid Lite, sorting, filtering, grouping, paging, remote data |
+| Theming & Styling | [`skills/igniteui-blazor-theming/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-theming/SKILL.md) | Palettes, typography, elevations, component themes, MCP server |
+| Generate From Image Design | [`skills/igniteui-blazor-generate-from-image-design/SKILL.md`]({GithubLink}/blob/master/skills/igniteui-blazor-generate-from-image-design/SKILL.md) | Build Blazor apps from screenshots, mockups, and wireframes using Ignite UI components |
+
+<!-- end: Blazor -->
 
 ## Skill Locations
 
@@ -75,6 +89,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
       SKILL.md
     igniteui-wc-optimize-bundle-size/
       SKILL.md
+    igniteui-wc-generate-from-image-design/
+      SKILL.md
 ```
 
 <!-- end: WebComponents -->
@@ -89,6 +105,8 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
     igniteui-react-customize-theme/
       SKILL.md
     igniteui-react-optimize-bundle-size/
+      SKILL.md
+    igniteui-react-generate-from-image-design/
       SKILL.md
 ```
 
@@ -105,9 +123,28 @@ The `.agents/skills/` directory is a cross-agent convention supported by multipl
       SKILL.md
     igniteui-angular-theming/
       SKILL.md
+    igniteui-angular-generate-from-image-design/
+      SKILL.md
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```
+.agents/
+  skills/
+    igniteui-blazor-components/
+      SKILL.md
+    igniteui-blazor-grids/
+      SKILL.md
+    igniteui-blazor-theming/
+      SKILL.md
+    igniteui-blazor-generate-from-image-design/
+      SKILL.md
+```
+
+<!-- end: Blazor -->
 
 For user-level (global) skills available across all projects, use `~/.agents/skills/` instead.
 
@@ -177,35 +214,44 @@ Use one of the options below to download and place the skill files into the appr
 
 ### **Option A - Use the Ignite UI CLI**
 
-The `ai-config` command copies skill files from your installed {ProductName} package into `.claude/skills/` and writes the Ignite UI CLI MCP and Theming MCP server entries to `.vscode/mcp.json`. If the files already exist and are up-to-date, the command is a no-op.
+The `ai-config` command configures MCP servers, copies framework-specific skill files into each agent's skills directory, and sets up instruction files - all in a single step. Use `--assistants` to choose which coding assistants receive MCP config and `--agents` to choose which agents receive skill files. Existing files are only updated if their content has changed. If no parameters are provided, the command enters interactive mode, prompting you to select assistants and agents. For available options, refer to the table below.
+
+```bash
+ig ai-config --assistants generic --agents claude
+```
+
+Use `--agents` with multiple values to target several agents at once:
+
+```bash
+ig ai-config --assistants generic vscode --agents claude copilot cursor
+```
+
+| Flag | Values | Default |
+|------|--------|---------|
+| `--assistants` | `generic`, `vscode`, `cursor`, `gemini`, `junie`, `none` | Prompted interactively |
+| `--agents` | `generic`, `claude`, `copilot`, `cursor`, `codex`, `windsurf`, `gemini`, `junie`, `none` | Prompted interactively |
+
+<!-- Blazor -->
+> [!NOTE]
+> For Blazor, `ai-config` detects your project via `.csproj` or `.sln`. The `IgniteUI.Blazor` NuGet package does not need to be installed. If no project file is found, the command prompts you to select a framework.
+<!-- end: Blazor -->
 
 <!-- Angular -->
 
 **Using Angular Schematics:**
 
 ```bash
-ng generate @igniteui/angular-schematics:ai-config
+ng generate @igniteui/angular-schematics:ai-config --assistants cursor --agents claude copilot
 ```
 
-This also registers the `@angular/cli` MCP server in `.vscode/mcp.json` alongside the Ignite UI servers.
+This also registers the `@angular/cli` MCP server alongside the Ignite UI servers.
 
 <!-- end: Angular -->
 
-**Using the Ignite UI CLI:**
+<!-- Angular, React, WebComponents -->
 
-```bash
-npx igniteui-cli ai-config
-```
-
-If you have the Ignite UI CLI installed globally, use the shorter form:
-
-```bash
-ig ai-config
-```
-
-### **Option B - Manual Copy from `node_modules`**
-
-If {ProductName} is already installed in your project, the skill files are available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
+> [!NOTE]
+> If you installed {ProductName} manually and want to copy skills without running `ai-config`, the skill files are also available under `node_modules`. To copy them into your project (e.g. into `.agents/skills/`), run:
 
 **macOS / Linux / Windows (PowerShell)**
 
@@ -230,6 +276,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-wc-choose-components .agents/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-customize-component-theme .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-optimize-bundle-size .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-wc-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: WebComponents -->
@@ -240,6 +287,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-wc-integrate-with-framework .
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-components .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-customize-theme .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-react-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: React -->
@@ -250,6 +298,7 @@ cp -r node_modules/{PackageCommon}/skills/igniteui-react-optimize-bundle-size .a
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-components .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-grids .agents/skills/
 cp -r node_modules/{PackageCommon}/skills/igniteui-angular-theming .agents/skills/
+cp -r node_modules/{PackageCommon}/skills/igniteui-angular-generate-from-image-design .agents/skills/
 ```
 
 <!-- end: Angular -->
@@ -263,6 +312,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-wc-choose-components .agen
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-customize-component-theme .agents\skills\igniteui-wc-customize-component-theme /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-optimize-bundle-size .agents\skills\igniteui-wc-optimize-bundle-size /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framework .agents\skills\igniteui-wc-integrate-with-framework /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-wc-generate-from-image-design .agents\skills\igniteui-wc-generate-from-image-design /E
 ```
 
 <!-- end: WebComponents -->
@@ -273,6 +323,7 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-wc-integrate-with-framewor
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-components .agents\skills\igniteui-react-components /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-customize-theme .agents\skills\igniteui-react-customize-theme /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size .agents\skills\igniteui-react-optimize-bundle-size /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-react-generate-from-image-design .agents\skills\igniteui-react-generate-from-image-design /E
 ```
 
 <!-- end: React -->
@@ -283,9 +334,84 @@ robocopy node_modules\{PackageCommon}\skills\igniteui-react-optimize-bundle-size
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-components .agents\skills\igniteui-angular-components /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-grids .agents\skills\igniteui-angular-grids /E
 robocopy node_modules\{PackageCommon}\skills\igniteui-angular-theming .agents\skills\igniteui-angular-theming /E
+robocopy node_modules\{PackageCommon}\skills\igniteui-angular-generate-from-image-design .agents\skills\igniteui-angular-generate-from-image-design /E
 ```
 
 <!-- end: Angular -->
+
+<!-- end: Angular, React, WebComponents -->
+
+### **Option B - Use the `GitHub CLI`**
+
+The GitHub CLI can be used to download skill files directly from the {ProductName} repository. Run the following commands in your project root to start the installation process:
+
+<!-- Angular -->
+
+```bash
+gh skill install IgniteUI/igniteui-angular
+```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```bash
+gh skill install IgniteUI/igniteui-webcomponents
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gh skill install IgniteUI/igniteui-react
+```
+
+<!-- end: React -->
+
+<!-- Blazor -->
+
+```bash
+gh skill install IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
+
+You will be asked to select which skills to install and the target Agents for the skill files in your project. The CLI will then download and place the selected skill according to the chosen Agents.
+
+To update skills later, run the following command:
+
+<!-- Angular -->
+
+```bash
+gh skill update IgniteUI/igniteui-angular
+```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```bash
+gh skill update IgniteUI/igniteui-webcomponents
+```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```bash
+gh skill update IgniteUI/igniteui-react
+```
+
+<!-- end: React -->
+
+<!-- Blazor -->
+
+```bash
+gh skill update IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
 
 ### **Option C - Use the `gemini skills` CLI**
 
@@ -303,6 +429,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-wc-choose-componen
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
 gemini skills install {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install {GithubLink}.git --path skills/igniteui-wc-generate-from-image-design
 ```
 
 <!-- end: WebComponents -->
@@ -313,6 +440,7 @@ gemini skills install {GithubLink}.git --path skills/igniteui-wc-integrate-with-
 gemini skills install {GithubLink}.git --path skills/igniteui-react-components
 gemini skills install {GithubLink}.git --path skills/igniteui-react-customize-theme
 gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+gemini skills install {GithubLink}.git --path skills/igniteui-react-generate-from-image-design
 ```
 
 <!-- end: React -->
@@ -323,9 +451,21 @@ gemini skills install {GithubLink}.git --path skills/igniteui-react-optimize-bun
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-components
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-grids
 gemini skills install {GithubLink}.git --path skills/igniteui-angular-theming
+gemini skills install {GithubLink}.git --path skills/igniteui-angular-generate-from-image-design
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```bash
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-components
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-grids
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-theming
+gemini skills install {GithubLink}.git --path skills/igniteui-blazor-generate-from-image-design
+```
+
+<!-- end: Blazor -->
 
 **Install to workspace scope:**
 
@@ -336,6 +476,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-customize-component-theme
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-optimize-bundle-size
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-integrate-with-framework
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-wc-generate-from-image-design
 ```
 
 <!-- end: WebComponents -->
@@ -346,6 +487,7 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-components
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-customize-theme
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-optimize-bundle-size
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-react-generate-from-image-design
 ```
 
 <!-- end: React -->
@@ -356,9 +498,21 @@ gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-components
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-grids
 gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-theming
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-angular-generate-from-image-design
 ```
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+```bash
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-components
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-grids
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-theming
+gemini skills install --scope workspace {GithubLink}.git --path skills/igniteui-blazor-generate-from-image-design
+```
+
+<!-- end: Blazor -->
 
 Once installed, the skill files are available in the respective location and will be automatically discovered by compatible AI assistants.
 
@@ -366,9 +520,21 @@ Once installed, the skill files are available in the respective location and wil
 
 The `skills` CLI is an interactive tool that downloads and installs skills directly into your project. Run the following command in your project root:
 
+<!-- Angular, React, WebComponents -->
+
 ```bash
 npx skills add IgniteUI/{PackageCommon}
 ```
+
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+```bash
+npx skills add IgniteUI/igniteui-blazor
+```
+
+<!-- end: Blazor -->
 
 The CLI will guide you through a series of prompts to:
 
@@ -378,7 +544,13 @@ The CLI will guide you through a series of prompts to:
 
 Once complete, the skills are ready to use - no manual file copying required.
 
+<!-- Angular, React, WebComponents -->
 > **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/{PackageCommon}]({GithubLink}) repository.
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+> **Note:** Requires Node.js and an internet connection. The command fetches the latest skill files from the [IgniteUI/igniteui-blazor]({GithubLink}) repository.
+<!-- end: Blazor -->
 
 ---
 
@@ -402,14 +574,22 @@ The **Theming skill** includes setup instructions for the `igniteui-theming` MCP
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+The **Theming skill** includes setup instructions for the `igniteui-theming` MCP server, which gives AI assistants access to live theming tools such as palette generation and component theme scaffolding. See the [Theming skill file]({GithubLink}/blob/master/skills/igniteui-blazor-theming/SKILL.md) for configuration steps for VS Code, Cursor, Claude Desktop, and JetBrains IDEs.
+
+<!-- end: Blazor -->
+
 For more information on the Theming MCP, refer to the [Ignite UI Theming MCP](./theming-mcp.md) documentation.
 
 ## Additional Resources
 
 <div class="divider--half"></div>
 
-<!-- React, WebComponents -->
+<!-- React, WebComponents, Blazor -->
 - [Getting Started with {ProductName}](../general-getting-started.md)
+<!-- end: React, WebComponents, Blazor -->
+<!-- React, WebComponents -->
 - [Ignite UI CLI](../general-cli-overview.md)
 <!-- end: React, WebComponents -->
 <!-- Angular -->
