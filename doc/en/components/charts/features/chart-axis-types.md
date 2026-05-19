@@ -35,6 +35,7 @@ The `CategoryXAxis` requires you to provide a `DataSource` and a `Label` in orde
 The `CategoryYAxis` works very similarly to the `CategoryXAxis` described above, but it is placed vertically rather than horizontally. Also, this axis requires you to provide a `DataSource` and a `Label` in order to plot data with it. The `CategoryYAxis` is generally used with the `NumericXAxis` to plot the following type of series:
 
 - `BarSeries`
+- `RangeBarSeries`
 - `StackedBarSeries`
 - `Stacked100BarSeries`
 
@@ -44,11 +45,12 @@ The `CategoryYAxis` works very similarly to the `CategoryXAxis` described above,
 
 ### Numeric X-Axis
 
-The `NumericXAxis` treats its data as continuously varying numerical data items. Labels on this axis are placed horizontally along the X-Axis. The location of the `NumericXAxis` labels depends on the `XMemberPath` property of the various [Scatter Series](../types/scatter-chart.md) that it supports if combined with a `NumericYAxis`. Alternatively, if combined with the `CategoryXAxis`, these labels will be placed corresponding to the `ValueMemberPath` of the `BarSeries`, `StackedBarSeries`, and `Stacked100BarSeries`.
+The `NumericXAxis` treats its data as continuously varying numerical data items. Labels on this axis are placed horizontally along the X-Axis. The location of the `NumericXAxis` labels depends on the `XMemberPath` property of the various [Scatter Series](../types/scatter-chart.md) that it supports if combined with a `NumericYAxis`. Alternatively, if combined with the `CategoryXAxis`, these labels will be placed corresponding to the `ValueMemberPath` of the `BarSeries`, `RangeBarSeries`, `StackedBarSeries`, and `Stacked100BarSeries`.
 
 The `NumericXAxis` is compatible with the following type of series:
 
 - `BarSeries`
+- `RangeBarSeries`
 - `BubbleSeries`
 - `HighDensityScatterSeries`
 - `ScatterSeries`

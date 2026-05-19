@@ -24,6 +24,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 | 41167 | Excel | Object's Formulas are not round-tripped - Added Excel support for round tripping the camera tool |
 | 41419 | Excel | Saving a VBA Signed Excel file does not keep a signature/certificate. |
 
+### Enhancements
+
+### {PackageCharts}
+
+- Added `RangeBarSeries` support for horizontal range rendering in `IgcDataChart`.
+
 ## **{PackageVerChanges-26-1-FEB}**
 
 ### {PackageCharts}
