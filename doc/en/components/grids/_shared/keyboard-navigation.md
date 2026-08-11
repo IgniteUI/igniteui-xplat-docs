@@ -124,14 +124,21 @@ When the `{ComponentName}` body is focused, the following key combinations are a
 
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
-<!-- Angular, WebComponents, React -->
-
-## Demo
-
+<!-- React -->
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
-<!-- end: Angular, WebComponents, React -->
+<!-- end: React -->
+
+<!-- WebComponents -->
+
+<!-- ComponentStart: Grid, TreeGrid -->
+
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- end: WebComponents -->
 
 ## Custom Keyboard Navigation
 
